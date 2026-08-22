@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "0.1",
+  "caseId": "c01-cold-room-knock",
+  "answerCodeSet": [
+    "yes",
+    "no",
+    "partial",
+    "invalid_premise",
+    "unknown",
+    "irrelevant",
+    "unanswerable",
+    "unrecognized"
+  ],
+  "normalizationVectors": [
+    { "id": "N01", "rawQuestion": "里面有人吗？", "expectedStatus": "matched", "expectedQueryId": "query-person-inside", "expectedMatchedBy": "exact" },
+    { "id": "N02", "rawQuestion": "冷藏室 当时 有人？", "expectedStatus": "matched", "expectedQueryId": "query-person-inside", "expectedMatchedBy": "rule" },
+    { "id": "N03", "rawQuestion": "是余宁敲的吗", "expectedStatus": "matched", "expectedQueryId": "query-knock-source", "expectedMatchedBy": "rule" },
+    { "id": "N04", "rawQuestion": "冷藏室的门会自己锁吗？", "expectedStatus": "matched", "expectedQueryId": "query-door-mechanism", "expectedMatchedBy": "exact" },
+    { "id": "N05", "rawQuestion": "房间里面是不是有一部手机", "expectedStatus": "matched", "expectedQueryId": "query-phone-inside", "expectedMatchedBy": "rule" },
+    { "id": "N06", "rawQuestion": "手机属于林澈吗", "expectedStatus": "matched", "expectedQueryId": "query-lin-ownership", "expectedMatchedBy": "rule" },
+    { "id": "N07", "rawQuestion": "样本到底在哪儿", "expectedStatus": "matched", "expectedQueryId": "query-sample-location", "expectedMatchedBy": "rule" },
+    { "id": "N08", "rawQuestion": "他是不是为了拖延检查", "expectedStatus": "matched", "expectedQueryId": "query-lin-motive", "expectedMatchedBy": "rule" },
+    { "id": "N09", "rawQuestion": "方砚开门进去过吗", "expectedStatus": "matched", "expectedQueryId": "query-fang-entered", "expectedMatchedBy": "rule" },
+    { "id": "N10", "rawQuestion": "金属托盘是什么颜色？", "expectedStatus": "matched", "expectedQueryId": "query-irrelevant-color", "expectedMatchedBy": "exact" },
+    { "id": "N11", "rawQuestion": "这栋楼是不是被诅咒了？", "expectedStatus": "unrecognized", "expectedQueryId": null, "expectedMatchedBy": "none" },
+    { "id": "N12", "rawQuestion": "", "expectedStatus": "unrecognized", "expectedQueryId": null, "expectedMatchedBy": "none" }
+  ],
+  "answerVectors": [
+    { "id": "A01", "discoveredEvidenceIds": [], "visitedLocationIds": [], "answeredQueryIds": [], "queryId": "query-door-mechanism", "expectedAnswerCode": "yes", "expectedNewFacts": ["fact-door-auto-latched", "fact-no-entry-after-lock", "fact-fang-no-override"] },
+    { "id": "A02", "discoveredEvidenceIds": [], "visitedLocationIds": [], "answeredQueryIds": [], "queryId": "query-person-inside", "expectedAnswerCode": "unknown", "expectedNewFacts": [] },
+    { "id": "A03", "discoveredEvidenceIds": [], "visitedLocationIds": [], "answeredQueryIds": [], "queryId": "query-knock-source", "expectedAnswerCode": "unknown", "expectedNewFacts": [] },
+    { "id": "A04", "discoveredEvidenceIds": [], "visitedLocationIds": [], "answeredQueryIds": [], "queryId": "query-irrelevant-color", "expectedAnswerCode": "irrelevant", "expectedNewFacts": [] },
+    { "id": "A05", "discoveredEvidenceIds": [], "visitedLocationIds": [], "answeredQueryIds": [], "queryId": null, "rawQuestion": "这栋楼是不是被诅咒了？", "expectedAnswerCode": "unrecognized", "expectedNewFacts": [] },
+    { "id": "A06", "discoveredEvidenceIds": ["evidence-metal-tray-mark"], "visitedLocationIds": [], "answeredQueryIds": [], "queryId": "query-knock-source", "expectedAnswerCode": "no", "expectedNewFacts": [] },
+    { "id": "A07", "discoveredEvidenceIds": ["evidence-metal-tray-mark"], "visitedLocationIds": [], "answeredQueryIds": ["query-knock-source"], "queryId": "query-phone-inside", "expectedAnswerCode": "yes", "expectedNewFacts": ["fact-phone-paired-to-lin", "fact-phone-inside", "fact-alarm-set"] },
+    { "id": "A08", "discoveredEvidenceIds": ["evidence-metal-tray-mark"], "visitedLocationIds": [], "answeredQueryIds": ["query-knock-source", "query-phone-inside"], "queryId": "query-lin-ownership", "expectedAnswerCode": "yes", "expectedNewFacts": [] },
+    { "id": "A09", "discoveredEvidenceIds": ["evidence-access-log"], "visitedLocationIds": [], "answeredQueryIds": [], "queryId": "query-sample-location", "expectedAnswerCode": "unknown", "expectedNewFacts": [] },
+    { "id": "A10", "discoveredEvidenceIds": ["evidence-access-log"], "visitedLocationIds": ["location-external-locker"], "answeredQueryIds": [], "queryId": "query-sample-location", "expectedAnswerCode": "yes", "expectedNewFacts": [] },
+    { "id": "A11", "discoveredEvidenceIds": ["evidence-access-log", "evidence-sample-locker", "evidence-knock-recording"], "visitedLocationIds": ["location-external-locker"], "answeredQueryIds": [], "queryId": "query-lin-motive", "expectedAnswerCode": "yes", "expectedNewFacts": ["fact-inspection-delayed", "fact-lin-intent-delay"] },
+    { "id": "A12", "discoveredEvidenceIds": ["evidence-door-latch", "evidence-access-log"], "visitedLocationIds": [], "answeredQueryIds": ["query-door-mechanism"], "queryId": "query-fang-entered", "expectedAnswerCode": "no", "expectedNewFacts": [] }
+  ],
+  "judgementVectors": [
+    {
+      "id": "J01",
+      "hypothesisId": "hypothesis-canonical",
+      "evidenceIds": ["evidence-cctv-exit", "evidence-door-latch", "evidence-metal-tray-mark", "evidence-knock-recording", "evidence-access-log", "evidence-phone-in-room", "evidence-phone-pairing", "evidence-sample-locker", "evidence-intent-chain"],
+      "motiveKey": "motive-delay-inspection",
+      "expectedJudgement": "solved",
+      "expectedMissingEvidenceIds": [],
+      "expectedMissingContradictionResolutionIds": []
+    },
+    {
+      "id": "J02",
+      "hypothesisId": "hypothesis-canonical",
+      "evidenceIds": ["evidence-cctv-exit", "evidence-door-latch", "evidence-metal-tray-mark", "evidence-knock-recording", "evidence-access-log", "evidence-phone-in-room", "evidence-phone-pairing", "evidence-sample-locker"],
+      "motiveKey": "motive-delay-inspection",
+      "expectedJudgement": "nearly_proven",
+      "expectedMissingEvidenceIds": ["evidence-intent-chain"],
+      "expectedMissingFactIds": []
+    },
+    {
+      "id": "J03",
+      "hypothesisId": "hypothesis-canonical",
+      "evidenceIds": [],
+      "motiveKey": "motive-delay-inspection",
+      "expectedJudgement": "plausible",
+      "expectedMissingEvidenceIds": ["evidence-cctv-exit", "evidence-door-latch", "evidence-metal-tray-mark", "evidence-knock-recording", "evidence-access-log", "evidence-phone-in-room", "evidence-phone-pairing", "evidence-sample-locker", "evidence-intent-chain"]
+    },
+    {
+      "id": "J04",
+      "hypothesisId": "hypothesis-fang-entered",
+      "evidenceIds": ["evidence-cctv-exit", "evidence-door-latch", "evidence-access-log"],
+      "expectedJudgement": "invalidated",
+      "expectedContradictionIds": ["contradiction-no-person-inside"]
+    },
+    {
+      "id": "J05",
+      "hypothesisId": "hypothesis-guard-faked",
+      "evidenceIds": ["evidence-knock-recording", "evidence-metal-tray-mark"],
+      "expectedJudgement": "invalidated",
+      "expectedContradictionIds": ["contradiction-independent-recording"]
+    },
+    {
+      "id": "J06",
+      "hypothesisId": "hypothesis-canonical",
+      "evidenceIds": ["evidence-cctv-exit", "evidence-door-latch", "evidence-metal-tray-mark", "evidence-knock-recording", "evidence-access-log", "evidence-phone-in-room", "evidence-phone-pairing", "evidence-sample-locker", "evidence-intent-chain"],
+      "motiveKey": "motive-attention",
+      "expectedJudgement": "nearly_proven",
+      "expectedMissingMotiveKey": "motive-delay-inspection"
+    }
+  ],
+  "orderVectors": [
+    {
+      "id": "O01",
+      "steps": [
+        { "type": "query", "queryId": "query-door-mechanism", "expectedAnswerCode": "yes" },
+        { "type": "query", "queryId": "query-knock-source", "expectedAnswerCode": "unknown" },
+        { "type": "discoverEvidence", "evidenceId": "evidence-metal-tray-mark" },
+        { "type": "query", "queryId": "query-knock-source", "expectedAnswerCode": "no" },
+        { "type": "query", "queryId": "query-phone-inside", "expectedAnswerCode": "yes" }
+      ],
+      "expectedFinalVisibleFacts": ["fact-three-knocks", "fact-door-sealed", "fact-cctv-lin-exited", "fact-lin-left-before-knock", "fact-lin-authorized", "fact-door-auto-latched", "fact-no-entry-after-lock", "fact-fang-no-override", "fact-vibration-caused-knock", "fact-no-person-inside", "fact-knock-independently-recorded", "fact-phone-paired-to-lin", "fact-phone-inside", "fact-alarm-set"]
+    },
+    {
+      "id": "O02",
+      "steps": [
+        { "type": "discoverEvidence", "evidenceId": "evidence-metal-tray-mark" },
+        { "type": "query", "queryId": "query-knock-source", "expectedAnswerCode": "no" },
+        { "type": "query", "queryId": "query-door-mechanism", "expectedAnswerCode": "yes" },
+        { "type": "query", "queryId": "query-phone-inside", "expectedAnswerCode": "yes" }
+      ],
+      "expectedFinalVisibleFacts": ["fact-three-knocks", "fact-door-sealed", "fact-cctv-lin-exited", "fact-lin-left-before-knock", "fact-lin-authorized", "fact-door-auto-latched", "fact-no-entry-after-lock", "fact-fang-no-override", "fact-vibration-caused-knock", "fact-no-person-inside", "fact-knock-independently-recorded", "fact-phone-paired-to-lin", "fact-phone-inside", "fact-alarm-set"]
+    },
+    {
+      "id": "O03",
+      "steps": [
+        { "type": "discoverEvidence", "evidenceId": "evidence-access-log" },
+        { "type": "query", "queryId": "query-sample-location", "expectedAnswerCode": "unknown" },
+        { "type": "visitLocation", "locationId": "location-external-locker" },
+        { "type": "query", "queryId": "query-sample-location", "expectedAnswerCode": "yes" }
+      ],
+      "expectedFinalVisibleFacts": ["fact-three-knocks", "fact-door-sealed", "fact-cctv-lin-exited", "fact-lin-left-before-knock", "fact-lin-authorized", "fact-sample-outside", "fact-sample-in-locker", "fact-sample-found-outside"]
+    }
+  ],
+  "antiLeakVectors": [
+    "林澈把手机留在房间里制造假敲门声",
+    "样本被藏在外部储物柜",
+    "他想拖延检查"
+  ],
+  "replayVector": {
+    "expectedBeatIds": ["replay-sample", "replay-phone", "replay-exit", "replay-knock", "replay-delay"],
+    "expectedEventIds": ["event-lin-hides-sample", "event-lin-places-phone", "event-lin-exits", "event-phone-vibrates", "event-yu-delays-entry"]
+  }
+}
