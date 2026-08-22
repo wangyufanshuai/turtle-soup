@@ -1,0 +1,44 @@
+:root {
+  --black: #07080a;
+  --ink: #e8e2d1;
+  --paper: #c8c0aa;
+  --muted: #8d8a80;
+  --line: #2d3035;
+  --line-strong: #484b50;
+  --acid: #b8cf79;
+  --wine: #6f1f2b;
+  --amber: #d2a05d;
+  --danger: #d56f69;
+  --panel: #111318;
+  --panel-deep: #0b0d10;
+  --display: "FZSong", "STSong", "Songti SC", Georgia, serif;
+  --body: "Noto Sans CJK SC", "Microsoft YaHei UI", sans-serif;
+  --mono: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--black); }
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 50% -12%, rgba(108, 29, 42, .28), transparent 37rem),
+    linear-gradient(120deg, rgba(255,255,255,.014) 1px, transparent 1px),
+    var(--black);
+  background-size: auto, 17px 17px, auto;
+  color: var(--ink);
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select { font: inherit; }
+button { color: inherit; }
+button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--acid);
+  outline-offset: 3px;
+}
+::selection { background: var(--wine); color: white; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

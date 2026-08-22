@@ -1,0 +1,13 @@
+{
+  "name": "The Black Soup / 深汤",
+  "short_name": "深汤",
+  "description": "证据优先的因果推理游戏",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07080a",
+  "theme_color": "#08090b",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

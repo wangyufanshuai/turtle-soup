@@ -1,0 +1,23 @@
+{
+  "name": "turtle-soup",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @turtle-soup/web",
+    "build": "npm run build --workspace @turtle-soup/web",
+    "validate:case": "node --experimental-strip-types --experimental-transform-types tools/validate-case.ts",
+    "typecheck": "npm run typecheck:core && npm run typecheck --workspace @turtle-soup/web",
+    "typecheck:core": "tsc --noEmit",
+    "test:core": "node --test --experimental-strip-types --experimental-transform-types packages/mystery-core/src/engine.test.ts packages/mystery-core/src/runtime.test.ts",
+    "check": "npm run typecheck && npm run test:core"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  }
+}

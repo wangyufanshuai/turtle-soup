@@ -1,0 +1,6 @@
+node_modules/
+apps/*/.next/
+apps/*/out/
+*.tsbuildinfo
+.DS_Store
+npm-debug.log*
