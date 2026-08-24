@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" role="img" aria-labelledby="title desc">
+  <title id="title">停电仓库与第三道光</title><desc id="desc">仓库里一盏应急灯、窗边反光板和门外信标形成斜向光路。</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#101d2b"/><stop offset="1" stop-color="#070b12"/></linearGradient><pattern id="lines" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M0 14H28M14 0V28" stroke="#8fc4d5" stroke-opacity=".07"/></pattern></defs>
+  <rect width="760" height="480" fill="url(#bg)"/><rect width="760" height="480" fill="url(#lines)"/>
+  <rect x="70" y="75" width="430" height="300" fill="#0c141f" stroke="#8fc4d5" stroke-opacity=".55"/><path d="M70 285h430" stroke="#8fc4d5" stroke-opacity=".35"/><rect x="135" y="220" width="84" height="58" rx="5" fill="#182f3b" stroke="#b7dbe3"/><circle cx="177" cy="245" r="15" fill="#d3edba"/><path d="M220 120l95 165" stroke="#c1d99a" stroke-width="7" stroke-opacity=".5"/><path d="M315 285L570 142" stroke="#db6f73" stroke-width="6" stroke-opacity=".75"/><circle cx="575" cy="140" r="26" fill="#8b3d55" stroke="#ef9093"/><path d="M600 140h110" stroke="#ef9093" stroke-dasharray="9 8" stroke-opacity=".65"/>
+  <path d="M80 410h600" stroke="#8fc4d5" stroke-opacity=".5"/><text x="42" y="445" fill="#91c7d9" font-family="monospace" font-size="13" letter-spacing="3">POWER OUTAGE / LIGHT PATH 05</text>
+</svg>
