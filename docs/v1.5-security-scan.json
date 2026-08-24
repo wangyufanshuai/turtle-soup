@@ -1,0 +1,31 @@
+{
+  "reportVersion": "1.5",
+  "releaseProfile": "v1.5-internal-rc",
+  "generatedAt": "2026-08-24T04:12:25.531Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "hiddenIdentifierCount": 1768,
+  "targets": [
+    {
+      "name": "static-output",
+      "files": 401,
+      "truthBearingTextFiles": 62,
+      "sourceMaps": 0,
+      "remoteReferences": 0,
+      "diagnosticsLeak": 62,
+      "publicHtmlLeaks": [],
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "boundaries": {
+    "fullCaseFile": "worker-only",
+    "questionAliases": "worker-only",
+    "saveSchemaVersion": 1,
+    "remoteAnalytics": false,
+    "remoteAI": false,
+    "localHostRewriteDefault": "off"
+  },
+  "passed": true,
+  "qualification": "Static scans reduce accidental publication leakage; offline content remains reverse-engineerable and this is not DRM."
+}

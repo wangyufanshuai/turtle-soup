@@ -1,0 +1,763 @@
+{
+  "reportVersion": "1.5",
+  "generatedAt": "2026-08-24T04:12:21.722Z",
+  "releaseProfile": "v1.5-internal-rc",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "caseCount": 60,
+  "frozenCompatibility": {
+    "cases": [
+      {
+        "caseId": "c01-cold-room-knock",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "aa6ad3da8228ad0864190e178f2ca23fd5c519297b43db8a00e8a43b60be09bc"
+      },
+      {
+        "caseId": "c02-snow-route",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "dea434f8c0cb0f43b55e903fcad52082130e7fcd862a86a701f7fac4e2bac0df"
+      },
+      {
+        "caseId": "c03-second-shadow",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "ee39222932417c819363bb8b8c12b1e499889a792d2c9b60a2fcf75c3515c944"
+      },
+      {
+        "caseId": "c04-unpostable-reply",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "78d040e746c609d18aa6986b6c953a8484bd48efeff6ef8f1e192f36e29bfc76"
+      },
+      {
+        "caseId": "c05-third-lamp",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "934521550285ec493fdcf165b20bf6efa1b66dbe9fcd740f2633c5e3d25a3734"
+      },
+      {
+        "caseId": "c06-nonexistent-ticket",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "55bf1de4ecf0154d096f1179aeb30d6da49d034fb2a5337ea19ffa884a3e7e16"
+      },
+      {
+        "caseId": "c07-key-returns",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "6ee26f79e81b01a02aa554429ca3fc47227c0ed4899986f6da5bd42c7d4cc185"
+      },
+      {
+        "caseId": "c08-unclaimed-recording",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "1f5e5b0c97a137696e3e5d09f7600699e1fcf67868cb89c23658bdc47245910b"
+      },
+      {
+        "caseId": "c09-rain-room",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "cfe6886533a7b17f89837dead5557fa84b2af59a3b12147e9c18c43ec6dc6e76"
+      },
+      {
+        "caseId": "c10-single-ring",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "919a5fd1ab30e9d62c98e4fd2b038f45d2ba8f5d46642d0be68e47a3ddfbd38a"
+      },
+      {
+        "caseId": "c11-borrowed-signature",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "66c4a9074e15085192ffb804bef3ab1b40016dcdbc2206de10d442e2ab85d68e"
+      },
+      {
+        "caseId": "c12-zero-floor-elevator",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "5c9384f7532606e6f4e219395d52a5ba3253f20af62ab3e16872e46f6fe24453"
+      },
+      {
+        "caseId": "c13-second-waterline",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "34fed08efc29ef9bdd9a5e6908f30fdf71bfd91647eb983a9b93bc9e5aeb999d"
+      },
+      {
+        "caseId": "c14-moving-red-box",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "b6dd7733147804ab2e926e0ef7f34a54fc42f0026ff3ec4f59cfdeb76d620c3f"
+      },
+      {
+        "caseId": "c15-sixth-panorama",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "53caedbcf34a2dec01ab10f145886effda12ba0108aa79a1f26fc44605525e97"
+      },
+      {
+        "caseId": "c16-closed-door-handoff",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "046e903a1f6b4d2e0144a21ad0822cf685701c1d8de6c0425a8d9725c8f68d78"
+      },
+      {
+        "caseId": "c17-twelve-strikes",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "c8ee39b9d4bae1d627dfbe70f883ee3e6b92bf2c7cdd9ab58ddf3234e4ef2bc9"
+      },
+      {
+        "caseId": "c18-lighter-sealed-crate",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "b23b669ed9070431b93d134c107d5d8c544fd83051c1d6d6c7d29be24b569269"
+      },
+      {
+        "caseId": "c19-fog-after-window",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "1c152210b0e7a00742e537f7cf4ab8222aaf3d578020a35c023f970ae2310970"
+      },
+      {
+        "caseId": "c20-fifth-worker",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "0e5e4fc7e778f99e11af80a6527e568629021098c10a8781cbe3ebc71217d2eb"
+      },
+      {
+        "caseId": "c21-missing-seven-minutes",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "7f0651f249328be010f4bba06978f896c2c91903eb76665df514bf9670ad8237"
+      },
+      {
+        "caseId": "c22-overloaded-bridge",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "31bdf5337724ab209132701e580ba1eb989123e0a9c7a59fc3652c5880bbf140"
+      },
+      {
+        "caseId": "c23-clean-air-sample",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "b53aa87a0d11e134ccdfbeb4762b10aa05fe0431f95015faf45256734403dfce"
+      },
+      {
+        "caseId": "c24-turned-painting",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "db72ac6dc61c4cda81bf7a0e5498259980b9cbf42152916f51a240b82c7d7d76"
+      },
+      {
+        "caseId": "c25-silent-second-bell",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "31e47b96a65085162142cfd262556ad83955b8d36f09f337e71944b19586c23b"
+      },
+      {
+        "caseId": "c26-short-map-pipeline",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "34e7897a0f4728effe092fa84d6420b85aa4ef0b3002600c8170eb4d1cc83c5a"
+      },
+      {
+        "caseId": "c27-stationary-moving-platform",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "6a9792f6e7f7128d4fe9fab15e5ea6e7687decc09ccd40a6cb69d936091272e4"
+      },
+      {
+        "caseId": "c28-ninth-minute-temperature",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "b9eb6a835308c4f2e4850d8d4501dc0c0faa1191dce212e9fe20204d66b1fdc8"
+      },
+      {
+        "caseId": "c29-role-stamp-signature",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "f356a78f89aaade714cfc5d4403587d25a553be1a3ec74ae061c737f561c505c"
+      },
+      {
+        "caseId": "c30-shared-shift-id",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "126d19a82a6bdafe3c638236d5ec87ae4b3dd206467ffd148b0b8bed0617954d"
+      },
+      {
+        "caseId": "c31-eighth-unchecked-guest",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "9428e708d2fff501f34933cdda32c3ea8ef0a84e51eebc6dd0565881fd23d77f"
+      },
+      {
+        "caseId": "c32-approved-unauthorized-door",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "5008a3ce25927ba536155786df92611881f6fb8c9720342f24fb49b6c5e7254e"
+      },
+      {
+        "caseId": "c33-early-late-arrival",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "85b9dd0a9e734e2b068f8139bfb3303e86690e1aee282558b24819be9dadf618"
+      },
+      {
+        "caseId": "c34-tomorrow-seal",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "21638d9ea228a5aec48df80d766360b916a9a0a6414de8bd17b4d2987ee00a2f"
+      },
+      {
+        "caseId": "c35-extra-glass-attendant",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "1f91e9413b443d340de30a1318c66d3945e4080141cb9fe0b7e46210054782ab"
+      },
+      {
+        "caseId": "c36-no-one-left-terminal",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "ac6f9a2cef3cde36c34bec756f4ae6c4b24269fb3b3736bbfbfaa5438d474cda"
+      },
+      {
+        "caseId": "c37-zeroed-pressure-gauge",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "6d51254cb6dc3f399432552fc3db652885241f2fe47efc03c744ed60aea814b0"
+      },
+      {
+        "caseId": "c38-no-missing-seventh-packet",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "37db8c3c678893ae9da2c8b46c10fa751649ca2ef5aa69ce4498decf80345ccf"
+      },
+      {
+        "caseId": "c39-duplicated-heartbeat",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "ab8c2189d0d8b61e36da1e74650da0931d84c121a1f39f82278f8b5705c2bc64"
+      },
+      {
+        "caseId": "c40-early-liquid-front",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "e5abc7efd39ce5373bca878bddd73f5e26305f2ec410ac94097c49daa5e97cd6"
+      },
+      {
+        "caseId": "c41-hysteresis-overheat",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "2f50bc85ff45e12cc1057c460736e3c23436afecd6c3f1c7e2c0c816358888ac"
+      },
+      {
+        "caseId": "c42-same-weight-different-load",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "3ec5a8d313666a37242cd602b3ee9c5011cc0c7b3b8d7b4c87d865140dfd2d80"
+      },
+      {
+        "caseId": "c43-train-stop-reference",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "66d8afe449b9adca9e793f483338659a4ae88f783c433d748290f6471daa7f8c"
+      },
+      {
+        "caseId": "c44-hidden-overload-spike",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "6f760d3336652d378f3e526731447c52c7a33f1651fdca44c76067d80d6f3269"
+      },
+      {
+        "caseId": "c45-double-location-second",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "72016699bd4901e2fa39a957b3da2d23d279f69854d7ea84526706876a0096ff"
+      },
+      {
+        "caseId": "c46-pilot-pressure-valve",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "2c6bc9bf651ec06f20e401a1c69f078eca03e217e0f7e8b67fd51f588598c1d3"
+      },
+      {
+        "caseId": "c47-offline-buffered-device",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "ea3d577355162288fb308888d899ad82547659fc633b851711774e885021f930"
+      },
+      {
+        "caseId": "c48-two-point-calibration",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "75d7d10c976a6e2398ed9a0100ff0ffd490cbb7fb4bc7150c3d0c2639aa4b687"
+      },
+      {
+        "caseId": "c49-gimbal-turn-drone",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "0a663f89986814f72f5f75bf5aa6f2096d1d3f0cf82537aad5c8915e514ad8e2"
+      },
+      {
+        "caseId": "c50-extra-warehouse-pallet",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "d470ed2820f2e439c36108b1714cd8eead144712ef706f897b848549253db73f"
+      },
+      {
+        "caseId": "c51-equivalent-resistance",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "a7adfc406d3c40d4b6cb56ebf310ed73fccd4cdd3031d2c03ed725cad8bc9b6e"
+      },
+      {
+        "caseId": "c52-shorter-river-night",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "39fbb78fefe3815114fd887984a49fd37986479ecc9f0e47df85558dff6a0855"
+      },
+      {
+        "caseId": "c53-late-fiber-echo",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "784749266b254c1fff93f95c9a09d1967fc229e753a798ab592c60a1c2361914"
+      },
+      {
+        "caseId": "c54-elevator-counterweight",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "88be6becda0b4ad222b6007179551365cebaad41ca76abfcfefec60237e28973"
+      },
+      {
+        "caseId": "c55-merged-multi-alarm",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "61317bd44f332fb6db680d53bcd172c4624a85b229530d99ef0c43851ba7e9f5"
+      },
+      {
+        "caseId": "c56-interpolated-temperature-map",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "942feff238be39078b1e1d09e41732cde7b906baa09c29d0fe9928a466a6ad8e"
+      },
+      {
+        "caseId": "c57-lagging-wind-vane",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "ce6979f8123d37df18f80d3812bbe7a5a9014c4750393e1b955d78c544e223da"
+      },
+      {
+        "caseId": "c58-same-volume-two-levels",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "8590041114a08c8d46b9db86baf512f2417f6e15d4476226625e13e61dc84e70"
+      },
+      {
+        "caseId": "c59-extra-ninth-floor",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "8b8bc954c015c8f8fc2d6810fde063ffdb196ec1dbd4ff65b55797a68e173e9a"
+      },
+      {
+        "caseId": "c60-last-sample-before-stop",
+        "canonicalHashUnchanged": true,
+        "contentVersionUnchanged": true,
+        "truthDigest": "ea8252acbd38d595d1ad38071d0a50dfce4435d0cf05bf50ba7fd65b0a17e057"
+      }
+    ],
+    "allUnchanged": true
+  },
+  "goldenCases": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "present": true,
+      "cadence": "observe-ask-unlock",
+      "sceneLabel": "02:00 · 冷藏室封闭走廊",
+      "evidenceBehavior": "freeze-frame",
+      "evidenceAction": "逐帧核对",
+      "insight": "门的状态、声音来源与人的位置可以同时为真，却不必来自同一事件。",
+      "replayTone": "three-knocks",
+      "scenes": [
+        {
+          "path": "/scene-cold-room.svg",
+          "exists": true,
+          "bytes": 2499
+        }
+      ],
+      "evidenceCount": 10,
+      "evidenceVisualPlates": 5,
+      "boardModes": [],
+      "legacyDirectMode": "timeline",
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "present": true,
+      "cadence": "witness-identity-crosscheck",
+      "sceneLabel": "00:00 · 剧院后台交接",
+      "evidenceBehavior": "role-overlay",
+      "evidenceAction": "叠合身份层",
+      "insight": "把角色、服装和真实人物拆开后，“同一个演员”不再是可靠前提。",
+      "replayTone": "curtain-reveal",
+      "scenes": [
+        {
+          "path": "/scene-second-shadow.svg",
+          "exists": true,
+          "bytes": 1774
+        }
+      ],
+      "evidenceCount": 9,
+      "evidenceVisualPlates": 5,
+      "boardModes": [],
+      "legacyDirectMode": "identity-matrix",
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "present": true,
+      "cadence": "scan-cache-display",
+      "sceneLabel": "23:52 · 离线码头闸机",
+      "evidenceBehavior": "ledger-sync",
+      "evidenceAction": "校对时间戳",
+      "insight": "记录写入得晚，不代表人行动得晚；先确定数据在哪一层产生。",
+      "replayTone": "harbor-sync",
+      "scenes": [
+        {
+          "path": "/scene-nonexistent-ticket.svg",
+          "exists": true,
+          "bytes": 1430
+        }
+      ],
+      "evidenceCount": 9,
+      "evidenceVisualPlates": 5,
+      "boardModes": [],
+      "legacyDirectMode": "signal-chain",
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "present": true,
+      "cadence": "level-weight-release",
+      "sceneLabel": "密闭容器 · 第二条水线",
+      "evidenceBehavior": "fluid-level",
+      "evidenceAction": "比对液面",
+      "insight": "液面变化证明浸没体积改变，不自动证明容器增加了液体。",
+      "replayTone": "weight-release",
+      "scenes": [
+        {
+          "path": "/scene-second-waterline.svg",
+          "exists": true,
+          "bytes": 1231
+        }
+      ],
+      "evidenceCount": 10,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "state-trace"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "present": true,
+      "cadence": "dial-gear-strike",
+      "sceneLabel": "11:00 · 分离的钟面与报时轮",
+      "evidenceBehavior": "gear-phase",
+      "evidenceAction": "对齐轮系",
+      "insight": "钟面与敲击不是同一个计时输出；脱耦后，两条记录可以同时真实。",
+      "replayTone": "gear-desync",
+      "scenes": [
+        {
+          "path": "/scene-twelve-strikes.svg",
+          "exists": true,
+          "bytes": 1244
+        }
+      ],
+      "evidenceCount": 10,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "state-trace"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "present": true,
+      "cadence": "gallery-service-panorama",
+      "sceneLabel": "闭馆展厅 · 服务侧旋转墙",
+      "evidenceBehavior": "wall-pivot",
+      "evidenceAction": "旋转参照",
+      "insight": "画框没有在墙上转动；是承载它的墙体改变了朝向。",
+      "replayTone": "wall-turn",
+      "scenes": [
+        {
+          "path": "/scene-turned-painting.svg",
+          "exists": true,
+          "bytes": 1229
+        }
+      ],
+      "evidenceCount": 12,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "spatial-map"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "present": true,
+      "cadence": "trigger-debounce-output",
+      "sceneLabel": "门铃控制器 · 双触发窗口",
+      "evidenceBehavior": "debounce-trace",
+      "evidenceAction": "展开触发沿",
+      "insight": "控制器合并了输出，却没有抹去两次物理触发。",
+      "replayTone": "debounce-pulse",
+      "scenes": [
+        {
+          "path": "/assets/cases/c25/scene-desktop.webp",
+          "exists": true,
+          "bytes": 14692
+        },
+        {
+          "path": "/assets/cases/c25/scene-mobile.webp",
+          "exists": true,
+          "bytes": 7432
+        }
+      ],
+      "evidenceCount": 10,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "state-trace",
+        "measurement-model"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "present": true,
+      "cadence": "clock-source-alignment",
+      "sceneLabel": "三套时钟 · 同一到场事件",
+      "evidenceBehavior": "clock-alignment",
+      "evidenceAction": "对齐时基",
+      "insight": "“先到”与“迟到”分别来自不同的钟；矛盾存在于比较方式，而非行动本身。",
+      "replayTone": "clock-lock",
+      "scenes": [
+        {
+          "path": "/assets/cases/c33/scene-desktop.webp",
+          "exists": true,
+          "bytes": 12512
+        },
+        {
+          "path": "/assets/cases/c33/scene-mobile.webp",
+          "exists": true,
+          "bytes": 6680
+        }
+      ],
+      "evidenceCount": 12,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "timeline",
+        "sampling-window",
+        "provenance-chain"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "present": true,
+      "cadence": "count-card-route",
+      "sceneLabel": "终点站 · 换轨后的乘降记录",
+      "evidenceBehavior": "passenger-count",
+      "evidenceAction": "核对计数口径",
+      "insight": "“无人下车”只描述某个计数边界，不等于车上没有人完成转移。",
+      "replayTone": "terminal-count",
+      "scenes": [
+        {
+          "path": "/assets/cases/c36/scene-desktop.webp",
+          "exists": true,
+          "bytes": 15616
+        },
+        {
+          "path": "/assets/cases/c36/scene-mobile.webp",
+          "exists": true,
+          "bytes": 7814
+        }
+      ],
+      "evidenceCount": 14,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "aggregate-constraint",
+        "timeline",
+        "provenance-chain"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "present": true,
+      "cadence": "zero-reference-temperature",
+      "sceneLabel": "压力校准台 · 温漂零点",
+      "evidenceBehavior": "zero-drift",
+      "evidenceAction": "检查零点漂移",
+      "insight": "零点也会移动；显示为零不等于真实量为零。",
+      "replayTone": "needle-return",
+      "scenes": [
+        {
+          "path": "/assets/v14/c37-pressure-lab.svg",
+          "exists": true,
+          "bytes": 2240
+        },
+        {
+          "path": "/assets/v14/c37-pressure-lab-mobile.svg",
+          "exists": true,
+          "bytes": 1430
+        }
+      ],
+      "evidenceCount": 12,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "calibration-curve",
+        "measurement-model"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "present": true,
+      "cadence": "endpoints-midcurve-band",
+      "sceneLabel": "两点校准 · 未被约束的中段",
+      "evidenceBehavior": "curve-fit",
+      "evidenceAction": "拟合中段曲线",
+      "insight": "两个相同校准点只能约束两端；真正的偏差藏在没有被测量的中段。",
+      "replayTone": "curve-bend",
+      "scenes": [
+        {
+          "path": "/assets/v14/c48-curve-lab.svg",
+          "exists": true,
+          "bytes": 2114
+        },
+        {
+          "path": "/assets/v14/c48-curve-lab-mobile.svg",
+          "exists": true,
+          "bytes": 1280
+        }
+      ],
+      "evidenceCount": 13,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "calibration-curve",
+        "uncertainty-band"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "present": true,
+      "cadence": "command-buffer-sample-display",
+      "sceneLabel": "终止链 · 最后一窗采样",
+      "evidenceBehavior": "buffer-window",
+      "evidenceAction": "展开缓存窗口",
+      "insight": "最后一条样本可以晚于停止命令，却早于停止真正生效。",
+      "replayTone": "final-window",
+      "scenes": [
+        {
+          "path": "/assets/v14/c60-terminal-lab.svg",
+          "exists": true,
+          "bytes": 2281
+        },
+        {
+          "path": "/assets/v14/c60-terminal-lab-mobile.svg",
+          "exists": true,
+          "bytes": 1643
+        }
+      ],
+      "evidenceCount": 13,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "control-loop",
+        "signal-chain",
+        "sampling-window"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    }
+  ],
+  "firstHour": {
+    "reportVersion": "1.5",
+    "releaseProfile": "v1.5-internal-rc",
+    "generatedAt": "2026-08-24T04:12:21.721Z",
+    "humanParticipants": 0,
+    "stages": [
+      {
+        "id": "opening",
+        "exposed": [
+          "scene",
+          "one-question-entry"
+        ],
+        "hidden": [
+          "evidence-shelf",
+          "theory-board"
+        ]
+      },
+      {
+        "id": "investigation",
+        "condition": "first deterministic answer or location inspection",
+        "exposed": [
+          "evidence-shelf",
+          "question-scaffolds"
+        ]
+      },
+      {
+        "id": "theory",
+        "condition": "two answers or two inspected evidence items",
+        "exposed": [
+          "two theories",
+          "reasoning-board",
+          "proof-submit"
+        ]
+      }
+    ],
+    "browserEvidence": {
+      "traces": 72,
+      "maximumOpeningMajorActions": 5,
+      "maximumFirstEffectiveOperationCount": 1,
+      "firstAnswersVisible": true
+    },
+    "passed": true
+  },
+  "architecture": {
+    "renderer": "React DOM + CSS/SVG",
+    "truthBoundary": "Worker-only CaseFile",
+    "saveSchemaVersion": 1,
+    "remoteDependencies": false,
+    "aiTruthAdjudication": false
+  },
+  "passed": true,
+  "qualification": "This audit measures deterministic experience contracts and browser-observable states. It does not prove fun, narrative impact, aesthetics, human comprehension or market fit."
+}

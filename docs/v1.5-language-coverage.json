@@ -1,0 +1,311 @@
+{
+  "reportVersion": "1.5",
+  "generatedAt": "2026-08-24T04:12:20.618Z",
+  "releaseProfile": "v1.5-internal-rc",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "packSchemaVersion": 1,
+  "caseCount": 12,
+  "totalCorpus": 1919,
+  "totalAliases": 96,
+  "totalAmbiguities": 24,
+  "maximumDuplicateRate": 0,
+  "cases": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "corpusCount": 171,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "colloquial",
+        "ellipsis",
+        "pronoun",
+        "typo",
+        "time-qualifier"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "corpusCount": 152,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "colloquial",
+        "ellipsis",
+        "pronoun",
+        "time-qualifier",
+        "typo"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "corpusCount": 171,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "colloquial",
+        "ellipsis",
+        "time-qualifier",
+        "pronoun",
+        "typo"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "corpusCount": 171,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "colloquial",
+        "ellipsis",
+        "pronoun",
+        "time-qualifier",
+        "typo"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "corpusCount": 171,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "time-qualifier",
+        "colloquial",
+        "ellipsis",
+        "typo"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "corpusCount": 171,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "time-qualifier",
+        "ellipsis",
+        "colloquial"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "corpusCount": 152,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "colloquial",
+        "ellipsis",
+        "pronoun",
+        "typo",
+        "time-qualifier"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "corpusCount": 152,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "colloquial",
+        "time-qualifier",
+        "ellipsis",
+        "typo",
+        "pronoun"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "corpusCount": 152,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "time-qualifier",
+        "colloquial",
+        "ellipsis",
+        "pronoun"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "corpusCount": 152,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "time-qualifier",
+        "ellipsis",
+        "colloquial",
+        "pronoun"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "corpusCount": 152,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "time-qualifier",
+        "pronoun",
+        "colloquial",
+        "ellipsis"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "corpusCount": 152,
+      "duplicateRate": 0,
+      "aliasRevision": 1,
+      "aliasCount": 8,
+      "ambiguityCount": 2,
+      "categories": [
+        "colloquial",
+        "ellipsis",
+        "time-qualifier",
+        "pronoun",
+        "typo"
+      ],
+      "validation": {
+        "valid": true,
+        "failures": [],
+        "aliasCount": 8,
+        "ambiguityCount": 2
+      },
+      "corpusMismatches": [],
+      "aliasMismatches": [],
+      "ambiguityMismatches": [],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "qualification": "Alias packs only route to existing deterministic public queries. They do not alter facts, answer codes, proof certificates or save identity."
+}

@@ -1,0 +1,86 @@
+{
+  "reportVersion": "1.5",
+  "verifiedAt": "2026-08-24T04:18:30.276Z",
+  "releaseProfile": "v1.5-internal-rc",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "caseCount": 60,
+  "coreTests": 65,
+  "syntheticRuns": 720,
+  "goldenBrowserFlows": 72,
+  "screenshots": 144,
+  "artifact": {
+    "directory": "dist/v1.5-internal-rc-web-pwa",
+    "bytes": 6316679,
+    "files": 855,
+    "sha256": "60a387b807afa91fdcb9482c6db819961e75bae47071f815356e46a9ce7a1a89",
+    "archive": {
+      "path": "dist/turtle-soup-v1.5-internal-rc-web-pwa.zip",
+      "bytes": 6446611,
+      "sha256": "2f8ccc674f0a749725295537f7115730cb33af12d5a192bb20cb3ed2fa3b3bf1"
+    }
+  },
+  "presence": [
+    {
+      "path": "docs/v1.5-experience-audit.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v1.5-golden-case-matrix.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v1.5-first-hour-flow.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v1.5-language-coverage.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v1.5-browser-matrix.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v1.5-visual-regression.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v1.5-static-performance.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v1.5-security-scan.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v1.5-release-artifacts.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v1.5-internal-rc.md",
+      "exists": true
+    },
+    {
+      "path": "dist/turtle-soup-v1.5-internal-rc-web-pwa.zip",
+      "exists": true
+    }
+  ],
+  "gates": {
+    "coreAndTypecheck": true,
+    "releaseProfile": true,
+    "frozenCompatibility": true,
+    "syntheticComprehension": true,
+    "firstHour": true,
+    "language": true,
+    "browser": true,
+    "visual": true,
+    "performance": true,
+    "security": true,
+    "artifact": true,
+    "requiredOutputs": true
+  },
+  "passed": true,
+  "qualification": "Automation proves deterministic consistency, a fairness lower bound, reachability, compatibility and engineering stability. It does not prove fun, narrative impact, aesthetic preference, human comprehension or market fit. Formal release still waits for the frozen C01 Fun Gate and stratified C02-C60 sampling."
+}

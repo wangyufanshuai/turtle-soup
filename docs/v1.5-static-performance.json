@@ -1,0 +1,20 @@
+{
+  "reportVersion": "1.5",
+  "releaseProfile": "v1.5-internal-rc",
+  "generatedAt": "2026-08-24T04:12:23.232Z",
+  "budgets": {
+    "totalBytes": 8000000,
+    "initialJavaScriptBytes": 1400000,
+    "maximumAssetBytes": 450000,
+    "sourceMaps": 0
+  },
+  "actual": {
+    "totalBytes": 6316679,
+    "initialJavaScriptBytes": 641844,
+    "maximumAssetBytes": 241318,
+    "sourceMaps": 0,
+    "javascriptBytes": 3164587
+  },
+  "failures": [],
+  "passed": true
+}

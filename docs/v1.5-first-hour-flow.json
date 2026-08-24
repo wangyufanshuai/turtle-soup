@@ -1,0 +1,43 @@
+{
+  "reportVersion": "1.5",
+  "releaseProfile": "v1.5-internal-rc",
+  "generatedAt": "2026-08-24T04:12:21.721Z",
+  "humanParticipants": 0,
+  "stages": [
+    {
+      "id": "opening",
+      "exposed": [
+        "scene",
+        "one-question-entry"
+      ],
+      "hidden": [
+        "evidence-shelf",
+        "theory-board"
+      ]
+    },
+    {
+      "id": "investigation",
+      "condition": "first deterministic answer or location inspection",
+      "exposed": [
+        "evidence-shelf",
+        "question-scaffolds"
+      ]
+    },
+    {
+      "id": "theory",
+      "condition": "two answers or two inspected evidence items",
+      "exposed": [
+        "two theories",
+        "reasoning-board",
+        "proof-submit"
+      ]
+    }
+  ],
+  "browserEvidence": {
+    "traces": 72,
+    "maximumOpeningMajorActions": 5,
+    "maximumFirstEffectiveOperationCount": 1,
+    "firstAnswersVisible": true
+  },
+  "passed": true
+}

@@ -1,0 +1,1195 @@
+{
+  "reportVersion": "1.5",
+  "releaseProfile": "v1.5-internal-rc",
+  "generatedAt": "2026-08-24T04:12:22.751Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "screenshotDirectory": "output/playwright/v15",
+  "screenshotCount": 144,
+  "requiredScreenshotCount": 144,
+  "missing": [],
+  "cases": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "cadence": "observe-ask-unlock",
+      "evidenceBehavior": "freeze-frame",
+      "replayTone": "three-knocks",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "cadence": "witness-identity-crosscheck",
+      "evidenceBehavior": "role-overlay",
+      "replayTone": "curtain-reveal",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "cadence": "scan-cache-display",
+      "evidenceBehavior": "ledger-sync",
+      "replayTone": "harbor-sync",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "cadence": "level-weight-release",
+      "evidenceBehavior": "fluid-level",
+      "replayTone": "weight-release",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "cadence": "dial-gear-strike",
+      "evidenceBehavior": "gear-phase",
+      "replayTone": "gear-desync",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "cadence": "gallery-service-panorama",
+      "evidenceBehavior": "wall-pivot",
+      "replayTone": "wall-turn",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "cadence": "trigger-debounce-output",
+      "evidenceBehavior": "debounce-trace",
+      "replayTone": "debounce-pulse",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "cadence": "clock-source-alignment",
+      "evidenceBehavior": "clock-alignment",
+      "replayTone": "clock-lock",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "cadence": "count-card-route",
+      "evidenceBehavior": "passenger-count",
+      "replayTone": "terminal-count",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "cadence": "zero-reference-temperature",
+      "evidenceBehavior": "zero-drift",
+      "replayTone": "needle-return",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "cadence": "endpoints-midcurve-band",
+      "evidenceBehavior": "curve-fit",
+      "replayTone": "curve-bend",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "cadence": "command-buffer-sample-display",
+      "evidenceBehavior": "buffer-window",
+      "replayTone": "final-window",
+      "desktopStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "mobileStates": [
+        "opening",
+        "first-answer",
+        "evidence-focus",
+        "theory",
+        "wrong-theory",
+        "solved"
+      ],
+      "visualEvidencePlates": 5,
+      "noUniqueClueInMedia": true
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "chromium-desktop-c01-cold-room-knock-opening.png",
+      "bytes": 437590,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c01-cold-room-knock-first-answer.png",
+      "bytes": 387558,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c01-cold-room-knock-evidence-focus.png",
+      "bytes": 185621,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c01-cold-room-knock-theory.png",
+      "bytes": 340289,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c01-cold-room-knock-wrong-theory.png",
+      "bytes": 375264,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c01-cold-room-knock-solved.png",
+      "bytes": 363556,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c01-cold-room-knock-opening.png",
+      "bytes": 153878,
+      "width": 390,
+      "height": 922
+    },
+    {
+      "name": "chromium-mobile-c01-cold-room-knock-first-answer.png",
+      "bytes": 55719,
+      "width": 390,
+      "height": 966
+    },
+    {
+      "name": "chromium-mobile-c01-cold-room-knock-evidence-focus.png",
+      "bytes": 97836,
+      "width": 390,
+      "height": 1178
+    },
+    {
+      "name": "chromium-mobile-c01-cold-room-knock-theory.png",
+      "bytes": 100957,
+      "width": 390,
+      "height": 886
+    },
+    {
+      "name": "chromium-mobile-c01-cold-room-knock-wrong-theory.png",
+      "bytes": 148850,
+      "width": 390,
+      "height": 1261
+    },
+    {
+      "name": "chromium-mobile-c01-cold-room-knock-solved.png",
+      "bytes": 224055,
+      "width": 390,
+      "height": 1915
+    },
+    {
+      "name": "chromium-desktop-c03-second-shadow-opening.png",
+      "bytes": 970095,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c03-second-shadow-first-answer.png",
+      "bytes": 906021,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c03-second-shadow-evidence-focus.png",
+      "bytes": 173525,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c03-second-shadow-theory.png",
+      "bytes": 566882,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c03-second-shadow-wrong-theory.png",
+      "bytes": 557895,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c03-second-shadow-solved.png",
+      "bytes": 559471,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c03-second-shadow-opening.png",
+      "bytes": 356582,
+      "width": 390,
+      "height": 862
+    },
+    {
+      "name": "chromium-mobile-c03-second-shadow-first-answer.png",
+      "bytes": 126142,
+      "width": 390,
+      "height": 867
+    },
+    {
+      "name": "chromium-mobile-c03-second-shadow-evidence-focus.png",
+      "bytes": 120919,
+      "width": 390,
+      "height": 1182
+    },
+    {
+      "name": "chromium-mobile-c03-second-shadow-theory.png",
+      "bytes": 100956,
+      "width": 390,
+      "height": 860
+    },
+    {
+      "name": "chromium-mobile-c03-second-shadow-wrong-theory.png",
+      "bytes": 139309,
+      "width": 390,
+      "height": 1446
+    },
+    {
+      "name": "chromium-mobile-c03-second-shadow-solved.png",
+      "bytes": 170768,
+      "width": 390,
+      "height": 1823
+    },
+    {
+      "name": "chromium-desktop-c06-nonexistent-ticket-opening.png",
+      "bytes": 184176,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c06-nonexistent-ticket-first-answer.png",
+      "bytes": 138843,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c06-nonexistent-ticket-evidence-focus.png",
+      "bytes": 160074,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c06-nonexistent-ticket-theory.png",
+      "bytes": 229565,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c06-nonexistent-ticket-wrong-theory.png",
+      "bytes": 245613,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c06-nonexistent-ticket-solved.png",
+      "bytes": 243237,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c06-nonexistent-ticket-opening.png",
+      "bytes": 89196,
+      "width": 390,
+      "height": 862
+    },
+    {
+      "name": "chromium-mobile-c06-nonexistent-ticket-first-answer.png",
+      "bytes": 57231,
+      "width": 390,
+      "height": 867
+    },
+    {
+      "name": "chromium-mobile-c06-nonexistent-ticket-evidence-focus.png",
+      "bytes": 80745,
+      "width": 390,
+      "height": 1182
+    },
+    {
+      "name": "chromium-mobile-c06-nonexistent-ticket-theory.png",
+      "bytes": 80072,
+      "width": 390,
+      "height": 860
+    },
+    {
+      "name": "chromium-mobile-c06-nonexistent-ticket-wrong-theory.png",
+      "bytes": 110823,
+      "width": 390,
+      "height": 1163
+    },
+    {
+      "name": "chromium-mobile-c06-nonexistent-ticket-solved.png",
+      "bytes": 131491,
+      "width": 390,
+      "height": 1540
+    },
+    {
+      "name": "chromium-desktop-c13-second-waterline-opening.png",
+      "bytes": 396566,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c13-second-waterline-first-answer.png",
+      "bytes": 346660,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c13-second-waterline-evidence-focus.png",
+      "bytes": 89253,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c13-second-waterline-theory.png",
+      "bytes": 348135,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c13-second-waterline-wrong-theory.png",
+      "bytes": 293198,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c13-second-waterline-solved.png",
+      "bytes": 328222,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c13-second-waterline-opening.png",
+      "bytes": 161167,
+      "width": 390,
+      "height": 885
+    },
+    {
+      "name": "chromium-mobile-c13-second-waterline-first-answer.png",
+      "bytes": 65611,
+      "width": 390,
+      "height": 890
+    },
+    {
+      "name": "chromium-mobile-c13-second-waterline-evidence-focus.png",
+      "bytes": 54747,
+      "width": 390,
+      "height": 1206
+    },
+    {
+      "name": "chromium-mobile-c13-second-waterline-theory.png",
+      "bytes": 99417,
+      "width": 390,
+      "height": 1436
+    },
+    {
+      "name": "chromium-mobile-c13-second-waterline-wrong-theory.png",
+      "bytes": 212389,
+      "width": 390,
+      "height": 2230
+    },
+    {
+      "name": "chromium-mobile-c13-second-waterline-solved.png",
+      "bytes": 222566,
+      "width": 390,
+      "height": 2645
+    },
+    {
+      "name": "chromium-desktop-c17-twelve-strikes-opening.png",
+      "bytes": 383487,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c17-twelve-strikes-first-answer.png",
+      "bytes": 331061,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c17-twelve-strikes-evidence-focus.png",
+      "bytes": 156462,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c17-twelve-strikes-theory.png",
+      "bytes": 317529,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c17-twelve-strikes-wrong-theory.png",
+      "bytes": 273971,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c17-twelve-strikes-solved.png",
+      "bytes": 305685,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c17-twelve-strikes-opening.png",
+      "bytes": 153763,
+      "width": 390,
+      "height": 862
+    },
+    {
+      "name": "chromium-mobile-c17-twelve-strikes-first-answer.png",
+      "bytes": 63839,
+      "width": 390,
+      "height": 867
+    },
+    {
+      "name": "chromium-mobile-c17-twelve-strikes-evidence-focus.png",
+      "bytes": 79268,
+      "width": 390,
+      "height": 1182
+    },
+    {
+      "name": "chromium-mobile-c17-twelve-strikes-theory.png",
+      "bytes": 100468,
+      "width": 390,
+      "height": 1436
+    },
+    {
+      "name": "chromium-mobile-c17-twelve-strikes-wrong-theory.png",
+      "bytes": 208439,
+      "width": 390,
+      "height": 2230
+    },
+    {
+      "name": "chromium-mobile-c17-twelve-strikes-solved.png",
+      "bytes": 213104,
+      "width": 390,
+      "height": 2645
+    },
+    {
+      "name": "chromium-desktop-c24-turned-painting-opening.png",
+      "bytes": 373861,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c24-turned-painting-first-answer.png",
+      "bytes": 324089,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c24-turned-painting-evidence-focus.png",
+      "bytes": 150792,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c24-turned-painting-theory.png",
+      "bytes": 311288,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c24-turned-painting-wrong-theory.png",
+      "bytes": 277519,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c24-turned-painting-solved.png",
+      "bytes": 318171,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c24-turned-painting-opening.png",
+      "bytes": 151380,
+      "width": 390,
+      "height": 862
+    },
+    {
+      "name": "chromium-mobile-c24-turned-painting-first-answer.png",
+      "bytes": 64720,
+      "width": 390,
+      "height": 867
+    },
+    {
+      "name": "chromium-mobile-c24-turned-painting-evidence-focus.png",
+      "bytes": 77497,
+      "width": 390,
+      "height": 1182
+    },
+    {
+      "name": "chromium-mobile-c24-turned-painting-theory.png",
+      "bytes": 105900,
+      "width": 390,
+      "height": 1597
+    },
+    {
+      "name": "chromium-mobile-c24-turned-painting-wrong-theory.png",
+      "bytes": 221719,
+      "width": 390,
+      "height": 2547
+    },
+    {
+      "name": "chromium-mobile-c24-turned-painting-solved.png",
+      "bytes": 240595,
+      "width": 390,
+      "height": 3000
+    },
+    {
+      "name": "chromium-desktop-c25-silent-second-bell-opening.png",
+      "bytes": 492253,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c25-silent-second-bell-first-answer.png",
+      "bytes": 451673,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c25-silent-second-bell-evidence-focus.png",
+      "bytes": 193400,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c25-silent-second-bell-theory.png",
+      "bytes": 402756,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c25-silent-second-bell-wrong-theory.png",
+      "bytes": 352765,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c25-silent-second-bell-solved.png",
+      "bytes": 390220,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c25-silent-second-bell-opening.png",
+      "bytes": 191542,
+      "width": 390,
+      "height": 885
+    },
+    {
+      "name": "chromium-mobile-c25-silent-second-bell-first-answer.png",
+      "bytes": 65231,
+      "width": 390,
+      "height": 890
+    },
+    {
+      "name": "chromium-mobile-c25-silent-second-bell-evidence-focus.png",
+      "bytes": 100996,
+      "width": 390,
+      "height": 1206
+    },
+    {
+      "name": "chromium-mobile-c25-silent-second-bell-theory.png",
+      "bytes": 106573,
+      "width": 390,
+      "height": 1436
+    },
+    {
+      "name": "chromium-mobile-c25-silent-second-bell-wrong-theory.png",
+      "bytes": 216918,
+      "width": 390,
+      "height": 2230
+    },
+    {
+      "name": "chromium-mobile-c25-silent-second-bell-solved.png",
+      "bytes": 230225,
+      "width": 390,
+      "height": 2645
+    },
+    {
+      "name": "chromium-desktop-c33-early-late-arrival-opening.png",
+      "bytes": 464356,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c33-early-late-arrival-first-answer.png",
+      "bytes": 409196,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c33-early-late-arrival-evidence-focus.png",
+      "bytes": 175254,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c33-early-late-arrival-theory.png",
+      "bytes": 378254,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c33-early-late-arrival-wrong-theory.png",
+      "bytes": 330730,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c33-early-late-arrival-solved.png",
+      "bytes": 373198,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c33-early-late-arrival-opening.png",
+      "bytes": 180179,
+      "width": 390,
+      "height": 862
+    },
+    {
+      "name": "chromium-mobile-c33-early-late-arrival-first-answer.png",
+      "bytes": 63501,
+      "width": 390,
+      "height": 867
+    },
+    {
+      "name": "chromium-mobile-c33-early-late-arrival-evidence-focus.png",
+      "bytes": 92852,
+      "width": 390,
+      "height": 1182
+    },
+    {
+      "name": "chromium-mobile-c33-early-late-arrival-theory.png",
+      "bytes": 106179,
+      "width": 390,
+      "height": 1436
+    },
+    {
+      "name": "chromium-mobile-c33-early-late-arrival-wrong-theory.png",
+      "bytes": 242244,
+      "width": 390,
+      "height": 2386
+    },
+    {
+      "name": "chromium-mobile-c33-early-late-arrival-solved.png",
+      "bytes": 247530,
+      "width": 390,
+      "height": 2839
+    },
+    {
+      "name": "chromium-desktop-c36-no-one-left-terminal-opening.png",
+      "bytes": 509895,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c36-no-one-left-terminal-first-answer.png",
+      "bytes": 457133,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c36-no-one-left-terminal-evidence-focus.png",
+      "bytes": 176987,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c36-no-one-left-terminal-theory.png",
+      "bytes": 397967,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c36-no-one-left-terminal-wrong-theory.png",
+      "bytes": 350302,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c36-no-one-left-terminal-solved.png",
+      "bytes": 384708,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c36-no-one-left-terminal-opening.png",
+      "bytes": 192841,
+      "width": 390,
+      "height": 862
+    },
+    {
+      "name": "chromium-mobile-c36-no-one-left-terminal-first-answer.png",
+      "bytes": 66052,
+      "width": 390,
+      "height": 867
+    },
+    {
+      "name": "chromium-mobile-c36-no-one-left-terminal-evidence-focus.png",
+      "bytes": 88085,
+      "width": 390,
+      "height": 1182
+    },
+    {
+      "name": "chromium-mobile-c36-no-one-left-terminal-theory.png",
+      "bytes": 104660,
+      "width": 390,
+      "height": 1436
+    },
+    {
+      "name": "chromium-mobile-c36-no-one-left-terminal-wrong-theory.png",
+      "bytes": 236988,
+      "width": 390,
+      "height": 2542
+    },
+    {
+      "name": "chromium-mobile-c36-no-one-left-terminal-solved.png",
+      "bytes": 247028,
+      "width": 390,
+      "height": 3005
+    },
+    {
+      "name": "chromium-desktop-c37-zeroed-pressure-gauge-opening.png",
+      "bytes": 336551,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c37-zeroed-pressure-gauge-first-answer.png",
+      "bytes": 293939,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c37-zeroed-pressure-gauge-evidence-focus.png",
+      "bytes": 176620,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c37-zeroed-pressure-gauge-theory.png",
+      "bytes": 330360,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c37-zeroed-pressure-gauge-wrong-theory.png",
+      "bytes": 275353,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c37-zeroed-pressure-gauge-solved.png",
+      "bytes": 305600,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c37-zeroed-pressure-gauge-opening.png",
+      "bytes": 123464,
+      "width": 390,
+      "height": 885
+    },
+    {
+      "name": "chromium-mobile-c37-zeroed-pressure-gauge-first-answer.png",
+      "bytes": 66998,
+      "width": 390,
+      "height": 890
+    },
+    {
+      "name": "chromium-mobile-c37-zeroed-pressure-gauge-evidence-focus.png",
+      "bytes": 83497,
+      "width": 390,
+      "height": 1206
+    },
+    {
+      "name": "chromium-mobile-c37-zeroed-pressure-gauge-theory.png",
+      "bytes": 116840,
+      "width": 390,
+      "height": 1579
+    },
+    {
+      "name": "chromium-mobile-c37-zeroed-pressure-gauge-wrong-theory.png",
+      "bytes": 246837,
+      "width": 390,
+      "height": 2449
+    },
+    {
+      "name": "chromium-mobile-c37-zeroed-pressure-gauge-solved.png",
+      "bytes": 264874,
+      "width": 390,
+      "height": 2900
+    },
+    {
+      "name": "chromium-desktop-c48-two-point-calibration-opening.png",
+      "bytes": 283387,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c48-two-point-calibration-first-answer.png",
+      "bytes": 240675,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c48-two-point-calibration-evidence-focus.png",
+      "bytes": 175171,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c48-two-point-calibration-theory.png",
+      "bytes": 304424,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c48-two-point-calibration-wrong-theory.png",
+      "bytes": 261665,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c48-two-point-calibration-solved.png",
+      "bytes": 290452,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c48-two-point-calibration-opening.png",
+      "bytes": 106395,
+      "width": 390,
+      "height": 862
+    },
+    {
+      "name": "chromium-mobile-c48-two-point-calibration-first-answer.png",
+      "bytes": 67317,
+      "width": 390,
+      "height": 890
+    },
+    {
+      "name": "chromium-mobile-c48-two-point-calibration-evidence-focus.png",
+      "bytes": 81729,
+      "width": 390,
+      "height": 1182
+    },
+    {
+      "name": "chromium-mobile-c48-two-point-calibration-theory.png",
+      "bytes": 116820,
+      "width": 390,
+      "height": 1579
+    },
+    {
+      "name": "chromium-mobile-c48-two-point-calibration-wrong-theory.png",
+      "bytes": 246986,
+      "width": 390,
+      "height": 2527
+    },
+    {
+      "name": "chromium-mobile-c48-two-point-calibration-solved.png",
+      "bytes": 268747,
+      "width": 390,
+      "height": 2974
+    },
+    {
+      "name": "chromium-desktop-c60-last-sample-before-stop-opening.png",
+      "bytes": 264623,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c60-last-sample-before-stop-first-answer.png",
+      "bytes": 215692,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c60-last-sample-before-stop-evidence-focus.png",
+      "bytes": 172542,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c60-last-sample-before-stop-theory.png",
+      "bytes": 293573,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c60-last-sample-before-stop-wrong-theory.png",
+      "bytes": 243335,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-desktop-c60-last-sample-before-stop-solved.png",
+      "bytes": 287765,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "chromium-mobile-c60-last-sample-before-stop-opening.png",
+      "bytes": 108163,
+      "width": 390,
+      "height": 885
+    },
+    {
+      "name": "chromium-mobile-c60-last-sample-before-stop-first-answer.png",
+      "bytes": 68468,
+      "width": 390,
+      "height": 890
+    },
+    {
+      "name": "chromium-mobile-c60-last-sample-before-stop-evidence-focus.png",
+      "bytes": 88114,
+      "width": 390,
+      "height": 1206
+    },
+    {
+      "name": "chromium-mobile-c60-last-sample-before-stop-theory.png",
+      "bytes": 115754,
+      "width": 390,
+      "height": 1516
+    },
+    {
+      "name": "chromium-mobile-c60-last-sample-before-stop-wrong-theory.png",
+      "bytes": 249020,
+      "width": 390,
+      "height": 2464
+    },
+    {
+      "name": "chromium-mobile-c60-last-sample-before-stop-solved.png",
+      "bytes": 277649,
+      "width": 390,
+      "height": 2990
+    }
+  ],
+  "inspectedScreenshots": [
+    "chromium-desktop-c01-cold-room-knock-opening.png",
+    "chromium-desktop-c01-cold-room-knock-evidence-focus.png",
+    "chromium-desktop-c01-cold-room-knock-theory.png",
+    "chromium-desktop-c37-zeroed-pressure-gauge-theory.png",
+    "chromium-mobile-c60-last-sample-before-stop-opening.png",
+    "chromium-mobile-c60-last-sample-before-stop-evidence-focus.png",
+    "chromium-mobile-c60-last-sample-before-stop-theory.png"
+  ],
+  "findings": [
+    {
+      "severity": "resolved",
+      "finding": "Opening evidence shelf exposed a discovered item before the first answer",
+      "resolution": "Disclosure now requires an answer, visited location or examined evidence."
+    },
+    {
+      "severity": "resolved",
+      "finding": "Legacy evidence WebP files repeated visual material",
+      "resolution": "Golden cases now use five distinct DOM/SVG evidence plate motifs with text-equivalent observations."
+    },
+    {
+      "severity": "resolved",
+      "finding": "Mobile proof controls could sit behind fixed navigation",
+      "resolution": "Reasoning columns now reserve 100px plus safe-area inset."
+    }
+  ],
+  "passed": true,
+  "qualification": "Screenshot review proves state coverage and resolves observable layout defects. It cannot establish human aesthetic preference or emotional impact."
+}

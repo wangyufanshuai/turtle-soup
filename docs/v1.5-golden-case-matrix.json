@@ -1,0 +1,343 @@
+{
+  "reportVersion": "1.5",
+  "generatedAt": "2026-08-24T04:12:21.721Z",
+  "goldenCases": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "present": true,
+      "cadence": "observe-ask-unlock",
+      "sceneLabel": "02:00 · 冷藏室封闭走廊",
+      "evidenceBehavior": "freeze-frame",
+      "evidenceAction": "逐帧核对",
+      "insight": "门的状态、声音来源与人的位置可以同时为真，却不必来自同一事件。",
+      "replayTone": "three-knocks",
+      "scenes": [
+        {
+          "path": "/scene-cold-room.svg",
+          "exists": true,
+          "bytes": 2499
+        }
+      ],
+      "evidenceCount": 10,
+      "evidenceVisualPlates": 5,
+      "boardModes": [],
+      "legacyDirectMode": "timeline",
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "present": true,
+      "cadence": "witness-identity-crosscheck",
+      "sceneLabel": "00:00 · 剧院后台交接",
+      "evidenceBehavior": "role-overlay",
+      "evidenceAction": "叠合身份层",
+      "insight": "把角色、服装和真实人物拆开后，“同一个演员”不再是可靠前提。",
+      "replayTone": "curtain-reveal",
+      "scenes": [
+        {
+          "path": "/scene-second-shadow.svg",
+          "exists": true,
+          "bytes": 1774
+        }
+      ],
+      "evidenceCount": 9,
+      "evidenceVisualPlates": 5,
+      "boardModes": [],
+      "legacyDirectMode": "identity-matrix",
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "present": true,
+      "cadence": "scan-cache-display",
+      "sceneLabel": "23:52 · 离线码头闸机",
+      "evidenceBehavior": "ledger-sync",
+      "evidenceAction": "校对时间戳",
+      "insight": "记录写入得晚，不代表人行动得晚；先确定数据在哪一层产生。",
+      "replayTone": "harbor-sync",
+      "scenes": [
+        {
+          "path": "/scene-nonexistent-ticket.svg",
+          "exists": true,
+          "bytes": 1430
+        }
+      ],
+      "evidenceCount": 9,
+      "evidenceVisualPlates": 5,
+      "boardModes": [],
+      "legacyDirectMode": "signal-chain",
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "present": true,
+      "cadence": "level-weight-release",
+      "sceneLabel": "密闭容器 · 第二条水线",
+      "evidenceBehavior": "fluid-level",
+      "evidenceAction": "比对液面",
+      "insight": "液面变化证明浸没体积改变，不自动证明容器增加了液体。",
+      "replayTone": "weight-release",
+      "scenes": [
+        {
+          "path": "/scene-second-waterline.svg",
+          "exists": true,
+          "bytes": 1231
+        }
+      ],
+      "evidenceCount": 10,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "state-trace"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "present": true,
+      "cadence": "dial-gear-strike",
+      "sceneLabel": "11:00 · 分离的钟面与报时轮",
+      "evidenceBehavior": "gear-phase",
+      "evidenceAction": "对齐轮系",
+      "insight": "钟面与敲击不是同一个计时输出；脱耦后，两条记录可以同时真实。",
+      "replayTone": "gear-desync",
+      "scenes": [
+        {
+          "path": "/scene-twelve-strikes.svg",
+          "exists": true,
+          "bytes": 1244
+        }
+      ],
+      "evidenceCount": 10,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "state-trace"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "present": true,
+      "cadence": "gallery-service-panorama",
+      "sceneLabel": "闭馆展厅 · 服务侧旋转墙",
+      "evidenceBehavior": "wall-pivot",
+      "evidenceAction": "旋转参照",
+      "insight": "画框没有在墙上转动；是承载它的墙体改变了朝向。",
+      "replayTone": "wall-turn",
+      "scenes": [
+        {
+          "path": "/scene-turned-painting.svg",
+          "exists": true,
+          "bytes": 1229
+        }
+      ],
+      "evidenceCount": 12,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "spatial-map"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "present": true,
+      "cadence": "trigger-debounce-output",
+      "sceneLabel": "门铃控制器 · 双触发窗口",
+      "evidenceBehavior": "debounce-trace",
+      "evidenceAction": "展开触发沿",
+      "insight": "控制器合并了输出，却没有抹去两次物理触发。",
+      "replayTone": "debounce-pulse",
+      "scenes": [
+        {
+          "path": "/assets/cases/c25/scene-desktop.webp",
+          "exists": true,
+          "bytes": 14692
+        },
+        {
+          "path": "/assets/cases/c25/scene-mobile.webp",
+          "exists": true,
+          "bytes": 7432
+        }
+      ],
+      "evidenceCount": 10,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "state-trace",
+        "measurement-model"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "present": true,
+      "cadence": "clock-source-alignment",
+      "sceneLabel": "三套时钟 · 同一到场事件",
+      "evidenceBehavior": "clock-alignment",
+      "evidenceAction": "对齐时基",
+      "insight": "“先到”与“迟到”分别来自不同的钟；矛盾存在于比较方式，而非行动本身。",
+      "replayTone": "clock-lock",
+      "scenes": [
+        {
+          "path": "/assets/cases/c33/scene-desktop.webp",
+          "exists": true,
+          "bytes": 12512
+        },
+        {
+          "path": "/assets/cases/c33/scene-mobile.webp",
+          "exists": true,
+          "bytes": 6680
+        }
+      ],
+      "evidenceCount": 12,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "timeline",
+        "sampling-window",
+        "provenance-chain"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "present": true,
+      "cadence": "count-card-route",
+      "sceneLabel": "终点站 · 换轨后的乘降记录",
+      "evidenceBehavior": "passenger-count",
+      "evidenceAction": "核对计数口径",
+      "insight": "“无人下车”只描述某个计数边界，不等于车上没有人完成转移。",
+      "replayTone": "terminal-count",
+      "scenes": [
+        {
+          "path": "/assets/cases/c36/scene-desktop.webp",
+          "exists": true,
+          "bytes": 15616
+        },
+        {
+          "path": "/assets/cases/c36/scene-mobile.webp",
+          "exists": true,
+          "bytes": 7814
+        }
+      ],
+      "evidenceCount": 14,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "aggregate-constraint",
+        "timeline",
+        "provenance-chain"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "present": true,
+      "cadence": "zero-reference-temperature",
+      "sceneLabel": "压力校准台 · 温漂零点",
+      "evidenceBehavior": "zero-drift",
+      "evidenceAction": "检查零点漂移",
+      "insight": "零点也会移动；显示为零不等于真实量为零。",
+      "replayTone": "needle-return",
+      "scenes": [
+        {
+          "path": "/assets/v14/c37-pressure-lab.svg",
+          "exists": true,
+          "bytes": 2240
+        },
+        {
+          "path": "/assets/v14/c37-pressure-lab-mobile.svg",
+          "exists": true,
+          "bytes": 1430
+        }
+      ],
+      "evidenceCount": 12,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "calibration-curve",
+        "measurement-model"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "present": true,
+      "cadence": "endpoints-midcurve-band",
+      "sceneLabel": "两点校准 · 未被约束的中段",
+      "evidenceBehavior": "curve-fit",
+      "evidenceAction": "拟合中段曲线",
+      "insight": "两个相同校准点只能约束两端；真正的偏差藏在没有被测量的中段。",
+      "replayTone": "curve-bend",
+      "scenes": [
+        {
+          "path": "/assets/v14/c48-curve-lab.svg",
+          "exists": true,
+          "bytes": 2114
+        },
+        {
+          "path": "/assets/v14/c48-curve-lab-mobile.svg",
+          "exists": true,
+          "bytes": 1280
+        }
+      ],
+      "evidenceCount": 13,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "calibration-curve",
+        "uncertainty-band"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "present": true,
+      "cadence": "command-buffer-sample-display",
+      "sceneLabel": "终止链 · 最后一窗采样",
+      "evidenceBehavior": "buffer-window",
+      "evidenceAction": "展开缓存窗口",
+      "insight": "最后一条样本可以晚于停止命令，却早于停止真正生效。",
+      "replayTone": "final-window",
+      "scenes": [
+        {
+          "path": "/assets/v14/c60-terminal-lab.svg",
+          "exists": true,
+          "bytes": 2281
+        },
+        {
+          "path": "/assets/v14/c60-terminal-lab-mobile.svg",
+          "exists": true,
+          "bytes": 1643
+        }
+      ],
+      "evidenceCount": 13,
+      "evidenceVisualPlates": 5,
+      "boardModes": [
+        "control-loop",
+        "signal-chain",
+        "sampling-window"
+      ],
+      "desktopLayout": "stage-adaptive",
+      "mobileLayout": "single-task",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
