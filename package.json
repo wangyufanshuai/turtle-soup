@@ -8,6 +8,14 @@
     "packages/*"
   ],
   "scripts": {
+    "audit:v15:language": "node --experimental-strip-types --experimental-transform-types tools/v15-language-audit.ts",
+    "audit:v15:experience": "node --experimental-strip-types --experimental-transform-types tools/v15-experience-audit.ts",
+    "audit:v15:browsers": "node --experimental-strip-types --experimental-transform-types tools/v15-browser-audit.ts",
+    "audit:v15:visual": "node --experimental-strip-types --experimental-transform-types tools/v15-visual-review.ts",
+    "audit:v15:performance": "node --experimental-strip-types --experimental-transform-types tools/v15-static-performance.ts",
+    "scan:v15": "node --experimental-strip-types --experimental-transform-types tools/v15-security-scan.ts",
+    "package:v15": "node --experimental-strip-types --experimental-transform-types tools/package-v15.ts",
+    "verify:v15": "node --experimental-strip-types --experimental-transform-types tools/v15-release-audit.ts",
     "generate:content": "node --experimental-strip-types --experimental-transform-types tools/generate-content-registry.ts",
     "generate:v12:patches": "node --experimental-strip-types --experimental-transform-types tools/generate-v12-patches.ts",
     "generate:v14:patches": "node --experimental-strip-types --experimental-transform-types tools/generate-v14-case-patches.ts",
@@ -74,7 +82,7 @@
     "v0.7:reports": "npm run synthetic:players && npm run stress:questions",
     "typecheck": "npm run generate:content && npm run typecheck:core && npm run typecheck --workspace @turtle-soup/web",
     "typecheck:core": "tsc --noEmit",
-    "test:core": "node --test --experimental-strip-types --experimental-transform-types packages/mystery-core/src/engine.test.ts packages/mystery-core/src/runtime.test.ts packages/mystery-core/src/multi-case.test.ts packages/mystery-core/src/corpus.test.ts packages/mystery-core/src/test-session.test.ts packages/mystery-core/src/save-envelope.test.ts packages/mystery-core/src/season-two.test.ts packages/mystery-core/src/season-three.test.ts packages/mystery-core/src/season-four.test.ts packages/mystery-core/src/mastery.test.ts packages/mystery-core/src/diagnostics.test.ts packages/mystery-core/src/presentation-patch.test.ts apps/web/lib/host-rewrite.test.ts",
+    "test:core": "node --test --experimental-strip-types --experimental-transform-types packages/mystery-core/src/engine.test.ts packages/mystery-core/src/runtime.test.ts packages/mystery-core/src/multi-case.test.ts packages/mystery-core/src/corpus.test.ts packages/mystery-core/src/test-session.test.ts packages/mystery-core/src/save-envelope.test.ts packages/mystery-core/src/season-two.test.ts packages/mystery-core/src/season-three.test.ts packages/mystery-core/src/season-four.test.ts packages/mystery-core/src/mastery.test.ts packages/mystery-core/src/diagnostics.test.ts packages/mystery-core/src/presentation-patch.test.ts packages/mystery-core/src/question-alias-pack.test.ts apps/web/lib/host-rewrite.test.ts",
     "check": "npm run typecheck && npm run test:core"
   },
   "devDependencies": {

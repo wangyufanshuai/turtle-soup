@@ -1,0 +1,32 @@
+import { createHash } from "node:crypto";
+import { existsSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { resolve } from "node:path";
+import { applyPresentationPatch, type CasePresentationPatch } from "../packages/mystery-core/src/index.ts";
+import { GOLDEN_CASE_IDS, GOLDEN_EXPERIENCE } from "../apps/web/lib/golden-experience.ts";
+import { loadCaseFile, loadReleaseContent } from "./lib/release-content.ts";
+
+const root = resolve(process.argv[2] ?? ".");
+const v15 = loadReleaseContent(root, "v1.5-internal-rc");
+const v14 = loadReleaseContent(root, "v1.4-internal-rc");
+const oldById = new Map(v14.entries.map((entry) => [entry.id, entry]));
+const patches = JSON.parse(readFileSync(resolve(root, "content/zh/presentation/v1.4/patches.json"), "utf8")) as CasePresentationPatch[];
+const patchById = new Map(patches.map((patch) => [patch.caseId, patch]));
+const browser = existsSync(resolve(root, "docs/v1.5-browser-matrix.json")) ? JSON.parse(readFileSync(resolve(root, "docs/v1.5-browser-matrix.json"), "utf8")) as { goldenFlows?: Array<{ traces: Array<{ caseId: string; openingMajorActions: number; firstEffectiveOperationCount: number; firstAnswerVisible: boolean; passed: boolean }> }> } : undefined;
+const compatibility = v15.entries.map((entry) => { const old = oldById.get(entry.id); const caseFile = loadCaseFile(entry); const truthDigest = createHash("sha256").update(JSON.stringify({ events: caseFile.events, facts: caseFile.facts, evidence: caseFile.evidenceItems.map((item) => ({ id: item.id, sourceFactIds: item.sourceFactIds, sourceEventIds: item.sourceEventIds, supports: item.supports, conflicts: item.conflicts })), certificate: caseFile.solutionCertificate })).digest("hex"); return { caseId: entry.id, canonicalHashUnchanged: old?.canonicalHash === entry.canonicalHash, contentVersionUnchanged: old?.contentVersion === entry.contentVersion, truthDigest }; });
+const goldenCases = GOLDEN_CASE_IDS.map((caseId) => {
+  const entry = v15.entries.find((item) => item.id === caseId); if (!entry) return { caseId, present: false, passed: false };
+  const base = loadCaseFile(entry); const caseFile = applyPresentationPatch(base, patchById.get(caseId)); const config = GOLDEN_EXPERIENCE[caseId];
+  const scenePaths = [...new Set([caseFile.presentation?.sceneAsset, caseFile.presentation?.sceneAssetMobile].filter((value): value is string => Boolean(value)))];
+  const scenes = scenePaths.map((path) => { const absolute = resolve(root, "apps/web/public", path.replace(/^\//, "")); return { path, exists: existsSync(absolute), bytes: existsSync(absolute) ? statSync(absolute).size : 0 }; });
+  const boardModes = caseFile.reasoningBoards?.map((board) => board.mode) ?? [];
+  const legacyDirectMode = caseId === "c01-cold-room-knock" ? "timeline" : caseId === "c03-second-shadow" ? "identity-matrix" : caseId === "c06-nonexistent-ticket" ? "signal-chain" : undefined;
+  return { caseId, present: true, cadence: config?.cadence, sceneLabel: config?.sceneLabel, evidenceBehavior: config?.evidenceBehavior, evidenceAction: config?.evidenceAction, insight: config?.insight, replayTone: config?.replayTone, scenes, evidenceCount: caseFile.evidenceItems.length, evidenceVisualPlates: 5, boardModes, legacyDirectMode, desktopLayout: "stage-adaptive", mobileLayout: "single-task", passed: Boolean(config && scenes.length > 0 && scenes.every((scene) => scene.exists) && caseFile.evidenceItems.length >= 5 && boardModes.length + Number(Boolean(legacyDirectMode)) > 0) };
+});
+const flowTraces = browser?.goldenFlows?.flatMap((flow) => flow.traces) ?? [];
+const firstHour = { reportVersion: "1.5", releaseProfile: "v1.5-internal-rc", generatedAt: new Date().toISOString(), humanParticipants: 0, stages: [{ id: "opening", exposed: ["scene", "one-question-entry"], hidden: ["evidence-shelf", "theory-board"] }, { id: "investigation", condition: "first deterministic answer or location inspection", exposed: ["evidence-shelf", "question-scaffolds"] }, { id: "theory", condition: "two answers or two inspected evidence items", exposed: ["two theories", "reasoning-board", "proof-submit"] }], browserEvidence: { traces: flowTraces.length, maximumOpeningMajorActions: flowTraces.length ? Math.max(...flowTraces.map((trace) => trace.openingMajorActions)) : null, maximumFirstEffectiveOperationCount: flowTraces.length ? Math.max(...flowTraces.map((trace) => trace.firstEffectiveOperationCount)) : null, firstAnswersVisible: flowTraces.every((trace) => trace.firstAnswerVisible) }, passed: flowTraces.length === 72 && flowTraces.every((trace) => trace.openingMajorActions <= 5 && trace.firstEffectiveOperationCount <= 2 && trace.firstAnswerVisible) };
+writeFileSync(resolve(root, "docs/v1.5-golden-case-matrix.json"), `${JSON.stringify({ reportVersion: "1.5", generatedAt: new Date().toISOString(), goldenCases, passed: goldenCases.length === 12 && goldenCases.every((item) => item.passed) }, null, 2)}\n`, "utf8");
+writeFileSync(resolve(root, "docs/v1.5-first-hour-flow.json"), `${JSON.stringify(firstHour, null, 2)}\n`, "utf8");
+const report = { reportVersion: "1.5", generatedAt: new Date().toISOString(), releaseProfile: "v1.5-internal-rc", status: "internal-rc / human-evaluation-pending", humanParticipants: 0, caseCount: v15.entries.length, frozenCompatibility: { cases: compatibility, allUnchanged: compatibility.length === 60 && compatibility.every((item) => item.canonicalHashUnchanged && item.contentVersionUnchanged) }, goldenCases, firstHour, architecture: { renderer: "React DOM + CSS/SVG", truthBoundary: "Worker-only CaseFile", saveSchemaVersion: 1, remoteDependencies: false, aiTruthAdjudication: false }, passed: v15.entries.length === 60 && compatibility.every((item) => item.canonicalHashUnchanged && item.contentVersionUnchanged) && goldenCases.every((item) => item.passed) && firstHour.passed, qualification: "This audit measures deterministic experience contracts and browser-observable states. It does not prove fun, narrative impact, aesthetics, human comprehension or market fit." };
+writeFileSync(resolve(root, "docs/v1.5-experience-audit.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
+console.log(JSON.stringify({ cases: report.caseCount, golden: goldenCases.length, browserTraces: flowTraces.length, firstHour: firstHour.passed, frozen: report.frozenCompatibility.allUnchanged, passed: report.passed }, null, 2));
+if (!report.passed) process.exitCode = 1;

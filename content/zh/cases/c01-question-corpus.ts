@@ -1,4 +1,5 @@
 import type { QueryCorpusEntry } from "../../../packages/mystery-core/src/authoring.ts";
+import { buildV15CorpusWrappers as wrappers } from "../question-aliases/v1.5/corpus-wrappers.ts";
 
 const seeds: Array<[string, string]> = [
   ["里面有人吗？", "query-person-inside"],
@@ -10,26 +11,6 @@ const seeds: Array<[string, string]> = [
   ["他是想拖延检查吗？", "query-lin-motive"],
   ["方砚后来进过冷藏室吗？", "query-fang-entered"],
   ["托盘是不是蓝色的？", "query-irrelevant-color"],
-];
-
-const wrappers = [
-  (text: string) => text,
-  (text: string) => `${text}？`,
-  (text: string) => ` ${text} `,
-  (text: string) => `请问，${text}`,
-  (text: string) => `我想确认：${text}`,
-  (text: string) => `${text}！`,
-  (text: string) => `现在能否确认${text.replace(/[？！]$/, "")}？`,
-  (text: string) => `调查记录里，${text}`,
-  (text: string) => `从现场看，${text}`,
-  (text: string) => `请验证：${text}`,
-  (text: string) => `${text.replace(/[？！]$/, "")}。`,
-  (text: string) => `我的问题是：${text}`,
-  (text: string) => `能不能判断${text.replace(/[？！]$/, "")}？`,
-  (text: string) => `请回答一个事实：${text}`,
-  (text: string) => `${text.replace(/[？！]$/, "")}（只回答事实）`,
-  (text: string) => `关于这个案件，${text}`,
-  (text: string) => `记录是否支持：${text}`,
 ];
 
 export function buildC01QuestionCorpus(): QueryCorpusEntry[] {
