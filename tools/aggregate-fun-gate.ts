@@ -1,53 +1,65 @@
-import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { basename, resolve } from "node:path";
+import {
+  buildFunGateReport,
+  parseObservationCsv,
+  validateSessionExport,
+  type ParsedInput,
+} from "./lib/fun-gate-evaluation.ts";
 import type { TestSessionExport } from "../packages/mystery-core/src/test-session.ts";
 
-const directory = resolve(process.argv[2] ?? "test-data/fun-gate");
+const directory = resolve(process.argv[2] ?? "test-data/fun-gate-v1.8");
 const outputPath = process.argv[3] ? resolve(process.argv[3]) : undefined;
-const files = (() => {
-  try { return readdirSync(directory).filter((name) => name.endsWith(".json") && name !== "batch-manifest.json"); } catch { return []; }
+const observationPath = resolve(process.argv[4] ?? resolve(directory, "observations.csv"));
+
+const jsonFiles = (() => {
+  try { return readdirSync(directory).filter((name) => name.endsWith(".json") && name !== "batch-manifest.json"); }
+  catch { return []; }
 })();
-const sessions = files.flatMap((filename) => {
+
+const sessionInput: ParsedInput<TestSessionExport> = { accepted: [], rejected: [] };
+for (const filename of jsonFiles) {
   try {
-    const value = JSON.parse(readFileSync(resolve(directory, filename), "utf8")) as Partial<TestSessionExport>;
-    if (value.schemaVersion !== 1 || typeof value.sessionId !== "string" || typeof value.testerId !== "string" || value.caseId !== "c01-cold-room-knock") return [];
-    const forbidden = ["rawQuestion", "commands", "facts", "events", "evidence", "solutionCertificate", "canonicalHypothesis", "answerText"];
-    if (forbidden.some((key) => key in value)) return [];
-    return [value as TestSessionExport];
-  } catch { return []; }
+    const parsed = JSON.parse(readFileSync(resolve(directory, filename), "utf8")) as unknown;
+    const validation = validateSessionExport(parsed, filename);
+    if (validation.value) sessionInput.accepted.push(validation.value);
+    else sessionInput.rejected.push({ source: filename, reasons: validation.reasons });
+  } catch (error) {
+    sessionInput.rejected.push({ source: filename, reasons: [error instanceof Error ? error.message : "invalid JSON"] });
+  }
+}
+
+const observationFilePresent = (() => {
+  try { readFileSync(observationPath); return true; }
+  catch { return false; }
+})();
+const observationInput = observationFilePresent
+  ? parseObservationCsv(readFileSync(observationPath, "utf8"))
+  : { accepted: [], rejected: [], rowCount: 0 };
+
+const report = buildFunGateReport({
+  sessions: sessionInput.accepted,
+  observations: observationInput.accepted,
+  sessionFilesFound: jsonFiles.length,
+  rejectedSessionFiles: sessionInput.rejected.length,
+  observationRowsFound: observationInput.rowCount,
+  rejectedObservationRows: observationInput.rejected.length,
 });
-const solved = sessions.filter((session) => session.solved);
-const solvedWithoutHint = solved.filter((session) => session.hintUseCount === 0);
-const average = (values: number[]) => values.length ? Math.round(values.reduce((sum, value) => sum + value, 0) / values.length) : null;
-const report = {
-  schemaVersion: 1,
-  generatedAt: new Date().toISOString(),
-  source: "local-json-only",
-  sessionCount: sessions.length,
-  uniqueTesterCount: new Set(sessions.map((session) => session.testerId)).size,
-  cases: [...new Set(sessions.map((session) => session.caseId))].sort(),
-  solvedRate: sessions.length ? Math.round((solved.length / sessions.length) * 100) : null,
-  solvedWithoutHintRate: sessions.length ? Math.round((solvedWithoutHint.length / sessions.length) * 100) : null,
-  replayOpenedRate: sessions.length ? Math.round((sessions.filter((session) => session.replayOpened).length / sessions.length) * 100) : null,
-  ambiguityRecoveryRate: sessions.filter((session) => session.ambiguityAttempts > 0).length ? Math.round((sessions.filter((session) => session.ambiguityAttempts > 0 && session.ambiguityRecoveries > 0).length / sessions.filter((session) => session.ambiguityAttempts > 0).length) * 100) : null,
-  averageSolveSeconds: average(solved.map((session) => session.durationSeconds ?? 0).filter((value) => value > 0)),
-  averageQuestionCount: average(sessions.map((session) => session.questionCount)),
-  funGate: {
-    minimumSessions: 10,
-    status: sessions.length >= 10 ? "ready-for-human-review" : "insufficient-human-sessions",
-    note: "This aggregate cannot establish comprehension, satisfaction, or fairness without the facilitator's observation sheet.",
-  },
+
+const result = {
+  ...report,
   inputAudit: {
+    ...report.inputAudit,
     directory,
-    jsonFilesFound: files.length,
-    acceptedSessionFiles: sessions.length,
-    rejectedFileCount: files.length - sessions.length,
-    onlyC01: sessions.every((session) => session.caseId === "c01-cold-room-knock"),
-    rawQuestionOrTruthFieldsAccepted: false,
+    observationFile: basename(observationPath),
+    observationFilePresent,
+    rejectedInputCount: sessionInput.rejected.length + observationInput.rejected.length,
   },
 };
+
 if (outputPath) {
   mkdirSync(resolve(outputPath, ".."), { recursive: true });
-  writeFileSync(outputPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  writeFileSync(outputPath, `${JSON.stringify(result, null, 2)}\n`, "utf8");
 }
-console.log(JSON.stringify(report, null, 2));
+
+console.log(JSON.stringify(result, null, 2));

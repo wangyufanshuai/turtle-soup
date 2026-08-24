@@ -1,1 +1,1 @@
-仅放入 C01 产品测试模式导出的 JSON 文件。不要放入答案、原始问题、命令日志、屏幕录制或含身份信息的文件。完成后运行：npm run aggregate:fun-gate -- test-data/fun-gate-v1.8 docs/v1.8-fun-gate-aggregate.json
+放入 C01 产品测试模式导出的 JSON 文件，以及按 evaluation/c01-observation-template.csv 填写的 observations.csv。不要放入答案、原始问题、命令日志、屏幕录制、访谈全文或含身份信息的文件。聚合器要求 session_id/tester_id 严格配对，缺失记录不会被补造。完成后运行：npm run aggregate:fun-gate -- test-data/fun-gate-v1.8 docs/v1.8-fun-gate-aggregate.json

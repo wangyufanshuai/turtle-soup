@@ -104,6 +104,7 @@
     "fun-gate:prepare": "node --experimental-strip-types --experimental-transform-types tools/prepare-fun-gate-batch.ts",
     "fun-gate:serve": "node --experimental-strip-types --experimental-transform-types tools/serve-fun-gate.ts",
     "fun-gate:verify": "node --experimental-strip-types --experimental-transform-types tools/verify-fun-gate-readiness.ts",
+    "fun-gate:smoke": "node --experimental-strip-types --experimental-transform-types tools/fun-gate-browser-smoke.ts",
     "verify:freeze": "node --experimental-strip-types --experimental-transform-types tools/verify-frozen-cases.ts",
     "fairness:sweep": "node --experimental-strip-types --experimental-transform-types tools/fairness-sweep.ts",
     "fairness:v10": "node --experimental-strip-types --experimental-transform-types tools/v10-automated-fairness.ts",
@@ -114,7 +115,7 @@
     "v0.7:reports": "npm run synthetic:players && npm run stress:questions",
     "typecheck": "npm run generate:content && npm run typecheck:core && npm run typecheck --workspace @turtle-soup/web",
     "typecheck:core": "tsc --noEmit",
-    "test:core": "node --test --experimental-strip-types --experimental-transform-types packages/mystery-core/src/engine.test.ts packages/mystery-core/src/runtime.test.ts packages/mystery-core/src/multi-case.test.ts packages/mystery-core/src/corpus.test.ts packages/mystery-core/src/test-session.test.ts packages/mystery-core/src/save-envelope.test.ts packages/mystery-core/src/season-two.test.ts packages/mystery-core/src/season-three.test.ts packages/mystery-core/src/season-four.test.ts packages/mystery-core/src/mastery.test.ts packages/mystery-core/src/diagnostics.test.ts packages/mystery-core/src/presentation-patch.test.ts packages/mystery-core/src/question-alias-pack.test.ts packages/mystery-core/src/budgeted-blackbox-runner.test.ts apps/web/lib/host-rewrite.test.ts apps/web/lib/golden-experience.test.ts apps/web/lib/investigation-momentum.test.ts",
+    "test:core": "node --test --experimental-strip-types --experimental-transform-types packages/mystery-core/src/engine.test.ts packages/mystery-core/src/runtime.test.ts packages/mystery-core/src/multi-case.test.ts packages/mystery-core/src/corpus.test.ts packages/mystery-core/src/test-session.test.ts packages/mystery-core/src/save-envelope.test.ts packages/mystery-core/src/season-two.test.ts packages/mystery-core/src/season-three.test.ts packages/mystery-core/src/season-four.test.ts packages/mystery-core/src/mastery.test.ts packages/mystery-core/src/diagnostics.test.ts packages/mystery-core/src/presentation-patch.test.ts packages/mystery-core/src/question-alias-pack.test.ts packages/mystery-core/src/budgeted-blackbox-runner.test.ts apps/web/lib/host-rewrite.test.ts apps/web/lib/golden-experience.test.ts apps/web/lib/investigation-momentum.test.ts tools/lib/fun-gate-evaluation.test.ts",
     "check": "npm run typecheck && npm run test:core"
   },
   "devDependencies": {

@@ -6,3 +6,8 @@ apps/*/out/
 npm-debug.log*
 .playwright-cli/
 apps/web/.generated/
+test-data/fun-gate-v1.8/*.json
+!test-data/fun-gate-v1.8/batch-manifest.json
+test-data/fun-gate-v1.8/observations.csv
+test-data/fun-gate-v1.8/interviews/
+test-data/fun-gate-v1.8/recordings/

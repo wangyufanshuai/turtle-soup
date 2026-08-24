@@ -1,27 +1,94 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-08-24T16:05:03.803Z",
-  "source": "local-json-only",
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-24T16:25:09.058Z",
+  "source": "local-session-json-plus-facilitator-observations",
+  "caseId": "c01-cold-room-knock",
+  "humanParticipants": 0,
   "sessionCount": 0,
   "uniqueTesterCount": 0,
-  "cases": [],
   "solvedRate": null,
   "solvedWithoutHintRate": null,
   "replayOpenedRate": null,
   "ambiguityRecoveryRate": null,
   "averageSolveSeconds": null,
   "averageQuestionCount": null,
+  "frictionCounts": {
+    "case": 0,
+    "fairness": 0,
+    "language": 0,
+    "interaction": 0,
+    "presentation": 0,
+    "none": 0
+  },
   "funGate": {
     "minimumSessions": 10,
+    "preferredSessions": 15,
     "status": "insufficient-human-sessions",
-    "note": "This aggregate cannot establish comprehension, satisfaction, or fairness without the facilitator's observation sheet."
+    "passed": false,
+    "gates": {
+      "understoodQuestionLoop": {
+        "numerator": 0,
+        "denominator": 0,
+        "threshold": ">= 80%",
+        "passed": false
+      },
+      "causalChainInFiveToTwentyMinutes": {
+        "numerator": 0,
+        "denominator": 0,
+        "threshold": ">= 70%",
+        "passed": false
+      },
+      "solvedFormalProofWithoutHint": {
+        "numerator": 0,
+        "denominator": 0,
+        "threshold": ">= 60%",
+        "passed": false
+      },
+      "proofSatisfactionPrimary": {
+        "numerator": 0,
+        "denominator": 0,
+        "threshold": ">= 70%",
+        "passed": false
+      },
+      "languageInterruption": {
+        "numerator": 0,
+        "denominator": 0,
+        "threshold": "<= 20%",
+        "passed": false
+      },
+      "irreversibleErrors": {
+        "numerator": 0,
+        "denominator": 0,
+        "threshold": "= 0",
+        "passed": false
+      },
+      "alternativeTheoryOrReplay": {
+        "numerator": 0,
+        "denominator": 0,
+        "threshold": ">= 3 participants",
+        "passed": false
+      }
+    },
+    "note": "至少需要 10 位不知道答案的真人测试者及完整主持观察；不得补造缺失会话。"
   },
   "inputAudit": {
-    "directory": "E:\\xuexi\\turtle-soup\\test-data\\fun-gate-v1.8",
-    "jsonFilesFound": 0,
+    "sessionFilesFound": 0,
     "acceptedSessionFiles": 0,
-    "rejectedFileCount": 0,
+    "rejectedSessionFiles": 0,
+    "observationRowsFound": 0,
+    "acceptedObservationRows": 0,
+    "rejectedObservationRows": 0,
+    "matchedParticipantCount": 0,
+    "unmatchedSessionCount": 0,
+    "unmatchedObservationCount": 0,
+    "duplicateSessionIdCount": 0,
+    "duplicateTesterIdCount": 0,
     "onlyC01": true,
-    "rawQuestionOrTruthFieldsAccepted": false
+    "rawQuestionOrTruthFieldsAccepted": false,
+    "allRequiredObservationsPresent": true,
+    "directory": "E:\\xuexi\\turtle-soup\\test-data\\fun-gate-v1.8",
+    "observationFile": "observations.csv",
+    "observationFilePresent": true,
+    "rejectedInputCount": 0
   }
 }

@@ -8,13 +8,19 @@
 
 主持人只能解释按钮和操作方式，不得提供对象名、问题方向、正确理论、证据组合或缺口答案。
 
+## 启动检查
+
+在测试前确认 `http://127.0.0.1:4173/case/c01-cold-room-knock/` 可打开，并在仓库根目录运行 `npm run fun-gate:verify`。如果使用新批次目录，先运行 `npm run fun-gate:prepare`；该命令不会覆盖已经存在的观察表。
+
 ## 必记事件
 
 - 会话开始与结束时间；
 - 首次有效操作时间；
 - 是否理解提问循环；
-- 歧义恢复、重复提问、错误理论与提示使用；
-- 是否形成因果链、是否正式结案、是否打开回放；
+- 首次完整形成正确因果链的时间；
+- 是否因语言匹配中断、是否发生不可逆错误状态；
+- 是否主动尝试第二种理论；
+- 歧义恢复、重复提问、错误理论、提示使用、正式结案与回放由产品导出提供；
 - 中断原因与测试者原话。
 
-评测后把产品导出的文件放入 `test-data/fun-gate/`，运行 `npm run aggregate:fun-gate -- test-data/fun-gate`。不得手工补造缺失记录。
+评测后把产品 JSON 和匿名观察表放入 `test-data/fun-gate-v1.8/`，运行 `npm run aggregate:fun-gate -- test-data/fun-gate-v1.8 docs/v1.8-fun-gate-aggregate.json`。不得手工补造缺失记录；原始录音、身份信息和访谈全文不得进入 Git。

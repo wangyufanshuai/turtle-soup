@@ -1,0 +1,49 @@
+{
+  "reportVersion": "1.8",
+  "generatedAt": "2026-08-24T16:26:00.041Z",
+  "releaseProfile": "v1.8-internal-rc",
+  "caseId": "c01-cold-room-knock",
+  "humanParticipants": 0,
+  "results": [
+    {
+      "viewport": "desktop",
+      "status": 200,
+      "title": "The Black Soup — 深汤案件档案",
+      "transcriptCount": 1,
+      "exports": {
+        "json": {
+          "valid": true,
+          "rejectedReasonCount": 0,
+          "hasForbiddenField": false
+        },
+        "csv": {
+          "hasHeader": true,
+          "lineCount": 2
+        }
+      },
+      "consoleErrorCount": 0,
+      "consoleErrors": []
+    },
+    {
+      "viewport": "mobile",
+      "status": 200,
+      "title": "The Black Soup — 深汤案件档案",
+      "transcriptCount": 1,
+      "exports": {
+        "json": {
+          "valid": true,
+          "rejectedReasonCount": 0,
+          "hasForbiddenField": false
+        },
+        "csv": {
+          "hasHeader": true,
+          "lineCount": 2
+        }
+      },
+      "consoleErrorCount": 0,
+      "consoleErrors": []
+    }
+  ],
+  "passed": true,
+  "qualification": "仅证明本地干净浏览器中的 C01 提问和匿名 JSON/CSV 导出可用，不代表真人理解、乐趣或 Fun Gate 通过。"
+}
