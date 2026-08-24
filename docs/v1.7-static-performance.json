@@ -1,0 +1,24 @@
+{
+  "reportVersion": "1.7",
+  "releaseProfile": "v1.7-internal-rc",
+  "generatedAt": "2026-08-24T13:53:26.865Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "budgets": {
+    "totalBytes": 8000000,
+    "initialJavaScriptBytes": 1400000,
+    "maximumAssetBytes": 450000,
+    "sourceMaps": 0
+  },
+  "actual": {
+    "totalBytes": 6613956,
+    "initialJavaScriptBytes": 651791,
+    "maximumAssetBytes": 389209,
+    "sourceMaps": 0,
+    "javascriptBytes": 3390038,
+    "fileCount": 856
+  },
+  "cacheIdentity": "black-soup-v17-golden-path-rc-1",
+  "failures": [],
+  "passed": true
+}

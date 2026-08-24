@@ -17,9 +17,11 @@ import { loadMastery, saveMastery } from "@/lib/mastery-store";
 import { useLocalDiagnostics } from "@/lib/use-local-diagnostics";
 import { EvidenceInspector } from "./evidence-inspector";
 import { LegacyTheoryWorkbench } from "./legacy-theory-workbench";
-import { goldenExperience } from "@/lib/golden-experience";
+import { goldenExperience, goldenPathStep } from "@/lib/golden-experience";
+import { HintLadder } from "./hint-ladder";
 
 const ANSWERS: Record<string, string> = { yes: "是", no: "不是", partial: "部分相关", unknown: "信息不足", irrelevant: "无关", invalid_premise: "前提不成立", unanswerable: "无法判断", unrecognized: "无法识别" };
+const PROOF_GAP_LABELS: Record<string, string> = { time: "时间关系", space: "空间关系", source: "来源链", identity: "身份关系", measurement: "测量模型", "state-transition": "状态转换", "alternative-exclusion": "替代路径排除" };
 
 function lastMessage(events: GameEvent[]) {
   const event = events.at(-1);
@@ -37,6 +39,14 @@ function lastMessage(events: GameEvent[]) {
   if (event.type === "replay_mode_started") return "重玩挑战已经开始，案件状态已安全重置。";
   if (event.type === "command_rejected") return event.message;
   return "记录已更新。";
+}
+
+function latestProofGap(events: GameEvent[]) {
+  for (let index = events.length - 1; index >= 0; index -= 1) {
+    const event = events[index];
+    if (event.type === "theory_judged" && event.judgement !== "solved" && event.proofFailureCategory) return event.proofFailureCategory;
+  }
+  return undefined;
 }
 
 function actionLabel(id: string, fallback: string) {
@@ -74,6 +84,7 @@ export function VariantShell({ projection, events, restoreStatus, saveState, onl
   const [highContrast, setHighContrast] = useState(false);
   const [activeBoardId, setActiveBoardId] = useState("");
   const [collapsedBoardIds, setCollapsedBoardIds] = useState<string[]>([]);
+  const [chainCollapsed, setChainCollapsed] = useState(false);
   const settingsRef = useRef<HTMLElement>(null);
   const settingsButtonRef = useRef<HTMLButtonElement>(null);
   const audioRef = useRef<AudioEngine | null>(null);
@@ -86,9 +97,11 @@ export function VariantShell({ projection, events, restoreStatus, saveState, onl
   const layout = projection.case.presentation.layoutId;
   const caseCode = projection.case.id.match(/^(c\d+)/)?.[1] ?? "c01";
   const golden = goldenExperience(projection.case.id);
+  const pathStep = goldenPathStep(projection.case.id);
+  const lastProofGap = latestProofGap(events);
   const sceneDesktop = projection.case.presentation.sceneAsset;
   const sceneMobile = projection.case.presentation.sceneAssetMobile ?? sceneDesktop;
-  const soundscape = getSoundscapeProfile(projection.case.id);
+  const soundscape = getSoundscapeProfile(projection.case.id, layout);
   const legacyProfile = layout === "snow-route"
     ? { kicker: "NIGHT ROUTE / PHYSICAL TRACE", scene: "雪面与维护路线", hint: "雪开始后，脚印不是唯一的移动证据", left: "ROUTE RECONSTRUCTION", middle: "RADIO & RECORDS", chain: "人 / 载体 / 雪面 / 时间", placeholder: "例如：“雪是什么时候开始下的？”…" }
     : layout === "second-shadow"
@@ -119,7 +132,7 @@ export function VariantShell({ projection, events, restoreStatus, saveState, onl
     chain: projection.reasoningBoards[0]?.title ?? "多维证明链",
     placeholder: `例如：${projection.questionScaffolds[0]?.label ?? "这条记录的来源是什么？"}`,
   } : legacyProfile;
-  const profile = golden ? { ...baseProfile, scene: golden.sceneLabel, hint: golden.sceneHint } : baseProfile;
+  const profile = golden ? { ...baseProfile, scene: golden.sceneLabel, hint: "只陈列公开观察；推理方向需主动展开" } : baseProfile;
   const navLabels = projection.case.presentation.mobileNavigation;
   useEffect(() => {
     const first = projection.reasoningBoards[0]?.id ?? "";
@@ -159,7 +172,7 @@ export function VariantShell({ projection, events, restoreStatus, saveState, onl
     localStorage.setItem("black-soup-settings", JSON.stringify({ ...previous, muted, ambient, effectsVolume, ambientVolume, reducedMotion, highContrast }));
   }, [muted, ambient, effectsVolume, ambientVolume, reducedMotion, highContrast]);
   useEffect(() => {
-    const audio = new AudioEngine(projection.case.id);
+    const audio = new AudioEngine(projection.case.id, layout);
     audioRef.current = audio;
     setAudioSupported(AudioEngine.isSupported());
     const onVisibility = () => audio.setPageHidden(document.hidden);
@@ -175,7 +188,7 @@ export function VariantShell({ projection, events, restoreStatus, saveState, onl
       audio.dispose();
       if (audioRef.current === audio) audioRef.current = null;
     };
-  }, [projection.case.id]);
+  }, [projection.case.id, layout]);
   useEffect(() => {
     const audio = audioRef.current;
     audio?.setMuted(muted);
@@ -228,9 +241,14 @@ export function VariantShell({ projection, events, restoreStatus, saveState, onl
   const revealEvidence = projection.transcript.length > 0 || hasObservedLocation || inspectedEvidenceCount > 0 || projection.solved;
   const revealTheory = projection.transcript.length >= 2 || inspectedEvidenceCount >= 2 || Boolean(active?.eventIds.length) || projection.solved;
   const experienceStage = revealTheory ? "theory" : revealEvidence ? "investigation" : "opening";
+  const activeBoard = projection.reasoningBoards.find((board) => board.id === activeBoardId);
+  const activeBoardPlaced = activeBoard?.slots.filter((slot) => slot.itemId).length ?? 0;
+  const activeBoardReady = Boolean(activeBoard && activeBoardPlaced === activeBoard.slots.length && (activeBoard.slots.length <= 1 || activeBoard.connections.length >= activeBoard.slots.length - 1));
+  const activeBoardCollapsed = activeBoard ? collapsedBoardIds.includes(activeBoard.id) : false;
+  const chainReady = Boolean(active && active.eventIds.length > 0 && (projection.solved || active.eventIds.length >= projection.eventOptions.length));
 
   return (
-    <main id="main-content" tabIndex={-1} className={styles.variant} data-layout={layout} data-experience-stage={experienceStage} data-golden-cadence={golden?.cadence} data-replay-tone={golden?.replayTone} data-evidence-mode={projection.case.presentation.evidenceVisualMode} data-high-contrast={highContrast || undefined} data-reduced-motion={reducedMotion || undefined} style={{ "--accent": projection.case.presentation.accent } as CSSProperties}>
+    <main id="main-content" tabIndex={-1} className={styles.variant} data-layout={layout} data-experience-stage={experienceStage} data-complex-proof={projection.reasoningBoards.length > 1 || undefined} data-golden-cadence={golden?.cadence} data-replay-tone={golden?.replayTone} data-evidence-mode={projection.case.presentation.evidenceVisualMode} data-high-contrast={highContrast || undefined} data-reduced-motion={reducedMotion || undefined} style={{ "--accent": projection.case.presentation.accent } as CSSProperties}>
       <header className={styles.topbar} inert={settingsOpen || undefined}>
         <Link prefetch={false} href="/" className={styles.back}>← 案件档案</Link>
         <div className={styles.title}><small>{profile.kicker}</small><h1>{projection.case.title}</h1></div>
@@ -253,10 +271,10 @@ export function VariantShell({ projection, events, restoreStatus, saveState, onl
           <div className={styles.sectionTag}>02 / {profile.middle}</div>
           <div className={styles.signal} role="status" aria-live="polite"><span>ARCHIVIST</span><b>{lastMessage(events)}</b></div>
           <div className={styles.transcript} aria-live="polite" tabIndex={0} aria-label="主持问答记录，可滚动">{projection.transcript.length === 0 ? <div className={styles.firstRun}><small>ONE FACT AT A TIME</small><p>第一问只需要固定一个事实：对象、动作、时间或来源。歧义和无法识别都不会改变案件状态。</p></div> : projection.transcript.map((entry) => <article key={entry.id} data-transcript-entry={entry.id}><small>YOU · {entry.repeated ? "REPEATED" : "QUERY"}</small><p>{entry.rawQuestion}</p><div data-code={entry.answerCode}><b>{ANSWERS[entry.answerCode]}</b><span>{entry.answerText}{host.rewrites[entry.id] && <em className={styles.hostRewrite}><i>本地改写主持</i>{host.rewrites[entry.id].text}</em>}</span></div></article>)}</div>
-          {revealTheory && golden && <aside className={styles.insight} role="status"><small>CAUSAL SHIFT / 顿悟节点</small><p>{golden.insight}</p></aside>}
           {projection.interpretation && <div ref={interpretationRef} className={styles.interpretation} role="group" aria-label="确认问题解释" aria-live="polite"><small>选择你要验证的事实</small><strong>“{projection.interpretation.rawText}”</strong>{projection.interpretation.candidates.map((candidate) => <button key={candidate.queryId} onClick={() => dispatch({ type: "confirm_interpretation", queryId: candidate.queryId })}>{candidate.label}<span>{candidate.predicate}</span></button>)}</div>}
           <form className={styles.questionForm} onSubmit={submitQuestion}><label htmlFor="variant-question">写下调查问题</label><div><input ref={questionInputRef} id="variant-question" name="investigation-question" autoComplete="off" value={question} onChange={(event) => setQuestion(event.target.value)} placeholder={profile.placeholder} /><button disabled={!question.trim()}>验证</button></div></form>
           <div className={styles.prompts}>{projection.questionScaffolds.slice(0, projection.transcript.length === 0 ? 1 : 4).map((candidate) => <button key={candidate.queryId} onClick={() => dispatch({ type: "ask_text", rawText: candidate.label })}>{candidate.label}</button>)}</div>
+          {pathStep && <HintLadder caseId={projection.case.id} hints={pathStep.hints} proofGap={lastProofGap} onReveal={markHintUsed} />}
           <button className={styles.undoQuestion} disabled={projection.transcript.length === 0} onClick={() => dispatch({ type: "undo_last_question" })}>撤销上一轮提问</button>
         </section>
         {revealTheory && <section id="variant-theory" className={`${styles.right} ${panel === "theory" ? styles.mobileVisible : ""}`}>
@@ -265,9 +283,11 @@ export function VariantShell({ projection, events, restoreStatus, saveState, onl
           <div className={styles.theoryTabs}>{projection.theoryDrafts.map((draft) => <button key={draft.id} data-active={draft.id === projection.activeTheoryId || undefined} onClick={() => dispatch({ type: "select_theory", theoryId: draft.id })}>{draft.title}<small>{draft.eventIds.length} events</small></button>)}</div>
           {active && <>
             <label className="srOnly" htmlFor="variant-hypothesis">当前解释路径</label><select id="variant-hypothesis" className={styles.hypothesis} value={active.hypothesisId} onChange={(event) => dispatch({ type: "set_theory_hypothesis", theoryId: active.id, hypothesisId: event.target.value })}>{projection.theoryOptions.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}</select>
-            {projection.reasoningBoards.length > 0 && <div className={styles.boardTabs} role="tablist" aria-label="选择推理板">{projection.reasoningBoards.map((board) => { const placed = board.slots.filter((slot) => slot.itemId).length; const complete = placed === board.slots.length; return <button key={board.id} role="tab" aria-selected={activeBoardId === board.id} data-active={activeBoardId === board.id || undefined} onClick={() => { setActiveBoardId(board.id); setCollapsedBoardIds((current) => current.filter((id) => id !== board.id)); }}>{board.title}<small>{placed}/{board.slots.length} {complete ? "· 已闭合" : "· 待补"}</small></button>; })}</div>}
-            {projection.reasoningBoards.find((board) => board.id === activeBoardId) && <ReasoningBoard board={projection.reasoningBoards.find((board) => board.id === activeBoardId)!} dispatch={dispatch} />}
-            {projection.reasoningBoards.length === 0 ? <LegacyTheoryWorkbench caseId={projection.case.id} draft={active} events={projection.eventOptions} dispatch={dispatch} /> : <><div className={styles.chain}><header><span>{profile.chain}</span><small>{active.evidenceIds.length} linked</small></header>{active.eventIds.length === 0 ? <p className={styles.empty}>把已知事件放进这条证明链。</p> : <ol>{active.eventIds.map((id, index) => { const item = eventMap.get(id); return item ? <li key={id}><i>{index + 1}</i><time>{item.timeLabel}</time><b>{item.label}</b><nav><button disabled={index === 0} onClick={() => dispatch({ type: "move_theory_event", theoryId: active.id, eventId: id, direction: -1 })} aria-label="事件上移">↑</button><button disabled={index === active.eventIds.length - 1} onClick={() => dispatch({ type: "move_theory_event", theoryId: active.id, eventId: id, direction: 1 })} aria-label="事件下移">↓</button><button onClick={() => dispatch({ type: "remove_theory_event", theoryId: active.id, eventId: id })} aria-label="移除事件">×</button></nav></li> : null; })}</ol>}</div><div className={styles.eventBank}>{projection.eventOptions.map((item) => <button key={item.id} disabled={active.eventIds.includes(item.id)} onClick={() => dispatch({ type: "upsert_theory_event", theoryId: active.id, eventId: item.id })}><time>{item.timeLabel}</time>{item.label}</button>)}</div></>}
+            {projection.reasoningBoards.length > 1 && <div className={styles.mobileTaskBar} data-mobile-proof-controls><label>当前任务<select aria-label="切换当前推理板" value={activeBoardId} onChange={(event) => { setActiveBoardId(event.target.value); setCollapsedBoardIds((current) => current.filter((id) => id !== event.target.value)); }}>{projection.reasoningBoards.map((board) => <option key={board.id} value={board.id} data-board-mode={board.mode}>{board.title}</option>)}</select></label><span data-proof-gap>{lastProofGap ? `缺口：${PROOF_GAP_LABELS[lastProofGap]}` : "缺口：等待首次提交"}</span><button disabled={!projection.canSubmit || projection.solved} onClick={() => dispatch({ type: "submit_theory", theoryId: active.id })}>提交</button></div>}
+            {lastProofGap && <div className={styles.proofGap} role="status" data-proof-gap-category={lastProofGap}><small>CURRENT PROOF GAP</small><b>{PROOF_GAP_LABELS[lastProofGap]}</b><span>只显示缺口类别，不给出下一事件或标准问题。</span></div>}
+            {projection.reasoningBoards.length > 0 && <div className={styles.boardTabs} role="tablist" aria-label="选择推理板">{projection.reasoningBoards.map((board) => { const placed = board.slots.filter((slot) => slot.itemId).length; const ready = placed === board.slots.length && (board.slots.length <= 1 || board.connections.length >= board.slots.length - 1); return <button key={board.id} role="tab" aria-selected={activeBoardId === board.id} data-active={activeBoardId === board.id || undefined} onClick={() => { setActiveBoardId(board.id); setCollapsedBoardIds((current) => current.filter((id) => id !== board.id)); }}>{board.title}<small>{placed}/{board.slots.length} {ready ? "· 已填满" : "· 待补"}</small></button>; })}</div>}
+            {activeBoard && (activeBoardCollapsed ? <div className={styles.boardSummary} data-board-collapsed><span><small>{activeBoard.mode}</small><b>{activeBoard.title}</b><em>{activeBoardPlaced}/{activeBoard.slots.length} 槽位 · {activeBoard.connections.length} 条关系</em></span><button onClick={() => setCollapsedBoardIds((current) => current.filter((id) => id !== activeBoard.id))}>重新展开</button></div> : <><div className={styles.boardControl}><span>{activeBoardReady ? "当前板已填满，仍会在统一提交时校验" : "一次只完成当前推理任务"}</span>{activeBoardReady && <button onClick={() => setCollapsedBoardIds((current) => [...new Set([...current, activeBoard.id])])}>收起当前板</button>}</div><ReasoningBoard board={activeBoard} dispatch={dispatch} /></>)}
+            {projection.reasoningBoards.length === 0 ? <LegacyTheoryWorkbench caseId={projection.case.id} draft={active} events={projection.eventOptions} dispatch={dispatch} /> : <><div className={styles.chain} data-collapsed={chainCollapsed && chainReady || undefined}><header><span>{profile.chain}</span><div><small>{active.eventIds.length} events · {active.evidenceIds.length} linked</small>{chainReady && <button aria-expanded={!chainCollapsed} onClick={() => setChainCollapsed((value) => !value)}>{chainCollapsed ? "展开" : "收起"}</button>}</div></header>{chainCollapsed && chainReady ? <p className={styles.chainSummary}>事件链已排列；展开后可继续调整顺序。统一提交仍会验证全部事件与推理板。</p> : <>{active.eventIds.length === 0 ? <p className={styles.empty}>把已知事件放进这条证明链。</p> : <ol>{active.eventIds.map((id, index) => { const item = eventMap.get(id); return item ? <li key={id}><i>{index + 1}</i><time>{item.timeLabel}</time><b>{item.label}</b><nav><button disabled={index === 0} onClick={() => dispatch({ type: "move_theory_event", theoryId: active.id, eventId: id, direction: -1 })} aria-label="事件上移">↑</button><button disabled={index === active.eventIds.length - 1} onClick={() => dispatch({ type: "move_theory_event", theoryId: active.id, eventId: id, direction: 1 })} aria-label="事件下移">↓</button><button onClick={() => dispatch({ type: "remove_theory_event", theoryId: active.id, eventId: id })} aria-label="移除事件">×</button></nav></li> : null; })}</ol>}<div className={styles.eventBank}>{projection.eventOptions.map((item) => <button key={item.id} disabled={active.eventIds.includes(item.id)} onClick={() => dispatch({ type: "upsert_theory_event", theoryId: active.id, eventId: item.id })}><time>{item.timeLabel}</time>{item.label}</button>)}</div></>}</div></>}
             <div className={styles.proofCount}>证据关联：<b>{active.evidenceIds.length}</b> / {projection.evidence.length}</div>
             <label className={styles.motive}>驱动条件<select value={active.motiveKey ?? ""} onChange={(event) => dispatch({ type: "set_theory_motive", theoryId: active.id, motiveKey: event.target.value || undefined })}><option value="">尚未证明</option>{activeTheoryOption?.motiveOptions.map((motive) => <option key={motive.id} value={motive.id}>{motive.label}</option>)}</select></label>
             <button className={styles.submit} disabled={!projection.canSubmit || projection.solved} onClick={() => dispatch({ type: "submit_theory", theoryId: active.id })}>{projection.solved ? "CASE CLOSED" : "提交证明"}</button>

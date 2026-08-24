@@ -1,0 +1,8 @@
+.ladder { max-width:600px; margin:12px auto; border:1px solid var(--line); background:linear-gradient(110deg,color-mix(in srgb,var(--accent,#b8cf79) 6%,transparent),#0d1013); }
+.ladder > header { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:10px 12px; }
+.ladder header div { display:grid; gap:3px; }.ladder header small { color:var(--accent,#b8cf79); font:7px var(--mono); letter-spacing:.13em; }.ladder header b { font:500 12px var(--display); }
+.ladder header button { min-height:32px; border:1px solid color-mix(in srgb,var(--accent,#b8cf79) 58%,var(--line)); background:transparent; color:var(--accent,#b8cf79); padding:6px 9px; cursor:pointer; font:8px var(--mono); }
+.ladder header button:hover,.ladder header button:focus-visible { background:color-mix(in srgb,var(--accent,#b8cf79) 9%,transparent); }
+.ladder ol { list-style:none; margin:0; padding:0 12px; }.ladder li { display:grid; grid-template-columns:24px 1fr; gap:8px; padding:9px 0; border-top:1px solid var(--line); }.ladder li > span { color:var(--accent,#b8cf79); font:8px var(--mono); }.ladder li div { display:grid; gap:3px; }.ladder li small { color:var(--muted); font:7px var(--mono); letter-spacing:.08em; }.ladder li p { margin:0; color:var(--paper); font:11px/1.55 var(--display); }
+.end { margin:0; padding:8px 12px; border-top:1px solid var(--line); color:var(--muted); font:7px/1.5 var(--mono); }
+@media(max-width:850px){.ladder{margin:10px 0}.ladder>header{align-items:flex-start}.ladder header button{max-width:130px}}

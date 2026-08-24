@@ -1,0 +1,215 @@
+{
+  "reportVersion": "1.7",
+  "releaseProfile": "v1.7-internal-rc",
+  "generatedAt": "2026-08-24T13:53:26.830Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "reviewer": "Codex visual inspection of final Chromium screenshots",
+  "requiredScreenshotCount": 18,
+  "screenshots": [
+    {
+      "name": "desktop-home-golden-path.png",
+      "exists": true,
+      "bytes": 1352959,
+      "width": 1440,
+      "height": 3542,
+      "expectedWidth": 1440,
+      "passed": true
+    },
+    {
+      "name": "mobile-home-golden-path.png",
+      "exists": true,
+      "bytes": 827482,
+      "width": 390,
+      "height": 8059,
+      "expectedWidth": 390,
+      "passed": true
+    },
+    {
+      "name": "desktop-c01-hint-level-3.png",
+      "exists": true,
+      "bytes": 489074,
+      "width": 1440,
+      "height": 900,
+      "expectedWidth": 1440,
+      "passed": true
+    },
+    {
+      "name": "mobile-c01-hint-level-3.png",
+      "exists": true,
+      "bytes": 98569,
+      "width": 390,
+      "height": 1246,
+      "expectedWidth": 390,
+      "passed": true
+    },
+    {
+      "name": "desktop-c25-silent-second-bell-language-path.png",
+      "exists": true,
+      "bytes": 457515,
+      "width": 1440,
+      "height": 900,
+      "expectedWidth": 1440,
+      "passed": true
+    },
+    {
+      "name": "mobile-c25-silent-second-bell-language-path.png",
+      "exists": true,
+      "bytes": 66690,
+      "width": 390,
+      "height": 890,
+      "expectedWidth": 390,
+      "passed": true
+    },
+    {
+      "name": "desktop-c37-zeroed-pressure-gauge-language-path.png",
+      "exists": true,
+      "bytes": 300620,
+      "width": 1440,
+      "height": 900,
+      "expectedWidth": 1440,
+      "passed": true
+    },
+    {
+      "name": "mobile-c37-zeroed-pressure-gauge-language-path.png",
+      "exists": true,
+      "bytes": 70714,
+      "width": 390,
+      "height": 890,
+      "expectedWidth": 390,
+      "passed": true
+    },
+    {
+      "name": "desktop-c33-early-late-arrival-proof-gap.png",
+      "exists": true,
+      "bytes": 315469,
+      "width": 1440,
+      "height": 900,
+      "expectedWidth": 1440,
+      "passed": true
+    },
+    {
+      "name": "mobile-c33-early-late-arrival-proof-gap.png",
+      "exists": true,
+      "bytes": 221651,
+      "width": 390,
+      "height": 2457,
+      "expectedWidth": 390,
+      "passed": true
+    },
+    {
+      "name": "desktop-c36-no-one-left-terminal-proof-gap.png",
+      "exists": true,
+      "bytes": 329766,
+      "width": 1440,
+      "height": 900,
+      "expectedWidth": 1440,
+      "passed": true
+    },
+    {
+      "name": "mobile-c36-no-one-left-terminal-proof-gap.png",
+      "exists": true,
+      "bytes": 221149,
+      "width": 390,
+      "height": 2613,
+      "expectedWidth": 390,
+      "passed": true
+    },
+    {
+      "name": "desktop-c48-two-point-calibration-investigation.png",
+      "exists": true,
+      "bytes": 300704,
+      "width": 1440,
+      "height": 900,
+      "expectedWidth": 1440,
+      "passed": true
+    },
+    {
+      "name": "mobile-c48-two-point-calibration-investigation.png",
+      "exists": true,
+      "bytes": 131682,
+      "width": 390,
+      "height": 1673,
+      "expectedWidth": 390,
+      "passed": true
+    },
+    {
+      "name": "desktop-c60-mobile-task-controls.png",
+      "exists": true,
+      "bytes": 267023,
+      "width": 1440,
+      "height": 900,
+      "expectedWidth": 1440,
+      "passed": true
+    },
+    {
+      "name": "mobile-c60-mobile-task-controls.png",
+      "exists": true,
+      "bytes": 90259,
+      "width": 390,
+      "height": 844,
+      "expectedWidth": 390,
+      "passed": true
+    },
+    {
+      "name": "desktop-c60-collapsed-proof.png",
+      "exists": true,
+      "bytes": 309727,
+      "width": 1440,
+      "height": 900,
+      "expectedWidth": 1440,
+      "passed": true
+    },
+    {
+      "name": "mobile-c60-collapsed-proof.png",
+      "exists": true,
+      "bytes": 102636,
+      "width": 390,
+      "height": 844,
+      "expectedWidth": 390,
+      "passed": true
+    }
+  ],
+  "sourceChecks": {
+    "restingSkipLinkInvisible": true,
+    "screenshotFocusReset": true,
+    "screenshotSkipLinkAssertion": true,
+    "mobileTaskEvidence": true,
+    "collapsedProofEvidence": true
+  },
+  "manualReview": [
+    {
+      "surface": "home-desktop/mobile",
+      "finding": "黄金九案、推荐下一案与四季档案层级清楚；移动端长页由季节折叠控制。",
+      "blockingIssue": false
+    },
+    {
+      "surface": "C01 hint level 3",
+      "finding": "三级提示保持概念、证据类别、证明义务分层，不出现标准答案或下一问。",
+      "blockingIssue": false
+    },
+    {
+      "surface": "C25/C37 language path",
+      "finding": "公开谜面、系统理解和确定性回答分层；两案主场景辨识度明显。",
+      "blockingIssue": false
+    },
+    {
+      "surface": "C33/C36/C48 complex proof",
+      "finding": "手机一次呈现一个当前推理任务；长链仍高密度，但切板与提交无需穿越整条链。",
+      "blockingIssue": false
+    },
+    {
+      "surface": "C60 collapsed proof",
+      "finding": "完成板和闭合事件链可折叠，证明回放与挑战入口保持可达。",
+      "blockingIssue": false
+    },
+    {
+      "surface": "skip-link resting state",
+      "finding": "人工复查修订后的 C33 手机截图，跳转链接不再滞留于页面中段。",
+      "blockingIssue": false
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "qualification": "截图与人工视觉审查能发现布局和层级回归，但不等同于真人审美偏好、理解率或乐趣验证。"
+}

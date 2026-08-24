@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import { CASE_CATALOG, RELEASE_PROFILE } from "@/lib/case-catalog";
 import { listCaseSaves } from "@/lib/save-store";
 import { listMastery, masterySummary } from "@/lib/mastery-store";
+import { GOLDEN_PATH } from "@/lib/golden-experience";
 import styles from "./case-select.module.css";
 import { ArchiveTools } from "./archive-tools";
 
@@ -44,6 +45,13 @@ export function CaseSelect() {
   const seasons = [...new Set(CASE_CATALOG.map((entry) => entry.seasonId ?? "season-1"))];
   const skillProgress = skills.map((name) => ({ name, closed: CASE_CATALOG.filter((entry) => completed.has(entry.id) && (entry.mechanicTags ?? entry.contentTags).includes(name)).length })).filter((item) => item.closed > 0).slice(0, 8);
   const mostRecentSeason = latest ? CASE_CATALOG.find((entry) => entry.id === latest.caseId)?.seasonId : undefined;
+  const solvedOrMastered = useMemo(() => new Set([
+    ...completed,
+    ...Object.values(mastery).filter((record) => record.standardSolved).map((record) => record.caseId),
+  ]), [completed, mastery]);
+  const recommendedStep = GOLDEN_PATH.find((step) => !solvedOrMastered.has(step.caseId)) ?? GOLDEN_PATH[GOLDEN_PATH.length - 1];
+  const recommendedCase = CASE_CATALOG.find((entry) => entry.id === recommendedStep.caseId);
+  const routeCompleted = GOLDEN_PATH.filter((step) => solvedOrMastered.has(step.caseId)).length;
   const toggleSeason = (seasonId: string, value: boolean) => { setOpenSeasons((current) => { const next = { ...current, [seasonId]: value }; try { localStorage.setItem("black-soup:season-folders:v1", JSON.stringify(next)); } catch { /* optional UI preference */ } return next; }); };
 
   return (
@@ -56,7 +64,30 @@ export function CaseSelect() {
 
       <section className={styles.commandDeck} aria-label="档案控制台">
         {latest ? <Link prefetch={false} className={styles.continueCase} href={`/case/${latest.caseId}`}><small>CONTINUE LAST TRACE</small><b>{CASE_CATALOG.find((entry) => entry.id === latest.caseId)?.title ?? latest.caseId}</b><span>{latest.completed ? "回看已结案件" : "继续调查"} →</span></Link> : <div className={styles.continueCase}><small>FIRST TRACE</small><b>从第一件异常开始</b><span>所有案件均可直接进入</span></div>}
-        <div className={styles.skillDossier}><small>INVESTIGATION SKILLS / LOCAL</small><div>{skillProgress.length ? skillProgress.map((item) => <span key={item.name}>{item.name}<b>{item.closed}</b></span>) : <p>结案后，这里会形成你的本地推理技能档案。</p>}</div></div>
+        <Link prefetch={false} className={styles.recommendedCase} href={`/case/${recommendedStep.caseId}`} aria-label={`推荐下一案：${recommendedCase?.title ?? recommendedStep.caseId}`}>
+          <small>RECOMMENDED NEXT / {recommendedStep.step.toString().padStart(2, "0")}</small>
+          <b>{recommendedCase?.title ?? recommendedStep.caseId}</b>
+          <span>{recommendedStep.tier} · {recommendedStep.estimatedMinutes.min}–{recommendedStep.estimatedMinutes.max} 分钟 · {recommendedStep.nextSkill} →</span>
+        </Link>
+        <div className={styles.skillDossier}><small>CURRENT REASONING SKILLS / LOCAL</small><div>{skillProgress.length ? skillProgress.map((item) => <span key={item.name}>{item.name}<b>{item.closed}</b></span>) : <p>当前起点：把异常拆成可以被证据支持或排除的事实。</p>}</div></div>
+      </section>
+
+      <section className={styles.goldenPath} aria-labelledby="golden-path-title">
+        <div className={styles.pathHeading}><div><small>FIRST INVESTIGATION ROUTE / OPTIONAL</small><h2 id="golden-path-title">九步进入复杂因果</h2></div><p>{routeCompleted}/9 已完成 · 不设解锁墙，全部 60 案仍可直接进入</p></div>
+        <ol>
+          {GOLDEN_PATH.map((step) => {
+            const entry = CASE_CATALOG.find((candidate) => candidate.id === step.caseId);
+            const isCurrent = step.caseId === recommendedStep.caseId;
+            const isDone = solvedOrMastered.has(step.caseId);
+            return <li key={step.caseId} data-state={isDone ? "done" : isCurrent ? "current" : "upcoming"}>
+              <Link prefetch={false} href={`/case/${step.caseId}`} aria-current={isCurrent ? "step" : undefined}>
+                <span className={styles.pathNumber}>{step.step.toString().padStart(2, "0")}</span>
+                <span className={styles.pathCopy}><small>{step.tier} · {step.estimatedMinutes.min}–{step.estimatedMinutes.max} MIN</small><b>{entry?.title ?? step.caseId}</b><em>{step.nextSkill}</em></span>
+                <span className={styles.pathState}>{isDone ? "已闭合" : isCurrent ? "推荐" : "可进入"}</span>
+              </Link>
+            </li>;
+          })}
+        </ol>
       </section>
 
       <ArchiveTools onImported={() => setRevision((value) => value + 1)} />

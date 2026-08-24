@@ -17,8 +17,8 @@ export class AudioEngine {
   private effectsVolume = 0.45;
   private ambientVolume = 0.16;
 
-  constructor(soundscape: SoundscapeId | string = "cold-room") {
-    this.profile = getSoundscapeProfile(soundscape);
+  constructor(soundscape: SoundscapeId | string = "cold-room", presentationLayoutId?: string) {
+    this.profile = getSoundscapeProfile(soundscape, presentationLayoutId);
   }
 
   static isSupported() {

@@ -1,0 +1,50 @@
+{
+  "reportVersion": "1.7",
+  "releaseProfile": "v1.7-internal-rc",
+  "generatedAt": "2026-08-24T13:53:28.503Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "hiddenIdentifierCount": 1768,
+  "targets": [
+    {
+      "name": "static-output",
+      "files": 402,
+      "truthBearingTextFiles": 62,
+      "sourceMaps": 0,
+      "remoteReferences": [],
+      "publicHtmlLeaks": [],
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "reportFiles": [
+    "docs/v1.7-budgeted-synthetic.json",
+    "docs/v1.7-experience-calibration.json",
+    "docs/v1.7-soundscape-calibration.json",
+    "docs/v1.7-browser-matrix.json"
+  ],
+  "reportLeakTokens": [],
+  "boundaryChecks": {
+    "truthChunkExists": true,
+    "noPublicHtmlLeaks": true,
+    "noSourceMaps": true,
+    "noRemoteAnalyticsOrAI": true,
+    "reportsOmitCertificateSchema": true,
+    "workerOwnsCaseLoading": true,
+    "localHostRewriteOnly": true
+  },
+  "boundaries": {
+    "fullCaseFile": "worker-only",
+    "blackBoxRunnerInputs": [
+      "PlayerProjection",
+      "GameEvent",
+      "SaveEnvelope"
+    ],
+    "saveSchemaVersion": 1,
+    "remoteAnalytics": false,
+    "remoteAI": false,
+    "hostRewrite": "localhost-only / presentation-only"
+  },
+  "passed": true,
+  "qualification": "静态扫描降低意外剧透与远程依赖风险；离线内容仍可被主动反编译，这不是 DRM。"
+}

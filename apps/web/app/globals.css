@@ -55,8 +55,8 @@ button:focus-visible, input:focus-visible, select:focus-visible {
 }
 
 .srOnly { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important; }
-.skipLink { position: fixed; z-index: 200; top: 8px; left: 8px; transform: translateY(-160%); padding: .65rem .9rem; border: 2px solid var(--acid); background: #08090b; color: #fff; text-decoration: none; }
-.skipLink:focus-visible { transform: translateY(0); }
+.skipLink { position: fixed; z-index: 200; top: 8px; left: 8px; transform: translateY(-160%); opacity: 0; pointer-events: none; padding: .65rem .9rem; border: 2px solid var(--acid); background: #08090b; color: #fff; text-decoration: none; }
+.skipLink:focus-visible { transform: translateY(0); opacity: 1; pointer-events: auto; }
 .pwaStatus { position: fixed; z-index: 120; right: max(12px, env(safe-area-inset-right)); bottom: max(12px, env(safe-area-inset-bottom)); width: min(360px, calc(100vw - 24px)); display: flex; align-items: center; gap: .7rem; padding: .7rem .8rem; border: 1px solid var(--line-strong); background: #101216; box-shadow: 0 16px 48px rgba(0, 0, 0, .55); color: var(--paper); font-size: .78rem; }
 .pwaStatus span { flex: 1; line-height: 1.45; }
 .pwaStatus button { border: 1px solid var(--acid); background: rgba(184, 207, 121, .08); color: var(--acid); padding: .5rem .65rem; cursor: pointer; }

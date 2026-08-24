@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" role="img" aria-labelledby="title desc">
+  <title id="title">夜航码头与离线闸机</title><desc id="desc">铜色灯光下，闸机屏幕显示延迟同步的通行记录，远处渡轮已经离港。</desc>
+  <defs><linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#271d18"/><stop offset="1" stop-color="#0c0b0a"/></linearGradient><pattern id="water" width="36" height="18" patternUnits="userSpaceOnUse"><path d="M0 9h36" stroke="#d8ad73" stroke-opacity=".12"/></pattern></defs>
+  <rect width="760" height="480" fill="url(#bg)"/><path d="M0 325h760v155H0z" fill="#0b1112"/><path d="M0 350h760v130H0z" fill="url(#water)"/>
+  <rect x="105" y="125" width="190" height="210" rx="5" fill="#161514" stroke="#d9aa6d" stroke-opacity=".7"/><rect x="135" y="160" width="130" height="58" fill="#0b1718" stroke="#e0b578"/><text x="155" y="195" fill="#e0b578" font-family="monospace" font-size="18">23:52</text><path d="M170 260v75M230 260v75" stroke="#e0b578" stroke-width="12"/><path d="M405 270l160-52 95 52" fill="#172128" stroke="#e0b578" stroke-opacity=".55"/><path d="M450 270v-75h150v75" fill="#202a2c" stroke="#e0b578" stroke-opacity=".5"/><circle cx="548" cy="164" r="24" fill="#c27b4b" stroke="#efc785"/><text x="42" y="445" fill="#e0b578" font-family="monospace" font-size="13" letter-spacing="3">HARBOR NIGHT / SYNCED LEDGER 06</text>
+</svg>

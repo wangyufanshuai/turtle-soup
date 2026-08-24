@@ -6,6 +6,12 @@ export const SOUNDSCAPE_IDS = [
   "c25-silent-second-bell", "c26-short-map-pipeline", "c27-stationary-moving-platform", "c28-ninth-minute-temperature",
   "c29-role-stamp-signature", "c30-shared-shift-id", "c31-eighth-unchecked-guest", "c32-approved-unauthorized-door",
   "c33-early-late-arrival", "c34-tomorrow-seal", "c35-extra-glass-attendant", "c36-no-one-left-terminal",
+  "c37-zeroed-pressure-gauge", "c38-no-missing-seventh-packet", "c39-duplicated-heartbeat", "c40-early-liquid-front",
+  "c41-hysteresis-overheat", "c42-same-weight-different-load", "c43-train-stop-reference", "c44-hidden-overload-spike",
+  "c45-double-location-second", "c46-pilot-pressure-valve", "c47-offline-buffered-device", "c48-two-point-calibration",
+  "c49-gimbal-turn-drone", "c50-extra-warehouse-pallet", "c51-equivalent-resistance", "c52-shorter-river-night",
+  "c53-late-fiber-echo", "c54-elevator-counterweight", "c55-merged-multi-alarm", "c56-interpolated-temperature-map",
+  "c57-lagging-wind-vane", "c58-same-volume-two-levels", "c59-extra-ninth-floor", "c60-last-sample-before-stop",
 ] as const;
 
 export type SoundscapeId = (typeof SOUNDSCAPE_IDS)[number];
@@ -67,6 +73,30 @@ const SECOND_SEASON_LABELS: Readonly<Record<string, string>> = {
   "c34-tomorrow-seal": "封装带与打印轮余声",
   "c35-extra-glass-attendant": "玻璃厅低鸣与衣架轻响",
   "c36-no-one-left-terminal": "终点风洞与空车回响",
+  "c37-zeroed-pressure-gauge": "压力表温漂与泄压尾音",
+  "c38-no-missing-seventh-packet": "交换机确认脉冲与去重节拍",
+  "c39-duplicated-heartbeat": "监护回放与单次心跳包",
+  "c40-early-liquid-front": "管线前沿与采样口涌流",
+  "c41-hysteresis-overheat": "热舱继电与滞回保持",
+  "c42-same-weight-different-load": "桥面应变与重心偏移",
+  "c43-train-stop-reference": "制动回路与轨端低鸣",
+  "c44-hidden-overload-spike": "瞬时尖峰与平均窗脉冲",
+  "c45-double-location-second": "授时脉冲与双时间戳",
+  "c46-pilot-pressure-valve": "先导气路与阀芯回弹",
+  "c47-offline-buffered-device": "离线缓存与批量补传",
+  "c48-two-point-calibration": "校准端点与中段曲线",
+  "c49-gimbal-turn-drone": "云台伺服与旋翼远鸣",
+  "c50-extra-warehouse-pallet": "仓储队列与托盘扫描",
+  "c51-equivalent-resistance": "并联回路与测量脉冲",
+  "c52-shorter-river-night": "水位基准与夜间水流",
+  "c53-late-fiber-echo": "光纤回波与缓冲延迟",
+  "c54-elevator-counterweight": "配重导轨与检修继电",
+  "c55-merged-multi-alarm": "告警队列与单次蜂鸣",
+  "c56-interpolated-temperature-map": "稀疏采样与插值扫描",
+  "c57-lagging-wind-vane": "机械风标与阵风滞后",
+  "c58-same-volume-two-levels": "异形容器与液面回响",
+  "c59-extra-ninth-floor": "气压估层与设备层低鸣",
+  "c60-last-sample-before-stop": "终止链与最后缓存窗",
 };
 
 function generatedProfile(id: SoundscapeId, index: number): SoundscapeProfile {
@@ -94,6 +124,8 @@ export const SOUNDSCAPE_PROFILES: Readonly<Record<string, SoundscapeProfile>> = 
   ...Object.fromEntries(SOUNDSCAPE_IDS.slice(12).map((id, index) => [id, generatedProfile(id, index + 12)])),
 };
 
-export function getSoundscapeProfile(id: string): SoundscapeProfile {
-  return SOUNDSCAPE_PROFILES[id] ?? SOUNDSCAPE_PROFILES["cold-room"];
+export function getSoundscapeProfile(id: string, presentationLayoutId?: string): SoundscapeProfile {
+  return SOUNDSCAPE_PROFILES[id]
+    ?? (presentationLayoutId ? SOUNDSCAPE_PROFILES[presentationLayoutId] : undefined)
+    ?? SOUNDSCAPE_PROFILES["cold-room"];
 }

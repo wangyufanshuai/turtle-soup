@@ -7,7 +7,7 @@ const profileId = process.env.TURTLE_SOUP_RELEASE_PROFILE ?? "v1.4-internal-rc";
 const reportOnly = process.argv.includes("--report-only");
 const outDir = resolve(root, process.argv[3] ?? "apps/web/out");
 const templatePath = resolve(root, "apps/web/public/sw.js");
-const reportPath = resolve(root, process.argv[4] ?? (profileId === "season1-v0.9-stable" ? "docs/v0.9-precache.json" : profileId === "v1.0-internal-rc" ? "docs/v1.0-precache.json" : profileId === "v1.1-internal-rc" ? "docs/v1.1-precache.json" : profileId === "v1.2-internal-rc" ? "docs/v1.2-precache.json" : profileId === "v1.3-public-preview" ? "docs/v1.3-precache.json" : profileId === "v1.5-internal-rc" ? "docs/v1.5-precache.json" : profileId === "v1.6-internal-rc" ? "docs/v1.6-precache.json" : "docs/v1.4-precache.json"));
+const reportPath = resolve(root, process.argv[4] ?? (profileId === "season1-v0.9-stable" ? "docs/v0.9-precache.json" : profileId === "v1.0-internal-rc" ? "docs/v1.0-precache.json" : profileId === "v1.1-internal-rc" ? "docs/v1.1-precache.json" : profileId === "v1.2-internal-rc" ? "docs/v1.2-precache.json" : profileId === "v1.3-public-preview" ? "docs/v1.3-precache.json" : profileId === "v1.5-internal-rc" ? "docs/v1.5-precache.json" : profileId === "v1.6-internal-rc" ? "docs/v1.6-precache.json" : profileId === "v1.7-internal-rc" ? "docs/v1.7-precache.json" : "docs/v1.4-precache.json"));
 
 function files(dir: string): string[] {
   return readdirSync(dir).flatMap((name) => {
@@ -31,7 +31,7 @@ const entries = files(outDir)
   .sort((a, b) => a.path.localeCompare(b.path));
 const precache = entries.map((entry) => entry.path);
 const template = readFileSync(templatePath, "utf8");
-const cacheName = profileId === "season1-v0.9-stable" ? "black-soup-v09-gm1" : profileId === "v1.0-internal-rc" ? "black-soup-v10-internal-rc1" : profileId === "v1.1-internal-rc" ? "black-soup-v11-internal-rc1" : profileId === "v1.2-internal-rc" ? "black-soup-v12-internal-rc1" : profileId === "v1.3-public-preview" ? "black-soup-v13-preview-1" : profileId === "v1.5-internal-rc" ? "black-soup-v15-golden-rc-1" : profileId === "v1.6-internal-rc" ? "black-soup-v16-internal-rc-1" : "black-soup-v14-internal-rc-1";
+const cacheName = profileId === "season1-v0.9-stable" ? "black-soup-v09-gm1" : profileId === "v1.0-internal-rc" ? "black-soup-v10-internal-rc1" : profileId === "v1.1-internal-rc" ? "black-soup-v11-internal-rc1" : profileId === "v1.2-internal-rc" ? "black-soup-v12-internal-rc1" : profileId === "v1.3-public-preview" ? "black-soup-v13-preview-1" : profileId === "v1.5-internal-rc" ? "black-soup-v15-golden-rc-1" : profileId === "v1.6-internal-rc" ? "black-soup-v16-internal-rc-1" : profileId === "v1.7-internal-rc" ? "black-soup-v17-golden-path-rc-1" : "black-soup-v14-internal-rc-1";
 const serviceWorker = template
   .replace(/const CACHE_NAME = "[^"]+";/, `const CACHE_NAME = "${cacheName}";`)
   .replace(/const PRECACHE = \[[\s\S]*?\];/, `const PRECACHE = ${JSON.stringify(precache, null, 2)};`);
@@ -39,7 +39,7 @@ if (serviceWorker === template) throw new Error("Service Worker PRECACHE marker 
 if (!reportOnly) writeFileSync(resolve(outDir, "sw.js"), serviceWorker, "utf8");
 
 const report = {
-  reportVersion: profileId === "season1-v0.9-stable" ? "0.9" : profileId === "v1.0-internal-rc" ? "1.0" : profileId === "v1.1-internal-rc" ? "1.1" : profileId === "v1.2-internal-rc" ? "1.2" : profileId === "v1.3-public-preview" ? "1.3" : profileId === "v1.5-internal-rc" ? "1.5" : profileId === "v1.6-internal-rc" ? "1.6" : "1.4",
+  reportVersion: profileId === "season1-v0.9-stable" ? "0.9" : profileId === "v1.0-internal-rc" ? "1.0" : profileId === "v1.1-internal-rc" ? "1.1" : profileId === "v1.2-internal-rc" ? "1.2" : profileId === "v1.3-public-preview" ? "1.3" : profileId === "v1.5-internal-rc" ? "1.5" : profileId === "v1.6-internal-rc" ? "1.6" : profileId === "v1.7-internal-rc" ? "1.7" : "1.4",
   releaseProfile: profileId,
   generatedAt: new Date().toISOString(),
   cacheName,

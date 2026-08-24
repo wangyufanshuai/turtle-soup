@@ -1,0 +1,75 @@
+{
+  "reportVersion": "1.7",
+  "releaseProfile": "v1.7-internal-rc",
+  "generatedAt": "2026-08-24T13:49:07.915Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "deterministicArchive": {
+    "method": "ZIP store",
+    "timestamp": "1980-01-01",
+    "utf8Paths": true
+  },
+  "artifact": {
+    "directory": "dist/v1.7-internal-rc-web-pwa",
+    "bytes": 6614183,
+    "files": 857,
+    "sha256": "8cd8bcf712f2fbf3f89868a6442b9c07d14063c178e5cdb771c52286f34b443d",
+    "archive": {
+      "path": "dist/turtle-soup-v1.7-internal-rc-web-pwa.zip",
+      "bytes": 6744391,
+      "sha256": "c9787c09aa035f8cbab81ffdbe08ae73173031d8ba6eeaa9f6130b65a7723251"
+    }
+  },
+  "preservedArtifacts": [
+    {
+      "version": "v1.0",
+      "path": "dist/turtle-soup-v1.0-internal-rc-web-pwa.zip",
+      "expected": "83e2ee8e477ce9103735ea3d8eb0011ae6b72e257a286c7e009a2ef98cf7322b",
+      "actual": "83e2ee8e477ce9103735ea3d8eb0011ae6b72e257a286c7e009a2ef98cf7322b",
+      "unchanged": true
+    },
+    {
+      "version": "v1.1",
+      "path": "dist/turtle-soup-v1.1-internal-rc-web-pwa.zip",
+      "expected": "0bc2b077317b6d32c2df10e14d35520917839a68d18b70d23fafa74991cb3f35",
+      "actual": "0bc2b077317b6d32c2df10e14d35520917839a68d18b70d23fafa74991cb3f35",
+      "unchanged": true
+    },
+    {
+      "version": "v1.2",
+      "path": "dist/turtle-soup-v1.2-internal-rc-web-pwa.zip",
+      "expected": "c3416a0ec807f9b94da8f00a0caab82b1b81e5745b6a5fd8b49c33e1279c7eb7",
+      "actual": "c3416a0ec807f9b94da8f00a0caab82b1b81e5745b6a5fd8b49c33e1279c7eb7",
+      "unchanged": true
+    },
+    {
+      "version": "v1.3",
+      "path": "dist/turtle-soup-v1.3-public-preview-web-pwa.zip",
+      "expected": "f0dab2d4b0ce62897382e299da6aebb8655f572f106b89de12c855654002226e",
+      "actual": "f0dab2d4b0ce62897382e299da6aebb8655f572f106b89de12c855654002226e",
+      "unchanged": true
+    },
+    {
+      "version": "v1.4",
+      "path": "dist/turtle-soup-v1.4-internal-rc-web-pwa.zip",
+      "expected": "b3db663a997b71744462b854b2ab45489447b627cda7cec9f524e25c335d8efb",
+      "actual": "b3db663a997b71744462b854b2ab45489447b627cda7cec9f524e25c335d8efb",
+      "unchanged": true
+    },
+    {
+      "version": "v1.5",
+      "path": "dist/turtle-soup-v1.5-internal-rc-web-pwa.zip",
+      "expected": "2f8ccc674f0a749725295537f7115730cb33af12d5a192bb20cb3ed2fa3b3bf1",
+      "actual": "2f8ccc674f0a749725295537f7115730cb33af12d5a192bb20cb3ed2fa3b3bf1",
+      "unchanged": true
+    },
+    {
+      "version": "v1.6",
+      "path": "dist/turtle-soup-v1.6-internal-rc-web-pwa.zip",
+      "expected": "0c39375f3786cb6f4decedc4c5c47084db8e0a8d4d4c729c181707a9995bc295",
+      "actual": "0c39375f3786cb6f4decedc4c5c47084db8e0a8d4d4c729c181707a9995bc295",
+      "unchanged": true
+    }
+  ],
+  "passed": true
+}

@@ -8,12 +8,59 @@ export interface GoldenExperienceSpec {
   replayTone: string;
 }
 
+export interface GoldenPathHints {
+  concept: string;
+  evidenceCategory: string;
+  proofObligation: string;
+}
+
+export interface GoldenPathStep {
+  step: number;
+  caseId: string;
+  tier: "起步" | "辨析" | "系统" | "交叉验证" | "综合证明";
+  estimatedMinutes: { min: number; max: number };
+  prerequisiteSkill: string;
+  nextSkill: string;
+  hints: GoldenPathHints;
+}
+
 export const GOLDEN_CASE_IDS = [
   "c01-cold-room-knock", "c03-second-shadow", "c06-nonexistent-ticket",
   "c13-second-waterline", "c17-twelve-strikes", "c24-turned-painting",
   "c25-silent-second-bell", "c33-early-late-arrival", "c36-no-one-left-terminal",
   "c37-zeroed-pressure-gauge", "c48-two-point-calibration", "c60-last-sample-before-stop",
 ] as const;
+
+// Curated first-play progression. This is intentionally separate from
+// GOLDEN_CASE_IDS, which defines broad browser/visual regression coverage.
+// Every case remains directly accessible; this list is guidance, not a lock.
+export const GOLDEN_PATH_CASE_IDS = [
+  "c01-cold-room-knock",
+  "c03-second-shadow",
+  "c13-second-waterline",
+  "c06-nonexistent-ticket",
+  "c17-twelve-strikes",
+  "c24-turned-painting",
+  "c33-early-late-arrival",
+  "c48-two-point-calibration",
+  "c60-last-sample-before-stop",
+] as const;
+
+export const GOLDEN_PATH: readonly GoldenPathStep[] = [
+  { step: 1, caseId: "c01-cold-room-knock", tier: "起步", estimatedMinutes: { min: 5, max: 15 }, prerequisiteSkill: "无需前置", nextSkill: "把观察拆成可验证事实", hints: { concept: "先区分声音、门与人的位置，它们不必属于同一事件。", evidenceCategory: "检查门的状态、声音来源与人员位置三类来源。", proofObligation: "你的证明还需要闭合时间关系。" } },
+  { step: 2, caseId: "c03-second-shadow", tier: "辨析", estimatedMinutes: { min: 8, max: 20 }, prerequisiteSkill: "事实提问", nextSkill: "分离外观、角色与人物", hints: { concept: "证词可以准确描述外观，却未必证明人物身份。", evidenceCategory: "比较证词来源、服装物件与后台位置记录。", proofObligation: "你的证明还需要闭合身份关系。" } },
+  { step: 3, caseId: "c13-second-waterline", tier: "辨析", estimatedMinutes: { min: 8, max: 18 }, prerequisiteSkill: "身份与表象分离", nextSkill: "追踪状态转换与守恒量", hints: { concept: "液面变化并不只由加入液体造成。", evidenceCategory: "检查浸没物、温度条件与容器状态。", proofObligation: "你的证明还需要闭合状态转换或测量关系。" } },
+  { step: 4, caseId: "c06-nonexistent-ticket", tier: "系统", estimatedMinutes: { min: 10, max: 22 }, prerequisiteSkill: "状态转换", nextSkill: "区分行动时间与记录时间", hints: { concept: "一条真实记录可能在行动之后才被写入。", evidenceCategory: "核对扫描端、缓存层与显示端的来源。", proofObligation: "你的证明还需要闭合来源或时间关系。" } },
+  { step: 5, caseId: "c17-twelve-strikes", tier: "系统", estimatedMinutes: { min: 10, max: 20 }, prerequisiteSkill: "来源与时间", nextSkill: "建立机械因果链", hints: { concept: "同一设备可以包含彼此脱耦的输出机构。", evidenceCategory: "检查表针传动、报时轮与维修状态。", proofObligation: "你的证明还需要闭合状态转换关系。" } },
+  { step: 6, caseId: "c24-turned-painting", tier: "交叉验证", estimatedMinutes: { min: 15, max: 25 }, prerequisiteSkill: "机械因果", nextSkill: "同时处理空间与来源", hints: { concept: "先固定你用来描述方向的参照物。", evidenceCategory: "检查墙体结构、服务侧路径与监控成像方式。", proofObligation: "你的证明还需要闭合空间或替代路径。" } },
+  { step: 7, caseId: "c33-early-late-arrival", tier: "交叉验证", estimatedMinutes: { min: 13, max: 24 }, prerequisiteSkill: "多来源交叉验证", nextSkill: "校准不同时间基准", hints: { concept: "互相矛盾的先后顺序可能来自不同的钟。", evidenceCategory: "给门禁、录像与人员记录分别标注时间来源。", proofObligation: "你的证明还需要闭合时间基准或来源关系。" } },
+  { step: 8, caseId: "c48-two-point-calibration", tier: "交叉验证", estimatedMinutes: { min: 10, max: 20 }, prerequisiteSkill: "多时间基准", nextSkill: "理解测量模型与不确定区间", hints: { concept: "两个端点正确，不能约束中间整条曲线。", evidenceCategory: "检查校准点、中段样本与误差范围。", proofObligation: "你的证明还需要闭合测量关系。" } },
+  { step: 9, caseId: "c60-last-sample-before-stop", tier: "综合证明", estimatedMinutes: { min: 15, max: 25 }, prerequisiteSkill: "时间、来源与测量综合", nextSkill: "完成多板因果证明", hints: { concept: "命令发出、执行生效、采样和显示是四个时刻。", evidenceCategory: "分别追踪控制链、信号链与采样窗口。", proofObligation: "你的证明还需要闭合当前缺口类别对应的推理板。" } },
+] as const;
+
+export function goldenPathStep(caseId: string): GoldenPathStep | undefined {
+  return GOLDEN_PATH.find((step) => step.caseId === caseId);
+}
 
 export const GOLDEN_EXPERIENCE: Readonly<Record<string, GoldenExperienceSpec>> = {
   "c01-cold-room-knock": { cadence: "observe-ask-unlock", sceneLabel: "02:00 · 冷藏室封闭走廊", sceneHint: "声音是真的；门内有人仍需证明", evidenceBehavior: "freeze-frame", evidenceAction: "逐帧核对", insight: "门的状态、声音来源与人的位置可以同时为真，却不必来自同一事件。", replayTone: "three-knocks" },

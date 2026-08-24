@@ -21,7 +21,8 @@ import { loadMastery, saveMastery } from "@/lib/mastery-store";
 import { useLocalDiagnostics } from "@/lib/use-local-diagnostics";
 import { EvidenceInspector } from "./evidence-inspector";
 import { LegacyTheoryWorkbench } from "./legacy-theory-workbench";
-import { goldenExperience } from "@/lib/golden-experience";
+import { goldenExperience, goldenPathStep } from "@/lib/golden-experience";
+import { HintLadder } from "./hint-ladder";
 import styles from "./game-shell.module.css";
 
 type MobilePanel = "scene" | "questions" | "theory";
@@ -52,6 +53,14 @@ function eventMessage(event?: GameEvent): string | undefined {
     case "command_rejected": return event.message;
     default: return undefined;
   }
+}
+
+function latestProofGap(events: GameEvent[]) {
+  for (let index = events.length - 1; index >= 0; index -= 1) {
+    const event = events[index];
+    if (event.type === "theory_judged" && event.judgement !== "solved" && event.proofFailureCategory) return event.proofFailureCategory;
+  }
+  return undefined;
 }
 
 function Icon({ name }: { name: "eye" | "ask" | "chain" | "sound" | "settings" | "save" }) {
@@ -93,6 +102,8 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
   const interpretationWasOpen = useRef(false);
   const soundscape = getSoundscapeProfile("cold-room");
   const golden = goldenExperience(caseId);
+  const pathStep = goldenPathStep(caseId);
+  const lastProofGap = latestProofGap(events);
   useEffect(() => {
     if (!projection) return;
     let active = true;
@@ -261,7 +272,7 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
           <div className={styles.sectionHeader}><span>01</span><div><small>OBSERVE</small><h2>现场与证据</h2></div><b>{evidenceCount}/{projection.evidence.length}</b></div>
           <div className={styles.sceneFrame}>
             <picture><source media="(max-width: 850px)" srcSet="/assets/cases/c01/scene-mobile.webp" /><img src="/assets/cases/c01/scene-desktop.webp" alt="凌晨两点的冷藏室走廊，封闭的门与监控面板被冷光照亮" width={960} height={620} fetchPriority="high" /></picture>
-            <div className={styles.sceneStamp}>{golden?.sceneLabel ?? "02:00 · SEALED"}<br/><span>{golden?.sceneHint ?? "SEALED"}</span></div>
+            <div className={styles.sceneStamp}>{golden?.sceneLabel ?? "02:00 · SEALED"}<br/><span>只陈列公开观察 · 提示需主动展开</span></div>
             <button className={styles.knockButton} onClick={() => audioRef.current?.play("knock")} aria-label="播放三下敲击的非必要气氛音"><Icon name="sound" />听取记录</button>
           </div>
           <p className={styles.premise}>{projection.case.surface}</p>
@@ -299,7 +310,6 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
             ))}
             <div ref={transcriptEndRef} />
           </div>
-          {revealTheory && golden && <aside className={styles.insight} role="status"><small>CAUSAL SHIFT / 顿悟节点</small><p>{golden.insight}</p></aside>}
 
           {projection.interpretation && (
             <div ref={interpretationRef} className={styles.interpretation} role="group" aria-label="确认问题解释" aria-live="polite">
@@ -320,6 +330,7 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
             <div className={styles.quickQuestions}>
               {projection.questionScaffolds.slice(0, projection.transcript.length === 0 ? 1 : 3).map((candidate) => <button key={candidate.queryId} onClick={() => send({ type: "ask_text", rawText: candidate.label })}>{candidate.label}</button>)}
             </div>
+            {pathStep && <HintLadder caseId={projection.case.id} hints={pathStep.hints} proofGap={lastProofGap} onReveal={markHintUsed} />}
             {projection.transcript.length > 0 && <details className={styles.builder}>
               <summary>打开问题构建器 <span>对象 + 关系 + 条件</span></summary>
               <div>{projection.questionScaffolds.map((candidate) => <button key={candidate.queryId} onClick={() => setQuestion(candidate.label)}><b>{candidate.predicate}</b><span>{candidate.label}</span></button>)}</div>

@@ -7,21 +7,35 @@ import {
   type QuestionAliasPack,
 } from "../packages/mystery-core/src/index.ts";
 import { loadCaseFile, loadReleaseContent } from "./lib/release-content.ts";
+import { mergePresentationPatch, mergeQuestionAliasPacks } from "./lib/v17-overlays.ts";
 
 const root = resolve(process.argv[2] ?? ".");
 const profileId = process.argv[3] ?? process.env.TURTLE_SOUP_RELEASE_PROFILE ?? "v1.4-internal-rc";
 const generatedDir = resolve(root, "apps/web/.generated");
 const { profile, entries } = loadReleaseContent(root, profileId);
-const patchPath = resolve(root, "content/zh/presentation", ["v1.4-internal-rc", "v1.5-internal-rc", "v1.6-internal-rc"].includes(profile.id) ? "v1.4/patches.json" : "v1.2/patches.json");
+const patchPath = resolve(root, "content/zh/presentation", ["v1.4-internal-rc", "v1.5-internal-rc", "v1.6-internal-rc", "v1.7-internal-rc"].includes(profile.id) ? "v1.4/patches.json" : "v1.2/patches.json");
 const presentationPatches: CasePresentationPatch[] = existsSync(patchPath)
   ? JSON.parse(readFileSync(patchPath, "utf8")) as CasePresentationPatch[]
   : [];
-const patchByCase = ["v1.2-internal-rc", "v1.3-public-preview", "v1.4-internal-rc", "v1.5-internal-rc", "v1.6-internal-rc"].includes(profile.id) ? new Map(presentationPatches.map((patch) => [patch.caseId, patch])) : new Map();
-const aliasVersion = profile.id === "v1.6-internal-rc" ? "v1.6" : "v1.5";
+const overlayPatchPath = resolve(root, "content/zh/presentation/v1.7/patches.json");
+const overlayPatches: CasePresentationPatch[] = profile.id === "v1.7-internal-rc" && existsSync(overlayPatchPath)
+  ? JSON.parse(readFileSync(overlayPatchPath, "utf8")) as CasePresentationPatch[]
+  : [];
+const basePatchByCase = new Map(presentationPatches.map((patch) => [patch.caseId, patch]));
+const overlayPatchByCase = new Map(overlayPatches.map((patch) => [patch.caseId, patch]));
+const patchByCase = ["v1.2-internal-rc", "v1.3-public-preview", "v1.4-internal-rc", "v1.5-internal-rc", "v1.6-internal-rc", "v1.7-internal-rc"].includes(profile.id)
+  ? new Map(entries.map((entry) => [entry.id, mergePresentationPatch(basePatchByCase.get(entry.id), overlayPatchByCase.get(entry.id))]).filter(([, patch]) => Boolean(patch)))
+  : new Map();
+const aliasVersion = ["v1.6-internal-rc", "v1.7-internal-rc"].includes(profile.id) ? "v1.6" : "v1.5";
 const aliasPath = resolve(root, `content/zh/question-aliases/${aliasVersion}/packs.json`);
-const aliasPacks: QuestionAliasPack[] = ["v1.5-internal-rc", "v1.6-internal-rc"].includes(profile.id) && existsSync(aliasPath)
+const baseAliasPacks: QuestionAliasPack[] = ["v1.5-internal-rc", "v1.6-internal-rc", "v1.7-internal-rc"].includes(profile.id) && existsSync(aliasPath)
   ? JSON.parse(readFileSync(aliasPath, "utf8")) as QuestionAliasPack[]
   : [];
+const overlayAliasPath = resolve(root, "content/zh/question-aliases/v1.7/packs.json");
+const overlayAliasPacks: QuestionAliasPack[] = profile.id === "v1.7-internal-rc" && existsSync(overlayAliasPath)
+  ? JSON.parse(readFileSync(overlayAliasPath, "utf8")) as QuestionAliasPack[]
+  : [];
+const aliasPacks = mergeQuestionAliasPacks(baseAliasPacks, overlayAliasPacks);
 const aliasByCase = new Map(aliasPacks.map((pack) => [pack.caseId, pack]));
 for (const entry of entries) {
   const pack = aliasByCase.get(entry.id);

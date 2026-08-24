@@ -1,0 +1,4 @@
+:HL["/_next/static/css/fc304d35563057f8.css","style"]
+:HL["/_next/static/css/5b7245542049e6db.css","style"]
+:HL["/_next/static/css/0ce8ae5f8407d4e3.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"case","param":null,"prefetchHints":4192,"slots":{"children":{"name":"caseId","param":{"type":"d","key":"c50-extra-warehouse-pallet","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"black-soup-v17-golden-path-rc"}

@@ -9,3 +9,4 @@
 *.woff2 binary
 *.mp3 binary
 *.ogg binary
+dist/** -whitespace
