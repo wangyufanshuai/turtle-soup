@@ -13,10 +13,22 @@ const STATUS: Record<EvidencePlayerState, string> = {
   dismissed: "已搁置",
 };
 
+const MATERIAL_LABELS: Record<string, string> = {
+  "freeze-frame": "COLD STORAGE FRAME",
+  "role-overlay": "WARDROBE OVERLAY",
+  "ledger-sync": "BUFFERED LEDGER",
+  "fluid-level": "VESSEL SECTION",
+  "gear-phase": "MECHANICAL TRACE",
+  "wall-pivot": "GALLERY PLAN",
+  "clock-alignment": "CLOCK SOURCE STRIP",
+  "curve-fit": "CALIBRATION SHEET",
+  "buffer-window": "SIGNAL WINDOW",
+};
+
 function EvidencePlate({ caseCode, index, title, mode }: { caseCode: string; index: number; title: string; mode: string }) {
   const motif = index % 5;
-  return <div className={styles.evidencePlate} data-motif={motif} data-mode={mode} role="img" aria-label={`${title}的结构化证据片；所有关键观察同时以文字提供`}>
-    <header><span>{caseCode.toUpperCase()} / E{String(index + 1).padStart(2, "0")}</span><b>{mode.toUpperCase()}</b></header>
+  return <div className={styles.evidencePlate} data-motif={motif} data-mode={mode} data-case={caseCode} role="img" aria-label={`${title}的结构化证据片；所有关键观察同时以文字提供`}>
+    <header><span>{caseCode.toUpperCase()} / E{String(index + 1).padStart(2, "0")}</span><b>{MATERIAL_LABELS[mode] ?? mode.toUpperCase()}</b></header>
     <svg viewBox="0 0 640 320" aria-hidden="true">
       <defs><pattern id={`grid-${caseCode}-${index}`} width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="currentColor" opacity=".12" /></pattern></defs>
       <rect width="640" height="320" fill={`url(#grid-${caseCode}-${index})`} />
@@ -25,6 +37,9 @@ function EvidencePlate({ caseCode, index, title, mode }: { caseCode: string; ind
       {motif === 2 && <><rect x="72" y="66" width="144" height="96"/><rect x="424" y="166" width="144" height="96"/><path d="M216 114c110 0 96 100 208 100"/><path d="m400 194 24 20-28 10"/><circle cx="320" cy="154" r="24"/></>}
       {motif === 3 && <><rect x="130" y="42" width="380" height="236"/><path d="M174 92H466M174 132H382M174 172H450M174 212H330"/><rect x="380" y="194" width="86" height="42"/><path d="m394 216 18 12 38-32"/></>}
       {motif === 4 && <><circle cx="112" cy="160" r="42"/><circle cx="320" cy="92" r="42"/><circle cx="528" cy="196" r="42"/><path d="M152 148 278 106M360 108l128 70M154 174l326 18"/><path d="m466 178 22 14-26 10"/></>}
+      {mode === "clock-alignment" && <><path d="M92 54V270M320 54V270M548 54V270" opacity=".45"/><path d="M92 110H548M92 190H548" strokeDasharray="8 8"/><text x="82" y="290">A</text><text x="310" y="290">B</text><text x="538" y="290">C</text></>}
+      {mode === "curve-fit" && <><path d="M76 246C180 232 206 74 320 86S474 238 564 98" strokeWidth="6"/><path d="M76 264C188 244 224 104 320 108S458 260 564 126" opacity=".35" strokeWidth="18"/></>}
+      {mode === "buffer-window" && <><rect x="78" y="70" width="154" height="176" rx="8"/><rect x="244" y="92" width="154" height="154" rx="8"/><rect x="410" y="118" width="154" height="128" rx="8"/><path d="M116 52V264M282 52V264M448 52V264" strokeDasharray="5 7"/></>}
     </svg>
     <footer><span>PUBLIC SOURCE</span><i>{String(index + 1).padStart(2, "0")}</i></footer>
   </div>;
@@ -59,6 +74,9 @@ export function EvidenceInspector({
   const pageCount = Math.max(1, Math.ceil(evidence.length / pageSize));
   const visible = evidence.slice(page * pageSize, page * pageSize + pageSize);
   const selected = useMemo(() => evidence.find((item) => item.id === selectedId), [evidence, selectedId]);
+  const dismissedCount = evidence.filter((item) => item.state === "dismissed").length;
+  const inspectedCount = evidence.filter((item) => !["available", "discovered", "dismissed"].includes(item.state)).length;
+  const candidateCount = Math.max(0, inspectedCount - linkedEvidenceIds.length);
 
   useEffect(() => {
     if (page >= pageCount) setPage(pageCount - 1);
@@ -114,6 +132,10 @@ export function EvidenceInspector({
       <div><small>EVIDENCE SHELF / {interactionMode?.toUpperCase() ?? "FOCUS"}</small><b>{interactionLabel ?? "逐件检查，不让档案淹没现场"}</b></div>
       <span>{Math.min(page * pageSize + 1, evidence.length)}–{Math.min((page + 1) * pageSize, evidence.length)} / {evidence.length}</span>
     </div>
+    <div className={styles.triage} aria-label="证据取舍状态">
+      <span><b>{linkedEvidenceIds.length}</b>接入证明</span><span><b>{candidateCount}</b>保留候选</span><span><b>{dismissedCount}</b>暂时搁置</span>
+      <p>{inspectedCount >= 3 && linkedEvidenceIds.length === 0 ? "已检查多份材料；现在更值得选一件接入暂定解释。" : "不要求收集全部证据。保留能支持或反驳当前理论的材料即可。"}</p>
+    </div>
     <div className={styles.shelf}>
       {visible.map((item, index) => {
         const absoluteIndex = page * pageSize + index;
@@ -145,8 +167,9 @@ export function EvidenceInspector({
         </div>
         <div className={styles.observation}><small>DETERMINISTIC OBSERVATION</small><p>{selected.observation}</p></div>
         <footer>
-          {selected.state === "dismissed" ? <button type="button" onClick={() => dispatch({ type: "set_evidence_state", evidenceId: selected.id, state: "examined" })}>恢复证据</button> : <button type="button" data-active={selected.state === "verified" || undefined} onClick={() => dispatch({ type: "set_evidence_state", evidenceId: selected.id, state: selected.state === "verified" ? (linkedEvidenceIds.includes(selected.id) ? "connected" : "examined") : "verified" })}>{selected.state === "verified" ? "取消核实" : "标记已核实"}</button>}
-          <button type="button" data-primary data-active={linkedEvidenceIds.includes(selected.id) || undefined} onClick={() => dispatch({ type: "link_theory_evidence", theoryId: activeTheoryId, evidenceId: selected.id, linked: !linkedEvidenceIds.includes(selected.id) })}>{linkedEvidenceIds.includes(selected.id) ? "移出当前证明" : "接入当前证明"}</button>
+          {selected.state === "dismissed" ? <button type="button" onClick={() => dispatch({ type: "set_evidence_state", evidenceId: selected.id, state: "examined" })}>恢复证据</button> : <button type="button" disabled={linkedEvidenceIds.includes(selected.id)} title={linkedEvidenceIds.includes(selected.id) ? "先移出当前证明，再搁置" : undefined} onClick={() => dispatch({ type: "set_evidence_state", evidenceId: selected.id, state: "dismissed" })}>暂时搁置</button>}
+          {selected.state !== "dismissed" && <button type="button" data-active={selected.state === "verified" || undefined} onClick={() => dispatch({ type: "set_evidence_state", evidenceId: selected.id, state: selected.state === "verified" ? (linkedEvidenceIds.includes(selected.id) ? "connected" : "examined") : "verified" })}>{selected.state === "verified" ? "取消核实" : "标记已核实"}</button>}
+          <button type="button" data-primary disabled={selected.state === "dismissed"} data-active={linkedEvidenceIds.includes(selected.id) || undefined} onClick={() => dispatch({ type: "link_theory_evidence", theoryId: activeTheoryId, evidenceId: selected.id, linked: !linkedEvidenceIds.includes(selected.id) })}>{linkedEvidenceIds.includes(selected.id) ? "移出当前证明" : "接入当前证明"}</button>
         </footer>
       </div>
     </div>}

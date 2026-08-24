@@ -24,6 +24,25 @@ function projection(): PlayerProjection {
   };
 }
 
+function createTestAdapter(): ProjectionOnlyAdapter {
+  let current = projection();
+  return {
+    async initialize(): Promise<ProjectionOnlySnapshot> { current = projection(); return { projection: current, events: [{ type: "case_started" }], accepted: true }; },
+    async dispatch(command: GameCommand): Promise<ProjectionOnlySnapshot> {
+      if (command.type === "visit_location") {
+        current = { ...current, locations: current.locations.map((item) => ({ ...item, visited: true })), chapters: current.chapters.map((item) => ({ ...item, unlocked: true })) };
+        return { projection: current, events: [{ type: "chapter_unlocked", chapterId: "internal-chapter-never-reported" }], accepted: true };
+      }
+      if (command.type === "set_evidence_state") {
+        current = { ...current, evidence: current.evidence.map((item) => ({ ...item, state: "examined" as const, observation: "一条公开观察。" })) };
+        return { projection: current, events: [{ type: "evidence_updated", evidenceId: command.evidenceId, state: "examined" }], accepted: true };
+      }
+      return { projection: current, events: [{ type: "command_rejected", message: "不可用" }], accepted: false };
+    },
+    async restore(): Promise<ProjectionOnlySnapshot> { return { projection: current, events: [], accepted: true }; },
+  };
+}
+
 test("budgeted runner records public chapter transitions and abandons without proof surface", async () => {
   let current = projection();
   const adapter: ProjectionOnlyAdapter = {
@@ -50,4 +69,15 @@ test("budgeted runner records public chapter transitions and abandons without pr
   assert.ok(trace.questionBudgetUsed <= trace.questionBudget);
   assert.ok(trace.evidenceBudgetUsed <= trace.evidenceBudget);
   assert.ok(trace.theoryBudgetUsed <= trace.theoryBudget);
+});
+
+test("budgeted runner exposes a read-only public progress observer", async () => {
+  const frames: string[] = [];
+  const adapter = createTestAdapter();
+  await runBudgetedProjectionOnlyCase(adapter, "novice-observer", { questionLimit: 4, evidenceLimit: 2, theoryLimit: 1, locationLimit: 1, noProgressLimit: 2, seed: 18 }, (projection, _events, command) => {
+    frames.push(`${command?.type ?? "initialize"}:${projection.transcript.length}:${projection.evidence.filter((item) => item.state !== "available").length}`);
+  });
+  assert.equal(frames[0].startsWith("initialize:"), true);
+  assert.equal(frames.length > 1, true);
+  assert.equal(frames.some((frame) => frame.startsWith("visit_location:") || frame.startsWith("set_evidence_state:")), true);
 });

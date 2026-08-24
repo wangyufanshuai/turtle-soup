@@ -287,4 +287,5 @@
 @keyframes mobilePanel { from { opacity: 0; transform: translateY(4px); } }
 .hostRewrite { display: grid; gap: .2rem; margin-top: .5rem; padding-top: .5rem; border-top: 1px solid rgba(184, 207, 121, .22); color: #cbc3b3; }
 .hostRewrite small { color: var(--acid); font: 600 .62rem/1.2 ui-monospace, monospace; letter-spacing: .1em; text-transform: uppercase; }
+.solvedPanel blockquote{margin:0 0 14px;padding:10px 12px;border-left:2px solid var(--acid);background:#b8cf790d;color:var(--paper);font:500 13px/1.55 var(--display);font-style:normal}
 .evidenceArt { display: block; width: 100%; height: auto; max-height: 150px; object-fit: cover; margin: 8px 0 10px; border: 1px solid var(--line); filter: saturate(.72) contrast(1.04); }

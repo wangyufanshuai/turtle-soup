@@ -86,6 +86,7 @@
 .localTools > label { display: flex; justify-content: space-between; align-items: center; min-height: 34px; }
 .localTools > div { display: flex; flex-wrap: wrap; gap: .4rem; }
 .localTools button { border: 1px solid var(--line-strong); background: transparent; color: var(--paper); padding: .45rem .55rem; cursor: pointer; font-size: .72rem; }
+.replay blockquote{margin:10px 0 14px;padding:11px 13px;border-left:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 7%,transparent);color:var(--paper);font:500 13px/1.55 var(--display);font-style:normal}
 @media (max-width: 850px) {
   .board { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
   .left,.middle,.right { padding-bottom: calc(100px + env(safe-area-inset-bottom)); scroll-padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
@@ -96,4 +97,18 @@
   .mobileTabs { height: calc(54px + env(safe-area-inset-bottom)); padding-bottom: env(safe-area-inset-bottom); }
   .mobileTabs button { min-height: 54px; }
   .settingsPanel { padding-bottom: env(safe-area-inset-bottom); }
+}
+@media (max-width:850px){
+  .mobileTaskBar{grid-template-columns:minmax(0,1fr);gap:7px}
+  .mobileTaskBar>small{grid-column:1;color:var(--accent);font:7px var(--mono);letter-spacing:.1em}
+  .mobileTaskBar label{grid-column:1;grid-row:auto}
+  .proofFocus{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+  .proofFocus button{grid-column:auto!important;grid-row:auto!important;min-height:32px!important;border-color:var(--line-strong)!important;background:#080a0c!important;color:var(--muted)!important}
+  .proofFocus button[data-active]{border-color:var(--accent)!important;background:color-mix(in srgb,var(--accent) 10%,transparent)!important;color:var(--accent)!important}
+  .mobileTaskBar>span{grid-column:1!important}
+  .mobileTaskActions{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+  .mobileTaskActions button{grid-column:auto!important;grid-row:auto!important;min-height:34px;padding:0 7px}
+  .variant[data-complex-proof] .boardTabs{display:none}
+  .variant[data-complex-proof] [data-mobile-proof-surface]:not([data-mobile-active]){display:none}
+  .variant[data-complex-proof] [data-mobile-proof-surface][data-mobile-active]{display:block}
 }

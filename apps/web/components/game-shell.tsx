@@ -23,6 +23,7 @@ import { EvidenceInspector } from "./evidence-inspector";
 import { LegacyTheoryWorkbench } from "./legacy-theory-workbench";
 import { goldenExperience, goldenPathStep } from "@/lib/golden-experience";
 import { HintLadder } from "./hint-ladder";
+import { MomentumRail } from "./momentum-rail";
 import styles from "./game-shell.module.css";
 
 type MobilePanel = "scene" | "questions" | "theory";
@@ -290,6 +291,7 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
 
         <section id="c01-questions" className={`${styles.column} ${styles.questionColumn} ${mobilePanel === "questions" ? styles.mobileActive : ""}`} aria-label="主持问答">
           <div className={styles.sectionHeader}><span>02</span><div><small>ASK & VERIFY</small><h2>主持问答</h2></div><b>{projection.transcript.length} ASKED</b></div>
+          <MomentumRail projection={projection} events={events} openingMoves={golden?.openingMoves} onNavigate={setMobilePanel} />
           <div className={styles.transcript} aria-live="polite" tabIndex={0} aria-label="主持问答记录，可滚动">
             {projection.transcript.length === 0 && (
               <div className={styles.hostOpening}>
@@ -379,6 +381,7 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
               <div className={styles.solvedMark}>CLOSED</div>
               <h3>证据链闭合</h3>
               <p>你没有猜中一句汤底；你证明了事件如何发生。</p>
+              {golden?.closureLine && <blockquote>{golden.closureLine}</blockquote>}
               {projection.replay.length === 0 ? <button onClick={() => send({ type: "request_proof_replay" })}>生成真相回放</button> : (
                 <div className={styles.replay}>
                   {projection.replay.map((beat) => <article key={beat.id}><time>{beat.timeLabel}</time><div><strong>{beat.caption}</strong><small>证明：{beat.evidenceTitles.join(" / ")}</small></div></article>)}

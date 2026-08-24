@@ -9,12 +9,15 @@ import { createCanonicalSave } from "./lib/canonical-save.ts";
 import { loadCaseFile, loadReleaseContent, type ReleaseCaseEntry } from "./lib/release-content.ts";
 import { mergeQuestionAliasPacks } from "./lib/v17-overlays.ts";
 
-const root = resolve(process.argv[2] ?? ".");
+const root = resolve(process.argv.slice(2).find((value) => !value.startsWith("--")) ?? ".");
+const isV18 = process.argv.includes("--v18");
+const reportVersion = isV18 ? "1.8" : "1.7";
+const releaseProfile = isV18 ? "v1.8-internal-rc" : "v1.7-internal-rc";
 const outDir = resolve(root, "apps/web/out");
-const outputDir = resolve(root, "output/playwright/v17");
+const outputDir = resolve(root, isV18 ? "output/playwright/v18" : "output/playwright/v17");
 rmSync(outputDir, { recursive: true, force: true });
 mkdirSync(outputDir, { recursive: true });
-const release = loadReleaseContent(root, "v1.7-internal-rc");
+const release = loadReleaseContent(root, releaseProfile);
 const entries = release.entries;
 const byId = new Map(entries.map((entry) => [entry.id, { entry, caseFile: loadCaseFile(entry) }]));
 const aliasPacks = mergeQuestionAliasPacks(
@@ -57,7 +60,7 @@ const server = createServer((request, response) => {
 });
 await new Promise<void>((done, reject) => { server.once("error", reject); server.listen(0, "127.0.0.1", done); });
 const address = server.address();
-if (!address || typeof address === "string") throw new Error("v1.7 browser audit server failed");
+if (!address || typeof address === "string") throw new Error(`${reportVersion} browser audit server failed`);
 const base = `http://127.0.0.1:${address.port}`;
 
 async function visit(page: Page, path: string) {
@@ -511,6 +514,10 @@ async function calibrationFlow(mobile: boolean) {
 
   await visit(page, "/case/c01-cold-room-knock/");
   if (mobile) await switchMobilePanel(page, 1);
+  const momentumRail = page.locator("[data-momentum-stage]").first();
+  const momentumVisible = await momentumRail.isVisible().catch(() => false);
+  const momentumText = await momentumRail.textContent().catch(() => "") ?? "";
+  const momentumSafe = !["solutionCertificate", "canonicalHypothesis", "requiredFactIds", "fact-", "event-"].some((token) => momentumText.includes(token));
   const ladder = page.locator("[data-hint-ladder]").first();
   const initialHintLevel = await ladder.getAttribute("data-hint-level");
   let hintKeyboard = false;
@@ -560,6 +567,7 @@ async function calibrationFlow(mobile: boolean) {
   let boardSwitch = true;
   let submitReachable = true;
   let boardCollapse = true;
+  let proofFocusSwitch = true;
   if (mobile && controlsVisible) {
     const selector = mobileControls.getByLabel("切换当前推理板");
     const options = await selector.locator("option").count();
@@ -568,11 +576,22 @@ async function calibrationFlow(mobile: boolean) {
       if (lastValue) await selector.selectOption(lastValue);
       boardSwitch = await selector.inputValue() === lastValue;
     }
-    const submit = mobileControls.getByRole("button", { name: "提交", exact: true });
+    const boardFocus = mobileControls.getByRole("button", { name: "当前板", exact: true });
+    const chainFocus = mobileControls.getByRole("button", { name: "事件链", exact: true });
+    if (isV18) {
+      proofFocusSwitch = await boardFocus.count() === 1 && await chainFocus.count() === 1;
+      if (proofFocusSwitch) {
+        await chainFocus.click();
+        proofFocusSwitch = await page.locator('[data-mobile-proof-surface="chain"][data-mobile-active]').isVisible().catch(() => false);
+        await boardFocus.click();
+        proofFocusSwitch = proofFocusSwitch && await page.locator('[data-mobile-proof-surface="board"][data-mobile-active]').isVisible().catch(() => false);
+      }
+    }
+    const submit = mobileControls.getByRole("button", { name: /提交/ }).last();
     const box = await submit.boundingBox();
     submitReachable = await submit.isVisible().catch(() => false) && Boolean(box && box.y >= 0 && box.y + box.height <= 844);
   }
-  const collapseButton = page.getByRole("button", { name: "收起当前板" }).first();
+  const collapseButton = page.getByRole("button", { name: /收起当前板|收起并前往下一板/ }).first();
   if (await collapseButton.count()) {
     await collapseButton.click();
     boardCollapse = await page.locator("[data-board-collapsed]").isVisible().catch(() => false);
@@ -587,6 +606,7 @@ async function calibrationFlow(mobile: boolean) {
   await page.reload({ waitUntil: "domcontentloaded" });
   await page.waitForSelector("main h1:visible", { timeout: 10_000 }).catch(() => undefined);
   if (mobile) await switchMobilePanel(page, 2);
+  if (mobile && isV18) await page.locator("[data-mobile-proof-controls]").getByRole("button", { name: "事件链", exact: true }).click().catch(() => undefined);
   const chainToggle = page.getByRole("button", { name: "收起", exact: true }).first();
   let chainCollapse = false;
   if (await chainToggle.count()) {
@@ -596,8 +616,8 @@ async function calibrationFlow(mobile: boolean) {
   await captureScreenshot(page, resolve(outputDir, `${prefix}-c60-collapsed-proof.png`), false);
   const axe = await new AxeBuilder({ page }).analyze();
   const axeIssues = axe.violations.filter((violation) => violation.impact === "serious" || violation.impact === "critical").map((violation) => ({ id: violation.id, impact: violation.impact, targets: violation.nodes.flatMap((node) => node.target.map(String)) }));
-  const passed = routeCount === 9 && routeOrder && recommended.includes("冷藏室的敲门声") && initialHintLevel === "0" && finalHintLevel === "3" && hintKeyboard && hintSafe && queryPaths.every((item) => item.passed) && controlsVisible && boardSwitch && submitReachable && boardCollapse && chainCollapse && highContrast && reducedMotion && c60Overflow <= 1 && c60Obstruction === 0 && axeIssues.length === 0 && errors.length === 0;
-  const result = { viewport: mobile ? "390x844" : "1440x900", routeCount, routeOrder, recommended, initialHintLevel, finalHintLevel, hintKeyboard, hintSafe, queryPaths, controlsVisible, boardSwitch, submitReachable, boardCollapse, chainCollapse, highContrast, reducedMotion, c60Overflow, c60Obstruction, axeSeriousCritical: axeIssues.length, axeIssues, consoleErrors: errors, passed };
+  const passed = routeCount === 9 && routeOrder && recommended.includes("冷藏室的敲门声") && initialHintLevel === "0" && finalHintLevel === "3" && hintKeyboard && hintSafe && (!isV18 || momentumVisible && momentumSafe && proofFocusSwitch) && queryPaths.every((item) => item.passed) && controlsVisible && boardSwitch && submitReachable && boardCollapse && chainCollapse && highContrast && reducedMotion && c60Overflow <= 1 && c60Obstruction === 0 && axeIssues.length === 0 && errors.length === 0;
+  const result = { viewport: mobile ? "390x844" : "1440x900", routeCount, routeOrder, recommended, initialHintLevel, finalHintLevel, hintKeyboard, hintSafe, momentumVisible, momentumSafe, queryPaths, controlsVisible, boardSwitch, proofFocusSwitch, submitReachable, boardCollapse, chainCollapse, highContrast, reducedMotion, c60Overflow, c60Obstruction, axeSeriousCritical: axeIssues.length, axeIssues, consoleErrors: errors, passed };
   await context.close();
   await browser.close();
   return result;
@@ -636,9 +656,9 @@ try {
   const screenshots = readdirSync(outputDir).filter((name) => name.endsWith(".png"));
   const consoleErrors = routeSmokeReports.reduce((sum, report) => sum + (report.consoleErrors as string[]).length, 0) + fullFlows.reduce((sum, report) => sum + (report.traces as Array<Record<string, unknown>>).reduce((nested, trace) => nested + (trace.consoleErrors as string[]).length, 0), 0);
   const report = {
-    reportVersion: "1.7",
+    reportVersion,
     generatedAt: new Date().toISOString(),
-    releaseProfile: "v1.7-internal-rc",
+    releaseProfile,
     status: "internal-rc / human-evaluation-pending",
     humanParticipants: 0,
     caseCount: entries.length,
@@ -657,7 +677,7 @@ try {
     passed: routesOnly ? routeSmokeReports.every((item) => item.passed) && consoleErrors === 0 : skipRoutes ? fullFlows.every((item) => item.passed) && calibration.every((item) => item.passed) && offline.passed && consoleErrors === 0 : routeSmokeReports.every((item) => item.passed) && fullFlows.every((item) => item.passed) && calibration.every((item) => item.passed) && offline.passed && consoleErrors === 0 && screenshots.length > 0,
     qualification: "浏览器自动化证明路由、公开交互、响应式布局、障碍断言、可访问性、存档恢复和离线下界；最终结案使用本地确定性 canonical fixture 验证回放路径，不代表真人理解、乐趣或市场验证。",
   };
-  writeFileSync(resolve(root, "docs/v1.7-browser-matrix.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  writeFileSync(resolve(root, isV18 ? "docs/v1.8-browser-matrix.json" : "docs/v1.7-browser-matrix.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
   console.log(JSON.stringify({ cases: report.caseCount, routeRuns: routeSmokeReports.length, fullFlowRuns: fullFlows.length, calibration: calibration.map((item) => ({ viewport: item.viewport, passed: item.passed })), screenshots: report.screenshotCount, consoleErrors, offline: offline.passed, passed: report.passed }, null, 2));
   if (!report.passed) process.exitCode = 1;
 } finally {

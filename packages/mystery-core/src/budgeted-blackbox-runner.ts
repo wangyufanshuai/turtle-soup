@@ -33,6 +33,12 @@ export interface BudgetedRunnerLimits {
   noProgressLimit: number;
 }
 
+export type BudgetedProgressObserver = (
+  projection: PlayerProjection,
+  events: readonly GameEvent[],
+  command?: GameCommand,
+) => void;
+
 export interface BudgetedProjectionTrace {
   persona: SyntheticPersonaId;
   seed: number;
@@ -234,6 +240,7 @@ export async function runBudgetedProjectionOnlyCase(
   adapter: ProjectionOnlyAdapter,
   persona: SyntheticPersonaId,
   configured: Partial<BudgetedRunnerLimits> = {},
+  observeProgress?: BudgetedProgressObserver,
 ): Promise<BudgetedProjectionTrace> {
   const limits = { ...DEFAULT_LIMITS, ...configured };
   if (limits.questionLimit < 1 || limits.evidenceLimit < 1 || limits.theoryLimit < 1) throw new Error("Budgeted runner limits must be positive");
@@ -273,11 +280,13 @@ export async function runBudgetedProjectionOnlyCase(
   const enteredChapters = new Set<string>();
   let lastUnlockedChapterCount = 0;
   let snapshot = await adapter.initialize();
+  observeProgress?.(snapshot.projection, snapshot.events);
   for (const chapter of snapshot.projection.chapters.filter((item) => item.unlocked)) enteredChapters.add(chapter.id);
   lastUnlockedChapterCount = enteredChapters.size;
 
   const send = async (command: GameCommand): Promise<ProjectionOnlySnapshot> => {
     const next = await adapter.dispatch(command);
+    observeProgress?.(next.projection, next.events, command);
     if (next.accepted) trace.acceptedCommands += 1;
     else trace.rejectedCommands += 1;
     for (const event of next.events) {

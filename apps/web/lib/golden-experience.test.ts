@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { GOLDEN_CASE_IDS, GOLDEN_PATH, GOLDEN_PATH_CASE_IDS, goldenPathStep } from "./golden-experience.ts";
+import { GOLDEN_CASE_IDS, GOLDEN_EXPERIENCE, GOLDEN_PATH, GOLDEN_PATH_CASE_IDS, goldenPathStep } from "./golden-experience.ts";
 
 test("golden path is a unique optional nine-case progression, not browser coverage", () => {
   assert.deepEqual(GOLDEN_PATH_CASE_IDS, [
@@ -23,8 +23,15 @@ test("golden path is a unique optional nine-case progression, not browser covera
 });
 
 test("golden path hints contain no internal or directed-answer identifiers", () => {
-  const serialized = JSON.stringify(GOLDEN_PATH.map((step) => step.hints));
+  const serialized = JSON.stringify({ hints: GOLDEN_PATH.map((step) => step.hints), experience: GOLDEN_PATH_CASE_IDS.map((id) => GOLDEN_EXPERIENCE[id]) });
   for (const token of ["fact-", "evidence-", "event-", "query-", "hypothesis-", "solutionCertificate", "canonicalHypothesis"]) {
     assert.equal(serialized.includes(token), false, token);
   }
+});
+
+test("every golden-path case has a distinct three-beat rhythm and closure payoff", () => {
+  const rhythms = GOLDEN_PATH_CASE_IDS.map((id) => GOLDEN_EXPERIENCE[id].openingMoves.join(" → "));
+  assert.equal(new Set(rhythms).size, 9);
+  assert.equal(GOLDEN_PATH_CASE_IDS.every((id) => GOLDEN_EXPERIENCE[id].openingMoves.length === 3), true);
+  assert.equal(GOLDEN_PATH_CASE_IDS.every((id) => GOLDEN_EXPERIENCE[id].closureLine.length >= 16), true);
 });

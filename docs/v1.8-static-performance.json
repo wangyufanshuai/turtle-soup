@@ -1,0 +1,24 @@
+{
+  "reportVersion": "1.8",
+  "releaseProfile": "v1.8-internal-rc",
+  "generatedAt": "2026-08-24T15:27:21.250Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "budgets": {
+    "totalBytes": 8000000,
+    "initialJavaScriptBytes": 1400000,
+    "maximumAssetBytes": 450000,
+    "sourceMaps": 0
+  },
+  "actual": {
+    "totalBytes": 6634725,
+    "initialJavaScriptBytes": 653711,
+    "maximumAssetBytes": 389209,
+    "sourceMaps": 0,
+    "javascriptBytes": 3400907,
+    "fileCount": 856
+  },
+  "cacheIdentity": "black-soup-v18-golden-nine-hardening-rc-1",
+  "failures": [],
+  "passed": true
+}

@@ -1,0 +1,45 @@
+{
+  "reportVersion": "1.8",
+  "releaseProfile": "v1.8-internal-rc",
+  "generatedAt": "2026-08-24T15:27:22.962Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "hiddenIdentifierCount": 1768,
+  "targets": [
+    {
+      "name": "static-output",
+      "files": 402,
+      "truthBearingTextFiles": 62,
+      "sourceMaps": 0,
+      "remoteReferences": [],
+      "publicHtmlLeaks": [],
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "reportFiles": [
+    "docs/v1.8-momentum-proxy.json",
+    "docs/v1.8-browser-matrix.json"
+  ],
+  "reportLeakTokens": [],
+  "boundaryChecks": {
+    "truthChunkExists": true,
+    "noPublicHtmlLeaks": true,
+    "noSourceMaps": true,
+    "noRemoteAnalyticsOrAI": true,
+    "reportsOmitCertificateSchema": true,
+    "momentumAcceptsPublicProjectionOnly": true,
+    "workerOwnsCaseLoading": true,
+    "localHostRewriteOnly": true
+  },
+  "boundaries": {
+    "fullCaseFile": "worker-only",
+    "momentum": "public projection only",
+    "saveSchemaVersion": 1,
+    "remoteAnalytics": false,
+    "remoteAI": false,
+    "hostRewrite": "localhost-only / presentation-only"
+  },
+  "passed": true,
+  "qualification": "静态扫描降低意外剧透与远程依赖风险；离线内容仍可被主动反编译，这不是 DRM。"
+}
