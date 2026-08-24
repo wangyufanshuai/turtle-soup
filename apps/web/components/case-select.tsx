@@ -90,7 +90,7 @@ export function CaseSelect() {
           </div>
         </details>;
       })}
-      <footer className={styles.footer}><span translate="no">深汤 / v1.4 INTERNAL RC</span><span>60 案内容真实性门禁 · HUMAN EVALUATION PENDING</span></footer>
+      <footer className={styles.footer}><span translate="no">深汤 / {RELEASE_PROFILE.id.toUpperCase()}</span><span>60 案确定性体验门禁 · HUMAN EVALUATION PENDING</span></footer>
     </main>
   );
 }

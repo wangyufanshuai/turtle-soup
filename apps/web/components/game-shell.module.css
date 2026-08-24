@@ -60,6 +60,7 @@
 .toast span { width: 7px; height: 7px; background: var(--acid); border-radius: 50%; flex: 0 0 auto; }
 
 .workspace { height: calc(100dvh - var(--top)); display: grid; grid-template-columns: minmax(270px, .92fr) minmax(390px, 1.28fr) minmax(330px, 1.05fr); }
+.game[data-experience-stage="opening"] .workspace,.game[data-experience-stage="investigation"] .workspace{grid-template-columns:minmax(420px,1.08fr) minmax(460px,.92fr)}
 .column { min-width: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #363a40 transparent; border-right: 1px solid var(--line); background: rgba(11,13,16,.78); }
 .column:last-child { border-right: 0; }
 .sectionHeader { height: 66px; position: sticky; top: 0; z-index: 8; display: grid; grid-template-columns: 34px 1fr auto; align-items: center; gap: 10px; padding: 0 16px; border-bottom: 1px solid var(--line); background: rgba(10,12,14,.95); backdrop-filter: blur(14px); }
@@ -70,6 +71,10 @@
 .sectionHeader > b { color: var(--muted); font: 8px var(--mono); letter-spacing: .09em; }
 
 .sceneColumn { background: linear-gradient(160deg, rgba(23,26,29,.77), rgba(7,8,10,.95) 45%); }
+.stageCue{display:grid;gap:8px;margin:14px 16px 22px;padding:16px;border:1px solid var(--line-strong);border-left:2px solid var(--acid);background:linear-gradient(110deg,rgba(187,211,105,.07),rgba(12,14,17,.75))}.stageCue small{font:9px var(--mono);letter-spacing:.14em;color:var(--acid)}.stageCue b{font:500 17px var(--serif)}.stageCue p{margin:0;color:var(--muted);font:13px/1.65 var(--serif)}.stageCue button{justify-self:start;padding:8px 12px;color:var(--paper);border:1px solid var(--line-strong);background:transparent}.stageCue button span{margin-left:16px;color:var(--acid)}
+.insight{margin:0 18px 12px;padding:12px 14px;border:1px solid color-mix(in srgb,var(--acid) 56%,var(--line));background:radial-gradient(circle at 0 50%,rgba(186,211,105,.1),transparent 22rem);animation:insightReveal .45s ease-out}.insight small{color:var(--acid);font:8px var(--mono);letter-spacing:.13em}.insight p{margin:6px 0 0;color:var(--paper);font:14px/1.6 var(--serif)}
+.replayChallenges{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px;padding-top:11px;border-top:1px solid var(--line)}.replayChallenges small{width:100%;color:var(--muted);font:8px var(--mono);letter-spacing:.08em}.replayChallenges button{margin:0;padding:8px 10px;color:var(--acid);background:transparent;border:1px solid var(--line-strong)}
+@keyframes insightReveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .sceneFrame { margin: 16px; aspect-ratio: 1.62; position: relative; overflow: hidden; border: 1px solid var(--line-strong); background: #0c0f10; box-shadow: 0 18px 40px #0008; }
 .sceneFrame::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, transparent 49.5%, rgba(255,255,255,.035) 50%, transparent 50.5%), radial-gradient(circle at 50% 70%, transparent 40%, #0008 100%); }
 .sceneFrame img { width: 100%; height: 100%; display: block; object-fit: cover; filter: saturate(.72) contrast(1.04); transform: scale(1.01); animation: sceneReveal 1.2s ease-out both; }
@@ -272,6 +277,7 @@
   .mobileNav button { border: 0; border-right: 1px solid var(--line); background: transparent; color: var(--muted); display: grid; place-content: center; justify-items: center; gap: 4px; cursor: pointer; }
   .mobileNav button:last-child { border-right: 0; }
   .mobileNav button[data-active] { color: var(--acid); box-shadow: inset 0 2px var(--acid); }
+  .mobileNav button:disabled{opacity:.38;cursor:not-allowed}
   .mobileNav svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; }
   .mobileNav span { font: 9px var(--mono); }
   .toast { top: calc(var(--top) + 10px); }

@@ -2,12 +2,11 @@
 
 import type {
   CaseId,
-  EvidencePlayerState,
   GameCommand,
   GameEvent,
   TheoryDraft,
 } from "@turtle-soup/mystery-core";
-import { emptyMasteryRecord, recordMasterySolve, type CaseMasteryRecord } from "@turtle-soup/mystery-core";
+import { challengeRotation, emptyMasteryRecord, recordMasterySolve, type CaseMasteryRecord } from "@turtle-soup/mystery-core";
 import { FormEvent, useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { AudioEngine } from "@/lib/audio-engine";
 import { getSoundscapeProfile } from "@/lib/audio-profiles";
@@ -20,6 +19,9 @@ import { useHostRewrite } from "@/lib/use-host-rewrite";
 import { HostRewriteControls } from "./host-rewrite-controls";
 import { loadMastery, saveMastery } from "@/lib/mastery-store";
 import { useLocalDiagnostics } from "@/lib/use-local-diagnostics";
+import { EvidenceInspector } from "./evidence-inspector";
+import { LegacyTheoryWorkbench } from "./legacy-theory-workbench";
+import { goldenExperience } from "@/lib/golden-experience";
 import styles from "./game-shell.module.css";
 
 type MobilePanel = "scene" | "questions" | "theory";
@@ -34,15 +36,6 @@ const ANSWER_LABELS = {
   unanswerable: "无法判断",
   unrecognized: "无法识别",
 } as const;
-
-const EVIDENCE_LABELS: Record<EvidencePlayerState, string> = {
-  available: "待检查",
-  discovered: "新证据",
-  examined: "已检查",
-  connected: "已关联",
-  verified: "已核实",
-  dismissed: "已搁置",
-};
 
 function eventMessage(event?: GameEvent): string | undefined {
   if (!event) return undefined;
@@ -99,6 +92,7 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
   const interpretationRef = useRef<HTMLDivElement>(null);
   const interpretationWasOpen = useRef(false);
   const soundscape = getSoundscapeProfile("cold-room");
+  const golden = goldenExperience(caseId);
   useEffect(() => {
     if (!projection) return;
     let active = true;
@@ -233,10 +227,15 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
   }
 
   const evidenceCount = projection.evidence.filter((item) => item.state !== "available" && item.state !== "dismissed").length;
+  const inspectedEvidenceCount = projection.evidence.filter((item) => !["available", "discovered", "dismissed"].includes(item.state)).length;
   const linkedCount = activeDraft?.evidenceIds.length ?? 0;
+  const hasObservedLocation = projection.locations.some((location) => location.visited);
+  const revealEvidence = projection.transcript.length > 0 || hasObservedLocation || inspectedEvidenceCount > 0 || projection.solved;
+  const revealTheory = projection.transcript.length >= 2 || inspectedEvidenceCount >= 2 || Boolean(activeDraft?.eventIds.length) || projection.solved;
+  const experienceStage = revealTheory ? "theory" : revealEvidence ? "investigation" : "opening";
 
   return (
-    <main id="main-content" tabIndex={-1} className={styles.game} data-high-contrast={highContrast || undefined} data-reduced-motion={reducedMotion || undefined}>
+    <main id="main-content" tabIndex={-1} className={styles.game} data-experience-stage={experienceStage} data-golden-cadence={golden?.cadence} data-replay-tone={golden?.replayTone} data-high-contrast={highContrast || undefined} data-reduced-motion={reducedMotion || undefined}>
       <header className={styles.topbar} inert={settingsOpen || undefined}>
         <div className={styles.brand}>
           <span className={styles.brandGlyph}>深</span>
@@ -262,7 +261,7 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
           <div className={styles.sectionHeader}><span>01</span><div><small>OBSERVE</small><h2>现场与证据</h2></div><b>{evidenceCount}/{projection.evidence.length}</b></div>
           <div className={styles.sceneFrame}>
             <picture><source media="(max-width: 850px)" srcSet="/assets/cases/c01/scene-mobile.webp" /><img src="/assets/cases/c01/scene-desktop.webp" alt="凌晨两点的冷藏室走廊，封闭的门与监控面板被冷光照亮" width={960} height={620} fetchPriority="high" /></picture>
-            <div className={styles.sceneStamp}>02:00<br/><span>SEALED</span></div>
+            <div className={styles.sceneStamp}>{golden?.sceneLabel ?? "02:00 · SEALED"}<br/><span>{golden?.sceneHint ?? "SEALED"}</span></div>
             <button className={styles.knockButton} onClick={() => audioRef.current?.play("knock")} aria-label="播放三下敲击的非必要气氛音"><Icon name="sound" />听取记录</button>
           </div>
           <p className={styles.premise}>{projection.case.surface}</p>
@@ -275,47 +274,20 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
             ))}
           </div>
 
-          <div className={styles.evidenceList}>
-            {projection.evidence.map((evidence, index) => {
-              const linked = activeDraft?.evidenceIds.includes(evidence.id) ?? false;
-              return (
-                <article className={styles.evidenceCard} data-state={evidence.state} key={evidence.id}>
-                  <div className={styles.evidenceIndex}>{String(index + 1).padStart(2, "0")}</div>
-                  <div className={styles.evidenceBody}>
-                    <div className={styles.evidenceMeta}><span>{evidence.sourceLabel}</span><b>{EVIDENCE_LABELS[evidence.state]}</b></div>
-                    {evidence.state !== "available" && evidence.state !== "discovered" && <img className={styles.evidenceArt} src={evidence.visualAsset ?? `/assets/cases/c01/evidence-${String((index % 5) + 1).padStart(2, "0")}.webp`} alt={`${evidence.title}的档案局部图`} width={256} height={160} loading="lazy" />}
-                    <h3>{evidence.title}</h3>
-                    <p>{evidence.observation}</p>
-                    <div className={styles.evidenceActions}>
-                      {evidence.state === "available" || evidence.state === "discovered" ? (
-                        <button onClick={() => send({ type: "set_evidence_state", evidenceId: evidence.id, state: "examined" })}>检查证据</button>
-                      ) : evidence.state === "dismissed" ? (
-                        <button onClick={() => send({ type: "set_evidence_state", evidenceId: evidence.id, state: "examined" })}>恢复证据</button>
-                      ) : (
-                        <>
-                          <button data-active={linked || undefined} onClick={() => send({ type: "link_theory_evidence", theoryId: projection.activeTheoryId, evidenceId: evidence.id, linked: !linked })}>{linked ? "已关联当前理论" : "关联当前理论"}</button>
-                          <button onClick={() => send({ type: "set_evidence_state", evidenceId: evidence.id, state: evidence.state === "verified" ? "examined" : "verified" })}>{evidence.state === "verified" ? "取消核实" : "标记已核实"}</button>
-                        </>
-                      )}
-                    </div>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
+          {revealEvidence ? <EvidenceInspector evidence={projection.evidence} activeTheoryId={projection.activeTheoryId} linkedEvidenceIds={activeDraft?.evidenceIds ?? []} caseCode="c01" dispatch={send} interactionMode={golden?.evidenceBehavior} interactionLabel={golden?.evidenceAction} /> : <div className={styles.stageCue}><small>FIRST TRACE / 01</small><b>先固定一个能被证实的前提</b><p>检查现场，或直接问：门关上以后会发生什么？第一条回答出现后，证据架才会展开。</p><button onClick={() => setMobilePanel("questions")}>前往提问 <span>→</span></button></div>}
         </section>
 
         <section id="c01-questions" className={`${styles.column} ${styles.questionColumn} ${mobilePanel === "questions" ? styles.mobileActive : ""}`} aria-label="主持问答">
           <div className={styles.sectionHeader}><span>02</span><div><small>ASK & VERIFY</small><h2>主持问答</h2></div><b>{projection.transcript.length} ASKED</b></div>
-          <div className={styles.transcript} aria-live="polite">
+          <div className={styles.transcript} aria-live="polite" tabIndex={0} aria-label="主持问答记录，可滚动">
             {projection.transcript.length === 0 && (
               <div className={styles.hostOpening}>
                 <span className={styles.hostSigil}>○</span>
-                <div><small>ARCHIVIST / 确定性主持</small><p>不要猜一句答案。先验证一个事实：谁、什么、何时，或者哪条物理约束不成立。</p><ol className={styles.firstRunSteps}><li><b>01</b>观察异常</li><li><b>02</b>提问排除</li><li><b>03</b>证据入链</li></ol></div>
+                <div><small>ARCHIVIST / 确定性主持</small><p>先问一个可以被记录证实或否定的事实。第一问不扣次数，也不会把你锁进错误路线。</p></div>
               </div>
             )}
             {projection.transcript.map((entry) => (
-              <div className={styles.exchange} key={entry.id}>
+              <div className={styles.exchange} key={entry.id} data-transcript-entry={entry.id}>
                 <div className={styles.playerQuestion}><span>YOU</span><p>{entry.rawQuestion}</p></div>
                 <div className={styles.hostAnswer} data-code={entry.answerCode}>
                   <div><b>{ANSWER_LABELS[entry.answerCode]}</b>{entry.repeated && <em>已验证</em>}</div>
@@ -327,6 +299,7 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
             ))}
             <div ref={transcriptEndRef} />
           </div>
+          {revealTheory && golden && <aside className={styles.insight} role="status"><small>CAUSAL SHIFT / 顿悟节点</small><p>{golden.insight}</p></aside>}
 
           {projection.interpretation && (
             <div ref={interpretationRef} className={styles.interpretation} role="group" aria-label="确认问题解释" aria-live="polite">
@@ -345,17 +318,17 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
               </div>
             </form>
             <div className={styles.quickQuestions}>
-              {projection.questionScaffolds.slice(0, 3).map((candidate) => <button key={candidate.queryId} onClick={() => send({ type: "ask_text", rawText: candidate.label })}>{candidate.label}</button>)}
+              {projection.questionScaffolds.slice(0, projection.transcript.length === 0 ? 1 : 3).map((candidate) => <button key={candidate.queryId} onClick={() => send({ type: "ask_text", rawText: candidate.label })}>{candidate.label}</button>)}
             </div>
-            <details className={styles.builder}>
+            {projection.transcript.length > 0 && <details className={styles.builder}>
               <summary>打开问题构建器 <span>对象 + 关系 + 条件</span></summary>
               <div>{projection.questionScaffolds.map((candidate) => <button key={candidate.queryId} onClick={() => setQuestion(candidate.label)}><b>{candidate.predicate}</b><span>{candidate.label}</span></button>)}</div>
-            </details>
+            </details>}
             <button className={styles.undoQuestion} disabled={projection.transcript.length === 0} onClick={() => send({ type: "undo_last_question" })}>撤销上一轮提问</button>
           </div>
         </section>
 
-        <section id="c01-theory" className={`${styles.column} ${styles.theoryColumn} ${mobilePanel === "theory" ? styles.mobileActive : ""}`} aria-label="笔记与假设">
+        {revealTheory && <section id="c01-theory" className={`${styles.column} ${styles.theoryColumn} ${mobilePanel === "theory" ? styles.mobileActive : ""}`} aria-label="笔记与假设">
           <div className={styles.sectionHeader}><span>03</span><div><small>BUILD & PROVE</small><h2>因果链</h2></div><b>{linkedCount} LINKED</b></div>
           <div className={styles.theoryTabs}>
             {projection.theoryDrafts.map((draft) => <button key={draft.id} data-active={draft.id === projection.activeTheoryId || undefined} onClick={() => send({ type: "select_theory", theoryId: draft.id })}>{draft.title}<span>{draft.eventIds.length} 个事件</span></button>)}
@@ -369,22 +342,7 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
                 </select>
               </label>
 
-              <div className={styles.eventPalette}>
-                <div className={styles.subhead}><span>已知事件</span><small>把有证据的事件加入时间链</small></div>
-                <div>{projection.eventOptions.map((event) => {
-                  const added = activeDraft.eventIds.includes(event.id);
-                  return <button key={event.id} disabled={added} onClick={() => send({ type: "upsert_theory_event", theoryId: activeDraft.id, eventId: event.id })}><time>{event.timeLabel}</time><span>{event.label}</span><b>{added ? "已加入" : "+"}</b></button>;
-                })}</div>
-              </div>
-
-              <ol className={styles.causalChain}>
-                {activeDraft.eventIds.length === 0 && <li className={styles.emptyChain}>先检查证据，再把已知事件放入因果链。</li>}
-                {activeDraft.eventIds.map((eventId, index) => {
-                  const event = eventOptions.get(eventId);
-                  if (!event) return null;
-                  return <li key={eventId}><div className={styles.chainRail}><span>{index + 1}</span>{index < activeDraft.eventIds.length - 1 && <i />}</div><div><time>{event.timeLabel}</time><strong>{event.label}</strong><nav><button disabled={index === 0} onClick={() => send({ type: "move_theory_event", theoryId: activeDraft.id, eventId, direction: -1 })} aria-label="事件上移">↑</button><button disabled={index === activeDraft.eventIds.length - 1} onClick={() => send({ type: "move_theory_event", theoryId: activeDraft.id, eventId, direction: 1 })} aria-label="事件下移">↓</button><button onClick={() => send({ type: "remove_theory_event", theoryId: activeDraft.id, eventId })}>移除</button></nav></div></li>;
-                })}
-              </ol>
+              <LegacyTheoryWorkbench caseId={projection.case.id} draft={activeDraft} events={projection.eventOptions} dispatch={send} />
 
               <div className={styles.proofTray}>
                 <div className={styles.subhead}><span>证明材料</span><small>{linkedCount} 件已关联</small></div>
@@ -416,15 +374,16 @@ export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId 
                 </div>
               )}
               {projection.debrief && <div className={styles.debrief}><span><b>{projection.debrief.proofCompleteness}%</b>证明完整</span><span><b>{projection.debrief.questionCount}</b>次提问</span><span><b>{projection.debrief.repeatedQuestionCount}</b>次重复</span><span><b>已解锁</b>有限问题挑战</span></div>}
+              {projection.replayChallenges.length > 0 && <div className={styles.replayChallenges}><small>MASTERY ROTATION · {mastery ? (challengeRotation(mastery).nextChallenge === "complete" ? "MASTERED" : `下一项：${challengeRotation(mastery).nextChallenge}`) : "本机记录中"}</small>{projection.replayChallenges.map((challenge) => <button key={challenge.mode} onClick={() => send({ type: "set_replay_mode", mode: challenge.mode })}>{challenge.mode === "limited-questions" ? `限定 ${challenge.questionLimit ?? 12} 问` : challenge.mode === "minimal-proof" ? "最小证据证明" : "无快捷问题"}</button>)}</div>}
             </section>
           )}
-        </section>
+        </section>}
       </div>
 
       <nav className={styles.mobileNav} aria-label="调查区域" inert={settingsOpen || undefined}>
         <button aria-controls="c01-scene" aria-pressed={mobilePanel === "scene"} data-active={mobilePanel === "scene" || undefined} onClick={() => setMobilePanel("scene")}><Icon name="eye" /><span>现场</span></button>
         <button aria-controls="c01-questions" aria-pressed={mobilePanel === "questions"} data-active={mobilePanel === "questions" || undefined} onClick={() => setMobilePanel("questions")}><Icon name="ask" /><span>提问</span></button>
-        <button aria-controls="c01-theory" aria-pressed={mobilePanel === "theory"} data-active={mobilePanel === "theory" || undefined} onClick={() => setMobilePanel("theory")}><Icon name="chain" /><span>推理</span></button>
+        <button aria-controls="c01-theory" aria-pressed={mobilePanel === "theory"} data-active={mobilePanel === "theory" || undefined} disabled={!revealTheory} onClick={() => setMobilePanel("theory")}><Icon name="chain" /><span>{revealTheory ? "推理" : "待解锁"}</span></button>
       </nav>
 
       {settingsOpen && (
