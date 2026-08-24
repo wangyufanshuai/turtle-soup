@@ -291,7 +291,12 @@ function normalizedQuestionText(text: string): string {
   return text
     .normalize("NFKC")
     .toLocaleLowerCase("zh-CN")
-    .replace(/[\s\p{P}\p{S}]+/gu, "");
+    .replace(/[\s\p{P}\p{S}]+/gu, "")
+    // Common conversational wrappers are not semantic content. Removing
+    // them keeps authored question corpora useful without making the host
+    // depend on an LLM or fuzzy similarity threshold.
+    .replace(/^(请问|我想确认|现在能否确认|调查记录里|后台记录里|从雪地现场看|从舞台现场看|请验证|我的问题是|能不能判断|请回答一个事实|关于这条路线|关于这个角色|记录是否支持|证词是否支持|在这个案件里)/, "")
+    .replace(/(只回答事实|请只回答事实)$/, "");
 }
 
 function normalizedTerms(values: string[] | undefined): string[] {
@@ -340,8 +345,14 @@ export function normalizeQuestion(caseFile: CaseFile, rawText: string): Question
   }
   const topScore = candidates[0].score;
   const top = candidates.filter((item) => item.score === topScore);
-  if (top.length !== 1) {
-    return { status: "ambiguous", rawText, normalizedText, queryId: null, candidateQueryIds: top.map((item) => item.query.id), matchedBy: "rule" };
+  const topPriority = Math.floor(topScore / 100);
+  // Low-priority rules are discovery fallbacks, not strong semantic proof. If
+  // more than one query matches such an input, fail closed even when one rule
+  // happens to score slightly higher. This prevents a typo or abbreviation
+  // from silently selecting a different predicate.
+  if (top.length !== 1 || (candidates.length > 1 && topPriority < 3)) {
+    const ambiguous = top.length !== 1 ? top : candidates;
+    return { status: "ambiguous", rawText, normalizedText, queryId: null, candidateQueryIds: [...new Set(ambiguous.map((item) => item.query.id))], matchedBy: "rule" };
   }
   return {
     status: "matched",
@@ -433,7 +444,13 @@ export function judgeTheory(caseFile: CaseFile, state: GameState, submission: Th
   const certificate = caseFile.solutionCertificate;
   const selectedEvidence = unique(submission.evidenceIds ?? []);
   const selectedEvents = submission.eventIds ?? [];
-  const missingEvidenceIds = certificate.requiredEvidenceIds.filter((id) => !selectedEvidence.includes(id));
+  const proofSets = certificate.minimumProofSets?.length
+    ? certificate.minimumProofSets
+    : [{ id: "certificate-required", evidenceIds: certificate.requiredEvidenceIds }];
+  const bestProofSet = [...proofSets]
+    .map((set) => ({ set, missing: set.evidenceIds.filter((id) => !selectedEvidence.includes(id)) }))
+    .sort((left, right) => left.missing.length - right.missing.length || left.set.evidenceIds.length - right.set.evidenceIds.length)[0];
+  const missingEvidenceIds = bestProofSet?.missing ?? certificate.requiredEvidenceIds.filter((id) => !selectedEvidence.includes(id));
   const missingFactIds = certificate.requiredFactIds.filter((id) => !current.visibleFactIds.includes(id));
   const missingContradictionResolutionIds = certificate.requiredContradictionResolutionIds.filter(
     (id) => !contradictionResolutionMet(caseFile, current, id, selectedEvidence),

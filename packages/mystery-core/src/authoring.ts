@@ -1,4 +1,5 @@
 import type { CaseFile } from "./types.ts";
+import { normalizeQuestion } from "./engine.ts";
 
 export type QualitySeverity = "error" | "warning" | "info";
 
@@ -13,6 +14,7 @@ export interface QueryCorpusEntry {
   id: string;
   rawQuestion: string;
   expectedQueryId?: string | null;
+  expectedStatus?: "matched" | "ambiguous" | "unrecognized";
   category?: "positive" | "ambiguous" | "irrelevant" | "unrecognized" | "spoiler-seeking";
 }
 
@@ -31,6 +33,14 @@ export interface CaseQualityReport {
     questionCoverage: number;
     antiLeakCount: number;
     proofReplayCoverage: number;
+    alternativeCoverage: number;
+    requiredEvidenceCoverage: number;
+    ambiguityRate: number;
+    duplicateQuestionRate: number;
+    estimatedSolveTimeMinutes: { min: number; max: number };
+    redHerringPresence: boolean;
+    corpusCount: number;
+    corpusMinimumMet: boolean;
   };
   passed: boolean;
 }
@@ -108,11 +118,30 @@ export function analyzeCaseQuality(caseFile: CaseFile, corpus: QueryCorpusEntry[
 
   const replayFactIds = new Set(caseFile.proofReplay.flatMap((beat) => beat.factIds));
   for (const factId of certificate.requiredFactIds) if (!replayFactIds.has(factId)) push("warning", "REQUIRED_FACT_NO_REPLAY", factId, "必要事实没有在证明回放中出现。");
-  const coveredQueries = new Set(corpus.filter((entry) => entry.expectedQueryId && queryIds.has(entry.expectedQueryId)).map((entry) => entry.expectedQueryId));
+  const normalizedCorpus = corpus.map((entry) => ({ entry, result: normalizeQuestion(caseFile, entry.rawQuestion) }));
+  if (corpus.length > 0 && corpus.length < 150) push("error", "CORPUS_TOO_SHORT", caseFile.id, `问题语料只有 ${corpus.length} 条，发布候选至少需要 150 条。`);
+  for (const { entry, result } of normalizedCorpus) {
+    if (entry.expectedStatus && result.status !== entry.expectedStatus) push("error", "CORPUS_STATUS_MISMATCH", entry.id, `语料预期 ${entry.expectedStatus}，实际为 ${result.status}。`);
+    if (entry.expectedQueryId && (result.status !== "matched" || result.queryId !== entry.expectedQueryId)) push("error", "CORPUS_QUERY_MISMATCH", entry.id, `语料没有稳定映射到 ${entry.expectedQueryId}。`);
+  }
+  const coveredQueries = new Set(normalizedCorpus.filter(({ result }) => result.status === "matched" && result.queryId && queryIds.has(result.queryId)).map(({ result }) => result.queryId as string));
   if (corpus.length > 0 && coveredQueries.size < queryIds.size) push("warning", "QUESTION_COVERAGE_GAP", caseFile.id, `问题语料只覆盖 ${coveredQueries.size}/${queryIds.size} 个查询语义。`);
   if (caseFile.hypotheses.filter((hypothesis) => hypothesis.kind === "alternative").length < 2) push("warning", "FEW_ALTERNATIVES", caseFile.id, "案件少于两个作者错误理论，盲测容易变成单路径猜谜。");
   const hasIrrelevantQuery = caseFile.questionSemantics.some((query) => query.answerCodeWhenVisible === "irrelevant");
-  if (!hasIrrelevantQuery && !caseFile.evidenceItems.some((evidence) => evidence.supports?.length === 0 || evidence.importance === "irrelevant")) push("warning", "NO_RED_HERRING", caseFile.id, "案件没有显式无关或红鲱鱼证据。 ");
+  const redHerringPresence = hasIrrelevantQuery || caseFile.evidenceItems.some((evidence) => evidence.supports?.length === 0 || evidence.importance === "irrelevant");
+  if (!redHerringPresence) push("warning", "NO_RED_HERRING", caseFile.id, "案件没有显式无关或红鲱鱼证据。 ");
+  const alternativeHypotheses = caseFile.hypotheses.filter((hypothesis) => hypothesis.kind === "alternative");
+  const alternativesCovered = alternativeHypotheses.filter((hypothesis) => {
+    const contradiction = caseFile.contradictions.find((item) => (item.invalidatesHypothesisIds ?? []).includes(hypothesis.id));
+    return Boolean(contradiction && (contradiction.resolutionEvidenceIds ?? []).length > 0 && (contradiction.requiresFactIds ?? []).length > 0);
+  }).length;
+  const requiredEvidenceIds = certificate.requiredEvidenceIds;
+  const proofEvidenceIds = new Set(certificate.minimumProofSets.flatMap((set) => set.evidenceIds));
+  const requiredEvidenceCovered = requiredEvidenceIds.filter((id) => proofEvidenceIds.has(id)).length;
+  const normalizedTexts = corpus.map((entry) => entry.rawQuestion.normalize("NFKC").toLocaleLowerCase("zh-CN").replace(/[\s\p{P}\p{S}]+/gu, "")).filter(Boolean);
+  const duplicateCount = normalizedTexts.length - new Set(normalizedTexts).size;
+  const ambiguityCount = normalizedCorpus.filter(({ result }) => result.status === "ambiguous").length;
+  const targetMinutes = caseFile.metadata?.targetMinutes ?? { min: 5, max: 20 };
 
   return {
     caseId: caseFile.id,
@@ -129,6 +158,14 @@ export function analyzeCaseQuality(caseFile: CaseFile, corpus: QueryCorpusEntry[
       questionCoverage: queryIds.size === 0 ? 100 : Math.round((coveredQueries.size / queryIds.size) * 100),
       antiLeakCount: warnings.filter((item) => item.code.includes("EARLY") || item.code.includes("START")).length,
       proofReplayCoverage: certificate.requiredFactIds.length === 0 ? 100 : Math.round((certificate.requiredFactIds.filter((id) => replayFactIds.has(id)).length / certificate.requiredFactIds.length) * 100),
+      alternativeCoverage: alternativeHypotheses.length === 0 ? 100 : Math.round((alternativesCovered / alternativeHypotheses.length) * 100),
+      requiredEvidenceCoverage: requiredEvidenceIds.length === 0 ? 100 : Math.round((requiredEvidenceCovered / requiredEvidenceIds.length) * 100),
+      ambiguityRate: corpus.length === 0 ? 0 : Math.round((ambiguityCount / corpus.length) * 100),
+      duplicateQuestionRate: corpus.length === 0 ? 0 : Math.round((duplicateCount / corpus.length) * 100),
+      estimatedSolveTimeMinutes: { min: targetMinutes.min, max: targetMinutes.max },
+      redHerringPresence,
+      corpusCount: corpus.length,
+      corpusMinimumMet: corpus.length >= 150,
     },
     passed: errors.length === 0,
   };

@@ -140,6 +140,16 @@ test("accepted command replay restores the same player projection", () => {
   assert.deepEqual(restored.projection, projectPlayerState(caseFile, state));
 });
 
+test("moving a theory event keeps internal and public event identities consistent", () => {
+  const solved = buildSolvedSession();
+  const moved = reduceGameCommand(caseFile, solved.state, { type: "move_theory_event", theoryId: "theory-a", eventId: "event-05", direction: -1 });
+  assert.equal(moved.accepted, true);
+  const draft = moved.projection.theoryDrafts.find((item) => item.id === "theory-a");
+  assert.ok(draft);
+  assert.equal(draft.eventIds.includes("event-unknown"), false);
+  assert.deepEqual(draft.eventIds, ["event-01", "event-02", "event-03", "event-05", "event-04", "event-07"]);
+});
+
 test("C01 authoring report catches no dangling references", () => {
   const report = analyzeCaseQuality(caseFile, c01QuestionCorpus);
   assert.equal(report.passed, true);

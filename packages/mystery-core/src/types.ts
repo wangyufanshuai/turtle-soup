@@ -15,6 +15,170 @@ export type Judgement =
   | "solved"
   | "invalidated";
 
+export type CaseId = "c01-cold-room-knock" | "c02-snow-route" | "c03-second-shadow" | (string & {});
+
+export type SeasonId = "season-1" | "season-2" | "season-3" | (string & {});
+
+export interface ReleaseProfile {
+  profileVersion: number;
+  id: string;
+  title: string;
+  status: "frozen-for-human-evaluation" | "internal-rc" | "published" | (string & {});
+  publishable: boolean;
+  humanEvaluation: "pending" | "passed" | "failed" | (string & {});
+  manifests: string[];
+}
+
+export interface CasePresentationSpec {
+  layoutId: "cold-room" | "snow-route" | "second-shadow" | (string & {});
+  sceneAsset: string;
+  sceneAssetMobile?: string;
+  palette: "black-soup" | "snow-night" | "backstage-amber" | (string & {});
+  accent: string;
+  questionPromptMode: "host" | "radio" | "testimony" | (string & {});
+  evidenceVisualMode: "archive-cards" | "route-tags" | "dossier-cards" | (string & {});
+  mobileNavigation: string[];
+  boardMode?: ReasoningBoardMode;
+}
+
+/** Public-copy-only overlay. It is intentionally unable to describe truth, queries or proof rules. */
+export interface CasePresentationPatch {
+  caseId: CaseId;
+  baseCanonicalHash: string;
+  presentationRevision: number;
+  title?: string;
+  surface?: string;
+  answerTemplates?: Partial<Record<AnswerCode, string>>;
+  questionLabels?: Record<string, string>;
+  feedbackCopy?: Record<string, string>;
+  evidenceCopy?: Record<string, { title?: string; observation?: string }>;
+  hypothesisLabels?: Record<string, string>;
+  chapterTitles?: Record<string, string>;
+  replayCaptions?: Record<string, string>;
+  /** Public replay configuration only; it cannot alter the standard proof certificate. */
+  replayChallenges?: ReplayChallengeSpec[];
+  sceneAsset?: string;
+  sceneAssetMobile?: string;
+  evidenceVisualMode?: string;
+}
+
+export type ReasoningBoardMode =
+  | "timeline"
+  | "state-trace"
+  | "spatial-map"
+  | "provenance-chain"
+  | "identity-matrix"
+  | "measurement-model"
+  | "sampling-window"
+  | "aggregate-constraint"
+  | "calibration-curve"
+  | "control-loop"
+  | "signal-chain"
+  | "network-topology"
+  | "uncertainty-band"
+  | "reference-frame"
+  | "queue-model";
+
+export type ProofObligationKind =
+  | "time"
+  | "space"
+  | "source"
+  | "identity"
+  | "measurement"
+  | "state-transition"
+  | "alternative-exclusion";
+
+export type ReplayMode = "standard" | "limited-questions" | "minimal-proof" | "no-scaffolds";
+
+export type MasteryChallenge = Exclude<ReplayMode, "standard">;
+
+export interface CaseMasteryChallengeResult {
+  solved: boolean;
+  bestQuestionCount?: number;
+  bestProofCompleteness?: number;
+  hintFree?: boolean;
+  completedAt: string;
+}
+
+export interface CaseMasteryRecord {
+  caseId: CaseId;
+  caseVersion: number;
+  canonicalHash: string;
+  standardSolved: boolean;
+  challengeResults: Partial<Record<MasteryChallenge, CaseMasteryChallengeResult>>;
+  totalSolves: number;
+  lastPlayedAt: string;
+}
+
+export interface ChallengeRotation {
+  caseId: CaseId;
+  nextChallenge: MasteryChallenge | "complete";
+  completedCount: number;
+}
+
+export interface CaseChapter {
+  id: string;
+  titleKey: string;
+  unlock?: VisibilityRequirements;
+}
+
+export interface ReasoningBoardSlotSpec {
+  id: string;
+  labelKey: string;
+  acceptsEventIds: string[];
+}
+
+export interface ReasoningBoardSpec {
+  id: string;
+  titleKey: string;
+  mode: ReasoningBoardMode;
+  slots: ReasoningBoardSlotSpec[];
+  allowedRelations?: string[];
+}
+
+export interface BoardPlacementRequirement {
+  slotId: string;
+  eventId: string;
+}
+
+export interface BoardConnectionRequirement {
+  fromEventId: string;
+  toEventId: string;
+  relation: string;
+}
+
+export interface ProofObligation {
+  id: string;
+  kind: ProofObligationKind;
+  boardId: string;
+  requiredPlacements?: BoardPlacementRequirement[];
+  requiredConnections?: BoardConnectionRequirement[];
+  failureCategory: ProofObligationKind;
+}
+
+export interface ReplayChallengeSpec {
+  mode: Exclude<ReplayMode, "standard">;
+  questionLimit?: number;
+}
+
+export interface CaseCatalogEntry {
+  id: CaseId;
+  title: string;
+  surface: string;
+  difficulty: string;
+  targetMinutes: { min: number; max: number };
+  contentTags: string[];
+  layoutId: string;
+  sceneAsset: string;
+  sceneAssetMobile?: string;
+  accent: string;
+  seasonId?: SeasonId;
+  seasonTitle?: string;
+  status?: "frozen" | "internal-rc" | "public-preview" | "published";
+  mechanicTags?: string[];
+  replayChallenges?: ReplayChallengeSpec[];
+}
+
 export interface Entity {
   id: string;
   kind: string;
@@ -102,6 +266,7 @@ export interface EvidenceItem {
   sourceEventIds?: string[];
   supports?: string[];
   conflicts?: string[];
+  visualAsset?: string;
   [key: string]: unknown;
 }
 
@@ -145,6 +310,7 @@ export interface SolutionCertificate {
   minimumProofSets: MinimumProofSet[];
   acceptedMotiveKeys?: string[];
   successReplayBeatIds?: string[];
+  proofObligations?: ProofObligation[];
   [key: string]: unknown;
 }
 
@@ -174,6 +340,10 @@ export interface CaseFile {
     initialQuestionPrompts?: string[];
     [key: string]: unknown;
   };
+  presentation?: CasePresentationSpec;
+  chapters?: CaseChapter[];
+  reasoningBoards?: ReasoningBoardSpec[];
+  replayChallenges?: ReplayChallengeSpec[];
   entities: Entity[];
   events: Event[];
   relations: Relation[];
@@ -283,6 +453,20 @@ export interface RuntimeState {
   solved: boolean;
   replayBeatIds: string[];
   acceptedCommandCount: number;
+  unlockedChapterIds: string[];
+  reasoningBoards: Record<string, ReasoningBoardDraft>;
+  replayMode: ReplayMode;
+}
+
+export interface ReasoningBoardConnection {
+  fromItemId: string;
+  toItemId: string;
+  relation: string;
+}
+
+export interface ReasoningBoardDraft {
+  placements: Record<string, string>;
+  connections: ReasoningBoardConnection[];
 }
 
 export interface QuestionCandidateProjection {
@@ -308,6 +492,57 @@ export interface EvidenceProjection {
   state: EvidencePlayerState;
   sourceLabel: string;
   isNew: boolean;
+  visualAsset?: string;
+}
+
+export interface RasterAssetRecord {
+  id: string;
+  caseId: CaseId;
+  role: "scene-desktop" | "scene-mobile" | "evidence";
+  path: string;
+  width: number;
+  height: number;
+  bytes: number;
+  sha256: string;
+  alt: string;
+  prompt: string;
+  generatedAt: string;
+  generator: string;
+  humanEdits: string[];
+  licenseStatus: "generated-for-project" | "verified" | "blocked";
+}
+
+export interface RasterAssetManifest {
+  manifestVersion: 1;
+  releaseProfile: string;
+  generatedAt: string;
+  assets: RasterAssetRecord[];
+}
+
+export type HostRewriteStyle = "冷静" | "低语" | "档案" | "紧张";
+
+export interface PresentationContext {
+  caseId: CaseId;
+  caseVersion: number;
+  language: "zh-CN" | (string & {});
+  answerCode: AnswerCode;
+  deterministicText: string;
+  playerQuestion: string;
+  visibleEvidence: Array<{ title: string; observation: string }>;
+  hintLevel: "none" | "light" | "direct";
+  requestedStyle: HostRewriteStyle;
+}
+
+export interface HostRewriteRequest {
+  endpoint: string;
+  model: string;
+  context: PresentationContext;
+}
+
+export interface HostRewriteResponse {
+  text: string;
+  style?: HostRewriteStyle;
+  warnings?: string[];
 }
 
 export interface EventOptionProjection {
@@ -335,6 +570,34 @@ export interface ReplayBeatProjection {
   evidenceTitles: string[];
 }
 
+export interface ChapterProjection {
+  id: string;
+  title: string;
+  unlocked: boolean;
+}
+
+export interface ReasoningBoardSlotProjection {
+  id: string;
+  label: string;
+  itemId?: string;
+}
+
+export interface ReasoningBoardProjection {
+  id: string;
+  title: string;
+  mode: ReasoningBoardMode;
+  slots: ReasoningBoardSlotProjection[];
+  items: EventOptionProjection[];
+  connections: ReasoningBoardConnection[];
+  allowedRelations: string[];
+  behavior?: {
+    interaction: string;
+    slotRoles: string[];
+    connectionVerbs: string[];
+    requiredDistinctRoles: number;
+  };
+}
+
 export interface DebriefReport {
   proofCompleteness: number;
   questionCount: number;
@@ -346,13 +609,17 @@ export interface DebriefReport {
 
 export interface PlayerProjection {
   case: {
-    id: string;
+    id: CaseId;
     version: number;
     contentHash: string;
     title: string;
     surface: string;
     difficulty: string;
     targetMinutes: { min: number; max: number };
+    contentTags: string[];
+    presentation: CasePresentationSpec;
+    presentationRevision?: number;
+    presentationPatchHash?: string;
   };
   transcript: TranscriptEntry[];
   interpretation?: QuestionInterpretation;
@@ -367,6 +634,10 @@ export interface PlayerProjection {
   solved: boolean;
   replay: ReplayBeatProjection[];
   debrief?: DebriefReport;
+  chapters: ChapterProjection[];
+  reasoningBoards: ReasoningBoardProjection[];
+  replayMode: ReplayMode;
+  replayChallenges: ReplayChallengeSpec[];
 }
 
 export type GameCommand =
@@ -385,6 +656,11 @@ export type GameCommand =
   | { type: "set_theory_motive"; theoryId: TheoryDraft["id"]; motiveKey?: string }
   | { type: "submit_theory"; theoryId: TheoryDraft["id"] }
   | { type: "request_proof_replay" }
+  | { type: "place_reasoning_item"; boardId: string; slotId: string; itemId: string }
+  | { type: "remove_reasoning_item"; boardId: string; slotId: string }
+  | { type: "connect_reasoning_items"; boardId: string; fromItemId: string; toItemId: string; relation: string }
+  | { type: "disconnect_reasoning_items"; boardId: string; fromItemId: string; toItemId: string; relation: string }
+  | { type: "set_replay_mode"; mode: ReplayMode }
   | { type: "restart_case" };
 
 export type GameEvent =
@@ -396,9 +672,12 @@ export type GameEvent =
   | { type: "evidence_updated"; evidenceId: string; state: EvidencePlayerState }
   | { type: "location_visited"; locationId: string }
   | { type: "theory_updated"; theoryId: TheoryDraft["id"] }
-  | { type: "theory_judged"; judgement: Judgement; message: string }
+  | { type: "theory_judged"; judgement: Judgement; message: string; proofFailureCategory?: ProofObligationKind }
   | { type: "case_solved" }
   | { type: "replay_ready" }
+  | { type: "chapter_unlocked"; chapterId: string }
+  | { type: "reasoning_board_updated"; boardId: string }
+  | { type: "replay_mode_started"; mode: ReplayMode }
   | { type: "command_rejected"; message: string };
 
 export interface SaveEnvelope {
@@ -415,6 +694,7 @@ export interface SaveEnvelope {
     reducedMotion?: boolean;
     highContrast?: boolean;
   };
+  completed?: boolean;
 }
 
 export interface RuntimeResult {

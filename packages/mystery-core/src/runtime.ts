@@ -27,7 +27,10 @@ import type {
   TheoryDraft,
   TheoryOptionProjection,
   TranscriptEntry,
+  ProofObligationKind,
+  ReasoningBoardDraft,
 } from "./types.ts";
+import { reasoningBoardBehavior } from "./board-behavior.ts";
 
 const DEFAULT_TARGET_MINUTES = { min: 5, max: 20 };
 
@@ -51,6 +54,14 @@ const PREDICATE_LABELS: Record<string, string> = {
   intended_to_delay: "验证行为目的",
   entered_after_lock: "排除锁门后的进入",
   irrelevant_color: "验证外观细节",
+  weather_rain: "验证是否在下雨",
+  weather_stopped: "验证降雨是否停止",
+  room_occupancy: "验证房间是否有人",
+  drip_heard: "验证滴水发生时间",
+  stored_water: "验证是否有储水",
+  pipe_drainage: "验证水是否沿管道移动",
+  roof_leak: "排除屋顶持续漏雨",
+  unrelated_wet_object: "排除无关湿物",
 };
 
 const EVENT_ACTION_LABELS: Record<string, string> = {
@@ -76,9 +87,11 @@ const MOTIVE_LABELS: Record<string, string> = {
   "motive-attention": "吸引他人注意",
 };
 
-function publicHypothesisId(hypothesisId: string): string {
+function publicHypothesisId(caseFile: CaseFile, hypothesisId: string): string {
+  if (hypothesisId === caseFile.solutionCertificate.canonicalHypothesisId) {
+    return caseFile.id === "c01-cold-room-knock" ? "path-delayed-sound" : "path-canonical";
+  }
   const aliases: Record<string, string> = {
-    "hypothesis-canonical": "path-delayed-sound",
     "hypothesis-fang-entered": "path-late-entry",
     "hypothesis-guard-faked": "path-corridor-fake",
   };
@@ -86,7 +99,7 @@ function publicHypothesisId(hypothesisId: string): string {
 }
 
 function internalHypothesisId(caseFile: CaseFile, publicId: string): string | undefined {
-  return caseFile.hypotheses.find((item) => publicHypothesisId(item.id) === publicId)?.id;
+  return caseFile.hypotheses.find((item) => publicHypothesisId(caseFile, item.id) === publicId)?.id;
 }
 
 function publicEventId(caseFile: CaseFile, eventId: string): string {
@@ -107,12 +120,28 @@ function translate(caseFile: CaseFile, key: unknown, fallback: string): string {
   return typeof key === "string" ? (localizations(caseFile)[key] ?? fallback) : fallback;
 }
 
+const DEFAULT_PRESENTATION = {
+  layoutId: "cold-room",
+  sceneAsset: "/scene-cold-room.svg",
+  palette: "black-soup",
+  accent: "#b8cf79",
+  questionPromptMode: "host",
+  evidenceVisualMode: "archive-cards",
+  mobileNavigation: ["现场", "提问", "推理"],
+};
+
+function entityLabel(caseFile: CaseFile, id: unknown): string {
+  if (typeof id !== "string") return "案件对象";
+  const entity = caseFile.entities.find((item) => item.id === id);
+  return entity ? translate(caseFile, entity.labelKey, id) : id;
+}
+
 function queryProjection(caseFile: CaseFile, queryId: string): QuestionCandidateProjection | undefined {
   const query = caseFile.questionSemantics.find((item) => item.id === queryId);
   if (!query) return undefined;
-  const firstPhrase = query.examplePhrases?.[0] ?? PREDICATE_LABELS[String(query.predicate)] ?? "验证一个事实";
+  const firstPhrase = translate(caseFile, query.labelKey, query.examplePhrases?.[0] ?? PREDICATE_LABELS[String(query.predicate)] ?? "验证一个事实");
   const slots = (query.slots ?? {}) as Record<string, unknown>;
-  const target = String(slots.subjectId ?? slots.locationId ?? slots.effect ?? "案件事实");
+  const target = entityLabel(caseFile, slots.subjectId ?? slots.locationId ?? slots.objectId ?? slots.effect ?? "案件事实");
   const qualifier = slots.time ? String(slots.time) : undefined;
   return {
     queryId: query.id,
@@ -154,7 +183,8 @@ function evidenceObservation(caseFile: CaseFile, evidence: EvidenceItem): string
   return translate(caseFile, evidence.observationKey, "这条记录需要进一步检查。 ");
 }
 
-function sourceLabel(evidence: EvidenceItem): string {
+function sourceLabel(caseFile: CaseFile, evidence: EvidenceItem): string {
+  if (evidence.sourceLabelKey) return translate(caseFile, evidence.sourceLabelKey, "证据来源");
   const id = evidence.id;
   if (id.includes("cctv") || id.includes("recording") || id.includes("log")) return "记录来源";
   if (id.includes("door") || id.includes("tray") || id.includes("phone") || id.includes("sample")) return "现场物证";
@@ -170,19 +200,61 @@ function initialEvidenceStates(caseFile: CaseFile): Record<string, EvidencePlaye
 }
 
 export function createRuntimeState(caseFile: CaseFile): RuntimeState {
+  const authoredHypotheses = caseFile.hypotheses.map((hypothesis) => hypothesis.id);
+  const firstHypothesis = caseFile.id === "c01-cold-room-knock" ? "hypothesis-fang-entered" : (authoredHypotheses[0] ?? "hypothesis-canonical");
+  const secondHypothesis = caseFile.id === "c01-cold-room-knock" ? "hypothesis-guard-faked" : (authoredHypotheses[1] ?? firstHypothesis);
   return {
     game: createInitialState(caseFile),
     transcript: [],
     evidenceStates: initialEvidenceStates(caseFile),
     theoryDrafts: [
-      { id: "theory-a", title: "主假设", hypothesisId: "hypothesis-fang-entered", eventIds: [], evidenceIds: [] },
-      { id: "theory-b", title: "备选假设", hypothesisId: "hypothesis-guard-faked", eventIds: [], evidenceIds: [] },
+      { id: "theory-a", title: "主假设", hypothesisId: firstHypothesis, eventIds: [], evidenceIds: [] },
+      { id: "theory-b", title: "备选假设", hypothesisId: secondHypothesis, eventIds: [], evidenceIds: [] },
     ],
     activeTheoryId: "theory-a",
     solved: false,
     replayBeatIds: [],
     acceptedCommandCount: 0,
+    unlockedChapterIds: unlockedChapterIds(caseFile, createInitialState(caseFile)),
+    reasoningBoards: Object.fromEntries((caseFile.reasoningBoards ?? []).map((_, index) => [
+      `board-${String(index + 1).padStart(2, "0")}`,
+      { placements: {}, connections: [] } satisfies ReasoningBoardDraft,
+    ])),
+    replayMode: "standard",
   };
+}
+
+function requirementListMet(actual: string[], required: string[] | undefined): boolean {
+  return (required ?? []).every((id) => actual.includes(id));
+}
+
+function unlockedChapterIds(caseFile: CaseFile, game: GameState): string[] {
+  return (caseFile.chapters ?? []).filter((chapter) => {
+    const unlock = chapter.unlock ?? {};
+    return requirementListMet(game.discoveredEvidenceIds, unlock.discoveredEvidenceIds)
+      && requirementListMet(game.visitedLocationIds, unlock.visitedLocationIds)
+      && requirementListMet(game.answeredQueryIds, unlock.answeredQueryIds);
+  }).map((chapter) => chapter.id);
+}
+
+function publicBoardId(caseFile: CaseFile, internalId: string): string | undefined {
+  const index = (caseFile.reasoningBoards ?? []).findIndex((board) => board.id === internalId);
+  return index < 0 ? undefined : `board-${String(index + 1).padStart(2, "0")}`;
+}
+
+function internalBoard(caseFile: CaseFile, publicId: string) {
+  const index = Number(publicId.match(/^board-(\d+)$/)?.[1] ?? 0) - 1;
+  return index >= 0 ? caseFile.reasoningBoards?.[index] : undefined;
+}
+
+function publicSlotId(board: NonNullable<CaseFile["reasoningBoards"]>[number], internalId: string): string | undefined {
+  const index = board.slots.findIndex((slot) => slot.id === internalId);
+  return index < 0 ? undefined : `slot-${String(index + 1).padStart(2, "0")}`;
+}
+
+function internalSlot(board: NonNullable<CaseFile["reasoningBoards"]>[number], publicId: string) {
+  const index = Number(publicId.match(/^slot-(\d+)$/)?.[1] ?? 0) - 1;
+  return index >= 0 ? board.slots[index] : undefined;
 }
 
 function availableEvidenceIds(caseFile: CaseFile, state: RuntimeState): Set<string> {
@@ -206,8 +278,9 @@ function projectedEvidence(caseFile: CaseFile, state: RuntimeState) {
         title: evidenceTitle(caseFile, item),
         observation: playerState === "available" ? "尚未检查。" : evidenceObservation(caseFile, item),
         state: playerState,
-        sourceLabel: sourceLabel(item),
+        sourceLabel: sourceLabel(caseFile, item),
         isNew: playerState === "discovered" || (playerState === "available" && discoverable.has(item.id)),
+        visualAsset: typeof item.visualAsset === "string" ? item.visualAsset : undefined,
       };
     });
 }
@@ -268,7 +341,7 @@ function projectedEventOptions(caseFile: CaseFile, state: RuntimeState): EventOp
       timeLabel: eventTimeLabel(event),
       label: String(event.action) === "alarm-vibrates-against-tray" && !state.game.visibleFactIds.includes("fact-phone-inside")
         ? "某个物体有规律地撞击托盘"
-        : EVENT_ACTION_LABELS[String(event.action)] ?? String(event.action ?? "已知事件"),
+        : translate(caseFile, event.labelKey, EVENT_ACTION_LABELS[String(event.action)] ?? String(event.action ?? "已知事件")),
     }));
 }
 
@@ -283,14 +356,14 @@ function projectedTheoryOptions(caseFile: CaseFile, state: RuntimeState): Theory
     return true;
   }).map((hypothesis) => {
     const motiveKey = String(hypothesis.claim?.motiveKey ?? "");
-    const motiveVisible = hypothesis.kind !== "canonical" || intentVisible;
+    const motiveVisible = hypothesis.kind !== "canonical" || intentVisible || selected.has(hypothesis.id);
     return {
-      id: publicHypothesisId(hypothesis.id),
-      label: hypothesis.id === "hypothesis-canonical" && !state.game.visibleFactIds.includes("fact-phone-inside")
+      id: publicHypothesisId(caseFile, hypothesis.id),
+      label: caseFile.id === "c01-cold-room-knock" && hypothesis.id === "hypothesis-canonical" && !state.game.visibleFactIds.includes("fact-phone-inside")
         ? "室内物体制造了延时声响"
-        : HYPOTHESIS_LABELS[hypothesis.id] ?? "待验证理论",
+        : translate(caseFile, hypothesis.labelKey, HYPOTHESIS_LABELS[hypothesis.id] ?? "待验证理论"),
       motiveOptions: motiveKey && motiveVisible
-        ? [{ id: motiveKey, label: MOTIVE_LABELS[motiveKey] ?? "未知动机" }]
+        ? [{ id: motiveKey, label: translate(caseFile, `motive.${motiveKey}`, MOTIVE_LABELS[motiveKey] ?? "未知动机") }]
         : [],
     };
   });
@@ -338,7 +411,7 @@ export function projectPlayerState(caseFile: CaseFile, state: RuntimeState): Pla
     ...initialIds,
     ...caseFile.questionSemantics.map((query) => query.id).filter((id) => !initialIds.includes(id)),
   ];
-  const questionScaffolds = orderedQueries
+  const questionScaffolds = state.replayMode === "no-scaffolds" ? [] : orderedQueries
     .map((id) => queryProjection(caseFile, id))
     .filter((item): item is QuestionCandidateProjection => Boolean(item));
   const active = state.theoryDrafts.find((item) => item.id === state.activeTheoryId);
@@ -355,6 +428,10 @@ export function projectPlayerState(caseFile: CaseFile, state: RuntimeState): Pla
       surface,
       difficulty: caseFile.metadata?.difficulty ?? "unknown",
       targetMinutes: caseFile.metadata?.targetMinutes ?? DEFAULT_TARGET_MINUTES,
+      contentTags: caseFile.metadata?.contentTags ?? [],
+      presentation: caseFile.presentation ?? DEFAULT_PRESENTATION,
+      presentationRevision: typeof caseFile.metadata?.presentationRevision === "number" ? caseFile.metadata.presentationRevision : undefined,
+      presentationPatchHash: typeof caseFile.metadata?.presentationPatchHash === "string" ? caseFile.metadata.presentationPatchHash : undefined,
     },
     transcript: state.transcript,
     interpretation,
@@ -365,7 +442,7 @@ export function projectPlayerState(caseFile: CaseFile, state: RuntimeState): Pla
     theoryOptions: projectedTheoryOptions(caseFile, state),
     theoryDrafts: state.theoryDrafts.map((draft) => ({
       ...draft,
-      hypothesisId: publicHypothesisId(draft.hypothesisId),
+      hypothesisId: publicHypothesisId(caseFile, draft.hypothesisId),
       eventIds: draft.eventIds.map((eventId) => publicEventId(caseFile, eventId)),
     })),
     activeTheoryId: state.activeTheoryId,
@@ -373,6 +450,33 @@ export function projectPlayerState(caseFile: CaseFile, state: RuntimeState): Pla
     solved: state.solved,
     replay: replayProjection(caseFile, state),
     debrief: debrief(caseFile, state),
+    chapters: (caseFile.chapters ?? []).map((chapter, index) => ({
+      id: `chapter-${String(index + 1).padStart(2, "0")}`,
+      title: translate(caseFile, chapter.titleKey, `调查阶段 ${index + 1}`),
+      unlocked: state.unlockedChapterIds.includes(chapter.id),
+    })),
+    reasoningBoards: (caseFile.reasoningBoards ?? []).map((board, boardIndex) => {
+      const boardId = `board-${String(boardIndex + 1).padStart(2, "0")}`;
+      const draft = state.reasoningBoards[boardId] ?? { placements: {}, connections: [] };
+      return {
+        id: boardId,
+        title: translate(caseFile, board.titleKey, "推理板"),
+        mode: board.mode,
+        slots: board.slots.map((slot, slotIndex) => {
+          const slotId = `slot-${String(slotIndex + 1).padStart(2, "0")}`;
+          return { id: slotId, label: translate(caseFile, slot.labelKey, `步骤 ${slotIndex + 1}`), itemId: draft.placements[slotId] };
+        }),
+        items: projectedEventOptions(caseFile, state),
+        connections: draft.connections,
+        allowedRelations: board.allowedRelations ?? ["causes", "precedes", "explains"],
+        behavior: reasoningBoardBehavior(
+          board.mode,
+          caseFile.id === "c60-last-sample-before-stop" && board.mode === "signal-chain" ? "terminal" : "standard",
+        ),
+      };
+    }),
+    replayMode: state.replayMode,
+    replayChallenges: caseFile.replayChallenges ?? [],
   };
 }
 
@@ -386,8 +490,56 @@ function rejected(caseFile: CaseFile, state: RuntimeState, message: string): Run
 }
 
 function accepted(caseFile: CaseFile, state: RuntimeState, events: GameEvent[]): RuntimeResult {
-  const next = { ...state, acceptedCommandCount: state.acceptedCommandCount + 1 };
-  return { state: next, projection: projectPlayerState(caseFile, next), events, accepted: true };
+  const unlocked = unlockedChapterIds(caseFile, state.game);
+  const chapterEvents: GameEvent[] = unlocked
+    .filter((id) => !state.unlockedChapterIds.includes(id))
+    .map((chapterId) => ({ type: "chapter_unlocked", chapterId }));
+  const next = { ...state, unlockedChapterIds: unlocked, acceptedCommandCount: state.acceptedCommandCount + 1 };
+  return { state: next, projection: projectPlayerState(caseFile, next), events: [...events, ...chapterEvents], accepted: true };
+}
+
+function missingBoardObligation(caseFile: CaseFile, state: RuntimeState): ProofObligationKind | undefined {
+  for (const obligation of caseFile.solutionCertificate.proofObligations ?? []) {
+    const boardId = publicBoardId(caseFile, obligation.boardId);
+    const board = caseFile.reasoningBoards?.find((item) => item.id === obligation.boardId);
+    if (!boardId || !board) return obligation.failureCategory;
+    const draft = state.reasoningBoards[boardId];
+    if (!draft) return obligation.failureCategory;
+    for (const placement of obligation.requiredPlacements ?? []) {
+      const slotId = publicSlotId(board, placement.slotId);
+      if (!slotId || draft.placements[slotId] !== publicEventId(caseFile, placement.eventId)) return obligation.failureCategory;
+    }
+    for (const connection of obligation.requiredConnections ?? []) {
+      const fromItemId = publicEventId(caseFile, connection.fromEventId);
+      const toItemId = publicEventId(caseFile, connection.toEventId);
+      if (!draft.connections.some((item) => item.fromItemId === fromItemId && item.toItemId === toItemId && item.relation === connection.relation)) return obligation.failureCategory;
+    }
+  }
+  return undefined;
+}
+
+const BOARD_GAPS: Record<ProofObligationKind, string> = {
+  time: "时间关系仍未在推理板上闭合。",
+  space: "空间路径仍有一个必要环节没有证明。",
+  source: "记录来源与事件之间仍缺少连接。",
+  identity: "角色、对象或人物的对应关系仍未闭合。",
+  measurement: "测量值与基准条件仍未闭合。",
+  "state-transition": "状态改变的触发条件仍未闭合。",
+  "alternative-exclusion": "仍有一条替代路径没有被推理板排除。",
+};
+
+const FEEDBACK_KEYS: Record<ProofObligationKind, string> = {
+  time: "missing-time",
+  space: "missing-space",
+  source: "missing-source",
+  identity: "missing-identity",
+  measurement: "missing-measurement",
+  "state-transition": "missing-state",
+  "alternative-exclusion": "missing-alternative",
+};
+
+function boardGapText(caseFile: CaseFile, kind: ProofObligationKind): string {
+  return translate(caseFile, `__presentation_patch.feedback.${FEEDBACK_KEYS[kind]}`, BOARD_GAPS[kind]);
 }
 
 function withDraft(state: RuntimeState, theoryId: TheoryDraft["id"], update: (draft: TheoryDraft) => TheoryDraft): RuntimeState | undefined {
@@ -437,6 +589,10 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
   if (command.type === "ask_text") {
     const rawText = command.rawText.trim();
     if (!rawText) return rejected(caseFile, state, "先写下一个可以验证的事实问题。 ");
+    if (state.replayMode === "limited-questions") {
+      const limit = caseFile.replayChallenges?.find((item) => item.mode === "limited-questions")?.questionLimit ?? 12;
+      if (state.transcript.length >= limit) return rejected(caseFile, state, `限定问题挑战最多允许 ${limit} 次有效提问。`);
+    }
     const normalized = normalizeQuestion(caseFile, rawText);
     if (normalized.status === "matched" && normalized.queryId) return answerQuery(caseFile, state, normalized.queryId, rawText);
     const interpretation = interpretationFor(caseFile, rawText, normalized.status, normalized.candidateQueryIds);
@@ -530,7 +686,7 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
       const targetIndex = Math.max(0, Math.min(draft.eventIds.length - 1, currentIndex + command.direction));
       const eventIds = [...draft.eventIds];
       eventIds.splice(currentIndex, 1);
-      eventIds.splice(targetIndex, 0, command.eventId);
+      eventIds.splice(targetIndex, 0, internalId);
       return { ...draft, eventIds };
     });
     return next ? accepted(caseFile, next, [{ type: "theory_updated", theoryId: command.theoryId }]) : rejected(caseFile, state, "未知的理论草稿。 ");
@@ -573,11 +729,61 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
       evidenceIds: draft.evidenceIds,
       motiveKey: draft.motiveKey,
     });
-    const solved = judgement.judgement === "solved";
+    const boardGap = judgement.judgement === "solved" ? missingBoardObligation(caseFile, state) : undefined;
+    const solved = judgement.judgement === "solved" && !boardGap;
     const next = { ...state, activeTheoryId: draft.id, solved };
+    const proofFailureCategory = boardGap ?? (judgement.missingContradictionResolutionIds.length > 0 ? "alternative-exclusion" : judgement.missingFactIds.length > 0 ? "source" : undefined);
     return accepted(caseFile, next, solved
       ? [{ type: "theory_judged", judgement: judgement.judgement, message: judgement.spoilerSafeGap }, { type: "case_solved" }]
-      : [{ type: "theory_judged", judgement: judgement.judgement, message: judgement.spoilerSafeGap }]);
+      : [{ type: "theory_judged", judgement: boardGap ? "nearly_proven" : judgement.judgement, message: boardGap ? boardGapText(caseFile, boardGap) : judgement.spoilerSafeGap, ...(proofFailureCategory ? { proofFailureCategory } : {}) }]);
+  }
+
+  if (command.type === "place_reasoning_item") {
+    const board = internalBoard(caseFile, command.boardId);
+    const slot = board ? internalSlot(board, command.slotId) : undefined;
+    const internalEvent = internalEventId(caseFile, command.itemId);
+    if (!board || !slot || !internalEvent || !slot.acceptsEventIds.includes(internalEvent)) return rejected(caseFile, state, "这个事件不能放入该推理位置。 ");
+    if (!projectedEventOptions(caseFile, state).some((event) => event.id === command.itemId)) return rejected(caseFile, state, "这个事件还没有证据支持。 ");
+    const current = state.reasoningBoards[command.boardId] ?? { placements: {}, connections: [] };
+    const placements = Object.fromEntries(Object.entries(current.placements).filter(([, itemId]) => itemId !== command.itemId));
+    placements[command.slotId] = command.itemId;
+    const next = { ...state, reasoningBoards: { ...state.reasoningBoards, [command.boardId]: { ...current, placements } } };
+    return accepted(caseFile, next, [{ type: "reasoning_board_updated", boardId: command.boardId }]);
+  }
+
+  if (command.type === "remove_reasoning_item") {
+    const board = internalBoard(caseFile, command.boardId);
+    const slot = board ? internalSlot(board, command.slotId) : undefined;
+    if (!board || !slot) return rejected(caseFile, state, "未知的推理位置。 ");
+    const current = state.reasoningBoards[command.boardId] ?? { placements: {}, connections: [] };
+    const removedItem = current.placements[command.slotId];
+    const placements = { ...current.placements };
+    delete placements[command.slotId];
+    const connections = current.connections.filter((item) => item.fromItemId !== removedItem && item.toItemId !== removedItem);
+    const next = { ...state, reasoningBoards: { ...state.reasoningBoards, [command.boardId]: { placements, connections } } };
+    return accepted(caseFile, next, [{ type: "reasoning_board_updated", boardId: command.boardId }]);
+  }
+
+  if (command.type === "connect_reasoning_items" || command.type === "disconnect_reasoning_items") {
+    const board = internalBoard(caseFile, command.boardId);
+    const current = state.reasoningBoards[command.boardId];
+    const placed = new Set(Object.values(current?.placements ?? {}));
+    if (!board || !current || !placed.has(command.fromItemId) || !placed.has(command.toItemId) || !(board.allowedRelations ?? ["causes", "precedes", "explains"]).includes(command.relation)) {
+      return rejected(caseFile, state, "只能连接已放入推理板的事件。 ");
+    }
+    const keyMatches = (item: { fromItemId: string; toItemId: string; relation: string }) => item.fromItemId === command.fromItemId && item.toItemId === command.toItemId && item.relation === command.relation;
+    const connections = command.type === "connect_reasoning_items"
+      ? current.connections.some(keyMatches) ? current.connections : [...current.connections, { fromItemId: command.fromItemId, toItemId: command.toItemId, relation: command.relation }]
+      : current.connections.filter((item) => !keyMatches(item));
+    const next = { ...state, reasoningBoards: { ...state.reasoningBoards, [command.boardId]: { ...current, connections } } };
+    return accepted(caseFile, next, [{ type: "reasoning_board_updated", boardId: command.boardId }]);
+  }
+
+  if (command.type === "set_replay_mode") {
+    if (!state.solved) return rejected(caseFile, state, "完成案件后才能开始重玩挑战。 ");
+    if (command.mode !== "standard" && !caseFile.replayChallenges?.some((item) => item.mode === command.mode)) return rejected(caseFile, state, "这个案件没有定义该重玩挑战。 ");
+    const next = { ...createRuntimeState(caseFile), replayMode: command.mode };
+    return accepted(caseFile, next, [{ type: "replay_mode_started", mode: command.mode }]);
   }
 
   if (command.type === "request_proof_replay") {
