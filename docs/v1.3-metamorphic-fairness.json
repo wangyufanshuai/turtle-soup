@@ -1,0 +1,20 @@
+{
+  "reportVersion": "1.3",
+  "releaseProfile": "v1.3-public-preview",
+  "generatedAt": "2026-08-23T15:03:56.184Z",
+  "cases": 60,
+  "season4Cases": 24,
+  "proofSetsPerSeason4Case": 2,
+  "mutations": [
+    "remove-required-evidence",
+    "remove-red-herring",
+    "shuffle-independent-order",
+    "repeat-question",
+    "wrong-theory",
+    "save-replay",
+    "projection-anti-leak",
+    "worker-message-anti-leak"
+  ],
+  "passed": true,
+  "qualification": "Deterministic fairness lower bound; not a substitute for human play."
+}

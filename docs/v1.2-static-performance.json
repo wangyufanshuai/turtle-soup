@@ -1,0 +1,21 @@
+{
+  "reportVersion": "1.2",
+  "generatedAt": "2026-08-23T13:54:46.236Z",
+  "releaseProfile": "v1.2-internal-rc",
+  "budgets": {
+    "totalBytes": 5000000,
+    "initialJavaScriptBytes": 1400000,
+    "maximumAssetBytes": 450000,
+    "sourceMaps": 0
+  },
+  "actual": {
+    "totalBytes": 4650905,
+    "javascriptBytes": 2179902,
+    "initialJavaScriptBytes": 621214,
+    "cssBytes": 73795,
+    "maximumAssetBytes": 241318,
+    "sourceMaps": 0
+  },
+  "failures": [],
+  "passed": true
+}

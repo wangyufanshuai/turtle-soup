@@ -1,0 +1,112 @@
+{
+  "reportVersion": "0.9",
+  "generatedAt": "2026-08-23T09:28:45.122Z",
+  "mode": "static-performance-and-precache-budget",
+  "budgetBasis": "Uncompressed shipping bytes. The 1.4 MB JavaScript ceiling includes the isolated 12-case Worker truth bundle and Next.js compatibility runtime; individual assets remain capped at 450 KB.",
+  "budgets": {
+    "totalBytes": 2500000,
+    "javascriptBytes": 1400000,
+    "cssBytes": 100000,
+    "maximumAssetBytes": 450000,
+    "maximumHtmlBytes": 100000,
+    "sourceMaps": 0
+  },
+  "actual": {
+    "totalBytes": 5698222,
+    "javascriptBytes": 2157913,
+    "cssBytes": 72071,
+    "maximumAssetBytes": 247864,
+    "maximumHtmlBytes": 49469,
+    "sourceMaps": 0
+  },
+  "precacheCoverage": {
+    "required": 536,
+    "missing": [],
+    "percent": 100
+  },
+  "updatePolicy": {
+    "cacheName": "black-soup-v11-internal-rc1",
+    "noImmediateSkipWaiting": true,
+    "playerConfirmedActivation": true
+  },
+  "pwaManifest": {
+    "id": "/",
+    "startUrl": "/",
+    "scope": "/",
+    "display": "standalone",
+    "iconSizes": [
+      "192x192",
+      "512x512",
+      "any"
+    ],
+    "iconsPresent": true
+  },
+  "largestAssets": [
+    {
+      "path": "assets/raster-manifest.v1.1.json",
+      "bytes": 247864
+    },
+    {
+      "path": "_next/static/chunks/1968-04a35088649de767.js",
+      "bytes": 241318
+    },
+    {
+      "path": "_next/static/chunks/87c73c54-fd33669cffb637e8.js",
+      "bytes": 201054
+    },
+    {
+      "path": "_next/static/chunks/framework-d36026172313d93d.js",
+      "bytes": 189663
+    },
+    {
+      "path": "_next/static/chunks/main-acddd45e17747c1b.js",
+      "bytes": 133637
+    },
+    {
+      "path": "_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "bytes": 112594
+    },
+    {
+      "path": "_next/static/chunks/app/case/[caseId]/page-0938c967f77da33c.js",
+      "bytes": 79799
+    },
+    {
+      "path": "_next/static/css/e30ab3523fb2af67.css",
+      "bytes": 60193
+    },
+    {
+      "path": "index.html",
+      "bytes": 49469
+    },
+    {
+      "path": "_next/static/chunks/1378.9fcf0b6de77e33f1.js",
+      "bytes": 41745
+    },
+    {
+      "path": "_next/static/chunks/2643.f2563639b3143363.js",
+      "bytes": 40182
+    },
+    {
+      "path": "_next/static/chunks/4623.ef42ef30100905a9.js",
+      "bytes": 36181
+    },
+    {
+      "path": "_next/static/chunks/app/page-3424e1c4ac43c707.js",
+      "bytes": 35555
+    },
+    {
+      "path": "_next/static/chunks/6236.f2ae9b03e5355729.js",
+      "bytes": 34348
+    },
+    {
+      "path": "_next/static/chunks/315.440fe729c52c7e88.js",
+      "bytes": 34291
+    }
+  ],
+  "failures": [
+    "totalBytes: 5698222 > 2500000",
+    "javascriptBytes: 2157913 > 1400000",
+    "service worker update policy is not v0.9 player-confirmed activation"
+  ],
+  "passed": false
+}

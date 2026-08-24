@@ -1,0 +1,29 @@
+{
+  "reportVersion": "1.2",
+  "endpointPolicy": "localhost-only",
+  "timeoutMs": 2000,
+  "maxChars": 800,
+  "scenarios": [
+    {
+      "id": "valid-json",
+      "passed": true
+    },
+    {
+      "id": "polarity-conflict",
+      "passed": true
+    },
+    {
+      "id": "internal-id",
+      "passed": true
+    },
+    {
+      "id": "invented-number",
+      "passed": true
+    },
+    {
+      "id": "local-endpoint",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

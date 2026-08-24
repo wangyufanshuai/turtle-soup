@@ -1,0 +1,3099 @@
+{
+  "reportVersion": "0.9",
+  "generatedAt": "2026-08-23T06:39:42.012Z",
+  "mode": "cross-browser-gold-master-audit",
+  "engines": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "viewports": [
+    "1440x900",
+    "1280x800",
+    "390x844",
+    "360x800"
+  ],
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "routeMatrix": {
+    "passed": 156,
+    "total": 156,
+    "results": [
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 235,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 149,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 104,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 88,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 84,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 83,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 66,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 67,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 67,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 85,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 76,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 70,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1440x900",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 80,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 184,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 139,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 128,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 78,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 69,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 84,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 74,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 92,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 88,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 81,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 68,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 66,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "1280x800",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 62,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 150,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 97,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 80,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 75,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 64,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 65,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 72,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 64,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 76,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 72,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 67,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 69,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "390x844",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 69,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 163,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 98,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 79,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 62,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 61,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 72,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 63,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 64,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 66,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 72,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 62,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 66,
+        "passed": true
+      },
+      {
+        "browser": "chromium",
+        "viewport": "360x800",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 64,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 428,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 175,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 165,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 166,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 131,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 153,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 142,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 240,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 128,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 177,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 171,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 111,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1440x900",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 115,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 153,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 250,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 134,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 127,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 116,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 119,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 117,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 119,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 172,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 172,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 115,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 117,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "1280x800",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 114,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 125,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 303,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 122,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 135,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 133,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 115,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 109,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 162,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 111,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 110,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 113,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 115,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "390x844",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 167,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 112,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 242,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 149,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 109,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 112,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 116,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 109,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 110,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 115,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 119,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 114,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 115,
+        "passed": true
+      },
+      {
+        "browser": "firefox",
+        "viewport": "360x800",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 117,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 178,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 251,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 254,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 251,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 258,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 262,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 257,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 271,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 310,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 269,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 261,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 272,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1440x900",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 194,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 143,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 292,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 275,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 177,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 273,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 260,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 260,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 264,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 271,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 258,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 259,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 267,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "1280x800",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 267,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 121,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 268,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 268,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 247,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 250,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 260,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 250,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 269,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 257,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 263,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 261,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 250,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "390x844",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 263,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/",
+        "status": 200,
+        "title": "选择一件尚未闭合的事",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 124,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c01-cold-room-knock/",
+        "status": 200,
+        "title": "冷藏室的敲门声",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 267,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c02-snow-route/",
+        "status": 200,
+        "title": "没有脚印的回家路",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 261,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c03-second-shadow/",
+        "status": 200,
+        "title": "十二点的第二个影子",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 252,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c04-unpostable-reply/",
+        "status": 200,
+        "title": "寄不到的回信",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 258,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c05-third-lamp/",
+        "status": 200,
+        "title": "第三盏未接通的灯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 250,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c06-nonexistent-ticket/",
+        "status": 200,
+        "title": "一张不存在的船票",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 262,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c07-key-returns/",
+        "status": 200,
+        "title": "会自己归位的钥匙",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 263,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c08-unclaimed-recording/",
+        "status": 200,
+        "title": "没有人签收的录音",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 181,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c09-rain-room/",
+        "status": 200,
+        "title": "雨停后仍在滴水的房间",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 271,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c10-single-ring/",
+        "status": 200,
+        "title": "只响了一次的电话",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 279,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c11-borrowed-signature/",
+        "status": 200,
+        "title": "借来的签名",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 271,
+        "passed": true
+      },
+      {
+        "browser": "webkit",
+        "viewport": "360x800",
+        "route": "/case/c12-zero-floor-elevator/",
+        "status": 200,
+        "title": "没有终点的电梯",
+        "horizontalOverflowPx": 0,
+        "navigationError": "",
+        "consoleErrors": [],
+        "domReadyMs": 259,
+        "passed": true
+      }
+    ]
+  },
+  "interactions": {
+    "chromium": {
+      "cases": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        }
+      ],
+      "ambiguity": {
+        "candidates": 2,
+        "transcriptUnchanged": true,
+        "candidateFocused": true,
+        "inputFocusReturned": true,
+        "passed": true
+      },
+      "replay": {
+        "closed": true,
+        "sourceBeatCount": 5,
+        "passed": true
+      },
+      "offline": {
+        "method": "playwright-context-offline",
+        "controlledBeforeOffline": true,
+        "offlineTitle": "没有脚印的回家路",
+        "fallbackUsed": false,
+        "engineReloadError": "",
+        "passed": true
+      },
+      "passed": true
+    },
+    "firefox": {
+      "cases": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        }
+      ],
+      "ambiguity": {
+        "candidates": 2,
+        "transcriptUnchanged": true,
+        "candidateFocused": true,
+        "inputFocusReturned": true,
+        "passed": true
+      },
+      "replay": {
+        "closed": true,
+        "sourceBeatCount": 5,
+        "passed": true
+      },
+      "offline": {
+        "method": "playwright-context-offline",
+        "controlledBeforeOffline": true,
+        "offlineTitle": "没有脚印的回家路",
+        "fallbackUsed": false,
+        "engineReloadError": "",
+        "passed": true
+      },
+      "passed": true
+    },
+    "webkit": {
+      "cases": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "questionRecorded": true,
+          "repeatedFeedback": true,
+          "evidenceExamined": true,
+          "theoryEventAdded": true,
+          "refreshRestored": true,
+          "passed": true
+        }
+      ],
+      "ambiguity": {
+        "candidates": 2,
+        "transcriptUnchanged": true,
+        "candidateFocused": true,
+        "inputFocusReturned": true,
+        "passed": true
+      },
+      "replay": {
+        "closed": true,
+        "sourceBeatCount": 5,
+        "passed": true
+      },
+      "offline": {
+        "method": "origin-server-unavailable",
+        "controlledBeforeOffline": true,
+        "offlineTitle": "没有脚印的回家路",
+        "fallbackUsed": false,
+        "engineReloadError": "",
+        "passed": true
+      },
+      "passed": true
+    }
+  },
+  "accessibility": {
+    "chromium": {
+      "results": [
+        {
+          "route": "/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        },
+        {
+          "route": "/case/c01-cold-room-knock/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        },
+        {
+          "route": "/case/c02-snow-route/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        },
+        {
+          "route": "/case/c03-second-shadow/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        }
+      ],
+      "blockers": 0,
+      "passed": true
+    },
+    "firefox": {
+      "results": [
+        {
+          "route": "/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        },
+        {
+          "route": "/case/c01-cold-room-knock/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        },
+        {
+          "route": "/case/c02-snow-route/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        },
+        {
+          "route": "/case/c03-second-shadow/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        }
+      ],
+      "blockers": 0,
+      "passed": true
+    },
+    "webkit": {
+      "results": [
+        {
+          "route": "/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        },
+        {
+          "route": "/case/c01-cold-room-knock/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        },
+        {
+          "route": "/case/c02-snow-route/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        },
+        {
+          "route": "/case/c03-second-shadow/",
+          "violationCount": 0,
+          "blockerCount": 0,
+          "blockers": [],
+          "passed": true
+        }
+      ],
+      "blockers": 0,
+      "passed": true
+    }
+  },
+  "keyboard": {
+    "chromium": {
+      "results": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "reachedByTab": true,
+          "dialogOpened": true,
+          "escapeReturnedFocus": true,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "reachedByTab": true,
+          "dialogOpened": true,
+          "escapeReturnedFocus": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "firefox": {
+      "results": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "reachedByTab": true,
+          "dialogOpened": true,
+          "escapeReturnedFocus": true,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "reachedByTab": true,
+          "dialogOpened": true,
+          "escapeReturnedFocus": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "webkit": {
+      "results": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "reachedByTab": true,
+          "dialogOpened": true,
+          "escapeReturnedFocus": true,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "reachedByTab": true,
+          "dialogOpened": true,
+          "escapeReturnedFocus": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  },
+  "media": {
+    "chromium": {
+      "forcedColors": true,
+      "reducedMotion": true,
+      "zoom200EquivalentViewport": "640x450 from 1280x900",
+      "zoomHorizontalOverflowPx": 0,
+      "passed": true
+    },
+    "firefox": {
+      "forcedColors": true,
+      "reducedMotion": true,
+      "zoom200EquivalentViewport": "640x450 from 1280x900",
+      "zoomHorizontalOverflowPx": 0,
+      "passed": true
+    },
+    "webkit": {
+      "forcedColors": true,
+      "reducedMotion": true,
+      "zoom200EquivalentViewport": "640x450 from 1280x900",
+      "zoomHorizontalOverflowPx": 0,
+      "passed": true
+    }
+  },
+  "soundscapes": {
+    "chromium": {
+      "browser": "chromium",
+      "cases": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "identity": "compressor-hum-relay",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "identity": "filtered-wind-metal",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "identity": "dimmer-wood-resonance",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "identity": "roller-clock-paper",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "identity": "mains-relay-glass",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "identity": "harbor-fog-waterline",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "identity": "cabinet-cable-metal",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "identity": "tape-hiss-buffer-flutter",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "identity": "roof-water-drip",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "identity": "pbx-line-queue",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "identity": "paper-clock-seal",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "identity": "motor-relay-floor",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        }
+      ],
+      "uniqueIdentities": 12,
+      "passed": true
+    },
+    "firefox": {
+      "browser": "firefox",
+      "cases": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "identity": "compressor-hum-relay",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "identity": "filtered-wind-metal",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "identity": "dimmer-wood-resonance",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "identity": "roller-clock-paper",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "identity": "mains-relay-glass",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "identity": "harbor-fog-waterline",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "identity": "cabinet-cable-metal",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "identity": "tape-hiss-buffer-flutter",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "identity": "roof-water-drip",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "identity": "pbx-line-queue",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "identity": "paper-clock-seal",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "identity": "motor-relay-floor",
+          "supported": true,
+          "identityVisible": true,
+          "ambientEnabled": true,
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        }
+      ],
+      "uniqueIdentities": 12,
+      "passed": true
+    },
+    "webkit": {
+      "browser": "webkit",
+      "cases": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "identity": "compressor-hum-relay",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "identity": "filtered-wind-metal",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "identity": "dimmer-wood-resonance",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "identity": "roller-clock-paper",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "identity": "mains-relay-glass",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "identity": "harbor-fog-waterline",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "identity": "cabinet-cable-metal",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "identity": "tape-hiss-buffer-flutter",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "identity": "roof-water-drip",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "identity": "pbx-line-queue",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "identity": "paper-clock-seal",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "identity": "motor-relay-floor",
+          "supported": false,
+          "identityVisible": true,
+          "ambientEnabled": "unsupported",
+          "fallbackCorrect": true,
+          "pageErrors": [],
+          "passed": true
+        }
+      ],
+      "uniqueIdentities": 12,
+      "passed": true
+    }
+  },
+  "deviceDelivery": {
+    "realAndroidChrome": "pending — no physical Android device connected",
+    "realIOSSafari": "pending — no physical iPhone/iPad device connected",
+    "realLowEndDevice": "pending — no physical low-performance device connected",
+    "androidEmulation": {
+      "device": "Pixel 7",
+      "mode": "Playwright device emulation",
+      "realDevice": false,
+      "realDeviceStatus": "pending",
+      "coarsePointer": true,
+      "tabCount": 3,
+      "touchInputVisible": true,
+      "horizontalOverflowPx": 0,
+      "manifestLinked": true,
+      "serviceWorkerControlled": true,
+      "passed": true
+    },
+    "lowPerformanceEmulation": {
+      "mode": "Chromium 4× CPU throttle emulation",
+      "realLowEndDevice": false,
+      "realDeviceStatus": "pending",
+      "readyMs": 691,
+      "answerRecorded": true,
+      "horizontalOverflowPx": 0,
+      "budgetMs": 3000,
+      "passed": true
+    },
+    "iosEmulation": {
+      "device": "iPhone 15",
+      "mode": "Playwright device emulation",
+      "realDevice": false,
+      "realDeviceStatus": "pending",
+      "coarsePointer": true,
+      "tabCount": 3,
+      "touchInputVisible": true,
+      "horizontalOverflowPx": 0,
+      "manifestLinked": true,
+      "serviceWorkerControlled": true,
+      "passed": true
+    }
+  },
+  "saveResilience": [
+    {
+      "scenario": "partial",
+      "playerNotice": true,
+      "passed": true
+    },
+    {
+      "scenario": "old-schema",
+      "playerNotice": true,
+      "passed": true
+    },
+    {
+      "scenario": "wrong-case",
+      "playerNotice": true,
+      "passed": true
+    },
+    {
+      "scenario": "wrong-hash",
+      "playerNotice": true,
+      "passed": true
+    },
+    {
+      "scenario": "quota",
+      "recoveryActions": true,
+      "passed": true
+    }
+  ],
+  "saveArchiveFileFlow": {
+    "closedBeforeExport": true,
+    "exportedOneSave": true,
+    "noHiddenFields": true,
+    "openAfterClear": true,
+    "importStatusVisible": true,
+    "closedAfterImport": true,
+    "passed": true
+  },
+  "mutedCompletion": {
+    "cases": [
+      {
+        "caseId": "c01-cold-room-knock",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      },
+      {
+        "caseId": "c02-snow-route",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      },
+      {
+        "caseId": "c03-second-shadow",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      },
+      {
+        "caseId": "c04-unpostable-reply",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      },
+      {
+        "caseId": "c05-third-lamp",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      },
+      {
+        "caseId": "c06-nonexistent-ticket",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      },
+      {
+        "caseId": "c07-key-returns",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      },
+      {
+        "caseId": "c08-unclaimed-recording",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      },
+      {
+        "caseId": "c09-rain-room",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      },
+      {
+        "caseId": "c10-single-ring",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      },
+      {
+        "caseId": "c11-borrowed-signature",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      },
+      {
+        "caseId": "c12-zero-floor-elevator",
+        "muted": true,
+        "closed": true,
+        "replayBeats": 5,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "audioLifecycle": {
+    "method": "tracked AudioContext with pagehide/pageshow lifecycle events",
+    "enabled": true,
+    "suspendCalls": 1,
+    "resumeCalls": 2,
+    "visibilityEvents": [],
+    "pageEvents": [
+      "pageshow",
+      "pagehide",
+      "pageshow"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "budgets": {
+      "lcpMs": 2500,
+      "cls": 0.1,
+      "longestTaskMs": 200,
+      "domContentLoadedMs": 1500
+    },
+    "results": [
+      {
+        "route": "/",
+        "domContentLoadedMs": 9,
+        "loadMs": 161.19999999925494,
+        "fcpMs": 140,
+        "lcpMs": 180,
+        "cls": 0,
+        "longestTaskMs": 0,
+        "passed": true
+      },
+      {
+        "route": "/case/c01-cold-room-knock/",
+        "domContentLoadedMs": 23.399999998509884,
+        "loadMs": 55.399999998509884,
+        "fcpMs": 32,
+        "lcpMs": 164,
+        "cls": 0.00014664351851851853,
+        "longestTaskMs": 0,
+        "passed": true
+      },
+      {
+        "route": "/case/c02-snow-route/",
+        "domContentLoadedMs": 23.5,
+        "loadMs": 55.30000000074506,
+        "fcpMs": 32,
+        "lcpMs": 168,
+        "cls": 0,
+        "longestTaskMs": 0,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "screenshots": [
+    "chromium-home-1440.png",
+    "firefox-home-1440.png",
+    "webkit-home-1440.png",
+    "chromium-c02-forced-colors.png",
+    "firefox-c02-forced-colors.png",
+    "webkit-c02-forced-colors.png",
+    "pixel-7-c02.png",
+    "iphone-15-c02.png"
+  ],
+  "failures": [],
+  "passed": true,
+  "qualification": "Automation validates operability, accessibility and deterministic fairness. Human comprehension, fun, pacing, satisfaction and replay intent remain pending."
+}

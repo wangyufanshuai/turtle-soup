@@ -1,0 +1,705 @@
+{
+  "reportVersion": "1.0",
+  "generatedAt": "2026-08-23T07:55:19.939Z",
+  "releaseProfile": "v1.0-internal-rc",
+  "humanParticipants": 0,
+  "cases": 24,
+  "desktop": [
+    {
+      "name": "chromium",
+      "homeLinks": 24,
+      "seasonHeadings": 2,
+      "seriousAxe": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "unknownFailedClosed": true,
+      "cases": [
+        {
+          "id": "c01-cold-room-knock",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c02-snow-route",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c03-second-shadow",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c04-unpostable-reply",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c05-third-lamp",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c06-nonexistent-ticket",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c07-key-returns",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c08-unclaimed-recording",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c09-rain-room",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c10-single-ring",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c11-borrowed-signature",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c12-zero-floor-elevator",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c13-second-waterline",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c14-moving-red-box",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c15-sixth-panorama",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c16-closed-door-handoff",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c17-twelve-strikes",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c18-lighter-sealed-crate",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c19-fog-after-window",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c20-fifth-worker",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c21-missing-seven-minutes",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c22-overloaded-bridge",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c23-clean-air-sample",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c24-turned-painting",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "firefox",
+      "homeLinks": 24,
+      "seasonHeadings": 2,
+      "seriousAxe": [],
+      "consoleErrors": [
+        "[JavaScript Error: \"Failed to load ‘http://127.0.0.1:4178/scene-snow-route.svg’. A ServiceWorker intercepted the request and encountered an unexpected error.\" {file: \"http://127.0.0.1:4178/sw.js\" line: 234}]"
+      ],
+      "unknownFailedClosed": true,
+      "cases": [
+        {
+          "id": "c01-cold-room-knock",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c02-snow-route",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c03-second-shadow",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c04-unpostable-reply",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c05-third-lamp",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c06-nonexistent-ticket",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c07-key-returns",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c08-unclaimed-recording",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c09-rain-room",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c10-single-ring",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c11-borrowed-signature",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c12-zero-floor-elevator",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c13-second-waterline",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c14-moving-red-box",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c15-sixth-panorama",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c16-closed-door-handoff",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c17-twelve-strikes",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c18-lighter-sealed-crate",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c19-fog-after-window",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c20-fifth-worker",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c21-missing-seven-minutes",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c22-overloaded-bridge",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c23-clean-air-sample",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c24-turned-painting",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "webkit",
+      "homeLinks": 24,
+      "seasonHeadings": 2,
+      "seriousAxe": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "unknownFailedClosed": true,
+      "cases": [
+        {
+          "id": "c01-cold-room-knock",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c02-snow-route",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c03-second-shadow",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c04-unpostable-reply",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c05-third-lamp",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c06-nonexistent-ticket",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c07-key-returns",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c08-unclaimed-recording",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c09-rain-room",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c10-single-ring",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c11-borrowed-signature",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c12-zero-floor-elevator",
+          "secondSeason": false,
+          "boardCount": 0,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c13-second-waterline",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c14-moving-red-box",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c15-sixth-panorama",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c16-closed-door-handoff",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c17-twelve-strikes",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c18-lighter-sealed-crate",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c19-fog-after-window",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c20-fifth-worker",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c21-missing-seven-minutes",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c22-overloaded-bridge",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c23-clean-air-sample",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        },
+        {
+          "id": "c24-turned-painting",
+          "secondSeason": true,
+          "boardCount": 1,
+          "overflow": 0,
+          "errorText": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "mobile": {
+    "viewport": "390x844",
+    "cases": [
+      {
+        "id": "c13-second-waterline",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c14-moving-red-box",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c15-sixth-panorama",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c16-closed-door-handoff",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c17-twelve-strikes",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c18-lighter-sealed-crate",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c19-fog-after-window",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c20-fifth-worker",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c21-missing-seven-minutes",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c22-overloaded-bridge",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c23-clean-air-sample",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c24-turned-painting",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      }
+    ],
+    "offlineReady": true,
+    "passed": true
+  },
+  "screenshots": 14,
+  "passed": true
+}

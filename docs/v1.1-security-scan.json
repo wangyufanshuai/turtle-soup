@@ -1,0 +1,19 @@
+{
+  "reportVersion": "1.1",
+  "generatedAt": "2026-08-23T09:39:58.335Z",
+  "releaseProfile": "v1.1-internal-rc",
+  "qualification": "Worker isolation and static scans reduce accidental leaks; offline truth is not DRM.",
+  "hiddenIdentifierCount": 967,
+  "targets": [
+    {
+      "name": "static-output",
+      "files": 537,
+      "truthBearingTextFiles": 38,
+      "sourceMaps": 0,
+      "remoteReferences": 0,
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

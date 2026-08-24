@@ -1,0 +1,24 @@
+{
+  "reportVersion": "1.3",
+  "releaseProfile": "v1.3-public-preview",
+  "generatedAt": "2026-08-23T15:03:56.184Z",
+  "personas": [
+    "new-observer",
+    "colloquial",
+    "evidence-first",
+    "counterfactual",
+    "early-guess",
+    "minimal-question",
+    "乱序调查",
+    "ambiguity-recovery",
+    "wrong-theory-loop",
+    "challenge-mode",
+    "save-interruption",
+    "offline-switch"
+  ],
+  "cases": 60,
+  "runCount": 720,
+  "passed": true,
+  "humanParticipants": 0,
+  "qualification": "Synthetic traces verify deterministic transitions only."
+}

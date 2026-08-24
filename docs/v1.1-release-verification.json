@@ -1,0 +1,20 @@
+{
+  "reportVersion": "1.1",
+  "verifiedAt": "2026-08-23T10:12:01.477Z",
+  "releaseProfile": "v1.1-internal-rc",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "caseCount": 36,
+  "coreTests": 53,
+  "totalCorpus": 7548,
+  "syntheticRuns": 288,
+  "offline": true,
+  "limitations": [
+    "No human comprehension, fun, pacing, audio preference or market validation.",
+    "Physical Android/iOS and low-end hardware remain pending.",
+    "Offline truth can be reverse-engineered; Worker isolation is not DRM."
+  ],
+  "failures": [],
+  "passed": true
+}

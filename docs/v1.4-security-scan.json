@@ -1,0 +1,21 @@
+{
+  "reportVersion": "1.4",
+  "releaseProfile": "v1.4-internal-rc",
+  "generatedAt": "2026-08-24T01:05:43.551Z",
+  "humanParticipants": 0,
+  "hiddenIdentifierCount": 1768,
+  "targets": [
+    {
+      "name": "static-output",
+      "files": 401,
+      "truthBearingTextFiles": 62,
+      "sourceMaps": 0,
+      "remoteReferences": 0,
+      "diagnosticsLeak": 62,
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "qualification": "Static scans cover publication leakage and remote dependency boundaries; they do not prove resistance to active reverse engineering."
+}

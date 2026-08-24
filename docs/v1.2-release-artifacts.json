@@ -1,0 +1,20 @@
+{
+  "reportVersion": "1.2",
+  "releaseProfile": "v1.2-internal-rc",
+  "generatedAt": "2026-08-23T13:57:07.633Z",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "status": "internal-rc / human-evaluation-pending",
+  "artifact": {
+    "directory": "dist/v1.2-internal-rc-web-pwa",
+    "bytes": 4650905,
+    "files": 537,
+    "sha256": "534aefcbd34be39bb8610980464245bf0aa0a1925e5ccbd061f7d6d64d55bdd8",
+    "archive": {
+      "path": "dist/turtle-soup-v1.2-internal-rc-web-pwa.zip",
+      "bytes": 2416689,
+      "sha256": "c3416a0ec807f9b94da8f00a0caab82b1b81e5745b6a5fd8b49c33e1279c7eb7"
+    }
+  },
+  "passed": true
+}

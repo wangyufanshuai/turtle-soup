@@ -1,0 +1,21 @@
+{
+  "reportVersion": "0.9",
+  "generatedAt": "2026-08-23T05:54:03.065Z",
+  "mode": "physical-device-availability-audit",
+  "host": "Windows",
+  "android": {
+    "adbAvailable": false,
+    "attachedDeviceCount": 0,
+    "realChromeRunStatus": "pending — no ADB device attached"
+  },
+  "ios": {
+    "detectedAppleMobileDeviceCount": 0,
+    "realSafariRunStatus": "pending — no iPhone/iPad detected"
+  },
+  "lowPerformanceHardware": {
+    "attachedCandidateCount": 0,
+    "realHardwareRunStatus": "pending — no physical low-performance candidate attached"
+  },
+  "emulationIsNotRealDeviceEvidence": true,
+  "passed": true
+}

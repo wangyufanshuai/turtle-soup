@@ -1,0 +1,26 @@
+1:"$Sreact.fragment"
+2:I[1092,["825","static/chunks/825-c56ef468f97f379e.js","585","static/chunks/585-3503d0ce721b8371.js","619","static/chunks/app/case/%5BcaseId%5D/page-8396fc016a7df951.js"],"GameShell"]
+3:I[887,[],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[887,[],"ViewportBoundary"]
+9:I[887,[],"MetadataBoundary"]
+a:I[214,[],"IconMark"]
+c:I[9630,[],""]
+d:I[1380,[],""]
+11:I[5059,["177","static/chunks/app/layout-90d9f82651ba6091.js"],"PwaRegistrar"]
+:HL["/_next/static/css/9859de18b9ac1a1a.css","style"]
+:HL["/_next/static/css/c8df91ebc727e7e4.css","style"]
+7:X
+f:X
+f:C
+0:{"buildId":"z2PRunCZUHT13IMAB3fdk","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"caseId":"c10-single-ring"}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/9859de18b9ac1a1a.css","precedence":"next"}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#08090b"}],["$","meta","3",{"name":"color-scheme","content":"dark"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"The Black Soup — 深汤案件档案"}],["$","meta","1",{"name":"description","content":"一款证据优先、可验证的因果推理游戏。"}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","3",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","4",{"name":"apple-mobile-web-app-title","content":"The Black Soup"}],["$","meta","5",{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"}],["$","link","6",{"rel":"icon","href":"/icon.svg","type":"image/svg+xml"}],["$","link","7",{"rel":"icon","href":"/icon-192.png","sizes":"192x192","type":"image/png"}],["$","link","8",{"rel":"apple-touch-icon","href":"/icon-192.png"}],["$","$La","9",{}]]}]}]}],null]}],"isPartial":"$@b","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}]}]]}],"isPartial":"$@e","staleTime":"$7","varyParams":"$f"},{"rsc":["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}]}]]}],"isPartial":"$@10","staleTime":"$7","varyParams":"$f"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c8df91ebc727e7e4.css","precedence":"next"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"children":[["$","a",null,{"className":"skipLink","href":"#main-content","children":"跳到主要内容"}],["$","$L11",null,{}],["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]]}]}]]}],"isPartial":"$@12","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@13","rootVaryParams":null,"needsRuntimeRequest":"$@14"}
+5:null
+7:300
+14:true
+7:C
+13:0
+b:"$undefined"
+e:"$undefined"
+10:"$undefined"
+12:"$undefined"
+6:"$undefined"

@@ -1,0 +1,20 @@
+{
+  "reportVersion": "1.3",
+  "releaseProfile": "v1.3-public-preview",
+  "generatedAt": "2026-08-23T14:57:01.712Z",
+  "budgets": {
+    "totalBytes": 8000000,
+    "initialJavaScriptBytes": 1400000,
+    "maximumAssetBytes": 450000,
+    "sourceMaps": 0
+  },
+  "actual": {
+    "totalBytes": 6135911,
+    "initialJavaScriptBytes": 640318,
+    "maximumAssetBytes": 241318,
+    "sourceMaps": 0,
+    "javascriptBytes": 3024219
+  },
+  "failures": [],
+  "passed": true
+}

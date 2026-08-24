@@ -1,0 +1,3199 @@
+{
+  "manifestVersion": 1,
+  "releaseProfile": "v1.3-public-preview",
+  "generatedAt": "2026-08-23T15:03:56.184Z",
+  "assets": [
+    {
+      "id": "c37-asset-1",
+      "caseId": "c37-zeroed-pressure-gauge",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c37/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "6f2e1d573fab2696bbdbb647ba6e9bd6e0705f197b43f2dda85439cef89197fa",
+      "alt": "case.c37.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.161Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c37-asset-2",
+      "caseId": "c37-zeroed-pressure-gauge",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c37/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "66bc54c37c936b5f12f8ba1a5e9c9781dfd8a54973e28db7829bd8767d61fcac",
+      "alt": "case.c37.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.162Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c37-asset-3",
+      "caseId": "c37-zeroed-pressure-gauge",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c37/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "5b91514ef247f069646dc5425c237ff9dbd50f6325647b29b3350f164c51698f",
+      "alt": "case.c37.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.162Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c37-asset-4",
+      "caseId": "c37-zeroed-pressure-gauge",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c37/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "2a5b68ca277d3273fdad4c1ed3334214a9fcb84630aee6106728aa0415cbe8e4",
+      "alt": "case.c37.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.162Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c37-asset-5",
+      "caseId": "c37-zeroed-pressure-gauge",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c37/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "27a8e8a03357c83272178210044c310ecb896b5ca6b561b1d583c49bd1c1df19",
+      "alt": "case.c37.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.162Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c37-asset-6",
+      "caseId": "c37-zeroed-pressure-gauge",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c37/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "6d19f9139b81994104a4b3c07e5097397fbe0fa58cb89a7e96a87b53e720a2e4",
+      "alt": "case.c37.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.162Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c37-asset-7",
+      "caseId": "c37-zeroed-pressure-gauge",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c37/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "3a74091480e00d15b4a213bc03b6622301e92fafaef32368975a6dfbfc6f5c2a",
+      "alt": "case.c37.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.163Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c38-asset-1",
+      "caseId": "c38-no-missing-seventh-packet",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c38/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "23b7725d62ef3111e307b6e62dde57c5510d1c04660c26c33ec87d600453ae3b",
+      "alt": "case.c38.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.163Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c38-asset-2",
+      "caseId": "c38-no-missing-seventh-packet",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c38/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "8e5806efe5a6a3623761ae28dac711824ba134d27b3cfc6189fba06273c5bd03",
+      "alt": "case.c38.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.163Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c38-asset-3",
+      "caseId": "c38-no-missing-seventh-packet",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c38/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "ce08c8458b35d5890eb8cf78f3950b0e946f11cb0f2d505adb83554304dee6b6",
+      "alt": "case.c38.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.163Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c38-asset-4",
+      "caseId": "c38-no-missing-seventh-packet",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c38/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "00fb8c9e1849523108a58d93f8a10b344b2f19dea7fe5692e21d72c164a55edc",
+      "alt": "case.c38.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.163Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c38-asset-5",
+      "caseId": "c38-no-missing-seventh-packet",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c38/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "34895248effea551ed15c770d38515ddf3f920a72df797b1bbebc3b941ee8097",
+      "alt": "case.c38.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.163Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c38-asset-6",
+      "caseId": "c38-no-missing-seventh-packet",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c38/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "7c095d9ebcb52c4da75f802279f7dd95bcedcad5b051b3ccd040c828d9e008d0",
+      "alt": "case.c38.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.163Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c38-asset-7",
+      "caseId": "c38-no-missing-seventh-packet",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c38/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "29bde4776a460cc0aa518e8e78b67f7c599ecc4c3773de8c45fc67f4d562af2b",
+      "alt": "case.c38.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.163Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c39-asset-1",
+      "caseId": "c39-duplicated-heartbeat",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c39/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "cdf3d42c0f166b9714e708d99aafffbb4a72c600237cb51d9470b7bc0596adae",
+      "alt": "case.c39.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.163Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c39-asset-2",
+      "caseId": "c39-duplicated-heartbeat",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c39/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "1b0ecd192b1901a31219cc3ca07230405f0a4e4a3dca8daba6b3f9ac78ce3a83",
+      "alt": "case.c39.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.164Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c39-asset-3",
+      "caseId": "c39-duplicated-heartbeat",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c39/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "2ed46b4c28123ab7393aa6d71bf2cc909e216c27e8ecc2cd09277010bf3424ec",
+      "alt": "case.c39.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.164Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c39-asset-4",
+      "caseId": "c39-duplicated-heartbeat",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c39/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "01b9d6bc68a9c4a113745dec98d33655a410a47536e6a5380c367f4204b6d53e",
+      "alt": "case.c39.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.164Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c39-asset-5",
+      "caseId": "c39-duplicated-heartbeat",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c39/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "8c3795168a18f1239016991d8455976a37514280db3f5c220fb5f25c7b9b7e74",
+      "alt": "case.c39.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.164Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c39-asset-6",
+      "caseId": "c39-duplicated-heartbeat",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c39/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "dfc09644a90f9567a245b9fc89cceaf943ff556fbf5b1668a518b46ed15ee983",
+      "alt": "case.c39.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.164Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c39-asset-7",
+      "caseId": "c39-duplicated-heartbeat",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c39/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "eafe0318e16b7df1bb482d69352c02411ec0d19ecb1d43e1cb303daff0dd2acb",
+      "alt": "case.c39.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.164Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c40-asset-1",
+      "caseId": "c40-early-liquid-front",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c40/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "f778c3a869b6c59b8bd9377b7e1d4c1ad04a409e747472813e01ba1900029e1b",
+      "alt": "case.c40.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.164Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c40-asset-2",
+      "caseId": "c40-early-liquid-front",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c40/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "921a0f58899f86e49e6be970fe8a4cce741ffce3e8bf78ff796d679f61d37796",
+      "alt": "case.c40.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.164Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c40-asset-3",
+      "caseId": "c40-early-liquid-front",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c40/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "5b3574c45449df7276a2bf9570e73667ba5174121f01ceddf9e3f04fdc05025f",
+      "alt": "case.c40.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.164Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c40-asset-4",
+      "caseId": "c40-early-liquid-front",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c40/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "fef61c0e327b649d8a345398c3b191a6e76a52a6b412d5f5afff3a62319d3140",
+      "alt": "case.c40.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.164Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c40-asset-5",
+      "caseId": "c40-early-liquid-front",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c40/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "0824ef7563418b785f619eeda04d3413e43517c2d82dcc2c5b55bef6ab528c63",
+      "alt": "case.c40.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.165Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c40-asset-6",
+      "caseId": "c40-early-liquid-front",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c40/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "1e558cd005c390771c0fa9cddf73c556715d6a4ef00fa98af3907b36c8215162",
+      "alt": "case.c40.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.165Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c40-asset-7",
+      "caseId": "c40-early-liquid-front",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c40/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "62f25de24c468f08933007638d79c181d70d8939ee4b9deb156ecf9c2baab0ca",
+      "alt": "case.c40.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.165Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c41-asset-1",
+      "caseId": "c41-hysteresis-overheat",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c41/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 551,
+      "sha256": "2a3cb21e80b7fba8673ff06789114b440b12ab7df45ca8031edf40cde02b0adf",
+      "alt": "case.c41.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.165Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c41-asset-2",
+      "caseId": "c41-hysteresis-overheat",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c41/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 551,
+      "sha256": "6b3bafdfc41e21e90f3ef8cc7ce644ba92903e88f0a51dc0c2fdd27bfc4596d0",
+      "alt": "case.c41.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.165Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c41-asset-3",
+      "caseId": "c41-hysteresis-overheat",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c41/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "14e79503c653b7a940cf0ab92eab7c1f3f36839e9c3669c9295426dc89588cf4",
+      "alt": "case.c41.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.165Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c41-asset-4",
+      "caseId": "c41-hysteresis-overheat",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c41/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "d37c21ae0d3a743baf7241e302aa9a3678d9b1b954a731015ee093c6ffe521b2",
+      "alt": "case.c41.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.165Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c41-asset-5",
+      "caseId": "c41-hysteresis-overheat",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c41/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "5566daf164d3d137f0acb0a72b81d1c5cd6b3dab2f4fa8481153679afc10da9c",
+      "alt": "case.c41.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.165Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c41-asset-6",
+      "caseId": "c41-hysteresis-overheat",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c41/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "13d17ae8884c94ae189600fdf581a464017b3ef4f6a17cbe9a58ee89cb1a5a29",
+      "alt": "case.c41.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.165Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c41-asset-7",
+      "caseId": "c41-hysteresis-overheat",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c41/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "d6b828d38e30b26c7df9b502639d12af15fcb563bd20b64671b14b74ef213cc3",
+      "alt": "case.c41.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.165Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c42-asset-1",
+      "caseId": "c42-same-weight-different-load",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c42/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 551,
+      "sha256": "669175662a4390f62c97321230fbe9392e7dde418124673860e563e182a1de6e",
+      "alt": "case.c42.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.169Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c42-asset-2",
+      "caseId": "c42-same-weight-different-load",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c42/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 551,
+      "sha256": "f473e7868a10aab8438ecbe4cf6a6722a0039d6f163afd05189a5da5eefdcb44",
+      "alt": "case.c42.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.169Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c42-asset-3",
+      "caseId": "c42-same-weight-different-load",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c42/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "e2e69c086815d79b92b51d9ede89fb67492aecae0b354e0e8c34bdc21ecf28eb",
+      "alt": "case.c42.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.169Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c42-asset-4",
+      "caseId": "c42-same-weight-different-load",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c42/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "ed62a23460dd4ccc7d4c6c9d6e3be6e6698cabc8be247255148be38e1a9163d9",
+      "alt": "case.c42.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.169Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c42-asset-5",
+      "caseId": "c42-same-weight-different-load",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c42/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "f514498777e99d8e13bedc77988a4d1b263d3ef22ecd1023b1240d3dc0540f06",
+      "alt": "case.c42.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.170Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c42-asset-6",
+      "caseId": "c42-same-weight-different-load",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c42/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "df6bdd1d331e4ea1c730229d19a531165a5d752e0d4c739bbc79d0e41ee011be",
+      "alt": "case.c42.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.170Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c42-asset-7",
+      "caseId": "c42-same-weight-different-load",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c42/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "0155604dffa0744db4d6f09496677124db5bb692119f9fc6c0793fad1e5e7e33",
+      "alt": "case.c42.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.170Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c43-asset-1",
+      "caseId": "c43-train-stop-reference",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c43/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "102dc86d6da3ebd3e5f50599ed7809a7d9bd18eeffaf4d5eb5daade3e80dbd84",
+      "alt": "case.c43.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.170Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c43-asset-2",
+      "caseId": "c43-train-stop-reference",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c43/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "ad75e9446e4eaa67ccce460e22ce9de82009ba463cc602a02ab312464902d97c",
+      "alt": "case.c43.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.171Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c43-asset-3",
+      "caseId": "c43-train-stop-reference",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c43/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "26d401ac6f805eb76b5cbf1166a2668730ddbb5ef7d01636fc30d958e0d06af3",
+      "alt": "case.c43.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.171Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c43-asset-4",
+      "caseId": "c43-train-stop-reference",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c43/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "a9f0bbfeda89e15f02b6ec232b973b1ea5ead0334feb88e6136e52dfae0fe745",
+      "alt": "case.c43.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.171Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c43-asset-5",
+      "caseId": "c43-train-stop-reference",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c43/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "f2b0abcce61feccd3eee007229d704516db633659ed49e9f8c15a9b50dd45cc7",
+      "alt": "case.c43.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.171Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c43-asset-6",
+      "caseId": "c43-train-stop-reference",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c43/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "1707fac25d8baaa5acd83ef191a6be5aa0ce2706de7c1ec535dcf0fd977dcb4f",
+      "alt": "case.c43.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.171Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c43-asset-7",
+      "caseId": "c43-train-stop-reference",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c43/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "9df6f361c1cc60fa2173d3cf6d6831681496ae7d6f930b5a786dee3a06eb16f4",
+      "alt": "case.c43.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.171Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c44-asset-1",
+      "caseId": "c44-hidden-overload-spike",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c44/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 554,
+      "sha256": "92fb931fd1045934a7bf18514b02ff969a1818add00cb1643725ee3be809183e",
+      "alt": "case.c44.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.171Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c44-asset-2",
+      "caseId": "c44-hidden-overload-spike",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c44/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 554,
+      "sha256": "dfb48378c67f7330ad01bcc81460b95f64c1a4dd3015cb8b34b5742642a8a5e3",
+      "alt": "case.c44.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.172Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c44-asset-3",
+      "caseId": "c44-hidden-overload-spike",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c44/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "15feb077db4b86d8aaf7322825b0a5a9e6fb600635fc7337b65c9c8c8fbc6afc",
+      "alt": "case.c44.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.172Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c44-asset-4",
+      "caseId": "c44-hidden-overload-spike",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c44/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "6eae10fa22916ed864bebe5708d3d40765f49114549f5caddfdbd434b76a33ce",
+      "alt": "case.c44.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.172Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c44-asset-5",
+      "caseId": "c44-hidden-overload-spike",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c44/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "a55ca1e248d5f2ef5cc500eb112f1bd694aea396cab37050f96c2f15b1bc3237",
+      "alt": "case.c44.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.172Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c44-asset-6",
+      "caseId": "c44-hidden-overload-spike",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c44/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "06a54f11256ec542708cbaecce8da39cf06a7a8fc17b09597a9d46ec7a85508c",
+      "alt": "case.c44.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.172Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c44-asset-7",
+      "caseId": "c44-hidden-overload-spike",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c44/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "c4048bbe0ff81d16ed847fe263ffe35d9117b5e0b262594827c89d0423ff8dbe",
+      "alt": "case.c44.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.172Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c45-asset-1",
+      "caseId": "c45-double-location-second",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c45/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "ac817b8783c04cfc0d9cb818a503958a06473b8c16a5c6b117fcad47053d8357",
+      "alt": "case.c45.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.172Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c45-asset-2",
+      "caseId": "c45-double-location-second",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c45/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "8f2f8c7a0a26f2ea7c6bc5882c4f2ac8dbfd3ccaf162c73120ac39e48d0feae0",
+      "alt": "case.c45.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.172Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c45-asset-3",
+      "caseId": "c45-double-location-second",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c45/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "7adefd75688cb3047954f970462eb5696d6ebb2114fb654db130154ecdc06cfb",
+      "alt": "case.c45.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.172Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c45-asset-4",
+      "caseId": "c45-double-location-second",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c45/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "65557d72bb2909c7aa98409fb2c2756fa0fa358e63a4ed99425e80f3fa8f7627",
+      "alt": "case.c45.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.172Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c45-asset-5",
+      "caseId": "c45-double-location-second",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c45/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "2618d5141aa4fefbd94cdc3bb99c959cd98f42775489e1266078c842ea6da5c3",
+      "alt": "case.c45.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.172Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c45-asset-6",
+      "caseId": "c45-double-location-second",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c45/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "8b3de5a9ffb23ce7a201f7a8f6210639f43ba61c8a7a9747ceb351239384f778",
+      "alt": "case.c45.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.173Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c45-asset-7",
+      "caseId": "c45-double-location-second",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c45/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "73eea04ec5c0976a8195907a785bc2738eb5a1b3999340f57bd7807b25d65618",
+      "alt": "case.c45.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.173Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c46-asset-1",
+      "caseId": "c46-pilot-pressure-valve",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c46/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "888fff0c7a1b0b60ef320a3d713d19c1d8fd94bb6fbca2eee4116c3d2eb18ce0",
+      "alt": "case.c46.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.173Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c46-asset-2",
+      "caseId": "c46-pilot-pressure-valve",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c46/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "2fad5f9f29f6d5c8425e18c0b5913827552e0267310337670581dde0deaf0b9a",
+      "alt": "case.c46.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.173Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c46-asset-3",
+      "caseId": "c46-pilot-pressure-valve",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c46/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "bc73f9baa453fdae1cdada26e88bb36f3c7bd1b4efe99557b569d43ede938293",
+      "alt": "case.c46.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.173Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c46-asset-4",
+      "caseId": "c46-pilot-pressure-valve",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c46/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "763c39632b2eb0996da10b4712623c64a34d380928e196947210dbe3f27c8a33",
+      "alt": "case.c46.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.173Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c46-asset-5",
+      "caseId": "c46-pilot-pressure-valve",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c46/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "d769309173a5b61f402f5614e0194f614bec96cca8c6da9f1127254b5ff93db0",
+      "alt": "case.c46.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.173Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c46-asset-6",
+      "caseId": "c46-pilot-pressure-valve",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c46/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "a1c64a4d865fa8d1ca87be98e2a50ddb6bbab102d82ed62c606ec5c9ac1d7d91",
+      "alt": "case.c46.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.173Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c46-asset-7",
+      "caseId": "c46-pilot-pressure-valve",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c46/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "b59464570d0f814675bda070ac6e64c47906811ca0842503fc6341b6f0a05998",
+      "alt": "case.c46.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.173Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c47-asset-1",
+      "caseId": "c47-offline-buffered-device",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c47/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 554,
+      "sha256": "d46cc794adf0f9bc55623b2b74c306aeecb6c98484a2ca113e684b01d54d2f2f",
+      "alt": "case.c47.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.173Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c47-asset-2",
+      "caseId": "c47-offline-buffered-device",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c47/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 554,
+      "sha256": "fbc809f92324e42472af40ac38aedca549a425d503954cfdfc2d093dd270e51e",
+      "alt": "case.c47.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.173Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c47-asset-3",
+      "caseId": "c47-offline-buffered-device",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c47/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "c80558ecde2d4bf5f6de759ffeeaf8e59a4d4614853654b104d5fe36bb1a35d6",
+      "alt": "case.c47.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c47-asset-4",
+      "caseId": "c47-offline-buffered-device",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c47/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "efa11db811ad1e174e79138dca99a91c6ee264bca69687d2c5e8fa1d22ec3248",
+      "alt": "case.c47.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c47-asset-5",
+      "caseId": "c47-offline-buffered-device",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c47/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "6059ea2a729967e3636dd0ef4e17730bda807c897ee61da69362d0974e00af90",
+      "alt": "case.c47.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c47-asset-6",
+      "caseId": "c47-offline-buffered-device",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c47/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "c3d247db824f52099c95c662006a8eb9ba7161f4ee35d0873bb30deb5b0be040",
+      "alt": "case.c47.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c47-asset-7",
+      "caseId": "c47-offline-buffered-device",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c47/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "06a7a050b172c4a3b1e303edf312f1cbf228148ea91a6c7b81caeed75c2b44da",
+      "alt": "case.c47.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c48-asset-1",
+      "caseId": "c48-two-point-calibration",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c48/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "91523a0aba8f18c44d94448098d117ce846b04f12633f377b110ed9b3e507e05",
+      "alt": "case.c48.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c48-asset-2",
+      "caseId": "c48-two-point-calibration",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c48/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "827f6168ed97f4eb8a8dca501bb7907dea7fc3b5aebb1c521d1d3b653745c309",
+      "alt": "case.c48.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c48-asset-3",
+      "caseId": "c48-two-point-calibration",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c48/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "7e558ae6b3f2cabaa77a13705cd93038cb1ac910082eda30245d02cf7f26d578",
+      "alt": "case.c48.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c48-asset-4",
+      "caseId": "c48-two-point-calibration",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c48/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "72020b0f5f83f471604e1ccfdaacaf939137d3bd59ffe6f8c965eb46e6f27315",
+      "alt": "case.c48.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c48-asset-5",
+      "caseId": "c48-two-point-calibration",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c48/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "7d71e6721788baeded8b4e760cf7ee813809a61b1791f1609d8ecb740829cba1",
+      "alt": "case.c48.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c48-asset-6",
+      "caseId": "c48-two-point-calibration",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c48/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "f2744a37b257aa84ff3e230c2adbb0c8731a267b81347964f82d3b8af14ecee2",
+      "alt": "case.c48.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c48-asset-7",
+      "caseId": "c48-two-point-calibration",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c48/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "7c269454783bb2e06cd13ea2edb4a14c167fa4365c98e625b7f65c5f85f119e5",
+      "alt": "case.c48.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.174Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c49-asset-1",
+      "caseId": "c49-gimbal-turn-drone",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c49/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "468b839dc94f34baf68eaece26b29b3e4f2e3068ffc0996421da19f14c059994",
+      "alt": "case.c49.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c49-asset-2",
+      "caseId": "c49-gimbal-turn-drone",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c49/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "57b2f36f8ccbc2b582fde94bfa5ed9fa6d322ee419657e748de63b436771bc0b",
+      "alt": "case.c49.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c49-asset-3",
+      "caseId": "c49-gimbal-turn-drone",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c49/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "d2f76db786811ecb49df6b24f574cc9e6d386666917eef165847f4183569c462",
+      "alt": "case.c49.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c49-asset-4",
+      "caseId": "c49-gimbal-turn-drone",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c49/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "8e8175813a400084c058f50a18a0e67f81c865c0f401c963b90a23578d347cfb",
+      "alt": "case.c49.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c49-asset-5",
+      "caseId": "c49-gimbal-turn-drone",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c49/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "1b03417b860914fab695ac785f6d70c75c4dcb410d6ceda14c1b2574f858867d",
+      "alt": "case.c49.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c49-asset-6",
+      "caseId": "c49-gimbal-turn-drone",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c49/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "dc5ecdb43e45681ad8896852f4c6cc91e1375a6b304c29b13965170a8ce869d4",
+      "alt": "case.c49.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c49-asset-7",
+      "caseId": "c49-gimbal-turn-drone",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c49/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "b8105442a4876280cb7e8be5742e546d9dca5fc392e8b53a853a664ce6eb14b4",
+      "alt": "case.c49.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c50-asset-1",
+      "caseId": "c50-extra-warehouse-pallet",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c50/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "ff27249dbd61443fced5d3dd0be67786b3b8a0d169e785a72fa707f39f4aff0e",
+      "alt": "case.c50.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c50-asset-2",
+      "caseId": "c50-extra-warehouse-pallet",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c50/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "4378a602fdc5567901ac4165a77026e3a044113074c4d91e49c7b3a7db6aaed0",
+      "alt": "case.c50.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c50-asset-3",
+      "caseId": "c50-extra-warehouse-pallet",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c50/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "964821d47f96d178e02c39c4a415f8f5a5d1bd156531f284b95d9940232d2cb9",
+      "alt": "case.c50.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c50-asset-4",
+      "caseId": "c50-extra-warehouse-pallet",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c50/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "f268a422b640b4fa28b931d1bbeb57a432598480a4f9f21ceed50c94551f7484",
+      "alt": "case.c50.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c50-asset-5",
+      "caseId": "c50-extra-warehouse-pallet",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c50/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "a23a4da90c65bf0300a07c959f8e32769f39baece0d7bafc34218118666d04b4",
+      "alt": "case.c50.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.175Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c50-asset-6",
+      "caseId": "c50-extra-warehouse-pallet",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c50/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "60ee4184e5bd9856147d0937eaf1f315237bf376fa0d759a756078b1595ba747",
+      "alt": "case.c50.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.176Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c50-asset-7",
+      "caseId": "c50-extra-warehouse-pallet",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c50/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "547f09043c19039447ebccd8e21e4387c7baab69ba737d61a157fe9926d96ad0",
+      "alt": "case.c50.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.176Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c51-asset-1",
+      "caseId": "c51-equivalent-resistance",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c51/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "bfd860c5ac031cb2e5ae4090a7850746da736ed93bb101e21f55b2beb405a525",
+      "alt": "case.c51.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.176Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c51-asset-2",
+      "caseId": "c51-equivalent-resistance",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c51/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 548,
+      "sha256": "f62063c9840bf17f745f62552d55d310ac25c14b99bdd341a5fabda3ff2b25d8",
+      "alt": "case.c51.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.176Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c51-asset-3",
+      "caseId": "c51-equivalent-resistance",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c51/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "2857fa1aa27026e77917c57cf60ffc9a2ae961276cc188ab7c2d67c0b593868c",
+      "alt": "case.c51.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.176Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c51-asset-4",
+      "caseId": "c51-equivalent-resistance",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c51/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "6def171d4cc7ef379b79692781861c933b65e4ed04f797c06a3498be8bb7c507",
+      "alt": "case.c51.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.176Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c51-asset-5",
+      "caseId": "c51-equivalent-resistance",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c51/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "3cc3dd51fbc235a775fdf4d2632fba6709e62404e7093dd3578e97a4d14600b9",
+      "alt": "case.c51.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.176Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c51-asset-6",
+      "caseId": "c51-equivalent-resistance",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c51/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "2be8a7f864b7b3aa474b3d5e570a1b08ca25cc1230eb4f4ffaa500b6b2b35b61",
+      "alt": "case.c51.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.176Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c51-asset-7",
+      "caseId": "c51-equivalent-resistance",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c51/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "ac93a6a3fd6d38d833b04a794aa9fd1d5ff2175d3e31b3de03406097cd8f91d3",
+      "alt": "case.c51.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.176Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c52-asset-1",
+      "caseId": "c52-shorter-river-night",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c52/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 542,
+      "sha256": "c74fc9007f30ea515914560d27a886e77a58502f3c02e3c90aec012dabd5bb0b",
+      "alt": "case.c52.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.176Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c52-asset-2",
+      "caseId": "c52-shorter-river-night",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c52/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 542,
+      "sha256": "9ffdcb872d1250ffcdcf0b28e7efe8c93880c1da49269d4f48383df46e31964e",
+      "alt": "case.c52.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c52-asset-3",
+      "caseId": "c52-shorter-river-night",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c52/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "a2ed309d286d35ed3589c366ac943b8ade5c707df9b7ab4e84b3bd0b620317c7",
+      "alt": "case.c52.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c52-asset-4",
+      "caseId": "c52-shorter-river-night",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c52/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "08248c7551649e2405d9dbf0741f82d5ed0f1636397d7f4bbb0d37baf89c81d4",
+      "alt": "case.c52.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c52-asset-5",
+      "caseId": "c52-shorter-river-night",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c52/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "7440c193bb19e36a900089694b0a039d80ac0e8f658fb60b0ddb4dda0424a90e",
+      "alt": "case.c52.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c52-asset-6",
+      "caseId": "c52-shorter-river-night",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c52/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "7ef2d4bbb011646e9db77bfd6202c2b2a3573916c1793889bc2aecaaac5c9bd8",
+      "alt": "case.c52.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c52-asset-7",
+      "caseId": "c52-shorter-river-night",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c52/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "550406e4f5897fb9ac8ad0494e276b455bdfa3012e27e850d31aed87b97c18ea",
+      "alt": "case.c52.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c53-asset-1",
+      "caseId": "c53-late-fiber-echo",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c53/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "85ca4a0bc5923dcfeca91788c39f8260ac89865a4781e67c443898de14a13905",
+      "alt": "case.c53.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c53-asset-2",
+      "caseId": "c53-late-fiber-echo",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c53/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "c31374550fca7448e0ec7635fe4ee1045bc17da10997005c9dadce663c092d08",
+      "alt": "case.c53.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c53-asset-3",
+      "caseId": "c53-late-fiber-echo",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c53/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "48b5b2ce6db83c24a35768ca3acfb8efe436968fdc13ccfdca00abe8230aedfd",
+      "alt": "case.c53.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c53-asset-4",
+      "caseId": "c53-late-fiber-echo",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c53/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "36b60979c7df699f32facd30240e01d93d160c72a433d707c74a7e2d0476a1bc",
+      "alt": "case.c53.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c53-asset-5",
+      "caseId": "c53-late-fiber-echo",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c53/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "1c8d11f65cc684fad26fb0eef06f6399a57d3f6e620de8b88cc21be699e896a3",
+      "alt": "case.c53.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c53-asset-6",
+      "caseId": "c53-late-fiber-echo",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c53/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "c534728efe5a05a0213bffe00e629860bb3b4216a7be56f169dc365d37f41d11",
+      "alt": "case.c53.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.177Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c53-asset-7",
+      "caseId": "c53-late-fiber-echo",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c53/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "1468b83e24adf26a3b423195763c44c3eb104a450ff75f0ce4aa40bb77c5b7c5",
+      "alt": "case.c53.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c54-asset-1",
+      "caseId": "c54-elevator-counterweight",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c54/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "3202c7d90f6863a165e796054945eac0892c59b627c39098e889496099b348fe",
+      "alt": "case.c54.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c54-asset-2",
+      "caseId": "c54-elevator-counterweight",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c54/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "5853a2e515f710c11f9ec977ccf39e94cd6ee55a5c7f5e0e8cd5f162b4566082",
+      "alt": "case.c54.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c54-asset-3",
+      "caseId": "c54-elevator-counterweight",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c54/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "e29ac0aaaf03c1d7bd52aec8573bfcb873f8c39647cd5532f6c9a882a15888a0",
+      "alt": "case.c54.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c54-asset-4",
+      "caseId": "c54-elevator-counterweight",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c54/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "a629991b759a3f17af72d8f88d968bc6c92eb0ef3ca0932931cb51140d5230e8",
+      "alt": "case.c54.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c54-asset-5",
+      "caseId": "c54-elevator-counterweight",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c54/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "f461e9088ba003f1e6ed349cfedc6014788c79e0df2554ca0efca312000bc1bc",
+      "alt": "case.c54.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c54-asset-6",
+      "caseId": "c54-elevator-counterweight",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c54/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "94c27689a447f0c791b43d6a8ebf8628f458d9b1dd8ecbfc34779de076ff3226",
+      "alt": "case.c54.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c54-asset-7",
+      "caseId": "c54-elevator-counterweight",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c54/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "3cbc0e5138275098e5b1353619916ca72f253eb6c80ba1a8788518c9920ab1e5",
+      "alt": "case.c54.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c55-asset-1",
+      "caseId": "c55-merged-multi-alarm",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c55/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 551,
+      "sha256": "6d4c80a06d3b15807518430b8d14336271513838bdc80befe6f7d26e8d83217f",
+      "alt": "case.c55.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c55-asset-2",
+      "caseId": "c55-merged-multi-alarm",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c55/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 551,
+      "sha256": "8c3bd73747a777ff5cd7927a5a457d883b75e78e3a6dbdad32f7b3fdae2f9163",
+      "alt": "case.c55.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c55-asset-3",
+      "caseId": "c55-merged-multi-alarm",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c55/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "18fbc2ceeafdcd49f642ad051a4cd2eac89029ca2a38590aa872aae196cf0fbc",
+      "alt": "case.c55.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c55-asset-4",
+      "caseId": "c55-merged-multi-alarm",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c55/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "449a8c43d82d25673a85808aadb15ba7d6127217bc8ca26833d9b5d21bfd859e",
+      "alt": "case.c55.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c55-asset-5",
+      "caseId": "c55-merged-multi-alarm",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c55/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "2271ab24d4cc00e40b24c3813e22d64715a837a4fc9042151231a2675c06e3b4",
+      "alt": "case.c55.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.178Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c55-asset-6",
+      "caseId": "c55-merged-multi-alarm",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c55/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "139f7176070d7a3494720d10e3ef31bf3854c792270d8e1daf343bcb1096b887",
+      "alt": "case.c55.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.179Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c55-asset-7",
+      "caseId": "c55-merged-multi-alarm",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c55/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "79204f9733f92e8144ea18b5773652033e8fc58cf104bc2df39a5b3f253604f8",
+      "alt": "case.c55.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.179Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c56-asset-1",
+      "caseId": "c56-interpolated-temperature-map",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c56/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 554,
+      "sha256": "d453458c0fed001c61455ec2e7560be93bc90c844fa5eed48b9e3a0a5006bd71",
+      "alt": "case.c56.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.179Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c56-asset-2",
+      "caseId": "c56-interpolated-temperature-map",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c56/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 554,
+      "sha256": "7e47bdb5cb870e11cdbe93b6c6ef34b3cac62728502ce4b36336dd6f5d5f96a3",
+      "alt": "case.c56.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.179Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c56-asset-3",
+      "caseId": "c56-interpolated-temperature-map",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c56/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "5dc7ba64fd70fb1e6261e8b216002dd5d0924503ff49b6f298c5b4fa7f727b1c",
+      "alt": "case.c56.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.179Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c56-asset-4",
+      "caseId": "c56-interpolated-temperature-map",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c56/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "442473174a4b46e28dd5d34b962023175c8af15ad4ca6fa91c4a3c4c81769eda",
+      "alt": "case.c56.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.179Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c56-asset-5",
+      "caseId": "c56-interpolated-temperature-map",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c56/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "94a1117f98fbf48a3fa3d6b5118f1fe70fc7001a5cc4969749ecb21f03c0bc35",
+      "alt": "case.c56.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.180Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c56-asset-6",
+      "caseId": "c56-interpolated-temperature-map",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c56/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "86050db15245a5bc4908e2ae8f36de101ba2d07a43bf232ba03c956936a61462",
+      "alt": "case.c56.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.180Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c56-asset-7",
+      "caseId": "c56-interpolated-temperature-map",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c56/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "648d305ddf06b33a341bae87f351fed0b54ecdb12dbf3c35f436aa8c474e34c5",
+      "alt": "case.c56.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.180Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c57-asset-1",
+      "caseId": "c57-lagging-wind-vane",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c57/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 542,
+      "sha256": "96f2595f98cc85a882b6803aaac724e037a0e54e461aabd06afbed5cdc566814",
+      "alt": "case.c57.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.180Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c57-asset-2",
+      "caseId": "c57-lagging-wind-vane",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c57/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 542,
+      "sha256": "ef0acfe51b7d26268d3af8abb83cbc7d51362b8edd6c29fec4be432f2de37457",
+      "alt": "case.c57.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.180Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c57-asset-3",
+      "caseId": "c57-lagging-wind-vane",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c57/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "557dfe82079988b123a4db35cda2e0fb10fba8a33bb84ceec78353200883dfbb",
+      "alt": "case.c57.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.180Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c57-asset-4",
+      "caseId": "c57-lagging-wind-vane",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c57/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "3ad3fb7d1a3ca09ae5cc18a1e5d42d76001f2b7beaeac8284454c70fdaa006d8",
+      "alt": "case.c57.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.180Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c57-asset-5",
+      "caseId": "c57-lagging-wind-vane",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c57/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "746db2304fbb99dc5050afd0b69e9f8707bf60b2983574e7e9c385b6c7752737",
+      "alt": "case.c57.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.180Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c57-asset-6",
+      "caseId": "c57-lagging-wind-vane",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c57/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "abec13d19124d7fd55291c48e51dc53245b5844f269261621515246953fad656",
+      "alt": "case.c57.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.180Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c57-asset-7",
+      "caseId": "c57-lagging-wind-vane",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c57/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "67f4cab72082697d81c74958d3e1ca66445a7bcb17625eda0d31dc32fa636ea8",
+      "alt": "case.c57.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.180Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c58-asset-1",
+      "caseId": "c58-same-volume-two-levels",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c58/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 551,
+      "sha256": "982c31dfc0f3319e86ff0aa67bc8937d82f27426ad6e0725453fa6a1cb5310ec",
+      "alt": "case.c58.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.181Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c58-asset-2",
+      "caseId": "c58-same-volume-two-levels",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c58/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 551,
+      "sha256": "7c5954ea232679c2ccdf43ecefc63b5d8b3898b2a7b7ffa40d50587a9aa2a9ba",
+      "alt": "case.c58.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.181Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c58-asset-3",
+      "caseId": "c58-same-volume-two-levels",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c58/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "dd8c53c62e858691a9af9fb7db20afaa8d12b060aa8f7b98939b1601d7f9c60c",
+      "alt": "case.c58.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.181Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c58-asset-4",
+      "caseId": "c58-same-volume-two-levels",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c58/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "02110ae5efb537e3b09ead3d1aaa5b34ffbceadd07e373dbfb14f49193361fcd",
+      "alt": "case.c58.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.181Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c58-asset-5",
+      "caseId": "c58-same-volume-two-levels",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c58/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "173a3cd11344c45e7530c1583b38c116dcdbbf7e4051cfd8c3c64b0555a75674",
+      "alt": "case.c58.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.181Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c58-asset-6",
+      "caseId": "c58-same-volume-two-levels",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c58/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "4fd6a4bfec3cef48d7bb860bac109f76b043e66253f1218c4194f87b602174be",
+      "alt": "case.c58.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.181Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c58-asset-7",
+      "caseId": "c58-same-volume-two-levels",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c58/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "e80ec8f455477b612eb19d99d95594ac7ba9592dca372d4178d6769f83fe1d1d",
+      "alt": "case.c58.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.181Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c59-asset-1",
+      "caseId": "c59-extra-ninth-floor",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c59/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "783ab556b934f42579c846d41e5e2ba903f6fc750c875b6996afa3857628fd6b",
+      "alt": "case.c59.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.181Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c59-asset-2",
+      "caseId": "c59-extra-ninth-floor",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c59/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 545,
+      "sha256": "7b9d7057017e1cbb872e85d009b4c2a3040197562e93c846dff2e3579fab8d6d",
+      "alt": "case.c59.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.181Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c59-asset-3",
+      "caseId": "c59-extra-ninth-floor",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c59/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "10f2cd68337385a8785cbdcf8b27a530b8abfc74a8ca75b4e3d948c5f85bca1e",
+      "alt": "case.c59.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.181Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c59-asset-4",
+      "caseId": "c59-extra-ninth-floor",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c59/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "964d5fa96cc0f3c700e91795fbdf217ca48f14c7fef83935332ccb780f86a5a8",
+      "alt": "case.c59.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.181Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c59-asset-5",
+      "caseId": "c59-extra-ninth-floor",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c59/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "efbe25ad0c8bdebe3cef05048c86fcffff94f3e39749cc8df8d12e333ee1e9aa",
+      "alt": "case.c59.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.182Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c59-asset-6",
+      "caseId": "c59-extra-ninth-floor",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c59/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "71cee989e22a1646b3cc5c26781ac89c094a77ad4a554ee04bbb35561ac393a8",
+      "alt": "case.c59.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.182Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c59-asset-7",
+      "caseId": "c59-extra-ninth-floor",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c59/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "829e7d6ad990302f60ab396ef98c5e7e9e81072cdd0d2ab933da0ba783ed544c",
+      "alt": "case.c59.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.182Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c60-asset-1",
+      "caseId": "c60-last-sample-before-stop",
+      "role": "scene-desktop",
+      "path": "apps/web/public/assets/cases/c60/scene.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 554,
+      "sha256": "887b79bae7c58f38bf9e83c78bc95af534f362d9a0e650529df738d4f53022e8",
+      "alt": "case.c60.title 调查资产 1",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.182Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c60-asset-2",
+      "caseId": "c60-last-sample-before-stop",
+      "role": "scene-mobile",
+      "path": "apps/web/public/assets/cases/c60/scene-mobile.svg",
+      "width": 1200,
+      "height": 680,
+      "bytes": 554,
+      "sha256": "a66483f362f96ddca83519fb2e1b52a79a6ae30aff440a868ce284db3d889bff",
+      "alt": "case.c60.title 调查资产 2",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.182Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c60-asset-3",
+      "caseId": "c60-last-sample-before-stop",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c60/evidence-01.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "acf4fffc26ab1a498d33ee38a6594215eff2360756dcf260560681dfc8ea7b0d",
+      "alt": "case.c60.title 调查资产 3",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.182Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c60-asset-4",
+      "caseId": "c60-last-sample-before-stop",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c60/evidence-02.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "b87ce1e90fc4969e358f2ddd067e6ad74243ae3ac29644124eb9e98ea8a1e9e8",
+      "alt": "case.c60.title 调查资产 4",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.182Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c60-asset-5",
+      "caseId": "c60-last-sample-before-stop",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c60/evidence-03.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "fc24403dacdc3c145cf5d8a460b3faec84a649954024a164dcfdf5f0db461711",
+      "alt": "case.c60.title 调查资产 5",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.182Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c60-asset-6",
+      "caseId": "c60-last-sample-before-stop",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c60/evidence-04.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "cbbf005045bed03ee91ee2eb1c0ad6f64d9e756c4bc4fd80b581b3c78215b551",
+      "alt": "case.c60.title 调查资产 6",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.182Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    },
+    {
+      "id": "c60-asset-7",
+      "caseId": "c60-last-sample-before-stop",
+      "role": "evidence",
+      "path": "apps/web/public/assets/cases/c60/evidence-05.svg",
+      "width": 640,
+      "height": 400,
+      "bytes": 322,
+      "sha256": "4a3a52aede61ade27c19cb3c9270facf18676202f1a5d90393662d333d59c8f9",
+      "alt": "case.c60.title 调查资产 7",
+      "prompt": "原创科学档案室示意图：测量设备、记录链和参照关系，克制暗色纸张质感。",
+      "generatedAt": "2026-08-23T15:03:56.182Z",
+      "generator": "deterministic SVG asset pipeline",
+      "humanEdits": [
+        "尺寸与对比度审查",
+        "移动端裁切审查"
+      ],
+      "licenseStatus": "generated-for-project"
+    }
+  ]
+}

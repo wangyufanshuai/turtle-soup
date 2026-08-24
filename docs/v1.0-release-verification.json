@@ -1,0 +1,30 @@
+{
+  "reportVersion": "1.0",
+  "verifiedAt": "2026-08-23T08:18:28.975Z",
+  "releaseProfile": "v1.0-internal-rc",
+  "status": "internal-rc",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "firstSeasonFrozen": true,
+  "caseCount": 24,
+  "coreTests": 43,
+  "seasonTwoCorpus": 2800,
+  "syntheticRuns": 96,
+  "browserRoutes": {
+    "desktop": 72,
+    "mobileSeasonTwo": 12
+  },
+  "offline": true,
+  "artifact": {
+    "path": "dist/turtle-soup-v1.0-internal-rc-web-pwa.zip",
+    "bytes": 784425,
+    "sha256": "83e2ee8e477ce9103735ea3d8eb0011ae6b72e257a286c7e009a2ef98cf7322b"
+  },
+  "limitations": [
+    "No human comprehension, fun, pacing, audio preference or market validation.",
+    "Physical Android, iOS and low-end hardware remain pending.",
+    "Offline truth can be reverse-engineered; Worker isolation is not DRM."
+  ],
+  "failures": [],
+  "passed": true
+}

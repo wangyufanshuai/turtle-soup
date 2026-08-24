@@ -1,0 +1,648 @@
+{
+  "reportVersion": "0.7",
+  "generatedAt": "2026-08-23T05:54:06.077Z",
+  "mode": "question-semantic-stress-sweep",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "note": "Stress tests verify deterministic fail-closed behavior and are not human language comprehension evidence.",
+  "caseCount": 12,
+  "passed": true,
+  "results": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "corpusCount": 153,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，里面有人吗？",
+            "expectedQueryId": "query-person-inside",
+            "status": "matched",
+            "queryId": "query-person-inside",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "里面人吗？",
+            "expectedQueryId": "query-person-inside",
+            "status": "matched",
+            "queryId": "query-person-inside",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "里面人",
+            "expectedQueryId": "query-person-inside",
+            "status": "matched",
+            "queryId": "query-person-inside",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": "里面林澈闹钟",
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "corpusCount": 152,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，顾遥已经离开了吗？",
+            "expectedQueryId": "query-gu-left",
+            "status": "matched",
+            "queryId": "query-gu-left",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "顾遥已经开了吗？",
+            "expectedQueryId": "query-gu-left",
+            "status": "unrecognized",
+            "queryId": null,
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "顾遥离开",
+            "expectedQueryId": "query-gu-left",
+            "status": "matched",
+            "queryId": "query-gu-left",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": "维护车痕迹",
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "corpusCount": 162,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，台上的角色就是罗弈本人吗？",
+            "expectedQueryId": "query-role-person",
+            "status": "matched",
+            "queryId": "query-role-person",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "台上的角色就罗弈本人吗？",
+            "expectedQueryId": "query-role-person",
+            "status": "matched",
+            "queryId": "query-role-person",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "角色罗弈",
+            "expectedQueryId": "query-role-person",
+            "status": "matched",
+            "queryId": "query-role-person",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": "角色演员表",
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "corpusCount": 170,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，这封信是在盖邮戳前写的吗？",
+            "expectedQueryId": "query-written-before",
+            "status": "matched",
+            "queryId": "query-written-before",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "这封信是在盖戳前写的吗？",
+            "expectedQueryId": "query-written-before",
+            "status": "unrecognized",
+            "queryId": null,
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "写邮戳前",
+            "expectedQueryId": "query-written-before",
+            "status": "matched",
+            "queryId": "query-written-before",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": "邮戳前离开",
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "corpusCount": 170,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，仓库真的停电了吗？",
+            "expectedQueryId": "query-power-cut",
+            "status": "matched",
+            "queryId": "query-power-cut",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "仓库真的电了吗？",
+            "expectedQueryId": "query-power-cut",
+            "status": "unrecognized",
+            "queryId": null,
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "仓库停电",
+            "expectedQueryId": "query-power-cut",
+            "status": "matched",
+            "queryId": "query-power-cut",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": "反光闯入",
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "corpusCount": 170,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，这张票是在渡轮离港前被扫描的吗？",
+            "expectedQueryId": "query-left-before",
+            "status": "matched",
+            "queryId": "query-left-before",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "这张票是在渡轮港前被扫描的吗？",
+            "expectedQueryId": "query-left-before",
+            "status": "unrecognized",
+            "queryId": null,
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "离港前扫描",
+            "expectedQueryId": "query-left-before",
+            "status": "matched",
+            "queryId": "query-left-before",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": "23:52乘客船票",
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "corpusCount": 151,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，钥匙被什么东西拉走了吗？",
+            "expectedQueryId": "query-key-moved",
+            "status": "matched",
+            "queryId": "query-key-moved",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "钥匙被什么西拉走了吗？",
+            "expectedQueryId": "query-key-moved",
+            "status": "matched",
+            "queryId": "query-key-moved",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "钥匙拉走",
+            "expectedQueryId": "query-key-moved",
+            "status": "matched",
+            "queryId": "query-key-moved",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": "有人进另一把",
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "corpusCount": 156,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，录音是在江舟离开前录的吗？",
+            "expectedQueryId": "query-recorded-before",
+            "status": "matched",
+            "queryId": "query-recorded-before",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "录音是在江舟开前录的吗？",
+            "expectedQueryId": "query-recorded-before",
+            "status": "unrecognized",
+            "queryId": null,
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "录音离开前",
+            "expectedQueryId": "query-recorded-before",
+            "status": "matched",
+            "queryId": "query-recorded-before",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": "延迟写入创建时间",
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "corpusCount": 156,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，雨是在滴水前下的吗？",
+            "expectedQueryId": "query-rain-source",
+            "status": "matched",
+            "queryId": "query-rain-source",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "雨是在滴前下的吗？",
+            "expectedQueryId": "query-rain-source",
+            "status": "unrecognized",
+            "queryId": null,
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "下过雨",
+            "expectedQueryId": "query-rain-source",
+            "status": "matched",
+            "queryId": "query-rain-source",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": "雨停积水",
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "corpusCount": 156,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，电话线在响之前已经断开了吗？",
+            "expectedQueryId": "query-line-state",
+            "status": "matched",
+            "queryId": "query-line-state",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "电话线在响之已经断开了吗？",
+            "expectedQueryId": "query-line-state",
+            "status": "matched",
+            "queryId": "query-line-state",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "电话线断开",
+            "expectedQueryId": "query-line-state",
+            "status": "matched",
+            "queryId": "query-line-state",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": null,
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "corpusCount": 156,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，魏宁是在09:20才到档案室吗？",
+            "expectedQueryId": "query-signer-time",
+            "status": "matched",
+            "queryId": "query-signer-time",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "魏宁是在09:0才到档案室吗？",
+            "expectedQueryId": "query-signer-time",
+            "status": "unrecognized",
+            "queryId": null,
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "魏宁09:20",
+            "expectedQueryId": "query-signer-time",
+            "status": "matched",
+            "queryId": "query-signer-time",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": "签名印章在场",
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "corpusCount": 156,
+      "corpusMismatches": [],
+      "probes": {
+        "directAnswer": "unrecognized",
+        "directAnswerFailClosed": true,
+        "languageProbes": [
+          {
+            "rawText": "请问，大楼真的有0层吗？",
+            "expectedQueryId": "query-floor-zero",
+            "status": "matched",
+            "queryId": "query-floor-zero",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "大楼真的0层吗？",
+            "expectedQueryId": "query-floor-zero",
+            "status": "matched",
+            "queryId": "query-floor-zero",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          },
+          {
+            "rawText": "大楼0层",
+            "expectedQueryId": "query-floor-zero",
+            "status": "matched",
+            "queryId": "query-floor-zero",
+            "safe": true,
+            "gameplayUnchangedWhenClosed": true
+          }
+        ],
+        "typoAndAbbreviationSafe": true,
+        "authoredAmbiguousProbe": "大楼0层显示屏",
+        "authoredAmbiguityHandled": true,
+        "forcedAmbiguity": {
+          "accepted": false,
+          "interpretationRequired": true,
+          "candidateCount": 2,
+          "gameplayStateUnchanged": true,
+          "passed": true
+        }
+      },
+      "openingLeaks": [],
+      "alternativeRecovery": {
+        "selected": true,
+        "judgedNonSolved": true,
+        "canonicalReselected": true,
+        "remainedUnsolved": true
+      },
+      "passed": true
+    }
+  ]
+}

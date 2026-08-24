@@ -1,0 +1,801 @@
+{
+  "reportVersion": "0.9",
+  "generatedAt": "2026-08-23T06:15:10.481Z",
+  "mode": "representative-state-visual-regression",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "expectedScreenshots": 74,
+  "capturedScreenshots": 74,
+  "distinctCaseOpenings": 12,
+  "home": {
+    "desktop": {
+      "state": "opening",
+      "viewport": "1440x900",
+      "path": "/output/playwright/v09/states/home-opening-1440x900.png",
+      "bytes": 764641,
+      "sha256": "aaa32f690892f8a606da03bc58a6cfbde0f452894d561ca03a637b26a01ede21"
+    },
+    "mobile": {
+      "state": "opening",
+      "viewport": "390x844",
+      "path": "/output/playwright/v09/states/home-opening-390x844.png",
+      "bytes": 177545,
+      "sha256": "c32a182a92859c731df52aabebabe523af2505ce486d1ae7e9638c88f20294c9"
+    },
+    "mobileOverflow": 0,
+    "passed": true
+  },
+  "results": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "冷藏室的敲门声"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 280190,
+          "sha256": "dff21fb91dfb1df72b259cef1c34255fa8d62a4ab007b6cf50d4a48de7f43c00",
+          "path": "/output/playwright/v09/states/c01-cold-room-knock-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 257659,
+          "sha256": "76416d335baf91274040cad92c0dabe54746854a0edd9c17eb29a37aca84fafb",
+          "path": "/output/playwright/v09/states/c01-cold-room-knock-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 258079,
+          "sha256": "c31bf44efad80c9fc7e31aee4a6625a5aeaca368d22276852b67e9d77c2ab62d",
+          "path": "/output/playwright/v09/states/c01-cold-room-knock-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 274278,
+          "sha256": "22818c90560bd10dd6cf8e122d79b4844fcf07f92107f415221c905e181a9e03",
+          "path": "/output/playwright/v09/states/c01-cold-room-knock-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 354696,
+          "sha256": "210e9eb2abca77b26c19327ea2573b0fb3f63cae91ecd8b78329d18b62acc629",
+          "path": "/output/playwright/v09/states/c01-cold-room-knock-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 163114,
+          "sha256": "42540eb3adb7c122d5df84f95a1d040fa014fddf9416e170150ffe86a409144a",
+          "path": "/output/playwright/v09/states/c01-cold-room-knock-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "没有脚印的回家路"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 547822,
+          "sha256": "7b72d7c7f217b5e3d35cc891b734252a0660c6e719025ff997040bacf9e4bbe6",
+          "path": "/output/playwright/v09/states/c02-snow-route-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 517425,
+          "sha256": "d9f217ee2ba15fa08e114e0194a8fec84611253bef45665e219bf4e19d7663fa",
+          "path": "/output/playwright/v09/states/c02-snow-route-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 519092,
+          "sha256": "b10e1cc5a71a30d067a3ddba3857a788be3572794e2d18e753a6e2980e3791c4",
+          "path": "/output/playwright/v09/states/c02-snow-route-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 518879,
+          "sha256": "f481da12fecce935ced9a4ae9e324fdfeb4932530a4be748d70af8a90a1c1285",
+          "path": "/output/playwright/v09/states/c02-snow-route-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 308869,
+          "sha256": "02a8ef1d832331401c58ff44f098e554d513508e4f7841817a79cb46c92c2206",
+          "path": "/output/playwright/v09/states/c02-snow-route-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 299765,
+          "sha256": "af8e9b5d7bde28bc82c0aed019944244a80acbe847da72a36a5478960c3f39e6",
+          "path": "/output/playwright/v09/states/c02-snow-route-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "十二点的第二个影子"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 674664,
+          "sha256": "422f495deb4a83c4d86439c920d28085c85f45c023e67356bd7c1033c169c55d",
+          "path": "/output/playwright/v09/states/c03-second-shadow-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 646119,
+          "sha256": "2aa7a7ab165df7b69bf087f71b8d910288c7535d790a12778d452d5ad009da84",
+          "path": "/output/playwright/v09/states/c03-second-shadow-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 648135,
+          "sha256": "6f53d3304af692649c1d59d42adc167ac5cc3086e0f0c63f047dcabd2bb77d7c",
+          "path": "/output/playwright/v09/states/c03-second-shadow-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 649199,
+          "sha256": "ef449382fe60b21308a658c7ac8dda17ade89b574ec6c722d0d8becc11db37ae",
+          "path": "/output/playwright/v09/states/c03-second-shadow-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 484915,
+          "sha256": "437e59d8ec5a552ceb556593429cc7d95420db8b57ad17f65bff8d7ff758c1ba",
+          "path": "/output/playwright/v09/states/c03-second-shadow-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 352841,
+          "sha256": "262620934e96b7a7b3ca2d16447aa810519fbb3ddad48cc202c214147660151d",
+          "path": "/output/playwright/v09/states/c03-second-shadow-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "寄不到的回信"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 253271,
+          "sha256": "9647e3b6c34f1fccd4bdf5df8905111766338e8e310d1f7634c38d1319da6296",
+          "path": "/output/playwright/v09/states/c04-unpostable-reply-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 238172,
+          "sha256": "9b2bd9e2b2edd365a8938bb0e05c06b16468f2716f4fbd9c81111b4c6895bde4",
+          "path": "/output/playwright/v09/states/c04-unpostable-reply-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 239986,
+          "sha256": "61502cf86f550d1acfd6622c0ea2bbbff1897ff74c7485e83e64a516a8a428a3",
+          "path": "/output/playwright/v09/states/c04-unpostable-reply-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 239917,
+          "sha256": "b9a5e8906250c996e6681b2d4746e6255d6d6632bfe5e51a7169f2061dcab6f6",
+          "path": "/output/playwright/v09/states/c04-unpostable-reply-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 241448,
+          "sha256": "47ce8cb9435cc9db464a8951c273413f45da4c97dd3a1478311fbe7ae48f0612",
+          "path": "/output/playwright/v09/states/c04-unpostable-reply-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 98893,
+          "sha256": "c26c5757f4755dd06d81e017ee7a25d9d009815d3d1e5717001496b9e66de067",
+          "path": "/output/playwright/v09/states/c04-unpostable-reply-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "第三盏未接通的灯"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 261850,
+          "sha256": "5d5d80338139055d64d9ea083cd2bb489ea13a2f0c15c052b8b298054e576d63",
+          "path": "/output/playwright/v09/states/c05-third-lamp-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 250340,
+          "sha256": "be431dcc68bfdf0686616e4f231cd6adc4224c018eb7d9d5106a88b60435be58",
+          "path": "/output/playwright/v09/states/c05-third-lamp-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 252289,
+          "sha256": "bd6a520da92bdd437afb77a095a444e9c85337c1488451e322a68a29561d1cef",
+          "path": "/output/playwright/v09/states/c05-third-lamp-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 251537,
+          "sha256": "8e1cf2a452a40de1ec04a129d7f89aebcdd521aad1c4510b561b34ddc7e9d961",
+          "path": "/output/playwright/v09/states/c05-third-lamp-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 237879,
+          "sha256": "f40614275384b489cfe40de77d9e5f7c636160d80e956cbba022810475c76ea2",
+          "path": "/output/playwright/v09/states/c05-third-lamp-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 114536,
+          "sha256": "ead8499e75c7a5fcb4daa9af54f10911479ef68007de29bd666ae09cbc171338",
+          "path": "/output/playwright/v09/states/c05-third-lamp-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "一张不存在的船票"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 186011,
+          "sha256": "47a0ea231c9cfdbf5227b3267fbe471843cd80015d57937c32d05fbc536e4a70",
+          "path": "/output/playwright/v09/states/c06-nonexistent-ticket-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 176794,
+          "sha256": "cacade65994cbb8defdd9ff946315d8c1e24219c09e7715777a2ff7d4602f8a2",
+          "path": "/output/playwright/v09/states/c06-nonexistent-ticket-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 178777,
+          "sha256": "93a1eb54032524f270fba31ce59b5b837c3188cf7d0b10ccd163881b0a32ac7a",
+          "path": "/output/playwright/v09/states/c06-nonexistent-ticket-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 177064,
+          "sha256": "038c6dc7f03da504da176e915568f403f01a2eb6a342da8ef8721b9468b8e5cf",
+          "path": "/output/playwright/v09/states/c06-nonexistent-ticket-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 221263,
+          "sha256": "689aa7fa703810ee7ec8ac456c6c379902887e05dcfea496e375221a1536c2bd",
+          "path": "/output/playwright/v09/states/c06-nonexistent-ticket-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 70330,
+          "sha256": "cf90a5d3fc61374eacd93dfcb9500a1d67976a33b194b93f84255366ca88b7ba",
+          "path": "/output/playwright/v09/states/c06-nonexistent-ticket-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "会自己归位的钥匙"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 230622,
+          "sha256": "023dfee73d580b5fd4660262ad7daf0f6c99c2fb2dd7dc44214aa1c3070e7b8e",
+          "path": "/output/playwright/v09/states/c07-key-returns-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 218098,
+          "sha256": "1b1ab51db324539f5397b12e20e4c66e8aaefa45de68eb3f432947b1e2dfc1cf",
+          "path": "/output/playwright/v09/states/c07-key-returns-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 219844,
+          "sha256": "56e9c8ec9376ff973772b85744bea2a64529f00816855e7019ed0a0f689e882a",
+          "path": "/output/playwright/v09/states/c07-key-returns-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 217740,
+          "sha256": "c19d3810fe9cbb631b8f20c6cf14cc407965a6165f943e340c452741cfc9cf0f",
+          "path": "/output/playwright/v09/states/c07-key-returns-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 218520,
+          "sha256": "1cb7f8c4783471efb89e5d66a343bc1c07c5493cb1a072096ab86e9b37e45b62",
+          "path": "/output/playwright/v09/states/c07-key-returns-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 90997,
+          "sha256": "a577f334a9d80948d9836534bd67aa6e0fd0605c847c181be874a36b47259fdd",
+          "path": "/output/playwright/v09/states/c07-key-returns-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "没有人签收的录音"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 324874,
+          "sha256": "c08ee2ddc758c2b9b4446927bbfe613cda550a356521a46fa286c1b1a1a224fb",
+          "path": "/output/playwright/v09/states/c08-unclaimed-recording-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 304499,
+          "sha256": "121a83825830281c63417d75eae8b3ce5a7635d9058615eaf1ef8dd1bbb15334",
+          "path": "/output/playwright/v09/states/c08-unclaimed-recording-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 306678,
+          "sha256": "2d444621c367ffa1b361419c27e880a7daa175057c63aa79da8080fd0131396d",
+          "path": "/output/playwright/v09/states/c08-unclaimed-recording-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 304519,
+          "sha256": "23e2782ed737398e800b163172b8607a59ed70facb2c6de15836e42fdb2548ff",
+          "path": "/output/playwright/v09/states/c08-unclaimed-recording-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 239072,
+          "sha256": "b59da5600ae8111a83a8e21349bf26a4fb67e50cf003949dad48182d6f7918d2",
+          "path": "/output/playwright/v09/states/c08-unclaimed-recording-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 129679,
+          "sha256": "4a6c6e9f6c2653dd4585730deb798eb09d1e8b915ab6c03a0607ed906b728dfa",
+          "path": "/output/playwright/v09/states/c08-unclaimed-recording-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "雨停后仍在滴水的房间"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 308291,
+          "sha256": "1a6d1694f3d84b15a93a24cd64ae6fa2980456663c2284d414ca20a314853c08",
+          "path": "/output/playwright/v09/states/c09-rain-room-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 292722,
+          "sha256": "9554f5ae2c4e061520dab0ce9ad81574a9e1cf97e65c36003626c8e750043e7b",
+          "path": "/output/playwright/v09/states/c09-rain-room-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 294736,
+          "sha256": "e2d769d246376183ce767099956478494cc19f08a24cb3c1e44256d598a55010",
+          "path": "/output/playwright/v09/states/c09-rain-room-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 294076,
+          "sha256": "d691d2a68f2fb9a8ca2724615516b84fc94a4dbb093a831aae8bd21eb209a6c5",
+          "path": "/output/playwright/v09/states/c09-rain-room-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 275576,
+          "sha256": "5f86ddac6957b0e7cb05eaf045a60b18f37a38f3e912786e7ad6b1ca1bbce12c",
+          "path": "/output/playwright/v09/states/c09-rain-room-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 136632,
+          "sha256": "d5c8e98edfb58af97cee09108e0c12ed72daa5fa8ad2d36bb0bace062c29c41e",
+          "path": "/output/playwright/v09/states/c09-rain-room-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "只响了一次的电话"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 239880,
+          "sha256": "b4b267e848d8889817eaa8f755910b4facec14d634e3bc78894eda533aaa8e5a",
+          "path": "/output/playwright/v09/states/c10-single-ring-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 226340,
+          "sha256": "56056da99b5b7543219d95885d7585f419bcac1e1e5dd57929053f9abf39985f",
+          "path": "/output/playwright/v09/states/c10-single-ring-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 228117,
+          "sha256": "518d2b9c23dee59fab310415333612dd340b5b6547a7f25b668fd42dc3657cf1",
+          "path": "/output/playwright/v09/states/c10-single-ring-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 226484,
+          "sha256": "423dc8bd690faf1467c12a900ce486c23fab33bddcf11090120691936c92d8df",
+          "path": "/output/playwright/v09/states/c10-single-ring-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 203926,
+          "sha256": "bc4bab69237a38f711f11eb86ed2126ee509f7f50ea5d4fc04cf8b90d49783a2",
+          "path": "/output/playwright/v09/states/c10-single-ring-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 110654,
+          "sha256": "07affc2366e0f4e8532c10650b72b777a056f11beaa96e18318ee4807e2ae68f",
+          "path": "/output/playwright/v09/states/c10-single-ring-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "借来的签名"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 336097,
+          "sha256": "de91cc5941a6d529ff1fc4cf834db33d602fde63c7bbcf177036a33eb2207309",
+          "path": "/output/playwright/v09/states/c11-borrowed-signature-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 318736,
+          "sha256": "d7e2a32d917007993fa27874319b1d3b5e9c89f1c1c6ea00b895b4b8baec2c1a",
+          "path": "/output/playwright/v09/states/c11-borrowed-signature-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 320471,
+          "sha256": "0b0665b03061c02718f8f4840a9a3ae5fe24e1e4f3532253187795d03194e72e",
+          "path": "/output/playwright/v09/states/c11-borrowed-signature-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 318399,
+          "sha256": "137e30148807fb51219164f6d9a30350ac3b46c83fa6eac9d1fc2e3eb4d45eb2",
+          "path": "/output/playwright/v09/states/c11-borrowed-signature-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 279043,
+          "sha256": "7476bbd18f36a559ae6c5dfd7e0f492fdcd147bf4226eb3ec57bfa9c19410115",
+          "path": "/output/playwright/v09/states/c11-borrowed-signature-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 140240,
+          "sha256": "16831466ec13ebbbc583eb6ba99cce07f18697ad164d52ff51f4b96cb10b503d",
+          "path": "/output/playwright/v09/states/c11-borrowed-signature-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "opening": {
+        "overflow": 0,
+        "sceneLoaded": true,
+        "title": "没有终点的电梯"
+      },
+      "evidenceExamined": true,
+      "wrongTheorySubmitted": true,
+      "closed": true,
+      "replayBeats": 5,
+      "mobile": {
+        "overflow": 0,
+        "visibleMain": true,
+        "visibleNavigationButtons": 3
+      },
+      "distinctDesktopStates": 5,
+      "screenshots": [
+        {
+          "state": "opening",
+          "viewport": "1440x900",
+          "bytes": 270158,
+          "sha256": "d347567e9c8c634dcb1522fb8ff1505a0f5a46ca59f4a861f10ef1834425c389",
+          "path": "/output/playwright/v09/states/c12-zero-floor-elevator-opening-1440x900.png"
+        },
+        {
+          "state": "question",
+          "viewport": "1440x900",
+          "bytes": 255132,
+          "sha256": "a95f4228c0723f09fbaa95001ad51753997a20ff4e397fa44d63449c546550a8",
+          "path": "/output/playwright/v09/states/c12-zero-floor-elevator-question-1440x900.png"
+        },
+        {
+          "state": "evidence",
+          "viewport": "1440x900",
+          "bytes": 256357,
+          "sha256": "dd989ed935bf4bd6cb0fbe3c35ff1797dbe26667a82603445d273634fd6313e3",
+          "path": "/output/playwright/v09/states/c12-zero-floor-elevator-evidence-1440x900.png"
+        },
+        {
+          "state": "wrong-theory",
+          "viewport": "1440x900",
+          "bytes": 255294,
+          "sha256": "098fc1843b03e60e42c877a2e923155b67d39ff007c9b2f8e97e70734e955dd0",
+          "path": "/output/playwright/v09/states/c12-zero-floor-elevator-wrong-theory-1440x900.png"
+        },
+        {
+          "state": "replay",
+          "viewport": "1440x900",
+          "bytes": 223566,
+          "sha256": "56499843427c89800d97cd64fe7b77f3ccd76950d230bb05948b7e9539dd93c4",
+          "path": "/output/playwright/v09/states/c12-zero-floor-elevator-replay-1440x900.png"
+        },
+        {
+          "state": "opening",
+          "viewport": "390x844",
+          "bytes": 116343,
+          "sha256": "0038330d2cbb48b68a753bc3a027f87f1792bcedaa6c82c35570de59b954f9cd",
+          "path": "/output/playwright/v09/states/c12-zero-floor-elevator-opening-390x844.png"
+        }
+      ],
+      "consoleErrors": [],
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "qualification": "Screenshot and DOM checks validate visual state reachability and layout integrity, not human aesthetic preference or fun."
+}

@@ -1,0 +1,70 @@
+{
+  "reportVersion": "0.8",
+  "generatedAt": "2026-08-23T05:09:31.015Z",
+  "mode": "static-release-anti-leak-scan",
+  "qualification": "Offline content remains reverse-engineerable. This scan enforces isolation and accidental-spoiler boundaries; it is not DRM.",
+  "targets": [
+    {
+      "name": "static-output",
+      "path": "apps/web/out",
+      "outputFileCount": 116,
+      "truthBearingFiles": [
+        "_next/static/chunks/245.01f3d922766030ab.js"
+      ],
+      "directlyExecutedTruthFiles": [],
+      "nonTruthLeakFiles": [],
+      "sourceMaps": 0,
+      "fixtureFiles": [],
+      "remoteTrackingMatches": [],
+      "failures": [],
+      "passed": true
+    },
+    {
+      "name": "web-pwa-package",
+      "path": "dist/web-pwa",
+      "outputFileCount": 116,
+      "truthBearingFiles": [
+        "_next/static/chunks/245.01f3d922766030ab.js"
+      ],
+      "directlyExecutedTruthFiles": [],
+      "nonTruthLeakFiles": [],
+      "sourceMaps": 0,
+      "fixtureFiles": [],
+      "remoteTrackingMatches": [],
+      "failures": [],
+      "passed": true
+    },
+    {
+      "name": "itch-html5-package",
+      "path": "dist/itch-html5",
+      "outputFileCount": 116,
+      "truthBearingFiles": [
+        "_next/static/chunks/245.01f3d922766030ab.js"
+      ],
+      "directlyExecutedTruthFiles": [],
+      "nonTruthLeakFiles": [],
+      "sourceMaps": 0,
+      "fixtureFiles": [],
+      "remoteTrackingMatches": [],
+      "failures": [],
+      "passed": true
+    },
+    {
+      "name": "c01-fun-gate-package",
+      "path": "dist/c01-fun-gate",
+      "outputFileCount": 51,
+      "truthBearingFiles": [
+        "_next/static/chunks/245.01f3d922766030ab.js"
+      ],
+      "directlyExecutedTruthFiles": [],
+      "nonTruthLeakFiles": [],
+      "sourceMaps": 0,
+      "fixtureFiles": [],
+      "remoteTrackingMatches": [],
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

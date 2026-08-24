@@ -1,0 +1,1539 @@
+{
+  "reportVersion": "1.3",
+  "generatedAt": "2026-08-23T14:59:42.185Z",
+  "releaseProfile": "v1.3-public-preview",
+  "humanParticipants": 0,
+  "engines": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "viewports": [
+    "1440x900",
+    "390x844"
+  ],
+  "caseCount": 60,
+  "representativeCount": 24,
+  "browsers": [
+    {
+      "browser": "chromium",
+      "homeStatus": 200,
+      "unknownStatus": 404,
+      "consoleErrors": [],
+      "routes": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "status": 200,
+          "title": "冷藏室的敲门声",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "status": 200,
+          "title": "没有脚印的回家路",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "status": 200,
+          "title": "十二点的第二个影子",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "status": 200,
+          "title": "寄不到的回信",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "status": 200,
+          "title": "第三盏未接通的灯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "status": 200,
+          "title": "一张不存在的船票",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "status": 200,
+          "title": "会自己归位的钥匙",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "status": 200,
+          "title": "没有人签收的录音",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "status": 200,
+          "title": "雨停后仍在滴水的房间",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "status": 200,
+          "title": "只响了一次的电话",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "status": 200,
+          "title": "借来的签名",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "status": 200,
+          "title": "没有终点的电梯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "status": 200,
+          "title": "空杯里的第二条水线",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c14-moving-red-box",
+          "status": 200,
+          "title": "越过但未跨越的红箱",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c15-sixth-panorama",
+          "status": 200,
+          "title": "同一张合影里的第六个人",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c16-closed-door-handoff",
+          "status": 200,
+          "title": "没有开门的交接",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c17-twelve-strikes",
+          "status": 200,
+          "title": "十一点的十二声钟",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c18-lighter-sealed-crate",
+          "status": 200,
+          "title": "少了一公斤的密封箱",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c19-fog-after-window",
+          "status": 200,
+          "title": "关窗后才出现的雾",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c20-fifth-worker",
+          "status": 200,
+          "title": "六个岗位的第五个人",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c21-missing-seven-minutes",
+          "status": 200,
+          "title": "完整录像里消失的七分钟",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c22-overloaded-bridge",
+          "status": 200,
+          "title": "没有超标的超载桥",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c23-clean-air-sample",
+          "status": 200,
+          "title": "泄漏时仍然清洁的空气样本",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c24-turned-painting",
+          "status": 200,
+          "title": "闭馆后转向的画",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "status": 200,
+          "title": "没有响起的第二次门铃",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c26-short-map-pipeline",
+          "status": 200,
+          "title": "比地图短的管线",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c27-stationary-moving-platform",
+          "status": 200,
+          "title": "停在原地的移动平台",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c28-ninth-minute-temperature",
+          "status": 200,
+          "title": "温度曲线里的第九分钟",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c29-role-stamp-signature",
+          "status": 200,
+          "title": "签名盖的是岗位",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c30-shared-shift-id",
+          "status": 200,
+          "title": "同一工号的两次值班",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "title": "未入住的第八位住客",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c32-approved-unauthorized-door",
+          "status": 200,
+          "title": "批准过的未授权门",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "status": 200,
+          "title": "先到场的迟到者",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c34-tomorrow-seal",
+          "status": 200,
+          "title": "封条上的明天",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c35-extra-glass-attendant",
+          "status": 200,
+          "title": "玻璃里多出来的值班员",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c36-no-one-left-terminal",
+          "status": 200,
+          "title": "终点站没有下车的人",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c37-zeroed-pressure-gauge",
+          "status": 200,
+          "title": "回到零点的压力表",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c38-no-missing-seventh-packet",
+          "status": 200,
+          "title": "没有丢失的第七码",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c39-duplicated-heartbeat",
+          "status": 200,
+          "title": "两次相同的心跳",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c40-early-liquid-front",
+          "status": 200,
+          "title": "提前到达的液面",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c41-hysteresis-overheat",
+          "status": 200,
+          "title": "没有发生的过热报警",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c42-same-weight-different-load",
+          "status": 200,
+          "title": "同样重量的不同负载",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c43-train-stop-reference",
+          "status": 200,
+          "title": "停在红线外的列车",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c44-hidden-overload-spike",
+          "status": 200,
+          "title": "消失在平均值里的尖峰",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c45-double-location-second",
+          "status": 200,
+          "title": "一秒钟的双重定位",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c46-pilot-pressure-valve",
+          "status": 200,
+          "title": "没有打开的阀门",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c47-offline-buffered-device",
+          "status": 200,
+          "title": "断线后继续在线的设备",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "status": 200,
+          "title": "两个相同的校准点",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c49-gimbal-turn-drone",
+          "status": 200,
+          "title": "无人机没有转弯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c50-extra-warehouse-pallet",
+          "status": 200,
+          "title": "仓库里多出的托盘",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c51-equivalent-resistance",
+          "status": 200,
+          "title": "不相等的相等电阻",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c52-shorter-river-night",
+          "status": 200,
+          "title": "夜里变短的河",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c53-late-fiber-echo",
+          "status": 200,
+          "title": "迟到的光纤回声",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c54-elevator-counterweight",
+          "status": 200,
+          "title": "没有下降的电梯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c55-merged-multi-alarm",
+          "status": 200,
+          "title": "只响一次的多重告警",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c56-interpolated-temperature-map",
+          "status": 200,
+          "title": "完整却不连续的温度图",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c57-lagging-wind-vane",
+          "status": 200,
+          "title": "不动的风向标",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c58-same-volume-two-levels",
+          "status": 200,
+          "title": "同一容积的两种水位",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c59-extra-ninth-floor",
+          "status": 200,
+          "title": "多出来的第九层",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "status": 200,
+          "title": "终点前的最后一次采样",
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "homeStatus": 200,
+      "unknownStatus": 404,
+      "consoleErrors": [],
+      "routes": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "status": 200,
+          "title": "冷藏室的敲门声",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "status": 200,
+          "title": "没有脚印的回家路",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "status": 200,
+          "title": "十二点的第二个影子",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "status": 200,
+          "title": "寄不到的回信",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "status": 200,
+          "title": "第三盏未接通的灯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "status": 200,
+          "title": "一张不存在的船票",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "status": 200,
+          "title": "会自己归位的钥匙",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "status": 200,
+          "title": "没有人签收的录音",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "status": 200,
+          "title": "雨停后仍在滴水的房间",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "status": 200,
+          "title": "只响了一次的电话",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "status": 200,
+          "title": "借来的签名",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "status": 200,
+          "title": "没有终点的电梯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "status": 200,
+          "title": "空杯里的第二条水线",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c14-moving-red-box",
+          "status": 200,
+          "title": "越过但未跨越的红箱",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c15-sixth-panorama",
+          "status": 200,
+          "title": "同一张合影里的第六个人",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c16-closed-door-handoff",
+          "status": 200,
+          "title": "没有开门的交接",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c17-twelve-strikes",
+          "status": 200,
+          "title": "十一点的十二声钟",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c18-lighter-sealed-crate",
+          "status": 200,
+          "title": "少了一公斤的密封箱",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c19-fog-after-window",
+          "status": 200,
+          "title": "关窗后才出现的雾",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c20-fifth-worker",
+          "status": 200,
+          "title": "六个岗位的第五个人",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c21-missing-seven-minutes",
+          "status": 200,
+          "title": "完整录像里消失的七分钟",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c22-overloaded-bridge",
+          "status": 200,
+          "title": "没有超标的超载桥",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c23-clean-air-sample",
+          "status": 200,
+          "title": "泄漏时仍然清洁的空气样本",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c24-turned-painting",
+          "status": 200,
+          "title": "闭馆后转向的画",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "status": 200,
+          "title": "没有响起的第二次门铃",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c26-short-map-pipeline",
+          "status": 200,
+          "title": "比地图短的管线",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c27-stationary-moving-platform",
+          "status": 200,
+          "title": "停在原地的移动平台",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c28-ninth-minute-temperature",
+          "status": 200,
+          "title": "温度曲线里的第九分钟",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c29-role-stamp-signature",
+          "status": 200,
+          "title": "签名盖的是岗位",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c30-shared-shift-id",
+          "status": 200,
+          "title": "同一工号的两次值班",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "title": "未入住的第八位住客",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c32-approved-unauthorized-door",
+          "status": 200,
+          "title": "批准过的未授权门",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "status": 200,
+          "title": "先到场的迟到者",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c34-tomorrow-seal",
+          "status": 200,
+          "title": "封条上的明天",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c35-extra-glass-attendant",
+          "status": 200,
+          "title": "玻璃里多出来的值班员",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c36-no-one-left-terminal",
+          "status": 200,
+          "title": "终点站没有下车的人",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c37-zeroed-pressure-gauge",
+          "status": 200,
+          "title": "回到零点的压力表",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c38-no-missing-seventh-packet",
+          "status": 200,
+          "title": "没有丢失的第七码",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c39-duplicated-heartbeat",
+          "status": 200,
+          "title": "两次相同的心跳",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c40-early-liquid-front",
+          "status": 200,
+          "title": "提前到达的液面",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c41-hysteresis-overheat",
+          "status": 200,
+          "title": "没有发生的过热报警",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c42-same-weight-different-load",
+          "status": 200,
+          "title": "同样重量的不同负载",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c43-train-stop-reference",
+          "status": 200,
+          "title": "停在红线外的列车",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c44-hidden-overload-spike",
+          "status": 200,
+          "title": "消失在平均值里的尖峰",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c45-double-location-second",
+          "status": 200,
+          "title": "一秒钟的双重定位",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c46-pilot-pressure-valve",
+          "status": 200,
+          "title": "没有打开的阀门",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c47-offline-buffered-device",
+          "status": 200,
+          "title": "断线后继续在线的设备",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "status": 200,
+          "title": "两个相同的校准点",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c49-gimbal-turn-drone",
+          "status": 200,
+          "title": "无人机没有转弯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c50-extra-warehouse-pallet",
+          "status": 200,
+          "title": "仓库里多出的托盘",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c51-equivalent-resistance",
+          "status": 200,
+          "title": "不相等的相等电阻",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c52-shorter-river-night",
+          "status": 200,
+          "title": "夜里变短的河",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c53-late-fiber-echo",
+          "status": 200,
+          "title": "迟到的光纤回声",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c54-elevator-counterweight",
+          "status": 200,
+          "title": "没有下降的电梯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c55-merged-multi-alarm",
+          "status": 200,
+          "title": "只响一次的多重告警",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c56-interpolated-temperature-map",
+          "status": 200,
+          "title": "完整却不连续的温度图",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c57-lagging-wind-vane",
+          "status": 200,
+          "title": "不动的风向标",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c58-same-volume-two-levels",
+          "status": 200,
+          "title": "同一容积的两种水位",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c59-extra-ninth-floor",
+          "status": 200,
+          "title": "多出来的第九层",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "status": 200,
+          "title": "终点前的最后一次采样",
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "browser": "webkit",
+      "homeStatus": 200,
+      "unknownStatus": 404,
+      "consoleErrors": [],
+      "routes": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "status": 200,
+          "title": "冷藏室的敲门声",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "status": 200,
+          "title": "没有脚印的回家路",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "status": 200,
+          "title": "十二点的第二个影子",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "status": 200,
+          "title": "寄不到的回信",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "status": 200,
+          "title": "第三盏未接通的灯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "status": 200,
+          "title": "一张不存在的船票",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "status": 200,
+          "title": "会自己归位的钥匙",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "status": 200,
+          "title": "没有人签收的录音",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "status": 200,
+          "title": "雨停后仍在滴水的房间",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "status": 200,
+          "title": "只响了一次的电话",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "status": 200,
+          "title": "借来的签名",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "status": 200,
+          "title": "没有终点的电梯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "status": 200,
+          "title": "空杯里的第二条水线",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c14-moving-red-box",
+          "status": 200,
+          "title": "越过但未跨越的红箱",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c15-sixth-panorama",
+          "status": 200,
+          "title": "同一张合影里的第六个人",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c16-closed-door-handoff",
+          "status": 200,
+          "title": "没有开门的交接",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c17-twelve-strikes",
+          "status": 200,
+          "title": "十一点的十二声钟",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c18-lighter-sealed-crate",
+          "status": 200,
+          "title": "少了一公斤的密封箱",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c19-fog-after-window",
+          "status": 200,
+          "title": "关窗后才出现的雾",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c20-fifth-worker",
+          "status": 200,
+          "title": "六个岗位的第五个人",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c21-missing-seven-minutes",
+          "status": 200,
+          "title": "完整录像里消失的七分钟",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c22-overloaded-bridge",
+          "status": 200,
+          "title": "没有超标的超载桥",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c23-clean-air-sample",
+          "status": 200,
+          "title": "泄漏时仍然清洁的空气样本",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c24-turned-painting",
+          "status": 200,
+          "title": "闭馆后转向的画",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "status": 200,
+          "title": "没有响起的第二次门铃",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c26-short-map-pipeline",
+          "status": 200,
+          "title": "比地图短的管线",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c27-stationary-moving-platform",
+          "status": 200,
+          "title": "停在原地的移动平台",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c28-ninth-minute-temperature",
+          "status": 200,
+          "title": "温度曲线里的第九分钟",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c29-role-stamp-signature",
+          "status": 200,
+          "title": "签名盖的是岗位",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c30-shared-shift-id",
+          "status": 200,
+          "title": "同一工号的两次值班",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "title": "未入住的第八位住客",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c32-approved-unauthorized-door",
+          "status": 200,
+          "title": "批准过的未授权门",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "status": 200,
+          "title": "先到场的迟到者",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c34-tomorrow-seal",
+          "status": 200,
+          "title": "封条上的明天",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c35-extra-glass-attendant",
+          "status": 200,
+          "title": "玻璃里多出来的值班员",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c36-no-one-left-terminal",
+          "status": 200,
+          "title": "终点站没有下车的人",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c37-zeroed-pressure-gauge",
+          "status": 200,
+          "title": "回到零点的压力表",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c38-no-missing-seventh-packet",
+          "status": 200,
+          "title": "没有丢失的第七码",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c39-duplicated-heartbeat",
+          "status": 200,
+          "title": "两次相同的心跳",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c40-early-liquid-front",
+          "status": 200,
+          "title": "提前到达的液面",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c41-hysteresis-overheat",
+          "status": 200,
+          "title": "没有发生的过热报警",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c42-same-weight-different-load",
+          "status": 200,
+          "title": "同样重量的不同负载",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c43-train-stop-reference",
+          "status": 200,
+          "title": "停在红线外的列车",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c44-hidden-overload-spike",
+          "status": 200,
+          "title": "消失在平均值里的尖峰",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c45-double-location-second",
+          "status": 200,
+          "title": "一秒钟的双重定位",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c46-pilot-pressure-valve",
+          "status": 200,
+          "title": "没有打开的阀门",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c47-offline-buffered-device",
+          "status": 200,
+          "title": "断线后继续在线的设备",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "status": 200,
+          "title": "两个相同的校准点",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c49-gimbal-turn-drone",
+          "status": 200,
+          "title": "无人机没有转弯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c50-extra-warehouse-pallet",
+          "status": 200,
+          "title": "仓库里多出的托盘",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c51-equivalent-resistance",
+          "status": 200,
+          "title": "不相等的相等电阻",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c52-shorter-river-night",
+          "status": 200,
+          "title": "夜里变短的河",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c53-late-fiber-echo",
+          "status": 200,
+          "title": "迟到的光纤回声",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c54-elevator-counterweight",
+          "status": 200,
+          "title": "没有下降的电梯",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c55-merged-multi-alarm",
+          "status": 200,
+          "title": "只响一次的多重告警",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c56-interpolated-temperature-map",
+          "status": 200,
+          "title": "完整却不连续的温度图",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c57-lagging-wind-vane",
+          "status": 200,
+          "title": "不动的风向标",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c58-same-volume-two-levels",
+          "status": 200,
+          "title": "同一容积的两种水位",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c59-extra-ninth-floor",
+          "status": 200,
+          "title": "多出来的第九层",
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "status": 200,
+          "title": "终点前的最后一次采样",
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "representatives": {
+    "representativeIds": [
+      "c01-cold-room-knock",
+      "c04-unpostable-reply",
+      "c06-nonexistent-ticket",
+      "c08-unclaimed-recording",
+      "c10-single-ring",
+      "c12-zero-floor-elevator",
+      "c13-second-waterline",
+      "c16-closed-door-handoff",
+      "c19-fog-after-window",
+      "c21-missing-seven-minutes",
+      "c23-clean-air-sample",
+      "c24-turned-painting",
+      "c25-silent-second-bell",
+      "c28-ninth-minute-temperature",
+      "c31-eighth-unchecked-guest",
+      "c33-early-late-arrival",
+      "c35-extra-glass-attendant",
+      "c36-no-one-left-terminal",
+      "c37-zeroed-pressure-gauge",
+      "c42-same-weight-different-load",
+      "c48-two-point-calibration",
+      "c54-elevator-counterweight",
+      "c57-lagging-wind-vane",
+      "c60-last-sample-before-stop"
+    ],
+    "traces": [
+      {
+        "caseId": "c01-cold-room-knock",
+        "queryAttempted": true,
+        "boardCount": 0,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c04-unpostable-reply",
+        "queryAttempted": true,
+        "boardCount": 0,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c06-nonexistent-ticket",
+        "queryAttempted": true,
+        "boardCount": 0,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c08-unclaimed-recording",
+        "queryAttempted": true,
+        "boardCount": 0,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c10-single-ring",
+        "queryAttempted": true,
+        "boardCount": 0,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c12-zero-floor-elevator",
+        "queryAttempted": true,
+        "boardCount": 0,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c13-second-waterline",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c16-closed-door-handoff",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c19-fog-after-window",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c21-missing-seven-minutes",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c23-clean-air-sample",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c24-turned-painting",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c25-silent-second-bell",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c28-ninth-minute-temperature",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c31-eighth-unchecked-guest",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c33-early-late-arrival",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c35-extra-glass-attendant",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c36-no-one-left-terminal",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c37-zeroed-pressure-gauge",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c42-same-weight-different-load",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c48-two-point-calibration",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c54-elevator-counterweight",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c57-lagging-wind-vane",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c60-last-sample-before-stop",
+        "queryAttempted": true,
+        "boardCount": 2,
+        "overflow": 0,
+        "passed": true
+      }
+    ],
+    "mobileOverflow": 0,
+    "axeSeriousCritical": 0,
+    "passed": true
+  },
+  "screenshots": [
+    "chromium-home-desktop.png",
+    "firefox-home-desktop.png",
+    "webkit-home-desktop.png",
+    "c60-mobile.png",
+    "c01-cold-room-knock-desktop.png",
+    "c04-unpostable-reply-desktop.png",
+    "c06-nonexistent-ticket-desktop.png",
+    "c08-unclaimed-recording-desktop.png",
+    "c10-single-ring-desktop.png",
+    "c12-zero-floor-elevator-desktop.png",
+    "c13-second-waterline-desktop.png",
+    "c16-closed-door-handoff-desktop.png",
+    "c19-fog-after-window-desktop.png",
+    "c21-missing-seven-minutes-desktop.png",
+    "c23-clean-air-sample-desktop.png",
+    "c24-turned-painting-desktop.png",
+    "c25-silent-second-bell-desktop.png",
+    "c28-ninth-minute-temperature-desktop.png",
+    "c31-eighth-unchecked-guest-desktop.png",
+    "c33-early-late-arrival-desktop.png",
+    "c35-extra-glass-attendant-desktop.png",
+    "c36-no-one-left-terminal-desktop.png",
+    "c37-zeroed-pressure-gauge-desktop.png",
+    "c42-same-weight-different-load-desktop.png",
+    "c48-two-point-calibration-desktop.png",
+    "c54-elevator-counterweight-desktop.png",
+    "c57-lagging-wind-vane-desktop.png",
+    "c60-last-sample-before-stop-desktop.png"
+  ],
+  "passed": true,
+  "qualification": "Automation validates route, rendering, responsive and accessibility lower bounds. Human comprehension, fun, pacing and market fit remain pending."
+}

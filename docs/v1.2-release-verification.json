@@ -1,0 +1,28 @@
+{
+  "reportVersion": "1.2",
+  "verifiedAt": "2026-08-23T15:04:44.633Z",
+  "releaseProfile": "v1.2-internal-rc",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "caseCount": 36,
+  "frozenSeasonOneCount": 12,
+  "preservedArtifacts": [
+    {
+      "version": "v1.0",
+      "path": "dist/turtle-soup-v1.0-internal-rc-web-pwa.zip",
+      "expected": "83e2ee8e477ce9103735ea3d8eb0011ae6b72e257a286c7e009a2ef98cf7322b",
+      "actual": "83e2ee8e477ce9103735ea3d8eb0011ae6b72e257a286c7e009a2ef98cf7322b",
+      "unchanged": true
+    },
+    {
+      "version": "v1.1",
+      "path": "dist/turtle-soup-v1.1-internal-rc-web-pwa.zip",
+      "expected": "0bc2b077317b6d32c2df10e14d35520917839a68d18b70d23fafa74991cb3f35",
+      "actual": "0bc2b077317b6d32c2df10e14d35520917839a68d18b70d23fafa74991cb3f35",
+      "unchanged": true
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

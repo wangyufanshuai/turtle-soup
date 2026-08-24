@@ -1,0 +1,192 @@
+{
+  "reportVersion": "1.3",
+  "verifiedAt": "2026-08-23T15:03:56.184Z",
+  "releaseProfile": "v1.3-public-preview",
+  "status": "public-preview / human-evaluation-pending",
+  "humanParticipants": 0,
+  "caseCount": 60,
+  "season4Count": 24,
+  "corpusEntriesSeason4": 5280,
+  "frozenSeasonOneCount": 12,
+  "frozenSeasonOneFileHashesChecked": 12,
+  "frozenHashChecks": [
+    {
+      "id": "c01-cold-room-knock",
+      "expected": "0bfca99efbf3fbef3667241f6fbd3cd46a81c1ef58879a235fbdc4ad39df65de",
+      "actual": "0bfca99efbf3fbef3667241f6fbd3cd46a81c1ef58879a235fbdc4ad39df65de",
+      "unchanged": true
+    },
+    {
+      "id": "c02-snow-route",
+      "expected": "31a262c05e2ed50ebd86847f416aed658e3d719536ddea4e9f0229caee64ba36",
+      "actual": "31a262c05e2ed50ebd86847f416aed658e3d719536ddea4e9f0229caee64ba36",
+      "unchanged": true
+    },
+    {
+      "id": "c03-second-shadow",
+      "expected": "7f5ac7d7fc491987913a40f65c1f0dd41c716cb61ba70f081400bf65df49ee89",
+      "actual": "7f5ac7d7fc491987913a40f65c1f0dd41c716cb61ba70f081400bf65df49ee89",
+      "unchanged": true
+    },
+    {
+      "id": "c04-unpostable-reply",
+      "expected": "5c1e008eadd2c27ae7922b9aadccbc56a7827e0a9e0d99eb526e3f3308026b89",
+      "actual": "5c1e008eadd2c27ae7922b9aadccbc56a7827e0a9e0d99eb526e3f3308026b89",
+      "unchanged": true
+    },
+    {
+      "id": "c05-third-lamp",
+      "expected": "0faced911b3ac489c5679b74d5e5c534dbbb2ebab6b6001c36b6568da18887a6",
+      "actual": "0faced911b3ac489c5679b74d5e5c534dbbb2ebab6b6001c36b6568da18887a6",
+      "unchanged": true
+    },
+    {
+      "id": "c06-nonexistent-ticket",
+      "expected": "219da90e14925e15c9cf23226933f91fcb1dc73baae1b83240357ceb7d3373f4",
+      "actual": "219da90e14925e15c9cf23226933f91fcb1dc73baae1b83240357ceb7d3373f4",
+      "unchanged": true
+    },
+    {
+      "id": "c07-key-returns",
+      "expected": "8e1c94b6389502265bd7c106dc973189545d60ec8ada48e07a05c2b97308337c",
+      "actual": "8e1c94b6389502265bd7c106dc973189545d60ec8ada48e07a05c2b97308337c",
+      "unchanged": true
+    },
+    {
+      "id": "c08-unclaimed-recording",
+      "expected": "ca6988265b01270ba07d9fb40d098c285b09feadf3ce726ffc015d244b9c7fd9",
+      "actual": "ca6988265b01270ba07d9fb40d098c285b09feadf3ce726ffc015d244b9c7fd9",
+      "unchanged": true
+    },
+    {
+      "id": "c09-rain-room",
+      "expected": "f92c5907555fe306351aa16b41a467ac4601f4c888b6b343302b50e7f4847fc1",
+      "actual": "f92c5907555fe306351aa16b41a467ac4601f4c888b6b343302b50e7f4847fc1",
+      "unchanged": true
+    },
+    {
+      "id": "c10-single-ring",
+      "expected": "620d9b8e7cf42c267f525b04090a18cd604df151e65572800b47418263765b86",
+      "actual": "620d9b8e7cf42c267f525b04090a18cd604df151e65572800b47418263765b86",
+      "unchanged": true
+    },
+    {
+      "id": "c11-borrowed-signature",
+      "expected": "c92d7aa15100e7f20a2e566029b59a8022630554f50f1522a102d6c0f1b50767",
+      "actual": "c92d7aa15100e7f20a2e566029b59a8022630554f50f1522a102d6c0f1b50767",
+      "unchanged": true
+    },
+    {
+      "id": "c12-zero-floor-elevator",
+      "expected": "54a47d3cdabacc86146e09ca47e8e2b308ffeb7c605fe9656f40e5d1885bb6b1",
+      "actual": "54a47d3cdabacc86146e09ca47e8e2b308ffeb7c605fe9656f40e5d1885bb6b1",
+      "unchanged": true
+    }
+  ],
+  "preservedArtifacts": [
+    {
+      "version": "v1.0",
+      "path": "dist/turtle-soup-v1.0-internal-rc-web-pwa.zip",
+      "exists": true,
+      "sha256": "83e2ee8e477ce9103735ea3d8eb0011ae6b72e257a286c7e009a2ef98cf7322b"
+    },
+    {
+      "version": "v1.1",
+      "path": "dist/turtle-soup-v1.1-internal-rc-web-pwa.zip",
+      "exists": true,
+      "sha256": "0bc2b077317b6d32c2df10e14d35520917839a68d18b70d23fafa74991cb3f35"
+    },
+    {
+      "version": "v1.2",
+      "path": "dist/turtle-soup-v1.2-internal-rc-web-pwa.zip",
+      "exists": true,
+      "sha256": "c3416a0ec807f9b94da8f00a0caab82b1b81e5745b6a5fd8b49c33e1279c7eb7"
+    }
+  ],
+  "gates": {
+    "coreTests": {
+      "command": "npm run test:core",
+      "passed": true,
+      "tests": 61
+    },
+    "caseValidation": {
+      "command": "npm run validate:cases -- . v1.3-public-preview",
+      "passed": true,
+      "cases": 60
+    },
+    "browser": {
+      "passed": true,
+      "routeCount": 180,
+      "representativeCount": 24
+    },
+    "performance": {
+      "reportVersion": "1.3",
+      "releaseProfile": "v1.3-public-preview",
+      "generatedAt": "2026-08-23T14:57:01.712Z",
+      "budgets": {
+        "totalBytes": 8000000,
+        "initialJavaScriptBytes": 1400000,
+        "maximumAssetBytes": 450000,
+        "sourceMaps": 0
+      },
+      "actual": {
+        "totalBytes": 6135911,
+        "initialJavaScriptBytes": 640318,
+        "maximumAssetBytes": 241318,
+        "sourceMaps": 0,
+        "javascriptBytes": 3024219
+      },
+      "failures": [],
+      "passed": true
+    },
+    "security": {
+      "reportVersion": "1.3",
+      "releaseProfile": "v1.3-public-preview",
+      "generatedAt": "2026-08-23T14:57:07.400Z",
+      "hiddenIdentifierCount": 1768,
+      "targets": [
+        {
+          "name": "static-output",
+          "files": 401,
+          "truthBearingTextFiles": 62,
+          "sourceMaps": 0,
+          "remoteReferences": 0,
+          "failures": [],
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "artifact": {
+      "reportVersion": "1.3",
+      "releaseProfile": "v1.3-public-preview",
+      "generatedAt": "2026-08-23T14:57:01.278Z",
+      "humanParticipants": 0,
+      "humanFunGate": "pending",
+      "status": "public-preview / human-evaluation-pending",
+      "artifact": {
+        "directory": "dist/v1.3-public-preview-web-pwa",
+        "bytes": 6135911,
+        "files": 849,
+        "sha256": "39d3c27cc18ea0f92b1cec927124f2abd3dae4c1df43c1e690f7c597fe7ccc03",
+        "archive": {
+          "path": "dist/turtle-soup-v1.3-public-preview-web-pwa.zip",
+          "bytes": 2842906,
+          "sha256": "f0dab2d4b0ce62897382e299da6aebb8655f572f106b89de12c855654002226e"
+        }
+      },
+      "preservedArtifacts": [
+        "dist/turtle-soup-v1.0-internal-rc-web-pwa.zip",
+        "dist/turtle-soup-v1.1-internal-rc-web-pwa.zip",
+        "dist/turtle-soup-v1.2-internal-rc-web-pwa.zip"
+      ],
+      "passed": true
+    }
+  },
+  "visual": {
+    "screenshotCount": 28,
+    "requiredRepresentativeStates": 24,
+    "passed": true
+  },
+  "passed": true
+}

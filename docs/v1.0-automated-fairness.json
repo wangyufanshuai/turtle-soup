@@ -1,0 +1,829 @@
+{
+  "reportVersion": "1.0",
+  "generatedAt": "2026-08-23T07:53:30.040Z",
+  "mode": "deterministic-automated-fairness",
+  "qualification": "This verifies deterministic fairness, reachability inputs and anti-leak boundaries. It is not evidence of human comprehension or fun.",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "caseCount": 24,
+  "seasonTwoCorpus": 2800,
+  "results": [
+    {
+      "id": "c01-cold-room-knock",
+      "seasonId": "season-1",
+      "corpus": 153,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 19,
+        "visibleAtStart": 5,
+        "queryCount": 9,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 24,
+        "estimatedSolveTimeMinutes": {
+          "min": 5,
+          "max": 15
+        },
+        "redHerringPresence": true,
+        "corpusCount": 153,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c02-snow-route",
+      "seasonId": "season-1",
+      "corpus": 152,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 13,
+        "visibleAtStart": 3,
+        "queryCount": 8,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 26,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 152,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c03-second-shadow",
+      "seasonId": "season-1",
+      "corpus": 162,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 14,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 22,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 162,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c04-unpostable-reply",
+      "seasonId": "season-1",
+      "corpus": 170,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 12,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 26,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 170,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c05-third-lamp",
+      "seasonId": "season-1",
+      "corpus": 170,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 12,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 26,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 170,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c06-nonexistent-ticket",
+      "seasonId": "season-1",
+      "corpus": 170,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 26,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 170,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c07-key-returns",
+      "seasonId": "season-1",
+      "corpus": 151,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 15,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 151,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c08-unclaimed-recording",
+      "seasonId": "season-1",
+      "corpus": 156,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 18,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 156,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c09-rain-room",
+      "seasonId": "season-1",
+      "corpus": 156,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 12,
+        "visibleAtStart": 3,
+        "queryCount": 8,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 18,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 156,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c10-single-ring",
+      "seasonId": "season-1",
+      "corpus": 156,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 18,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 156,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c11-borrowed-signature",
+      "seasonId": "season-1",
+      "corpus": 156,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 18,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 156,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c12-zero-floor-elevator",
+      "seasonId": "season-1",
+      "corpus": 156,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 18,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 156,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 1,
+      "boardModes": [],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c13-second-waterline",
+      "seasonId": "season-2",
+      "corpus": 220,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "state-trace"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c14-moving-red-box",
+      "seasonId": "season-2",
+      "corpus": 220,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "spatial-map"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c15-sixth-panorama",
+      "seasonId": "season-2",
+      "corpus": 220,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "sampling-window"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c16-closed-door-handoff",
+      "seasonId": "season-2",
+      "corpus": 220,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "provenance-chain"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c17-twelve-strikes",
+      "seasonId": "season-2",
+      "corpus": 220,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "state-trace"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c18-lighter-sealed-crate",
+      "seasonId": "season-2",
+      "corpus": 220,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "measurement-model"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c19-fog-after-window",
+      "seasonId": "season-2",
+      "corpus": 220,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "state-trace"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c20-fifth-worker",
+      "seasonId": "season-2",
+      "corpus": 220,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "identity-matrix"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c21-missing-seven-minutes",
+      "seasonId": "season-2",
+      "corpus": 260,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 12,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 12,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 260,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "sampling-window"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c22-overloaded-bridge",
+      "seasonId": "season-2",
+      "corpus": 260,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 12,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 12,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 260,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "aggregate-constraint"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c23-clean-air-sample",
+      "seasonId": "season-2",
+      "corpus": 260,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 12,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 12,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 260,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "provenance-chain"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    },
+    {
+      "id": "c24-turned-painting",
+      "seasonId": "season-2",
+      "corpus": 260,
+      "mismatches": 0,
+      "openingLeaks": [],
+      "quality": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 12,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 15,
+          "max": 25
+        },
+        "redHerringPresence": true,
+        "corpusCount": 260,
+        "corpusMinimumMet": true
+      },
+      "proofSets": 2,
+      "boardModes": [
+        "spatial-map"
+      ],
+      "secondSeasonGates": true,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

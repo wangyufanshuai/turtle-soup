@@ -1,0 +1,4799 @@
+{
+  "reportVersion": "1.4",
+  "generatedAt": "2026-08-24T01:05:35.908Z",
+  "releaseProfile": "v1.4-internal-rc",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "caseCount": 60,
+  "thresholds": {
+    "minimumScore": 70,
+    "focusedMinimumScore": 90,
+    "surfaceWarning": 0.76,
+    "surfaceBlocker": 0.92,
+    "evidenceWarning": 0.72,
+    "evidenceBlocker": 0.9,
+    "replayWarning": 0.78,
+    "replayBlocker": 0.92
+  },
+  "cases": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "title": "冷藏室的敲门声",
+      "seasonId": "season-1",
+      "presentationRevision": 3,
+      "patchValid": true,
+      "score": 96,
+      "mechanismOneLine": "只有林澈能同时解释：离开后仍出现的敲门声、冷藏室无人、手机与托盘的物理痕迹、以及被延迟的样本检查。",
+      "firstNaturalQuestion": "敲击发生时，冷藏室里是否有人？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-person-inside",
+          "query-knock-source",
+          "query-door-mechanism"
+        ],
+        [
+          "query-lin-motive",
+          "query-fang-entered",
+          "query-irrelevant-color"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c01-minimum",
+          "evidenceCount": 9
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "方砚在锁门后重新进入并亲自敲击",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "值班员伪造了敲击录音与房间占用状态",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "focusedReview": {
+        "deepReviewComplete": true,
+        "coverage": {
+          "surface": true,
+          "answers": true,
+          "questions": true,
+          "feedback": true,
+          "evidence": true,
+          "hypotheses": true,
+          "chapters": true,
+          "replay": true,
+          "visualLanguage": true
+        }
+      },
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 45,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 74,
+        "eventCount": 8,
+        "factCount": 19,
+        "evidenceCount": 10,
+        "queryCount": 9,
+        "corpusCount": 153,
+        "matchedCorpusCount": 153,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": null,
+        "redHerringOptional": false,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c02-snow-route",
+      "title": "没有脚印的回家路",
+      "seasonId": "season-1",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "顾遥确实离开、被维护车转移，路线被覆盖并清理，门锁开启只是后续事件。",
+      "firstNaturalQuestion": "顾遥已经离开了吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-gu-left",
+          "query-door-arrival",
+          "query-snow-start"
+        ],
+        [
+          "query-tracks-erased",
+          "query-secret-passage",
+          "query-parcel-color"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c02-minimum",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "顾遥从未离开工作地点",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "顾遥从秘密通道进入",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 39,
+        "eventCount": 8,
+        "factCount": 13,
+        "evidenceCount": 9,
+        "queryCount": 8,
+        "corpusCount": 152,
+        "matchedCorpusCount": 152,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 7,
+        "proofUnionCount": 7,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-parcel-slip",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "title": "十二点的第二个影子",
+      "seasonId": "season-1",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "影子和角色属于舞台表现，罗弈本人始终在后台，颜希穿着他的角色服装完成了台上出现。",
+      "firstNaturalQuestion": "台上的角色就是罗弈本人吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-role-person",
+          "query-two-people",
+          "query-lighting-source"
+        ],
+        [
+          "query-understudy-role",
+          "query-unregistered",
+          "query-prop-color"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c03-minimum",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "罗弈在两个地方同时出现",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "剧院里有未登记演员",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 47,
+        "eventCount": 9,
+        "factCount": 14,
+        "evidenceCount": 9,
+        "queryCount": 9,
+        "corpusCount": 162,
+        "matchedCorpusCount": 162,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 8,
+        "proofUnionCount": 8,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-prop-receipt",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "title": "寄不到的回信",
+      "seasonId": "season-1",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "所谓明天的邮戳来自快了一天的邮戳机；信在邮袋内完成封存时仍未离开邮局。",
+      "firstNaturalQuestion": "这封信是在盖邮戳前写的吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-written-before",
+          "query-clock-wrong",
+          "query-test-envelope"
+        ],
+        [
+          "query-forged-letter",
+          "query-seal-intact",
+          "query-postcard-color"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c04-minimum",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "回信来自未来",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "邮袋封好后有人调换了信",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 35,
+        "eventCount": 8,
+        "factCount": 12,
+        "evidenceCount": 9,
+        "queryCount": 9,
+        "corpusCount": 170,
+        "matchedCorpusCount": 170,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 8,
+        "proofUnionCount": 8,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-postcard",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0.018,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "title": "第三盏未接通的灯",
+      "seasonId": "season-1",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "第三盏灯是两个光源经反射板叠出的视觉结果，停电后没有第三条电路，也没有陌生人进入。",
+      "firstNaturalQuestion": "仓库真的停电了吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-power-cut",
+          "query-reflection",
+          "query-real-circuit"
+        ],
+        [
+          "query-witness-angle",
+          "query-two-sources",
+          "query-battery-color"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c05-minimum",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人偷偷接通第三条电路",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "陌生人进入并点亮第三盏灯",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 36,
+        "eventCount": 8,
+        "factCount": 12,
+        "evidenceCount": 9,
+        "queryCount": 9,
+        "corpusCount": 170,
+        "matchedCorpusCount": 170,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 8,
+        "proofUnionCount": 8,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-battery-receipt",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "title": "一张不存在的船票",
+      "seasonId": "season-1",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "闸机在23:48读取的是货运/船员通行证；终端离线后于23:52才同步显示，显示时间不是登船时间。",
+      "firstNaturalQuestion": "这张票是在渡轮离港前被扫描的吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-left-before",
+          "query-sync-time",
+          "query-passenger-ticket"
+        ],
+        [
+          "query-courier",
+          "query-umbrella-color",
+          "query-ticket-real"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c06-minimum",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人离港后偷偷登船",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人离港后伪造船票",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 48,
+        "eventCount": 8,
+        "factCount": 11,
+        "evidenceCount": 9,
+        "queryCount": 9,
+        "corpusCount": 170,
+        "matchedCorpusCount": 170,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 8,
+        "proofUnionCount": 8,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-umbrella",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c07-key-returns",
+      "title": "会自己归位的钥匙",
+      "seasonId": "season-1",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "钥匙被维修磁头沿服务孔拉走，又由回收缆线和配重拉回挂钩；没有人进入锁柜。",
+      "firstNaturalQuestion": "钥匙被什么东西拉走了吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-key-moved",
+          "query-entry",
+          "query-cable"
+        ],
+        [
+          "query-slot",
+          "query-camera-time",
+          "query-spare-color"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c07-minimum",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "回来的其实是备用钥匙",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人进锁柜拿回钥匙",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 38,
+        "eventCount": 8,
+        "factCount": 11,
+        "evidenceCount": 8,
+        "queryCount": 8,
+        "corpusCount": 151,
+        "matchedCorpusCount": 151,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 7,
+        "proofUnionCount": 7,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-spare-key",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "title": "没有人签收的录音",
+      "seasonId": "season-1",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "录音在江舟离开前已经写入设备缓冲区，设备断电后文件到20点才被恢复和播放；没有人回来录音。",
+      "firstNaturalQuestion": "录音是在江舟离开前录的吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-recorded-before",
+          "query-room-empty",
+          "query-buffer"
+        ],
+        [
+          "query-ghost",
+          "query-file-header",
+          "query-old-audio"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c08-minimum",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人或幽灵回来录音",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "20点后有人伪造录音",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 35,
+        "eventCount": 8,
+        "factCount": 11,
+        "evidenceCount": 8,
+        "queryCount": 8,
+        "corpusCount": 156,
+        "matchedCorpusCount": 156,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 7,
+        "proofUnionCount": 7,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-old-interview",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c09-rain-room",
+      "title": "雨停后仍在滴水的房间",
+      "seasonId": "season-1",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "雨在22点停止且房间已无人；屋顶天沟储存的水沿管道延迟排出，所以22:18仍会滴水。",
+      "firstNaturalQuestion": "滴水前确实下过雨吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-rain-source",
+          "query-rain-stopped",
+          "query-room-empty"
+        ],
+        [
+          "query-pipe",
+          "query-roof-leak",
+          "query-umbrella"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c09-minimum",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人留在房间里持续倒水",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "屋顶在雨停后仍在漏雨",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 43,
+        "eventCount": 8,
+        "factCount": 12,
+        "evidenceCount": 9,
+        "queryCount": 8,
+        "corpusCount": 156,
+        "matchedCorpusCount": 156,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 8,
+        "proofUnionCount": 8,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-umbrella",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c10-single-ring",
+      "title": "只响了一次的电话",
+      "seasonId": "season-1",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "电话线断开后，PBX 的维护回放直接向内部手柄端点发出一次响铃；呼叫日志没有外部来电。",
+      "firstNaturalQuestion": "电话线在响铃前已经断开了吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-line-state",
+          "query-ring-time",
+          "query-external-call"
+        ],
+        [
+          "query-endpoint",
+          "query-reconnect",
+          "query-fax"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c10-minimum",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人从外部打进电话",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人重新接通线路制造响铃",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 39,
+        "eventCount": 8,
+        "factCount": 11,
+        "evidenceCount": 8,
+        "queryCount": 8,
+        "corpusCount": 156,
+        "matchedCorpusCount": 156,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 7,
+        "proofUnionCount": 7,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-fax",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "title": "借来的签名",
+      "seasonId": "season-1",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "签名外观来自借来的印章和复写压力；魏宁09:20才到场，文件在09:25封存。",
+      "firstNaturalQuestion": "魏宁是在09:20才到档案室吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-signer-time",
+          "query-signature-source",
+          "query-carbon"
+        ],
+        [
+          "query-before-arrival",
+          "query-stamp-return",
+          "query-coffee"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c11-minimum",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "魏宁到场前亲手签了字",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "陌生人冒充魏宁签字",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 32,
+        "eventCount": 8,
+        "factCount": 11,
+        "evidenceCount": 8,
+        "queryCount": 8,
+        "corpusCount": 156,
+        "matchedCorpusCount": 156,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 7,
+        "proofUnionCount": 7,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-coffee",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "title": "没有终点的电梯",
+      "seasonId": "season-1",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "控制器在检修模式下把虚拟编号0显示在屏幕上，轿厢实际留在B1并打开原楼层门；没有人进入不存在的楼层。",
+      "firstNaturalQuestion": "大楼真的有0层吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-floor-zero",
+          "query-display-zero",
+          "query-cabin-motion"
+        ],
+        [
+          "query-door-floor",
+          "query-passenger",
+          "query-cart"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c12-minimum",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "电梯真的去了地下0层",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人进入了摄像头看不见的楼层",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 43,
+        "eventCount": 8,
+        "factCount": 11,
+        "evidenceCount": 8,
+        "queryCount": 8,
+        "corpusCount": 156,
+        "matchedCorpusCount": 156,
+        "proofSetCount": 1,
+        "requiredEvidenceCount": 7,
+        "proofUnionCount": 7,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-cart",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0.027,
+        "replayBeatCount": 5
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "title": "空杯里的第二条水线",
+      "seasonId": "season-2",
+      "presentationRevision": 3,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "升温使蜡扣软化，浸没配重下沉并排开更多液体；总质量与封口始终未变。",
+      "firstNaturalQuestion": "量杯的封膜被打开过吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c13-01",
+          "query-c13-02",
+          "query-c13-03"
+        ],
+        [
+          "query-c13-08",
+          "query-c13-09",
+          "query-c13-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c13-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c13-b",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人从封口缝隙向量杯加入了液体",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "液体受热膨胀独自造成了全部水线变化",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "focusedReview": {
+        "deepReviewComplete": true,
+        "coverage": {
+          "surface": true,
+          "answers": true,
+          "questions": true,
+          "feedback": true,
+          "evidence": true,
+          "hypotheses": true,
+          "chapters": true,
+          "replay": true,
+          "visualLanguage": true
+        }
+      },
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 52,
+        "eventCount": 10,
+        "factCount": 15,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c13-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "title": "越过但未跨越的红箱",
+      "seasonId": "season-2",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "箱子没有跨越固定边界；维护人员沿地轨移动了整段可变隔离线，使边界越过箱子。",
+      "firstNaturalQuestion": "箱子周围的粉尘圈有移动痕迹吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c14-01",
+          "query-c14-02",
+          "query-c14-03"
+        ],
+        [
+          "query-c14-08",
+          "query-c14-09",
+          "query-c14-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c14-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c14-b",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "红箱通过地下通道移动",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人篡改监控后搬动红箱",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 35,
+        "eventCount": 10,
+        "factCount": 15,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c14-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "title": "同一张合影里的第六个人",
+      "seasonId": "season-2",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "旋转全景相机分时扫描；同一名快递员在镜头背后移动后，被左右两个扇区各记录一次。",
+      "firstNaturalQuestion": "合影里出现的是六个不同的人吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c15-01",
+          "query-c15-02",
+          "query-c15-03"
+        ],
+        [
+          "query-c15-08",
+          "query-c15-09",
+          "query-c15-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c15-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c15-b",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "存在未登记的第六个人",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "合影被人事后复制粘贴修改",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 35,
+        "eventCount": 10,
+        "factCount": 15,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c15-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "title": "没有开门的交接",
+      "seasonId": "season-2",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "证物通过墙内旋转交接柜完成转移；柜筒每次只向一侧开放，因此两间房门都无需开启。",
+      "firstNaturalQuestion": "交接前后的密封袋编号是同一个吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c16-01",
+          "query-c16-02",
+          "query-c16-03"
+        ],
+        [
+          "query-c16-08",
+          "query-c16-09",
+          "query-c16-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c16-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c16-b",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人藏在甲室内完成转移",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "墙体被临时拆开后重新封闭",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 34,
+        "eventCount": 10,
+        "factCount": 15,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c16-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "title": "十一点的十二声钟",
+      "seasonId": "season-2",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "表针走时轮系与报时轮系彼此独立；维修只锁住表针，报时轮仍由独立落锤按午夜凸轮运行。",
+      "firstNaturalQuestion": "钟面指向十一点时，报时轮系也处于十一点吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c17-01",
+          "query-c17-02",
+          "query-c17-03"
+        ],
+        [
+          "query-c17-08",
+          "query-c17-09",
+          "query-c17-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c17-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c17-b",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "钟楼实际时间并非午夜",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "十二声来自隐藏扬声器播放",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 35,
+        "eventCount": 10,
+        "factCount": 15,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c17-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "title": "少了一公斤的密封箱",
+      "seasonId": "season-2",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "秤在一公斤校准块留在台面时执行自动归零；之后移走校准块，箱子读数因此减少一公斤。",
+      "firstNaturalQuestion": "箱子称重前，秤台已经完成归零吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c18-01",
+          "query-c18-02",
+          "query-c18-03"
+        ],
+        [
+          "query-c18-08",
+          "query-c18-09",
+          "query-c18-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c18-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c18-b",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人从密封箱中取走了一公斤物品",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "计量台传感器发生随机故障",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 41,
+        "eventCount": 10,
+        "factCount": 15,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c18-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "title": "关窗后才出现的雾",
+      "seasonId": "season-2",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "关窗同时停止通风，室内湿气累积并越过冷玻璃的露点；白雾是延迟凝结，不是新增水源。",
+      "firstNaturalQuestion": "关窗前，室内湿度已经接近露点了吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c19-01",
+          "query-c19-02",
+          "query-c19-03"
+        ],
+        [
+          "query-c19-08",
+          "query-c19-09",
+          "query-c19-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c19-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c19-b",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人偷偷启动隐藏加湿器",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "屋顶漏水在关窗后突然加重",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 38,
+        "eventCount": 10,
+        "factCount": 15,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c19-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "title": "六个岗位的第五个人",
+      "seasonId": "season-2",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "签到系统记录岗位资格而非唯一自然人；一名持双资质的值班员在两个时段合法兼任两个岗位。",
+      "firstNaturalQuestion": "签到表记录的是独立人物，还是岗位？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c20-01",
+          "query-c20-02",
+          "query-c20-03"
+        ],
+        [
+          "query-c20-08",
+          "query-c20-09",
+          "query-c20-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c20-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c20-b",
+          "evidenceCount": 8
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "存在一名未登记的第六名值班员",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人伪造了其中一个岗位签到",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 35,
+        "eventCount": 10,
+        "factCount": 15,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c20-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "title": "完整录像里消失的七分钟",
+      "seasonId": "season-2",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "相机进入低功耗抽样模式，每分钟只保留一帧；连续索引描述文件覆盖区间，不代表连续采样。",
+      "firstNaturalQuestion": "那七分钟里，录像系统仍按正常帧率采样吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c21-01",
+          "query-c21-02",
+          "query-c21-03"
+        ],
+        [
+          "query-c21-10",
+          "query-c21-11",
+          "query-c21-12"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c21-a",
+          "evidenceCount": 10
+        },
+        {
+          "id": "proof-c21-b",
+          "evidenceCount": 10
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人删除了关键七分钟后重做索引",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "监控网络在关键时段完全中断",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 46,
+        "eventCount": 12,
+        "factCount": 17,
+        "evidenceCount": 12,
+        "queryCount": 12,
+        "corpusCount": 260,
+        "matchedCorpusCount": 240,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c21-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 7
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "title": "没有超标的超载桥",
+      "seasonId": "season-2",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "单轴阈值与桥跨总载荷是两种约束；多根合规车轴同时位于主跨时，总和超过了结构限值。",
+      "firstNaturalQuestion": "每个轴都合规时，桥上同时存在的总载荷是多少？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c22-01",
+          "query-c22-02",
+          "query-c22-03"
+        ],
+        [
+          "query-c22-10",
+          "query-c22-11",
+          "query-c22-12"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c22-a",
+          "evidenceCount": 10
+        },
+        {
+          "id": "proof-c22-b",
+          "evidenceCount": 10
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "某个车轴传感器偷偷报出了超标值",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "桥上同时存在一辆未被记录的车辆",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 37,
+        "eventCount": 12,
+        "factCount": 17,
+        "evidenceCount": 12,
+        "queryCount": 12,
+        "corpusCount": 260,
+        "matchedCorpusCount": 240,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c22-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 7
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "title": "泄漏时仍然清洁的空气样本",
+      "seasonId": "season-2",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "取样口位于泄漏点上游，且长采样管存在输送延迟；屏幕显示的是更早、不同位置吸入的空气。",
+      "firstNaturalQuestion": "这份空气样本实际是从哪里采集的？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c23-01",
+          "query-c23-02",
+          "query-c23-03"
+        ],
+        [
+          "query-c23-10",
+          "query-c23-11",
+          "query-c23-12"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c23-a",
+          "evidenceCount": 10
+        },
+        {
+          "id": "proof-c23-b",
+          "evidenceCount": 10
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人伪造了清洁样本替换污染空气",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "泄漏其实发生在清洁读数结束之后",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 37,
+        "eventCount": 12,
+        "factCount": 17,
+        "evidenceCount": 12,
+        "queryCount": 12,
+        "corpusCount": 260,
+        "matchedCorpusCount": 240,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c23-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 7
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "title": "闭馆后转向的画",
+      "seasonId": "season-2",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "画框固定在可从服务侧驱动的旋转墙上；异步全景又把转动前后的扇区拼成一幅看似连续的画面。",
+      "firstNaturalQuestion": "画框封条完整，能证明展示面没有转向吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c24-01",
+          "query-c24-02",
+          "query-c24-03"
+        ],
+        [
+          "query-c24-10",
+          "query-c24-11",
+          "query-c24-12"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c24-a",
+          "evidenceCount": 10
+        },
+        {
+          "id": "proof-c24-b",
+          "evidenceCount": 10
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "入侵者伪造门禁后翻转了画框",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人用一幅反向复制画替换原作",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 41,
+        "eventCount": 12,
+        "factCount": 17,
+        "evidenceCount": 12,
+        "queryCount": 12,
+        "corpusCount": 260,
+        "matchedCorpusCount": 240,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c24-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 7
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "title": "没有响起的第二次门铃",
+      "seasonId": "season-3",
+      "presentationRevision": 3,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "两次按压都真实发生，但控制器的十秒防抖窗口把第二次触发合并进第一次响铃周期，触发记录不等于声音次数。",
+      "firstNaturalQuestion": "按钮真的闭合了两次吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c25-01",
+          "query-c25-02",
+          "query-c25-03"
+        ],
+        [
+          "query-c25-08",
+          "query-c25-09",
+          "query-c25-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c25-a",
+          "evidenceCount": 6
+        },
+        {
+          "id": "proof-c25-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "访客谎称自己按下了第二次按钮",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "扬声器恰好在第二次按压时临时故障",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "focusedReview": {
+        "deepReviewComplete": true,
+        "coverage": {
+          "surface": true,
+          "answers": true,
+          "questions": true,
+          "feedback": true,
+          "evidence": true,
+          "hypotheses": true,
+          "chapters": true,
+          "replay": true,
+          "visualLanguage": true
+        }
+      },
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 51,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c25-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "title": "比地图短的管线",
+      "seasonId": "season-3",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "施工图是平面投影，管线在两座竖井内多次下降和上升；走廊投影没有变化，真实三维长度却包含垂直段。",
+      "firstNaturalQuestion": "地图上的线长包含竖井里的折返段吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c26-01",
+          "query-c26-02",
+          "query-c26-03"
+        ],
+        [
+          "query-c26-08",
+          "query-c26-09",
+          "query-c26-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c26-a",
+          "evidenceCount": 6
+        },
+        {
+          "id": "proof-c26-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "施工队在墙后私自绕行",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "验收仪系统性多算了二十三米",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 38,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c26-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "title": "停在原地的移动平台",
+      "seasonId": "season-3",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "平台完成了一次往返，在中转站由机械臂卸下货箱，再空载回到原定位框；终态位置不能代表中途轨迹或货物位置。",
+      "firstNaturalQuestion": "平台回到原位时，货物还固定在上面吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c27-01",
+          "query-c27-02",
+          "query-c27-03"
+        ],
+        [
+          "query-c27-08",
+          "query-c27-09",
+          "query-c27-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c27-a",
+          "evidenceCount": 6
+        },
+        {
+          "id": "proof-c27-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "货箱从未装上平台",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人在定位框内秘密调换货箱",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 38,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c27-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "title": "温度曲线里的第九分钟",
+      "seasonId": "season-3",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "探头封装具有热惯性，采集器又以三分钟窗口输出移动平均；曲线显示的是延迟后的测量结果，不是舱体当下状态。",
+      "firstNaturalQuestion": "探头读数会滞后于真实温度变化吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c28-01",
+          "query-c28-02",
+          "query-c28-03"
+        ],
+        [
+          "query-c28-08",
+          "query-c28-09",
+          "query-c28-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c28-a",
+          "evidenceCount": 6
+        },
+        {
+          "id": "proof-c28-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "加热器在断电后三分钟仍秘密工作",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "采集器时钟比功率表慢三分钟",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 34,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c28-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "title": "签名盖的是岗位",
+      "seasonId": "season-3",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "文件上的图形是经授权的岗位电子章，不是主管个人手写签名；值班代理按制度调用岗位章，流程真实但不能证明主管本人在场。",
+      "firstNaturalQuestion": "文件上的印记属于具体人物，还是岗位印章？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c29-01",
+          "query-c29-02",
+          "query-c29-03"
+        ],
+        [
+          "query-c29-08",
+          "query-c29-09",
+          "query-c29-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c29-a",
+          "evidenceCount": 6
+        },
+        {
+          "id": "proof-c29-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "主管秘密返回办公室签字",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "值班代理伪造了主管笔迹",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 39,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c29-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "title": "同一工号的两次值班",
+      "seasonId": "season-3",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "这是轮班池工号，交接时由身份系统回收并重新绑定给下一名临时人员；业务日志按工号连续，人员绑定表按时段变化。",
+      "firstNaturalQuestion": "同一个工号在两个时段属于同一个人吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c30-01",
+          "query-c30-02",
+          "query-c30-03"
+        ],
+        [
+          "query-c30-08",
+          "query-c30-09",
+          "query-c30-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c30-a",
+          "evidenceCount": 6
+        },
+        {
+          "id": "proof-c30-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "一人通过伪装变成了另一人",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人盗用工号并删除了退出记录",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 41,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c30-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "title": "未入住的第八位住客",
+      "seasonId": "season-3",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "登记表的八行主键是床位合同，其中一名长住客同时租下相连的工作床位；八份有效合同只对应七个自然人。",
+      "firstNaturalQuestion": "登记表统计的是独立住客，还是床位与合同？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c31-01",
+          "query-c31-02",
+          "query-c31-03"
+        ],
+        [
+          "query-c31-08",
+          "query-c31-09",
+          "query-c31-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c31-a",
+          "evidenceCount": 6
+        },
+        {
+          "id": "proof-c31-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "第八名住客从未使用门禁",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "旅店伪造了一份入住合同",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 35,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c31-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "title": "批准过的未授权门",
+      "seasonId": "season-3",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "批准动作验证的是岗位组策略，批准人被临时委派到安全值班组；个人静态权限表不列该门，组继承却在委派时段有效。",
+      "firstNaturalQuestion": "这次开门权限来自个人授权，还是岗位组继承？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c32-01",
+          "query-c32-02",
+          "query-c32-03"
+        ],
+        [
+          "query-c32-08",
+          "query-c32-09",
+          "query-c32-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c32-a",
+          "evidenceCount": 6
+        },
+        {
+          "id": "proof-c32-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "门禁系统忽略权限强制开门",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "批准人拥有未记录的秘密个人权限",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 35,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c32-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "title": "先到场的迟到者",
+      "seasonId": "season-3",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "门禁时钟快两分钟，视频播放器又有四分钟缓冲；校正到统一时间后，调查员在 00:00:20 到达，确实晚于午夜班次起点。",
+      "firstNaturalQuestion": "门禁、录像和签到记录使用同一个时钟吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c33-01",
+          "query-c33-02",
+          "query-c33-03"
+        ],
+        [
+          "query-c33-10",
+          "query-c33-11",
+          "query-c33-12"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c33-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c33-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "调查员在午夜前进入后躲开摄像机",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人篡改门禁日志制造提前到达",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 47,
+        "eventCount": 12,
+        "factCount": 18,
+        "evidenceCount": 12,
+        "queryCount": 12,
+        "corpusCount": 260,
+        "matchedCorpusCount": 240,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c33-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 7
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "title": "封条上的明天",
+      "seasonId": "season-3",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "封条由次日班次提前批量印制，日期表示计划出库批次而非粘贴时刻；唯一序列号和保管链证明封条周一已被领用。",
+      "firstNaturalQuestion": "封条上的日期是印制日，还是封箱日？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c34-01",
+          "query-c34-02",
+          "query-c34-03"
+        ],
+        [
+          "query-c34-10",
+          "query-c34-11",
+          "query-c34-12"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c34-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c34-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人在周二更换封条后伪造连续录像",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "打印机时钟错误地提前了一天",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 40,
+        "eventCount": 12,
+        "factCount": 18,
+        "evidenceCount": 12,
+        "queryCount": 12,
+        "corpusCount": 260,
+        "matchedCorpusCount": 240,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c34-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 7
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "title": "玻璃里多出来的值班员",
+      "seasonId": "season-3",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "弧形玻璃产生偏移反射，值班员又把备用外套挂在转角衣架上；反射把本人和制服轮廓组合成了第二个人形。",
+      "firstNaturalQuestion": "玻璃里多出的人影是直视人物，还是反射？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c35-01",
+          "query-c35-02",
+          "query-c35-03"
+        ],
+        [
+          "query-c35-10",
+          "query-c35-11",
+          "query-c35-12"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c35-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c35-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "存在未登记的第二名值班员",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "监控画面被复制粘贴出第二个人",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 36,
+        "eventCount": 12,
+        "factCount": 18,
+        "evidenceCount": 12,
+        "queryCount": 12,
+        "corpusCount": 260,
+        "matchedCorpusCount": 240,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c35-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 7
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "title": "终点站没有下车的人",
+      "seasonId": "season-3",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "列车临时换入支线站台，乘客在中途联络通道换乘；车载计数把转移记为仍在车上，刷卡系统又延迟汇总，所有记录真实但统计边界不同。",
+      "firstNaturalQuestion": "计数、刷卡和调度记录描述的是同一个下车事件吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c36-01",
+          "query-c36-02",
+          "query-c36-03"
+        ],
+        [
+          "query-c36-12",
+          "query-c36-13",
+          "query-c36-14"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c36-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c36-b",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "乘客藏在摄像死角并留在列车上",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人伪造刷卡记录掩盖失踪",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 47,
+        "eventCount": 14,
+        "factCount": 20,
+        "evidenceCount": 14,
+        "queryCount": 14,
+        "corpusCount": 300,
+        "matchedCorpusCount": 280,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 13,
+        "proofUnionCount": 13,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c36-14",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 7
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "title": "回到零点的压力表",
+      "seasonId": "season-4",
+      "presentationRevision": 3,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "压力释放后表针回零并不代表校准无误。零点偏移随温度改变，真实压力、仪表基线和显示读数必须分开。",
+      "firstNaturalQuestion": "表针回零时，仪表零位仍可能偏移吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c37-01",
+          "query-c37-02",
+          "query-c37-03"
+        ],
+        [
+          "query-c37-08",
+          "query-c37-09",
+          "query-c37-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c37-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c37-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "压力仍被困在管线里，泄压其实没有完成",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人把表针人为拨回了零线",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "focusedReview": {
+        "deepReviewComplete": true,
+        "coverage": {
+          "surface": true,
+          "answers": true,
+          "questions": true,
+          "feedback": true,
+          "evidence": true,
+          "hypotheses": true,
+          "chapters": true,
+          "replay": true,
+          "visualLanguage": true
+        }
+      },
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 61,
+        "eventCount": 12,
+        "factCount": 18,
+        "evidenceCount": 12,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c37-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "title": "没有丢失的第七码",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "第七码已经到达，只是它与重传包内容相同，被接收端去重；序列号视图和有效数据包数量是两种统计。",
+      "firstNaturalQuestion": "序列号跳过，能证明数据包真的丢失吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c38-01",
+          "query-c38-02",
+          "query-c38-03"
+        ],
+        [
+          "query-c38-08",
+          "query-c38-09",
+          "query-c38-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c38-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c38-b",
+          "evidenceCount": 6
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "网络真的丢了一个包",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "监控系统伪造了第八个序号",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 27,
+        "eventCount": 13,
+        "factCount": 19,
+        "evidenceCount": 13,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 12,
+        "proofUnionCount": 12,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c38-13",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "title": "两次相同的心跳",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "回放服务重复播放了同一心跳包；信号源只发送一次，采集、缓存和回放层必须分开核对。",
+      "firstNaturalQuestion": "两条心跳记录来自两次发送，还是一次回放？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c39-01",
+          "query-c39-02",
+          "query-c39-03"
+        ],
+        [
+          "query-c39-08",
+          "query-c39-09",
+          "query-c39-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c39-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c39-b",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "设备在同一秒发送了两次",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人剪辑了监控视频",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 32,
+        "eventCount": 14,
+        "factCount": 20,
+        "evidenceCount": 14,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 13,
+        "proofUnionCount": 13,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c39-14",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "title": "提前到达的液面",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "液体前沿先经过较低的采样口，采样点的来源路线和储罐整体液面不是同一空间事件。",
+      "firstNaturalQuestion": "采样口先检测到液体，能证明储罐液面已经到达同一高度吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c40-01",
+          "query-c40-02",
+          "query-c40-03"
+        ],
+        [
+          "query-c40-08",
+          "query-c40-09",
+          "query-c40-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c40-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c40-b",
+          "evidenceCount": 3
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "传感器提前读错了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "储罐里藏有第二个液面",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 28,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c40-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "title": "没有发生的过热报警",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "阈值滞回让一次越阈报警保持到复位条件满足；报警状态持续不等于温度再次超标。",
+      "firstNaturalQuestion": "第二次看到报警时，温度真的再次越过阈值了吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c41-01",
+          "query-c41-02",
+          "query-c41-03"
+        ],
+        [
+          "query-c41-08",
+          "query-c41-09",
+          "query-c41-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c41-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c41-b",
+          "evidenceCount": 4
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "设备第二次真的过热",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "报警器发生了随机误报",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 26,
+        "eventCount": 11,
+        "factCount": 17,
+        "evidenceCount": 11,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 10,
+        "proofUnionCount": 10,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c41-11",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "title": "同样重量的不同负载",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "总重量相同但重心和轴距不同，桥面分区载荷分布不同；总量约束不能替代空间分布。",
+      "firstNaturalQuestion": "总重量相同，重心位置也一定相同吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c42-01",
+          "query-c42-02",
+          "query-c42-03"
+        ],
+        [
+          "query-c42-08",
+          "query-c42-09",
+          "query-c42-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c42-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c42-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "称重台把一辆车多算了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "桥梁传感器只坏了一段",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 27,
+        "eventCount": 12,
+        "factCount": 18,
+        "evidenceCount": 12,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c42-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0.02,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "title": "停在红线外的列车",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "制动控制点、车头标记和车轮实际停止点采用不同参照位置；控制反馈正确但不等于车轮位置。",
+      "firstNaturalQuestion": "红线对应的是制动控制点，还是车轮停止点？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c43-01",
+          "query-c43-02",
+          "query-c43-03"
+        ],
+        [
+          "query-c43-08",
+          "query-c43-09",
+          "query-c43-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c43-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c43-b",
+          "evidenceCount": 6
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "列车偷偷越过了红线",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "司机界面显示错误位置",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 25,
+        "eventCount": 13,
+        "factCount": 19,
+        "evidenceCount": 13,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 12,
+        "proofUnionCount": 12,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c43-13",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "title": "消失在平均值里的尖峰",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "日报使用滑动平均抹平了尖峰，原始采样仍然存在；聚合显示不能否定瞬时事件。",
+      "firstNaturalQuestion": "平均值里没有尖峰，原始采样里也没有吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c44-01",
+          "query-c44-02",
+          "query-c44-03"
+        ],
+        [
+          "query-c44-08",
+          "query-c44-09",
+          "query-c44-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c44-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c44-b",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "设备从未过载",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "日报被人改写了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 26,
+        "eventCount": 14,
+        "factCount": 20,
+        "evidenceCount": 14,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 13,
+        "proofUnionCount": 13,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c44-14",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "title": "一秒钟的双重定位",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "校时瞬间两套时钟对同一位置产生不同时间戳；位置相同、时间基准不同。",
+      "firstNaturalQuestion": "两套定位记录使用同一个时间基准吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c45-01",
+          "query-c45-02",
+          "query-c45-03"
+        ],
+        [
+          "query-c45-08",
+          "query-c45-09",
+          "query-c45-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c45-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c45-b",
+          "evidenceCount": 3
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "设备在一秒内瞬移",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "其中一套定位记录是伪造的",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 28,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c45-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "title": "没有打开的阀门",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "先导压力改变了阀芯状态，面板显示的是控制命令而非机械开度。",
+      "firstNaturalQuestion": "面板显示关闭时，阀芯的机械位置也一定关闭吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c46-01",
+          "query-c46-02",
+          "query-c46-03"
+        ],
+        [
+          "query-c46-08",
+          "query-c46-09",
+          "query-c46-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c46-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c46-b",
+          "evidenceCount": 4
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "有人偷偷打开了阀门",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "流量计读数突然失真",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 29,
+        "eventCount": 11,
+        "factCount": 17,
+        "evidenceCount": 11,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 10,
+        "proofUnionCount": 10,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c46-11",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "title": "断线后继续在线的设备",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "设备离线缓存后批量补传，接收时间和采集时间分别真实；在线状态是平台连接状态。",
+      "firstNaturalQuestion": "设备上线时间对应采集时间，还是补传到达时间？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c47-01",
+          "query-c47-02",
+          "query-c47-03"
+        ],
+        [
+          "query-c47-08",
+          "query-c47-09",
+          "query-c47-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c47-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c47-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "设备从未断线",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人事后伪造了缓存数据",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 30,
+        "eventCount": 12,
+        "factCount": 18,
+        "evidenceCount": 12,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c47-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "title": "两个相同的校准点",
+      "seasonId": "season-4",
+      "presentationRevision": 3,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "两点校准无法区分非线性曲线，中段误差落在两端点之间；需要第三点或曲线模型。",
+      "firstNaturalQuestion": "两个端点的校准记录都可靠吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c48-01",
+          "query-c48-02",
+          "query-c48-03"
+        ],
+        [
+          "query-c48-08",
+          "query-c48-09",
+          "query-c48-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c48-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c48-b",
+          "evidenceCount": 6
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "其中一个端点被抄错，所谓校准通过并不真实",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "仪器只在中段发生了偶发故障",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "focusedReview": {
+        "deepReviewComplete": true,
+        "coverage": {
+          "surface": true,
+          "answers": true,
+          "questions": true,
+          "feedback": true,
+          "evidence": true,
+          "hypotheses": true,
+          "chapters": true,
+          "replay": true,
+          "visualLanguage": true
+        }
+      },
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 40,
+        "eventCount": 13,
+        "factCount": 19,
+        "evidenceCount": 13,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 12,
+        "proofUnionCount": 12,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c48-13",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "title": "无人机没有转弯",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "云台转动改变摄像机视线，飞行器航向没有改变；画面参照系与机体参照系不同。",
+      "firstNaturalQuestion": "画面转向来自无人机机身，还是云台？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c49-01",
+          "query-c49-02",
+          "query-c49-03"
+        ],
+        [
+          "query-c49-08",
+          "query-c49-09",
+          "query-c49-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c49-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c49-b",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "无人机偷偷转弯了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "画面拼接把方向弄反了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 24,
+        "eventCount": 14,
+        "factCount": 20,
+        "evidenceCount": 14,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 13,
+        "proofUnionCount": 13,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c49-14",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "title": "仓库里多出的托盘",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "库存按批次和托盘计数，盘点口径不等于唯一货物数量；一批货在拆分后留下了两个托盘标签。",
+      "firstNaturalQuestion": "库存里的“一个”指托盘、批次，还是唯一货物？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c50-01",
+          "query-c50-02",
+          "query-c50-03"
+        ],
+        [
+          "query-c50-08",
+          "query-c50-09",
+          "query-c50-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c50-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c50-b",
+          "evidenceCount": 3
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "仓库藏了一批货",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "盘点员重复扫描了托盘",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 22,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c50-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "title": "不相等的相等电阻",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "报告测量的是并联后的等效值，单个元件从未相等；网络测量对象和元件属性不同。",
+      "firstNaturalQuestion": "测得的是单个电阻，还是并联后的等效阻值？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c51-01",
+          "query-c51-02",
+          "query-c51-03"
+        ],
+        [
+          "query-c51-08",
+          "query-c51-09",
+          "query-c51-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c51-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c51-b",
+          "evidenceCount": 4
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "其中一只电阻后来变值了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "仪表把两只电阻混成一个",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 24,
+        "eventCount": 11,
+        "factCount": 17,
+        "evidenceCount": 11,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 10,
+        "proofUnionCount": 10,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c51-11",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "title": "夜里变短的河",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "测量使用的水位基准点被临时抬高，截面阈值变化让可见河段变短，河道本身没有改变。",
+      "firstNaturalQuestion": "夜间变化的是河道，还是测量水位的基准点？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c52-01",
+          "query-c52-02",
+          "query-c52-03"
+        ],
+        [
+          "query-c52-08",
+          "query-c52-09",
+          "query-c52-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c52-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c52-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "河道夜间真的收缩了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "测绘仪在夜间失准",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 24,
+        "eventCount": 12,
+        "factCount": 18,
+        "evidenceCount": 12,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c52-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "title": "迟到的光纤回声",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "传播延迟与设备缓冲叠加，回波到达、进入缓存和被显示的时间不同。",
+      "firstNaturalQuestion": "回声时间同时包含光纤传播和设备缓冲吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c53-01",
+          "query-c53-02",
+          "query-c53-03"
+        ],
+        [
+          "query-c53-08",
+          "query-c53-09",
+          "query-c53-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c53-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c53-b",
+          "evidenceCount": 6
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "光纤中断后又恢复了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "回波来自另一条线路",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 21,
+        "eventCount": 13,
+        "factCount": 19,
+        "evidenceCount": 13,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 12,
+        "proofUnionCount": 12,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c53-13",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "title": "没有下降的电梯",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "配重运动和检修模式改变了传感器输入，轿厢几何位置与控制状态不是同一个量。",
+      "firstNaturalQuestion": "轿厢没下降时，配重或检修模式改变了吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c54-01",
+          "query-c54-02",
+          "query-c54-03"
+        ],
+        [
+          "query-c54-08",
+          "query-c54-09",
+          "query-c54-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c54-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c54-b",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "电梯轿厢真的下去了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "楼层传感器完全坏了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 25,
+        "eventCount": 14,
+        "factCount": 20,
+        "evidenceCount": 14,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 13,
+        "proofUnionCount": 13,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c54-14",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "title": "只响一次的多重告警",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "告警队列把同一优先级的多个事件合并为一个声学输出，源事件数量和声音次数不同。",
+      "firstNaturalQuestion": "多个告警源会被系统合并成一次声音吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c55-01",
+          "query-c55-02",
+          "query-c55-03"
+        ],
+        [
+          "query-c55-08",
+          "query-c55-09",
+          "query-c55-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c55-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c55-b",
+          "evidenceCount": 3
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "只有一个告警源",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "扬声器漏播了两个告警",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 25,
+        "eventCount": 10,
+        "factCount": 16,
+        "evidenceCount": 10,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 9,
+        "proofUnionCount": 9,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c55-10",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "title": "完整却不连续的温度图",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "缺失区间被插值补齐，图像连续只说明绘图连续，不代表采样连续。",
+      "firstNaturalQuestion": "温度图连续的区间都有真实采样点吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c56-01",
+          "query-c56-02",
+          "query-c56-03"
+        ],
+        [
+          "query-c56-08",
+          "query-c56-09",
+          "query-c56-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c56-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c56-b",
+          "evidenceCount": 4
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "设备从未断线",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "温度在断线期间完全不变",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 25,
+        "eventCount": 11,
+        "factCount": 17,
+        "evidenceCount": 11,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 10,
+        "proofUnionCount": 10,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c56-11",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "title": "不动的风向标",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "机械阻尼和轴承滞后让短时变化没有反映在指针上；风向变化与显示响应不同步。",
+      "firstNaturalQuestion": "风向标没动，能证明短时风向没有改变吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c57-01",
+          "query-c57-02",
+          "query-c57-03"
+        ],
+        [
+          "query-c57-08",
+          "query-c57-09",
+          "query-c57-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c57-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c57-b",
+          "evidenceCount": 5
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "夜里没有风向变化",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "有人把指针固定住了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 21,
+        "eventCount": 12,
+        "factCount": 18,
+        "evidenceCount": 12,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 11,
+        "proofUnionCount": 11,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c57-12",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "title": "同一容积的两种水位",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "容器截面积随高度变化，等体积液体对应不同高度；体积守恒不推出高度相等。",
+      "firstNaturalQuestion": "两个容器的截面积沿高度相同吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c58-01",
+          "query-c58-02",
+          "query-c58-03"
+        ],
+        [
+          "query-c58-08",
+          "query-c58-09",
+          "query-c58-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c58-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c58-b",
+          "evidenceCount": 6
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "其中一个容器漏水了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "高度传感器读错了",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 21,
+        "eventCount": 13,
+        "factCount": 19,
+        "evidenceCount": 13,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 12,
+        "proofUnionCount": 12,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c58-13",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "title": "多出来的第九层",
+      "seasonId": "season-4",
+      "presentationRevision": 2,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "气压模型把夹层和设备层重复计入，估计层数与建筑登记层数口径不同。",
+      "firstNaturalQuestion": "楼层估计是否把夹层或设备层重复计入？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c59-01",
+          "query-c59-02",
+          "query-c59-03"
+        ],
+        [
+          "query-c59-08",
+          "query-c59-09",
+          "query-c59-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c59-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c59-b",
+          "evidenceCount": 7
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "建筑偷偷加盖了一层",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "电梯少显示了一层",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 27,
+        "eventCount": 14,
+        "factCount": 20,
+        "evidenceCount": 14,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 13,
+        "proofUnionCount": 13,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c59-14",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 6
+      },
+      "issues": []
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "title": "终点前的最后一次采样",
+      "seasonId": "season-4",
+      "presentationRevision": 3,
+      "patchValid": true,
+      "score": 100,
+      "mechanismOneLine": "停止命令、缓存窗口和最终采样顺序分别真实；最后一条记录来自停止前已进入缓存的样本。",
+      "firstNaturalQuestion": "停止命令确实被控制器接收了吗？",
+      "naturalFirstQuestion": true,
+      "investigationPaths": [
+        [
+          "query-c60-01",
+          "query-c60-02",
+          "query-c60-03"
+        ],
+        [
+          "query-c60-08",
+          "query-c60-09",
+          "query-c60-10"
+        ]
+      ],
+      "minimumProofPaths": [
+        {
+          "id": "proof-c60-a",
+          "evidenceCount": 8
+        },
+        {
+          "id": "proof-c60-b",
+          "evidenceCount": 6
+        }
+      ],
+      "alternativeReview": [
+        {
+          "label": "停止命令没有生效，采样器继续工作",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        },
+        {
+          "label": "终端最后一条样本是事后伪造的",
+          "hasConcreteClaim": true,
+          "publiclyResolvable": true
+        }
+      ],
+      "focusedReview": {
+        "deepReviewComplete": true,
+        "coverage": {
+          "surface": true,
+          "answers": true,
+          "questions": true,
+          "feedback": true,
+          "evidence": true,
+          "hypotheses": true,
+          "chapters": true,
+          "replay": true,
+          "visualLanguage": true
+        }
+      },
+      "components": {
+        "mechanismClarity": 100,
+        "evidenceNecessity": 100,
+        "alternativeCoverage": 100,
+        "redHerring": 100,
+        "questionPaths": 100,
+        "evidenceDiversity": 100,
+        "replayCoherence": 100,
+        "spoilerDiscipline": 100,
+        "copyAuthenticity": 100
+      },
+      "metrics": {
+        "surfaceCharacters": 54,
+        "eventCount": 13,
+        "factCount": 19,
+        "evidenceCount": 13,
+        "queryCount": 10,
+        "corpusCount": 220,
+        "matchedCorpusCount": 200,
+        "proofSetCount": 2,
+        "requiredEvidenceCount": 12,
+        "proofUnionCount": 12,
+        "alternativeCount": 2,
+        "redHerringId": "evidence-c60-13",
+        "redHerringOptional": true,
+        "evidenceUniqueRate": 1,
+        "evidenceLiteralUniqueRate": 1,
+        "evidenceTemplateUniqueRate": 1,
+        "placeholderCopyCount": 0,
+        "requiredReplayRate": 1,
+        "surfaceLeakage": 0,
+        "replayBeatCount": 8
+      },
+      "issues": []
+    }
+  ],
+  "similarityPairs": [],
+  "passed": true,
+  "qualification": "This is an automated content-authenticity lower bound. It does not establish human comprehension, fun, pacing, aesthetics or market fit."
+}

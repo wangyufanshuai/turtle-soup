@@ -1,0 +1,484 @@
+{
+  "reportVersion": "0.6",
+  "generatedAt": "2026-08-23T05:54:02.195Z",
+  "mode": "automated-fairness-sweep",
+  "humanParticipants": 0,
+  "note": "This report is not a substitute for human comprehension or satisfaction measurements.",
+  "caseCount": 11,
+  "passed": true,
+  "results": [
+    {
+      "id": "c02-snow-route",
+      "quality": {
+        "factCount": 13,
+        "visibleAtStart": 3,
+        "queryCount": 8,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 26,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 152,
+        "corpusMinimumMet": true
+      },
+      "corpusMismatches": 0,
+      "openingLeaks": [],
+      "commandFailures": [],
+      "solved": true,
+      "replayCount": 5,
+      "alternatives": [
+        {
+          "id": "hypothesis-never-left",
+          "judgement": "invalidated"
+        },
+        {
+          "id": "hypothesis-secret-passage",
+          "judgement": "invalidated"
+        }
+      ],
+      "orderConverges": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "c03-second-shadow",
+      "quality": {
+        "factCount": 14,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 22,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 162,
+        "corpusMinimumMet": true
+      },
+      "corpusMismatches": 0,
+      "openingLeaks": [],
+      "commandFailures": [],
+      "solved": true,
+      "replayCount": 5,
+      "alternatives": [
+        {
+          "id": "hypothesis-double-actor",
+          "judgement": "invalidated"
+        },
+        {
+          "id": "hypothesis-unregistered-actor",
+          "judgement": "invalidated"
+        }
+      ],
+      "orderConverges": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "c04-unpostable-reply",
+      "quality": {
+        "factCount": 12,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 26,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 170,
+        "corpusMinimumMet": true
+      },
+      "corpusMismatches": 0,
+      "openingLeaks": [],
+      "commandFailures": [],
+      "solved": true,
+      "replayCount": 5,
+      "alternatives": [
+        {
+          "id": "hypothesis-future-letter",
+          "judgement": "invalidated"
+        },
+        {
+          "id": "hypothesis-bag-swap",
+          "judgement": "invalidated"
+        }
+      ],
+      "orderConverges": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "c05-third-lamp",
+      "quality": {
+        "factCount": 12,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 26,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 170,
+        "corpusMinimumMet": true
+      },
+      "corpusMismatches": 0,
+      "openingLeaks": [],
+      "commandFailures": [],
+      "solved": true,
+      "replayCount": 5,
+      "alternatives": [
+        {
+          "id": "hypothesis-third-circuit",
+          "judgement": "invalidated"
+        },
+        {
+          "id": "hypothesis-intruder",
+          "judgement": "invalidated"
+        }
+      ],
+      "orderConverges": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "c06-nonexistent-ticket",
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 26,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 170,
+        "corpusMinimumMet": true
+      },
+      "corpusMismatches": 0,
+      "openingLeaks": [],
+      "commandFailures": [],
+      "solved": true,
+      "replayCount": 5,
+      "alternatives": [
+        {
+          "id": "hypothesis-stowaway",
+          "judgement": "invalidated"
+        },
+        {
+          "id": "hypothesis-forged",
+          "judgement": "invalidated"
+        }
+      ],
+      "orderConverges": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "c07-key-returns",
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 15,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 151,
+        "corpusMinimumMet": true
+      },
+      "corpusMismatches": 0,
+      "openingLeaks": [],
+      "commandFailures": [],
+      "solved": true,
+      "replayCount": 5,
+      "alternatives": [
+        {
+          "id": "hypothesis-duplicate-key",
+          "judgement": "invalidated"
+        },
+        {
+          "id": "hypothesis-human-entry",
+          "judgement": "invalidated"
+        }
+      ],
+      "orderConverges": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "c08-unclaimed-recording",
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 18,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 156,
+        "corpusMinimumMet": true
+      },
+      "corpusMismatches": 0,
+      "openingLeaks": [],
+      "commandFailures": [],
+      "solved": true,
+      "replayCount": 5,
+      "alternatives": [
+        {
+          "id": "hypothesis-ghost",
+          "judgement": "invalidated"
+        },
+        {
+          "id": "hypothesis-forged",
+          "judgement": "invalidated"
+        }
+      ],
+      "orderConverges": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "c09-rain-room",
+      "quality": {
+        "factCount": 12,
+        "visibleAtStart": 3,
+        "queryCount": 8,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 18,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 156,
+        "corpusMinimumMet": true
+      },
+      "corpusMismatches": 0,
+      "openingLeaks": [],
+      "commandFailures": [],
+      "solved": true,
+      "replayCount": 5,
+      "alternatives": [
+        {
+          "id": "hypothesis-human-pours",
+          "judgement": "invalidated"
+        },
+        {
+          "id": "hypothesis-roof-rain",
+          "judgement": "invalidated"
+        }
+      ],
+      "orderConverges": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "c10-single-ring",
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 18,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 156,
+        "corpusMinimumMet": true
+      },
+      "corpusMismatches": 0,
+      "openingLeaks": [],
+      "commandFailures": [],
+      "solved": true,
+      "replayCount": 5,
+      "alternatives": [
+        {
+          "id": "hypothesis-external",
+          "judgement": "invalidated"
+        },
+        {
+          "id": "hypothesis-reconnect",
+          "judgement": "invalidated"
+        }
+      ],
+      "orderConverges": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "c11-borrowed-signature",
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 18,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 156,
+        "corpusMinimumMet": true
+      },
+      "corpusMismatches": 0,
+      "openingLeaks": [],
+      "commandFailures": [],
+      "solved": true,
+      "replayCount": 5,
+      "alternatives": [
+        {
+          "id": "hypothesis-early",
+          "judgement": "invalidated"
+        },
+        {
+          "id": "hypothesis-impostor",
+          "judgement": "invalidated"
+        }
+      ],
+      "orderConverges": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "c12-zero-floor-elevator",
+      "quality": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 18,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 156,
+        "corpusMinimumMet": true
+      },
+      "corpusMismatches": 0,
+      "openingLeaks": [],
+      "commandFailures": [],
+      "solved": true,
+      "replayCount": 5,
+      "alternatives": [
+        {
+          "id": "hypothesis-basement",
+          "judgement": "invalidated"
+        },
+        {
+          "id": "hypothesis-passenger",
+          "judgement": "invalidated"
+        }
+      ],
+      "orderConverges": true,
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

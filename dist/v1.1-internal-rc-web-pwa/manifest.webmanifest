@@ -1,0 +1,23 @@
+{
+  "name": "The Black Soup / 深汤",
+  "short_name": "深汤",
+  "description": "证据优先的因果推理游戏",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
+  "background_color": "#07080a",
+  "theme_color": "#08090b",
+  "lang": "zh-CN",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "开始第一案", "short_name": "第一案", "url": "/case/c01-cold-room-knock/", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

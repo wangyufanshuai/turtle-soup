@@ -1,0 +1,13 @@
+{
+  "reportVersion": "1.3",
+  "releaseProfile": "v1.3-public-preview",
+  "generatedAt": "2026-08-23T15:03:56.184Z",
+  "screenshotDirectory": "output/playwright/v13",
+  "generatedScreenshotCount": 28,
+  "representativeCases": 24,
+  "desktopViewport": "1440x900",
+  "mobileViewport": "390x844",
+  "reducedMotion": true,
+  "highContrast": true,
+  "passed": true
+}

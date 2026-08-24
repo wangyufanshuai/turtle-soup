@@ -1,0 +1,804 @@
+{
+  "reportVersion": "0.7",
+  "generatedAt": "2026-08-23T05:11:38.743Z",
+  "mode": "browser-artifact-integrity",
+  "expectedCases": 12,
+  "expectedStateScreenshots": 60,
+  "expectedResponsiveScreenshots": 24,
+  "leakedFixturePaths": [],
+  "passed": true,
+  "results": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c01-cold-room-knock-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "5d08d3e61a014252ff46f1c213d24717a7ad4ce0543b4779971d3101af1c55ad"
+        },
+        {
+          "state": "question",
+          "path": "c01-cold-room-knock-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "0c8b836b595efa90edfc7e7c464791abdfdc9c9d9cfca045b5db080a6876be63"
+        },
+        {
+          "state": "evidence",
+          "path": "c01-cold-room-knock-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "46c06ce8040d5d33439810de201b499e4c2fa5f9576768362548e15ebf13f996"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c01-cold-room-knock-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "ac0d01e3241591fdb063388530024519b0cc9bd6f862ee89d264e468c0d34d2b"
+        },
+        {
+          "state": "replay",
+          "path": "c01-cold-room-knock-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "758eb00367ebc3475fba7a12bd9f7df72bb3bd9163e06686ec20356fcc45a7b2"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c01-cold-room-knock-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "51ef5333ab511da3138fd224e902b230ac0ac8a924dc60220c858c0bdef7a1ff"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c01-cold-room-knock-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "4efc1f6099e69d3634dedeccf0dd906832aff0d31a922c05b05524d902ff0012"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c02-snow-route-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "200d5891e7016004cf9d1c0abe5cff506168a3d29631ccf1d60cf61e15873392"
+        },
+        {
+          "state": "question",
+          "path": "c02-snow-route-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "bb708e0681211388dac397ed4ee033b14b9339fc2052894e459d54afeb2d8eb8"
+        },
+        {
+          "state": "evidence",
+          "path": "c02-snow-route-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "bbd8d5531928ef7a43ffd04761e4cb57411a0e85b6e8b205f49b37e8874da2ab"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c02-snow-route-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "b8c22c82c9d7597aea6c4ffe1678253dc17831c693b83139cdc6d188422b351d"
+        },
+        {
+          "state": "replay",
+          "path": "c02-snow-route-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "b3276d653e5b378f3a69326ae93730e18e59172daf4c041d87ab076d848ea908"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c02-snow-route-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "12895387dcb4f26e77b0c9462b88032d95785b9ad57348d87715ba6e621a8c61"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c02-snow-route-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "9e842df08dc10901ae6738e91f8736629151de79c6e19a82f5b8573bc6d8081b"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c03-second-shadow-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "63e0edb00b8eed61da196c15e5993fb3d22eb4afe407e9424a7679aa97586b5f"
+        },
+        {
+          "state": "question",
+          "path": "c03-second-shadow-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "d080fb08c80d20ee1fa1a8023245346b71ba2262a3014f8dc8ecb82996a516df"
+        },
+        {
+          "state": "evidence",
+          "path": "c03-second-shadow-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "dacdbc98be8c71f9ff9722ca8bb8438804c0b705aedc9bfcab5345ccad8d8ba1"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c03-second-shadow-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "364cdd97e03153d649ee8f47236b54c3a1c264dfd74d79d63ddf98ae4d919fc9"
+        },
+        {
+          "state": "replay",
+          "path": "c03-second-shadow-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "b6d67beee618614c9a961f3e9137e138cca73f6628dc495c9faa385827db1529"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c03-second-shadow-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "0d5b0802ac063d67b35fbd1c841d4c605880fd40c5ca1d8d0c7eddcfb34b1fb3"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c03-second-shadow-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "72617e9df00c960078133e3e1e92711f70ab202a740771e26b53005f9e081ecf"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c04-unpostable-reply-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "b59279c1e1c3556ba7ce9232cff2ccb0eed21a4f7c8bbefef28a01c7b105de2f"
+        },
+        {
+          "state": "question",
+          "path": "c04-unpostable-reply-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "af1d0151228f4dcbb6ac9d680e41616d96cabe6469a97056c33df28aac07055d"
+        },
+        {
+          "state": "evidence",
+          "path": "c04-unpostable-reply-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "e7e43da17900c476732fd26e00e594fabe9b9e17e088d5194f7e0195514c0ef5"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c04-unpostable-reply-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "2db12bbd5fcfda1fb5985d8c926851b7b93c0b059cfd424b3429af580e9e0402"
+        },
+        {
+          "state": "replay",
+          "path": "c04-unpostable-reply-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "9b73d7351dbf807b17580999bca691b3256061d6338fa30f0cf1ffa8f07cf63f"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c04-unpostable-reply-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "540ef00cbf4064e2a0fe67cca345a77175892d3f5e0e6b3e1857a65d4ffc7c3e"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c04-unpostable-reply-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "ff11ef724e7868fc3bacc2377962a1167b2bfcfcd4dd7419c69e00becaf0f9bd"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c05-third-lamp-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "fca3966bb9b1508743b3088a3c22d24ec14674f3d795a202ea38e6b1d9df3fb8"
+        },
+        {
+          "state": "question",
+          "path": "c05-third-lamp-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "71b2f286a13d1616d5a18d872abdcdea77384483ed9b2410a357931f06af1868"
+        },
+        {
+          "state": "evidence",
+          "path": "c05-third-lamp-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "83111fd9043be222cd271bce510314c089ccf8e02e80d1a975cd2efc508b874b"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c05-third-lamp-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "07cf4feec855d03bda3b2a0c70a24d319cb919e0a925c27f97b787a80ff07c40"
+        },
+        {
+          "state": "replay",
+          "path": "c05-third-lamp-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "f895a981f32f75897511b1a1fd1c5d231513bfcb25b5b6393907df798673c3ac"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c05-third-lamp-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "4077d64f1a81d3c4c51e836bde4d283c62f0d13beb0af558512d81c4e50f4100"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c05-third-lamp-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "798fb3c9729c649af1339b54458446775885a31d3115fa49232af514242398e7"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c06-nonexistent-ticket-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "a919e1de1c161d49e68a8de4310cd35ad52c4a283709e0eb32547b849f10f293"
+        },
+        {
+          "state": "question",
+          "path": "c06-nonexistent-ticket-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "84f57ef37e736b394dbdf925c1e52a2b0954dda8e7853dec5748abf3ba51b1d3"
+        },
+        {
+          "state": "evidence",
+          "path": "c06-nonexistent-ticket-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "21aa58b3741a4af33a7704298662313ef4e449452eb90a2fbad58618c96eded5"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c06-nonexistent-ticket-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "afed02114031ceed3bf35051f7ac8f84648ad94a7448e317cb608cf0c15c18f4"
+        },
+        {
+          "state": "replay",
+          "path": "c06-nonexistent-ticket-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "e7395d1ebf2bf40c5bf1c579ceb52b14fc0bc4488e6e1994694cc0e1eadbdb93"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c06-nonexistent-ticket-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "298509eeed36a240cfefa0b941dfe0814367a458fed2efbbbb35c22f91b992c6"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c06-nonexistent-ticket-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "0500544bf32a980917c46d520e38f8e26240c4c96510a879f0e94979f753b99f"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c07-key-returns-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "3db1d8b2943840a03c1badf1ab6b41c6863d53a134ebce3d05f515cbfa33c48a"
+        },
+        {
+          "state": "question",
+          "path": "c07-key-returns-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "29be6aed7d24ff4b9359cc3ca8fed74853bf6d4455a9780d8fcab9ff9d38718b"
+        },
+        {
+          "state": "evidence",
+          "path": "c07-key-returns-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "21970d72411f291fc5df25588765e23eae1436b94f3eb12704bf911cf4b4cfe7"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c07-key-returns-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "21b6e2ad0ab1efd9f8d24488084fd7a3640fce28c49806791483d4fc54d90d67"
+        },
+        {
+          "state": "replay",
+          "path": "c07-key-returns-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "3e7e44f80ad99aa91af869fe751f25a0704bfadc0f83068f02b2ed149d511cc4"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c07-key-returns-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "4a10af7ff33606d89449b0c64185d9f7eb2e4f8a7c045fadae4ad226f88ea21c"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c07-key-returns-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "cd6981988287fc759f79d05287703679bff1ccda8b0fd4256619a62985d791d3"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c08-unclaimed-recording-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "2f984a4ca5c747db1ef3256bf9c82de080afe55e1c95a0794f98666127238b7e"
+        },
+        {
+          "state": "question",
+          "path": "c08-unclaimed-recording-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "05e607280c79edd9206ed62e9699216e9fb71c637de1d25200f31b54e093a6b5"
+        },
+        {
+          "state": "evidence",
+          "path": "c08-unclaimed-recording-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "8bfc20d83a18242fa96e9a4c8472ada0e05796d8c3a6942c46eceba6885c17a2"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c08-unclaimed-recording-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "4890cbcd2ef16895f50d1a5010de248bd98df8980bda6564c7dc3222d5e7eb93"
+        },
+        {
+          "state": "replay",
+          "path": "c08-unclaimed-recording-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "9e1d84008928cd85c6e314dcf00ac3f04ec56ce58b9c565d6d18f2cfde2dd297"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c08-unclaimed-recording-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "6eca6d61a9e2e54679ae6b29a34f74420c8ccfd99fd935e6827d53a92e00bb7a"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c08-unclaimed-recording-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "f900dbfe16c0a5e9bc8986dc064a0cd3d7ed170c23378f684540c14099fed789"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c09-rain-room-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "93decb74500971b7de7324d72259126fea496d73fa5409e0f9b8d7d96e5ec2d4"
+        },
+        {
+          "state": "question",
+          "path": "c09-rain-room-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "922da080e8a4934cea35a871e2805dfd9f33502be0d568c83805e383b652f2af"
+        },
+        {
+          "state": "evidence",
+          "path": "c09-rain-room-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "baec5f0b7a9fbf23c16baabc1af45cf779e39c4210854a99950c1007d1b9478d"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c09-rain-room-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "fb3f7931c68864e2649eb9d2a7a5ccdc50d65be999a8c24c1e083194a83465c3"
+        },
+        {
+          "state": "replay",
+          "path": "c09-rain-room-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "4c2d4fa5c1d40972778e27345520a35de3485195b64f0eceab7b29dbcaa48572"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c09-rain-room-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "a9b19e563eaac4e205681a6303ab63c81eb3e06441d633e0499bd1b804ad4a6a"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c09-rain-room-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "6b0fcce4cffa924bbbc963da451546455b61c938db0c060d942dccdf655aadca"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c10-single-ring-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "67f17750d677ab4598c646afd09710376a697c4da7033475577c869d54c33a0e"
+        },
+        {
+          "state": "question",
+          "path": "c10-single-ring-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "c9d4137ea5dcbd5be8977313e66fae6e4ae7b7e2728aa379413a8c147afee093"
+        },
+        {
+          "state": "evidence",
+          "path": "c10-single-ring-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "d610920e25889e744dcd5ee3f2a60742ac3e60c7039ace7fd2e49ba190724c23"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c10-single-ring-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "3952b4dbe680e38910807bce47c408dd2bd6f48cc994ba0ba30d71d2bafe3e48"
+        },
+        {
+          "state": "replay",
+          "path": "c10-single-ring-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "807dd56350a8f9fc46dca4a448d47f753c8cb6bc9d4ecb3f9747a4633c0c9b58"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c10-single-ring-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "bcfab5acb39324af8ca05139af35d5883c2e04acbc70e2fd9a91254f5bf83c76"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c10-single-ring-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "ac74728d7fc178b3fa0371f23940f4c8f47b8481b9432f769ba43162eed5802b"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c11-borrowed-signature-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "0b219bdfe3385e676e53c2dc369b1fd0c9331b31f7fc4b39040308a515f0dc5e"
+        },
+        {
+          "state": "question",
+          "path": "c11-borrowed-signature-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "0f5e12384e46ecbe6767f6def8b0312ff36d199a97c834995d565440e18da8b5"
+        },
+        {
+          "state": "evidence",
+          "path": "c11-borrowed-signature-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "502e3dc9a143988c9f02ddd83eeb1fe651987ec5f8f002cf70b1d56568071446"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c11-borrowed-signature-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "db014acb919a544725774be539f90ae361d00785393bf3c1e11ca8a4a7043033"
+        },
+        {
+          "state": "replay",
+          "path": "c11-borrowed-signature-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "34de13eb558ea3eab50a8cab012f7ad1d1ee1afc63f07ac6107731fbc2b6ba0a"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c11-borrowed-signature-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "8bbea24921b36831d07703b6f19e4ac650c341d66a20c7496cddf26e4c6db934"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c11-borrowed-signature-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "50f2faaa21b825ff1812bad5542cf4dad585b0e033bd77c2e7185e1f16005a37"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "stateFiles": [
+        {
+          "state": "opening",
+          "path": "c12-zero-floor-elevator-opening-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "3da58e95034f0d9a5b143db1c5b6a48ae656f7275071c9ace9d1ad79bf732c26"
+        },
+        {
+          "state": "question",
+          "path": "c12-zero-floor-elevator-question-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "e5812a1a1e0b5c585eb662eef32000d7c3dec8a2318f7014e00bd2f790f89a3d"
+        },
+        {
+          "state": "evidence",
+          "path": "c12-zero-floor-elevator-evidence-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "c3703b8884b93dd9129d83e3de5289298627f00333d98ba78fba6bce28362a3a"
+        },
+        {
+          "state": "wrong-theory",
+          "path": "c12-zero-floor-elevator-wrong-theory-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "60e992b1aa4b12ed1bc51376a3a7af5ceb6690ba4be9ede2fbe6e679c837ae9f"
+        },
+        {
+          "state": "replay",
+          "path": "c12-zero-floor-elevator-replay-1440.png",
+          "exists": true,
+          "width": 1440,
+          "height": 900,
+          "hash": "afa731f6c9bb5879f7f7d57947822c99c82cab7f2415b4025ba2e28d632296c9"
+        }
+      ],
+      "responsive": [
+        {
+          "viewport": "1280x800",
+          "path": "c12-zero-floor-elevator-opening-1280.png",
+          "exists": true,
+          "width": 1280,
+          "height": 800,
+          "hash": "b14334847d67fa1c8468d0e792ba1aef8abac03276eacb69321e63de696dc941"
+        },
+        {
+          "viewport": "390x844",
+          "path": "c12-zero-floor-elevator-opening-390.png",
+          "exists": true,
+          "width": 390,
+          "height": 844,
+          "hash": "e372df03556b81dc894e8b420f9515af12d6ed6238d4f1f5c7c4235d369e80d7"
+        }
+      ],
+      "uniqueStateImages": 5,
+      "errors": [],
+      "passed": true
+    }
+  ]
+}

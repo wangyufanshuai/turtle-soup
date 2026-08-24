@@ -1,0 +1,403 @@
+{
+  "reportVersion": "1.4",
+  "releaseProfile": "v1.4-internal-rc",
+  "generatedAt": "2026-08-24T01:07:11.047Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "focusedCases": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "present": true,
+      "presentationRevision": 3,
+      "evidenceCopyCount": 10,
+      "evidenceCount": 10,
+      "domEvidenceVisual": true,
+      "evidenceVisualMode": "cold-room-forensics",
+      "assets": [
+        {
+          "path": "apps/web/public/scene-cold-room.svg",
+          "exists": true,
+          "bytes": 2499,
+          "sha256": "ed40107bae6cb469152913c2c7efbe20a6459e87b496295abd223f2556d00b71",
+          "alt": "c01-cold-room-knock 桌面主场景"
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "c01-cold-room-knock-desktop.png",
+          "exists": true,
+          "bytes": 288493
+        }
+      ],
+      "accessibilityStates": {
+        "reducedMotion": true,
+        "highContrast": true,
+        "keyboard": true,
+        "touch": true
+      },
+      "provenance": "Assets are project-owned SVG/WebP files; DOM/SVG carries all state and clues. No unique clue depends on sound or color."
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "present": true,
+      "presentationRevision": 3,
+      "evidenceCopyCount": 10,
+      "evidenceCount": 10,
+      "domEvidenceVisual": true,
+      "evidenceVisualMode": "displacement-vessel-notes",
+      "assets": [
+        {
+          "path": "apps/web/public/scene-second-waterline.svg",
+          "exists": true,
+          "bytes": 1231,
+          "sha256": "073b5587780c5a4d48db59a93ac769d82da7c5a131196af424c47881affb35bb",
+          "alt": "c13-second-waterline 桌面主场景"
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "c13-second-waterline-desktop.png",
+          "exists": true,
+          "bytes": 347321
+        }
+      ],
+      "accessibilityStates": {
+        "reducedMotion": true,
+        "highContrast": true,
+        "keyboard": true,
+        "touch": true
+      },
+      "provenance": "Assets are project-owned SVG/WebP files; DOM/SVG carries all state and clues. No unique clue depends on sound or color."
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "present": true,
+      "presentationRevision": 3,
+      "evidenceCopyCount": 10,
+      "evidenceCount": 10,
+      "domEvidenceVisual": false,
+      "evidenceVisualMode": "debounce-signal-plates",
+      "assets": [
+        {
+          "path": "apps/web/public/assets/cases/c25/scene-desktop.webp",
+          "exists": true,
+          "bytes": 14692,
+          "sha256": "f80e0e08f4fcd96dbd4e63a545d8b3dc0aedf15d9e4e8f83ef72d917bf0c0a31",
+          "alt": "c25-silent-second-bell 桌面主场景"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c25/scene-mobile.webp",
+          "exists": true,
+          "bytes": 7432,
+          "sha256": "acca01780fe26fa2e2be7f9d879e1aedd1a3e171d3456e9af7dd865b32ba2453",
+          "alt": "c25-silent-second-bell 手机主场景"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c25/evidence-01.webp",
+          "exists": true,
+          "bytes": 2828,
+          "sha256": "91845ff8a478604186cf21899524100e14b3e9ebaf2bdbb2251578aa88e6fbc6",
+          "alt": "c25-silent-second-bell 证据 1"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c25/evidence-02.webp",
+          "exists": true,
+          "bytes": 2828,
+          "sha256": "91845ff8a478604186cf21899524100e14b3e9ebaf2bdbb2251578aa88e6fbc6",
+          "alt": "c25-silent-second-bell 证据 2"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c25/evidence-03.webp",
+          "exists": true,
+          "bytes": 2980,
+          "sha256": "610e739579f2f83064782a819c4a05689edfd5b39ca7e1839eba6f148da798ab",
+          "alt": "c25-silent-second-bell 证据 3"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c25/evidence-04.webp",
+          "exists": true,
+          "bytes": 2722,
+          "sha256": "63e3926f9773832b611c4f5b47ed3c87f933174ac3721e9e6e44fcf3386e0893",
+          "alt": "c25-silent-second-bell 证据 4"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c25/evidence-05.webp",
+          "exists": true,
+          "bytes": 2722,
+          "sha256": "63e3926f9773832b611c4f5b47ed3c87f933174ac3721e9e6e44fcf3386e0893",
+          "alt": "c25-silent-second-bell 证据 5"
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "c25-silent-second-bell-desktop.png",
+          "exists": true,
+          "bytes": 413102
+        }
+      ],
+      "accessibilityStates": {
+        "reducedMotion": true,
+        "highContrast": true,
+        "keyboard": true,
+        "touch": true
+      },
+      "provenance": "Assets are project-owned SVG/WebP files; DOM/SVG carries all state and clues. No unique clue depends on sound or color."
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "present": true,
+      "presentationRevision": 3,
+      "evidenceCopyCount": 12,
+      "evidenceCount": 12,
+      "domEvidenceVisual": false,
+      "evidenceVisualMode": "pressure-calibration-plates",
+      "assets": [
+        {
+          "path": "apps/web/public/assets/v14/c37-pressure-lab.svg",
+          "exists": true,
+          "bytes": 2240,
+          "sha256": "0c85fc9dab08d982b85ab9ebbe2865c872ad510a43996e4d668dfbf39eb610dc",
+          "alt": "c37-zeroed-pressure-gauge 桌面主场景"
+        },
+        {
+          "path": "apps/web/public/assets/v14/c37-pressure-lab-mobile.svg",
+          "exists": true,
+          "bytes": 1430,
+          "sha256": "345b3a594992ea5e8b56df6bb363869eebefa959b80447bb769a80f98f7c7b38",
+          "alt": "c37-zeroed-pressure-gauge 手机主场景"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c37/evidence-01.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "5b91514ef247f069646dc5425c237ff9dbd50f6325647b29b3350f164c51698f",
+          "alt": "c37-zeroed-pressure-gauge 证据 1"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c37/evidence-02.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "2a5b68ca277d3273fdad4c1ed3334214a9fcb84630aee6106728aa0415cbe8e4",
+          "alt": "c37-zeroed-pressure-gauge 证据 2"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c37/evidence-03.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "27a8e8a03357c83272178210044c310ecb896b5ca6b561b1d583c49bd1c1df19",
+          "alt": "c37-zeroed-pressure-gauge 证据 3"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c37/evidence-04.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "6d19f9139b81994104a4b3c07e5097397fbe0fa58cb89a7e96a87b53e720a2e4",
+          "alt": "c37-zeroed-pressure-gauge 证据 4"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c37/evidence-05.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "3a74091480e00d15b4a213bc03b6622301e92fafaef32368975a6dfbfc6f5c2a",
+          "alt": "c37-zeroed-pressure-gauge 证据 5"
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "c37-zeroed-pressure-gauge-desktop.png",
+          "exists": true,
+          "bytes": 336792
+        }
+      ],
+      "accessibilityStates": {
+        "reducedMotion": true,
+        "highContrast": true,
+        "keyboard": true,
+        "touch": true
+      },
+      "provenance": "Assets are project-owned SVG/WebP files; DOM/SVG carries all state and clues. No unique clue depends on sound or color."
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "present": true,
+      "presentationRevision": 3,
+      "evidenceCopyCount": 13,
+      "evidenceCount": 13,
+      "domEvidenceVisual": false,
+      "evidenceVisualMode": "curve-reference-plates",
+      "assets": [
+        {
+          "path": "apps/web/public/assets/v14/c48-curve-lab.svg",
+          "exists": true,
+          "bytes": 2114,
+          "sha256": "b47fa564b6b93e2bd421bde5ce1e31eb287517580980f24b023f815dcc5a3a06",
+          "alt": "c48-two-point-calibration 桌面主场景"
+        },
+        {
+          "path": "apps/web/public/assets/v14/c48-curve-lab-mobile.svg",
+          "exists": true,
+          "bytes": 1280,
+          "sha256": "8ddf34a1df7f7a5a9b130f18a7449cc5dde9fc5174cbb24f826cc2164eca31ff",
+          "alt": "c48-two-point-calibration 手机主场景"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c48/evidence-01.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "7e558ae6b3f2cabaa77a13705cd93038cb1ac910082eda30245d02cf7f26d578",
+          "alt": "c48-two-point-calibration 证据 1"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c48/evidence-02.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "72020b0f5f83f471604e1ccfdaacaf939137d3bd59ffe6f8c965eb46e6f27315",
+          "alt": "c48-two-point-calibration 证据 2"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c48/evidence-03.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "7d71e6721788baeded8b4e760cf7ee813809a61b1791f1609d8ecb740829cba1",
+          "alt": "c48-two-point-calibration 证据 3"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c48/evidence-04.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "f2744a37b257aa84ff3e230c2adbb0c8731a267b81347964f82d3b8af14ecee2",
+          "alt": "c48-two-point-calibration 证据 4"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c48/evidence-05.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "7c269454783bb2e06cd13ea2edb4a14c167fa4365c98e625b7f65c5f85f119e5",
+          "alt": "c48-two-point-calibration 证据 5"
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "c48-two-point-calibration-desktop.png",
+          "exists": true,
+          "bytes": 331736
+        }
+      ],
+      "accessibilityStates": {
+        "reducedMotion": true,
+        "highContrast": true,
+        "keyboard": true,
+        "touch": true
+      },
+      "provenance": "Assets are project-owned SVG/WebP files; DOM/SVG carries all state and clues. No unique clue depends on sound or color."
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "present": true,
+      "presentationRevision": 3,
+      "evidenceCopyCount": 13,
+      "evidenceCount": 13,
+      "domEvidenceVisual": false,
+      "evidenceVisualMode": "terminal-signal-plates",
+      "assets": [
+        {
+          "path": "apps/web/public/assets/v14/c60-terminal-lab.svg",
+          "exists": true,
+          "bytes": 2281,
+          "sha256": "c41f402600aa46fca5a64efc936d0ca268034b0930789c3d31a1e191a8382adb",
+          "alt": "c60-last-sample-before-stop 桌面主场景"
+        },
+        {
+          "path": "apps/web/public/assets/v14/c60-terminal-lab-mobile.svg",
+          "exists": true,
+          "bytes": 1643,
+          "sha256": "9c415ba40d92fce4da0d3710f80e52a638a76b9e711874fd72df91cc2e8f1bbf",
+          "alt": "c60-last-sample-before-stop 手机主场景"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c60/evidence-01.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "acf4fffc26ab1a498d33ee38a6594215eff2360756dcf260560681dfc8ea7b0d",
+          "alt": "c60-last-sample-before-stop 证据 1"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c60/evidence-02.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "b87ce1e90fc4969e358f2ddd067e6ad74243ae3ac29644124eb9e98ea8a1e9e8",
+          "alt": "c60-last-sample-before-stop 证据 2"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c60/evidence-03.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "fc24403dacdc3c145cf5d8a460b3faec84a649954024a164dcfdf5f0db461711",
+          "alt": "c60-last-sample-before-stop 证据 3"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c60/evidence-04.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "cbbf005045bed03ee91ee2eb1c0ad6f64d9e756c4bc4fd80b581b3c78215b551",
+          "alt": "c60-last-sample-before-stop 证据 4"
+        },
+        {
+          "path": "apps/web/public/assets/cases/c60/evidence-05.svg",
+          "exists": true,
+          "bytes": 322,
+          "sha256": "4a3a52aede61ade27c19cb3c9270facf18676202f1a5d90393662d333d59c8f9",
+          "alt": "c60-last-sample-before-stop 证据 5"
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "c60-last-sample-before-stop-desktop.png",
+          "exists": true,
+          "bytes": 319453
+        }
+      ],
+      "accessibilityStates": {
+        "reducedMotion": true,
+        "highContrast": true,
+        "keyboard": true,
+        "touch": true
+      },
+      "provenance": "Assets are project-owned SVG/WebP files; DOM/SVG carries all state and clues. No unique clue depends on sound or color."
+    }
+  ],
+  "screenshotDirectory": "output/playwright/v14",
+  "screenshotCount": 10,
+  "requirements": {
+    "desktop": "1440x900",
+    "mobile": "390x844",
+    "reducedMotion": true,
+    "highContrast": true,
+    "keyboard": true,
+    "touch": true
+  },
+  "inspectedScreenshots": [
+    "chromium-home-desktop.png",
+    "c37-zeroed-pressure-gauge-desktop.png",
+    "c60-mobile.png"
+  ],
+  "visualFindings": [
+    {
+      "state": "home-desktop",
+      "result": "pass",
+      "note": "档案书架层级清晰，最近调查、筛选和赛季折叠优先于案件卡。"
+    },
+    {
+      "state": "c37-desktop",
+      "result": "pass",
+      "note": "现场、确定性提问和校准推理板保持三栏分工，主输入没有遮挡证据。"
+    },
+    {
+      "state": "c60-mobile",
+      "result": "pass",
+      "note": "手机端使用单列渐进披露和固定三段导航，证据文本不依赖图片或声音。"
+    }
+  ],
+  "passed": true,
+  "qualification": "Visual review verifies asset wiring, copy-patch coverage and generated screenshot presence. It does not establish human aesthetics or comprehension."
+}

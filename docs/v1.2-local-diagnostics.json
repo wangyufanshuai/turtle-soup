@@ -1,0 +1,24 @@
+{
+  "reportVersion": "1.2",
+  "database": "turtle-soup-diagnostics-v1",
+  "retention": {
+    "maxDays": 90,
+    "maxSessions": 500
+  },
+  "defaultEnabled": true,
+  "upload": false,
+  "forbiddenFields": [
+    "rawQuestion",
+    "commands",
+    "evidenceId",
+    "eventId",
+    "canonicalHypothesisId",
+    "hostRewriteText",
+    "remoteUrl"
+  ],
+  "exportFormats": [
+    "json",
+    "csv"
+  ],
+  "passed": true
+}

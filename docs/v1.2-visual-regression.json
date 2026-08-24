@@ -1,0 +1,21 @@
+{
+  "reportVersion": "1.2",
+  "requiredStates": [
+    "home-desktop",
+    "home-mobile",
+    "unknown-case-404",
+    "c01-opening",
+    "c13-single-board",
+    "c25-active-board",
+    "c36-chapter-two",
+    "ambiguity",
+    "wrong-theory",
+    "proof-gap",
+    "solved-replay",
+    "settings-host",
+    "replay-challenges"
+  ],
+  "reducedMotion": true,
+  "highContrast": true,
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "reportVersion": "1.3",
+  "releaseProfile": "v1.3-public-preview",
+  "generatedAt": "2026-08-23T14:57:01.278Z",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "status": "public-preview / human-evaluation-pending",
+  "artifact": {
+    "directory": "dist/v1.3-public-preview-web-pwa",
+    "bytes": 6135911,
+    "files": 849,
+    "sha256": "39d3c27cc18ea0f92b1cec927124f2abd3dae4c1df43c1e690f7c597fe7ccc03",
+    "archive": {
+      "path": "dist/turtle-soup-v1.3-public-preview-web-pwa.zip",
+      "bytes": 2842906,
+      "sha256": "f0dab2d4b0ce62897382e299da6aebb8655f572f106b89de12c855654002226e"
+    }
+  },
+  "preservedArtifacts": [
+    "dist/turtle-soup-v1.0-internal-rc-web-pwa.zip",
+    "dist/turtle-soup-v1.1-internal-rc-web-pwa.zip",
+    "dist/turtle-soup-v1.2-internal-rc-web-pwa.zip"
+  ],
+  "passed": true
+}

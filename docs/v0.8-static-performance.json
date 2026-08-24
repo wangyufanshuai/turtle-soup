@@ -1,0 +1,91 @@
+{
+  "reportVersion": "0.8",
+  "generatedAt": "2026-08-23T05:09:06.759Z",
+  "mode": "static-performance-and-precache-budget",
+  "budgetBasis": "Uncompressed shipping bytes. The 1.4 MB JavaScript ceiling includes the isolated 12-case Worker truth bundle and Next.js compatibility runtime; individual assets remain capped at 450 KB.",
+  "budgets": {
+    "totalBytes": 2500000,
+    "javascriptBytes": 1400000,
+    "cssBytes": 100000,
+    "maximumAssetBytes": 450000,
+    "maximumHtmlBytes": 100000,
+    "sourceMaps": 0
+  },
+  "actual": {
+    "totalBytes": 1787326,
+    "javascriptBytes": 1331215,
+    "cssBytes": 51051,
+    "maximumAssetBytes": 352658,
+    "maximumHtmlBytes": 16931,
+    "sourceMaps": 0
+  },
+  "precacheCoverage": {
+    "required": 115,
+    "missing": [],
+    "percent": 100
+  },
+  "largestAssets": [
+    {
+      "path": "_next/static/chunks/245.01f3d922766030ab.js",
+      "bytes": 352658
+    },
+    {
+      "path": "_next/static/chunks/968-639e78bfc5547bbf.js",
+      "bytes": 241317
+    },
+    {
+      "path": "_next/static/chunks/87c73c54-fd33669cffb637e8.js",
+      "bytes": 201054
+    },
+    {
+      "path": "_next/static/chunks/framework-626cbd48ac5aca57.js",
+      "bytes": 189662
+    },
+    {
+      "path": "_next/static/chunks/main-9929ea32eb1a8d7b.js",
+      "bytes": 133633
+    },
+    {
+      "path": "_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "bytes": 112594
+    },
+    {
+      "path": "_next/static/chunks/app/case/[caseId]/page-3c576d9f33c5884d.js",
+      "bytes": 51318
+    },
+    {
+      "path": "_next/static/css/d1de032d8a88794c.css",
+      "bytes": 42259
+    },
+    {
+      "path": "icon-512.png",
+      "bytes": 26681
+    },
+    {
+      "path": "index.html",
+      "bytes": 16931
+    },
+    {
+      "path": "_next/static/chunks/585-75eac32d984ac39a.js",
+      "bytes": 9262
+    },
+    {
+      "path": "_next/static/chunks/app/page-f305cbb1d7560c09.js",
+      "bytes": 9134
+    },
+    {
+      "path": "_next/static/chunks/825-c56ef468f97f379e.js",
+      "bytes": 8640
+    },
+    {
+      "path": "case/c08-unclaimed-recording/index.html",
+      "bytes": 8350
+    },
+    {
+      "path": "case/c12-zero-floor-elevator/index.html",
+      "bytes": 8350
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

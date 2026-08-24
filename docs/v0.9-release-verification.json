@@ -1,0 +1,21 @@
+{
+  "reportVersion": "0.9",
+  "generatedAt": "2026-08-23T06:43:15.260Z",
+  "mode": "sensory-gold-cross-report-verification",
+  "frozenCases": 12,
+  "browserRoutes": "156/156",
+  "interactionPaths": 36,
+  "soundscapeBrowserPaths": 36,
+  "mutedCompletionCases": 12,
+  "visualScreenshots": 74,
+  "securityTargets": 4,
+  "physicalDevices": {
+    "android": 0,
+    "ios": 0,
+    "lowPerformance": 0
+  },
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "failures": [],
+  "passed": true
+}

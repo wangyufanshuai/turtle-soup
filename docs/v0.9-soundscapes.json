@@ -1,0 +1,210 @@
+{
+  "reportVersion": "0.9",
+  "generatedAt": "2026-08-23T06:09:55.249Z",
+  "mode": "procedural-soundscape-registry-audit",
+  "frozenCaseCount": 12,
+  "soundscapeCount": 12,
+  "authoredLayouts": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "layoutId": "cold-room",
+      "sceneAsset": "/scene-cold-room.svg"
+    },
+    {
+      "caseId": "c02-snow-route",
+      "layoutId": "snow-route",
+      "sceneAsset": "/scene-snow-route.svg"
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "layoutId": "second-shadow",
+      "sceneAsset": "/scene-second-shadow.svg"
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "layoutId": "mail-room",
+      "sceneAsset": "/scene-unpostable-reply.svg"
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "layoutId": "switchboard",
+      "sceneAsset": "/scene-third-lamp.svg"
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "layoutId": "harbor-ledger",
+      "sceneAsset": "/scene-nonexistent-ticket.svg"
+    },
+    {
+      "caseId": "c07-key-returns",
+      "layoutId": "key-archive",
+      "sceneAsset": "/scene-key-returns.svg"
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "layoutId": "sound-lab",
+      "sceneAsset": "/scene-unclaimed-recording.svg"
+    },
+    {
+      "caseId": "c09-rain-room",
+      "layoutId": "rain-room",
+      "sceneAsset": "/scene-rain-room.svg"
+    },
+    {
+      "caseId": "c10-single-ring",
+      "layoutId": "telegraph-room",
+      "sceneAsset": "/scene-single-ring.svg"
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "layoutId": "signature-desk",
+      "sceneAsset": "/scene-borrowed-signature.svg"
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "layoutId": "elevator-control",
+      "sceneAsset": "/scene-zero-floor-elevator.svg"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "cold-room",
+      "label": "冷凝机低鸣",
+      "signature": "compressor-hum-relay",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "43/86 Hz",
+      "pulseIdentity": "7.5s · 78 Hz · triangle",
+      "noiseIdentity": "lowpass 180 Hz @ 0.01",
+      "effectRatio": 0.88
+    },
+    {
+      "id": "snow-route",
+      "label": "雪夜风压",
+      "signature": "filtered-wind-metal",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "54/108 Hz",
+      "pulseIdentity": "10.2s · 620/470 Hz · sine",
+      "noiseIdentity": "bandpass 900 Hz @ 0.032",
+      "effectRatio": 1.12
+    },
+    {
+      "id": "second-shadow",
+      "label": "舞台空场共振",
+      "signature": "dimmer-wood-resonance",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "61/183 Hz",
+      "pulseIdentity": "8.4s · 220/330 Hz · triangle",
+      "noiseIdentity": "lowpass 2400 Hz @ 0.009",
+      "effectRatio": 1.05
+    },
+    {
+      "id": "mail-room",
+      "label": "夜班分拣节拍",
+      "signature": "roller-clock-paper",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "48/96 Hz",
+      "pulseIdentity": "5.6s · 740/510 Hz · square",
+      "noiseIdentity": "bandpass 650 Hz @ 0.014",
+      "effectRatio": 0.95
+    },
+    {
+      "id": "switchboard",
+      "label": "断电线路余振",
+      "signature": "mains-relay-glass",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "50/100 Hz",
+      "pulseIdentity": "6.4s · 880/440 Hz · square",
+      "noiseIdentity": "highpass 1250 Hz @ 0.008",
+      "effectRatio": 1.18
+    },
+    {
+      "id": "harbor-ledger",
+      "label": "港池低潮",
+      "signature": "harbor-fog-waterline",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "37/74 Hz",
+      "pulseIdentity": "12s · 82/123 Hz · sine",
+      "noiseIdentity": "lowpass 560 Hz @ 0.028",
+      "effectRatio": 0.78
+    },
+    {
+      "id": "key-archive",
+      "label": "金属柜余响",
+      "signature": "cabinet-cable-metal",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "66/198 Hz",
+      "pulseIdentity": "4.8s · 1100/1650 Hz · triangle",
+      "noiseIdentity": "bandpass 1800 Hz @ 0.006",
+      "effectRatio": 1.25
+    },
+    {
+      "id": "sound-lab",
+      "label": "磁带底噪",
+      "signature": "tape-hiss-buffer-flutter",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "57/114 Hz",
+      "pulseIdentity": "9.6s · 320/480/300 Hz · sawtooth",
+      "noiseIdentity": "highpass 1400 Hz @ 0.04",
+      "effectRatio": 1.08
+    },
+    {
+      "id": "rain-room",
+      "label": "管道残雨",
+      "signature": "roof-water-drip",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "46/92 Hz",
+      "pulseIdentity": "3.9s · 900/620 Hz · sine",
+      "noiseIdentity": "bandpass 1200 Hz @ 0.036",
+      "effectRatio": 0.9
+    },
+    {
+      "id": "telegraph-room",
+      "label": "交换机线路噪声",
+      "signature": "pbx-line-queue",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "52/104 Hz",
+      "pulseIdentity": "7.2s · 660/440 Hz · square",
+      "noiseIdentity": "bandpass 720 Hz @ 0.012",
+      "effectRatio": 1
+    },
+    {
+      "id": "signature-desk",
+      "label": "档案室纸声",
+      "signature": "paper-clock-seal",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "42/126 Hz",
+      "pulseIdentity": "11.3s · 390/585 Hz · triangle",
+      "noiseIdentity": "bandpass 420 Hz @ 0.016",
+      "effectRatio": 0.86
+    },
+    {
+      "id": "elevator-control",
+      "label": "曳引机待机声",
+      "signature": "motor-relay-floor",
+      "decorativeOnly": true,
+      "oscillatorIdentity": "45/90 Hz",
+      "pulseIdentity": "6.8s · 520/780 Hz · sine",
+      "noiseIdentity": "lowpass 300 Hz @ 0.013",
+      "effectRatio": 0.93
+    }
+  ],
+  "noRequiredAudioInformation": true,
+  "lifecycleCoverage": [
+    {
+      "path": "apps/web/components/game-shell.tsx",
+      "visibilitychange": true,
+      "pagehide": true,
+      "pageshow": true,
+      "disposesAudio": true
+    },
+    {
+      "path": "apps/web/components/variant-shell.tsx",
+      "visibilitychange": true,
+      "pagehide": true,
+      "pageshow": true,
+      "disposesAudio": true
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

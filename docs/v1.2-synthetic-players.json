@@ -1,0 +1,1922 @@
+{
+  "reportVersion": "1.2",
+  "generatedAt": "2026-08-23T13:56:47.165Z",
+  "releaseProfile": "v1.2-internal-rc",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "caseCount": 36,
+  "runCount": 288,
+  "results": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c02-snow-route",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c07-key-returns",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c09-rain-room",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c10-single-ring",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "personas": [
+        {
+          "persona": "beginner",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "inheritedFrom": "v1.1-synthetic-players.json",
+  "qualification": "沿用相同八类合成玩家作为回归下界；不能替代真人理解、乐趣或市场验证。"
+}

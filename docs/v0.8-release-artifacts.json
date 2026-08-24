@@ -1,0 +1,45 @@
+{
+  "reportVersion": "0.8",
+  "generatedAt": "2026-08-23T05:09:22.220Z",
+  "humanFunGate": "pending",
+  "artifacts": {
+    "webPwa": {
+      "path": "dist/web-pwa",
+      "files": 116,
+      "bytes": 1787326,
+      "sha256": "5a5f63959b1bb8c7b597a19a6a49c170c3bd735117a1437d18e8e7ac0c34affc",
+      "archive": {
+        "path": "dist/turtle-soup-v0.8-web-pwa.zip",
+        "bytes": 560244,
+        "sha256": "027d3fb955bcf92da6670952035c4251c404ae230c167089ce49864056bc0ae7"
+      }
+    },
+    "itchHtml5": {
+      "path": "dist/itch-html5",
+      "files": 116,
+      "bytes": 1787326,
+      "sha256": "5a5f63959b1bb8c7b597a19a6a49c170c3bd735117a1437d18e8e7ac0c34affc",
+      "archive": {
+        "path": "dist/turtle-soup-v0.8-itch-html5.zip",
+        "bytes": 560244,
+        "sha256": "838dda993b72634fb9a120f7d6f981b7e80c15da0f5beb73bbcc1bbe4039a07a"
+      }
+    },
+    "c01FunGate": {
+      "path": "dist/c01-fun-gate",
+      "files": 51,
+      "bytes": 1491525,
+      "sha256": "d6d14d83266b3ed8070210449dbe22eb330912087b4ce312b4e2852062fc9bef",
+      "archive": {
+        "path": "dist/turtle-soup-v0.8-c01-fun-gate.zip",
+        "bytes": 445321,
+        "sha256": "038ada03621c1e724f2e5772f56490a762c73a95b2126f64dbc711f9e4b5ec76"
+      },
+      "includedCaseRoutes": [
+        "c01-cold-room-knock"
+      ]
+    }
+  },
+  "frozenCaseCount": 12,
+  "passed": true
+}

@@ -1,0 +1,109 @@
+{
+  "reportVersion": "1.0",
+  "generatedAt": "2026-08-23T07:53:32.144Z",
+  "releaseProfile": "v1.0-internal-rc",
+  "budgets": {
+    "totalBytes": 5000000,
+    "javascriptBytes": 2400000,
+    "initialJavaScriptBytes": 1400000,
+    "cssBytes": 120000,
+    "maximumAssetBytes": 450000,
+    "sourceMaps": 0
+  },
+  "actual": {
+    "totalBytes": 2517553,
+    "javascriptBytes": 1731721,
+    "initialJavaScriptBytes": 603191,
+    "cssBytes": 66215,
+    "maximumAssetBytes": 241317,
+    "sourceMaps": 0
+  },
+  "precacheCoverage": {
+    "percent": 100,
+    "missing": []
+  },
+  "largestAssets": [
+    {
+      "path": "_next/static/chunks/968-639e78bfc5547bbf.js",
+      "bytes": 241317
+    },
+    {
+      "path": "_next/static/chunks/87c73c54-fd33669cffb637e8.js",
+      "bytes": 201054
+    },
+    {
+      "path": "_next/static/chunks/framework-626cbd48ac5aca57.js",
+      "bytes": 189662
+    },
+    {
+      "path": "_next/static/chunks/main-9929ea32eb1a8d7b.js",
+      "bytes": 133633
+    },
+    {
+      "path": "_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "bytes": 112594
+    },
+    {
+      "path": "_next/static/chunks/app/case/[caseId]/page-8396fc016a7df951.js",
+      "bytes": 68420
+    },
+    {
+      "path": "_next/static/css/9859de18b9ac1a1a.css",
+      "bytes": 54408
+    },
+    {
+      "path": "_next/static/chunks/378.e4a1f0b7d661fbec.js",
+      "bytes": 40284
+    },
+    {
+      "path": "_next/static/chunks/547.6982284011ee9fe5.js",
+      "bytes": 34078
+    },
+    {
+      "path": "index.html",
+      "bytes": 33216
+    },
+    {
+      "path": "_next/static/chunks/496.bb59d33302890846.js",
+      "bytes": 32264
+    },
+    {
+      "path": "_next/static/chunks/782.3600b5c8cd59d6df.js",
+      "bytes": 32252
+    },
+    {
+      "path": "_next/static/chunks/35.de9d2094f4c0c413.js",
+      "bytes": 32179
+    },
+    {
+      "path": "_next/static/chunks/780.5b46b49c6d4824b5.js",
+      "bytes": 32076
+    },
+    {
+      "path": "_next/static/chunks/349.f9c597acc1ab139b.js",
+      "bytes": 31265
+    },
+    {
+      "path": "_next/static/chunks/26.7c6597863e690025.js",
+      "bytes": 28231
+    },
+    {
+      "path": "_next/static/chunks/608.663d372ceb7f0aab.js",
+      "bytes": 27993
+    },
+    {
+      "path": "_next/static/chunks/53.d025582d9f524e77.js",
+      "bytes": 27984
+    },
+    {
+      "path": "_next/static/chunks/256.602b4354bb3cfc23.js",
+      "bytes": 27970
+    },
+    {
+      "path": "_next/static/chunks/959.2526ce70547a68b3.js",
+      "bytes": 27966
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

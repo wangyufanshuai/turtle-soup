@@ -1,0 +1,472 @@
+{
+  "reportVersion": "0.9",
+  "releaseProfile": "season1-v0.9-stable",
+  "generatedAt": "2026-08-23T07:39:56.502Z",
+  "cacheName": "black-soup-v09-gm1",
+  "entryCount": 115,
+  "totalBytes": 1801254,
+  "manifestHash": "996aea64a9cf71ead9ba5c09795614a1d4559414d984e20cb33604a5fe202bbb",
+  "entries": [
+    {
+      "path": "/",
+      "bytes": 16933
+    },
+    {
+      "path": "/__next.__PAGE__.txt",
+      "bytes": 3909
+    },
+    {
+      "path": "/__next._full.txt",
+      "bytes": 4249
+    },
+    {
+      "path": "/__next._tree.txt",
+      "bytes": 303
+    },
+    {
+      "path": "/_next/static/chunks/245.01f3d922766030ab.js",
+      "bytes": 352658
+    },
+    {
+      "path": "/_next/static/chunks/387.b486e5600dfa16f8.js",
+      "bytes": 4753
+    },
+    {
+      "path": "/_next/static/chunks/446.9f3b84c08c540e01.js",
+      "bytes": 753
+    },
+    {
+      "path": "/_next/static/chunks/585-75eac32d984ac39a.js",
+      "bytes": 9262
+    },
+    {
+      "path": "/_next/static/chunks/825-c56ef468f97f379e.js",
+      "bytes": 8640
+    },
+    {
+      "path": "/_next/static/chunks/87c73c54-fd33669cffb637e8.js",
+      "bytes": 201054
+    },
+    {
+      "path": "/_next/static/chunks/968-639e78bfc5547bbf.js",
+      "bytes": 241317
+    },
+    {
+      "path": "/_next/static/chunks/app/_global-error/page-327b769f8d5a8082.js",
+      "bytes": 147
+    },
+    {
+      "path": "/_next/static/chunks/app/_not-found/page-3b668e18432afbd9.js",
+      "bytes": 2665
+    },
+    {
+      "path": "/_next/static/chunks/app/case/[caseId]/page-dfafe3722a5152fd.js",
+      "bytes": 62608
+    },
+    {
+      "path": "/_next/static/chunks/app/layout-90d9f82651ba6091.js",
+      "bytes": 1911
+    },
+    {
+      "path": "/_next/static/chunks/app/page-eced159b654d6bc1.js",
+      "bytes": 9136
+    },
+    {
+      "path": "/_next/static/chunks/framework-626cbd48ac5aca57.js",
+      "bytes": 189662
+    },
+    {
+      "path": "/_next/static/chunks/main-9929ea32eb1a8d7b.js",
+      "bytes": 133633
+    },
+    {
+      "path": "/_next/static/chunks/main-app-428fc4faf781d155.js",
+      "bytes": 509
+    },
+    {
+      "path": "/_next/static/chunks/next/dist/client/components/builtin/app-error-327b769f8d5a8082.js",
+      "bytes": 147
+    },
+    {
+      "path": "/_next/static/chunks/next/dist/client/components/builtin/forbidden-327b769f8d5a8082.js",
+      "bytes": 147
+    },
+    {
+      "path": "/_next/static/chunks/next/dist/client/components/builtin/global-error-136c7281e753378a.js",
+      "bytes": 179
+    },
+    {
+      "path": "/_next/static/chunks/next/dist/client/components/builtin/not-found-327b769f8d5a8082.js",
+      "bytes": 147
+    },
+    {
+      "path": "/_next/static/chunks/next/dist/client/components/builtin/unauthorized-327b769f8d5a8082.js",
+      "bytes": 147
+    },
+    {
+      "path": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "bytes": 112594
+    },
+    {
+      "path": "/_next/static/chunks/webpack-8c6f3d5fe9ace9c4.js",
+      "bytes": 3489
+    },
+    {
+      "path": "/_next/static/css/21a1b3b58f2e4fc3.css",
+      "bytes": 4353
+    },
+    {
+      "path": "/_next/static/css/c8df91ebc727e7e4.css",
+      "bytes": 5130
+    },
+    {
+      "path": "/_next/static/css/cc7e79d8acbc9200.css",
+      "bytes": 50615
+    },
+    {
+      "path": "/_next/static/pqvX5obU5HBqVDaiRWqEm/_buildManifest.js",
+      "bytes": 478
+    },
+    {
+      "path": "/_next/static/pqvX5obU5HBqVDaiRWqEm/_ssgManifest.js",
+      "bytes": 106
+    },
+    {
+      "path": "/_not-found/",
+      "bytes": 7738
+    },
+    {
+      "path": "/_not-found/__next._full.txt",
+      "bytes": 4356
+    },
+    {
+      "path": "/_not-found/__next._not-found/__PAGE__.txt",
+      "bytes": 3801
+    },
+    {
+      "path": "/_not-found/__next._tree.txt",
+      "bytes": 326
+    },
+    {
+      "path": "/_not-found/index.txt",
+      "bytes": 4356
+    },
+    {
+      "path": "/404.html",
+      "bytes": 7738
+    },
+    {
+      "path": "/404/",
+      "bytes": 7738
+    },
+    {
+      "path": "/case/c01-cold-room-knock/",
+      "bytes": 8337
+    },
+    {
+      "path": "/case/c01-cold-room-knock/__next._full.txt",
+      "bytes": 5203
+    },
+    {
+      "path": "/case/c01-cold-room-knock/__next._tree.txt",
+      "bytes": 497
+    },
+    {
+      "path": "/case/c01-cold-room-knock/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4353
+    },
+    {
+      "path": "/case/c01-cold-room-knock/index.txt",
+      "bytes": 5203
+    },
+    {
+      "path": "/case/c02-snow-route/",
+      "bytes": 8322
+    },
+    {
+      "path": "/case/c02-snow-route/__next._full.txt",
+      "bytes": 5188
+    },
+    {
+      "path": "/case/c02-snow-route/__next._tree.txt",
+      "bytes": 492
+    },
+    {
+      "path": "/case/c02-snow-route/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4348
+    },
+    {
+      "path": "/case/c02-snow-route/index.txt",
+      "bytes": 5188
+    },
+    {
+      "path": "/case/c03-second-shadow/",
+      "bytes": 8331
+    },
+    {
+      "path": "/case/c03-second-shadow/__next._full.txt",
+      "bytes": 5197
+    },
+    {
+      "path": "/case/c03-second-shadow/__next._tree.txt",
+      "bytes": 495
+    },
+    {
+      "path": "/case/c03-second-shadow/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4351
+    },
+    {
+      "path": "/case/c03-second-shadow/index.txt",
+      "bytes": 5197
+    },
+    {
+      "path": "/case/c04-unpostable-reply/",
+      "bytes": 8340
+    },
+    {
+      "path": "/case/c04-unpostable-reply/__next._full.txt",
+      "bytes": 5206
+    },
+    {
+      "path": "/case/c04-unpostable-reply/__next._tree.txt",
+      "bytes": 498
+    },
+    {
+      "path": "/case/c04-unpostable-reply/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4354
+    },
+    {
+      "path": "/case/c04-unpostable-reply/index.txt",
+      "bytes": 5206
+    },
+    {
+      "path": "/case/c05-third-lamp/",
+      "bytes": 8322
+    },
+    {
+      "path": "/case/c05-third-lamp/__next._full.txt",
+      "bytes": 5188
+    },
+    {
+      "path": "/case/c05-third-lamp/__next._tree.txt",
+      "bytes": 492
+    },
+    {
+      "path": "/case/c05-third-lamp/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4348
+    },
+    {
+      "path": "/case/c05-third-lamp/index.txt",
+      "bytes": 5188
+    },
+    {
+      "path": "/case/c06-nonexistent-ticket/",
+      "bytes": 8346
+    },
+    {
+      "path": "/case/c06-nonexistent-ticket/__next._full.txt",
+      "bytes": 5212
+    },
+    {
+      "path": "/case/c06-nonexistent-ticket/__next._tree.txt",
+      "bytes": 500
+    },
+    {
+      "path": "/case/c06-nonexistent-ticket/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4356
+    },
+    {
+      "path": "/case/c06-nonexistent-ticket/index.txt",
+      "bytes": 5212
+    },
+    {
+      "path": "/case/c07-key-returns/",
+      "bytes": 8325
+    },
+    {
+      "path": "/case/c07-key-returns/__next._full.txt",
+      "bytes": 5191
+    },
+    {
+      "path": "/case/c07-key-returns/__next._tree.txt",
+      "bytes": 493
+    },
+    {
+      "path": "/case/c07-key-returns/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4349
+    },
+    {
+      "path": "/case/c07-key-returns/index.txt",
+      "bytes": 5191
+    },
+    {
+      "path": "/case/c08-unclaimed-recording/",
+      "bytes": 8349
+    },
+    {
+      "path": "/case/c08-unclaimed-recording/__next._full.txt",
+      "bytes": 5215
+    },
+    {
+      "path": "/case/c08-unclaimed-recording/__next._tree.txt",
+      "bytes": 501
+    },
+    {
+      "path": "/case/c08-unclaimed-recording/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4357
+    },
+    {
+      "path": "/case/c08-unclaimed-recording/index.txt",
+      "bytes": 5215
+    },
+    {
+      "path": "/case/c09-rain-room/",
+      "bytes": 8319
+    },
+    {
+      "path": "/case/c09-rain-room/__next._full.txt",
+      "bytes": 5185
+    },
+    {
+      "path": "/case/c09-rain-room/__next._tree.txt",
+      "bytes": 491
+    },
+    {
+      "path": "/case/c09-rain-room/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4347
+    },
+    {
+      "path": "/case/c09-rain-room/index.txt",
+      "bytes": 5185
+    },
+    {
+      "path": "/case/c10-single-ring/",
+      "bytes": 8325
+    },
+    {
+      "path": "/case/c10-single-ring/__next._full.txt",
+      "bytes": 5191
+    },
+    {
+      "path": "/case/c10-single-ring/__next._tree.txt",
+      "bytes": 493
+    },
+    {
+      "path": "/case/c10-single-ring/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4349
+    },
+    {
+      "path": "/case/c10-single-ring/index.txt",
+      "bytes": 5191
+    },
+    {
+      "path": "/case/c11-borrowed-signature/",
+      "bytes": 8346
+    },
+    {
+      "path": "/case/c11-borrowed-signature/__next._full.txt",
+      "bytes": 5212
+    },
+    {
+      "path": "/case/c11-borrowed-signature/__next._tree.txt",
+      "bytes": 500
+    },
+    {
+      "path": "/case/c11-borrowed-signature/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4356
+    },
+    {
+      "path": "/case/c11-borrowed-signature/index.txt",
+      "bytes": 5212
+    },
+    {
+      "path": "/case/c12-zero-floor-elevator/",
+      "bytes": 8349
+    },
+    {
+      "path": "/case/c12-zero-floor-elevator/__next._full.txt",
+      "bytes": 5215
+    },
+    {
+      "path": "/case/c12-zero-floor-elevator/__next._tree.txt",
+      "bytes": 501
+    },
+    {
+      "path": "/case/c12-zero-floor-elevator/__next.case/$d$caseId/__PAGE__.txt",
+      "bytes": 4357
+    },
+    {
+      "path": "/case/c12-zero-floor-elevator/index.txt",
+      "bytes": 5215
+    },
+    {
+      "path": "/icon-192.png",
+      "bytes": 8265
+    },
+    {
+      "path": "/icon-512.png",
+      "bytes": 26681
+    },
+    {
+      "path": "/icon.svg",
+      "bytes": 619
+    },
+    {
+      "path": "/index.txt",
+      "bytes": 4249
+    },
+    {
+      "path": "/manifest.webmanifest",
+      "bytes": 879
+    },
+    {
+      "path": "/scene-borrowed-signature.svg",
+      "bytes": 1477
+    },
+    {
+      "path": "/scene-cold-room.svg",
+      "bytes": 2499
+    },
+    {
+      "path": "/scene-key-returns.svg",
+      "bytes": 1245
+    },
+    {
+      "path": "/scene-nonexistent-ticket.svg",
+      "bytes": 1430
+    },
+    {
+      "path": "/scene-rain-room.svg",
+      "bytes": 1868
+    },
+    {
+      "path": "/scene-second-shadow.svg",
+      "bytes": 1774
+    },
+    {
+      "path": "/scene-single-ring.svg",
+      "bytes": 1565
+    },
+    {
+      "path": "/scene-snow-route.svg",
+      "bytes": 2228
+    },
+    {
+      "path": "/scene-third-lamp.svg",
+      "bytes": 1460
+    },
+    {
+      "path": "/scene-unclaimed-recording.svg",
+      "bytes": 1280
+    },
+    {
+      "path": "/scene-unpostable-reply.svg",
+      "bytes": 1566
+    },
+    {
+      "path": "/scene-zero-floor-elevator.svg",
+      "bytes": 1487
+    }
+  ],
+  "passed": true
+}

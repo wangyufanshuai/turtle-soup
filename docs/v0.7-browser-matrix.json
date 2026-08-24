@@ -1,0 +1,55 @@
+{
+  "reportVersion": "0.7",
+  "generatedAt": "2026-08-23T03:42:00.000Z",
+  "mode": "real-browser-release-candidate-audit",
+  "browser": "Chromium via Playwright CLI",
+  "productionOrigin": "http://127.0.0.1:4173",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "cases": 12,
+  "viewports": [
+    "1440x900",
+    "1280x800",
+    "390x844"
+  ],
+  "routeViewportRuns": {
+    "passed": 36,
+    "total": 36,
+    "horizontalOverflowFailures": 0,
+    "startupBlockers": 0,
+    "maxLocalDomContentLoadedMs": 23
+  },
+  "contentSurface": {
+    "firstRunGuidance": "12/12",
+    "caseSpecificQuestionPrompts": "12/12 unique",
+    "earlyWrongTheoryGapFeedback": "12/12",
+    "stateScreenshots": "60/60",
+    "responsiveScreenshots": "24/24",
+    "screenshotIntegrity": "passed"
+  },
+  "interactionChecks": {
+    "c02RealTouchNavigation": "passed; 130x53 px target",
+    "c01SettingsKeyboardTrapEscapeReturn": "passed",
+    "c02SettingsKeyboardTrapEscapeReturn": "passed",
+    "settingsPersistence": "mute, reduced motion and high contrast persisted after refresh",
+    "c03LowConfidenceQuestion": "ambiguous fail-closed; two candidate interpretations; transcript unchanged",
+    "c02EvidenceLifecycle": "examined, verified and linked states reached",
+    "c02TheoryEditing": "two events added, reordered and one removed",
+    "c02ProofReplaySources": "5/5 beats display evidence sources"
+  },
+  "pwaAndSaveChecks": {
+    "serviceWorker": "activated and controlling",
+    "cache": "black-soup-v07-rc2",
+    "offlineReload": "passed on C02",
+    "indexedDbRefreshRecovery": "question and evidence/proof-link state restored",
+    "incompatibleContentHash": "rejected with explicit player-facing notice"
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "openP0": 0,
+  "openP1": 0,
+  "passed": true,
+  "qualification": "This proves browser operability and deterministic fairness only. Human comprehension, fun, pacing and market appeal remain pending."
+}

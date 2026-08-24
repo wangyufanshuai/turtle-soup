@@ -1,0 +1,21 @@
+{
+  "reportVersion": "1.0",
+  "generatedAt": "2026-08-23T07:53:40.649Z",
+  "releaseProfile": "v1.0-internal-rc",
+  "status": "internal-rc",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "caseCount": 24,
+  "artifact": {
+    "path": "dist/v1.0-internal-rc-web-pwa",
+    "files": 213,
+    "bytes": 2517703,
+    "sha256": "3126cdc7c790c90e8b1ba47966ecf5f9316b657e8fc52d8692600b35430e0fa8",
+    "archive": {
+      "path": "dist/turtle-soup-v1.0-internal-rc-web-pwa.zip",
+      "bytes": 784425,
+      "sha256": "83e2ee8e477ce9103735ea3d8eb0011ae6b72e257a286c7e009a2ef98cf7322b"
+    }
+  },
+  "passed": true
+}

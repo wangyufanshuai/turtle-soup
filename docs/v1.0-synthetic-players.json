@@ -1,0 +1,851 @@
+{
+  "reportVersion": "1.0",
+  "generatedAt": "2026-08-23T08:01:41.580Z",
+  "mode": "deterministic-synthetic-players",
+  "humanParticipants": 0,
+  "humanFunGate": "pending",
+  "qualification": "Synthetic personas test recovery and protocol safety, not human fun or comprehension.",
+  "personaDefinitions": {
+    "beginner": "uses the first scaffold",
+    "colloquial": "adds conversational wrapping",
+    "early-guess": "submits an authored alternative before recovery",
+    "evidence-first": "inspects all evidence first",
+    "counterfactual": "requests the answer and expects fail-closed",
+    "minimalist": "starts from one evidence",
+    "shuffled": "inspects evidence in reverse order",
+    "ambiguity-recovery": "confirms an intentionally ambiguous query"
+  },
+  "caseCount": 12,
+  "runCount": 96,
+  "results": [
+    {
+      "caseId": "c13-second-waterline",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "personas": [
+        {
+          "persona": "beginner",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "colloquial",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "early-guess",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "evidence-first",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "counterfactual",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "minimalist",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "shuffled",
+          "recoverySignal": true,
+          "expectedRejected": false,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        },
+        {
+          "persona": "ambiguity-recovery",
+          "recoverySignal": true,
+          "expectedRejected": true,
+          "solved": true,
+          "leaks": [],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

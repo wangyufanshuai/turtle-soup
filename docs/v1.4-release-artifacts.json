@@ -1,0 +1,43 @@
+{
+  "reportVersion": "1.4",
+  "releaseProfile": "v1.4-internal-rc",
+  "generatedAt": "2026-08-24T01:08:14.262Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "artifact": {
+    "directory": "dist/v1.4-internal-rc-web-pwa",
+    "bytes": 6256042,
+    "files": 855,
+    "sha256": "429c7b183bf0d66dc38ba3fd50e5c04b9f314a5823aaf9f2481e24123a658055",
+    "archive": {
+      "path": "dist/turtle-soup-v1.4-internal-rc-web-pwa.zip",
+      "bytes": 2872626,
+      "sha256": "b3db663a997b71744462b854b2ab45489447b627cda7cec9f524e25c335d8efb"
+    }
+  },
+  "preservedArtifacts": [
+    "dist/turtle-soup-v1.0-internal-rc-web-pwa.zip",
+    "dist/turtle-soup-v1.1-internal-rc-web-pwa.zip",
+    "dist/turtle-soup-v1.2-internal-rc-web-pwa.zip",
+    "dist/turtle-soup-v1.3-public-preview-web-pwa.zip"
+  ],
+  "preservedArtifactsPresent": [
+    {
+      "path": "dist/turtle-soup-v1.0-internal-rc-web-pwa.zip",
+      "exists": true
+    },
+    {
+      "path": "dist/turtle-soup-v1.1-internal-rc-web-pwa.zip",
+      "exists": true
+    },
+    {
+      "path": "dist/turtle-soup-v1.2-internal-rc-web-pwa.zip",
+      "exists": true
+    },
+    {
+      "path": "dist/turtle-soup-v1.3-public-preview-web-pwa.zip",
+      "exists": true
+    }
+  ],
+  "passed": true
+}

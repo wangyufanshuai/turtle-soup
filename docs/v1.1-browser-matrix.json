@@ -1,0 +1,883 @@
+{
+  "reportVersion": "1.1",
+  "generatedAt": "2026-08-23T10:02:12.926Z",
+  "releaseProfile": "v1.1-internal-rc",
+  "humanParticipants": 0,
+  "cases": 36,
+  "desktop": [
+    {
+      "name": "chromium",
+      "links": 36,
+      "seasons": 3,
+      "seriousAxe": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "unknownFailedClosed": true,
+      "cases": [
+        {
+          "id": "c01-cold-room-knock",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c02-snow-route",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c03-second-shadow",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c04-unpostable-reply",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c05-third-lamp",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c06-nonexistent-ticket",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c07-key-returns",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c08-unclaimed-recording",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c09-rain-room",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c10-single-ring",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c11-borrowed-signature",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c12-zero-floor-elevator",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c13-second-waterline",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c14-moving-red-box",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c15-sixth-panorama",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c16-closed-door-handoff",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c17-twelve-strikes",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c18-lighter-sealed-crate",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c19-fog-after-window",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c20-fifth-worker",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c21-missing-seven-minutes",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c22-overloaded-bridge",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c23-clean-air-sample",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c24-turned-painting",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c25-silent-second-bell",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c26-short-map-pipeline",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c27-stationary-moving-platform",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c28-ninth-minute-temperature",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c29-role-stamp-signature",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c30-shared-shift-id",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c32-approved-unauthorized-door",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c33-early-late-arrival",
+          "status": 200,
+          "boardCount": 3,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c34-tomorrow-seal",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c35-extra-glass-attendant",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c36-no-one-left-terminal",
+          "status": 200,
+          "boardCount": 3,
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "firefox",
+      "links": 36,
+      "seasons": 3,
+      "seriousAxe": [],
+      "consoleErrors": [],
+      "unknownFailedClosed": true,
+      "cases": [
+        {
+          "id": "c01-cold-room-knock",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c02-snow-route",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c03-second-shadow",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c04-unpostable-reply",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c05-third-lamp",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c06-nonexistent-ticket",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c07-key-returns",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c08-unclaimed-recording",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c09-rain-room",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c10-single-ring",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c11-borrowed-signature",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c12-zero-floor-elevator",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c13-second-waterline",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c14-moving-red-box",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c15-sixth-panorama",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c16-closed-door-handoff",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c17-twelve-strikes",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c18-lighter-sealed-crate",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c19-fog-after-window",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c20-fifth-worker",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c21-missing-seven-minutes",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c22-overloaded-bridge",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c23-clean-air-sample",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c24-turned-painting",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c25-silent-second-bell",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c26-short-map-pipeline",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c27-stationary-moving-platform",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c28-ninth-minute-temperature",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c29-role-stamp-signature",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c30-shared-shift-id",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c32-approved-unauthorized-door",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c33-early-late-arrival",
+          "status": 200,
+          "boardCount": 3,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c34-tomorrow-seal",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c35-extra-glass-attendant",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c36-no-one-left-terminal",
+          "status": 200,
+          "boardCount": 3,
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "webkit",
+      "links": 36,
+      "seasons": 3,
+      "seriousAxe": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "unknownFailedClosed": true,
+      "cases": [
+        {
+          "id": "c01-cold-room-knock",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c02-snow-route",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c03-second-shadow",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c04-unpostable-reply",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c05-third-lamp",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c06-nonexistent-ticket",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c07-key-returns",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c08-unclaimed-recording",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c09-rain-room",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c10-single-ring",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c11-borrowed-signature",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c12-zero-floor-elevator",
+          "status": 200,
+          "boardCount": 0,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c13-second-waterline",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c14-moving-red-box",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c15-sixth-panorama",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c16-closed-door-handoff",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c17-twelve-strikes",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c18-lighter-sealed-crate",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c19-fog-after-window",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c20-fifth-worker",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c21-missing-seven-minutes",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c22-overloaded-bridge",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c23-clean-air-sample",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c24-turned-painting",
+          "status": 200,
+          "boardCount": 1,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c25-silent-second-bell",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c26-short-map-pipeline",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c27-stationary-moving-platform",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c28-ninth-minute-temperature",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c29-role-stamp-signature",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c30-shared-shift-id",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c32-approved-unauthorized-door",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c33-early-late-arrival",
+          "status": 200,
+          "boardCount": 3,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c34-tomorrow-seal",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c35-extra-glass-attendant",
+          "status": 200,
+          "boardCount": 2,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "id": "c36-no-one-left-terminal",
+          "status": 200,
+          "boardCount": 3,
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "mobile": {
+    "viewport": "390x844",
+    "cases": [
+      {
+        "id": "c25-silent-second-bell",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c26-short-map-pipeline",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c27-stationary-moving-platform",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c28-ninth-minute-temperature",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c29-role-stamp-signature",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c30-shared-shift-id",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c31-eighth-unchecked-guest",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c32-approved-unauthorized-door",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c33-early-late-arrival",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c34-tomorrow-seal",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c35-extra-glass-attendant",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "id": "c36-no-one-left-terminal",
+        "boardVisible": true,
+        "overflow": 0,
+        "passed": true
+      }
+    ],
+    "offlineReady": true,
+    "passed": true
+  },
+  "screenshots": 2,
+  "passed": true
+}

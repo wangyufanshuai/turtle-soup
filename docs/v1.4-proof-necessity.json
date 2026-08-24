@@ -1,0 +1,5534 @@
+{
+  "reportVersion": "1.4",
+  "generatedAt": "2026-08-24T01:05:42.929Z",
+  "releaseProfile": "v1.4-internal-rc",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "cases": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c01-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-cctv-exit",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-door-latch",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-metal-tray-mark",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-knock-recording",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-access-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-phone-in-room",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-phone-pairing",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-sample-locker",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-intent-chain",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c01-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c01-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringExcludedFromSets": false,
+      "redHerringDeletionExecuted": false,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": true,
+      "passed": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c02-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-gate-camera",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-door-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-weather-report",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-cart-track",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-clearance-mat",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-clearance-report",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-radio-home",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c02-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c02-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringId": "evidence-parcel-slip",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c03-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-witness-statement",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-lighting-cue",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-costume-rack",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-shadow-screen",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-call-sheet",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-access-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-cast-list",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-radio-backstage",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c03-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c03-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringId": "evidence-prop-receipt",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c04-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-letter",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-writing-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-clock-audit",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-test-envelope",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-bag-seal",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-cctv",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-audit",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-dispatch-note",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c04-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c04-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringId": "evidence-postcard",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c05-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-breaker",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-witness",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-lamp",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-reflector",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-beacon",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-circuit-map",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-access",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-window",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c05-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c05-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringId": "evidence-battery-receipt",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c06-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-gate-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-camera",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-terminal",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-departure",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-manifest",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-audit",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-radio",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-signage",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c06-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c06-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringId": "evidence-umbrella",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c07-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-key-photo",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-lock-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-maintenance-sheet",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-magnet-mark",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-cable-test",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-lock-camera",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-slot",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c07-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c07-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringId": "evidence-spare-key",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c08-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-waveform",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-session-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-door-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-memory-card",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-device",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-console",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-room-seal",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c08-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c08-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringId": "evidence-old-interview",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c09-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-weather",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-door-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-gutter",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-pipe-camera",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-drip-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-floor",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-roof-check",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-maintenance",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c09-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c09-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringId": "evidence-umbrella",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c10-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-line-status",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-maintenance",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-voicemail",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-ring-sensor",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-pbx-trace",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-call-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-port-map",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c10-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c10-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringId": "evidence-fax",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c11-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-blank-form",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-stamp",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-impression",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-carbon",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-entry-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-seal-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-audit",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c11-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c11-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringId": "evidence-coffee",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c12-minimum",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-building-plan",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-maintenance",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-controller",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-floor-log",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-motion-sensor",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-door-sensor",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-camera",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c12-minimum-forward",
+          "distinctCertificate": false,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c12-minimum-reverse",
+          "distinctCertificate": false,
+          "evidenceOrder": "reverse",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 1,
+      "frozenSingleCertificateCompatibility": true,
+      "redHerringId": "evidence-cart",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c13-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c13-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c13-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c13-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c13-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c13-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c13-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c13-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c14-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c14-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c14-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c14-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c14-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c14-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c14-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c14-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c15-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c15-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c15-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c15-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c15-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c15-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c15-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c15-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c16-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c16-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c16-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c16-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c16-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c16-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c16-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c16-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c17-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c17-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c17-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c17-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c17-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c17-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c17-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c17-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c18-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c18-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c18-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c18-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c18-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c18-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c18-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c18-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c19-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c19-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c19-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c19-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c19-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c19-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c19-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c19-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c20-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c20-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c20-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c20-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c20-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c20-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c20-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c20-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c21-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c21-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-10",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c21-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c21-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c21-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c21-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c21-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c21-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c22-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c22-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-10",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c22-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c22-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c22-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c22-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c22-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c22-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c23-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c23-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-10",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c23-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c23-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c23-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c23-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c23-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c23-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c24-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c24-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-10",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c24-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c24-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c24-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c24-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c24-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c24-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c25-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c25-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c25-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c25-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c25-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c25-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c25-06",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c25-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c25-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c25-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c25-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c25-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c25-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c25-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c25-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c25-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c26-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c26-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c26-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c26-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c26-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c26-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c26-06",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c26-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c26-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c26-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c26-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c26-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c26-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c26-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c26-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c26-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c27-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c27-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c27-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c27-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c27-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c27-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c27-06",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c27-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c27-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c27-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c27-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c27-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c27-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c27-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c27-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c27-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c28-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c28-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c28-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c28-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c28-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c28-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c28-06",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c28-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c28-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c28-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c28-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c28-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c28-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c28-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c28-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c28-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c29-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c29-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c29-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c29-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c29-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c29-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c29-06",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c29-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c29-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c29-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c29-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c29-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c29-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c29-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c29-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c29-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c30-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c30-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c30-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c30-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c30-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c30-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c30-06",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c30-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c30-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c30-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c30-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c30-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c30-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c30-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c30-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c30-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c31-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c31-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c31-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c31-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c31-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c31-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c31-06",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c31-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c31-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c31-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c31-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c31-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c31-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c31-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c31-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c31-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c32-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c32-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c32-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c32-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c32-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c32-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c32-06",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c32-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c32-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c32-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c32-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c32-08",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c32-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c32-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c32-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c32-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c33-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c33-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c33-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c33-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c33-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c33-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c33-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c33-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c33-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c33-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c33-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c33-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c33-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c33-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c33-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c33-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c33-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c33-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c34-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c34-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c34-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c34-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c34-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c34-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c34-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c34-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c34-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c34-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c34-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c34-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c34-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c34-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c34-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c34-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c34-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c34-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c35-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c35-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c35-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c35-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c35-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c35-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c35-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c35-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c35-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c35-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c35-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c35-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c35-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c35-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c35-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c35-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c35-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c35-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c36-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c36-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c36-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c36-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-12",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c36-13",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c36-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c36-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c36-14",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c37-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c37-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c37-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c37-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c37-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c37-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c37-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c37-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c37-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c37-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c37-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c37-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c37-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c37-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c37-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c37-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c37-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c37-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c38-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c38-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c38-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c38-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c38-12",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c38-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c38-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c38-13",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c39-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c39-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c39-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c39-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-12",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c39-13",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c39-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c39-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c39-14",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c40-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c40-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c40-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c40-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c40-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c40-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c40-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c40-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c40-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c40-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c40-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c40-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c40-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c40-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c40-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c40-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c41-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c41-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c41-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c41-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c41-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c41-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c41-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c41-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c41-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c41-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c41-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c41-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c41-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c41-10",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c41-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c41-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c41-11",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c42-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c42-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c42-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c42-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c42-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c42-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c42-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c42-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c42-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c42-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c42-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c42-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c42-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c42-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c42-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c42-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c42-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c42-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c43-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c43-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c43-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c43-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c43-12",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c43-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c43-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c43-13",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c44-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c44-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c44-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c44-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-12",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c44-13",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c44-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c44-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c44-14",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c45-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c45-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c45-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c45-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c45-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c45-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c45-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c45-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c45-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c45-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c45-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c45-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c45-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c45-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c45-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c45-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c46-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c46-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c46-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c46-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c46-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c46-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c46-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c46-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c46-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c46-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c46-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c46-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c46-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c46-10",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c46-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c46-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c46-11",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c47-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c47-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c47-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c47-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c47-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c47-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c47-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c47-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c47-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c47-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c47-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c47-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c47-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c47-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c47-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c47-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c47-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c47-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c48-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c48-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c48-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c48-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c48-12",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c48-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c48-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c48-13",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c49-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c49-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c49-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c49-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-12",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c49-13",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c49-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c49-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c49-14",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c50-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c50-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c50-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c50-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c50-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c50-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c50-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c50-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c50-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c50-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c50-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c50-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c50-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c50-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c50-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c50-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c51-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c51-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c51-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c51-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c51-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c51-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c51-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c51-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c51-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c51-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c51-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c51-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c51-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c51-10",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c51-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c51-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c51-11",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c52-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c52-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c52-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c52-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c52-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c52-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c52-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c52-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c52-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c52-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c52-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c52-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c52-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c52-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c52-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c52-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c52-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c52-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c53-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c53-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c53-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c53-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c53-12",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c53-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c53-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c53-13",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c54-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c54-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c54-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c54-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-12",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c54-13",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c54-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c54-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c54-14",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c55-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c55-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c55-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c55-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c55-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c55-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c55-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c55-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c55-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c55-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c55-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c55-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c55-09",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c55-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c55-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c55-10",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c56-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c56-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c56-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c56-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c56-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c56-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c56-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c56-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c56-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c56-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c56-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c56-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c56-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c56-10",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c56-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c56-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c56-11",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c57-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c57-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c57-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c57-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c57-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c57-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c57-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c57-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c57-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c57-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c57-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c57-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c57-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c57-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c57-11",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c57-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c57-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c57-12",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c58-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c58-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c58-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c58-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c58-12",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c58-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c58-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c58-13",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c59-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c59-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c59-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c59-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-12",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c59-13",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c59-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c59-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c59-14",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "proofSets": [
+        {
+          "proofSetId": "proof-c60-a",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c60-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-03",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-04",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-05",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-06",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-07",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-08",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        },
+        {
+          "proofSetId": "proof-c60-b",
+          "solved": true,
+          "mutationResults": [
+            {
+              "evidenceId": "evidence-c60-01",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-02",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-09",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-10",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-11",
+              "solvedAfterRemoval": false
+            },
+            {
+              "evidenceId": "evidence-c60-12",
+              "solvedAfterRemoval": false
+            }
+          ],
+          "allRemovalsFail": true
+        }
+      ],
+      "proofExecutions": [
+        {
+          "id": "proof-c60-a",
+          "distinctCertificate": true,
+          "evidenceOrder": "forward",
+          "solved": true
+        },
+        {
+          "id": "proof-c60-b",
+          "distinctCertificate": true,
+          "evidenceOrder": "authored-alternative",
+          "solved": true
+        }
+      ],
+      "expectedExecutionPathCount": 2,
+      "actualExecutionPathCount": 2,
+      "authoredProofSetCount": 2,
+      "frozenSingleCertificateCompatibility": false,
+      "redHerringId": "evidence-c60-13",
+      "redHerringExcludedFromSets": true,
+      "redHerringDeletionExecuted": true,
+      "solvedAfterRedHerringDeletion": true,
+      "noRedHerringInFrozenCase": false,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "qualification": "Proof mutation tests establish a deterministic necessity lower bound; frozen baseline exceptions are explicitly recorded."
+}
