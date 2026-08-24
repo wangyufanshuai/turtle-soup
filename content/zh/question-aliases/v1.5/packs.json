@@ -1,0 +1,254 @@
+[
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c01-cold-room-knock",
+    "baseCanonicalHash": "sha256:c01-cold-room-knock-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "屋里当时有人没？", "queryId": "query-person-inside", "category": "colloquial" },
+      { "text": "那三下是人敲的？", "queryId": "query-knock-source", "category": "ellipsis" },
+      { "text": "这门关上会自己锁？", "queryId": "query-door-mechanism", "category": "colloquial" },
+      { "text": "里边是不是留了手机？", "queryId": "query-phone-inside", "category": "colloquial" },
+      { "text": "那手机是他的？", "queryId": "query-lin-ownership", "category": "pronoun" },
+      { "text": "样夲最后在哪？", "queryId": "query-sample-location", "category": "typo" },
+      { "text": "林澈图什么？", "queryId": "query-lin-motive", "category": "ellipsis" },
+      { "text": "锁门以后方砚进去过？", "queryId": "query-fang-entered", "category": "time-qualifier" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "里面是人还是手机弄响的？", "candidateQueryIds": ["query-person-inside", "query-phone-inside", "query-knock-source"] },
+      { "text": "不是有人进去又把门锁上的吗？", "candidateQueryIds": ["query-person-inside", "query-fang-entered", "query-door-mechanism"] }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c02-snow-route",
+    "baseCanonicalHash": "sha256:c02-snow-route-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "顾遥早就走了？", "queryId": "query-gu-left", "category": "colloquial" },
+      { "text": "门一开就等于她刚到？", "queryId": "query-door-arrival", "category": "colloquial" },
+      { "text": "雪几点开始的？", "queryId": "query-snow-start", "category": "ellipsis" },
+      { "text": "她是步行回去的？", "queryId": "query-person-walked", "category": "pronoun" },
+      { "text": "那辆维护车动过？", "queryId": "query-cart-used", "category": "pronoun" },
+      { "text": "后来清过雪？", "queryId": "query-tracks-erased", "category": "time-qualifier" },
+      { "text": "有秘蜜通道？", "queryId": "query-secret-passage", "category": "typo" },
+      { "text": "脚印是之后被弄没的？", "queryId": "query-tracks-erased", "category": "time-qualifier" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "她是坐车还是从暗道回去的？", "candidateQueryIds": ["query-cart-used", "query-secret-passage"] },
+      { "text": "她没走过为什么门又开了？", "candidateQueryIds": ["query-person-walked", "query-door-arrival"] }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c03-second-shadow",
+    "baseCanonicalHash": "sha256:c03-second-shadow-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "看到角色就等于看到罗弈？", "queryId": "query-role-person", "category": "colloquial" },
+      { "text": "现场真有俩人？", "queryId": "query-two-people", "category": "colloquial" },
+      { "text": "另一个影子是灯打出来的？", "queryId": "query-lighting-source", "category": "ellipsis" },
+      { "text": "那会儿罗弈在哪？", "queryId": "query-actor-present", "category": "time-qualifier" },
+      { "text": "穿那件披风的就是他？", "queryId": "query-coat-owner", "category": "pronoun" },
+      { "text": "交班表能证名人在场？", "queryId": "query-call-sheet", "category": "typo" },
+      { "text": "颜希会演红王子？", "queryId": "query-understudy-role", "category": "ellipsis" },
+      { "text": "后台还有没登记的人？", "queryId": "query-unregistered", "category": "colloquial" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "第二个影子到底是第二个人还是灯光？", "candidateQueryIds": ["query-two-people", "query-lighting-source"] },
+      { "text": "披风和签名都能证明是罗弈吗？", "candidateQueryIds": ["query-coat-owner", "query-call-sheet", "query-role-person"] }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c04-unpostable-reply",
+    "baseCanonicalHash": "sha256:c04-unpostable-reply-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "信先写好才盖戳？", "queryId": "query-written-before", "category": "colloquial" },
+      { "text": "邮戳机日期调错了？", "queryId": "query-clock-wrong", "category": "ellipsis" },
+      { "text": "这是拿空信封试机？", "queryId": "query-test-envelope", "category": "colloquial" },
+      { "text": "那封信出过邮局没有？", "queryId": "query-left-room", "category": "pronoun" },
+      { "text": "封袋之后又开过？", "queryId": "query-bag-opened", "category": "time-qualifier" },
+      { "text": "戳上的日其真是明天？", "queryId": "query-postmark-future", "category": "typo" },
+      { "text": "信真是周妍写的？", "queryId": "query-forged-letter", "category": "ellipsis" },
+      { "text": "封条后来还完整？", "queryId": "query-seal-intact", "category": "time-qualifier" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "是机器日期错了还是有人伪造信？", "candidateQueryIds": ["query-clock-wrong", "query-forged-letter"] },
+      { "text": "邮袋没开又没寄出，对吗？", "candidateQueryIds": ["query-bag-opened", "query-left-room"] }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c05-third-lamp",
+    "baseCanonicalHash": "sha256:c05-third-lamp-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "当时真断电了？", "queryId": "query-power-cut", "category": "time-qualifier" },
+      { "text": "第三盏其实是反光？", "queryId": "query-reflection", "category": "colloquial" },
+      { "text": "真接了三路电？", "queryId": "query-real-circuit", "category": "ellipsis" },
+      { "text": "应急灯靠电池亮？", "queryId": "query-lamp-source", "category": "colloquial" },
+      { "text": "外头有灯照进来？", "queryId": "query-beacon", "category": "colloquial" },
+      { "text": "停电那会有人进去？", "queryId": "query-intruder", "category": "time-qualifier" },
+      { "text": "她从走朗看到的？", "queryId": "query-witness-angle", "category": "typo" },
+      { "text": "实际光源就两个？", "queryId": "query-two-sources", "category": "ellipsis" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "第三盏是反光还是外面的灯？", "candidateQueryIds": ["query-reflection", "query-beacon"] },
+      { "text": "既停电又有人进来了吗？", "candidateQueryIds": ["query-power-cut", "query-intruder"] }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c06-nonexistent-ticket",
+    "baseCanonicalHash": "sha256:c06-nonexistent-ticket-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "扫描其实发生在离港前？", "queryId": "query-left-before", "category": "time-qualifier" },
+      { "text": "23点52是显示时间？", "queryId": "query-sync-time", "category": "ellipsis" },
+      { "text": "它算普通乘客票？", "queryId": "query-passenger-ticket", "category": "colloquial" },
+      { "text": "闸机那会掉线了？", "queryId": "query-terminal-offline", "category": "colloquial" },
+      { "text": "23点50船已经走了？", "queryId": "query-ferry-departed", "category": "time-qualifier" },
+      { "text": "开船以后还有人登船？", "queryId": "query-late-boarding", "category": "time-qualifier" },
+      { "text": "沈洛实际几点过闸？", "queryId": "query-courier", "category": "ellipsis" },
+      { "text": "机器确实读到票了？", "queryId": "query-ticket-real", "category": "colloquial" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "记录是延迟同步还是有人晚登船？", "candidateQueryIds": ["query-sync-time", "query-late-boarding"] },
+      { "text": "闸机断网但真的读到票了吗？", "candidateQueryIds": ["query-terminal-offline", "query-ticket-real"] }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c07-key-returns",
+    "baseCanonicalHash": "sha256:c07-key-returns-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "钥匙被拉出去了？", "queryId": "query-key-moved", "category": "colloquial" },
+      { "text": "有人打开过柜子？", "queryId": "query-entry", "category": "ellipsis" },
+      { "text": "缆线连着它？", "queryId": "query-cable", "category": "pronoun" },
+      { "text": "是配重把它拽回来的？", "queryId": "query-counterweight", "category": "pronoun" },
+      { "text": "回来的是备用钥匙？", "queryId": "query-duplicate", "category": "ellipsis" },
+      { "text": "柜子有小孔能穿线？", "queryId": "query-slot", "category": "colloquial" },
+      { "text": "监控时问准不准？", "queryId": "query-camera-time", "category": "typo" },
+      { "text": "后来钥匙自己归位？", "queryId": "query-counterweight", "category": "time-qualifier" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "是缆线还是配重把钥匙拉回去的？", "candidateQueryIds": ["query-cable", "query-counterweight"] },
+      { "text": "没人进柜子但钥匙被换了？", "candidateQueryIds": ["query-entry", "query-duplicate"] }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c08-unclaimed-recording",
+    "baseCanonicalHash": "sha256:c08-unclaimed-recording-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "声音早就录好了？", "queryId": "query-recorded-before", "category": "colloquial" },
+      { "text": "听见时屋里是空的？", "queryId": "query-room-empty", "category": "time-qualifier" },
+      { "text": "文件后来才从缓存写进去？", "queryId": "query-buffer", "category": "time-qualifier" },
+      { "text": "设备之后断电了？", "queryId": "query-device-dead", "category": "time-qualifier" },
+      { "text": "真正播放是在八点后？", "queryId": "query-heard-time", "category": "ellipsis" },
+      { "text": "有人折返回来录音？", "queryId": "query-ghost", "category": "typo" },
+      { "text": "文件头分得清录制和写入？", "queryId": "query-file-header", "category": "colloquial" },
+      { "text": "旧采访跟这次有关？", "queryId": "query-old-audio", "category": "pronoun" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "声音是提前录的还是有人回来录的？", "candidateQueryIds": ["query-recorded-before", "query-ghost"] },
+      { "text": "设备没电但缓存又写入了吗？", "candidateQueryIds": ["query-device-dead", "query-buffer"] }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c09-rain-room",
+    "baseCanonicalHash": "sha256:c09-rain-room-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "滴水之前真下雨了？", "queryId": "query-rain-source", "category": "time-qualifier" },
+      { "text": "十点雨就停了？", "queryId": "query-rain-stopped", "category": "time-qualifier" },
+      { "text": "滴水那会屋里有人？", "queryId": "query-room-empty", "category": "time-qualifier" },
+      { "text": "是停雨之后才滴的？", "queryId": "query-drip-time", "category": "colloquial" },
+      { "text": "天沟里存着雨水？", "queryId": "query-reservoir", "category": "ellipsis" },
+      { "text": "水在管子里晚到？", "queryId": "query-pipe", "category": "colloquial" },
+      { "text": "屋顶后来还漏水？", "queryId": "query-roof-leak", "category": "time-qualifier" },
+      { "text": "是不是湿伞在滴？", "queryId": "query-umbrella", "category": "pronoun" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "水来自屋顶积水还是湿伞？", "candidateQueryIds": ["query-reservoir", "query-umbrella"] },
+      { "text": "雨停了为什么屋顶和管道还在滴？", "candidateQueryIds": ["query-rain-stopped", "query-roof-leak", "query-pipe"] }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c10-single-ring",
+    "baseCanonicalHash": "sha256:c10-single-ring-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "响之前线就断了？", "queryId": "query-line-state", "category": "time-qualifier" },
+      { "text": "电话几点响的？", "queryId": "query-ring-time", "category": "ellipsis" },
+      { "text": "真有外面电话打进来？", "queryId": "query-external-call", "category": "colloquial" },
+      { "text": "留言先在队列里？", "queryId": "query-voicemail", "category": "time-qualifier" },
+      { "text": "是系统自己回放的？", "queryId": "query-replay", "category": "pronoun" },
+      { "text": "声音从手柄里出来？", "queryId": "query-endpoint", "category": "colloquial" },
+      { "text": "后来有人把线接回去？", "queryId": "query-reconnect", "category": "time-qualifier" },
+      { "text": "传真噪声被当成铃声？", "queryId": "query-fax", "category": "ellipsis" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "铃声是外部来电还是系统回放？", "candidateQueryIds": ["query-external-call", "query-replay"] },
+      { "text": "线断了又被重新接上吗？", "candidateQueryIds": ["query-line-state", "query-reconnect"] }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c11-borrowed-signature",
+    "baseCanonicalHash": "sha256:c11-borrowed-signature-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "魏宁九点二十才来？", "queryId": "query-signer-time", "category": "time-qualifier" },
+      { "text": "那个签名其实是章？", "queryId": "query-signature-source", "category": "pronoun" },
+      { "text": "复写纸能看出是盖的？", "queryId": "query-carbon", "category": "colloquial" },
+      { "text": "合同几点封存的？", "queryId": "query-seal-time", "category": "ellipsis" },
+      { "text": "这真是他本人签的？", "queryId": "query-hand-signature", "category": "pronoun" },
+      { "text": "签名出现前他到了？", "queryId": "query-before-arrival", "category": "time-qualifier" },
+      { "text": "章之后还回去了？", "queryId": "query-stamp-return", "category": "time-qualifier" },
+      { "text": "咖啡印跟异常有关？", "queryId": "query-coffee", "category": "ellipsis" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "签名是他亲手写的还是印章盖的？", "candidateQueryIds": ["query-hand-signature", "query-signature-source"] },
+      { "text": "他到场和合同封存是同一时间吗？", "candidateQueryIds": ["query-signer-time", "query-seal-time"] }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.5-internal-rc",
+    "caseId": "c12-zero-floor-elevator",
+    "baseCanonicalHash": "sha256:c12-zero-floor-elevator-v1",
+    "revision": 1,
+    "aliases": [
+      { "text": "楼里真有零楼？", "queryId": "query-floor-zero", "category": "colloquial" },
+      { "text": "屏幕确实跳到0？", "queryId": "query-display-zero", "category": "ellipsis" },
+      { "text": "轿厢真的去了零层？", "queryId": "query-cabin-motion", "category": "colloquial" },
+      { "text": "当时开着检修模式？", "queryId": "query-service-mode", "category": "time-qualifier" },
+      { "text": "0只是系统里的编号？", "queryId": "query-virtual-index", "category": "colloquial" },
+      { "text": "门最后在负一层开？", "queryId": "query-door-floor", "category": "time-qualifier" },
+      { "text": "真有人去了不存在的那层？", "queryId": "query-passenger", "category": "pronoun" },
+      { "text": "送货车影响显视？", "queryId": "query-cart", "category": "typo" }
+    ],
+    "ambiguousPhrases": [
+      { "text": "0是楼层还是控制器编号？", "candidateQueryIds": ["query-floor-zero", "query-virtual-index"] },
+      { "text": "屏幕显示0但轿厢真的移动了吗？", "candidateQueryIds": ["query-display-zero", "query-cabin-motion"] }
+    ]
+  }
+]

@@ -7,6 +7,7 @@ import {
   replayCommands,
   validateCompatibleSave,
   applyPresentationPatch,
+  applyQuestionAliasPack,
   type CaseFile,
   type CaseId,
   type GameCommand,
@@ -15,6 +16,7 @@ import {
 } from "@turtle-soup/mystery-core";
 import { loadCaseFile } from "../.generated/worker-case-registry";
 import { PRESENTATION_PATCHES } from "../.generated/presentation-patch-registry";
+import { QUESTION_ALIAS_PACKS } from "../.generated/question-alias-registry";
 import type { RuntimeWorkerRequest, RuntimeWorkerResponse } from "../lib/worker-protocol";
 
 let caseFile: CaseFile | undefined;
@@ -40,7 +42,8 @@ self.onmessage = async (message: MessageEvent<RuntimeWorkerRequest>) => {
     try {
       const baseCaseFile = await loadCaseFile(request.caseId);
       const patch = PRESENTATION_PATCHES[request.caseId];
-      caseFile = applyPresentationPatch(baseCaseFile, patch);
+      const presentedCaseFile = applyPresentationPatch(baseCaseFile, patch);
+      caseFile = applyQuestionAliasPack(presentedCaseFile, QUESTION_ALIAS_PACKS[request.caseId]);
     } catch (error) {
       const response: RuntimeWorkerResponse = {
         id: request.id,

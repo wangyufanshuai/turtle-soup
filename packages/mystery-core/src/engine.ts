@@ -295,7 +295,7 @@ function normalizedQuestionText(text: string): string {
     // Common conversational wrappers are not semantic content. Removing
     // them keeps authored question corpora useful without making the host
     // depend on an LLM or fuzzy similarity threshold.
-    .replace(/^(请问|我想确认|现在能否确认|调查记录里|后台记录里|从雪地现场看|从舞台现场看|请验证|我的问题是|能不能判断|请回答一个事实|关于这条路线|关于这个角色|记录是否支持|证词是否支持|在这个案件里)/, "")
+    .replace(/^(请问|我想确认|现在能否确认|请核对|现场问题|请验证|我的问题是|能不能判断|请回答一个事实|记录是否支持|在这个案件里|请给出记录结论|调查一下|请从证据判断|能否核实|请从档案确认|请依据来源判断|调查记录里|后台记录里|从雪地现场看|从舞台现场看|关于这条路线|关于这个角色|证词是否支持)/, "")
     .replace(/(只回答事实|请只回答事实)$/, "");
 }
 
@@ -324,6 +324,44 @@ export function normalizeQuestion(caseFile: CaseFile, rawText: string): Question
   const normalizedText = normalizedQuestionText(rawText);
   if (!normalizedText) {
     return { status: "unrecognized", rawText, normalizedText, queryId: null, candidateQueryIds: [], matchedBy: "none" };
+  }
+
+  const explicitAmbiguity = caseFile.questionAliasPack?.ambiguousPhrases?.find(
+    (entry) => normalizedQuestionText(entry.text) === normalizedText,
+  );
+  if (explicitAmbiguity) {
+    return {
+      status: "ambiguous",
+      rawText,
+      normalizedText,
+      queryId: null,
+      candidateQueryIds: [...new Set(explicitAmbiguity.candidateQueryIds)],
+      matchedBy: "exact",
+    };
+  }
+
+  const explicitAlias = caseFile.questionAliasPack?.aliases.filter(
+    (entry) => normalizedQuestionText(entry.text) === normalizedText,
+  ) ?? [];
+  if (explicitAlias.length === 1) {
+    return {
+      status: "matched",
+      rawText,
+      normalizedText,
+      queryId: explicitAlias[0].queryId,
+      candidateQueryIds: [explicitAlias[0].queryId],
+      matchedBy: "exact",
+    };
+  }
+  if (explicitAlias.length > 1) {
+    return {
+      status: "ambiguous",
+      rawText,
+      normalizedText,
+      queryId: null,
+      candidateQueryIds: [...new Set(explicitAlias.map((entry) => entry.queryId))],
+      matchedBy: "exact",
+    };
   }
 
   const exact = caseFile.questionSemantics.filter((query) =>

@@ -154,7 +154,8 @@ test("C01 authoring report catches no dangling references", () => {
   const report = analyzeCaseQuality(caseFile, c01QuestionCorpus);
   assert.equal(report.passed, true);
   assert.equal(report.errors.length, 0);
-  assert.equal(c01QuestionCorpus.length, 153);
+  assert.equal(c01QuestionCorpus.length, 171);
+  assert.ok(report.metrics.duplicateQuestionRate < 0.1);
   assert.equal(report.metrics.questionCoverage, 100);
   assert.equal(report.metrics.proofReplayCoverage, 100);
 });

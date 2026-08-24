@@ -1,0 +1,14 @@
+{
+  "profileVersion": 1,
+  "id": "v1.5-internal-rc",
+  "title": "TURTLE SOUP v1.5 Golden First Hour RC",
+  "status": "internal-rc",
+  "publishable": false,
+  "humanEvaluation": "pending",
+  "manifests": [
+    "../cases/manifest.v0.6.json",
+    "../cases/manifest.season2.v1.0.json",
+    "../cases/manifest.season3.v1.1.json",
+    "../cases/manifest.season4.v1.3.json"
+  ]
+}

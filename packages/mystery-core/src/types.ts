@@ -62,6 +62,39 @@ export interface CasePresentationPatch {
   evidenceVisualMode?: string;
 }
 
+export type QuestionAliasCategory =
+  | "colloquial"
+  | "ellipsis"
+  | "pronoun"
+  | "typo"
+  | "negation"
+  | "time-qualifier";
+
+export interface QuestionAliasEntry {
+  text: string;
+  queryId: string;
+  category: QuestionAliasCategory;
+}
+
+export interface QuestionAmbiguityEntry {
+  text: string;
+  candidateQueryIds: string[];
+}
+
+/**
+ * Presentation-only language overlay. It may route text to an existing
+ * public query, but cannot add a predicate, answer code, fact or proof rule.
+ */
+export interface QuestionAliasPack {
+  schemaVersion: 1;
+  releaseProfile: string;
+  caseId: CaseId;
+  baseCanonicalHash: string;
+  revision: number;
+  aliases: QuestionAliasEntry[];
+  ambiguousPhrases?: QuestionAmbiguityEntry[];
+}
+
 export type ReasoningBoardMode =
   | "timeline"
   | "state-trace"
@@ -361,6 +394,8 @@ export interface CaseFile {
   solutionCertificate: SolutionCertificate;
   proofReplay: ProofReplayBeat[];
   localization?: Record<string, Record<string, string>>;
+  /** Worker-only language overlay; never projected to React or save data. */
+  questionAliasPack?: QuestionAliasPack;
   [key: string]: unknown;
 }
 

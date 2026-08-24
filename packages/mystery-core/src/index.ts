@@ -8,3 +8,4 @@ export * from "./save-envelope.ts";
 export * from "./presentation-patch.ts";
 export * from "./mastery.ts";
 export * from "./diagnostics.ts";
+export * from "./question-alias-pack.ts";
