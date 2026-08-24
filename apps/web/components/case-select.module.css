@@ -1,0 +1,46 @@
+.page { min-height: 100dvh; max-width: 1380px; margin: 0 auto; padding: 36px 32px; background: radial-gradient(circle at 75% 0, #55202a30, transparent 28rem); }
+.header { display: grid; grid-template-columns: 70px 1fr auto; align-items: start; gap: 20px; padding-bottom: 38px; border-bottom: 1px solid var(--line); }
+.mark { width: 58px; height: 58px; display: grid; place-items: center; border: 1px solid #823244; border-radius: 50%; color: var(--acid); font: 28px var(--display); box-shadow: 0 0 55px #7224363d; }
+.kicker { color: var(--acid); font: 9px var(--mono); letter-spacing: .18em; }
+.header h1 { margin: 10px 0 6px; font: 36px var(--display); font-weight: 500; letter-spacing: .04em; }
+.header p { max-width: 680px; margin: 0; color: var(--muted); font: 15px/1.65 var(--display); }
+.mode { color: var(--muted); text-align: right; font: 9px/1.7 var(--mono); letter-spacing: .08em; }
+.mode b { color: var(--acid); font-weight: 400; }
+.commandDeck { display: grid; grid-template-columns: 1fr 1.4fr; gap: 12px; padding: 22px 0 10px; }
+.continueCase,.skillDossier { min-height: 92px; border: 1px solid var(--line); background: linear-gradient(120deg,#13161a,#0c0e11); padding: 15px; }
+.continueCase { display: grid; gap: 6px; color: var(--ink); text-decoration: none; }.continueCase small,.skillDossier > small { color: var(--acid); font: 8px var(--mono); letter-spacing: .13em; }.continueCase b { font: 19px var(--display); font-weight: 500; }.continueCase span { color: var(--muted); font: 9px var(--mono); }
+.skillDossier > div { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 11px; }.skillDossier span { border: 1px solid var(--line); padding: 5px 7px; color: var(--muted); font: 8px var(--mono); }.skillDossier span b { margin-left: 7px; color: var(--acid); }.skillDossier p { margin: 0; color: var(--muted); font: 12px var(--display); }
+.filters { display: grid; grid-template-columns: repeat(3,minmax(140px,220px)) 1fr; align-items: end; gap: 9px; margin: 16px 0 8px; padding: 14px; border: 1px solid var(--line); background: #0c0e11; }.filters label { color: var(--muted); font: 8px var(--mono); }.filters select { display: block; width: 100%; margin-top: 6px; min-height: 36px; border: 1px solid var(--line-strong); background: #090b0d; color: var(--paper); padding: 0 8px; }.filters > span { justify-self: end; padding-bottom: 8px; color: var(--acid); font: 8px var(--mono); }
+.season { padding: 26px 0 14px; }.seasonSummary { display: flex; justify-content: space-between; align-items: end; gap: 20px; border-bottom: 1px solid var(--line); padding: 0 0 12px; cursor: pointer; list-style: none; }.seasonSummary::-webkit-details-marker { display:none; }.seasonSummary::after { content: "＋"; color: var(--acid); font: 18px var(--mono); }.season[open] .seasonSummary::after { content: "－"; }.seasonSummary small { color: var(--acid); font: 8px var(--mono); letter-spacing: .16em; }.seasonSummary h2 { margin: 6px 0 0; font: 28px var(--display); font-weight: 500; }.seasonSummary p { margin: 0; color: var(--muted); font: 8px var(--mono); }
+.caseGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 18px 0 8px; }
+.caseCard { min-height: 520px; display: flex; flex-direction: column; border: 1px solid var(--line); background: #0e1013; color: var(--ink); text-decoration: none; transition: transform .22s, border-color .22s, box-shadow .22s; }
+.caseCard:hover { transform: translateY(-5px); border-color: var(--line-strong); box-shadow: 0 20px 55px #0008; }
+.caseCard[data-layout="snow-route"] { --card-accent: #a9d9e5; }
+.caseCard[data-layout="second-shadow"] { --card-accent: #e4b86c; }
+.caseCard[data-layout="cold-room"] { --card-accent: #b8cf79; }
+.caseCard[data-layout="mail-room"] { --card-accent: #c4d98b; }
+.caseCard[data-layout="switchboard"] { --card-accent: #91c7d9; }
+.caseCard[data-layout="harbor-ledger"] { --card-accent: #e0b578; }
+.caseCard[data-layout="key-archive"] { --card-accent: #c7aa78; }
+.caseCard[data-layout="sound-lab"] { --card-accent: #c8a8e8; }
+.caseCard[data-layout="rain-room"] { --card-accent: #9ec4d6; }
+.caseCard[data-layout="telegraph-room"] { --card-accent: #9ed2b0; }
+.caseCard[data-layout="signature-desk"] { --card-accent: #d1af7e; }
+.caseCard[data-layout="elevator-control"] { --card-accent: #d4a676; }
+.cardTop { display: flex; justify-content: space-between; padding: 13px 15px; border-bottom: 1px solid var(--line); color: var(--muted); font: 9px var(--mono); letter-spacing: .1em; }
+.cardTop b { color: var(--card-accent); font-weight: 400; }
+.thumb { height: 230px; overflow: hidden; background: #080a0c; border-bottom: 1px solid var(--line); }
+.thumb picture { display: block; width: 100%; height: 100%; }
+.thumb img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.72); transition: transform .5s, filter .5s; }
+.caseCard:hover .thumb img { transform: scale(1.04); filter: saturate(.92); }
+.cardBody { flex: 1; padding: 18px 16px; }
+.cardBody small { color: var(--card-accent); font: 8px var(--mono); letter-spacing: .11em; }
+.cardBody h3 { margin: 10px 0 7px; font: 24px var(--display); font-weight: 500; }
+.cardBody p { margin: 0; color: var(--muted); font: 13px/1.65 var(--display); }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 16px; }
+.tags span { border: 1px solid var(--line); color: var(--paper); padding: 4px 6px; font-size: 8px; }
+.mastery { display:flex; justify-content:space-between; gap:8px; margin-top:14px; padding-top:9px; border-top:1px solid var(--line); color:var(--muted); font:8px var(--mono); }.mastery b { color:var(--card-accent); font-weight:400; }
+.enter { display: flex; justify-content: space-between; padding: 13px 15px; border-top: 1px solid var(--line); color: var(--card-accent); font: 10px var(--mono); letter-spacing: .08em; }
+.enter span { font-size: 16px; }
+.footer { display: flex; justify-content: space-between; padding-top: 18px; color: #666a6d; font: 8px var(--mono); letter-spacing: .09em; }
+@media (max-width: 900px) { .page { padding: 24px 16px 30px; } .header { grid-template-columns: 52px 1fr; gap: 14px; } .mark { width: 46px; height: 46px; font-size: 21px; } .header h1 { font-size: 28px; } .mode { grid-column: 2; text-align: left; } .commandDeck { grid-template-columns: 1fr; }.filters { grid-template-columns: 1fr; }.filters > span { justify-self: start; }.seasonSummary { display: block; padding-bottom: 10px; }.seasonSummary p { margin-top: 8px; }.seasonSummary::after { float:right; margin-top:-26px; }.caseGrid { grid-template-columns: 1fr; } .caseCard { min-height: 0; } .thumb { height: 190px; } .footer { display: block; line-height: 2; } }

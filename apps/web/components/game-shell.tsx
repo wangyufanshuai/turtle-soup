@@ -1,14 +1,25 @@
 "use client";
 
 import type {
+  CaseId,
   EvidencePlayerState,
   GameCommand,
   GameEvent,
   TheoryDraft,
 } from "@turtle-soup/mystery-core";
-import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { emptyMasteryRecord, recordMasterySolve, type CaseMasteryRecord } from "@turtle-soup/mystery-core";
+import { FormEvent, useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { AudioEngine } from "@/lib/audio-engine";
+import { getSoundscapeProfile } from "@/lib/audio-profiles";
 import { useMysteryRuntime } from "@/lib/use-mystery-runtime";
+import { useFunGateSession } from "@/lib/use-fun-gate-session";
+import { FunGateTools } from "./fun-gate-tools";
+import { VariantShell } from "./variant-shell";
+import { StorageRecovery } from "./storage-recovery";
+import { useHostRewrite } from "@/lib/use-host-rewrite";
+import { HostRewriteControls } from "./host-rewrite-controls";
+import { loadMastery, saveMastery } from "@/lib/mastery-store";
+import { useLocalDiagnostics } from "@/lib/use-local-diagnostics";
 import styles from "./game-shell.module.css";
 
 type MobilePanel = "scene" | "questions" | "theory";
@@ -62,8 +73,13 @@ function Icon({ name }: { name: "eye" | "ask" | "chain" | "sound" | "settings" |
   return <svg viewBox="0 0 24 24" aria-hidden="true">{paths[name]}</svg>;
 }
 
-export function GameShell() {
-  const { projection, events, status, saveState, dispatch } = useMysteryRuntime();
+export function GameShell({ caseId = "c01-cold-room-knock" }: { caseId?: CaseId }) {
+  const { projection, events, status, saveState, restoreStatus, latestSave, storageIssue, retrySave, dispatch } = useMysteryRuntime(caseId);
+  const { report, markHintUsed, exportSession } = useFunGateSession(caseId, events);
+  const diagnostics = useLocalDiagnostics(projection, events);
+  const [mastery, setMastery] = useState<CaseMasteryRecord>();
+  const masterySolveKey = useRef<string | undefined>(undefined);
+  const host = useHostRewrite(projection);
   const [mobilePanel, setMobilePanel] = useState<MobilePanel>("scene");
   const [question, setQuestion] = useState("");
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -71,19 +87,46 @@ export function GameShell() {
   const [ambient, setAmbient] = useState(false);
   const [effectsVolume, setEffectsVolume] = useState(.45);
   const [ambientVolume, setAmbientVolume] = useState(.16);
+  const [audioSupported, setAudioSupported] = useState(true);
   const [reducedMotion, setReducedMotion] = useState(false);
   const [highContrast, setHighContrast] = useState(false);
   const [online, setOnline] = useState(true);
   const audioRef = useRef<AudioEngine | null>(null);
   const transcriptEndRef = useRef<HTMLDivElement>(null);
+  const settingsRef = useRef<HTMLElement>(null);
+  const settingsButtonRef = useRef<HTMLButtonElement>(null);
+  const questionInputRef = useRef<HTMLInputElement>(null);
+  const interpretationRef = useRef<HTMLDivElement>(null);
+  const interpretationWasOpen = useRef(false);
+  const soundscape = getSoundscapeProfile("cold-room");
+  useEffect(() => {
+    if (!projection) return;
+    let active = true;
+    void loadMastery(projection.case.id, projection).then((value) => { if (active) setMastery(value); });
+    return () => { active = false; };
+  }, [projection?.case.id, projection?.case.version, projection?.case.contentHash]);
+  useEffect(() => {
+    if (!projection?.solved) return;
+    const key = `${projection.case.id}:${projection.replayMode}:${projection.debrief?.questionCount ?? 0}:${projection.debrief?.proofCompleteness ?? 0}`;
+    if (masterySolveKey.current === key) return;
+    masterySolveKey.current = key;
+    void (async () => {
+      const current = mastery ?? (await loadMastery(projection.case.id, projection));
+      const next = recordMasterySolve(current ?? emptyMasteryRecord(projection.case), projection, new Date().toISOString(), report.hintUseCount === 0);
+      setMastery(next);
+      await saveMastery(next);
+    })();
+  }, [projection, mastery]);
 
   useEffect(() => {
-    audioRef.current = new AudioEngine();
+    audioRef.current = new AudioEngine("cold-room");
+    setAudioSupported(AudioEngine.isSupported());
     const stored = localStorage.getItem("black-soup-settings");
     if (stored) {
       try {
-        const value = JSON.parse(stored) as { muted?: boolean; reducedMotion?: boolean; highContrast?: boolean; effectsVolume?: number; ambientVolume?: number };
+        const value = JSON.parse(stored) as { muted?: boolean; ambient?: boolean; reducedMotion?: boolean; highContrast?: boolean; effectsVolume?: number; ambientVolume?: number };
         setMuted(Boolean(value.muted));
+        setAmbient(Boolean(value.ambient));
         setReducedMotion(Boolean(value.reducedMotion));
         setHighContrast(Boolean(value.highContrast));
         if (typeof value.effectsVolume === "number") setEffectsVolume(value.effectsVolume);
@@ -93,11 +136,20 @@ export function GameShell() {
     setOnline(navigator.onLine);
     const onOnline = () => setOnline(true);
     const onOffline = () => setOnline(false);
+    const onVisibility = () => audioRef.current?.setPageHidden(document.hidden);
+    const onPageHide = () => audioRef.current?.setPageHidden(true);
+    const onPageShow = () => audioRef.current?.setPageHidden(document.hidden);
     window.addEventListener("online", onOnline);
     window.addEventListener("offline", onOffline);
+    document.addEventListener("visibilitychange", onVisibility);
+    window.addEventListener("pagehide", onPageHide);
+    window.addEventListener("pageshow", onPageShow);
     return () => {
       window.removeEventListener("online", onOnline);
       window.removeEventListener("offline", onOffline);
+      document.removeEventListener("visibilitychange", onVisibility);
+      window.removeEventListener("pagehide", onPageHide);
+      window.removeEventListener("pageshow", onPageShow);
       audioRef.current?.dispose();
     };
   }, []);
@@ -108,7 +160,7 @@ export function GameShell() {
     audio?.setEffectsVolume(effectsVolume);
     audio?.setAmbientVolume(ambientVolume);
     audio?.toggleAmbient(ambient && !muted);
-    localStorage.setItem("black-soup-settings", JSON.stringify({ muted, reducedMotion, highContrast, effectsVolume, ambientVolume }));
+    localStorage.setItem("black-soup-settings", JSON.stringify({ muted, ambient, reducedMotion, highContrast, effectsVolume, ambientVolume }));
   }, [muted, ambient, effectsVolume, ambientVolume, reducedMotion, highContrast]);
 
   useEffect(() => {
@@ -117,16 +169,49 @@ export function GameShell() {
     if (last?.type === "evidence_updated") audioRef.current?.play("inspect");
     if (last?.type === "theory_judged" && last.judgement !== "solved") audioRef.current?.play("contradiction");
     if (last?.type === "case_solved") audioRef.current?.play("solved");
+    if (last?.type === "replay_ready") audioRef.current?.play("replay");
   }, [events]);
 
   useEffect(() => {
     transcriptEndRef.current?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "nearest" });
   }, [projection?.transcript.length, reducedMotion]);
 
+  useEffect(() => {
+    if (projection?.interpretation) {
+      interpretationWasOpen.current = true;
+      requestAnimationFrame(() => interpretationRef.current?.querySelector<HTMLButtonElement>("button")?.focus());
+    } else if (interpretationWasOpen.current) {
+      interpretationWasOpen.current = false;
+      requestAnimationFrame(() => questionInputRef.current?.focus());
+    }
+  }, [projection?.interpretation]);
+
+  useEffect(() => {
+    if (settingsOpen) settingsRef.current?.querySelector<HTMLElement>("button, input")?.focus();
+  }, [settingsOpen]);
+
+  const closeSettings = () => {
+    setSettingsOpen(false);
+    requestAnimationFrame(() => settingsButtonRef.current?.focus());
+  };
+  const handleSettingsKeyDown = (event: KeyboardEvent<HTMLElement>) => {
+    if (event.key === "Escape") { event.preventDefault(); closeSettings(); return; }
+    if (event.key !== "Tab") return;
+    const focusable = [...(settingsRef.current?.querySelectorAll<HTMLElement>("button, input") ?? [])].filter((item) => !item.hasAttribute("disabled"));
+    if (focusable.length === 0) return;
+    const index = focusable.indexOf(document.activeElement as HTMLElement);
+    if (event.shiftKey && index <= 0) { event.preventDefault(); focusable.at(-1)?.focus(); }
+    else if (!event.shiftKey && index === focusable.length - 1) { event.preventDefault(); focusable[0].focus(); }
+  };
+
   const activeDraft = projection?.theoryDrafts.find((draft) => draft.id === projection.activeTheoryId);
   const eventOptions = useMemo(() => new Map(projection?.eventOptions.map((event) => [event.id, event]) ?? []), [projection?.eventOptions]);
   const activeTheoryOption = projection?.theoryOptions.find((option) => option.id === activeDraft?.hypothesisId);
-  const toast = eventMessage(events.at(-1));
+  const toast = restoreStatus === "incompatible"
+    ? "这份本地存档属于旧版本或其他案件，已安全拒绝恢复；当前从新调查开始。"
+    : restoreStatus === "corrupt"
+      ? "本地存档损坏或不完整，已安全隔离；当前从新调查开始，可从档案页导入备份。"
+      : eventMessage(events.at(-1));
 
   const send = (command: GameCommand) => dispatch(command);
   const submitQuestion = (event: FormEvent) => {
@@ -137,39 +222,46 @@ export function GameShell() {
   };
 
   if (status === "loading" || !projection) {
-    return <main className={styles.boot}><div className={styles.soupMark}>深</div><p>正在校验案件档案…</p><span>DETERMINISTIC TRUTH CORE</span></main>;
+    return <main id="main-content" tabIndex={-1} className={styles.boot}><div className={styles.soupMark}>深</div><p>正在校验案件档案…</p><span>DETERMINISTIC TRUTH CORE</span></main>;
   }
   if (status === "error") {
-    return <main className={styles.boot}><div className={styles.soupMark}>!</div><h1>档案无法打开</h1><p>本地推理核心没有成功启动，请刷新页面。</p></main>;
+    return <main id="main-content" tabIndex={-1} className={styles.boot}><div className={styles.soupMark}>!</div><h1>档案无法打开</h1><p>本地推理核心没有成功启动，请刷新页面。</p></main>;
+  }
+
+  if (projection.case.presentation.layoutId !== "cold-room") {
+    return <VariantShell projection={projection} events={events} restoreStatus={restoreStatus} saveState={saveState} online={online} latestSave={latestSave} storageIssue={storageIssue} onRetrySave={retrySave} dispatch={dispatch} />;
   }
 
   const evidenceCount = projection.evidence.filter((item) => item.state !== "available" && item.state !== "dismissed").length;
   const linkedCount = activeDraft?.evidenceIds.length ?? 0;
 
   return (
-    <main className={styles.game} data-high-contrast={highContrast || undefined} data-reduced-motion={reducedMotion || undefined}>
-      <header className={styles.topbar}>
+    <main id="main-content" tabIndex={-1} className={styles.game} data-high-contrast={highContrast || undefined} data-reduced-motion={reducedMotion || undefined}>
+      <header className={styles.topbar} inert={settingsOpen || undefined}>
         <div className={styles.brand}>
           <span className={styles.brandGlyph}>深</span>
           <div><strong>THE BLACK SOUP</strong><small>EVIDENCE-FIRST MYSTERY</small></div>
         </div>
         <div className={styles.caseIdentity}>
-          <span>CASE 01</span><strong>{projection.case.title}</strong><small>{projection.case.targetMinutes.min}–{projection.case.targetMinutes.max} MIN · {projection.case.difficulty.toUpperCase()}</small>
+          <span>CASE 01</span><h1>{projection.case.title}</h1><small>{projection.case.targetMinutes.min}–{projection.case.targetMinutes.max} MIN · {projection.case.difficulty.toUpperCase()}</small>
         </div>
         <div className={styles.systemCluster}>
+          <FunGateTools report={report} onHint={markHintUsed} onExport={exportSession} />
           <span className={styles.statusLight} data-offline={!online || undefined}>{online ? "ONLINE / OFFLINE READY" : "OFFLINE MODE"}</span>
           <span className={styles.saveState}><Icon name="save" />{saveState === "saving" ? "保存中" : saveState === "error" ? "保存失败" : "本地已保存"}</span>
-          <button className={styles.iconButton} onClick={() => setSettingsOpen(true)} aria-label="打开设置"><Icon name="settings" /></button>
+          <button ref={settingsButtonRef} className={styles.iconButton} onClick={() => setSettingsOpen(true)} aria-label="打开设置"><Icon name="settings" /></button>
         </div>
       </header>
+      <h1 className={styles.mobileCaseTitle}>{projection.case.title}</h1>
 
       {toast && <div className={styles.toast} role="status"><span />{toast}</div>}
+      <StorageRecovery issue={storageIssue} save={latestSave} onRetry={retrySave} />
 
-      <div className={styles.workspace}>
-        <section className={`${styles.column} ${styles.sceneColumn} ${mobilePanel === "scene" ? styles.mobileActive : ""}`} aria-label="现场与证据">
+      <div className={styles.workspace} inert={settingsOpen || undefined}>
+        <section id="c01-scene" className={`${styles.column} ${styles.sceneColumn} ${mobilePanel === "scene" ? styles.mobileActive : ""}`} aria-label="现场与证据">
           <div className={styles.sectionHeader}><span>01</span><div><small>OBSERVE</small><h2>现场与证据</h2></div><b>{evidenceCount}/{projection.evidence.length}</b></div>
           <div className={styles.sceneFrame}>
-            <img src="/scene-cold-room.svg" alt="凌晨两点的冷藏室走廊，封闭的门与监控面板被冷光照亮" />
+            <picture><source media="(max-width: 850px)" srcSet="/assets/cases/c01/scene-mobile.webp" /><img src="/assets/cases/c01/scene-desktop.webp" alt="凌晨两点的冷藏室走廊，封闭的门与监控面板被冷光照亮" width={960} height={620} fetchPriority="high" /></picture>
             <div className={styles.sceneStamp}>02:00<br/><span>SEALED</span></div>
             <button className={styles.knockButton} onClick={() => audioRef.current?.play("knock")} aria-label="播放三下敲击的非必要气氛音"><Icon name="sound" />听取记录</button>
           </div>
@@ -191,6 +283,7 @@ export function GameShell() {
                   <div className={styles.evidenceIndex}>{String(index + 1).padStart(2, "0")}</div>
                   <div className={styles.evidenceBody}>
                     <div className={styles.evidenceMeta}><span>{evidence.sourceLabel}</span><b>{EVIDENCE_LABELS[evidence.state]}</b></div>
+                    {evidence.state !== "available" && evidence.state !== "discovered" && <img className={styles.evidenceArt} src={evidence.visualAsset ?? `/assets/cases/c01/evidence-${String((index % 5) + 1).padStart(2, "0")}.webp`} alt={`${evidence.title}的档案局部图`} width={256} height={160} loading="lazy" />}
                     <h3>{evidence.title}</h3>
                     <p>{evidence.observation}</p>
                     <div className={styles.evidenceActions}>
@@ -212,13 +305,13 @@ export function GameShell() {
           </div>
         </section>
 
-        <section className={`${styles.column} ${styles.questionColumn} ${mobilePanel === "questions" ? styles.mobileActive : ""}`} aria-label="主持问答">
+        <section id="c01-questions" className={`${styles.column} ${styles.questionColumn} ${mobilePanel === "questions" ? styles.mobileActive : ""}`} aria-label="主持问答">
           <div className={styles.sectionHeader}><span>02</span><div><small>ASK & VERIFY</small><h2>主持问答</h2></div><b>{projection.transcript.length} ASKED</b></div>
           <div className={styles.transcript} aria-live="polite">
             {projection.transcript.length === 0 && (
               <div className={styles.hostOpening}>
                 <span className={styles.hostSigil}>○</span>
-                <div><small>ARCHIVIST / 确定性主持</small><p>不要猜一句答案。先验证一个事实：谁、什么、何时，或者哪条物理约束不成立。</p></div>
+                <div><small>ARCHIVIST / 确定性主持</small><p>不要猜一句答案。先验证一个事实：谁、什么、何时，或者哪条物理约束不成立。</p><ol className={styles.firstRunSteps}><li><b>01</b>观察异常</li><li><b>02</b>提问排除</li><li><b>03</b>证据入链</li></ol></div>
               </div>
             )}
             {projection.transcript.map((entry) => (
@@ -227,6 +320,7 @@ export function GameShell() {
                 <div className={styles.hostAnswer} data-code={entry.answerCode}>
                   <div><b>{ANSWER_LABELS[entry.answerCode]}</b>{entry.repeated && <em>已验证</em>}</div>
                   <p>{entry.answerText}</p>
+                  {host.rewrites[entry.id] && <p className={styles.hostRewrite}><small>本地改写主持</small>{host.rewrites[entry.id].text}</p>}
                   <small>系统理解：{entry.interpretedAs}</small>
                 </div>
               </div>
@@ -235,7 +329,7 @@ export function GameShell() {
           </div>
 
           {projection.interpretation && (
-            <div className={styles.interpretation} role="dialog" aria-label="确认问题解释">
+            <div ref={interpretationRef} className={styles.interpretation} role="group" aria-label="确认问题解释" aria-live="polite">
               <small>你的问题存在多种可验证解释</small>
               <strong>“{projection.interpretation.rawText}”</strong>
               <div>{projection.interpretation.candidates.map((candidate) => <button key={candidate.queryId} onClick={() => send({ type: "confirm_interpretation", queryId: candidate.queryId })}>{candidate.label}<span>{candidate.predicate}</span></button>)}</div>
@@ -246,7 +340,7 @@ export function GameShell() {
             <form onSubmit={submitQuestion}>
               <label htmlFor="question-input">写下一个可以被证实或否定的问题</label>
               <div className={styles.questionInput}>
-                <input id="question-input" value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="例如：这扇门会自动上锁吗？" autoComplete="off" />
+                <input ref={questionInputRef} id="question-input" name="investigation-question" value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="例如：“这扇门会自动上锁吗？”…" autoComplete="off" />
                 <button type="submit" disabled={!question.trim()}>验证</button>
               </div>
             </form>
@@ -261,7 +355,7 @@ export function GameShell() {
           </div>
         </section>
 
-        <section className={`${styles.column} ${styles.theoryColumn} ${mobilePanel === "theory" ? styles.mobileActive : ""}`} aria-label="笔记与假设">
+        <section id="c01-theory" className={`${styles.column} ${styles.theoryColumn} ${mobilePanel === "theory" ? styles.mobileActive : ""}`} aria-label="笔记与假设">
           <div className={styles.sectionHeader}><span>03</span><div><small>BUILD & PROVE</small><h2>因果链</h2></div><b>{linkedCount} LINKED</b></div>
           <div className={styles.theoryTabs}>
             {projection.theoryDrafts.map((draft) => <button key={draft.id} data-active={draft.id === projection.activeTheoryId || undefined} onClick={() => send({ type: "select_theory", theoryId: draft.id })}>{draft.title}<span>{draft.eventIds.length} 个事件</span></button>)}
@@ -327,23 +421,26 @@ export function GameShell() {
         </section>
       </div>
 
-      <nav className={styles.mobileNav} aria-label="调查区域">
-        <button data-active={mobilePanel === "scene" || undefined} onClick={() => setMobilePanel("scene")}><Icon name="eye" /><span>现场</span></button>
-        <button data-active={mobilePanel === "questions" || undefined} onClick={() => setMobilePanel("questions")}><Icon name="ask" /><span>提问</span></button>
-        <button data-active={mobilePanel === "theory" || undefined} onClick={() => setMobilePanel("theory")}><Icon name="chain" /><span>推理</span></button>
+      <nav className={styles.mobileNav} aria-label="调查区域" inert={settingsOpen || undefined}>
+        <button aria-controls="c01-scene" aria-pressed={mobilePanel === "scene"} data-active={mobilePanel === "scene" || undefined} onClick={() => setMobilePanel("scene")}><Icon name="eye" /><span>现场</span></button>
+        <button aria-controls="c01-questions" aria-pressed={mobilePanel === "questions"} data-active={mobilePanel === "questions" || undefined} onClick={() => setMobilePanel("questions")}><Icon name="ask" /><span>提问</span></button>
+        <button aria-controls="c01-theory" aria-pressed={mobilePanel === "theory"} data-active={mobilePanel === "theory" || undefined} onClick={() => setMobilePanel("theory")}><Icon name="chain" /><span>推理</span></button>
       </nav>
 
       {settingsOpen && (
-        <div className={styles.settingsBackdrop} onMouseDown={(event) => event.target === event.currentTarget && setSettingsOpen(false)}>
-          <aside className={styles.settingsPanel} role="dialog" aria-modal="true" aria-label="游戏设置">
-            <div className={styles.settingsTitle}><div><small>LOCAL SETTINGS</small><h2>调查设置</h2></div><button onClick={() => setSettingsOpen(false)} aria-label="关闭设置">×</button></div>
+        <div className={styles.settingsBackdrop} onMouseDown={(event) => event.target === event.currentTarget && closeSettings()}>
+          <aside ref={settingsRef} className={styles.settingsPanel} role="dialog" aria-modal="true" aria-label="游戏设置" onKeyDown={handleSettingsKeyDown}>
+            <div className={styles.settingsTitle}><div><small>LOCAL SETTINGS</small><h2>调查设置</h2></div><button onClick={closeSettings} aria-label="关闭设置">×</button></div>
             <label className={styles.toggle}><span><b>静音</b><small>关闭所有环境音与反馈音</small></span><input type="checkbox" checked={muted} onChange={(event) => setMuted(event.target.checked)} /></label>
-            <label className={styles.toggle}><span><b>环境低频</b><small>仅用于气氛，不包含解谜信息</small></span><input type="checkbox" checked={ambient} disabled={muted} onChange={(event) => setAmbient(event.target.checked)} /></label>
+            <div className={styles.soundscapeProfile}><span>SOUNDSCAPE / 01</span><b>{soundscape.label}</b><small>{audioSupported ? "程序化音景，不包含解谜信息" : "当前浏览器无 Web Audio；游戏已自动降级为静默模式"}</small><button disabled={!audioSupported || muted} onClick={() => audioRef.current?.play("question")}>试听反馈</button></div>
+            <label className={styles.toggle}><span><b>案件音景</b><small>失去页面焦点时自动暂停</small></span><input type="checkbox" checked={ambient} disabled={muted || !audioSupported} onChange={(event) => setAmbient(event.target.checked)} /></label>
             <label className={styles.range}><span>反馈音量</span><input type="range" min="0" max="1" step=".05" value={effectsVolume} onChange={(event) => setEffectsVolume(Number(event.target.value))} /></label>
             <label className={styles.range}><span>环境音量</span><input type="range" min="0" max=".5" step=".025" value={ambientVolume} onChange={(event) => setAmbientVolume(Number(event.target.value))} /></label>
             <label className={styles.toggle}><span><b>减少动态</b><small>停用非必要转场与滚动动画</small></span><input type="checkbox" checked={reducedMotion} onChange={(event) => setReducedMotion(event.target.checked)} /></label>
             <label className={styles.toggle}><span><b>高对比</b><small>增强边界、正文与状态标记</small></span><input type="checkbox" checked={highContrast} onChange={(event) => setHighContrast(event.target.checked)} /></label>
-            <div className={styles.settingsFoot}><p>案件真相与存档保存在本机。没有账号、远程模型或分析追踪。</p><button onClick={() => { if (window.confirm("确定清空 C01 的本地调查进度吗？")) { send({ type: "restart_case" }); setSettingsOpen(false); } }}>重新开始案件</button></div>
+            <HostRewriteControls settings={host.settings} status={host.status} message={host.message} onChange={host.setSettings} onClear={host.clearCache} />
+            <div className={styles.settingsFoot}><p>LOCAL DIAGNOSTICS · 仅保存聚合指标，不上传</p><label className={styles.toggle}><span><b>允许本地记录</b></span><input type="checkbox" checked={diagnostics.recording} onChange={(event) => diagnostics.toggle(event.target.checked)} /></label><div><button onClick={() => void diagnostics.exportSessions("json")}>导出 JSON</button><button onClick={() => void diagnostics.exportSessions("csv")}>导出 CSV</button><button onClick={() => void diagnostics.clear()}>清空诊断</button></div></div>
+            <div className={styles.settingsFoot}><p>案件真相与存档保存在本机。没有账号、远程模型或分析追踪。</p><button onClick={() => { if (window.confirm("确定清空 C01 的本地调查进度吗？")) { send({ type: "restart_case" }); closeSettings(); } }}>重新开始案件</button></div>
           </aside>
         </div>
       )}

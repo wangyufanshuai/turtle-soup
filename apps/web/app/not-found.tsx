@@ -1,0 +1,3 @@
+export default function NotFound() {
+  return <main style={{ minHeight: "100dvh", display: "grid", placeItems: "center", padding: "2rem", background: "#08090b", color: "#e8e2d1", fontFamily: "system-ui, sans-serif" }}><section style={{ maxWidth: 560, border: "1px solid #484b50", padding: "2rem", background: "#111318" }}><small style={{ color: "#b8cf79", letterSpacing: ".16em" }}>THE BLACK SOUP / ARCHIVE ERROR</small><h1 style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>档案无法打开</h1><p style={{ color: "#aaa397", lineHeight: 1.7 }}>这件案件不存在，或尚未进入当前发行轨道。返回档案目录继续调查。</p><a href="/" style={{ color: "#b8cf79" }}>← 返回档案目录</a></section></main>;
+}

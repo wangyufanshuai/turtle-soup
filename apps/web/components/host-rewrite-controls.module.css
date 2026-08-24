@@ -1,0 +1,16 @@
+.panel { display: grid; gap: .65rem; margin-top: .8rem; padding: .85rem; border: 1px solid color-mix(in srgb, var(--accent, #b8cf79) 36%, transparent); background: rgba(3, 5, 7, .44); }
+.heading { display: grid; gap: .18rem; }
+.heading span { color: var(--accent, #b8cf79); font: 600 .65rem/1.2 ui-monospace, monospace; letter-spacing: .12em; }
+.heading b { font-size: .92rem; }
+.heading small { color: #aaa392; line-height: 1.4; }
+.heading small[data-status="working"] { color: #d6b36f; }
+.heading small[data-status="fallback"] { color: #d88978; }
+.panel label { display: grid; grid-template-columns: 7rem minmax(0, 1fr); align-items: center; gap: .6rem; font-size: .75rem; }
+.panel label > span { color: #c8c0af; }
+.panel input[type="url"], .panel input:not([type]), .panel select { min-width: 0; width: 100%; border: 1px solid rgba(225, 216, 196, .2); background: #0c0e11; color: #eee8da; padding: .48rem .55rem; font: inherit; }
+.toggle { grid-template-columns: 1fr auto !important; }
+.toggle span { display: grid; gap: .1rem; }
+.toggle small { color: #938c7e; }
+.notice { color: #aaa392; font-size: .68rem; line-height: 1.5; border-left: 2px solid var(--accent, #b8cf79); padding-left: .55rem; }
+.panel button { justify-self: start; border: 1px solid rgba(225, 216, 196, .22); background: transparent; color: #d8d0c0; padding: .45rem .6rem; cursor: pointer; }
+@media (max-width: 520px) { .panel label { grid-template-columns: 1fr; gap: .3rem; } .toggle { grid-template-columns: 1fr auto !important; } }
