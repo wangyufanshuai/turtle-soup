@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-24T16:05:03.803Z",
+  "source": "local-json-only",
+  "sessionCount": 0,
+  "uniqueTesterCount": 0,
+  "cases": [],
+  "solvedRate": null,
+  "solvedWithoutHintRate": null,
+  "replayOpenedRate": null,
+  "ambiguityRecoveryRate": null,
+  "averageSolveSeconds": null,
+  "averageQuestionCount": null,
+  "funGate": {
+    "minimumSessions": 10,
+    "status": "insufficient-human-sessions",
+    "note": "This aggregate cannot establish comprehension, satisfaction, or fairness without the facilitator's observation sheet."
+  },
+  "inputAudit": {
+    "directory": "E:\\xuexi\\turtle-soup\\test-data\\fun-gate-v1.8",
+    "jsonFilesFound": 0,
+    "acceptedSessionFiles": 0,
+    "rejectedFileCount": 0,
+    "onlyC01": true,
+    "rawQuestionOrTruthFieldsAccepted": false
+  }
+}

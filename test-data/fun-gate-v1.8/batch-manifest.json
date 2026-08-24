@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "releaseProfile": "v1.8-internal-rc",
+  "caseId": "c01-cold-room-knock",
+  "status": "pending-human-sessions",
+  "humanParticipants": 0,
+  "targetSessionCount": 10,
+  "targetRosterCount": 15,
+  "noRemoteTracking": true,
+  "doNotFillSyntheticData": true,
+  "roster": [
+    {
+      "batchId": "C01-FG-01",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "desktop",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-02",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "desktop",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-03",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "desktop",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-04",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "desktop",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-05",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "desktop",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-06",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "desktop",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-07",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "desktop",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-08",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "desktop",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-09",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "mobile",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-10",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "mobile",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-11",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "mobile",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-12",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "mobile",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-13",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "mobile",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-14",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "mobile",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    },
+    {
+      "batchId": "C01-FG-15",
+      "productTesterId": "由产品导出 JSON 提供",
+      "viewport": "mobile",
+      "answerKnownBeforeSession": false,
+      "consentRecorded": false,
+      "sessionFile": null,
+      "observationFile": null
+    }
+  ]
+}

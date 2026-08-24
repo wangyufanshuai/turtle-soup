@@ -1,0 +1,27 @@
+{
+  "reportVersion": "1.8",
+  "generatedAt": "2026-08-24T16:06:44.072Z",
+  "releaseProfile": "v1.8-internal-rc",
+  "caseId": "c01-cold-room-knock",
+  "status": "ready-for-human-sessions / fun-gate-pending",
+  "humanParticipants": 0,
+  "targetParticipants": {
+    "minimum": 10,
+    "preferred": 15
+  },
+  "recordingConsent": "pending-user-decision",
+  "localServer": "http://127.0.0.1:4173/case/c01-cold-room-knock/",
+  "archiveSha256": "43b6dff6b70abec6a74788bb28fba6f7301eb91dd892818584c82f48fc88d30d",
+  "gates": {
+    "frozenV18Cases": true,
+    "frozenArchiveHash": true,
+    "batchPrepared": true,
+    "emptyAggregateHonest": true,
+    "anonymousExport": true,
+    "noRawQuestionAggregation": true,
+    "requiredProtocolFiles": true
+  },
+  "passed": true,
+  "blocker": "需要 10–15 位不知道答案的真人测试者及主持人观察数据。",
+  "qualification": "该报告只证明评测执行环境和数据边界就绪；没有真人数据时不能计算或宣称 Fun Gate 通过。"
+}
