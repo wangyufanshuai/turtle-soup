@@ -105,6 +105,7 @@
     "fun-gate:serve": "node --experimental-strip-types --experimental-transform-types tools/serve-fun-gate.ts",
     "fun-gate:verify": "node --experimental-strip-types --experimental-transform-types tools/verify-fun-gate-readiness.ts",
     "fun-gate:smoke": "node --experimental-strip-types --experimental-transform-types tools/fun-gate-browser-smoke.ts",
+    "fun-gate:clean-context": "node --experimental-strip-types --experimental-transform-types tools/fun-gate-clean-context-smoke.ts",
     "verify:freeze": "node --experimental-strip-types --experimental-transform-types tools/verify-frozen-cases.ts",
     "fairness:sweep": "node --experimental-strip-types --experimental-transform-types tools/fairness-sweep.ts",
     "fairness:v10": "node --experimental-strip-types --experimental-transform-types tools/v10-automated-fairness.ts",

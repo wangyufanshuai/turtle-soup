@@ -1,6 +1,6 @@
 {
   "reportVersion": "1.8",
-  "generatedAt": "2026-08-24T16:25:57.650Z",
+  "generatedAt": "2026-08-24T16:34:00.057Z",
   "releaseProfile": "v1.8-internal-rc",
   "caseId": "c01-cold-room-knock",
   "status": "ready-for-human-sessions / fun-gate-pending",
@@ -22,6 +22,7 @@
     "noRawQuestionAggregation": true,
     "facilitatorObservationMerge": true,
     "allFormalThresholdsComputable": true,
+    "cleanContextVerified": true,
     "requiredProtocolFiles": true
   },
   "passed": true,

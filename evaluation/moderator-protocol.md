@@ -10,7 +10,7 @@
 
 ## 启动检查
 
-在测试前确认 `http://127.0.0.1:4173/case/c01-cold-room-knock/` 可打开，并在仓库根目录运行 `npm run fun-gate:verify`。如果使用新批次目录，先运行 `npm run fun-gate:prepare`；该命令不会覆盖已经存在的观察表。
+在测试前确认 `http://127.0.0.1:4173/case/c01-cold-room-knock/` 可打开，并在仓库根目录运行 `npm run fun-gate:verify`。如需复核浏览器隔离，可运行 `npm run fun-gate:clean-context`；它只输出计数，不保存存档内容。如果使用新批次目录，先运行 `npm run fun-gate:prepare`；该命令不会覆盖已经存在的观察表。
 
 ## 必记事件
 

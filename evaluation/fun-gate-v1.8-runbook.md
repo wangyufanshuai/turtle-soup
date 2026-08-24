@@ -13,6 +13,7 @@
 - 导出不包含原始问题、命令日志、事实、证据 ID、事件 ID、证书或答案文案。
 - 已生成 15 个离线批次编号，实际 testerId 以产品导出为准。
 - `npm run fun-gate:smoke` 已在 1440×900 与 390×844 的干净 Chromium 上验证首问及 JSON/CSV 下载。
+- `npm run fun-gate:clean-context` 已验证：上下文 A 的提问记录不会出现在上下文 B；B 以 0 条公开问答记录启动。
 
 ## 需要主持人准备
 

@@ -1,0 +1,15 @@
+{
+  "reportVersion": "1.8",
+  "generatedAt": "2026-08-24T16:33:25.464Z",
+  "releaseProfile": "v1.8-internal-rc",
+  "caseId": "c01-cold-room-knock",
+  "humanParticipants": 0,
+  "contaminatedContextTranscriptCount": 1,
+  "cleanContextTranscriptCount": 0,
+  "cleanContextTitlePresent": true,
+  "cleanContextViewport": "1440x900",
+  "cleanContextHttpStatus": 200,
+  "cleanContextConsoleErrorCount": 0,
+  "passed": true,
+  "qualification": "仅证明独立浏览器上下文不会继承上一测试者的公开问答状态；不包含存档内容，也不代表真人理解或 Fun Gate 通过。"
+}
