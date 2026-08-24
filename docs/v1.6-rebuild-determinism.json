@@ -1,0 +1,90 @@
+{
+  "reportVersion": "1.6",
+  "generatedAt": "2026-08-24T09:50:19.998Z",
+  "releaseProfile": "v1.6-internal-rc",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "runs": [
+    {
+      "id": "build-package-1",
+      "staticTree": {
+        "sha256": "5f142403f27575f68e956aca90055c94c722347dc8927c8f2e7b35f62cb4754b",
+        "files": 855,
+        "bytes": 6517673
+      },
+      "archive": {
+        "sha256": "0c39375f3786cb6f4decedc4c5c47084db8e0a8d4d4c729c181707a9995bc295",
+        "bytes": 6647898
+      }
+    },
+    {
+      "id": "build-package-2",
+      "staticTree": {
+        "sha256": "5f142403f27575f68e956aca90055c94c722347dc8927c8f2e7b35f62cb4754b",
+        "files": 855,
+        "bytes": 6517673
+      },
+      "archive": {
+        "sha256": "0c39375f3786cb6f4decedc4c5c47084db8e0a8d4d4c729c181707a9995bc295",
+        "bytes": 6647898
+      }
+    }
+  ],
+  "shellCoverage": {
+    "windowsNpmShell": "execSync(..., shell: true)",
+    "ciCompatibleDirectNode": "execFileSync(process.execPath, args)"
+  },
+  "historicalArtifacts": [
+    {
+      "version": "v1.0",
+      "path": "dist/turtle-soup-v1.0-internal-rc-web-pwa.zip",
+      "expected": "83e2ee8e477ce9103735ea3d8eb0011ae6b72e257a286c7e009a2ef98cf7322b",
+      "actual": "83e2ee8e477ce9103735ea3d8eb0011ae6b72e257a286c7e009a2ef98cf7322b",
+      "unchanged": true
+    },
+    {
+      "version": "v1.1",
+      "path": "dist/turtle-soup-v1.1-internal-rc-web-pwa.zip",
+      "expected": "0bc2b077317b6d32c2df10e14d35520917839a68d18b70d23fafa74991cb3f35",
+      "actual": "0bc2b077317b6d32c2df10e14d35520917839a68d18b70d23fafa74991cb3f35",
+      "unchanged": true
+    },
+    {
+      "version": "v1.2",
+      "path": "dist/turtle-soup-v1.2-internal-rc-web-pwa.zip",
+      "expected": "c3416a0ec807f9b94da8f00a0caab82b1b81e5745b6a5fd8b49c33e1279c7eb7",
+      "actual": "c3416a0ec807f9b94da8f00a0caab82b1b81e5745b6a5fd8b49c33e1279c7eb7",
+      "unchanged": true
+    },
+    {
+      "version": "v1.3",
+      "path": "dist/turtle-soup-v1.3-public-preview-web-pwa.zip",
+      "expected": "f0dab2d4b0ce62897382e299da6aebb8655f572f106b89de12c855654002226e",
+      "actual": "f0dab2d4b0ce62897382e299da6aebb8655f572f106b89de12c855654002226e",
+      "unchanged": true
+    },
+    {
+      "version": "v1.4",
+      "path": "dist/turtle-soup-v1.4-internal-rc-web-pwa.zip",
+      "expected": "b3db663a997b71744462b854b2ab45489447b627cda7cec9f524e25c335d8efb",
+      "actual": "b3db663a997b71744462b854b2ab45489447b627cda7cec9f524e25c335d8efb",
+      "unchanged": true
+    },
+    {
+      "version": "v1.5",
+      "path": "dist/turtle-soup-v1.5-internal-rc-web-pwa.zip",
+      "expected": "2f8ccc674f0a749725295537f7115730cb33af12d5a192bb20cb3ed2fa3b3bf1",
+      "actual": "2f8ccc674f0a749725295537f7115730cb33af12d5a192bb20cb3ed2fa3b3bf1",
+      "unchanged": true
+    }
+  ],
+  "checks": {
+    "staticTreeEqual": true,
+    "archiveEqual": true,
+    "windowsShellBuild": true,
+    "directNodePackaging": true,
+    "historicalArtifactsPreserved": true
+  },
+  "passed": true,
+  "qualification": "可重建性只证明同一源码与工具链下的字节稳定，不证明真人体验或外部环境永久可复现。"
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">凌晨两点的冷藏室走廊</title><desc id="desc">冷光照亮封闭的冷藏室门，监控时间停在凌晨两点。</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#24292b"/><stop offset="1" stop-color="#090b0d"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#15191b"/><stop offset="1" stop-color="#050607"/></linearGradient>
+    <radialGradient id="lamp"><stop stop-color="#d9ebd0" stop-opacity=".55"/><stop offset="1" stop-color="#9fbba4" stop-opacity="0"/></radialGradient>
+    <filter id="grain"><feTurbulence baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .07 0"/></filter>
+  </defs>
+  <rect width="1200" height="760" fill="#080a0b"/>
+  <path d="M0 0h1200v550H0z" fill="url(#wall)"/><path d="M0 550h1200v210H0z" fill="url(#floor)"/>
+  <ellipse cx="600" cy="145" rx="450" ry="250" fill="url(#lamp)"/>
+  <path d="M185 91h830v510H185z" fill="#0b0d0e" stroke="#4b5354" stroke-width="8"/>
+  <path d="M225 132h750v429H225z" fill="#182022" stroke="#252c2e" stroke-width="5"/>
+  <path d="M805 132h170v429H805z" fill="#0e1213"/><path d="M840 178h101v92H840z" fill="#071012" stroke="#596160" stroke-width="4"/>
+  <text x="890" y="217" fill="#a9c78d" font-family="monospace" font-size="23" text-anchor="middle">02:00</text><text x="890" y="248" fill="#779279" font-family="monospace" font-size="14" text-anchor="middle">SEALED</text>
+  <circle cx="930" cy="365" r="17" fill="#171b1b" stroke="#9ca49e" stroke-width="6"/><path d="M930 383v73" stroke="#717a76" stroke-width="8"/>
+  <path d="M262 501h505" stroke="#303839" stroke-width="3"/><path d="M260 468h508" stroke="#2c3334" stroke-width="2"/>
+  <path d="M338 231h330M338 290h330M338 349h330" stroke="#313a3b" stroke-width="3" opacity=".55"/>
+  <g fill="none" stroke="#8f2e3e" stroke-width="6" opacity=".86"><circle cx="492" cy="397" r="14"/><circle cx="550" cy="397" r="14"/><circle cx="608" cy="397" r="14"/></g>
+  <path d="M0 548h1200" stroke="#65706f" stroke-width="3"/><path d="M420 760l82-210M780 760l-82-210" stroke="#1e2425" stroke-width="4"/>
+  <rect width="1200" height="760" filter="url(#grain)" opacity=".55"/>
+  <text x="76" y="690" fill="#a9aaa2" font-family="serif" font-size="21" letter-spacing="5">COLD STORAGE / NIGHT RECORD 01</text>
+</svg>

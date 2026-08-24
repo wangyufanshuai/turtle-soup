@@ -52,6 +52,7 @@ export function EvidenceInspector({
   const [selectedId, setSelectedId] = useState<string>();
   const [page, setPage] = useState(0);
   const [imageFailed, setImageFailed] = useState(false);
+  const inspectorRef = useRef<HTMLElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const returnFocusRef = useRef<HTMLElement | null>(null);
   const pageSize = compact ? 4 : 5;
@@ -64,7 +65,17 @@ export function EvidenceInspector({
   }, [page, pageCount]);
 
   useEffect(() => {
-    if (!selected) return;
+    if (!selected) {
+      const priorTarget = returnFocusRef.current;
+      if (!priorTarget) return;
+      const timeout = window.setTimeout(() => {
+        const fallback = inspectorRef.current?.querySelector<HTMLElement>("button:not([disabled])");
+        const target = priorTarget.isConnected && !priorTarget.matches(":disabled") ? priorTarget : fallback;
+        target?.focus({ preventScroll: true });
+        if (document.activeElement !== target) inspectorRef.current?.focus({ preventScroll: true });
+      });
+      return () => window.clearTimeout(timeout);
+    }
     setImageFailed(false);
     requestAnimationFrame(() => dialogRef.current?.querySelector<HTMLElement>("button")?.focus());
   }, [selected?.id]);
@@ -78,7 +89,6 @@ export function EvidenceInspector({
   };
   const close = () => {
     setSelectedId(undefined);
-    requestAnimationFrame(() => returnFocusRef.current?.focus());
   };
   const onDialogKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
     if (event.key === "Escape") {
@@ -99,7 +109,7 @@ export function EvidenceInspector({
     }
   };
 
-  return <section className={styles.inspector} data-compact={compact || undefined} data-interaction={interactionMode} aria-label="证据架">
+  return <section ref={inspectorRef} tabIndex={-1} className={styles.inspector} data-compact={compact || undefined} data-interaction={interactionMode} aria-label="证据架">
     <div className={styles.shelfHeader}>
       <div><small>EVIDENCE SHELF / {interactionMode?.toUpperCase() ?? "FOCUS"}</small><b>{interactionLabel ?? "逐件检查，不让档案淹没现场"}</b></div>
       <span>{Math.min(page * pageSize + 1, evidence.length)}–{Math.min((page + 1) * pageSize, evidence.length)} / {evidence.length}</span>

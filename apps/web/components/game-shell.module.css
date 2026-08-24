@@ -261,7 +261,7 @@
   .systemCluster { padding-right: 10px; }
   .systemCluster > span { display: none; }
   .workspace { height: auto; display: block; }
-  .column { display: none; height: auto; min-height: calc(100dvh - var(--top) - 68px); overflow: visible; border-right: 0; padding-bottom: 12px; }
+  .column { display: none; height: auto; min-height: calc(100dvh - var(--top) - 68px); overflow: visible; border-right: 0; padding-bottom: calc(100px + env(safe-area-inset-bottom)); scroll-padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
   .column.mobileActive { display: block; animation: mobilePanel .22s ease-out both; }
   .sectionHeader { top: var(--top); }
   .sceneFrame { margin: 12px; }
@@ -272,7 +272,7 @@
   .hostOpening { margin-top: 7vh; }
   .askDock { bottom: calc(68px + env(safe-area-inset-bottom)); padding: 12px; }
   .builder > div { grid-template-columns: 1fr; }
-  .theoryEditor { padding: 12px; }
+  .theoryEditor { padding: 12px; padding-bottom: calc(160px + env(safe-area-inset-bottom)); }
   .mobileNav { position: fixed; z-index: 60; left: 0; right: 0; bottom: 0; height: calc(64px + env(safe-area-inset-bottom)); padding-bottom: env(safe-area-inset-bottom); display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--line-strong); background: rgba(8,9,11,.97); backdrop-filter: blur(18px); }
   .mobileNav button { border: 0; border-right: 1px solid var(--line); background: transparent; color: var(--muted); display: grid; place-content: center; justify-items: center; gap: 4px; cursor: pointer; }
   .mobileNav button:last-child { border-right: 0; }

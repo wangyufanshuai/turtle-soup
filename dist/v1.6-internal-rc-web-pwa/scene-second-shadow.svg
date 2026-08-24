@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">剧院后台的第二个影子</title><desc id="desc">暖金色舞台灯穿过后台帷幕，在侧幕上投下两个轮廓。</desc>
+  <defs><linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#261715"/><stop offset="1" stop-color="#08090b"/></linearGradient><radialGradient id="spot"><stop stop-color="#f2c878" stop-opacity=".8"/><stop offset="1" stop-color="#9a5d38" stop-opacity="0"/></radialGradient><filter id="grain"><feTurbulence baseFrequency=".7" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 .07 0"/></filter></defs>
+  <rect width="1200" height="760" fill="url(#back)"/><ellipse cx="690" cy="305" rx="460" ry="345" fill="url(#spot)" opacity=".5"/>
+  <path d="M0 0h226v760H0zM974 0h226v760H974z" fill="#5c1f2d" opacity=".85"/><path d="M226 0h748v760H226z" fill="#151114"/>
+  <path d="M318 0h564v660H318z" fill="#9f7042" opacity=".16"/><path d="M370 560 536 192h116l169 368" fill="none" stroke="#e2b66b" stroke-width="4" opacity=".7"/>
+  <g fill="#090a0b" opacity=".85"><path d="M505 470c18-52 43-85 70-102 27 17 53 50 70 102l-18 92H525z"/><path d="M705 469c18-45 39-75 62-88 24 13 46 43 62 88l-13 96H719z"/></g>
+  <path d="M468 504h385" stroke="#e2b66b" stroke-width="7" opacity=".68"/><rect x="834" y="96" width="93" height="252" rx="6" fill="#121316" stroke="#ad7947" stroke-width="4"/><path d="M848 142h66M848 186h66M848 230h66" stroke="#754a36" stroke-width="3"/>
+  <text x="52" y="686" fill="#e2c58f" font-family="monospace" font-size="21" letter-spacing="5">BACKSTAGE / CHANGEOVER 03</text><rect width="1200" height="760" filter="url(#grain)" opacity=".45"/>
+</svg>

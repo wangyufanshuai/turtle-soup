@@ -113,6 +113,12 @@ test("unrecognized and ambiguous questions fail closed without changing game fac
   assert.equal(ambiguous.accepted, false);
   assert.equal(ambiguous.projection.interpretation?.requiresConfirmation, true);
   assert.equal(ambiguous.state.transcript.length, 0);
+  const candidate = ambiguous.projection.interpretation?.candidates[0]?.queryId;
+  assert.ok(candidate);
+  const confirmed = reduceGameCommand(ambiguousCase, ambiguous.state, { type: "confirm_interpretation", queryId: candidate });
+  assert.equal(confirmed.accepted, true);
+  assert.equal(confirmed.events.some((event) => event.type === "question_answered"), true);
+  assert.equal(confirmed.state.transcript.length, 1);
 });
 
 test("a question can be undone without rolling back inspected evidence", () => {

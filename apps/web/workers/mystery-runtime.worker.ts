@@ -95,14 +95,17 @@ self.onmessage = async (message: MessageEvent<RuntimeWorkerRequest>) => {
     return;
   }
   const result = reduceGameCommand(caseFile, state, request.command);
-  if (result.accepted) {
+  const keepsInterpretationPending = result.events.some((event) => event.type === "interpretation_required");
+  if (result.accepted || keepsInterpretationPending) {
     state = result.state;
-    if (request.command.type === "restart_case") commands = [];
-    else if (request.command.type !== "start_case") commands = [...commands, request.command];
+    if (result.accepted) {
+      if (request.command.type === "restart_case") commands = [];
+      else if (request.command.type !== "start_case") commands = [...commands, request.command];
+    }
   }
   const response: RuntimeWorkerResponse = {
     id: request.id,
-    projection: result.accepted ? projectPlayerState(caseFile, state) : result.projection,
+    projection: result.accepted || keepsInterpretationPending ? projectPlayerState(caseFile, state) : result.projection,
     events: result.events,
     accepted: result.accepted,
     save: makeSave(),

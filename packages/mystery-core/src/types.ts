@@ -68,7 +68,10 @@ export type QuestionAliasCategory =
   | "pronoun"
   | "typo"
   | "negation"
-  | "time-qualifier";
+  | "time-qualifier"
+  | "space-qualifier"
+  | "compound"
+  | "counterfactual";
 
 export interface QuestionAliasEntry {
   text: string;

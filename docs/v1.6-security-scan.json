@@ -1,0 +1,33 @@
+{
+  "reportVersion": "1.6",
+  "releaseProfile": "v1.6-internal-rc",
+  "generatedAt": "2026-08-24T09:48:48.411Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "hiddenIdentifierCount": 1768,
+  "targets": [
+    {
+      "name": "static-output",
+      "files": 401,
+      "truthBearingTextFiles": 62,
+      "sourceMaps": 0,
+      "remoteReferences": 0,
+      "publicHtmlLeaks": [],
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "boundaries": {
+    "fullCaseFile": "worker-only",
+    "blackBoxRunnerInputs": [
+      "PlayerProjection",
+      "GameEvent",
+      "SaveEnvelope"
+    ],
+    "saveSchemaVersion": 1,
+    "remoteAnalytics": false,
+    "remoteAI": false
+  },
+  "passed": true,
+  "qualification": "静态扫描降低意外剧透与远程依赖风险；离线内容仍可被主动反编译，这不是 DRM。"
+}

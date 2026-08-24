@@ -9,3 +9,4 @@ export * from "./presentation-patch.ts";
 export * from "./mastery.ts";
 export * from "./diagnostics.ts";
 export * from "./question-alias-pack.ts";
+export * from "./blackbox-runner.ts";

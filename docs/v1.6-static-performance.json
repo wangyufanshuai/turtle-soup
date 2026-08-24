@@ -1,0 +1,22 @@
+{
+  "reportVersion": "1.6",
+  "releaseProfile": "v1.6-internal-rc",
+  "generatedAt": "2026-08-24T09:48:46.788Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "budgets": {
+    "totalBytes": 8000000,
+    "initialJavaScriptBytes": 1400000,
+    "maximumAssetBytes": 450000,
+    "sourceMaps": 0
+  },
+  "actual": {
+    "totalBytes": 6517673,
+    "initialJavaScriptBytes": 641844,
+    "maximumAssetBytes": 376609,
+    "sourceMaps": 0,
+    "javascriptBytes": 3364669
+  },
+  "failures": [],
+  "passed": true
+}

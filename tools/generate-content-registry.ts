@@ -12,13 +12,14 @@ const root = resolve(process.argv[2] ?? ".");
 const profileId = process.argv[3] ?? process.env.TURTLE_SOUP_RELEASE_PROFILE ?? "v1.4-internal-rc";
 const generatedDir = resolve(root, "apps/web/.generated");
 const { profile, entries } = loadReleaseContent(root, profileId);
-const patchPath = resolve(root, "content/zh/presentation", ["v1.4-internal-rc", "v1.5-internal-rc"].includes(profile.id) ? "v1.4/patches.json" : "v1.2/patches.json");
+const patchPath = resolve(root, "content/zh/presentation", ["v1.4-internal-rc", "v1.5-internal-rc", "v1.6-internal-rc"].includes(profile.id) ? "v1.4/patches.json" : "v1.2/patches.json");
 const presentationPatches: CasePresentationPatch[] = existsSync(patchPath)
   ? JSON.parse(readFileSync(patchPath, "utf8")) as CasePresentationPatch[]
   : [];
-const patchByCase = ["v1.2-internal-rc", "v1.3-public-preview", "v1.4-internal-rc", "v1.5-internal-rc"].includes(profile.id) ? new Map(presentationPatches.map((patch) => [patch.caseId, patch])) : new Map();
-const aliasPath = resolve(root, "content/zh/question-aliases/v1.5/packs.json");
-const aliasPacks: QuestionAliasPack[] = profile.id === "v1.5-internal-rc" && existsSync(aliasPath)
+const patchByCase = ["v1.2-internal-rc", "v1.3-public-preview", "v1.4-internal-rc", "v1.5-internal-rc", "v1.6-internal-rc"].includes(profile.id) ? new Map(presentationPatches.map((patch) => [patch.caseId, patch])) : new Map();
+const aliasVersion = profile.id === "v1.6-internal-rc" ? "v1.6" : "v1.5";
+const aliasPath = resolve(root, `content/zh/question-aliases/${aliasVersion}/packs.json`);
+const aliasPacks: QuestionAliasPack[] = ["v1.5-internal-rc", "v1.6-internal-rc"].includes(profile.id) && existsSync(aliasPath)
   ? JSON.parse(readFileSync(aliasPath, "utf8")) as QuestionAliasPack[]
   : [];
 const aliasByCase = new Map(aliasPacks.map((pack) => [pack.caseId, pack]));
