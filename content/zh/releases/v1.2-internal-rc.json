@@ -1,0 +1,13 @@
+{
+  "profileVersion": 1,
+  "id": "v1.2-internal-rc",
+  "title": "TURTLE SOUP v1.2 Experience Hardening RC",
+  "status": "internal-rc",
+  "publishable": false,
+  "humanEvaluation": "pending",
+  "manifests": [
+    "../cases/manifest.v0.6.json",
+    "../cases/manifest.season2.v1.0.json",
+    "../cases/manifest.season3.v1.1.json"
+  ]
+}

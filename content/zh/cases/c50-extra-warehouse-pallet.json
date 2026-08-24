@@ -1,0 +1,1863 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c50-extra-warehouse-pallet",
+  "metadata": {
+    "titleKey": "case.c50.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "科学测量",
+      "复杂系统",
+      "来源边界"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:d0da1e95d1504cf1a5a4160623cbe3c5ad0cff06fbdd476c62524e3d0da104b1",
+    "status": "public-preview",
+    "seasonId": "season-4"
+  },
+  "presentation": {
+    "layoutId": "season4-aggregate-constraint",
+    "sceneAsset": "/assets/cases/c50/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c50/scene-mobile.svg",
+    "palette": "season4-c50",
+    "accent": "#d7aa76",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "aggregate-constraint-lab",
+    "mobileNavigation": [
+      "现场",
+      "记录",
+      "推理板"
+    ],
+    "boardMode": "aggregate-constraint"
+  },
+  "surface": {
+    "titleKey": "case.c50.title",
+    "textKey": "case.c50.surface",
+    "publicFactIds": [
+      "fact-c50-01",
+      "fact-c50-02",
+      "fact-c50-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c50-01",
+      "query-c50-02",
+      "query-c50-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c50-one",
+      "titleKey": "chapter.c50.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c50-1",
+      "titleKey": "board.c50.1.title",
+      "mode": "aggregate-constraint",
+      "slots": [
+        {
+          "id": "slot-c50-1-1",
+          "labelKey": "board.c50.1.slot.1",
+          "acceptsEventIds": [
+            "event-c50-01"
+          ]
+        },
+        {
+          "id": "slot-c50-1-2",
+          "labelKey": "board.c50.1.slot.2",
+          "acceptsEventIds": [
+            "event-c50-03"
+          ]
+        },
+        {
+          "id": "slot-c50-1-3",
+          "labelKey": "board.c50.1.slot.3",
+          "acceptsEventIds": [
+            "event-c50-05"
+          ]
+        },
+        {
+          "id": "slot-c50-1-4",
+          "labelKey": "board.c50.1.slot.4",
+          "acceptsEventIds": [
+            "event-c50-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "contributes-to",
+        "sums-with",
+        "exceeds"
+      ]
+    },
+    {
+      "id": "board-c50-2",
+      "titleKey": "board.c50.2.title",
+      "mode": "queue-model",
+      "slots": [
+        {
+          "id": "slot-c50-2-1",
+          "labelKey": "board.c50.2.slot.1",
+          "acceptsEventIds": [
+            "event-c50-02"
+          ]
+        },
+        {
+          "id": "slot-c50-2-2",
+          "labelKey": "board.c50.2.slot.2",
+          "acceptsEventIds": [
+            "event-c50-04"
+          ]
+        },
+        {
+          "id": "slot-c50-2-3",
+          "labelKey": "board.c50.2.slot.3",
+          "acceptsEventIds": [
+            "event-c50-06"
+          ]
+        },
+        {
+          "id": "slot-c50-2-4",
+          "labelKey": "board.c50.2.slot.4",
+          "acceptsEventIds": [
+            "event-c50-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "enqueues",
+        "merges",
+        "dequeues"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c50-system",
+      "kind": "object",
+      "labelKey": "entity.c50.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c50",
+      "kind": "location",
+      "labelKey": "location.c50",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c50-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "14:00"
+      },
+      "participants": [
+        "entity-c50-system"
+      ],
+      "locationId": "location-c50",
+      "action": "step-c50-1",
+      "labelKey": "event.c50.1",
+      "effectFactIds": [
+        "fact-c50-01"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c50-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "14:04"
+      },
+      "participants": [
+        "entity-c50-system"
+      ],
+      "locationId": "location-c50",
+      "action": "step-c50-2",
+      "labelKey": "event.c50.2",
+      "effectFactIds": [
+        "fact-c50-02"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c50-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "14:08"
+      },
+      "participants": [
+        "entity-c50-system"
+      ],
+      "locationId": "location-c50",
+      "action": "step-c50-3",
+      "labelKey": "event.c50.3",
+      "effectFactIds": [
+        "fact-c50-03"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c50-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "14:12"
+      },
+      "participants": [
+        "entity-c50-system"
+      ],
+      "locationId": "location-c50",
+      "action": "step-c50-4",
+      "labelKey": "event.c50.4",
+      "effectFactIds": [
+        "fact-c50-04"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c50-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "14:16"
+      },
+      "participants": [
+        "entity-c50-system"
+      ],
+      "locationId": "location-c50",
+      "action": "step-c50-5",
+      "labelKey": "event.c50.5",
+      "effectFactIds": [
+        "fact-c50-05"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c50-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "15:20"
+      },
+      "participants": [
+        "entity-c50-system"
+      ],
+      "locationId": "location-c50",
+      "action": "step-c50-6",
+      "labelKey": "event.c50.6",
+      "effectFactIds": [
+        "fact-c50-06"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c50-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "15:24"
+      },
+      "participants": [
+        "entity-c50-system"
+      ],
+      "locationId": "location-c50",
+      "action": "step-c50-7",
+      "labelKey": "event.c50.7",
+      "effectFactIds": [
+        "fact-c50-07"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c50-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "15:28"
+      },
+      "participants": [
+        "entity-c50-system"
+      ],
+      "locationId": "location-c50",
+      "action": "step-c50-8",
+      "labelKey": "event.c50.8",
+      "effectFactIds": [
+        "fact-c50-08"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c50-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "15:32"
+      },
+      "participants": [
+        "entity-c50-system"
+      ],
+      "locationId": "location-c50",
+      "action": "step-c50-9",
+      "labelKey": "event.c50.9",
+      "effectFactIds": [
+        "fact-c50-09"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c50-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "15:36"
+      },
+      "participants": [
+        "entity-c50-system"
+      ],
+      "locationId": "location-c50",
+      "action": "step-c50-10",
+      "labelKey": "event.c50.10",
+      "effectFactIds": [
+        "fact-c50-10"
+      ],
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c50-1-1",
+      "type": "precedes",
+      "fromId": "entity-c50-system",
+      "toId": "location-c50",
+      "eventId": "event-c50-01",
+      "factId": "fact-c50-01"
+    },
+    {
+      "id": "relation-c50-1-2",
+      "type": "causes",
+      "fromId": "entity-c50-system",
+      "toId": "location-c50",
+      "eventId": "event-c50-03",
+      "factId": "fact-c50-02"
+    },
+    {
+      "id": "relation-c50-1-3",
+      "type": "causes",
+      "fromId": "entity-c50-system",
+      "toId": "location-c50",
+      "eventId": "event-c50-05",
+      "factId": "fact-c50-03"
+    },
+    {
+      "id": "relation-c50-2-1",
+      "type": "precedes",
+      "fromId": "entity-c50-system",
+      "toId": "location-c50",
+      "eventId": "event-c50-02",
+      "factId": "fact-c50-02"
+    },
+    {
+      "id": "relation-c50-2-2",
+      "type": "causes",
+      "fromId": "entity-c50-system",
+      "toId": "location-c50",
+      "eventId": "event-c50-04",
+      "factId": "fact-c50-03"
+    },
+    {
+      "id": "relation-c50-2-3",
+      "type": "causes",
+      "fromId": "entity-c50-system",
+      "toId": "location-c50",
+      "eventId": "event-c50-06",
+      "factId": "fact-c50-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c50-01",
+      "predicate": "verified_c50_1",
+      "args": {
+        "term": "托盘数量"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c50.1"
+    },
+    {
+      "id": "fact-c50-02",
+      "predicate": "verified_c50_2",
+      "args": {
+        "term": "批次总量"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c50.2"
+    },
+    {
+      "id": "fact-c50-03",
+      "predicate": "verified_c50_3",
+      "args": {
+        "term": "拆分记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c50.3"
+    },
+    {
+      "id": "fact-c50-04",
+      "predicate": "verified_c50_4",
+      "args": {
+        "term": "托盘标签"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c50.4"
+    },
+    {
+      "id": "fact-c50-05",
+      "predicate": "verified_c50_5",
+      "args": {
+        "term": "库存口径"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c50.5"
+    },
+    {
+      "id": "fact-c50-06",
+      "predicate": "verified_c50_6",
+      "args": {
+        "term": "入库队列"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c50.6"
+    },
+    {
+      "id": "fact-c50-07",
+      "predicate": "verified_c50_7",
+      "args": {
+        "term": "货物件数"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c50.7"
+    },
+    {
+      "id": "fact-c50-08",
+      "predicate": "verified_c50_8",
+      "args": {
+        "term": "盘点时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c50.8"
+    },
+    {
+      "id": "fact-c50-09",
+      "predicate": "verified_c50_9",
+      "args": {
+        "term": "合并批次"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c50.9"
+    },
+    {
+      "id": "fact-c50-10",
+      "predicate": "verified_c50_10",
+      "args": {
+        "term": "出库单"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-10"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c50.10"
+    },
+    {
+      "id": "fact-c50-11",
+      "predicate": "verified_c50_11",
+      "args": {
+        "term": "托盘数量"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c50.11"
+    },
+    {
+      "id": "fact-c50-12",
+      "predicate": "verified_c50_12",
+      "args": {
+        "term": "批次总量"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c50.12"
+    },
+    {
+      "id": "fact-c50-13",
+      "predicate": "verified_c50_13",
+      "args": {
+        "term": "拆分记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c50.13"
+    },
+    {
+      "id": "fact-c50-14",
+      "predicate": "verified_c50_14",
+      "args": {
+        "term": "托盘标签"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c50.14"
+    },
+    {
+      "id": "fact-c50-15",
+      "predicate": "verified_c50_15",
+      "args": {
+        "term": "库存口径"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c50.15"
+    },
+    {
+      "id": "fact-c50-16",
+      "predicate": "verified_c50_16",
+      "args": {
+        "term": "入库队列"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c50-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c50-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c50.16"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c50-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c50-01",
+        "fact-c50-02",
+        "fact-c50-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c50-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c50-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c50-01",
+        "fact-c50-02",
+        "fact-c50-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c50-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c50-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c50-02",
+        "fact-c50-12"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c50-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c50-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c50-03",
+        "fact-c50-13"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c50-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c50-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c50-04",
+        "fact-c50-14"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c50-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c50-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c50-05",
+        "fact-c50-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c50-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c50-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c50-06",
+        "fact-c50-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c50-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c50-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c50-07"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c50-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c50-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c50-08"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c50-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c50-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c50-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c50-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c50-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c50-10"
+      ],
+      "spoilerLevel": "sensitive"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c50-01",
+      "labelKey": "query.c50.1",
+      "intent": "verify",
+      "predicate": "verified_c50_1",
+      "slots": {
+        "subjectId": "entity-c50-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c50-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-opening"
+      ],
+      "examplePhrases": [
+        "托盘数量是否成立？",
+        "能确认托盘数量吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "托盘数量"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c50-02",
+      "labelKey": "query.c50.2",
+      "intent": "verify",
+      "predicate": "verified_c50_2",
+      "slots": {
+        "subjectId": "entity-c50-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c50-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-opening"
+      ],
+      "examplePhrases": [
+        "批次总量是否成立？",
+        "能确认批次总量吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "批次总量"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c50-03",
+      "labelKey": "query.c50.3",
+      "intent": "verify",
+      "predicate": "verified_c50_3",
+      "slots": {
+        "subjectId": "entity-c50-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c50-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-opening"
+      ],
+      "examplePhrases": [
+        "拆分记录是否成立？",
+        "能确认拆分记录吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "拆分记录"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c50-04",
+      "labelKey": "query.c50.4",
+      "intent": "verify",
+      "predicate": "verified_c50_4",
+      "slots": {
+        "subjectId": "entity-c50-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c50-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-04"
+      ],
+      "examplePhrases": [
+        "托盘标签是否成立？",
+        "能确认托盘标签吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "托盘标签"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c50-05",
+      "labelKey": "query.c50.5",
+      "intent": "verify",
+      "predicate": "verified_c50_5",
+      "slots": {
+        "subjectId": "entity-c50-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c50-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-05"
+      ],
+      "examplePhrases": [
+        "库存口径是否成立？",
+        "能确认库存口径吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "库存口径"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c50-06",
+      "labelKey": "query.c50.6",
+      "intent": "verify",
+      "predicate": "verified_c50_6",
+      "slots": {
+        "subjectId": "entity-c50-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c50-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-06"
+      ],
+      "examplePhrases": [
+        "入库队列是否成立？",
+        "能确认入库队列吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "入库队列"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c50-07",
+      "labelKey": "query.c50.7",
+      "intent": "verify",
+      "predicate": "verified_c50_7",
+      "slots": {
+        "subjectId": "entity-c50-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c50-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-07"
+      ],
+      "examplePhrases": [
+        "货物件数是否成立？",
+        "能确认货物件数吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "货物件数"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c50-08",
+      "labelKey": "query.c50.8",
+      "intent": "verify",
+      "predicate": "verified_c50_8",
+      "slots": {
+        "subjectId": "entity-c50-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c50-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-08"
+      ],
+      "examplePhrases": [
+        "盘点时间是否成立？",
+        "能确认盘点时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "盘点时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c50-09",
+      "labelKey": "query.c50.9",
+      "intent": "verify",
+      "predicate": "verified_c50_9",
+      "slots": {
+        "subjectId": "entity-c50-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c50-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-09"
+      ],
+      "examplePhrases": [
+        "合并批次是否成立？",
+        "能确认合并批次吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "合并批次"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c50-10",
+      "labelKey": "query.c50.10",
+      "intent": "eliminate",
+      "predicate": "verified_c50_10",
+      "slots": {
+        "subjectId": "entity-c50-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c50-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c50-10"
+      ],
+      "examplePhrases": [
+        "出库单是否成立？",
+        "能确认出库单吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "出库单"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c50-01",
+      "kind": "scene",
+      "titleKey": "evidence.c50.1.title",
+      "observationKey": "evidence.c50.1.observation",
+      "sourceFactIds": [
+        "fact-c50-01",
+        "fact-c50-02",
+        "fact-c50-03"
+      ],
+      "sourceEventIds": [
+        "event-c50-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c50-system",
+        "location-c50"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c50-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c50/evidence-01.svg",
+      "assetAlt": "托盘数量"
+    },
+    {
+      "id": "evidence-c50-02",
+      "kind": "record",
+      "titleKey": "evidence.c50.2.title",
+      "observationKey": "evidence.c50.2.observation",
+      "sourceFactIds": [
+        "fact-c50-02",
+        "fact-c50-12"
+      ],
+      "sourceEventIds": [
+        "event-c50-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c50-system",
+        "location-c50"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c50-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c50/evidence-02.svg",
+      "assetAlt": "批次总量"
+    },
+    {
+      "id": "evidence-c50-03",
+      "kind": "object",
+      "titleKey": "evidence.c50.3.title",
+      "observationKey": "evidence.c50.3.observation",
+      "sourceFactIds": [
+        "fact-c50-03",
+        "fact-c50-13"
+      ],
+      "sourceEventIds": [
+        "event-c50-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c50-system",
+        "location-c50"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c50/evidence-03.svg",
+      "assetAlt": "拆分记录"
+    },
+    {
+      "id": "evidence-c50-04",
+      "kind": "scene",
+      "titleKey": "evidence.c50.4.title",
+      "observationKey": "evidence.c50.4.observation",
+      "sourceFactIds": [
+        "fact-c50-04",
+        "fact-c50-14"
+      ],
+      "sourceEventIds": [
+        "event-c50-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c50-system",
+        "location-c50"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c50/evidence-04.svg",
+      "assetAlt": "托盘标签"
+    },
+    {
+      "id": "evidence-c50-05",
+      "kind": "record",
+      "titleKey": "evidence.c50.5.title",
+      "observationKey": "evidence.c50.5.observation",
+      "sourceFactIds": [
+        "fact-c50-05",
+        "fact-c50-15"
+      ],
+      "sourceEventIds": [
+        "event-c50-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c50-system",
+        "location-c50"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c50/evidence-05.svg",
+      "assetAlt": "库存口径"
+    },
+    {
+      "id": "evidence-c50-06",
+      "kind": "object",
+      "titleKey": "evidence.c50.6.title",
+      "observationKey": "evidence.c50.6.observation",
+      "sourceFactIds": [
+        "fact-c50-06",
+        "fact-c50-16"
+      ],
+      "sourceEventIds": [
+        "event-c50-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c50-system",
+        "location-c50"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c50/evidence-01.svg",
+      "assetAlt": "入库队列"
+    },
+    {
+      "id": "evidence-c50-07",
+      "kind": "scene",
+      "titleKey": "evidence.c50.7.title",
+      "observationKey": "evidence.c50.7.observation",
+      "sourceFactIds": [
+        "fact-c50-07"
+      ],
+      "sourceEventIds": [
+        "event-c50-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c50-system",
+        "location-c50"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c50/evidence-02.svg",
+      "assetAlt": "货物件数"
+    },
+    {
+      "id": "evidence-c50-08",
+      "kind": "record",
+      "titleKey": "evidence.c50.8.title",
+      "observationKey": "evidence.c50.8.observation",
+      "sourceFactIds": [
+        "fact-c50-08"
+      ],
+      "sourceEventIds": [
+        "event-c50-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c50-system",
+        "location-c50"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c50/evidence-03.svg",
+      "assetAlt": "盘点时间"
+    },
+    {
+      "id": "evidence-c50-09",
+      "kind": "object",
+      "titleKey": "evidence.c50.9.title",
+      "observationKey": "evidence.c50.9.observation",
+      "sourceFactIds": [
+        "fact-c50-09"
+      ],
+      "sourceEventIds": [
+        "event-c50-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c50-system",
+        "location-c50"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c50/evidence-04.svg",
+      "assetAlt": "合并批次"
+    },
+    {
+      "id": "evidence-c50-10",
+      "kind": "scene",
+      "titleKey": "evidence.c50.10.title",
+      "observationKey": "evidence.c50.10.observation",
+      "sourceFactIds": [
+        "fact-c50-10"
+      ],
+      "sourceEventIds": [
+        "event-c50-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c50-system",
+        "location-c50"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c50/evidence-05.svg",
+      "assetAlt": "出库单"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c50.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c50-01",
+          "event-c50-02",
+          "event-c50-03",
+          "event-c50-04",
+          "event-c50-05",
+          "event-c50-06",
+          "event-c50-07",
+          "event-c50-08",
+          "event-c50-09"
+        ],
+        "motiveKey": "让批次、容器和货物数量可以同时对账"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c50-01",
+        "evidence-c50-02",
+        "evidence-c50-03",
+        "evidence-c50-04",
+        "evidence-c50-05",
+        "evidence-c50-06",
+        "evidence-c50-07",
+        "evidence-c50-08",
+        "evidence-c50-09"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c50-1",
+        "contradiction-c50-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c50-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c50.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "仓库藏了一批货"
+        ],
+        "motiveKey": "motive-c50-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c50-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c50-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c50-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c50.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "盘点员重复扫描了托盘"
+        ],
+        "motiveKey": "motive-c50-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c50-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c50-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c50-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c50-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c50-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c50-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c50-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c50-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c50-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c50-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c50-01",
+      "fact-c50-02",
+      "fact-c50-03",
+      "fact-c50-04",
+      "fact-c50-05",
+      "fact-c50-06",
+      "fact-c50-07",
+      "fact-c50-08",
+      "fact-c50-09"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c50-01",
+      "evidence-c50-02",
+      "evidence-c50-03",
+      "evidence-c50-04",
+      "evidence-c50-05",
+      "evidence-c50-06",
+      "evidence-c50-07",
+      "evidence-c50-08",
+      "evidence-c50-09"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c50-01",
+        "event-c50-02"
+      ],
+      [
+        "event-c50-02",
+        "event-c50-03"
+      ],
+      [
+        "event-c50-03",
+        "event-c50-04"
+      ],
+      [
+        "event-c50-04",
+        "event-c50-05"
+      ],
+      [
+        "event-c50-05",
+        "event-c50-06"
+      ],
+      [
+        "event-c50-06",
+        "event-c50-07"
+      ],
+      [
+        "event-c50-07",
+        "event-c50-08"
+      ],
+      [
+        "event-c50-08",
+        "event-c50-09"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c50-1",
+      "contradiction-c50-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c50-alternative-1",
+      "hypothesis-c50-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c50-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c50-a",
+        "evidenceIds": [
+          "evidence-c50-01",
+          "evidence-c50-02",
+          "evidence-c50-03",
+          "evidence-c50-04",
+          "evidence-c50-05",
+          "evidence-c50-06",
+          "evidence-c50-07",
+          "evidence-c50-08"
+        ]
+      },
+      {
+        "id": "proof-c50-b",
+        "evidenceIds": [
+          "evidence-c50-01",
+          "evidence-c50-02",
+          "evidence-c50-09"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "让批次、容器和货物数量可以同时对账"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c50-1",
+        "kind": "measurement",
+        "boardId": "board-c50-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c50-1-1",
+            "eventId": "event-c50-01"
+          },
+          {
+            "slotId": "slot-c50-1-2",
+            "eventId": "event-c50-03"
+          },
+          {
+            "slotId": "slot-c50-1-3",
+            "eventId": "event-c50-05"
+          },
+          {
+            "slotId": "slot-c50-1-4",
+            "eventId": "event-c50-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c50-01",
+            "toEventId": "event-c50-03",
+            "relation": "contributes-to"
+          },
+          {
+            "fromEventId": "event-c50-03",
+            "toEventId": "event-c50-05",
+            "relation": "contributes-to"
+          },
+          {
+            "fromEventId": "event-c50-05",
+            "toEventId": "event-c50-09",
+            "relation": "contributes-to"
+          }
+        ],
+        "failureCategory": "measurement"
+      },
+      {
+        "id": "obligation-c50-2",
+        "kind": "state-transition",
+        "boardId": "board-c50-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c50-2-1",
+            "eventId": "event-c50-02"
+          },
+          {
+            "slotId": "slot-c50-2-2",
+            "eventId": "event-c50-04"
+          },
+          {
+            "slotId": "slot-c50-2-3",
+            "eventId": "event-c50-06"
+          },
+          {
+            "slotId": "slot-c50-2-4",
+            "eventId": "event-c50-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c50-02",
+            "toEventId": "event-c50-04",
+            "relation": "enqueues"
+          },
+          {
+            "fromEventId": "event-c50-04",
+            "toEventId": "event-c50-06",
+            "relation": "enqueues"
+          },
+          {
+            "fromEventId": "event-c50-06",
+            "toEventId": "event-c50-09",
+            "relation": "enqueues"
+          }
+        ],
+        "failureCategory": "state-transition"
+      }
+    ],
+    "uniquenessClaim": "库存按批次和托盘计数，盘点口径不等于唯一货物数量；一批货在拆分后留下了两个托盘标签。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c50-1",
+      "eventId": "event-c50-02",
+      "factIds": [
+        "fact-c50-01"
+      ],
+      "captionKey": "event.c50.2"
+    },
+    {
+      "id": "replay-c50-2",
+      "eventId": "event-c50-03",
+      "factIds": [
+        "fact-c50-02"
+      ],
+      "captionKey": "event.c50.3"
+    },
+    {
+      "id": "replay-c50-3",
+      "eventId": "event-c50-04",
+      "factIds": [
+        "fact-c50-03"
+      ],
+      "captionKey": "event.c50.4"
+    },
+    {
+      "id": "replay-c50-4",
+      "eventId": "event-c50-05",
+      "factIds": [
+        "fact-c50-04"
+      ],
+      "captionKey": "event.c50.5"
+    },
+    {
+      "id": "replay-c50-5",
+      "eventId": "event-c50-06",
+      "factIds": [
+        "fact-c50-05"
+      ],
+      "captionKey": "event.c50.6"
+    },
+    {
+      "id": "replay-c50-6",
+      "eventId": "event-c50-07",
+      "factIds": [
+        "fact-c50-01",
+        "fact-c50-02",
+        "fact-c50-03",
+        "fact-c50-04",
+        "fact-c50-05",
+        "fact-c50-06",
+        "fact-c50-07",
+        "fact-c50-08",
+        "fact-c50-09"
+      ],
+      "captionKey": "event.c50.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c50.title": "仓库里多出的托盘",
+      "case.c50.surface": "库存表显示多出一只托盘，批次总量却完全吻合。",
+      "case.c50.truth": "库存按批次和托盘计数，盘点口径不等于唯一货物数量；一批货在拆分后留下了两个托盘标签。",
+      "entity.c50.system": "测量系统与记录链",
+      "location.c50": "科学系统现场",
+      "hypothesis.c50.canonical": "库存按批次和托盘计数，盘点口径不等于唯一货物数量；一批货在拆分后留下了两个托盘标签。",
+      "hypothesis.c50.alternative.1": "仓库藏了一批货",
+      "hypothesis.c50.alternative.2": "盘点员重复扫描了托盘",
+      "motive.让批次、容器和货物数量可以同时对账": "让批次、容器和货物数量可以同时对账",
+      "chapter.c50.one": "固定异常",
+      "chapter.c50.two": "统一测量边界",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c50.1": "托盘数量是否成立？",
+      "query.c50.2": "批次总量是否成立？",
+      "query.c50.3": "拆分记录是否成立？",
+      "query.c50.4": "托盘标签是否成立？",
+      "query.c50.5": "库存口径是否成立？",
+      "query.c50.6": "入库队列是否成立？",
+      "query.c50.7": "货物件数是否成立？",
+      "query.c50.8": "盘点时间是否成立？",
+      "query.c50.9": "合并批次是否成立？",
+      "query.c50.10": "出库单是否成立？",
+      "event.c50.1": "阶段 1：托盘数量进入记录链",
+      "event.c50.2": "阶段 2：批次总量进入记录链",
+      "event.c50.3": "阶段 3：拆分记录进入记录链",
+      "event.c50.4": "阶段 4：托盘标签进入记录链",
+      "event.c50.5": "阶段 5：库存口径进入记录链",
+      "event.c50.6": "阶段 6：入库队列进入记录链",
+      "event.c50.7": "阶段 7：货物件数进入记录链",
+      "event.c50.8": "阶段 8：盘点时间进入记录链",
+      "event.c50.9": "阶段 9：合并批次进入记录链",
+      "event.c50.10": "阶段 10：出库单进入记录链",
+      "evidence.c50.1.title": "托盘数量记录",
+      "evidence.c50.1.observation": "来源记录显示“托盘数量”在该阶段保持可复核。",
+      "evidence.c50.2.title": "批次总量记录",
+      "evidence.c50.2.observation": "来源记录显示“批次总量”在该阶段保持可复核。",
+      "evidence.c50.3.title": "拆分记录记录",
+      "evidence.c50.3.observation": "来源记录显示“拆分记录”在该阶段保持可复核。",
+      "evidence.c50.4.title": "托盘标签记录",
+      "evidence.c50.4.observation": "来源记录显示“托盘标签”在该阶段保持可复核。",
+      "evidence.c50.5.title": "库存口径记录",
+      "evidence.c50.5.observation": "来源记录显示“库存口径”在该阶段保持可复核。",
+      "evidence.c50.6.title": "入库队列记录",
+      "evidence.c50.6.observation": "来源记录显示“入库队列”在该阶段保持可复核。",
+      "evidence.c50.7.title": "货物件数记录",
+      "evidence.c50.7.observation": "来源记录显示“货物件数”在该阶段保持可复核。",
+      "evidence.c50.8.title": "盘点时间记录",
+      "evidence.c50.8.observation": "来源记录显示“盘点时间”在该阶段保持可复核。",
+      "evidence.c50.9.title": "合并批次记录",
+      "evidence.c50.9.observation": "来源记录显示“合并批次”在该阶段保持可复核。",
+      "evidence.c50.10.title": "出库单记录",
+      "evidence.c50.10.observation": "来源记录显示“出库单”在该阶段保持可复核。",
+      "board.c50.1.title": "仓库里多出的托盘 · aggregate-constraint",
+      "board.c50.1.slot.1": "起始来源",
+      "board.c50.1.slot.2": "关键变化",
+      "board.c50.1.slot.3": "观测结果",
+      "board.c50.1.slot.4": "排除替代",
+      "board.c50.2.title": "仓库里多出的托盘 · queue-model",
+      "board.c50.2.slot.1": "起始来源",
+      "board.c50.2.slot.2": "关键变化",
+      "board.c50.2.slot.3": "观测结果",
+      "board.c50.2.slot.4": "排除替代"
+    }
+  }
+}

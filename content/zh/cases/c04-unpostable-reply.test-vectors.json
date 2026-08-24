@@ -1,0 +1,12 @@
+{
+  "caseId": "c04-unpostable-reply",
+  "normalizationVectors": [
+    { "id": "opening-letter", "rawQuestion": "这封信是在盖邮戳前写的吗？", "expectedStatus": "matched", "expectedQueryId": "query-written-before", "expectedMatchedBy": "exact" },
+    { "id": "clock-error", "rawQuestion": "邮戳机器的日期错了吗？", "expectedStatus": "matched", "expectedQueryId": "query-clock-wrong", "expectedMatchedBy": "exact" },
+    { "id": "unknown", "rawQuestion": "邮局今天卖了多少咖啡？", "expectedStatus": "unrecognized", "expectedQueryId": null, "expectedMatchedBy": "none" }
+  ],
+  "judgementVectors": [],
+  "orderVectors": [],
+  "antiLeakVectors": ["邮戳机快了一天", "空白测试信封", "回信仍未离开邮局"],
+  "replayVector": { "expectedBeatIds": ["replay-c04-writing", "replay-c04-clock", "replay-c04-stamp", "replay-c04-seal", "replay-c04-audit"], "expectedEventIds": ["event-zhou-writes", "event-clock-adjusted", "event-letter-bagged", "event-bag-sealed", "event-audit-confirms"] }
+}

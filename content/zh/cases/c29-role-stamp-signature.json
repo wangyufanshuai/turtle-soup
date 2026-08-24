@@ -1,0 +1,1861 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c29-role-stamp-signature",
+  "metadata": {
+    "titleKey": "case.c29.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "岗位身份",
+      "电子印章",
+      "来源链"
+    ],
+    "targetMinutes": {
+      "min": 9,
+      "max": 19
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:de08e447e9b3c0d5c6df0d072c973cce7b3ec41e4374be210c215daa04bf2eb7",
+    "status": "internal-rc",
+    "seasonId": "season-3"
+  },
+  "presentation": {
+    "layoutId": "season3-identity-matrix",
+    "sceneAsset": "/assets/cases/c29/scene-desktop.webp",
+    "sceneAssetMobile": "/assets/cases/c29/scene-mobile.webp",
+    "palette": "seal-violet",
+    "accent": "#c58fbe",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "identity-matrix-dossier",
+    "mobileNavigation": [
+      "档案室",
+      "审批系统",
+      "身份链"
+    ],
+    "boardMode": "identity-matrix"
+  },
+  "surface": {
+    "titleKey": "case.c29.title",
+    "textKey": "case.c29.surface",
+    "publicFactIds": [
+      "fact-c29-01",
+      "fact-c29-02",
+      "fact-c29-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c29-01",
+      "query-c29-02",
+      "query-c29-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c29-one",
+      "titleKey": "chapter.c29.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c29-1",
+      "titleKey": "board.c29.1.title",
+      "mode": "identity-matrix",
+      "slots": [
+        {
+          "id": "slot-c29-1-1",
+          "labelKey": "board.c29.1.slot.1",
+          "acceptsEventIds": [
+            "event-c29-01"
+          ]
+        },
+        {
+          "id": "slot-c29-1-2",
+          "labelKey": "board.c29.1.slot.2",
+          "acceptsEventIds": [
+            "event-c29-03"
+          ]
+        },
+        {
+          "id": "slot-c29-1-3",
+          "labelKey": "board.c29.1.slot.3",
+          "acceptsEventIds": [
+            "event-c29-05"
+          ]
+        },
+        {
+          "id": "slot-c29-1-4",
+          "labelKey": "board.c29.1.slot.4",
+          "acceptsEventIds": [
+            "event-c29-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "appears-as",
+        "assigned-to",
+        "excludes"
+      ]
+    },
+    {
+      "id": "board-c29-2",
+      "titleKey": "board.c29.2.title",
+      "mode": "provenance-chain",
+      "slots": [
+        {
+          "id": "slot-c29-2-1",
+          "labelKey": "board.c29.2.slot.1",
+          "acceptsEventIds": [
+            "event-c29-03"
+          ]
+        },
+        {
+          "id": "slot-c29-2-2",
+          "labelKey": "board.c29.2.slot.2",
+          "acceptsEventIds": [
+            "event-c29-05"
+          ]
+        },
+        {
+          "id": "slot-c29-2-3",
+          "labelKey": "board.c29.2.slot.3",
+          "acceptsEventIds": [
+            "event-c29-07"
+          ]
+        },
+        {
+          "id": "slot-c29-2-4",
+          "labelKey": "board.c29.2.slot.4",
+          "acceptsEventIds": [
+            "event-c29-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "transfers-to",
+        "recorded-by",
+        "verifies"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 12
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c29-subject",
+      "kind": "object",
+      "labelKey": "entity.c29.subject",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c29",
+      "kind": "location",
+      "labelKey": "location.c29",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c29-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "23:00"
+      },
+      "participants": [
+        "entity-c29-subject"
+      ],
+      "locationId": "location-c29",
+      "action": "step-c29-1",
+      "labelKey": "event.c29.1",
+      "effectFactIds": [
+        "fact-c29-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c29-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "23:03"
+      },
+      "participants": [
+        "entity-c29-subject"
+      ],
+      "locationId": "location-c29",
+      "action": "step-c29-2",
+      "labelKey": "event.c29.2",
+      "effectFactIds": [
+        "fact-c29-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c29-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "23:06"
+      },
+      "participants": [
+        "entity-c29-subject"
+      ],
+      "locationId": "location-c29",
+      "action": "step-c29-3",
+      "labelKey": "event.c29.3",
+      "effectFactIds": [
+        "fact-c29-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c29-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "23:09"
+      },
+      "participants": [
+        "entity-c29-subject"
+      ],
+      "locationId": "location-c29",
+      "action": "step-c29-4",
+      "labelKey": "event.c29.4",
+      "effectFactIds": [
+        "fact-c29-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c29-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "23:12"
+      },
+      "participants": [
+        "entity-c29-subject"
+      ],
+      "locationId": "location-c29",
+      "action": "step-c29-5",
+      "labelKey": "event.c29.5",
+      "effectFactIds": [
+        "fact-c29-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c29-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "00:15"
+      },
+      "participants": [
+        "entity-c29-subject"
+      ],
+      "locationId": "location-c29",
+      "action": "step-c29-6",
+      "labelKey": "event.c29.6",
+      "effectFactIds": [
+        "fact-c29-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c29-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "00:18"
+      },
+      "participants": [
+        "entity-c29-subject"
+      ],
+      "locationId": "location-c29",
+      "action": "step-c29-7",
+      "labelKey": "event.c29.7",
+      "effectFactIds": [
+        "fact-c29-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c29-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "00:21"
+      },
+      "participants": [
+        "entity-c29-subject"
+      ],
+      "locationId": "location-c29",
+      "action": "step-c29-8",
+      "labelKey": "event.c29.8",
+      "effectFactIds": [
+        "fact-c29-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c29-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "00:24"
+      },
+      "participants": [
+        "entity-c29-subject"
+      ],
+      "locationId": "location-c29",
+      "action": "step-c29-9",
+      "labelKey": "event.c29.9",
+      "effectFactIds": [
+        "fact-c29-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c29-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "00:27"
+      },
+      "participants": [
+        "entity-c29-subject"
+      ],
+      "locationId": "location-c29",
+      "action": "step-c29-10",
+      "labelKey": "event.c29.10",
+      "effectFactIds": [
+        "fact-c29-10"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c29-1-1",
+      "type": "precedes",
+      "fromId": "entity-c29-subject",
+      "toId": "location-c29",
+      "eventId": "event-c29-01",
+      "factId": "fact-c29-01"
+    },
+    {
+      "id": "relation-c29-1-2",
+      "type": "causes",
+      "fromId": "entity-c29-subject",
+      "toId": "location-c29",
+      "eventId": "event-c29-03",
+      "factId": "fact-c29-02"
+    },
+    {
+      "id": "relation-c29-1-3",
+      "type": "causes",
+      "fromId": "entity-c29-subject",
+      "toId": "location-c29",
+      "eventId": "event-c29-05",
+      "factId": "fact-c29-03"
+    },
+    {
+      "id": "relation-c29-2-1",
+      "type": "precedes",
+      "fromId": "entity-c29-subject",
+      "toId": "location-c29",
+      "eventId": "event-c29-03",
+      "factId": "fact-c29-02"
+    },
+    {
+      "id": "relation-c29-2-2",
+      "type": "causes",
+      "fromId": "entity-c29-subject",
+      "toId": "location-c29",
+      "eventId": "event-c29-05",
+      "factId": "fact-c29-03"
+    },
+    {
+      "id": "relation-c29-2-3",
+      "type": "causes",
+      "fromId": "entity-c29-subject",
+      "toId": "location-c29",
+      "eventId": "event-c29-07",
+      "factId": "fact-c29-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c29-01",
+      "predicate": "verified_c29_1",
+      "args": {
+        "step": 1
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c29.1"
+    },
+    {
+      "id": "fact-c29-02",
+      "predicate": "verified_c29_2",
+      "args": {
+        "step": 2
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c29.2"
+    },
+    {
+      "id": "fact-c29-03",
+      "predicate": "verified_c29_3",
+      "args": {
+        "step": 3
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c29.3"
+    },
+    {
+      "id": "fact-c29-04",
+      "predicate": "verified_c29_4",
+      "args": {
+        "step": 4
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c29.4"
+    },
+    {
+      "id": "fact-c29-05",
+      "predicate": "verified_c29_5",
+      "args": {
+        "step": 5
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c29.5"
+    },
+    {
+      "id": "fact-c29-06",
+      "predicate": "verified_c29_6",
+      "args": {
+        "step": 6
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c29.6"
+    },
+    {
+      "id": "fact-c29-07",
+      "predicate": "verified_c29_7",
+      "args": {
+        "step": 7
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c29.7"
+    },
+    {
+      "id": "fact-c29-08",
+      "predicate": "verified_c29_8",
+      "args": {
+        "step": 8
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c29.8"
+    },
+    {
+      "id": "fact-c29-09",
+      "predicate": "verified_c29_9",
+      "args": {
+        "step": 9
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c29.9"
+    },
+    {
+      "id": "fact-c29-10",
+      "predicate": "verified_c29_10",
+      "args": {
+        "step": 10
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-10"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c29.10"
+    },
+    {
+      "id": "fact-c29-11",
+      "predicate": "verified_c29_11",
+      "args": {
+        "step": 11
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-03"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c29.11"
+    },
+    {
+      "id": "fact-c29-12",
+      "predicate": "verified_c29_12",
+      "args": {
+        "step": 12
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-04"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c29.12"
+    },
+    {
+      "id": "fact-c29-13",
+      "predicate": "verified_c29_13",
+      "args": {
+        "step": 13
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-05"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c29.13"
+    },
+    {
+      "id": "fact-c29-14",
+      "predicate": "verified_c29_14",
+      "args": {
+        "step": 14
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-06"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c29.14"
+    },
+    {
+      "id": "fact-c29-15",
+      "predicate": "verified_c29_15",
+      "args": {
+        "step": 15
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-07"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c29.15"
+    },
+    {
+      "id": "fact-c29-16",
+      "predicate": "verified_c29_16",
+      "args": {
+        "step": 16
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c29-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c29-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c29.16"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c29-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c29-01",
+        "fact-c29-02",
+        "fact-c29-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c29-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c29-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c29-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c29-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c29-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c29-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c29-11"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c29-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c29-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c29-04",
+        "fact-c29-12"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c29-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c29-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c29-05",
+        "fact-c29-13"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c29-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c29-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c29-06",
+        "fact-c29-14"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c29-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c29-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c29-07",
+        "fact-c29-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c29-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c29-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c29-08",
+        "fact-c29-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c29-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c29-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c29-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c29-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c29-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c29-10"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c29-01",
+      "labelKey": "query.c29.1",
+      "intent": "verify",
+      "predicate": "verified_c29_1",
+      "slots": {
+        "subjectId": "entity-c29-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c29-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-opening"
+      ],
+      "examplePhrases": [
+        "代理授权是否成立？",
+        "能确认代理授权吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "代理授权"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c29-02",
+      "labelKey": "query.c29.2",
+      "intent": "verify",
+      "predicate": "verified_c29_2",
+      "slots": {
+        "subjectId": "entity-c29-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c29-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-opening"
+      ],
+      "examplePhrases": [
+        "岗位队列是否成立？",
+        "能确认岗位队列吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "岗位队列"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c29-03",
+      "labelKey": "query.c29.3",
+      "intent": "verify",
+      "predicate": "verified_c29_3",
+      "slots": {
+        "subjectId": "entity-c29-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c29-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-opening"
+      ],
+      "examplePhrases": [
+        "代理登录是否成立？",
+        "能确认代理登录吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "代理登录"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c29-04",
+      "labelKey": "query.c29.4",
+      "intent": "verify",
+      "predicate": "verified_c29_4",
+      "slots": {
+        "subjectId": "entity-c29-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c29-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-04"
+      ],
+      "examplePhrases": [
+        "权限校验是否成立？",
+        "能确认权限校验吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "权限校验"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c29-05",
+      "labelKey": "query.c29.5",
+      "intent": "verify",
+      "predicate": "verified_c29_5",
+      "slots": {
+        "subjectId": "entity-c29-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c29-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-05"
+      ],
+      "examplePhrases": [
+        "电子章证书是否成立？",
+        "能确认电子章证书吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "电子章证书"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c29-06",
+      "labelKey": "query.c29.6",
+      "intent": "verify",
+      "predicate": "verified_c29_6",
+      "slots": {
+        "subjectId": "entity-c29-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c29-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-06"
+      ],
+      "examplePhrases": [
+        "图形模板是否成立？",
+        "能确认图形模板吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "图形模板"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c29-07",
+      "labelKey": "query.c29.7",
+      "intent": "verify",
+      "predicate": "verified_c29_7",
+      "slots": {
+        "subjectId": "entity-c29-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c29-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-07"
+      ],
+      "examplePhrases": [
+        "审计字段是否成立？",
+        "能确认审计字段吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "审计字段"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c29-08",
+      "labelKey": "query.c29.8",
+      "intent": "verify",
+      "predicate": "verified_c29_8",
+      "slots": {
+        "subjectId": "entity-c29-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c29-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-08"
+      ],
+      "examplePhrases": [
+        "酒店记录是否成立？",
+        "能确认酒店记录吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "酒店记录"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c29-09",
+      "labelKey": "query.c29.9",
+      "intent": "verify",
+      "predicate": "verified_c29_9",
+      "slots": {
+        "subjectId": "entity-c29-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c29-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-09"
+      ],
+      "examplePhrases": [
+        "制度条款是否成立？",
+        "能确认制度条款吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "制度条款"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c29-10",
+      "labelKey": "query.c29.10",
+      "intent": "eliminate",
+      "predicate": "verified_c29_10",
+      "slots": {
+        "subjectId": "entity-c29-subject"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c29-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c29-10"
+      ],
+      "examplePhrases": [
+        "旧钢笔是否成立？",
+        "能确认旧钢笔吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "旧钢笔"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c29-01",
+      "kind": "scene",
+      "titleKey": "evidence.c29.1.title",
+      "observationKey": "evidence.c29.1.observation",
+      "sourceFactIds": [
+        "fact-c29-01"
+      ],
+      "sourceEventIds": [
+        "event-c29-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c29-subject",
+        "location-c29"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c29-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c29/evidence-01.webp",
+      "assetAlt": "代理授权书"
+    },
+    {
+      "id": "evidence-c29-02",
+      "kind": "record",
+      "titleKey": "evidence.c29.2.title",
+      "observationKey": "evidence.c29.2.observation",
+      "sourceFactIds": [
+        "fact-c29-02"
+      ],
+      "sourceEventIds": [
+        "event-c29-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c29-subject",
+        "location-c29"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c29-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c29/evidence-02.webp",
+      "assetAlt": "岗位队列记录"
+    },
+    {
+      "id": "evidence-c29-03",
+      "kind": "object",
+      "titleKey": "evidence.c29.3.title",
+      "observationKey": "evidence.c29.3.observation",
+      "sourceFactIds": [
+        "fact-c29-03",
+        "fact-c29-11"
+      ],
+      "sourceEventIds": [
+        "event-c29-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c29-subject",
+        "location-c29"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c29/evidence-03.webp",
+      "assetAlt": "代理登录凭证"
+    },
+    {
+      "id": "evidence-c29-04",
+      "kind": "scene",
+      "titleKey": "evidence.c29.4.title",
+      "observationKey": "evidence.c29.4.observation",
+      "sourceFactIds": [
+        "fact-c29-04",
+        "fact-c29-12"
+      ],
+      "sourceEventIds": [
+        "event-c29-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c29-subject",
+        "location-c29"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c29/evidence-04.webp",
+      "assetAlt": "权限校验结果"
+    },
+    {
+      "id": "evidence-c29-05",
+      "kind": "record",
+      "titleKey": "evidence.c29.5.title",
+      "observationKey": "evidence.c29.5.observation",
+      "sourceFactIds": [
+        "fact-c29-05",
+        "fact-c29-13"
+      ],
+      "sourceEventIds": [
+        "event-c29-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c29-subject",
+        "location-c29"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c29/evidence-05.webp",
+      "assetAlt": "电子章证书"
+    },
+    {
+      "id": "evidence-c29-06",
+      "kind": "object",
+      "titleKey": "evidence.c29.6.title",
+      "observationKey": "evidence.c29.6.observation",
+      "sourceFactIds": [
+        "fact-c29-06",
+        "fact-c29-14"
+      ],
+      "sourceEventIds": [
+        "event-c29-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c29-subject",
+        "location-c29"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c29/evidence-01.webp",
+      "assetAlt": "签名图形模板"
+    },
+    {
+      "id": "evidence-c29-07",
+      "kind": "scene",
+      "titleKey": "evidence.c29.7.title",
+      "observationKey": "evidence.c29.7.observation",
+      "sourceFactIds": [
+        "fact-c29-07",
+        "fact-c29-15"
+      ],
+      "sourceEventIds": [
+        "event-c29-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c29-subject",
+        "location-c29"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c29/evidence-02.webp",
+      "assetAlt": "审计操作者字段"
+    },
+    {
+      "id": "evidence-c29-08",
+      "kind": "record",
+      "titleKey": "evidence.c29.8.title",
+      "observationKey": "evidence.c29.8.observation",
+      "sourceFactIds": [
+        "fact-c29-08",
+        "fact-c29-16"
+      ],
+      "sourceEventIds": [
+        "event-c29-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c29-subject",
+        "location-c29"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c29/evidence-03.webp",
+      "assetAlt": "外地酒店记录"
+    },
+    {
+      "id": "evidence-c29-09",
+      "kind": "object",
+      "titleKey": "evidence.c29.9.title",
+      "observationKey": "evidence.c29.9.observation",
+      "sourceFactIds": [
+        "fact-c29-09"
+      ],
+      "sourceEventIds": [
+        "event-c29-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c29-subject",
+        "location-c29"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c29/evidence-04.webp",
+      "assetAlt": "制度条款"
+    },
+    {
+      "id": "evidence-c29-10",
+      "kind": "scene",
+      "titleKey": "evidence.c29.10.title",
+      "observationKey": "evidence.c29.10.observation",
+      "sourceFactIds": [
+        "fact-c29-10"
+      ],
+      "sourceEventIds": [
+        "event-c29-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c29-subject",
+        "location-c29"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c29/evidence-05.webp",
+      "assetAlt": "旧钢笔"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c29.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c29-01",
+          "event-c29-02",
+          "event-c29-03",
+          "event-c29-04",
+          "event-c29-05",
+          "event-c29-06",
+          "event-c29-07",
+          "event-c29-08",
+          "event-c29-09"
+        ],
+        "motiveKey": "保证主管离线时紧急流程仍可运行"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c29-01",
+        "evidence-c29-02",
+        "evidence-c29-03",
+        "evidence-c29-04",
+        "evidence-c29-05",
+        "evidence-c29-06",
+        "evidence-c29-07",
+        "evidence-c29-08",
+        "evidence-c29-09"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c29-1",
+        "contradiction-c29-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c29-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c29.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "主管秘密返回办公室签字"
+        ],
+        "motiveKey": "motive-c29-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c29-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c29-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c29-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c29.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "值班代理伪造了主管笔迹"
+        ],
+        "motiveKey": "motive-c29-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c29-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c29-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c29-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c29-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c29-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c29-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c29-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c29-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c29-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c29-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c29-01",
+      "fact-c29-02",
+      "fact-c29-03",
+      "fact-c29-04",
+      "fact-c29-05",
+      "fact-c29-06",
+      "fact-c29-07",
+      "fact-c29-08",
+      "fact-c29-09"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c29-01",
+      "evidence-c29-02",
+      "evidence-c29-03",
+      "evidence-c29-04",
+      "evidence-c29-05",
+      "evidence-c29-06",
+      "evidence-c29-07",
+      "evidence-c29-08",
+      "evidence-c29-09"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c29-01",
+        "event-c29-02"
+      ],
+      [
+        "event-c29-02",
+        "event-c29-03"
+      ],
+      [
+        "event-c29-03",
+        "event-c29-04"
+      ],
+      [
+        "event-c29-04",
+        "event-c29-05"
+      ],
+      [
+        "event-c29-05",
+        "event-c29-06"
+      ],
+      [
+        "event-c29-06",
+        "event-c29-07"
+      ],
+      [
+        "event-c29-07",
+        "event-c29-08"
+      ],
+      [
+        "event-c29-08",
+        "event-c29-09"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c29-1",
+      "contradiction-c29-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c29-alternative-1",
+      "hypothesis-c29-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c29-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c29-a",
+        "evidenceIds": [
+          "evidence-c29-01",
+          "evidence-c29-02",
+          "evidence-c29-03",
+          "evidence-c29-04",
+          "evidence-c29-05",
+          "evidence-c29-06"
+        ]
+      },
+      {
+        "id": "proof-c29-b",
+        "evidenceIds": [
+          "evidence-c29-01",
+          "evidence-c29-02",
+          "evidence-c29-07",
+          "evidence-c29-08",
+          "evidence-c29-09"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "保证主管离线时紧急流程仍可运行"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c29-1",
+        "kind": "identity",
+        "boardId": "board-c29-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c29-1-1",
+            "eventId": "event-c29-01"
+          },
+          {
+            "slotId": "slot-c29-1-2",
+            "eventId": "event-c29-03"
+          },
+          {
+            "slotId": "slot-c29-1-3",
+            "eventId": "event-c29-05"
+          },
+          {
+            "slotId": "slot-c29-1-4",
+            "eventId": "event-c29-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c29-01",
+            "toEventId": "event-c29-03",
+            "relation": "appears-as"
+          },
+          {
+            "fromEventId": "event-c29-03",
+            "toEventId": "event-c29-05",
+            "relation": "appears-as"
+          },
+          {
+            "fromEventId": "event-c29-05",
+            "toEventId": "event-c29-09",
+            "relation": "appears-as"
+          }
+        ],
+        "failureCategory": "identity"
+      },
+      {
+        "id": "obligation-c29-2",
+        "kind": "source",
+        "boardId": "board-c29-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c29-2-1",
+            "eventId": "event-c29-03"
+          },
+          {
+            "slotId": "slot-c29-2-2",
+            "eventId": "event-c29-05"
+          },
+          {
+            "slotId": "slot-c29-2-3",
+            "eventId": "event-c29-07"
+          },
+          {
+            "slotId": "slot-c29-2-4",
+            "eventId": "event-c29-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c29-03",
+            "toEventId": "event-c29-05",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c29-05",
+            "toEventId": "event-c29-07",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c29-07",
+            "toEventId": "event-c29-09",
+            "relation": "transfers-to"
+          }
+        ],
+        "failureCategory": "source"
+      }
+    ],
+    "uniquenessClaim": "文件上的图形是经授权的岗位电子章，不是主管个人手写签名；值班代理按制度调用岗位章，流程真实但不能证明主管本人在场。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c29-1",
+      "eventId": "event-c29-02",
+      "factIds": [
+        "fact-c29-01"
+      ],
+      "captionKey": "event.c29.2"
+    },
+    {
+      "id": "replay-c29-2",
+      "eventId": "event-c29-03",
+      "factIds": [
+        "fact-c29-02"
+      ],
+      "captionKey": "event.c29.3"
+    },
+    {
+      "id": "replay-c29-3",
+      "eventId": "event-c29-04",
+      "factIds": [
+        "fact-c29-03"
+      ],
+      "captionKey": "event.c29.4"
+    },
+    {
+      "id": "replay-c29-4",
+      "eventId": "event-c29-05",
+      "factIds": [
+        "fact-c29-04"
+      ],
+      "captionKey": "event.c29.5"
+    },
+    {
+      "id": "replay-c29-5",
+      "eventId": "event-c29-06",
+      "factIds": [
+        "fact-c29-05"
+      ],
+      "captionKey": "event.c29.6"
+    },
+    {
+      "id": "replay-c29-6",
+      "eventId": "event-c29-07",
+      "factIds": [
+        "fact-c29-06",
+        "fact-c29-07",
+        "fact-c29-08",
+        "fact-c29-09"
+      ],
+      "captionKey": "event.c29.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c29.title": "签名盖的是岗位",
+      "case.c29.surface": "夜间批准单上有主管的完整签名，可主管当晚在另一座城市；笔迹鉴定也确认没有伪造。",
+      "case.c29.truth": "文件上的图形是经授权的岗位电子章，不是主管个人手写签名；值班代理按制度调用岗位章，流程真实但不能证明主管本人在场。",
+      "entity.c29.subject": "关键人物、装置与记录",
+      "location.c29": "档案室",
+      "hypothesis.c29.canonical": "文件上的图形是经授权的岗位电子章，不是主管个人手写签名；值班代理按制度调用岗位章，流程真实但不能证明主管本人在场。",
+      "hypothesis.c29.alternative.1": "主管秘密返回办公室签字",
+      "hypothesis.c29.alternative.2": "值班代理伪造了主管笔迹",
+      "motive.保证主管离线时紧急流程仍可运行": "保证主管离线时紧急流程仍可运行",
+      "chapter.c29.one": "固定异常",
+      "chapter.c29.two": "统一来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "event.c29.1": "主管提前设置夜间代理",
+      "event.c29.2": "审批请求进入主管岗位队列",
+      "event.c29.3": "值班代理用个人凭证登录",
+      "event.c29.4": "系统验证代理授权范围",
+      "event.c29.5": "岗位电子章被调用",
+      "event.c29.6": "文档生成固定签名图形",
+      "event.c29.7": "审计日志同时记录真实操作者",
+      "event.c29.8": "主管在外地完成酒店登记",
+      "event.c29.9": "批准单按制度生效",
+      "event.c29.10": "主管旧钢笔留在办公室但未被使用",
+      "evidence.c29.1.title": "代理授权书",
+      "evidence.c29.1.observation": "授权明确覆盖当晚的紧急批准。",
+      "evidence.c29.2.title": "岗位队列记录",
+      "evidence.c29.2.observation": "请求发送给主管岗位而非指定自然人。",
+      "evidence.c29.3.title": "代理登录凭证",
+      "evidence.c29.3.observation": "真实操作者是值班代理周岚。",
+      "evidence.c29.4.title": "权限校验结果",
+      "evidence.c29.4.observation": "系统确认周岚可在该时段调用岗位章。",
+      "evidence.c29.5.title": "电子章证书",
+      "evidence.c29.5.observation": "证书主体是“运行主管岗位”。",
+      "evidence.c29.6.title": "签名图形模板",
+      "evidence.c29.6.observation": "每次调用都会生成同一图形，因此与历史文件一致。",
+      "evidence.c29.7.title": "审计操作者字段",
+      "evidence.c29.7.observation": "字段保留了周岚的个人账号。",
+      "evidence.c29.8.title": "外地酒店记录",
+      "evidence.c29.8.observation": "主管本人不可能同时位于办公室。",
+      "evidence.c29.9.title": "制度条款",
+      "evidence.c29.9.observation": "岗位章在有效代理授权下具有审批效力。",
+      "evidence.c29.10.title": "旧钢笔",
+      "evidence.c29.10.observation": "钢笔没有新墨迹，也不参与电子流程。",
+      "query.c29.1": "代理授权是否成立？",
+      "query.c29.2": "岗位队列是否成立？",
+      "query.c29.3": "代理登录是否成立？",
+      "query.c29.4": "权限校验是否成立？",
+      "query.c29.5": "电子章证书是否成立？",
+      "query.c29.6": "图形模板是否成立？",
+      "query.c29.7": "审计字段是否成立？",
+      "query.c29.8": "酒店记录是否成立？",
+      "query.c29.9": "制度条款是否成立？",
+      "query.c29.10": "旧钢笔是否成立？",
+      "board.c29.1.title": "身份链 · identity-matrix",
+      "board.c29.1.slot.1": "起始来源",
+      "board.c29.1.slot.2": "关键变化",
+      "board.c29.1.slot.3": "观测结果",
+      "board.c29.1.slot.4": "排除替代",
+      "board.c29.2.title": "身份链 · provenance-chain",
+      "board.c29.2.slot.1": "起始来源",
+      "board.c29.2.slot.2": "关键变化",
+      "board.c29.2.slot.3": "观测结果",
+      "board.c29.2.slot.4": "排除替代"
+    }
+  }
+}

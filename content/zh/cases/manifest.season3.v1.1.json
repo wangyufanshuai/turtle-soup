@@ -1,0 +1,532 @@
+{
+  "manifestVersion": "1.1",
+  "seasonId": "season-3",
+  "title": "第三季：系统留下的错觉",
+  "status": "internal-rc",
+  "publishable": false,
+  "humanEvaluation": {
+    "status": "pending",
+    "participants": 0,
+    "requiredBeforePublish": true
+  },
+  "cases": [
+    {
+      "id": "c25-silent-second-bell",
+      "file": "c25-silent-second-bell.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:f0b2ed2069fc10b0ce79f86ac9174a4b27b7bef1ce9ad322ad407755162ece6d",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "e74dd1c749c7108e6cbce174a474a8f81a33da4d6486b820198a6cf4ef52d319",
+      "public": {
+        "title": "没有响起的第二次门铃",
+        "surface": "访客在十秒内按了两次门铃，控制器也记录了两次触发；屋内的人却只听见一次。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "contentTags": [
+          "状态机",
+          "防抖窗口",
+          "记录语义"
+        ],
+        "layoutId": "season3-state-trace",
+        "sceneAsset": "/assets/cases/c25/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c25/scene-mobile.webp",
+        "accent": "#d8a85f",
+        "boardModes": [
+          "state-trace",
+          "measurement-model"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c26-short-map-pipeline",
+      "file": "c26-short-map-pipeline.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:b71b41828d37dc0054e2237164cbc6b70957dd9159384bb26bf2cee4b3465f13",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "a672c12c89f097d58b38d7d6cdb0cbc8024361f17230ab82566854764f284d55",
+      "public": {
+        "title": "比地图短的管线",
+        "surface": "施工图上的管线只有四十米，验收仪却测得六十三米；管线没有绕出图纸标出的走廊。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "contentTags": [
+          "空间投影",
+          "三维长度",
+          "分段求和"
+        ],
+        "layoutId": "season3-spatial-map",
+        "sceneAsset": "/assets/cases/c26/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c26/scene-mobile.webp",
+        "accent": "#76b7c4",
+        "boardModes": [
+          "spatial-map",
+          "aggregate-constraint"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c27-stationary-moving-platform",
+      "file": "c27-stationary-moving-platform.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:1f74deafc0608c61427571c5293c1f142c20f1f2cb4cd25cabd16cb86d4899c0",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "aa1ef0e1efbd71622b0f56c6643e37258f73526d743d5c334833991c495f82eb",
+      "public": {
+        "title": "停在原地的移动平台",
+        "surface": "自动平台午夜前后都停在同一个定位框内；平台上的密封货箱却在另一座仓库被找到。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "contentTags": [
+          "状态轨迹",
+          "载体分离",
+          "终态误读"
+        ],
+        "layoutId": "season3-state-trace",
+        "sceneAsset": "/assets/cases/c27/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c27/scene-mobile.webp",
+        "accent": "#98c77a",
+        "boardModes": [
+          "state-trace",
+          "spatial-map"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c28-ninth-minute-temperature",
+      "file": "c28-ninth-minute-temperature.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:499377ccf98237c07017a09549c1db1b2468ff13dfc1cfec14a649bc5404b065",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "9c8037ee391822f1d5340688e633bdf98108d680f17e3858f3d934190309c91c",
+      "public": {
+        "title": "温度曲线里的第九分钟",
+        "surface": "实验舱在第九分钟已经断电，温度曲线却显示它直到第十二分钟才开始降温。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "热惯性",
+          "移动平均",
+          "测量延迟"
+        ],
+        "layoutId": "season3-sampling-window",
+        "sceneAsset": "/assets/cases/c28/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c28/scene-mobile.webp",
+        "accent": "#e48168",
+        "boardModes": [
+          "sampling-window",
+          "measurement-model"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c29-role-stamp-signature",
+      "file": "c29-role-stamp-signature.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:de08e447e9b3c0d5c6df0d072c973cce7b3ec41e4374be210c215daa04bf2eb7",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "cdf02bb410654b86f61ef7f8b2cc4c7c3918cb0127c11863b308d8fbb121e03b",
+      "public": {
+        "title": "签名盖的是岗位",
+        "surface": "夜间批准单上有主管的完整签名，可主管当晚在另一座城市；笔迹鉴定也确认没有伪造。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "contentTags": [
+          "岗位身份",
+          "电子印章",
+          "来源链"
+        ],
+        "layoutId": "season3-identity-matrix",
+        "sceneAsset": "/assets/cases/c29/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c29/scene-mobile.webp",
+        "accent": "#c58fbe",
+        "boardModes": [
+          "identity-matrix",
+          "provenance-chain"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c30-shared-shift-id",
+      "file": "c30-shared-shift-id.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:1c429ccca850dcbdc207745d3b5f51aa7776417d1cb29b47a11b11c00f4fc9a5",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "e4fea20787b69e032810edeb64e0dc636e16e0594b269e18ef9322da5efc6cf5",
+      "public": {
+        "title": "同一工号的两次值班",
+        "surface": "同一工号从傍晚一直工作到清晨，记录之间没有退出；监控却显示前后是两个完全不同的人。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "标识复用",
+          "时段身份",
+          "记录主键"
+        ],
+        "layoutId": "season3-identity-matrix",
+        "sceneAsset": "/assets/cases/c30/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c30/scene-mobile.webp",
+        "accent": "#7ea9dc",
+        "boardModes": [
+          "identity-matrix",
+          "state-trace"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c31-eighth-unchecked-guest",
+      "file": "c31-eighth-unchecked-guest.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:1cd50d86090f06e67551aad5eb250a2bdc039f0f8e73d6d8d4e3f500d760eed2",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "ec838709aefe79003d1ff26571f5cfc074bd327d6ea7b80668bef4695163174d",
+      "public": {
+        "title": "未入住的第八位住客",
+        "surface": "旅店登记表显示八位住客全部入住，门禁和早餐记录却最多只有七个不同的人。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "基数误读",
+          "合同口径",
+          "人物去重"
+        ],
+        "layoutId": "season3-aggregate-constraint",
+        "sceneAsset": "/assets/cases/c31/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c31/scene-mobile.webp",
+        "accent": "#d7b36a",
+        "boardModes": [
+          "aggregate-constraint",
+          "identity-matrix"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c32-approved-unauthorized-door",
+      "file": "c32-approved-unauthorized-door.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:fb909b46d284d9d1bdba066eb9c325c88edcdf26f7c4127d9bbfae15dd7871d0",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "75a41dbd2445fb8035c513ee706f6ab85b2a634e5595e49def132c63684bb770",
+      "public": {
+        "title": "批准过的未授权门",
+        "surface": "门禁审计显示开门请求经过正式批准，但批准人自己的权限表里并没有这扇门。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "权限继承",
+          "岗位委派",
+          "策略来源"
+        ],
+        "layoutId": "season3-provenance-chain",
+        "sceneAsset": "/assets/cases/c32/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c32/scene-mobile.webp",
+        "accent": "#93c38e",
+        "boardModes": [
+          "provenance-chain",
+          "identity-matrix"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c33-early-late-arrival",
+      "file": "c33-early-late-arrival.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:a9e41dfe82f25351e28ff909da35dd24816f28768d1330db397b1b5fcdc4bde9",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "839e13215f471359848d663a6a2055b1ab0833a5fd15ed11711be9cadbe686fc",
+      "public": {
+        "title": "先到场的迟到者",
+        "surface": "门禁说调查员在 23:58 进入，直播画面却到 00:04 才出现他；值班表仍判定他午夜迟到。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 13,
+          "max": 24
+        },
+        "contentTags": [
+          "多时基",
+          "缓冲延迟",
+          "来源校准"
+        ],
+        "layoutId": "season3-timeline",
+        "sceneAsset": "/assets/cases/c33/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c33/scene-mobile.webp",
+        "accent": "#83a8d8",
+        "boardModes": [
+          "timeline",
+          "sampling-window",
+          "provenance-chain"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c34-tomorrow-seal",
+      "file": "c34-tomorrow-seal.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:4a681813f17e5b044e331d4258d4c14ff88c09c58d9643ed9aad11c54e53ef88",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "42ffd30b1d6a0722ab50df7e8044759e1bf3fd55be386e85956c75c65ded524a",
+      "public": {
+        "title": "封条上的明天",
+        "surface": "箱子在周一晚上完成封存，完整封条却印着周二日期；物流链没有中断，封条也没有更换。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 12,
+          "max": 23
+        },
+        "contentTags": [
+          "标签语义",
+          "保管链",
+          "日期口径"
+        ],
+        "layoutId": "season3-provenance-chain",
+        "sceneAsset": "/assets/cases/c34/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c34/scene-mobile.webp",
+        "accent": "#d49a70",
+        "boardModes": [
+          "provenance-chain",
+          "timeline"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c35-extra-glass-attendant",
+      "file": "c35-extra-glass-attendant.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:8978a4ad427d2faa1677029ee390067ea40b55299165449296bbba144950c145",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "b9a75bc00759638b945097e4865ca454b595082d6cedf96d249fea4f4150f064",
+      "public": {
+        "title": "玻璃里多出来的值班员",
+        "surface": "大厅监控在同一分钟拍到两名穿同样制服的值班员；门禁和排班却都只有一个人。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 13,
+          "max": 24
+        },
+        "contentTags": [
+          "反射几何",
+          "外观身份",
+          "空间证词"
+        ],
+        "layoutId": "season3-identity-matrix",
+        "sceneAsset": "/assets/cases/c35/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c35/scene-mobile.webp",
+        "accent": "#9bc0c6",
+        "boardModes": [
+          "identity-matrix",
+          "spatial-map"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c36-no-one-left-terminal",
+      "file": "c36-no-one-left-terminal.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:785d1d2927e980a88d50ea82ecd92896ce6862fa5424c51f5c31a67296a592e5",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "0de0d0050c132b1d82d35b5cb6f2b39902ff41182c4d8f2a77e9120ce69f8b34",
+      "public": {
+        "title": "终点站没有下车的人",
+        "surface": "列车到达终点时车载计数显示少了一人，刷卡记录也有一名乘客未出站；站台录像却没有任何人留在车上。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 15,
+          "max": 25
+        },
+        "contentTags": [
+          "统计边界",
+          "临时换轨",
+          "多来源综合"
+        ],
+        "layoutId": "season3-aggregate-constraint",
+        "sceneAsset": "/assets/cases/c36/scene-desktop.webp",
+        "sceneAssetMobile": "/assets/cases/c36/scene-mobile.webp",
+        "accent": "#d08b68",
+        "boardModes": [
+          "aggregate-constraint",
+          "timeline",
+          "provenance-chain"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    }
+  ]
+}

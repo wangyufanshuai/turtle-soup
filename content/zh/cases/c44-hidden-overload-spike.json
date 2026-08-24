@@ -1,0 +1,2223 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c44-hidden-overload-spike",
+  "metadata": {
+    "titleKey": "case.c44.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "科学测量",
+      "复杂系统",
+      "来源边界"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:c443d50b1a230272f45c92eafbd403a2776e053dea7cdd6a54a26e6c6fbb20be",
+    "status": "public-preview",
+    "seasonId": "season-4"
+  },
+  "presentation": {
+    "layoutId": "season4-sampling-window",
+    "sceneAsset": "/assets/cases/c44/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c44/scene-mobile.svg",
+    "palette": "season4-c44",
+    "accent": "#b7d6a4",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "sampling-window-lab",
+    "mobileNavigation": [
+      "现场",
+      "记录",
+      "推理板"
+    ],
+    "boardMode": "sampling-window"
+  },
+  "surface": {
+    "titleKey": "case.c44.title",
+    "textKey": "case.c44.surface",
+    "publicFactIds": [
+      "fact-c44-01",
+      "fact-c44-02",
+      "fact-c44-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c44-01",
+      "query-c44-02",
+      "query-c44-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c44-one",
+      "titleKey": "chapter.c44.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c44-1",
+      "titleKey": "board.c44.1.title",
+      "mode": "sampling-window",
+      "slots": [
+        {
+          "id": "slot-c44-1-1",
+          "labelKey": "board.c44.1.slot.1",
+          "acceptsEventIds": [
+            "event-c44-01"
+          ]
+        },
+        {
+          "id": "slot-c44-1-2",
+          "labelKey": "board.c44.1.slot.2",
+          "acceptsEventIds": [
+            "event-c44-03"
+          ]
+        },
+        {
+          "id": "slot-c44-1-3",
+          "labelKey": "board.c44.1.slot.3",
+          "acceptsEventIds": [
+            "event-c44-05"
+          ]
+        },
+        {
+          "id": "slot-c44-1-4",
+          "labelKey": "board.c44.1.slot.4",
+          "acceptsEventIds": [
+            "event-c44-13"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "sampled-before",
+        "buffers",
+        "explains"
+      ]
+    },
+    {
+      "id": "board-c44-2",
+      "titleKey": "board.c44.2.title",
+      "mode": "measurement-model",
+      "slots": [
+        {
+          "id": "slot-c44-2-1",
+          "labelKey": "board.c44.2.slot.1",
+          "acceptsEventIds": [
+            "event-c44-02"
+          ]
+        },
+        {
+          "id": "slot-c44-2-2",
+          "labelKey": "board.c44.2.slot.2",
+          "acceptsEventIds": [
+            "event-c44-04"
+          ]
+        },
+        {
+          "id": "slot-c44-2-3",
+          "labelKey": "board.c44.2.slot.3",
+          "acceptsEventIds": [
+            "event-c44-06"
+          ]
+        },
+        {
+          "id": "slot-c44-2-4",
+          "labelKey": "board.c44.2.slot.4",
+          "acceptsEventIds": [
+            "event-c44-13"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "measured-against",
+        "corrects",
+        "explains"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c44-system",
+      "kind": "object",
+      "labelKey": "entity.c44.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c44",
+      "kind": "location",
+      "labelKey": "location.c44",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c44-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "14:00"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-1",
+      "labelKey": "event.c44.1",
+      "effectFactIds": [
+        "fact-c44-01"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "14:04"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-2",
+      "labelKey": "event.c44.2",
+      "effectFactIds": [
+        "fact-c44-02"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "14:08"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-3",
+      "labelKey": "event.c44.3",
+      "effectFactIds": [
+        "fact-c44-03"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "14:12"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-4",
+      "labelKey": "event.c44.4",
+      "effectFactIds": [
+        "fact-c44-04"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "14:16"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-5",
+      "labelKey": "event.c44.5",
+      "effectFactIds": [
+        "fact-c44-05"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "14:20"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-6",
+      "labelKey": "event.c44.6",
+      "effectFactIds": [
+        "fact-c44-06"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "14:24"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-7",
+      "labelKey": "event.c44.7",
+      "effectFactIds": [
+        "fact-c44-07"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "15:28"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-8",
+      "labelKey": "event.c44.8",
+      "effectFactIds": [
+        "fact-c44-08"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "15:32"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-9",
+      "labelKey": "event.c44.9",
+      "effectFactIds": [
+        "fact-c44-09"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "15:36"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-10",
+      "labelKey": "event.c44.10",
+      "effectFactIds": [
+        "fact-c44-10"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "15:40"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-11",
+      "labelKey": "event.c44.11",
+      "effectFactIds": [
+        "fact-c44-11"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "15:44"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-12",
+      "labelKey": "event.c44.12",
+      "effectFactIds": [
+        "fact-c44-12"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-13",
+      "order": 130,
+      "time": {
+        "kind": "instant",
+        "value": "15:48"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-13",
+      "labelKey": "event.c44.13",
+      "effectFactIds": [
+        "fact-c44-13"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c44-14",
+      "order": 140,
+      "time": {
+        "kind": "instant",
+        "value": "15:52"
+      },
+      "participants": [
+        "entity-c44-system"
+      ],
+      "locationId": "location-c44",
+      "action": "step-c44-14",
+      "labelKey": "event.c44.14",
+      "effectFactIds": [
+        "fact-c44-14"
+      ],
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c44-1-1",
+      "type": "precedes",
+      "fromId": "entity-c44-system",
+      "toId": "location-c44",
+      "eventId": "event-c44-01",
+      "factId": "fact-c44-01"
+    },
+    {
+      "id": "relation-c44-1-2",
+      "type": "causes",
+      "fromId": "entity-c44-system",
+      "toId": "location-c44",
+      "eventId": "event-c44-03",
+      "factId": "fact-c44-02"
+    },
+    {
+      "id": "relation-c44-1-3",
+      "type": "causes",
+      "fromId": "entity-c44-system",
+      "toId": "location-c44",
+      "eventId": "event-c44-05",
+      "factId": "fact-c44-03"
+    },
+    {
+      "id": "relation-c44-2-1",
+      "type": "precedes",
+      "fromId": "entity-c44-system",
+      "toId": "location-c44",
+      "eventId": "event-c44-02",
+      "factId": "fact-c44-02"
+    },
+    {
+      "id": "relation-c44-2-2",
+      "type": "causes",
+      "fromId": "entity-c44-system",
+      "toId": "location-c44",
+      "eventId": "event-c44-04",
+      "factId": "fact-c44-03"
+    },
+    {
+      "id": "relation-c44-2-3",
+      "type": "causes",
+      "fromId": "entity-c44-system",
+      "toId": "location-c44",
+      "eventId": "event-c44-06",
+      "factId": "fact-c44-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c44-01",
+      "predicate": "verified_c44_1",
+      "args": {
+        "term": "瞬时过载"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.1"
+    },
+    {
+      "id": "fact-c44-02",
+      "predicate": "verified_c44_2",
+      "args": {
+        "term": "滑动平均"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.2"
+    },
+    {
+      "id": "fact-c44-03",
+      "predicate": "verified_c44_3",
+      "args": {
+        "term": "原始采样"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.3"
+    },
+    {
+      "id": "fact-c44-04",
+      "predicate": "verified_c44_4",
+      "args": {
+        "term": "日报曲线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.4"
+    },
+    {
+      "id": "fact-c44-05",
+      "predicate": "verified_c44_5",
+      "args": {
+        "term": "安全线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.5"
+    },
+    {
+      "id": "fact-c44-06",
+      "predicate": "verified_c44_6",
+      "args": {
+        "term": "窗口长度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.6"
+    },
+    {
+      "id": "fact-c44-07",
+      "predicate": "verified_c44_7",
+      "args": {
+        "term": "峰值"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.7"
+    },
+    {
+      "id": "fact-c44-08",
+      "predicate": "verified_c44_8",
+      "args": {
+        "term": "采样频率"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.8"
+    },
+    {
+      "id": "fact-c44-09",
+      "predicate": "verified_c44_9",
+      "args": {
+        "term": "聚合值"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.9"
+    },
+    {
+      "id": "fact-c44-10",
+      "predicate": "verified_c44_10",
+      "args": {
+        "term": "报警策略"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.10"
+    },
+    {
+      "id": "fact-c44-11",
+      "predicate": "verified_c44_11",
+      "args": {
+        "term": "瞬时过载"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.11"
+    },
+    {
+      "id": "fact-c44-12",
+      "predicate": "verified_c44_12",
+      "args": {
+        "term": "滑动平均"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-12"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.12"
+    },
+    {
+      "id": "fact-c44-13",
+      "predicate": "verified_c44_13",
+      "args": {
+        "term": "原始采样"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-13"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-13"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-13"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c44.13"
+    },
+    {
+      "id": "fact-c44-14",
+      "predicate": "verified_c44_14",
+      "args": {
+        "term": "日报曲线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-14"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-14"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-14"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c44.14"
+    },
+    {
+      "id": "fact-c44-15",
+      "predicate": "verified_c44_15",
+      "args": {
+        "term": "安全线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c44.15"
+    },
+    {
+      "id": "fact-c44-16",
+      "predicate": "verified_c44_16",
+      "args": {
+        "term": "窗口长度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c44.16"
+    },
+    {
+      "id": "fact-c44-17",
+      "predicate": "verified_c44_17",
+      "args": {
+        "term": "峰值"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c44.17"
+    },
+    {
+      "id": "fact-c44-18",
+      "predicate": "verified_c44_18",
+      "args": {
+        "term": "采样频率"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c44.18"
+    },
+    {
+      "id": "fact-c44-19",
+      "predicate": "verified_c44_19",
+      "args": {
+        "term": "聚合值"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c44.19"
+    },
+    {
+      "id": "fact-c44-20",
+      "predicate": "verified_c44_20",
+      "args": {
+        "term": "报警策略"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c44-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c44-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c44.20"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c44-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-01",
+        "fact-c44-02",
+        "fact-c44-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c44-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-01",
+        "fact-c44-02",
+        "fact-c44-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c44-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-02",
+        "fact-c44-16"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c44-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-03",
+        "fact-c44-17"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c44-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-04",
+        "fact-c44-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c44-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-05",
+        "fact-c44-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c44-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-06",
+        "fact-c44-20"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c44-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-07"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c44-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-08"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c44-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c44-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c44-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c44-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-12"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c44-13",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-13"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-13"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c44-14",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c44-14"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c44-14"
+      ],
+      "spoilerLevel": "sensitive"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c44-01",
+      "labelKey": "query.c44.1",
+      "intent": "verify",
+      "predicate": "verified_c44_1",
+      "slots": {
+        "subjectId": "entity-c44-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c44-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-opening"
+      ],
+      "examplePhrases": [
+        "瞬时过载是否成立？",
+        "能确认瞬时过载吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "瞬时过载"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c44-02",
+      "labelKey": "query.c44.2",
+      "intent": "verify",
+      "predicate": "verified_c44_2",
+      "slots": {
+        "subjectId": "entity-c44-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c44-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-opening"
+      ],
+      "examplePhrases": [
+        "滑动平均是否成立？",
+        "能确认滑动平均吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "滑动平均"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c44-03",
+      "labelKey": "query.c44.3",
+      "intent": "verify",
+      "predicate": "verified_c44_3",
+      "slots": {
+        "subjectId": "entity-c44-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c44-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-opening"
+      ],
+      "examplePhrases": [
+        "原始采样是否成立？",
+        "能确认原始采样吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "原始采样"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c44-04",
+      "labelKey": "query.c44.4",
+      "intent": "verify",
+      "predicate": "verified_c44_4",
+      "slots": {
+        "subjectId": "entity-c44-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c44-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-04"
+      ],
+      "examplePhrases": [
+        "日报曲线是否成立？",
+        "能确认日报曲线吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "日报曲线"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c44-05",
+      "labelKey": "query.c44.5",
+      "intent": "verify",
+      "predicate": "verified_c44_5",
+      "slots": {
+        "subjectId": "entity-c44-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c44-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-05"
+      ],
+      "examplePhrases": [
+        "安全线是否成立？",
+        "能确认安全线吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "安全线"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c44-06",
+      "labelKey": "query.c44.6",
+      "intent": "verify",
+      "predicate": "verified_c44_6",
+      "slots": {
+        "subjectId": "entity-c44-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c44-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-06"
+      ],
+      "examplePhrases": [
+        "窗口长度是否成立？",
+        "能确认窗口长度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "窗口长度"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c44-07",
+      "labelKey": "query.c44.7",
+      "intent": "verify",
+      "predicate": "verified_c44_7",
+      "slots": {
+        "subjectId": "entity-c44-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c44-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-07"
+      ],
+      "examplePhrases": [
+        "峰值是否成立？",
+        "能确认峰值吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "峰值"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c44-08",
+      "labelKey": "query.c44.8",
+      "intent": "verify",
+      "predicate": "verified_c44_8",
+      "slots": {
+        "subjectId": "entity-c44-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c44-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-08"
+      ],
+      "examplePhrases": [
+        "采样频率是否成立？",
+        "能确认采样频率吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "采样频率"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c44-09",
+      "labelKey": "query.c44.9",
+      "intent": "verify",
+      "predicate": "verified_c44_9",
+      "slots": {
+        "subjectId": "entity-c44-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c44-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-09"
+      ],
+      "examplePhrases": [
+        "聚合值是否成立？",
+        "能确认聚合值吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "聚合值"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c44-10",
+      "labelKey": "query.c44.10",
+      "intent": "verify",
+      "predicate": "verified_c44_10",
+      "slots": {
+        "subjectId": "entity-c44-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c44-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c44-10"
+      ],
+      "examplePhrases": [
+        "报警策略是否成立？",
+        "能确认报警策略吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "报警策略"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c44-01",
+      "kind": "scene",
+      "titleKey": "evidence.c44.1.title",
+      "observationKey": "evidence.c44.1.observation",
+      "sourceFactIds": [
+        "fact-c44-01",
+        "fact-c44-02",
+        "fact-c44-03"
+      ],
+      "sourceEventIds": [
+        "event-c44-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c44-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-01.svg",
+      "assetAlt": "瞬时过载"
+    },
+    {
+      "id": "evidence-c44-02",
+      "kind": "record",
+      "titleKey": "evidence.c44.2.title",
+      "observationKey": "evidence.c44.2.observation",
+      "sourceFactIds": [
+        "fact-c44-02",
+        "fact-c44-16"
+      ],
+      "sourceEventIds": [
+        "event-c44-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c44-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-02.svg",
+      "assetAlt": "滑动平均"
+    },
+    {
+      "id": "evidence-c44-03",
+      "kind": "object",
+      "titleKey": "evidence.c44.3.title",
+      "observationKey": "evidence.c44.3.observation",
+      "sourceFactIds": [
+        "fact-c44-03",
+        "fact-c44-17"
+      ],
+      "sourceEventIds": [
+        "event-c44-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-03.svg",
+      "assetAlt": "原始采样"
+    },
+    {
+      "id": "evidence-c44-04",
+      "kind": "scene",
+      "titleKey": "evidence.c44.4.title",
+      "observationKey": "evidence.c44.4.observation",
+      "sourceFactIds": [
+        "fact-c44-04",
+        "fact-c44-18"
+      ],
+      "sourceEventIds": [
+        "event-c44-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-04.svg",
+      "assetAlt": "日报曲线"
+    },
+    {
+      "id": "evidence-c44-05",
+      "kind": "record",
+      "titleKey": "evidence.c44.5.title",
+      "observationKey": "evidence.c44.5.observation",
+      "sourceFactIds": [
+        "fact-c44-05",
+        "fact-c44-19"
+      ],
+      "sourceEventIds": [
+        "event-c44-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-05.svg",
+      "assetAlt": "安全线"
+    },
+    {
+      "id": "evidence-c44-06",
+      "kind": "object",
+      "titleKey": "evidence.c44.6.title",
+      "observationKey": "evidence.c44.6.observation",
+      "sourceFactIds": [
+        "fact-c44-06",
+        "fact-c44-20"
+      ],
+      "sourceEventIds": [
+        "event-c44-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-01.svg",
+      "assetAlt": "窗口长度"
+    },
+    {
+      "id": "evidence-c44-07",
+      "kind": "scene",
+      "titleKey": "evidence.c44.7.title",
+      "observationKey": "evidence.c44.7.observation",
+      "sourceFactIds": [
+        "fact-c44-07"
+      ],
+      "sourceEventIds": [
+        "event-c44-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-02.svg",
+      "assetAlt": "峰值"
+    },
+    {
+      "id": "evidence-c44-08",
+      "kind": "record",
+      "titleKey": "evidence.c44.8.title",
+      "observationKey": "evidence.c44.8.observation",
+      "sourceFactIds": [
+        "fact-c44-08"
+      ],
+      "sourceEventIds": [
+        "event-c44-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-03.svg",
+      "assetAlt": "采样频率"
+    },
+    {
+      "id": "evidence-c44-09",
+      "kind": "object",
+      "titleKey": "evidence.c44.9.title",
+      "observationKey": "evidence.c44.9.observation",
+      "sourceFactIds": [
+        "fact-c44-09"
+      ],
+      "sourceEventIds": [
+        "event-c44-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-04.svg",
+      "assetAlt": "聚合值"
+    },
+    {
+      "id": "evidence-c44-10",
+      "kind": "scene",
+      "titleKey": "evidence.c44.10.title",
+      "observationKey": "evidence.c44.10.observation",
+      "sourceFactIds": [
+        "fact-c44-10"
+      ],
+      "sourceEventIds": [
+        "event-c44-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-05.svg",
+      "assetAlt": "报警策略"
+    },
+    {
+      "id": "evidence-c44-11",
+      "kind": "record",
+      "titleKey": "evidence.c44.11.title",
+      "observationKey": "evidence.c44.11.observation",
+      "sourceFactIds": [
+        "fact-c44-11"
+      ],
+      "sourceEventIds": [
+        "event-c44-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-01.svg",
+      "assetAlt": "瞬时过载"
+    },
+    {
+      "id": "evidence-c44-12",
+      "kind": "object",
+      "titleKey": "evidence.c44.12.title",
+      "observationKey": "evidence.c44.12.observation",
+      "sourceFactIds": [
+        "fact-c44-12"
+      ],
+      "sourceEventIds": [
+        "event-c44-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-02.svg",
+      "assetAlt": "滑动平均"
+    },
+    {
+      "id": "evidence-c44-13",
+      "kind": "scene",
+      "titleKey": "evidence.c44.13.title",
+      "observationKey": "evidence.c44.13.observation",
+      "sourceFactIds": [
+        "fact-c44-13"
+      ],
+      "sourceEventIds": [
+        "event-c44-13"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c44/evidence-03.svg",
+      "assetAlt": "原始采样"
+    },
+    {
+      "id": "evidence-c44-14",
+      "kind": "record",
+      "titleKey": "evidence.c44.14.title",
+      "observationKey": "evidence.c44.14.observation",
+      "sourceFactIds": [
+        "fact-c44-14"
+      ],
+      "sourceEventIds": [
+        "event-c44-14"
+      ],
+      "relatedEntityIds": [
+        "entity-c44-system",
+        "location-c44"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c44/evidence-04.svg",
+      "assetAlt": "日报曲线"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c44.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c44-01",
+          "event-c44-02",
+          "event-c44-03",
+          "event-c44-04",
+          "event-c44-05",
+          "event-c44-06",
+          "event-c44-07",
+          "event-c44-08",
+          "event-c44-09",
+          "event-c44-10",
+          "event-c44-11",
+          "event-c44-12",
+          "event-c44-13"
+        ],
+        "motiveKey": "在低噪声报表中保留短时安全事件"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c44-01",
+        "evidence-c44-02",
+        "evidence-c44-03",
+        "evidence-c44-04",
+        "evidence-c44-05",
+        "evidence-c44-06",
+        "evidence-c44-07",
+        "evidence-c44-08",
+        "evidence-c44-09",
+        "evidence-c44-10",
+        "evidence-c44-11",
+        "evidence-c44-12",
+        "evidence-c44-13"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c44-1",
+        "contradiction-c44-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c44-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c44.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "设备从未过载"
+        ],
+        "motiveKey": "motive-c44-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c44-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c44-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c44-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c44.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "日报被人改写了"
+        ],
+        "motiveKey": "motive-c44-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c44-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c44-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c44-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c44-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c44-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c44-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c44-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c44-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c44-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c44-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c44-01",
+      "fact-c44-02",
+      "fact-c44-03",
+      "fact-c44-04",
+      "fact-c44-05",
+      "fact-c44-06",
+      "fact-c44-07",
+      "fact-c44-08",
+      "fact-c44-09",
+      "fact-c44-10",
+      "fact-c44-11",
+      "fact-c44-12",
+      "fact-c44-13"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c44-01",
+      "evidence-c44-02",
+      "evidence-c44-03",
+      "evidence-c44-04",
+      "evidence-c44-05",
+      "evidence-c44-06",
+      "evidence-c44-07",
+      "evidence-c44-08",
+      "evidence-c44-09",
+      "evidence-c44-10",
+      "evidence-c44-11",
+      "evidence-c44-12",
+      "evidence-c44-13"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c44-01",
+        "event-c44-02"
+      ],
+      [
+        "event-c44-02",
+        "event-c44-03"
+      ],
+      [
+        "event-c44-03",
+        "event-c44-04"
+      ],
+      [
+        "event-c44-04",
+        "event-c44-05"
+      ],
+      [
+        "event-c44-05",
+        "event-c44-06"
+      ],
+      [
+        "event-c44-06",
+        "event-c44-07"
+      ],
+      [
+        "event-c44-07",
+        "event-c44-08"
+      ],
+      [
+        "event-c44-08",
+        "event-c44-09"
+      ],
+      [
+        "event-c44-09",
+        "event-c44-10"
+      ],
+      [
+        "event-c44-10",
+        "event-c44-11"
+      ],
+      [
+        "event-c44-11",
+        "event-c44-12"
+      ],
+      [
+        "event-c44-12",
+        "event-c44-13"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c44-1",
+      "contradiction-c44-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c44-alternative-1",
+      "hypothesis-c44-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c44-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c44-a",
+        "evidenceIds": [
+          "evidence-c44-01",
+          "evidence-c44-02",
+          "evidence-c44-03",
+          "evidence-c44-04",
+          "evidence-c44-05",
+          "evidence-c44-06",
+          "evidence-c44-07",
+          "evidence-c44-08"
+        ]
+      },
+      {
+        "id": "proof-c44-b",
+        "evidenceIds": [
+          "evidence-c44-01",
+          "evidence-c44-02",
+          "evidence-c44-09",
+          "evidence-c44-10",
+          "evidence-c44-11",
+          "evidence-c44-12",
+          "evidence-c44-13"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "在低噪声报表中保留短时安全事件"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c44-1",
+        "kind": "time",
+        "boardId": "board-c44-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c44-1-1",
+            "eventId": "event-c44-01"
+          },
+          {
+            "slotId": "slot-c44-1-2",
+            "eventId": "event-c44-03"
+          },
+          {
+            "slotId": "slot-c44-1-3",
+            "eventId": "event-c44-05"
+          },
+          {
+            "slotId": "slot-c44-1-4",
+            "eventId": "event-c44-13"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c44-01",
+            "toEventId": "event-c44-03",
+            "relation": "sampled-before"
+          },
+          {
+            "fromEventId": "event-c44-03",
+            "toEventId": "event-c44-05",
+            "relation": "sampled-before"
+          },
+          {
+            "fromEventId": "event-c44-05",
+            "toEventId": "event-c44-13",
+            "relation": "sampled-before"
+          }
+        ],
+        "failureCategory": "time"
+      },
+      {
+        "id": "obligation-c44-2",
+        "kind": "measurement",
+        "boardId": "board-c44-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c44-2-1",
+            "eventId": "event-c44-02"
+          },
+          {
+            "slotId": "slot-c44-2-2",
+            "eventId": "event-c44-04"
+          },
+          {
+            "slotId": "slot-c44-2-3",
+            "eventId": "event-c44-06"
+          },
+          {
+            "slotId": "slot-c44-2-4",
+            "eventId": "event-c44-13"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c44-02",
+            "toEventId": "event-c44-04",
+            "relation": "measured-against"
+          },
+          {
+            "fromEventId": "event-c44-04",
+            "toEventId": "event-c44-06",
+            "relation": "measured-against"
+          },
+          {
+            "fromEventId": "event-c44-06",
+            "toEventId": "event-c44-13",
+            "relation": "measured-against"
+          }
+        ],
+        "failureCategory": "measurement"
+      }
+    ],
+    "uniquenessClaim": "日报使用滑动平均抹平了尖峰，原始采样仍然存在；聚合显示不能否定瞬时事件。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c44-1",
+      "eventId": "event-c44-02",
+      "factIds": [
+        "fact-c44-01"
+      ],
+      "captionKey": "event.c44.2"
+    },
+    {
+      "id": "replay-c44-2",
+      "eventId": "event-c44-03",
+      "factIds": [
+        "fact-c44-02"
+      ],
+      "captionKey": "event.c44.3"
+    },
+    {
+      "id": "replay-c44-3",
+      "eventId": "event-c44-04",
+      "factIds": [
+        "fact-c44-03"
+      ],
+      "captionKey": "event.c44.4"
+    },
+    {
+      "id": "replay-c44-4",
+      "eventId": "event-c44-05",
+      "factIds": [
+        "fact-c44-04"
+      ],
+      "captionKey": "event.c44.5"
+    },
+    {
+      "id": "replay-c44-5",
+      "eventId": "event-c44-06",
+      "factIds": [
+        "fact-c44-05"
+      ],
+      "captionKey": "event.c44.6"
+    },
+    {
+      "id": "replay-c44-6",
+      "eventId": "event-c44-07",
+      "factIds": [
+        "fact-c44-01",
+        "fact-c44-02",
+        "fact-c44-03",
+        "fact-c44-04",
+        "fact-c44-05",
+        "fact-c44-06",
+        "fact-c44-07",
+        "fact-c44-08",
+        "fact-c44-09",
+        "fact-c44-10",
+        "fact-c44-11",
+        "fact-c44-12",
+        "fact-c44-13"
+      ],
+      "captionKey": "event.c44.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c44.title": "消失在平均值里的尖峰",
+      "case.c44.surface": "设备原始采样出现瞬时过载，日报曲线却从未超过安全线。",
+      "case.c44.truth": "日报使用滑动平均抹平了尖峰，原始采样仍然存在；聚合显示不能否定瞬时事件。",
+      "entity.c44.system": "测量系统与记录链",
+      "location.c44": "科学系统现场",
+      "hypothesis.c44.canonical": "日报使用滑动平均抹平了尖峰，原始采样仍然存在；聚合显示不能否定瞬时事件。",
+      "hypothesis.c44.alternative.1": "设备从未过载",
+      "hypothesis.c44.alternative.2": "日报被人改写了",
+      "motive.在低噪声报表中保留短时安全事件": "在低噪声报表中保留短时安全事件",
+      "chapter.c44.one": "固定异常",
+      "chapter.c44.two": "统一测量边界",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c44.1": "瞬时过载是否成立？",
+      "query.c44.2": "滑动平均是否成立？",
+      "query.c44.3": "原始采样是否成立？",
+      "query.c44.4": "日报曲线是否成立？",
+      "query.c44.5": "安全线是否成立？",
+      "query.c44.6": "窗口长度是否成立？",
+      "query.c44.7": "峰值是否成立？",
+      "query.c44.8": "采样频率是否成立？",
+      "query.c44.9": "聚合值是否成立？",
+      "query.c44.10": "报警策略是否成立？",
+      "event.c44.1": "阶段 1：瞬时过载进入记录链",
+      "event.c44.2": "阶段 2：滑动平均进入记录链",
+      "event.c44.3": "阶段 3：原始采样进入记录链",
+      "event.c44.4": "阶段 4：日报曲线进入记录链",
+      "event.c44.5": "阶段 5：安全线进入记录链",
+      "event.c44.6": "阶段 6：窗口长度进入记录链",
+      "event.c44.7": "阶段 7：峰值进入记录链",
+      "event.c44.8": "阶段 8：采样频率进入记录链",
+      "event.c44.9": "阶段 9：聚合值进入记录链",
+      "event.c44.10": "阶段 10：报警策略进入记录链",
+      "event.c44.11": "阶段 11：瞬时过载进入记录链",
+      "event.c44.12": "阶段 12：滑动平均进入记录链",
+      "event.c44.13": "阶段 13：原始采样进入记录链",
+      "event.c44.14": "阶段 14：日报曲线进入记录链",
+      "evidence.c44.1.title": "瞬时过载记录",
+      "evidence.c44.1.observation": "来源记录显示“瞬时过载”在该阶段保持可复核。",
+      "evidence.c44.2.title": "滑动平均记录",
+      "evidence.c44.2.observation": "来源记录显示“滑动平均”在该阶段保持可复核。",
+      "evidence.c44.3.title": "原始采样记录",
+      "evidence.c44.3.observation": "来源记录显示“原始采样”在该阶段保持可复核。",
+      "evidence.c44.4.title": "日报曲线记录",
+      "evidence.c44.4.observation": "来源记录显示“日报曲线”在该阶段保持可复核。",
+      "evidence.c44.5.title": "安全线记录",
+      "evidence.c44.5.observation": "来源记录显示“安全线”在该阶段保持可复核。",
+      "evidence.c44.6.title": "窗口长度记录",
+      "evidence.c44.6.observation": "来源记录显示“窗口长度”在该阶段保持可复核。",
+      "evidence.c44.7.title": "峰值记录",
+      "evidence.c44.7.observation": "来源记录显示“峰值”在该阶段保持可复核。",
+      "evidence.c44.8.title": "采样频率记录",
+      "evidence.c44.8.observation": "来源记录显示“采样频率”在该阶段保持可复核。",
+      "evidence.c44.9.title": "聚合值记录",
+      "evidence.c44.9.observation": "来源记录显示“聚合值”在该阶段保持可复核。",
+      "evidence.c44.10.title": "报警策略记录",
+      "evidence.c44.10.observation": "来源记录显示“报警策略”在该阶段保持可复核。",
+      "evidence.c44.11.title": "瞬时过载记录",
+      "evidence.c44.11.observation": "来源记录显示“瞬时过载”在该阶段保持可复核。",
+      "evidence.c44.12.title": "滑动平均记录",
+      "evidence.c44.12.observation": "来源记录显示“滑动平均”在该阶段保持可复核。",
+      "evidence.c44.13.title": "原始采样记录",
+      "evidence.c44.13.observation": "来源记录显示“原始采样”在该阶段保持可复核。",
+      "evidence.c44.14.title": "日报曲线记录",
+      "evidence.c44.14.observation": "来源记录显示“日报曲线”在该阶段保持可复核。",
+      "board.c44.1.title": "消失在平均值里的尖峰 · sampling-window",
+      "board.c44.1.slot.1": "起始来源",
+      "board.c44.1.slot.2": "关键变化",
+      "board.c44.1.slot.3": "观测结果",
+      "board.c44.1.slot.4": "排除替代",
+      "board.c44.2.title": "消失在平均值里的尖峰 · measurement-model",
+      "board.c44.2.slot.1": "起始来源",
+      "board.c44.2.slot.2": "关键变化",
+      "board.c44.2.slot.3": "观测结果",
+      "board.c44.2.slot.4": "排除替代"
+    }
+  }
+}

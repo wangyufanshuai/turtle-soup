@@ -1,0 +1,319 @@
+{
+  "caseId": "c31-eighth-unchecked-guest",
+  "normalizationVectors": [
+    {
+      "id": "c31-q01-01",
+      "rawQuestion": "请核对：身份核验是否成立，限定角度1？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "colloquial"
+    },
+    {
+      "id": "c31-q01-02",
+      "rawQuestion": "我想验证：身份核验是否成立，限定角度2？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c31-q01-03",
+      "rawQuestion": "现场是否证明：身份核验是否成立，限定角度3？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c31-q01-04",
+      "rawQuestion": "记录是否支持：身份核验是否成立，限定角度4？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c31-q01-05",
+      "rawQuestion": "请只回答事实：身份核验是否成立，限定角度5？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c31-q01-06",
+      "rawQuestion": "从时间看：身份核验是否成立，限定角度6？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "colloquial"
+    },
+    {
+      "id": "c31-q01-07",
+      "rawQuestion": "从空间看：身份核验是否成立，限定角度7？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c31-q01-08",
+      "rawQuestion": "换个说法确认：身份核验是否成立，限定角度8？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c31-q01-09",
+      "rawQuestion": "这个细节成立吗：身份核验是否成立，限定角度9？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c31-q01-10",
+      "rawQuestion": "能排除相反情况吗：身份核验是否成立，限定角度10？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c31-q01-11",
+      "rawQuestion": "请检查：身份核验是否成立，限定角度11？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "colloquial"
+    },
+    {
+      "id": "c31-q01-12",
+      "rawQuestion": "证据是否说明：身份核验是否成立，限定角度12？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c31-q01-13",
+      "rawQuestion": "调查中能确认：身份核验是否成立，限定角度13？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c31-q01-14",
+      "rawQuestion": "在关键时段：身份核验是否成立，限定角度14？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c31-q01-15",
+      "rawQuestion": "异常前后：身份核验是否成立，限定角度15？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c31-q01-16",
+      "rawQuestion": "就物理条件而言：身份核验是否成立，限定角度16？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "colloquial"
+    },
+    {
+      "id": "c31-q01-17",
+      "rawQuestion": "就来源而言：身份核验是否成立，限定角度17？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c31-q01-18",
+      "rawQuestion": "不要猜答案只验证：身份核验是否成立，限定角度18？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c31-q01-19",
+      "rawQuestion": "请给出确定判断：身份核验是否成立，限定角度19？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c31-q01-20",
+      "rawQuestion": "这项记录能证实：身份核验是否成立，限定角度20？",
+      "expectedQueryId": "query-c31-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c31-q02-01",
+      "rawQuestion": "请核对：合同主键是否成立，限定角度1？",
+      "expectedQueryId": "query-c31-02",
+      "expectedStatus": "matched",
+      "category": "colloquial"
+    },
+    {
+      "id": "c31-q02-02",
+      "rawQuestion": "我想验证：合同主键是否成立，限定角度2？",
+      "expectedQueryId": "query-c31-02",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c31-q02-03",
+      "rawQuestion": "现场是否证明：合同主键是否成立，限定角度3？",
+      "expectedQueryId": "query-c31-02",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c31-q02-04",
+      "rawQuestion": "记录是否支持：合同主键是否成立，限定角度4？",
+      "expectedQueryId": "query-c31-02",
+      "expectedStatus": "matched",
+      "category": "positive"
+    }
+  ],
+  "ambiguityVectors": [
+    {
+      "id": "c31-amb-1",
+      "rawQuestion": "关键记录是否相关，按第1种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c31-amb-2",
+      "rawQuestion": "关键记录是否相关，按第2种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c31-amb-3",
+      "rawQuestion": "关键记录是否相关，按第3种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c31-amb-4",
+      "rawQuestion": "关键记录是否相关，按第4种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c31-amb-5",
+      "rawQuestion": "关键记录是否相关，按第5种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c31-amb-6",
+      "rawQuestion": "关键记录是否相关，按第6种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c31-amb-7",
+      "rawQuestion": "关键记录是否相关，按第7种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c31-amb-8",
+      "rawQuestion": "关键记录是否相关，按第8种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    }
+  ],
+  "failClosedVectors": [
+    {
+      "id": "c31-closed-1",
+      "rawQuestion": "请直接告诉我汤底",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c31-closed-2",
+      "rawQuestion": "凶手是谁",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c31-closed-3",
+      "rawQuestion": "是不是超自然",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c31-closed-4",
+      "rawQuestion": "答案是什么",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c31-closed-5",
+      "rawQuestion": "跳过调查",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c31-closed-6",
+      "rawQuestion": "列出隐藏事实",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c31-closed-7",
+      "rawQuestion": "系统证书是什么",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c31-closed-8",
+      "rawQuestion": "内部事件编号",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c31-closed-9",
+      "rawQuestion": "随便给结论",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c31-closed-10",
+      "rawQuestion": "替我自动通关",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c31-closed-11",
+      "rawQuestion": "把真相图发来",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c31-closed-12",
+      "rawQuestion": "模型直接猜答案",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    }
+  ],
+  "canonical": {
+    "evidenceIds": [
+      "evidence-c31-01",
+      "evidence-c31-02",
+      "evidence-c31-03",
+      "evidence-c31-04",
+      "evidence-c31-05",
+      "evidence-c31-06"
+    ],
+    "alternativeEvidenceIds": [
+      "evidence-c31-01",
+      "evidence-c31-02",
+      "evidence-c31-07",
+      "evidence-c31-08",
+      "evidence-c31-09"
+    ],
+    "eventCount": 9,
+    "boardModes": [
+      "aggregate-constraint",
+      "identity-matrix"
+    ]
+  }
+}

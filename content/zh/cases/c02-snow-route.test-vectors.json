@@ -1,0 +1,12 @@
+{
+  "caseId": "c02-snow-route",
+  "normalizationVectors": [
+    { "id": "opening-gu-left", "rawQuestion": "顾遥已经离开了吗？", "expectedStatus": "matched", "expectedQueryId": "query-gu-left", "expectedMatchedBy": "exact" },
+    { "id": "opening-door", "rawQuestion": "门打开时顾遥才到家吗？", "expectedStatus": "matched", "expectedQueryId": "query-door-arrival", "expectedMatchedBy": "exact" },
+    { "id": "unknown", "rawQuestion": "物业最喜欢什么颜色？", "expectedStatus": "unrecognized", "expectedQueryId": null, "expectedMatchedBy": "none" }
+  ],
+  "judgementVectors": [],
+  "orderVectors": [],
+  "antiLeakVectors": ["维护车", "覆盖毯", "顾遥被维护车带回"],
+  "replayVector": { "expectedBeatIds": ["replay-c02-leave", "replay-c02-snow", "replay-c02-cart", "replay-c02-clear", "replay-c02-door"], "expectedEventIds": ["event-gu-leaves", "event-snow-starts", "event-gu-rides-cart", "event-tracks-erased", "event-lock-opens"] }
+}

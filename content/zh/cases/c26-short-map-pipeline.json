@@ -1,0 +1,1861 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c26-short-map-pipeline",
+  "metadata": {
+    "titleKey": "case.c26.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "空间投影",
+      "三维长度",
+      "分段求和"
+    ],
+    "targetMinutes": {
+      "min": 9,
+      "max": 19
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:b71b41828d37dc0054e2237164cbc6b70957dd9159384bb26bf2cee4b3465f13",
+    "status": "internal-rc",
+    "seasonId": "season-3"
+  },
+  "presentation": {
+    "layoutId": "season3-spatial-map",
+    "sceneAsset": "/assets/cases/c26/scene-desktop.webp",
+    "sceneAssetMobile": "/assets/cases/c26/scene-mobile.webp",
+    "palette": "blueprint-cyan",
+    "accent": "#76b7c4",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "spatial-map-dossier",
+    "mobileNavigation": [
+      "管廊",
+      "测绘记录",
+      "空间图"
+    ],
+    "boardMode": "spatial-map"
+  },
+  "surface": {
+    "titleKey": "case.c26.title",
+    "textKey": "case.c26.surface",
+    "publicFactIds": [
+      "fact-c26-01",
+      "fact-c26-02",
+      "fact-c26-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c26-01",
+      "query-c26-02",
+      "query-c26-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c26-one",
+      "titleKey": "chapter.c26.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c26-1",
+      "titleKey": "board.c26.1.title",
+      "mode": "spatial-map",
+      "slots": [
+        {
+          "id": "slot-c26-1-1",
+          "labelKey": "board.c26.1.slot.1",
+          "acceptsEventIds": [
+            "event-c26-01"
+          ]
+        },
+        {
+          "id": "slot-c26-1-2",
+          "labelKey": "board.c26.1.slot.2",
+          "acceptsEventIds": [
+            "event-c26-03"
+          ]
+        },
+        {
+          "id": "slot-c26-1-3",
+          "labelKey": "board.c26.1.slot.3",
+          "acceptsEventIds": [
+            "event-c26-05"
+          ]
+        },
+        {
+          "id": "slot-c26-1-4",
+          "labelKey": "board.c26.1.slot.4",
+          "acceptsEventIds": [
+            "event-c26-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "moves-to",
+        "overlaps",
+        "precedes"
+      ]
+    },
+    {
+      "id": "board-c26-2",
+      "titleKey": "board.c26.2.title",
+      "mode": "aggregate-constraint",
+      "slots": [
+        {
+          "id": "slot-c26-2-1",
+          "labelKey": "board.c26.2.slot.1",
+          "acceptsEventIds": [
+            "event-c26-03"
+          ]
+        },
+        {
+          "id": "slot-c26-2-2",
+          "labelKey": "board.c26.2.slot.2",
+          "acceptsEventIds": [
+            "event-c26-05"
+          ]
+        },
+        {
+          "id": "slot-c26-2-3",
+          "labelKey": "board.c26.2.slot.3",
+          "acceptsEventIds": [
+            "event-c26-07"
+          ]
+        },
+        {
+          "id": "slot-c26-2-4",
+          "labelKey": "board.c26.2.slot.4",
+          "acceptsEventIds": [
+            "event-c26-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "contributes-to",
+        "sums-with",
+        "exceeds"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 12
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c26-subject",
+      "kind": "object",
+      "labelKey": "entity.c26.subject",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c26",
+      "kind": "location",
+      "labelKey": "location.c26",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c26-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "23:00"
+      },
+      "participants": [
+        "entity-c26-subject"
+      ],
+      "locationId": "location-c26",
+      "action": "step-c26-1",
+      "labelKey": "event.c26.1",
+      "effectFactIds": [
+        "fact-c26-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c26-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "23:03"
+      },
+      "participants": [
+        "entity-c26-subject"
+      ],
+      "locationId": "location-c26",
+      "action": "step-c26-2",
+      "labelKey": "event.c26.2",
+      "effectFactIds": [
+        "fact-c26-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c26-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "23:06"
+      },
+      "participants": [
+        "entity-c26-subject"
+      ],
+      "locationId": "location-c26",
+      "action": "step-c26-3",
+      "labelKey": "event.c26.3",
+      "effectFactIds": [
+        "fact-c26-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c26-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "23:09"
+      },
+      "participants": [
+        "entity-c26-subject"
+      ],
+      "locationId": "location-c26",
+      "action": "step-c26-4",
+      "labelKey": "event.c26.4",
+      "effectFactIds": [
+        "fact-c26-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c26-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "23:12"
+      },
+      "participants": [
+        "entity-c26-subject"
+      ],
+      "locationId": "location-c26",
+      "action": "step-c26-5",
+      "labelKey": "event.c26.5",
+      "effectFactIds": [
+        "fact-c26-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c26-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "00:15"
+      },
+      "participants": [
+        "entity-c26-subject"
+      ],
+      "locationId": "location-c26",
+      "action": "step-c26-6",
+      "labelKey": "event.c26.6",
+      "effectFactIds": [
+        "fact-c26-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c26-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "00:18"
+      },
+      "participants": [
+        "entity-c26-subject"
+      ],
+      "locationId": "location-c26",
+      "action": "step-c26-7",
+      "labelKey": "event.c26.7",
+      "effectFactIds": [
+        "fact-c26-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c26-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "00:21"
+      },
+      "participants": [
+        "entity-c26-subject"
+      ],
+      "locationId": "location-c26",
+      "action": "step-c26-8",
+      "labelKey": "event.c26.8",
+      "effectFactIds": [
+        "fact-c26-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c26-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "00:24"
+      },
+      "participants": [
+        "entity-c26-subject"
+      ],
+      "locationId": "location-c26",
+      "action": "step-c26-9",
+      "labelKey": "event.c26.9",
+      "effectFactIds": [
+        "fact-c26-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c26-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "00:27"
+      },
+      "participants": [
+        "entity-c26-subject"
+      ],
+      "locationId": "location-c26",
+      "action": "step-c26-10",
+      "labelKey": "event.c26.10",
+      "effectFactIds": [
+        "fact-c26-10"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c26-1-1",
+      "type": "precedes",
+      "fromId": "entity-c26-subject",
+      "toId": "location-c26",
+      "eventId": "event-c26-01",
+      "factId": "fact-c26-01"
+    },
+    {
+      "id": "relation-c26-1-2",
+      "type": "causes",
+      "fromId": "entity-c26-subject",
+      "toId": "location-c26",
+      "eventId": "event-c26-03",
+      "factId": "fact-c26-02"
+    },
+    {
+      "id": "relation-c26-1-3",
+      "type": "causes",
+      "fromId": "entity-c26-subject",
+      "toId": "location-c26",
+      "eventId": "event-c26-05",
+      "factId": "fact-c26-03"
+    },
+    {
+      "id": "relation-c26-2-1",
+      "type": "precedes",
+      "fromId": "entity-c26-subject",
+      "toId": "location-c26",
+      "eventId": "event-c26-03",
+      "factId": "fact-c26-02"
+    },
+    {
+      "id": "relation-c26-2-2",
+      "type": "causes",
+      "fromId": "entity-c26-subject",
+      "toId": "location-c26",
+      "eventId": "event-c26-05",
+      "factId": "fact-c26-03"
+    },
+    {
+      "id": "relation-c26-2-3",
+      "type": "causes",
+      "fromId": "entity-c26-subject",
+      "toId": "location-c26",
+      "eventId": "event-c26-07",
+      "factId": "fact-c26-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c26-01",
+      "predicate": "verified_c26_1",
+      "args": {
+        "step": 1
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c26.1"
+    },
+    {
+      "id": "fact-c26-02",
+      "predicate": "verified_c26_2",
+      "args": {
+        "step": 2
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c26.2"
+    },
+    {
+      "id": "fact-c26-03",
+      "predicate": "verified_c26_3",
+      "args": {
+        "step": 3
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c26.3"
+    },
+    {
+      "id": "fact-c26-04",
+      "predicate": "verified_c26_4",
+      "args": {
+        "step": 4
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c26.4"
+    },
+    {
+      "id": "fact-c26-05",
+      "predicate": "verified_c26_5",
+      "args": {
+        "step": 5
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c26.5"
+    },
+    {
+      "id": "fact-c26-06",
+      "predicate": "verified_c26_6",
+      "args": {
+        "step": 6
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c26.6"
+    },
+    {
+      "id": "fact-c26-07",
+      "predicate": "verified_c26_7",
+      "args": {
+        "step": 7
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c26.7"
+    },
+    {
+      "id": "fact-c26-08",
+      "predicate": "verified_c26_8",
+      "args": {
+        "step": 8
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c26.8"
+    },
+    {
+      "id": "fact-c26-09",
+      "predicate": "verified_c26_9",
+      "args": {
+        "step": 9
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c26.9"
+    },
+    {
+      "id": "fact-c26-10",
+      "predicate": "verified_c26_10",
+      "args": {
+        "step": 10
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-10"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c26.10"
+    },
+    {
+      "id": "fact-c26-11",
+      "predicate": "verified_c26_11",
+      "args": {
+        "step": 11
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-03"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c26.11"
+    },
+    {
+      "id": "fact-c26-12",
+      "predicate": "verified_c26_12",
+      "args": {
+        "step": 12
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-04"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c26.12"
+    },
+    {
+      "id": "fact-c26-13",
+      "predicate": "verified_c26_13",
+      "args": {
+        "step": 13
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-05"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c26.13"
+    },
+    {
+      "id": "fact-c26-14",
+      "predicate": "verified_c26_14",
+      "args": {
+        "step": 14
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-06"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c26.14"
+    },
+    {
+      "id": "fact-c26-15",
+      "predicate": "verified_c26_15",
+      "args": {
+        "step": 15
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-07"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c26.15"
+    },
+    {
+      "id": "fact-c26-16",
+      "predicate": "verified_c26_16",
+      "args": {
+        "step": 16
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c26-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c26-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c26.16"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c26-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c26-01",
+        "fact-c26-02",
+        "fact-c26-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c26-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c26-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c26-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c26-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c26-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c26-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c26-11"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c26-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c26-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c26-04",
+        "fact-c26-12"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c26-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c26-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c26-05",
+        "fact-c26-13"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c26-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c26-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c26-06",
+        "fact-c26-14"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c26-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c26-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c26-07",
+        "fact-c26-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c26-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c26-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c26-08",
+        "fact-c26-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c26-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c26-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c26-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c26-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c26-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c26-10"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c26-01",
+      "labelKey": "query.c26.1",
+      "intent": "verify",
+      "predicate": "verified_c26_1",
+      "slots": {
+        "subjectId": "entity-c26-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c26-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-opening"
+      ],
+      "examplePhrases": [
+        "平面投影是否成立？",
+        "能确认平面投影吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "平面投影"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c26-02",
+      "labelKey": "query.c26.2",
+      "intent": "verify",
+      "predicate": "verified_c26_2",
+      "slots": {
+        "subjectId": "entity-c26-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c26-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-opening"
+      ],
+      "examplePhrases": [
+        "竖井剖面是否成立？",
+        "能确认竖井剖面吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "竖井剖面"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c26-03",
+      "labelKey": "query.c26.3",
+      "intent": "verify",
+      "predicate": "verified_c26_3",
+      "slots": {
+        "subjectId": "entity-c26-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c26-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-opening"
+      ],
+      "examplePhrases": [
+        "起终标高是否成立？",
+        "能确认起终标高吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "起终标高"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c26-04",
+      "labelKey": "query.c26.4",
+      "intent": "verify",
+      "predicate": "verified_c26_4",
+      "slots": {
+        "subjectId": "entity-c26-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c26-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-04"
+      ],
+      "examplePhrases": [
+        "第一竖井是否成立？",
+        "能确认第一竖井吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "第一竖井"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c26-05",
+      "labelKey": "query.c26.5",
+      "intent": "verify",
+      "predicate": "verified_c26_5",
+      "slots": {
+        "subjectId": "entity-c26-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c26-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-05"
+      ],
+      "examplePhrases": [
+        "设备层支架是否成立？",
+        "能确认设备层支架吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "设备层支架"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c26-06",
+      "labelKey": "query.c26.6",
+      "intent": "verify",
+      "predicate": "verified_c26_6",
+      "slots": {
+        "subjectId": "entity-c26-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c26-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-06"
+      ],
+      "examplePhrases": [
+        "第二竖井是否成立？",
+        "能确认第二竖井吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "第二竖井"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c26-07",
+      "labelKey": "query.c26.7",
+      "intent": "verify",
+      "predicate": "verified_c26_7",
+      "slots": {
+        "subjectId": "entity-c26-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c26-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-07"
+      ],
+      "examplePhrases": [
+        "分段测距是否成立？",
+        "能确认分段测距吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "分段测距"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c26-08",
+      "labelKey": "query.c26.8",
+      "intent": "verify",
+      "predicate": "verified_c26_8",
+      "slots": {
+        "subjectId": "entity-c26-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c26-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-08"
+      ],
+      "examplePhrases": [
+        "仪器校准是否成立？",
+        "能确认仪器校准吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "仪器校准"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c26-09",
+      "labelKey": "query.c26.9",
+      "intent": "verify",
+      "predicate": "verified_c26_9",
+      "slots": {
+        "subjectId": "entity-c26-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c26-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-09"
+      ],
+      "examplePhrases": [
+        "端点位置是否成立？",
+        "能确认端点位置吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "端点位置"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c26-10",
+      "labelKey": "query.c26.10",
+      "intent": "eliminate",
+      "predicate": "verified_c26_10",
+      "slots": {
+        "subjectId": "entity-c26-subject"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c26-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c26-10"
+      ],
+      "examplePhrases": [
+        "废弃支管是否成立？",
+        "能确认废弃支管吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "废弃支管"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c26-01",
+      "kind": "scene",
+      "titleKey": "evidence.c26.1.title",
+      "observationKey": "evidence.c26.1.observation",
+      "sourceFactIds": [
+        "fact-c26-01"
+      ],
+      "sourceEventIds": [
+        "event-c26-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c26-subject",
+        "location-c26"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c26-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c26/evidence-01.webp",
+      "assetAlt": "平面施工图"
+    },
+    {
+      "id": "evidence-c26-02",
+      "kind": "record",
+      "titleKey": "evidence.c26.2.title",
+      "observationKey": "evidence.c26.2.observation",
+      "sourceFactIds": [
+        "fact-c26-02"
+      ],
+      "sourceEventIds": [
+        "event-c26-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c26-subject",
+        "location-c26"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c26-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c26/evidence-02.webp",
+      "assetAlt": "竖井剖面图"
+    },
+    {
+      "id": "evidence-c26-03",
+      "kind": "object",
+      "titleKey": "evidence.c26.3.title",
+      "observationKey": "evidence.c26.3.observation",
+      "sourceFactIds": [
+        "fact-c26-03",
+        "fact-c26-11"
+      ],
+      "sourceEventIds": [
+        "event-c26-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c26-subject",
+        "location-c26"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c26/evidence-03.webp",
+      "assetAlt": "起终点标高"
+    },
+    {
+      "id": "evidence-c26-04",
+      "kind": "scene",
+      "titleKey": "evidence.c26.4.title",
+      "observationKey": "evidence.c26.4.observation",
+      "sourceFactIds": [
+        "fact-c26-04",
+        "fact-c26-12"
+      ],
+      "sourceEventIds": [
+        "event-c26-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c26-subject",
+        "location-c26"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c26/evidence-04.webp",
+      "assetAlt": "第一竖井吊牌"
+    },
+    {
+      "id": "evidence-c26-05",
+      "kind": "record",
+      "titleKey": "evidence.c26.5.title",
+      "observationKey": "evidence.c26.5.observation",
+      "sourceFactIds": [
+        "fact-c26-05",
+        "fact-c26-13"
+      ],
+      "sourceEventIds": [
+        "event-c26-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c26-subject",
+        "location-c26"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c26/evidence-05.webp",
+      "assetAlt": "设备层支架"
+    },
+    {
+      "id": "evidence-c26-06",
+      "kind": "object",
+      "titleKey": "evidence.c26.6.title",
+      "observationKey": "evidence.c26.6.observation",
+      "sourceFactIds": [
+        "fact-c26-06",
+        "fact-c26-14"
+      ],
+      "sourceEventIds": [
+        "event-c26-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c26-subject",
+        "location-c26"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c26/evidence-01.webp",
+      "assetAlt": "第二竖井照片"
+    },
+    {
+      "id": "evidence-c26-07",
+      "kind": "scene",
+      "titleKey": "evidence.c26.7.title",
+      "observationKey": "evidence.c26.7.observation",
+      "sourceFactIds": [
+        "fact-c26-07",
+        "fact-c26-15"
+      ],
+      "sourceEventIds": [
+        "event-c26-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c26-subject",
+        "location-c26"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c26/evidence-02.webp",
+      "assetAlt": "分段测距表"
+    },
+    {
+      "id": "evidence-c26-08",
+      "kind": "record",
+      "titleKey": "evidence.c26.8.title",
+      "observationKey": "evidence.c26.8.observation",
+      "sourceFactIds": [
+        "fact-c26-08",
+        "fact-c26-16"
+      ],
+      "sourceEventIds": [
+        "event-c26-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c26-subject",
+        "location-c26"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c26/evidence-03.webp",
+      "assetAlt": "验收仪校准"
+    },
+    {
+      "id": "evidence-c26-09",
+      "kind": "object",
+      "titleKey": "evidence.c26.9.title",
+      "observationKey": "evidence.c26.9.observation",
+      "sourceFactIds": [
+        "fact-c26-09"
+      ],
+      "sourceEventIds": [
+        "event-c26-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c26-subject",
+        "location-c26"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c26/evidence-04.webp",
+      "assetAlt": "端点封帽"
+    },
+    {
+      "id": "evidence-c26-10",
+      "kind": "scene",
+      "titleKey": "evidence.c26.10.title",
+      "observationKey": "evidence.c26.10.observation",
+      "sourceFactIds": [
+        "fact-c26-10"
+      ],
+      "sourceEventIds": [
+        "event-c26-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c26-subject",
+        "location-c26"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c26/evidence-05.webp",
+      "assetAlt": "废弃支管图层"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c26.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c26-01",
+          "event-c26-02",
+          "event-c26-03",
+          "event-c26-04",
+          "event-c26-05",
+          "event-c26-06",
+          "event-c26-07",
+          "event-c26-08",
+          "event-c26-09"
+        ],
+        "motiveKey": "连接不同标高的设备层"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c26-01",
+        "evidence-c26-02",
+        "evidence-c26-03",
+        "evidence-c26-04",
+        "evidence-c26-05",
+        "evidence-c26-06",
+        "evidence-c26-07",
+        "evidence-c26-08",
+        "evidence-c26-09"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c26-1",
+        "contradiction-c26-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c26-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c26.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "施工队在墙后私自绕行"
+        ],
+        "motiveKey": "motive-c26-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c26-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c26-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c26-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c26.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "验收仪系统性多算了二十三米"
+        ],
+        "motiveKey": "motive-c26-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c26-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c26-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c26-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c26-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c26-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c26-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c26-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c26-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c26-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c26-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c26-01",
+      "fact-c26-02",
+      "fact-c26-03",
+      "fact-c26-04",
+      "fact-c26-05",
+      "fact-c26-06",
+      "fact-c26-07",
+      "fact-c26-08",
+      "fact-c26-09"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c26-01",
+      "evidence-c26-02",
+      "evidence-c26-03",
+      "evidence-c26-04",
+      "evidence-c26-05",
+      "evidence-c26-06",
+      "evidence-c26-07",
+      "evidence-c26-08",
+      "evidence-c26-09"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c26-01",
+        "event-c26-02"
+      ],
+      [
+        "event-c26-02",
+        "event-c26-03"
+      ],
+      [
+        "event-c26-03",
+        "event-c26-04"
+      ],
+      [
+        "event-c26-04",
+        "event-c26-05"
+      ],
+      [
+        "event-c26-05",
+        "event-c26-06"
+      ],
+      [
+        "event-c26-06",
+        "event-c26-07"
+      ],
+      [
+        "event-c26-07",
+        "event-c26-08"
+      ],
+      [
+        "event-c26-08",
+        "event-c26-09"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c26-1",
+      "contradiction-c26-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c26-alternative-1",
+      "hypothesis-c26-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c26-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c26-a",
+        "evidenceIds": [
+          "evidence-c26-01",
+          "evidence-c26-02",
+          "evidence-c26-03",
+          "evidence-c26-04",
+          "evidence-c26-05",
+          "evidence-c26-06"
+        ]
+      },
+      {
+        "id": "proof-c26-b",
+        "evidenceIds": [
+          "evidence-c26-01",
+          "evidence-c26-02",
+          "evidence-c26-07",
+          "evidence-c26-08",
+          "evidence-c26-09"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "连接不同标高的设备层"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c26-1",
+        "kind": "space",
+        "boardId": "board-c26-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c26-1-1",
+            "eventId": "event-c26-01"
+          },
+          {
+            "slotId": "slot-c26-1-2",
+            "eventId": "event-c26-03"
+          },
+          {
+            "slotId": "slot-c26-1-3",
+            "eventId": "event-c26-05"
+          },
+          {
+            "slotId": "slot-c26-1-4",
+            "eventId": "event-c26-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c26-01",
+            "toEventId": "event-c26-03",
+            "relation": "moves-to"
+          },
+          {
+            "fromEventId": "event-c26-03",
+            "toEventId": "event-c26-05",
+            "relation": "moves-to"
+          },
+          {
+            "fromEventId": "event-c26-05",
+            "toEventId": "event-c26-09",
+            "relation": "moves-to"
+          }
+        ],
+        "failureCategory": "space"
+      },
+      {
+        "id": "obligation-c26-2",
+        "kind": "measurement",
+        "boardId": "board-c26-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c26-2-1",
+            "eventId": "event-c26-03"
+          },
+          {
+            "slotId": "slot-c26-2-2",
+            "eventId": "event-c26-05"
+          },
+          {
+            "slotId": "slot-c26-2-3",
+            "eventId": "event-c26-07"
+          },
+          {
+            "slotId": "slot-c26-2-4",
+            "eventId": "event-c26-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c26-03",
+            "toEventId": "event-c26-05",
+            "relation": "contributes-to"
+          },
+          {
+            "fromEventId": "event-c26-05",
+            "toEventId": "event-c26-07",
+            "relation": "contributes-to"
+          },
+          {
+            "fromEventId": "event-c26-07",
+            "toEventId": "event-c26-09",
+            "relation": "contributes-to"
+          }
+        ],
+        "failureCategory": "measurement"
+      }
+    ],
+    "uniquenessClaim": "施工图是平面投影，管线在两座竖井内多次下降和上升；走廊投影没有变化，真实三维长度却包含垂直段。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c26-1",
+      "eventId": "event-c26-02",
+      "factIds": [
+        "fact-c26-01"
+      ],
+      "captionKey": "event.c26.2"
+    },
+    {
+      "id": "replay-c26-2",
+      "eventId": "event-c26-03",
+      "factIds": [
+        "fact-c26-02"
+      ],
+      "captionKey": "event.c26.3"
+    },
+    {
+      "id": "replay-c26-3",
+      "eventId": "event-c26-04",
+      "factIds": [
+        "fact-c26-03"
+      ],
+      "captionKey": "event.c26.4"
+    },
+    {
+      "id": "replay-c26-4",
+      "eventId": "event-c26-05",
+      "factIds": [
+        "fact-c26-04"
+      ],
+      "captionKey": "event.c26.5"
+    },
+    {
+      "id": "replay-c26-5",
+      "eventId": "event-c26-06",
+      "factIds": [
+        "fact-c26-05"
+      ],
+      "captionKey": "event.c26.6"
+    },
+    {
+      "id": "replay-c26-6",
+      "eventId": "event-c26-07",
+      "factIds": [
+        "fact-c26-06",
+        "fact-c26-07",
+        "fact-c26-08",
+        "fact-c26-09"
+      ],
+      "captionKey": "event.c26.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c26.title": "比地图短的管线",
+      "case.c26.surface": "施工图上的管线只有四十米，验收仪却测得六十三米；管线没有绕出图纸标出的走廊。",
+      "case.c26.truth": "施工图是平面投影，管线在两座竖井内多次下降和上升；走廊投影没有变化，真实三维长度却包含垂直段。",
+      "entity.c26.subject": "关键人物、装置与记录",
+      "location.c26": "管廊",
+      "hypothesis.c26.canonical": "施工图是平面投影，管线在两座竖井内多次下降和上升；走廊投影没有变化，真实三维长度却包含垂直段。",
+      "hypothesis.c26.alternative.1": "施工队在墙后私自绕行",
+      "hypothesis.c26.alternative.2": "验收仪系统性多算了二十三米",
+      "motive.连接不同标高的设备层": "连接不同标高的设备层",
+      "chapter.c26.one": "固定异常",
+      "chapter.c26.two": "统一来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "event.c26.1": "测绘员标记走廊起点",
+      "event.c26.2": "平面图记录水平投影",
+      "event.c26.3": "管线进入第一座竖井",
+      "event.c26.4": "管线下降到设备层",
+      "event.c26.5": "管线沿设备层穿过走廊",
+      "event.c26.6": "管线在第二座竖井上升",
+      "event.c26.7": "末端回到原楼层",
+      "event.c26.8": "测距仪累加全部管段",
+      "event.c26.9": "验收得到六十三米总长",
+      "event.c26.10": "废弃支管仍画在旧图层但未接入",
+      "evidence.c26.1.title": "平面施工图",
+      "evidence.c26.1.observation": "图纸只给出 XY 平面的四十米投影。",
+      "evidence.c26.2.title": "竖井剖面图",
+      "evidence.c26.2.observation": "两处竖井分别包含十一米和十二米垂直管段。",
+      "evidence.c26.3.title": "起终点标高",
+      "evidence.c26.3.observation": "管线起终点同高，但中途下到设备层。",
+      "evidence.c26.4.title": "第一竖井吊牌",
+      "evidence.c26.4.observation": "吊牌连续标记从 L2 到 B1 的下降段。",
+      "evidence.c26.5.title": "设备层支架",
+      "evidence.c26.5.observation": "中段支架编号与走廊投影一一对应。",
+      "evidence.c26.6.title": "第二竖井照片",
+      "evidence.c26.6.observation": "回升段完整存在且没有显示在平面长度中。",
+      "evidence.c26.7.title": "分段测距表",
+      "evidence.c26.7.observation": "四十米水平段加二十三米垂直段等于六十三米。",
+      "evidence.c26.8.title": "验收仪校准",
+      "evidence.c26.8.observation": "测距仪当天使用已知长度通过校准。",
+      "evidence.c26.9.title": "端点封帽",
+      "evidence.c26.9.observation": "两个端点与图纸位置一致，没有绕出走廊。",
+      "evidence.c26.10.title": "废弃支管图层",
+      "evidence.c26.10.observation": "旧支管已经封死，不属于本次验收范围。",
+      "query.c26.1": "平面投影是否成立？",
+      "query.c26.2": "竖井剖面是否成立？",
+      "query.c26.3": "起终标高是否成立？",
+      "query.c26.4": "第一竖井是否成立？",
+      "query.c26.5": "设备层支架是否成立？",
+      "query.c26.6": "第二竖井是否成立？",
+      "query.c26.7": "分段测距是否成立？",
+      "query.c26.8": "仪器校准是否成立？",
+      "query.c26.9": "端点位置是否成立？",
+      "query.c26.10": "废弃支管是否成立？",
+      "board.c26.1.title": "空间图 · spatial-map",
+      "board.c26.1.slot.1": "起始来源",
+      "board.c26.1.slot.2": "关键变化",
+      "board.c26.1.slot.3": "观测结果",
+      "board.c26.1.slot.4": "排除替代",
+      "board.c26.2.title": "空间图 · aggregate-constraint",
+      "board.c26.2.slot.1": "起始来源",
+      "board.c26.2.slot.2": "关键变化",
+      "board.c26.2.slot.3": "观测结果",
+      "board.c26.2.slot.4": "排除替代"
+    }
+  }
+}

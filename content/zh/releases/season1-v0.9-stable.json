@@ -1,0 +1,9 @@
+{
+  "profileVersion": 1,
+  "id": "season1-v0.9-stable",
+  "title": "Season 1 v0.9 Stable",
+  "status": "frozen-for-human-evaluation",
+  "manifests": [
+    "../cases/manifest.v0.6.json"
+  ]
+}

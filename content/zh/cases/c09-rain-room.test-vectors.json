@@ -1,0 +1,19 @@
+{
+  "caseId": "c09-rain-room",
+  "normalization": [
+    {"raw":"屋顶有积水吗？","expectedQueryId":"query-reservoir","expectedStatus":"matched"},
+    {"raw":"雨停了以后还漏雨吗？","expectedQueryId":"query-roof-leak","expectedStatus":"matched"},
+    {"raw":"滴水时有人在里面吗？","expectedQueryId":"query-room-empty","expectedStatus":"matched"},
+    {"raw":"湿伞的颜色是什么？","expectedQueryId":"query-umbrella","expectedStatus":"matched"}
+  ],
+  "answers": [
+    {"queryId":"query-rain-stopped","expectedCode":"yes"},
+    {"queryId":"query-roof-leak","expectedCode":"no"},
+    {"queryId":"query-umbrella","expectedCode":"irrelevant"}
+  ],
+  "judgements": [
+    {"hypothesisId":"path-human-pours","expected":"invalidated"},
+    {"hypothesisId":"path-roof-rain","expected":"invalidated"}
+  ],
+  "replay": {"expectedBeatCount":5}
+}

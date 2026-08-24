@@ -1,0 +1,1863 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c40-early-liquid-front",
+  "metadata": {
+    "titleKey": "case.c40.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "科学测量",
+      "复杂系统",
+      "来源边界"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:67a7a43acd64a43f2b272a524038cd6971b6feed30ef9f78cddd658f709ffa63",
+    "status": "public-preview",
+    "seasonId": "season-4"
+  },
+  "presentation": {
+    "layoutId": "season4-state-trace",
+    "sceneAsset": "/assets/cases/c40/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c40/scene-mobile.svg",
+    "palette": "season4-c40",
+    "accent": "#b7d6a4",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "state-trace-lab",
+    "mobileNavigation": [
+      "现场",
+      "记录",
+      "推理板"
+    ],
+    "boardMode": "state-trace"
+  },
+  "surface": {
+    "titleKey": "case.c40.title",
+    "textKey": "case.c40.surface",
+    "publicFactIds": [
+      "fact-c40-01",
+      "fact-c40-02",
+      "fact-c40-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c40-01",
+      "query-c40-02",
+      "query-c40-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c40-one",
+      "titleKey": "chapter.c40.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c40-1",
+      "titleKey": "board.c40.1.title",
+      "mode": "state-trace",
+      "slots": [
+        {
+          "id": "slot-c40-1-1",
+          "labelKey": "board.c40.1.slot.1",
+          "acceptsEventIds": [
+            "event-c40-01"
+          ]
+        },
+        {
+          "id": "slot-c40-1-2",
+          "labelKey": "board.c40.1.slot.2",
+          "acceptsEventIds": [
+            "event-c40-03"
+          ]
+        },
+        {
+          "id": "slot-c40-1-3",
+          "labelKey": "board.c40.1.slot.3",
+          "acceptsEventIds": [
+            "event-c40-05"
+          ]
+        },
+        {
+          "id": "slot-c40-1-4",
+          "labelKey": "board.c40.1.slot.4",
+          "acceptsEventIds": [
+            "event-c40-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "transitions-to",
+        "causes",
+        "explains"
+      ]
+    },
+    {
+      "id": "board-c40-2",
+      "titleKey": "board.c40.2.title",
+      "mode": "provenance-chain",
+      "slots": [
+        {
+          "id": "slot-c40-2-1",
+          "labelKey": "board.c40.2.slot.1",
+          "acceptsEventIds": [
+            "event-c40-02"
+          ]
+        },
+        {
+          "id": "slot-c40-2-2",
+          "labelKey": "board.c40.2.slot.2",
+          "acceptsEventIds": [
+            "event-c40-04"
+          ]
+        },
+        {
+          "id": "slot-c40-2-3",
+          "labelKey": "board.c40.2.slot.3",
+          "acceptsEventIds": [
+            "event-c40-06"
+          ]
+        },
+        {
+          "id": "slot-c40-2-4",
+          "labelKey": "board.c40.2.slot.4",
+          "acceptsEventIds": [
+            "event-c40-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "transfers-to",
+        "recorded-by",
+        "verifies"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c40-system",
+      "kind": "object",
+      "labelKey": "entity.c40.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c40",
+      "kind": "location",
+      "labelKey": "location.c40",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c40-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "14:00"
+      },
+      "participants": [
+        "entity-c40-system"
+      ],
+      "locationId": "location-c40",
+      "action": "step-c40-1",
+      "labelKey": "event.c40.1",
+      "effectFactIds": [
+        "fact-c40-01"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c40-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "14:04"
+      },
+      "participants": [
+        "entity-c40-system"
+      ],
+      "locationId": "location-c40",
+      "action": "step-c40-2",
+      "labelKey": "event.c40.2",
+      "effectFactIds": [
+        "fact-c40-02"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c40-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "14:08"
+      },
+      "participants": [
+        "entity-c40-system"
+      ],
+      "locationId": "location-c40",
+      "action": "step-c40-3",
+      "labelKey": "event.c40.3",
+      "effectFactIds": [
+        "fact-c40-03"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c40-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "14:12"
+      },
+      "participants": [
+        "entity-c40-system"
+      ],
+      "locationId": "location-c40",
+      "action": "step-c40-4",
+      "labelKey": "event.c40.4",
+      "effectFactIds": [
+        "fact-c40-04"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c40-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "14:16"
+      },
+      "participants": [
+        "entity-c40-system"
+      ],
+      "locationId": "location-c40",
+      "action": "step-c40-5",
+      "labelKey": "event.c40.5",
+      "effectFactIds": [
+        "fact-c40-05"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c40-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "15:20"
+      },
+      "participants": [
+        "entity-c40-system"
+      ],
+      "locationId": "location-c40",
+      "action": "step-c40-6",
+      "labelKey": "event.c40.6",
+      "effectFactIds": [
+        "fact-c40-06"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c40-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "15:24"
+      },
+      "participants": [
+        "entity-c40-system"
+      ],
+      "locationId": "location-c40",
+      "action": "step-c40-7",
+      "labelKey": "event.c40.7",
+      "effectFactIds": [
+        "fact-c40-07"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c40-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "15:28"
+      },
+      "participants": [
+        "entity-c40-system"
+      ],
+      "locationId": "location-c40",
+      "action": "step-c40-8",
+      "labelKey": "event.c40.8",
+      "effectFactIds": [
+        "fact-c40-08"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c40-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "15:32"
+      },
+      "participants": [
+        "entity-c40-system"
+      ],
+      "locationId": "location-c40",
+      "action": "step-c40-9",
+      "labelKey": "event.c40.9",
+      "effectFactIds": [
+        "fact-c40-09"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c40-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "15:36"
+      },
+      "participants": [
+        "entity-c40-system"
+      ],
+      "locationId": "location-c40",
+      "action": "step-c40-10",
+      "labelKey": "event.c40.10",
+      "effectFactIds": [
+        "fact-c40-10"
+      ],
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c40-1-1",
+      "type": "precedes",
+      "fromId": "entity-c40-system",
+      "toId": "location-c40",
+      "eventId": "event-c40-01",
+      "factId": "fact-c40-01"
+    },
+    {
+      "id": "relation-c40-1-2",
+      "type": "causes",
+      "fromId": "entity-c40-system",
+      "toId": "location-c40",
+      "eventId": "event-c40-03",
+      "factId": "fact-c40-02"
+    },
+    {
+      "id": "relation-c40-1-3",
+      "type": "causes",
+      "fromId": "entity-c40-system",
+      "toId": "location-c40",
+      "eventId": "event-c40-05",
+      "factId": "fact-c40-03"
+    },
+    {
+      "id": "relation-c40-2-1",
+      "type": "precedes",
+      "fromId": "entity-c40-system",
+      "toId": "location-c40",
+      "eventId": "event-c40-02",
+      "factId": "fact-c40-02"
+    },
+    {
+      "id": "relation-c40-2-2",
+      "type": "causes",
+      "fromId": "entity-c40-system",
+      "toId": "location-c40",
+      "eventId": "event-c40-04",
+      "factId": "fact-c40-03"
+    },
+    {
+      "id": "relation-c40-2-3",
+      "type": "causes",
+      "fromId": "entity-c40-system",
+      "toId": "location-c40",
+      "eventId": "event-c40-06",
+      "factId": "fact-c40-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c40-01",
+      "predicate": "verified_c40_1",
+      "args": {
+        "term": "采样口"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c40.1"
+    },
+    {
+      "id": "fact-c40-02",
+      "predicate": "verified_c40_2",
+      "args": {
+        "term": "液体前沿"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c40.2"
+    },
+    {
+      "id": "fact-c40-03",
+      "predicate": "verified_c40_3",
+      "args": {
+        "term": "储罐液面"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c40.3"
+    },
+    {
+      "id": "fact-c40-04",
+      "predicate": "verified_c40_4",
+      "args": {
+        "term": "输送管路"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c40.4"
+    },
+    {
+      "id": "fact-c40-05",
+      "predicate": "verified_c40_5",
+      "args": {
+        "term": "高度刻度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c40.5"
+    },
+    {
+      "id": "fact-c40-06",
+      "predicate": "verified_c40_6",
+      "args": {
+        "term": "取样阀"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c40.6"
+    },
+    {
+      "id": "fact-c40-07",
+      "predicate": "verified_c40_7",
+      "args": {
+        "term": "到达时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c40.7"
+    },
+    {
+      "id": "fact-c40-08",
+      "predicate": "verified_c40_8",
+      "args": {
+        "term": "来源路线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c40.8"
+    },
+    {
+      "id": "fact-c40-09",
+      "predicate": "verified_c40_9",
+      "args": {
+        "term": "液体体积"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c40.9"
+    },
+    {
+      "id": "fact-c40-10",
+      "predicate": "verified_c40_10",
+      "args": {
+        "term": "压力波"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-10"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c40.10"
+    },
+    {
+      "id": "fact-c40-11",
+      "predicate": "verified_c40_11",
+      "args": {
+        "term": "采样口"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c40.11"
+    },
+    {
+      "id": "fact-c40-12",
+      "predicate": "verified_c40_12",
+      "args": {
+        "term": "液体前沿"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c40.12"
+    },
+    {
+      "id": "fact-c40-13",
+      "predicate": "verified_c40_13",
+      "args": {
+        "term": "储罐液面"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c40.13"
+    },
+    {
+      "id": "fact-c40-14",
+      "predicate": "verified_c40_14",
+      "args": {
+        "term": "输送管路"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c40.14"
+    },
+    {
+      "id": "fact-c40-15",
+      "predicate": "verified_c40_15",
+      "args": {
+        "term": "高度刻度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c40.15"
+    },
+    {
+      "id": "fact-c40-16",
+      "predicate": "verified_c40_16",
+      "args": {
+        "term": "取样阀"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c40-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c40-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c40.16"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c40-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c40-01",
+        "fact-c40-02",
+        "fact-c40-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c40-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c40-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c40-01",
+        "fact-c40-02",
+        "fact-c40-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c40-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c40-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c40-02",
+        "fact-c40-12"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c40-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c40-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c40-03",
+        "fact-c40-13"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c40-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c40-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c40-04",
+        "fact-c40-14"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c40-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c40-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c40-05",
+        "fact-c40-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c40-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c40-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c40-06",
+        "fact-c40-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c40-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c40-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c40-07"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c40-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c40-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c40-08"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c40-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c40-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c40-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c40-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c40-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c40-10"
+      ],
+      "spoilerLevel": "sensitive"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c40-01",
+      "labelKey": "query.c40.1",
+      "intent": "verify",
+      "predicate": "verified_c40_1",
+      "slots": {
+        "subjectId": "entity-c40-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c40-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-opening"
+      ],
+      "examplePhrases": [
+        "采样口是否成立？",
+        "能确认采样口吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "采样口"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c40-02",
+      "labelKey": "query.c40.2",
+      "intent": "verify",
+      "predicate": "verified_c40_2",
+      "slots": {
+        "subjectId": "entity-c40-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c40-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-opening"
+      ],
+      "examplePhrases": [
+        "液体前沿是否成立？",
+        "能确认液体前沿吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "液体前沿"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c40-03",
+      "labelKey": "query.c40.3",
+      "intent": "verify",
+      "predicate": "verified_c40_3",
+      "slots": {
+        "subjectId": "entity-c40-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c40-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-opening"
+      ],
+      "examplePhrases": [
+        "储罐液面是否成立？",
+        "能确认储罐液面吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "储罐液面"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c40-04",
+      "labelKey": "query.c40.4",
+      "intent": "verify",
+      "predicate": "verified_c40_4",
+      "slots": {
+        "subjectId": "entity-c40-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c40-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-04"
+      ],
+      "examplePhrases": [
+        "输送管路是否成立？",
+        "能确认输送管路吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "输送管路"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c40-05",
+      "labelKey": "query.c40.5",
+      "intent": "verify",
+      "predicate": "verified_c40_5",
+      "slots": {
+        "subjectId": "entity-c40-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c40-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-05"
+      ],
+      "examplePhrases": [
+        "高度刻度是否成立？",
+        "能确认高度刻度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "高度刻度"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c40-06",
+      "labelKey": "query.c40.6",
+      "intent": "verify",
+      "predicate": "verified_c40_6",
+      "slots": {
+        "subjectId": "entity-c40-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c40-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-06"
+      ],
+      "examplePhrases": [
+        "取样阀是否成立？",
+        "能确认取样阀吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "取样阀"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c40-07",
+      "labelKey": "query.c40.7",
+      "intent": "verify",
+      "predicate": "verified_c40_7",
+      "slots": {
+        "subjectId": "entity-c40-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c40-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-07"
+      ],
+      "examplePhrases": [
+        "到达时间是否成立？",
+        "能确认到达时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "到达时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c40-08",
+      "labelKey": "query.c40.8",
+      "intent": "verify",
+      "predicate": "verified_c40_8",
+      "slots": {
+        "subjectId": "entity-c40-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c40-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-08"
+      ],
+      "examplePhrases": [
+        "来源路线是否成立？",
+        "能确认来源路线吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "来源路线"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c40-09",
+      "labelKey": "query.c40.9",
+      "intent": "verify",
+      "predicate": "verified_c40_9",
+      "slots": {
+        "subjectId": "entity-c40-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c40-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-09"
+      ],
+      "examplePhrases": [
+        "液体体积是否成立？",
+        "能确认液体体积吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "液体体积"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c40-10",
+      "labelKey": "query.c40.10",
+      "intent": "eliminate",
+      "predicate": "verified_c40_10",
+      "slots": {
+        "subjectId": "entity-c40-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c40-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c40-10"
+      ],
+      "examplePhrases": [
+        "压力波是否成立？",
+        "能确认压力波吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "压力波"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c40-01",
+      "kind": "scene",
+      "titleKey": "evidence.c40.1.title",
+      "observationKey": "evidence.c40.1.observation",
+      "sourceFactIds": [
+        "fact-c40-01",
+        "fact-c40-02",
+        "fact-c40-03"
+      ],
+      "sourceEventIds": [
+        "event-c40-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c40-system",
+        "location-c40"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c40-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c40/evidence-01.svg",
+      "assetAlt": "采样口"
+    },
+    {
+      "id": "evidence-c40-02",
+      "kind": "record",
+      "titleKey": "evidence.c40.2.title",
+      "observationKey": "evidence.c40.2.observation",
+      "sourceFactIds": [
+        "fact-c40-02",
+        "fact-c40-12"
+      ],
+      "sourceEventIds": [
+        "event-c40-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c40-system",
+        "location-c40"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c40-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c40/evidence-02.svg",
+      "assetAlt": "液体前沿"
+    },
+    {
+      "id": "evidence-c40-03",
+      "kind": "object",
+      "titleKey": "evidence.c40.3.title",
+      "observationKey": "evidence.c40.3.observation",
+      "sourceFactIds": [
+        "fact-c40-03",
+        "fact-c40-13"
+      ],
+      "sourceEventIds": [
+        "event-c40-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c40-system",
+        "location-c40"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c40/evidence-03.svg",
+      "assetAlt": "储罐液面"
+    },
+    {
+      "id": "evidence-c40-04",
+      "kind": "scene",
+      "titleKey": "evidence.c40.4.title",
+      "observationKey": "evidence.c40.4.observation",
+      "sourceFactIds": [
+        "fact-c40-04",
+        "fact-c40-14"
+      ],
+      "sourceEventIds": [
+        "event-c40-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c40-system",
+        "location-c40"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c40/evidence-04.svg",
+      "assetAlt": "输送管路"
+    },
+    {
+      "id": "evidence-c40-05",
+      "kind": "record",
+      "titleKey": "evidence.c40.5.title",
+      "observationKey": "evidence.c40.5.observation",
+      "sourceFactIds": [
+        "fact-c40-05",
+        "fact-c40-15"
+      ],
+      "sourceEventIds": [
+        "event-c40-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c40-system",
+        "location-c40"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c40/evidence-05.svg",
+      "assetAlt": "高度刻度"
+    },
+    {
+      "id": "evidence-c40-06",
+      "kind": "object",
+      "titleKey": "evidence.c40.6.title",
+      "observationKey": "evidence.c40.6.observation",
+      "sourceFactIds": [
+        "fact-c40-06",
+        "fact-c40-16"
+      ],
+      "sourceEventIds": [
+        "event-c40-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c40-system",
+        "location-c40"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c40/evidence-01.svg",
+      "assetAlt": "取样阀"
+    },
+    {
+      "id": "evidence-c40-07",
+      "kind": "scene",
+      "titleKey": "evidence.c40.7.title",
+      "observationKey": "evidence.c40.7.observation",
+      "sourceFactIds": [
+        "fact-c40-07"
+      ],
+      "sourceEventIds": [
+        "event-c40-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c40-system",
+        "location-c40"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c40/evidence-02.svg",
+      "assetAlt": "到达时间"
+    },
+    {
+      "id": "evidence-c40-08",
+      "kind": "record",
+      "titleKey": "evidence.c40.8.title",
+      "observationKey": "evidence.c40.8.observation",
+      "sourceFactIds": [
+        "fact-c40-08"
+      ],
+      "sourceEventIds": [
+        "event-c40-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c40-system",
+        "location-c40"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c40/evidence-03.svg",
+      "assetAlt": "来源路线"
+    },
+    {
+      "id": "evidence-c40-09",
+      "kind": "object",
+      "titleKey": "evidence.c40.9.title",
+      "observationKey": "evidence.c40.9.observation",
+      "sourceFactIds": [
+        "fact-c40-09"
+      ],
+      "sourceEventIds": [
+        "event-c40-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c40-system",
+        "location-c40"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c40/evidence-04.svg",
+      "assetAlt": "液体体积"
+    },
+    {
+      "id": "evidence-c40-10",
+      "kind": "scene",
+      "titleKey": "evidence.c40.10.title",
+      "observationKey": "evidence.c40.10.observation",
+      "sourceFactIds": [
+        "fact-c40-10"
+      ],
+      "sourceEventIds": [
+        "event-c40-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c40-system",
+        "location-c40"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c40/evidence-05.svg",
+      "assetAlt": "压力波"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c40.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c40-01",
+          "event-c40-02",
+          "event-c40-03",
+          "event-c40-04",
+          "event-c40-05",
+          "event-c40-06",
+          "event-c40-07",
+          "event-c40-08",
+          "event-c40-09"
+        ],
+        "motiveKey": "用分布式取样提前发现流体成分变化"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c40-01",
+        "evidence-c40-02",
+        "evidence-c40-03",
+        "evidence-c40-04",
+        "evidence-c40-05",
+        "evidence-c40-06",
+        "evidence-c40-07",
+        "evidence-c40-08",
+        "evidence-c40-09"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c40-1",
+        "contradiction-c40-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c40-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c40.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "传感器提前读错了"
+        ],
+        "motiveKey": "motive-c40-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c40-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c40-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c40-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c40.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "储罐里藏有第二个液面"
+        ],
+        "motiveKey": "motive-c40-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c40-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c40-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c40-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c40-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c40-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c40-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c40-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c40-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c40-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c40-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c40-01",
+      "fact-c40-02",
+      "fact-c40-03",
+      "fact-c40-04",
+      "fact-c40-05",
+      "fact-c40-06",
+      "fact-c40-07",
+      "fact-c40-08",
+      "fact-c40-09"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c40-01",
+      "evidence-c40-02",
+      "evidence-c40-03",
+      "evidence-c40-04",
+      "evidence-c40-05",
+      "evidence-c40-06",
+      "evidence-c40-07",
+      "evidence-c40-08",
+      "evidence-c40-09"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c40-01",
+        "event-c40-02"
+      ],
+      [
+        "event-c40-02",
+        "event-c40-03"
+      ],
+      [
+        "event-c40-03",
+        "event-c40-04"
+      ],
+      [
+        "event-c40-04",
+        "event-c40-05"
+      ],
+      [
+        "event-c40-05",
+        "event-c40-06"
+      ],
+      [
+        "event-c40-06",
+        "event-c40-07"
+      ],
+      [
+        "event-c40-07",
+        "event-c40-08"
+      ],
+      [
+        "event-c40-08",
+        "event-c40-09"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c40-1",
+      "contradiction-c40-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c40-alternative-1",
+      "hypothesis-c40-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c40-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c40-a",
+        "evidenceIds": [
+          "evidence-c40-01",
+          "evidence-c40-02",
+          "evidence-c40-03",
+          "evidence-c40-04",
+          "evidence-c40-05",
+          "evidence-c40-06",
+          "evidence-c40-07",
+          "evidence-c40-08"
+        ]
+      },
+      {
+        "id": "proof-c40-b",
+        "evidenceIds": [
+          "evidence-c40-01",
+          "evidence-c40-02",
+          "evidence-c40-09"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "用分布式取样提前发现流体成分变化"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c40-1",
+        "kind": "state-transition",
+        "boardId": "board-c40-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c40-1-1",
+            "eventId": "event-c40-01"
+          },
+          {
+            "slotId": "slot-c40-1-2",
+            "eventId": "event-c40-03"
+          },
+          {
+            "slotId": "slot-c40-1-3",
+            "eventId": "event-c40-05"
+          },
+          {
+            "slotId": "slot-c40-1-4",
+            "eventId": "event-c40-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c40-01",
+            "toEventId": "event-c40-03",
+            "relation": "transitions-to"
+          },
+          {
+            "fromEventId": "event-c40-03",
+            "toEventId": "event-c40-05",
+            "relation": "transitions-to"
+          },
+          {
+            "fromEventId": "event-c40-05",
+            "toEventId": "event-c40-09",
+            "relation": "transitions-to"
+          }
+        ],
+        "failureCategory": "state-transition"
+      },
+      {
+        "id": "obligation-c40-2",
+        "kind": "source",
+        "boardId": "board-c40-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c40-2-1",
+            "eventId": "event-c40-02"
+          },
+          {
+            "slotId": "slot-c40-2-2",
+            "eventId": "event-c40-04"
+          },
+          {
+            "slotId": "slot-c40-2-3",
+            "eventId": "event-c40-06"
+          },
+          {
+            "slotId": "slot-c40-2-4",
+            "eventId": "event-c40-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c40-02",
+            "toEventId": "event-c40-04",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c40-04",
+            "toEventId": "event-c40-06",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c40-06",
+            "toEventId": "event-c40-09",
+            "relation": "transfers-to"
+          }
+        ],
+        "failureCategory": "source"
+      }
+    ],
+    "uniquenessClaim": "液体前沿先经过较低的采样口，采样点的来源路线和储罐整体液面不是同一空间事件。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c40-1",
+      "eventId": "event-c40-02",
+      "factIds": [
+        "fact-c40-01"
+      ],
+      "captionKey": "event.c40.2"
+    },
+    {
+      "id": "replay-c40-2",
+      "eventId": "event-c40-03",
+      "factIds": [
+        "fact-c40-02"
+      ],
+      "captionKey": "event.c40.3"
+    },
+    {
+      "id": "replay-c40-3",
+      "eventId": "event-c40-04",
+      "factIds": [
+        "fact-c40-03"
+      ],
+      "captionKey": "event.c40.4"
+    },
+    {
+      "id": "replay-c40-4",
+      "eventId": "event-c40-05",
+      "factIds": [
+        "fact-c40-04"
+      ],
+      "captionKey": "event.c40.5"
+    },
+    {
+      "id": "replay-c40-5",
+      "eventId": "event-c40-06",
+      "factIds": [
+        "fact-c40-05"
+      ],
+      "captionKey": "event.c40.6"
+    },
+    {
+      "id": "replay-c40-6",
+      "eventId": "event-c40-07",
+      "factIds": [
+        "fact-c40-01",
+        "fact-c40-02",
+        "fact-c40-03",
+        "fact-c40-04",
+        "fact-c40-05",
+        "fact-c40-06",
+        "fact-c40-07",
+        "fact-c40-08",
+        "fact-c40-09"
+      ],
+      "captionKey": "event.c40.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c40.title": "提前到达的液面",
+      "case.c40.surface": "采样口先报告液体到达，储罐的液面刻度却还没有到对应高度。",
+      "case.c40.truth": "液体前沿先经过较低的采样口，采样点的来源路线和储罐整体液面不是同一空间事件。",
+      "entity.c40.system": "测量系统与记录链",
+      "location.c40": "科学系统现场",
+      "hypothesis.c40.canonical": "液体前沿先经过较低的采样口，采样点的来源路线和储罐整体液面不是同一空间事件。",
+      "hypothesis.c40.alternative.1": "传感器提前读错了",
+      "hypothesis.c40.alternative.2": "储罐里藏有第二个液面",
+      "motive.用分布式取样提前发现流体成分变化": "用分布式取样提前发现流体成分变化",
+      "chapter.c40.one": "固定异常",
+      "chapter.c40.two": "统一测量边界",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c40.1": "采样口是否成立？",
+      "query.c40.2": "液体前沿是否成立？",
+      "query.c40.3": "储罐液面是否成立？",
+      "query.c40.4": "输送管路是否成立？",
+      "query.c40.5": "高度刻度是否成立？",
+      "query.c40.6": "取样阀是否成立？",
+      "query.c40.7": "到达时间是否成立？",
+      "query.c40.8": "来源路线是否成立？",
+      "query.c40.9": "液体体积是否成立？",
+      "query.c40.10": "压力波是否成立？",
+      "event.c40.1": "阶段 1：采样口进入记录链",
+      "event.c40.2": "阶段 2：液体前沿进入记录链",
+      "event.c40.3": "阶段 3：储罐液面进入记录链",
+      "event.c40.4": "阶段 4：输送管路进入记录链",
+      "event.c40.5": "阶段 5：高度刻度进入记录链",
+      "event.c40.6": "阶段 6：取样阀进入记录链",
+      "event.c40.7": "阶段 7：到达时间进入记录链",
+      "event.c40.8": "阶段 8：来源路线进入记录链",
+      "event.c40.9": "阶段 9：液体体积进入记录链",
+      "event.c40.10": "阶段 10：压力波进入记录链",
+      "evidence.c40.1.title": "采样口记录",
+      "evidence.c40.1.observation": "来源记录显示“采样口”在该阶段保持可复核。",
+      "evidence.c40.2.title": "液体前沿记录",
+      "evidence.c40.2.observation": "来源记录显示“液体前沿”在该阶段保持可复核。",
+      "evidence.c40.3.title": "储罐液面记录",
+      "evidence.c40.3.observation": "来源记录显示“储罐液面”在该阶段保持可复核。",
+      "evidence.c40.4.title": "输送管路记录",
+      "evidence.c40.4.observation": "来源记录显示“输送管路”在该阶段保持可复核。",
+      "evidence.c40.5.title": "高度刻度记录",
+      "evidence.c40.5.observation": "来源记录显示“高度刻度”在该阶段保持可复核。",
+      "evidence.c40.6.title": "取样阀记录",
+      "evidence.c40.6.observation": "来源记录显示“取样阀”在该阶段保持可复核。",
+      "evidence.c40.7.title": "到达时间记录",
+      "evidence.c40.7.observation": "来源记录显示“到达时间”在该阶段保持可复核。",
+      "evidence.c40.8.title": "来源路线记录",
+      "evidence.c40.8.observation": "来源记录显示“来源路线”在该阶段保持可复核。",
+      "evidence.c40.9.title": "液体体积记录",
+      "evidence.c40.9.observation": "来源记录显示“液体体积”在该阶段保持可复核。",
+      "evidence.c40.10.title": "压力波记录",
+      "evidence.c40.10.observation": "来源记录显示“压力波”在该阶段保持可复核。",
+      "board.c40.1.title": "提前到达的液面 · state-trace",
+      "board.c40.1.slot.1": "起始来源",
+      "board.c40.1.slot.2": "关键变化",
+      "board.c40.1.slot.3": "观测结果",
+      "board.c40.1.slot.4": "排除替代",
+      "board.c40.2.title": "提前到达的液面 · provenance-chain",
+      "board.c40.2.slot.1": "起始来源",
+      "board.c40.2.slot.2": "关键变化",
+      "board.c40.2.slot.3": "观测结果",
+      "board.c40.2.slot.4": "排除替代"
+    }
+  }
+}

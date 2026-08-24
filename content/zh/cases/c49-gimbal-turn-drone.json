@@ -1,0 +1,2223 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c49-gimbal-turn-drone",
+  "metadata": {
+    "titleKey": "case.c49.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "科学测量",
+      "复杂系统",
+      "来源边界"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:7c0ae01409e8f54ff61d04d21236154a94fdfe414f07f320bdb2bfb0f7705334",
+    "status": "public-preview",
+    "seasonId": "season-4"
+  },
+  "presentation": {
+    "layoutId": "season4-reference-frame",
+    "sceneAsset": "/assets/cases/c49/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c49/scene-mobile.svg",
+    "palette": "season4-c49",
+    "accent": "#9bc7d8",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "reference-frame-lab",
+    "mobileNavigation": [
+      "现场",
+      "记录",
+      "推理板"
+    ],
+    "boardMode": "reference-frame"
+  },
+  "surface": {
+    "titleKey": "case.c49.title",
+    "textKey": "case.c49.surface",
+    "publicFactIds": [
+      "fact-c49-01",
+      "fact-c49-02",
+      "fact-c49-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c49-01",
+      "query-c49-02",
+      "query-c49-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c49-one",
+      "titleKey": "chapter.c49.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c49-1",
+      "titleKey": "board.c49.1.title",
+      "mode": "reference-frame",
+      "slots": [
+        {
+          "id": "slot-c49-1-1",
+          "labelKey": "board.c49.1.slot.1",
+          "acceptsEventIds": [
+            "event-c49-01"
+          ]
+        },
+        {
+          "id": "slot-c49-1-2",
+          "labelKey": "board.c49.1.slot.2",
+          "acceptsEventIds": [
+            "event-c49-03"
+          ]
+        },
+        {
+          "id": "slot-c49-1-3",
+          "labelKey": "board.c49.1.slot.3",
+          "acceptsEventIds": [
+            "event-c49-05"
+          ]
+        },
+        {
+          "id": "slot-c49-1-4",
+          "labelKey": "board.c49.1.slot.4",
+          "acceptsEventIds": [
+            "event-c49-13"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "reframes",
+        "projects",
+        "aligns"
+      ]
+    },
+    {
+      "id": "board-c49-2",
+      "titleKey": "board.c49.2.title",
+      "mode": "spatial-map",
+      "slots": [
+        {
+          "id": "slot-c49-2-1",
+          "labelKey": "board.c49.2.slot.1",
+          "acceptsEventIds": [
+            "event-c49-02"
+          ]
+        },
+        {
+          "id": "slot-c49-2-2",
+          "labelKey": "board.c49.2.slot.2",
+          "acceptsEventIds": [
+            "event-c49-04"
+          ]
+        },
+        {
+          "id": "slot-c49-2-3",
+          "labelKey": "board.c49.2.slot.3",
+          "acceptsEventIds": [
+            "event-c49-06"
+          ]
+        },
+        {
+          "id": "slot-c49-2-4",
+          "labelKey": "board.c49.2.slot.4",
+          "acceptsEventIds": [
+            "event-c49-13"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "moves-to",
+        "overlaps",
+        "precedes"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c49-system",
+      "kind": "object",
+      "labelKey": "entity.c49.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c49",
+      "kind": "location",
+      "labelKey": "location.c49",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c49-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "14:00"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-1",
+      "labelKey": "event.c49.1",
+      "effectFactIds": [
+        "fact-c49-01"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "14:04"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-2",
+      "labelKey": "event.c49.2",
+      "effectFactIds": [
+        "fact-c49-02"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "14:08"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-3",
+      "labelKey": "event.c49.3",
+      "effectFactIds": [
+        "fact-c49-03"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "14:12"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-4",
+      "labelKey": "event.c49.4",
+      "effectFactIds": [
+        "fact-c49-04"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "14:16"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-5",
+      "labelKey": "event.c49.5",
+      "effectFactIds": [
+        "fact-c49-05"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "14:20"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-6",
+      "labelKey": "event.c49.6",
+      "effectFactIds": [
+        "fact-c49-06"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "14:24"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-7",
+      "labelKey": "event.c49.7",
+      "effectFactIds": [
+        "fact-c49-07"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "15:28"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-8",
+      "labelKey": "event.c49.8",
+      "effectFactIds": [
+        "fact-c49-08"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "15:32"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-9",
+      "labelKey": "event.c49.9",
+      "effectFactIds": [
+        "fact-c49-09"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "15:36"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-10",
+      "labelKey": "event.c49.10",
+      "effectFactIds": [
+        "fact-c49-10"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "15:40"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-11",
+      "labelKey": "event.c49.11",
+      "effectFactIds": [
+        "fact-c49-11"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "15:44"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-12",
+      "labelKey": "event.c49.12",
+      "effectFactIds": [
+        "fact-c49-12"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-13",
+      "order": 130,
+      "time": {
+        "kind": "instant",
+        "value": "15:48"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-13",
+      "labelKey": "event.c49.13",
+      "effectFactIds": [
+        "fact-c49-13"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c49-14",
+      "order": 140,
+      "time": {
+        "kind": "instant",
+        "value": "15:52"
+      },
+      "participants": [
+        "entity-c49-system"
+      ],
+      "locationId": "location-c49",
+      "action": "step-c49-14",
+      "labelKey": "event.c49.14",
+      "effectFactIds": [
+        "fact-c49-14"
+      ],
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c49-1-1",
+      "type": "precedes",
+      "fromId": "entity-c49-system",
+      "toId": "location-c49",
+      "eventId": "event-c49-01",
+      "factId": "fact-c49-01"
+    },
+    {
+      "id": "relation-c49-1-2",
+      "type": "causes",
+      "fromId": "entity-c49-system",
+      "toId": "location-c49",
+      "eventId": "event-c49-03",
+      "factId": "fact-c49-02"
+    },
+    {
+      "id": "relation-c49-1-3",
+      "type": "causes",
+      "fromId": "entity-c49-system",
+      "toId": "location-c49",
+      "eventId": "event-c49-05",
+      "factId": "fact-c49-03"
+    },
+    {
+      "id": "relation-c49-2-1",
+      "type": "precedes",
+      "fromId": "entity-c49-system",
+      "toId": "location-c49",
+      "eventId": "event-c49-02",
+      "factId": "fact-c49-02"
+    },
+    {
+      "id": "relation-c49-2-2",
+      "type": "causes",
+      "fromId": "entity-c49-system",
+      "toId": "location-c49",
+      "eventId": "event-c49-04",
+      "factId": "fact-c49-03"
+    },
+    {
+      "id": "relation-c49-2-3",
+      "type": "causes",
+      "fromId": "entity-c49-system",
+      "toId": "location-c49",
+      "eventId": "event-c49-06",
+      "factId": "fact-c49-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c49-01",
+      "predicate": "verified_c49_1",
+      "args": {
+        "term": "云台角度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.1"
+    },
+    {
+      "id": "fact-c49-02",
+      "predicate": "verified_c49_2",
+      "args": {
+        "term": "飞行航向"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.2"
+    },
+    {
+      "id": "fact-c49-03",
+      "predicate": "verified_c49_3",
+      "args": {
+        "term": "画面方向"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.3"
+    },
+    {
+      "id": "fact-c49-04",
+      "predicate": "verified_c49_4",
+      "args": {
+        "term": "机体坐标"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.4"
+    },
+    {
+      "id": "fact-c49-05",
+      "predicate": "verified_c49_5",
+      "args": {
+        "term": "地理北"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.5"
+    },
+    {
+      "id": "fact-c49-06",
+      "predicate": "verified_c49_6",
+      "args": {
+        "term": "姿态日志"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.6"
+    },
+    {
+      "id": "fact-c49-07",
+      "predicate": "verified_c49_7",
+      "args": {
+        "term": "镜头视场"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.7"
+    },
+    {
+      "id": "fact-c49-08",
+      "predicate": "verified_c49_8",
+      "args": {
+        "term": "航迹"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.8"
+    },
+    {
+      "id": "fact-c49-09",
+      "predicate": "verified_c49_9",
+      "args": {
+        "term": "转向命令"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.9"
+    },
+    {
+      "id": "fact-c49-10",
+      "predicate": "verified_c49_10",
+      "args": {
+        "term": "空间参照"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.10"
+    },
+    {
+      "id": "fact-c49-11",
+      "predicate": "verified_c49_11",
+      "args": {
+        "term": "云台角度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.11"
+    },
+    {
+      "id": "fact-c49-12",
+      "predicate": "verified_c49_12",
+      "args": {
+        "term": "飞行航向"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-12"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.12"
+    },
+    {
+      "id": "fact-c49-13",
+      "predicate": "verified_c49_13",
+      "args": {
+        "term": "画面方向"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-13"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-13"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-13"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c49.13"
+    },
+    {
+      "id": "fact-c49-14",
+      "predicate": "verified_c49_14",
+      "args": {
+        "term": "机体坐标"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-14"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-14"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-14"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c49.14"
+    },
+    {
+      "id": "fact-c49-15",
+      "predicate": "verified_c49_15",
+      "args": {
+        "term": "地理北"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c49.15"
+    },
+    {
+      "id": "fact-c49-16",
+      "predicate": "verified_c49_16",
+      "args": {
+        "term": "姿态日志"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c49.16"
+    },
+    {
+      "id": "fact-c49-17",
+      "predicate": "verified_c49_17",
+      "args": {
+        "term": "镜头视场"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c49.17"
+    },
+    {
+      "id": "fact-c49-18",
+      "predicate": "verified_c49_18",
+      "args": {
+        "term": "航迹"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c49.18"
+    },
+    {
+      "id": "fact-c49-19",
+      "predicate": "verified_c49_19",
+      "args": {
+        "term": "转向命令"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c49.19"
+    },
+    {
+      "id": "fact-c49-20",
+      "predicate": "verified_c49_20",
+      "args": {
+        "term": "空间参照"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c49-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c49-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c49.20"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c49-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-01",
+        "fact-c49-02",
+        "fact-c49-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c49-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-01",
+        "fact-c49-02",
+        "fact-c49-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c49-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-02",
+        "fact-c49-16"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c49-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-03",
+        "fact-c49-17"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c49-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-04",
+        "fact-c49-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c49-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-05",
+        "fact-c49-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c49-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-06",
+        "fact-c49-20"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c49-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-07"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c49-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-08"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c49-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c49-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c49-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c49-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-12"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c49-13",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-13"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-13"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c49-14",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c49-14"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c49-14"
+      ],
+      "spoilerLevel": "sensitive"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c49-01",
+      "labelKey": "query.c49.1",
+      "intent": "verify",
+      "predicate": "verified_c49_1",
+      "slots": {
+        "subjectId": "entity-c49-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c49-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-opening"
+      ],
+      "examplePhrases": [
+        "云台角度是否成立？",
+        "能确认云台角度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "云台角度"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c49-02",
+      "labelKey": "query.c49.2",
+      "intent": "verify",
+      "predicate": "verified_c49_2",
+      "slots": {
+        "subjectId": "entity-c49-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c49-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-opening"
+      ],
+      "examplePhrases": [
+        "飞行航向是否成立？",
+        "能确认飞行航向吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "飞行航向"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c49-03",
+      "labelKey": "query.c49.3",
+      "intent": "verify",
+      "predicate": "verified_c49_3",
+      "slots": {
+        "subjectId": "entity-c49-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c49-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-opening"
+      ],
+      "examplePhrases": [
+        "画面方向是否成立？",
+        "能确认画面方向吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "画面方向"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c49-04",
+      "labelKey": "query.c49.4",
+      "intent": "verify",
+      "predicate": "verified_c49_4",
+      "slots": {
+        "subjectId": "entity-c49-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c49-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-04"
+      ],
+      "examplePhrases": [
+        "机体坐标是否成立？",
+        "能确认机体坐标吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "机体坐标"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c49-05",
+      "labelKey": "query.c49.5",
+      "intent": "verify",
+      "predicate": "verified_c49_5",
+      "slots": {
+        "subjectId": "entity-c49-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c49-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-05"
+      ],
+      "examplePhrases": [
+        "地理北是否成立？",
+        "能确认地理北吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "地理北"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c49-06",
+      "labelKey": "query.c49.6",
+      "intent": "verify",
+      "predicate": "verified_c49_6",
+      "slots": {
+        "subjectId": "entity-c49-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c49-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-06"
+      ],
+      "examplePhrases": [
+        "姿态日志是否成立？",
+        "能确认姿态日志吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "姿态日志"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c49-07",
+      "labelKey": "query.c49.7",
+      "intent": "verify",
+      "predicate": "verified_c49_7",
+      "slots": {
+        "subjectId": "entity-c49-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c49-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-07"
+      ],
+      "examplePhrases": [
+        "镜头视场是否成立？",
+        "能确认镜头视场吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "镜头视场"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c49-08",
+      "labelKey": "query.c49.8",
+      "intent": "verify",
+      "predicate": "verified_c49_8",
+      "slots": {
+        "subjectId": "entity-c49-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c49-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-08"
+      ],
+      "examplePhrases": [
+        "航迹是否成立？",
+        "能确认航迹吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "航迹"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c49-09",
+      "labelKey": "query.c49.9",
+      "intent": "verify",
+      "predicate": "verified_c49_9",
+      "slots": {
+        "subjectId": "entity-c49-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c49-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-09"
+      ],
+      "examplePhrases": [
+        "转向命令是否成立？",
+        "能确认转向命令吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "转向命令"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c49-10",
+      "labelKey": "query.c49.10",
+      "intent": "verify",
+      "predicate": "verified_c49_10",
+      "slots": {
+        "subjectId": "entity-c49-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c49-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c49-10"
+      ],
+      "examplePhrases": [
+        "空间参照是否成立？",
+        "能确认空间参照吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "空间参照"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c49-01",
+      "kind": "scene",
+      "titleKey": "evidence.c49.1.title",
+      "observationKey": "evidence.c49.1.observation",
+      "sourceFactIds": [
+        "fact-c49-01",
+        "fact-c49-02",
+        "fact-c49-03"
+      ],
+      "sourceEventIds": [
+        "event-c49-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c49-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-01.svg",
+      "assetAlt": "云台角度"
+    },
+    {
+      "id": "evidence-c49-02",
+      "kind": "record",
+      "titleKey": "evidence.c49.2.title",
+      "observationKey": "evidence.c49.2.observation",
+      "sourceFactIds": [
+        "fact-c49-02",
+        "fact-c49-16"
+      ],
+      "sourceEventIds": [
+        "event-c49-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c49-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-02.svg",
+      "assetAlt": "飞行航向"
+    },
+    {
+      "id": "evidence-c49-03",
+      "kind": "object",
+      "titleKey": "evidence.c49.3.title",
+      "observationKey": "evidence.c49.3.observation",
+      "sourceFactIds": [
+        "fact-c49-03",
+        "fact-c49-17"
+      ],
+      "sourceEventIds": [
+        "event-c49-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-03.svg",
+      "assetAlt": "画面方向"
+    },
+    {
+      "id": "evidence-c49-04",
+      "kind": "scene",
+      "titleKey": "evidence.c49.4.title",
+      "observationKey": "evidence.c49.4.observation",
+      "sourceFactIds": [
+        "fact-c49-04",
+        "fact-c49-18"
+      ],
+      "sourceEventIds": [
+        "event-c49-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-04.svg",
+      "assetAlt": "机体坐标"
+    },
+    {
+      "id": "evidence-c49-05",
+      "kind": "record",
+      "titleKey": "evidence.c49.5.title",
+      "observationKey": "evidence.c49.5.observation",
+      "sourceFactIds": [
+        "fact-c49-05",
+        "fact-c49-19"
+      ],
+      "sourceEventIds": [
+        "event-c49-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-05.svg",
+      "assetAlt": "地理北"
+    },
+    {
+      "id": "evidence-c49-06",
+      "kind": "object",
+      "titleKey": "evidence.c49.6.title",
+      "observationKey": "evidence.c49.6.observation",
+      "sourceFactIds": [
+        "fact-c49-06",
+        "fact-c49-20"
+      ],
+      "sourceEventIds": [
+        "event-c49-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-01.svg",
+      "assetAlt": "姿态日志"
+    },
+    {
+      "id": "evidence-c49-07",
+      "kind": "scene",
+      "titleKey": "evidence.c49.7.title",
+      "observationKey": "evidence.c49.7.observation",
+      "sourceFactIds": [
+        "fact-c49-07"
+      ],
+      "sourceEventIds": [
+        "event-c49-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-02.svg",
+      "assetAlt": "镜头视场"
+    },
+    {
+      "id": "evidence-c49-08",
+      "kind": "record",
+      "titleKey": "evidence.c49.8.title",
+      "observationKey": "evidence.c49.8.observation",
+      "sourceFactIds": [
+        "fact-c49-08"
+      ],
+      "sourceEventIds": [
+        "event-c49-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-03.svg",
+      "assetAlt": "航迹"
+    },
+    {
+      "id": "evidence-c49-09",
+      "kind": "object",
+      "titleKey": "evidence.c49.9.title",
+      "observationKey": "evidence.c49.9.observation",
+      "sourceFactIds": [
+        "fact-c49-09"
+      ],
+      "sourceEventIds": [
+        "event-c49-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-04.svg",
+      "assetAlt": "转向命令"
+    },
+    {
+      "id": "evidence-c49-10",
+      "kind": "scene",
+      "titleKey": "evidence.c49.10.title",
+      "observationKey": "evidence.c49.10.observation",
+      "sourceFactIds": [
+        "fact-c49-10"
+      ],
+      "sourceEventIds": [
+        "event-c49-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-05.svg",
+      "assetAlt": "空间参照"
+    },
+    {
+      "id": "evidence-c49-11",
+      "kind": "record",
+      "titleKey": "evidence.c49.11.title",
+      "observationKey": "evidence.c49.11.observation",
+      "sourceFactIds": [
+        "fact-c49-11"
+      ],
+      "sourceEventIds": [
+        "event-c49-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-01.svg",
+      "assetAlt": "云台角度"
+    },
+    {
+      "id": "evidence-c49-12",
+      "kind": "object",
+      "titleKey": "evidence.c49.12.title",
+      "observationKey": "evidence.c49.12.observation",
+      "sourceFactIds": [
+        "fact-c49-12"
+      ],
+      "sourceEventIds": [
+        "event-c49-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-02.svg",
+      "assetAlt": "飞行航向"
+    },
+    {
+      "id": "evidence-c49-13",
+      "kind": "scene",
+      "titleKey": "evidence.c49.13.title",
+      "observationKey": "evidence.c49.13.observation",
+      "sourceFactIds": [
+        "fact-c49-13"
+      ],
+      "sourceEventIds": [
+        "event-c49-13"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c49/evidence-03.svg",
+      "assetAlt": "画面方向"
+    },
+    {
+      "id": "evidence-c49-14",
+      "kind": "record",
+      "titleKey": "evidence.c49.14.title",
+      "observationKey": "evidence.c49.14.observation",
+      "sourceFactIds": [
+        "fact-c49-14"
+      ],
+      "sourceEventIds": [
+        "event-c49-14"
+      ],
+      "relatedEntityIds": [
+        "entity-c49-system",
+        "location-c49"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c49/evidence-04.svg",
+      "assetAlt": "机体坐标"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c49.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c49-01",
+          "event-c49-02",
+          "event-c49-03",
+          "event-c49-04",
+          "event-c49-05",
+          "event-c49-06",
+          "event-c49-07",
+          "event-c49-08",
+          "event-c49-09",
+          "event-c49-10",
+          "event-c49-11",
+          "event-c49-12",
+          "event-c49-13"
+        ],
+        "motiveKey": "在遥感画面中分离载体航向和视线方向"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c49-01",
+        "evidence-c49-02",
+        "evidence-c49-03",
+        "evidence-c49-04",
+        "evidence-c49-05",
+        "evidence-c49-06",
+        "evidence-c49-07",
+        "evidence-c49-08",
+        "evidence-c49-09",
+        "evidence-c49-10",
+        "evidence-c49-11",
+        "evidence-c49-12",
+        "evidence-c49-13"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c49-1",
+        "contradiction-c49-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c49-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c49.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "无人机偷偷转弯了"
+        ],
+        "motiveKey": "motive-c49-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c49-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c49-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c49-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c49.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "画面拼接把方向弄反了"
+        ],
+        "motiveKey": "motive-c49-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c49-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c49-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c49-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c49-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c49-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c49-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c49-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c49-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c49-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c49-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c49-01",
+      "fact-c49-02",
+      "fact-c49-03",
+      "fact-c49-04",
+      "fact-c49-05",
+      "fact-c49-06",
+      "fact-c49-07",
+      "fact-c49-08",
+      "fact-c49-09",
+      "fact-c49-10",
+      "fact-c49-11",
+      "fact-c49-12",
+      "fact-c49-13"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c49-01",
+      "evidence-c49-02",
+      "evidence-c49-03",
+      "evidence-c49-04",
+      "evidence-c49-05",
+      "evidence-c49-06",
+      "evidence-c49-07",
+      "evidence-c49-08",
+      "evidence-c49-09",
+      "evidence-c49-10",
+      "evidence-c49-11",
+      "evidence-c49-12",
+      "evidence-c49-13"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c49-01",
+        "event-c49-02"
+      ],
+      [
+        "event-c49-02",
+        "event-c49-03"
+      ],
+      [
+        "event-c49-03",
+        "event-c49-04"
+      ],
+      [
+        "event-c49-04",
+        "event-c49-05"
+      ],
+      [
+        "event-c49-05",
+        "event-c49-06"
+      ],
+      [
+        "event-c49-06",
+        "event-c49-07"
+      ],
+      [
+        "event-c49-07",
+        "event-c49-08"
+      ],
+      [
+        "event-c49-08",
+        "event-c49-09"
+      ],
+      [
+        "event-c49-09",
+        "event-c49-10"
+      ],
+      [
+        "event-c49-10",
+        "event-c49-11"
+      ],
+      [
+        "event-c49-11",
+        "event-c49-12"
+      ],
+      [
+        "event-c49-12",
+        "event-c49-13"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c49-1",
+      "contradiction-c49-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c49-alternative-1",
+      "hypothesis-c49-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c49-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c49-a",
+        "evidenceIds": [
+          "evidence-c49-01",
+          "evidence-c49-02",
+          "evidence-c49-03",
+          "evidence-c49-04",
+          "evidence-c49-05",
+          "evidence-c49-06",
+          "evidence-c49-07",
+          "evidence-c49-08"
+        ]
+      },
+      {
+        "id": "proof-c49-b",
+        "evidenceIds": [
+          "evidence-c49-01",
+          "evidence-c49-02",
+          "evidence-c49-09",
+          "evidence-c49-10",
+          "evidence-c49-11",
+          "evidence-c49-12",
+          "evidence-c49-13"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "在遥感画面中分离载体航向和视线方向"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c49-1",
+        "kind": "space",
+        "boardId": "board-c49-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c49-1-1",
+            "eventId": "event-c49-01"
+          },
+          {
+            "slotId": "slot-c49-1-2",
+            "eventId": "event-c49-03"
+          },
+          {
+            "slotId": "slot-c49-1-3",
+            "eventId": "event-c49-05"
+          },
+          {
+            "slotId": "slot-c49-1-4",
+            "eventId": "event-c49-13"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c49-01",
+            "toEventId": "event-c49-03",
+            "relation": "reframes"
+          },
+          {
+            "fromEventId": "event-c49-03",
+            "toEventId": "event-c49-05",
+            "relation": "reframes"
+          },
+          {
+            "fromEventId": "event-c49-05",
+            "toEventId": "event-c49-13",
+            "relation": "reframes"
+          }
+        ],
+        "failureCategory": "space"
+      },
+      {
+        "id": "obligation-c49-2",
+        "kind": "space",
+        "boardId": "board-c49-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c49-2-1",
+            "eventId": "event-c49-02"
+          },
+          {
+            "slotId": "slot-c49-2-2",
+            "eventId": "event-c49-04"
+          },
+          {
+            "slotId": "slot-c49-2-3",
+            "eventId": "event-c49-06"
+          },
+          {
+            "slotId": "slot-c49-2-4",
+            "eventId": "event-c49-13"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c49-02",
+            "toEventId": "event-c49-04",
+            "relation": "moves-to"
+          },
+          {
+            "fromEventId": "event-c49-04",
+            "toEventId": "event-c49-06",
+            "relation": "moves-to"
+          },
+          {
+            "fromEventId": "event-c49-06",
+            "toEventId": "event-c49-13",
+            "relation": "moves-to"
+          }
+        ],
+        "failureCategory": "space"
+      }
+    ],
+    "uniquenessClaim": "云台转动改变摄像机视线，飞行器航向没有改变；画面参照系与机体参照系不同。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c49-1",
+      "eventId": "event-c49-02",
+      "factIds": [
+        "fact-c49-01"
+      ],
+      "captionKey": "event.c49.2"
+    },
+    {
+      "id": "replay-c49-2",
+      "eventId": "event-c49-03",
+      "factIds": [
+        "fact-c49-02"
+      ],
+      "captionKey": "event.c49.3"
+    },
+    {
+      "id": "replay-c49-3",
+      "eventId": "event-c49-04",
+      "factIds": [
+        "fact-c49-03"
+      ],
+      "captionKey": "event.c49.4"
+    },
+    {
+      "id": "replay-c49-4",
+      "eventId": "event-c49-05",
+      "factIds": [
+        "fact-c49-04"
+      ],
+      "captionKey": "event.c49.5"
+    },
+    {
+      "id": "replay-c49-5",
+      "eventId": "event-c49-06",
+      "factIds": [
+        "fact-c49-05"
+      ],
+      "captionKey": "event.c49.6"
+    },
+    {
+      "id": "replay-c49-6",
+      "eventId": "event-c49-07",
+      "factIds": [
+        "fact-c49-01",
+        "fact-c49-02",
+        "fact-c49-03",
+        "fact-c49-04",
+        "fact-c49-05",
+        "fact-c49-06",
+        "fact-c49-07",
+        "fact-c49-08",
+        "fact-c49-09",
+        "fact-c49-10",
+        "fact-c49-11",
+        "fact-c49-12",
+        "fact-c49-13"
+      ],
+      "captionKey": "event.c49.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c49.title": "无人机没有转弯",
+      "case.c49.surface": "画面方向突然转向，飞行轨迹却显示无人机一直朝北。",
+      "case.c49.truth": "云台转动改变摄像机视线，飞行器航向没有改变；画面参照系与机体参照系不同。",
+      "entity.c49.system": "测量系统与记录链",
+      "location.c49": "科学系统现场",
+      "hypothesis.c49.canonical": "云台转动改变摄像机视线，飞行器航向没有改变；画面参照系与机体参照系不同。",
+      "hypothesis.c49.alternative.1": "无人机偷偷转弯了",
+      "hypothesis.c49.alternative.2": "画面拼接把方向弄反了",
+      "motive.在遥感画面中分离载体航向和视线方向": "在遥感画面中分离载体航向和视线方向",
+      "chapter.c49.one": "固定异常",
+      "chapter.c49.two": "统一测量边界",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c49.1": "云台角度是否成立？",
+      "query.c49.2": "飞行航向是否成立？",
+      "query.c49.3": "画面方向是否成立？",
+      "query.c49.4": "机体坐标是否成立？",
+      "query.c49.5": "地理北是否成立？",
+      "query.c49.6": "姿态日志是否成立？",
+      "query.c49.7": "镜头视场是否成立？",
+      "query.c49.8": "航迹是否成立？",
+      "query.c49.9": "转向命令是否成立？",
+      "query.c49.10": "空间参照是否成立？",
+      "event.c49.1": "阶段 1：云台角度进入记录链",
+      "event.c49.2": "阶段 2：飞行航向进入记录链",
+      "event.c49.3": "阶段 3：画面方向进入记录链",
+      "event.c49.4": "阶段 4：机体坐标进入记录链",
+      "event.c49.5": "阶段 5：地理北进入记录链",
+      "event.c49.6": "阶段 6：姿态日志进入记录链",
+      "event.c49.7": "阶段 7：镜头视场进入记录链",
+      "event.c49.8": "阶段 8：航迹进入记录链",
+      "event.c49.9": "阶段 9：转向命令进入记录链",
+      "event.c49.10": "阶段 10：空间参照进入记录链",
+      "event.c49.11": "阶段 11：云台角度进入记录链",
+      "event.c49.12": "阶段 12：飞行航向进入记录链",
+      "event.c49.13": "阶段 13：画面方向进入记录链",
+      "event.c49.14": "阶段 14：机体坐标进入记录链",
+      "evidence.c49.1.title": "云台角度记录",
+      "evidence.c49.1.observation": "来源记录显示“云台角度”在该阶段保持可复核。",
+      "evidence.c49.2.title": "飞行航向记录",
+      "evidence.c49.2.observation": "来源记录显示“飞行航向”在该阶段保持可复核。",
+      "evidence.c49.3.title": "画面方向记录",
+      "evidence.c49.3.observation": "来源记录显示“画面方向”在该阶段保持可复核。",
+      "evidence.c49.4.title": "机体坐标记录",
+      "evidence.c49.4.observation": "来源记录显示“机体坐标”在该阶段保持可复核。",
+      "evidence.c49.5.title": "地理北记录",
+      "evidence.c49.5.observation": "来源记录显示“地理北”在该阶段保持可复核。",
+      "evidence.c49.6.title": "姿态日志记录",
+      "evidence.c49.6.observation": "来源记录显示“姿态日志”在该阶段保持可复核。",
+      "evidence.c49.7.title": "镜头视场记录",
+      "evidence.c49.7.observation": "来源记录显示“镜头视场”在该阶段保持可复核。",
+      "evidence.c49.8.title": "航迹记录",
+      "evidence.c49.8.observation": "来源记录显示“航迹”在该阶段保持可复核。",
+      "evidence.c49.9.title": "转向命令记录",
+      "evidence.c49.9.observation": "来源记录显示“转向命令”在该阶段保持可复核。",
+      "evidence.c49.10.title": "空间参照记录",
+      "evidence.c49.10.observation": "来源记录显示“空间参照”在该阶段保持可复核。",
+      "evidence.c49.11.title": "云台角度记录",
+      "evidence.c49.11.observation": "来源记录显示“云台角度”在该阶段保持可复核。",
+      "evidence.c49.12.title": "飞行航向记录",
+      "evidence.c49.12.observation": "来源记录显示“飞行航向”在该阶段保持可复核。",
+      "evidence.c49.13.title": "画面方向记录",
+      "evidence.c49.13.observation": "来源记录显示“画面方向”在该阶段保持可复核。",
+      "evidence.c49.14.title": "机体坐标记录",
+      "evidence.c49.14.observation": "来源记录显示“机体坐标”在该阶段保持可复核。",
+      "board.c49.1.title": "无人机没有转弯 · reference-frame",
+      "board.c49.1.slot.1": "起始来源",
+      "board.c49.1.slot.2": "关键变化",
+      "board.c49.1.slot.3": "观测结果",
+      "board.c49.1.slot.4": "排除替代",
+      "board.c49.2.title": "无人机没有转弯 · spatial-map",
+      "board.c49.2.slot.1": "起始来源",
+      "board.c49.2.slot.2": "关键变化",
+      "board.c49.2.slot.3": "观测结果",
+      "board.c49.2.slot.4": "排除替代"
+    }
+  }
+}

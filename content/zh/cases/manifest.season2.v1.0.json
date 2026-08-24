@@ -1,0 +1,482 @@
+{
+  "manifestVersion": "1.0",
+  "seasonId": "season-2",
+  "title": "第二季：观测的边界",
+  "status": "internal-rc",
+  "publishable": false,
+  "humanEvaluation": {
+    "status": "pending",
+    "participants": 0,
+    "requiredBeforePublish": true
+  },
+  "cases": [
+    {
+      "id": "c13-second-waterline",
+      "file": "c13-second-waterline.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c13-second-waterline-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "482ef29d72e76817693042d9058effe7126e005d357b8a19714be33613ac43e4",
+      "public": {
+        "title": "空杯里的第二条水线",
+        "surface": "量杯从未开封，也没有加入液体；清晨的水线却比封存时高出了一截。",
+        "difficulty": "intermediate",
+        "targetMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "contentTags": [
+          "状态转换",
+          "体积守恒",
+          "测量基准"
+        ],
+        "layoutId": "hydrostatic-lab",
+        "sceneAsset": "/scene-second-waterline.svg",
+        "accent": "#83c7b8",
+        "boardMode": "state-trace",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c14-moving-red-box",
+      "file": "c14-moving-red-box.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c14-moving-red-box-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "42db185d7617b40dbbf4fa51df6b9eab05ecde102d65e6df8ca1412f051e318b",
+      "public": {
+        "title": "越过但未跨越的红箱",
+        "surface": "红色行李箱整夜没有移动，也没有通过闸门；清晨它却出现在禁区线的另一侧。",
+        "difficulty": "intermediate",
+        "targetMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "contentTags": [
+          "空间参照系",
+          "移动边界",
+          "负证据"
+        ],
+        "layoutId": "moving-boundary",
+        "sceneAsset": "/scene-moving-red-box.svg",
+        "accent": "#d36e62",
+        "boardMode": "spatial-map",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c15-sixth-panorama",
+      "file": "c15-sixth-panorama.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c15-sixth-panorama-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "765c4c134ec566e9a9af5f7b5aaf7a546a3302555fae2666856dce863741ef8d",
+      "public": {
+        "title": "同一张合影里的第六个人",
+        "surface": "天台始终只有五个人，门禁也没有第六次进入；全景合影里却清楚站着六个人。",
+        "difficulty": "intermediate",
+        "targetMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "contentTags": [
+          "分时采样",
+          "合成观察",
+          "身份计数"
+        ],
+        "layoutId": "panorama-roof",
+        "sceneAsset": "/scene-sixth-panorama.svg",
+        "accent": "#8fb8d4",
+        "boardMode": "sampling-window",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c16-closed-door-handoff",
+      "file": "c16-closed-door-handoff.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c16-closed-door-handoff-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "5fd447cec368a29295a5c9a1e744189085ccf71d9e5bdec7f71f98b0ddcfc566",
+      "public": {
+        "title": "没有开门的交接",
+        "surface": "证物从甲室转移到了乙室；两扇房门、两套门磁和走廊监控都证明没有开门。",
+        "difficulty": "intermediate",
+        "targetMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "contentTags": [
+          "保管链",
+          "空间拓扑",
+          "权限范围"
+        ],
+        "layoutId": "transfer-vault",
+        "sceneAsset": "/scene-closed-door-handoff.svg",
+        "accent": "#c4a46a",
+        "boardMode": "provenance-chain",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c17-twelve-strikes",
+      "file": "c17-twelve-strikes.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c17-twelve-strikes-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "dbd9e83eca242b0a489418e95402e52693924891ec0e3d704c31529d91de5538",
+      "public": {
+        "title": "十一点的十二声钟",
+        "surface": "钟楼表盘停在十一点整，维修记录也承认它没有走动；午夜却准确敲了十二声。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "机械因果",
+          "系统脱耦",
+          "状态机"
+        ],
+        "layoutId": "clockwork-tower",
+        "sceneAsset": "/scene-twelve-strikes.svg",
+        "accent": "#d2a45f",
+        "boardMode": "state-trace",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c18-lighter-sealed-crate",
+      "file": "c18-lighter-sealed-crate.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c18-lighter-sealed-crate-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "ce44f2cb5ee5567b4d991348d7d948f613fbf1fee90fae155be64ac1c4ca26b2",
+      "public": {
+        "title": "少了一公斤的密封箱",
+        "surface": "密封箱没有开封、没有移位，内容物清单也完整；同一台秤却显示它在十分钟内轻了一公斤。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "测量基准",
+          "自动归零",
+          "守恒"
+        ],
+        "layoutId": "metrology-bay",
+        "sceneAsset": "/scene-lighter-sealed-crate.svg",
+        "accent": "#9bc18b",
+        "boardMode": "measurement-model",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c19-fog-after-window",
+      "file": "c19-fog-after-window.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c19-fog-after-window-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "686cea87281f973b9f1f6266309ddcb1ae66d6bc295f0d26c91506a5c6aa7337",
+      "public": {
+        "title": "关窗后才出现的雾",
+        "surface": "窗户敞开时房间清澈，关闭并密封后反而出现白雾；没有漏水，也没有人启动加湿器。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "阈值",
+          "环境滞后",
+          "相变"
+        ],
+        "layoutId": "dewpoint-room",
+        "sceneAsset": "/scene-fog-after-window.svg",
+        "accent": "#9ccbd0",
+        "boardMode": "state-trace",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c20-fifth-worker",
+      "file": "c20-fifth-worker.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c20-fifth-worker-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "1db506aec8f2623726ee483eb5310dc86be638ba740db6f9b9af445735b05c69",
+      "public": {
+        "title": "六个岗位的第五个人",
+        "surface": "六个岗位都完成了本人签到，所有凭证也合法；监控从头到尾却只出现五个人。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "集合基数",
+          "角色身份",
+          "权限语义"
+        ],
+        "layoutId": "roster-grid",
+        "sceneAsset": "/scene-fifth-worker.svg",
+        "accent": "#b79ad2",
+        "boardMode": "identity-matrix",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 12
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c21-missing-seven-minutes",
+      "file": "c21-missing-seven-minutes.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c21-missing-seven-minutes-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "1153bdb04b6655975319bfa1644377da641dd7174146302bbb6661959b10c36c",
+      "public": {
+        "title": "完整录像里消失的七分钟",
+        "surface": "录像索引从00:00连续到00:20，没有删除、断网或坏帧；关键的七分钟却没有任何连续画面。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 12,
+          "max": 20
+        },
+        "contentTags": [
+          "采样窗口",
+          "负证据",
+          "元数据语义"
+        ],
+        "layoutId": "frame-audit",
+        "sceneAsset": "/scene-missing-seven-minutes.svg",
+        "accent": "#79a9d6",
+        "boardMode": "sampling-window",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c22-overloaded-bridge",
+      "file": "c22-overloaded-bridge.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c22-overloaded-bridge-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "95384929c13beb4ae827063ec616d1d66938384269de1d83b44e9d2c311346bc",
+      "public": {
+        "title": "没有超标的超载桥",
+        "surface": "每个车轴读数都低于法定上限，也没有额外车辆；桥梁系统却正确触发了超载封闭。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 12,
+          "max": 20
+        },
+        "contentTags": [
+          "聚合约束",
+          "测量语义",
+          "并发状态"
+        ],
+        "layoutId": "bridge-load",
+        "sceneAsset": "/scene-overloaded-bridge.svg",
+        "accent": "#d8905f",
+        "boardMode": "aggregate-constraint",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c23-clean-air-sample",
+      "file": "c23-clean-air-sample.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c23-clean-air-sample-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "fdd7d0e2af2cb6efbdd9038d597577324b9563ce1db24360e3e9eb133415b87a",
+      "public": {
+        "title": "泄漏时仍然清洁的空气样本",
+        "surface": "泄漏警报已经触发，取样仪却连续显示空气清洁；仪器没有坏，样本也没有被替换。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 12,
+          "max": 20
+        },
+        "contentTags": [
+          "来源路线",
+          "检测边界",
+          "输送延迟"
+        ],
+        "layoutId": "air-route",
+        "sceneAsset": "/scene-clean-air-sample.svg",
+        "accent": "#65b8a8",
+        "boardMode": "provenance-chain",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c24-turned-painting",
+      "file": "c24-turned-painting.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c24-turned-painting-v1",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "a0b79c3a520588e0288d3b7d5686854cf799d34d0ef3a982b813654381c1f2ec",
+      "public": {
+        "title": "闭馆后转向的画",
+        "surface": "展厅门整夜未开，画框封条完好，连续全景监控也没有拍到搬运；清晨画却朝向了相反方向。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 15,
+          "max": 25
+        },
+        "contentTags": [
+          "多板综合",
+          "移动边界",
+          "合成观察"
+        ],
+        "layoutId": "rotating-gallery",
+        "sceneAsset": "/scene-turned-painting.svg",
+        "accent": "#c87974",
+        "boardMode": "spatial-map",
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    }
+  ]
+}

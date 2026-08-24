@@ -1,0 +1,19 @@
+{
+  "caseId":"c10-single-ring",
+  "normalization":[
+    {"raw":"外部有人打电话进来了吗？","expectedQueryId":"query-external-call","expectedStatus":"matched"},
+    {"raw":"是PBX安排的本地回放吗？","expectedQueryId":"query-replay","expectedStatus":"matched"},
+    {"raw":"断线以后有人重新接线吗？","expectedQueryId":"query-reconnect","expectedStatus":"matched"},
+    {"raw":"传真噪声和电话有关吗？","expectedQueryId":"query-fax","expectedStatus":"matched"}
+  ],
+  "answers":[
+    {"queryId":"query-line-state","expectedCode":"yes"},
+    {"queryId":"query-external-call","expectedCode":"no"},
+    {"queryId":"query-fax","expectedCode":"irrelevant"}
+  ],
+  "judgements":[
+    {"hypothesisId":"path-external","expected":"invalidated"},
+    {"hypothesisId":"path-reconnect","expected":"invalidated"}
+  ],
+  "replay":{"expectedBeatCount":5}
+}

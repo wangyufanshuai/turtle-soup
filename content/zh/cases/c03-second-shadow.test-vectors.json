@@ -1,0 +1,12 @@
+{
+  "caseId": "c03-second-shadow",
+  "normalizationVectors": [
+    { "id": "opening-role", "rawQuestion": "台上的角色就是罗弈本人吗？", "expectedStatus": "matched", "expectedQueryId": "query-role-person", "expectedMatchedBy": "exact" },
+    { "id": "opening-shadow", "rawQuestion": "台上真的有两个人吗？", "expectedStatus": "matched", "expectedQueryId": "query-two-people", "expectedMatchedBy": "exact" },
+    { "id": "unknown", "rawQuestion": "剧院今天卖了多少票？", "expectedStatus": "unrecognized", "expectedQueryId": null, "expectedMatchedBy": "none" }
+  ],
+  "judgementVectors": [],
+  "orderVectors": [],
+  "antiLeakVectors": ["颜希穿着角色服装上台", "罗弈始终在后台", "遮影屏"],
+  "replayVector": { "expectedBeatIds": ["replay-c03-costume", "replay-c03-prop", "replay-c03-role", "replay-c03-call", "replay-c03-identity"], "expectedEventIds": ["event-yan-takes-coat", "event-hei-places-screen", "event-yan-enters-stage", "event-luo-signs-call", "event-luo-confirmed-backstage"] }
+}

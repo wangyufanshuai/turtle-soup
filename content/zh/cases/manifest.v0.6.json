@@ -1,0 +1,22 @@
+{
+  "manifestVersion": "0.6",
+  "freezeId": "turtle-soup-v0.6-2026-08-23",
+  "frozenAt": "2026-08-23",
+  "status": "frozen-for-human-evaluation",
+  "canonicalHashRule": "metadata.canonicalHash is the declared case identity; fileSha256 covers the exact UTF-8 JSON bytes in this workspace.",
+  "humanEvaluation": { "status": "pending", "requiredBeforePublish": true },
+  "cases": [
+    {"id":"c01-cold-room-knock","file":"c01-cold-room-knock.json","contentVersion":1,"canonicalHash":"sha256:c01-cold-room-knock-v1","status":"frozen","fileSha256":"0bfca99efbf3fbef3667241f6fbd3cd46a81c1ef58879a235fbdc4ad39df65de"},
+    {"id":"c02-snow-route","file":"c02-snow-route.json","contentVersion":1,"canonicalHash":"sha256:c02-snow-route-v1","status":"frozen","fileSha256":"31a262c05e2ed50ebd86847f416aed658e3d719536ddea4e9f0229caee64ba36"},
+    {"id":"c03-second-shadow","file":"c03-second-shadow.json","contentVersion":1,"canonicalHash":"sha256:c03-second-shadow-v1","status":"frozen","fileSha256":"7f5ac7d7fc491987913a40f65c1f0dd41c716cb61ba70f081400bf65df49ee89"},
+    {"id":"c04-unpostable-reply","file":"c04-unpostable-reply.json","contentVersion":1,"canonicalHash":"sha256:c04-unpostable-reply-v1","status":"frozen","fileSha256":"5c1e008eadd2c27ae7922b9aadccbc56a7827e0a9e0d99eb526e3f3308026b89"},
+    {"id":"c05-third-lamp","file":"c05-third-lamp.json","contentVersion":1,"canonicalHash":"sha256:c05-third-lamp-v1","status":"frozen","fileSha256":"0faced911b3ac489c5679b74d5e5c534dbbb2ebab6b6001c36b6568da18887a6"},
+    {"id":"c06-nonexistent-ticket","file":"c06-nonexistent-ticket.json","contentVersion":1,"canonicalHash":"sha256:c06-nonexistent-ticket-v1","status":"frozen","fileSha256":"219da90e14925e15c9cf23226933f91fcb1dc73baae1b83240357ceb7d3373f4"},
+    {"id":"c07-key-returns","file":"c07-key-returns.json","contentVersion":1,"canonicalHash":"sha256:c07-key-returns-v1","status":"frozen","fileSha256":"8e1c94b6389502265bd7c106dc973189545d60ec8ada48e07a05c2b97308337c"},
+    {"id":"c08-unclaimed-recording","file":"c08-unclaimed-recording.json","contentVersion":1,"canonicalHash":"sha256:c08-unclaimed-recording-v1","status":"frozen","fileSha256":"ca6988265b01270ba07d9fb40d098c285b09feadf3ce726ffc015d244b9c7fd9"},
+    {"id":"c09-rain-room","file":"c09-rain-room.json","contentVersion":1,"canonicalHash":"sha256:c09-rain-room-v1","status":"frozen","fileSha256":"f92c5907555fe306351aa16b41a467ac4601f4c888b6b343302b50e7f4847fc1"},
+    {"id":"c10-single-ring","file":"c10-single-ring.json","contentVersion":1,"canonicalHash":"sha256:c10-single-ring-v1","status":"frozen","fileSha256":"620d9b8e7cf42c267f525b04090a18cd604df151e65572800b47418263765b86"},
+    {"id":"c11-borrowed-signature","file":"c11-borrowed-signature.json","contentVersion":1,"canonicalHash":"sha256:c11-borrowed-signature-v1","status":"frozen","fileSha256":"c92d7aa15100e7f20a2e566029b59a8022630554f50f1522a102d6c0f1b50767"},
+    {"id":"c12-zero-floor-elevator","file":"c12-zero-floor-elevator.json","contentVersion":1,"canonicalHash":"sha256:c12-zero-floor-elevator-v1","status":"frozen","fileSha256":"54a47d3cdabacc86146e09ca47e8e2b308ffeb7c605fe9656f40e5d1885bb6b1"}
+  ]
+}

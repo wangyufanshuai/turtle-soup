@@ -9,8 +9,17 @@
     "targetMinutes": { "min": 5, "max": 15 },
     "author": "TURTLE SOUP core team",
     "contentVersion": 1,
-    "canonicalHash": "sha256:pending-canonical-hash",
-    "status": "draft"
+    "canonicalHash": "sha256:c01-cold-room-knock-v1",
+    "status": "frozen"
+  },
+  "presentation": {
+    "layoutId": "cold-room",
+    "sceneAsset": "/scene-cold-room.svg",
+    "palette": "black-soup",
+    "accent": "#b8cf79",
+    "questionPromptMode": "host",
+    "evidenceVisualMode": "archive-cards",
+    "mobileNavigation": ["现场", "提问", "推理"]
   },
   "surface": {
     "titleKey": "case.c01.title",

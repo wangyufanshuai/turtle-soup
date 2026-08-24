@@ -1,0 +1,12 @@
+{
+  "caseId": "c06-nonexistent-ticket",
+  "normalizationVectors": [
+    { "id": "opening-display", "rawQuestion": "23:52是扫描发生的时间吗？", "expectedStatus": "matched", "expectedQueryId": "query-sync-time", "expectedMatchedBy": "exact" },
+    { "id": "opening-departure", "rawQuestion": "渡轮23:50已经离港了吗？", "expectedStatus": "matched", "expectedQueryId": "query-ferry-departed", "expectedMatchedBy": "exact" },
+    { "id": "unknown", "rawQuestion": "码头今天卖了多少饮料？", "expectedStatus": "unrecognized", "expectedQueryId": null, "expectedMatchedBy": "none" }
+  ],
+  "judgementVectors": [],
+  "orderVectors": [],
+  "antiLeakVectors": ["离线队列", "货运通行证", "没有晚登船"],
+  "replayVector": { "expectedBeatIds": ["replay-c06-scan", "replay-c06-offline", "replay-c06-departure", "replay-c06-sync", "replay-c06-audit"], "expectedEventIds": ["event-courier-scans", "event-terminal-offline", "event-ferry-departs", "event-log-syncs", "event-audit-closes"] }
+}

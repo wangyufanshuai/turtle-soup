@@ -1,0 +1,1023 @@
+{
+  "manifestVersion": "1.3",
+  "seasonId": "season-4",
+  "title": "第四季：测量之外",
+  "status": "public-preview",
+  "publishable": false,
+  "humanEvaluation": {
+    "status": "pending",
+    "participants": 0,
+    "requiredBeforePublish": true
+  },
+  "cases": [
+    {
+      "id": "c37-zeroed-pressure-gauge",
+      "file": "c37-zeroed-pressure-gauge.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:43d42046a74b38395edb1ae867d3bbb7c1e7e9f67e4651a4967c2498733d8423",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "回到零点的压力表",
+        "surface": "压力释放后表针回到零点，但温度变化会改变零点偏移；显示值不等于真实压力。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-calibration-curve",
+        "sceneAsset": "/assets/cases/c37/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c37/scene-mobile.svg",
+        "accent": "#9bc7d8",
+        "boardModes": [
+          "calibration-curve",
+          "measurement-model"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c38-no-missing-seventh-packet",
+      "file": "c38-no-missing-seventh-packet.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:ee008cea7b16b59bec15e1035eaf83a51c457903e3085aa937f15c4e03bf0216",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "没有丢失的第七码",
+        "surface": "数据包序号从第六跳到第八，网络监控却显示传输没有中断。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-network-topology",
+        "sceneAsset": "/assets/cases/c38/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c38/scene-mobile.svg",
+        "accent": "#d7aa76",
+        "boardModes": [
+          "network-topology",
+          "provenance-chain"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c39-duplicated-heartbeat",
+      "file": "c39-duplicated-heartbeat.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:bdbcc142d223db6433acb2c66d1f60c19e6d320158608a12bcffd34732f49431",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "两次相同的心跳",
+        "surface": "监控回放里同一秒出现两次完全相同的心跳，设备日志却只有一次发送。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-signal-chain",
+        "sceneAsset": "/assets/cases/c39/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c39/scene-mobile.svg",
+        "accent": "#c49bd8",
+        "boardModes": [
+          "signal-chain",
+          "sampling-window"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c40-early-liquid-front",
+      "file": "c40-early-liquid-front.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:67a7a43acd64a43f2b272a524038cd6971b6feed30ef9f78cddd658f709ffa63",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "提前到达的液面",
+        "surface": "采样口先报告液体到达，储罐的液面刻度却还没有到对应高度。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-state-trace",
+        "sceneAsset": "/assets/cases/c40/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c40/scene-mobile.svg",
+        "accent": "#b7d6a4",
+        "boardModes": [
+          "state-trace",
+          "provenance-chain"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c41-hysteresis-overheat",
+      "file": "c41-hysteresis-overheat.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:0f03c68ae5836371d340feb191874e5ba4416e81d1fef80189c23e8360b1ba1d",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "没有发生的过热报警",
+        "surface": "系统留下过热报警，但温度曲线从未第二次越过报警阈值。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-state-trace",
+        "sceneAsset": "/assets/cases/c41/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c41/scene-mobile.svg",
+        "accent": "#9bc7d8",
+        "boardModes": [
+          "state-trace",
+          "measurement-model"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c42-same-weight-different-load",
+      "file": "c42-same-weight-different-load.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:d345e58c5bfd1802425900bbba394ae26bad160989c72bd19af4a0195662f19f",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "同样重量的不同负载",
+        "surface": "两辆车总重量相同，桥面却只对其中一辆发出局部超载警告。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-aggregate-constraint",
+        "sceneAsset": "/assets/cases/c42/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c42/scene-mobile.svg",
+        "accent": "#d7aa76",
+        "boardModes": [
+          "aggregate-constraint",
+          "spatial-map"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c43-train-stop-reference",
+      "file": "c43-train-stop-reference.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:b62f3d79892166786eed51ef8d2bfa1c9490965aede7bad348461226f67b928b",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "停在红线外的列车",
+        "surface": "驾驶台显示列车已停在红线外，车轮标记却压过了红线。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-control-loop",
+        "sceneAsset": "/assets/cases/c43/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c43/scene-mobile.svg",
+        "accent": "#c49bd8",
+        "boardModes": [
+          "control-loop",
+          "state-trace"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c44-hidden-overload-spike",
+      "file": "c44-hidden-overload-spike.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c443d50b1a230272f45c92eafbd403a2776e053dea7cdd6a54a26e6c6fbb20be",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "消失在平均值里的尖峰",
+        "surface": "设备原始采样出现瞬时过载，日报曲线却从未超过安全线。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-sampling-window",
+        "sceneAsset": "/assets/cases/c44/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c44/scene-mobile.svg",
+        "accent": "#b7d6a4",
+        "boardModes": [
+          "sampling-window",
+          "measurement-model"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c45-double-location-second",
+      "file": "c45-double-location-second.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:1496b0ac0f39d7024dd52e148178738f923fd3db4ff885be2fc7ad217ecd3c79",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "一秒钟的双重定位",
+        "surface": "两套定位记录在同一秒给出互相矛盾的地点，轨迹却没有跳跃。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-reference-frame",
+        "sceneAsset": "/assets/cases/c45/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c45/scene-mobile.svg",
+        "accent": "#9bc7d8",
+        "boardModes": [
+          "reference-frame",
+          "timeline"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c46-pilot-pressure-valve",
+      "file": "c46-pilot-pressure-valve.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:174454209084af21392f0f6d3261a2884cecf1023fc53ead75511174eef39e2b",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "没有打开的阀门",
+        "surface": "控制面板显示阀门关闭，流量却已经改变；现场没有人操作手轮。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-control-loop",
+        "sceneAsset": "/assets/cases/c46/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c46/scene-mobile.svg",
+        "accent": "#d7aa76",
+        "boardModes": [
+          "control-loop",
+          "provenance-chain"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c47-offline-buffered-device",
+      "file": "c47-offline-buffered-device.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:c8b3ac1cb6751d63822ff72013e3af5bd02d9cb2cbce77048210478a4a903e52",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "断线后继续在线的设备",
+        "surface": "设备断线期间平台显示它仍在线，恢复连接后又一次性补传了数据。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-network-topology",
+        "sceneAsset": "/assets/cases/c47/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c47/scene-mobile.svg",
+        "accent": "#c49bd8",
+        "boardModes": [
+          "network-topology",
+          "sampling-window"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c48-two-point-calibration",
+      "file": "c48-two-point-calibration.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:f1f3562c7c69d00aa27ea3eb763ef33ead69bc6e39a57891d37be6fdbaef1948",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "两个相同的校准点",
+        "surface": "仪器用两个校准点都准确，中间读数却偏离参考值。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-calibration-curve",
+        "sceneAsset": "/assets/cases/c48/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c48/scene-mobile.svg",
+        "accent": "#b7d6a4",
+        "boardModes": [
+          "calibration-curve",
+          "uncertainty-band"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c49-gimbal-turn-drone",
+      "file": "c49-gimbal-turn-drone.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:7c0ae01409e8f54ff61d04d21236154a94fdfe414f07f320bdb2bfb0f7705334",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "无人机没有转弯",
+        "surface": "画面方向突然转向，飞行轨迹却显示无人机一直朝北。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-reference-frame",
+        "sceneAsset": "/assets/cases/c49/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c49/scene-mobile.svg",
+        "accent": "#9bc7d8",
+        "boardModes": [
+          "reference-frame",
+          "spatial-map"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c50-extra-warehouse-pallet",
+      "file": "c50-extra-warehouse-pallet.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:d0da1e95d1504cf1a5a4160623cbe3c5ad0cff06fbdd476c62524e3d0da104b1",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "仓库里多出的托盘",
+        "surface": "库存表显示多出一只托盘，批次总量却完全吻合。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-aggregate-constraint",
+        "sceneAsset": "/assets/cases/c50/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c50/scene-mobile.svg",
+        "accent": "#d7aa76",
+        "boardModes": [
+          "aggregate-constraint",
+          "queue-model"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c51-equivalent-resistance",
+      "file": "c51-equivalent-resistance.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:af63236b453adf13b08bf6f74ab6e91ae54dc9d3f90dc0624d8d319e6d4a80a1",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "不相等的相等电阻",
+        "surface": "测量报告说两只电阻相等，拆下测量却得到不同阻值。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-network-topology",
+        "sceneAsset": "/assets/cases/c51/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c51/scene-mobile.svg",
+        "accent": "#c49bd8",
+        "boardModes": [
+          "network-topology",
+          "measurement-model"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c52-shorter-river-night",
+      "file": "c52-shorter-river-night.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:d81f1576ab9dcc8328da8a19a9e7df46e3cde2bdb5eef8e65757937f6e1c9c04",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "夜里变短的河",
+        "surface": "夜间测绘显示河道长度变短，河岸和水流都没有移动。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-reference-frame",
+        "sceneAsset": "/assets/cases/c52/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c52/scene-mobile.svg",
+        "accent": "#b7d6a4",
+        "boardModes": [
+          "reference-frame",
+          "uncertainty-band"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c53-late-fiber-echo",
+      "file": "c53-late-fiber-echo.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:604913403f946cf92891763202c8d26c8ec47410d2ba39b51f807bd6ceea6566",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "迟到的光纤回声",
+        "surface": "光纤回波比预期晚到，但设备和线路没有故障。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-signal-chain",
+        "sceneAsset": "/assets/cases/c53/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c53/scene-mobile.svg",
+        "accent": "#9bc7d8",
+        "boardModes": [
+          "signal-chain",
+          "network-topology"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c54-elevator-counterweight",
+      "file": "c54-elevator-counterweight.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:fc7e56efc45e243877af5bf6756733401475446d087c1082a72a690c95fd8e6d",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "没有下降的电梯",
+        "surface": "轿厢位置没有下降，楼层传感器却记录了一次下降状态。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-state-trace",
+        "sceneAsset": "/assets/cases/c54/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c54/scene-mobile.svg",
+        "accent": "#d7aa76",
+        "boardModes": [
+          "state-trace",
+          "spatial-map"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c55-merged-multi-alarm",
+      "file": "c55-merged-multi-alarm.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:31a406e477a68828079e2727a41198d217448a67dd76a82b0883dd2e28e441fa",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "只响一次的多重告警",
+        "surface": "三个告警源在同一秒触发，值班员却只听到一次提示音。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-queue-model",
+        "sceneAsset": "/assets/cases/c55/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c55/scene-mobile.svg",
+        "accent": "#c49bd8",
+        "boardModes": [
+          "queue-model",
+          "state-trace"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c56-interpolated-temperature-map",
+      "file": "c56-interpolated-temperature-map.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:764c7910a24003dedb61ae4d48fd01c3a5f992d6c027ac33fceeafdacffcefb8",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "完整却不连续的温度图",
+        "surface": "温度图从头到尾没有空白，但采样设备中途确实断过线。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-sampling-window",
+        "sceneAsset": "/assets/cases/c56/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c56/scene-mobile.svg",
+        "accent": "#b7d6a4",
+        "boardModes": [
+          "sampling-window",
+          "uncertainty-band"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c57-lagging-wind-vane",
+      "file": "c57-lagging-wind-vane.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:aafe901d958dd2217f63184dbacfcad93047159812d289373c58503ae9cd1c34",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "不动的风向标",
+        "surface": "短时风向已经改变，风向标指针却保持原方向。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-reference-frame",
+        "sceneAsset": "/assets/cases/c57/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c57/scene-mobile.svg",
+        "accent": "#9bc7d8",
+        "boardModes": [
+          "reference-frame",
+          "measurement-model"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c58-same-volume-two-levels",
+      "file": "c58-same-volume-two-levels.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:5c71bee224cd091017281133f536192a9480a65569c94182041921b921d45bb3",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "同一容积的两种水位",
+        "surface": "两个容器装入同样体积的水，液面高度却不同。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-calibration-curve",
+        "sceneAsset": "/assets/cases/c58/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c58/scene-mobile.svg",
+        "accent": "#d7aa76",
+        "boardModes": [
+          "calibration-curve",
+          "spatial-map"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c59-extra-ninth-floor",
+      "file": "c59-extra-ninth-floor.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:6eeeb71c008a1d841c0292f86974615852c6fc6013dfd0da3e046a280aed430a",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "多出来的第九层",
+        "surface": "气压楼层估计显示建筑有第九层，电梯和消防图却只有八层。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-reference-frame",
+        "sceneAsset": "/assets/cases/c59/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c59/scene-mobile.svg",
+        "accent": "#c49bd8",
+        "boardModes": [
+          "reference-frame",
+          "aggregate-constraint"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c60-last-sample-before-stop",
+      "file": "c60-last-sample-before-stop.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:21b820f1b4c91def40e4ec5464965d88b2621d196d2e7bccb202aca9cf7c3a09",
+      "status": "public-preview",
+      "publishable": false,
+      "public": {
+        "title": "终点前的最后一次采样",
+        "surface": "系统已经收到停止命令，终点前却又出现一条采样记录。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 15,
+          "max": 25
+        },
+        "contentTags": [
+          "科学测量",
+          "复杂系统",
+          "来源边界"
+        ],
+        "layoutId": "season4-control-loop",
+        "sceneAsset": "/assets/cases/c60/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c60/scene-mobile.svg",
+        "accent": "#b7d6a4",
+        "boardModes": [
+          "control-loop",
+          "signal-chain",
+          "sampling-window"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    }
+  ]
+}

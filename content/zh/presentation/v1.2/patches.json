@@ -1,0 +1,231 @@
+[
+  {
+    "caseId": "c01-cold-room-knock",
+    "baseCanonicalHash": "sha256:c01-cold-room-knock-v1",
+    "presentationRevision": 1,
+    "surface": "门从里面锁着，敲门声却在研究员离开后出现。请证明声音、门锁与样本位置之间的关系。"
+  },
+  {
+    "caseId": "c02-snow-route",
+    "baseCanonicalHash": "sha256:c02-snow-route-v1",
+    "presentationRevision": 1
+  },
+  {
+    "caseId": "c03-second-shadow",
+    "baseCanonicalHash": "sha256:c03-second-shadow-v1",
+    "presentationRevision": 1
+  },
+  {
+    "caseId": "c04-unpostable-reply",
+    "baseCanonicalHash": "sha256:c04-unpostable-reply-v1",
+    "presentationRevision": 1
+  },
+  {
+    "caseId": "c05-third-lamp",
+    "baseCanonicalHash": "sha256:c05-third-lamp-v1",
+    "presentationRevision": 1
+  },
+  {
+    "caseId": "c06-nonexistent-ticket",
+    "baseCanonicalHash": "sha256:c06-nonexistent-ticket-v1",
+    "presentationRevision": 1
+  },
+  {
+    "caseId": "c07-key-returns",
+    "baseCanonicalHash": "sha256:c07-key-returns-v1",
+    "presentationRevision": 1
+  },
+  {
+    "caseId": "c08-unclaimed-recording",
+    "baseCanonicalHash": "sha256:c08-unclaimed-recording-v1",
+    "presentationRevision": 1
+  },
+  {
+    "caseId": "c09-rain-room",
+    "baseCanonicalHash": "sha256:c09-rain-room-v1",
+    "presentationRevision": 1
+  },
+  {
+    "caseId": "c10-single-ring",
+    "baseCanonicalHash": "sha256:c10-single-ring-v1",
+    "presentationRevision": 1
+  },
+  {
+    "caseId": "c11-borrowed-signature",
+    "baseCanonicalHash": "sha256:c11-borrowed-signature-v1",
+    "presentationRevision": 1
+  },
+  {
+    "caseId": "c12-zero-floor-elevator",
+    "baseCanonicalHash": "sha256:c12-zero-floor-elevator-v1",
+    "presentationRevision": 1
+  },
+  {
+    "caseId": "c13-second-waterline",
+    "baseCanonicalHash": "sha256:c13-second-waterline-v1",
+    "presentationRevision": 1,
+    "title": "空杯里的第二条水线",
+    "surface": "量杯从未开封，也没有加入液体；清晨的水线却比封存时高出了一截。"
+  },
+  {
+    "caseId": "c14-moving-red-box",
+    "baseCanonicalHash": "sha256:c14-moving-red-box-v1",
+    "presentationRevision": 1,
+    "title": "越过但未跨越的红箱",
+    "surface": "红色行李箱整夜没有移动，也没有通过闸门；清晨它却出现在禁区线的另一侧。"
+  },
+  {
+    "caseId": "c15-sixth-panorama",
+    "baseCanonicalHash": "sha256:c15-sixth-panorama-v1",
+    "presentationRevision": 1,
+    "title": "同一张合影里的第六个人",
+    "surface": "天台始终只有五个人，门禁也没有第六次进入；全景合影里却清楚站着六个人。"
+  },
+  {
+    "caseId": "c16-closed-door-handoff",
+    "baseCanonicalHash": "sha256:c16-closed-door-handoff-v1",
+    "presentationRevision": 1,
+    "title": "没有开门的交接",
+    "surface": "证物从甲室转移到了乙室；两扇房门、两套门磁和走廊监控都证明没有开门。"
+  },
+  {
+    "caseId": "c17-twelve-strikes",
+    "baseCanonicalHash": "sha256:c17-twelve-strikes-v1",
+    "presentationRevision": 1,
+    "title": "十一点的十二声钟",
+    "surface": "钟楼表盘停在十一点整，维修记录也承认它没有走动；午夜却准确敲了十二声。"
+  },
+  {
+    "caseId": "c18-lighter-sealed-crate",
+    "baseCanonicalHash": "sha256:c18-lighter-sealed-crate-v1",
+    "presentationRevision": 1,
+    "title": "少了一公斤的密封箱",
+    "surface": "密封箱没有开封、没有移位，内容物清单也完整；同一台秤却显示它在十分钟内轻了一公斤。"
+  },
+  {
+    "caseId": "c19-fog-after-window",
+    "baseCanonicalHash": "sha256:c19-fog-after-window-v1",
+    "presentationRevision": 1,
+    "title": "关窗后才出现的雾",
+    "surface": "窗户敞开时房间清澈，关闭并密封后反而出现白雾；没有漏水，也没有人启动加湿器。"
+  },
+  {
+    "caseId": "c20-fifth-worker",
+    "baseCanonicalHash": "sha256:c20-fifth-worker-v1",
+    "presentationRevision": 1,
+    "title": "六个岗位的第五个人",
+    "surface": "六个岗位都完成了本人签到，所有凭证也合法；监控从头到尾却只出现五个人。"
+  },
+  {
+    "caseId": "c21-missing-seven-minutes",
+    "baseCanonicalHash": "sha256:c21-missing-seven-minutes-v1",
+    "presentationRevision": 1,
+    "title": "完整录像里消失的七分钟",
+    "surface": "录像索引从00:00连续到00:20，没有删除、断网或坏帧；关键的七分钟却没有任何连续画面。"
+  },
+  {
+    "caseId": "c22-overloaded-bridge",
+    "baseCanonicalHash": "sha256:c22-overloaded-bridge-v1",
+    "presentationRevision": 1,
+    "title": "没有超标的超载桥",
+    "surface": "每个车轴读数都低于法定上限，也没有额外车辆；桥梁系统却正确触发了超载封闭。"
+  },
+  {
+    "caseId": "c23-clean-air-sample",
+    "baseCanonicalHash": "sha256:c23-clean-air-sample-v1",
+    "presentationRevision": 1,
+    "title": "泄漏时仍然清洁的空气样本",
+    "surface": "泄漏警报已经触发，取样仪却连续显示空气清洁；仪器没有坏，样本也没有被替换。"
+  },
+  {
+    "caseId": "c24-turned-painting",
+    "baseCanonicalHash": "sha256:c24-turned-painting-v1",
+    "presentationRevision": 1,
+    "title": "闭馆后转向的画",
+    "surface": "展厅门整夜未开，画框封条完好，连续全景监控也没有拍到搬运；清晨画却朝向了相反方向。"
+  },
+  {
+    "caseId": "c25-silent-second-bell",
+    "baseCanonicalHash": "sha256:f0b2ed2069fc10b0ce79f86ac9174a4b27b7bef1ce9ad322ad407755162ece6d",
+    "presentationRevision": 1,
+    "title": "没有响起的第二次门铃",
+    "surface": "访客在十秒内按了两次门铃，控制器也记录了两次触发；屋内的人却只听见一次。"
+  },
+  {
+    "caseId": "c26-short-map-pipeline",
+    "baseCanonicalHash": "sha256:b71b41828d37dc0054e2237164cbc6b70957dd9159384bb26bf2cee4b3465f13",
+    "presentationRevision": 1,
+    "title": "比地图短的管线",
+    "surface": "施工图上的管线只有四十米，验收仪却测得六十三米；管线没有绕出图纸标出的走廊。"
+  },
+  {
+    "caseId": "c27-stationary-moving-platform",
+    "baseCanonicalHash": "sha256:1f74deafc0608c61427571c5293c1f142c20f1f2cb4cd25cabd16cb86d4899c0",
+    "presentationRevision": 1,
+    "title": "停在原地的移动平台",
+    "surface": "自动平台午夜前后都停在同一个定位框内；平台上的密封货箱却在另一座仓库被找到。"
+  },
+  {
+    "caseId": "c28-ninth-minute-temperature",
+    "baseCanonicalHash": "sha256:499377ccf98237c07017a09549c1db1b2468ff13dfc1cfec14a649bc5404b065",
+    "presentationRevision": 1,
+    "title": "温度曲线里的第九分钟",
+    "surface": "实验舱在第九分钟已经断电，温度曲线却显示它直到第十二分钟才开始降温。"
+  },
+  {
+    "caseId": "c29-role-stamp-signature",
+    "baseCanonicalHash": "sha256:de08e447e9b3c0d5c6df0d072c973cce7b3ec41e4374be210c215daa04bf2eb7",
+    "presentationRevision": 1,
+    "title": "签名盖的是岗位",
+    "surface": "夜间批准单上有主管的完整签名，可主管当晚在另一座城市；笔迹鉴定也确认没有伪造。"
+  },
+  {
+    "caseId": "c30-shared-shift-id",
+    "baseCanonicalHash": "sha256:1c429ccca850dcbdc207745d3b5f51aa7776417d1cb29b47a11b11c00f4fc9a5",
+    "presentationRevision": 1,
+    "title": "同一工号的两次值班",
+    "surface": "同一工号从傍晚一直工作到清晨，记录之间没有退出；监控却显示前后是两个完全不同的人。"
+  },
+  {
+    "caseId": "c31-eighth-unchecked-guest",
+    "baseCanonicalHash": "sha256:1cd50d86090f06e67551aad5eb250a2bdc039f0f8e73d6d8d4e3f500d760eed2",
+    "presentationRevision": 1,
+    "title": "未入住的第八位住客",
+    "surface": "旅店登记表显示八位住客全部入住，门禁和早餐记录却最多只有七个不同的人。"
+  },
+  {
+    "caseId": "c32-approved-unauthorized-door",
+    "baseCanonicalHash": "sha256:fb909b46d284d9d1bdba066eb9c325c88edcdf26f7c4127d9bbfae15dd7871d0",
+    "presentationRevision": 1,
+    "title": "批准过的未授权门",
+    "surface": "门禁审计显示开门请求经过正式批准，但批准人自己的权限表里并没有这扇门。"
+  },
+  {
+    "caseId": "c33-early-late-arrival",
+    "baseCanonicalHash": "sha256:a9e41dfe82f25351e28ff909da35dd24816f28768d1330db397b1b5fcdc4bde9",
+    "presentationRevision": 1,
+    "title": "先到场的迟到者",
+    "surface": "门禁说调查员在 23:58 进入，直播画面却到 00:04 才出现他；值班表仍判定他午夜迟到。"
+  },
+  {
+    "caseId": "c34-tomorrow-seal",
+    "baseCanonicalHash": "sha256:4a681813f17e5b044e331d4258d4c14ff88c09c58d9643ed9aad11c54e53ef88",
+    "presentationRevision": 1,
+    "title": "封条上的明天",
+    "surface": "箱子在周一晚上完成封存，完整封条却印着周二日期；物流链没有中断，封条也没有更换。"
+  },
+  {
+    "caseId": "c35-extra-glass-attendant",
+    "baseCanonicalHash": "sha256:8978a4ad427d2faa1677029ee390067ea40b55299165449296bbba144950c145",
+    "presentationRevision": 1,
+    "title": "玻璃里多出来的值班员",
+    "surface": "大厅监控在同一分钟拍到两名穿同样制服的值班员；门禁和排班却都只有一个人。"
+  },
+  {
+    "caseId": "c36-no-one-left-terminal",
+    "baseCanonicalHash": "sha256:785d1d2927e980a88d50ea82ecd92896ce6862fa5424c51f5c31a67296a592e5",
+    "presentationRevision": 1,
+    "title": "终点站没有下车的人",
+    "surface": "列车到达终点时车载计数显示少了一人，刷卡记录也有一名乘客未出站；站台录像却没有任何人留在车上。"
+  }
+]

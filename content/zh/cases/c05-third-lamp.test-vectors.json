@@ -1,0 +1,12 @@
+{
+  "caseId": "c05-third-lamp",
+  "normalizationVectors": [
+    { "id": "opening-blackout", "rawQuestion": "仓库真的停电了吗？", "expectedStatus": "matched", "expectedQueryId": "query-power-cut", "expectedMatchedBy": "exact" },
+    { "id": "opening-reflection", "rawQuestion": "第三盏灯是反光造成的吗？", "expectedStatus": "matched", "expectedQueryId": "query-reflection", "expectedMatchedBy": "exact" },
+    { "id": "unknown", "rawQuestion": "仓库今天收到了多少快递？", "expectedStatus": "unrecognized", "expectedQueryId": null, "expectedMatchedBy": "none" }
+  ],
+  "judgementVectors": [],
+  "orderVectors": [],
+  "antiLeakVectors": ["反光板", "没有第三条照明电路", "门禁记录排除了"],
+  "replayVector": { "expectedBeatIds": ["replay-c05-blackout", "replay-c05-lamp", "replay-c05-reflector", "replay-c05-witness", "replay-c05-audit"], "expectedEventIds": ["event-breaker-trips", "event-lamp-on", "event-reflection-appears", "event-witness-sees", "event-circuit-audited"] }
+}

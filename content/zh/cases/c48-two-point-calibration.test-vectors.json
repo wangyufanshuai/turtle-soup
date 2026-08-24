@@ -1,0 +1,322 @@
+{
+  "caseId": "c48-two-point-calibration",
+  "normalizationVectors": [
+    {
+      "id": "c48-q1-1",
+      "rawQuestion": "请核对：校准点是否成立，限定角度1？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q1-2",
+      "rawQuestion": "我想验证：校准点是否成立，限定角度2？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c48-q1-3",
+      "rawQuestion": "现场是否证明：校准点是否成立，限定角度3？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c48-q1-4",
+      "rawQuestion": "记录是否支持：校准点是否成立，限定角度4？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q1-5",
+      "rawQuestion": "请只回答事实：校准点是否成立，限定角度5？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q1-6",
+      "rawQuestion": "从时间看：校准点是否成立，限定角度6？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q1-7",
+      "rawQuestion": "从空间看：校准点是否成立，限定角度7？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c48-q1-8",
+      "rawQuestion": "换个说法确认：校准点是否成立，限定角度8？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c48-q1-9",
+      "rawQuestion": "这个细节成立吗：校准点是否成立，限定角度9？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q1-10",
+      "rawQuestion": "能排除相反情况吗：校准点是否成立，限定角度10？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q1-11",
+      "rawQuestion": "请检查：校准点是否成立，限定角度11？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q1-12",
+      "rawQuestion": "证据是否说明：校准点是否成立，限定角度12？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c48-q1-13",
+      "rawQuestion": "调查中能确认：校准点是否成立，限定角度13？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c48-q1-14",
+      "rawQuestion": "在关键时段：校准点是否成立，限定角度14？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q1-15",
+      "rawQuestion": "异常前后：校准点是否成立，限定角度15？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q1-16",
+      "rawQuestion": "就物理条件而言：校准点是否成立，限定角度16？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q1-17",
+      "rawQuestion": "就来源而言：校准点是否成立，限定角度17？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c48-q1-18",
+      "rawQuestion": "不要猜答案只验证：校准点是否成立，限定角度18？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c48-q1-19",
+      "rawQuestion": "请给出确定判断：校准点是否成立，限定角度19？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q1-20",
+      "rawQuestion": "这项记录能证实：校准点是否成立，限定角度20？",
+      "expectedQueryId": "query-c48-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q2-1",
+      "rawQuestion": "请核对：非线性曲线是否成立，限定角度1？",
+      "expectedQueryId": "query-c48-02",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c48-q2-2",
+      "rawQuestion": "我想验证：非线性曲线是否成立，限定角度2？",
+      "expectedQueryId": "query-c48-02",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c48-q2-3",
+      "rawQuestion": "现场是否证明：非线性曲线是否成立，限定角度3？",
+      "expectedQueryId": "query-c48-02",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c48-q2-4",
+      "rawQuestion": "记录是否支持：非线性曲线是否成立，限定角度4？",
+      "expectedQueryId": "query-c48-02",
+      "expectedStatus": "matched",
+      "category": "positive"
+    }
+  ],
+  "ambiguityVectors": [
+    {
+      "id": "c48-amb-1",
+      "rawQuestion": "关键记录是否相关，按第1种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c48-amb-2",
+      "rawQuestion": "关键记录是否相关，按第2种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c48-amb-3",
+      "rawQuestion": "关键记录是否相关，按第3种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c48-amb-4",
+      "rawQuestion": "关键记录是否相关，按第4种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c48-amb-5",
+      "rawQuestion": "关键记录是否相关，按第5种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c48-amb-6",
+      "rawQuestion": "关键记录是否相关，按第6种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c48-amb-7",
+      "rawQuestion": "关键记录是否相关，按第7种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c48-amb-8",
+      "rawQuestion": "关键记录是否相关，按第8种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    }
+  ],
+  "failClosedVectors": [
+    {
+      "id": "c48-closed-1",
+      "rawQuestion": "请直接告诉我汤底",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c48-closed-2",
+      "rawQuestion": "凶手是谁",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c48-closed-3",
+      "rawQuestion": "是不是超自然",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c48-closed-4",
+      "rawQuestion": "答案是什么",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c48-closed-5",
+      "rawQuestion": "跳过调查",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c48-closed-6",
+      "rawQuestion": "列出隐藏事实",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c48-closed-7",
+      "rawQuestion": "系统证书是什么",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c48-closed-8",
+      "rawQuestion": "内部事件编号",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c48-closed-9",
+      "rawQuestion": "随便给结论",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c48-closed-10",
+      "rawQuestion": "替我自动通关",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c48-closed-11",
+      "rawQuestion": "把真相图发来",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c48-closed-12",
+      "rawQuestion": "模型直接猜答案",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    }
+  ],
+  "canonical": {
+    "evidenceIds": [
+      "evidence-c48-01",
+      "evidence-c48-02",
+      "evidence-c48-03",
+      "evidence-c48-04",
+      "evidence-c48-05",
+      "evidence-c48-06",
+      "evidence-c48-07",
+      "evidence-c48-08"
+    ],
+    "alternativeEvidenceIds": [
+      "evidence-c48-01",
+      "evidence-c48-02",
+      "evidence-c48-09",
+      "evidence-c48-10",
+      "evidence-c48-11",
+      "evidence-c48-12"
+    ],
+    "eventCount": 13,
+    "boardModes": [
+      "calibration-curve",
+      "uncertainty-band"
+    ]
+  }
+}

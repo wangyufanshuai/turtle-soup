@@ -1,0 +1,2133 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c43-train-stop-reference",
+  "metadata": {
+    "titleKey": "case.c43.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "科学测量",
+      "复杂系统",
+      "来源边界"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:b62f3d79892166786eed51ef8d2bfa1c9490965aede7bad348461226f67b928b",
+    "status": "public-preview",
+    "seasonId": "season-4"
+  },
+  "presentation": {
+    "layoutId": "season4-control-loop",
+    "sceneAsset": "/assets/cases/c43/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c43/scene-mobile.svg",
+    "palette": "season4-c43",
+    "accent": "#c49bd8",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "control-loop-lab",
+    "mobileNavigation": [
+      "现场",
+      "记录",
+      "推理板"
+    ],
+    "boardMode": "control-loop"
+  },
+  "surface": {
+    "titleKey": "case.c43.title",
+    "textKey": "case.c43.surface",
+    "publicFactIds": [
+      "fact-c43-01",
+      "fact-c43-02",
+      "fact-c43-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c43-01",
+      "query-c43-02",
+      "query-c43-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c43-one",
+      "titleKey": "chapter.c43.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c43-1",
+      "titleKey": "board.c43.1.title",
+      "mode": "control-loop",
+      "slots": [
+        {
+          "id": "slot-c43-1-1",
+          "labelKey": "board.c43.1.slot.1",
+          "acceptsEventIds": [
+            "event-c43-01"
+          ]
+        },
+        {
+          "id": "slot-c43-1-2",
+          "labelKey": "board.c43.1.slot.2",
+          "acceptsEventIds": [
+            "event-c43-03"
+          ]
+        },
+        {
+          "id": "slot-c43-1-3",
+          "labelKey": "board.c43.1.slot.3",
+          "acceptsEventIds": [
+            "event-c43-05"
+          ]
+        },
+        {
+          "id": "slot-c43-1-4",
+          "labelKey": "board.c43.1.slot.4",
+          "acceptsEventIds": [
+            "event-c43-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "commands",
+        "feeds-back",
+        "settles"
+      ]
+    },
+    {
+      "id": "board-c43-2",
+      "titleKey": "board.c43.2.title",
+      "mode": "state-trace",
+      "slots": [
+        {
+          "id": "slot-c43-2-1",
+          "labelKey": "board.c43.2.slot.1",
+          "acceptsEventIds": [
+            "event-c43-02"
+          ]
+        },
+        {
+          "id": "slot-c43-2-2",
+          "labelKey": "board.c43.2.slot.2",
+          "acceptsEventIds": [
+            "event-c43-04"
+          ]
+        },
+        {
+          "id": "slot-c43-2-3",
+          "labelKey": "board.c43.2.slot.3",
+          "acceptsEventIds": [
+            "event-c43-06"
+          ]
+        },
+        {
+          "id": "slot-c43-2-4",
+          "labelKey": "board.c43.2.slot.4",
+          "acceptsEventIds": [
+            "event-c43-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "transitions-to",
+        "causes",
+        "explains"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c43-system",
+      "kind": "object",
+      "labelKey": "entity.c43.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c43",
+      "kind": "location",
+      "labelKey": "location.c43",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c43-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "14:00"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-1",
+      "labelKey": "event.c43.1",
+      "effectFactIds": [
+        "fact-c43-01"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "14:04"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-2",
+      "labelKey": "event.c43.2",
+      "effectFactIds": [
+        "fact-c43-02"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "14:08"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-3",
+      "labelKey": "event.c43.3",
+      "effectFactIds": [
+        "fact-c43-03"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "14:12"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-4",
+      "labelKey": "event.c43.4",
+      "effectFactIds": [
+        "fact-c43-04"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "14:16"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-5",
+      "labelKey": "event.c43.5",
+      "effectFactIds": [
+        "fact-c43-05"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "14:20"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-6",
+      "labelKey": "event.c43.6",
+      "effectFactIds": [
+        "fact-c43-06"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "14:24"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-7",
+      "labelKey": "event.c43.7",
+      "effectFactIds": [
+        "fact-c43-07"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "15:28"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-8",
+      "labelKey": "event.c43.8",
+      "effectFactIds": [
+        "fact-c43-08"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "15:32"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-9",
+      "labelKey": "event.c43.9",
+      "effectFactIds": [
+        "fact-c43-09"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "15:36"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-10",
+      "labelKey": "event.c43.10",
+      "effectFactIds": [
+        "fact-c43-10"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "15:40"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-11",
+      "labelKey": "event.c43.11",
+      "effectFactIds": [
+        "fact-c43-11"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "15:44"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-12",
+      "labelKey": "event.c43.12",
+      "effectFactIds": [
+        "fact-c43-12"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c43-13",
+      "order": 130,
+      "time": {
+        "kind": "instant",
+        "value": "15:48"
+      },
+      "participants": [
+        "entity-c43-system"
+      ],
+      "locationId": "location-c43",
+      "action": "step-c43-13",
+      "labelKey": "event.c43.13",
+      "effectFactIds": [
+        "fact-c43-13"
+      ],
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c43-1-1",
+      "type": "precedes",
+      "fromId": "entity-c43-system",
+      "toId": "location-c43",
+      "eventId": "event-c43-01",
+      "factId": "fact-c43-01"
+    },
+    {
+      "id": "relation-c43-1-2",
+      "type": "causes",
+      "fromId": "entity-c43-system",
+      "toId": "location-c43",
+      "eventId": "event-c43-03",
+      "factId": "fact-c43-02"
+    },
+    {
+      "id": "relation-c43-1-3",
+      "type": "causes",
+      "fromId": "entity-c43-system",
+      "toId": "location-c43",
+      "eventId": "event-c43-05",
+      "factId": "fact-c43-03"
+    },
+    {
+      "id": "relation-c43-2-1",
+      "type": "precedes",
+      "fromId": "entity-c43-system",
+      "toId": "location-c43",
+      "eventId": "event-c43-02",
+      "factId": "fact-c43-02"
+    },
+    {
+      "id": "relation-c43-2-2",
+      "type": "causes",
+      "fromId": "entity-c43-system",
+      "toId": "location-c43",
+      "eventId": "event-c43-04",
+      "factId": "fact-c43-03"
+    },
+    {
+      "id": "relation-c43-2-3",
+      "type": "causes",
+      "fromId": "entity-c43-system",
+      "toId": "location-c43",
+      "eventId": "event-c43-06",
+      "factId": "fact-c43-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c43-01",
+      "predicate": "verified_c43_1",
+      "args": {
+        "term": "制动控制点"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.1"
+    },
+    {
+      "id": "fact-c43-02",
+      "predicate": "verified_c43_2",
+      "args": {
+        "term": "红线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.2"
+    },
+    {
+      "id": "fact-c43-03",
+      "predicate": "verified_c43_3",
+      "args": {
+        "term": "车轮停止点"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.3"
+    },
+    {
+      "id": "fact-c43-04",
+      "predicate": "verified_c43_4",
+      "args": {
+        "term": "车头标记"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.4"
+    },
+    {
+      "id": "fact-c43-05",
+      "predicate": "verified_c43_5",
+      "args": {
+        "term": "制动反馈"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.5"
+    },
+    {
+      "id": "fact-c43-06",
+      "predicate": "verified_c43_6",
+      "args": {
+        "term": "轨旁信标"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.6"
+    },
+    {
+      "id": "fact-c43-07",
+      "predicate": "verified_c43_7",
+      "args": {
+        "term": "停车状态"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.7"
+    },
+    {
+      "id": "fact-c43-08",
+      "predicate": "verified_c43_8",
+      "args": {
+        "term": "车厢长度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.8"
+    },
+    {
+      "id": "fact-c43-09",
+      "predicate": "verified_c43_9",
+      "args": {
+        "term": "司机界面"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.9"
+    },
+    {
+      "id": "fact-c43-10",
+      "predicate": "verified_c43_10",
+      "args": {
+        "term": "位置参照"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.10"
+    },
+    {
+      "id": "fact-c43-11",
+      "predicate": "verified_c43_11",
+      "args": {
+        "term": "制动控制点"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.11"
+    },
+    {
+      "id": "fact-c43-12",
+      "predicate": "verified_c43_12",
+      "args": {
+        "term": "红线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-12"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c43.12"
+    },
+    {
+      "id": "fact-c43-13",
+      "predicate": "verified_c43_13",
+      "args": {
+        "term": "车轮停止点"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-13"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-13"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-13"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c43.13"
+    },
+    {
+      "id": "fact-c43-14",
+      "predicate": "verified_c43_14",
+      "args": {
+        "term": "车头标记"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c43.14"
+    },
+    {
+      "id": "fact-c43-15",
+      "predicate": "verified_c43_15",
+      "args": {
+        "term": "制动反馈"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c43.15"
+    },
+    {
+      "id": "fact-c43-16",
+      "predicate": "verified_c43_16",
+      "args": {
+        "term": "轨旁信标"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c43.16"
+    },
+    {
+      "id": "fact-c43-17",
+      "predicate": "verified_c43_17",
+      "args": {
+        "term": "停车状态"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c43.17"
+    },
+    {
+      "id": "fact-c43-18",
+      "predicate": "verified_c43_18",
+      "args": {
+        "term": "车厢长度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c43.18"
+    },
+    {
+      "id": "fact-c43-19",
+      "predicate": "verified_c43_19",
+      "args": {
+        "term": "司机界面"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c43-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c43-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c43.19"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c43-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-01",
+        "fact-c43-02",
+        "fact-c43-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c43-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-01",
+        "fact-c43-02",
+        "fact-c43-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c43-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-02",
+        "fact-c43-15"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c43-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-03",
+        "fact-c43-16"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c43-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-04",
+        "fact-c43-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c43-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-05",
+        "fact-c43-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c43-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-06",
+        "fact-c43-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c43-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-07"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c43-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-08"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c43-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c43-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c43-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c43-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-12"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c43-13",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c43-13"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c43-13"
+      ],
+      "spoilerLevel": "sensitive"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c43-01",
+      "labelKey": "query.c43.1",
+      "intent": "verify",
+      "predicate": "verified_c43_1",
+      "slots": {
+        "subjectId": "entity-c43-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c43-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-opening"
+      ],
+      "examplePhrases": [
+        "制动控制点是否成立？",
+        "能确认制动控制点吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "制动控制点"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c43-02",
+      "labelKey": "query.c43.2",
+      "intent": "verify",
+      "predicate": "verified_c43_2",
+      "slots": {
+        "subjectId": "entity-c43-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c43-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-opening"
+      ],
+      "examplePhrases": [
+        "红线是否成立？",
+        "能确认红线吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "红线"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c43-03",
+      "labelKey": "query.c43.3",
+      "intent": "verify",
+      "predicate": "verified_c43_3",
+      "slots": {
+        "subjectId": "entity-c43-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c43-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-opening"
+      ],
+      "examplePhrases": [
+        "车轮停止点是否成立？",
+        "能确认车轮停止点吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "车轮停止点"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c43-04",
+      "labelKey": "query.c43.4",
+      "intent": "verify",
+      "predicate": "verified_c43_4",
+      "slots": {
+        "subjectId": "entity-c43-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c43-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-04"
+      ],
+      "examplePhrases": [
+        "车头标记是否成立？",
+        "能确认车头标记吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "车头标记"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c43-05",
+      "labelKey": "query.c43.5",
+      "intent": "verify",
+      "predicate": "verified_c43_5",
+      "slots": {
+        "subjectId": "entity-c43-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c43-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-05"
+      ],
+      "examplePhrases": [
+        "制动反馈是否成立？",
+        "能确认制动反馈吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "制动反馈"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c43-06",
+      "labelKey": "query.c43.6",
+      "intent": "verify",
+      "predicate": "verified_c43_6",
+      "slots": {
+        "subjectId": "entity-c43-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c43-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-06"
+      ],
+      "examplePhrases": [
+        "轨旁信标是否成立？",
+        "能确认轨旁信标吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "轨旁信标"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c43-07",
+      "labelKey": "query.c43.7",
+      "intent": "verify",
+      "predicate": "verified_c43_7",
+      "slots": {
+        "subjectId": "entity-c43-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c43-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-07"
+      ],
+      "examplePhrases": [
+        "停车状态是否成立？",
+        "能确认停车状态吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "停车状态"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c43-08",
+      "labelKey": "query.c43.8",
+      "intent": "verify",
+      "predicate": "verified_c43_8",
+      "slots": {
+        "subjectId": "entity-c43-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c43-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-08"
+      ],
+      "examplePhrases": [
+        "车厢长度是否成立？",
+        "能确认车厢长度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "车厢长度"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c43-09",
+      "labelKey": "query.c43.9",
+      "intent": "verify",
+      "predicate": "verified_c43_9",
+      "slots": {
+        "subjectId": "entity-c43-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c43-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-09"
+      ],
+      "examplePhrases": [
+        "司机界面是否成立？",
+        "能确认司机界面吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "司机界面"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c43-10",
+      "labelKey": "query.c43.10",
+      "intent": "verify",
+      "predicate": "verified_c43_10",
+      "slots": {
+        "subjectId": "entity-c43-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c43-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c43-10"
+      ],
+      "examplePhrases": [
+        "位置参照是否成立？",
+        "能确认位置参照吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "位置参照"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c43-01",
+      "kind": "scene",
+      "titleKey": "evidence.c43.1.title",
+      "observationKey": "evidence.c43.1.observation",
+      "sourceFactIds": [
+        "fact-c43-01",
+        "fact-c43-02",
+        "fact-c43-03"
+      ],
+      "sourceEventIds": [
+        "event-c43-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c43-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-01.svg",
+      "assetAlt": "制动控制点"
+    },
+    {
+      "id": "evidence-c43-02",
+      "kind": "record",
+      "titleKey": "evidence.c43.2.title",
+      "observationKey": "evidence.c43.2.observation",
+      "sourceFactIds": [
+        "fact-c43-02",
+        "fact-c43-15"
+      ],
+      "sourceEventIds": [
+        "event-c43-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c43-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-02.svg",
+      "assetAlt": "红线"
+    },
+    {
+      "id": "evidence-c43-03",
+      "kind": "object",
+      "titleKey": "evidence.c43.3.title",
+      "observationKey": "evidence.c43.3.observation",
+      "sourceFactIds": [
+        "fact-c43-03",
+        "fact-c43-16"
+      ],
+      "sourceEventIds": [
+        "event-c43-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-03.svg",
+      "assetAlt": "车轮停止点"
+    },
+    {
+      "id": "evidence-c43-04",
+      "kind": "scene",
+      "titleKey": "evidence.c43.4.title",
+      "observationKey": "evidence.c43.4.observation",
+      "sourceFactIds": [
+        "fact-c43-04",
+        "fact-c43-17"
+      ],
+      "sourceEventIds": [
+        "event-c43-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-04.svg",
+      "assetAlt": "车头标记"
+    },
+    {
+      "id": "evidence-c43-05",
+      "kind": "record",
+      "titleKey": "evidence.c43.5.title",
+      "observationKey": "evidence.c43.5.observation",
+      "sourceFactIds": [
+        "fact-c43-05",
+        "fact-c43-18"
+      ],
+      "sourceEventIds": [
+        "event-c43-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-05.svg",
+      "assetAlt": "制动反馈"
+    },
+    {
+      "id": "evidence-c43-06",
+      "kind": "object",
+      "titleKey": "evidence.c43.6.title",
+      "observationKey": "evidence.c43.6.observation",
+      "sourceFactIds": [
+        "fact-c43-06",
+        "fact-c43-19"
+      ],
+      "sourceEventIds": [
+        "event-c43-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-01.svg",
+      "assetAlt": "轨旁信标"
+    },
+    {
+      "id": "evidence-c43-07",
+      "kind": "scene",
+      "titleKey": "evidence.c43.7.title",
+      "observationKey": "evidence.c43.7.observation",
+      "sourceFactIds": [
+        "fact-c43-07"
+      ],
+      "sourceEventIds": [
+        "event-c43-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-02.svg",
+      "assetAlt": "停车状态"
+    },
+    {
+      "id": "evidence-c43-08",
+      "kind": "record",
+      "titleKey": "evidence.c43.8.title",
+      "observationKey": "evidence.c43.8.observation",
+      "sourceFactIds": [
+        "fact-c43-08"
+      ],
+      "sourceEventIds": [
+        "event-c43-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-03.svg",
+      "assetAlt": "车厢长度"
+    },
+    {
+      "id": "evidence-c43-09",
+      "kind": "object",
+      "titleKey": "evidence.c43.9.title",
+      "observationKey": "evidence.c43.9.observation",
+      "sourceFactIds": [
+        "fact-c43-09"
+      ],
+      "sourceEventIds": [
+        "event-c43-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-04.svg",
+      "assetAlt": "司机界面"
+    },
+    {
+      "id": "evidence-c43-10",
+      "kind": "scene",
+      "titleKey": "evidence.c43.10.title",
+      "observationKey": "evidence.c43.10.observation",
+      "sourceFactIds": [
+        "fact-c43-10"
+      ],
+      "sourceEventIds": [
+        "event-c43-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-05.svg",
+      "assetAlt": "位置参照"
+    },
+    {
+      "id": "evidence-c43-11",
+      "kind": "record",
+      "titleKey": "evidence.c43.11.title",
+      "observationKey": "evidence.c43.11.observation",
+      "sourceFactIds": [
+        "fact-c43-11"
+      ],
+      "sourceEventIds": [
+        "event-c43-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-01.svg",
+      "assetAlt": "制动控制点"
+    },
+    {
+      "id": "evidence-c43-12",
+      "kind": "object",
+      "titleKey": "evidence.c43.12.title",
+      "observationKey": "evidence.c43.12.observation",
+      "sourceFactIds": [
+        "fact-c43-12"
+      ],
+      "sourceEventIds": [
+        "event-c43-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c43/evidence-02.svg",
+      "assetAlt": "红线"
+    },
+    {
+      "id": "evidence-c43-13",
+      "kind": "scene",
+      "titleKey": "evidence.c43.13.title",
+      "observationKey": "evidence.c43.13.observation",
+      "sourceFactIds": [
+        "fact-c43-13"
+      ],
+      "sourceEventIds": [
+        "event-c43-13"
+      ],
+      "relatedEntityIds": [
+        "entity-c43-system",
+        "location-c43"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c43/evidence-03.svg",
+      "assetAlt": "车轮停止点"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c43.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c43-01",
+          "event-c43-02",
+          "event-c43-03",
+          "event-c43-04",
+          "event-c43-05",
+          "event-c43-06",
+          "event-c43-07",
+          "event-c43-08",
+          "event-c43-09",
+          "event-c43-10",
+          "event-c43-11",
+          "event-c43-12"
+        ],
+        "motiveKey": "在自动停车系统中区分控制状态和几何位置"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c43-01",
+        "evidence-c43-02",
+        "evidence-c43-03",
+        "evidence-c43-04",
+        "evidence-c43-05",
+        "evidence-c43-06",
+        "evidence-c43-07",
+        "evidence-c43-08",
+        "evidence-c43-09",
+        "evidence-c43-10",
+        "evidence-c43-11",
+        "evidence-c43-12"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c43-1",
+        "contradiction-c43-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c43-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c43.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "列车偷偷越过了红线"
+        ],
+        "motiveKey": "motive-c43-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c43-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c43-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c43-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c43.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "司机界面显示错误位置"
+        ],
+        "motiveKey": "motive-c43-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c43-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c43-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c43-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c43-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c43-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c43-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c43-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c43-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c43-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c43-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c43-01",
+      "fact-c43-02",
+      "fact-c43-03",
+      "fact-c43-04",
+      "fact-c43-05",
+      "fact-c43-06",
+      "fact-c43-07",
+      "fact-c43-08",
+      "fact-c43-09",
+      "fact-c43-10",
+      "fact-c43-11",
+      "fact-c43-12"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c43-01",
+      "evidence-c43-02",
+      "evidence-c43-03",
+      "evidence-c43-04",
+      "evidence-c43-05",
+      "evidence-c43-06",
+      "evidence-c43-07",
+      "evidence-c43-08",
+      "evidence-c43-09",
+      "evidence-c43-10",
+      "evidence-c43-11",
+      "evidence-c43-12"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c43-01",
+        "event-c43-02"
+      ],
+      [
+        "event-c43-02",
+        "event-c43-03"
+      ],
+      [
+        "event-c43-03",
+        "event-c43-04"
+      ],
+      [
+        "event-c43-04",
+        "event-c43-05"
+      ],
+      [
+        "event-c43-05",
+        "event-c43-06"
+      ],
+      [
+        "event-c43-06",
+        "event-c43-07"
+      ],
+      [
+        "event-c43-07",
+        "event-c43-08"
+      ],
+      [
+        "event-c43-08",
+        "event-c43-09"
+      ],
+      [
+        "event-c43-09",
+        "event-c43-10"
+      ],
+      [
+        "event-c43-10",
+        "event-c43-11"
+      ],
+      [
+        "event-c43-11",
+        "event-c43-12"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c43-1",
+      "contradiction-c43-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c43-alternative-1",
+      "hypothesis-c43-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c43-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c43-a",
+        "evidenceIds": [
+          "evidence-c43-01",
+          "evidence-c43-02",
+          "evidence-c43-03",
+          "evidence-c43-04",
+          "evidence-c43-05",
+          "evidence-c43-06",
+          "evidence-c43-07",
+          "evidence-c43-08"
+        ]
+      },
+      {
+        "id": "proof-c43-b",
+        "evidenceIds": [
+          "evidence-c43-01",
+          "evidence-c43-02",
+          "evidence-c43-09",
+          "evidence-c43-10",
+          "evidence-c43-11",
+          "evidence-c43-12"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "在自动停车系统中区分控制状态和几何位置"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c43-1",
+        "kind": "state-transition",
+        "boardId": "board-c43-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c43-1-1",
+            "eventId": "event-c43-01"
+          },
+          {
+            "slotId": "slot-c43-1-2",
+            "eventId": "event-c43-03"
+          },
+          {
+            "slotId": "slot-c43-1-3",
+            "eventId": "event-c43-05"
+          },
+          {
+            "slotId": "slot-c43-1-4",
+            "eventId": "event-c43-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c43-01",
+            "toEventId": "event-c43-03",
+            "relation": "commands"
+          },
+          {
+            "fromEventId": "event-c43-03",
+            "toEventId": "event-c43-05",
+            "relation": "commands"
+          },
+          {
+            "fromEventId": "event-c43-05",
+            "toEventId": "event-c43-12",
+            "relation": "commands"
+          }
+        ],
+        "failureCategory": "state-transition"
+      },
+      {
+        "id": "obligation-c43-2",
+        "kind": "state-transition",
+        "boardId": "board-c43-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c43-2-1",
+            "eventId": "event-c43-02"
+          },
+          {
+            "slotId": "slot-c43-2-2",
+            "eventId": "event-c43-04"
+          },
+          {
+            "slotId": "slot-c43-2-3",
+            "eventId": "event-c43-06"
+          },
+          {
+            "slotId": "slot-c43-2-4",
+            "eventId": "event-c43-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c43-02",
+            "toEventId": "event-c43-04",
+            "relation": "transitions-to"
+          },
+          {
+            "fromEventId": "event-c43-04",
+            "toEventId": "event-c43-06",
+            "relation": "transitions-to"
+          },
+          {
+            "fromEventId": "event-c43-06",
+            "toEventId": "event-c43-12",
+            "relation": "transitions-to"
+          }
+        ],
+        "failureCategory": "state-transition"
+      }
+    ],
+    "uniquenessClaim": "制动控制点、车头标记和车轮实际停止点采用不同参照位置；控制反馈正确但不等于车轮位置。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c43-1",
+      "eventId": "event-c43-02",
+      "factIds": [
+        "fact-c43-01"
+      ],
+      "captionKey": "event.c43.2"
+    },
+    {
+      "id": "replay-c43-2",
+      "eventId": "event-c43-03",
+      "factIds": [
+        "fact-c43-02"
+      ],
+      "captionKey": "event.c43.3"
+    },
+    {
+      "id": "replay-c43-3",
+      "eventId": "event-c43-04",
+      "factIds": [
+        "fact-c43-03"
+      ],
+      "captionKey": "event.c43.4"
+    },
+    {
+      "id": "replay-c43-4",
+      "eventId": "event-c43-05",
+      "factIds": [
+        "fact-c43-04"
+      ],
+      "captionKey": "event.c43.5"
+    },
+    {
+      "id": "replay-c43-5",
+      "eventId": "event-c43-06",
+      "factIds": [
+        "fact-c43-05"
+      ],
+      "captionKey": "event.c43.6"
+    },
+    {
+      "id": "replay-c43-6",
+      "eventId": "event-c43-07",
+      "factIds": [
+        "fact-c43-01",
+        "fact-c43-02",
+        "fact-c43-03",
+        "fact-c43-04",
+        "fact-c43-05",
+        "fact-c43-06",
+        "fact-c43-07",
+        "fact-c43-08",
+        "fact-c43-09",
+        "fact-c43-10",
+        "fact-c43-11",
+        "fact-c43-12"
+      ],
+      "captionKey": "event.c43.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c43.title": "停在红线外的列车",
+      "case.c43.surface": "驾驶台显示列车已停在红线外，车轮标记却压过了红线。",
+      "case.c43.truth": "制动控制点、车头标记和车轮实际停止点采用不同参照位置；控制反馈正确但不等于车轮位置。",
+      "entity.c43.system": "测量系统与记录链",
+      "location.c43": "科学系统现场",
+      "hypothesis.c43.canonical": "制动控制点、车头标记和车轮实际停止点采用不同参照位置；控制反馈正确但不等于车轮位置。",
+      "hypothesis.c43.alternative.1": "列车偷偷越过了红线",
+      "hypothesis.c43.alternative.2": "司机界面显示错误位置",
+      "motive.在自动停车系统中区分控制状态和几何位置": "在自动停车系统中区分控制状态和几何位置",
+      "chapter.c43.one": "固定异常",
+      "chapter.c43.two": "统一测量边界",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c43.1": "制动控制点是否成立？",
+      "query.c43.2": "红线是否成立？",
+      "query.c43.3": "车轮停止点是否成立？",
+      "query.c43.4": "车头标记是否成立？",
+      "query.c43.5": "制动反馈是否成立？",
+      "query.c43.6": "轨旁信标是否成立？",
+      "query.c43.7": "停车状态是否成立？",
+      "query.c43.8": "车厢长度是否成立？",
+      "query.c43.9": "司机界面是否成立？",
+      "query.c43.10": "位置参照是否成立？",
+      "event.c43.1": "阶段 1：制动控制点进入记录链",
+      "event.c43.2": "阶段 2：红线进入记录链",
+      "event.c43.3": "阶段 3：车轮停止点进入记录链",
+      "event.c43.4": "阶段 4：车头标记进入记录链",
+      "event.c43.5": "阶段 5：制动反馈进入记录链",
+      "event.c43.6": "阶段 6：轨旁信标进入记录链",
+      "event.c43.7": "阶段 7：停车状态进入记录链",
+      "event.c43.8": "阶段 8：车厢长度进入记录链",
+      "event.c43.9": "阶段 9：司机界面进入记录链",
+      "event.c43.10": "阶段 10：位置参照进入记录链",
+      "event.c43.11": "阶段 11：制动控制点进入记录链",
+      "event.c43.12": "阶段 12：红线进入记录链",
+      "event.c43.13": "阶段 13：车轮停止点进入记录链",
+      "evidence.c43.1.title": "制动控制点记录",
+      "evidence.c43.1.observation": "来源记录显示“制动控制点”在该阶段保持可复核。",
+      "evidence.c43.2.title": "红线记录",
+      "evidence.c43.2.observation": "来源记录显示“红线”在该阶段保持可复核。",
+      "evidence.c43.3.title": "车轮停止点记录",
+      "evidence.c43.3.observation": "来源记录显示“车轮停止点”在该阶段保持可复核。",
+      "evidence.c43.4.title": "车头标记记录",
+      "evidence.c43.4.observation": "来源记录显示“车头标记”在该阶段保持可复核。",
+      "evidence.c43.5.title": "制动反馈记录",
+      "evidence.c43.5.observation": "来源记录显示“制动反馈”在该阶段保持可复核。",
+      "evidence.c43.6.title": "轨旁信标记录",
+      "evidence.c43.6.observation": "来源记录显示“轨旁信标”在该阶段保持可复核。",
+      "evidence.c43.7.title": "停车状态记录",
+      "evidence.c43.7.observation": "来源记录显示“停车状态”在该阶段保持可复核。",
+      "evidence.c43.8.title": "车厢长度记录",
+      "evidence.c43.8.observation": "来源记录显示“车厢长度”在该阶段保持可复核。",
+      "evidence.c43.9.title": "司机界面记录",
+      "evidence.c43.9.observation": "来源记录显示“司机界面”在该阶段保持可复核。",
+      "evidence.c43.10.title": "位置参照记录",
+      "evidence.c43.10.observation": "来源记录显示“位置参照”在该阶段保持可复核。",
+      "evidence.c43.11.title": "制动控制点记录",
+      "evidence.c43.11.observation": "来源记录显示“制动控制点”在该阶段保持可复核。",
+      "evidence.c43.12.title": "红线记录",
+      "evidence.c43.12.observation": "来源记录显示“红线”在该阶段保持可复核。",
+      "evidence.c43.13.title": "车轮停止点记录",
+      "evidence.c43.13.observation": "来源记录显示“车轮停止点”在该阶段保持可复核。",
+      "board.c43.1.title": "停在红线外的列车 · control-loop",
+      "board.c43.1.slot.1": "起始来源",
+      "board.c43.1.slot.2": "关键变化",
+      "board.c43.1.slot.3": "观测结果",
+      "board.c43.1.slot.4": "排除替代",
+      "board.c43.2.title": "停在红线外的列车 · state-trace",
+      "board.c43.2.slot.1": "起始来源",
+      "board.c43.2.slot.2": "关键变化",
+      "board.c43.2.slot.3": "观测结果",
+      "board.c43.2.slot.4": "排除替代"
+    }
+  }
+}
