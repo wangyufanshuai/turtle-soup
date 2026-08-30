@@ -8,6 +8,7 @@ const MODE_LABELS: Record<string, string> = { "state-trace": "状态转换", "sp
 const RELATION_LABELS: Record<string, string> = { causes: "导致", precedes: "先于", explains: "解释", "transitions-to": "转换为", synchronizes: "同步于", "moves-to": "移动至", overlaps: "重叠", "transfers-to": "转移至", "recorded-by": "记录于", verifies: "验证", "appears-as": "呈现为", "assigned-to": "分配给", excludes: "排除", "measured-against": "相对测量", corrects: "校正", "sampled-before": "先采样", buffers: "缓冲至", "contributes-to": "计入", "sums-with": "合计", exceeds: "超过", calibrates: "校准", interpolates: "插值", bounds: "界定", commands: "命令", "feeds-back": "反馈", settles: "稳定", propagates: "传播", reconstructs: "重建", "routes-through": "经过路由", deduplicates: "去重", acknowledges: "确认", reframes: "重设参照", projects: "投影", aligns: "对齐", enqueues: "入队", merges: "合并", dequeues: "出队" };
 const MODE_GUIDES: Record<string, string> = { "state-trace": "选择事件，再放入触发、保持、复位或观察状态；相邻状态必须由公开证据支持。", "spatial-map": "先固定参照物，再把路径与位置放到对应区域；位置标签不等于真实移动。", "provenance-chain": "沿来源与保管顺序追踪记录，确认每次转移由谁证明。", "identity-matrix": "逐格分开人物、外观、岗位与凭证；同一标签不能替代人物身份。", "measurement-model": "区分真实量、基准和显示值，标出校正关系。", "sampling-window": "排列采集、缓冲与显示窗口，避免把呈现时间当作发生时间。", "aggregate-constraint": "把各分量接入总体约束，检查单项合规是否仍导致总量超限。", "calibration-curve": "把公开事件放到参考点、中段和误差区，再连接校准与插值关系。", "control-loop": "沿命令、反馈和稳定状态追踪控制回路，不把界面状态当成执行结果。", "signal-chain": "从采集端开始逐段放置信号，直接连接缓冲、传输、回放与显示边界。", "network-topology": "把数据包放回路由拓扑，检查去重、确认和重传关系。", "uncertainty-band": "把估计值和不确定性范围一起排列，避免把连续图形当成连续采样。", "reference-frame": "先固定坐标和基准，再比较位置、方向或高度。", "queue-model": "排列进入、合并和离开队列的事件，验证一次输出是否代表多个来源。", timeline: "把事件直接放入时间槽；使用箭头调整先后，再连接关键因果。" };
 const DIRECT_MODES = new Set(["timeline", "state-trace", "spatial-map", "provenance-chain", "identity-matrix", "measurement-model", "sampling-window", "aggregate-constraint", "calibration-curve", "control-loop", "signal-chain", "network-topology", "uncertainty-band", "reference-frame", "queue-model"]);
+function boardTitle(title: string, mode: string) { return title.replace(new RegExp(`\\s*[·•]\\s*${mode.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*$`, "iu"), ""); }
 
 export function ReasoningBoard({ board, dispatch }: { board: ReasoningBoardProjection; dispatch: (command: GameCommand) => void }) {
   const placed = useMemo(() => board.slots.map((slot) => slot.itemId).filter((value): value is string => Boolean(value)), [board.slots]);
@@ -38,7 +39,7 @@ export function ReasoningBoard({ board, dispatch }: { board: ReasoningBoardProje
   };
 
   return <section className={styles.board} data-reasoning-surface="board" data-mode={board.mode} data-direct={direct || undefined} aria-label={`${MODE_LABELS[board.mode] ?? board.mode}推理板`}>
-    <header><div><small>{MODE_LABELS[board.mode] ?? board.mode}</small><h3>{board.title}</h3></div><b>{placed.length}/{board.slots.length}</b></header>
+    <header><div><small>{MODE_LABELS[board.mode] ?? "推理板"}</small><h3>{boardTitle(board.title, board.mode)}</h3></div><b>{placed.length}/{board.slots.length}</b></header>
     <p className={styles.modeGuide}>{MODE_GUIDES[board.mode] ?? "把公开事件放入可验证关系。"}</p>
 
     {direct ? <>

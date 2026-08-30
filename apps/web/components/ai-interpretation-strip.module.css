@@ -1,0 +1,9 @@
+.strip { display:grid; gap:.55rem; padding:.7rem .8rem; border-left:3px solid var(--acid); background:rgba(184,207,121,.055); }
+.strip > div:first-child { display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; }
+.strip small { color:var(--acid); font:.68rem var(--mono); letter-spacing:.08em; }
+.strip b { font-size:.78rem; font-weight:500; }
+.strip span { color:var(--muted); font-size:.7rem; }
+.candidates { display:grid; gap:.4rem; }
+.candidates button { display:flex; justify-content:space-between; gap:1rem; text-align:left; border:1px solid var(--line-strong); background:var(--panel-deep); color:var(--paper); padding:.55rem .65rem; cursor:pointer; }
+.candidates button:hover { border-color:var(--acid); }
+.manual, .strip > button { justify-self:start; border:0; background:transparent; color:var(--paper); padding:.25rem 0; text-decoration:underline; cursor:pointer; }

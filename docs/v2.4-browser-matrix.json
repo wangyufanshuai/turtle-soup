@@ -1,0 +1,4149 @@
+{
+  "reportVersion": "2.4",
+  "releaseProfile": "v2.4-internal-rc",
+  "generatedAt": "2026-08-30T03:10:39.285Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "engines": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "viewports": [
+    "1440x900",
+    "390x844"
+  ],
+  "caseCount": 60,
+  "representativeIds": [
+    "c01-cold-room-knock",
+    "c03-second-shadow",
+    "c13-second-waterline",
+    "c25-silent-second-bell",
+    "c33-early-late-arrival",
+    "c48-two-point-calibration",
+    "c60-last-sample-before-stop"
+  ],
+  "routeSmoke": [
+    {
+      "browser": "chromium",
+      "viewport": "1440x900",
+      "home": {
+        "continueVisible": true,
+        "seasonVisible": true,
+        "caseVisibleInFirstViewport": true,
+        "overflow": 0
+      },
+      "routes": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c14-moving-red-box",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c15-sixth-panorama",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c16-closed-door-handoff",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c17-twelve-strikes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c18-lighter-sealed-crate",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c19-fog-after-window",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c20-fifth-worker",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c21-missing-seven-minutes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c22-overloaded-bridge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c23-clean-air-sample",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c24-turned-painting",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c26-short-map-pipeline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c27-stationary-moving-platform",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c28-ninth-minute-temperature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c29-role-stamp-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c30-shared-shift-id",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c32-approved-unauthorized-door",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c34-tomorrow-seal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c35-extra-glass-attendant",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c36-no-one-left-terminal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c37-zeroed-pressure-gauge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c38-no-missing-seventh-packet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c39-duplicated-heartbeat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c40-early-liquid-front",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c41-hysteresis-overheat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c42-same-weight-different-load",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c43-train-stop-reference",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c44-hidden-overload-spike",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c45-double-location-second",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c46-pilot-pressure-valve",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c47-offline-buffered-device",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c49-gimbal-turn-drone",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c50-extra-warehouse-pallet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c51-equivalent-resistance",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c52-shorter-river-night",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c53-late-fiber-echo",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c54-elevator-counterweight",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c55-merged-multi-alarm",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c56-interpolated-temperature-map",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c57-lagging-wind-vane",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c58-same-volume-two-levels",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c59-extra-ninth-floor",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "unknownStrict404": true,
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "viewport": "390x844",
+      "home": {
+        "continueVisible": true,
+        "seasonVisible": true,
+        "caseVisibleInFirstViewport": true,
+        "overflow": 0
+      },
+      "routes": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c14-moving-red-box",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c15-sixth-panorama",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c16-closed-door-handoff",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c17-twelve-strikes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c18-lighter-sealed-crate",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c19-fog-after-window",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c20-fifth-worker",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c21-missing-seven-minutes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c22-overloaded-bridge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c23-clean-air-sample",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c24-turned-painting",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c26-short-map-pipeline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c27-stationary-moving-platform",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c28-ninth-minute-temperature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c29-role-stamp-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c30-shared-shift-id",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c32-approved-unauthorized-door",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c34-tomorrow-seal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c35-extra-glass-attendant",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c36-no-one-left-terminal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c37-zeroed-pressure-gauge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c38-no-missing-seventh-packet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c39-duplicated-heartbeat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c40-early-liquid-front",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c41-hysteresis-overheat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c42-same-weight-different-load",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c43-train-stop-reference",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c44-hidden-overload-spike",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c45-double-location-second",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c46-pilot-pressure-valve",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c47-offline-buffered-device",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c49-gimbal-turn-drone",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c50-extra-warehouse-pallet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c51-equivalent-resistance",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c52-shorter-river-night",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c53-late-fiber-echo",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c54-elevator-counterweight",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c55-merged-multi-alarm",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c56-interpolated-temperature-map",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c57-lagging-wind-vane",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c58-same-volume-two-levels",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c59-extra-ninth-floor",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "unknownStrict404": true,
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "viewport": "1440x900",
+      "home": {
+        "continueVisible": true,
+        "seasonVisible": true,
+        "caseVisibleInFirstViewport": true,
+        "overflow": 0
+      },
+      "routes": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c14-moving-red-box",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c15-sixth-panorama",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c16-closed-door-handoff",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c17-twelve-strikes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c18-lighter-sealed-crate",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c19-fog-after-window",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c20-fifth-worker",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c21-missing-seven-minutes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c22-overloaded-bridge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c23-clean-air-sample",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c24-turned-painting",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c26-short-map-pipeline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c27-stationary-moving-platform",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c28-ninth-minute-temperature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c29-role-stamp-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c30-shared-shift-id",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c32-approved-unauthorized-door",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c34-tomorrow-seal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c35-extra-glass-attendant",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c36-no-one-left-terminal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c37-zeroed-pressure-gauge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c38-no-missing-seventh-packet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c39-duplicated-heartbeat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c40-early-liquid-front",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c41-hysteresis-overheat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c42-same-weight-different-load",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c43-train-stop-reference",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c44-hidden-overload-spike",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c45-double-location-second",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c46-pilot-pressure-valve",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c47-offline-buffered-device",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c49-gimbal-turn-drone",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c50-extra-warehouse-pallet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c51-equivalent-resistance",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c52-shorter-river-night",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c53-late-fiber-echo",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c54-elevator-counterweight",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c55-merged-multi-alarm",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c56-interpolated-temperature-map",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c57-lagging-wind-vane",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c58-same-volume-two-levels",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c59-extra-ninth-floor",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "unknownStrict404": true,
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "viewport": "390x844",
+      "home": {
+        "continueVisible": true,
+        "seasonVisible": true,
+        "caseVisibleInFirstViewport": true,
+        "overflow": 0
+      },
+      "routes": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c14-moving-red-box",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c15-sixth-panorama",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c16-closed-door-handoff",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c17-twelve-strikes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c18-lighter-sealed-crate",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c19-fog-after-window",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c20-fifth-worker",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c21-missing-seven-minutes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c22-overloaded-bridge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c23-clean-air-sample",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c24-turned-painting",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c26-short-map-pipeline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c27-stationary-moving-platform",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c28-ninth-minute-temperature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c29-role-stamp-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c30-shared-shift-id",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c32-approved-unauthorized-door",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c34-tomorrow-seal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c35-extra-glass-attendant",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c36-no-one-left-terminal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c37-zeroed-pressure-gauge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c38-no-missing-seventh-packet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c39-duplicated-heartbeat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c40-early-liquid-front",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c41-hysteresis-overheat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c42-same-weight-different-load",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c43-train-stop-reference",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c44-hidden-overload-spike",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c45-double-location-second",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c46-pilot-pressure-valve",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c47-offline-buffered-device",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c49-gimbal-turn-drone",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c50-extra-warehouse-pallet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c51-equivalent-resistance",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c52-shorter-river-night",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c53-late-fiber-echo",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c54-elevator-counterweight",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c55-merged-multi-alarm",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c56-interpolated-temperature-map",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c57-lagging-wind-vane",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c58-same-volume-two-levels",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c59-extra-ninth-floor",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "unknownStrict404": true,
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "browser": "webkit",
+      "viewport": "1440x900",
+      "home": {
+        "continueVisible": true,
+        "seasonVisible": true,
+        "caseVisibleInFirstViewport": true,
+        "overflow": 0
+      },
+      "routes": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c14-moving-red-box",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c15-sixth-panorama",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c16-closed-door-handoff",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c17-twelve-strikes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c18-lighter-sealed-crate",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c19-fog-after-window",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c20-fifth-worker",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c21-missing-seven-minutes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c22-overloaded-bridge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c23-clean-air-sample",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c24-turned-painting",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c26-short-map-pipeline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c27-stationary-moving-platform",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c28-ninth-minute-temperature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c29-role-stamp-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c30-shared-shift-id",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c32-approved-unauthorized-door",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c34-tomorrow-seal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c35-extra-glass-attendant",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c36-no-one-left-terminal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c37-zeroed-pressure-gauge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c38-no-missing-seventh-packet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c39-duplicated-heartbeat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c40-early-liquid-front",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c41-hysteresis-overheat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c42-same-weight-different-load",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c43-train-stop-reference",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c44-hidden-overload-spike",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c45-double-location-second",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c46-pilot-pressure-valve",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c47-offline-buffered-device",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c49-gimbal-turn-drone",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c50-extra-warehouse-pallet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c51-equivalent-resistance",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c52-shorter-river-night",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c53-late-fiber-echo",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c54-elevator-counterweight",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c55-merged-multi-alarm",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c56-interpolated-temperature-map",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c57-lagging-wind-vane",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c58-same-volume-two-levels",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c59-extra-ninth-floor",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "unknownStrict404": true,
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "browser": "webkit",
+      "viewport": "390x844",
+      "home": {
+        "continueVisible": true,
+        "seasonVisible": true,
+        "caseVisibleInFirstViewport": true,
+        "overflow": 0
+      },
+      "routes": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c14-moving-red-box",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c15-sixth-panorama",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c16-closed-door-handoff",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c17-twelve-strikes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c18-lighter-sealed-crate",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c19-fog-after-window",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c20-fifth-worker",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c21-missing-seven-minutes",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c22-overloaded-bridge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c23-clean-air-sample",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c24-turned-painting",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c26-short-map-pipeline",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c27-stationary-moving-platform",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c28-ninth-minute-temperature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c29-role-stamp-signature",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c30-shared-shift-id",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c31-eighth-unchecked-guest",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c32-approved-unauthorized-door",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c34-tomorrow-seal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c35-extra-glass-attendant",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c36-no-one-left-terminal",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c37-zeroed-pressure-gauge",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c38-no-missing-seventh-packet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c39-duplicated-heartbeat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c40-early-liquid-front",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c41-hysteresis-overheat",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c42-same-weight-different-load",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c43-train-stop-reference",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c44-hidden-overload-spike",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c45-double-location-second",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c46-pilot-pressure-valve",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c47-offline-buffered-device",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c49-gimbal-turn-drone",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c50-extra-warehouse-pallet",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c51-equivalent-resistance",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c52-shorter-river-night",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c53-late-fiber-echo",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c54-elevator-counterweight",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c55-merged-multi-alarm",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c56-interpolated-temperature-map",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c57-lagging-wind-vane",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c58-same-volume-two-levels",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c59-extra-ninth-floor",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "status": 200,
+          "title": true,
+          "tabs": 4,
+          "overflow": 0,
+          "passed": true
+        }
+      ],
+      "unknownStrict404": true,
+      "consoleErrors": [],
+      "passed": true
+    }
+  ],
+  "fullFlows": [
+    {
+      "browser": "chromium",
+      "viewport": "1440x900",
+      "traces": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "viewport": "390x844",
+      "traces": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "viewport": "1440x900",
+      "traces": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "viewport": "390x844",
+      "traces": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "browser": "webkit",
+      "viewport": "1440x900",
+      "traces": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "viewport": "1440x900",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "browser": "webkit",
+      "viewport": "390x844",
+      "traces": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "viewport": "390x844",
+          "opening": true,
+          "draftKept": true,
+          "asked": 3,
+          "ambiguous": true,
+          "manualOffer": true,
+          "evidenceDialog": true,
+          "focusReturned": true,
+          "settingsOpen": true,
+          "settingsFocusReturned": true,
+          "highContrast": true,
+          "reducedMotion": true,
+          "submitEnabled": true,
+          "wrongTheoryRejected": true,
+          "solved": true,
+          "replay": true,
+          "challenges": true,
+          "overflow": 0,
+          "axeSeriousCritical": [],
+          "consoleErrors": [],
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "cognitiveFriction": {
+    "required": true,
+    "quickQuestionStarts": true,
+    "starterFilled": true,
+    "starterDidNotSubmit": true,
+    "sessionDraftContinuation": true,
+    "discoveredEvidenceNotExamined": true,
+    "evidenceToProofBridge": true,
+    "proofContext": true,
+    "mobileTheorySteps": [
+      {
+        "caseId": "c01-cold-room-knock",
+        "steps": 3,
+        "contextVisible": true,
+        "overflow": 0,
+        "passed": true
+      },
+      {
+        "caseId": "c60-last-sample-before-stop",
+        "steps": 4,
+        "contextVisible": true,
+        "overflow": 0,
+        "passed": true
+      }
+    ],
+    "consoleErrors": [],
+    "passed": true
+  },
+  "resolutionPayoff": {
+    "required": true,
+    "solvedArchiveFirst": true,
+    "solvedEditingHidden": true,
+    "publicDebriefMetrics": true,
+    "seasonTabsKeyboard": true,
+    "mobileArchiveFirst": true,
+    "mobileOverflow": 0,
+    "consoleErrors": [],
+    "passed": true
+  },
+  "investigationRhythm": {
+    "required": true,
+    "workspaceDeepLink": true,
+    "deterministicAnswer": true,
+    "answerBridge": true,
+    "evidenceDeepLink": true,
+    "actionPriority": true,
+    "replayControlVisible": true,
+    "firstBeatOnly": true,
+    "progressiveReplay": true,
+    "nextChallengeVisible": true,
+    "localizedLabels": true,
+    "homeOverflow": 0,
+    "consoleErrors": [],
+    "passed": true
+  },
+  "offlineRecovery": {
+    "ready": true,
+    "rendered": true,
+    "passed": true
+  },
+  "screenshots": [
+    "chromium-desktop-home.png",
+    "chromium-mobile-home.png",
+    "desktop-c01-cold-room-knock-proof-gap.png",
+    "desktop-c01-cold-room-knock-solved.png",
+    "desktop-c03-second-shadow-solved.png",
+    "desktop-c13-second-waterline-solved.png",
+    "desktop-c25-silent-second-bell-solved.png",
+    "desktop-c33-early-late-arrival-solved.png",
+    "desktop-c48-two-point-calibration-solved.png",
+    "desktop-c60-last-sample-before-stop-proof-gap.png",
+    "desktop-c60-last-sample-before-stop-solved.png",
+    "firefox-desktop-home.png",
+    "firefox-mobile-home.png",
+    "mobile-c01-cold-room-knock-proof-gap.png",
+    "mobile-c01-cold-room-knock-solved.png",
+    "mobile-c03-second-shadow-solved.png",
+    "mobile-c13-second-waterline-solved.png",
+    "mobile-c25-silent-second-bell-solved.png",
+    "mobile-c33-early-late-arrival-solved.png",
+    "mobile-c48-two-point-calibration-solved.png",
+    "mobile-c60-last-sample-before-stop-proof-gap.png",
+    "mobile-c60-last-sample-before-stop-solved.png",
+    "unknown-case-404.png",
+    "v22-evidence-proof-bridge.png",
+    "v22-first-question-starts.png",
+    "v22-mobile-c60-proof-context.png",
+    "v23-desktop-c60-solved-archive.png",
+    "v23-mobile-c01-solved-archive.png",
+    "v24-answer-evidence-handoff.png",
+    "v24-mobile-home-localized.png",
+    "v24-progressive-replay.png",
+    "webkit-desktop-home.png",
+    "webkit-mobile-home.png"
+  ],
+  "screenshotCount": 33,
+  "consoleErrorCount": 0,
+  "passed": true
+}

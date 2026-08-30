@@ -1,4 +1,5 @@
-const CACHE_NAME = "black-soup-v13-preview-1";
+const CACHE_NAME = "black-soup-v24-investigation-rhythm-rc-1";
+const CACHE_PREFIX = "black-soup-v24-";
 const PRECACHE = [
   "/",
   "/case/c01-cold-room-knock/",
@@ -38,7 +39,7 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))))
+      .then((keys) => Promise.all(keys.filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE_NAME).map((key) => caches.delete(key))))
       .then(() => self.clients.claim()),
   );
 });
@@ -55,11 +56,10 @@ self.addEventListener("fetch", (event) => {
       const navigationKey = url.pathname === "/" ? "/" : `${url.pathname.replace(/\/$/, "")}/`;
       const cached = event.request.mode === "navigate"
         ? await cache.match(navigationKey, { ignoreSearch: true })
-        : await cache.match(event.request, { ignoreSearch: true }) ?? await cache.match(decodeURIComponent(url.pathname), { ignoreSearch: true });
+        : url.search ? undefined : await cache.match(event.request) ?? await cache.match(decodeURIComponent(url.pathname));
       if (cached) return cached;
       try {
         const response = await fetch(event.request);
-        if (response.ok) await cache.put(event.request, response.clone());
         return response;
       } catch {
         return event.request.mode === "navigate" ? await cache.match(navigationKey) ?? await cache.match("/") ?? Response.error() : Response.error();

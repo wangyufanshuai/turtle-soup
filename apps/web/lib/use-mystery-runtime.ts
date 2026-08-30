@@ -1,6 +1,6 @@
 "use client";
 
-import type { CaseId, GameCommand, GameEvent, PlayerProjection, SaveEnvelope } from "@turtle-soup/mystery-core";
+import type { CaseId, GameCommand, GameEvent, PlayerProjection, QuestionRoutingOffer, SaveEnvelope } from "@turtle-soup/mystery-core";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { loadCaseSave, saveCase } from "./save-store";
 import type { RuntimeWorkerRequest, RuntimeWorkerResponse } from "./worker-protocol";
@@ -12,9 +12,10 @@ export function useMysteryRuntime(caseId: CaseId) {
   const [events, setEvents] = useState<GameEvent[]>([]);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
   const [saveState, setSaveState] = useState<"idle" | "saving" | "saved" | "error">("idle");
-  const [restoreStatus, setRestoreStatus] = useState<RuntimeWorkerResponse["restoreStatus"]>(undefined);
+  const [restoreStatus, setRestoreStatus] = useState<"new" | "restored" | "incompatible" | "corrupt" | undefined>(undefined);
   const [latestSave, setLatestSave] = useState<SaveEnvelope>();
   const [storageIssue, setStorageIssue] = useState<string>();
+  const routingRequestsRef = useRef(new Map<number, { resolve: (offer: QuestionRoutingOffer) => void; reject: (error: Error) => void }>());
 
   useEffect(() => {
     const worker = new Worker(new URL("../workers/mystery-runtime.worker.ts", import.meta.url), { type: "module" });
@@ -23,7 +24,21 @@ export function useMysteryRuntime(caseId: CaseId) {
 
     worker.onmessage = (message: MessageEvent<RuntimeWorkerResponse>) => {
       if (!active) return;
+      if (message.data.type === "routing_context") {
+        const pending = routingRequestsRef.current.get(message.data.id);
+        if (pending) {
+          routingRequestsRef.current.delete(message.data.id);
+          pending.resolve(message.data.offer);
+        }
+        return;
+      }
       if (message.data.type === "error") {
+        const pending = routingRequestsRef.current.get(message.data.id);
+        if (pending) {
+          routingRequestsRef.current.delete(message.data.id);
+          pending.reject(new Error(message.data.message));
+          return;
+        }
         setStorageIssue(message.data.message);
         setStatus("error");
         return;
@@ -55,6 +70,8 @@ export function useMysteryRuntime(caseId: CaseId) {
 
     return () => {
       active = false;
+      for (const pending of routingRequestsRef.current.values()) pending.reject(new Error("推理 Worker 已关闭"));
+      routingRequestsRef.current.clear();
       worker.terminate();
       workerRef.current = null;
     };
@@ -67,6 +84,15 @@ export function useMysteryRuntime(caseId: CaseId) {
     worker.postMessage(request);
   }, []);
 
+  const prepareQuestionRouting = useCallback((rawText: string) => new Promise<QuestionRoutingOffer>((resolve, reject) => {
+    const worker = workerRef.current;
+    if (!worker) { reject(new Error("推理 Worker 尚未就绪")); return; }
+    const id = ++requestIdRef.current;
+    routingRequestsRef.current.set(id, { resolve, reject });
+    const request: RuntimeWorkerRequest = { id, type: "prepare_question_routing", rawText };
+    worker.postMessage(request);
+  }), []);
+
   const retrySave = useCallback(() => {
     if (!latestSave) return;
     setSaveState("saving");
@@ -75,5 +101,5 @@ export function useMysteryRuntime(caseId: CaseId) {
       .catch((error: unknown) => { setSaveState("error"); setStorageIssue(error instanceof Error ? error.message : "本地存档写入失败"); });
   }, [latestSave]);
 
-  return { projection, events, status, saveState, restoreStatus, latestSave, storageIssue, retrySave, dispatch };
+  return { projection, events, status, saveState, restoreStatus, latestSave, storageIssue, retrySave, dispatch, prepareQuestionRouting };
 }

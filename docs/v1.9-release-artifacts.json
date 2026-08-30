@@ -1,0 +1,32 @@
+{
+  "reportVersion": "1.9",
+  "releaseProfile": "v1.9-internal-rc",
+  "generatedAt": "2026-08-25T15:39:25.471Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "deterministicArchive": {
+    "method": "ZIP store",
+    "timestamp": "1980-01-01"
+  },
+  "artifact": {
+    "directory": "dist/v1.9-internal-rc-web-pwa",
+    "bytes": 6422285,
+    "files": 856,
+    "archive": {
+      "path": "dist/turtle-soup-v1.9-internal-rc-web-pwa.zip",
+      "bytes": 6552371,
+      "sha256": "c3c074e1170ca2efd7db0b3c0437873dc7d8633074ab4ff4c62c5b7910a8a6fc"
+    }
+  },
+  "preservedArtifacts": [
+    {
+      "version": "v1.8",
+      "path": "dist/turtle-soup-v1.8-internal-rc-web-pwa.zip",
+      "expected": "43b6dff6b70abec6a74788bb28fba6f7301eb91dd892818584c82f48fc88d30d",
+      "actual": "43b6dff6b70abec6a74788bb28fba6f7301eb91dd892818584c82f48fc88d30d",
+      "unchanged": true
+    }
+  ],
+  "passed": true
+}

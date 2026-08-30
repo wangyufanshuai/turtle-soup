@@ -1,0 +1,2280 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c74-silent-footsteps",
+  "metadata": {
+    "titleKey": "case.c74.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "声学路径",
+      "相位抵消",
+      "传感器"
+    ],
+    "targetMinutes": {
+      "min": 9,
+      "max": 19
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:1846687b8afa350fdc6c0e8d362a8869df399c2820374fcdb51cc95bc1275ab4",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-acoustic-lab",
+    "sceneAsset": "/assets/cases/c74-silent-footsteps/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c74-silent-footsteps/scene-mobile.svg",
+    "palette": "season5-acoustic-lab",
+    "accent": "#a9c6df",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "acoustic-path-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "acoustic-path"
+  },
+  "surface": {
+    "titleKey": "case.c74.title",
+    "textKey": "case.c74.surface",
+    "publicFactIds": [
+      "fact-c74-01",
+      "fact-c74-02",
+      "fact-c74-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c74-01",
+      "query-c74-02",
+      "query-c74-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c74-one",
+      "titleKey": "chapter.c74.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c74-1",
+      "titleKey": "board.c74.1.title",
+      "mode": "acoustic-path",
+      "slots": [
+        {
+          "id": "slot-c74-1-1",
+          "labelKey": "board.c74.1.slot.1",
+          "acceptsEventIds": [
+            "event-c74-01"
+          ]
+        },
+        {
+          "id": "slot-c74-1-2",
+          "labelKey": "board.c74.1.slot.2",
+          "acceptsEventIds": [
+            "event-c74-03"
+          ]
+        },
+        {
+          "id": "slot-c74-1-3",
+          "labelKey": "board.c74.1.slot.3",
+          "acceptsEventIds": [
+            "event-c74-05"
+          ]
+        },
+        {
+          "id": "slot-c74-1-4",
+          "labelKey": "board.c74.1.slot.4",
+          "acceptsEventIds": [
+            "event-c74-13"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "propagates-to",
+        "reflects-at",
+        "arrives-at"
+      ]
+    },
+    {
+      "id": "board-c74-2",
+      "titleKey": "board.c74.2.title",
+      "mode": "measurement-model",
+      "slots": [
+        {
+          "id": "slot-c74-2-1",
+          "labelKey": "board.c74.2.slot.1",
+          "acceptsEventIds": [
+            "event-c74-02"
+          ]
+        },
+        {
+          "id": "slot-c74-2-2",
+          "labelKey": "board.c74.2.slot.2",
+          "acceptsEventIds": [
+            "event-c74-04"
+          ]
+        },
+        {
+          "id": "slot-c74-2-3",
+          "labelKey": "board.c74.2.slot.3",
+          "acceptsEventIds": [
+            "event-c74-06"
+          ]
+        },
+        {
+          "id": "slot-c74-2-4",
+          "labelKey": "board.c74.2.slot.4",
+          "acceptsEventIds": [
+            "event-c74-13"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "measured-against",
+        "corrects",
+        "explains"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c74-system",
+      "kind": "object",
+      "labelKey": "entity.c74.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c74",
+      "kind": "location",
+      "labelKey": "location.c74",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c74-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-1",
+      "labelKey": "event.c74.1",
+      "effectFactIds": [
+        "fact-c74-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-2",
+      "labelKey": "event.c74.2",
+      "effectFactIds": [
+        "fact-c74-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-3",
+      "labelKey": "event.c74.3",
+      "effectFactIds": [
+        "fact-c74-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-4",
+      "labelKey": "event.c74.4",
+      "effectFactIds": [
+        "fact-c74-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-5",
+      "labelKey": "event.c74.5",
+      "effectFactIds": [
+        "fact-c74-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-6",
+      "labelKey": "event.c74.6",
+      "effectFactIds": [
+        "fact-c74-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "20:24"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-7",
+      "labelKey": "event.c74.7",
+      "effectFactIds": [
+        "fact-c74-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-8",
+      "labelKey": "event.c74.8",
+      "effectFactIds": [
+        "fact-c74-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-9",
+      "labelKey": "event.c74.9",
+      "effectFactIds": [
+        "fact-c74-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-10",
+      "labelKey": "event.c74.10",
+      "effectFactIds": [
+        "fact-c74-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-11",
+      "labelKey": "event.c74.11",
+      "effectFactIds": [
+        "fact-c74-11"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "21:44"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-12",
+      "labelKey": "event.c74.12",
+      "effectFactIds": [
+        "fact-c74-12"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-13",
+      "order": 130,
+      "time": {
+        "kind": "instant",
+        "value": "21:48"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-13",
+      "labelKey": "event.c74.13",
+      "effectFactIds": [
+        "fact-c74-13"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c74-14",
+      "order": 140,
+      "time": {
+        "kind": "instant",
+        "value": "21:52"
+      },
+      "participants": [
+        "entity-c74-system"
+      ],
+      "locationId": "location-c74",
+      "action": "step-c74-14",
+      "labelKey": "event.c74.14",
+      "effectFactIds": [
+        "fact-c74-14"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c74-1-1",
+      "type": "precedes",
+      "fromId": "entity-c74-system",
+      "toId": "location-c74",
+      "eventId": "event-c74-01",
+      "factId": "fact-c74-01"
+    },
+    {
+      "id": "relation-c74-1-2",
+      "type": "causes",
+      "fromId": "entity-c74-system",
+      "toId": "location-c74",
+      "eventId": "event-c74-03",
+      "factId": "fact-c74-02"
+    },
+    {
+      "id": "relation-c74-1-3",
+      "type": "causes",
+      "fromId": "entity-c74-system",
+      "toId": "location-c74",
+      "eventId": "event-c74-05",
+      "factId": "fact-c74-03"
+    },
+    {
+      "id": "relation-c74-2-1",
+      "type": "precedes",
+      "fromId": "entity-c74-system",
+      "toId": "location-c74",
+      "eventId": "event-c74-02",
+      "factId": "fact-c74-02"
+    },
+    {
+      "id": "relation-c74-2-2",
+      "type": "causes",
+      "fromId": "entity-c74-system",
+      "toId": "location-c74",
+      "eventId": "event-c74-04",
+      "factId": "fact-c74-03"
+    },
+    {
+      "id": "relation-c74-2-3",
+      "type": "causes",
+      "fromId": "entity-c74-system",
+      "toId": "location-c74",
+      "eventId": "event-c74-06",
+      "factId": "fact-c74-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c74-01",
+      "predicate": "verified_c74_1",
+      "args": {
+        "term": "脚步声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.1"
+    },
+    {
+      "id": "fact-c74-02",
+      "predicate": "verified_c74_2",
+      "args": {
+        "term": "走廊回声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.2"
+    },
+    {
+      "id": "fact-c74-03",
+      "predicate": "verified_c74_3",
+      "args": {
+        "term": "相位抵消"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.3"
+    },
+    {
+      "id": "fact-c74-04",
+      "predicate": "verified_c74_4",
+      "args": {
+        "term": "麦克风"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.4"
+    },
+    {
+      "id": "fact-c74-05",
+      "predicate": "verified_c74_5",
+      "args": {
+        "term": "直达声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.5"
+    },
+    {
+      "id": "fact-c74-06",
+      "predicate": "verified_c74_6",
+      "args": {
+        "term": "反射声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.6"
+    },
+    {
+      "id": "fact-c74-07",
+      "predicate": "verified_c74_7",
+      "args": {
+        "term": "声源位置"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.7"
+    },
+    {
+      "id": "fact-c74-08",
+      "predicate": "verified_c74_8",
+      "args": {
+        "term": "录音波形"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.8"
+    },
+    {
+      "id": "fact-c74-09",
+      "predicate": "verified_c74_9",
+      "args": {
+        "term": "声学路径"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.9"
+    },
+    {
+      "id": "fact-c74-10",
+      "predicate": "verified_c74_10",
+      "args": {
+        "term": "接收端"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.10"
+    },
+    {
+      "id": "fact-c74-11",
+      "predicate": "verified_c74_11",
+      "args": {
+        "term": "脚步声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.11"
+    },
+    {
+      "id": "fact-c74-12",
+      "predicate": "verified_c74_12",
+      "args": {
+        "term": "走廊回声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-12"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.12"
+    },
+    {
+      "id": "fact-c74-13",
+      "predicate": "verified_c74_13",
+      "args": {
+        "term": "相位抵消"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-13"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-13"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-13"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c74.13"
+    },
+    {
+      "id": "fact-c74-14",
+      "predicate": "verified_c74_14",
+      "args": {
+        "term": "麦克风"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-14"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-14"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-14"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c74.14"
+    },
+    {
+      "id": "fact-c74-15",
+      "predicate": "verified_c74_15",
+      "args": {
+        "term": "直达声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c74.15"
+    },
+    {
+      "id": "fact-c74-16",
+      "predicate": "verified_c74_16",
+      "args": {
+        "term": "反射声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c74.16"
+    },
+    {
+      "id": "fact-c74-17",
+      "predicate": "verified_c74_17",
+      "args": {
+        "term": "声源位置"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c74.17"
+    },
+    {
+      "id": "fact-c74-18",
+      "predicate": "verified_c74_18",
+      "args": {
+        "term": "录音波形"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c74.18"
+    },
+    {
+      "id": "fact-c74-19",
+      "predicate": "verified_c74_19",
+      "args": {
+        "term": "声学路径"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c74.19"
+    },
+    {
+      "id": "fact-c74-20",
+      "predicate": "verified_c74_20",
+      "args": {
+        "term": "接收端"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c74.20"
+    },
+    {
+      "id": "fact-c74-21",
+      "predicate": "verified_c74_21",
+      "args": {
+        "term": "脚步声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c74.21"
+    },
+    {
+      "id": "fact-c74-22",
+      "predicate": "verified_c74_22",
+      "args": {
+        "term": "走廊回声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c74-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c74-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c74.22"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c74-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-01",
+        "fact-c74-02",
+        "fact-c74-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c74-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-01",
+        "fact-c74-02",
+        "fact-c74-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c74-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-02",
+        "fact-c74-16"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c74-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-03",
+        "fact-c74-17"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c74-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-04",
+        "fact-c74-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c74-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-05",
+        "fact-c74-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c74-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-06",
+        "fact-c74-20"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c74-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-07",
+        "fact-c74-21"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c74-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-08",
+        "fact-c74-22"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c74-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c74-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c74-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c74-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-12"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c74-13",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-13"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-13"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c74-14",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c74-14"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c74-14"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c74-01",
+      "labelKey": "query.c74.1",
+      "intent": "verify",
+      "predicate": "verified_c74_1",
+      "slots": {
+        "subjectId": "entity-c74-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c74-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-opening"
+      ],
+      "examplePhrases": [
+        "脚步声是否成立？",
+        "能确认脚步声吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "脚步声"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c74-02",
+      "labelKey": "query.c74.2",
+      "intent": "verify",
+      "predicate": "verified_c74_2",
+      "slots": {
+        "subjectId": "entity-c74-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c74-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-opening"
+      ],
+      "examplePhrases": [
+        "走廊回声是否成立？",
+        "能确认走廊回声吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "走廊回声"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c74-03",
+      "labelKey": "query.c74.3",
+      "intent": "verify",
+      "predicate": "verified_c74_3",
+      "slots": {
+        "subjectId": "entity-c74-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c74-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-opening"
+      ],
+      "examplePhrases": [
+        "相位抵消是否成立？",
+        "能确认相位抵消吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "相位抵消"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c74-04",
+      "labelKey": "query.c74.4",
+      "intent": "verify",
+      "predicate": "verified_c74_4",
+      "slots": {
+        "subjectId": "entity-c74-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c74-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-04"
+      ],
+      "examplePhrases": [
+        "麦克风是否成立？",
+        "能确认麦克风吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "麦克风"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c74-05",
+      "labelKey": "query.c74.5",
+      "intent": "verify",
+      "predicate": "verified_c74_5",
+      "slots": {
+        "subjectId": "entity-c74-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c74-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-05"
+      ],
+      "examplePhrases": [
+        "直达声是否成立？",
+        "能确认直达声吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "直达声"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c74-06",
+      "labelKey": "query.c74.6",
+      "intent": "verify",
+      "predicate": "verified_c74_6",
+      "slots": {
+        "subjectId": "entity-c74-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c74-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-06"
+      ],
+      "examplePhrases": [
+        "反射声是否成立？",
+        "能确认反射声吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "反射声"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c74-07",
+      "labelKey": "query.c74.7",
+      "intent": "verify",
+      "predicate": "verified_c74_7",
+      "slots": {
+        "subjectId": "entity-c74-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c74-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-07"
+      ],
+      "examplePhrases": [
+        "声源位置是否成立？",
+        "能确认声源位置吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "声源位置"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c74-08",
+      "labelKey": "query.c74.8",
+      "intent": "verify",
+      "predicate": "verified_c74_8",
+      "slots": {
+        "subjectId": "entity-c74-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c74-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-08"
+      ],
+      "examplePhrases": [
+        "录音波形是否成立？",
+        "能确认录音波形吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "录音波形"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c74-09",
+      "labelKey": "query.c74.9",
+      "intent": "verify",
+      "predicate": "verified_c74_9",
+      "slots": {
+        "subjectId": "entity-c74-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c74-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-09"
+      ],
+      "examplePhrases": [
+        "声学路径是否成立？",
+        "能确认声学路径吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "声学路径"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c74-10",
+      "labelKey": "query.c74.10",
+      "intent": "verify",
+      "predicate": "verified_c74_10",
+      "slots": {
+        "subjectId": "entity-c74-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c74-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c74-10"
+      ],
+      "examplePhrases": [
+        "接收端是否成立？",
+        "能确认接收端吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "接收端"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c74-01",
+      "kind": "scene",
+      "titleKey": "evidence.c74.1.title",
+      "observationKey": "evidence.c74.1.observation",
+      "sourceFactIds": [
+        "fact-c74-01",
+        "fact-c74-02",
+        "fact-c74-03"
+      ],
+      "sourceEventIds": [
+        "event-c74-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c74-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-01.svg",
+      "assetAlt": "脚步声"
+    },
+    {
+      "id": "evidence-c74-02",
+      "kind": "record",
+      "titleKey": "evidence.c74.2.title",
+      "observationKey": "evidence.c74.2.observation",
+      "sourceFactIds": [
+        "fact-c74-02",
+        "fact-c74-16"
+      ],
+      "sourceEventIds": [
+        "event-c74-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c74-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-02.svg",
+      "assetAlt": "走廊回声"
+    },
+    {
+      "id": "evidence-c74-03",
+      "kind": "object",
+      "titleKey": "evidence.c74.3.title",
+      "observationKey": "evidence.c74.3.observation",
+      "sourceFactIds": [
+        "fact-c74-03",
+        "fact-c74-17"
+      ],
+      "sourceEventIds": [
+        "event-c74-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-03.svg",
+      "assetAlt": "相位抵消"
+    },
+    {
+      "id": "evidence-c74-04",
+      "kind": "scene",
+      "titleKey": "evidence.c74.4.title",
+      "observationKey": "evidence.c74.4.observation",
+      "sourceFactIds": [
+        "fact-c74-04",
+        "fact-c74-18"
+      ],
+      "sourceEventIds": [
+        "event-c74-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-04.svg",
+      "assetAlt": "麦克风"
+    },
+    {
+      "id": "evidence-c74-05",
+      "kind": "record",
+      "titleKey": "evidence.c74.5.title",
+      "observationKey": "evidence.c74.5.observation",
+      "sourceFactIds": [
+        "fact-c74-05",
+        "fact-c74-19"
+      ],
+      "sourceEventIds": [
+        "event-c74-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-05.svg",
+      "assetAlt": "直达声"
+    },
+    {
+      "id": "evidence-c74-06",
+      "kind": "object",
+      "titleKey": "evidence.c74.6.title",
+      "observationKey": "evidence.c74.6.observation",
+      "sourceFactIds": [
+        "fact-c74-06",
+        "fact-c74-20"
+      ],
+      "sourceEventIds": [
+        "event-c74-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-01.svg",
+      "assetAlt": "反射声"
+    },
+    {
+      "id": "evidence-c74-07",
+      "kind": "scene",
+      "titleKey": "evidence.c74.7.title",
+      "observationKey": "evidence.c74.7.observation",
+      "sourceFactIds": [
+        "fact-c74-07",
+        "fact-c74-21"
+      ],
+      "sourceEventIds": [
+        "event-c74-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-02.svg",
+      "assetAlt": "声源位置"
+    },
+    {
+      "id": "evidence-c74-08",
+      "kind": "record",
+      "titleKey": "evidence.c74.8.title",
+      "observationKey": "evidence.c74.8.observation",
+      "sourceFactIds": [
+        "fact-c74-08",
+        "fact-c74-22"
+      ],
+      "sourceEventIds": [
+        "event-c74-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-03.svg",
+      "assetAlt": "录音波形"
+    },
+    {
+      "id": "evidence-c74-09",
+      "kind": "object",
+      "titleKey": "evidence.c74.9.title",
+      "observationKey": "evidence.c74.9.observation",
+      "sourceFactIds": [
+        "fact-c74-09"
+      ],
+      "sourceEventIds": [
+        "event-c74-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-04.svg",
+      "assetAlt": "声学路径"
+    },
+    {
+      "id": "evidence-c74-10",
+      "kind": "scene",
+      "titleKey": "evidence.c74.10.title",
+      "observationKey": "evidence.c74.10.observation",
+      "sourceFactIds": [
+        "fact-c74-10"
+      ],
+      "sourceEventIds": [
+        "event-c74-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-05.svg",
+      "assetAlt": "接收端"
+    },
+    {
+      "id": "evidence-c74-11",
+      "kind": "record",
+      "titleKey": "evidence.c74.11.title",
+      "observationKey": "evidence.c74.11.observation",
+      "sourceFactIds": [
+        "fact-c74-11"
+      ],
+      "sourceEventIds": [
+        "event-c74-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-01.svg",
+      "assetAlt": "脚步声"
+    },
+    {
+      "id": "evidence-c74-12",
+      "kind": "object",
+      "titleKey": "evidence.c74.12.title",
+      "observationKey": "evidence.c74.12.observation",
+      "sourceFactIds": [
+        "fact-c74-12"
+      ],
+      "sourceEventIds": [
+        "event-c74-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-02.svg",
+      "assetAlt": "走廊回声"
+    },
+    {
+      "id": "evidence-c74-13",
+      "kind": "scene",
+      "titleKey": "evidence.c74.13.title",
+      "observationKey": "evidence.c74.13.observation",
+      "sourceFactIds": [
+        "fact-c74-13"
+      ],
+      "sourceEventIds": [
+        "event-c74-13"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-03.svg",
+      "assetAlt": "相位抵消"
+    },
+    {
+      "id": "evidence-c74-14",
+      "kind": "record",
+      "titleKey": "evidence.c74.14.title",
+      "observationKey": "evidence.c74.14.observation",
+      "sourceFactIds": [
+        "fact-c74-14"
+      ],
+      "sourceEventIds": [
+        "event-c74-14"
+      ],
+      "relatedEntityIds": [
+        "entity-c74-system",
+        "location-c74"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c74-silent-footsteps/evidence-04.svg",
+      "assetAlt": "麦克风"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c74.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c74-01",
+          "event-c74-02",
+          "event-c74-03",
+          "event-c74-04",
+          "event-c74-05",
+          "event-c74-06",
+          "event-c74-07",
+          "event-c74-08",
+          "event-c74-09",
+          "event-c74-10",
+          "event-c74-11",
+          "event-c74-12",
+          "event-c74-13"
+        ],
+        "motiveKey": "证明没有回声不等于没有声源"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c74-01",
+        "evidence-c74-02",
+        "evidence-c74-03",
+        "evidence-c74-04",
+        "evidence-c74-05",
+        "evidence-c74-06",
+        "evidence-c74-07",
+        "evidence-c74-08",
+        "evidence-c74-09",
+        "evidence-c74-10",
+        "evidence-c74-11",
+        "evidence-c74-12",
+        "evidence-c74-13"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c74-1",
+        "contradiction-c74-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c74-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c74.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "脚步声是预先录好的"
+        ],
+        "motiveKey": "motive-c74-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c74-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c74-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c74-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c74.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "麦克风在脚步发生前已经坏了"
+        ],
+        "motiveKey": "motive-c74-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c74-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c74-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c74-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c74-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c74-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c74-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c74-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c74-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c74-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c74-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c74-01",
+      "fact-c74-02",
+      "fact-c74-03",
+      "fact-c74-04",
+      "fact-c74-05",
+      "fact-c74-06",
+      "fact-c74-07",
+      "fact-c74-08",
+      "fact-c74-09",
+      "fact-c74-10",
+      "fact-c74-11",
+      "fact-c74-12",
+      "fact-c74-13"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c74-01",
+      "evidence-c74-02",
+      "evidence-c74-03",
+      "evidence-c74-04",
+      "evidence-c74-05",
+      "evidence-c74-06",
+      "evidence-c74-07",
+      "evidence-c74-08",
+      "evidence-c74-09",
+      "evidence-c74-10",
+      "evidence-c74-11",
+      "evidence-c74-12",
+      "evidence-c74-13"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c74-01",
+        "event-c74-02"
+      ],
+      [
+        "event-c74-02",
+        "event-c74-03"
+      ],
+      [
+        "event-c74-03",
+        "event-c74-04"
+      ],
+      [
+        "event-c74-04",
+        "event-c74-05"
+      ],
+      [
+        "event-c74-05",
+        "event-c74-06"
+      ],
+      [
+        "event-c74-06",
+        "event-c74-07"
+      ],
+      [
+        "event-c74-07",
+        "event-c74-08"
+      ],
+      [
+        "event-c74-08",
+        "event-c74-09"
+      ],
+      [
+        "event-c74-09",
+        "event-c74-10"
+      ],
+      [
+        "event-c74-10",
+        "event-c74-11"
+      ],
+      [
+        "event-c74-11",
+        "event-c74-12"
+      ],
+      [
+        "event-c74-12",
+        "event-c74-13"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c74-1",
+      "contradiction-c74-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c74-alternative-1",
+      "hypothesis-c74-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c74-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c74-a",
+        "evidenceIds": [
+          "evidence-c74-01",
+          "evidence-c74-02",
+          "evidence-c74-03",
+          "evidence-c74-04",
+          "evidence-c74-05",
+          "evidence-c74-06",
+          "evidence-c74-07",
+          "evidence-c74-08"
+        ]
+      },
+      {
+        "id": "proof-c74-b",
+        "evidenceIds": [
+          "evidence-c74-01",
+          "evidence-c74-02",
+          "evidence-c74-09",
+          "evidence-c74-10",
+          "evidence-c74-11",
+          "evidence-c74-12",
+          "evidence-c74-13"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "证明没有回声不等于没有声源"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c74-1",
+        "kind": "space",
+        "boardId": "board-c74-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c74-1-1",
+            "eventId": "event-c74-01"
+          },
+          {
+            "slotId": "slot-c74-1-2",
+            "eventId": "event-c74-03"
+          },
+          {
+            "slotId": "slot-c74-1-3",
+            "eventId": "event-c74-05"
+          },
+          {
+            "slotId": "slot-c74-1-4",
+            "eventId": "event-c74-13"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c74-01",
+            "toEventId": "event-c74-03",
+            "relation": "propagates-to"
+          },
+          {
+            "fromEventId": "event-c74-03",
+            "toEventId": "event-c74-05",
+            "relation": "propagates-to"
+          },
+          {
+            "fromEventId": "event-c74-05",
+            "toEventId": "event-c74-13",
+            "relation": "propagates-to"
+          }
+        ],
+        "failureCategory": "space"
+      },
+      {
+        "id": "obligation-c74-2",
+        "kind": "measurement",
+        "boardId": "board-c74-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c74-2-1",
+            "eventId": "event-c74-02"
+          },
+          {
+            "slotId": "slot-c74-2-2",
+            "eventId": "event-c74-04"
+          },
+          {
+            "slotId": "slot-c74-2-3",
+            "eventId": "event-c74-06"
+          },
+          {
+            "slotId": "slot-c74-2-4",
+            "eventId": "event-c74-13"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c74-02",
+            "toEventId": "event-c74-04",
+            "relation": "measured-against"
+          },
+          {
+            "fromEventId": "event-c74-04",
+            "toEventId": "event-c74-06",
+            "relation": "measured-against"
+          },
+          {
+            "fromEventId": "event-c74-06",
+            "toEventId": "event-c74-13",
+            "relation": "measured-against"
+          }
+        ],
+        "failureCategory": "measurement"
+      }
+    ],
+    "uniquenessClaim": "走廊麦克风对直达声和反射声发生相位抵消，声源存在但接收端没有回声。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c74-1",
+      "eventId": "event-c74-02",
+      "factIds": [
+        "fact-c74-01"
+      ],
+      "captionKey": "event.c74.2"
+    },
+    {
+      "id": "replay-c74-2",
+      "eventId": "event-c74-03",
+      "factIds": [
+        "fact-c74-02"
+      ],
+      "captionKey": "event.c74.3"
+    },
+    {
+      "id": "replay-c74-3",
+      "eventId": "event-c74-04",
+      "factIds": [
+        "fact-c74-03"
+      ],
+      "captionKey": "event.c74.4"
+    },
+    {
+      "id": "replay-c74-4",
+      "eventId": "event-c74-05",
+      "factIds": [
+        "fact-c74-04"
+      ],
+      "captionKey": "event.c74.5"
+    },
+    {
+      "id": "replay-c74-5",
+      "eventId": "event-c74-06",
+      "factIds": [
+        "fact-c74-05"
+      ],
+      "captionKey": "event.c74.6"
+    },
+    {
+      "id": "replay-c74-6",
+      "eventId": "event-c74-07",
+      "factIds": [
+        "fact-c74-01",
+        "fact-c74-02",
+        "fact-c74-03",
+        "fact-c74-04",
+        "fact-c74-05",
+        "fact-c74-06",
+        "fact-c74-07",
+        "fact-c74-08",
+        "fact-c74-09",
+        "fact-c74-10",
+        "fact-c74-11",
+        "fact-c74-12",
+        "fact-c74-13"
+      ],
+      "captionKey": "event.c74.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c74.title": "没有回声的脚步声",
+      "case.c74.surface": "走廊里听见了脚步声，尽头麦克风却没有录到回声。",
+      "case.c74.truth": "走廊麦克风对直达声和反射声发生相位抵消，声源存在但接收端没有回声。",
+      "entity.c74.system": "现场对象与记录链",
+      "location.c74": "声学路径",
+      "hypothesis.c74.canonical": "走廊麦克风对直达声和反射声发生相位抵消，声源存在但接收端没有回声。",
+      "hypothesis.c74.alternative.1": "脚步声是预先录好的",
+      "hypothesis.c74.alternative.2": "麦克风在脚步发生前已经坏了",
+      "motive.证明没有回声不等于没有声源": "证明没有回声不等于没有声源",
+      "chapter.c74.one": "固定异常",
+      "chapter.c74.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c74.1": "脚步声是否成立？",
+      "query.c74.2": "走廊回声是否成立？",
+      "query.c74.3": "相位抵消是否成立？",
+      "query.c74.4": "麦克风是否成立？",
+      "query.c74.5": "直达声是否成立？",
+      "query.c74.6": "反射声是否成立？",
+      "query.c74.7": "声源位置是否成立？",
+      "query.c74.8": "录音波形是否成立？",
+      "query.c74.9": "声学路径是否成立？",
+      "query.c74.10": "接收端是否成立？",
+      "event.c74.1": "阶段 1：脚步声进入记录链",
+      "event.c74.2": "阶段 2：走廊回声进入记录链",
+      "event.c74.3": "阶段 3：相位抵消进入记录链",
+      "event.c74.4": "阶段 4：麦克风进入记录链",
+      "event.c74.5": "阶段 5：直达声进入记录链",
+      "event.c74.6": "阶段 6：反射声进入记录链",
+      "event.c74.7": "阶段 7：声源位置进入记录链",
+      "event.c74.8": "阶段 8：录音波形进入记录链",
+      "event.c74.9": "阶段 9：声学路径进入记录链",
+      "event.c74.10": "阶段 10：接收端进入记录链",
+      "event.c74.11": "阶段 11：脚步声进入记录链",
+      "event.c74.12": "阶段 12：走廊回声进入记录链",
+      "event.c74.13": "阶段 13：相位抵消进入记录链",
+      "event.c74.14": "阶段 14：麦克风进入记录链",
+      "evidence.c74.1.title": "脚步声记录",
+      "evidence.c74.1.observation": "来源材料显示“脚步声”在该阶段可复核。",
+      "evidence.c74.2.title": "走廊回声记录",
+      "evidence.c74.2.observation": "来源材料显示“走廊回声”在该阶段可复核。",
+      "evidence.c74.3.title": "相位抵消记录",
+      "evidence.c74.3.observation": "来源材料显示“相位抵消”在该阶段可复核。",
+      "evidence.c74.4.title": "麦克风记录",
+      "evidence.c74.4.observation": "来源材料显示“麦克风”在该阶段可复核。",
+      "evidence.c74.5.title": "直达声记录",
+      "evidence.c74.5.observation": "来源材料显示“直达声”在该阶段可复核。",
+      "evidence.c74.6.title": "反射声记录",
+      "evidence.c74.6.observation": "来源材料显示“反射声”在该阶段可复核。",
+      "evidence.c74.7.title": "声源位置记录",
+      "evidence.c74.7.observation": "来源材料显示“声源位置”在该阶段可复核。",
+      "evidence.c74.8.title": "录音波形记录",
+      "evidence.c74.8.observation": "来源材料显示“录音波形”在该阶段可复核。",
+      "evidence.c74.9.title": "声学路径记录",
+      "evidence.c74.9.observation": "来源材料显示“声学路径”在该阶段可复核。",
+      "evidence.c74.10.title": "接收端记录",
+      "evidence.c74.10.observation": "来源材料显示“接收端”在该阶段可复核。",
+      "evidence.c74.11.title": "脚步声记录",
+      "evidence.c74.11.observation": "来源材料显示“脚步声”在该阶段可复核。",
+      "evidence.c74.12.title": "走廊回声记录",
+      "evidence.c74.12.observation": "来源材料显示“走廊回声”在该阶段可复核。",
+      "evidence.c74.13.title": "相位抵消记录",
+      "evidence.c74.13.observation": "来源材料显示“相位抵消”在该阶段可复核。",
+      "evidence.c74.14.title": "麦克风记录",
+      "evidence.c74.14.observation": "来源材料显示“麦克风”在该阶段可复核。",
+      "board.c74.1.title": "没有回声的脚步声 · acoustic-path",
+      "board.c74.1.slot.1": "起始来源",
+      "board.c74.1.slot.2": "关键变化",
+      "board.c74.1.slot.3": "观测结果",
+      "board.c74.1.slot.4": "排除替代",
+      "board.c74.2.title": "没有回声的脚步声 · measurement-model",
+      "board.c74.2.slot.1": "起始来源",
+      "board.c74.2.slot.2": "关键变化",
+      "board.c74.2.slot.3": "观测结果",
+      "board.c74.2.slot.4": "排除替代"
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "reportVersion": "2.1",
+  "releaseProfile": "v2.1-internal-rc",
+  "generatedAt": "2026-08-28T16:29:13.066Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "screenshots": [
+    {
+      "name": "chromium-desktop-home.png",
+      "path": "output/playwright/v21/chromium-desktop-home.png",
+      "bytes": 545854,
+      "passed": true
+    },
+    {
+      "name": "chromium-mobile-home.png",
+      "path": "output/playwright/v21/chromium-mobile-home.png",
+      "bytes": 211728,
+      "passed": true
+    },
+    {
+      "name": "desktop-c01-cold-room-knock-proof-gap.png",
+      "path": "output/playwright/v21/desktop-c01-cold-room-knock-proof-gap.png",
+      "bytes": 186306,
+      "passed": true
+    },
+    {
+      "name": "desktop-c01-cold-room-knock-solved.png",
+      "path": "output/playwright/v21/desktop-c01-cold-room-knock-solved.png",
+      "bytes": 234701,
+      "passed": true
+    },
+    {
+      "name": "desktop-c03-second-shadow-solved.png",
+      "path": "output/playwright/v21/desktop-c03-second-shadow-solved.png",
+      "bytes": 234661,
+      "passed": true
+    },
+    {
+      "name": "desktop-c13-second-waterline-solved.png",
+      "path": "output/playwright/v21/desktop-c13-second-waterline-solved.png",
+      "bytes": 150676,
+      "passed": true
+    },
+    {
+      "name": "desktop-c25-silent-second-bell-solved.png",
+      "path": "output/playwright/v21/desktop-c25-silent-second-bell-solved.png",
+      "bytes": 147612,
+      "passed": true
+    },
+    {
+      "name": "desktop-c33-early-late-arrival-solved.png",
+      "path": "output/playwright/v21/desktop-c33-early-late-arrival-solved.png",
+      "bytes": 148484,
+      "passed": true
+    },
+    {
+      "name": "desktop-c48-two-point-calibration-solved.png",
+      "path": "output/playwright/v21/desktop-c48-two-point-calibration-solved.png",
+      "bytes": 149267,
+      "passed": true
+    },
+    {
+      "name": "desktop-c60-last-sample-before-stop-proof-gap.png",
+      "path": "output/playwright/v21/desktop-c60-last-sample-before-stop-proof-gap.png",
+      "bytes": 104348,
+      "passed": true
+    },
+    {
+      "name": "desktop-c60-last-sample-before-stop-solved.png",
+      "path": "output/playwright/v21/desktop-c60-last-sample-before-stop-solved.png",
+      "bytes": 155562,
+      "passed": true
+    },
+    {
+      "name": "firefox-desktop-home.png",
+      "path": "output/playwright/v21/firefox-desktop-home.png",
+      "bytes": 432122,
+      "passed": true
+    },
+    {
+      "name": "firefox-mobile-home.png",
+      "path": "output/playwright/v21/firefox-mobile-home.png",
+      "bytes": 177390,
+      "passed": true
+    },
+    {
+      "name": "mobile-c01-cold-room-knock-proof-gap.png",
+      "path": "output/playwright/v21/mobile-c01-cold-room-knock-proof-gap.png",
+      "bytes": 45560,
+      "passed": true
+    },
+    {
+      "name": "mobile-c01-cold-room-knock-solved.png",
+      "path": "output/playwright/v21/mobile-c01-cold-room-knock-solved.png",
+      "bytes": 76535,
+      "passed": true
+    },
+    {
+      "name": "mobile-c03-second-shadow-solved.png",
+      "path": "output/playwright/v21/mobile-c03-second-shadow-solved.png",
+      "bytes": 74492,
+      "passed": true
+    },
+    {
+      "name": "mobile-c13-second-waterline-solved.png",
+      "path": "output/playwright/v21/mobile-c13-second-waterline-solved.png",
+      "bytes": 80172,
+      "passed": true
+    },
+    {
+      "name": "mobile-c25-silent-second-bell-solved.png",
+      "path": "output/playwright/v21/mobile-c25-silent-second-bell-solved.png",
+      "bytes": 76759,
+      "passed": true
+    },
+    {
+      "name": "mobile-c33-early-late-arrival-solved.png",
+      "path": "output/playwright/v21/mobile-c33-early-late-arrival-solved.png",
+      "bytes": 79270,
+      "passed": true
+    },
+    {
+      "name": "mobile-c48-two-point-calibration-solved.png",
+      "path": "output/playwright/v21/mobile-c48-two-point-calibration-solved.png",
+      "bytes": 77380,
+      "passed": true
+    },
+    {
+      "name": "mobile-c60-last-sample-before-stop-proof-gap.png",
+      "path": "output/playwright/v21/mobile-c60-last-sample-before-stop-proof-gap.png",
+      "bytes": 48066,
+      "passed": true
+    },
+    {
+      "name": "mobile-c60-last-sample-before-stop-solved.png",
+      "path": "output/playwright/v21/mobile-c60-last-sample-before-stop-solved.png",
+      "bytes": 76885,
+      "passed": true
+    },
+    {
+      "name": "unknown-case-404.png",
+      "path": "output/playwright/v21/unknown-case-404.png",
+      "bytes": 19388,
+      "passed": true
+    },
+    {
+      "name": "webkit-desktop-home.png",
+      "path": "output/playwright/v21/webkit-desktop-home.png",
+      "bytes": 208542,
+      "passed": true
+    },
+    {
+      "name": "webkit-mobile-home.png",
+      "path": "output/playwright/v21/webkit-mobile-home.png",
+      "bytes": 88105,
+      "passed": true
+    }
+  ],
+  "contracts": {
+    "fourWorkspaces": true,
+    "singleActiveWorkspace": true,
+    "firstMinuteCue": true,
+    "mobileTheorySteps": true,
+    "mobileSeasonSwitcher": true,
+    "playerSummaryBesideReplay": true,
+    "deterministicAnswerSeparation": true,
+    "caseUiContinuation": true,
+    "keyboardShortcuts": true,
+    "draftContinuity": true
+  },
+  "passed": true
+}

@@ -1,0 +1,2007 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c66-still-weight",
+  "metadata": {
+    "titleKey": "case.c66.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "受力平衡",
+      "隐性耦合",
+      "反事实"
+    ],
+    "targetMinutes": {
+      "min": 9,
+      "max": 19
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:209e85b427beb9b6762549d852800cf4c78056c80dc0e0fc2952bc60277618a2",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-workshop-bench",
+    "sceneAsset": "/assets/cases/c66-still-weight/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c66-still-weight/scene-mobile.svg",
+    "palette": "season5-workshop-bench",
+    "accent": "#a9c6df",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "material-balance-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "material-balance"
+  },
+  "surface": {
+    "titleKey": "case.c66.title",
+    "textKey": "case.c66.surface",
+    "publicFactIds": [
+      "fact-c66-01",
+      "fact-c66-02",
+      "fact-c66-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c66-01",
+      "query-c66-02",
+      "query-c66-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c66-one",
+      "titleKey": "chapter.c66.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c66-1",
+      "titleKey": "board.c66.1.title",
+      "mode": "material-balance",
+      "slots": [
+        {
+          "id": "slot-c66-1-1",
+          "labelKey": "board.c66.1.slot.1",
+          "acceptsEventIds": [
+            "event-c66-01"
+          ]
+        },
+        {
+          "id": "slot-c66-1-2",
+          "labelKey": "board.c66.1.slot.2",
+          "acceptsEventIds": [
+            "event-c66-03"
+          ]
+        },
+        {
+          "id": "slot-c66-1-3",
+          "labelKey": "board.c66.1.slot.3",
+          "acceptsEventIds": [
+            "event-c66-05"
+          ]
+        },
+        {
+          "id": "slot-c66-1-4",
+          "labelKey": "board.c66.1.slot.4",
+          "acceptsEventIds": [
+            "event-c66-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "flows-in",
+        "retains",
+        "flows-out"
+      ]
+    },
+    {
+      "id": "board-c66-2",
+      "titleKey": "board.c66.2.title",
+      "mode": "counterfactual-tree",
+      "slots": [
+        {
+          "id": "slot-c66-2-1",
+          "labelKey": "board.c66.2.slot.1",
+          "acceptsEventIds": [
+            "event-c66-02"
+          ]
+        },
+        {
+          "id": "slot-c66-2-2",
+          "labelKey": "board.c66.2.slot.2",
+          "acceptsEventIds": [
+            "event-c66-04"
+          ]
+        },
+        {
+          "id": "slot-c66-2-3",
+          "labelKey": "board.c66.2.slot.3",
+          "acceptsEventIds": [
+            "event-c66-06"
+          ]
+        },
+        {
+          "id": "slot-c66-2-4",
+          "labelKey": "board.c66.2.slot.4",
+          "acceptsEventIds": [
+            "event-c66-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "if",
+        "otherwise",
+        "excludes"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c66-system",
+      "kind": "object",
+      "labelKey": "entity.c66.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c66",
+      "kind": "location",
+      "labelKey": "location.c66",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c66-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c66-system"
+      ],
+      "locationId": "location-c66",
+      "action": "step-c66-1",
+      "labelKey": "event.c66.1",
+      "effectFactIds": [
+        "fact-c66-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c66-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c66-system"
+      ],
+      "locationId": "location-c66",
+      "action": "step-c66-2",
+      "labelKey": "event.c66.2",
+      "effectFactIds": [
+        "fact-c66-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c66-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c66-system"
+      ],
+      "locationId": "location-c66",
+      "action": "step-c66-3",
+      "labelKey": "event.c66.3",
+      "effectFactIds": [
+        "fact-c66-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c66-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c66-system"
+      ],
+      "locationId": "location-c66",
+      "action": "step-c66-4",
+      "labelKey": "event.c66.4",
+      "effectFactIds": [
+        "fact-c66-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c66-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c66-system"
+      ],
+      "locationId": "location-c66",
+      "action": "step-c66-5",
+      "labelKey": "event.c66.5",
+      "effectFactIds": [
+        "fact-c66-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c66-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c66-system"
+      ],
+      "locationId": "location-c66",
+      "action": "step-c66-6",
+      "labelKey": "event.c66.6",
+      "effectFactIds": [
+        "fact-c66-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c66-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "21:24"
+      },
+      "participants": [
+        "entity-c66-system"
+      ],
+      "locationId": "location-c66",
+      "action": "step-c66-7",
+      "labelKey": "event.c66.7",
+      "effectFactIds": [
+        "fact-c66-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c66-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c66-system"
+      ],
+      "locationId": "location-c66",
+      "action": "step-c66-8",
+      "labelKey": "event.c66.8",
+      "effectFactIds": [
+        "fact-c66-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c66-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c66-system"
+      ],
+      "locationId": "location-c66",
+      "action": "step-c66-9",
+      "labelKey": "event.c66.9",
+      "effectFactIds": [
+        "fact-c66-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c66-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c66-system"
+      ],
+      "locationId": "location-c66",
+      "action": "step-c66-10",
+      "labelKey": "event.c66.10",
+      "effectFactIds": [
+        "fact-c66-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c66-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c66-system"
+      ],
+      "locationId": "location-c66",
+      "action": "step-c66-11",
+      "labelKey": "event.c66.11",
+      "effectFactIds": [
+        "fact-c66-11"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c66-1-1",
+      "type": "precedes",
+      "fromId": "entity-c66-system",
+      "toId": "location-c66",
+      "eventId": "event-c66-01",
+      "factId": "fact-c66-01"
+    },
+    {
+      "id": "relation-c66-1-2",
+      "type": "causes",
+      "fromId": "entity-c66-system",
+      "toId": "location-c66",
+      "eventId": "event-c66-03",
+      "factId": "fact-c66-02"
+    },
+    {
+      "id": "relation-c66-1-3",
+      "type": "causes",
+      "fromId": "entity-c66-system",
+      "toId": "location-c66",
+      "eventId": "event-c66-05",
+      "factId": "fact-c66-03"
+    },
+    {
+      "id": "relation-c66-2-1",
+      "type": "precedes",
+      "fromId": "entity-c66-system",
+      "toId": "location-c66",
+      "eventId": "event-c66-02",
+      "factId": "fact-c66-02"
+    },
+    {
+      "id": "relation-c66-2-2",
+      "type": "causes",
+      "fromId": "entity-c66-system",
+      "toId": "location-c66",
+      "eventId": "event-c66-04",
+      "factId": "fact-c66-03"
+    },
+    {
+      "id": "relation-c66-2-3",
+      "type": "causes",
+      "fromId": "entity-c66-system",
+      "toId": "location-c66",
+      "eventId": "event-c66-06",
+      "factId": "fact-c66-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c66-01",
+      "predicate": "verified_c66_1",
+      "args": {
+        "term": "砝码位置"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c66.1"
+    },
+    {
+      "id": "fact-c66-02",
+      "predicate": "verified_c66_2",
+      "args": {
+        "term": "磁性耦合"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c66.2"
+    },
+    {
+      "id": "fact-c66-03",
+      "predicate": "verified_c66_3",
+      "args": {
+        "term": "天平读数"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c66.3"
+    },
+    {
+      "id": "fact-c66-04",
+      "predicate": "verified_c66_4",
+      "args": {
+        "term": "秤盘受力"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c66.4"
+    },
+    {
+      "id": "fact-c66-05",
+      "predicate": "verified_c66_5",
+      "args": {
+        "term": "隐藏磁体"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c66.5"
+    },
+    {
+      "id": "fact-c66-06",
+      "predicate": "verified_c66_6",
+      "args": {
+        "term": "一分钟下降"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c66.6"
+    },
+    {
+      "id": "fact-c66-07",
+      "predicate": "verified_c66_7",
+      "args": {
+        "term": "重量守恒"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c66.7"
+    },
+    {
+      "id": "fact-c66-08",
+      "predicate": "verified_c66_8",
+      "args": {
+        "term": "称量基线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c66.8"
+    },
+    {
+      "id": "fact-c66-09",
+      "predicate": "verified_c66_9",
+      "args": {
+        "term": "金属托盘"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c66.9"
+    },
+    {
+      "id": "fact-c66-10",
+      "predicate": "verified_c66_10",
+      "args": {
+        "term": "受力方向"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c66.10"
+    },
+    {
+      "id": "fact-c66-11",
+      "predicate": "verified_c66_11",
+      "args": {
+        "term": "砝码位置"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-11"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c66.11"
+    },
+    {
+      "id": "fact-c66-12",
+      "predicate": "verified_c66_12",
+      "args": {
+        "term": "磁性耦合"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c66.12"
+    },
+    {
+      "id": "fact-c66-13",
+      "predicate": "verified_c66_13",
+      "args": {
+        "term": "天平读数"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c66.13"
+    },
+    {
+      "id": "fact-c66-14",
+      "predicate": "verified_c66_14",
+      "args": {
+        "term": "秤盘受力"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c66.14"
+    },
+    {
+      "id": "fact-c66-15",
+      "predicate": "verified_c66_15",
+      "args": {
+        "term": "隐藏磁体"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c66.15"
+    },
+    {
+      "id": "fact-c66-16",
+      "predicate": "verified_c66_16",
+      "args": {
+        "term": "一分钟下降"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c66.16"
+    },
+    {
+      "id": "fact-c66-17",
+      "predicate": "verified_c66_17",
+      "args": {
+        "term": "重量守恒"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c66.17"
+    },
+    {
+      "id": "fact-c66-18",
+      "predicate": "verified_c66_18",
+      "args": {
+        "term": "称量基线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c66.18"
+    },
+    {
+      "id": "fact-c66-19",
+      "predicate": "verified_c66_19",
+      "args": {
+        "term": "金属托盘"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c66-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c66-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c66.19"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c66-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-01",
+        "fact-c66-02",
+        "fact-c66-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c66-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c66-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-01",
+        "fact-c66-02",
+        "fact-c66-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c66-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c66-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-02",
+        "fact-c66-13"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c66-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c66-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-03",
+        "fact-c66-14"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c66-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c66-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-04",
+        "fact-c66-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c66-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c66-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-05",
+        "fact-c66-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c66-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c66-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-06",
+        "fact-c66-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c66-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c66-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-07",
+        "fact-c66-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c66-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c66-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-08",
+        "fact-c66-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c66-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c66-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c66-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c66-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-10"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c66-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c66-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c66-11"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c66-01",
+      "labelKey": "query.c66.1",
+      "intent": "verify",
+      "predicate": "verified_c66_1",
+      "slots": {
+        "subjectId": "entity-c66-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c66-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-opening"
+      ],
+      "examplePhrases": [
+        "砝码位置是否成立？",
+        "能确认砝码位置吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "砝码位置"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c66-02",
+      "labelKey": "query.c66.2",
+      "intent": "verify",
+      "predicate": "verified_c66_2",
+      "slots": {
+        "subjectId": "entity-c66-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c66-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-opening"
+      ],
+      "examplePhrases": [
+        "磁性耦合是否成立？",
+        "能确认磁性耦合吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "磁性耦合"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c66-03",
+      "labelKey": "query.c66.3",
+      "intent": "verify",
+      "predicate": "verified_c66_3",
+      "slots": {
+        "subjectId": "entity-c66-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c66-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-opening"
+      ],
+      "examplePhrases": [
+        "天平读数是否成立？",
+        "能确认天平读数吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "天平读数"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c66-04",
+      "labelKey": "query.c66.4",
+      "intent": "verify",
+      "predicate": "verified_c66_4",
+      "slots": {
+        "subjectId": "entity-c66-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c66-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-04"
+      ],
+      "examplePhrases": [
+        "秤盘受力是否成立？",
+        "能确认秤盘受力吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "秤盘受力"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c66-05",
+      "labelKey": "query.c66.5",
+      "intent": "verify",
+      "predicate": "verified_c66_5",
+      "slots": {
+        "subjectId": "entity-c66-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c66-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-05"
+      ],
+      "examplePhrases": [
+        "隐藏磁体是否成立？",
+        "能确认隐藏磁体吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "隐藏磁体"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c66-06",
+      "labelKey": "query.c66.6",
+      "intent": "verify",
+      "predicate": "verified_c66_6",
+      "slots": {
+        "subjectId": "entity-c66-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c66-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-06"
+      ],
+      "examplePhrases": [
+        "一分钟下降是否成立？",
+        "能确认一分钟下降吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "一分钟下降"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c66-07",
+      "labelKey": "query.c66.7",
+      "intent": "verify",
+      "predicate": "verified_c66_7",
+      "slots": {
+        "subjectId": "entity-c66-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c66-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-07"
+      ],
+      "examplePhrases": [
+        "重量守恒是否成立？",
+        "能确认重量守恒吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "重量守恒"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c66-08",
+      "labelKey": "query.c66.8",
+      "intent": "verify",
+      "predicate": "verified_c66_8",
+      "slots": {
+        "subjectId": "entity-c66-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c66-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-08"
+      ],
+      "examplePhrases": [
+        "称量基线是否成立？",
+        "能确认称量基线吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "称量基线"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c66-09",
+      "labelKey": "query.c66.9",
+      "intent": "verify",
+      "predicate": "verified_c66_9",
+      "slots": {
+        "subjectId": "entity-c66-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c66-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-09"
+      ],
+      "examplePhrases": [
+        "金属托盘是否成立？",
+        "能确认金属托盘吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "金属托盘"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c66-10",
+      "labelKey": "query.c66.10",
+      "intent": "verify",
+      "predicate": "verified_c66_10",
+      "slots": {
+        "subjectId": "entity-c66-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c66-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c66-10"
+      ],
+      "examplePhrases": [
+        "受力方向是否成立？",
+        "能确认受力方向吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "受力方向"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c66-01",
+      "kind": "scene",
+      "titleKey": "evidence.c66.1.title",
+      "observationKey": "evidence.c66.1.observation",
+      "sourceFactIds": [
+        "fact-c66-01",
+        "fact-c66-02",
+        "fact-c66-03"
+      ],
+      "sourceEventIds": [
+        "event-c66-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c66-system",
+        "location-c66"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c66-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c66-still-weight/evidence-01.svg",
+      "assetAlt": "砝码位置"
+    },
+    {
+      "id": "evidence-c66-02",
+      "kind": "record",
+      "titleKey": "evidence.c66.2.title",
+      "observationKey": "evidence.c66.2.observation",
+      "sourceFactIds": [
+        "fact-c66-02",
+        "fact-c66-13"
+      ],
+      "sourceEventIds": [
+        "event-c66-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c66-system",
+        "location-c66"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c66-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c66-still-weight/evidence-02.svg",
+      "assetAlt": "磁性耦合"
+    },
+    {
+      "id": "evidence-c66-03",
+      "kind": "object",
+      "titleKey": "evidence.c66.3.title",
+      "observationKey": "evidence.c66.3.observation",
+      "sourceFactIds": [
+        "fact-c66-03",
+        "fact-c66-14"
+      ],
+      "sourceEventIds": [
+        "event-c66-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c66-system",
+        "location-c66"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c66-still-weight/evidence-03.svg",
+      "assetAlt": "天平读数"
+    },
+    {
+      "id": "evidence-c66-04",
+      "kind": "scene",
+      "titleKey": "evidence.c66.4.title",
+      "observationKey": "evidence.c66.4.observation",
+      "sourceFactIds": [
+        "fact-c66-04",
+        "fact-c66-15"
+      ],
+      "sourceEventIds": [
+        "event-c66-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c66-system",
+        "location-c66"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c66-still-weight/evidence-04.svg",
+      "assetAlt": "秤盘受力"
+    },
+    {
+      "id": "evidence-c66-05",
+      "kind": "record",
+      "titleKey": "evidence.c66.5.title",
+      "observationKey": "evidence.c66.5.observation",
+      "sourceFactIds": [
+        "fact-c66-05",
+        "fact-c66-16"
+      ],
+      "sourceEventIds": [
+        "event-c66-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c66-system",
+        "location-c66"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c66-still-weight/evidence-05.svg",
+      "assetAlt": "隐藏磁体"
+    },
+    {
+      "id": "evidence-c66-06",
+      "kind": "object",
+      "titleKey": "evidence.c66.6.title",
+      "observationKey": "evidence.c66.6.observation",
+      "sourceFactIds": [
+        "fact-c66-06",
+        "fact-c66-17"
+      ],
+      "sourceEventIds": [
+        "event-c66-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c66-system",
+        "location-c66"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c66-still-weight/evidence-01.svg",
+      "assetAlt": "一分钟下降"
+    },
+    {
+      "id": "evidence-c66-07",
+      "kind": "scene",
+      "titleKey": "evidence.c66.7.title",
+      "observationKey": "evidence.c66.7.observation",
+      "sourceFactIds": [
+        "fact-c66-07",
+        "fact-c66-18"
+      ],
+      "sourceEventIds": [
+        "event-c66-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c66-system",
+        "location-c66"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c66-still-weight/evidence-02.svg",
+      "assetAlt": "重量守恒"
+    },
+    {
+      "id": "evidence-c66-08",
+      "kind": "record",
+      "titleKey": "evidence.c66.8.title",
+      "observationKey": "evidence.c66.8.observation",
+      "sourceFactIds": [
+        "fact-c66-08",
+        "fact-c66-19"
+      ],
+      "sourceEventIds": [
+        "event-c66-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c66-system",
+        "location-c66"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c66-still-weight/evidence-03.svg",
+      "assetAlt": "称量基线"
+    },
+    {
+      "id": "evidence-c66-09",
+      "kind": "object",
+      "titleKey": "evidence.c66.9.title",
+      "observationKey": "evidence.c66.9.observation",
+      "sourceFactIds": [
+        "fact-c66-09"
+      ],
+      "sourceEventIds": [
+        "event-c66-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c66-system",
+        "location-c66"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c66-still-weight/evidence-04.svg",
+      "assetAlt": "金属托盘"
+    },
+    {
+      "id": "evidence-c66-10",
+      "kind": "scene",
+      "titleKey": "evidence.c66.10.title",
+      "observationKey": "evidence.c66.10.observation",
+      "sourceFactIds": [
+        "fact-c66-10"
+      ],
+      "sourceEventIds": [
+        "event-c66-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c66-system",
+        "location-c66"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c66-still-weight/evidence-05.svg",
+      "assetAlt": "受力方向"
+    },
+    {
+      "id": "evidence-c66-11",
+      "kind": "record",
+      "titleKey": "evidence.c66.11.title",
+      "observationKey": "evidence.c66.11.observation",
+      "sourceFactIds": [
+        "fact-c66-11"
+      ],
+      "sourceEventIds": [
+        "event-c66-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c66-system",
+        "location-c66"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c66-still-weight/evidence-01.svg",
+      "assetAlt": "砝码位置"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c66.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c66-01",
+          "event-c66-02",
+          "event-c66-03",
+          "event-c66-04",
+          "event-c66-05",
+          "event-c66-06",
+          "event-c66-07",
+          "event-c66-08",
+          "event-c66-09",
+          "event-c66-10"
+        ],
+        "motiveKey": "用守恒和反事实排除可见移动假设"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c66-01",
+        "evidence-c66-02",
+        "evidence-c66-03",
+        "evidence-c66-04",
+        "evidence-c66-05",
+        "evidence-c66-06",
+        "evidence-c66-07",
+        "evidence-c66-08",
+        "evidence-c66-09",
+        "evidence-c66-10"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c66-1",
+        "contradiction-c66-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c66-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c66.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "砝码内部少了一块金属"
+        ],
+        "motiveKey": "motive-c66-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c66-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c66-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c66-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c66.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "天平软件自动扣除了重量"
+        ],
+        "motiveKey": "motive-c66-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c66-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c66-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c66-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c66-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c66-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c66-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c66-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c66-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c66-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c66-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c66-01",
+      "fact-c66-02",
+      "fact-c66-03",
+      "fact-c66-04",
+      "fact-c66-05",
+      "fact-c66-06",
+      "fact-c66-07",
+      "fact-c66-08",
+      "fact-c66-09",
+      "fact-c66-10"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c66-01",
+      "evidence-c66-02",
+      "evidence-c66-03",
+      "evidence-c66-04",
+      "evidence-c66-05",
+      "evidence-c66-06",
+      "evidence-c66-07",
+      "evidence-c66-08",
+      "evidence-c66-09",
+      "evidence-c66-10"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c66-01",
+        "event-c66-02"
+      ],
+      [
+        "event-c66-02",
+        "event-c66-03"
+      ],
+      [
+        "event-c66-03",
+        "event-c66-04"
+      ],
+      [
+        "event-c66-04",
+        "event-c66-05"
+      ],
+      [
+        "event-c66-05",
+        "event-c66-06"
+      ],
+      [
+        "event-c66-06",
+        "event-c66-07"
+      ],
+      [
+        "event-c66-07",
+        "event-c66-08"
+      ],
+      [
+        "event-c66-08",
+        "event-c66-09"
+      ],
+      [
+        "event-c66-09",
+        "event-c66-10"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c66-1",
+      "contradiction-c66-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c66-alternative-1",
+      "hypothesis-c66-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c66-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c66-a",
+        "evidenceIds": [
+          "evidence-c66-01",
+          "evidence-c66-02",
+          "evidence-c66-03",
+          "evidence-c66-04",
+          "evidence-c66-05",
+          "evidence-c66-06",
+          "evidence-c66-07",
+          "evidence-c66-08"
+        ]
+      },
+      {
+        "id": "proof-c66-b",
+        "evidenceIds": [
+          "evidence-c66-01",
+          "evidence-c66-02",
+          "evidence-c66-09",
+          "evidence-c66-10"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "用守恒和反事实排除可见移动假设"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c66-1",
+        "kind": "measurement",
+        "boardId": "board-c66-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c66-1-1",
+            "eventId": "event-c66-01"
+          },
+          {
+            "slotId": "slot-c66-1-2",
+            "eventId": "event-c66-03"
+          },
+          {
+            "slotId": "slot-c66-1-3",
+            "eventId": "event-c66-05"
+          },
+          {
+            "slotId": "slot-c66-1-4",
+            "eventId": "event-c66-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c66-01",
+            "toEventId": "event-c66-03",
+            "relation": "flows-in"
+          },
+          {
+            "fromEventId": "event-c66-03",
+            "toEventId": "event-c66-05",
+            "relation": "flows-in"
+          },
+          {
+            "fromEventId": "event-c66-05",
+            "toEventId": "event-c66-10",
+            "relation": "flows-in"
+          }
+        ],
+        "failureCategory": "measurement"
+      },
+      {
+        "id": "obligation-c66-2",
+        "kind": "identity",
+        "boardId": "board-c66-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c66-2-1",
+            "eventId": "event-c66-02"
+          },
+          {
+            "slotId": "slot-c66-2-2",
+            "eventId": "event-c66-04"
+          },
+          {
+            "slotId": "slot-c66-2-3",
+            "eventId": "event-c66-06"
+          },
+          {
+            "slotId": "slot-c66-2-4",
+            "eventId": "event-c66-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c66-02",
+            "toEventId": "event-c66-04",
+            "relation": "if"
+          },
+          {
+            "fromEventId": "event-c66-04",
+            "toEventId": "event-c66-06",
+            "relation": "if"
+          },
+          {
+            "fromEventId": "event-c66-06",
+            "toEventId": "event-c66-10",
+            "relation": "if"
+          }
+        ],
+        "failureCategory": "identity"
+      }
+    ],
+    "uniquenessClaim": "秤盘下的隐藏磁性耦合改变了受力，砝码本身没有移动；读数变化不必由可见物体移动造成。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c66-1",
+      "eventId": "event-c66-02",
+      "factIds": [
+        "fact-c66-01"
+      ],
+      "captionKey": "event.c66.2"
+    },
+    {
+      "id": "replay-c66-2",
+      "eventId": "event-c66-03",
+      "factIds": [
+        "fact-c66-02"
+      ],
+      "captionKey": "event.c66.3"
+    },
+    {
+      "id": "replay-c66-3",
+      "eventId": "event-c66-04",
+      "factIds": [
+        "fact-c66-03"
+      ],
+      "captionKey": "event.c66.4"
+    },
+    {
+      "id": "replay-c66-4",
+      "eventId": "event-c66-05",
+      "factIds": [
+        "fact-c66-04"
+      ],
+      "captionKey": "event.c66.5"
+    },
+    {
+      "id": "replay-c66-5",
+      "eventId": "event-c66-06",
+      "factIds": [
+        "fact-c66-05"
+      ],
+      "captionKey": "event.c66.6"
+    },
+    {
+      "id": "replay-c66-6",
+      "eventId": "event-c66-07",
+      "factIds": [
+        "fact-c66-01",
+        "fact-c66-02",
+        "fact-c66-03",
+        "fact-c66-04",
+        "fact-c66-05",
+        "fact-c66-06",
+        "fact-c66-07",
+        "fact-c66-08",
+        "fact-c66-09",
+        "fact-c66-10"
+      ],
+      "captionKey": "event.c66.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c66.title": "没有被搬动的砝码",
+      "case.c66.surface": "砝码位置没有变化，天平读数却在一分钟内下降。",
+      "case.c66.truth": "秤盘下的隐藏磁性耦合改变了受力，砝码本身没有移动；读数变化不必由可见物体移动造成。",
+      "entity.c66.system": "现场对象与记录链",
+      "location.c66": "受力平衡",
+      "hypothesis.c66.canonical": "秤盘下的隐藏磁性耦合改变了受力，砝码本身没有移动；读数变化不必由可见物体移动造成。",
+      "hypothesis.c66.alternative.1": "砝码内部少了一块金属",
+      "hypothesis.c66.alternative.2": "天平软件自动扣除了重量",
+      "motive.用守恒和反事实排除可见移动假设": "用守恒和反事实排除可见移动假设",
+      "chapter.c66.one": "固定异常",
+      "chapter.c66.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c66.1": "砝码位置是否成立？",
+      "query.c66.2": "磁性耦合是否成立？",
+      "query.c66.3": "天平读数是否成立？",
+      "query.c66.4": "秤盘受力是否成立？",
+      "query.c66.5": "隐藏磁体是否成立？",
+      "query.c66.6": "一分钟下降是否成立？",
+      "query.c66.7": "重量守恒是否成立？",
+      "query.c66.8": "称量基线是否成立？",
+      "query.c66.9": "金属托盘是否成立？",
+      "query.c66.10": "受力方向是否成立？",
+      "event.c66.1": "阶段 1：砝码位置进入记录链",
+      "event.c66.2": "阶段 2：磁性耦合进入记录链",
+      "event.c66.3": "阶段 3：天平读数进入记录链",
+      "event.c66.4": "阶段 4：秤盘受力进入记录链",
+      "event.c66.5": "阶段 5：隐藏磁体进入记录链",
+      "event.c66.6": "阶段 6：一分钟下降进入记录链",
+      "event.c66.7": "阶段 7：重量守恒进入记录链",
+      "event.c66.8": "阶段 8：称量基线进入记录链",
+      "event.c66.9": "阶段 9：金属托盘进入记录链",
+      "event.c66.10": "阶段 10：受力方向进入记录链",
+      "event.c66.11": "阶段 11：砝码位置进入记录链",
+      "evidence.c66.1.title": "砝码位置记录",
+      "evidence.c66.1.observation": "来源材料显示“砝码位置”在该阶段可复核。",
+      "evidence.c66.2.title": "磁性耦合记录",
+      "evidence.c66.2.observation": "来源材料显示“磁性耦合”在该阶段可复核。",
+      "evidence.c66.3.title": "天平读数记录",
+      "evidence.c66.3.observation": "来源材料显示“天平读数”在该阶段可复核。",
+      "evidence.c66.4.title": "秤盘受力记录",
+      "evidence.c66.4.observation": "来源材料显示“秤盘受力”在该阶段可复核。",
+      "evidence.c66.5.title": "隐藏磁体记录",
+      "evidence.c66.5.observation": "来源材料显示“隐藏磁体”在该阶段可复核。",
+      "evidence.c66.6.title": "一分钟下降记录",
+      "evidence.c66.6.observation": "来源材料显示“一分钟下降”在该阶段可复核。",
+      "evidence.c66.7.title": "重量守恒记录",
+      "evidence.c66.7.observation": "来源材料显示“重量守恒”在该阶段可复核。",
+      "evidence.c66.8.title": "称量基线记录",
+      "evidence.c66.8.observation": "来源材料显示“称量基线”在该阶段可复核。",
+      "evidence.c66.9.title": "金属托盘记录",
+      "evidence.c66.9.observation": "来源材料显示“金属托盘”在该阶段可复核。",
+      "evidence.c66.10.title": "受力方向记录",
+      "evidence.c66.10.observation": "来源材料显示“受力方向”在该阶段可复核。",
+      "evidence.c66.11.title": "砝码位置记录",
+      "evidence.c66.11.observation": "来源材料显示“砝码位置”在该阶段可复核。",
+      "board.c66.1.title": "没有被搬动的砝码 · material-balance",
+      "board.c66.1.slot.1": "起始来源",
+      "board.c66.1.slot.2": "关键变化",
+      "board.c66.1.slot.3": "观测结果",
+      "board.c66.1.slot.4": "排除替代",
+      "board.c66.2.title": "没有被搬动的砝码 · counterfactual-tree",
+      "board.c66.2.slot.1": "起始来源",
+      "board.c66.2.slot.2": "关键变化",
+      "board.c66.2.slot.3": "观测结果",
+      "board.c66.2.slot.4": "排除替代"
+    }
+  }
+}

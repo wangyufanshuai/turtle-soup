@@ -1,0 +1,579 @@
+{
+  "reportVersion": "2.5",
+  "releaseProfile": "v2.5-internal-rc",
+  "generatedAt": "2026-08-30T07:34:09.129Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "cases": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c62-rope-not-shorter",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c63-ice-melts-first",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c64-uncracked-glass",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c65-twin-watermarks",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c66-still-weight",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c67-shared-badge",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c68-empty-seat-proof",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c69-third-minutes",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c70-grace-late-arrival",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c71-revoked-open-door",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c72-message-read-twice",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c73-phantom-exit",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c74-silent-footsteps",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c75-two-weather-photo",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c76-red-light-second",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c77-invisible-ninth-wire",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c78-sound-from-other-side",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c79-extra-queue-order",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c80-power-on-restart",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c81-lost-ack",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c82-closed-network-device",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c83-two-unloads",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    }
+  ],
+  "staticLeaks": [],
+  "remoteHosts": [],
+  "unexpectedRemoteHosts": [],
+  "workerBoundary": {
+    "projectsOnly": true,
+    "noCaseFilePostMessage": true,
+    "rejectsUnknownCase": true
+  },
+  "endpointGuards": {
+    "remoteHttps": true,
+    "remoteHttpRejected": true,
+    "credentialsRejected": true,
+    "hostRemoteRejected": true,
+    "hostLocalAccepted": true
+  },
+  "serviceWorkerGuards": {
+    "sameOriginGetOnly": true,
+    "noRuntimeCachePut": true,
+    "profileScopedCleanup": true
+  },
+  "historicalArtifacts": [
+    {
+      "version": "v1.8",
+      "expected": "43b6dff6b70abec6a74788bb28fba6f7301eb91dd892818584c82f48fc88d30d",
+      "actual": "43b6dff6b70abec6a74788bb28fba6f7301eb91dd892818584c82f48fc88d30d",
+      "unchanged": true
+    },
+    {
+      "version": "v1.9",
+      "expected": "c3c074e1170ca2efd7db0b3c0437873dc7d8633074ab4ff4c62c5b7910a8a6fc",
+      "actual": "c3c074e1170ca2efd7db0b3c0437873dc7d8633074ab4ff4c62c5b7910a8a6fc",
+      "unchanged": true
+    },
+    {
+      "version": "v2.0",
+      "expected": "76e8d237acdc94f99f8cf48ca25bc8f1b22b6bdc86ce2a74153700d290a27273",
+      "actual": "76e8d237acdc94f99f8cf48ca25bc8f1b22b6bdc86ce2a74153700d290a27273",
+      "unchanged": true
+    },
+    {
+      "version": "v2.1",
+      "expected": "af82f2ea2c7c29f4d934726afd96be5319b68693dcb9ed61747d36e784784929",
+      "actual": "af82f2ea2c7c29f4d934726afd96be5319b68693dcb9ed61747d36e784784929",
+      "unchanged": true
+    },
+    {
+      "version": "v2.2",
+      "expected": "730a4364fbde1520214f00fc9afdf5f6605259359e695498486e83da35b6b937",
+      "actual": "730a4364fbde1520214f00fc9afdf5f6605259359e695498486e83da35b6b937",
+      "unchanged": true
+    },
+    {
+      "version": "v2.3",
+      "expected": "e88a0b12d9437cd3c9e3d94bce81481756629ae19439cfd93ed406f45586f9d4",
+      "actual": "e88a0b12d9437cd3c9e3d94bce81481756629ae19439cfd93ed406f45586f9d4",
+      "unchanged": true
+    },
+    {
+      "version": "v2.4",
+      "expected": "58b4b4f140cbcd959b3578037cbe94894491204d03cbf923ca648f1f927db25f",
+      "actual": "58b4b4f140cbcd959b3578037cbe94894491204d03cbf923ca648f1f927db25f",
+      "unchanged": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,210 @@
+{
+  "reportVersion": "2.3",
+  "releaseProfile": "v2.3-internal-rc",
+  "generatedAt": "2026-08-30T02:14:59.810Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "screenshots": [
+    {
+      "name": "chromium-desktop-home.png",
+      "path": "output/playwright/v23/chromium-desktop-home.png",
+      "bytes": 545854,
+      "passed": true
+    },
+    {
+      "name": "chromium-mobile-home.png",
+      "path": "output/playwright/v23/chromium-mobile-home.png",
+      "bytes": 211728,
+      "passed": true
+    },
+    {
+      "name": "desktop-c01-cold-room-knock-proof-gap.png",
+      "path": "output/playwright/v23/desktop-c01-cold-room-knock-proof-gap.png",
+      "bytes": 193512,
+      "passed": true
+    },
+    {
+      "name": "desktop-c01-cold-room-knock-solved.png",
+      "path": "output/playwright/v23/desktop-c01-cold-room-knock-solved.png",
+      "bytes": 283461,
+      "passed": true
+    },
+    {
+      "name": "desktop-c03-second-shadow-solved.png",
+      "path": "output/playwright/v23/desktop-c03-second-shadow-solved.png",
+      "bytes": 279477,
+      "passed": true
+    },
+    {
+      "name": "desktop-c13-second-waterline-solved.png",
+      "path": "output/playwright/v23/desktop-c13-second-waterline-solved.png",
+      "bytes": 286958,
+      "passed": true
+    },
+    {
+      "name": "desktop-c25-silent-second-bell-solved.png",
+      "path": "output/playwright/v23/desktop-c25-silent-second-bell-solved.png",
+      "bytes": 281618,
+      "passed": true
+    },
+    {
+      "name": "desktop-c33-early-late-arrival-solved.png",
+      "path": "output/playwright/v23/desktop-c33-early-late-arrival-solved.png",
+      "bytes": 278399,
+      "passed": true
+    },
+    {
+      "name": "desktop-c48-two-point-calibration-solved.png",
+      "path": "output/playwright/v23/desktop-c48-two-point-calibration-solved.png",
+      "bytes": 292117,
+      "passed": true
+    },
+    {
+      "name": "desktop-c60-last-sample-before-stop-proof-gap.png",
+      "path": "output/playwright/v23/desktop-c60-last-sample-before-stop-proof-gap.png",
+      "bytes": 106703,
+      "passed": true
+    },
+    {
+      "name": "desktop-c60-last-sample-before-stop-solved.png",
+      "path": "output/playwright/v23/desktop-c60-last-sample-before-stop-solved.png",
+      "bytes": 297604,
+      "passed": true
+    },
+    {
+      "name": "firefox-desktop-home.png",
+      "path": "output/playwright/v23/firefox-desktop-home.png",
+      "bytes": 432122,
+      "passed": true
+    },
+    {
+      "name": "firefox-mobile-home.png",
+      "path": "output/playwright/v23/firefox-mobile-home.png",
+      "bytes": 177390,
+      "passed": true
+    },
+    {
+      "name": "mobile-c01-cold-room-knock-proof-gap.png",
+      "path": "output/playwright/v23/mobile-c01-cold-room-knock-proof-gap.png",
+      "bytes": 42883,
+      "passed": true
+    },
+    {
+      "name": "mobile-c01-cold-room-knock-solved.png",
+      "path": "output/playwright/v23/mobile-c01-cold-room-knock-solved.png",
+      "bytes": 126493,
+      "passed": true
+    },
+    {
+      "name": "mobile-c03-second-shadow-solved.png",
+      "path": "output/playwright/v23/mobile-c03-second-shadow-solved.png",
+      "bytes": 126243,
+      "passed": true
+    },
+    {
+      "name": "mobile-c13-second-waterline-solved.png",
+      "path": "output/playwright/v23/mobile-c13-second-waterline-solved.png",
+      "bytes": 125977,
+      "passed": true
+    },
+    {
+      "name": "mobile-c25-silent-second-bell-solved.png",
+      "path": "output/playwright/v23/mobile-c25-silent-second-bell-solved.png",
+      "bytes": 124095,
+      "passed": true
+    },
+    {
+      "name": "mobile-c33-early-late-arrival-solved.png",
+      "path": "output/playwright/v23/mobile-c33-early-late-arrival-solved.png",
+      "bytes": 126123,
+      "passed": true
+    },
+    {
+      "name": "mobile-c48-two-point-calibration-solved.png",
+      "path": "output/playwright/v23/mobile-c48-two-point-calibration-solved.png",
+      "bytes": 124200,
+      "passed": true
+    },
+    {
+      "name": "mobile-c60-last-sample-before-stop-proof-gap.png",
+      "path": "output/playwright/v23/mobile-c60-last-sample-before-stop-proof-gap.png",
+      "bytes": 46925,
+      "passed": true
+    },
+    {
+      "name": "mobile-c60-last-sample-before-stop-solved.png",
+      "path": "output/playwright/v23/mobile-c60-last-sample-before-stop-solved.png",
+      "bytes": 121796,
+      "passed": true
+    },
+    {
+      "name": "unknown-case-404.png",
+      "path": "output/playwright/v23/unknown-case-404.png",
+      "bytes": 19388,
+      "passed": true
+    },
+    {
+      "name": "v22-evidence-proof-bridge.png",
+      "path": "output/playwright/v23/v22-evidence-proof-bridge.png",
+      "bytes": 179007,
+      "passed": true
+    },
+    {
+      "name": "v22-first-question-starts.png",
+      "path": "output/playwright/v23/v22-first-question-starts.png",
+      "bytes": 176453,
+      "passed": true
+    },
+    {
+      "name": "v22-mobile-c60-proof-context.png",
+      "path": "output/playwright/v23/v22-mobile-c60-proof-context.png",
+      "bytes": 77814,
+      "passed": true
+    },
+    {
+      "name": "v23-desktop-c60-solved-archive.png",
+      "path": "output/playwright/v23/v23-desktop-c60-solved-archive.png",
+      "bytes": 297484,
+      "passed": true
+    },
+    {
+      "name": "v23-mobile-c01-solved-archive.png",
+      "path": "output/playwright/v23/v23-mobile-c01-solved-archive.png",
+      "bytes": 126572,
+      "passed": true
+    },
+    {
+      "name": "webkit-desktop-home.png",
+      "path": "output/playwright/v23/webkit-desktop-home.png",
+      "bytes": 208542,
+      "passed": true
+    },
+    {
+      "name": "webkit-mobile-home.png",
+      "path": "output/playwright/v23/webkit-mobile-home.png",
+      "bytes": 88105,
+      "passed": true
+    }
+  ],
+  "contracts": {
+    "fourWorkspaces": true,
+    "singleActiveWorkspace": true,
+    "firstMinuteCue": true,
+    "mobileTheorySteps": true,
+    "mobileSeasonSwitcher": true,
+    "playerSummaryBesideReplay": true,
+    "deterministicAnswerSeparation": true,
+    "caseUiContinuation": true,
+    "keyboardShortcuts": true,
+    "draftContinuity": true,
+    "quickQuestionStarts": true,
+    "sessionDraftContinuation": true,
+    "proofContext": true,
+    "evidenceToProofBridge": true,
+    "discoveredEvidenceNotExamined": true,
+    "solvedArchiveFirst": true,
+    "solvedEditingHidden": true,
+    "seasonTabsKeyboard": true
+  },
+  "passed": true
+}

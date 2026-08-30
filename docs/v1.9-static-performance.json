@@ -1,0 +1,21 @@
+{
+  "reportVersion": "1.9",
+  "releaseProfile": "v1.9-internal-rc",
+  "generatedAt": "2026-08-25T15:37:22.576Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "budgets": {
+    "totalBytes": 7000000,
+    "initialJavaScriptBytes": 750000,
+    "maximumAssetBytes": 450000
+  },
+  "actual": {
+    "totalBytes": 6422007,
+    "initialJavaScriptBytes": 646922,
+    "maximumAssetBytes": 391291,
+    "fileCount": 855
+  },
+  "cacheIdentity": "black-soup-v19-ai-language-bridge-rc-1",
+  "failures": [],
+  "passed": true
+}

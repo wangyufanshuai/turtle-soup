@@ -1,0 +1,1047 @@
+{
+  "manifestVersion": "2.5",
+  "seasonId": "season-5",
+  "title": "第五季：被误读的现实",
+  "status": "internal-rc",
+  "publishable": false,
+  "humanEvaluation": {
+    "status": "pending",
+    "participants": 0,
+    "requiredBeforePublish": true
+  },
+  "cases": [
+    {
+      "id": "c61-missing-tape-turn",
+      "file": "c61-missing-tape-turn.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:3adbf127e8fc3bad61c326463eb162b42bf013d721858b69aef0de5dc103821d",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "85aae7dfdd1981c805353c73b3d0064940ab2fefc69d2780dd5ba526fce3a63f",
+      "public": {
+        "title": "少了一圈的胶带",
+        "surface": "计数器显示胶带少了一圈，但剩余长度与现场测量对不上。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "contentTags": [
+          "材料推理",
+          "机械测量",
+          "数量口径"
+        ],
+        "layoutId": "season5-workshop-bench",
+        "sceneAsset": "/assets/cases/c61-missing-tape-turn/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c61-missing-tape-turn/scene-mobile.svg",
+        "accent": "#d7b27a",
+        "boardModes": [
+          "calibration-curve",
+          "material-balance"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c62-rope-not-shorter",
+      "file": "c62-rope-not-shorter.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:8b7da1015e8f9ad4fe3d62bca56ecfa07a2605b4db9b4877ccb3b187a3f22176",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "f78ea27a5886360593de44ad65c9cd91bd85ac9a514bc94cf457dd72918005e2",
+      "public": {
+        "title": "绳子没有变短",
+        "surface": "绳子两端距离没有变化，卷扬机却报告已经收回了三米。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "contentTags": [
+          "空间路径",
+          "机械因果",
+          "参照关系"
+        ],
+        "layoutId": "season5-workshop-bench",
+        "sceneAsset": "/assets/cases/c62-rope-not-shorter/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c62-rope-not-shorter/scene-mobile.svg",
+        "accent": "#a9c6df",
+        "boardModes": [
+          "spatial-map",
+          "causal-graph"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c63-ice-melts-first",
+      "file": "c63-ice-melts-first.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:ae8dde73e130f1b26297527adb3372919fc601c81fce10df2849b7e4fb9da3bb",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "26e49c9477c4d2a5c493ba09cc4e1167a1e1ad20eba1edd8ba04272eaf45bcb9",
+      "public": {
+        "title": "冷库里先融化的冰",
+        "surface": "冰芯温度仍在零度以下，表面却已经出现了一圈融水。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "contentTags": [
+          "相变",
+          "阈值",
+          "环境状态"
+        ],
+        "layoutId": "season5-workshop-bench",
+        "sceneAsset": "/assets/cases/c63-ice-melts-first/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c63-ice-melts-first/scene-mobile.svg",
+        "accent": "#c9a7d9",
+        "boardModes": [
+          "threshold-ladder",
+          "state-trace"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c64-uncracked-glass",
+      "file": "c64-uncracked-glass.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:42f93eef734bafc0f384f11fbcdf693173262d438fcb336652e8cea9929c5d34",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "8dde405d84d49b12ea17e2a0cc0b2d885417e6f4393563d0e6908efc70232e55",
+      "public": {
+        "title": "没有裂纹的玻璃",
+        "surface": "撞击声和应力报警都出现了，玻璃表面却找不到裂纹。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "contentTags": [
+          "结构受力",
+          "声学证据",
+          "因果图"
+        ],
+        "layoutId": "season5-workshop-bench",
+        "sceneAsset": "/assets/cases/c64-uncracked-glass/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c64-uncracked-glass/scene-mobile.svg",
+        "accent": "#b5d8c1",
+        "boardModes": [
+          "causal-graph",
+          "measurement-model"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c65-twin-watermarks",
+      "file": "c65-twin-watermarks.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:5ffe59b9e8bf406a1dff832bff5543aaf34e14b812ffd26a332c4483d0222460",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "367c857bbdea780a2e67ac066195cf90809a91ccc17b95681dd53e5a94d720b3",
+      "public": {
+        "title": "同样高度的两道水印",
+        "surface": "两张纸的水印都在同一高度，裁切线却无法对齐。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "contentTags": [
+          "纸张形变",
+          "视觉参照",
+          "来源核验"
+        ],
+        "layoutId": "season5-civic-archive",
+        "sceneAsset": "/assets/cases/c65-twin-watermarks/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c65-twin-watermarks/scene-mobile.svg",
+        "accent": "#d7b27a",
+        "boardModes": [
+          "occlusion-map",
+          "reference-frame"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c66-still-weight",
+      "file": "c66-still-weight.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:209e85b427beb9b6762549d852800cf4c78056c80dc0e0fc2952bc60277618a2",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "ebd119cc544d590efed9413272d60910f4614ce9fbcc87c49bc3f69c92c9fc5e",
+      "public": {
+        "title": "没有被搬动的砝码",
+        "surface": "砝码位置没有变化，天平读数却在一分钟内下降。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "contentTags": [
+          "受力平衡",
+          "隐性耦合",
+          "反事实"
+        ],
+        "layoutId": "season5-workshop-bench",
+        "sceneAsset": "/assets/cases/c66-still-weight/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c66-still-weight/scene-mobile.svg",
+        "accent": "#a9c6df",
+        "boardModes": [
+          "material-balance",
+          "counterfactual-tree"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c67-shared-badge",
+      "file": "c67-shared-badge.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:53d0bd812d925d9f434b6b8c74156d061ce0992f1a8f99fa3f6a12c58e8bb836",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "8a3a0dd1ffd2fe8339252168aaa0da572db5319bddf6bf64c6488cb2bbc0b693",
+      "public": {
+        "title": "两个人的同一枚胸牌",
+        "surface": "门禁记录显示两名员工用过同一枚胸牌，系统却认为只有一个人在场。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "contentTags": [
+          "身份语义",
+          "凭证转交",
+          "反事实"
+        ],
+        "layoutId": "season5-civic-archive",
+        "sceneAsset": "/assets/cases/c67-shared-badge/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c67-shared-badge/scene-mobile.svg",
+        "accent": "#c9a7d9",
+        "boardModes": [
+          "identity-matrix",
+          "counterfactual-tree"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c68-empty-seat-proof",
+      "file": "c68-empty-seat-proof.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:9b8ac84cf98b6fa7629516d60c4c5ee41e8ccd59ed0304f14f4705298f06d17c",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "e84645486d1d8abbbba58b21b323bf129b02b1577d0cb11190000bdf27261755",
+      "public": {
+        "title": "空座位的在场证明",
+        "surface": "座椅传感器一直显示有人，监控却拍到座位已经空了。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "contentTags": [
+          "传感状态",
+          "在场判断",
+          "状态机"
+        ],
+        "layoutId": "season5-civic-archive",
+        "sceneAsset": "/assets/cases/c68-empty-seat-proof/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c68-empty-seat-proof/scene-mobile.svg",
+        "accent": "#b5d8c1",
+        "boardModes": [
+          "state-trace",
+          "counterfactual-tree"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c69-third-minutes",
+      "file": "c69-third-minutes.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:6c8472f337d0c556e25b2eed16068a2643e596d4adbbbea48bd28adb60e96935",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "018caa1950c24e9b31da78ba7d1757a3e0da5efa8539967087ea707c32152bcb",
+      "public": {
+        "title": "第三份会议纪要",
+        "surface": "同一时段出现三份会议纪要，参会者却只参加过一次会议。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "contentTags": [
+          "文书来源",
+          "并行草稿",
+          "时间区间"
+        ],
+        "layoutId": "season5-civic-archive",
+        "sceneAsset": "/assets/cases/c69-third-minutes/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c69-third-minutes/scene-mobile.svg",
+        "accent": "#d7b27a",
+        "boardModes": [
+          "provenance-chain",
+          "interval-logic"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c70-grace-late-arrival",
+      "file": "c70-grace-late-arrival.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:0fc81561b56d5de29c784614d5ee9fc00476302bc46afada529ca095f0110ee3",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "070974350205ad2edadcec889a6104ae60eb1fdd0aa433eab187896c89ada9f1",
+      "public": {
+        "title": "没有迟到的迟到者",
+        "surface": "考勤系统显示员工准时，门口摄像头却记录他在宽限时间后才到。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "contentTags": [
+          "制度阈值",
+          "时间区间",
+          "考勤语义"
+        ],
+        "layoutId": "season5-civic-archive",
+        "sceneAsset": "/assets/cases/c70-grace-late-arrival/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c70-grace-late-arrival/scene-mobile.svg",
+        "accent": "#a9c6df",
+        "boardModes": [
+          "timeline",
+          "threshold-ladder"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c71-revoked-open-door",
+      "file": "c71-revoked-open-door.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:51f881e3fbb09bd32b3bac32609137535228287284c0795c15ac3a1f33cdfabd",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "4abe95a314028461b787433b71211d72b4ce0c01b70954748854bb9ac177a805",
+      "public": {
+        "title": "失效后仍能开的权限",
+        "surface": "权限已经撤销，侧门在撤销后仍然被打开了一次。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "权限缓存",
+          "网络同步",
+          "因果链"
+        ],
+        "layoutId": "season5-network-control",
+        "sceneAsset": "/assets/cases/c71-revoked-open-door/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c71-revoked-open-door/scene-mobile.svg",
+        "accent": "#c9a7d9",
+        "boardModes": [
+          "network-topology",
+          "causal-graph"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c72-message-read-twice",
+      "file": "c72-message-read-twice.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:3a95dbe13b162eebb994096a50348d4c0cee3e9d52655ed390b1834e16aa9d17",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "9532d6a5b413dc2c24bd7744726ecc05152f5d2572e30d6a1293ac3f3838fa58",
+      "public": {
+        "title": "一封被两次读出的通知",
+        "surface": "阅读记录显示通知被打开两次，发送日志却只有一次。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "消息队列",
+          "重试语义",
+          "来源链"
+        ],
+        "layoutId": "season5-network-control",
+        "sceneAsset": "/assets/cases/c72-message-read-twice/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c72-message-read-twice/scene-mobile.svg",
+        "accent": "#b5d8c1",
+        "boardModes": [
+          "queue-model",
+          "provenance-chain"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c73-phantom-exit",
+      "file": "c73-phantom-exit.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:d87e6dfb889e39f01cc01d425eedeb284e35a2fbb8f4c700c006abca4fce3834",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "178cafbb86500d91b7d517049e1a695481d101eaa1b402230b57656ee8419d05",
+      "public": {
+        "title": "玻璃里多出的出口",
+        "surface": "值班员在玻璃里看见第二个出口，平面图上却只有一扇门。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "contentTags": [
+          "反射几何",
+          "空间观察",
+          "视觉证据"
+        ],
+        "layoutId": "season5-acoustic-lab",
+        "sceneAsset": "/assets/cases/c73-phantom-exit/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c73-phantom-exit/scene-mobile.svg",
+        "accent": "#d7b27a",
+        "boardModes": [
+          "occlusion-map",
+          "spatial-map"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c74-silent-footsteps",
+      "file": "c74-silent-footsteps.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:1846687b8afa350fdc6c0e8d362a8869df399c2820374fcdb51cc95bc1275ab4",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "ca5cf6d64ae93ee3d7b92517a110e6397ed7dc641d36477f9c0371261ca15779",
+      "public": {
+        "title": "没有回声的脚步声",
+        "surface": "走廊里听见了脚步声，尽头麦克风却没有录到回声。",
+        "difficulty": "advanced",
+        "targetMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "contentTags": [
+          "声学路径",
+          "相位抵消",
+          "传感器"
+        ],
+        "layoutId": "season5-acoustic-lab",
+        "sceneAsset": "/assets/cases/c74-silent-footsteps/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c74-silent-footsteps/scene-mobile.svg",
+        "accent": "#a9c6df",
+        "boardModes": [
+          "acoustic-path",
+          "measurement-model"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c75-two-weather-photo",
+      "file": "c75-two-weather-photo.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:7294163df21dbfc2dd42b37c931bfaa110242f2a55bea9316dc55091ee087654",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "853278850cd2d8a495f7e1df1bc806cbb05ab22bc12968994c098a974649117e",
+      "public": {
+        "title": "同一照片的两种天气",
+        "surface": "一张照片左边是晴天，右边却像刚下过雨。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "分时采样",
+          "摄影合成",
+          "视觉来源"
+        ],
+        "layoutId": "season5-acoustic-lab",
+        "sceneAsset": "/assets/cases/c75-two-weather-photo/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c75-two-weather-photo/scene-mobile.svg",
+        "accent": "#c9a7d9",
+        "boardModes": [
+          "sampling-window",
+          "occlusion-map"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c76-red-light-second",
+      "file": "c76-red-light-second.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:504bba955ac12ec130de6361e832e47aa6fd7767294e2f15ac43ec86322b737e",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "67d861a170a25bb3cd6fb12eb338d9e4fc924b178c2c9e6fc69ec49638da9a34",
+      "public": {
+        "title": "红灯先亮的那一秒",
+        "surface": "监控画面显示红灯比绿灯早亮一秒，现场记录却说两灯同时切换。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "滚动快门",
+          "时间区间",
+          "视觉参照"
+        ],
+        "layoutId": "season5-acoustic-lab",
+        "sceneAsset": "/assets/cases/c76-red-light-second/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c76-red-light-second/scene-mobile.svg",
+        "accent": "#b5d8c1",
+        "boardModes": [
+          "interval-logic",
+          "reference-frame"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c77-invisible-ninth-wire",
+      "file": "c77-invisible-ninth-wire.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:8a1befea7762e91333816e2afe28df2c90a93b76b192c178d0c3e5fcf8cfb83f",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "03790df761581a3541aec26836640cdeb3dd4681c84995a4cf4f6f219203c2f2",
+      "public": {
+        "title": "看不见的第九根线",
+        "surface": "摄像头拍不到第九根线，安全系统却在它断开时报警。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "光谱边界",
+          "信号链",
+          "负证据"
+        ],
+        "layoutId": "season5-network-control",
+        "sceneAsset": "/assets/cases/c77-invisible-ninth-wire/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c77-invisible-ninth-wire/scene-mobile.svg",
+        "accent": "#d7b27a",
+        "boardModes": [
+          "signal-chain",
+          "occlusion-map"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c78-sound-from-other-side",
+      "file": "c78-sound-from-other-side.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:6231f8cbc3a1ee480b41030c4df733c205aaa379f6e969fee211a44bad89a7a4",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "367efff0cf3fadded9da495736f7761ebb2dac8209a15af1c9c876fa1f3bcfc3",
+      "public": {
+        "title": "从另一面传来的声音",
+        "surface": "定位系统把声音指向东墙，现场却只有西侧设备在运行。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "结构传声",
+          "定位误读",
+          "空间路径"
+        ],
+        "layoutId": "season5-acoustic-lab",
+        "sceneAsset": "/assets/cases/c78-sound-from-other-side/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c78-sound-from-other-side/scene-mobile.svg",
+        "accent": "#a9c6df",
+        "boardModes": [
+          "acoustic-path",
+          "spatial-map"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c79-extra-queue-order",
+      "file": "c79-extra-queue-order.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:69f22e56a9a9620491a1752b7cbf8cf51810a51b17756f473b2c6fcbead557f7",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "6f21266b22c258d623e99c544c0e985d04d0233049a3db81cb1d5dfd2621aaea",
+      "public": {
+        "title": "队列里多出的订单",
+        "surface": "订单总数比客户提交数多一个，仓库却没有多出任何货物。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "重试队列",
+          "幂等提交",
+          "容量约束"
+        ],
+        "layoutId": "season5-network-control",
+        "sceneAsset": "/assets/cases/c79-extra-queue-order/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c79-extra-queue-order/scene-mobile.svg",
+        "accent": "#c9a7d9",
+        "boardModes": [
+          "capacity-model",
+          "queue-model"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c80-power-on-restart",
+      "file": "c80-power-on-restart.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:2c129c326d8e0f2019c42224274d72d65ed64635040939be5d879a54cbf97776",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "3ba5ec9292889306f334662221add83ea5c8db03c8744e7adafea5213fa8fc31",
+      "public": {
+        "title": "没有断电的重启",
+        "surface": "设备日志出现重启，电源监控却从未掉电。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "服务状态",
+          "监督进程",
+          "系统边界"
+        ],
+        "layoutId": "season5-network-control",
+        "sceneAsset": "/assets/cases/c80-power-on-restart/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c80-power-on-restart/scene-mobile.svg",
+        "accent": "#b5d8c1",
+        "boardModes": [
+          "causal-graph",
+          "state-trace"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c81-lost-ack",
+      "file": "c81-lost-ack.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:e7d6b1b3895791e79c58e36c45ad96288f60b5f4f75135c42649415e26d51fb8",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "7b0c3f7adff524b4af0f4efd315b43fa339f2a90d95afde8e19060ed2121c85f",
+      "public": {
+        "title": "只丢了一个确认",
+        "surface": "操作员没有收到确认，但后台已经完成了转移。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "contentTags": [
+          "确认丢失",
+          "幂等性",
+          "保管链"
+        ],
+        "layoutId": "season5-network-control",
+        "sceneAsset": "/assets/cases/c81-lost-ack/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c81-lost-ack/scene-mobile.svg",
+        "accent": "#d7b27a",
+        "boardModes": [
+          "counterfactual-tree",
+          "provenance-chain"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c82-closed-network-device",
+      "file": "c82-closed-network-device.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:94e249c8e0ebbc1f750369f917815356aca0cb220b369ccc4cef9cde7f239743",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "67b728425762a212a0331eeba0bfc3533dbc1b214995f41287b97fedbb42e52d",
+      "public": {
+        "title": "封闭网络里的新设备",
+        "surface": "设备在没有联网的日期已经出现在机房，入网日志却晚了两天。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 11,
+          "max": 21
+        },
+        "contentTags": [
+          "离线部署",
+          "网络来源",
+          "时间区间"
+        ],
+        "layoutId": "season5-network-control",
+        "sceneAsset": "/assets/cases/c82-closed-network-device/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c82-closed-network-device/scene-mobile.svg",
+        "accent": "#a9c6df",
+        "boardModes": [
+          "network-topology",
+          "interval-logic"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c83-two-unloads",
+      "file": "c83-two-unloads.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:206a2959bb7f0299cf715a7b0533a0add3ef9a1035ae899d329f2840f1a00be4",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "dc24fd37ceb6d037d9c7f9fa732d3136ddbac804508396aa812cebc840c9d9a6",
+      "public": {
+        "title": "一辆车的两次卸货",
+        "surface": "同一批次只对应一辆车，卸货记录却出现两次。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 11,
+          "max": 21
+        },
+        "contentTags": [
+          "物流分批",
+          "批次口径",
+          "来源链"
+        ],
+        "layoutId": "season5-civic-archive",
+        "sceneAsset": "/assets/cases/c83-two-unloads/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c83-two-unloads/scene-mobile.svg",
+        "accent": "#c9a7d9",
+        "boardModes": [
+          "material-balance",
+          "provenance-chain"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 14
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c84-handoff-after-stop",
+      "file": "c84-handoff-after-stop.json",
+      "contentVersion": 1,
+      "canonicalHash": "sha256:e57095815b8ca3386e1e04194a712ddc85c9ca945f11de0fbc412de1171d634e",
+      "status": "internal-rc",
+      "publishable": false,
+      "fileSha256": "fab21caf0c710333068b6aa70a965fcfa38d42a8a6271135e66dd5d2088270bd",
+      "public": {
+        "title": "停止以后仍完成的交接",
+        "surface": "系统收到停止命令后，审计记录仍显示最后一次交接已经完成。",
+        "difficulty": "expert",
+        "targetMinutes": {
+          "min": 15,
+          "max": 25
+        },
+        "contentTags": [
+          "综合因果",
+          "停止边界",
+          "交接审计"
+        ],
+        "layoutId": "season5-network-control",
+        "sceneAsset": "/assets/cases/c84-handoff-after-stop/scene.svg",
+        "sceneAssetMobile": "/assets/cases/c84-handoff-after-stop/scene-mobile.svg",
+        "accent": "#b5d8c1",
+        "boardModes": [
+          "causal-graph",
+          "interval-logic",
+          "counterfactual-tree"
+        ],
+        "replayChallenges": [
+          {
+            "mode": "limited-questions",
+            "questionLimit": 16
+          },
+          {
+            "mode": "minimal-proof"
+          },
+          {
+            "mode": "no-scaffolds"
+          }
+        ]
+      }
+    }
+  ]
+}

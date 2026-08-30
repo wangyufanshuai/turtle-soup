@@ -8,12 +8,13 @@ const CASE_MODES: Record<string, { mode: string; title: string; guide: string; r
   "c03-second-shadow": { mode: "identity-matrix", title: "人物—外观身份槽", guide: "角色外观、真实人物、服装和后台位置必须分开；先排事件，再核对证件与服装来源。", roles: ["人物位置", "服装来源", "角色外观", "证词观察", "后台记录", "身份排除"] },
   "c06-nonexistent-ticket": { mode: "signal-chain", title: "扫描—同步—显示链", guide: "把真实扫描、离线缓存、重新同步和屏幕显示分开，避免把写入时间当成发生时间。", roles: ["真实行动", "闸机采集", "离线缓存", "重新同步", "界面显示", "航次状态"] },
 };
+const MODE_LABELS: Record<string, string> = { timeline: "时间链", "identity-matrix": "身份矩阵", "signal-chain": "信号链" };
 
 export function LegacyTheoryWorkbench({ caseId, draft, events, dispatch }: { caseId: string; draft: TheoryDraft; events: EventOptionProjection[]; dispatch: (command: GameCommand) => void }) {
   const config = CASE_MODES[caseId] ?? CASE_MODES["c01-cold-room-knock"];
   const eventMap = new Map(events.map((event) => [event.id, event]));
   return <section className={styles.workbench} data-reasoning-surface="legacy" data-mode={config.mode} aria-label={config.title}>
-    <header><div><small>DIRECT REASONING / {config.mode.toUpperCase()}</small><h3>{config.title}</h3></div><b>{draft.eventIds.length} / {events.length}</b></header>
+    <header><div><small>直接推理 / {MODE_LABELS[config.mode] ?? "事件链"}</small><h3>{config.title}</h3></div><b>{draft.eventIds.length} / {events.length}</b></header>
     <p>{config.guide}</p>
     <div className={styles.bank} aria-label="公开事件片">{events.map((event) => <button type="button" key={event.id} disabled={draft.eventIds.includes(event.id)} onClick={() => dispatch({ type: "upsert_theory_event", theoryId: draft.id, eventId: event.id })}><time>{event.timeLabel}</time><span>{event.label}</span><b>{draft.eventIds.includes(event.id) ? "已放置" : "+"}</b></button>)}</div>
     <div className={styles.surface}>

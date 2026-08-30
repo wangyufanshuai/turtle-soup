@@ -1,0 +1,2280 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c64-uncracked-glass",
+  "metadata": {
+    "titleKey": "case.c64.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "结构受力",
+      "声学证据",
+      "因果图"
+    ],
+    "targetMinutes": {
+      "min": 9,
+      "max": 19
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:42f93eef734bafc0f384f11fbcdf693173262d438fcb336652e8cea9929c5d34",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-workshop-bench",
+    "sceneAsset": "/assets/cases/c64-uncracked-glass/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c64-uncracked-glass/scene-mobile.svg",
+    "palette": "season5-workshop-bench",
+    "accent": "#b5d8c1",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "causal-graph-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "causal-graph"
+  },
+  "surface": {
+    "titleKey": "case.c64.title",
+    "textKey": "case.c64.surface",
+    "publicFactIds": [
+      "fact-c64-01",
+      "fact-c64-02",
+      "fact-c64-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c64-01",
+      "query-c64-02",
+      "query-c64-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c64-one",
+      "titleKey": "chapter.c64.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c64-1",
+      "titleKey": "board.c64.1.title",
+      "mode": "causal-graph",
+      "slots": [
+        {
+          "id": "slot-c64-1-1",
+          "labelKey": "board.c64.1.slot.1",
+          "acceptsEventIds": [
+            "event-c64-01"
+          ]
+        },
+        {
+          "id": "slot-c64-1-2",
+          "labelKey": "board.c64.1.slot.2",
+          "acceptsEventIds": [
+            "event-c64-03"
+          ]
+        },
+        {
+          "id": "slot-c64-1-3",
+          "labelKey": "board.c64.1.slot.3",
+          "acceptsEventIds": [
+            "event-c64-05"
+          ]
+        },
+        {
+          "id": "slot-c64-1-4",
+          "labelKey": "board.c64.1.slot.4",
+          "acceptsEventIds": [
+            "event-c64-13"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "triggers",
+        "causes",
+        "explains"
+      ]
+    },
+    {
+      "id": "board-c64-2",
+      "titleKey": "board.c64.2.title",
+      "mode": "measurement-model",
+      "slots": [
+        {
+          "id": "slot-c64-2-1",
+          "labelKey": "board.c64.2.slot.1",
+          "acceptsEventIds": [
+            "event-c64-02"
+          ]
+        },
+        {
+          "id": "slot-c64-2-2",
+          "labelKey": "board.c64.2.slot.2",
+          "acceptsEventIds": [
+            "event-c64-04"
+          ]
+        },
+        {
+          "id": "slot-c64-2-3",
+          "labelKey": "board.c64.2.slot.3",
+          "acceptsEventIds": [
+            "event-c64-06"
+          ]
+        },
+        {
+          "id": "slot-c64-2-4",
+          "labelKey": "board.c64.2.slot.4",
+          "acceptsEventIds": [
+            "event-c64-13"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "measured-against",
+        "corrects",
+        "explains"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c64-system",
+      "kind": "object",
+      "labelKey": "entity.c64.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c64",
+      "kind": "location",
+      "labelKey": "location.c64",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c64-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-1",
+      "labelKey": "event.c64.1",
+      "effectFactIds": [
+        "fact-c64-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-2",
+      "labelKey": "event.c64.2",
+      "effectFactIds": [
+        "fact-c64-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-3",
+      "labelKey": "event.c64.3",
+      "effectFactIds": [
+        "fact-c64-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-4",
+      "labelKey": "event.c64.4",
+      "effectFactIds": [
+        "fact-c64-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-5",
+      "labelKey": "event.c64.5",
+      "effectFactIds": [
+        "fact-c64-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-6",
+      "labelKey": "event.c64.6",
+      "effectFactIds": [
+        "fact-c64-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "20:24"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-7",
+      "labelKey": "event.c64.7",
+      "effectFactIds": [
+        "fact-c64-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-8",
+      "labelKey": "event.c64.8",
+      "effectFactIds": [
+        "fact-c64-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-9",
+      "labelKey": "event.c64.9",
+      "effectFactIds": [
+        "fact-c64-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-10",
+      "labelKey": "event.c64.10",
+      "effectFactIds": [
+        "fact-c64-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-11",
+      "labelKey": "event.c64.11",
+      "effectFactIds": [
+        "fact-c64-11"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "21:44"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-12",
+      "labelKey": "event.c64.12",
+      "effectFactIds": [
+        "fact-c64-12"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-13",
+      "order": 130,
+      "time": {
+        "kind": "instant",
+        "value": "21:48"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-13",
+      "labelKey": "event.c64.13",
+      "effectFactIds": [
+        "fact-c64-13"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c64-14",
+      "order": 140,
+      "time": {
+        "kind": "instant",
+        "value": "21:52"
+      },
+      "participants": [
+        "entity-c64-system"
+      ],
+      "locationId": "location-c64",
+      "action": "step-c64-14",
+      "labelKey": "event.c64.14",
+      "effectFactIds": [
+        "fact-c64-14"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c64-1-1",
+      "type": "precedes",
+      "fromId": "entity-c64-system",
+      "toId": "location-c64",
+      "eventId": "event-c64-01",
+      "factId": "fact-c64-01"
+    },
+    {
+      "id": "relation-c64-1-2",
+      "type": "causes",
+      "fromId": "entity-c64-system",
+      "toId": "location-c64",
+      "eventId": "event-c64-03",
+      "factId": "fact-c64-02"
+    },
+    {
+      "id": "relation-c64-1-3",
+      "type": "causes",
+      "fromId": "entity-c64-system",
+      "toId": "location-c64",
+      "eventId": "event-c64-05",
+      "factId": "fact-c64-03"
+    },
+    {
+      "id": "relation-c64-2-1",
+      "type": "precedes",
+      "fromId": "entity-c64-system",
+      "toId": "location-c64",
+      "eventId": "event-c64-02",
+      "factId": "fact-c64-02"
+    },
+    {
+      "id": "relation-c64-2-2",
+      "type": "causes",
+      "fromId": "entity-c64-system",
+      "toId": "location-c64",
+      "eventId": "event-c64-04",
+      "factId": "fact-c64-03"
+    },
+    {
+      "id": "relation-c64-2-3",
+      "type": "causes",
+      "fromId": "entity-c64-system",
+      "toId": "location-c64",
+      "eventId": "event-c64-06",
+      "factId": "fact-c64-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c64-01",
+      "predicate": "verified_c64_1",
+      "args": {
+        "term": "冲击声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.1"
+    },
+    {
+      "id": "fact-c64-02",
+      "predicate": "verified_c64_2",
+      "args": {
+        "term": "框架受力"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.2"
+    },
+    {
+      "id": "fact-c64-03",
+      "predicate": "verified_c64_3",
+      "args": {
+        "term": "固定件"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.3"
+    },
+    {
+      "id": "fact-c64-04",
+      "predicate": "verified_c64_4",
+      "args": {
+        "term": "玻璃裂纹"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.4"
+    },
+    {
+      "id": "fact-c64-05",
+      "predicate": "verified_c64_5",
+      "args": {
+        "term": "应力报警"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.5"
+    },
+    {
+      "id": "fact-c64-06",
+      "predicate": "verified_c64_6",
+      "args": {
+        "term": "声学传感器"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.6"
+    },
+    {
+      "id": "fact-c64-07",
+      "predicate": "verified_c64_7",
+      "args": {
+        "term": "受力路径"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.7"
+    },
+    {
+      "id": "fact-c64-08",
+      "predicate": "verified_c64_8",
+      "args": {
+        "term": "裂纹检测"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.8"
+    },
+    {
+      "id": "fact-c64-09",
+      "predicate": "verified_c64_9",
+      "args": {
+        "term": "撞击时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.9"
+    },
+    {
+      "id": "fact-c64-10",
+      "predicate": "verified_c64_10",
+      "args": {
+        "term": "结构变形"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.10"
+    },
+    {
+      "id": "fact-c64-11",
+      "predicate": "verified_c64_11",
+      "args": {
+        "term": "冲击声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.11"
+    },
+    {
+      "id": "fact-c64-12",
+      "predicate": "verified_c64_12",
+      "args": {
+        "term": "框架受力"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-12"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.12"
+    },
+    {
+      "id": "fact-c64-13",
+      "predicate": "verified_c64_13",
+      "args": {
+        "term": "固定件"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-13"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-13"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-13"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c64.13"
+    },
+    {
+      "id": "fact-c64-14",
+      "predicate": "verified_c64_14",
+      "args": {
+        "term": "玻璃裂纹"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-14"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-14"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-14"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c64.14"
+    },
+    {
+      "id": "fact-c64-15",
+      "predicate": "verified_c64_15",
+      "args": {
+        "term": "应力报警"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c64.15"
+    },
+    {
+      "id": "fact-c64-16",
+      "predicate": "verified_c64_16",
+      "args": {
+        "term": "声学传感器"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c64.16"
+    },
+    {
+      "id": "fact-c64-17",
+      "predicate": "verified_c64_17",
+      "args": {
+        "term": "受力路径"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c64.17"
+    },
+    {
+      "id": "fact-c64-18",
+      "predicate": "verified_c64_18",
+      "args": {
+        "term": "裂纹检测"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c64.18"
+    },
+    {
+      "id": "fact-c64-19",
+      "predicate": "verified_c64_19",
+      "args": {
+        "term": "撞击时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c64.19"
+    },
+    {
+      "id": "fact-c64-20",
+      "predicate": "verified_c64_20",
+      "args": {
+        "term": "结构变形"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c64.20"
+    },
+    {
+      "id": "fact-c64-21",
+      "predicate": "verified_c64_21",
+      "args": {
+        "term": "冲击声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c64.21"
+    },
+    {
+      "id": "fact-c64-22",
+      "predicate": "verified_c64_22",
+      "args": {
+        "term": "框架受力"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c64-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c64-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c64.22"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c64-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-01",
+        "fact-c64-02",
+        "fact-c64-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c64-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-01",
+        "fact-c64-02",
+        "fact-c64-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c64-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-02",
+        "fact-c64-16"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c64-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-03",
+        "fact-c64-17"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c64-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-04",
+        "fact-c64-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c64-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-05",
+        "fact-c64-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c64-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-06",
+        "fact-c64-20"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c64-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-07",
+        "fact-c64-21"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c64-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-08",
+        "fact-c64-22"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c64-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c64-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c64-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c64-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-12"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c64-13",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-13"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-13"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c64-14",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c64-14"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c64-14"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c64-01",
+      "labelKey": "query.c64.1",
+      "intent": "verify",
+      "predicate": "verified_c64_1",
+      "slots": {
+        "subjectId": "entity-c64-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c64-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-opening"
+      ],
+      "examplePhrases": [
+        "冲击声是否成立？",
+        "能确认冲击声吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "冲击声"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c64-02",
+      "labelKey": "query.c64.2",
+      "intent": "verify",
+      "predicate": "verified_c64_2",
+      "slots": {
+        "subjectId": "entity-c64-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c64-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-opening"
+      ],
+      "examplePhrases": [
+        "框架受力是否成立？",
+        "能确认框架受力吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "框架受力"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c64-03",
+      "labelKey": "query.c64.3",
+      "intent": "verify",
+      "predicate": "verified_c64_3",
+      "slots": {
+        "subjectId": "entity-c64-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c64-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-opening"
+      ],
+      "examplePhrases": [
+        "固定件是否成立？",
+        "能确认固定件吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "固定件"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c64-04",
+      "labelKey": "query.c64.4",
+      "intent": "verify",
+      "predicate": "verified_c64_4",
+      "slots": {
+        "subjectId": "entity-c64-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c64-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-04"
+      ],
+      "examplePhrases": [
+        "玻璃裂纹是否成立？",
+        "能确认玻璃裂纹吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "玻璃裂纹"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c64-05",
+      "labelKey": "query.c64.5",
+      "intent": "verify",
+      "predicate": "verified_c64_5",
+      "slots": {
+        "subjectId": "entity-c64-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c64-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-05"
+      ],
+      "examplePhrases": [
+        "应力报警是否成立？",
+        "能确认应力报警吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "应力报警"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c64-06",
+      "labelKey": "query.c64.6",
+      "intent": "verify",
+      "predicate": "verified_c64_6",
+      "slots": {
+        "subjectId": "entity-c64-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c64-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-06"
+      ],
+      "examplePhrases": [
+        "声学传感器是否成立？",
+        "能确认声学传感器吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "声学传感器"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c64-07",
+      "labelKey": "query.c64.7",
+      "intent": "verify",
+      "predicate": "verified_c64_7",
+      "slots": {
+        "subjectId": "entity-c64-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c64-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-07"
+      ],
+      "examplePhrases": [
+        "受力路径是否成立？",
+        "能确认受力路径吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "受力路径"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c64-08",
+      "labelKey": "query.c64.8",
+      "intent": "verify",
+      "predicate": "verified_c64_8",
+      "slots": {
+        "subjectId": "entity-c64-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c64-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-08"
+      ],
+      "examplePhrases": [
+        "裂纹检测是否成立？",
+        "能确认裂纹检测吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "裂纹检测"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c64-09",
+      "labelKey": "query.c64.9",
+      "intent": "verify",
+      "predicate": "verified_c64_9",
+      "slots": {
+        "subjectId": "entity-c64-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c64-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-09"
+      ],
+      "examplePhrases": [
+        "撞击时间是否成立？",
+        "能确认撞击时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "撞击时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c64-10",
+      "labelKey": "query.c64.10",
+      "intent": "verify",
+      "predicate": "verified_c64_10",
+      "slots": {
+        "subjectId": "entity-c64-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c64-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c64-10"
+      ],
+      "examplePhrases": [
+        "结构变形是否成立？",
+        "能确认结构变形吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "结构变形"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c64-01",
+      "kind": "scene",
+      "titleKey": "evidence.c64.1.title",
+      "observationKey": "evidence.c64.1.observation",
+      "sourceFactIds": [
+        "fact-c64-01",
+        "fact-c64-02",
+        "fact-c64-03"
+      ],
+      "sourceEventIds": [
+        "event-c64-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c64-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-01.svg",
+      "assetAlt": "冲击声"
+    },
+    {
+      "id": "evidence-c64-02",
+      "kind": "record",
+      "titleKey": "evidence.c64.2.title",
+      "observationKey": "evidence.c64.2.observation",
+      "sourceFactIds": [
+        "fact-c64-02",
+        "fact-c64-16"
+      ],
+      "sourceEventIds": [
+        "event-c64-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c64-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-02.svg",
+      "assetAlt": "框架受力"
+    },
+    {
+      "id": "evidence-c64-03",
+      "kind": "object",
+      "titleKey": "evidence.c64.3.title",
+      "observationKey": "evidence.c64.3.observation",
+      "sourceFactIds": [
+        "fact-c64-03",
+        "fact-c64-17"
+      ],
+      "sourceEventIds": [
+        "event-c64-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-03.svg",
+      "assetAlt": "固定件"
+    },
+    {
+      "id": "evidence-c64-04",
+      "kind": "scene",
+      "titleKey": "evidence.c64.4.title",
+      "observationKey": "evidence.c64.4.observation",
+      "sourceFactIds": [
+        "fact-c64-04",
+        "fact-c64-18"
+      ],
+      "sourceEventIds": [
+        "event-c64-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-04.svg",
+      "assetAlt": "玻璃裂纹"
+    },
+    {
+      "id": "evidence-c64-05",
+      "kind": "record",
+      "titleKey": "evidence.c64.5.title",
+      "observationKey": "evidence.c64.5.observation",
+      "sourceFactIds": [
+        "fact-c64-05",
+        "fact-c64-19"
+      ],
+      "sourceEventIds": [
+        "event-c64-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-05.svg",
+      "assetAlt": "应力报警"
+    },
+    {
+      "id": "evidence-c64-06",
+      "kind": "object",
+      "titleKey": "evidence.c64.6.title",
+      "observationKey": "evidence.c64.6.observation",
+      "sourceFactIds": [
+        "fact-c64-06",
+        "fact-c64-20"
+      ],
+      "sourceEventIds": [
+        "event-c64-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-01.svg",
+      "assetAlt": "声学传感器"
+    },
+    {
+      "id": "evidence-c64-07",
+      "kind": "scene",
+      "titleKey": "evidence.c64.7.title",
+      "observationKey": "evidence.c64.7.observation",
+      "sourceFactIds": [
+        "fact-c64-07",
+        "fact-c64-21"
+      ],
+      "sourceEventIds": [
+        "event-c64-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-02.svg",
+      "assetAlt": "受力路径"
+    },
+    {
+      "id": "evidence-c64-08",
+      "kind": "record",
+      "titleKey": "evidence.c64.8.title",
+      "observationKey": "evidence.c64.8.observation",
+      "sourceFactIds": [
+        "fact-c64-08",
+        "fact-c64-22"
+      ],
+      "sourceEventIds": [
+        "event-c64-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-03.svg",
+      "assetAlt": "裂纹检测"
+    },
+    {
+      "id": "evidence-c64-09",
+      "kind": "object",
+      "titleKey": "evidence.c64.9.title",
+      "observationKey": "evidence.c64.9.observation",
+      "sourceFactIds": [
+        "fact-c64-09"
+      ],
+      "sourceEventIds": [
+        "event-c64-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-04.svg",
+      "assetAlt": "撞击时间"
+    },
+    {
+      "id": "evidence-c64-10",
+      "kind": "scene",
+      "titleKey": "evidence.c64.10.title",
+      "observationKey": "evidence.c64.10.observation",
+      "sourceFactIds": [
+        "fact-c64-10"
+      ],
+      "sourceEventIds": [
+        "event-c64-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-05.svg",
+      "assetAlt": "结构变形"
+    },
+    {
+      "id": "evidence-c64-11",
+      "kind": "record",
+      "titleKey": "evidence.c64.11.title",
+      "observationKey": "evidence.c64.11.observation",
+      "sourceFactIds": [
+        "fact-c64-11"
+      ],
+      "sourceEventIds": [
+        "event-c64-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-01.svg",
+      "assetAlt": "冲击声"
+    },
+    {
+      "id": "evidence-c64-12",
+      "kind": "object",
+      "titleKey": "evidence.c64.12.title",
+      "observationKey": "evidence.c64.12.observation",
+      "sourceFactIds": [
+        "fact-c64-12"
+      ],
+      "sourceEventIds": [
+        "event-c64-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-02.svg",
+      "assetAlt": "框架受力"
+    },
+    {
+      "id": "evidence-c64-13",
+      "kind": "scene",
+      "titleKey": "evidence.c64.13.title",
+      "observationKey": "evidence.c64.13.observation",
+      "sourceFactIds": [
+        "fact-c64-13"
+      ],
+      "sourceEventIds": [
+        "event-c64-13"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-03.svg",
+      "assetAlt": "固定件"
+    },
+    {
+      "id": "evidence-c64-14",
+      "kind": "record",
+      "titleKey": "evidence.c64.14.title",
+      "observationKey": "evidence.c64.14.observation",
+      "sourceFactIds": [
+        "fact-c64-14"
+      ],
+      "sourceEventIds": [
+        "event-c64-14"
+      ],
+      "relatedEntityIds": [
+        "entity-c64-system",
+        "location-c64"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c64-uncracked-glass/evidence-04.svg",
+      "assetAlt": "玻璃裂纹"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c64.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c64-01",
+          "event-c64-02",
+          "event-c64-03",
+          "event-c64-04",
+          "event-c64-05",
+          "event-c64-06",
+          "event-c64-07",
+          "event-c64-08",
+          "event-c64-09",
+          "event-c64-10",
+          "event-c64-11",
+          "event-c64-12",
+          "event-c64-13"
+        ],
+        "motiveKey": "将观测信号拆回冲击、传力和破坏三个事件"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c64-01",
+        "evidence-c64-02",
+        "evidence-c64-03",
+        "evidence-c64-04",
+        "evidence-c64-05",
+        "evidence-c64-06",
+        "evidence-c64-07",
+        "evidence-c64-08",
+        "evidence-c64-09",
+        "evidence-c64-10",
+        "evidence-c64-11",
+        "evidence-c64-12",
+        "evidence-c64-13"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c64-1",
+        "contradiction-c64-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c64-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c64.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "裂纹在报警后被擦掉了"
+        ],
+        "motiveKey": "motive-c64-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c64-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c64-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c64-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c64.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "传感器把普通震动误报成撞击"
+        ],
+        "motiveKey": "motive-c64-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c64-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c64-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c64-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c64-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c64-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c64-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c64-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c64-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c64-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c64-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c64-01",
+      "fact-c64-02",
+      "fact-c64-03",
+      "fact-c64-04",
+      "fact-c64-05",
+      "fact-c64-06",
+      "fact-c64-07",
+      "fact-c64-08",
+      "fact-c64-09",
+      "fact-c64-10",
+      "fact-c64-11",
+      "fact-c64-12",
+      "fact-c64-13"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c64-01",
+      "evidence-c64-02",
+      "evidence-c64-03",
+      "evidence-c64-04",
+      "evidence-c64-05",
+      "evidence-c64-06",
+      "evidence-c64-07",
+      "evidence-c64-08",
+      "evidence-c64-09",
+      "evidence-c64-10",
+      "evidence-c64-11",
+      "evidence-c64-12",
+      "evidence-c64-13"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c64-01",
+        "event-c64-02"
+      ],
+      [
+        "event-c64-02",
+        "event-c64-03"
+      ],
+      [
+        "event-c64-03",
+        "event-c64-04"
+      ],
+      [
+        "event-c64-04",
+        "event-c64-05"
+      ],
+      [
+        "event-c64-05",
+        "event-c64-06"
+      ],
+      [
+        "event-c64-06",
+        "event-c64-07"
+      ],
+      [
+        "event-c64-07",
+        "event-c64-08"
+      ],
+      [
+        "event-c64-08",
+        "event-c64-09"
+      ],
+      [
+        "event-c64-09",
+        "event-c64-10"
+      ],
+      [
+        "event-c64-10",
+        "event-c64-11"
+      ],
+      [
+        "event-c64-11",
+        "event-c64-12"
+      ],
+      [
+        "event-c64-12",
+        "event-c64-13"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c64-1",
+      "contradiction-c64-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c64-alternative-1",
+      "hypothesis-c64-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c64-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c64-a",
+        "evidenceIds": [
+          "evidence-c64-01",
+          "evidence-c64-02",
+          "evidence-c64-03",
+          "evidence-c64-04",
+          "evidence-c64-05",
+          "evidence-c64-06",
+          "evidence-c64-07",
+          "evidence-c64-08"
+        ]
+      },
+      {
+        "id": "proof-c64-b",
+        "evidenceIds": [
+          "evidence-c64-01",
+          "evidence-c64-02",
+          "evidence-c64-09",
+          "evidence-c64-10",
+          "evidence-c64-11",
+          "evidence-c64-12",
+          "evidence-c64-13"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "将观测信号拆回冲击、传力和破坏三个事件"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c64-1",
+        "kind": "state-transition",
+        "boardId": "board-c64-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c64-1-1",
+            "eventId": "event-c64-01"
+          },
+          {
+            "slotId": "slot-c64-1-2",
+            "eventId": "event-c64-03"
+          },
+          {
+            "slotId": "slot-c64-1-3",
+            "eventId": "event-c64-05"
+          },
+          {
+            "slotId": "slot-c64-1-4",
+            "eventId": "event-c64-13"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c64-01",
+            "toEventId": "event-c64-03",
+            "relation": "triggers"
+          },
+          {
+            "fromEventId": "event-c64-03",
+            "toEventId": "event-c64-05",
+            "relation": "triggers"
+          },
+          {
+            "fromEventId": "event-c64-05",
+            "toEventId": "event-c64-13",
+            "relation": "triggers"
+          }
+        ],
+        "failureCategory": "state-transition"
+      },
+      {
+        "id": "obligation-c64-2",
+        "kind": "measurement",
+        "boardId": "board-c64-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c64-2-1",
+            "eventId": "event-c64-02"
+          },
+          {
+            "slotId": "slot-c64-2-2",
+            "eventId": "event-c64-04"
+          },
+          {
+            "slotId": "slot-c64-2-3",
+            "eventId": "event-c64-06"
+          },
+          {
+            "slotId": "slot-c64-2-4",
+            "eventId": "event-c64-13"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c64-02",
+            "toEventId": "event-c64-04",
+            "relation": "measured-against"
+          },
+          {
+            "fromEventId": "event-c64-04",
+            "toEventId": "event-c64-06",
+            "relation": "measured-against"
+          },
+          {
+            "fromEventId": "event-c64-06",
+            "toEventId": "event-c64-13",
+            "relation": "measured-against"
+          }
+        ],
+        "failureCategory": "measurement"
+      }
+    ],
+    "uniquenessClaim": "框架把冲击应力转移到固定件，声学传感器记录了冲击而不是裂纹；声响、受力和破坏不是同一事件。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c64-1",
+      "eventId": "event-c64-02",
+      "factIds": [
+        "fact-c64-01"
+      ],
+      "captionKey": "event.c64.2"
+    },
+    {
+      "id": "replay-c64-2",
+      "eventId": "event-c64-03",
+      "factIds": [
+        "fact-c64-02"
+      ],
+      "captionKey": "event.c64.3"
+    },
+    {
+      "id": "replay-c64-3",
+      "eventId": "event-c64-04",
+      "factIds": [
+        "fact-c64-03"
+      ],
+      "captionKey": "event.c64.4"
+    },
+    {
+      "id": "replay-c64-4",
+      "eventId": "event-c64-05",
+      "factIds": [
+        "fact-c64-04"
+      ],
+      "captionKey": "event.c64.5"
+    },
+    {
+      "id": "replay-c64-5",
+      "eventId": "event-c64-06",
+      "factIds": [
+        "fact-c64-05"
+      ],
+      "captionKey": "event.c64.6"
+    },
+    {
+      "id": "replay-c64-6",
+      "eventId": "event-c64-07",
+      "factIds": [
+        "fact-c64-01",
+        "fact-c64-02",
+        "fact-c64-03",
+        "fact-c64-04",
+        "fact-c64-05",
+        "fact-c64-06",
+        "fact-c64-07",
+        "fact-c64-08",
+        "fact-c64-09",
+        "fact-c64-10",
+        "fact-c64-11",
+        "fact-c64-12",
+        "fact-c64-13"
+      ],
+      "captionKey": "event.c64.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c64.title": "没有裂纹的玻璃",
+      "case.c64.surface": "撞击声和应力报警都出现了，玻璃表面却找不到裂纹。",
+      "case.c64.truth": "框架把冲击应力转移到固定件，声学传感器记录了冲击而不是裂纹；声响、受力和破坏不是同一事件。",
+      "entity.c64.system": "现场对象与记录链",
+      "location.c64": "结构受力",
+      "hypothesis.c64.canonical": "框架把冲击应力转移到固定件，声学传感器记录了冲击而不是裂纹；声响、受力和破坏不是同一事件。",
+      "hypothesis.c64.alternative.1": "裂纹在报警后被擦掉了",
+      "hypothesis.c64.alternative.2": "传感器把普通震动误报成撞击",
+      "motive.将观测信号拆回冲击、传力和破坏三个事件": "将观测信号拆回冲击、传力和破坏三个事件",
+      "chapter.c64.one": "固定异常",
+      "chapter.c64.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c64.1": "冲击声是否成立？",
+      "query.c64.2": "框架受力是否成立？",
+      "query.c64.3": "固定件是否成立？",
+      "query.c64.4": "玻璃裂纹是否成立？",
+      "query.c64.5": "应力报警是否成立？",
+      "query.c64.6": "声学传感器是否成立？",
+      "query.c64.7": "受力路径是否成立？",
+      "query.c64.8": "裂纹检测是否成立？",
+      "query.c64.9": "撞击时间是否成立？",
+      "query.c64.10": "结构变形是否成立？",
+      "event.c64.1": "阶段 1：冲击声进入记录链",
+      "event.c64.2": "阶段 2：框架受力进入记录链",
+      "event.c64.3": "阶段 3：固定件进入记录链",
+      "event.c64.4": "阶段 4：玻璃裂纹进入记录链",
+      "event.c64.5": "阶段 5：应力报警进入记录链",
+      "event.c64.6": "阶段 6：声学传感器进入记录链",
+      "event.c64.7": "阶段 7：受力路径进入记录链",
+      "event.c64.8": "阶段 8：裂纹检测进入记录链",
+      "event.c64.9": "阶段 9：撞击时间进入记录链",
+      "event.c64.10": "阶段 10：结构变形进入记录链",
+      "event.c64.11": "阶段 11：冲击声进入记录链",
+      "event.c64.12": "阶段 12：框架受力进入记录链",
+      "event.c64.13": "阶段 13：固定件进入记录链",
+      "event.c64.14": "阶段 14：玻璃裂纹进入记录链",
+      "evidence.c64.1.title": "冲击声记录",
+      "evidence.c64.1.observation": "来源材料显示“冲击声”在该阶段可复核。",
+      "evidence.c64.2.title": "框架受力记录",
+      "evidence.c64.2.observation": "来源材料显示“框架受力”在该阶段可复核。",
+      "evidence.c64.3.title": "固定件记录",
+      "evidence.c64.3.observation": "来源材料显示“固定件”在该阶段可复核。",
+      "evidence.c64.4.title": "玻璃裂纹记录",
+      "evidence.c64.4.observation": "来源材料显示“玻璃裂纹”在该阶段可复核。",
+      "evidence.c64.5.title": "应力报警记录",
+      "evidence.c64.5.observation": "来源材料显示“应力报警”在该阶段可复核。",
+      "evidence.c64.6.title": "声学传感器记录",
+      "evidence.c64.6.observation": "来源材料显示“声学传感器”在该阶段可复核。",
+      "evidence.c64.7.title": "受力路径记录",
+      "evidence.c64.7.observation": "来源材料显示“受力路径”在该阶段可复核。",
+      "evidence.c64.8.title": "裂纹检测记录",
+      "evidence.c64.8.observation": "来源材料显示“裂纹检测”在该阶段可复核。",
+      "evidence.c64.9.title": "撞击时间记录",
+      "evidence.c64.9.observation": "来源材料显示“撞击时间”在该阶段可复核。",
+      "evidence.c64.10.title": "结构变形记录",
+      "evidence.c64.10.observation": "来源材料显示“结构变形”在该阶段可复核。",
+      "evidence.c64.11.title": "冲击声记录",
+      "evidence.c64.11.observation": "来源材料显示“冲击声”在该阶段可复核。",
+      "evidence.c64.12.title": "框架受力记录",
+      "evidence.c64.12.observation": "来源材料显示“框架受力”在该阶段可复核。",
+      "evidence.c64.13.title": "固定件记录",
+      "evidence.c64.13.observation": "来源材料显示“固定件”在该阶段可复核。",
+      "evidence.c64.14.title": "玻璃裂纹记录",
+      "evidence.c64.14.observation": "来源材料显示“玻璃裂纹”在该阶段可复核。",
+      "board.c64.1.title": "没有裂纹的玻璃 · causal-graph",
+      "board.c64.1.slot.1": "起始来源",
+      "board.c64.1.slot.2": "关键变化",
+      "board.c64.1.slot.3": "观测结果",
+      "board.c64.1.slot.4": "排除替代",
+      "board.c64.2.title": "没有裂纹的玻璃 · measurement-model",
+      "board.c64.2.slot.1": "起始来源",
+      "board.c64.2.slot.2": "关键变化",
+      "board.c64.2.slot.3": "观测结果",
+      "board.c64.2.slot.4": "排除替代"
+    }
+  }
+}

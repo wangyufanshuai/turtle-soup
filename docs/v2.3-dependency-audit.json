@@ -1,0 +1,18 @@
+{
+  "reportVersion": "2.3",
+  "releaseProfile": "v2.3-internal-rc",
+  "generatedAt": "2026-08-30T02:10:57.317Z",
+  "registry": "https://registry.npmjs.org",
+  "commandExitCode": 0,
+  "vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "auditError": null,
+  "note": "Registry override applies only to this audit command; user npm configuration was not changed.",
+  "passed": true
+}

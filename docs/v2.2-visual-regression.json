@@ -1,0 +1,195 @@
+{
+  "reportVersion": "2.2",
+  "releaseProfile": "v2.2-internal-rc",
+  "generatedAt": "2026-08-29T02:14:58.422Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "screenshots": [
+    {
+      "name": "chromium-desktop-home.png",
+      "path": "output/playwright/v22/chromium-desktop-home.png",
+      "bytes": 545854,
+      "passed": true
+    },
+    {
+      "name": "chromium-mobile-home.png",
+      "path": "output/playwright/v22/chromium-mobile-home.png",
+      "bytes": 211728,
+      "passed": true
+    },
+    {
+      "name": "desktop-c01-cold-room-knock-proof-gap.png",
+      "path": "output/playwright/v22/desktop-c01-cold-room-knock-proof-gap.png",
+      "bytes": 193501,
+      "passed": true
+    },
+    {
+      "name": "desktop-c01-cold-room-knock-solved.png",
+      "path": "output/playwright/v22/desktop-c01-cold-room-knock-solved.png",
+      "bytes": 235818,
+      "passed": true
+    },
+    {
+      "name": "desktop-c03-second-shadow-solved.png",
+      "path": "output/playwright/v22/desktop-c03-second-shadow-solved.png",
+      "bytes": 238371,
+      "passed": true
+    },
+    {
+      "name": "desktop-c13-second-waterline-solved.png",
+      "path": "output/playwright/v22/desktop-c13-second-waterline-solved.png",
+      "bytes": 157704,
+      "passed": true
+    },
+    {
+      "name": "desktop-c25-silent-second-bell-solved.png",
+      "path": "output/playwright/v22/desktop-c25-silent-second-bell-solved.png",
+      "bytes": 156346,
+      "passed": true
+    },
+    {
+      "name": "desktop-c33-early-late-arrival-solved.png",
+      "path": "output/playwright/v22/desktop-c33-early-late-arrival-solved.png",
+      "bytes": 153195,
+      "passed": true
+    },
+    {
+      "name": "desktop-c48-two-point-calibration-solved.png",
+      "path": "output/playwright/v22/desktop-c48-two-point-calibration-solved.png",
+      "bytes": 154165,
+      "passed": true
+    },
+    {
+      "name": "desktop-c60-last-sample-before-stop-proof-gap.png",
+      "path": "output/playwright/v22/desktop-c60-last-sample-before-stop-proof-gap.png",
+      "bytes": 134614,
+      "passed": true
+    },
+    {
+      "name": "desktop-c60-last-sample-before-stop-solved.png",
+      "path": "output/playwright/v22/desktop-c60-last-sample-before-stop-solved.png",
+      "bytes": 157745,
+      "passed": true
+    },
+    {
+      "name": "firefox-desktop-home.png",
+      "path": "output/playwright/v22/firefox-desktop-home.png",
+      "bytes": 432122,
+      "passed": true
+    },
+    {
+      "name": "firefox-mobile-home.png",
+      "path": "output/playwright/v22/firefox-mobile-home.png",
+      "bytes": 177390,
+      "passed": true
+    },
+    {
+      "name": "mobile-c01-cold-room-knock-proof-gap.png",
+      "path": "output/playwright/v22/mobile-c01-cold-room-knock-proof-gap.png",
+      "bytes": 42883,
+      "passed": true
+    },
+    {
+      "name": "mobile-c01-cold-room-knock-solved.png",
+      "path": "output/playwright/v22/mobile-c01-cold-room-knock-solved.png",
+      "bytes": 77875,
+      "passed": true
+    },
+    {
+      "name": "mobile-c03-second-shadow-solved.png",
+      "path": "output/playwright/v22/mobile-c03-second-shadow-solved.png",
+      "bytes": 77795,
+      "passed": true
+    },
+    {
+      "name": "mobile-c13-second-waterline-solved.png",
+      "path": "output/playwright/v22/mobile-c13-second-waterline-solved.png",
+      "bytes": 79264,
+      "passed": true
+    },
+    {
+      "name": "mobile-c25-silent-second-bell-solved.png",
+      "path": "output/playwright/v22/mobile-c25-silent-second-bell-solved.png",
+      "bytes": 78751,
+      "passed": true
+    },
+    {
+      "name": "mobile-c33-early-late-arrival-solved.png",
+      "path": "output/playwright/v22/mobile-c33-early-late-arrival-solved.png",
+      "bytes": 78843,
+      "passed": true
+    },
+    {
+      "name": "mobile-c48-two-point-calibration-solved.png",
+      "path": "output/playwright/v22/mobile-c48-two-point-calibration-solved.png",
+      "bytes": 76738,
+      "passed": true
+    },
+    {
+      "name": "mobile-c60-last-sample-before-stop-proof-gap.png",
+      "path": "output/playwright/v22/mobile-c60-last-sample-before-stop-proof-gap.png",
+      "bytes": 46925,
+      "passed": true
+    },
+    {
+      "name": "mobile-c60-last-sample-before-stop-solved.png",
+      "path": "output/playwright/v22/mobile-c60-last-sample-before-stop-solved.png",
+      "bytes": 77976,
+      "passed": true
+    },
+    {
+      "name": "unknown-case-404.png",
+      "path": "output/playwright/v22/unknown-case-404.png",
+      "bytes": 19388,
+      "passed": true
+    },
+    {
+      "name": "v22-evidence-proof-bridge.png",
+      "path": "output/playwright/v22/v22-evidence-proof-bridge.png",
+      "bytes": 175234,
+      "passed": true
+    },
+    {
+      "name": "v22-first-question-starts.png",
+      "path": "output/playwright/v22/v22-first-question-starts.png",
+      "bytes": 176453,
+      "passed": true
+    },
+    {
+      "name": "v22-mobile-c60-proof-context.png",
+      "path": "output/playwright/v22/v22-mobile-c60-proof-context.png",
+      "bytes": 77814,
+      "passed": true
+    },
+    {
+      "name": "webkit-desktop-home.png",
+      "path": "output/playwright/v22/webkit-desktop-home.png",
+      "bytes": 208542,
+      "passed": true
+    },
+    {
+      "name": "webkit-mobile-home.png",
+      "path": "output/playwright/v22/webkit-mobile-home.png",
+      "bytes": 88105,
+      "passed": true
+    }
+  ],
+  "contracts": {
+    "fourWorkspaces": true,
+    "singleActiveWorkspace": true,
+    "firstMinuteCue": true,
+    "mobileTheorySteps": true,
+    "mobileSeasonSwitcher": true,
+    "playerSummaryBesideReplay": true,
+    "deterministicAnswerSeparation": true,
+    "caseUiContinuation": true,
+    "keyboardShortcuts": true,
+    "draftContinuity": true,
+    "quickQuestionStarts": true,
+    "sessionDraftContinuation": true,
+    "proofContext": true,
+    "evidenceToProofBridge": true,
+    "discoveredEvidenceNotExamined": true
+  },
+  "passed": true
+}

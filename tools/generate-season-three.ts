@@ -177,6 +177,14 @@ function relationsForMode(mode: ReasoningBoardMode): string[] {
     "measurement-model": ["measured-against", "corrects", "explains"],
     "sampling-window": ["sampled-before", "buffers", "explains"],
     "aggregate-constraint": ["contributes-to", "sums-with", "exceeds"],
+    "causal-graph": ["triggers", "causes", "explains"],
+    "material-balance": ["flows-in", "retains", "flows-out"],
+    "threshold-ladder": ["reaches", "crosses", "holds"],
+    "occlusion-map": ["sees", "occludes", "reveals"],
+    "acoustic-path": ["propagates-to", "reflects-at", "arrives-at"],
+    "interval-logic": ["precedes", "overlaps", "ends-at"],
+    "counterfactual-tree": ["if", "otherwise", "excludes"],
+    "capacity-model": ["enters", "bounded-by", "backs-up"],
   };
   return relations[mode];
 }

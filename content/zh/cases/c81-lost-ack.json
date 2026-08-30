@@ -1,0 +1,2007 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c81-lost-ack",
+  "metadata": {
+    "titleKey": "case.c81.title",
+    "difficulty": "expert",
+    "ageRating": "16+",
+    "contentTags": [
+      "确认丢失",
+      "幂等性",
+      "保管链"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:e7d6b1b3895791e79c58e36c45ad96288f60b5f4f75135c42649415e26d51fb8",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-network-control",
+    "sceneAsset": "/assets/cases/c81-lost-ack/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c81-lost-ack/scene-mobile.svg",
+    "palette": "season5-network-control",
+    "accent": "#d7b27a",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "counterfactual-tree-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "counterfactual-tree"
+  },
+  "surface": {
+    "titleKey": "case.c81.title",
+    "textKey": "case.c81.surface",
+    "publicFactIds": [
+      "fact-c81-01",
+      "fact-c81-02",
+      "fact-c81-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c81-01",
+      "query-c81-02",
+      "query-c81-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c81-one",
+      "titleKey": "chapter.c81.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c81-1",
+      "titleKey": "board.c81.1.title",
+      "mode": "counterfactual-tree",
+      "slots": [
+        {
+          "id": "slot-c81-1-1",
+          "labelKey": "board.c81.1.slot.1",
+          "acceptsEventIds": [
+            "event-c81-01"
+          ]
+        },
+        {
+          "id": "slot-c81-1-2",
+          "labelKey": "board.c81.1.slot.2",
+          "acceptsEventIds": [
+            "event-c81-03"
+          ]
+        },
+        {
+          "id": "slot-c81-1-3",
+          "labelKey": "board.c81.1.slot.3",
+          "acceptsEventIds": [
+            "event-c81-05"
+          ]
+        },
+        {
+          "id": "slot-c81-1-4",
+          "labelKey": "board.c81.1.slot.4",
+          "acceptsEventIds": [
+            "event-c81-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "if",
+        "otherwise",
+        "excludes"
+      ]
+    },
+    {
+      "id": "board-c81-2",
+      "titleKey": "board.c81.2.title",
+      "mode": "provenance-chain",
+      "slots": [
+        {
+          "id": "slot-c81-2-1",
+          "labelKey": "board.c81.2.slot.1",
+          "acceptsEventIds": [
+            "event-c81-02"
+          ]
+        },
+        {
+          "id": "slot-c81-2-2",
+          "labelKey": "board.c81.2.slot.2",
+          "acceptsEventIds": [
+            "event-c81-04"
+          ]
+        },
+        {
+          "id": "slot-c81-2-3",
+          "labelKey": "board.c81.2.slot.3",
+          "acceptsEventIds": [
+            "event-c81-06"
+          ]
+        },
+        {
+          "id": "slot-c81-2-4",
+          "labelKey": "board.c81.2.slot.4",
+          "acceptsEventIds": [
+            "event-c81-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "transfers-to",
+        "recorded-by",
+        "verifies"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c81-system",
+      "kind": "object",
+      "labelKey": "entity.c81.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c81",
+      "kind": "location",
+      "labelKey": "location.c81",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c81-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c81-system"
+      ],
+      "locationId": "location-c81",
+      "action": "step-c81-1",
+      "labelKey": "event.c81.1",
+      "effectFactIds": [
+        "fact-c81-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c81-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c81-system"
+      ],
+      "locationId": "location-c81",
+      "action": "step-c81-2",
+      "labelKey": "event.c81.2",
+      "effectFactIds": [
+        "fact-c81-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c81-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c81-system"
+      ],
+      "locationId": "location-c81",
+      "action": "step-c81-3",
+      "labelKey": "event.c81.3",
+      "effectFactIds": [
+        "fact-c81-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c81-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c81-system"
+      ],
+      "locationId": "location-c81",
+      "action": "step-c81-4",
+      "labelKey": "event.c81.4",
+      "effectFactIds": [
+        "fact-c81-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c81-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c81-system"
+      ],
+      "locationId": "location-c81",
+      "action": "step-c81-5",
+      "labelKey": "event.c81.5",
+      "effectFactIds": [
+        "fact-c81-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c81-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c81-system"
+      ],
+      "locationId": "location-c81",
+      "action": "step-c81-6",
+      "labelKey": "event.c81.6",
+      "effectFactIds": [
+        "fact-c81-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c81-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "21:24"
+      },
+      "participants": [
+        "entity-c81-system"
+      ],
+      "locationId": "location-c81",
+      "action": "step-c81-7",
+      "labelKey": "event.c81.7",
+      "effectFactIds": [
+        "fact-c81-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c81-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c81-system"
+      ],
+      "locationId": "location-c81",
+      "action": "step-c81-8",
+      "labelKey": "event.c81.8",
+      "effectFactIds": [
+        "fact-c81-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c81-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c81-system"
+      ],
+      "locationId": "location-c81",
+      "action": "step-c81-9",
+      "labelKey": "event.c81.9",
+      "effectFactIds": [
+        "fact-c81-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c81-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c81-system"
+      ],
+      "locationId": "location-c81",
+      "action": "step-c81-10",
+      "labelKey": "event.c81.10",
+      "effectFactIds": [
+        "fact-c81-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c81-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c81-system"
+      ],
+      "locationId": "location-c81",
+      "action": "step-c81-11",
+      "labelKey": "event.c81.11",
+      "effectFactIds": [
+        "fact-c81-11"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c81-1-1",
+      "type": "precedes",
+      "fromId": "entity-c81-system",
+      "toId": "location-c81",
+      "eventId": "event-c81-01",
+      "factId": "fact-c81-01"
+    },
+    {
+      "id": "relation-c81-1-2",
+      "type": "causes",
+      "fromId": "entity-c81-system",
+      "toId": "location-c81",
+      "eventId": "event-c81-03",
+      "factId": "fact-c81-02"
+    },
+    {
+      "id": "relation-c81-1-3",
+      "type": "causes",
+      "fromId": "entity-c81-system",
+      "toId": "location-c81",
+      "eventId": "event-c81-05",
+      "factId": "fact-c81-03"
+    },
+    {
+      "id": "relation-c81-2-1",
+      "type": "precedes",
+      "fromId": "entity-c81-system",
+      "toId": "location-c81",
+      "eventId": "event-c81-02",
+      "factId": "fact-c81-02"
+    },
+    {
+      "id": "relation-c81-2-2",
+      "type": "causes",
+      "fromId": "entity-c81-system",
+      "toId": "location-c81",
+      "eventId": "event-c81-04",
+      "factId": "fact-c81-03"
+    },
+    {
+      "id": "relation-c81-2-3",
+      "type": "causes",
+      "fromId": "entity-c81-system",
+      "toId": "location-c81",
+      "eventId": "event-c81-06",
+      "factId": "fact-c81-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c81-01",
+      "predicate": "verified_c81_1",
+      "args": {
+        "term": "确认包"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c81.1"
+    },
+    {
+      "id": "fact-c81-02",
+      "predicate": "verified_c81_2",
+      "args": {
+        "term": "后台提交"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c81.2"
+    },
+    {
+      "id": "fact-c81-03",
+      "predicate": "verified_c81_3",
+      "args": {
+        "term": "转移完成"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c81.3"
+    },
+    {
+      "id": "fact-c81-04",
+      "predicate": "verified_c81_4",
+      "args": {
+        "term": "重试操作"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c81.4"
+    },
+    {
+      "id": "fact-c81-05",
+      "predicate": "verified_c81_5",
+      "args": {
+        "term": "幂等规则"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c81.5"
+    },
+    {
+      "id": "fact-c81-06",
+      "predicate": "verified_c81_6",
+      "args": {
+        "term": "操作员"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c81.6"
+    },
+    {
+      "id": "fact-c81-07",
+      "predicate": "verified_c81_7",
+      "args": {
+        "term": "执行记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c81.7"
+    },
+    {
+      "id": "fact-c81-08",
+      "predicate": "verified_c81_8",
+      "args": {
+        "term": "保管链"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c81.8"
+    },
+    {
+      "id": "fact-c81-09",
+      "predicate": "verified_c81_9",
+      "args": {
+        "term": "未收到确认"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c81.9"
+    },
+    {
+      "id": "fact-c81-10",
+      "predicate": "verified_c81_10",
+      "args": {
+        "term": "提交状态"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c81.10"
+    },
+    {
+      "id": "fact-c81-11",
+      "predicate": "verified_c81_11",
+      "args": {
+        "term": "确认包"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-11"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c81.11"
+    },
+    {
+      "id": "fact-c81-12",
+      "predicate": "verified_c81_12",
+      "args": {
+        "term": "后台提交"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c81.12"
+    },
+    {
+      "id": "fact-c81-13",
+      "predicate": "verified_c81_13",
+      "args": {
+        "term": "转移完成"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c81.13"
+    },
+    {
+      "id": "fact-c81-14",
+      "predicate": "verified_c81_14",
+      "args": {
+        "term": "重试操作"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c81.14"
+    },
+    {
+      "id": "fact-c81-15",
+      "predicate": "verified_c81_15",
+      "args": {
+        "term": "幂等规则"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c81.15"
+    },
+    {
+      "id": "fact-c81-16",
+      "predicate": "verified_c81_16",
+      "args": {
+        "term": "操作员"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c81.16"
+    },
+    {
+      "id": "fact-c81-17",
+      "predicate": "verified_c81_17",
+      "args": {
+        "term": "执行记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c81.17"
+    },
+    {
+      "id": "fact-c81-18",
+      "predicate": "verified_c81_18",
+      "args": {
+        "term": "保管链"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c81.18"
+    },
+    {
+      "id": "fact-c81-19",
+      "predicate": "verified_c81_19",
+      "args": {
+        "term": "未收到确认"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c81-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c81-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c81.19"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c81-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-01",
+        "fact-c81-02",
+        "fact-c81-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c81-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c81-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-01",
+        "fact-c81-02",
+        "fact-c81-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c81-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c81-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-02",
+        "fact-c81-13"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c81-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c81-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-03",
+        "fact-c81-14"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c81-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c81-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-04",
+        "fact-c81-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c81-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c81-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-05",
+        "fact-c81-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c81-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c81-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-06",
+        "fact-c81-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c81-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c81-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-07",
+        "fact-c81-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c81-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c81-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-08",
+        "fact-c81-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c81-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c81-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c81-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c81-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-10"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c81-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c81-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c81-11"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c81-01",
+      "labelKey": "query.c81.1",
+      "intent": "verify",
+      "predicate": "verified_c81_1",
+      "slots": {
+        "subjectId": "entity-c81-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c81-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-opening"
+      ],
+      "examplePhrases": [
+        "确认包是否成立？",
+        "能确认确认包吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "确认包"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c81-02",
+      "labelKey": "query.c81.2",
+      "intent": "verify",
+      "predicate": "verified_c81_2",
+      "slots": {
+        "subjectId": "entity-c81-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c81-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-opening"
+      ],
+      "examplePhrases": [
+        "后台提交是否成立？",
+        "能确认后台提交吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "后台提交"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c81-03",
+      "labelKey": "query.c81.3",
+      "intent": "verify",
+      "predicate": "verified_c81_3",
+      "slots": {
+        "subjectId": "entity-c81-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c81-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-opening"
+      ],
+      "examplePhrases": [
+        "转移完成是否成立？",
+        "能确认转移完成吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "转移完成"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c81-04",
+      "labelKey": "query.c81.4",
+      "intent": "verify",
+      "predicate": "verified_c81_4",
+      "slots": {
+        "subjectId": "entity-c81-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c81-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-04"
+      ],
+      "examplePhrases": [
+        "重试操作是否成立？",
+        "能确认重试操作吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "重试操作"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c81-05",
+      "labelKey": "query.c81.5",
+      "intent": "verify",
+      "predicate": "verified_c81_5",
+      "slots": {
+        "subjectId": "entity-c81-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c81-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-05"
+      ],
+      "examplePhrases": [
+        "幂等规则是否成立？",
+        "能确认幂等规则吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "幂等规则"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c81-06",
+      "labelKey": "query.c81.6",
+      "intent": "verify",
+      "predicate": "verified_c81_6",
+      "slots": {
+        "subjectId": "entity-c81-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c81-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-06"
+      ],
+      "examplePhrases": [
+        "操作员是否成立？",
+        "能确认操作员吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "操作员"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c81-07",
+      "labelKey": "query.c81.7",
+      "intent": "verify",
+      "predicate": "verified_c81_7",
+      "slots": {
+        "subjectId": "entity-c81-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c81-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-07"
+      ],
+      "examplePhrases": [
+        "执行记录是否成立？",
+        "能确认执行记录吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "执行记录"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c81-08",
+      "labelKey": "query.c81.8",
+      "intent": "verify",
+      "predicate": "verified_c81_8",
+      "slots": {
+        "subjectId": "entity-c81-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c81-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-08"
+      ],
+      "examplePhrases": [
+        "保管链是否成立？",
+        "能确认保管链吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "保管链"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c81-09",
+      "labelKey": "query.c81.9",
+      "intent": "verify",
+      "predicate": "verified_c81_9",
+      "slots": {
+        "subjectId": "entity-c81-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c81-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-09"
+      ],
+      "examplePhrases": [
+        "未收到确认是否成立？",
+        "能确认未收到确认吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "未收到确认"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c81-10",
+      "labelKey": "query.c81.10",
+      "intent": "verify",
+      "predicate": "verified_c81_10",
+      "slots": {
+        "subjectId": "entity-c81-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c81-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c81-10"
+      ],
+      "examplePhrases": [
+        "提交状态是否成立？",
+        "能确认提交状态吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "提交状态"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c81-01",
+      "kind": "scene",
+      "titleKey": "evidence.c81.1.title",
+      "observationKey": "evidence.c81.1.observation",
+      "sourceFactIds": [
+        "fact-c81-01",
+        "fact-c81-02",
+        "fact-c81-03"
+      ],
+      "sourceEventIds": [
+        "event-c81-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c81-system",
+        "location-c81"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c81-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c81-lost-ack/evidence-01.svg",
+      "assetAlt": "确认包"
+    },
+    {
+      "id": "evidence-c81-02",
+      "kind": "record",
+      "titleKey": "evidence.c81.2.title",
+      "observationKey": "evidence.c81.2.observation",
+      "sourceFactIds": [
+        "fact-c81-02",
+        "fact-c81-13"
+      ],
+      "sourceEventIds": [
+        "event-c81-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c81-system",
+        "location-c81"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c81-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c81-lost-ack/evidence-02.svg",
+      "assetAlt": "后台提交"
+    },
+    {
+      "id": "evidence-c81-03",
+      "kind": "object",
+      "titleKey": "evidence.c81.3.title",
+      "observationKey": "evidence.c81.3.observation",
+      "sourceFactIds": [
+        "fact-c81-03",
+        "fact-c81-14"
+      ],
+      "sourceEventIds": [
+        "event-c81-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c81-system",
+        "location-c81"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c81-lost-ack/evidence-03.svg",
+      "assetAlt": "转移完成"
+    },
+    {
+      "id": "evidence-c81-04",
+      "kind": "scene",
+      "titleKey": "evidence.c81.4.title",
+      "observationKey": "evidence.c81.4.observation",
+      "sourceFactIds": [
+        "fact-c81-04",
+        "fact-c81-15"
+      ],
+      "sourceEventIds": [
+        "event-c81-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c81-system",
+        "location-c81"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c81-lost-ack/evidence-04.svg",
+      "assetAlt": "重试操作"
+    },
+    {
+      "id": "evidence-c81-05",
+      "kind": "record",
+      "titleKey": "evidence.c81.5.title",
+      "observationKey": "evidence.c81.5.observation",
+      "sourceFactIds": [
+        "fact-c81-05",
+        "fact-c81-16"
+      ],
+      "sourceEventIds": [
+        "event-c81-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c81-system",
+        "location-c81"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c81-lost-ack/evidence-05.svg",
+      "assetAlt": "幂等规则"
+    },
+    {
+      "id": "evidence-c81-06",
+      "kind": "object",
+      "titleKey": "evidence.c81.6.title",
+      "observationKey": "evidence.c81.6.observation",
+      "sourceFactIds": [
+        "fact-c81-06",
+        "fact-c81-17"
+      ],
+      "sourceEventIds": [
+        "event-c81-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c81-system",
+        "location-c81"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c81-lost-ack/evidence-01.svg",
+      "assetAlt": "操作员"
+    },
+    {
+      "id": "evidence-c81-07",
+      "kind": "scene",
+      "titleKey": "evidence.c81.7.title",
+      "observationKey": "evidence.c81.7.observation",
+      "sourceFactIds": [
+        "fact-c81-07",
+        "fact-c81-18"
+      ],
+      "sourceEventIds": [
+        "event-c81-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c81-system",
+        "location-c81"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c81-lost-ack/evidence-02.svg",
+      "assetAlt": "执行记录"
+    },
+    {
+      "id": "evidence-c81-08",
+      "kind": "record",
+      "titleKey": "evidence.c81.8.title",
+      "observationKey": "evidence.c81.8.observation",
+      "sourceFactIds": [
+        "fact-c81-08",
+        "fact-c81-19"
+      ],
+      "sourceEventIds": [
+        "event-c81-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c81-system",
+        "location-c81"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c81-lost-ack/evidence-03.svg",
+      "assetAlt": "保管链"
+    },
+    {
+      "id": "evidence-c81-09",
+      "kind": "object",
+      "titleKey": "evidence.c81.9.title",
+      "observationKey": "evidence.c81.9.observation",
+      "sourceFactIds": [
+        "fact-c81-09"
+      ],
+      "sourceEventIds": [
+        "event-c81-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c81-system",
+        "location-c81"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c81-lost-ack/evidence-04.svg",
+      "assetAlt": "未收到确认"
+    },
+    {
+      "id": "evidence-c81-10",
+      "kind": "scene",
+      "titleKey": "evidence.c81.10.title",
+      "observationKey": "evidence.c81.10.observation",
+      "sourceFactIds": [
+        "fact-c81-10"
+      ],
+      "sourceEventIds": [
+        "event-c81-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c81-system",
+        "location-c81"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c81-lost-ack/evidence-05.svg",
+      "assetAlt": "提交状态"
+    },
+    {
+      "id": "evidence-c81-11",
+      "kind": "record",
+      "titleKey": "evidence.c81.11.title",
+      "observationKey": "evidence.c81.11.observation",
+      "sourceFactIds": [
+        "fact-c81-11"
+      ],
+      "sourceEventIds": [
+        "event-c81-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c81-system",
+        "location-c81"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c81-lost-ack/evidence-01.svg",
+      "assetAlt": "确认包"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c81.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c81-01",
+          "event-c81-02",
+          "event-c81-03",
+          "event-c81-04",
+          "event-c81-05",
+          "event-c81-06",
+          "event-c81-07",
+          "event-c81-08",
+          "event-c81-09",
+          "event-c81-10"
+        ],
+        "motiveKey": "用反事实分支和来源链证明执行已发生"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c81-01",
+        "evidence-c81-02",
+        "evidence-c81-03",
+        "evidence-c81-04",
+        "evidence-c81-05",
+        "evidence-c81-06",
+        "evidence-c81-07",
+        "evidence-c81-08",
+        "evidence-c81-09",
+        "evidence-c81-10"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c81-1",
+        "contradiction-c81-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c81-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c81.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "后台其实没有完成转移"
+        ],
+        "motiveKey": "motive-c81-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c81-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c81-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c81-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c81.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "操作员按错了两个不同按钮"
+        ],
+        "motiveKey": "motive-c81-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c81-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c81-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c81-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c81-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c81-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c81-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c81-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c81-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c81-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c81-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c81-01",
+      "fact-c81-02",
+      "fact-c81-03",
+      "fact-c81-04",
+      "fact-c81-05",
+      "fact-c81-06",
+      "fact-c81-07",
+      "fact-c81-08",
+      "fact-c81-09",
+      "fact-c81-10"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c81-01",
+      "evidence-c81-02",
+      "evidence-c81-03",
+      "evidence-c81-04",
+      "evidence-c81-05",
+      "evidence-c81-06",
+      "evidence-c81-07",
+      "evidence-c81-08",
+      "evidence-c81-09",
+      "evidence-c81-10"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c81-01",
+        "event-c81-02"
+      ],
+      [
+        "event-c81-02",
+        "event-c81-03"
+      ],
+      [
+        "event-c81-03",
+        "event-c81-04"
+      ],
+      [
+        "event-c81-04",
+        "event-c81-05"
+      ],
+      [
+        "event-c81-05",
+        "event-c81-06"
+      ],
+      [
+        "event-c81-06",
+        "event-c81-07"
+      ],
+      [
+        "event-c81-07",
+        "event-c81-08"
+      ],
+      [
+        "event-c81-08",
+        "event-c81-09"
+      ],
+      [
+        "event-c81-09",
+        "event-c81-10"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c81-1",
+      "contradiction-c81-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c81-alternative-1",
+      "hypothesis-c81-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c81-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c81-a",
+        "evidenceIds": [
+          "evidence-c81-01",
+          "evidence-c81-02",
+          "evidence-c81-03",
+          "evidence-c81-04",
+          "evidence-c81-05",
+          "evidence-c81-06",
+          "evidence-c81-07",
+          "evidence-c81-08"
+        ]
+      },
+      {
+        "id": "proof-c81-b",
+        "evidenceIds": [
+          "evidence-c81-01",
+          "evidence-c81-02",
+          "evidence-c81-09",
+          "evidence-c81-10"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "用反事实分支和来源链证明执行已发生"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c81-1",
+        "kind": "identity",
+        "boardId": "board-c81-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c81-1-1",
+            "eventId": "event-c81-01"
+          },
+          {
+            "slotId": "slot-c81-1-2",
+            "eventId": "event-c81-03"
+          },
+          {
+            "slotId": "slot-c81-1-3",
+            "eventId": "event-c81-05"
+          },
+          {
+            "slotId": "slot-c81-1-4",
+            "eventId": "event-c81-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c81-01",
+            "toEventId": "event-c81-03",
+            "relation": "if"
+          },
+          {
+            "fromEventId": "event-c81-03",
+            "toEventId": "event-c81-05",
+            "relation": "if"
+          },
+          {
+            "fromEventId": "event-c81-05",
+            "toEventId": "event-c81-10",
+            "relation": "if"
+          }
+        ],
+        "failureCategory": "identity"
+      },
+      {
+        "id": "obligation-c81-2",
+        "kind": "source",
+        "boardId": "board-c81-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c81-2-1",
+            "eventId": "event-c81-02"
+          },
+          {
+            "slotId": "slot-c81-2-2",
+            "eventId": "event-c81-04"
+          },
+          {
+            "slotId": "slot-c81-2-3",
+            "eventId": "event-c81-06"
+          },
+          {
+            "slotId": "slot-c81-2-4",
+            "eventId": "event-c81-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c81-02",
+            "toEventId": "event-c81-04",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c81-04",
+            "toEventId": "event-c81-06",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c81-06",
+            "toEventId": "event-c81-10",
+            "relation": "transfers-to"
+          }
+        ],
+        "failureCategory": "source"
+      }
+    ],
+    "uniquenessClaim": "提交成功后确认包丢失，重试操作被幂等规则忽略；缺少确认不等于缺少执行。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c81-1",
+      "eventId": "event-c81-02",
+      "factIds": [
+        "fact-c81-01"
+      ],
+      "captionKey": "event.c81.2"
+    },
+    {
+      "id": "replay-c81-2",
+      "eventId": "event-c81-03",
+      "factIds": [
+        "fact-c81-02"
+      ],
+      "captionKey": "event.c81.3"
+    },
+    {
+      "id": "replay-c81-3",
+      "eventId": "event-c81-04",
+      "factIds": [
+        "fact-c81-03"
+      ],
+      "captionKey": "event.c81.4"
+    },
+    {
+      "id": "replay-c81-4",
+      "eventId": "event-c81-05",
+      "factIds": [
+        "fact-c81-04"
+      ],
+      "captionKey": "event.c81.5"
+    },
+    {
+      "id": "replay-c81-5",
+      "eventId": "event-c81-06",
+      "factIds": [
+        "fact-c81-05"
+      ],
+      "captionKey": "event.c81.6"
+    },
+    {
+      "id": "replay-c81-6",
+      "eventId": "event-c81-07",
+      "factIds": [
+        "fact-c81-01",
+        "fact-c81-02",
+        "fact-c81-03",
+        "fact-c81-04",
+        "fact-c81-05",
+        "fact-c81-06",
+        "fact-c81-07",
+        "fact-c81-08",
+        "fact-c81-09",
+        "fact-c81-10"
+      ],
+      "captionKey": "event.c81.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c81.title": "只丢了一个确认",
+      "case.c81.surface": "操作员没有收到确认，但后台已经完成了转移。",
+      "case.c81.truth": "提交成功后确认包丢失，重试操作被幂等规则忽略；缺少确认不等于缺少执行。",
+      "entity.c81.system": "现场对象与记录链",
+      "location.c81": "确认丢失",
+      "hypothesis.c81.canonical": "提交成功后确认包丢失，重试操作被幂等规则忽略；缺少确认不等于缺少执行。",
+      "hypothesis.c81.alternative.1": "后台其实没有完成转移",
+      "hypothesis.c81.alternative.2": "操作员按错了两个不同按钮",
+      "motive.用反事实分支和来源链证明执行已发生": "用反事实分支和来源链证明执行已发生",
+      "chapter.c81.one": "固定异常",
+      "chapter.c81.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c81.1": "确认包是否成立？",
+      "query.c81.2": "后台提交是否成立？",
+      "query.c81.3": "转移完成是否成立？",
+      "query.c81.4": "重试操作是否成立？",
+      "query.c81.5": "幂等规则是否成立？",
+      "query.c81.6": "操作员是否成立？",
+      "query.c81.7": "执行记录是否成立？",
+      "query.c81.8": "保管链是否成立？",
+      "query.c81.9": "未收到确认是否成立？",
+      "query.c81.10": "提交状态是否成立？",
+      "event.c81.1": "阶段 1：确认包进入记录链",
+      "event.c81.2": "阶段 2：后台提交进入记录链",
+      "event.c81.3": "阶段 3：转移完成进入记录链",
+      "event.c81.4": "阶段 4：重试操作进入记录链",
+      "event.c81.5": "阶段 5：幂等规则进入记录链",
+      "event.c81.6": "阶段 6：操作员进入记录链",
+      "event.c81.7": "阶段 7：执行记录进入记录链",
+      "event.c81.8": "阶段 8：保管链进入记录链",
+      "event.c81.9": "阶段 9：未收到确认进入记录链",
+      "event.c81.10": "阶段 10：提交状态进入记录链",
+      "event.c81.11": "阶段 11：确认包进入记录链",
+      "evidence.c81.1.title": "确认包记录",
+      "evidence.c81.1.observation": "来源材料显示“确认包”在该阶段可复核。",
+      "evidence.c81.2.title": "后台提交记录",
+      "evidence.c81.2.observation": "来源材料显示“后台提交”在该阶段可复核。",
+      "evidence.c81.3.title": "转移完成记录",
+      "evidence.c81.3.observation": "来源材料显示“转移完成”在该阶段可复核。",
+      "evidence.c81.4.title": "重试操作记录",
+      "evidence.c81.4.observation": "来源材料显示“重试操作”在该阶段可复核。",
+      "evidence.c81.5.title": "幂等规则记录",
+      "evidence.c81.5.observation": "来源材料显示“幂等规则”在该阶段可复核。",
+      "evidence.c81.6.title": "操作员记录",
+      "evidence.c81.6.observation": "来源材料显示“操作员”在该阶段可复核。",
+      "evidence.c81.7.title": "执行记录记录",
+      "evidence.c81.7.observation": "来源材料显示“执行记录”在该阶段可复核。",
+      "evidence.c81.8.title": "保管链记录",
+      "evidence.c81.8.observation": "来源材料显示“保管链”在该阶段可复核。",
+      "evidence.c81.9.title": "未收到确认记录",
+      "evidence.c81.9.observation": "来源材料显示“未收到确认”在该阶段可复核。",
+      "evidence.c81.10.title": "提交状态记录",
+      "evidence.c81.10.observation": "来源材料显示“提交状态”在该阶段可复核。",
+      "evidence.c81.11.title": "确认包记录",
+      "evidence.c81.11.observation": "来源材料显示“确认包”在该阶段可复核。",
+      "board.c81.1.title": "只丢了一个确认 · counterfactual-tree",
+      "board.c81.1.slot.1": "起始来源",
+      "board.c81.1.slot.2": "关键变化",
+      "board.c81.1.slot.3": "观测结果",
+      "board.c81.1.slot.4": "排除替代",
+      "board.c81.2.title": "只丢了一个确认 · provenance-chain",
+      "board.c81.2.slot.1": "起始来源",
+      "board.c81.2.slot.2": "关键变化",
+      "board.c81.2.slot.3": "观测结果",
+      "board.c81.2.slot.4": "排除替代"
+    }
+  }
+}

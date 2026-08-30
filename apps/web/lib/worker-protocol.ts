@@ -1,9 +1,10 @@
-import type { CaseId, GameCommand, GameEvent, PlayerProjection, SaveEnvelope } from "@turtle-soup/mystery-core";
+import type { CaseId, GameCommand, GameEvent, PlayerProjection, QuestionRoutingOffer, SaveEnvelope } from "@turtle-soup/mystery-core";
 
 export type RestoreStatus = "new" | "restored" | "incompatible" | "corrupt";
 
 export type RuntimeWorkerRequest =
   | { id: number; type: "initialize"; caseId: CaseId; save?: unknown }
+  | { id: number; type: "prepare_question_routing"; rawText: string }
   | { id: number; type: "command"; command: GameCommand };
 
 export type RuntimeWorkerResponse = {
@@ -14,6 +15,10 @@ export type RuntimeWorkerResponse = {
   accepted: boolean;
   save: SaveEnvelope;
   restoreStatus?: RestoreStatus;
+} | {
+  id: number;
+  type: "routing_context";
+  offer: QuestionRoutingOffer;
 } | {
   id: number;
   type: "error";

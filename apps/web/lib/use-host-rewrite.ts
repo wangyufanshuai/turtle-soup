@@ -2,7 +2,7 @@
 
 import type { HostRewriteResponse, HostRewriteStyle, PlayerProjection, PresentationContext } from "@turtle-soup/mystery-core";
 import { useEffect, useMemo, useState } from "react";
-import { cacheHostRewrite, clearHostRewriteCache, HOST_REWRITE_DEFAULTS, readCachedHostRewrite, requestHostRewrite } from "./host-rewrite";
+import { HOST_REWRITE_DEFAULTS, isLocalHostEndpoint, safeModel } from "./ai-provider-defaults";
 
 export interface HostRewriteSettings {
   enabled: boolean;
@@ -23,13 +23,14 @@ export function useHostRewrite(projection?: PlayerProjection) {
   useEffect(() => {
     try {
       const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "null") as Partial<HostRewriteSettings> | null;
-      if (stored) setSettingsState({ ...defaults, ...stored });
+      if (stored) setSettingsState({ enabled: stored.enabled === true, endpoint: typeof stored.endpoint === "string" && isLocalHostEndpoint(stored.endpoint) ? stored.endpoint : defaults.endpoint, model: safeModel(stored.model, defaults.model), style: ["冷静", "低语", "档案", "紧张"].includes(String(stored.style)) ? stored.style as HostRewriteStyle : defaults.style });
     } catch { /* defaults remain active */ }
   }, []);
 
   const setSettings = (next: HostRewriteSettings) => {
-    setSettingsState(next);
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(next)); } catch { /* settings remain in memory */ }
+    const editable = { ...next, endpoint: next.endpoint.replace(/[\u0000-\u001f\u007f]/gu, "").slice(0, 512), model: next.model.replace(/[\u0000-\u001f\u007f]/gu, "").slice(0, 128) };
+    setSettingsState(editable);
+    try { if (isLocalHostEndpoint(editable.endpoint)) localStorage.setItem(STORAGE_KEY, JSON.stringify({ ...editable, model: safeModel(editable.model, defaults.model) })); } catch { /* settings remain in memory */ }
   };
 
   const latest = projection?.transcript.at(-1);
@@ -50,22 +51,19 @@ export function useHostRewrite(projection?: PlayerProjection) {
       setStatus(settings.enabled ? "idle" : "off");
       return;
     }
-    const cached = readCachedHostRewrite(context);
-    if (cached) {
-      setRewrites((current) => ({ ...current, [latest.id]: cached }));
-      setStatus("idle");
-      setMessage("已使用本机缓存的主持改写");
-      return;
-    }
     const controller = new AbortController();
     setStatus("working");
     setMessage("本地模型正在改写表达；事实基线不会改变");
-    void requestHostRewrite({ endpoint: settings.endpoint, model: settings.model, context }, controller.signal)
-      .then((response) => {
-        cacheHostRewrite(context, response);
+    void import("./host-rewrite").then(async ({ cacheHostRewrite, readCachedHostRewrite, requestHostRewrite }) => {
+      const cached = readCachedHostRewrite(context);
+      if (cached) return { response: cached, cached: true, cacheHostRewrite };
+      return { response: await requestHostRewrite({ endpoint: settings.endpoint, model: settings.model, context }, controller.signal), cached: false, cacheHostRewrite };
+    })
+      .then(({ response, cached, cacheHostRewrite }) => {
+        if (!cached) cacheHostRewrite(context, response);
         setRewrites((current) => ({ ...current, [latest.id]: response }));
         setStatus("idle");
-        setMessage("本地主持改写已通过安全校验");
+        setMessage(cached ? "已使用本机缓存的主持改写" : "本地主持改写已通过安全校验");
       })
       .catch(() => {
         if (!controller.signal.aborted) {
@@ -77,7 +75,7 @@ export function useHostRewrite(projection?: PlayerProjection) {
   }, [context, latest, rewrites, settings]);
 
   const clearCache = () => {
-    clearHostRewriteCache();
+    void import("./host-rewrite").then(({ clearHostRewriteCache }) => clearHostRewriteCache());
     setRewrites({});
     setMessage("本地主持缓存已清除");
   };

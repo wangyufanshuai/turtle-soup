@@ -8,6 +8,7 @@ import {
   validateCompatibleSave,
   applyPresentationPatch,
   applyQuestionAliasPack,
+  createQuestionRoutingOffer,
   type CaseFile,
   type CaseId,
   type GameCommand,
@@ -54,7 +55,7 @@ self.onmessage = async (message: MessageEvent<RuntimeWorkerRequest>) => {
       self.postMessage(response);
       return;
     }
-    let restoreStatus: RuntimeWorkerResponse["restoreStatus"] = "new";
+    let restoreStatus: "new" | "restored" | "incompatible" | "corrupt" = "new";
     const validation = request.save === undefined
       ? undefined
       : validateCompatibleSave(request.save, caseFile.id, {
@@ -91,6 +92,15 @@ self.onmessage = async (message: MessageEvent<RuntimeWorkerRequest>) => {
 
   if (!caseFile || !state) {
     const response: RuntimeWorkerResponse = { id: request.id, type: "error", code: "not_initialized", message: "推理核心尚未初始化" };
+    self.postMessage(response);
+    return;
+  }
+  if (request.type === "prepare_question_routing") {
+    const response: RuntimeWorkerResponse = {
+      id: request.id,
+      type: "routing_context",
+      offer: createQuestionRoutingOffer(caseFile, state, request.rawText),
+    };
     self.postMessage(response);
     return;
   }

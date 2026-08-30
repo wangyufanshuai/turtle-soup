@@ -25,6 +25,14 @@ const MATERIAL_LABELS: Record<string, string> = {
   "buffer-window": "SIGNAL WINDOW",
 };
 
+function recommendedAction(item: EvidenceProjection, linked: boolean) {
+  if (item.state === "dismissed") return "恢复后可重新判断";
+  if (linked) return "已接入当前证明";
+  if (item.state === "discovered" || item.state === "available") return "下一步：打开检查";
+  if (item.state === "verified") return "已核实 · 可接入证明";
+  return "已检查 · 决定保留或搁置";
+}
+
 function EvidencePlate({ caseCode, index, title, mode }: { caseCode: string; index: number; title: string; mode: string }) {
   const motif = index % 5;
   return <div className={styles.evidencePlate} data-motif={motif} data-mode={mode} data-case={caseCode} role="img" aria-label={`${title}的结构化证据片；所有关键观察同时以文字提供`}>
@@ -41,7 +49,7 @@ function EvidencePlate({ caseCode, index, title, mode }: { caseCode: string; ind
       {mode === "curve-fit" && <><path d="M76 246C180 232 206 74 320 86S474 238 564 98" strokeWidth="6"/><path d="M76 264C188 244 224 104 320 108S458 260 564 126" opacity=".35" strokeWidth="18"/></>}
       {mode === "buffer-window" && <><rect x="78" y="70" width="154" height="176" rx="8"/><rect x="244" y="92" width="154" height="154" rx="8"/><rect x="410" y="118" width="154" height="128" rx="8"/><path d="M116 52V264M282 52V264M448 52V264" strokeDasharray="5 7"/></>}
     </svg>
-    <footer><span>PUBLIC SOURCE</span><i>{String(index + 1).padStart(2, "0")}</i></footer>
+    <footer><span>公开来源</span><i>{String(index + 1).padStart(2, "0")}</i></footer>
   </div>;
 }
 
@@ -54,6 +62,7 @@ export function EvidenceInspector({
   compact = false,
   interactionMode,
   interactionLabel,
+  onContinueToProof,
 }: {
   evidence: EvidenceProjection[];
   activeTheoryId: TheoryDraft["id"];
@@ -63,6 +72,7 @@ export function EvidenceInspector({
   compact?: boolean;
   interactionMode?: string;
   interactionLabel?: string;
+  onContinueToProof?: () => void;
 }) {
   const [selectedId, setSelectedId] = useState<string>();
   const [page, setPage] = useState(0);
@@ -86,20 +96,24 @@ export function EvidenceInspector({
     if (!selected) {
       const priorTarget = returnFocusRef.current;
       if (!priorTarget) return;
-      const timeout = window.setTimeout(() => {
+      let retry = 0;
+      const frame = window.requestAnimationFrame(() => {
         const fallback = inspectorRef.current?.querySelector<HTMLElement>("button:not([disabled])");
         const target = priorTarget.isConnected && !priorTarget.matches(":disabled") ? priorTarget : fallback;
         target?.focus({ preventScroll: true });
-        if (document.activeElement !== target) inspectorRef.current?.focus({ preventScroll: true });
+        retry = window.setTimeout(() => {
+          target?.focus({ preventScroll: true });
+          if (document.activeElement !== target) inspectorRef.current?.focus({ preventScroll: true });
+        }, 0);
       });
-      return () => window.clearTimeout(timeout);
+      return () => { window.cancelAnimationFrame(frame); window.clearTimeout(retry); };
     }
     setImageFailed(false);
     requestAnimationFrame(() => dialogRef.current?.querySelector<HTMLElement>("button")?.focus());
   }, [selected?.id]);
 
-  const open = (item: EvidenceProjection) => {
-    returnFocusRef.current = document.activeElement as HTMLElement | null;
+  const open = (item: EvidenceProjection, trigger: HTMLElement) => {
+    returnFocusRef.current = trigger;
     if (item.state === "available" || item.state === "discovered") {
       dispatch({ type: "set_evidence_state", evidenceId: item.id, state: "examined" });
     }
@@ -129,7 +143,7 @@ export function EvidenceInspector({
 
   return <section ref={inspectorRef} tabIndex={-1} className={styles.inspector} data-compact={compact || undefined} data-interaction={interactionMode} aria-label="证据架">
     <div className={styles.shelfHeader}>
-      <div><small>EVIDENCE SHELF / {interactionMode?.toUpperCase() ?? "FOCUS"}</small><b>{interactionLabel ?? "逐件检查，不让档案淹没现场"}</b></div>
+      <div><small>证据材料 / {interactionMode?.toUpperCase() ?? "逐件检查"}</small><b>{interactionLabel ?? "逐件检查，不让档案淹没现场"}</b></div>
       <span>{Math.min(page * pageSize + 1, evidence.length)}–{Math.min((page + 1) * pageSize, evidence.length)} / {evidence.length}</span>
     </div>
     <div className={styles.triage} aria-label="证据取舍状态">
@@ -140,9 +154,9 @@ export function EvidenceInspector({
       {visible.map((item, index) => {
         const absoluteIndex = page * pageSize + index;
         const linked = linkedEvidenceIds.includes(item.id);
-        return <button type="button" className={styles.card} data-state={item.state} data-linked={linked || undefined} key={item.id} onClick={() => open(item)}>
+        return <button type="button" className={styles.card} data-state={item.state} data-linked={linked || undefined} key={item.id} onClick={(event) => open(item, event.currentTarget)}>
           <span className={styles.index}>{String(absoluteIndex + 1).padStart(2, "0")}</span>
-          <span className={styles.cardCopy}><small>{item.sourceLabel}</small><b>{item.title}</b><em>{STATUS[item.state]}{linked ? " · 已接入证明" : ""}</em></span>
+          <span className={styles.cardCopy}><small>{item.sourceLabel}</small><b>{item.title}</b><em>{recommendedAction(item, linked)}</em></span>
           <span aria-hidden="true" className={styles.openGlyph}>↗</span>
         </button>;
       })}
@@ -165,11 +179,12 @@ export function EvidenceInspector({
             onError={() => setImageFailed(true)}
           /> : <div role="img" aria-label="证据图像无法加载"><span>IMAGE UNAVAILABLE</span><b>图像不是必要线索</b><p>请使用下方文字观察继续调查。</p></div>}
         </div>
-        <div className={styles.observation}><small>DETERMINISTIC OBSERVATION</small><p>{selected.observation}</p></div>
+        <div className={styles.observation}><small>可以确认的观察</small><p>{selected.observation}</p></div>
         <footer>
           {selected.state === "dismissed" ? <button type="button" onClick={() => dispatch({ type: "set_evidence_state", evidenceId: selected.id, state: "examined" })}>恢复证据</button> : <button type="button" disabled={linkedEvidenceIds.includes(selected.id)} title={linkedEvidenceIds.includes(selected.id) ? "先移出当前证明，再搁置" : undefined} onClick={() => dispatch({ type: "set_evidence_state", evidenceId: selected.id, state: "dismissed" })}>暂时搁置</button>}
           {selected.state !== "dismissed" && <button type="button" data-active={selected.state === "verified" || undefined} onClick={() => dispatch({ type: "set_evidence_state", evidenceId: selected.id, state: selected.state === "verified" ? (linkedEvidenceIds.includes(selected.id) ? "connected" : "examined") : "verified" })}>{selected.state === "verified" ? "取消核实" : "标记已核实"}</button>}
           <button type="button" data-primary disabled={selected.state === "dismissed"} data-active={linkedEvidenceIds.includes(selected.id) || undefined} onClick={() => dispatch({ type: "link_theory_evidence", theoryId: activeTheoryId, evidenceId: selected.id, linked: !linkedEvidenceIds.includes(selected.id) })}>{linkedEvidenceIds.includes(selected.id) ? "移出当前证明" : "接入当前证明"}</button>
+          {linkedEvidenceIds.includes(selected.id) && onContinueToProof && <button type="button" onClick={() => { close(); onContinueToProof(); }}>接入完成，去组织证明</button>}
         </footer>
       </div>
     </div>}

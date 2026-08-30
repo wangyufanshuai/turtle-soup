@@ -1,0 +1,2442 @@
+{
+  "profile": "v2.5-internal-rc",
+  "caseCount": 84,
+  "reports": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 5,
+        "queryCount": 9,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 5,
+          "max": 15
+        },
+        "redHerringPresence": true,
+        "corpusCount": 171,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 13,
+        "visibleAtStart": 3,
+        "queryCount": 8,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 152,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 14,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 171,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 12,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 171,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 12,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 171,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 11,
+        "visibleAtStart": 3,
+        "queryCount": 9,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 171,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 152,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 152,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 12,
+        "visibleAtStart": 3,
+        "queryCount": 8,
+        "evidenceCount": 9,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 8,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 152,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 152,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 152,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 11,
+        "visibleAtStart": 2,
+        "queryCount": 8,
+        "evidenceCount": 8,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 7,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 0,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 22
+        },
+        "redHerringPresence": true,
+        "corpusCount": 152,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 15,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 12,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 12,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 260,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 12,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 12,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 260,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 12,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 12,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 260,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 12,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 15,
+          "max": 25
+        },
+        "redHerringPresence": true,
+        "corpusCount": 260,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 12,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 13,
+          "max": 24
+        },
+        "redHerringPresence": true,
+        "corpusCount": 260,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 12,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 12,
+          "max": 23
+        },
+        "redHerringPresence": true,
+        "corpusCount": 260,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 12,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 13,
+          "max": 24
+        },
+        "redHerringPresence": true,
+        "corpusCount": 260,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 20,
+        "visibleAtStart": 3,
+        "queryCount": 14,
+        "evidenceCount": 14,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 13,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 3,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 15,
+          "max": 25
+        },
+        "redHerringPresence": true,
+        "corpusCount": 300,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 13,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 12,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 20,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 14,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 13,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 11,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 10,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 13,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 12,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 20,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 14,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 13,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 11,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 10,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 13,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 12,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 20,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 14,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 13,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 11,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 10,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 13,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 12,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 20,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 14,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 13,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 16,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 17,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 11,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 10,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 13,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 12,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 20,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 14,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 13,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 13,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 12,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 15,
+          "max": 25
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 11,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 10,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c62-rope-not-shorter",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 20,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c63-ice-melts-first",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 21,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 13,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 12,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c64-uncracked-glass",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 22,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 14,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 13,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c65-twin-watermarks",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c66-still-weight",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 11,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 10,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c67-shared-badge",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 20,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c68-empty-seat-proof",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 21,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 13,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 12,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c69-third-minutes",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 22,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 14,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 13,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c70-grace-late-arrival",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 8,
+          "max": 18
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c71-revoked-open-door",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 11,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 10,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c72-message-read-twice",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 20,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c73-phantom-exit",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 21,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 13,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 12,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c74-silent-footsteps",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 22,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 14,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 13,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 9,
+          "max": 19
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c75-two-weather-photo",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c76-red-light-second",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 11,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 10,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c77-invisible-ninth-wire",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 20,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c78-sound-from-other-side",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 21,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 13,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 12,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c79-extra-queue-order",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 22,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 14,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 13,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c80-power-on-restart",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 18,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 10,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 9,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c81-lost-ack",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 19,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 11,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 10,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 10,
+          "max": 20
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c82-closed-network-device",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 20,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 12,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 11,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 11,
+          "max": 21
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c83-two-unloads",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 21,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 13,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 12,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 11,
+          "max": 21
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "errors": [],
+      "warnings": [],
+      "infos": [],
+      "metrics": {
+        "factCount": 22,
+        "visibleAtStart": 3,
+        "queryCount": 10,
+        "evidenceCount": 14,
+        "hypothesisCount": 3,
+        "requiredEvidenceCount": 13,
+        "questionCoverage": 100,
+        "antiLeakCount": 0,
+        "proofReplayCoverage": 100,
+        "alternativeCoverage": 100,
+        "requiredEvidenceCoverage": 100,
+        "ambiguityRate": 4,
+        "duplicateQuestionRate": 0,
+        "estimatedSolveTimeMinutes": {
+          "min": 15,
+          "max": 25
+        },
+        "redHerringPresence": true,
+        "corpusCount": 220,
+        "corpusMinimumMet": true
+      },
+      "passed": true
+    }
+  ]
+}

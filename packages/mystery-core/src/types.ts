@@ -113,7 +113,15 @@ export type ReasoningBoardMode =
   | "network-topology"
   | "uncertainty-band"
   | "reference-frame"
-  | "queue-model";
+  | "queue-model"
+  | "causal-graph"
+  | "material-balance"
+  | "threshold-ladder"
+  | "occlusion-map"
+  | "acoustic-path"
+  | "interval-logic"
+  | "counterfactual-tree"
+  | "capacity-model";
 
 export type ProofObligationKind =
   | "time"
@@ -583,6 +591,52 @@ export interface HostRewriteResponse {
   warnings?: string[];
 }
 
+export interface AiProviderSettings {
+  enabled: boolean;
+  endpoint: string;
+  model: string;
+  protocolMode: "strict-schema" | "validated-json";
+  keyStorage: "session";
+}
+
+export interface QuestionRoutingCandidate {
+  token: string;
+  label: string;
+  target: string;
+  predicate: string;
+  qualifier?: string;
+}
+
+/** Public, truth-free context that may be sent to a player-configured model. */
+export interface QuestionRoutingContext {
+  contextHash: string;
+  language: string;
+  publicSurface: string;
+  rawQuestion: string;
+  candidates: QuestionRoutingCandidate[];
+}
+
+/** Kept in the browser only. Bindings are never included in the AI request. */
+export interface QuestionRoutingOffer {
+  context: QuestionRoutingContext;
+  bindings: Array<{ token: string; queryId: string }>;
+}
+
+export type QuestionRouteResult =
+  | { status: "matched"; candidateToken: string }
+  | { status: "ambiguous"; candidateTokens: string[] }
+  | { status: "unknown" };
+
+export type AiAssistErrorCode =
+  | "timeout"
+  | "network"
+  | "cors"
+  | "invalid-schema"
+  | "invalid-candidate"
+  | "stale-context"
+  | "refusal"
+  | "unsafe-output";
+
 export interface EventOptionProjection {
   id: string;
   timeLabel: string;
@@ -681,6 +735,7 @@ export interface PlayerProjection {
 export type GameCommand =
   | { type: "start_case" }
   | { type: "ask_text"; rawText: string }
+  | { type: "ask_resolved_text"; rawText: string; queryId: string; resolutionSource: "ai-confirmed"; contextHash: string }
   | { type: "confirm_interpretation"; queryId: string }
   | { type: "undo_last_question" }
   | { type: "visit_location"; locationId: string }

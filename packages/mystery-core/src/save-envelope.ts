@@ -53,6 +53,14 @@ function sanitizeCommand(value: unknown): GameCommand | undefined {
       const rawText = text(item.rawText, 2_000);
       return rawText ? { type: "ask_text", rawText } : undefined;
     }
+    case "ask_resolved_text": {
+      const rawText = text(item.rawText, 2_000);
+      const queryId = id("queryId");
+      const contextHash = text(item.contextHash, 128);
+      return rawText && queryId && contextHash && item.resolutionSource === "ai-confirmed"
+        ? { type: "ask_resolved_text", rawText, queryId, resolutionSource: "ai-confirmed", contextHash }
+        : undefined;
+    }
     case "confirm_interpretation": {
       const queryId = id("queryId");
       return queryId ? { type: "confirm_interpretation", queryId } : undefined;

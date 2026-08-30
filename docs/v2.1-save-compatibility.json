@@ -1,0 +1,613 @@
+{
+  "reportVersion": "2.1",
+  "releaseProfile": "v2.1-internal-rc",
+  "generatedAt": "2026-08-28T16:19:17.817Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "baselineProfile": "v2.0-internal-rc",
+  "saveSchemaVersion": 1,
+  "cases": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true,
+      "schemaVersion": 1,
+      "compatible": true,
+      "projectionReplayEqual": true,
+      "crossCaseRejected": true
+    }
+  ],
+  "passed": true
+}

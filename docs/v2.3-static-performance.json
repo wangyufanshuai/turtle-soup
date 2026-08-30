@@ -1,0 +1,28 @@
+{
+  "reportVersion": "2.3",
+  "releaseProfile": "v2.3-internal-rc",
+  "generatedAt": "2026-08-30T02:10:55.372Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "budgets": {
+    "totalBytes": 7000000,
+    "initialJavaScriptBytes": 700000,
+    "maximumAssetBytes": 450000
+  },
+  "actual": {
+    "totalBytes": 6459051,
+    "initialJavaScriptBytes": 648874,
+    "maximumAssetBytes": 391291,
+    "fileCount": 867,
+    "initialScriptCount": 9
+  },
+  "deferredContracts": {
+    "questionRouterDeferred": true,
+    "hostRewriteDeferred": true,
+    "evidenceInspectorDeferred": true
+  },
+  "cacheIdentity": "black-soup-v23-resolution-payoff-rc-1",
+  "failures": [],
+  "passed": true
+}

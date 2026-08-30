@@ -1,0 +1,29 @@
+{
+  "reportVersion": "2.5",
+  "releaseProfile": "v2.5-internal-rc",
+  "generatedAt": "2026-08-30T07:34:03.854Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "budgets": {
+    "archiveBytes": 8000000,
+    "initialJavaScriptBytes": 700000,
+    "maximumFileBytes": 450000
+  },
+  "actual": {
+    "totalBytes": 8196791,
+    "initialJavaScriptBytes": 669275,
+    "maximumFileBytes": 395101,
+    "fileCount": 1179,
+    "routeCount": 84,
+    "archiveBytes": 3449885
+  },
+  "cacheIdentity": "black-soup-v25-season5-content-rc",
+  "deferredLoading": {
+    "currentCaseOnly": true,
+    "hiddenCaseBlocksOnDemand": true,
+    "optionalAiNotInInitialBundle": true
+  },
+  "failures": [],
+  "passed": true
+}

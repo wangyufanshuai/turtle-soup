@@ -9,6 +9,9 @@ test("host rewrite endpoints are local-only", () => {
   assert.equal(isLocalHostEndpoint("http://localhost:11434/v1/chat/completions"), true);
   assert.equal(isLocalHostEndpoint("http://127.0.0.1:8000/v1/chat/completions"), true);
   assert.equal(isLocalHostEndpoint("https://example.com/v1/chat/completions"), false);
+  assert.equal(isLocalHostEndpoint("http://user:secret@localhost:11434/v1/chat/completions"), false);
+  assert.equal(isLocalHostEndpoint("http://localhost:22/v1/chat/completions"), false);
+  assert.equal(isLocalHostEndpoint("http://localhost:11434/v1/chat/completions#fragment"), false);
 });
 
 test("valid host rewrite remains presentation-only", () => {

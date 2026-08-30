@@ -1,0 +1,2280 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c69-third-minutes",
+  "metadata": {
+    "titleKey": "case.c69.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "文书来源",
+      "并行草稿",
+      "时间区间"
+    ],
+    "targetMinutes": {
+      "min": 9,
+      "max": 19
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:6c8472f337d0c556e25b2eed16068a2643e596d4adbbbea48bd28adb60e96935",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-civic-archive",
+    "sceneAsset": "/assets/cases/c69-third-minutes/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c69-third-minutes/scene-mobile.svg",
+    "palette": "season5-civic-archive",
+    "accent": "#d7b27a",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "provenance-chain-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "provenance-chain"
+  },
+  "surface": {
+    "titleKey": "case.c69.title",
+    "textKey": "case.c69.surface",
+    "publicFactIds": [
+      "fact-c69-01",
+      "fact-c69-02",
+      "fact-c69-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c69-01",
+      "query-c69-02",
+      "query-c69-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c69-one",
+      "titleKey": "chapter.c69.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c69-1",
+      "titleKey": "board.c69.1.title",
+      "mode": "provenance-chain",
+      "slots": [
+        {
+          "id": "slot-c69-1-1",
+          "labelKey": "board.c69.1.slot.1",
+          "acceptsEventIds": [
+            "event-c69-01"
+          ]
+        },
+        {
+          "id": "slot-c69-1-2",
+          "labelKey": "board.c69.1.slot.2",
+          "acceptsEventIds": [
+            "event-c69-03"
+          ]
+        },
+        {
+          "id": "slot-c69-1-3",
+          "labelKey": "board.c69.1.slot.3",
+          "acceptsEventIds": [
+            "event-c69-05"
+          ]
+        },
+        {
+          "id": "slot-c69-1-4",
+          "labelKey": "board.c69.1.slot.4",
+          "acceptsEventIds": [
+            "event-c69-13"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "transfers-to",
+        "recorded-by",
+        "verifies"
+      ]
+    },
+    {
+      "id": "board-c69-2",
+      "titleKey": "board.c69.2.title",
+      "mode": "interval-logic",
+      "slots": [
+        {
+          "id": "slot-c69-2-1",
+          "labelKey": "board.c69.2.slot.1",
+          "acceptsEventIds": [
+            "event-c69-02"
+          ]
+        },
+        {
+          "id": "slot-c69-2-2",
+          "labelKey": "board.c69.2.slot.2",
+          "acceptsEventIds": [
+            "event-c69-04"
+          ]
+        },
+        {
+          "id": "slot-c69-2-3",
+          "labelKey": "board.c69.2.slot.3",
+          "acceptsEventIds": [
+            "event-c69-06"
+          ]
+        },
+        {
+          "id": "slot-c69-2-4",
+          "labelKey": "board.c69.2.slot.4",
+          "acceptsEventIds": [
+            "event-c69-13"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "precedes",
+        "overlaps",
+        "ends-at"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c69-system",
+      "kind": "object",
+      "labelKey": "entity.c69.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c69",
+      "kind": "location",
+      "labelKey": "location.c69",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c69-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-1",
+      "labelKey": "event.c69.1",
+      "effectFactIds": [
+        "fact-c69-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-2",
+      "labelKey": "event.c69.2",
+      "effectFactIds": [
+        "fact-c69-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-3",
+      "labelKey": "event.c69.3",
+      "effectFactIds": [
+        "fact-c69-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-4",
+      "labelKey": "event.c69.4",
+      "effectFactIds": [
+        "fact-c69-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-5",
+      "labelKey": "event.c69.5",
+      "effectFactIds": [
+        "fact-c69-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-6",
+      "labelKey": "event.c69.6",
+      "effectFactIds": [
+        "fact-c69-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "20:24"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-7",
+      "labelKey": "event.c69.7",
+      "effectFactIds": [
+        "fact-c69-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-8",
+      "labelKey": "event.c69.8",
+      "effectFactIds": [
+        "fact-c69-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-9",
+      "labelKey": "event.c69.9",
+      "effectFactIds": [
+        "fact-c69-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-10",
+      "labelKey": "event.c69.10",
+      "effectFactIds": [
+        "fact-c69-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-11",
+      "labelKey": "event.c69.11",
+      "effectFactIds": [
+        "fact-c69-11"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "21:44"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-12",
+      "labelKey": "event.c69.12",
+      "effectFactIds": [
+        "fact-c69-12"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-13",
+      "order": 130,
+      "time": {
+        "kind": "instant",
+        "value": "21:48"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-13",
+      "labelKey": "event.c69.13",
+      "effectFactIds": [
+        "fact-c69-13"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c69-14",
+      "order": 140,
+      "time": {
+        "kind": "instant",
+        "value": "21:52"
+      },
+      "participants": [
+        "entity-c69-system"
+      ],
+      "locationId": "location-c69",
+      "action": "step-c69-14",
+      "labelKey": "event.c69.14",
+      "effectFactIds": [
+        "fact-c69-14"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c69-1-1",
+      "type": "precedes",
+      "fromId": "entity-c69-system",
+      "toId": "location-c69",
+      "eventId": "event-c69-01",
+      "factId": "fact-c69-01"
+    },
+    {
+      "id": "relation-c69-1-2",
+      "type": "causes",
+      "fromId": "entity-c69-system",
+      "toId": "location-c69",
+      "eventId": "event-c69-03",
+      "factId": "fact-c69-02"
+    },
+    {
+      "id": "relation-c69-1-3",
+      "type": "causes",
+      "fromId": "entity-c69-system",
+      "toId": "location-c69",
+      "eventId": "event-c69-05",
+      "factId": "fact-c69-03"
+    },
+    {
+      "id": "relation-c69-2-1",
+      "type": "precedes",
+      "fromId": "entity-c69-system",
+      "toId": "location-c69",
+      "eventId": "event-c69-02",
+      "factId": "fact-c69-02"
+    },
+    {
+      "id": "relation-c69-2-2",
+      "type": "causes",
+      "fromId": "entity-c69-system",
+      "toId": "location-c69",
+      "eventId": "event-c69-04",
+      "factId": "fact-c69-03"
+    },
+    {
+      "id": "relation-c69-2-3",
+      "type": "causes",
+      "fromId": "entity-c69-system",
+      "toId": "location-c69",
+      "eventId": "event-c69-06",
+      "factId": "fact-c69-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c69-01",
+      "predicate": "verified_c69_1",
+      "args": {
+        "term": "会议纪要"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.1"
+    },
+    {
+      "id": "fact-c69-02",
+      "predicate": "verified_c69_2",
+      "args": {
+        "term": "并行草稿"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.2"
+    },
+    {
+      "id": "fact-c69-03",
+      "predicate": "verified_c69_3",
+      "args": {
+        "term": "自动合并"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.3"
+    },
+    {
+      "id": "fact-c69-04",
+      "predicate": "verified_c69_4",
+      "args": {
+        "term": "参会者"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.4"
+    },
+    {
+      "id": "fact-c69-05",
+      "predicate": "verified_c69_5",
+      "args": {
+        "term": "文件份数"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.5"
+    },
+    {
+      "id": "fact-c69-06",
+      "predicate": "verified_c69_6",
+      "args": {
+        "term": "会议时段"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.6"
+    },
+    {
+      "id": "fact-c69-07",
+      "predicate": "verified_c69_7",
+      "args": {
+        "term": "模板服务"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.7"
+    },
+    {
+      "id": "fact-c69-08",
+      "predicate": "verified_c69_8",
+      "args": {
+        "term": "版本来源"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.8"
+    },
+    {
+      "id": "fact-c69-09",
+      "predicate": "verified_c69_9",
+      "args": {
+        "term": "合并时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.9"
+    },
+    {
+      "id": "fact-c69-10",
+      "predicate": "verified_c69_10",
+      "args": {
+        "term": "会议次数"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.10"
+    },
+    {
+      "id": "fact-c69-11",
+      "predicate": "verified_c69_11",
+      "args": {
+        "term": "会议纪要"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.11"
+    },
+    {
+      "id": "fact-c69-12",
+      "predicate": "verified_c69_12",
+      "args": {
+        "term": "并行草稿"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-12"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.12"
+    },
+    {
+      "id": "fact-c69-13",
+      "predicate": "verified_c69_13",
+      "args": {
+        "term": "自动合并"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-13"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-13"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-13"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c69.13"
+    },
+    {
+      "id": "fact-c69-14",
+      "predicate": "verified_c69_14",
+      "args": {
+        "term": "参会者"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-14"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-14"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-14"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c69.14"
+    },
+    {
+      "id": "fact-c69-15",
+      "predicate": "verified_c69_15",
+      "args": {
+        "term": "文件份数"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c69.15"
+    },
+    {
+      "id": "fact-c69-16",
+      "predicate": "verified_c69_16",
+      "args": {
+        "term": "会议时段"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c69.16"
+    },
+    {
+      "id": "fact-c69-17",
+      "predicate": "verified_c69_17",
+      "args": {
+        "term": "模板服务"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c69.17"
+    },
+    {
+      "id": "fact-c69-18",
+      "predicate": "verified_c69_18",
+      "args": {
+        "term": "版本来源"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c69.18"
+    },
+    {
+      "id": "fact-c69-19",
+      "predicate": "verified_c69_19",
+      "args": {
+        "term": "合并时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c69.19"
+    },
+    {
+      "id": "fact-c69-20",
+      "predicate": "verified_c69_20",
+      "args": {
+        "term": "会议次数"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c69.20"
+    },
+    {
+      "id": "fact-c69-21",
+      "predicate": "verified_c69_21",
+      "args": {
+        "term": "会议纪要"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c69.21"
+    },
+    {
+      "id": "fact-c69-22",
+      "predicate": "verified_c69_22",
+      "args": {
+        "term": "并行草稿"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c69-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c69-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c69.22"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c69-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-01",
+        "fact-c69-02",
+        "fact-c69-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c69-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-01",
+        "fact-c69-02",
+        "fact-c69-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c69-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-02",
+        "fact-c69-16"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c69-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-03",
+        "fact-c69-17"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c69-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-04",
+        "fact-c69-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c69-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-05",
+        "fact-c69-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c69-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-06",
+        "fact-c69-20"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c69-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-07",
+        "fact-c69-21"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c69-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-08",
+        "fact-c69-22"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c69-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c69-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c69-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c69-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-12"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c69-13",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-13"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-13"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c69-14",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c69-14"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c69-14"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c69-01",
+      "labelKey": "query.c69.1",
+      "intent": "verify",
+      "predicate": "verified_c69_1",
+      "slots": {
+        "subjectId": "entity-c69-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c69-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-opening"
+      ],
+      "examplePhrases": [
+        "会议纪要是否成立？",
+        "能确认会议纪要吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "会议纪要"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c69-02",
+      "labelKey": "query.c69.2",
+      "intent": "verify",
+      "predicate": "verified_c69_2",
+      "slots": {
+        "subjectId": "entity-c69-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c69-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-opening"
+      ],
+      "examplePhrases": [
+        "并行草稿是否成立？",
+        "能确认并行草稿吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "并行草稿"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c69-03",
+      "labelKey": "query.c69.3",
+      "intent": "verify",
+      "predicate": "verified_c69_3",
+      "slots": {
+        "subjectId": "entity-c69-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c69-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-opening"
+      ],
+      "examplePhrases": [
+        "自动合并是否成立？",
+        "能确认自动合并吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "自动合并"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c69-04",
+      "labelKey": "query.c69.4",
+      "intent": "verify",
+      "predicate": "verified_c69_4",
+      "slots": {
+        "subjectId": "entity-c69-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c69-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-04"
+      ],
+      "examplePhrases": [
+        "参会者是否成立？",
+        "能确认参会者吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "参会者"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c69-05",
+      "labelKey": "query.c69.5",
+      "intent": "verify",
+      "predicate": "verified_c69_5",
+      "slots": {
+        "subjectId": "entity-c69-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c69-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-05"
+      ],
+      "examplePhrases": [
+        "文件份数是否成立？",
+        "能确认文件份数吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "文件份数"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c69-06",
+      "labelKey": "query.c69.6",
+      "intent": "verify",
+      "predicate": "verified_c69_6",
+      "slots": {
+        "subjectId": "entity-c69-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c69-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-06"
+      ],
+      "examplePhrases": [
+        "会议时段是否成立？",
+        "能确认会议时段吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "会议时段"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c69-07",
+      "labelKey": "query.c69.7",
+      "intent": "verify",
+      "predicate": "verified_c69_7",
+      "slots": {
+        "subjectId": "entity-c69-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c69-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-07"
+      ],
+      "examplePhrases": [
+        "模板服务是否成立？",
+        "能确认模板服务吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "模板服务"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c69-08",
+      "labelKey": "query.c69.8",
+      "intent": "verify",
+      "predicate": "verified_c69_8",
+      "slots": {
+        "subjectId": "entity-c69-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c69-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-08"
+      ],
+      "examplePhrases": [
+        "版本来源是否成立？",
+        "能确认版本来源吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "版本来源"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c69-09",
+      "labelKey": "query.c69.9",
+      "intent": "verify",
+      "predicate": "verified_c69_9",
+      "slots": {
+        "subjectId": "entity-c69-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c69-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-09"
+      ],
+      "examplePhrases": [
+        "合并时间是否成立？",
+        "能确认合并时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "合并时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c69-10",
+      "labelKey": "query.c69.10",
+      "intent": "verify",
+      "predicate": "verified_c69_10",
+      "slots": {
+        "subjectId": "entity-c69-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c69-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c69-10"
+      ],
+      "examplePhrases": [
+        "会议次数是否成立？",
+        "能确认会议次数吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "会议次数"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c69-01",
+      "kind": "scene",
+      "titleKey": "evidence.c69.1.title",
+      "observationKey": "evidence.c69.1.observation",
+      "sourceFactIds": [
+        "fact-c69-01",
+        "fact-c69-02",
+        "fact-c69-03"
+      ],
+      "sourceEventIds": [
+        "event-c69-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c69-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-01.svg",
+      "assetAlt": "会议纪要"
+    },
+    {
+      "id": "evidence-c69-02",
+      "kind": "record",
+      "titleKey": "evidence.c69.2.title",
+      "observationKey": "evidence.c69.2.observation",
+      "sourceFactIds": [
+        "fact-c69-02",
+        "fact-c69-16"
+      ],
+      "sourceEventIds": [
+        "event-c69-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c69-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-02.svg",
+      "assetAlt": "并行草稿"
+    },
+    {
+      "id": "evidence-c69-03",
+      "kind": "object",
+      "titleKey": "evidence.c69.3.title",
+      "observationKey": "evidence.c69.3.observation",
+      "sourceFactIds": [
+        "fact-c69-03",
+        "fact-c69-17"
+      ],
+      "sourceEventIds": [
+        "event-c69-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-03.svg",
+      "assetAlt": "自动合并"
+    },
+    {
+      "id": "evidence-c69-04",
+      "kind": "scene",
+      "titleKey": "evidence.c69.4.title",
+      "observationKey": "evidence.c69.4.observation",
+      "sourceFactIds": [
+        "fact-c69-04",
+        "fact-c69-18"
+      ],
+      "sourceEventIds": [
+        "event-c69-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-04.svg",
+      "assetAlt": "参会者"
+    },
+    {
+      "id": "evidence-c69-05",
+      "kind": "record",
+      "titleKey": "evidence.c69.5.title",
+      "observationKey": "evidence.c69.5.observation",
+      "sourceFactIds": [
+        "fact-c69-05",
+        "fact-c69-19"
+      ],
+      "sourceEventIds": [
+        "event-c69-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-05.svg",
+      "assetAlt": "文件份数"
+    },
+    {
+      "id": "evidence-c69-06",
+      "kind": "object",
+      "titleKey": "evidence.c69.6.title",
+      "observationKey": "evidence.c69.6.observation",
+      "sourceFactIds": [
+        "fact-c69-06",
+        "fact-c69-20"
+      ],
+      "sourceEventIds": [
+        "event-c69-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-01.svg",
+      "assetAlt": "会议时段"
+    },
+    {
+      "id": "evidence-c69-07",
+      "kind": "scene",
+      "titleKey": "evidence.c69.7.title",
+      "observationKey": "evidence.c69.7.observation",
+      "sourceFactIds": [
+        "fact-c69-07",
+        "fact-c69-21"
+      ],
+      "sourceEventIds": [
+        "event-c69-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-02.svg",
+      "assetAlt": "模板服务"
+    },
+    {
+      "id": "evidence-c69-08",
+      "kind": "record",
+      "titleKey": "evidence.c69.8.title",
+      "observationKey": "evidence.c69.8.observation",
+      "sourceFactIds": [
+        "fact-c69-08",
+        "fact-c69-22"
+      ],
+      "sourceEventIds": [
+        "event-c69-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-03.svg",
+      "assetAlt": "版本来源"
+    },
+    {
+      "id": "evidence-c69-09",
+      "kind": "object",
+      "titleKey": "evidence.c69.9.title",
+      "observationKey": "evidence.c69.9.observation",
+      "sourceFactIds": [
+        "fact-c69-09"
+      ],
+      "sourceEventIds": [
+        "event-c69-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-04.svg",
+      "assetAlt": "合并时间"
+    },
+    {
+      "id": "evidence-c69-10",
+      "kind": "scene",
+      "titleKey": "evidence.c69.10.title",
+      "observationKey": "evidence.c69.10.observation",
+      "sourceFactIds": [
+        "fact-c69-10"
+      ],
+      "sourceEventIds": [
+        "event-c69-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-05.svg",
+      "assetAlt": "会议次数"
+    },
+    {
+      "id": "evidence-c69-11",
+      "kind": "record",
+      "titleKey": "evidence.c69.11.title",
+      "observationKey": "evidence.c69.11.observation",
+      "sourceFactIds": [
+        "fact-c69-11"
+      ],
+      "sourceEventIds": [
+        "event-c69-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-01.svg",
+      "assetAlt": "会议纪要"
+    },
+    {
+      "id": "evidence-c69-12",
+      "kind": "object",
+      "titleKey": "evidence.c69.12.title",
+      "observationKey": "evidence.c69.12.observation",
+      "sourceFactIds": [
+        "fact-c69-12"
+      ],
+      "sourceEventIds": [
+        "event-c69-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-02.svg",
+      "assetAlt": "并行草稿"
+    },
+    {
+      "id": "evidence-c69-13",
+      "kind": "scene",
+      "titleKey": "evidence.c69.13.title",
+      "observationKey": "evidence.c69.13.observation",
+      "sourceFactIds": [
+        "fact-c69-13"
+      ],
+      "sourceEventIds": [
+        "event-c69-13"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-03.svg",
+      "assetAlt": "自动合并"
+    },
+    {
+      "id": "evidence-c69-14",
+      "kind": "record",
+      "titleKey": "evidence.c69.14.title",
+      "observationKey": "evidence.c69.14.observation",
+      "sourceFactIds": [
+        "fact-c69-14"
+      ],
+      "sourceEventIds": [
+        "event-c69-14"
+      ],
+      "relatedEntityIds": [
+        "entity-c69-system",
+        "location-c69"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c69-third-minutes/evidence-04.svg",
+      "assetAlt": "参会者"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c69.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c69-01",
+          "event-c69-02",
+          "event-c69-03",
+          "event-c69-04",
+          "event-c69-05",
+          "event-c69-06",
+          "event-c69-07",
+          "event-c69-08",
+          "event-c69-09",
+          "event-c69-10",
+          "event-c69-11",
+          "event-c69-12",
+          "event-c69-13"
+        ],
+        "motiveKey": "沿来源链和时间区间还原一次会议的多份产物"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c69-01",
+        "evidence-c69-02",
+        "evidence-c69-03",
+        "evidence-c69-04",
+        "evidence-c69-05",
+        "evidence-c69-06",
+        "evidence-c69-07",
+        "evidence-c69-08",
+        "evidence-c69-09",
+        "evidence-c69-10",
+        "evidence-c69-11",
+        "evidence-c69-12",
+        "evidence-c69-13"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c69-1",
+        "contradiction-c69-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c69-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c69.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "当天秘密召开了两次会议"
+        ],
+        "motiveKey": "motive-c69-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c69-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c69-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c69-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c69.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "有人伪造了另外两份纪要"
+        ],
+        "motiveKey": "motive-c69-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c69-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c69-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c69-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c69-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c69-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c69-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c69-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c69-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c69-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c69-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c69-01",
+      "fact-c69-02",
+      "fact-c69-03",
+      "fact-c69-04",
+      "fact-c69-05",
+      "fact-c69-06",
+      "fact-c69-07",
+      "fact-c69-08",
+      "fact-c69-09",
+      "fact-c69-10",
+      "fact-c69-11",
+      "fact-c69-12",
+      "fact-c69-13"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c69-01",
+      "evidence-c69-02",
+      "evidence-c69-03",
+      "evidence-c69-04",
+      "evidence-c69-05",
+      "evidence-c69-06",
+      "evidence-c69-07",
+      "evidence-c69-08",
+      "evidence-c69-09",
+      "evidence-c69-10",
+      "evidence-c69-11",
+      "evidence-c69-12",
+      "evidence-c69-13"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c69-01",
+        "event-c69-02"
+      ],
+      [
+        "event-c69-02",
+        "event-c69-03"
+      ],
+      [
+        "event-c69-03",
+        "event-c69-04"
+      ],
+      [
+        "event-c69-04",
+        "event-c69-05"
+      ],
+      [
+        "event-c69-05",
+        "event-c69-06"
+      ],
+      [
+        "event-c69-06",
+        "event-c69-07"
+      ],
+      [
+        "event-c69-07",
+        "event-c69-08"
+      ],
+      [
+        "event-c69-08",
+        "event-c69-09"
+      ],
+      [
+        "event-c69-09",
+        "event-c69-10"
+      ],
+      [
+        "event-c69-10",
+        "event-c69-11"
+      ],
+      [
+        "event-c69-11",
+        "event-c69-12"
+      ],
+      [
+        "event-c69-12",
+        "event-c69-13"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c69-1",
+      "contradiction-c69-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c69-alternative-1",
+      "hypothesis-c69-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c69-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c69-a",
+        "evidenceIds": [
+          "evidence-c69-01",
+          "evidence-c69-02",
+          "evidence-c69-03",
+          "evidence-c69-04",
+          "evidence-c69-05",
+          "evidence-c69-06",
+          "evidence-c69-07",
+          "evidence-c69-08"
+        ]
+      },
+      {
+        "id": "proof-c69-b",
+        "evidenceIds": [
+          "evidence-c69-01",
+          "evidence-c69-02",
+          "evidence-c69-09",
+          "evidence-c69-10",
+          "evidence-c69-11",
+          "evidence-c69-12",
+          "evidence-c69-13"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "沿来源链和时间区间还原一次会议的多份产物"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c69-1",
+        "kind": "source",
+        "boardId": "board-c69-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c69-1-1",
+            "eventId": "event-c69-01"
+          },
+          {
+            "slotId": "slot-c69-1-2",
+            "eventId": "event-c69-03"
+          },
+          {
+            "slotId": "slot-c69-1-3",
+            "eventId": "event-c69-05"
+          },
+          {
+            "slotId": "slot-c69-1-4",
+            "eventId": "event-c69-13"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c69-01",
+            "toEventId": "event-c69-03",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c69-03",
+            "toEventId": "event-c69-05",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c69-05",
+            "toEventId": "event-c69-13",
+            "relation": "transfers-to"
+          }
+        ],
+        "failureCategory": "source"
+      },
+      {
+        "id": "obligation-c69-2",
+        "kind": "time",
+        "boardId": "board-c69-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c69-2-1",
+            "eventId": "event-c69-02"
+          },
+          {
+            "slotId": "slot-c69-2-2",
+            "eventId": "event-c69-04"
+          },
+          {
+            "slotId": "slot-c69-2-3",
+            "eventId": "event-c69-06"
+          },
+          {
+            "slotId": "slot-c69-2-4",
+            "eventId": "event-c69-13"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c69-02",
+            "toEventId": "event-c69-04",
+            "relation": "precedes"
+          },
+          {
+            "fromEventId": "event-c69-04",
+            "toEventId": "event-c69-06",
+            "relation": "precedes"
+          },
+          {
+            "fromEventId": "event-c69-06",
+            "toEventId": "event-c69-13",
+            "relation": "precedes"
+          }
+        ],
+        "failureCategory": "time"
+      }
+    ],
+    "uniquenessClaim": "一次会议产生了并行草稿，模板服务随后自动合并；文件份数不等于会议次数。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c69-1",
+      "eventId": "event-c69-02",
+      "factIds": [
+        "fact-c69-01"
+      ],
+      "captionKey": "event.c69.2"
+    },
+    {
+      "id": "replay-c69-2",
+      "eventId": "event-c69-03",
+      "factIds": [
+        "fact-c69-02"
+      ],
+      "captionKey": "event.c69.3"
+    },
+    {
+      "id": "replay-c69-3",
+      "eventId": "event-c69-04",
+      "factIds": [
+        "fact-c69-03"
+      ],
+      "captionKey": "event.c69.4"
+    },
+    {
+      "id": "replay-c69-4",
+      "eventId": "event-c69-05",
+      "factIds": [
+        "fact-c69-04"
+      ],
+      "captionKey": "event.c69.5"
+    },
+    {
+      "id": "replay-c69-5",
+      "eventId": "event-c69-06",
+      "factIds": [
+        "fact-c69-05"
+      ],
+      "captionKey": "event.c69.6"
+    },
+    {
+      "id": "replay-c69-6",
+      "eventId": "event-c69-07",
+      "factIds": [
+        "fact-c69-01",
+        "fact-c69-02",
+        "fact-c69-03",
+        "fact-c69-04",
+        "fact-c69-05",
+        "fact-c69-06",
+        "fact-c69-07",
+        "fact-c69-08",
+        "fact-c69-09",
+        "fact-c69-10",
+        "fact-c69-11",
+        "fact-c69-12",
+        "fact-c69-13"
+      ],
+      "captionKey": "event.c69.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c69.title": "第三份会议纪要",
+      "case.c69.surface": "同一时段出现三份会议纪要，参会者却只参加过一次会议。",
+      "case.c69.truth": "一次会议产生了并行草稿，模板服务随后自动合并；文件份数不等于会议次数。",
+      "entity.c69.system": "现场对象与记录链",
+      "location.c69": "文书来源",
+      "hypothesis.c69.canonical": "一次会议产生了并行草稿，模板服务随后自动合并；文件份数不等于会议次数。",
+      "hypothesis.c69.alternative.1": "当天秘密召开了两次会议",
+      "hypothesis.c69.alternative.2": "有人伪造了另外两份纪要",
+      "motive.沿来源链和时间区间还原一次会议的多份产物": "沿来源链和时间区间还原一次会议的多份产物",
+      "chapter.c69.one": "固定异常",
+      "chapter.c69.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c69.1": "会议纪要是否成立？",
+      "query.c69.2": "并行草稿是否成立？",
+      "query.c69.3": "自动合并是否成立？",
+      "query.c69.4": "参会者是否成立？",
+      "query.c69.5": "文件份数是否成立？",
+      "query.c69.6": "会议时段是否成立？",
+      "query.c69.7": "模板服务是否成立？",
+      "query.c69.8": "版本来源是否成立？",
+      "query.c69.9": "合并时间是否成立？",
+      "query.c69.10": "会议次数是否成立？",
+      "event.c69.1": "阶段 1：会议纪要进入记录链",
+      "event.c69.2": "阶段 2：并行草稿进入记录链",
+      "event.c69.3": "阶段 3：自动合并进入记录链",
+      "event.c69.4": "阶段 4：参会者进入记录链",
+      "event.c69.5": "阶段 5：文件份数进入记录链",
+      "event.c69.6": "阶段 6：会议时段进入记录链",
+      "event.c69.7": "阶段 7：模板服务进入记录链",
+      "event.c69.8": "阶段 8：版本来源进入记录链",
+      "event.c69.9": "阶段 9：合并时间进入记录链",
+      "event.c69.10": "阶段 10：会议次数进入记录链",
+      "event.c69.11": "阶段 11：会议纪要进入记录链",
+      "event.c69.12": "阶段 12：并行草稿进入记录链",
+      "event.c69.13": "阶段 13：自动合并进入记录链",
+      "event.c69.14": "阶段 14：参会者进入记录链",
+      "evidence.c69.1.title": "会议纪要记录",
+      "evidence.c69.1.observation": "来源材料显示“会议纪要”在该阶段可复核。",
+      "evidence.c69.2.title": "并行草稿记录",
+      "evidence.c69.2.observation": "来源材料显示“并行草稿”在该阶段可复核。",
+      "evidence.c69.3.title": "自动合并记录",
+      "evidence.c69.3.observation": "来源材料显示“自动合并”在该阶段可复核。",
+      "evidence.c69.4.title": "参会者记录",
+      "evidence.c69.4.observation": "来源材料显示“参会者”在该阶段可复核。",
+      "evidence.c69.5.title": "文件份数记录",
+      "evidence.c69.5.observation": "来源材料显示“文件份数”在该阶段可复核。",
+      "evidence.c69.6.title": "会议时段记录",
+      "evidence.c69.6.observation": "来源材料显示“会议时段”在该阶段可复核。",
+      "evidence.c69.7.title": "模板服务记录",
+      "evidence.c69.7.observation": "来源材料显示“模板服务”在该阶段可复核。",
+      "evidence.c69.8.title": "版本来源记录",
+      "evidence.c69.8.observation": "来源材料显示“版本来源”在该阶段可复核。",
+      "evidence.c69.9.title": "合并时间记录",
+      "evidence.c69.9.observation": "来源材料显示“合并时间”在该阶段可复核。",
+      "evidence.c69.10.title": "会议次数记录",
+      "evidence.c69.10.observation": "来源材料显示“会议次数”在该阶段可复核。",
+      "evidence.c69.11.title": "会议纪要记录",
+      "evidence.c69.11.observation": "来源材料显示“会议纪要”在该阶段可复核。",
+      "evidence.c69.12.title": "并行草稿记录",
+      "evidence.c69.12.observation": "来源材料显示“并行草稿”在该阶段可复核。",
+      "evidence.c69.13.title": "自动合并记录",
+      "evidence.c69.13.observation": "来源材料显示“自动合并”在该阶段可复核。",
+      "evidence.c69.14.title": "参会者记录",
+      "evidence.c69.14.observation": "来源材料显示“参会者”在该阶段可复核。",
+      "board.c69.1.title": "第三份会议纪要 · provenance-chain",
+      "board.c69.1.slot.1": "起始来源",
+      "board.c69.1.slot.2": "关键变化",
+      "board.c69.1.slot.3": "观测结果",
+      "board.c69.1.slot.4": "排除替代",
+      "board.c69.2.title": "第三份会议纪要 · interval-logic",
+      "board.c69.2.slot.1": "起始来源",
+      "board.c69.2.slot.2": "关键变化",
+      "board.c69.2.slot.3": "观测结果",
+      "board.c69.2.slot.4": "排除替代"
+    }
+  }
+}

@@ -13,26 +13,26 @@ const root = resolve(process.argv[2] ?? ".");
 const profileId = process.argv[3] ?? process.env.TURTLE_SOUP_RELEASE_PROFILE ?? "v1.4-internal-rc";
 const generatedDir = resolve(root, "apps/web/.generated");
 const { profile, entries } = loadReleaseContent(root, profileId);
-const patchPath = resolve(root, "content/zh/presentation", ["v1.4-internal-rc", "v1.5-internal-rc", "v1.6-internal-rc", "v1.7-internal-rc", "v1.8-internal-rc"].includes(profile.id) ? "v1.4/patches.json" : "v1.2/patches.json");
+const patchPath = resolve(root, "content/zh/presentation", ["v1.4-internal-rc", "v1.5-internal-rc", "v1.6-internal-rc", "v1.7-internal-rc", "v1.8-internal-rc", "v1.9-internal-rc", "v2.0-internal-rc", "v2.1-internal-rc", "v2.2-internal-rc", "v2.3-internal-rc", "v2.4-internal-rc", "v2.5-internal-rc"].includes(profile.id) ? "v1.4/patches.json" : "v1.2/patches.json");
 const presentationPatches: CasePresentationPatch[] = existsSync(patchPath)
   ? JSON.parse(readFileSync(patchPath, "utf8")) as CasePresentationPatch[]
   : [];
 const overlayPatchPath = resolve(root, "content/zh/presentation/v1.7/patches.json");
-const overlayPatches: CasePresentationPatch[] = ["v1.7-internal-rc", "v1.8-internal-rc"].includes(profile.id) && existsSync(overlayPatchPath)
+const overlayPatches: CasePresentationPatch[] = ["v1.7-internal-rc", "v1.8-internal-rc", "v1.9-internal-rc", "v2.0-internal-rc", "v2.1-internal-rc", "v2.2-internal-rc", "v2.3-internal-rc", "v2.4-internal-rc", "v2.5-internal-rc"].includes(profile.id) && existsSync(overlayPatchPath)
   ? JSON.parse(readFileSync(overlayPatchPath, "utf8")) as CasePresentationPatch[]
   : [];
 const basePatchByCase = new Map(presentationPatches.map((patch) => [patch.caseId, patch]));
 const overlayPatchByCase = new Map(overlayPatches.map((patch) => [patch.caseId, patch]));
-const patchByCase = ["v1.2-internal-rc", "v1.3-public-preview", "v1.4-internal-rc", "v1.5-internal-rc", "v1.6-internal-rc", "v1.7-internal-rc", "v1.8-internal-rc"].includes(profile.id)
+const patchByCase = ["v1.2-internal-rc", "v1.3-public-preview", "v1.4-internal-rc", "v1.5-internal-rc", "v1.6-internal-rc", "v1.7-internal-rc", "v1.8-internal-rc", "v1.9-internal-rc", "v2.0-internal-rc", "v2.1-internal-rc", "v2.2-internal-rc", "v2.3-internal-rc", "v2.4-internal-rc", "v2.5-internal-rc"].includes(profile.id)
   ? new Map(entries.map((entry) => [entry.id, mergePresentationPatch(basePatchByCase.get(entry.id), overlayPatchByCase.get(entry.id))]).filter(([, patch]) => Boolean(patch)))
   : new Map();
-const aliasVersion = ["v1.6-internal-rc", "v1.7-internal-rc", "v1.8-internal-rc"].includes(profile.id) ? "v1.6" : "v1.5";
+const aliasVersion = ["v1.6-internal-rc", "v1.7-internal-rc", "v1.8-internal-rc", "v1.9-internal-rc", "v2.0-internal-rc", "v2.1-internal-rc", "v2.2-internal-rc", "v2.3-internal-rc", "v2.4-internal-rc", "v2.5-internal-rc"].includes(profile.id) ? "v1.6" : "v1.5";
 const aliasPath = resolve(root, `content/zh/question-aliases/${aliasVersion}/packs.json`);
-const baseAliasPacks: QuestionAliasPack[] = ["v1.5-internal-rc", "v1.6-internal-rc", "v1.7-internal-rc", "v1.8-internal-rc"].includes(profile.id) && existsSync(aliasPath)
+const baseAliasPacks: QuestionAliasPack[] = ["v1.5-internal-rc", "v1.6-internal-rc", "v1.7-internal-rc", "v1.8-internal-rc", "v1.9-internal-rc", "v2.0-internal-rc", "v2.1-internal-rc", "v2.2-internal-rc", "v2.3-internal-rc", "v2.4-internal-rc", "v2.5-internal-rc"].includes(profile.id) && existsSync(aliasPath)
   ? JSON.parse(readFileSync(aliasPath, "utf8")) as QuestionAliasPack[]
   : [];
 const overlayAliasPath = resolve(root, "content/zh/question-aliases/v1.7/packs.json");
-const overlayAliasPacks: QuestionAliasPack[] = ["v1.7-internal-rc", "v1.8-internal-rc"].includes(profile.id) && existsSync(overlayAliasPath)
+const overlayAliasPacks: QuestionAliasPack[] = ["v1.7-internal-rc", "v1.8-internal-rc", "v1.9-internal-rc", "v2.0-internal-rc", "v2.1-internal-rc", "v2.2-internal-rc", "v2.3-internal-rc", "v2.4-internal-rc", "v2.5-internal-rc"].includes(profile.id) && existsSync(overlayAliasPath)
   ? JSON.parse(readFileSync(overlayAliasPath, "utf8")) as QuestionAliasPack[]
   : [];
 const aliasPacks = mergeQuestionAliasPacks(baseAliasPacks, overlayAliasPacks);

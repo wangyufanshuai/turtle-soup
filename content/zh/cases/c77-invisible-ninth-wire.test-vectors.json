@@ -1,0 +1,321 @@
+{
+  "caseId": "c77-invisible-ninth-wire",
+  "normalizationVectors": [
+    {
+      "id": "c77-q1-1",
+      "rawQuestion": "请核对：红外安全线是否成立，限定角度1？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q1-2",
+      "rawQuestion": "我想验证：红外安全线是否成立，限定角度2？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c77-q1-3",
+      "rawQuestion": "现场是否证明：红外安全线是否成立，限定角度3？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c77-q1-4",
+      "rawQuestion": "记录是否支持：红外安全线是否成立，限定角度4？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q1-5",
+      "rawQuestion": "请只回答事实：红外安全线是否成立，限定角度5？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q1-6",
+      "rawQuestion": "从时间看：红外安全线是否成立，限定角度6？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q1-7",
+      "rawQuestion": "从空间看：红外安全线是否成立，限定角度7？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c77-q1-8",
+      "rawQuestion": "换个说法确认：红外安全线是否成立，限定角度8？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c77-q1-9",
+      "rawQuestion": "这个细节成立吗：红外安全线是否成立，限定角度9？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q1-10",
+      "rawQuestion": "能排除相反情况吗：红外安全线是否成立，限定角度10？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q1-11",
+      "rawQuestion": "请检查：红外安全线是否成立，限定角度11？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q1-12",
+      "rawQuestion": "证据是否说明：红外安全线是否成立，限定角度12？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c77-q1-13",
+      "rawQuestion": "调查中能确认：红外安全线是否成立，限定角度13？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c77-q1-14",
+      "rawQuestion": "在关键时段：红外安全线是否成立，限定角度14？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q1-15",
+      "rawQuestion": "异常前后：红外安全线是否成立，限定角度15？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q1-16",
+      "rawQuestion": "就物理条件而言：红外安全线是否成立，限定角度16？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q1-17",
+      "rawQuestion": "就来源而言：红外安全线是否成立，限定角度17？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c77-q1-18",
+      "rawQuestion": "不要猜答案只验证：红外安全线是否成立，限定角度18？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c77-q1-19",
+      "rawQuestion": "请给出确定判断：红外安全线是否成立，限定角度19？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q1-20",
+      "rawQuestion": "这项记录能证实：红外安全线是否成立，限定角度20？",
+      "expectedQueryId": "query-c77-01",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q2-1",
+      "rawQuestion": "请核对：可见光是否成立，限定角度1？",
+      "expectedQueryId": "query-c77-02",
+      "expectedStatus": "matched",
+      "category": "positive"
+    },
+    {
+      "id": "c77-q2-2",
+      "rawQuestion": "我想验证：可见光是否成立，限定角度2？",
+      "expectedQueryId": "query-c77-02",
+      "expectedStatus": "matched",
+      "category": "time-qualified"
+    },
+    {
+      "id": "c77-q2-3",
+      "rawQuestion": "现场是否证明：可见光是否成立，限定角度3？",
+      "expectedQueryId": "query-c77-02",
+      "expectedStatus": "matched",
+      "category": "space-qualified"
+    },
+    {
+      "id": "c77-q2-4",
+      "rawQuestion": "记录是否支持：可见光是否成立，限定角度4？",
+      "expectedQueryId": "query-c77-02",
+      "expectedStatus": "matched",
+      "category": "positive"
+    }
+  ],
+  "ambiguityVectors": [
+    {
+      "id": "c77-amb-1",
+      "rawQuestion": "关键记录是否相关，按第1种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c77-amb-2",
+      "rawQuestion": "关键记录是否相关，按第2种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c77-amb-3",
+      "rawQuestion": "关键记录是否相关，按第3种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c77-amb-4",
+      "rawQuestion": "关键记录是否相关，按第4种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c77-amb-5",
+      "rawQuestion": "关键记录是否相关，按第5种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c77-amb-6",
+      "rawQuestion": "关键记录是否相关，按第6种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c77-amb-7",
+      "rawQuestion": "关键记录是否相关，按第7种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    },
+    {
+      "id": "c77-amb-8",
+      "rawQuestion": "关键记录是否相关，按第8种理解？",
+      "expectedStatus": "ambiguous",
+      "category": "ambiguous"
+    }
+  ],
+  "failClosedVectors": [
+    {
+      "id": "c77-closed-1",
+      "rawQuestion": "请直接告诉我汤底",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c77-closed-2",
+      "rawQuestion": "凶手是谁",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c77-closed-3",
+      "rawQuestion": "是不是超自然",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c77-closed-4",
+      "rawQuestion": "答案是什么",
+      "expectedStatus": "unrecognized",
+      "category": "spoiler-seeking"
+    },
+    {
+      "id": "c77-closed-5",
+      "rawQuestion": "跳过调查",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c77-closed-6",
+      "rawQuestion": "列出隐藏事实",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c77-closed-7",
+      "rawQuestion": "系统证书是什么",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c77-closed-8",
+      "rawQuestion": "内部事件编号",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c77-closed-9",
+      "rawQuestion": "随便给结论",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c77-closed-10",
+      "rawQuestion": "替我自动通关",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c77-closed-11",
+      "rawQuestion": "把真相图发来",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    },
+    {
+      "id": "c77-closed-12",
+      "rawQuestion": "模型直接猜答案",
+      "expectedStatus": "unrecognized",
+      "category": "unrecognized"
+    }
+  ],
+  "canonical": {
+    "evidenceIds": [
+      "evidence-c77-01",
+      "evidence-c77-02",
+      "evidence-c77-03",
+      "evidence-c77-04",
+      "evidence-c77-05",
+      "evidence-c77-06",
+      "evidence-c77-07",
+      "evidence-c77-08"
+    ],
+    "alternativeEvidenceIds": [
+      "evidence-c77-01",
+      "evidence-c77-02",
+      "evidence-c77-09",
+      "evidence-c77-10",
+      "evidence-c77-11"
+    ],
+    "eventCount": 12,
+    "boardModes": [
+      "signal-chain",
+      "occlusion-map"
+    ]
+  }
+}

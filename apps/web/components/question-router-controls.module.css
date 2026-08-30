@@ -1,0 +1,16 @@
+.panel { display: grid; gap: .75rem; padding: 1rem 0; border-top: 1px solid var(--line); }
+.panel header { display:flex; justify-content:space-between; gap:1rem; align-items:start; }
+.panel header small, .panel header span, .panel label > span { display:block; color:var(--muted); font: .68rem var(--mono); letter-spacing:.08em; }
+.panel h3 { margin:.25rem 0 0; color:var(--paper); font: 500 1rem var(--display); }
+.panel header > span { color:var(--acid); }
+.explain, .status { margin:0; color:var(--muted); font-size:.76rem; line-height:1.55; }
+.panel label:not(.toggle) { display:grid; gap:.3rem; }
+.panel input, .panel select { width:100%; min-height:2.35rem; border:1px solid var(--line-strong); background:var(--panel-deep); color:var(--ink); padding:.45rem .55rem; }
+.toggle { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.65rem 0; }
+.toggle b, .toggle small { display:block; }
+.toggle small { margin-top:.2rem; color:var(--muted); font-size:.72rem; }
+.toggle input { width:1.1rem; height:1.1rem; accent-color:var(--acid); }
+.actions { display:flex; flex-wrap:wrap; gap:.5rem; }
+.actions button { border:1px solid var(--line-strong); background:transparent; color:var(--paper); padding:.48rem .6rem; cursor:pointer; }
+.actions button:disabled { opacity:.45; cursor:not-allowed; }
+@media (max-width:700px) { .actions button { min-height:44px; } }

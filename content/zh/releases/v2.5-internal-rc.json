@@ -1,0 +1,17 @@
+{
+  "profileVersion": 1,
+  "id": "v2.5-internal-rc",
+  "title": "TURTLE SOUP v2.5 Season 5 Internal RC",
+  "status": "internal-rc",
+  "publishable": false,
+  "humanEvaluation": "pending",
+  "founderExploratorySessions": 1,
+  "formalFunGateParticipants": 0,
+  "manifests": [
+    "../cases/manifest.v0.6.json",
+    "../cases/manifest.season2.v1.0.json",
+    "../cases/manifest.season3.v1.1.json",
+    "../cases/manifest.season4.v1.3.json",
+    "../cases/manifest.season5.v2.5.json"
+  ]
+}

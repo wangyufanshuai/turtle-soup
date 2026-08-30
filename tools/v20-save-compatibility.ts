@@ -1,0 +1,11 @@
+import { writeFileSync } from "node:fs";
+import { resolve } from "node:path";
+import { projectPlayerState, replayCommands, validateCompatibleSave } from "../packages/mystery-core/src/index.ts";
+import { createCanonicalSave } from "./lib/canonical-save.ts";
+import { loadCaseFile, loadReleaseContent } from "./lib/release-content.ts";
+
+const root = resolve(process.argv[2] ?? "."), baseline = loadReleaseContent(root, "v1.9-internal-rc"), current = loadReleaseContent(root, "v2.0-internal-rc");
+const currentById = new Map(current.entries.map((entry) => [entry.id, entry]));
+const cases = baseline.entries.map((entry) => { const next = currentById.get(entry.id), caseFile = loadCaseFile(entry), save = createCanonicalSave(caseFile), compatible = validateCompatibleSave(save, caseFile.id, { caseVersion: caseFile.metadata?.contentVersion ?? 1, contentHash: caseFile.metadata?.canonicalHash ?? "unversioned" }), before = replayCommands(caseFile, save.commands), after = compatible.ok ? replayCommands(caseFile, compatible.value.commands) : undefined; return { caseId: entry.id, canonicalHashUnchanged: next?.canonicalHash === entry.canonicalHash, contentVersionUnchanged: next?.contentVersion === entry.contentVersion, casePathUnchanged: next?.casePath === entry.casePath, schemaVersion: save.schemaVersion, compatible: compatible.ok, projectionReplayEqual: Boolean(after && JSON.stringify(projectPlayerState(caseFile, before.state)) === JSON.stringify(projectPlayerState(caseFile, after.state))) }; });
+const report = { reportVersion: "2.0", releaseProfile: "v2.0-internal-rc", generatedAt: new Date().toISOString(), status: "internal-rc / human-evaluation-pending", humanParticipants: 0, baselineHead: "bb4c81b7d399037693c059d1ada481ca898cf368", saveSchemaVersion: 1, cases, passed: cases.length === 60 && cases.every((item) => item.canonicalHashUnchanged && item.contentVersionUnchanged && item.casePathUnchanged && item.schemaVersion === 1 && item.compatible && item.projectionReplayEqual) };
+writeFileSync(resolve(root, "docs/v2.0-save-compatibility.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8"); console.log(JSON.stringify({ cases: cases.length, passed: report.passed }, null, 2)); if (!report.passed) process.exitCode = 1;

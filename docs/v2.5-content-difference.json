@@ -1,0 +1,949 @@
+{
+  "reportVersion": "2.5",
+  "releaseProfile": "v2.5-internal-rc",
+  "generatedAt": "2026-08-30T07:28:22.497Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "baselineProfile": "v2.4-internal-rc",
+  "previousCaseCount": 60,
+  "currentCaseCount": 84,
+  "addedCaseCount": 24,
+  "addedCaseIds": [
+    "c61-missing-tape-turn",
+    "c62-rope-not-shorter",
+    "c63-ice-melts-first",
+    "c64-uncracked-glass",
+    "c65-twin-watermarks",
+    "c66-still-weight",
+    "c67-shared-badge",
+    "c68-empty-seat-proof",
+    "c69-third-minutes",
+    "c70-grace-late-arrival",
+    "c71-revoked-open-door",
+    "c72-message-read-twice",
+    "c73-phantom-exit",
+    "c74-silent-footsteps",
+    "c75-two-weather-photo",
+    "c76-red-light-second",
+    "c77-invisible-ninth-wire",
+    "c78-sound-from-other-side",
+    "c79-extra-queue-order",
+    "c80-power-on-restart",
+    "c81-lost-ack",
+    "c82-closed-network-device",
+    "c83-two-unloads",
+    "c84-handoff-after-stop"
+  ],
+  "newCaseDetails": [
+    {
+      "caseId": "c61-missing-tape-turn",
+      "title": "少了一圈的胶带",
+      "canonicalHash": "sha256:3adbf127e8fc3bad61c326463eb162b42bf013d721858b69aef0de5dc103821d",
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "calibration-curve",
+        "material-balance"
+      ],
+      "contentTags": [
+        "材料推理",
+        "机械测量",
+        "数量口径"
+      ]
+    },
+    {
+      "caseId": "c62-rope-not-shorter",
+      "title": "绳子没有变短",
+      "canonicalHash": "sha256:8b7da1015e8f9ad4fe3d62bca56ecfa07a2605b4db9b4877ccb3b187a3f22176",
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "spatial-map",
+        "causal-graph"
+      ],
+      "contentTags": [
+        "空间路径",
+        "机械因果",
+        "参照关系"
+      ]
+    },
+    {
+      "caseId": "c63-ice-melts-first",
+      "title": "冷库里先融化的冰",
+      "canonicalHash": "sha256:ae8dde73e130f1b26297527adb3372919fc601c81fce10df2849b7e4fb9da3bb",
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "threshold-ladder",
+        "state-trace"
+      ],
+      "contentTags": [
+        "相变",
+        "阈值",
+        "环境状态"
+      ]
+    },
+    {
+      "caseId": "c64-uncracked-glass",
+      "title": "没有裂纹的玻璃",
+      "canonicalHash": "sha256:42f93eef734bafc0f384f11fbcdf693173262d438fcb336652e8cea9929c5d34",
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "causal-graph",
+        "measurement-model"
+      ],
+      "contentTags": [
+        "结构受力",
+        "声学证据",
+        "因果图"
+      ]
+    },
+    {
+      "caseId": "c65-twin-watermarks",
+      "title": "同样高度的两道水印",
+      "canonicalHash": "sha256:5ffe59b9e8bf406a1dff832bff5543aaf34e14b812ffd26a332c4483d0222460",
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "occlusion-map",
+        "reference-frame"
+      ],
+      "contentTags": [
+        "纸张形变",
+        "视觉参照",
+        "来源核验"
+      ]
+    },
+    {
+      "caseId": "c66-still-weight",
+      "title": "没有被搬动的砝码",
+      "canonicalHash": "sha256:209e85b427beb9b6762549d852800cf4c78056c80dc0e0fc2952bc60277618a2",
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "material-balance",
+        "counterfactual-tree"
+      ],
+      "contentTags": [
+        "受力平衡",
+        "隐性耦合",
+        "反事实"
+      ]
+    },
+    {
+      "caseId": "c67-shared-badge",
+      "title": "两个人的同一枚胸牌",
+      "canonicalHash": "sha256:53d0bd812d925d9f434b6b8c74156d061ce0992f1a8f99fa3f6a12c58e8bb836",
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "identity-matrix",
+        "counterfactual-tree"
+      ],
+      "contentTags": [
+        "身份语义",
+        "凭证转交",
+        "反事实"
+      ]
+    },
+    {
+      "caseId": "c68-empty-seat-proof",
+      "title": "空座位的在场证明",
+      "canonicalHash": "sha256:9b8ac84cf98b6fa7629516d60c4c5ee41e8ccd59ed0304f14f4705298f06d17c",
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "state-trace",
+        "counterfactual-tree"
+      ],
+      "contentTags": [
+        "传感状态",
+        "在场判断",
+        "状态机"
+      ]
+    },
+    {
+      "caseId": "c69-third-minutes",
+      "title": "第三份会议纪要",
+      "canonicalHash": "sha256:6c8472f337d0c556e25b2eed16068a2643e596d4adbbbea48bd28adb60e96935",
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "provenance-chain",
+        "interval-logic"
+      ],
+      "contentTags": [
+        "文书来源",
+        "并行草稿",
+        "时间区间"
+      ]
+    },
+    {
+      "caseId": "c70-grace-late-arrival",
+      "title": "没有迟到的迟到者",
+      "canonicalHash": "sha256:0fc81561b56d5de29c784614d5ee9fc00476302bc46afada529ca095f0110ee3",
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "timeline",
+        "threshold-ladder"
+      ],
+      "contentTags": [
+        "制度阈值",
+        "时间区间",
+        "考勤语义"
+      ]
+    },
+    {
+      "caseId": "c71-revoked-open-door",
+      "title": "失效后仍能开的权限",
+      "canonicalHash": "sha256:51f881e3fbb09bd32b3bac32609137535228287284c0795c15ac3a1f33cdfabd",
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "network-topology",
+        "causal-graph"
+      ],
+      "contentTags": [
+        "权限缓存",
+        "网络同步",
+        "因果链"
+      ]
+    },
+    {
+      "caseId": "c72-message-read-twice",
+      "title": "一封被两次读出的通知",
+      "canonicalHash": "sha256:3a95dbe13b162eebb994096a50348d4c0cee3e9d52655ed390b1834e16aa9d17",
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "queue-model",
+        "provenance-chain"
+      ],
+      "contentTags": [
+        "消息队列",
+        "重试语义",
+        "来源链"
+      ]
+    },
+    {
+      "caseId": "c73-phantom-exit",
+      "title": "玻璃里多出的出口",
+      "canonicalHash": "sha256:d87e6dfb889e39f01cc01d425eedeb284e35a2fbb8f4c700c006abca4fce3834",
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "occlusion-map",
+        "spatial-map"
+      ],
+      "contentTags": [
+        "反射几何",
+        "空间观察",
+        "视觉证据"
+      ]
+    },
+    {
+      "caseId": "c74-silent-footsteps",
+      "title": "没有回声的脚步声",
+      "canonicalHash": "sha256:1846687b8afa350fdc6c0e8d362a8869df399c2820374fcdb51cc95bc1275ab4",
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "acoustic-path",
+        "measurement-model"
+      ],
+      "contentTags": [
+        "声学路径",
+        "相位抵消",
+        "传感器"
+      ]
+    },
+    {
+      "caseId": "c75-two-weather-photo",
+      "title": "同一照片的两种天气",
+      "canonicalHash": "sha256:7294163df21dbfc2dd42b37c931bfaa110242f2a55bea9316dc55091ee087654",
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "sampling-window",
+        "occlusion-map"
+      ],
+      "contentTags": [
+        "分时采样",
+        "摄影合成",
+        "视觉来源"
+      ]
+    },
+    {
+      "caseId": "c76-red-light-second",
+      "title": "红灯先亮的那一秒",
+      "canonicalHash": "sha256:504bba955ac12ec130de6361e832e47aa6fd7767294e2f15ac43ec86322b737e",
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "interval-logic",
+        "reference-frame"
+      ],
+      "contentTags": [
+        "滚动快门",
+        "时间区间",
+        "视觉参照"
+      ]
+    },
+    {
+      "caseId": "c77-invisible-ninth-wire",
+      "title": "看不见的第九根线",
+      "canonicalHash": "sha256:8a1befea7762e91333816e2afe28df2c90a93b76b192c178d0c3e5fcf8cfb83f",
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "signal-chain",
+        "occlusion-map"
+      ],
+      "contentTags": [
+        "光谱边界",
+        "信号链",
+        "负证据"
+      ]
+    },
+    {
+      "caseId": "c78-sound-from-other-side",
+      "title": "从另一面传来的声音",
+      "canonicalHash": "sha256:6231f8cbc3a1ee480b41030c4df733c205aaa379f6e969fee211a44bad89a7a4",
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "acoustic-path",
+        "spatial-map"
+      ],
+      "contentTags": [
+        "结构传声",
+        "定位误读",
+        "空间路径"
+      ]
+    },
+    {
+      "caseId": "c79-extra-queue-order",
+      "title": "队列里多出的订单",
+      "canonicalHash": "sha256:69f22e56a9a9620491a1752b7cbf8cf51810a51b17756f473b2c6fcbead557f7",
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "capacity-model",
+        "queue-model"
+      ],
+      "contentTags": [
+        "重试队列",
+        "幂等提交",
+        "容量约束"
+      ]
+    },
+    {
+      "caseId": "c80-power-on-restart",
+      "title": "没有断电的重启",
+      "canonicalHash": "sha256:2c129c326d8e0f2019c42224274d72d65ed64635040939be5d879a54cbf97776",
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "causal-graph",
+        "state-trace"
+      ],
+      "contentTags": [
+        "服务状态",
+        "监督进程",
+        "系统边界"
+      ]
+    },
+    {
+      "caseId": "c81-lost-ack",
+      "title": "只丢了一个确认",
+      "canonicalHash": "sha256:e7d6b1b3895791e79c58e36c45ad96288f60b5f4f75135c42649415e26d51fb8",
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "counterfactual-tree",
+        "provenance-chain"
+      ],
+      "contentTags": [
+        "确认丢失",
+        "幂等性",
+        "保管链"
+      ]
+    },
+    {
+      "caseId": "c82-closed-network-device",
+      "title": "封闭网络里的新设备",
+      "canonicalHash": "sha256:94e249c8e0ebbc1f750369f917815356aca0cb220b369ccc4cef9cde7f239743",
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "network-topology",
+        "interval-logic"
+      ],
+      "contentTags": [
+        "离线部署",
+        "网络来源",
+        "时间区间"
+      ]
+    },
+    {
+      "caseId": "c83-two-unloads",
+      "title": "一辆车的两次卸货",
+      "canonicalHash": "sha256:206a2959bb7f0299cf715a7b0533a0add3ef9a1035ae899d329f2840f1a00be4",
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "proofReplayBeats": 6,
+      "chapters": 1,
+      "boardModes": [
+        "material-balance",
+        "provenance-chain"
+      ],
+      "contentTags": [
+        "物流分批",
+        "批次口径",
+        "来源链"
+      ]
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "title": "停止以后仍完成的交接",
+      "canonicalHash": "sha256:e57095815b8ca3386e1e04194a712ddc85c9ca945f11de0fbc412de1171d634e",
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "proofReplayBeats": 8,
+      "chapters": 2,
+      "boardModes": [
+        "causal-graph",
+        "interval-logic",
+        "counterfactual-tree"
+      ],
+      "contentTags": [
+        "综合因果",
+        "停止边界",
+        "交接审计"
+      ]
+    }
+  ],
+  "newBoardModes": [
+    "calibration-curve",
+    "material-balance",
+    "spatial-map",
+    "causal-graph",
+    "threshold-ladder",
+    "state-trace",
+    "measurement-model",
+    "occlusion-map",
+    "reference-frame",
+    "counterfactual-tree",
+    "identity-matrix",
+    "provenance-chain",
+    "interval-logic",
+    "timeline",
+    "network-topology",
+    "queue-model",
+    "acoustic-path",
+    "sampling-window",
+    "signal-chain",
+    "capacity-model"
+  ],
+  "newSkills": [
+    "材料推理",
+    "机械测量",
+    "数量口径",
+    "空间路径",
+    "机械因果",
+    "参照关系",
+    "相变",
+    "阈值",
+    "环境状态",
+    "结构受力",
+    "声学证据",
+    "因果图",
+    "纸张形变",
+    "视觉参照",
+    "来源核验",
+    "受力平衡",
+    "隐性耦合",
+    "反事实",
+    "身份语义",
+    "凭证转交",
+    "传感状态",
+    "在场判断",
+    "状态机",
+    "文书来源",
+    "并行草稿",
+    "时间区间",
+    "制度阈值",
+    "考勤语义",
+    "权限缓存",
+    "网络同步",
+    "因果链",
+    "消息队列",
+    "重试语义",
+    "来源链",
+    "反射几何",
+    "空间观察",
+    "视觉证据",
+    "声学路径",
+    "相位抵消",
+    "传感器",
+    "分时采样",
+    "摄影合成",
+    "视觉来源",
+    "滚动快门",
+    "光谱边界",
+    "信号链",
+    "负证据",
+    "结构传声",
+    "定位误读",
+    "重试队列",
+    "幂等提交",
+    "容量约束",
+    "服务状态",
+    "监督进程",
+    "系统边界",
+    "确认丢失",
+    "幂等性",
+    "保管链",
+    "离线部署",
+    "网络来源",
+    "物流分批",
+    "批次口径",
+    "综合因果",
+    "停止边界",
+    "交接审计"
+  ],
+  "frozen": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    }
+  ],
+  "passed": true
+}

@@ -1,25 +1,11 @@
 import type { HostRewriteRequest, HostRewriteResponse, HostRewriteStyle, PresentationContext } from "@turtle-soup/mystery-core";
+import { HOST_REWRITE_DEFAULTS, isLocalHostEndpoint, readBoundedResponse, safeModel } from "./ai-provider-defaults.ts";
 
-export const HOST_REWRITE_DEFAULTS = {
-  endpoint: "http://localhost:11434/v1/chat/completions",
-  model: "qwen2.5:7b-instruct",
-  style: "档案" as HostRewriteStyle,
-  timeoutMs: 2_000,
-  maxChars: 800,
-};
+export { isLocalHostEndpoint } from "./ai-provider-defaults.ts";
 
 const FORBIDDEN = /(?:solutionCertificate|canonicalHypothesis|hypothesis-|fact-|event-|contradiction-|proof-|隐藏事实|证明证书|真相图|内部事件)/i;
 
 export type HostRewriteValidation = { ok: true; value: HostRewriteResponse } | { ok: false; reason: string };
-
-export function isLocalHostEndpoint(endpoint: string): boolean {
-  try {
-    const url = new URL(endpoint);
-    return (url.protocol === "http:" || url.protocol === "https:") && ["localhost", "127.0.0.1", "[::1]"].includes(url.hostname);
-  } catch {
-    return false;
-  }
-}
 
 function numbers(value: string) {
   return new Set(value.match(/\d+(?:[.:：]\d+)?/g) ?? []);
@@ -68,6 +54,8 @@ export function hostRewriteCacheKey(context: PresentationContext): string {
 
 export async function requestHostRewrite(request: HostRewriteRequest, signal?: AbortSignal): Promise<HostRewriteResponse> {
   if (!isLocalHostEndpoint(request.endpoint)) throw new Error("本地主持仅允许 localhost、127.0.0.1 或 ::1 端点");
+  const model = safeModel(request.model, "");
+  if (!model) throw new Error("本地主持模型名无效");
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), HOST_REWRITE_DEFAULTS.timeoutMs);
   const relayAbort = () => controller.abort();
@@ -88,11 +76,11 @@ export async function requestHostRewrite(request: HostRewriteRequest, signal?: A
       credentials: "omit",
       cache: "no-store",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ model: request.model, stream: false, temperature: 0.35, messages: [{ role: "system", content: "只改写公开的确定性主持文本，严禁增加事实。" }, { role: "user", content: prompt }] }),
+      body: JSON.stringify({ model, stream: false, temperature: 0.35, messages: [{ role: "system", content: "只改写公开的确定性主持文本，严禁增加事实。" }, { role: "user", content: prompt }] }),
       signal: controller.signal,
     });
     if (!response.ok) throw new Error(`本地模型返回 HTTP ${response.status}`);
-    const payload = await response.json() as { choices?: Array<{ message?: { content?: string } }> };
+    const payload = JSON.parse(await readBoundedResponse(response)) as { choices?: Array<{ message?: { content?: string } }> };
     const content = payload.choices?.[0]?.message?.content;
     if (!content) throw new Error("本地模型没有返回文本");
     const validated = validateHostRewriteResponse(parseModelContent(content), request.context);

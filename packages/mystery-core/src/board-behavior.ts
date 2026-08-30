@@ -2,7 +2,7 @@ import type { ReasoningBoardMode } from "./types.ts";
 
 export interface ReasoningBoardBehavior {
   mode: ReasoningBoardMode;
-  interaction: "calibrate" | "control" | "propagate" | "route" | "bound" | "reframe" | "queue" | "sequence" | "transition" | "map" | "source" | "identity" | "measure" | "sample" | "aggregate";
+  interaction: "calibrate" | "control" | "propagate" | "route" | "bound" | "reframe" | "queue" | "sequence" | "transition" | "map" | "source" | "identity" | "measure" | "sample" | "aggregate" | "causal" | "balance" | "threshold" | "occlusion" | "acoustic" | "interval" | "counterfactual" | "capacity";
   slotRoles: string[];
   connectionVerbs: string[];
   requiredDistinctRoles: number;
@@ -24,6 +24,14 @@ const behaviors: Record<ReasoningBoardMode, Omit<ReasoningBoardBehavior, "mode">
   "uncertainty-band": { interaction: "bound", slotRoles: ["估计", "范围", "排除"], connectionVerbs: ["界定", "重叠", "排除"], requiredDistinctRoles: 3 },
   "reference-frame": { interaction: "reframe", slotRoles: ["基准", "投影", "对齐"], connectionVerbs: ["重设参照", "投影", "对齐"], requiredDistinctRoles: 3 },
   "queue-model": { interaction: "queue", slotRoles: ["入队", "合并", "出队"], connectionVerbs: ["入队", "合并", "出队"], requiredDistinctRoles: 3 },
+  "causal-graph": { interaction: "causal", slotRoles: ["原因", "中介", "结果"], connectionVerbs: ["触发", "导致", "解释"], requiredDistinctRoles: 3 },
+  "material-balance": { interaction: "balance", slotRoles: ["进入", "保留", "离开"], connectionVerbs: ["流入", "保留", "流出"], requiredDistinctRoles: 3 },
+  "threshold-ladder": { interaction: "threshold", slotRoles: ["观测", "阈值", "状态"], connectionVerbs: ["达到", "跨过", "保持"], requiredDistinctRoles: 3 },
+  "occlusion-map": { interaction: "occlusion", slotRoles: ["观察者", "遮挡", "目标"], connectionVerbs: ["看到", "遮挡", "显露"], requiredDistinctRoles: 3 },
+  "acoustic-path": { interaction: "acoustic", slotRoles: ["声源", "介质", "传感器"], connectionVerbs: ["传播至", "反射于", "抵达"], requiredDistinctRoles: 3 },
+  "interval-logic": { interaction: "interval", slotRoles: ["开始", "重叠", "结束"], connectionVerbs: ["先于", "重叠", "结束于"], requiredDistinctRoles: 3 },
+  "counterfactual-tree": { interaction: "counterfactual", slotRoles: ["假设", "反事实", "排除"], connectionVerbs: ["如果", "否则", "排除"], requiredDistinctRoles: 3 },
+  "capacity-model": { interaction: "capacity", slotRoles: ["需求", "容量", "积压"], connectionVerbs: ["进入", "受限于", "积压为"], requiredDistinctRoles: 3 },
 };
 
 /**
@@ -39,6 +47,6 @@ export function reasoningBoardBehavior(mode: ReasoningBoardMode, variant: "stand
 
 export function validateBoardBehavior(mode: ReasoningBoardMode, allowedRelations: string[]): boolean {
   const behavior = reasoningBoardBehavior(mode);
-  const relationMap: Record<string, string> = { "先于": "precedes", "同步于": "synchronizes", "解释": "explains", "转换为": "transitions-to", "导致": "causes", "移动至": "moves-to", "重叠": "overlaps", "转移至": "transfers-to", "记录于": "recorded-by", "验证": "verifies", "呈现为": "appears-as", "分配给": "assigned-to", "排除": "excludes", "相对测量": "measured-against", "校正": "corrects", "先采样": "sampled-before", "缓冲": "buffers", "缓冲至": "buffers", "计入": "contributes-to", "合计": "sums-with", "超过": "exceeds", "校准": "calibrates", "插值": "interpolates", "界定": "bounds", "命令": "commands", "反馈": "feeds-back", "稳定": "settles", "传播": "propagates", "重建": "reconstructs", "经过路由": "routes-through", "去重": "deduplicates", "确认": "acknowledges", "重设参照": "reframes", "投影": "projects", "对齐": "aligns", "入队": "enqueues", "合并": "merges", "出队": "dequeues" };
+  const relationMap: Record<string, string> = { "先于": "precedes", "同步于": "synchronizes", "解释": "explains", "转换为": "transitions-to", "导致": "causes", "移动至": "moves-to", "重叠": "overlaps", "转移至": "transfers-to", "记录于": "recorded-by", "验证": "verifies", "呈现为": "appears-as", "分配给": "assigned-to", "排除": "excludes", "相对测量": "measured-against", "校正": "corrects", "先采样": "sampled-before", "缓冲": "buffers", "缓冲至": "buffers", "计入": "contributes-to", "合计": "sums-with", "超过": "exceeds", "校准": "calibrates", "插值": "interpolates", "界定": "bounds", "命令": "commands", "反馈": "feeds-back", "稳定": "settles", "传播": "propagates", "重建": "reconstructs", "经过路由": "routes-through", "去重": "deduplicates", "确认": "acknowledges", "重设参照": "reframes", "投影": "projects", "对齐": "aligns", "入队": "enqueues", "合并": "merges", "出队": "dequeues", "触发": "triggers", "流入": "flows-in", "保留": "retains", "流出": "flows-out", "达到": "reaches", "跨过": "crosses", "保持": "holds", "看到": "sees", "遮挡": "occludes", "显露": "reveals", "传播至": "propagates-to", "反射于": "reflects-at", "抵达": "arrives-at", "结束于": "ends-at", "如果": "if", "否则": "otherwise", "进入": "enters", "受限于": "bounded-by", "积压为": "backs-up" };
   return behavior.connectionVerbs.every((verb) => allowedRelations.includes(relationMap[verb] ?? verb));
 }

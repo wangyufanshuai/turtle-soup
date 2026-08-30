@@ -1,0 +1,2189 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c83-two-unloads",
+  "metadata": {
+    "titleKey": "case.c83.title",
+    "difficulty": "expert",
+    "ageRating": "16+",
+    "contentTags": [
+      "物流分批",
+      "批次口径",
+      "来源链"
+    ],
+    "targetMinutes": {
+      "min": 11,
+      "max": 21
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:206a2959bb7f0299cf715a7b0533a0add3ef9a1035ae899d329f2840f1a00be4",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-civic-archive",
+    "sceneAsset": "/assets/cases/c83-two-unloads/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c83-two-unloads/scene-mobile.svg",
+    "palette": "season5-civic-archive",
+    "accent": "#c9a7d9",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "material-balance-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "material-balance"
+  },
+  "surface": {
+    "titleKey": "case.c83.title",
+    "textKey": "case.c83.surface",
+    "publicFactIds": [
+      "fact-c83-01",
+      "fact-c83-02",
+      "fact-c83-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c83-01",
+      "query-c83-02",
+      "query-c83-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c83-one",
+      "titleKey": "chapter.c83.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c83-1",
+      "titleKey": "board.c83.1.title",
+      "mode": "material-balance",
+      "slots": [
+        {
+          "id": "slot-c83-1-1",
+          "labelKey": "board.c83.1.slot.1",
+          "acceptsEventIds": [
+            "event-c83-01"
+          ]
+        },
+        {
+          "id": "slot-c83-1-2",
+          "labelKey": "board.c83.1.slot.2",
+          "acceptsEventIds": [
+            "event-c83-03"
+          ]
+        },
+        {
+          "id": "slot-c83-1-3",
+          "labelKey": "board.c83.1.slot.3",
+          "acceptsEventIds": [
+            "event-c83-05"
+          ]
+        },
+        {
+          "id": "slot-c83-1-4",
+          "labelKey": "board.c83.1.slot.4",
+          "acceptsEventIds": [
+            "event-c83-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "flows-in",
+        "retains",
+        "flows-out"
+      ]
+    },
+    {
+      "id": "board-c83-2",
+      "titleKey": "board.c83.2.title",
+      "mode": "provenance-chain",
+      "slots": [
+        {
+          "id": "slot-c83-2-1",
+          "labelKey": "board.c83.2.slot.1",
+          "acceptsEventIds": [
+            "event-c83-02"
+          ]
+        },
+        {
+          "id": "slot-c83-2-2",
+          "labelKey": "board.c83.2.slot.2",
+          "acceptsEventIds": [
+            "event-c83-04"
+          ]
+        },
+        {
+          "id": "slot-c83-2-3",
+          "labelKey": "board.c83.2.slot.3",
+          "acceptsEventIds": [
+            "event-c83-06"
+          ]
+        },
+        {
+          "id": "slot-c83-2-4",
+          "labelKey": "board.c83.2.slot.4",
+          "acceptsEventIds": [
+            "event-c83-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "transfers-to",
+        "recorded-by",
+        "verifies"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c83-system",
+      "kind": "object",
+      "labelKey": "entity.c83.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c83",
+      "kind": "location",
+      "labelKey": "location.c83",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c83-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-1",
+      "labelKey": "event.c83.1",
+      "effectFactIds": [
+        "fact-c83-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-2",
+      "labelKey": "event.c83.2",
+      "effectFactIds": [
+        "fact-c83-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-3",
+      "labelKey": "event.c83.3",
+      "effectFactIds": [
+        "fact-c83-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-4",
+      "labelKey": "event.c83.4",
+      "effectFactIds": [
+        "fact-c83-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-5",
+      "labelKey": "event.c83.5",
+      "effectFactIds": [
+        "fact-c83-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-6",
+      "labelKey": "event.c83.6",
+      "effectFactIds": [
+        "fact-c83-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "20:24"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-7",
+      "labelKey": "event.c83.7",
+      "effectFactIds": [
+        "fact-c83-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-8",
+      "labelKey": "event.c83.8",
+      "effectFactIds": [
+        "fact-c83-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-9",
+      "labelKey": "event.c83.9",
+      "effectFactIds": [
+        "fact-c83-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-10",
+      "labelKey": "event.c83.10",
+      "effectFactIds": [
+        "fact-c83-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-11",
+      "labelKey": "event.c83.11",
+      "effectFactIds": [
+        "fact-c83-11"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "21:44"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-12",
+      "labelKey": "event.c83.12",
+      "effectFactIds": [
+        "fact-c83-12"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c83-13",
+      "order": 130,
+      "time": {
+        "kind": "instant",
+        "value": "21:48"
+      },
+      "participants": [
+        "entity-c83-system"
+      ],
+      "locationId": "location-c83",
+      "action": "step-c83-13",
+      "labelKey": "event.c83.13",
+      "effectFactIds": [
+        "fact-c83-13"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c83-1-1",
+      "type": "precedes",
+      "fromId": "entity-c83-system",
+      "toId": "location-c83",
+      "eventId": "event-c83-01",
+      "factId": "fact-c83-01"
+    },
+    {
+      "id": "relation-c83-1-2",
+      "type": "causes",
+      "fromId": "entity-c83-system",
+      "toId": "location-c83",
+      "eventId": "event-c83-03",
+      "factId": "fact-c83-02"
+    },
+    {
+      "id": "relation-c83-1-3",
+      "type": "causes",
+      "fromId": "entity-c83-system",
+      "toId": "location-c83",
+      "eventId": "event-c83-05",
+      "factId": "fact-c83-03"
+    },
+    {
+      "id": "relation-c83-2-1",
+      "type": "precedes",
+      "fromId": "entity-c83-system",
+      "toId": "location-c83",
+      "eventId": "event-c83-02",
+      "factId": "fact-c83-02"
+    },
+    {
+      "id": "relation-c83-2-2",
+      "type": "causes",
+      "fromId": "entity-c83-system",
+      "toId": "location-c83",
+      "eventId": "event-c83-04",
+      "factId": "fact-c83-03"
+    },
+    {
+      "id": "relation-c83-2-3",
+      "type": "causes",
+      "fromId": "entity-c83-system",
+      "toId": "location-c83",
+      "eventId": "event-c83-06",
+      "factId": "fact-c83-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c83-01",
+      "predicate": "verified_c83_1",
+      "args": {
+        "term": "两次卸货"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.1"
+    },
+    {
+      "id": "fact-c83-02",
+      "predicate": "verified_c83_2",
+      "args": {
+        "term": "同一批次"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.2"
+    },
+    {
+      "id": "fact-c83-03",
+      "predicate": "verified_c83_3",
+      "args": {
+        "term": "一辆车"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.3"
+    },
+    {
+      "id": "fact-c83-04",
+      "predicate": "verified_c83_4",
+      "args": {
+        "term": "拆分货物"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.4"
+    },
+    {
+      "id": "fact-c83-05",
+      "predicate": "verified_c83_5",
+      "args": {
+        "term": "汇总系统"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.5"
+    },
+    {
+      "id": "fact-c83-06",
+      "predicate": "verified_c83_6",
+      "args": {
+        "term": "批次号"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.6"
+    },
+    {
+      "id": "fact-c83-07",
+      "predicate": "verified_c83_7",
+      "args": {
+        "term": "卸货时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.7"
+    },
+    {
+      "id": "fact-c83-08",
+      "predicate": "verified_c83_8",
+      "args": {
+        "term": "货物数量"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.8"
+    },
+    {
+      "id": "fact-c83-09",
+      "predicate": "verified_c83_9",
+      "args": {
+        "term": "交接记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.9"
+    },
+    {
+      "id": "fact-c83-10",
+      "predicate": "verified_c83_10",
+      "args": {
+        "term": "车辆轨迹"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.10"
+    },
+    {
+      "id": "fact-c83-11",
+      "predicate": "verified_c83_11",
+      "args": {
+        "term": "两次卸货"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.11"
+    },
+    {
+      "id": "fact-c83-12",
+      "predicate": "verified_c83_12",
+      "args": {
+        "term": "同一批次"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-12"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c83.12"
+    },
+    {
+      "id": "fact-c83-13",
+      "predicate": "verified_c83_13",
+      "args": {
+        "term": "一辆车"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-13"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-13"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-13"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c83.13"
+    },
+    {
+      "id": "fact-c83-14",
+      "predicate": "verified_c83_14",
+      "args": {
+        "term": "拆分货物"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c83.14"
+    },
+    {
+      "id": "fact-c83-15",
+      "predicate": "verified_c83_15",
+      "args": {
+        "term": "汇总系统"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c83.15"
+    },
+    {
+      "id": "fact-c83-16",
+      "predicate": "verified_c83_16",
+      "args": {
+        "term": "批次号"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c83.16"
+    },
+    {
+      "id": "fact-c83-17",
+      "predicate": "verified_c83_17",
+      "args": {
+        "term": "卸货时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c83.17"
+    },
+    {
+      "id": "fact-c83-18",
+      "predicate": "verified_c83_18",
+      "args": {
+        "term": "货物数量"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c83.18"
+    },
+    {
+      "id": "fact-c83-19",
+      "predicate": "verified_c83_19",
+      "args": {
+        "term": "交接记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c83.19"
+    },
+    {
+      "id": "fact-c83-20",
+      "predicate": "verified_c83_20",
+      "args": {
+        "term": "车辆轨迹"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c83.20"
+    },
+    {
+      "id": "fact-c83-21",
+      "predicate": "verified_c83_21",
+      "args": {
+        "term": "两次卸货"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c83-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c83-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c83.21"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c83-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-01",
+        "fact-c83-02",
+        "fact-c83-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c83-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-01",
+        "fact-c83-02",
+        "fact-c83-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c83-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-02",
+        "fact-c83-15"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c83-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-03",
+        "fact-c83-16"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c83-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-04",
+        "fact-c83-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c83-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-05",
+        "fact-c83-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c83-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-06",
+        "fact-c83-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c83-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-07",
+        "fact-c83-20"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c83-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-08",
+        "fact-c83-21"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c83-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c83-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c83-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c83-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-12"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c83-13",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c83-13"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c83-13"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c83-01",
+      "labelKey": "query.c83.1",
+      "intent": "verify",
+      "predicate": "verified_c83_1",
+      "slots": {
+        "subjectId": "entity-c83-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c83-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-opening"
+      ],
+      "examplePhrases": [
+        "两次卸货是否成立？",
+        "能确认两次卸货吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "两次卸货"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c83-02",
+      "labelKey": "query.c83.2",
+      "intent": "verify",
+      "predicate": "verified_c83_2",
+      "slots": {
+        "subjectId": "entity-c83-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c83-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-opening"
+      ],
+      "examplePhrases": [
+        "同一批次是否成立？",
+        "能确认同一批次吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "同一批次"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c83-03",
+      "labelKey": "query.c83.3",
+      "intent": "verify",
+      "predicate": "verified_c83_3",
+      "slots": {
+        "subjectId": "entity-c83-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c83-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-opening"
+      ],
+      "examplePhrases": [
+        "一辆车是否成立？",
+        "能确认一辆车吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "一辆车"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c83-04",
+      "labelKey": "query.c83.4",
+      "intent": "verify",
+      "predicate": "verified_c83_4",
+      "slots": {
+        "subjectId": "entity-c83-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c83-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-04"
+      ],
+      "examplePhrases": [
+        "拆分货物是否成立？",
+        "能确认拆分货物吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "拆分货物"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c83-05",
+      "labelKey": "query.c83.5",
+      "intent": "verify",
+      "predicate": "verified_c83_5",
+      "slots": {
+        "subjectId": "entity-c83-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c83-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-05"
+      ],
+      "examplePhrases": [
+        "汇总系统是否成立？",
+        "能确认汇总系统吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "汇总系统"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c83-06",
+      "labelKey": "query.c83.6",
+      "intent": "verify",
+      "predicate": "verified_c83_6",
+      "slots": {
+        "subjectId": "entity-c83-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c83-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-06"
+      ],
+      "examplePhrases": [
+        "批次号是否成立？",
+        "能确认批次号吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "批次号"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c83-07",
+      "labelKey": "query.c83.7",
+      "intent": "verify",
+      "predicate": "verified_c83_7",
+      "slots": {
+        "subjectId": "entity-c83-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c83-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-07"
+      ],
+      "examplePhrases": [
+        "卸货时间是否成立？",
+        "能确认卸货时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "卸货时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c83-08",
+      "labelKey": "query.c83.8",
+      "intent": "verify",
+      "predicate": "verified_c83_8",
+      "slots": {
+        "subjectId": "entity-c83-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c83-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-08"
+      ],
+      "examplePhrases": [
+        "货物数量是否成立？",
+        "能确认货物数量吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "货物数量"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c83-09",
+      "labelKey": "query.c83.9",
+      "intent": "verify",
+      "predicate": "verified_c83_9",
+      "slots": {
+        "subjectId": "entity-c83-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c83-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-09"
+      ],
+      "examplePhrases": [
+        "交接记录是否成立？",
+        "能确认交接记录吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "交接记录"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c83-10",
+      "labelKey": "query.c83.10",
+      "intent": "verify",
+      "predicate": "verified_c83_10",
+      "slots": {
+        "subjectId": "entity-c83-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c83-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c83-10"
+      ],
+      "examplePhrases": [
+        "车辆轨迹是否成立？",
+        "能确认车辆轨迹吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "车辆轨迹"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c83-01",
+      "kind": "scene",
+      "titleKey": "evidence.c83.1.title",
+      "observationKey": "evidence.c83.1.observation",
+      "sourceFactIds": [
+        "fact-c83-01",
+        "fact-c83-02",
+        "fact-c83-03"
+      ],
+      "sourceEventIds": [
+        "event-c83-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c83-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-01.svg",
+      "assetAlt": "两次卸货"
+    },
+    {
+      "id": "evidence-c83-02",
+      "kind": "record",
+      "titleKey": "evidence.c83.2.title",
+      "observationKey": "evidence.c83.2.observation",
+      "sourceFactIds": [
+        "fact-c83-02",
+        "fact-c83-15"
+      ],
+      "sourceEventIds": [
+        "event-c83-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c83-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-02.svg",
+      "assetAlt": "同一批次"
+    },
+    {
+      "id": "evidence-c83-03",
+      "kind": "object",
+      "titleKey": "evidence.c83.3.title",
+      "observationKey": "evidence.c83.3.observation",
+      "sourceFactIds": [
+        "fact-c83-03",
+        "fact-c83-16"
+      ],
+      "sourceEventIds": [
+        "event-c83-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-03.svg",
+      "assetAlt": "一辆车"
+    },
+    {
+      "id": "evidence-c83-04",
+      "kind": "scene",
+      "titleKey": "evidence.c83.4.title",
+      "observationKey": "evidence.c83.4.observation",
+      "sourceFactIds": [
+        "fact-c83-04",
+        "fact-c83-17"
+      ],
+      "sourceEventIds": [
+        "event-c83-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-04.svg",
+      "assetAlt": "拆分货物"
+    },
+    {
+      "id": "evidence-c83-05",
+      "kind": "record",
+      "titleKey": "evidence.c83.5.title",
+      "observationKey": "evidence.c83.5.observation",
+      "sourceFactIds": [
+        "fact-c83-05",
+        "fact-c83-18"
+      ],
+      "sourceEventIds": [
+        "event-c83-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-05.svg",
+      "assetAlt": "汇总系统"
+    },
+    {
+      "id": "evidence-c83-06",
+      "kind": "object",
+      "titleKey": "evidence.c83.6.title",
+      "observationKey": "evidence.c83.6.observation",
+      "sourceFactIds": [
+        "fact-c83-06",
+        "fact-c83-19"
+      ],
+      "sourceEventIds": [
+        "event-c83-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-01.svg",
+      "assetAlt": "批次号"
+    },
+    {
+      "id": "evidence-c83-07",
+      "kind": "scene",
+      "titleKey": "evidence.c83.7.title",
+      "observationKey": "evidence.c83.7.observation",
+      "sourceFactIds": [
+        "fact-c83-07",
+        "fact-c83-20"
+      ],
+      "sourceEventIds": [
+        "event-c83-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-02.svg",
+      "assetAlt": "卸货时间"
+    },
+    {
+      "id": "evidence-c83-08",
+      "kind": "record",
+      "titleKey": "evidence.c83.8.title",
+      "observationKey": "evidence.c83.8.observation",
+      "sourceFactIds": [
+        "fact-c83-08",
+        "fact-c83-21"
+      ],
+      "sourceEventIds": [
+        "event-c83-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-03.svg",
+      "assetAlt": "货物数量"
+    },
+    {
+      "id": "evidence-c83-09",
+      "kind": "object",
+      "titleKey": "evidence.c83.9.title",
+      "observationKey": "evidence.c83.9.observation",
+      "sourceFactIds": [
+        "fact-c83-09"
+      ],
+      "sourceEventIds": [
+        "event-c83-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-04.svg",
+      "assetAlt": "交接记录"
+    },
+    {
+      "id": "evidence-c83-10",
+      "kind": "scene",
+      "titleKey": "evidence.c83.10.title",
+      "observationKey": "evidence.c83.10.observation",
+      "sourceFactIds": [
+        "fact-c83-10"
+      ],
+      "sourceEventIds": [
+        "event-c83-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-05.svg",
+      "assetAlt": "车辆轨迹"
+    },
+    {
+      "id": "evidence-c83-11",
+      "kind": "record",
+      "titleKey": "evidence.c83.11.title",
+      "observationKey": "evidence.c83.11.observation",
+      "sourceFactIds": [
+        "fact-c83-11"
+      ],
+      "sourceEventIds": [
+        "event-c83-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-01.svg",
+      "assetAlt": "两次卸货"
+    },
+    {
+      "id": "evidence-c83-12",
+      "kind": "object",
+      "titleKey": "evidence.c83.12.title",
+      "observationKey": "evidence.c83.12.observation",
+      "sourceFactIds": [
+        "fact-c83-12"
+      ],
+      "sourceEventIds": [
+        "event-c83-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-02.svg",
+      "assetAlt": "同一批次"
+    },
+    {
+      "id": "evidence-c83-13",
+      "kind": "scene",
+      "titleKey": "evidence.c83.13.title",
+      "observationKey": "evidence.c83.13.observation",
+      "sourceFactIds": [
+        "fact-c83-13"
+      ],
+      "sourceEventIds": [
+        "event-c83-13"
+      ],
+      "relatedEntityIds": [
+        "entity-c83-system",
+        "location-c83"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c83-two-unloads/evidence-03.svg",
+      "assetAlt": "一辆车"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c83.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c83-01",
+          "event-c83-02",
+          "event-c83-03",
+          "event-c83-04",
+          "event-c83-05",
+          "event-c83-06",
+          "event-c83-07",
+          "event-c83-08",
+          "event-c83-09",
+          "event-c83-10",
+          "event-c83-11",
+          "event-c83-12"
+        ],
+        "motiveKey": "沿物料守恒和交接来源链还原分批卸货"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c83-01",
+        "evidence-c83-02",
+        "evidence-c83-03",
+        "evidence-c83-04",
+        "evidence-c83-05",
+        "evidence-c83-06",
+        "evidence-c83-07",
+        "evidence-c83-08",
+        "evidence-c83-09",
+        "evidence-c83-10",
+        "evidence-c83-11",
+        "evidence-c83-12"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c83-1",
+        "contradiction-c83-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c83-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c83.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "记录系统重复写入了一次卸货"
+        ],
+        "motiveKey": "motive-c83-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c83-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c83-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c83-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c83.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "第二辆车被漏拍了"
+        ],
+        "motiveKey": "motive-c83-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c83-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c83-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c83-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c83-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c83-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c83-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c83-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c83-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c83-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c83-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c83-01",
+      "fact-c83-02",
+      "fact-c83-03",
+      "fact-c83-04",
+      "fact-c83-05",
+      "fact-c83-06",
+      "fact-c83-07",
+      "fact-c83-08",
+      "fact-c83-09",
+      "fact-c83-10",
+      "fact-c83-11",
+      "fact-c83-12"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c83-01",
+      "evidence-c83-02",
+      "evidence-c83-03",
+      "evidence-c83-04",
+      "evidence-c83-05",
+      "evidence-c83-06",
+      "evidence-c83-07",
+      "evidence-c83-08",
+      "evidence-c83-09",
+      "evidence-c83-10",
+      "evidence-c83-11",
+      "evidence-c83-12"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c83-01",
+        "event-c83-02"
+      ],
+      [
+        "event-c83-02",
+        "event-c83-03"
+      ],
+      [
+        "event-c83-03",
+        "event-c83-04"
+      ],
+      [
+        "event-c83-04",
+        "event-c83-05"
+      ],
+      [
+        "event-c83-05",
+        "event-c83-06"
+      ],
+      [
+        "event-c83-06",
+        "event-c83-07"
+      ],
+      [
+        "event-c83-07",
+        "event-c83-08"
+      ],
+      [
+        "event-c83-08",
+        "event-c83-09"
+      ],
+      [
+        "event-c83-09",
+        "event-c83-10"
+      ],
+      [
+        "event-c83-10",
+        "event-c83-11"
+      ],
+      [
+        "event-c83-11",
+        "event-c83-12"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c83-1",
+      "contradiction-c83-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c83-alternative-1",
+      "hypothesis-c83-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c83-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c83-a",
+        "evidenceIds": [
+          "evidence-c83-01",
+          "evidence-c83-02",
+          "evidence-c83-03",
+          "evidence-c83-04",
+          "evidence-c83-05",
+          "evidence-c83-06",
+          "evidence-c83-07",
+          "evidence-c83-08"
+        ]
+      },
+      {
+        "id": "proof-c83-b",
+        "evidenceIds": [
+          "evidence-c83-01",
+          "evidence-c83-02",
+          "evidence-c83-09",
+          "evidence-c83-10",
+          "evidence-c83-11",
+          "evidence-c83-12"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "沿物料守恒和交接来源链还原分批卸货"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c83-1",
+        "kind": "measurement",
+        "boardId": "board-c83-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c83-1-1",
+            "eventId": "event-c83-01"
+          },
+          {
+            "slotId": "slot-c83-1-2",
+            "eventId": "event-c83-03"
+          },
+          {
+            "slotId": "slot-c83-1-3",
+            "eventId": "event-c83-05"
+          },
+          {
+            "slotId": "slot-c83-1-4",
+            "eventId": "event-c83-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c83-01",
+            "toEventId": "event-c83-03",
+            "relation": "flows-in"
+          },
+          {
+            "fromEventId": "event-c83-03",
+            "toEventId": "event-c83-05",
+            "relation": "flows-in"
+          },
+          {
+            "fromEventId": "event-c83-05",
+            "toEventId": "event-c83-12",
+            "relation": "flows-in"
+          }
+        ],
+        "failureCategory": "measurement"
+      },
+      {
+        "id": "obligation-c83-2",
+        "kind": "source",
+        "boardId": "board-c83-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c83-2-1",
+            "eventId": "event-c83-02"
+          },
+          {
+            "slotId": "slot-c83-2-2",
+            "eventId": "event-c83-04"
+          },
+          {
+            "slotId": "slot-c83-2-3",
+            "eventId": "event-c83-06"
+          },
+          {
+            "slotId": "slot-c83-2-4",
+            "eventId": "event-c83-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c83-02",
+            "toEventId": "event-c83-04",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c83-04",
+            "toEventId": "event-c83-06",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c83-06",
+            "toEventId": "event-c83-12",
+            "relation": "transfers-to"
+          }
+        ],
+        "failureCategory": "source"
+      }
+    ],
+    "uniquenessClaim": "一批货被拆成两次卸货，汇总系统沿用同一批次号；批次身份不等于一次交接。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c83-1",
+      "eventId": "event-c83-02",
+      "factIds": [
+        "fact-c83-01"
+      ],
+      "captionKey": "event.c83.2"
+    },
+    {
+      "id": "replay-c83-2",
+      "eventId": "event-c83-03",
+      "factIds": [
+        "fact-c83-02"
+      ],
+      "captionKey": "event.c83.3"
+    },
+    {
+      "id": "replay-c83-3",
+      "eventId": "event-c83-04",
+      "factIds": [
+        "fact-c83-03"
+      ],
+      "captionKey": "event.c83.4"
+    },
+    {
+      "id": "replay-c83-4",
+      "eventId": "event-c83-05",
+      "factIds": [
+        "fact-c83-04"
+      ],
+      "captionKey": "event.c83.5"
+    },
+    {
+      "id": "replay-c83-5",
+      "eventId": "event-c83-06",
+      "factIds": [
+        "fact-c83-05"
+      ],
+      "captionKey": "event.c83.6"
+    },
+    {
+      "id": "replay-c83-6",
+      "eventId": "event-c83-07",
+      "factIds": [
+        "fact-c83-01",
+        "fact-c83-02",
+        "fact-c83-03",
+        "fact-c83-04",
+        "fact-c83-05",
+        "fact-c83-06",
+        "fact-c83-07",
+        "fact-c83-08",
+        "fact-c83-09",
+        "fact-c83-10",
+        "fact-c83-11",
+        "fact-c83-12"
+      ],
+      "captionKey": "event.c83.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c83.title": "一辆车的两次卸货",
+      "case.c83.surface": "同一批次只对应一辆车，卸货记录却出现两次。",
+      "case.c83.truth": "一批货被拆成两次卸货，汇总系统沿用同一批次号；批次身份不等于一次交接。",
+      "entity.c83.system": "现场对象与记录链",
+      "location.c83": "物流分批",
+      "hypothesis.c83.canonical": "一批货被拆成两次卸货，汇总系统沿用同一批次号；批次身份不等于一次交接。",
+      "hypothesis.c83.alternative.1": "记录系统重复写入了一次卸货",
+      "hypothesis.c83.alternative.2": "第二辆车被漏拍了",
+      "motive.沿物料守恒和交接来源链还原分批卸货": "沿物料守恒和交接来源链还原分批卸货",
+      "chapter.c83.one": "固定异常",
+      "chapter.c83.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c83.1": "两次卸货是否成立？",
+      "query.c83.2": "同一批次是否成立？",
+      "query.c83.3": "一辆车是否成立？",
+      "query.c83.4": "拆分货物是否成立？",
+      "query.c83.5": "汇总系统是否成立？",
+      "query.c83.6": "批次号是否成立？",
+      "query.c83.7": "卸货时间是否成立？",
+      "query.c83.8": "货物数量是否成立？",
+      "query.c83.9": "交接记录是否成立？",
+      "query.c83.10": "车辆轨迹是否成立？",
+      "event.c83.1": "阶段 1：两次卸货进入记录链",
+      "event.c83.2": "阶段 2：同一批次进入记录链",
+      "event.c83.3": "阶段 3：一辆车进入记录链",
+      "event.c83.4": "阶段 4：拆分货物进入记录链",
+      "event.c83.5": "阶段 5：汇总系统进入记录链",
+      "event.c83.6": "阶段 6：批次号进入记录链",
+      "event.c83.7": "阶段 7：卸货时间进入记录链",
+      "event.c83.8": "阶段 8：货物数量进入记录链",
+      "event.c83.9": "阶段 9：交接记录进入记录链",
+      "event.c83.10": "阶段 10：车辆轨迹进入记录链",
+      "event.c83.11": "阶段 11：两次卸货进入记录链",
+      "event.c83.12": "阶段 12：同一批次进入记录链",
+      "event.c83.13": "阶段 13：一辆车进入记录链",
+      "evidence.c83.1.title": "两次卸货记录",
+      "evidence.c83.1.observation": "来源材料显示“两次卸货”在该阶段可复核。",
+      "evidence.c83.2.title": "同一批次记录",
+      "evidence.c83.2.observation": "来源材料显示“同一批次”在该阶段可复核。",
+      "evidence.c83.3.title": "一辆车记录",
+      "evidence.c83.3.observation": "来源材料显示“一辆车”在该阶段可复核。",
+      "evidence.c83.4.title": "拆分货物记录",
+      "evidence.c83.4.observation": "来源材料显示“拆分货物”在该阶段可复核。",
+      "evidence.c83.5.title": "汇总系统记录",
+      "evidence.c83.5.observation": "来源材料显示“汇总系统”在该阶段可复核。",
+      "evidence.c83.6.title": "批次号记录",
+      "evidence.c83.6.observation": "来源材料显示“批次号”在该阶段可复核。",
+      "evidence.c83.7.title": "卸货时间记录",
+      "evidence.c83.7.observation": "来源材料显示“卸货时间”在该阶段可复核。",
+      "evidence.c83.8.title": "货物数量记录",
+      "evidence.c83.8.observation": "来源材料显示“货物数量”在该阶段可复核。",
+      "evidence.c83.9.title": "交接记录记录",
+      "evidence.c83.9.observation": "来源材料显示“交接记录”在该阶段可复核。",
+      "evidence.c83.10.title": "车辆轨迹记录",
+      "evidence.c83.10.observation": "来源材料显示“车辆轨迹”在该阶段可复核。",
+      "evidence.c83.11.title": "两次卸货记录",
+      "evidence.c83.11.observation": "来源材料显示“两次卸货”在该阶段可复核。",
+      "evidence.c83.12.title": "同一批次记录",
+      "evidence.c83.12.observation": "来源材料显示“同一批次”在该阶段可复核。",
+      "evidence.c83.13.title": "一辆车记录",
+      "evidence.c83.13.observation": "来源材料显示“一辆车”在该阶段可复核。",
+      "board.c83.1.title": "一辆车的两次卸货 · material-balance",
+      "board.c83.1.slot.1": "起始来源",
+      "board.c83.1.slot.2": "关键变化",
+      "board.c83.1.slot.3": "观测结果",
+      "board.c83.1.slot.4": "排除替代",
+      "board.c83.2.title": "一辆车的两次卸货 · provenance-chain",
+      "board.c83.2.slot.1": "起始来源",
+      "board.c83.2.slot.2": "关键变化",
+      "board.c83.2.slot.3": "观测结果",
+      "board.c83.2.slot.4": "排除替代"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "reportVersion": "2.0",
+  "releaseProfile": "v2.0-internal-rc",
+  "generatedAt": "2026-08-28T15:48:35.748Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "budgets": {
+    "totalBytes": 7000000,
+    "initialJavaScriptBytes": 700000,
+    "maximumAssetBytes": 450000
+  },
+  "actual": {
+    "totalBytes": 6440652,
+    "initialJavaScriptBytes": 648484,
+    "maximumAssetBytes": 391291,
+    "fileCount": 867,
+    "initialScriptCount": 9
+  },
+  "deferredContracts": {
+    "questionRouterNetworkDeferred": true,
+    "hostRewriteNetworkDeferred": true,
+    "evidenceInspectorDeferred": true
+  },
+  "cacheIdentity": "black-soup-v20-autonomous-experience-rc-1",
+  "failures": [],
+  "passed": true
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">雪夜社区的无脚印路线</title><desc id="desc">蓝白色雪夜，社区北门与一辆维护车之间铺着不明显的覆盖路线。</desc>
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#08121d"/><stop offset="1" stop-color="#243847"/></linearGradient><linearGradient id="snow" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b7d4dc"/><stop offset="1" stop-color="#4c6877"/></linearGradient><filter id="grain"><feTurbulence baseFrequency=".75" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 .06 0"/></filter></defs>
+  <rect width="1200" height="760" fill="url(#sky)"/><path d="M0 474 144 379l174 64 147-112 195 86 192-119 348 143v319H0z" fill="url(#snow)"/>
+  <path d="M0 528c205-37 392-34 612 5 205 36 375 31 588-9v236H0z" fill="#dbe8e8" opacity=".44"/>
+  <g fill="#263b47" stroke="#91b4c1" stroke-width="4"><path d="M93 364h196v132H93z"/><path d="M892 312h213v177H892z"/></g>
+  <g fill="#d2ebed" opacity=".75"><rect x="125" y="395" width="38" height="25"/><rect x="190" y="395" width="38" height="25"/><rect x="927" y="344" width="41" height="28"/><rect x="990" y="344" width="41" height="28"/></g>
+  <path d="M285 522c160-26 266-29 402-4 142 25 254 13 405-22" fill="none" stroke="#92c8d5" stroke-width="43" opacity=".45"/>
+  <g transform="translate(535 488)"><rect x="0" y="0" width="182" height="77" rx="8" fill="#16272b" stroke="#b4dce0" stroke-width="5"/><path d="M20 0v-27h142V0" fill="#1e383b" stroke="#b4dce0" stroke-width="5"/><circle cx="36" cy="81" r="15" fill="#122026" stroke="#d2e5e4" stroke-width="5"/><circle cx="145" cy="81" r="15" fill="#122026" stroke="#d2e5e4" stroke-width="5"/></g>
+  <g fill="#cae5ea" opacity=".65"><circle cx="330" cy="144" r="3"/><circle cx="490" cy="262" r="4"/><circle cx="770" cy="129" r="3"/><circle cx="1040" cy="202" r="4"/><circle cx="1130" cy="334" r="3"/></g>
+  <text x="52" y="686" fill="#d5e4e3" font-family="monospace" font-size="21" letter-spacing="5">NORTH GATE / SNOW RECORD 02</text><rect width="1200" height="760" filter="url(#grain)" opacity=".4"/>
+</svg>

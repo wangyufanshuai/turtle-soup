@@ -1,0 +1,8 @@
+TURTLE SOUP v2.5 · SEASON 5 CONTENT EXPANSION · INTERNAL RC
+
+84 deterministic cases (Season 1–5). Season 5 adds C61–C84.
+Status: internal-rc / human-evaluation-pending.
+Founder exploratory sessions: 1. Formal Fun Gate participants: 0.
+Automation verifies consistency and engineering quality only; it does not prove fun, aesthetics, comprehension, retention or market fit.
+
+No network, account, analytics, remote AI or third-party tracking is required to play offline.

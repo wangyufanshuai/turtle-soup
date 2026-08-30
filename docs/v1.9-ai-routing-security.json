@@ -1,0 +1,448 @@
+{
+  "reportVersion": "1.9",
+  "releaseProfile": "v1.9-internal-rc",
+  "generatedAt": "2026-08-25T15:37:20.521Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "cases": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "publicCandidateCount": 9,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "publicCandidateCount": 8,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "publicCandidateCount": 9,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "publicCandidateCount": 9,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "publicCandidateCount": 9,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "publicCandidateCount": 9,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "publicCandidateCount": 8,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "publicCandidateCount": 8,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "publicCandidateCount": 8,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "publicCandidateCount": 8,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "publicCandidateCount": 8,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "publicCandidateCount": 8,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "publicCandidateCount": 12,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "publicCandidateCount": 12,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "publicCandidateCount": 12,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "publicCandidateCount": 12,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "publicCandidateCount": 12,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "publicCandidateCount": 12,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "publicCandidateCount": 12,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "publicCandidateCount": 14,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "publicCandidateCount": 10,
+      "opaqueTokens": true,
+      "leaks": [],
+      "passed": true
+    }
+  ],
+  "staticLeaks": [],
+  "remoteHosts": [],
+  "unexpectedRemoteHosts": [],
+  "v18Artifact": {
+    "expected": "43b6dff6b70abec6a74788bb28fba6f7301eb91dd892818584c82f48fc88d30d",
+    "actual": "43b6dff6b70abec6a74788bb28fba6f7301eb91dd892818584c82f48fc88d30d",
+    "unchanged": true
+  },
+  "boundaries": {
+    "truthEngine": "worker-only",
+    "aiInput": "public surface + raw question + opaque public candidates",
+    "aiDecision": "player-confirmed routing only",
+    "apiKeyStorage": "sessionStorage / memory",
+    "diagnostics": "aggregate-only",
+    "remoteAnalytics": false,
+    "remoteByok": "optional / user-configured / default-off"
+  },
+  "passed": true
+}

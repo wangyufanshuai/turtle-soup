@@ -48,7 +48,16 @@ export function useLocalDiagnostics(projection: PlayerProjection | undefined, ev
   }, [projection]);
   useEffect(() => { if (!recording || !sessionRef.current || events.length === 0) return; const next = reduceDiagnosticSession(sessionRef.current, events); sessionRef.current = next; setSession(next); void put(next); }, [events, recording]);
   const toggle = useCallback((value: boolean) => { setRecording(value); try { localStorage.setItem(SETTINGS_KEY, value ? "on" : "off"); } catch { /* optional */ } }, []);
+  const recordError = useCallback((code: string) => {
+    if (!recording || !sessionRef.current || !/^[a-z0-9_-]{1,64}$/u.test(code)) return;
+    const current = sessionRef.current;
+    if (current.errorCodes.includes(code)) return;
+    const next = { ...current, errorCodes: [...current.errorCodes, code] };
+    sessionRef.current = next;
+    setSession(next);
+    void put(next);
+  }, [recording]);
   const exportSessions = useCallback(async (format: "json" | "csv") => { const records = await all(); const body = format === "json" ? JSON.stringify(records, null, 2) : diagnosticCsv(records); const blob = new Blob([body], { type: format === "json" ? "application/json;charset=utf-8" : "text/csv;charset=utf-8" }); const url = URL.createObjectURL(blob); const anchor = document.createElement("a"); anchor.href = url; anchor.download = `turtle-soup-diagnostics.${format}`; anchor.click(); URL.revokeObjectURL(url); }, []);
   const clear = useCallback(async () => { try { const db = await openDb(); await new Promise<void>((resolve, reject) => { const tx = db.transaction(STORE_NAME, "readwrite"); tx.objectStore(STORE_NAME).clear(); tx.oncomplete = () => resolve(); tx.onerror = () => reject(tx.error); }); db.close(); } catch { /* optional */ } }, []);
-  return { recording, toggle, exportSessions, clear, session };
+  return { recording, toggle, recordError, exportSessions, clear, session };
 }

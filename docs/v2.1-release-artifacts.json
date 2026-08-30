@@ -1,0 +1,46 @@
+{
+  "reportVersion": "2.1",
+  "releaseProfile": "v2.1-internal-rc",
+  "generatedAt": "2026-08-28T16:29:50.962Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "deterministicArchive": {
+    "method": "ZIP store",
+    "timestamp": "1980-01-01"
+  },
+  "artifact": {
+    "directory": "dist/v2.1-internal-rc-web-pwa",
+    "bytes": 6442852,
+    "files": 868,
+    "archive": {
+      "path": "dist/turtle-soup-v2.1-internal-rc-web-pwa.zip",
+      "bytes": 6574848,
+      "sha256": "af82f2ea2c7c29f4d934726afd96be5319b68693dcb9ed61747d36e784784929"
+    }
+  },
+  "preservedArtifacts": [
+    {
+      "version": "v1.8",
+      "path": "dist/turtle-soup-v1.8-internal-rc-web-pwa.zip",
+      "expected": "43b6dff6b70abec6a74788bb28fba6f7301eb91dd892818584c82f48fc88d30d",
+      "actual": "43b6dff6b70abec6a74788bb28fba6f7301eb91dd892818584c82f48fc88d30d",
+      "unchanged": true
+    },
+    {
+      "version": "v1.9",
+      "path": "dist/turtle-soup-v1.9-internal-rc-web-pwa.zip",
+      "expected": "c3c074e1170ca2efd7db0b3c0437873dc7d8633074ab4ff4c62c5b7910a8a6fc",
+      "actual": "c3c074e1170ca2efd7db0b3c0437873dc7d8633074ab4ff4c62c5b7910a8a6fc",
+      "unchanged": true
+    },
+    {
+      "version": "v2.0",
+      "path": "dist/turtle-soup-v2.0-internal-rc-web-pwa.zip",
+      "expected": "76e8d237acdc94f99f8cf48ca25bc8f1b22b6bdc86ce2a74153700d290a27273",
+      "actual": "76e8d237acdc94f99f8cf48ca25bc8f1b22b6bdc86ce2a74153700d290a27273",
+      "unchanged": true
+    }
+  ],
+  "passed": true
+}

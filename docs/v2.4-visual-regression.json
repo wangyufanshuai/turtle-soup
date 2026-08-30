@@ -1,0 +1,233 @@
+{
+  "reportVersion": "2.4",
+  "releaseProfile": "v2.4-internal-rc",
+  "generatedAt": "2026-08-30T03:10:39.285Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "screenshots": [
+    {
+      "name": "chromium-desktop-home.png",
+      "path": "output/playwright/v24/chromium-desktop-home.png",
+      "bytes": 540852,
+      "passed": true
+    },
+    {
+      "name": "chromium-mobile-home.png",
+      "path": "output/playwright/v24/chromium-mobile-home.png",
+      "bytes": 209586,
+      "passed": true
+    },
+    {
+      "name": "desktop-c01-cold-room-knock-proof-gap.png",
+      "path": "output/playwright/v24/desktop-c01-cold-room-knock-proof-gap.png",
+      "bytes": 192424,
+      "passed": true
+    },
+    {
+      "name": "desktop-c01-cold-room-knock-solved.png",
+      "path": "output/playwright/v24/desktop-c01-cold-room-knock-solved.png",
+      "bytes": 270788,
+      "passed": true
+    },
+    {
+      "name": "desktop-c03-second-shadow-solved.png",
+      "path": "output/playwright/v24/desktop-c03-second-shadow-solved.png",
+      "bytes": 273289,
+      "passed": true
+    },
+    {
+      "name": "desktop-c13-second-waterline-solved.png",
+      "path": "output/playwright/v24/desktop-c13-second-waterline-solved.png",
+      "bytes": 277267,
+      "passed": true
+    },
+    {
+      "name": "desktop-c25-silent-second-bell-solved.png",
+      "path": "output/playwright/v24/desktop-c25-silent-second-bell-solved.png",
+      "bytes": 272255,
+      "passed": true
+    },
+    {
+      "name": "desktop-c33-early-late-arrival-solved.png",
+      "path": "output/playwright/v24/desktop-c33-early-late-arrival-solved.png",
+      "bytes": 272178,
+      "passed": true
+    },
+    {
+      "name": "desktop-c48-two-point-calibration-solved.png",
+      "path": "output/playwright/v24/desktop-c48-two-point-calibration-solved.png",
+      "bytes": 273414,
+      "passed": true
+    },
+    {
+      "name": "desktop-c60-last-sample-before-stop-proof-gap.png",
+      "path": "output/playwright/v24/desktop-c60-last-sample-before-stop-proof-gap.png",
+      "bytes": 98492,
+      "passed": true
+    },
+    {
+      "name": "desktop-c60-last-sample-before-stop-solved.png",
+      "path": "output/playwright/v24/desktop-c60-last-sample-before-stop-solved.png",
+      "bytes": 275458,
+      "passed": true
+    },
+    {
+      "name": "firefox-desktop-home.png",
+      "path": "output/playwright/v24/firefox-desktop-home.png",
+      "bytes": 427587,
+      "passed": true
+    },
+    {
+      "name": "firefox-mobile-home.png",
+      "path": "output/playwright/v24/firefox-mobile-home.png",
+      "bytes": 173278,
+      "passed": true
+    },
+    {
+      "name": "mobile-c01-cold-room-knock-proof-gap.png",
+      "path": "output/playwright/v24/mobile-c01-cold-room-knock-proof-gap.png",
+      "bytes": 44058,
+      "passed": true
+    },
+    {
+      "name": "mobile-c01-cold-room-knock-solved.png",
+      "path": "output/playwright/v24/mobile-c01-cold-room-knock-solved.png",
+      "bytes": 129109,
+      "passed": true
+    },
+    {
+      "name": "mobile-c03-second-shadow-solved.png",
+      "path": "output/playwright/v24/mobile-c03-second-shadow-solved.png",
+      "bytes": 129626,
+      "passed": true
+    },
+    {
+      "name": "mobile-c13-second-waterline-solved.png",
+      "path": "output/playwright/v24/mobile-c13-second-waterline-solved.png",
+      "bytes": 135040,
+      "passed": true
+    },
+    {
+      "name": "mobile-c25-silent-second-bell-solved.png",
+      "path": "output/playwright/v24/mobile-c25-silent-second-bell-solved.png",
+      "bytes": 131084,
+      "passed": true
+    },
+    {
+      "name": "mobile-c33-early-late-arrival-solved.png",
+      "path": "output/playwright/v24/mobile-c33-early-late-arrival-solved.png",
+      "bytes": 131416,
+      "passed": true
+    },
+    {
+      "name": "mobile-c48-two-point-calibration-solved.png",
+      "path": "output/playwright/v24/mobile-c48-two-point-calibration-solved.png",
+      "bytes": 133203,
+      "passed": true
+    },
+    {
+      "name": "mobile-c60-last-sample-before-stop-proof-gap.png",
+      "path": "output/playwright/v24/mobile-c60-last-sample-before-stop-proof-gap.png",
+      "bytes": 46325,
+      "passed": true
+    },
+    {
+      "name": "mobile-c60-last-sample-before-stop-solved.png",
+      "path": "output/playwright/v24/mobile-c60-last-sample-before-stop-solved.png",
+      "bytes": 133664,
+      "passed": true
+    },
+    {
+      "name": "unknown-case-404.png",
+      "path": "output/playwright/v24/unknown-case-404.png",
+      "bytes": 19388,
+      "passed": true
+    },
+    {
+      "name": "v22-evidence-proof-bridge.png",
+      "path": "output/playwright/v24/v22-evidence-proof-bridge.png",
+      "bytes": 184755,
+      "passed": true
+    },
+    {
+      "name": "v22-first-question-starts.png",
+      "path": "output/playwright/v24/v22-first-question-starts.png",
+      "bytes": 170425,
+      "passed": true
+    },
+    {
+      "name": "v22-mobile-c60-proof-context.png",
+      "path": "output/playwright/v24/v22-mobile-c60-proof-context.png",
+      "bytes": 76856,
+      "passed": true
+    },
+    {
+      "name": "v23-desktop-c60-solved-archive.png",
+      "path": "output/playwright/v24/v23-desktop-c60-solved-archive.png",
+      "bytes": 274970,
+      "passed": true
+    },
+    {
+      "name": "v23-mobile-c01-solved-archive.png",
+      "path": "output/playwright/v24/v23-mobile-c01-solved-archive.png",
+      "bytes": 129355,
+      "passed": true
+    },
+    {
+      "name": "v24-answer-evidence-handoff.png",
+      "path": "output/playwright/v24/v24-answer-evidence-handoff.png",
+      "bytes": 184587,
+      "passed": true
+    },
+    {
+      "name": "v24-mobile-home-localized.png",
+      "path": "output/playwright/v24/v24-mobile-home-localized.png",
+      "bytes": 209586,
+      "passed": true
+    },
+    {
+      "name": "v24-progressive-replay.png",
+      "path": "output/playwright/v24/v24-progressive-replay.png",
+      "bytes": 213091,
+      "passed": true
+    },
+    {
+      "name": "webkit-desktop-home.png",
+      "path": "output/playwright/v24/webkit-desktop-home.png",
+      "bytes": 205670,
+      "passed": true
+    },
+    {
+      "name": "webkit-mobile-home.png",
+      "path": "output/playwright/v24/webkit-mobile-home.png",
+      "bytes": 84189,
+      "passed": true
+    }
+  ],
+  "contracts": {
+    "fourWorkspaces": true,
+    "singleActiveWorkspace": true,
+    "firstMinuteCue": true,
+    "mobileTheorySteps": true,
+    "mobileSeasonSwitcher": true,
+    "playerSummaryBesideReplay": true,
+    "deterministicAnswerSeparation": true,
+    "caseUiContinuation": true,
+    "keyboardShortcuts": true,
+    "draftContinuity": true,
+    "quickQuestionStarts": true,
+    "sessionDraftContinuation": true,
+    "proofContext": true,
+    "evidenceToProofBridge": true,
+    "discoveredEvidenceNotExamined": true,
+    "solvedArchiveFirst": true,
+    "solvedEditingHidden": true,
+    "seasonTabsKeyboard": true,
+    "workspaceDeepLinks": true,
+    "answerToEvidenceBridge": true,
+    "progressiveReplay": true,
+    "evidenceActionPriority": true,
+    "localizedCatalogLabels": true
+  },
+  "passed": true
+}

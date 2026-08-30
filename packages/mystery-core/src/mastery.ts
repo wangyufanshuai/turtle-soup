@@ -43,6 +43,8 @@ export function challengeRotation(record: CaseMasteryRecord): ChallengeRotation 
 export function recordMasterySolve(record: CaseMasteryRecord, projection: Pick<PlayerProjection, "case" | "replayMode" | "solved" | "debrief">, completedAt = new Date().toISOString(), hintFree = true): CaseMasteryRecord {
   const next = normalizeMasteryRecord(record, projection.case);
   if (!projection.solved) return { ...next, lastPlayedAt: completedAt };
+  if (projection.replayMode === "standard" && next.standardSolved) return next;
+  if (projection.replayMode !== "standard" && next.challengeResults[projection.replayMode]?.solved) return next;
   const totalSolves = next.totalSolves + 1;
   if (projection.replayMode === "standard") return { ...next, standardSolved: true, totalSolves, lastPlayedAt: completedAt };
   const mode = projection.replayMode as MasteryChallenge;

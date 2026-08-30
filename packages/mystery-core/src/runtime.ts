@@ -22,6 +22,7 @@ import type {
   PlayerProjection,
   QuestionCandidateProjection,
   QuestionInterpretation,
+  QuestionRoutingOffer,
   RuntimeResult,
   RuntimeState,
   TheoryDraft,
@@ -167,6 +168,57 @@ function interpretationFor(
     interpretedAs: status === "matched" ? candidates[0]?.label : undefined,
     candidates,
     requiresConfirmation: status === "ambiguous",
+  };
+}
+
+function compactHash(value: string): string {
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0).toString(16).padStart(8, "0");
+}
+
+function routingCandidates(caseFile: CaseFile, state: RuntimeState) {
+  if (state.replayMode === "no-scaffolds") return [];
+  const initialIds = caseFile.surface?.initialQuestionPrompts ?? [];
+  const orderedIds = [...initialIds, ...caseFile.questionSemantics.map((query) => query.id).filter((id) => !initialIds.includes(id))];
+  return orderedIds.map((id) => queryProjection(caseFile, id)).filter((item): item is QuestionCandidateProjection => Boolean(item));
+}
+
+/** Builds a truth-free routing offer. Opaque tokens, not query ids, are sent to AI. */
+export function createQuestionRoutingOffer(caseFile: CaseFile, state: RuntimeState, rawQuestion: string): QuestionRoutingOffer {
+  const raw = rawQuestion.trim();
+  const candidates = routingCandidates(caseFile, state);
+  const identity = JSON.stringify({
+    caseId: caseFile.id,
+    version: caseFile.metadata?.contentVersion ?? 1,
+    hash: caseFile.metadata?.canonicalHash ?? "unversioned",
+    replayMode: state.replayMode,
+    raw,
+    candidates: candidates.map((item) => [item.queryId, item.label, item.target, item.predicate, item.qualifier ?? ""]),
+  });
+  const contextHash = compactHash(identity);
+  const bindings = candidates.map((candidate, index) => ({
+    token: `candidate-${String(index + 1).padStart(2, "0")}-${compactHash(`${contextHash}:${candidate.queryId}`).slice(0, 4)}`,
+    queryId: candidate.queryId,
+  }));
+  return {
+    context: {
+      contextHash,
+      language: "zh-CN",
+      publicSurface: translate(caseFile, caseFile.surface?.textKey, "一件无法解释的事件等待调查。"),
+      rawQuestion: raw,
+      candidates: candidates.map((candidate, index) => ({
+        token: bindings[index].token,
+        label: candidate.label,
+        target: candidate.target,
+        predicate: candidate.predicate,
+        ...(candidate.qualifier ? { qualifier: candidate.qualifier } : {}),
+      })),
+    },
+    bindings,
   };
 }
 
@@ -601,6 +653,20 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
       return { state: next, projection: projectPlayerState(caseFile, next), events: [{ type: "interpretation_required", interpretation }], accepted: false };
     }
     return { state, projection: projectPlayerState(caseFile, state), events: [{ type: "question_rejected", interpretation }], accepted: false };
+  }
+
+  if (command.type === "ask_resolved_text") {
+    const rawText = command.rawText.trim();
+    if (!rawText || command.resolutionSource !== "ai-confirmed") return rejected(caseFile, state, "AI 问题解释无效。 ");
+    if (state.replayMode === "no-scaffolds") return rejected(caseFile, state, "无辅助挑战中不能使用 AI 问题解释。 ");
+    const offer = createQuestionRoutingOffer(caseFile, state, rawText);
+    const allowed = offer.bindings.some((binding) => binding.queryId === command.queryId);
+    if (offer.context.contextHash !== command.contextHash || !allowed) return rejected(caseFile, state, "问题解释已经过期或不属于当前公开候选。 ");
+    if (state.replayMode === "limited-questions") {
+      const limit = caseFile.replayChallenges?.find((item) => item.mode === "limited-questions")?.questionLimit ?? 12;
+      if (state.transcript.length >= limit) return rejected(caseFile, state, `限定问题挑战最多允许 ${limit} 次有效提问。`);
+    }
+    return answerQuery(caseFile, state, command.queryId, rawText);
   }
 
   if (command.type === "confirm_interpretation") {

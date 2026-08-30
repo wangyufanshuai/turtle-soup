@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import test from "node:test";
 import { analyzeCaseQuality } from "./authoring.ts";
 import { c01QuestionCorpus } from "../../../content/zh/cases/c01-question-corpus.ts";
-import { createRuntimeState, projectPlayerState, reduceGameCommand, replayCommands } from "./runtime.ts";
+import { createQuestionRoutingOffer, createRuntimeState, projectPlayerState, reduceGameCommand, replayCommands } from "./runtime.ts";
 import type { CaseFile, GameCommand, RuntimeState } from "./types.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -119,6 +119,28 @@ test("unrecognized and ambiguous questions fail closed without changing game fac
   assert.equal(confirmed.accepted, true);
   assert.equal(confirmed.events.some((event) => event.type === "question_answered"), true);
   assert.equal(confirmed.state.transcript.length, 1);
+});
+
+test("AI-confirmed routing is public, replayable and fails closed when stale or forged", () => {
+  const state = createRuntimeState(caseFile);
+  const offer = createQuestionRoutingOffer(caseFile, state, "门自己锁了吗？");
+  const serialized = JSON.stringify(offer.context);
+  assert.equal(serialized.includes("query-"), false);
+  assert.equal(serialized.includes("fact-"), false);
+  assert.equal(serialized.includes("solutionCertificate"), false);
+  assert.ok(offer.context.candidates.length > 0);
+  const binding = offer.bindings.find((item) => item.queryId.includes("door")) ?? offer.bindings[0];
+  const command: GameCommand = { type: "ask_resolved_text", rawText: "门自己锁了吗？", queryId: binding.queryId, resolutionSource: "ai-confirmed", contextHash: offer.context.contextHash };
+  const accepted = reduceGameCommand(caseFile, state, command);
+  assert.equal(accepted.accepted, true);
+  assert.equal(accepted.state.transcript.length, 1);
+  const replayed = replayCommands(caseFile, [command]);
+  assert.deepEqual(projectPlayerState(caseFile, replayed.state), projectPlayerState(caseFile, accepted.state));
+  assert.equal(reduceGameCommand(caseFile, state, { ...command, contextHash: "stale" }).accepted, false);
+  assert.equal(reduceGameCommand(caseFile, state, { ...command, queryId: "query-forged" }).accepted, false);
+  const noScaffoldsState = { ...state, replayMode: "no-scaffolds" as const };
+  assert.equal(createQuestionRoutingOffer(caseFile, noScaffoldsState, "门自己锁了吗？").context.candidates.length, 0);
+  assert.equal(reduceGameCommand(caseFile, noScaffoldsState, command).accepted, false);
 });
 
 test("a question can be undone without rolling back inspected evidence", () => {
