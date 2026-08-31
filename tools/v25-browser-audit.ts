@@ -7,10 +7,14 @@ import { loadCaseFile, loadReleaseContent } from "./lib/release-content.ts";
 import { createCanonicalSave } from "./lib/canonical-save.ts";
 import type { SaveEnvelope } from "../packages/mystery-core/src/index.ts";
 
-const root = resolve(process.argv[2] ?? ".");
-const profileId = "v2.5-internal-rc";
+const v26 = process.argv.includes("--v26");
+const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
+const profileId = v26 ? "v2.6-internal-rc" : "v2.5-internal-rc";
 const outDir = resolve(root, "apps/web/out");
-const shotDir = resolve(root, "output/playwright/v25");
+const reportVersion = v26 ? "2.6" : "2.5";
+const reportStem = v26 ? "v2.6" : "v2.5";
+const shotRelative = v26 ? "output/playwright/v26" : "output/playwright/v25";
+const shotDir = resolve(root, shotRelative);
 mkdirSync(shotDir, { recursive: true });
 const release = loadReleaseContent(root, profileId);
 const entries = release.entries;
@@ -51,7 +55,7 @@ const server = createServer((request, response) => {
 });
 await new Promise<void>((done, reject) => { server.once("error", reject); server.listen(0, "127.0.0.1", done); });
 const address = server.address();
-if (!address || typeof address === "string") throw new Error("v2.5 browser server failed");
+if (!address || typeof address === "string") throw new Error(`${reportStem} browser server failed`);
 const base = `http://127.0.0.1:${address.port}`;
 
 async function visit(page: Page, path: string, waitForShell = true) {
@@ -98,6 +102,8 @@ async function routeSmoke(name: string, type: BrowserType, mobile: boolean) {
     publicPreview: await page.getByText(/INTERNAL RC|内部 RC|HUMAN EVALUATION PENDING|等待真人评测/).count() > 0,
     caseVisibleInFirstViewport: Boolean(firstBox && firstBox.y < (mobile ? 844 : 900)),
     overflow: await page.evaluate(() => Math.max(0, document.documentElement.scrollWidth - document.documentElement.clientWidth)),
+    catalogCount: await page.getByText(/84 件确定性谜案/).count() > 0,
+    searchAvailable: await page.locator('input[type="search"]').count() === 1,
   };
   if (name === "chromium" && !mobile) await page.screenshot({ path: resolve(shotDir, "home-desktop.png"), fullPage: false });
   if (name === "chromium" && mobile) await page.screenshot({ path: resolve(shotDir, "home-mobile.png"), fullPage: false });
@@ -117,7 +123,7 @@ async function routeSmoke(name: string, type: BrowserType, mobile: boolean) {
   if (name === "chromium" && !mobile) await page.screenshot({ path: resolve(shotDir, "unknown-case-404.png"), fullPage: false });
   await context.close();
   await browser.close();
-  return { browser: name, viewport: mobile ? "390x844" : "1440x900", home, routes, unknownStrict404, consoleErrors: routeConsoleErrors, failedResources: routeFailedResources, passed: home.continueVisible && home.seasonVisible && home.publicPreview && home.overflow <= 1 && routes.length === 84 && routes.every((item) => item.passed) && unknownStrict404 && routeConsoleErrors.length === 0 && routeFailedResources.length === 0 };
+  return { browser: name, viewport: mobile ? "390x844" : "1440x900", home, routes, unknownStrict404, consoleErrors: routeConsoleErrors, failedResources: routeFailedResources, passed: home.continueVisible && home.seasonVisible && home.publicPreview && home.overflow <= 1 && (!v26 || home.catalogCount && home.searchAvailable) && routes.length === 84 && routes.every((item) => item.passed) && unknownStrict404 && routeConsoleErrors.length === 0 && routeFailedResources.length === 0 };
 }
 
 async function representativeA11y(name: string, type: BrowserType, mobile: boolean) {
@@ -206,7 +212,7 @@ async function offlineRecovery() {
 
 try {
   const allMatrix = [["chromium", chromium], ["firefox", firefox], ["webkit", webkit]] as const;
-  const filter = process.env.V25_BROWSER_FILTER;
+  const filter = process.env.V26_BROWSER_FILTER ?? process.env.V25_BROWSER_FILTER;
   const matrix = (filter ? allMatrix.filter(([name]) => name === filter) : allMatrix) as typeof allMatrix;
   const routeSmokeReports = [], a11yReports = [], fullFlowReports = [];
   for (const [name, type] of matrix) {
@@ -221,9 +227,9 @@ try {
     ? await offlineRecovery()
     : { registered: true, recovered: true, caseId: "not-applicable", passed: true };
   const screenshots = [] as Array<{ name: string; path: string; bytes: number; passed: boolean }>;
-  for (const name of readdirSync(shotDir)) if (name.endsWith(".png")) { const path = resolve(shotDir, name); screenshots.push({ name, path: `output/playwright/v25/${name}`, bytes: statSync(path).size, passed: statSync(path).size > 5_000 }); }
+  for (const name of readdirSync(shotDir)) if (name.endsWith(".png")) { const path = resolve(shotDir, name); screenshots.push({ name, path: `${shotRelative}/${name}`, bytes: statSync(path).size, passed: statSync(path).size > 5_000 }); }
   const report = {
-    reportVersion: "2.5",
+    reportVersion,
     releaseProfile: profileId,
     generatedAt: new Date().toISOString(),
     status: "internal-rc / human-evaluation-pending",
@@ -242,8 +248,8 @@ try {
     consoleErrorCount: routeSmokeReports.reduce((sum, item) => sum + item.consoleErrors.length, 0) + a11yReports.reduce((sum, item) => sum + (item.cases as Array<{ consoleErrors: string[] }>).reduce((n, c) => n + c.consoleErrors.length, 0), 0) + fullFlowReports.reduce((sum, item) => sum + (item.cases as Array<{ consoleErrors: string[] }>).reduce((n, c) => n + c.consoleErrors.length, 0), 0),
     passed: routeSmokeReports.every((item) => item.passed) && a11yReports.every((item) => item.passed) && fullFlowReports.every((item) => item.passed) && offline.passed && screenshots.length >= 10 && screenshots.every((item) => item.passed),
   };
-  writeFileSync(resolve(root, "docs/v2.5-browser-matrix.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
-  writeFileSync(resolve(root, "docs/v2.5-visual-regression.json"), `${JSON.stringify({ ...report, scope: "84 routes, 5 seasons, representative opening and accessibility states", contracts: { strict404: true, noConsoleErrors: report.consoleErrorCount === 0, desktop: true, mobile: true, reducedMotion: true, keyboard: true, touch: true } }, null, 2)}\n`, "utf8");
+  writeFileSync(resolve(root, `docs/${reportStem}-browser-matrix.json`), `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  writeFileSync(resolve(root, `docs/${reportStem}-visual-regression.json`), `${JSON.stringify({ ...report, scope: "84 routes, 5 seasons, representative opening and accessibility states", contracts: { strict404: true, noConsoleErrors: report.consoleErrorCount === 0, catalogCount: !v26 || routeSmokeReports.every((item) => item.home.catalogCount), seasonSearch: !v26 || routeSmokeReports.every((item) => item.home.searchAvailable), desktop: true, mobile: true, reducedMotion: true, keyboard: true, touch: true } }, null, 2)}\n`, "utf8");
   console.log(JSON.stringify({ routes: routeSmokeReports.reduce((sum, item) => sum + item.routes.length, 0), fullFlows: fullFlowReports.reduce((sum, item) => sum + item.cases.length, 0), screenshots: screenshots.length, offline: offline.passed, consoleErrors: report.consoleErrorCount, passed: report.passed }, null, 2));
   if (!report.passed) process.exitCode = 1;
 } finally {

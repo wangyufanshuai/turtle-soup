@@ -47,6 +47,7 @@ export function CaseSelect() {
   const [difficulty, setDifficulty] = useState("all");
   const [skill, setSkill] = useState("all");
   const [completion, setCompletion] = useState<CompletionFilter>("all");
+  const [search, setSearch] = useState("");
   const [activeSeason, setActiveSeason] = useState("season-1");
   const [aiStatus, setAiStatus] = useState("离线可玩");
   const seasonTabRefs = useRef<Array<HTMLButtonElement | null>>([]);
@@ -71,6 +72,8 @@ export function CaseSelect() {
   const recommendedCase = CASE_CATALOG.find((entry) => entry.id === recommendedStep.caseId);
   const filtered = CASE_CATALOG.filter((entry) => {
     if ((entry.seasonId ?? "season-1") !== activeSeason) return false;
+    const needle = search.trim().toLocaleLowerCase("zh-CN");
+    if (needle && ![entry.id, entry.title, entry.surface, ...(entry.mechanicTags ?? entry.contentTags), ...entry.contentTags].join(" ").toLocaleLowerCase("zh-CN").includes(needle)) return false;
     if (difficulty !== "all" && entry.difficulty !== difficulty) return false;
     if (skill !== "all" && !(entry.mechanicTags ?? entry.contentTags).includes(skill)) return false;
     if (completion === "closed" && !completed.has(entry.id)) return false;
@@ -90,7 +93,7 @@ export function CaseSelect() {
   return <main id="main-content" tabIndex={-1} className={styles.page}>
     <header className={styles.header}>
       <div className={styles.mark}>深</div>
-      <div><small>黑汤档案室 · 60 件确定性谜案</small><h1>从一个异常开始调查</h1><p>提问验证事实，检查来源，最后用证据证明事情如何发生。</p></div>
+      <div><small>黑汤档案室 · {CASE_CATALOG.length} 件确定性谜案</small><h1>从一个异常开始调查</h1><p>提问验证事实，检查来源，最后用证据证明事情如何发生。</p></div>
       <div className={styles.status}><b>{releaseStatus()}</b><span>AI：{aiStatus}</span><em>没有 API 也能完整游玩</em></div>
     </header>
 
@@ -106,6 +109,7 @@ export function CaseSelect() {
       <div className={styles.seasonHead}><div><small>选择季节</small><h2 id="season-heading">{seasonTitle}</h2></div><span>{activeSeasonEntries.filter((entry) => completed.has(entry.id)).length}/{activeSeasonEntries.length} 已结案</span></div>
       <div className={styles.seasonTabs} role="tablist" aria-label="案件季节">{seasons.map((seasonId, index) => { const entries = CASE_CATALOG.filter((entry) => (entry.seasonId ?? "season-1") === seasonId), selected = activeSeason === seasonId; return <button ref={(node) => { seasonTabRefs.current[index] = node; }} role="tab" tabIndex={selected ? 0 : -1} aria-selected={selected} aria-controls="active-season-cases" id={`tab-${seasonId}`} key={seasonId} onClick={() => selectSeason(seasonId)} onKeyDown={(event) => onSeasonKeyDown(event, index)}><b>第{index + 1}季</b><span>{entries.filter((entry) => completed.has(entry.id)).length}/{entries.length}</span></button>; })}</div>
       <details className={styles.filterDrawer}><summary>筛选案件 <span>{filtered.length} 件可见</span></summary><div className={styles.filters}>
+        <label className={styles.search}>搜索当前季<input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="案件名、编号、题面或技能" autoComplete="off" /></label>
         <label>难度<select value={difficulty} onChange={(event) => setDifficulty(event.target.value)}><option value="all">全部难度</option>{[...new Set(CASE_CATALOG.map((entry) => entry.difficulty))].map((value) => <option key={value} value={value}>{difficultyLabel(value)}</option>)}</select></label>
         <label>推理技能<select value={skill} onChange={(event) => setSkill(event.target.value)}><option value="all">全部技能</option>{skills.map((value) => <option key={value} value={value}>{tagLabel(value)}</option>)}</select></label>
         <label>档案状态<select value={completion} onChange={(event) => setCompletion(event.target.value as CompletionFilter)}><option value="all">全部档案</option><option value="open">调查中</option><option value="closed">已结案</option></select></label>
@@ -117,7 +121,7 @@ export function CaseSelect() {
           <div className={styles.thumb}><picture>{entry.sceneAssetMobile && <source media="(max-width: 900px)" srcSet={entry.sceneAssetMobile} />}<img src={entry.sceneAsset} alt="" width={640} height={360} loading="lazy" /></picture><span>C{number} · {completed.has(entry.id) ? "已结案" : "可调查"}</span></div>
           <div className={styles.cardBody}><small>{difficultyLabel(entry.difficulty)} · {entry.targetMinutes.min}–{entry.targetMinutes.max} 分钟</small><h3>{entry.title}</h3><p>{entry.surface}</p><div>{entry.contentTags.slice(0, 3).map((tag) => <span key={tag}>{tagLabel(tag)}</span>)}</div>{mastery[entry.id] && <em>挑战 {summary.completedCount}/3</em>}</div>
         </Link>;
-      })}{filtered.length === 0 && <div className={styles.noResults}><b>这个筛选下没有案件</b><button onClick={() => { setDifficulty("all"); setSkill("all"); setCompletion("all"); }}>清除筛选</button></div>}</div>
+      })}{filtered.length === 0 && <div className={styles.noResults}><b>这个筛选下没有案件</b><button onClick={() => { setSearch(""); setDifficulty("all"); setSkill("all"); setCompletion("all"); }}>清除筛选</button></div>}</div>
     </section>
 
     <ArchiveTools onImported={() => setRevision((value) => value + 1)} />

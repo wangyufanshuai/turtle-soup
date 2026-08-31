@@ -1,0 +1,12 @@
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { resolve } from "node:path";
+const root = resolve(process.argv[2] ?? ".");
+const shell = readFileSync(resolve(root, "apps/web/components/investigation-shell.tsx"), "utf8");
+const board = readFileSync(resolve(root, "apps/web/components/reasoning-board.tsx"), "utf8");
+const home = readFileSync(resolve(root, "apps/web/components/case-select.tsx"), "utf8");
+const css = readFileSync(resolve(root, "apps/web/components/investigation-shell.module.css"), "utf8");
+const contracts = { unifiedInvestigationShell: shell.includes("export function InvestigationShell"), premiseBeforeScene: shell.indexOf("案件异常") < shell.indexOf("className={styles.scene}"), directChineseWorkspaces: ["现场", "提问", "证据", "推断"].every((label) => shell.includes(label)), reversibleQuestionAction: shell.includes("撤销"), reasoningBoardRegistry: board.includes("reasoningBoardUi(board.mode)"), directBoardInteractions: board.includes('data-interaction') && board.includes("place_reasoning_item"), seasonSearch: home.includes('type="search"') && home.includes("搜索当前季"), reducedMotion: css.includes("prefers-reduced-motion"), noHeightAnimation: !css.includes("transition: height") };
+const report = { reportVersion: "2.6", releaseProfile: "v2.6-internal-rc", generatedAt: new Date().toISOString(), status: "internal-rc / human-evaluation-pending", humanParticipants: 0, founderExploratorySessions: 1, scope: "front-end clarity and investigation rhythm; no truth-engine changes", contracts, sourceArtifacts: ["apps/web/components/investigation-shell.tsx", "apps/web/components/reasoning-board.tsx", "apps/web/components/case-select.tsx"].map((path) => ({ path, exists: existsSync(resolve(root, path)) })), passed: Object.values(contracts).every(Boolean) };
+writeFileSync(resolve(root, "docs/v2.6-experience-audit.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
+console.log(JSON.stringify({ contracts, passed: report.passed }, null, 2));
+if (!report.passed) process.exitCode = 1;

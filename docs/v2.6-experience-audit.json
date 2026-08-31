@@ -1,0 +1,35 @@
+{
+  "reportVersion": "2.6",
+  "releaseProfile": "v2.6-internal-rc",
+  "generatedAt": "2026-08-31T01:27:26.841Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "scope": "front-end clarity and investigation rhythm; no truth-engine changes",
+  "contracts": {
+    "unifiedInvestigationShell": true,
+    "premiseBeforeScene": true,
+    "directChineseWorkspaces": true,
+    "reversibleQuestionAction": true,
+    "reasoningBoardRegistry": true,
+    "directBoardInteractions": true,
+    "seasonSearch": true,
+    "reducedMotion": true,
+    "noHeightAnimation": true
+  },
+  "sourceArtifacts": [
+    {
+      "path": "apps/web/components/investigation-shell.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps/web/components/reasoning-board.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps/web/components/case-select.tsx",
+      "exists": true
+    }
+  ],
+  "passed": true
+}

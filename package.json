@@ -162,7 +162,7 @@
     "v0.7:reports": "npm run synthetic:players && npm run stress:questions",
     "typecheck": "npm run generate:content && npm run typecheck:core && npm run typecheck --workspace @turtle-soup/web",
     "typecheck:core": "tsc --noEmit",
-    "test:core": "node --test --experimental-strip-types --experimental-transform-types packages/mystery-core/src/engine.test.ts packages/mystery-core/src/runtime.test.ts packages/mystery-core/src/multi-case.test.ts packages/mystery-core/src/corpus.test.ts packages/mystery-core/src/test-session.test.ts packages/mystery-core/src/save-envelope.test.ts packages/mystery-core/src/season-two.test.ts packages/mystery-core/src/season-three.test.ts packages/mystery-core/src/season-four.test.ts packages/mystery-core/src/season-five.test.ts packages/mystery-core/src/mastery.test.ts packages/mystery-core/src/diagnostics.test.ts packages/mystery-core/src/presentation-patch.test.ts packages/mystery-core/src/question-alias-pack.test.ts packages/mystery-core/src/budgeted-blackbox-runner.test.ts apps/web/lib/host-rewrite.test.ts apps/web/lib/question-routing-ai.test.ts apps/web/lib/golden-experience.test.ts apps/web/lib/investigation-momentum.test.ts apps/web/lib/proof-readiness.test.ts tools/lib/fun-gate-evaluation.test.ts",
+    "test:core": "node --test --experimental-strip-types --experimental-transform-types packages/mystery-core/src/engine.test.ts packages/mystery-core/src/runtime.test.ts packages/mystery-core/src/multi-case.test.ts packages/mystery-core/src/corpus.test.ts packages/mystery-core/src/test-session.test.ts packages/mystery-core/src/save-envelope.test.ts packages/mystery-core/src/season-two.test.ts packages/mystery-core/src/season-three.test.ts packages/mystery-core/src/season-four.test.ts packages/mystery-core/src/season-five.test.ts packages/mystery-core/src/mastery.test.ts packages/mystery-core/src/diagnostics.test.ts packages/mystery-core/src/presentation-patch.test.ts packages/mystery-core/src/question-alias-pack.test.ts packages/mystery-core/src/budgeted-blackbox-runner.test.ts apps/web/lib/host-rewrite.test.ts apps/web/lib/question-routing-ai.test.ts apps/web/lib/golden-experience.test.ts apps/web/lib/investigation-momentum.test.ts apps/web/lib/proof-readiness.test.ts apps/web/lib/reasoning-board-ui.test.ts tools/lib/fun-gate-evaluation.test.ts",
     "generate:season5": "node --experimental-strip-types --experimental-transform-types tools/generate-season-five.ts",
     "package:v25": "node --experimental-strip-types --experimental-transform-types tools/package-v25.ts",
     "audit:v25:browsers": "node --experimental-strip-types --experimental-transform-types tools/v25-browser-audit.ts",
@@ -173,6 +173,14 @@
     "audit:v25:content-difference": "node --experimental-strip-types --experimental-transform-types tools/v25-content-difference.ts",
     "audit:v25:assets": "node --experimental-strip-types --experimental-transform-types tools/v25-asset-provenance.ts",
     "verify:v25": "node --experimental-strip-types --experimental-transform-types tools/v25-release-audit.ts",
+    "package:v26": "node --experimental-strip-types --experimental-transform-types tools/package-v26.ts",
+    "audit:v26:browsers": "node --experimental-strip-types --experimental-transform-types tools/v25-browser-audit.ts --v26",
+    "audit:v26:performance": "node --experimental-strip-types --experimental-transform-types tools/v26-static-performance.ts",
+    "scan:v26": "node --experimental-strip-types --experimental-transform-types tools/v26-security-scan.ts",
+    "audit:v26:save": "node --experimental-strip-types --experimental-transform-types tools/v26-save-compatibility.ts",
+    "audit:v26:experience": "node --experimental-strip-types --experimental-transform-types tools/v26-experience-audit.ts",
+    "audit:v26:content-difference": "node --experimental-strip-types --experimental-transform-types tools/v26-content-difference.ts",
+    "verify:v26": "node --experimental-strip-types --experimental-transform-types tools/v26-release-audit.ts",
     "check": "npm run typecheck && npm run test:core"
   },
   "devDependencies": {

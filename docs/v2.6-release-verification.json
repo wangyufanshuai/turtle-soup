@@ -1,0 +1,1629 @@
+{
+  "reportVersion": "2.6",
+  "releaseProfile": "v2.6-internal-rc",
+  "generatedAt": "2026-08-31T01:41:30.816Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "gates": {
+    "profile": true,
+    "participants": true,
+    "caseCount": true,
+    "frozen": true,
+    "schema": true,
+    "reports": true,
+    "historicalArtifacts": true
+  },
+  "frozen": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c62-rope-not-shorter",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c63-ice-melts-first",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c64-uncracked-glass",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c65-twin-watermarks",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c66-still-weight",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c67-shared-badge",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c68-empty-seat-proof",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c69-third-minutes",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c70-grace-late-arrival",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c71-revoked-open-door",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c72-message-read-twice",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c73-phantom-exit",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c74-silent-footsteps",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c75-two-weather-photo",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c76-red-light-second",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c77-invisible-ninth-wire",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c78-sound-from-other-side",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c79-extra-queue-order",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c80-power-on-restart",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c81-lost-ack",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c82-closed-network-device",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c83-two-unloads",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    }
+  ],
+  "cases": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "schemaValid": true,
+      "events": 8,
+      "facts": 19,
+      "evidence": 10,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c02-snow-route",
+      "schemaValid": true,
+      "events": 8,
+      "facts": 13,
+      "evidence": 9,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "schemaValid": true,
+      "events": 9,
+      "facts": 14,
+      "evidence": 9,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "schemaValid": true,
+      "events": 8,
+      "facts": 12,
+      "evidence": 9,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "schemaValid": true,
+      "events": 8,
+      "facts": 12,
+      "evidence": 9,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "schemaValid": true,
+      "events": 8,
+      "facts": 11,
+      "evidence": 9,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c07-key-returns",
+      "schemaValid": true,
+      "events": 8,
+      "facts": 11,
+      "evidence": 8,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "schemaValid": true,
+      "events": 8,
+      "facts": 11,
+      "evidence": 8,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c09-rain-room",
+      "schemaValid": true,
+      "events": 8,
+      "facts": 12,
+      "evidence": 9,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c10-single-ring",
+      "schemaValid": true,
+      "events": 8,
+      "facts": 11,
+      "evidence": 8,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "schemaValid": true,
+      "events": 8,
+      "facts": 11,
+      "evidence": 8,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "schemaValid": true,
+      "events": 8,
+      "facts": 11,
+      "evidence": 8,
+      "boards": [],
+      "replayBeats": 5
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "boards": [
+        "state-trace"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "boards": [
+        "spatial-map"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "boards": [
+        "sampling-window"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "boards": [
+        "provenance-chain"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "boards": [
+        "state-trace"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "boards": [
+        "measurement-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "boards": [
+        "state-trace"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "boards": [
+        "identity-matrix"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 17,
+      "evidence": 12,
+      "boards": [
+        "sampling-window"
+      ],
+      "replayBeats": 7
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 17,
+      "evidence": 12,
+      "boards": [
+        "aggregate-constraint"
+      ],
+      "replayBeats": 7
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 17,
+      "evidence": 12,
+      "boards": [
+        "provenance-chain"
+      ],
+      "replayBeats": 7
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 17,
+      "evidence": 12,
+      "boards": [
+        "spatial-map"
+      ],
+      "replayBeats": 7
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "state-trace",
+        "measurement-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "spatial-map",
+        "aggregate-constraint"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "state-trace",
+        "spatial-map"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "sampling-window",
+        "measurement-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "identity-matrix",
+        "provenance-chain"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "identity-matrix",
+        "state-trace"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "aggregate-constraint",
+        "identity-matrix"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "provenance-chain",
+        "identity-matrix"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "boards": [
+        "timeline",
+        "sampling-window",
+        "provenance-chain"
+      ],
+      "replayBeats": 7
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "boards": [
+        "provenance-chain",
+        "timeline"
+      ],
+      "replayBeats": 7
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "boards": [
+        "identity-matrix",
+        "spatial-map"
+      ],
+      "replayBeats": 7
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "schemaValid": true,
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "boards": [
+        "aggregate-constraint",
+        "timeline",
+        "provenance-chain"
+      ],
+      "replayBeats": 7
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "boards": [
+        "calibration-curve",
+        "measurement-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "schemaValid": true,
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "boards": [
+        "network-topology",
+        "provenance-chain"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "schemaValid": true,
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "boards": [
+        "signal-chain",
+        "sampling-window"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "state-trace",
+        "provenance-chain"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "schemaValid": true,
+      "events": 11,
+      "facts": 17,
+      "evidence": 11,
+      "boards": [
+        "state-trace",
+        "measurement-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "boards": [
+        "aggregate-constraint",
+        "spatial-map"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "schemaValid": true,
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "boards": [
+        "control-loop",
+        "state-trace"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "schemaValid": true,
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "boards": [
+        "sampling-window",
+        "measurement-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "reference-frame",
+        "timeline"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "schemaValid": true,
+      "events": 11,
+      "facts": 17,
+      "evidence": 11,
+      "boards": [
+        "control-loop",
+        "provenance-chain"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "boards": [
+        "network-topology",
+        "sampling-window"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "schemaValid": true,
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "boards": [
+        "calibration-curve",
+        "uncertainty-band"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "schemaValid": true,
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "boards": [
+        "reference-frame",
+        "spatial-map"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "aggregate-constraint",
+        "queue-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "schemaValid": true,
+      "events": 11,
+      "facts": 17,
+      "evidence": 11,
+      "boards": [
+        "network-topology",
+        "measurement-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "boards": [
+        "reference-frame",
+        "uncertainty-band"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "schemaValid": true,
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "boards": [
+        "signal-chain",
+        "network-topology"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "schemaValid": true,
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "boards": [
+        "state-trace",
+        "spatial-map"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "boards": [
+        "queue-model",
+        "state-trace"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "schemaValid": true,
+      "events": 11,
+      "facts": 17,
+      "evidence": 11,
+      "boards": [
+        "sampling-window",
+        "uncertainty-band"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "boards": [
+        "reference-frame",
+        "measurement-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "schemaValid": true,
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "boards": [
+        "calibration-curve",
+        "spatial-map"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "schemaValid": true,
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "boards": [
+        "reference-frame",
+        "aggregate-constraint"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "schemaValid": true,
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "boards": [
+        "control-loop",
+        "signal-chain",
+        "sampling-window"
+      ],
+      "replayBeats": 8
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "schemaValid": true,
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "boards": [
+        "calibration-curve",
+        "material-balance"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c62-rope-not-shorter",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "boards": [
+        "spatial-map",
+        "causal-graph"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c63-ice-melts-first",
+      "schemaValid": true,
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "boards": [
+        "threshold-ladder",
+        "state-trace"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c64-uncracked-glass",
+      "schemaValid": true,
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "boards": [
+        "causal-graph",
+        "measurement-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c65-twin-watermarks",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "boards": [
+        "occlusion-map",
+        "reference-frame"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c66-still-weight",
+      "schemaValid": true,
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "boards": [
+        "material-balance",
+        "counterfactual-tree"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c67-shared-badge",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "boards": [
+        "identity-matrix",
+        "counterfactual-tree"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c68-empty-seat-proof",
+      "schemaValid": true,
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "boards": [
+        "state-trace",
+        "counterfactual-tree"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c69-third-minutes",
+      "schemaValid": true,
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "boards": [
+        "provenance-chain",
+        "interval-logic"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c70-grace-late-arrival",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "boards": [
+        "timeline",
+        "threshold-ladder"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c71-revoked-open-door",
+      "schemaValid": true,
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "boards": [
+        "network-topology",
+        "causal-graph"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c72-message-read-twice",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "boards": [
+        "queue-model",
+        "provenance-chain"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c73-phantom-exit",
+      "schemaValid": true,
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "boards": [
+        "occlusion-map",
+        "spatial-map"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c74-silent-footsteps",
+      "schemaValid": true,
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "boards": [
+        "acoustic-path",
+        "measurement-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c75-two-weather-photo",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "boards": [
+        "sampling-window",
+        "occlusion-map"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c76-red-light-second",
+      "schemaValid": true,
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "boards": [
+        "interval-logic",
+        "reference-frame"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c77-invisible-ninth-wire",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "boards": [
+        "signal-chain",
+        "occlusion-map"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c78-sound-from-other-side",
+      "schemaValid": true,
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "boards": [
+        "acoustic-path",
+        "spatial-map"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c79-extra-queue-order",
+      "schemaValid": true,
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "boards": [
+        "capacity-model",
+        "queue-model"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c80-power-on-restart",
+      "schemaValid": true,
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "boards": [
+        "causal-graph",
+        "state-trace"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c81-lost-ack",
+      "schemaValid": true,
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "boards": [
+        "counterfactual-tree",
+        "provenance-chain"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c82-closed-network-device",
+      "schemaValid": true,
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "boards": [
+        "network-topology",
+        "interval-logic"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c83-two-unloads",
+      "schemaValid": true,
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "boards": [
+        "material-balance",
+        "provenance-chain"
+      ],
+      "replayBeats": 6
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "schemaValid": true,
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "boards": [
+        "causal-graph",
+        "interval-logic",
+        "counterfactual-tree"
+      ],
+      "replayBeats": 8
+    }
+  ],
+  "requiredFiles": [
+    {
+      "path": "docs/v2.6-precache.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.6-browser-matrix.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.6-visual-regression.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.6-static-performance.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.6-security-scan.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.6-save-compatibility.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.6-experience-audit.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.6-content-difference.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.6-release-artifacts.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.6-internal-rc.md",
+      "exists": true
+    },
+    {
+      "path": "dist/turtle-soup-v2.6-internal-rc-web-pwa.zip",
+      "exists": true
+    }
+  ],
+  "reports": [
+    {
+      "path": "docs/v2.6-browser-matrix.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.6-visual-regression.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.6-static-performance.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.6-security-scan.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.6-save-compatibility.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.6-experience-audit.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.6-content-difference.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.6-release-artifacts.json",
+      "passed": true
+    }
+  ],
+  "historicalArtifacts": [
+    {
+      "version": "v1.8",
+      "file": "dist/turtle-soup-v1.8-internal-rc-web-pwa.zip",
+      "expected": "43b6dff6b70abec6a74788bb28fba6f7301eb91dd892818584c82f48fc88d30d",
+      "actual": "43b6dff6b70abec6a74788bb28fba6f7301eb91dd892818584c82f48fc88d30d",
+      "unchanged": true
+    },
+    {
+      "version": "v1.9",
+      "file": "dist/turtle-soup-v1.9-internal-rc-web-pwa.zip",
+      "expected": "c3c074e1170ca2efd7db0b3c0437873dc7d8633074ab4ff4c62c5b7910a8a6fc",
+      "actual": "c3c074e1170ca2efd7db0b3c0437873dc7d8633074ab4ff4c62c5b7910a8a6fc",
+      "unchanged": true
+    },
+    {
+      "version": "v2.0",
+      "file": "dist/turtle-soup-v2.0-internal-rc-web-pwa.zip",
+      "expected": "76e8d237acdc94f99f8cf48ca25bc8f1b22b6bdc86ce2a74153700d290a27273",
+      "actual": "76e8d237acdc94f99f8cf48ca25bc8f1b22b6bdc86ce2a74153700d290a27273",
+      "unchanged": true
+    },
+    {
+      "version": "v2.1",
+      "file": "dist/turtle-soup-v2.1-internal-rc-web-pwa.zip",
+      "expected": "af82f2ea2c7c29f4d934726afd96be5319b68693dcb9ed61747d36e784784929",
+      "actual": "af82f2ea2c7c29f4d934726afd96be5319b68693dcb9ed61747d36e784784929",
+      "unchanged": true
+    },
+    {
+      "version": "v2.2",
+      "file": "dist/turtle-soup-v2.2-internal-rc-web-pwa.zip",
+      "expected": "730a4364fbde1520214f00fc9afdf5f6605259359e695498486e83da35b6b937",
+      "actual": "730a4364fbde1520214f00fc9afdf5f6605259359e695498486e83da35b6b937",
+      "unchanged": true
+    },
+    {
+      "version": "v2.3",
+      "file": "dist/turtle-soup-v2.3-internal-rc-web-pwa.zip",
+      "expected": "e88a0b12d9437cd3c9e3d94bce81481756629ae19439cfd93ed406f45586f9d4",
+      "actual": "e88a0b12d9437cd3c9e3d94bce81481756629ae19439cfd93ed406f45586f9d4",
+      "unchanged": true
+    },
+    {
+      "version": "v2.4",
+      "file": "dist/turtle-soup-v2.4-internal-rc-web-pwa.zip",
+      "expected": "58b4b4f140cbcd959b3578037cbe94894491204d03cbf923ca648f1f927db25f",
+      "actual": "58b4b4f140cbcd959b3578037cbe94894491204d03cbf923ca648f1f927db25f",
+      "unchanged": true
+    },
+    {
+      "version": "v2.5",
+      "file": "dist/turtle-soup-v2.5-internal-rc-web-pwa.zip",
+      "expected": "78d1a2b3168a729895734c5858c0415c459661f75ab8445bfaf14c0d514d5eaf",
+      "actual": "78d1a2b3168a729895734c5858c0415c459661f75ab8445bfaf14c0d514d5eaf",
+      "unchanged": true
+    }
+  ],
+  "passed": true,
+  "qualification": "v2.6 hardens the investigation workbench and navigation while preserving frozen case truth, hashes, proof certificates and schema-one saves. Automation does not establish fun, comprehension or market fit."
+}
