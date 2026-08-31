@@ -22,6 +22,7 @@ import styles from "./investigation-shell.module.css";
 
 type Workspace = "scene" | "questions" | "evidence" | "theory";
 type TheoryStep = "claim" | "board" | "chain" | "proof";
+type SettingsSection = "experience" | "ai" | "data";
 const DeferredPanel = () => <div className={styles.deferredPanel} role="status" aria-label="正在准备调查工具"><span aria-hidden="true" /><b>正在准备这一区域…</b><small>你的调查状态不会改变</small></div>;
 const EvidenceInspector = dynamic(() => import("./evidence-inspector").then((module) => module.EvidenceInspector), { loading: DeferredPanel });
 const ReasoningBoard = dynamic(() => import("./reasoning-board").then((module) => module.ReasoningBoard), { loading: DeferredPanel });
@@ -170,8 +171,7 @@ export function InvestigationShell(props: { projection: PlayerProjection; events
   return <main id="main-content" tabIndex={-1} className={styles.game} data-high-contrast={highContrast || undefined} data-reduced-motion={reducedMotion || undefined} style={{ "--case-accent": projection.case.presentation.accent } as CSSProperties}>
     <header className={styles.topbar} inert={settingsOpen || undefined}><Link href="/" prefetch={false}>← 全部案件</Link><div><small>THE BLACK SOUP · {code.toUpperCase()}</small><h1>{projection.case.title}</h1></div><nav><span>{props.online ? "离线可玩" : "离线模式"} · {props.saveState === "saving" ? "保存中" : props.saveState === "error" ? "保存失败" : "已保存"}</span><button ref={settingsTriggerRef} onClick={() => setSettingsOpen(true)}>设置</button></nav></header>
     <StorageRecovery issue={props.storageIssue} save={props.latestSave} onRetry={props.onRetrySave} />
-    <div className={styles.feedback} role="status" aria-live="polite">{projection.solved ? "证据链闭合。你已经证明了事件如何发生。" : statusText(events, props.restoreStatus)}</div>
-    <NextStepCue projection={projection} active={active} workspace={workspace} open={open} />
+    <NextStepCue projection={projection} active={active} workspace={workspace} events={events} restoreStatus={props.restoreStatus} open={open} />
     <nav className={styles.tabs} aria-label="调查工作区" inert={settingsOpen || undefined}>{TABS.map((tab) => <button key={tab.id} aria-keyshortcuts={tab.shortcut} aria-pressed={workspace === tab.id} onClick={() => open(tab.id)}><b>{tab.label}<kbd>{tab.shortcut}</kbd></b><small>{tab.help}</small></button>)}</nav>
     <div className={styles.layout} inert={settingsOpen || undefined}><section className={styles.workarea}>
       {workspace === "scene" && <SceneWorkspace projection={projection} sceneDesktop={sceneDesktop} sceneMobile={sceneMobile} send={send} open={open} muted={muted} />}
@@ -183,7 +183,7 @@ export function InvestigationShell(props: { projection: PlayerProjection; events
   </main>;
 }
 
-function NextStepCue({ projection, active, workspace, open }: { projection: PlayerProjection; active: PlayerProjection["theoryDrafts"][number]; workspace: Workspace; open: (workspace: Workspace) => void }) {
+function NextStepCue({ projection, active, workspace, events, restoreStatus, open }: { projection: PlayerProjection; active: PlayerProjection["theoryDrafts"][number]; workspace: Workspace; events: GameEvent[]; restoreStatus?: RestoreStatus; open: (workspace: Workspace) => void }) {
   const asked = projection.transcript.length > 0;
   const inspected = hasExaminedEvidence(projection);
   const structured = active.eventIds.length > 0 || active.evidenceIds.length > 0 || projection.reasoningBoards.some((board) => board.slots.some((slot) => slot.itemId));
@@ -197,10 +197,12 @@ function NextStepCue({ projection, active, workspace, open }: { projection: Play
           ? { workspace: "theory", label: "开始组织你的解释", detail: "用自己的话总结，再把事件和证据放进证明。" }
           : { workspace: "theory", label: "继续补全并提交证明", detail: projection.canSubmit ? "当前结构已可提交；错误不会让调查不可逆。" : "先补齐事件、证据或推理板中的空位。" };
   const latest = projection.transcript.at(-1);
-  return <section className={styles.nextCue} aria-label="调查进度" aria-live="polite">
+  const feedback = projection.solved ? "证据链闭合。你已经证明了事件如何发生。" : statusText(events, restoreStatus);
+  return <section className={styles.nextCue} aria-label="调查进度">
     <ol><li data-done={asked || undefined}>1 问事实</li><li data-done={inspected || undefined}>2 查证据</li><li data-done={structured || projection.solved || undefined}>3 做证明</li></ol>
     <div className={styles.nextCueCopy}><b>{next.label}</b><span>{next.detail}</span>{latest && !projection.solved && <small>最近验证：{latest.interpretedAs}</small>}</div>
     {workspace === next.workspace ? <span className={styles.currentCue}>当前区域</span> : <button type="button" onClick={() => open(next.workspace)}>前往</button>}
+    <p className={styles.nextCueStatus} role="status"><b>刚刚发生</b><span>{feedback}</span></p>
   </section>;
 }
 
@@ -301,8 +303,43 @@ function Notebook({ projection, summary, setSummary, workspace, open }: { projec
 
 function SettingsPanel({ onClose, muted, setMuted, reducedMotion, setReducedMotion, highContrast, setHighContrast, router, host, diagnostics, issueRecording, setIssueRecording, issues, setIssues, funGate }: { onClose: () => void; muted: boolean; setMuted: (v: boolean) => void; reducedMotion: boolean; setReducedMotion: (v: boolean) => void; highContrast: boolean; setHighContrast: (v: boolean) => void; router: ReturnType<typeof useQuestionRouter>; host: ReturnType<typeof useHostRewrite>; diagnostics: ReturnType<typeof useLocalDiagnostics>; issueRecording: boolean; setIssueRecording: (v: boolean) => void; issues: ExperienceIssueRecord[]; setIssues: Dispatch<SetStateAction<ExperienceIssueRecord[]>>; funGate: ReturnType<typeof useFunGateSession> }) {
   const panelRef = useRef<HTMLElement>(null);
+  const [section, setSection] = useState<SettingsSection>("experience");
+  const sections: Array<{ id: SettingsSection; label: string; detail: string }> = [
+    { id: "experience", label: "体验", detail: "声音与显示" },
+    { id: "ai", label: "AI", detail: "可选语言桥" },
+    { id: "data", label: "数据", detail: "本地导出" },
+  ];
   useEffect(() => { const timer = requestAnimationFrame(() => panelRef.current?.querySelector<HTMLElement>("button, input, select, textarea")?.focus()); return () => cancelAnimationFrame(timer); }, []);
   useEffect(() => { const escape = (event: KeyboardEvent) => { if (event.key === "Escape") { event.preventDefault(); onClose(); } }; document.addEventListener("keydown", escape); return () => document.removeEventListener("keydown", escape); }, [onClose]);
   const handleKey = (event: React.KeyboardEvent<HTMLElement>) => { if (event.key === "Escape") { event.preventDefault(); onClose(); return; } if (event.key !== "Tab" || !panelRef.current) return; const items = [...panelRef.current.querySelectorAll<HTMLElement>('button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [href], [tabindex]:not([tabindex="-1"])')].filter((item) => item.offsetParent !== null); if (!items.length) return; const first = items[0], last = items.at(-1)!; if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); } else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); } };
-  return <div className={styles.settingsBackdrop} role="presentation" onMouseDown={(e) => e.target === e.currentTarget && onClose()}><aside ref={panelRef} className={styles.settings} role="dialog" aria-modal="true" aria-label="调查设置" onKeyDown={handleKey}><header><h2>调查设置</h2><button onClick={onClose} aria-label="关闭设置">×</button></header><label className={styles.toggle}><span><b>静音</b><small>声音不包含必要线索</small></span><input type="checkbox" checked={muted} onChange={(e) => setMuted(e.target.checked)} /></label><label className={styles.toggle}><span><b>减少动态</b></span><input type="checkbox" checked={reducedMotion} onChange={(e) => setReducedMotion(e.target.checked)} /></label><label className={styles.toggle}><span><b>高对比</b></span><input type="checkbox" checked={highContrast} onChange={(e) => setHighContrast(e.target.checked)} /></label><QuestionRouterControls settings={router.settings} apiKey={router.apiKey} status={router.status} message={router.message} onSettings={router.setSettings} onKey={router.setApiKey} onTest={() => void router.test()} onClear={router.clearSession} /><HostRewriteControls settings={host.settings} status={host.status} message={host.message} onChange={host.setSettings} onClear={host.clearCache} /><section className={styles.localTools}><h3>本地测试与诊断</h3><div className={styles.funGateSection}><h4>体验记录（可选）</h4><p>只在你主动打开时显示匿名聚合指标，不影响正常调查。</p><FunGateTools report={funGate.report} onHint={funGate.markHintUsed} onExport={funGate.exportSession} /></div><label className={styles.toggle}><span><b>聚合诊断</b><small>不记录问题原文</small></span><input type="checkbox" checked={diagnostics.recording} onChange={(e) => diagnostics.toggle(e.target.checked)} /></label><label className={styles.toggle}><span><b>临时记录交互问题</b><small>只保留本次会话</small></span><input type="checkbox" checked={issueRecording} onChange={(e) => setIssueRecording(e.target.checked)} /></label>{issueRecording && <div className={styles.issueList}>{issues.map((issue) => <div key={issue.id}><span>{issue.path} · {issue.rawQuestion}</span><button onClick={() => setIssues((list) => list.filter((x) => x.id !== issue.id))}>删除</button></div>)}<nav><button onClick={() => downloadExperienceIssues(issues, "json")}>导出问题 JSON</button><button onClick={() => downloadExperienceIssues(issues, "csv")}>导出问题 CSV</button><button onClick={() => setIssues([])}>清空</button></nav></div>}<div className={styles.diagnosticActions}><button onClick={() => void diagnostics.exportSessions("json")}>导出诊断 JSON</button><button onClick={() => void diagnostics.exportSessions("csv")}>导出诊断 CSV</button><button onClick={() => void diagnostics.clear()}>清空诊断</button></div></section></aside></div>;
+  return <div className={styles.settingsBackdrop} role="presentation" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
+    <aside ref={panelRef} className={styles.settings} role="dialog" aria-modal="true" aria-label="调查设置" onKeyDown={handleKey}>
+      <header><div><small>只影响这台设备</small><h2>调查设置</h2></div><button onClick={onClose} aria-label="关闭设置">×</button></header>
+      <nav className={styles.settingsTabs} role="tablist" aria-label="设置类别">{sections.map((item, index) => <button id={`settings-tab-${item.id}`} key={item.id} role="tab" aria-selected={section === item.id} aria-controls={`settings-panel-${item.id}`} tabIndex={section === item.id ? 0 : -1} onClick={() => setSection(item.id)} onKeyDown={(event) => {
+        const direction = event.key === "ArrowRight" || event.key === "ArrowDown" ? 1 : event.key === "ArrowLeft" || event.key === "ArrowUp" ? -1 : 0;
+        const nextIndex = event.key === "Home" ? 0 : event.key === "End" ? sections.length - 1 : direction ? (index + direction + sections.length) % sections.length : -1;
+        if (nextIndex < 0) return;
+        event.preventDefault(); const next = sections[nextIndex]; setSection(next.id); requestAnimationFrame(() => document.getElementById(`settings-tab-${next.id}`)?.focus());
+      }}><b>{item.label}</b><small>{item.detail}</small></button>)}</nav>
+      {section === "experience" && <section id="settings-panel-experience" role="tabpanel" aria-labelledby="settings-tab-experience" className={styles.settingsPanel}>
+        <header><small>阅读与操作</small><h3>让调查适合你的设备</h3><p>这些设置不会改变线索、答案或证明结果。</p></header>
+        <label className={styles.toggle}><span><b>静音</b><small>声音不包含必要线索</small></span><input type="checkbox" checked={muted} onChange={(e) => setMuted(e.target.checked)} /></label>
+        <label className={styles.toggle}><span><b>减少动态</b><small>关闭工作区切换动画</small></span><input type="checkbox" checked={reducedMotion} onChange={(e) => setReducedMotion(e.target.checked)} /></label>
+        <label className={styles.toggle}><span><b>高对比</b><small>加强边框与辅助文字</small></span><input type="checkbox" checked={highContrast} onChange={(e) => setHighContrast(e.target.checked)} /></label>
+        <div className={styles.offlinePromise}><b>始终可以离线完成</b><p>AI、声音和诊断全部关闭时，84 案仍能从开场完成到证据回放。</p></div>
+      </section>}
+      {section === "ai" && <section id="settings-panel-ai" role="tabpanel" aria-labelledby="settings-tab-ai" className={styles.settingsPanel}>
+        <QuestionRouterControls settings={router.settings} apiKey={router.apiKey} status={router.status} message={router.message} onSettings={router.setSettings} onKey={router.setApiKey} onTest={() => void router.test()} onClear={router.clearSession} />
+        <details className={styles.settingsDisclosure}><summary>主持措辞（高级，可选）</summary><p>只润色已经确定的回答，不参与理解问题或判断真相。</p><HostRewriteControls settings={host.settings} status={host.status} message={host.message} onChange={host.setSettings} onClear={host.clearCache} /></details>
+      </section>}
+      {section === "data" && <section id="settings-panel-data" role="tabpanel" aria-labelledby="settings-tab-data" className={`${styles.settingsPanel} ${styles.localTools}`}>
+        <header><small>只留在本机</small><h3>测试与诊断</h3><p>正常游玩不需要打开或导出这里的任何内容。</p></header>
+        <div className={styles.funGateSection}><h4>体验记录（可选）</h4><p>只显示匿名聚合指标，不影响正常调查。</p><FunGateTools report={funGate.report} onHint={funGate.markHintUsed} onExport={funGate.exportSession} /></div>
+        <label className={styles.toggle}><span><b>聚合诊断</b><small>不记录问题原文</small></span><input type="checkbox" checked={diagnostics.recording} onChange={(e) => diagnostics.toggle(e.target.checked)} /></label>
+        <label className={styles.toggle}><span><b>临时记录交互问题</b><small>只保留本次会话</small></span><input type="checkbox" checked={issueRecording} onChange={(e) => setIssueRecording(e.target.checked)} /></label>
+        {issueRecording && <div className={styles.issueList}>{issues.map((issue) => <div key={issue.id}><span>{issue.path} · {issue.rawQuestion}</span><button onClick={() => setIssues((list) => list.filter((x) => x.id !== issue.id))}>删除</button></div>)}<nav><button onClick={() => downloadExperienceIssues(issues, "json")}>导出问题 JSON</button><button onClick={() => downloadExperienceIssues(issues, "csv")}>导出问题 CSV</button><button onClick={() => setIssues([])}>清空</button></nav></div>}
+        <div className={styles.diagnosticActions}><button onClick={() => void diagnostics.exportSessions("json")}>导出诊断 JSON</button><button onClick={() => void diagnostics.exportSessions("csv")}>导出诊断 CSV</button><button onClick={() => void diagnostics.clear()}>清空诊断</button></div>
+      </section>}
+    </aside>
+  </div>;
 }

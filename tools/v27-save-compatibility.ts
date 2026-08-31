@@ -4,9 +4,12 @@ import { projectPlayerState, replayCommands, validateCompatibleSave } from "../p
 import { createCanonicalSave } from "./lib/canonical-save.ts";
 import { loadCaseFile, loadReleaseContent } from "./lib/release-content.ts";
 
-const root = resolve(process.argv[2] ?? ".");
-const baseline = loadReleaseContent(root, "v2.6-internal-rc");
-const current = loadReleaseContent(root, "v2.7-internal-rc");
+const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
+const v28 = process.argv.includes("--v28");
+const version = v28 ? "2.8" : "2.7";
+const profileId = v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
+const baseline = loadReleaseContent(root, v28 ? "v2.7-internal-rc" : "v2.6-internal-rc");
+const current = loadReleaseContent(root, profileId);
 const cases = current.entries.map((entry) => {
   const file = loadCaseFile(entry);
   const save = createCanonicalSave(file);
@@ -24,7 +27,7 @@ const frozen = baseline.entries.map((entry) => {
 const source = loadCaseFile(baseline.entries[0]);
 const target = current.entries.find((entry) => entry.id !== source.id)!;
 const crossCaseRefusal = !validateCompatibleSave(createCanonicalSave(source), target.id, { caseVersion: target.contentVersion, contentHash: target.canonicalHash }).ok;
-const report = { reportVersion: "2.7", releaseProfile: "v2.7-internal-rc", generatedAt: new Date().toISOString(), status: "internal-rc / human-evaluation-pending", humanParticipants: 0, founderExploratorySessions: 1, saveSchemaVersion: 1, caseCount: cases.length, frozen, crossCaseRefusal, cases, passed: cases.length === 84 && frozen.length === 84 && frozen.every((item) => item.canonicalHashUnchanged && item.contentVersionUnchanged && item.casePathUnchanged) && crossCaseRefusal && cases.every((item) => item.passed) };
-writeFileSync(resolve(root, "docs/v2.7-save-compatibility.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
+const report = { reportVersion: version, releaseProfile: profileId, generatedAt: new Date().toISOString(), status: "internal-rc / human-evaluation-pending", humanParticipants: 0, founderExploratorySessions: 1, saveSchemaVersion: 1, caseCount: cases.length, frozen, crossCaseRefusal, cases, passed: cases.length === 84 && frozen.length === 84 && frozen.every((item) => item.canonicalHashUnchanged && item.contentVersionUnchanged && item.casePathUnchanged) && crossCaseRefusal && cases.every((item) => item.passed) };
+writeFileSync(resolve(root, `docs/v${version}-save-compatibility.json`), `${JSON.stringify(report, null, 2)}\n`, "utf8");
 console.log(JSON.stringify({ caseCount: cases.length, frozen: frozen.length, crossCaseRefusal, passed: report.passed }, null, 2));
 if (!report.passed) process.exitCode = 1;

@@ -4,9 +4,12 @@ import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from "no
 import { extname, resolve } from "node:path";
 import { chromium } from "playwright";
 
-const root = resolve(process.argv[2] ?? ".");
+const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
+const v28 = process.argv.includes("--v28");
+const version = v28 ? "2.8" : "2.7";
+const profileId = v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
 const outDir = resolve(root, "apps/web/out");
-const shotDir = resolve(root, "output/playwright/v27");
+const shotDir = resolve(root, `output/playwright/v${version.replace(".", "")}`);
 mkdirSync(shotDir, { recursive: true });
 const mime: Record<string, string> = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".json": "application/json", ".webmanifest": "application/manifest+json", ".svg": "image/svg+xml", ".webp": "image/webp", ".png": "image/png", ".ico": "image/x-icon" };
 function staticPath(url: string) {
@@ -41,6 +44,10 @@ try {
     await settingsButton.click();
     const dialog = page.getByRole("dialog", { name: "调查设置" });
     await dialog.waitFor({ state: "visible" });
+    const settingsTabs = dialog.getByRole("tab");
+    const settingsTabCount = await settingsTabs.count();
+    const experienceSelected = settingsTabCount > 0 ? await dialog.getByRole("tab", { name: /^体验/ }).getAttribute("aria-selected") === "true" : true;
+    if (settingsTabCount > 0) await dialog.getByRole("tab", { name: /^AI/ }).click();
     await dialog.getByRole("button", { name: /^OpenAI/ }).waitFor({ state: "visible", timeout: 5_000 });
     const presetsVisible = await Promise.all(["OpenAI", "Ollama", "llama.cpp"].map((label) => dialog.getByRole("button", { name: new RegExp(`^${label.replace(".", "\\.")}`) }).isVisible().catch(() => false)));
     await dialog.getByRole("button", { name: /^Ollama/ }).click();
@@ -53,6 +60,8 @@ try {
     const remoteWithoutKeyDisabled = await testButton.isDisabled();
     await dialog.getByRole("button", { name: /^Ollama/ }).click();
     const axe = (await new AxeBuilder({ page }).include('[role="dialog"]').analyze()).violations.filter((item) => item.impact === "serious" || item.impact === "critical").map((item) => item.id);
+    let dataToolsVisible = true;
+    if (settingsTabCount > 0) { await dialog.getByRole("tab", { name: /^数据/ }).click(); dataToolsVisible = await dialog.getByText("体验记录（可选）", { exact: true }).isVisible().catch(() => false); }
     await page.keyboard.press("Escape");
     const closed = await dialog.isHidden();
     await page.waitForFunction(() => document.activeElement?.textContent?.trim() === "设置", undefined, { timeout: 2_000 }).catch(() => undefined);
@@ -63,13 +72,14 @@ try {
     const homeConfigured = await configuredStatus.isVisible().catch(() => false);
     const storage = await page.evaluate(() => ({ localKeys: Object.keys(localStorage), sessionKeys: Object.keys(sessionStorage), endpoint: localStorage.getItem("black-soup:ai-router-endpoint:v1") }));
     const overflow = await page.evaluate(() => Math.max(0, document.documentElement.scrollWidth - document.documentElement.clientWidth));
-    const passed = topbarTestModeCount === 0 && presetsVisible.every(Boolean) && endpoint === "http://localhost:11434/v1/chat/completions" && localNoKeyCopy && localTestEnabled && remoteWithoutKeyDisabled && axe.length === 0 && closed && focusReturned && homeConfigured && !storage.localKeys.includes("black-soup:ai-router-key:v1") && !storage.sessionKeys.includes("black-soup:ai-router-key:v1") && overflow <= 1 && consoleErrors.length === 0;
-    traces.push({ viewport: `${viewport.width}x${viewport.height}`, topbarTestModeCount, presetsVisible, endpoint, localNoKeyCopy, localTestEnabled, remoteWithoutKeyDisabled, axeSeriousCritical: axe, dialogClosedWithEscape: closed, focusReturned, homeConfigured, storage, overflow, consoleErrors, passed });
+    const progressiveSettings = v28 ? settingsTabCount === 3 && experienceSelected && dataToolsVisible : true;
+    const passed = topbarTestModeCount === 0 && progressiveSettings && presetsVisible.every(Boolean) && endpoint === "http://localhost:11434/v1/chat/completions" && localNoKeyCopy && localTestEnabled && remoteWithoutKeyDisabled && axe.length === 0 && closed && focusReturned && homeConfigured && !storage.localKeys.includes("black-soup:ai-router-key:v1") && !storage.sessionKeys.includes("black-soup:ai-router-key:v1") && overflow <= 1 && consoleErrors.length === 0;
+    traces.push({ viewport: `${viewport.width}x${viewport.height}`, topbarTestModeCount, settingsTabCount, experienceSelected, dataToolsVisible, progressiveSettings, presetsVisible, endpoint, localNoKeyCopy, localTestEnabled, remoteWithoutKeyDisabled, axeSeriousCritical: axe, dialogClosedWithEscape: closed, focusReturned, homeConfigured, storage, overflow, consoleErrors, passed });
     await context.close();
   }
   await browser.close();
-  const report = { reportVersion: "2.7", releaseProfile: "v2.7-internal-rc", generatedAt: new Date().toISOString(), status: "internal-rc / human-evaluation-pending", humanParticipants: 0, founderExploratorySessions: 1, traces, passed: traces.every((trace) => trace.passed), qualification: "This focused browser audit verifies player-facing AI setup and settings focus behavior. It does not contact a model endpoint or establish answer quality." };
-  writeFileSync(resolve(root, "docs/v2.7-player-setup.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  const report = { reportVersion: version, releaseProfile: profileId, generatedAt: new Date().toISOString(), status: "internal-rc / human-evaluation-pending", humanParticipants: 0, founderExploratorySessions: 1, traces, passed: traces.every((trace) => trace.passed), qualification: "This focused browser audit verifies player-facing AI setup and settings focus behavior. It does not contact a model endpoint or establish answer quality." };
+  writeFileSync(resolve(root, `docs/v${version}-player-setup.json`), `${JSON.stringify(report, null, 2)}\n`, "utf8");
   console.log(JSON.stringify({ traces: traces.length, passed: report.passed }, null, 2));
   if (!report.passed) process.exitCode = 1;
 } finally {

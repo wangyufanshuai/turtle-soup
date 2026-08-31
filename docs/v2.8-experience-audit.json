@@ -1,0 +1,39 @@
+{
+  "reportVersion": "2.8",
+  "releaseProfile": "v2.8-internal-rc",
+  "generatedAt": "2026-08-31T09:05:09.507Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "scope": "guided investigation hierarchy and progressive settings disclosure",
+  "contracts": {
+    "unifiedShell": true,
+    "directChineseWorkspaces": true,
+    "settingsOnlyFunGate": true,
+    "reversibleQuestion": true,
+    "explicitActionFeedback": true,
+    "settingsFocusTrap": true,
+    "aiPresets": true,
+    "aiFailureCopy": true,
+    "homeRecentAndSeasonTabs": true,
+    "compactGuidance": true,
+    "settingsSections": true,
+    "advancedHostRewriteCollapsed": true
+  },
+  "sourceArtifacts": [
+    {
+      "path": "apps\\web\\components\\investigation-shell.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\case-select.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\question-router-controls.tsx",
+      "exists": true
+    }
+  ],
+  "passed": true,
+  "qualification": "Static contracts verify intended interaction affordances. They do not establish fun, comprehension, pacing or market fit."
+}
