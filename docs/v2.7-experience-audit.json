@@ -1,0 +1,36 @@
+{
+  "reportVersion": "2.7",
+  "releaseProfile": "v2.7-internal-rc",
+  "generatedAt": "2026-08-31T03:01:07.874Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "scope": "player-first navigation, local AI setup clarity and deterministic action feedback",
+  "contracts": {
+    "unifiedShell": true,
+    "directChineseWorkspaces": true,
+    "settingsOnlyFunGate": true,
+    "reversibleQuestion": true,
+    "explicitActionFeedback": true,
+    "settingsFocusTrap": true,
+    "aiPresets": true,
+    "aiFailureCopy": true,
+    "homeRecentAndSeasonTabs": true
+  },
+  "sourceArtifacts": [
+    {
+      "path": "apps\\web\\components\\investigation-shell.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\case-select.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\question-router-controls.tsx",
+      "exists": true
+    }
+  ],
+  "passed": true,
+  "qualification": "Static contracts verify intended interaction affordances. They do not establish fun, comprehension, pacing or market fit."
+}

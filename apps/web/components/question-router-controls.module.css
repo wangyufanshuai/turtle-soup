@@ -4,8 +4,14 @@
 .panel h3 { margin:.25rem 0 0; color:var(--paper); font: 500 1rem var(--display); }
 .panel header > span { color:var(--acid); }
 .explain, .status { margin:0; color:var(--muted); font-size:.76rem; line-height:1.55; }
+.presets { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.4rem; margin:0; padding:.7rem; border:1px solid var(--line); }
+.presets legend { padding:0 .35rem; color:var(--muted); font:.66rem var(--mono); letter-spacing:.08em; }
+.presets button { display:grid; gap:.16rem; min-width:0; padding:.6rem; text-align:left; border:1px solid var(--line); background:var(--panel-deep); color:var(--paper); cursor:pointer; }
+.presets button[aria-pressed="true"] { border-color:var(--acid); background:color-mix(in srgb,var(--acid) 7%,var(--panel-deep)); }
+.presets b { font-size:.76rem; }.presets small,.fieldHint { color:var(--muted); font-size:.65rem; line-height:1.35; }
 .panel label:not(.toggle) { display:grid; gap:.3rem; }
 .panel input, .panel select { width:100%; min-height:2.35rem; border:1px solid var(--line-strong); background:var(--panel-deep); color:var(--ink); padding:.45rem .55rem; }
+.panel input[aria-invalid="true"] { border-color:var(--danger); }
 .toggle { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.65rem 0; }
 .toggle b, .toggle small { display:block; }
 .toggle small { margin-top:.2rem; color:var(--muted); font-size:.72rem; }
@@ -13,4 +19,4 @@
 .actions { display:flex; flex-wrap:wrap; gap:.5rem; }
 .actions button { border:1px solid var(--line-strong); background:transparent; color:var(--paper); padding:.48rem .6rem; cursor:pointer; }
 .actions button:disabled { opacity:.45; cursor:not-allowed; }
-@media (max-width:700px) { .actions button { min-height:44px; } }
+@media (max-width:700px) { .actions button { min-height:44px; }.presets{grid-template-columns:1fr} }

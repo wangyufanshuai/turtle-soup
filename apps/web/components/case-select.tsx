@@ -7,6 +7,7 @@ import { CASE_CATALOG, RELEASE_PROFILE } from "@/lib/case-catalog";
 import { listCaseSaves } from "@/lib/save-store";
 import { listMastery, masterySummary } from "@/lib/mastery-store";
 import { GOLDEN_PATH } from "@/lib/golden-experience";
+import { isLocalHostEndpoint } from "@/lib/ai-provider-defaults";
 import styles from "./case-select.module.css";
 import { ArchiveTools } from "./archive-tools";
 
@@ -35,8 +36,9 @@ function readAiStatus() {
   if (!navigator.onLine) return "离线可玩";
   try {
     const settings = JSON.parse(localStorage.getItem("black-soup:ai-router-settings:v1") ?? "null") as { enabled?: boolean } | null;
+    const endpoint = localStorage.getItem("black-soup:ai-router-endpoint:v1") ?? "";
     const key = sessionStorage.getItem("black-soup:ai-router-key:v1");
-    return settings?.enabled && key ? "已连接" : "未配置";
+    return settings?.enabled && (Boolean(key) || isLocalHostEndpoint(endpoint)) ? "已配置" : "未配置";
   } catch { return "未配置"; }
 }
 

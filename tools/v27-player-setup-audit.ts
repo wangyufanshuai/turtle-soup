@@ -1,0 +1,77 @@
+import AxeBuilder from "@axe-core/playwright";
+import { createServer } from "node:http";
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { extname, resolve } from "node:path";
+import { chromium } from "playwright";
+
+const root = resolve(process.argv[2] ?? ".");
+const outDir = resolve(root, "apps/web/out");
+const shotDir = resolve(root, "output/playwright/v27");
+mkdirSync(shotDir, { recursive: true });
+const mime: Record<string, string> = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".json": "application/json", ".webmanifest": "application/manifest+json", ".svg": "image/svg+xml", ".webp": "image/webp", ".png": "image/png", ".ico": "image/x-icon" };
+function staticPath(url: string) {
+  const pathname = decodeURIComponent(new URL(url, "http://localhost").pathname);
+  const candidate = resolve(outDir, `.${pathname}`);
+  if (!candidate.toLowerCase().startsWith(outDir.toLowerCase())) return;
+  try { if (statSync(candidate).isDirectory()) { const index = resolve(candidate, "index.html"); return existsSync(index) ? index : undefined; } return candidate; } catch { return; }
+}
+const server = createServer((request, response) => {
+  const path = staticPath(request.url ?? "/");
+  if (!path) { response.writeHead(404, { "content-type": "text/plain" }); response.end("Not found"); return; }
+  response.writeHead(200, { "content-type": mime[extname(path).toLowerCase()] ?? "application/octet-stream", "cache-control": "no-cache" });
+  response.end(readFileSync(path));
+});
+await new Promise<void>((done, reject) => { server.once("error", reject); server.listen(0, "127.0.0.1", done); });
+const address = server.address();
+if (!address || typeof address === "string") throw new Error("v2.7 setup audit server failed");
+const base = `http://127.0.0.1:${address.port}`;
+
+try {
+  const browser = await chromium.launch();
+  const traces = [];
+  for (const viewport of [{ name: "desktop", width: 1440, height: 900, mobile: false }, { name: "mobile", width: 390, height: 844, mobile: true }]) {
+    const context = await browser.newContext({ viewport: { width: viewport.width, height: viewport.height }, isMobile: viewport.mobile, hasTouch: viewport.mobile, reducedMotion: "reduce", serviceWorkers: "block" });
+    const page = await context.newPage();
+    const consoleErrors: string[] = [];
+    page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(message.text()); });
+    await page.goto(`${base}/case/c61-missing-tape-turn/`, { waitUntil: "domcontentloaded", timeout: 20_000 });
+    await page.locator('nav[aria-label="调查工作区"]').waitFor({ state: "visible" });
+    const topbarTestModeCount = await page.locator("header").getByText("测试模式", { exact: true }).count();
+    const settingsButton = page.getByRole("button", { name: "设置", exact: true }).first();
+    await settingsButton.click();
+    const dialog = page.getByRole("dialog", { name: "调查设置" });
+    await dialog.waitFor({ state: "visible" });
+    await dialog.getByRole("button", { name: /^OpenAI/ }).waitFor({ state: "visible", timeout: 5_000 });
+    const presetsVisible = await Promise.all(["OpenAI", "Ollama", "llama.cpp"].map((label) => dialog.getByRole("button", { name: new RegExp(`^${label.replace(".", "\\.")}`) }).isVisible().catch(() => false)));
+    await dialog.getByRole("button", { name: /^Ollama/ }).click();
+    const endpoint = await dialog.locator('input[name="ai-question-routing-endpoint"]').inputValue();
+    const localNoKeyCopy = await dialog.getByText("本机端点：允许 HTTP，不要求 Key", { exact: true }).isVisible().catch(() => false);
+    const testButton = dialog.getByRole("button", { name: "测试连接", exact: true });
+    const localTestEnabled = await testButton.isEnabled();
+    await page.screenshot({ path: resolve(shotDir, `ai-settings-${viewport.name}.png`), fullPage: false });
+    await dialog.getByRole("button", { name: /^OpenAI/ }).click();
+    const remoteWithoutKeyDisabled = await testButton.isDisabled();
+    await dialog.getByRole("button", { name: /^Ollama/ }).click();
+    const axe = (await new AxeBuilder({ page }).include('[role="dialog"]').analyze()).violations.filter((item) => item.impact === "serious" || item.impact === "critical").map((item) => item.id);
+    await page.keyboard.press("Escape");
+    const closed = await dialog.isHidden();
+    await page.waitForFunction(() => document.activeElement?.textContent?.trim() === "设置", undefined, { timeout: 2_000 }).catch(() => undefined);
+    const focusReturned = await settingsButton.evaluate((node) => document.activeElement === node);
+    await page.goto(`${base}/`, { waitUntil: "domcontentloaded", timeout: 20_000 });
+    const configuredStatus = page.getByText("AI：已配置", { exact: true });
+    await configuredStatus.waitFor({ state: "visible", timeout: 2_000 }).catch(() => undefined);
+    const homeConfigured = await configuredStatus.isVisible().catch(() => false);
+    const storage = await page.evaluate(() => ({ localKeys: Object.keys(localStorage), sessionKeys: Object.keys(sessionStorage), endpoint: localStorage.getItem("black-soup:ai-router-endpoint:v1") }));
+    const overflow = await page.evaluate(() => Math.max(0, document.documentElement.scrollWidth - document.documentElement.clientWidth));
+    const passed = topbarTestModeCount === 0 && presetsVisible.every(Boolean) && endpoint === "http://localhost:11434/v1/chat/completions" && localNoKeyCopy && localTestEnabled && remoteWithoutKeyDisabled && axe.length === 0 && closed && focusReturned && homeConfigured && !storage.localKeys.includes("black-soup:ai-router-key:v1") && !storage.sessionKeys.includes("black-soup:ai-router-key:v1") && overflow <= 1 && consoleErrors.length === 0;
+    traces.push({ viewport: `${viewport.width}x${viewport.height}`, topbarTestModeCount, presetsVisible, endpoint, localNoKeyCopy, localTestEnabled, remoteWithoutKeyDisabled, axeSeriousCritical: axe, dialogClosedWithEscape: closed, focusReturned, homeConfigured, storage, overflow, consoleErrors, passed });
+    await context.close();
+  }
+  await browser.close();
+  const report = { reportVersion: "2.7", releaseProfile: "v2.7-internal-rc", generatedAt: new Date().toISOString(), status: "internal-rc / human-evaluation-pending", humanParticipants: 0, founderExploratorySessions: 1, traces, passed: traces.every((trace) => trace.passed), qualification: "This focused browser audit verifies player-facing AI setup and settings focus behavior. It does not contact a model endpoint or establish answer quality." };
+  writeFileSync(resolve(root, "docs/v2.7-player-setup.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  console.log(JSON.stringify({ traces: traces.length, passed: report.passed }, null, 2));
+  if (!report.passed) process.exitCode = 1;
+} finally {
+  await new Promise<void>((done) => server.close(() => done()));
+}

@@ -1,0 +1,9 @@
+TURTLE SOUP v2.7 · PLAYER-FIRST EXPERIENCE · INTERNAL RC
+
+84 deterministic cases (Season 1–5). This release clarifies setup, feedback and optional local AI routing.
+Status: internal-rc / human-evaluation-pending.
+Founder exploratory sessions: 1. Formal Fun Gate participants: 0.
+Canonical case truth, proof certificates, hashes and save schema remain frozen.
+Automation verifies consistency and engineering quality only; it does not prove fun, comprehension, retention or market fit.
+
+No network, account, analytics or remote AI is required to play offline.

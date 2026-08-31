@@ -1,5 +1,5 @@
 import type { AiAssistErrorCode, AiProviderSettings, QuestionRouteResult, QuestionRoutingContext } from "@turtle-soup/mystery-core";
-import { AI_INPUT_LIMITS, isAllowedAiEndpoint, readBoundedResponse, safeModel, safeSessionKey } from "./ai-provider-defaults.ts";
+import { AI_INPUT_LIMITS, isAllowedAiEndpoint, isLocalHostEndpoint, readBoundedResponse, safeModel, safeSessionKey } from "./ai-provider-defaults.ts";
 
 export { isAllowedAiEndpoint } from "./ai-provider-defaults.ts";
 
@@ -73,7 +73,7 @@ export function buildQuestionRoutingRequestBody(settings: AiProviderSettings, co
 export async function routeQuestion(settings: AiProviderSettings, context: QuestionRoutingContext, apiKey: string, signal?: AbortSignal): Promise<QuestionRouteResult> {
   if (!isAllowedAiEndpoint(settings.endpoint)) throw failure("network", "API 必须使用 HTTPS，或指向 localhost");
   const safeKey = safeSessionKey(apiKey);
-  if (!safeKey.trim()) throw failure("network", "尚未提供有效 API Key");
+  if (!safeKey.trim() && !isLocalHostEndpoint(settings.endpoint)) throw failure("network", "远程 API 尚未提供有效 Key");
   const model = safeModel(settings.model, "");
   if (!model) throw failure("invalid-schema", "模型名无效");
   const controller = new AbortController();
@@ -82,12 +82,14 @@ export async function routeQuestion(settings: AiProviderSettings, context: Quest
   signal?.addEventListener("abort", relayAbort, { once: true });
   if (signal?.aborted) controller.abort();
   try {
+    const headers: Record<string, string> = { "content-type": "application/json" };
+    if (safeKey.trim()) headers.authorization = `Bearer ${safeKey}`;
     const response = await fetch(settings.endpoint, {
       method: "POST",
       mode: "cors",
       credentials: "omit",
       cache: "no-store",
-      headers: { "content-type": "application/json", authorization: `Bearer ${safeKey}` },
+      headers,
       body: JSON.stringify(buildQuestionRoutingRequestBody({ ...settings, model }, context)),
       signal: controller.signal,
     });

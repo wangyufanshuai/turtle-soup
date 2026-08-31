@@ -1,0 +1,1277 @@
+{
+  "reportVersion": "2.7",
+  "releaseProfile": "v2.7-internal-rc",
+  "generatedAt": "2026-08-31T03:01:08.404Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "baselineProfile": "v2.6-internal-rc",
+  "baselineCaseCount": 84,
+  "currentCaseCount": 84,
+  "frozen": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c62-rope-not-shorter",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c63-ice-melts-first",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c64-uncracked-glass",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c65-twin-watermarks",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c66-still-weight",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c67-shared-badge",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c68-empty-seat-proof",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c69-third-minutes",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c70-grace-late-arrival",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c71-revoked-open-door",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c72-message-read-twice",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c73-phantom-exit",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c74-silent-footsteps",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c75-two-weather-photo",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c76-red-light-second",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c77-invisible-ninth-wire",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c78-sound-from-other-side",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c79-extra-queue-order",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c80-power-on-restart",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c81-lost-ack",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c82-closed-network-device",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c83-two-unloads",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "canonicalHashUnchanged": true,
+      "contentVersionUnchanged": true,
+      "casePathUnchanged": true
+    }
+  ],
+  "changes": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "canonicalHash": "sha256:c01-cold-room-knock-v1",
+      "events": 8,
+      "facts": 19,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c02-snow-route",
+      "canonicalHash": "sha256:c02-snow-route-v1",
+      "events": 8,
+      "facts": 13,
+      "evidence": 9,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "canonicalHash": "sha256:c03-second-shadow-v1",
+      "events": 9,
+      "facts": 14,
+      "evidence": 9,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "canonicalHash": "sha256:c04-unpostable-reply-v1",
+      "events": 8,
+      "facts": 12,
+      "evidence": 9,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "canonicalHash": "sha256:c05-third-lamp-v1",
+      "events": 8,
+      "facts": 12,
+      "evidence": 9,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "canonicalHash": "sha256:c06-nonexistent-ticket-v1",
+      "events": 8,
+      "facts": 11,
+      "evidence": 9,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c07-key-returns",
+      "canonicalHash": "sha256:c07-key-returns-v1",
+      "events": 8,
+      "facts": 11,
+      "evidence": 8,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "canonicalHash": "sha256:c08-unclaimed-recording-v1",
+      "events": 8,
+      "facts": 11,
+      "evidence": 8,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c09-rain-room",
+      "canonicalHash": "sha256:c09-rain-room-v1",
+      "events": 8,
+      "facts": 12,
+      "evidence": 9,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c10-single-ring",
+      "canonicalHash": "sha256:c10-single-ring-v1",
+      "events": 8,
+      "facts": 11,
+      "evidence": 8,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "canonicalHash": "sha256:c11-borrowed-signature-v1",
+      "events": 8,
+      "facts": 11,
+      "evidence": 8,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "canonicalHash": "sha256:c12-zero-floor-elevator-v1",
+      "events": 8,
+      "facts": 11,
+      "evidence": 8,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "canonicalHash": "sha256:c13-second-waterline-v1",
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "canonicalHash": "sha256:c14-moving-red-box-v1",
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "canonicalHash": "sha256:c15-sixth-panorama-v1",
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "canonicalHash": "sha256:c16-closed-door-handoff-v1",
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "canonicalHash": "sha256:c17-twelve-strikes-v1",
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "canonicalHash": "sha256:c18-lighter-sealed-crate-v1",
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "canonicalHash": "sha256:c19-fog-after-window-v1",
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "canonicalHash": "sha256:c20-fifth-worker-v1",
+      "events": 10,
+      "facts": 15,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "canonicalHash": "sha256:c21-missing-seven-minutes-v1",
+      "events": 12,
+      "facts": 17,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "canonicalHash": "sha256:c22-overloaded-bridge-v1",
+      "events": 12,
+      "facts": 17,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "canonicalHash": "sha256:c23-clean-air-sample-v1",
+      "events": 12,
+      "facts": 17,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "canonicalHash": "sha256:c24-turned-painting-v1",
+      "events": 12,
+      "facts": 17,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "canonicalHash": "sha256:f0b2ed2069fc10b0ce79f86ac9174a4b27b7bef1ce9ad322ad407755162ece6d",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "canonicalHash": "sha256:b71b41828d37dc0054e2237164cbc6b70957dd9159384bb26bf2cee4b3465f13",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "canonicalHash": "sha256:1f74deafc0608c61427571c5293c1f142c20f1f2cb4cd25cabd16cb86d4899c0",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "canonicalHash": "sha256:499377ccf98237c07017a09549c1db1b2468ff13dfc1cfec14a649bc5404b065",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "canonicalHash": "sha256:de08e447e9b3c0d5c6df0d072c973cce7b3ec41e4374be210c215daa04bf2eb7",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "canonicalHash": "sha256:1c429ccca850dcbdc207745d3b5f51aa7776417d1cb29b47a11b11c00f4fc9a5",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "canonicalHash": "sha256:1cd50d86090f06e67551aad5eb250a2bdc039f0f8e73d6d8d4e3f500d760eed2",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "canonicalHash": "sha256:fb909b46d284d9d1bdba066eb9c325c88edcdf26f7c4127d9bbfae15dd7871d0",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "canonicalHash": "sha256:a9e41dfe82f25351e28ff909da35dd24816f28768d1330db397b1b5fcdc4bde9",
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "canonicalHash": "sha256:4a681813f17e5b044e331d4258d4c14ff88c09c58d9643ed9aad11c54e53ef88",
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "canonicalHash": "sha256:8978a4ad427d2faa1677029ee390067ea40b55299165449296bbba144950c145",
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "canonicalHash": "sha256:785d1d2927e980a88d50ea82ecd92896ce6862fa5424c51f5c31a67296a592e5",
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "canonicalHash": "sha256:43d42046a74b38395edb1ae867d3bbb7c1e7e9f67e4651a4967c2498733d8423",
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "canonicalHash": "sha256:ee008cea7b16b59bec15e1035eaf83a51c457903e3085aa937f15c4e03bf0216",
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "canonicalHash": "sha256:bdbcc142d223db6433acb2c66d1f60c19e6d320158608a12bcffd34732f49431",
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "canonicalHash": "sha256:67a7a43acd64a43f2b272a524038cd6971b6feed30ef9f78cddd658f709ffa63",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "canonicalHash": "sha256:0f03c68ae5836371d340feb191874e5ba4416e81d1fef80189c23e8360b1ba1d",
+      "events": 11,
+      "facts": 17,
+      "evidence": 11,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "canonicalHash": "sha256:d345e58c5bfd1802425900bbba394ae26bad160989c72bd19af4a0195662f19f",
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "canonicalHash": "sha256:b62f3d79892166786eed51ef8d2bfa1c9490965aede7bad348461226f67b928b",
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "canonicalHash": "sha256:c443d50b1a230272f45c92eafbd403a2776e053dea7cdd6a54a26e6c6fbb20be",
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "canonicalHash": "sha256:1496b0ac0f39d7024dd52e148178738f923fd3db4ff885be2fc7ad217ecd3c79",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "canonicalHash": "sha256:174454209084af21392f0f6d3261a2884cecf1023fc53ead75511174eef39e2b",
+      "events": 11,
+      "facts": 17,
+      "evidence": 11,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "canonicalHash": "sha256:c8b3ac1cb6751d63822ff72013e3af5bd02d9cb2cbce77048210478a4a903e52",
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "canonicalHash": "sha256:f1f3562c7c69d00aa27ea3eb763ef33ead69bc6e39a57891d37be6fdbaef1948",
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "canonicalHash": "sha256:7c0ae01409e8f54ff61d04d21236154a94fdfe414f07f320bdb2bfb0f7705334",
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "canonicalHash": "sha256:d0da1e95d1504cf1a5a4160623cbe3c5ad0cff06fbdd476c62524e3d0da104b1",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "canonicalHash": "sha256:af63236b453adf13b08bf6f74ab6e91ae54dc9d3f90dc0624d8d319e6d4a80a1",
+      "events": 11,
+      "facts": 17,
+      "evidence": 11,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "canonicalHash": "sha256:d81f1576ab9dcc8328da8a19a9e7df46e3cde2bdb5eef8e65757937f6e1c9c04",
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "canonicalHash": "sha256:604913403f946cf92891763202c8d26c8ec47410d2ba39b51f807bd6ceea6566",
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "canonicalHash": "sha256:fc7e56efc45e243877af5bf6756733401475446d087c1082a72a690c95fd8e6d",
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "canonicalHash": "sha256:31a406e477a68828079e2727a41198d217448a67dd76a82b0883dd2e28e441fa",
+      "events": 10,
+      "facts": 16,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "canonicalHash": "sha256:764c7910a24003dedb61ae4d48fd01c3a5f992d6c027ac33fceeafdacffcefb8",
+      "events": 11,
+      "facts": 17,
+      "evidence": 11,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "canonicalHash": "sha256:aafe901d958dd2217f63184dbacfcad93047159812d289373c58503ae9cd1c34",
+      "events": 12,
+      "facts": 18,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "canonicalHash": "sha256:5c71bee224cd091017281133f536192a9480a65569c94182041921b921d45bb3",
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "canonicalHash": "sha256:6eeeb71c008a1d841c0292f86974615852c6fc6013dfd0da3e046a280aed430a",
+      "events": 14,
+      "facts": 20,
+      "evidence": 14,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "canonicalHash": "sha256:21b820f1b4c91def40e4ec5464965d88b2621d196d2e7bccb202aca9cf7c3a09",
+      "events": 13,
+      "facts": 19,
+      "evidence": 13,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "canonicalHash": "sha256:3adbf127e8fc3bad61c326463eb162b42bf013d721858b69aef0de5dc103821d",
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c62-rope-not-shorter",
+      "canonicalHash": "sha256:8b7da1015e8f9ad4fe3d62bca56ecfa07a2605b4db9b4877ccb3b187a3f22176",
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c63-ice-melts-first",
+      "canonicalHash": "sha256:ae8dde73e130f1b26297527adb3372919fc601c81fce10df2849b7e4fb9da3bb",
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c64-uncracked-glass",
+      "canonicalHash": "sha256:42f93eef734bafc0f384f11fbcdf693173262d438fcb336652e8cea9929c5d34",
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c65-twin-watermarks",
+      "canonicalHash": "sha256:5ffe59b9e8bf406a1dff832bff5543aaf34e14b812ffd26a332c4483d0222460",
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c66-still-weight",
+      "canonicalHash": "sha256:209e85b427beb9b6762549d852800cf4c78056c80dc0e0fc2952bc60277618a2",
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c67-shared-badge",
+      "canonicalHash": "sha256:53d0bd812d925d9f434b6b8c74156d061ce0992f1a8f99fa3f6a12c58e8bb836",
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c68-empty-seat-proof",
+      "canonicalHash": "sha256:9b8ac84cf98b6fa7629516d60c4c5ee41e8ccd59ed0304f14f4705298f06d17c",
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c69-third-minutes",
+      "canonicalHash": "sha256:6c8472f337d0c556e25b2eed16068a2643e596d4adbbbea48bd28adb60e96935",
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c70-grace-late-arrival",
+      "canonicalHash": "sha256:0fc81561b56d5de29c784614d5ee9fc00476302bc46afada529ca095f0110ee3",
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c71-revoked-open-door",
+      "canonicalHash": "sha256:51f881e3fbb09bd32b3bac32609137535228287284c0795c15ac3a1f33cdfabd",
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c72-message-read-twice",
+      "canonicalHash": "sha256:3a95dbe13b162eebb994096a50348d4c0cee3e9d52655ed390b1834e16aa9d17",
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c73-phantom-exit",
+      "canonicalHash": "sha256:d87e6dfb889e39f01cc01d425eedeb284e35a2fbb8f4c700c006abca4fce3834",
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c74-silent-footsteps",
+      "canonicalHash": "sha256:1846687b8afa350fdc6c0e8d362a8869df399c2820374fcdb51cc95bc1275ab4",
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c75-two-weather-photo",
+      "canonicalHash": "sha256:7294163df21dbfc2dd42b37c931bfaa110242f2a55bea9316dc55091ee087654",
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c76-red-light-second",
+      "canonicalHash": "sha256:504bba955ac12ec130de6361e832e47aa6fd7767294e2f15ac43ec86322b737e",
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c77-invisible-ninth-wire",
+      "canonicalHash": "sha256:8a1befea7762e91333816e2afe28df2c90a93b76b192c178d0c3e5fcf8cfb83f",
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c78-sound-from-other-side",
+      "canonicalHash": "sha256:6231f8cbc3a1ee480b41030c4df733c205aaa379f6e969fee211a44bad89a7a4",
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c79-extra-queue-order",
+      "canonicalHash": "sha256:69f22e56a9a9620491a1752b7cbf8cf51810a51b17756f473b2c6fcbead557f7",
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c80-power-on-restart",
+      "canonicalHash": "sha256:2c129c326d8e0f2019c42224274d72d65ed64635040939be5d879a54cbf97776",
+      "events": 10,
+      "facts": 18,
+      "evidence": 10,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c81-lost-ack",
+      "canonicalHash": "sha256:e7d6b1b3895791e79c58e36c45ad96288f60b5f4f75135c42649415e26d51fb8",
+      "events": 11,
+      "facts": 19,
+      "evidence": 11,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c82-closed-network-device",
+      "canonicalHash": "sha256:94e249c8e0ebbc1f750369f917815356aca0cb220b369ccc4cef9cde7f239743",
+      "events": 12,
+      "facts": 20,
+      "evidence": 12,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c83-two-unloads",
+      "canonicalHash": "sha256:206a2959bb7f0299cf715a7b0533a0add3ef9a1035ae899d329f2840f1a00be4",
+      "events": 13,
+      "facts": 21,
+      "evidence": 13,
+      "truthChanged": false,
+      "presentationOnly": true
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "canonicalHash": "sha256:e57095815b8ca3386e1e04194a712ddc85c9ca945f11de0fbc412de1171d634e",
+      "events": 14,
+      "facts": 22,
+      "evidence": 14,
+      "truthChanged": false,
+      "presentationOnly": true
+    }
+  ],
+  "scope": "AI provider affordances, navigation copy and deterministic feedback only; no truth, proof or save identity changes",
+  "passed": true
+}

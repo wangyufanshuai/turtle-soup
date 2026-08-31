@@ -17,6 +17,26 @@ export const QUESTION_ROUTER_DEFAULTS: AiProviderSettings = {
   keyStorage: "session",
 };
 
+export type AiProviderPresetId = "openai" | "ollama" | "llama-cpp";
+
+export const AI_PROVIDER_PRESETS: ReadonlyArray<{
+  id: AiProviderPresetId;
+  label: string;
+  description: string;
+  endpoint: string;
+  model: string;
+  protocolMode: AiProviderSettings["protocolMode"];
+  requiresKey: boolean;
+}> = [
+  { id: "openai", label: "OpenAI", description: "远程 HTTPS · 需要自己的 Key", endpoint: "https://api.openai.com/v1/chat/completions", model: "gpt-4o-mini", protocolMode: "strict-schema", requiresKey: true },
+  { id: "ollama", label: "Ollama", description: "本机 11434 · 通常不需要 Key", endpoint: "http://localhost:11434/v1/chat/completions", model: "qwen2.5:7b-instruct", protocolMode: "validated-json", requiresKey: false },
+  { id: "llama-cpp", label: "llama.cpp", description: "本机 8080 · OpenAI 兼容服务", endpoint: "http://localhost:8080/v1/chat/completions", model: "local-model", protocolMode: "validated-json", requiresKey: false },
+] as const;
+
+export function aiProviderPreset(settings: Pick<AiProviderSettings, "endpoint" | "model" | "protocolMode">): AiProviderPresetId | "custom" {
+  return AI_PROVIDER_PRESETS.find((preset) => preset.endpoint === settings.endpoint && preset.model === settings.model && preset.protocolMode === settings.protocolMode)?.id ?? "custom";
+}
+
 export const HOST_REWRITE_DEFAULTS = {
   endpoint: "http://localhost:11434/v1/chat/completions",
   model: "qwen2.5:7b-instruct",

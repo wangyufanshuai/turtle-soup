@@ -14,6 +14,7 @@ const BUILD_IDS: Record<string, string> = {
   "v2.4-internal-rc": "black-soup-v24-investigation-rhythm-rc",
   "v2.5-internal-rc": "black-soup-v25-season5-content-rc",
   "v2.6-internal-rc": "black-soup-v26-investigation-workbench-rc",
+  "v2.7-internal-rc": "black-soup-v27-player-first-rc",
 };
 
 const nextConfig: NextConfig = {

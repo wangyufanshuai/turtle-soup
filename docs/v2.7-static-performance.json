@@ -1,0 +1,29 @@
+{
+  "reportVersion": "2.7",
+  "releaseProfile": "v2.7-internal-rc",
+  "generatedAt": "2026-08-31T03:01:40.222Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "budgets": {
+    "initialJavaScriptBytes": 700000,
+    "maximumFileBytes": 450000,
+    "archiveBytes": 8000000
+  },
+  "actual": {
+    "staticBytes": 8211425,
+    "initialJavaScriptBytes": 672520,
+    "maximumFileBytes": 395101,
+    "fileCount": 1179,
+    "routeCount": 84,
+    "archiveBytes": 3452639
+  },
+  "cacheIdentity": "black-soup-v27-player-first-rc",
+  "deferredLoading": {
+    "currentCaseOnly": true,
+    "hiddenCaseBlocksOnDemand": true,
+    "optionalAiNotInInitialBundle": true
+  },
+  "failures": [],
+  "passed": true
+}

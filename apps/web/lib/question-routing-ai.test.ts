@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import type { QuestionRoutingContext } from "@turtle-soup/mystery-core";
 import { buildQuestionRoutingRequestBody, isAllowedAiEndpoint, routeQuestion, validateQuestionRoute } from "./question-routing-ai.ts";
+import { AI_PROVIDER_PRESETS, aiProviderPreset } from "./ai-provider-defaults.ts";
 
 const context: QuestionRoutingContext = { contextHash: "abc", language: "zh-CN", publicSurface: "一扇关着的门传出敲击声。", rawQuestion: "门是自己锁的吗？", candidates: [{ token: "candidate-01-a1", label: "门会自动上锁吗？", target: "门", predicate: "验证门锁机制" }, { token: "candidate-02-b2", label: "锁门后有人进入吗？", target: "房间", predicate: "排除锁后进入" }] };
 
@@ -13,6 +14,23 @@ test("BYOK endpoints require HTTPS except localhost", () => {
   assert.equal(isAllowedAiEndpoint("https://example.com:22/v1/chat/completions"), false);
   assert.equal(isAllowedAiEndpoint("https://example.com/v1/chat/completions#secret"), false);
   assert.equal(isAllowedAiEndpoint("https://example.com/v1/chat/completions\nmalformed"), false);
+});
+
+test("provider presets are explicit and localhost routing does not require a fake key", async () => {
+  assert.deepEqual(AI_PROVIDER_PRESETS.map((preset) => preset.id), ["openai", "ollama", "llama-cpp"]);
+  assert.equal(aiProviderPreset(AI_PROVIDER_PRESETS[0]), "openai");
+  assert.equal(aiProviderPreset({ endpoint: "https://example.com/v1/chat/completions", model: "custom", protocolMode: "validated-json" }), "custom");
+  const originalFetch = globalThis.fetch;
+  let authorization: string | null = "unexpected";
+  globalThis.fetch = (async (_input, init) => {
+    authorization = new Headers(init?.headers).get("authorization");
+    return new Response(JSON.stringify({ choices: [{ message: { content: '{"status":"matched","candidateTokens":["candidate-01-a1"]}' } }] }), { status: 200 });
+  }) as typeof fetch;
+  try {
+    const result = await routeQuestion({ enabled: true, endpoint: "http://localhost:11434/v1/chat/completions", model: "local", protocolMode: "validated-json", keyStorage: "session" }, context, "");
+    assert.deepEqual(result, { status: "matched", candidateToken: "candidate-01-a1" });
+    assert.equal(authorization, null);
+  } finally { globalThis.fetch = originalFetch; }
 });
 
 test("AI route output accepts only public candidate tokens", () => {

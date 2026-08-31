@@ -7,13 +7,14 @@ import { loadCaseFile, loadReleaseContent } from "./lib/release-content.ts";
 import { createCanonicalSave } from "./lib/canonical-save.ts";
 import type { SaveEnvelope } from "../packages/mystery-core/src/index.ts";
 
+const v27 = process.argv.includes("--v27");
 const v26 = process.argv.includes("--v26");
 const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
-const profileId = v26 ? "v2.6-internal-rc" : "v2.5-internal-rc";
+const profileId = v27 ? "v2.7-internal-rc" : v26 ? "v2.6-internal-rc" : "v2.5-internal-rc";
 const outDir = resolve(root, "apps/web/out");
-const reportVersion = v26 ? "2.6" : "2.5";
-const reportStem = v26 ? "v2.6" : "v2.5";
-const shotRelative = v26 ? "output/playwright/v26" : "output/playwright/v25";
+const reportVersion = v27 ? "2.7" : v26 ? "2.6" : "2.5";
+const reportStem = v27 ? "v2.7" : v26 ? "v2.6" : "v2.5";
+const shotRelative = v27 ? "output/playwright/v27" : v26 ? "output/playwright/v26" : "output/playwright/v25";
 const shotDir = resolve(root, shotRelative);
 mkdirSync(shotDir, { recursive: true });
 const release = loadReleaseContent(root, profileId);
@@ -123,7 +124,7 @@ async function routeSmoke(name: string, type: BrowserType, mobile: boolean) {
   if (name === "chromium" && !mobile) await page.screenshot({ path: resolve(shotDir, "unknown-case-404.png"), fullPage: false });
   await context.close();
   await browser.close();
-  return { browser: name, viewport: mobile ? "390x844" : "1440x900", home, routes, unknownStrict404, consoleErrors: routeConsoleErrors, failedResources: routeFailedResources, passed: home.continueVisible && home.seasonVisible && home.publicPreview && home.overflow <= 1 && (!v26 || home.catalogCount && home.searchAvailable) && routes.length === 84 && routes.every((item) => item.passed) && unknownStrict404 && routeConsoleErrors.length === 0 && routeFailedResources.length === 0 };
+  return { browser: name, viewport: mobile ? "390x844" : "1440x900", home, routes, unknownStrict404, consoleErrors: routeConsoleErrors, failedResources: routeFailedResources, passed: home.continueVisible && home.seasonVisible && home.publicPreview && home.overflow <= 1 && ((v26 || v27) ? home.catalogCount && home.searchAvailable : true) && routes.length === 84 && routes.every((item) => item.passed) && unknownStrict404 && routeConsoleErrors.length === 0 && routeFailedResources.length === 0 };
 }
 
 async function representativeA11y(name: string, type: BrowserType, mobile: boolean) {
@@ -249,7 +250,7 @@ try {
     passed: routeSmokeReports.every((item) => item.passed) && a11yReports.every((item) => item.passed) && fullFlowReports.every((item) => item.passed) && offline.passed && screenshots.length >= 10 && screenshots.every((item) => item.passed),
   };
   writeFileSync(resolve(root, `docs/${reportStem}-browser-matrix.json`), `${JSON.stringify(report, null, 2)}\n`, "utf8");
-  writeFileSync(resolve(root, `docs/${reportStem}-visual-regression.json`), `${JSON.stringify({ ...report, scope: "84 routes, 5 seasons, representative opening and accessibility states", contracts: { strict404: true, noConsoleErrors: report.consoleErrorCount === 0, catalogCount: !v26 || routeSmokeReports.every((item) => item.home.catalogCount), seasonSearch: !v26 || routeSmokeReports.every((item) => item.home.searchAvailable), desktop: true, mobile: true, reducedMotion: true, keyboard: true, touch: true } }, null, 2)}\n`, "utf8");
+  writeFileSync(resolve(root, `docs/${reportStem}-visual-regression.json`), `${JSON.stringify({ ...report, scope: "84 routes, 5 seasons, representative opening and accessibility states", contracts: { strict404: true, noConsoleErrors: report.consoleErrorCount === 0, catalogCount: (!v26 && !v27) || routeSmokeReports.every((item) => item.home.catalogCount), seasonSearch: (!v26 && !v27) || routeSmokeReports.every((item) => item.home.searchAvailable), desktop: true, mobile: true, reducedMotion: true, keyboard: true, touch: true } }, null, 2)}\n`, "utf8");
   console.log(JSON.stringify({ routes: routeSmokeReports.reduce((sum, item) => sum + item.routes.length, 0), fullFlows: fullFlowReports.reduce((sum, item) => sum + item.cases.length, 0), screenshots: screenshots.length, offline: offline.passed, consoleErrors: report.consoleErrorCount, passed: report.passed }, null, 2));
   if (!report.passed) process.exitCode = 1;
 } finally {

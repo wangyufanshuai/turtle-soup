@@ -1,0 +1,105 @@
+{
+  "reportVersion": "2.7",
+  "releaseProfile": "v2.7-internal-rc",
+  "generatedAt": "2026-08-31T04:33:11.320Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "caseCount": 84,
+  "gates": {
+    "profile": true,
+    "participants": true,
+    "caseCount": true,
+    "reports": true
+  },
+  "requiredOutputs": [
+    {
+      "path": "docs/v2.7-precache.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.7-browser-matrix.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.7-visual-regression.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.7-static-performance.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.7-security-scan.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.7-save-compatibility.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.7-experience-audit.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.7-content-difference.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.7-release-artifacts.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.7-player-setup.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.7-internal-rc.md",
+      "exists": true
+    },
+    {
+      "path": "dist/turtle-soup-v2.7-internal-rc-web-pwa.zip",
+      "exists": true
+    }
+  ],
+  "reports": [
+    {
+      "path": "docs/v2.7-browser-matrix.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.7-visual-regression.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.7-static-performance.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.7-security-scan.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.7-save-compatibility.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.7-experience-audit.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.7-content-difference.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.7-release-artifacts.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.7-player-setup.json",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "qualification": "v2.7 validates player-facing setup and deterministic feedback contracts while preserving frozen case truth and schema-one saves. Automation cannot establish fun, comprehension, pacing or market fit."
+}
