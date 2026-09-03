@@ -7,16 +7,17 @@ import { loadCaseFile, loadReleaseContent } from "./lib/release-content.ts";
 import { createCanonicalSave } from "./lib/canonical-save.ts";
 import type { SaveEnvelope } from "../packages/mystery-core/src/index.ts";
 
+const v210 = process.argv.includes("--v210");
 const v29 = process.argv.includes("--v29");
 const v28 = process.argv.includes("--v28");
 const v27 = process.argv.includes("--v27");
 const v26 = process.argv.includes("--v26");
 const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
-const profileId = v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : v27 ? "v2.7-internal-rc" : v26 ? "v2.6-internal-rc" : "v2.5-internal-rc";
+const profileId = v210 ? "v2.10-internal-rc" : v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : v27 ? "v2.7-internal-rc" : v26 ? "v2.6-internal-rc" : "v2.5-internal-rc";
 const outDir = resolve(root, "apps/web/out");
-const reportVersion = v29 ? "2.9" : v28 ? "2.8" : v27 ? "2.7" : v26 ? "2.6" : "2.5";
-const reportStem = v29 ? "v2.9" : v28 ? "v2.8" : v27 ? "v2.7" : v26 ? "v2.6" : "v2.5";
-const shotRelative = v29 ? "output/playwright/v29" : v28 ? "output/playwright/v28" : v27 ? "output/playwright/v27" : v26 ? "output/playwright/v26" : "output/playwright/v25";
+const reportVersion = v210 ? "2.10" : v29 ? "2.9" : v28 ? "2.8" : v27 ? "2.7" : v26 ? "2.6" : "2.5";
+const reportStem = v210 ? "v2.10" : v29 ? "v2.9" : v28 ? "v2.8" : v27 ? "v2.7" : v26 ? "v2.6" : "v2.5";
+const shotRelative = v210 ? "output/playwright/v210" : v29 ? "output/playwright/v29" : v28 ? "output/playwright/v28" : v27 ? "output/playwright/v27" : v26 ? "output/playwright/v26" : "output/playwright/v25";
 const shotDir = resolve(root, shotRelative);
 mkdirSync(shotDir, { recursive: true });
 const release = loadReleaseContent(root, profileId);
@@ -99,6 +100,8 @@ async function routeSmoke(name: string, type: BrowserType, mobile: boolean) {
   await visit(page, "/", false);
   const firstCase = page.locator('#active-season-cases a[href^="/case/"]').first();
   const firstBox = await firstCase.boundingBox().catch(() => null);
+  const primaryTargets = await page.locator('main section[aria-label="继续与推荐"] a[href^="/case/"]').evaluateAll((links) => links.map((link) => link.getAttribute("href")));
+  const seasonTabTops = await page.locator('[role="tablist"][aria-label="案件季节"] [role="tab"]').evaluateAll((tabs) => tabs.map((tab) => Math.round(tab.getBoundingClientRect().top)));
   const home = {
     continueVisible: await page.getByText(/继续调查|开始第一案/).first().isVisible().catch(() => false),
     seasonVisible: await page.getByRole("tab", { name: /第1季/ }).isVisible().catch(() => false),
@@ -107,6 +110,8 @@ async function routeSmoke(name: string, type: BrowserType, mobile: boolean) {
     overflow: await page.evaluate(() => Math.max(0, document.documentElement.scrollWidth - document.documentElement.clientWidth)),
     catalogCount: await page.getByText(/84 件确定性谜案/).count() > 0,
     searchAvailable: await page.locator('input[type="search"]').count() === 1,
+    primaryTargetsDistinct: primaryTargets.length === 2 && new Set(primaryTargets).size === 2,
+    seasonTabsSingleRow: seasonTabTops.length === 5 && Math.max(...seasonTabTops) - Math.min(...seasonTabTops) <= 2,
   };
   if (name === "chromium" && !mobile) await page.screenshot({ path: resolve(shotDir, "home-desktop.png"), fullPage: false });
   if (name === "chromium" && mobile) await page.screenshot({ path: resolve(shotDir, "home-mobile.png"), fullPage: false });
@@ -126,7 +131,7 @@ async function routeSmoke(name: string, type: BrowserType, mobile: boolean) {
   if (name === "chromium" && !mobile) await page.screenshot({ path: resolve(shotDir, "unknown-case-404.png"), fullPage: false });
   await context.close();
   await browser.close();
-  return { browser: name, viewport: mobile ? "390x844" : "1440x900", home, routes, unknownStrict404, consoleErrors: routeConsoleErrors, failedResources: routeFailedResources, passed: home.continueVisible && home.seasonVisible && home.publicPreview && home.overflow <= 1 && ((v26 || v27 || v28 || v29) ? home.catalogCount && home.searchAvailable : true) && routes.length === 84 && routes.every((item) => item.passed) && unknownStrict404 && routeConsoleErrors.length === 0 && routeFailedResources.length === 0 };
+  return { browser: name, viewport: mobile ? "390x844" : "1440x900", home, routes, unknownStrict404, consoleErrors: routeConsoleErrors, failedResources: routeFailedResources, passed: home.continueVisible && home.seasonVisible && home.publicPreview && home.overflow <= 1 && ((v26 || v27 || v28 || v29 || v210) ? home.catalogCount && home.searchAvailable : true) && (!v210 || (home.primaryTargetsDistinct && home.seasonTabsSingleRow)) && routes.length === 84 && routes.every((item) => item.passed) && unknownStrict404 && routeConsoleErrors.length === 0 && routeFailedResources.length === 0 };
 }
 
 async function representativeA11y(name: string, type: BrowserType, mobile: boolean) {
@@ -178,12 +183,13 @@ async function representativeFlows(name: string, type: BrowserType, mobile: bool
     await visit(page, `/case/${caseId}/`);
     await page.getByText("你的证明成立", { exact: true }).waitFor({ state: "visible", timeout: 10_000 }).catch(() => undefined);
     const solved = await page.getByText(/证据链闭合|你已经证明了事件如何发生/).first().isVisible().catch(() => false);
+    const completedArchiveForeground = await workspaceTabs.filter({ hasText: "推断" }).first().getAttribute("aria-pressed") === "true";
     const replay = await page.getByText(/证据回放/).count() > 0;
     const challengeModes = projectionReplayModes(caseFile);
     const challenges = ["limited-questions", "minimal-proof", "no-scaffolds"].every((mode) => challengeModes.includes(mode));
     const overflow = await page.evaluate(() => Math.max(0, document.documentElement.scrollWidth - document.documentElement.clientWidth));
-    const passed = tabs === 4 && naturalQuestion && evidenceShelf && solved && replay && challenges && overflow <= 1 && errors.length === 0;
-    results.push({ caseId, tabs, naturalQuestion, evidenceShelf, solved, replay, challenges, overflow, consoleErrors: errors, passed });
+    const passed = tabs === 4 && naturalQuestion && evidenceShelf && solved && replay && challenges && (!v210 || completedArchiveForeground) && overflow <= 1 && errors.length === 0;
+    results.push({ caseId, tabs, naturalQuestion, evidenceShelf, solved, completedArchiveForeground, replay, challenges, overflow, consoleErrors: errors, passed });
     if (name === "chromium" && ["c61-missing-tape-turn", "c84-handoff-after-stop"].includes(caseId)) await page.screenshot({ path: resolve(shotDir, `${caseId}-${mobile ? "mobile" : "desktop"}-solved.png`), fullPage: false });
     await context.close();
   }
@@ -252,7 +258,7 @@ try {
     passed: routeSmokeReports.every((item) => item.passed) && a11yReports.every((item) => item.passed) && fullFlowReports.every((item) => item.passed) && offline.passed && screenshots.length >= 10 && screenshots.every((item) => item.passed),
   };
   writeFileSync(resolve(root, `docs/${reportStem}-browser-matrix.json`), `${JSON.stringify(report, null, 2)}\n`, "utf8");
-  writeFileSync(resolve(root, `docs/${reportStem}-visual-regression.json`), `${JSON.stringify({ ...report, scope: "84 routes, 5 seasons, representative opening and accessibility states", contracts: { strict404: true, noConsoleErrors: report.consoleErrorCount === 0, catalogCount: (!v26 && !v27 && !v28 && !v29) || routeSmokeReports.every((item) => item.home.catalogCount), seasonSearch: (!v26 && !v27 && !v28 && !v29) || routeSmokeReports.every((item) => item.home.searchAvailable), desktop: true, mobile: true, reducedMotion: true, keyboard: true, touch: true } }, null, 2)}\n`, "utf8");
+  writeFileSync(resolve(root, `docs/${reportStem}-visual-regression.json`), `${JSON.stringify({ ...report, scope: "84 routes, 5 seasons, representative opening and accessibility states", contracts: { strict404: true, noConsoleErrors: report.consoleErrorCount === 0, catalogCount: (!v26 && !v27 && !v28 && !v29 && !v210) || routeSmokeReports.every((item) => item.home.catalogCount), seasonSearch: (!v26 && !v27 && !v28 && !v29 && !v210) || routeSmokeReports.every((item) => item.home.searchAvailable), desktop: true, mobile: true, reducedMotion: true, keyboard: true, touch: true } }, null, 2)}\n`, "utf8");
   console.log(JSON.stringify({ routes: routeSmokeReports.reduce((sum, item) => sum + item.routes.length, 0), fullFlows: fullFlowReports.reduce((sum, item) => sum + item.cases.length, 0), screenshots: screenshots.length, offline: offline.passed, consoleErrors: report.consoleErrorCount, passed: report.passed }, null, 2));
   if (!report.passed) process.exitCode = 1;
 } finally {

@@ -96,6 +96,15 @@ export function InvestigationShell(props: { projection: PlayerProjection; events
     } catch { /* UI continuation is optional */ } finally { setUiStateReady(true); setQuestionDraftReady(true); }
   }, [projection.case.id]);
   useEffect(() => {
+    // A completed save should reopen on the player-authored conclusion, not
+    // strand the player in whichever workspace happened to be open last.
+    // This runs only when the case becomes ready/solved, so intentional
+    // navigation after reopening remains untouched.
+    if (!uiStateReady || !projection.solved) return;
+    setWorkspace("theory");
+    setTheoryStep("proof");
+  }, [projection.case.id, projection.solved, uiStateReady]);
+  useEffect(() => {
     if (!uiStateReady) return;
     const nextHash = `#${workspace}`;
     if (window.location.hash !== nextHash) window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}${nextHash}`);

@@ -1,0 +1,60 @@
+{
+  "reportVersion": "2.10",
+  "releaseProfile": "v2.10-internal-rc",
+  "generatedAt": "2026-09-03T12:13:29.485Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "deterministicArchive": {
+    "method": "ZIP deflate",
+    "timestamp": "1980-01-01"
+  },
+  "artifact": {
+    "directory": "dist/v2.10-internal-rc-web-pwa",
+    "bytes": 8222076,
+    "files": 1180,
+    "archive": {
+      "path": "dist/turtle-soup-v2.10-internal-rc-web-pwa.zip",
+      "bytes": 3456622,
+      "sha256": "a37de5bd531422850e16ed7af65488771084dd45802f9511fd7515a02c72fa19"
+    }
+  },
+  "preservedArtifacts": [
+    {
+      "version": "v2.5",
+      "path": "dist/turtle-soup-v2.5-internal-rc-web-pwa.zip",
+      "expected": "78d1a2b3168a729895734c5858c0415c459661f75ab8445bfaf14c0d514d5eaf",
+      "actual": "78d1a2b3168a729895734c5858c0415c459661f75ab8445bfaf14c0d514d5eaf",
+      "unchanged": true
+    },
+    {
+      "version": "v2.6",
+      "path": "dist/turtle-soup-v2.6-internal-rc-web-pwa.zip",
+      "expected": "f79a3804dc764f215bbe919a419b67bdc963e4e2126b1c9a3076006b80cab18d",
+      "actual": "f79a3804dc764f215bbe919a419b67bdc963e4e2126b1c9a3076006b80cab18d",
+      "unchanged": true
+    },
+    {
+      "version": "v2.7",
+      "path": "dist/turtle-soup-v2.7-internal-rc-web-pwa.zip",
+      "expected": "30fdce5b0a839e284966591a68823089cc5df00c200269c38886fb967d1c5733",
+      "actual": "30fdce5b0a839e284966591a68823089cc5df00c200269c38886fb967d1c5733",
+      "unchanged": true
+    },
+    {
+      "version": "v2.8",
+      "path": "dist/turtle-soup-v2.8-internal-rc-web-pwa.zip",
+      "expected": "43cb35106794dc2dec0337518a96f33e48284e708d73e785ce2be1f8d908bce1",
+      "actual": "43cb35106794dc2dec0337518a96f33e48284e708d73e785ce2be1f8d908bce1",
+      "unchanged": true
+    },
+    {
+      "version": "v2.9",
+      "path": "dist/turtle-soup-v2.9-internal-rc-web-pwa.zip",
+      "expected": "5fe180fb477ab01a88eeb7ba55a9199b5dc5307b58b9fb257c421ae21b986e03",
+      "actual": "5fe180fb477ab01a88eeb7ba55a9199b5dc5307b58b9fb257c421ae21b986e03",
+      "unchanged": true
+    }
+  ],
+  "passed": true
+}

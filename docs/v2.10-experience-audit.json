@@ -1,0 +1,47 @@
+{
+  "reportVersion": "2.10",
+  "releaseProfile": "v2.10-internal-rc",
+  "generatedAt": "2026-09-03T12:08:02.029Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "scope": "completed-case foregrounding, five-season navigation and onboarding deduplication",
+  "contracts": {
+    "unifiedShell": true,
+    "directChineseWorkspaces": true,
+    "settingsOnlyFunGate": true,
+    "reversibleQuestion": true,
+    "explicitActionFeedback": true,
+    "settingsFocusTrap": true,
+    "aiPresets": true,
+    "aiFailureCopy": true,
+    "homeRecentAndSeasonTabs": true,
+    "compactGuidance": true,
+    "settingsSections": true,
+    "languageRecoveryEntry": true,
+    "limitedQuestionBudget": true,
+    "completedArchiveForeground": true,
+    "distinctFirstChoices": true,
+    "fiveSeasonSingleRow": true
+  },
+  "sourceArtifacts": [
+    {
+      "path": "apps\\web\\components\\investigation-shell.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\case-select.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\case-select.module.css",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\question-router-controls.tsx",
+      "exists": true
+    }
+  ],
+  "passed": true,
+  "qualification": "Static contracts verify intended interaction affordances. They do not establish fun, comprehension, pacing or market fit."
+}

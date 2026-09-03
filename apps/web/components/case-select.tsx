@@ -70,7 +70,13 @@ export function CaseSelect() {
   const skills = useMemo(() => [...new Set(CASE_CATALOG.flatMap((entry) => entry.mechanicTags ?? entry.contentTags))], []);
   const seasons = useMemo(() => [...new Set(CASE_CATALOG.map((entry) => entry.seasonId ?? "season-1"))], []);
   const solvedOrMastered = useMemo(() => new Set([...completed, ...Object.values(mastery).filter((record) => record.standardSolved).map((record) => record.caseId)]), [completed, mastery]);
-  const recommendedStep = GOLDEN_PATH.find((step) => !solvedOrMastered.has(step.caseId)) ?? GOLDEN_PATH[GOLDEN_PATH.length - 1];
+  const firstUnfinishedStep = GOLDEN_PATH.find((step) => !solvedOrMastered.has(step.caseId)) ?? GOLDEN_PATH[GOLDEN_PATH.length - 1];
+  // Keep a fresh home screen from presenting the same case twice. The first
+  // card is the invitation to start C01; the second card points to the next
+  // curated step while remaining directly accessible (no unlock wall).
+  const recommendedStep = !latest && firstUnfinishedStep.caseId === "c01-cold-room-knock"
+    ? (GOLDEN_PATH[1] ?? firstUnfinishedStep)
+    : firstUnfinishedStep;
   const recommendedCase = CASE_CATALOG.find((entry) => entry.id === recommendedStep.caseId);
   const filtered = CASE_CATALOG.filter((entry) => {
     if ((entry.seasonId ?? "season-1") !== activeSeason) return false;

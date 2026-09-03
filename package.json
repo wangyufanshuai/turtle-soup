@@ -208,6 +208,15 @@
     "audit:v29:content-difference": "node --experimental-strip-types --experimental-transform-types tools/v27-content-difference.ts --v29",
     "package:v29": "node --experimental-strip-types --experimental-transform-types tools/package-v27.ts --v29",
     "verify:v29": "node --experimental-strip-types --experimental-transform-types tools/v27-release-audit.ts --v29",
+    "audit:v210:browsers": "node --experimental-strip-types --experimental-transform-types tools/v25-browser-audit.ts --v210",
+    "audit:v210:setup": "node --experimental-strip-types --experimental-transform-types tools/v27-player-setup-audit.ts --v210",
+    "audit:v210:performance": "node --experimental-strip-types --experimental-transform-types tools/v27-static-performance.ts --v210",
+    "scan:v210": "node --experimental-strip-types --experimental-transform-types tools/v27-security-scan.ts --v210",
+    "audit:v210:save": "node --experimental-strip-types --experimental-transform-types tools/v27-save-compatibility.ts --v210",
+    "audit:v210:experience": "node --experimental-strip-types --experimental-transform-types tools/v27-experience-audit.ts --v210",
+    "audit:v210:content-difference": "node --experimental-strip-types --experimental-transform-types tools/v27-content-difference.ts --v210",
+    "package:v210": "node --experimental-strip-types --experimental-transform-types tools/package-v27.ts --v210",
+    "verify:v210": "node --experimental-strip-types --experimental-transform-types tools/v27-release-audit.ts --v210",
     "check": "npm run typecheck && npm run test:core"
   },
   "devDependencies": {

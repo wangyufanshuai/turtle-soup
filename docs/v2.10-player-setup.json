@@ -1,0 +1,98 @@
+{
+  "reportVersion": "2.10",
+  "releaseProfile": "v2.10-internal-rc",
+  "generatedAt": "2026-09-03T12:07:19.547Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "traces": [
+    {
+      "viewport": "1440x900",
+      "topbarTestModeCount": 0,
+      "settingsTabCount": 3,
+      "experienceSelected": false,
+      "directRecoveryEntry": true,
+      "recoveryScreenshot": {
+        "path": "output/playwright/v210/question-recovery-desktop.png",
+        "bytes": 181418
+      },
+      "recoveryScreenshotValid": true,
+      "dataToolsVisible": true,
+      "progressiveSettings": true,
+      "presetsVisible": [
+        true,
+        true,
+        true
+      ],
+      "endpoint": "http://localhost:11434/v1/chat/completions",
+      "localNoKeyCopy": true,
+      "localTestEnabled": true,
+      "remoteWithoutKeyDisabled": true,
+      "axeSeriousCritical": [],
+      "dialogClosedWithEscape": true,
+      "focusReturned": true,
+      "homeConfigured": true,
+      "storage": {
+        "localKeys": [
+          "black-soup:ai-router-settings:v1",
+          "black-soup:ai-router-endpoint:v1",
+          "black-soup:investigation-settings:v19",
+          "black-soup:case-ui:v24:c61-missing-tape-turn",
+          "black-soup:player-truth:v1:c61-missing-tape-turn:sha256:3adbf127e8fc3bad61c326463eb162b42bf013d721858b69aef0de5dc103821d"
+        ],
+        "sessionKeys": [
+          "black-soup:question-draft:v24:c61-missing-tape-turn"
+        ],
+        "endpoint": "http://localhost:11434/v1/chat/completions"
+      },
+      "overflow": 0,
+      "consoleErrors": [],
+      "passed": true
+    },
+    {
+      "viewport": "390x844",
+      "topbarTestModeCount": 0,
+      "settingsTabCount": 3,
+      "experienceSelected": false,
+      "directRecoveryEntry": true,
+      "recoveryScreenshot": {
+        "path": "output/playwright/v210/question-recovery-mobile.png",
+        "bytes": 87019
+      },
+      "recoveryScreenshotValid": true,
+      "dataToolsVisible": true,
+      "progressiveSettings": true,
+      "presetsVisible": [
+        true,
+        true,
+        true
+      ],
+      "endpoint": "http://localhost:11434/v1/chat/completions",
+      "localNoKeyCopy": true,
+      "localTestEnabled": true,
+      "remoteWithoutKeyDisabled": true,
+      "axeSeriousCritical": [],
+      "dialogClosedWithEscape": true,
+      "focusReturned": true,
+      "homeConfigured": true,
+      "storage": {
+        "localKeys": [
+          "black-soup:ai-router-settings:v1",
+          "black-soup:ai-router-endpoint:v1",
+          "black-soup:investigation-settings:v19",
+          "black-soup:case-ui:v24:c61-missing-tape-turn",
+          "black-soup:player-truth:v1:c61-missing-tape-turn:sha256:3adbf127e8fc3bad61c326463eb162b42bf013d721858b69aef0de5dc103821d"
+        ],
+        "sessionKeys": [
+          "black-soup:question-draft:v24:c61-missing-tape-turn"
+        ],
+        "endpoint": "http://localhost:11434/v1/chat/completions"
+      },
+      "overflow": 0,
+      "consoleErrors": [],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "qualification": "This focused browser audit verifies player-facing AI setup and settings focus behavior. It does not contact a model endpoint or establish answer quality."
+}
