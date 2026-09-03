@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import test from "node:test";
-import { createRuntimeState, normalizeQuestion, projectPlayerState, reduceGameCommand, replayCommands, validateBoardBehavior, validateCaseShape, validateCompatibleSave, type CaseFile, type GameCommand, type QueryCorpusEntry, type RuntimeState, type SaveEnvelope } from "./index.ts";
+import { createQuestionRoutingOffer, createRuntimeState, normalizeQuestion, projectPlayerState, reduceGameCommand, replayCommands, validateBoardBehavior, validateCaseShape, validateCompatibleSave, type CaseFile, type GameCommand, type QueryCorpusEntry, type RuntimeState, type SaveEnvelope } from "./index.ts";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../../..");
 const caseDir = resolve(root, "content/zh/cases");
@@ -31,6 +31,24 @@ function finish(caseFile: CaseFile, evidenceIds = caseFile.solutionCertificate.m
 test("Season 5 contains 24 internal-RC cases with safe opening projections", () => {
   assert.equal(manifest.status, "internal-rc"); assert.equal(manifest.publishable, false); assert.equal(manifest.humanEvaluation.status, "pending"); assert.equal(manifest.humanEvaluation.participants, 0); assert.equal(cases.length, 24);
   for (const caseFile of cases) { validateCaseShape(caseFile); assert.ok(caseFile.events.length >= 10 && caseFile.events.length <= 15); assert.ok(caseFile.facts.length >= 16 && caseFile.facts.length <= 24); assert.ok(caseFile.evidenceItems.length >= 10 && caseFile.evidenceItems.length <= 15); assert.ok(caseFile.proofReplay.length >= 6); assert.equal(caseFile.solutionCertificate.minimumProofSets.length, 2); assert.ok((caseFile.reasoningBoards?.length ?? 0) >= 2); const serialized = JSON.stringify(projectPlayerState(caseFile, createRuntimeState(caseFile))); assert.equal(serialized.includes("solutionCertificate"), false); for (const fact of caseFile.facts) assert.equal(serialized.includes(fact.id), false); for (const event of caseFile.events) assert.equal(serialized.includes(event.id), false); }
+});
+
+test("Season 5 public question copy hides authoring predicates without changing routing identity", () => {
+  const internalMarker = /(?:verified_c\d+_\d+|(?:entity|location|fact|event|query|evidence|relation)-c\d+(?:[-_.]\d+)?)/iu;
+  for (const caseFile of cases) {
+    const state = createRuntimeState(caseFile);
+    const projection = projectPlayerState(caseFile, state);
+    const publicScaffoldCopy = projection.questionScaffolds.map(({ queryId: _queryId, ...copy }) => copy);
+    const offer = createQuestionRoutingOffer(caseFile, state, "量子猫把蓝色香蕉寄到月球了吗");
+    assert.equal(internalMarker.test(JSON.stringify(publicScaffoldCopy)), false, `${caseFile.id}:projection`);
+    assert.equal(internalMarker.test(JSON.stringify(offer.context)), false, `${caseFile.id}:routing-context`);
+  }
+  const c61 = cases.find((item) => item.id.startsWith("c61-"));
+  assert.ok(c61);
+  const offer = createQuestionRoutingOffer(c61, createRuntimeState(c61), "量子猫把蓝色香蕉寄到月球了吗");
+  assert.equal(offer.context.contextHash, "beccd559");
+  assert.equal(offer.bindings[0]?.queryId, "query-c61-01");
+  assert.equal(offer.context.candidates[0]?.predicate, "验证公开事实");
 });
 
 test("Season 5 board combinations and all 5,280 corpus entries are deterministic", async () => {

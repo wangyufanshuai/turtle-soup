@@ -3,10 +3,10 @@ import { resolve } from "node:path";
 import { loadCaseFile, loadReleaseContent } from "./lib/release-content.ts";
 
 const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
-const v28 = process.argv.includes("--v28");
-const version = v28 ? "2.8" : "2.7";
-const profileId = v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
-const baselineId = v28 ? "v2.7-internal-rc" : "v2.6-internal-rc";
+const v29 = process.argv.includes("--v29"), v28 = process.argv.includes("--v28");
+const version = v29 ? "2.9" : v28 ? "2.8" : "2.7";
+const profileId = v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
+const baselineId = v29 ? "v2.8-internal-rc" : v28 ? "v2.7-internal-rc" : "v2.6-internal-rc";
 const baseline = loadReleaseContent(root, baselineId);
 const current = loadReleaseContent(root, profileId);
 const byId = new Map(current.entries.map((entry) => [entry.id, entry]));
@@ -30,7 +30,7 @@ const report = {
   currentCaseCount: current.entries.length,
   frozen,
   changes,
-  scope: v28 ? "settings information architecture and guidance hierarchy only; no truth, proof or save identity changes" : "AI provider affordances, navigation copy and deterministic feedback only; no truth, proof or save identity changes",
+  scope: v29 ? "language-recovery entry points, question reassurance and challenge budget visibility only; no truth, proof or save identity changes" : v28 ? "settings information architecture and guidance hierarchy only; no truth, proof or save identity changes" : "AI provider affordances, navigation copy and deterministic feedback only; no truth, proof or save identity changes",
   passed: current.entries.length === baseline.entries.length && frozen.length === baseline.entries.length && frozen.every((item) => item.canonicalHashUnchanged && item.contentVersionUnchanged && item.casePathUnchanged),
 };
 writeFileSync(resolve(root, `docs/v${version}-content-difference.json`), `${JSON.stringify(report, null, 2)}\n`, "utf8");

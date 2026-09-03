@@ -153,6 +153,29 @@ function queryProjection(caseFile: CaseFile, queryId: string): QuestionCandidate
   };
 }
 
+function looksLikeInternalQuestionCopy(value: string): boolean {
+  return /verified_c\d+_\d+/iu.test(value)
+    || /^(?:entity|location|fact|event|query|evidence|relation|hypothesis|board|slot|chapter)-c\d+(?:[-_.]|$)/iu.test(value)
+    || /(?:solutionCertificate|canonicalHypothesis|truthGraph|hiddenFacts?)/iu.test(value);
+}
+
+/**
+ * Removes authoring identifiers from the copy shown to players or sent to an
+ * optional routing model. The internal projection remains available for
+ * deterministic routing identity and save replay compatibility.
+ */
+function publicQuestionCandidate(candidate: QuestionCandidateProjection): QuestionCandidateProjection {
+  const label = looksLikeInternalQuestionCopy(candidate.label) ? "验证一条公开线索" : candidate.label;
+  const target = looksLikeInternalQuestionCopy(candidate.target) ? "案件对象" : candidate.target;
+  const predicate = !looksLikeInternalQuestionCopy(candidate.predicate) && /[\u3400-\u9fff]/u.test(candidate.predicate)
+    ? candidate.predicate
+    : "验证公开事实";
+  const qualifier = candidate.qualifier && !looksLikeInternalQuestionCopy(candidate.qualifier)
+    ? candidate.qualifier
+    : undefined;
+  return { ...candidate, label, target, predicate, ...(qualifier ? { qualifier } : { qualifier: undefined }) };
+}
+
 function interpretationFor(
   caseFile: CaseFile,
   rawText: string,
@@ -161,7 +184,8 @@ function interpretationFor(
 ): QuestionInterpretation {
   const candidates = candidateIds
     .map((id) => queryProjection(caseFile, id))
-    .filter((item): item is QuestionCandidateProjection => Boolean(item));
+    .filter((item): item is QuestionCandidateProjection => Boolean(item))
+    .map(publicQuestionCandidate);
   return {
     status,
     rawText,
@@ -204,13 +228,14 @@ export function createQuestionRoutingOffer(caseFile: CaseFile, state: RuntimeSta
     token: `candidate-${String(index + 1).padStart(2, "0")}-${compactHash(`${contextHash}:${candidate.queryId}`).slice(0, 4)}`,
     queryId: candidate.queryId,
   }));
+  const publicCandidates = candidates.map(publicQuestionCandidate);
   return {
     context: {
       contextHash,
       language: "zh-CN",
       publicSurface: translate(caseFile, caseFile.surface?.textKey, "一件无法解释的事件等待调查。"),
       rawQuestion: raw,
-      candidates: candidates.map((candidate, index) => ({
+      candidates: publicCandidates.map((candidate, index) => ({
         token: bindings[index].token,
         label: candidate.label,
         target: candidate.target,
@@ -465,7 +490,8 @@ export function projectPlayerState(caseFile: CaseFile, state: RuntimeState): Pla
   ];
   const questionScaffolds = state.replayMode === "no-scaffolds" ? [] : orderedQueries
     .map((id) => queryProjection(caseFile, id))
-    .filter((item): item is QuestionCandidateProjection => Boolean(item));
+    .filter((item): item is QuestionCandidateProjection => Boolean(item))
+    .map(publicQuestionCandidate);
   const active = state.theoryDrafts.find((item) => item.id === state.activeTheoryId);
   const interpretation = state.pendingInterpretation
     ? interpretationFor(caseFile, state.pendingInterpretation.rawText, "ambiguous", state.pendingInterpretation.candidateQueryIds)

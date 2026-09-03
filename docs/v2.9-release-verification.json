@@ -1,0 +1,105 @@
+{
+  "reportVersion": "2.9",
+  "releaseProfile": "v2.9-internal-rc",
+  "generatedAt": "2026-09-03T09:46:10.636Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "caseCount": 84,
+  "gates": {
+    "profile": true,
+    "participants": true,
+    "caseCount": true,
+    "reports": true
+  },
+  "requiredOutputs": [
+    {
+      "path": "docs/v2.9-precache.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.9-browser-matrix.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.9-visual-regression.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.9-static-performance.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.9-security-scan.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.9-save-compatibility.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.9-experience-audit.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.9-content-difference.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.9-release-artifacts.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.9-player-setup.json",
+      "exists": true
+    },
+    {
+      "path": "docs/v2.9-internal-rc.md",
+      "exists": true
+    },
+    {
+      "path": "dist/turtle-soup-v2.9-internal-rc-web-pwa.zip",
+      "exists": true
+    }
+  ],
+  "reports": [
+    {
+      "path": "docs/v2.9-browser-matrix.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.9-visual-regression.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.9-static-performance.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.9-security-scan.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.9-save-compatibility.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.9-experience-audit.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.9-content-difference.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.9-release-artifacts.json",
+      "passed": true
+    },
+    {
+      "path": "docs/v2.9-player-setup.json",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "qualification": "v2.9 validates guided investigation and player-facing setup contracts while preserving frozen case truth and schema-one saves. Automation cannot establish fun, comprehension, pacing or market fit."
+}

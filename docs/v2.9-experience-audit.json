@@ -1,0 +1,40 @@
+{
+  "reportVersion": "2.9",
+  "releaseProfile": "v2.9-internal-rc",
+  "generatedAt": "2026-09-03T09:32:31.050Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "scope": "language recovery, reversible question reassurance and challenge budget visibility",
+  "contracts": {
+    "unifiedShell": true,
+    "directChineseWorkspaces": true,
+    "settingsOnlyFunGate": true,
+    "reversibleQuestion": true,
+    "explicitActionFeedback": true,
+    "settingsFocusTrap": true,
+    "aiPresets": true,
+    "aiFailureCopy": true,
+    "homeRecentAndSeasonTabs": true,
+    "compactGuidance": true,
+    "settingsSections": true,
+    "languageRecoveryEntry": true,
+    "limitedQuestionBudget": true
+  },
+  "sourceArtifacts": [
+    {
+      "path": "apps\\web\\components\\investigation-shell.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\case-select.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\question-router-controls.tsx",
+      "exists": true
+    }
+  ],
+  "passed": true,
+  "qualification": "Static contracts verify intended interaction affordances. They do not establish fun, comprehension, pacing or market fit."
+}

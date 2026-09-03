@@ -2,9 +2,9 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
-const v28 = process.argv.includes("--v28");
-const version = v28 ? "2.8" : "2.7";
-const profileId = v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
+const v29 = process.argv.includes("--v29"), v28 = process.argv.includes("--v28");
+const version = v29 ? "2.9" : v28 ? "2.8" : "2.7";
+const profileId = v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
 const shellPath = resolve(root, "apps/web/components/investigation-shell.tsx");
 const homePath = resolve(root, "apps/web/components/case-select.tsx");
 const routerPath = resolve(root, "apps/web/components/question-router-controls.tsx");
@@ -27,6 +27,12 @@ const contracts = {
     settingsSections: ["settings-panel-experience", "settings-panel-ai", "settings-panel-data"].every((id) => shell.includes(id)),
     advancedHostRewriteCollapsed: shell.includes("主持措辞（高级，可选）") && shell.includes("settingsDisclosure"),
   } : {}),
+  ...(v29 ? {
+    compactGuidance: shell.includes("showFeedback") && !shell.includes("<div className={styles.feedback}"),
+    settingsSections: ["settings-panel-experience", "settings-panel-ai", "settings-panel-data"].every((id) => shell.includes(id)),
+    languageRecoveryEntry: shell.includes('openSettings("ai", trigger)') && shell.includes("questionSafety") && shell.includes("onConfigure={openAiSettings}"),
+    limitedQuestionBudget: shell.includes("questionCountLabel") && shell.includes('projection.replayMode === "limited-questions"'),
+  } : {}),
 };
 const report = {
   reportVersion: version,
@@ -35,7 +41,7 @@ const report = {
   status: "internal-rc / human-evaluation-pending",
   humanParticipants: 0,
   founderExploratorySessions: 1,
-  scope: v28 ? "guided investigation hierarchy and progressive settings disclosure" : "player-first navigation, local AI setup clarity and deterministic action feedback",
+  scope: v29 ? "language recovery, reversible question reassurance and challenge budget visibility" : v28 ? "guided investigation hierarchy and progressive settings disclosure" : "player-first navigation, local AI setup clarity and deterministic action feedback",
   contracts,
   sourceArtifacts: [shellPath, homePath, routerPath].map((path) => ({ path: path.slice(root.length + 1), exists: existsSync(path) })),
   passed: Object.values(contracts).every(Boolean),

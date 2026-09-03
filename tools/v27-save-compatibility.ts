@@ -5,10 +5,10 @@ import { createCanonicalSave } from "./lib/canonical-save.ts";
 import { loadCaseFile, loadReleaseContent } from "./lib/release-content.ts";
 
 const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
-const v28 = process.argv.includes("--v28");
-const version = v28 ? "2.8" : "2.7";
-const profileId = v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
-const baseline = loadReleaseContent(root, v28 ? "v2.7-internal-rc" : "v2.6-internal-rc");
+const v29 = process.argv.includes("--v29"), v28 = process.argv.includes("--v28");
+const version = v29 ? "2.9" : v28 ? "2.8" : "2.7";
+const profileId = v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
+const baseline = loadReleaseContent(root, v29 ? "v2.8-internal-rc" : v28 ? "v2.7-internal-rc" : "v2.6-internal-rc");
 const current = loadReleaseContent(root, profileId);
 const cases = current.entries.map((entry) => {
   const file = loadCaseFile(entry);

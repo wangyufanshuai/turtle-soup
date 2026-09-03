@@ -60,14 +60,14 @@ function statusText(events: GameEvent[], restore?: RestoreStatus) {
 
 export function InvestigationShell(props: { projection: PlayerProjection; events: GameEvent[]; restoreStatus?: RestoreStatus; saveState: "idle" | "saving" | "saved" | "error"; online: boolean; latestSave?: SaveEnvelope; storageIssue?: string; onRetrySave: () => void; dispatch: (command: GameCommand) => void; prepareQuestionRouting: (raw: string) => Promise<QuestionRoutingOffer> }) {
   const { projection, events, dispatch, prepareQuestionRouting } = props;
-  const [workspace, setWorkspace] = useState<Workspace>("scene"), [question, setQuestion] = useState(""), [settingsOpen, setSettingsOpen] = useState(false);
+  const [workspace, setWorkspace] = useState<Workspace>("scene"), [question, setQuestion] = useState(""), [settingsOpen, setSettingsOpen] = useState(false), [settingsSection, setSettingsSection] = useState<SettingsSection>("experience");
   const [summary, setSummary] = useState(""), [activeBoardId, setActiveBoardId] = useState(projection.reasoningBoards[0]?.id ?? ""), [theoryStep, setTheoryStep] = useState<TheoryStep>("claim");
   const [uiStateReady, setUiStateReady] = useState(false), [questionDraftReady, setQuestionDraftReady] = useState(false);
   const [muted, setMuted] = useState(false), [reducedMotion, setReducedMotion] = useState(false), [highContrast, setHighContrast] = useState(false);
   const [preferencesReady, setPreferencesReady] = useState(false);
   const [issueRecording, setIssueRecording] = useState(false), [issues, setIssues] = useState<ExperienceIssueRecord[]>([]);
   const [mastery, setMastery] = useState<CaseMasteryRecord>();
-  const questionRef = useRef<HTMLInputElement>(null), settingsTriggerRef = useRef<HTMLButtonElement>(null), routedEventRef = useRef(""), lastAnsweredRef = useRef(""), questionDraftRef = useRef(""), submittedQuestionRef = useRef("");
+  const questionRef = useRef<HTMLInputElement>(null), settingsTriggerRef = useRef<HTMLButtonElement>(null), settingsReturnFocusRef = useRef<HTMLElement | null>(null), routedEventRef = useRef(""), lastAnsweredRef = useRef(""), questionDraftRef = useRef(""), submittedQuestionRef = useRef("");
   const masteryRecordedRef = useRef("");
   const host = useHostRewrite(projection), router = useQuestionRouter(projection, prepareQuestionRouting), funGate = useFunGateSession(projection.case.id, events), diagnostics = useLocalDiagnostics(projection, events);
   const active = projection.theoryDrafts.find((d) => d.id === projection.activeTheoryId) ?? projection.theoryDrafts[0];
@@ -164,22 +164,24 @@ export function InvestigationShell(props: { projection: PlayerProjection; events
   }, [open]);
   const closeSettings = () => {
     setSettingsOpen(false);
-    window.setTimeout(() => requestAnimationFrame(() => settingsTriggerRef.current?.focus({ preventScroll: true })), 40);
+    const returnTarget = settingsReturnFocusRef.current ?? settingsTriggerRef.current;
+    window.setTimeout(() => requestAnimationFrame(() => returnTarget?.focus({ preventScroll: true })), 40);
   };
+  const openSettings = (section: SettingsSection = "experience", returnTarget?: HTMLElement | null) => { settingsReturnFocusRef.current = returnTarget ?? settingsTriggerRef.current; setSettingsSection(section); setSettingsOpen(true); };
   const ask = (event: FormEvent) => { event.preventDefault(); const raw = question.trim(); if (!raw) return; submittedQuestionRef.current = raw; questionDraftRef.current = raw; send({ type: "ask_text", rawText: raw }); };
 
   return <main id="main-content" tabIndex={-1} className={styles.game} data-high-contrast={highContrast || undefined} data-reduced-motion={reducedMotion || undefined} style={{ "--case-accent": projection.case.presentation.accent } as CSSProperties}>
-    <header className={styles.topbar} inert={settingsOpen || undefined}><Link href="/" prefetch={false}>← 全部案件</Link><div><small>THE BLACK SOUP · {code.toUpperCase()}</small><h1>{projection.case.title}</h1></div><nav><span>{props.online ? "离线可玩" : "离线模式"} · {props.saveState === "saving" ? "保存中" : props.saveState === "error" ? "保存失败" : "已保存"}</span><button ref={settingsTriggerRef} onClick={() => setSettingsOpen(true)}>设置</button></nav></header>
+    <header className={styles.topbar} inert={settingsOpen || undefined}><Link href="/" prefetch={false}>← 全部案件</Link><div><small>THE BLACK SOUP · {code.toUpperCase()}</small><h1>{projection.case.title}</h1></div><nav><span>{props.online ? "离线可玩" : "离线模式"} · {props.saveState === "saving" ? "保存中" : props.saveState === "error" ? "保存失败" : "已保存"}</span><button ref={settingsTriggerRef} onClick={(event) => openSettings("experience", event.currentTarget)}>设置</button></nav></header>
     <StorageRecovery issue={props.storageIssue} save={props.latestSave} onRetry={props.onRetrySave} />
     <NextStepCue projection={projection} active={active} workspace={workspace} events={events} restoreStatus={props.restoreStatus} open={open} />
     <nav className={styles.tabs} aria-label="调查工作区" inert={settingsOpen || undefined}>{TABS.map((tab) => <button key={tab.id} aria-keyshortcuts={tab.shortcut} aria-pressed={workspace === tab.id} onClick={() => open(tab.id)}><b>{tab.label}<kbd>{tab.shortcut}</kbd></b><small>{tab.help}</small></button>)}</nav>
     <div className={styles.layout} inert={settingsOpen || undefined}><section className={styles.workarea}>
       {workspace === "scene" && <SceneWorkspace projection={projection} sceneDesktop={sceneDesktop} sceneMobile={sceneMobile} send={send} open={open} muted={muted} />}
-      {workspace === "questions" && <QuestionWorkspace projection={projection} activeQuestion={question} setQuestion={updateQuestion} questionRef={questionRef} ask={ask} send={send} open={open} host={host} router={router} />}
+      {workspace === "questions" && <QuestionWorkspace projection={projection} activeQuestion={question} setQuestion={updateQuestion} questionRef={questionRef} ask={ask} send={send} open={open} openAiSettings={(trigger) => openSettings("ai", trigger)} host={host} router={router} />}
       {workspace === "evidence" && <EvidenceWorkspace projection={projection} active={active} code={code} send={send} open={open} availableCount={availableEvidence.length} onContinueToProof={() => { setTheoryStep("proof"); open("theory"); }} />}
       {workspace === "theory" && <TheoryWorkspace projection={projection} active={active} theoryOption={theoryOption} activeBoard={activeBoard} setActiveBoardId={setActiveBoardId} gap={gap} summary={summary} setSummary={setSummary} mastery={mastery} theoryStep={theoryStep} setTheoryStep={setTheoryStep} send={send} />}
     </section><Notebook projection={projection} summary={summary} setSummary={setSummary} workspace={workspace} open={open} /></div>
-    {settingsOpen && <SettingsPanel onClose={closeSettings} muted={muted} setMuted={setMuted} reducedMotion={reducedMotion} setReducedMotion={setReducedMotion} highContrast={highContrast} setHighContrast={setHighContrast} router={router} host={host} diagnostics={diagnostics} issueRecording={issueRecording} setIssueRecording={setIssueRecording} issues={issues} setIssues={setIssues} funGate={funGate} />}
+    {settingsOpen && <SettingsPanel initialSection={settingsSection} onClose={closeSettings} muted={muted} setMuted={setMuted} reducedMotion={reducedMotion} setReducedMotion={setReducedMotion} highContrast={highContrast} setHighContrast={setHighContrast} router={router} host={host} diagnostics={diagnostics} issueRecording={issueRecording} setIssueRecording={setIssueRecording} issues={issues} setIssues={setIssues} funGate={funGate} />}
   </main>;
 }
 
@@ -197,12 +199,14 @@ function NextStepCue({ projection, active, workspace, events, restoreStatus, ope
           ? { workspace: "theory", label: "开始组织你的解释", detail: "用自己的话总结，再把事件和证据放进证明。" }
           : { workspace: "theory", label: "继续补全并提交证明", detail: projection.canSubmit ? "当前结构已可提交；错误不会让调查不可逆。" : "先补齐事件、证据或推理板中的空位。" };
   const latest = projection.transcript.at(-1);
+  const latestEvent = events.at(-1);
+  const showFeedback = projection.solved || restoreStatus === "incompatible" || restoreStatus === "corrupt" || Boolean(latestEvent && latestEvent.type !== "case_started");
   const feedback = projection.solved ? "证据链闭合。你已经证明了事件如何发生。" : statusText(events, restoreStatus);
   return <section className={styles.nextCue} aria-label="调查进度">
     <ol><li data-done={asked || undefined}>1 问事实</li><li data-done={inspected || undefined}>2 查证据</li><li data-done={structured || projection.solved || undefined}>3 做证明</li></ol>
     <div className={styles.nextCueCopy}><b>{next.label}</b><span>{next.detail}</span>{latest && !projection.solved && <small>最近验证：{latest.interpretedAs}</small>}</div>
     {workspace === next.workspace ? <span className={styles.currentCue}>当前区域</span> : <button type="button" onClick={() => open(next.workspace)}>前往</button>}
-    <p className={styles.nextCueStatus} role="status"><b>刚刚发生</b><span>{feedback}</span></p>
+    {showFeedback && <p className={styles.nextCueStatus} role="status"><b>刚刚发生</b><span>{feedback}</span></p>}
   </section>;
 }
 
@@ -210,14 +214,16 @@ function SceneWorkspace({ projection, sceneDesktop, sceneMobile, send, open, mut
   return <div className={styles.sceneWorkspace}><div className={styles.premise}><small>案件异常 · 先读这一句</small><p>{projection.case.surface}</p><span>现场图帮助建立空间印象；所有必要信息也会以文字和证据给出。</span></div><div className={styles.scene}><picture><source media="(max-width:760px)" srcSet={sceneMobile} /><img src={sceneDesktop} alt={`${projection.case.title}的公开现场；必要线索同时以文字给出`} width={960} height={620} fetchPriority="high" /></picture><span>{muted ? "静音" : "声音仅用于气氛"}</span></div><section className={styles.locations}><h2>可以检查</h2>{projection.locations.length ? projection.locations.map((location) => <button key={location.id} disabled={location.visited} onClick={() => send({ type: "visit_location", locationId: location.id })}><b>{location.label}</b><span>{location.visited ? "已经检查" : "检查这里"}</span></button>) : <p>从提问开始，新的检查位置会随公开事实出现。</p>}</section><div className={styles.nextActions}><button onClick={() => open("questions")}>问一个事实</button><button onClick={() => open("evidence")}>查看证据</button></div></div>;
 }
 
-function QuestionWorkspace({ projection, activeQuestion, setQuestion, questionRef, ask, send, open, host, router }: { projection: PlayerProjection; activeQuestion: string; setQuestion: (v: string) => void; questionRef: RefObject<HTMLInputElement | null>; ask: (e: FormEvent) => void; send: (c: GameCommand) => void; open: (workspace: Workspace) => void; host: ReturnType<typeof useHostRewrite>; router: ReturnType<typeof useQuestionRouter> }) {
+function QuestionWorkspace({ projection, activeQuestion, setQuestion, questionRef, ask, send, open, openAiSettings, host, router }: { projection: PlayerProjection; activeQuestion: string; setQuestion: (v: string) => void; questionRef: RefObject<HTMLInputElement | null>; ask: (e: FormEvent) => void; send: (c: GameCommand) => void; open: (workspace: Workspace) => void; openAiSettings: (trigger: HTMLElement) => void; host: ReturnType<typeof useHostRewrite>; router: ReturnType<typeof useQuestionRouter> }) {
   const useStarter = (label: string) => { setQuestion(label); requestAnimationFrame(() => questionRef.current?.focus({ preventScroll: true })); };
   const starters = projection.questionScaffolds.slice(0, 3);
   const latest = projection.transcript.at(-1);
+  const questionLimit = projection.replayMode === "limited-questions" ? projection.replayChallenges.find((challenge) => challenge.mode === "limited-questions")?.questionLimit ?? 12 : undefined;
+  const questionCountLabel = questionLimit ? `${projection.transcript.length}/${questionLimit} 次有效提问` : `${projection.transcript.length} 次有效提问`;
   return <div className={styles.questionWorkspace}>
-    <header className={styles.workspaceHeading}><div><small>问一个事实</small><h2>系统只回答案件能够验证的内容</h2></div><span>{projection.transcript.length} 次有效提问</span></header>
-    <form className={styles.ask} onSubmit={ask}><label htmlFor="investigation-question">你的问题</label><div><input ref={questionRef} id="investigation-question" name="investigation-question" value={activeQuestion} onChange={(e) => setQuestion(e.target.value)} placeholder="例如：这扇门会自动上锁吗？" autoComplete="off" maxLength={1000} /><button disabled={!activeQuestion.trim()}>验证</button></div></form>
-    <AiInterpretationStrip offer={router.offer} route={router.route} status={router.status} message={router.message} latency={router.latency} dispatch={send} onCancel={router.cancel} onManual={useStarter} />
+    <header className={styles.workspaceHeading}><div><small>问一个事实</small><h2>系统只回答案件能够验证的内容</h2></div><span>{questionCountLabel}</span></header>
+    <form className={styles.ask} onSubmit={ask}><label htmlFor="investigation-question">你的问题</label><div><input ref={questionRef} id="investigation-question" name="investigation-question" value={activeQuestion} onChange={(e) => setQuestion(e.target.value)} placeholder="例如：这扇门会自动上锁吗？" autoComplete="off" maxLength={1000} /><button disabled={!activeQuestion.trim()}>验证</button></div><p className={styles.questionSafety}>Enter 验证 · 无法识别或歧义不会计入提问次数 · 按 / 随时回到这里</p></form>
+    <AiInterpretationStrip offer={router.offer} route={router.route} status={router.status} message={router.message} latency={router.latency} dispatch={send} onCancel={router.cancel} onManual={useStarter} onConfigure={openAiSettings} />
     {projection.interpretation && <div className={styles.interpretation} role="group" aria-label="选择问题解释"><small>你的原话：{projection.interpretation.rawText}</small>{projection.interpretation.candidates.slice(0, 3).map((candidate) => <button key={candidate.queryId} onClick={() => send({ type: "confirm_interpretation", queryId: candidate.queryId })}><b>{candidate.label}</b><span>{candidate.target} · {candidate.predicate}</span></button>)}</div>}
     {latest && <section className={styles.answerNext} aria-label="回答后的下一步"><div><small>刚刚验证</small><b>{latest.interpretedAs}</b><span>{latest.repeated ? "这条事实已经验证过；可以换一个角度继续。" : "回答已写入调查本。现在把它和一件材料对照，或继续问另一个具体关系。"}</span></div><div><button type="button" onClick={() => open("evidence")}>检查对应证据</button><button type="button" onClick={() => { questionRef.current?.focus({ preventScroll: true }); }}>继续提问</button></div></section>}
     {projection.transcript.length === 0 && starters.length > 0 && <section className={styles.quickStarts} aria-label="第一问示例"><header><small>不知道从哪问？</small><b>先验证一个公开前提</b></header><div>{starters.map((candidate) => <button type="button" key={candidate.queryId} onClick={() => useStarter(candidate.label)}><span>{candidate.target}</span><b>{candidate.label}</b></button>)}</div><p>按钮只会把问题放入输入框，你仍可修改后再验证。</p></section>}
@@ -301,9 +307,9 @@ function Notebook({ projection, summary, setSummary, workspace, open }: { projec
   return <aside className={styles.notebook} aria-label="调查本"><header><div><small>调查本</small><h2>已经确认的事实</h2></div><span>{projection.transcript.length}</span></header><ol>{projection.transcript.slice(-5).reverse().map((entry) => <li key={entry.id}><b>{ANSWERS[entry.answerCode]}</b><span>{entry.interpretedAs}</span></li>)}</ol>{projection.transcript.length === 0 && <p>回答会出现在这里，观察和推断时可以随时回看。</p>}<label>我的真相<textarea name="player-summary-desktop" value={summary} onChange={(e) => setSummary(e.target.value)} placeholder="我认为发生了什么，以及为什么…" autoComplete="off" maxLength={4000} /><small>只保存在本机，不参与胜负，也不会发送给 AI。</small></label><nav>{TABS.filter((tab) => tab.id !== workspace).slice(0, 2).map((tab) => <button key={tab.id} onClick={() => open(tab.id)}>前往{tab.label}</button>)}</nav></aside>;
 }
 
-function SettingsPanel({ onClose, muted, setMuted, reducedMotion, setReducedMotion, highContrast, setHighContrast, router, host, diagnostics, issueRecording, setIssueRecording, issues, setIssues, funGate }: { onClose: () => void; muted: boolean; setMuted: (v: boolean) => void; reducedMotion: boolean; setReducedMotion: (v: boolean) => void; highContrast: boolean; setHighContrast: (v: boolean) => void; router: ReturnType<typeof useQuestionRouter>; host: ReturnType<typeof useHostRewrite>; diagnostics: ReturnType<typeof useLocalDiagnostics>; issueRecording: boolean; setIssueRecording: (v: boolean) => void; issues: ExperienceIssueRecord[]; setIssues: Dispatch<SetStateAction<ExperienceIssueRecord[]>>; funGate: ReturnType<typeof useFunGateSession> }) {
+function SettingsPanel({ initialSection, onClose, muted, setMuted, reducedMotion, setReducedMotion, highContrast, setHighContrast, router, host, diagnostics, issueRecording, setIssueRecording, issues, setIssues, funGate }: { initialSection: SettingsSection; onClose: () => void; muted: boolean; setMuted: (v: boolean) => void; reducedMotion: boolean; setReducedMotion: (v: boolean) => void; highContrast: boolean; setHighContrast: (v: boolean) => void; router: ReturnType<typeof useQuestionRouter>; host: ReturnType<typeof useHostRewrite>; diagnostics: ReturnType<typeof useLocalDiagnostics>; issueRecording: boolean; setIssueRecording: (v: boolean) => void; issues: ExperienceIssueRecord[]; setIssues: Dispatch<SetStateAction<ExperienceIssueRecord[]>>; funGate: ReturnType<typeof useFunGateSession> }) {
   const panelRef = useRef<HTMLElement>(null);
-  const [section, setSection] = useState<SettingsSection>("experience");
+  const [section, setSection] = useState<SettingsSection>(initialSection);
   const sections: Array<{ id: SettingsSection; label: string; detail: string }> = [
     { id: "experience", label: "体验", detail: "声音与显示" },
     { id: "ai", label: "AI", detail: "可选语言桥" },
