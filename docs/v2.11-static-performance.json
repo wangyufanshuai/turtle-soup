@@ -1,0 +1,29 @@
+{
+  "reportVersion": "2.11",
+  "releaseProfile": "v2.11-internal-rc",
+  "generatedAt": "2026-09-04T02:02:13.624Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "budgets": {
+    "initialJavaScriptBytes": 700000,
+    "maximumFileBytes": 450000,
+    "archiveBytes": 8000000
+  },
+  "actual": {
+    "staticBytes": 8221108,
+    "initialJavaScriptBytes": 672904,
+    "maximumFileBytes": 395701,
+    "fileCount": 1179,
+    "routeCount": 84,
+    "archiveBytes": 3455234
+  },
+  "cacheIdentity": "black-soup-v211-action-loop-rc",
+  "deferredLoading": {
+    "currentCaseOnly": true,
+    "hiddenCaseBlocksOnDemand": true,
+    "optionalAiNotInInitialBundle": true
+  },
+  "failures": [],
+  "passed": true
+}

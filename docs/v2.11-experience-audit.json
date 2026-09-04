@@ -1,0 +1,50 @@
+{
+  "reportVersion": "2.11",
+  "releaseProfile": "v2.11-internal-rc",
+  "generatedAt": "2026-09-04T01:53:08.872Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "scope": "single-action guidance, full-width solved archive and next-case continuation",
+  "contracts": {
+    "unifiedShell": true,
+    "directChineseWorkspaces": true,
+    "settingsOnlyFunGate": true,
+    "reversibleQuestion": true,
+    "explicitActionFeedback": true,
+    "settingsFocusTrap": true,
+    "aiPresets": true,
+    "aiFailureCopy": true,
+    "homeRecentAndSeasonTabs": true,
+    "compactGuidance": true,
+    "settingsSections": true,
+    "languageRecoveryEntry": true,
+    "limitedQuestionBudget": true,
+    "completedArchiveForeground": true,
+    "distinctFirstChoices": true,
+    "fiveSeasonSingleRow": true,
+    "singleActionCue": true,
+    "solvedArchiveFullWidth": true,
+    "solvedArchiveNextCase": true
+  },
+  "sourceArtifacts": [
+    {
+      "path": "apps\\web\\components\\investigation-shell.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\case-select.tsx",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\case-select.module.css",
+      "exists": true
+    },
+    {
+      "path": "apps\\web\\components\\question-router-controls.tsx",
+      "exists": true
+    }
+  ],
+  "passed": true,
+  "qualification": "Static contracts verify intended interaction affordances. They do not establish fun, comprehension, pacing or market fit."
+}

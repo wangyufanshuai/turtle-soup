@@ -15,6 +15,8 @@ import { downloadExperienceIssues, type ExperienceIssueRecord } from "@/lib/expe
 import { deriveProofReadiness, hasExaminedEvidence } from "@/lib/proof-readiness";
 import { reasoningBoardUi } from "@/lib/reasoning-board-ui";
 import { loadMastery, saveMastery } from "@/lib/mastery-store";
+import { CASE_CATALOG } from "@/lib/case-catalog";
+import { GOLDEN_PATH } from "@/lib/golden-experience";
 import { StorageRecovery } from "./storage-recovery";
 import { AiInterpretationStrip } from "./ai-interpretation-strip";
 import { FunGateTools } from "./fun-gate-tools";
@@ -37,6 +39,27 @@ const WORKSPACES = new Set<Workspace>(TABS.map((tab) => tab.id));
 const ANSWERS: Record<string, string> = { yes: "是", no: "不是", partial: "部分相关", unknown: "信息不足", irrelevant: "与真相无关", invalid_premise: "前提不成立", unanswerable: "无法判断", unrecognized: "无法识别" };
 const GAPS: Record<string, string> = { time: "时间关系", space: "空间关系", source: "来源链", identity: "身份关系", measurement: "测量模型", "state-transition": "状态转换", "alternative-exclusion": "替代路径排除" };
 function boardTitle(title: string, mode: string) { return title.replace(new RegExp(`\\s*[·•]\\s*${mode.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*$`, "iu"), ""); }
+
+type InvestigationAction = { workspace: Workspace; label: string; detail: string };
+function nextInvestigationAction(projection: PlayerProjection, active: PlayerProjection["theoryDrafts"][number]): InvestigationAction {
+  const asked = projection.transcript.length > 0;
+  const inspected = hasExaminedEvidence(projection);
+  const structured = active.eventIds.length > 0 || active.evidenceIds.length > 0 || projection.reasoningBoards.some((board) => board.slots.some((slot) => slot.itemId));
+  if (!asked) return { workspace: "questions", label: "先问一个可验证的问题", detail: "不必猜答案；先确认人物、动作、时间或来源。" };
+  if (!inspected) return { workspace: "evidence", label: "接着检查一件证据", detail: "找出能支持或反驳刚才回答的材料。" };
+  if (!structured) return { workspace: "theory", label: "开始组织你的解释", detail: "用自己的话总结，再把事件和证据放进证明。" };
+  return { workspace: "theory", label: "继续补全并提交证明", detail: projection.canSubmit ? "当前结构已可提交；错误不会让调查不可逆。" : "先补齐事件、证据或推理板中的空位。" };
+}
+
+function nextPlayableCase(caseId: string) {
+  const curatedIndex = GOLDEN_PATH.findIndex((step) => step.caseId === caseId);
+  if (curatedIndex >= 0 && curatedIndex < GOLDEN_PATH.length - 1) {
+    const curated = CASE_CATALOG.find((entry) => entry.id === GOLDEN_PATH[curatedIndex + 1].caseId);
+    if (curated) return curated;
+  }
+  const catalogIndex = CASE_CATALOG.findIndex((entry) => entry.id === caseId);
+  return catalogIndex >= 0 ? CASE_CATALOG[catalogIndex + 1] : undefined;
+}
 
 function lastGap(events: GameEvent[]) { for (let i = events.length - 1; i >= 0; i -= 1) { const e = events[i]; if (e.type === "theory_judged" && e.judgement !== "solved" && e.proofFailureCategory) return e.proofFailureCategory; } return undefined; }
 function statusText(events: GameEvent[], restore?: RestoreStatus) {
@@ -73,6 +96,7 @@ export function InvestigationShell(props: { projection: PlayerProjection; events
   const active = projection.theoryDrafts.find((d) => d.id === projection.activeTheoryId) ?? projection.theoryDrafts[0];
   const theoryOption = projection.theoryOptions.find((o) => o.id === active.hypothesisId);
   const activeBoard = projection.reasoningBoards.find((b) => b.id === activeBoardId) ?? projection.reasoningBoards[0];
+  const nextAction = nextInvestigationAction(projection, active);
   const code = projection.case.id.match(/^(c\d+)/)?.[1] ?? "c01", gap = lastGap(events);
   const sceneDesktop = projection.case.presentation.sceneAsset, sceneMobile = projection.case.presentation.sceneAssetMobile ?? sceneDesktop;
   const availableEvidence = projection.evidence.filter((e) => e.state !== "available");
@@ -182,31 +206,23 @@ export function InvestigationShell(props: { projection: PlayerProjection; events
   return <main id="main-content" tabIndex={-1} className={styles.game} data-high-contrast={highContrast || undefined} data-reduced-motion={reducedMotion || undefined} style={{ "--case-accent": projection.case.presentation.accent } as CSSProperties}>
     <header className={styles.topbar} inert={settingsOpen || undefined}><Link href="/" prefetch={false}>← 全部案件</Link><div><small>THE BLACK SOUP · {code.toUpperCase()}</small><h1>{projection.case.title}</h1></div><nav><span>{props.online ? "离线可玩" : "离线模式"} · {props.saveState === "saving" ? "保存中" : props.saveState === "error" ? "保存失败" : "已保存"}</span><button ref={settingsTriggerRef} onClick={(event) => openSettings("experience", event.currentTarget)}>设置</button></nav></header>
     <StorageRecovery issue={props.storageIssue} save={props.latestSave} onRetry={props.onRetrySave} />
-    <NextStepCue projection={projection} active={active} workspace={workspace} events={events} restoreStatus={props.restoreStatus} open={open} />
+    {!projection.solved && <NextStepCue projection={projection} next={nextAction} workspace={workspace} events={events} restoreStatus={props.restoreStatus} open={open} />}
     <nav className={styles.tabs} aria-label="调查工作区" inert={settingsOpen || undefined}>{TABS.map((tab) => <button key={tab.id} aria-keyshortcuts={tab.shortcut} aria-pressed={workspace === tab.id} onClick={() => open(tab.id)}><b>{tab.label}<kbd>{tab.shortcut}</kbd></b><small>{tab.help}</small></button>)}</nav>
-    <div className={styles.layout} inert={settingsOpen || undefined}><section className={styles.workarea}>
+    <div className={styles.layout} data-solved={projection.solved || undefined} inert={settingsOpen || undefined}><section className={styles.workarea}>
       {workspace === "scene" && <SceneWorkspace projection={projection} sceneDesktop={sceneDesktop} sceneMobile={sceneMobile} send={send} open={open} muted={muted} />}
       {workspace === "questions" && <QuestionWorkspace projection={projection} activeQuestion={question} setQuestion={updateQuestion} questionRef={questionRef} ask={ask} send={send} open={open} openAiSettings={(trigger) => openSettings("ai", trigger)} host={host} router={router} />}
       {workspace === "evidence" && <EvidenceWorkspace projection={projection} active={active} code={code} send={send} open={open} availableCount={availableEvidence.length} onContinueToProof={() => { setTheoryStep("proof"); open("theory"); }} />}
       {workspace === "theory" && <TheoryWorkspace projection={projection} active={active} theoryOption={theoryOption} activeBoard={activeBoard} setActiveBoardId={setActiveBoardId} gap={gap} summary={summary} setSummary={setSummary} mastery={mastery} theoryStep={theoryStep} setTheoryStep={setTheoryStep} send={send} />}
-    </section><Notebook projection={projection} summary={summary} setSummary={setSummary} workspace={workspace} open={open} /></div>
+    </section>{!projection.solved && <Notebook projection={projection} summary={summary} setSummary={setSummary} workspace={workspace} next={nextAction} open={open} />}</div>
     {settingsOpen && <SettingsPanel initialSection={settingsSection} onClose={closeSettings} muted={muted} setMuted={setMuted} reducedMotion={reducedMotion} setReducedMotion={setReducedMotion} highContrast={highContrast} setHighContrast={setHighContrast} router={router} host={host} diagnostics={diagnostics} issueRecording={issueRecording} setIssueRecording={setIssueRecording} issues={issues} setIssues={setIssues} funGate={funGate} />}
   </main>;
 }
 
-function NextStepCue({ projection, active, workspace, events, restoreStatus, open }: { projection: PlayerProjection; active: PlayerProjection["theoryDrafts"][number]; workspace: Workspace; events: GameEvent[]; restoreStatus?: RestoreStatus; open: (workspace: Workspace) => void }) {
+function NextStepCue({ projection, next, workspace, events, restoreStatus, open }: { projection: PlayerProjection; next: InvestigationAction; workspace: Workspace; events: GameEvent[]; restoreStatus?: RestoreStatus; open: (workspace: Workspace) => void }) {
   const asked = projection.transcript.length > 0;
   const inspected = hasExaminedEvidence(projection);
+  const active = projection.theoryDrafts.find((draft) => draft.id === projection.activeTheoryId) ?? projection.theoryDrafts[0];
   const structured = active.eventIds.length > 0 || active.evidenceIds.length > 0 || projection.reasoningBoards.some((board) => board.slots.some((slot) => slot.itemId));
-  const next: { workspace: Workspace; label: string; detail: string } = projection.solved
-    ? { workspace: "theory", label: "查看我的解释与证据回放", detail: "你的证明已经成立，可以对照自己写下的真相。" }
-    : !asked
-      ? { workspace: "questions", label: "先问一个可验证的问题", detail: "不必猜答案；先确认人物、动作、时间或来源。" }
-      : !inspected
-        ? { workspace: "evidence", label: "接着检查一件证据", detail: "找出能支持或反驳刚才回答的材料。" }
-        : !structured
-          ? { workspace: "theory", label: "开始组织你的解释", detail: "用自己的话总结，再把事件和证据放进证明。" }
-          : { workspace: "theory", label: "继续补全并提交证明", detail: projection.canSubmit ? "当前结构已可提交；错误不会让调查不可逆。" : "先补齐事件、证据或推理板中的空位。" };
   const latest = projection.transcript.at(-1);
   const latestEvent = events.at(-1);
   const showFeedback = projection.solved || restoreStatus === "incompatible" || restoreStatus === "corrupt" || Boolean(latestEvent && latestEvent.type !== "case_started");
@@ -252,9 +268,10 @@ function MobileSummary({ summary, setSummary }: { summary: string; setSummary: (
 function TheoryWorkspace({ projection, active, theoryOption, activeBoard, setActiveBoardId, gap, summary, setSummary, mastery, theoryStep, setTheoryStep, send }: { projection: PlayerProjection; active: PlayerProjection["theoryDrafts"][number]; theoryOption?: PlayerProjection["theoryOptions"][number]; activeBoard?: PlayerProjection["reasoningBoards"][number]; setActiveBoardId: (v: string) => void; gap?: string; summary: string; setSummary: (value: string) => void; mastery?: CaseMasteryRecord; theoryStep: TheoryStep; setTheoryStep: (value: TheoryStep) => void; send: (c: GameCommand) => void }) {
   const rotation = mastery ? challengeRotation(mastery) : undefined;
   const nextChallenge = rotation?.nextChallenge === "complete" ? undefined : projection.replayChallenges.find((challenge) => challenge.mode === rotation?.nextChallenge);
+  const nextCase = nextPlayableCase(projection.case.id);
   if (projection.solved) return <div className={styles.theoryWorkspace}>
     <header className={styles.workspaceHeading}><div><small>结案档案</small><h2>你已经证明事件如何发生</h2></div><span>回放已解锁</span></header>
-    <SolvedArchive projection={projection} active={active} summary={summary} rotation={rotation} nextChallenge={nextChallenge} send={send} />
+    <SolvedArchive projection={projection} active={active} summary={summary} rotation={rotation} nextChallenge={nextChallenge} nextCase={nextCase} send={send} />
   </div>;
   const steps: Array<{ id: TheoryStep; label: string }> = [{ id: "claim", label: "解释" }, ...(projection.reasoningBoards.length > 0 ? [{ id: "board" as const, label: "推理板" }] : []), { id: "chain", label: "事件链" }, { id: "proof", label: "提交" }];
   const readiness = deriveProofReadiness(projection, active);
@@ -275,7 +292,7 @@ function TheoryWorkspace({ projection, active, theoryOption, activeBoard, setAct
   </div>;
 }
 
-function SolvedArchive({ projection, active, summary, rotation, nextChallenge, send }: { projection: PlayerProjection; active: PlayerProjection["theoryDrafts"][number]; summary: string; rotation?: ReturnType<typeof challengeRotation>; nextChallenge?: PlayerProjection["replayChallenges"][number]; send: (command: GameCommand) => void }) {
+function SolvedArchive({ projection, active, summary, rotation, nextChallenge, nextCase, send }: { projection: PlayerProjection; active: PlayerProjection["theoryDrafts"][number]; summary: string; rotation?: ReturnType<typeof challengeRotation>; nextChallenge?: PlayerProjection["replayChallenges"][number]; nextCase?: (typeof CASE_CATALOG)[number]; send: (command: GameCommand) => void }) {
   const debrief = projection.debrief;
   const replayRef = useRef<HTMLElement>(null);
   const [replayStarted, setReplayStarted] = useState(false);
@@ -287,7 +304,7 @@ function SolvedArchive({ projection, active, summary, rotation, nextChallenge, s
     requestAnimationFrame(() => replayRef.current?.scrollIntoView({ block: "start" }));
   };
   return <section className={styles.solved} aria-labelledby="case-closed-title">
-    <header className={styles.solvedHero}><div><small>CASE CLOSED · 这是你亲手还原的真相</small><h2 id="case-closed-title">你的证明成立</h2><p>答案不是系统替你揭晓的；事件、来源和证据已经由你的证明闭合。</p><div className={styles.solvedActions}><button type="button" onClick={startReplay}>{projection.replay.length > 0 ? "从头查看证据回放" : "开始证据回放"}</button>{nextChallenge && <span>下一步：{nextChallenge.mode === "limited-questions" ? `限定 ${nextChallenge.questionLimit ?? 12} 问` : nextChallenge.mode === "minimal-proof" ? "最小证据证明" : "无辅助挑战"}</span>}</div></div><span aria-hidden="true">结</span></header>
+    <header className={styles.solvedHero}><div><small>CASE CLOSED · 这是你亲手还原的真相</small><h2 id="case-closed-title">你的证明成立</h2><p>答案不是系统替你揭晓的；事件、来源和证据已经由你的证明闭合。</p><div className={styles.solvedActions}><button type="button" onClick={startReplay}>{projection.replay.length > 0 ? "从头查看证据回放" : "开始证据回放"}</button>{nextCase ? <Link prefetch={false} href={`/case/${nextCase.id}`} aria-label={`继续下一案：${nextCase.title}`}>继续下一案：{nextCase.title}</Link> : <Link prefetch={false} href="/">选择另一件案件</Link>}{nextChallenge && <span>本案下一挑战：{nextChallenge.mode === "limited-questions" ? `限定 ${nextChallenge.questionLimit ?? 12} 问` : nextChallenge.mode === "minimal-proof" ? "最小证据证明" : "无辅助挑战"}</span>}</div></div><span aria-hidden="true">结</span></header>
     <dl className={styles.debrief} aria-label="本次结案统计">
       <div><dt>证明完整度</dt><dd>{debrief?.proofCompleteness ?? 100}%</dd></div>
       <div><dt>有效提问</dt><dd>{debrief?.questionCount ?? projection.transcript.length}</dd></div>
@@ -312,8 +329,8 @@ function ProofContext({ readiness, activeStep, setStep }: { readiness: ReturnTyp
   return <section className={styles.proofContext} aria-label="当前证明结构"><header><small>当前证明结构</small><b>{readiness.nextLabel}</b></header><div>{items.map((item) => <button type="button" key={item.id} aria-pressed={activeStep === item.id} data-ready={item.ready || undefined} onClick={() => setStep(item.id)}><span>{item.label}</span><b>{item.value}</b></button>)}</div></section>;
 }
 
-function Notebook({ projection, summary, setSummary, workspace, open }: { projection: PlayerProjection; summary: string; setSummary: (v: string) => void; workspace: Workspace; open: (w: Workspace) => void }) {
-  return <aside className={styles.notebook} aria-label="调查本"><header><div><small>调查本</small><h2>已经确认的事实</h2></div><span>{projection.transcript.length}</span></header><ol>{projection.transcript.slice(-5).reverse().map((entry) => <li key={entry.id}><b>{ANSWERS[entry.answerCode]}</b><span>{entry.interpretedAs}</span></li>)}</ol>{projection.transcript.length === 0 && <p>回答会出现在这里，观察和推断时可以随时回看。</p>}<label>我的真相<textarea name="player-summary-desktop" value={summary} onChange={(e) => setSummary(e.target.value)} placeholder="我认为发生了什么，以及为什么…" autoComplete="off" maxLength={4000} /><small>只保存在本机，不参与胜负，也不会发送给 AI。</small></label><nav>{TABS.filter((tab) => tab.id !== workspace).slice(0, 2).map((tab) => <button key={tab.id} onClick={() => open(tab.id)}>前往{tab.label}</button>)}</nav></aside>;
+function Notebook({ projection, summary, setSummary, workspace, next, open }: { projection: PlayerProjection; summary: string; setSummary: (v: string) => void; workspace: Workspace; next: InvestigationAction; open: (w: Workspace) => void }) {
+  return <aside className={styles.notebook} aria-label="调查本"><header><div><small>调查本</small><h2>已经确认的事实</h2></div><span>{projection.transcript.length}</span></header><ol>{projection.transcript.slice(-5).reverse().map((entry) => <li key={entry.id}><b>{ANSWERS[entry.answerCode]}</b><span>{entry.interpretedAs}</span></li>)}</ol>{projection.transcript.length === 0 && <p>回答会出现在这里，观察和推断时可以随时回看。</p>}<label>我的真相<textarea name="player-summary-desktop" value={summary} onChange={(e) => setSummary(e.target.value)} placeholder="我认为发生了什么，以及为什么…" autoComplete="off" maxLength={4000} /><small>只保存在本机，不参与胜负，也不会发送给 AI。</small></label><section className={styles.notebookNext}><small>建议下一步</small><b>{next.label}</b>{workspace === next.workspace ? <span>就在当前区域继续。</span> : <button type="button" onClick={() => open(next.workspace)}>前往{TABS.find((tab) => tab.id === next.workspace)?.label}</button>}</section></aside>;
 }
 
 function SettingsPanel({ initialSection, onClose, muted, setMuted, reducedMotion, setReducedMotion, highContrast, setHighContrast, router, host, diagnostics, issueRecording, setIssueRecording, issues, setIssues, funGate }: { initialSection: SettingsSection; onClose: () => void; muted: boolean; setMuted: (v: boolean) => void; reducedMotion: boolean; setReducedMotion: (v: boolean) => void; highContrast: boolean; setHighContrast: (v: boolean) => void; router: ReturnType<typeof useQuestionRouter>; host: ReturnType<typeof useHostRewrite>; diagnostics: ReturnType<typeof useLocalDiagnostics>; issueRecording: boolean; setIssueRecording: (v: boolean) => void; issues: ExperienceIssueRecord[]; setIssues: Dispatch<SetStateAction<ExperienceIssueRecord[]>>; funGate: ReturnType<typeof useFunGateSession> }) {

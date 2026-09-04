@@ -107,7 +107,7 @@ export function CaseSelect() {
 
     <section className={styles.firstScreen} aria-label="继续与推荐">
       <div className={styles.primaryActions}>
-        {latest ? <Link prefetch={false} className={styles.continueCase} href={`/case/${latest.caseId}`}><small>继续调查</small><b>{CASE_CATALOG.find((entry) => entry.id === latest.caseId)?.title ?? latest.caseId}</b><span>{latest.completed ? "回看结案与挑战" : "从上次保存的位置继续"} →</span></Link> : <Link prefetch={false} className={styles.continueCase} href="/case/c01-cold-room-knock"><small>开始第一案</small><b>冷藏室的敲门声</b><span>所有案件都可以直接进入 →</span></Link>}
+        {latest ? <Link prefetch={false} className={styles.continueCase} href={`/case/${latest.caseId}`}><small>{latest.completed ? "回看刚结案件" : "继续调查"}</small><b>{CASE_CATALOG.find((entry) => entry.id === latest.caseId)?.title ?? latest.caseId}</b><span>{latest.completed ? "查看我的解释、回放与挑战" : "从上次保存的位置继续"} →</span></Link> : <Link prefetch={false} className={styles.continueCase} href="/case/c01-cold-room-knock"><small>开始第一案</small><b>冷藏室的敲门声</b><span>所有案件都可以直接进入 →</span></Link>}
         <Link prefetch={false} className={styles.recommendedCase} href={`/case/${recommendedStep.caseId}`} aria-label={`推荐下一案：${recommendedCase?.title ?? recommendedStep.caseId}`}><small>推荐下一案</small><b>{recommendedCase?.title ?? recommendedStep.caseId}</b><span>{recommendedStep.estimatedMinutes.min}–{recommendedStep.estimatedMinutes.max} 分钟 · 练习{recommendedStep.nextSkill} →</span></Link>
       </div>
       <div className={styles.recent}><h2>最近调查</h2>{recentCases.length ? recentCases.map(({ save, entry }) => <Link key={save.caseId} href={`/case/${save.caseId}`} prefetch={false}><span>{save.completed ? "已结案" : "调查中"}</span><b>{entry!.title}</b></Link>) : <p>完成第一次操作后，这里会保留最近三案。</p>}</div>

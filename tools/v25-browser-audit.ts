@@ -7,17 +7,18 @@ import { loadCaseFile, loadReleaseContent } from "./lib/release-content.ts";
 import { createCanonicalSave } from "./lib/canonical-save.ts";
 import type { SaveEnvelope } from "../packages/mystery-core/src/index.ts";
 
+const v211 = process.argv.includes("--v211");
 const v210 = process.argv.includes("--v210");
 const v29 = process.argv.includes("--v29");
 const v28 = process.argv.includes("--v28");
 const v27 = process.argv.includes("--v27");
 const v26 = process.argv.includes("--v26");
 const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
-const profileId = v210 ? "v2.10-internal-rc" : v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : v27 ? "v2.7-internal-rc" : v26 ? "v2.6-internal-rc" : "v2.5-internal-rc";
+const profileId = v211 ? "v2.11-internal-rc" : v210 ? "v2.10-internal-rc" : v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : v27 ? "v2.7-internal-rc" : v26 ? "v2.6-internal-rc" : "v2.5-internal-rc";
 const outDir = resolve(root, "apps/web/out");
-const reportVersion = v210 ? "2.10" : v29 ? "2.9" : v28 ? "2.8" : v27 ? "2.7" : v26 ? "2.6" : "2.5";
-const reportStem = v210 ? "v2.10" : v29 ? "v2.9" : v28 ? "v2.8" : v27 ? "v2.7" : v26 ? "v2.6" : "v2.5";
-const shotRelative = v210 ? "output/playwright/v210" : v29 ? "output/playwright/v29" : v28 ? "output/playwright/v28" : v27 ? "output/playwright/v27" : v26 ? "output/playwright/v26" : "output/playwright/v25";
+const reportVersion = v211 ? "2.11" : v210 ? "2.10" : v29 ? "2.9" : v28 ? "2.8" : v27 ? "2.7" : v26 ? "2.6" : "2.5";
+const reportStem = v211 ? "v2.11" : v210 ? "v2.10" : v29 ? "v2.9" : v28 ? "v2.8" : v27 ? "v2.7" : v26 ? "v2.6" : "v2.5";
+const shotRelative = v211 ? "output/playwright/v211" : v210 ? "output/playwright/v210" : v29 ? "output/playwright/v29" : v28 ? "output/playwright/v28" : v27 ? "output/playwright/v27" : v26 ? "output/playwright/v26" : "output/playwright/v25";
 const shotDir = resolve(root, shotRelative);
 mkdirSync(shotDir, { recursive: true });
 const release = loadReleaseContent(root, profileId);
@@ -131,7 +132,7 @@ async function routeSmoke(name: string, type: BrowserType, mobile: boolean) {
   if (name === "chromium" && !mobile) await page.screenshot({ path: resolve(shotDir, "unknown-case-404.png"), fullPage: false });
   await context.close();
   await browser.close();
-  return { browser: name, viewport: mobile ? "390x844" : "1440x900", home, routes, unknownStrict404, consoleErrors: routeConsoleErrors, failedResources: routeFailedResources, passed: home.continueVisible && home.seasonVisible && home.publicPreview && home.overflow <= 1 && ((v26 || v27 || v28 || v29 || v210) ? home.catalogCount && home.searchAvailable : true) && (!v210 || (home.primaryTargetsDistinct && home.seasonTabsSingleRow)) && routes.length === 84 && routes.every((item) => item.passed) && unknownStrict404 && routeConsoleErrors.length === 0 && routeFailedResources.length === 0 };
+  return { browser: name, viewport: mobile ? "390x844" : "1440x900", home, routes, unknownStrict404, consoleErrors: routeConsoleErrors, failedResources: routeFailedResources, passed: home.continueVisible && home.seasonVisible && home.publicPreview && home.overflow <= 1 && ((v26 || v27 || v28 || v29 || v210 || v211) ? home.catalogCount && home.searchAvailable : true) && ((!v210 && !v211) || (home.primaryTargetsDistinct && home.seasonTabsSingleRow)) && routes.length === 84 && routes.every((item) => item.passed) && unknownStrict404 && routeConsoleErrors.length === 0 && routeFailedResources.length === 0 };
 }
 
 async function representativeA11y(name: string, type: BrowserType, mobile: boolean) {
@@ -182,14 +183,16 @@ async function representativeFlows(name: string, type: BrowserType, mobile: bool
     await injectSave(page, caseId, createCanonicalSave(caseFile));
     await visit(page, `/case/${caseId}/`);
     await page.getByText("你的证明成立", { exact: true }).waitFor({ state: "visible", timeout: 10_000 }).catch(() => undefined);
-    const solved = await page.getByText(/证据链闭合|你已经证明了事件如何发生/).first().isVisible().catch(() => false);
+    const solved = await page.getByText("你的证明成立", { exact: true }).isVisible().catch(() => false);
     const completedArchiveForeground = await workspaceTabs.filter({ hasText: "推断" }).first().getAttribute("aria-pressed") === "true";
     const replay = await page.getByText(/证据回放/).count() > 0;
     const challengeModes = projectionReplayModes(caseFile);
     const challenges = ["limited-questions", "minimal-proof", "no-scaffolds"].every((mode) => challengeModes.includes(mode));
     const overflow = await page.evaluate(() => Math.max(0, document.documentElement.scrollWidth - document.documentElement.clientWidth));
-    const passed = tabs === 4 && naturalQuestion && evidenceShelf && solved && replay && challenges && (!v210 || completedArchiveForeground) && overflow <= 1 && errors.length === 0;
-    results.push({ caseId, tabs, naturalQuestion, evidenceShelf, solved, completedArchiveForeground, replay, challenges, overflow, consoleErrors: errors, passed });
+    const nextCaseVisible = await page.getByRole("link", { name: /继续下一案|选择另一件案件/ }).isVisible().catch(() => false);
+    const solvedLayoutFullWidth = await page.locator('[data-solved="true"]').count() === 1 && await page.getByRole("complementary", { name: "调查本" }).count() === 0;
+    const passed = tabs === 4 && naturalQuestion && evidenceShelf && solved && replay && challenges && ((!v210 && !v211) || completedArchiveForeground) && (!v211 || (nextCaseVisible && solvedLayoutFullWidth)) && overflow <= 1 && errors.length === 0;
+    results.push({ caseId, tabs, naturalQuestion, evidenceShelf, solved, completedArchiveForeground, nextCaseVisible, solvedLayoutFullWidth, replay, challenges, overflow, consoleErrors: errors, passed });
     if (name === "chromium" && ["c61-missing-tape-turn", "c84-handoff-after-stop"].includes(caseId)) await page.screenshot({ path: resolve(shotDir, `${caseId}-${mobile ? "mobile" : "desktop"}-solved.png`), fullPage: false });
     await context.close();
   }
@@ -221,7 +224,7 @@ async function offlineRecovery() {
 
 try {
   const allMatrix = [["chromium", chromium], ["firefox", firefox], ["webkit", webkit]] as const;
-  const filter = process.env.V28_BROWSER_FILTER ?? process.env.V27_BROWSER_FILTER ?? process.env.V26_BROWSER_FILTER ?? process.env.V25_BROWSER_FILTER;
+  const filter = process.env.V211_BROWSER_FILTER ?? process.env.V28_BROWSER_FILTER ?? process.env.V27_BROWSER_FILTER ?? process.env.V26_BROWSER_FILTER ?? process.env.V25_BROWSER_FILTER;
   const matrix = (filter ? allMatrix.filter(([name]) => name === filter) : allMatrix) as typeof allMatrix;
   const routeSmokeReports = [], a11yReports = [], fullFlowReports = [];
   for (const [name, type] of matrix) {
@@ -258,7 +261,7 @@ try {
     passed: routeSmokeReports.every((item) => item.passed) && a11yReports.every((item) => item.passed) && fullFlowReports.every((item) => item.passed) && offline.passed && screenshots.length >= 10 && screenshots.every((item) => item.passed),
   };
   writeFileSync(resolve(root, `docs/${reportStem}-browser-matrix.json`), `${JSON.stringify(report, null, 2)}\n`, "utf8");
-  writeFileSync(resolve(root, `docs/${reportStem}-visual-regression.json`), `${JSON.stringify({ ...report, scope: "84 routes, 5 seasons, representative opening and accessibility states", contracts: { strict404: true, noConsoleErrors: report.consoleErrorCount === 0, catalogCount: (!v26 && !v27 && !v28 && !v29 && !v210) || routeSmokeReports.every((item) => item.home.catalogCount), seasonSearch: (!v26 && !v27 && !v28 && !v29 && !v210) || routeSmokeReports.every((item) => item.home.searchAvailable), desktop: true, mobile: true, reducedMotion: true, keyboard: true, touch: true } }, null, 2)}\n`, "utf8");
+  writeFileSync(resolve(root, `docs/${reportStem}-visual-regression.json`), `${JSON.stringify({ ...report, scope: "84 routes, 5 seasons, representative opening and accessibility states", contracts: { strict404: true, noConsoleErrors: report.consoleErrorCount === 0, catalogCount: (!v26 && !v27 && !v28 && !v29 && !v210 && !v211) || routeSmokeReports.every((item) => item.home.catalogCount), seasonSearch: (!v26 && !v27 && !v28 && !v29 && !v210 && !v211) || routeSmokeReports.every((item) => item.home.searchAvailable), actionLoop: !v211 || fullFlowReports.every((item) => (item.cases as Array<{ nextCaseVisible: boolean; solvedLayoutFullWidth: boolean }>).every((entry) => entry.nextCaseVisible && entry.solvedLayoutFullWidth)), desktop: true, mobile: true, reducedMotion: true, keyboard: true, touch: true } }, null, 2)}\n`, "utf8");
   console.log(JSON.stringify({ routes: routeSmokeReports.reduce((sum, item) => sum + item.routes.length, 0), fullFlows: fullFlowReports.reduce((sum, item) => sum + item.cases.length, 0), screenshots: screenshots.length, offline: offline.passed, consoleErrors: report.consoleErrorCount, passed: report.passed }, null, 2));
   if (!report.passed) process.exitCode = 1;
 } finally {

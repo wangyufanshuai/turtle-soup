@@ -3,9 +3,9 @@ import { resolve } from "node:path";
 import { loadReleaseContent } from "./lib/release-content.ts";
 
 const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
-const v210 = process.argv.includes("--v210"), v29 = process.argv.includes("--v29"), v28 = process.argv.includes("--v28");
-const version = v210 ? "2.10" : v29 ? "2.9" : v28 ? "2.8" : "2.7";
-const profileId = v210 ? "v2.10-internal-rc" : v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
+const v211 = process.argv.includes("--v211"), v210 = process.argv.includes("--v210"), v29 = process.argv.includes("--v29"), v28 = process.argv.includes("--v28");
+const version = v211 ? "2.11" : v210 ? "2.10" : v29 ? "2.9" : v28 ? "2.8" : "2.7";
+const profileId = v211 ? "v2.11-internal-rc" : v210 ? "v2.10-internal-rc" : v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
 const release = loadReleaseContent(root, profileId);
 const required = [
   `docs/v${version}-precache.json`, `docs/v${version}-browser-matrix.json`, `docs/v${version}-visual-regression.json`,

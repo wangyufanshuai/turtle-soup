@@ -2,9 +2,9 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
-const v210 = process.argv.includes("--v210"), v29 = process.argv.includes("--v29"), v28 = process.argv.includes("--v28");
-const version = v210 ? "2.10" : v29 ? "2.9" : v28 ? "2.8" : "2.7";
-const profileId = v210 ? "v2.10-internal-rc" : v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
+const v211 = process.argv.includes("--v211"), v210 = process.argv.includes("--v210"), v29 = process.argv.includes("--v29"), v28 = process.argv.includes("--v28");
+const version = v211 ? "2.11" : v210 ? "2.10" : v29 ? "2.9" : v28 ? "2.8" : "2.7";
+const profileId = v211 ? "v2.11-internal-rc" : v210 ? "v2.10-internal-rc" : v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
 const shellPath = resolve(root, "apps/web/components/investigation-shell.tsx");
 const homePath = resolve(root, "apps/web/components/case-select.tsx");
 const homeStylesPath = resolve(root, "apps/web/components/case-select.module.css");
@@ -29,16 +29,21 @@ const contracts = {
     settingsSections: ["settings-panel-experience", "settings-panel-ai", "settings-panel-data"].every((id) => shell.includes(id)),
     advancedHostRewriteCollapsed: shell.includes("主持措辞（高级，可选）") && shell.includes("settingsDisclosure"),
   } : {}),
-  ...(v29 || v210 ? {
+  ...(v29 || v210 || v211 ? {
     compactGuidance: shell.includes("showFeedback") && !shell.includes("<div className={styles.feedback}"),
     settingsSections: ["settings-panel-experience", "settings-panel-ai", "settings-panel-data"].every((id) => shell.includes(id)),
     languageRecoveryEntry: shell.includes('openSettings("ai", trigger)') && shell.includes("questionSafety") && shell.includes("onConfigure={openAiSettings}"),
     limitedQuestionBudget: shell.includes("questionCountLabel") && shell.includes('projection.replayMode === "limited-questions"'),
   } : {}),
-  ...(v210 ? {
+  ...(v210 || v211 ? {
     completedArchiveForeground: shell.includes('if (!uiStateReady || !projection.solved) return;') && shell.includes('setWorkspace("theory")'),
     distinctFirstChoices: home.includes('!latest && firstUnfinishedStep.caseId === "c01-cold-room-knock"'),
     fiveSeasonSingleRow: homeStyles.includes("grid-template-columns:repeat(5,minmax(0,1fr))"),
+  } : {}),
+  ...(v211 ? {
+    singleActionCue: shell.includes("nextInvestigationAction") && shell.includes("建议下一步"),
+    solvedArchiveFullWidth: shell.includes("data-solved={projection.solved") && shell.includes("{!projection.solved && <Notebook"),
+    solvedArchiveNextCase: shell.includes("继续下一案：") && shell.includes("nextPlayableCase"),
   } : {}),
 };
 const report = {
@@ -48,7 +53,7 @@ const report = {
   status: "internal-rc / human-evaluation-pending",
   humanParticipants: 0,
   founderExploratorySessions: 1,
-    scope: v210 ? "completed-case foregrounding, five-season navigation and onboarding deduplication" : v29 ? "language recovery, reversible question reassurance and challenge budget visibility" : v28 ? "guided investigation hierarchy and progressive settings disclosure" : "player-first navigation, local AI setup clarity and deterministic action feedback",
+    scope: v211 ? "single-action guidance, full-width solved archive and next-case continuation" : v210 ? "completed-case foregrounding, five-season navigation and onboarding deduplication" : v29 ? "language recovery, reversible question reassurance and challenge budget visibility" : v28 ? "guided investigation hierarchy and progressive settings disclosure" : "player-first navigation, local AI setup clarity and deterministic action feedback",
   contracts,
   sourceArtifacts: [shellPath, homePath, homeStylesPath, routerPath].map((path) => ({ path: path.slice(root.length + 1), exists: existsSync(path) })),
   passed: Object.values(contracts).every(Boolean),

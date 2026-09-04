@@ -5,9 +5,9 @@ import { deflateRawSync } from "node:zlib";
 
 const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
 const source = resolve(root, "apps/web/out");
-const v210 = process.argv.includes("--v210"), v29 = process.argv.includes("--v29"), v28 = process.argv.includes("--v28");
-const version = v210 ? "2.10" : v29 ? "2.9" : v28 ? "2.8" : "2.7";
-const profileId = v210 ? "v2.10-internal-rc" : v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
+const v211 = process.argv.includes("--v211"), v210 = process.argv.includes("--v210"), v29 = process.argv.includes("--v29"), v28 = process.argv.includes("--v28");
+const version = v211 ? "2.11" : v210 ? "2.10" : v29 ? "2.9" : v28 ? "2.8" : "2.7";
+const profileId = v211 ? "v2.11-internal-rc" : v210 ? "v2.10-internal-rc" : v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
 const dist = resolve(root, `dist/${profileId}-web-pwa`);
 const archive = resolve(root, `dist/turtle-soup-${profileId}-web-pwa.zip`);
 if (!existsSync(source)) throw new Error("Run the v2.7 build first");
@@ -15,8 +15,8 @@ rmSync(dist, { recursive: true, force: true });
 mkdirSync(dist, { recursive: true });
 cpSync(source, dist, { recursive: true });
 writeFileSync(resolve(dist, "INTERNAL-RC.txt"), [
-  v210 ? "TURTLE SOUP v2.10 · COMPLETED ARCHIVE · INTERNAL RC" : v29 ? "TURTLE SOUP v2.9 · LANGUAGE RECOVERY · INTERNAL RC" : v28 ? "TURTLE SOUP v2.8 · GUIDED INVESTIGATION · INTERNAL RC" : "TURTLE SOUP v2.7 · PLAYER-FIRST EXPERIENCE · INTERNAL RC", "",
-  v210 ? "84 deterministic cases (Season 1–5). This release foregrounds completed-case archives and removes duplicate onboarding choices." : v29 ? "84 deterministic cases (Season 1–5). This release makes question recovery, optional AI setup and challenge budgets directly legible." : v28 ? "84 deterministic cases (Season 1–5). This release reduces opening hierarchy and adds progressive settings disclosure." : "84 deterministic cases (Season 1–5). This release clarifies setup, feedback and optional local AI routing.",
+  v211 ? "TURTLE SOUP v2.11 · ACTION LOOP · INTERNAL RC" : v210 ? "TURTLE SOUP v2.10 · COMPLETED ARCHIVE · INTERNAL RC" : v29 ? "TURTLE SOUP v2.9 · LANGUAGE RECOVERY · INTERNAL RC" : v28 ? "TURTLE SOUP v2.8 · GUIDED INVESTIGATION · INTERNAL RC" : "TURTLE SOUP v2.7 · PLAYER-FIRST EXPERIENCE · INTERNAL RC", "",
+  v211 ? "84 deterministic cases (Season 1–5). This release unifies next-action guidance and connects solved archives to the next case." : v210 ? "84 deterministic cases (Season 1–5). This release foregrounds completed-case archives and removes duplicate onboarding choices." : v29 ? "84 deterministic cases (Season 1–5). This release makes question recovery, optional AI setup and challenge budgets directly legible." : v28 ? "84 deterministic cases (Season 1–5). This release reduces opening hierarchy and adds progressive settings disclosure." : "84 deterministic cases (Season 1–5). This release clarifies setup, feedback and optional local AI routing.",
   "Status: internal-rc / human-evaluation-pending.",
   "Founder exploratory sessions: 1. Formal Fun Gate participants: 0.",
   "Canonical case truth, proof certificates, hashes and save schema remain frozen.",
@@ -43,6 +43,7 @@ const historical = [
   ...(v28 ? [["v2.7", "dist/turtle-soup-v2.7-internal-rc-web-pwa.zip", "30fdce5b0a839e284966591a68823089cc5df00c200269c38886fb967d1c5733"]] : []),
   ...(v29 ? [["v2.7", "dist/turtle-soup-v2.7-internal-rc-web-pwa.zip", "30fdce5b0a839e284966591a68823089cc5df00c200269c38886fb967d1c5733"], ["v2.8", "dist/turtle-soup-v2.8-internal-rc-web-pwa.zip", "43cb35106794dc2dec0337518a96f33e48284e708d73e785ce2be1f8d908bce1"]] : []),
   ...(v210 ? [["v2.7", "dist/turtle-soup-v2.7-internal-rc-web-pwa.zip", "30fdce5b0a839e284966591a68823089cc5df00c200269c38886fb967d1c5733"], ["v2.8", "dist/turtle-soup-v2.8-internal-rc-web-pwa.zip", "43cb35106794dc2dec0337518a96f33e48284e708d73e785ce2be1f8d908bce1"], ["v2.9", "dist/turtle-soup-v2.9-internal-rc-web-pwa.zip", "5fe180fb477ab01a88eeb7ba55a9199b5dc5307b58b9fb257c421ae21b986e03"]] : []),
+  ...(v211 ? [["v2.7", "dist/turtle-soup-v2.7-internal-rc-web-pwa.zip", "30fdce5b0a839e284966591a68823089cc5df00c200269c38886fb967d1c5733"], ["v2.8", "dist/turtle-soup-v2.8-internal-rc-web-pwa.zip", "43cb35106794dc2dec0337518a96f33e48284e708d73e785ce2be1f8d908bce1"], ["v2.9", "dist/turtle-soup-v2.9-internal-rc-web-pwa.zip", "5fe180fb477ab01a88eeb7ba55a9199b5dc5307b58b9fb257c421ae21b986e03"], ["v2.10", "dist/turtle-soup-v2.10-internal-rc-web-pwa.zip", "a37de5bd531422850e16ed7af65488771084dd45802f9511fd7515a02c72fa19"]] : []),
 ].map(([version, path, expected]) => { const file = resolve(root, path); const actual = existsSync(file) ? createHash("sha256").update(readFileSync(file)).digest("hex") : "missing"; return { version, path, expected, actual, unchanged: actual === expected }; });
 const artifact = { directory: `dist/${profileId}-web-pwa`, bytes: contentFiles.reduce((sum, path) => sum + statSync(path).size, 0), files: contentFiles.length, archive: { path: `dist/turtle-soup-${profileId}-web-pwa.zip`, bytes: zip.length, sha256: createHash("sha256").update(zip).digest("hex") } };
 const report = { reportVersion: version, releaseProfile: profileId, generatedAt: new Date().toISOString(), status: "internal-rc / human-evaluation-pending", humanParticipants: 0, founderExploratorySessions: 1, deterministicArchive: { method: "ZIP deflate", timestamp: "1980-01-01" }, artifact, preservedArtifacts: historical, passed: artifact.archive.bytes <= 8_000_000 && historical.every((item) => item.unchanged) };

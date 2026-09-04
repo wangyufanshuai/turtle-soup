@@ -17,6 +17,7 @@ const CACHE_IDENTITIES: Readonly<Record<string, string>> = {
   "v2.1-internal-rc": "black-soup-v21-experience-continuity-rc-1", "v2.2-internal-rc": "black-soup-v22-cognitive-friction-rc-1", "v2.3-internal-rc": "black-soup-v23-resolution-payoff-rc-1",
   "v2.4-internal-rc": "black-soup-v24-investigation-rhythm-rc-1", "v2.5-internal-rc": "black-soup-v25-season5-content-rc", "v2.6-internal-rc": "black-soup-v26-investigation-workbench-rc",
   "v2.7-internal-rc": "black-soup-v27-player-first-rc", "v2.8-internal-rc": "black-soup-v28-guided-investigation-rc", "v2.9-internal-rc": "black-soup-v29-language-recovery-rc", "v2.10-internal-rc": "black-soup-v210-completed-archive-rc",
+  "v2.11-internal-rc": "black-soup-v211-action-loop-rc",
 };
 
 function files(dir: string): string[] {

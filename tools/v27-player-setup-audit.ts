@@ -5,10 +5,10 @@ import { extname, resolve } from "node:path";
 import { chromium } from "playwright";
 
 const root = resolve(process.argv.slice(2).find((argument) => !argument.startsWith("-")) ?? ".");
-const v210 = process.argv.includes("--v210"), v29 = process.argv.includes("--v29"), v28 = process.argv.includes("--v28");
-const version = v210 ? "2.10" : v29 ? "2.9" : v28 ? "2.8" : "2.7";
-const profileId = v210 ? "v2.10-internal-rc" : v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
-const languageRecoveryFlow = v29 || v210;
+const v211 = process.argv.includes("--v211"), v210 = process.argv.includes("--v210"), v29 = process.argv.includes("--v29"), v28 = process.argv.includes("--v28");
+const version = v211 ? "2.11" : v210 ? "2.10" : v29 ? "2.9" : v28 ? "2.8" : "2.7";
+const profileId = v211 ? "v2.11-internal-rc" : v210 ? "v2.10-internal-rc" : v29 ? "v2.9-internal-rc" : v28 ? "v2.8-internal-rc" : "v2.7-internal-rc";
+const languageRecoveryFlow = v29 || v210 || v211;
 const outDir = resolve(root, "apps/web/out");
 const shotDir = resolve(root, `output/playwright/v${version.replace(".", "")}`);
 mkdirSync(shotDir, { recursive: true });
