@@ -7,17 +7,19 @@
   自由提问，检查证据，组织推断，最后用完整的因果链结案。
 </p>
 
+<p align="center"><em>A deterministic, offline-first mystery game where guessing the truth is only the beginning—you must prove it.</em></p>
+
 <p align="center">
   <img alt="84 cases" src="https://img.shields.io/badge/CASES-84-b7d957?style=flat-square" />
   <img alt="offline PWA" src="https://img.shields.io/badge/OFFLINE-PWA-66c7d5?style=flat-square" />
   <img alt="deterministic core" src="https://img.shields.io/badge/CORE-DETERMINISTIC-d7b56d?style=flat-square" />
   <img alt="optional AI" src="https://img.shields.io/badge/AI-OPTIONAL-9d8ac7?style=flat-square" />
-  <img alt="internal release candidate" src="https://img.shields.io/badge/STATUS-INTERNAL_RC-f0a04b?style=flat-square" />
+  <img alt="human evaluation pending" src="https://img.shields.io/badge/STATUS-HUMAN_TESTING-f0a04b?style=flat-square" />
   <a href="./LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/LICENSE-MIT-e8e8e8?style=flat-square" /></a>
 </p>
 
 <p align="center">
-  <a href="./dist/turtle-soup-v2.11-internal-rc-web-pwa.zip"><strong>下载 v2.11 离线版</strong></a>
+  <a href="https://github.com/wangyufanshuai/turtle-soup/raw/refs/heads/main/dist/turtle-soup-v2.11-internal-rc-web-pwa.zip"><strong>一键下载 v2.11 离线版</strong></a>
   ·
   <a href="#-3-分钟本地运行">本地运行</a>
   ·
@@ -109,7 +111,7 @@ flowchart LR
 
 ### 直接玩离线包
 
-1. 下载 [v2.11 离线 Web/PWA](./dist/turtle-soup-v2.11-internal-rc-web-pwa.zip) 并解压。
+1. 下载 [v2.11 离线 Web/PWA](https://github.com/wangyufanshuai/turtle-soup/raw/refs/heads/main/dist/turtle-soup-v2.11-internal-rc-web-pwa.zip) 并解压。
 2. 进入解压目录，启动一个静态服务器：
 
 ```bash
@@ -199,6 +201,8 @@ Next.js / React DOM
 ## 🧪 项目状态与贡献
 
 当前最需要的不是第 85 个案件，而是更多不知道答案的真人完成案件，帮助验证语言容错、节奏、提示强度和结案满足感。
+
+`v2.11` 是当前内容与发行 profile，不是 npm 发布包版本；项目保持私有 workspace package，真正的发行状态以下载包、冻结 profile 和对应验证报告为准。
 
 如果你愿意参与，最有价值的方式是：
 
