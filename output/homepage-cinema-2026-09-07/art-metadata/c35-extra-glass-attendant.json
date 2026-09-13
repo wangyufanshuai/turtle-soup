@@ -1,0 +1,32 @@
+{
+  "id": "c35-extra-glass-attendant",
+  "title": "玻璃里多出来的值班员",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-bc399262-1b75-45d5-9062-dcf604036442.png",
+  "sourceSha256": "d187d1421b04fc0cb732ae0fd5d807961ad3240e7f99566ef82ebbd90e595286",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 玻璃里多出来的值班员 — 大厅监控在同一分钟拍到两名穿同样制服的值班员；门禁和排班却都只有一个人。\nArt direction: An empty glass-walled lobby at night, layered reflective panes and an unattended guard's chair; no human doubles.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c35-extra-glass-attendant.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 69436,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "fafcc6beafd2dafde7837d0031c94e20b230a5e4df8098c77a882338bfbee14e"
+    },
+    {
+      "path": "/assets/home-cinema/c35-extra-glass-attendant-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 24634,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "8acc54e22631a711c945251d76f4e61d3a57274d7ef0f468213ce692f6cb5b80"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.593645+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

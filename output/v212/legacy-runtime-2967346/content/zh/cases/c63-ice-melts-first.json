@@ -1,0 +1,2189 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c63-ice-melts-first",
+  "metadata": {
+    "titleKey": "case.c63.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "相变",
+      "阈值",
+      "环境状态"
+    ],
+    "targetMinutes": {
+      "min": 8,
+      "max": 18
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:ae8dde73e130f1b26297527adb3372919fc601c81fce10df2849b7e4fb9da3bb",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-workshop-bench",
+    "sceneAsset": "/assets/cases/c63-ice-melts-first/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c63-ice-melts-first/scene-mobile.svg",
+    "palette": "season5-workshop-bench",
+    "accent": "#c9a7d9",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "threshold-ladder-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "threshold-ladder"
+  },
+  "surface": {
+    "titleKey": "case.c63.title",
+    "textKey": "case.c63.surface",
+    "publicFactIds": [
+      "fact-c63-01",
+      "fact-c63-02",
+      "fact-c63-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c63-01",
+      "query-c63-02",
+      "query-c63-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c63-one",
+      "titleKey": "chapter.c63.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c63-1",
+      "titleKey": "board.c63.1.title",
+      "mode": "threshold-ladder",
+      "slots": [
+        {
+          "id": "slot-c63-1-1",
+          "labelKey": "board.c63.1.slot.1",
+          "acceptsEventIds": [
+            "event-c63-01"
+          ]
+        },
+        {
+          "id": "slot-c63-1-2",
+          "labelKey": "board.c63.1.slot.2",
+          "acceptsEventIds": [
+            "event-c63-03"
+          ]
+        },
+        {
+          "id": "slot-c63-1-3",
+          "labelKey": "board.c63.1.slot.3",
+          "acceptsEventIds": [
+            "event-c63-05"
+          ]
+        },
+        {
+          "id": "slot-c63-1-4",
+          "labelKey": "board.c63.1.slot.4",
+          "acceptsEventIds": [
+            "event-c63-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "reaches",
+        "crosses",
+        "holds"
+      ]
+    },
+    {
+      "id": "board-c63-2",
+      "titleKey": "board.c63.2.title",
+      "mode": "state-trace",
+      "slots": [
+        {
+          "id": "slot-c63-2-1",
+          "labelKey": "board.c63.2.slot.1",
+          "acceptsEventIds": [
+            "event-c63-02"
+          ]
+        },
+        {
+          "id": "slot-c63-2-2",
+          "labelKey": "board.c63.2.slot.2",
+          "acceptsEventIds": [
+            "event-c63-04"
+          ]
+        },
+        {
+          "id": "slot-c63-2-3",
+          "labelKey": "board.c63.2.slot.3",
+          "acceptsEventIds": [
+            "event-c63-06"
+          ]
+        },
+        {
+          "id": "slot-c63-2-4",
+          "labelKey": "board.c63.2.slot.4",
+          "acceptsEventIds": [
+            "event-c63-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "transitions-to",
+        "causes",
+        "explains"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c63-system",
+      "kind": "object",
+      "labelKey": "entity.c63.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c63",
+      "kind": "location",
+      "labelKey": "location.c63",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c63-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-1",
+      "labelKey": "event.c63.1",
+      "effectFactIds": [
+        "fact-c63-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-2",
+      "labelKey": "event.c63.2",
+      "effectFactIds": [
+        "fact-c63-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-3",
+      "labelKey": "event.c63.3",
+      "effectFactIds": [
+        "fact-c63-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-4",
+      "labelKey": "event.c63.4",
+      "effectFactIds": [
+        "fact-c63-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-5",
+      "labelKey": "event.c63.5",
+      "effectFactIds": [
+        "fact-c63-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-6",
+      "labelKey": "event.c63.6",
+      "effectFactIds": [
+        "fact-c63-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "20:24"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-7",
+      "labelKey": "event.c63.7",
+      "effectFactIds": [
+        "fact-c63-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-8",
+      "labelKey": "event.c63.8",
+      "effectFactIds": [
+        "fact-c63-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-9",
+      "labelKey": "event.c63.9",
+      "effectFactIds": [
+        "fact-c63-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-10",
+      "labelKey": "event.c63.10",
+      "effectFactIds": [
+        "fact-c63-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-11",
+      "labelKey": "event.c63.11",
+      "effectFactIds": [
+        "fact-c63-11"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "21:44"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-12",
+      "labelKey": "event.c63.12",
+      "effectFactIds": [
+        "fact-c63-12"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c63-13",
+      "order": 130,
+      "time": {
+        "kind": "instant",
+        "value": "21:48"
+      },
+      "participants": [
+        "entity-c63-system"
+      ],
+      "locationId": "location-c63",
+      "action": "step-c63-13",
+      "labelKey": "event.c63.13",
+      "effectFactIds": [
+        "fact-c63-13"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c63-1-1",
+      "type": "precedes",
+      "fromId": "entity-c63-system",
+      "toId": "location-c63",
+      "eventId": "event-c63-01",
+      "factId": "fact-c63-01"
+    },
+    {
+      "id": "relation-c63-1-2",
+      "type": "causes",
+      "fromId": "entity-c63-system",
+      "toId": "location-c63",
+      "eventId": "event-c63-03",
+      "factId": "fact-c63-02"
+    },
+    {
+      "id": "relation-c63-1-3",
+      "type": "causes",
+      "fromId": "entity-c63-system",
+      "toId": "location-c63",
+      "eventId": "event-c63-05",
+      "factId": "fact-c63-03"
+    },
+    {
+      "id": "relation-c63-2-1",
+      "type": "precedes",
+      "fromId": "entity-c63-system",
+      "toId": "location-c63",
+      "eventId": "event-c63-02",
+      "factId": "fact-c63-02"
+    },
+    {
+      "id": "relation-c63-2-2",
+      "type": "causes",
+      "fromId": "entity-c63-system",
+      "toId": "location-c63",
+      "eventId": "event-c63-04",
+      "factId": "fact-c63-03"
+    },
+    {
+      "id": "relation-c63-2-3",
+      "type": "causes",
+      "fromId": "entity-c63-system",
+      "toId": "location-c63",
+      "eventId": "event-c63-06",
+      "factId": "fact-c63-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c63-01",
+      "predicate": "verified_c63_1",
+      "args": {
+        "term": "盐水夹层"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.1"
+    },
+    {
+      "id": "fact-c63-02",
+      "predicate": "verified_c63_2",
+      "args": {
+        "term": "融化阈值"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.2"
+    },
+    {
+      "id": "fact-c63-03",
+      "predicate": "verified_c63_3",
+      "args": {
+        "term": "冰芯温度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.3"
+    },
+    {
+      "id": "fact-c63-04",
+      "predicate": "verified_c63_4",
+      "args": {
+        "term": "表面融水"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.4"
+    },
+    {
+      "id": "fact-c63-05",
+      "predicate": "verified_c63_5",
+      "args": {
+        "term": "相态变化"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.5"
+    },
+    {
+      "id": "fact-c63-06",
+      "predicate": "verified_c63_6",
+      "args": {
+        "term": "冷库温度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.6"
+    },
+    {
+      "id": "fact-c63-07",
+      "predicate": "verified_c63_7",
+      "args": {
+        "term": "局部浓度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.7"
+    },
+    {
+      "id": "fact-c63-08",
+      "predicate": "verified_c63_8",
+      "args": {
+        "term": "复冻结"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.8"
+    },
+    {
+      "id": "fact-c63-09",
+      "predicate": "verified_c63_9",
+      "args": {
+        "term": "热交换"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.9"
+    },
+    {
+      "id": "fact-c63-10",
+      "predicate": "verified_c63_10",
+      "args": {
+        "term": "温度探头"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.10"
+    },
+    {
+      "id": "fact-c63-11",
+      "predicate": "verified_c63_11",
+      "args": {
+        "term": "盐水夹层"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.11"
+    },
+    {
+      "id": "fact-c63-12",
+      "predicate": "verified_c63_12",
+      "args": {
+        "term": "融化阈值"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-12"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c63.12"
+    },
+    {
+      "id": "fact-c63-13",
+      "predicate": "verified_c63_13",
+      "args": {
+        "term": "冰芯温度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-13"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-13"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-13"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c63.13"
+    },
+    {
+      "id": "fact-c63-14",
+      "predicate": "verified_c63_14",
+      "args": {
+        "term": "表面融水"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c63.14"
+    },
+    {
+      "id": "fact-c63-15",
+      "predicate": "verified_c63_15",
+      "args": {
+        "term": "相态变化"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c63.15"
+    },
+    {
+      "id": "fact-c63-16",
+      "predicate": "verified_c63_16",
+      "args": {
+        "term": "冷库温度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c63.16"
+    },
+    {
+      "id": "fact-c63-17",
+      "predicate": "verified_c63_17",
+      "args": {
+        "term": "局部浓度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c63.17"
+    },
+    {
+      "id": "fact-c63-18",
+      "predicate": "verified_c63_18",
+      "args": {
+        "term": "复冻结"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c63.18"
+    },
+    {
+      "id": "fact-c63-19",
+      "predicate": "verified_c63_19",
+      "args": {
+        "term": "热交换"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c63.19"
+    },
+    {
+      "id": "fact-c63-20",
+      "predicate": "verified_c63_20",
+      "args": {
+        "term": "温度探头"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c63.20"
+    },
+    {
+      "id": "fact-c63-21",
+      "predicate": "verified_c63_21",
+      "args": {
+        "term": "盐水夹层"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c63-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c63-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c63.21"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c63-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-01",
+        "fact-c63-02",
+        "fact-c63-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c63-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-01",
+        "fact-c63-02",
+        "fact-c63-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c63-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-02",
+        "fact-c63-15"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c63-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-03",
+        "fact-c63-16"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c63-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-04",
+        "fact-c63-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c63-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-05",
+        "fact-c63-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c63-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-06",
+        "fact-c63-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c63-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-07",
+        "fact-c63-20"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c63-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-08",
+        "fact-c63-21"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c63-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c63-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c63-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c63-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-12"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c63-13",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c63-13"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c63-13"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c63-01",
+      "labelKey": "query.c63.1",
+      "intent": "verify",
+      "predicate": "verified_c63_1",
+      "slots": {
+        "subjectId": "entity-c63-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c63-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-opening"
+      ],
+      "examplePhrases": [
+        "盐水夹层是否成立？",
+        "能确认盐水夹层吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "盐水夹层"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c63-02",
+      "labelKey": "query.c63.2",
+      "intent": "verify",
+      "predicate": "verified_c63_2",
+      "slots": {
+        "subjectId": "entity-c63-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c63-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-opening"
+      ],
+      "examplePhrases": [
+        "融化阈值是否成立？",
+        "能确认融化阈值吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "融化阈值"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c63-03",
+      "labelKey": "query.c63.3",
+      "intent": "verify",
+      "predicate": "verified_c63_3",
+      "slots": {
+        "subjectId": "entity-c63-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c63-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-opening"
+      ],
+      "examplePhrases": [
+        "冰芯温度是否成立？",
+        "能确认冰芯温度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "冰芯温度"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c63-04",
+      "labelKey": "query.c63.4",
+      "intent": "verify",
+      "predicate": "verified_c63_4",
+      "slots": {
+        "subjectId": "entity-c63-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c63-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-04"
+      ],
+      "examplePhrases": [
+        "表面融水是否成立？",
+        "能确认表面融水吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "表面融水"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c63-05",
+      "labelKey": "query.c63.5",
+      "intent": "verify",
+      "predicate": "verified_c63_5",
+      "slots": {
+        "subjectId": "entity-c63-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c63-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-05"
+      ],
+      "examplePhrases": [
+        "相态变化是否成立？",
+        "能确认相态变化吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "相态变化"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c63-06",
+      "labelKey": "query.c63.6",
+      "intent": "verify",
+      "predicate": "verified_c63_6",
+      "slots": {
+        "subjectId": "entity-c63-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c63-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-06"
+      ],
+      "examplePhrases": [
+        "冷库温度是否成立？",
+        "能确认冷库温度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "冷库温度"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c63-07",
+      "labelKey": "query.c63.7",
+      "intent": "verify",
+      "predicate": "verified_c63_7",
+      "slots": {
+        "subjectId": "entity-c63-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c63-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-07"
+      ],
+      "examplePhrases": [
+        "局部浓度是否成立？",
+        "能确认局部浓度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "局部浓度"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c63-08",
+      "labelKey": "query.c63.8",
+      "intent": "verify",
+      "predicate": "verified_c63_8",
+      "slots": {
+        "subjectId": "entity-c63-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c63-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-08"
+      ],
+      "examplePhrases": [
+        "复冻结是否成立？",
+        "能确认复冻结吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "复冻结"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c63-09",
+      "labelKey": "query.c63.9",
+      "intent": "verify",
+      "predicate": "verified_c63_9",
+      "slots": {
+        "subjectId": "entity-c63-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c63-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-09"
+      ],
+      "examplePhrases": [
+        "热交换是否成立？",
+        "能确认热交换吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "热交换"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c63-10",
+      "labelKey": "query.c63.10",
+      "intent": "verify",
+      "predicate": "verified_c63_10",
+      "slots": {
+        "subjectId": "entity-c63-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c63-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c63-10"
+      ],
+      "examplePhrases": [
+        "温度探头是否成立？",
+        "能确认温度探头吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "温度探头"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c63-01",
+      "kind": "scene",
+      "titleKey": "evidence.c63.1.title",
+      "observationKey": "evidence.c63.1.observation",
+      "sourceFactIds": [
+        "fact-c63-01",
+        "fact-c63-02",
+        "fact-c63-03"
+      ],
+      "sourceEventIds": [
+        "event-c63-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c63-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-01.svg",
+      "assetAlt": "盐水夹层"
+    },
+    {
+      "id": "evidence-c63-02",
+      "kind": "record",
+      "titleKey": "evidence.c63.2.title",
+      "observationKey": "evidence.c63.2.observation",
+      "sourceFactIds": [
+        "fact-c63-02",
+        "fact-c63-15"
+      ],
+      "sourceEventIds": [
+        "event-c63-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c63-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-02.svg",
+      "assetAlt": "融化阈值"
+    },
+    {
+      "id": "evidence-c63-03",
+      "kind": "object",
+      "titleKey": "evidence.c63.3.title",
+      "observationKey": "evidence.c63.3.observation",
+      "sourceFactIds": [
+        "fact-c63-03",
+        "fact-c63-16"
+      ],
+      "sourceEventIds": [
+        "event-c63-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-03.svg",
+      "assetAlt": "冰芯温度"
+    },
+    {
+      "id": "evidence-c63-04",
+      "kind": "scene",
+      "titleKey": "evidence.c63.4.title",
+      "observationKey": "evidence.c63.4.observation",
+      "sourceFactIds": [
+        "fact-c63-04",
+        "fact-c63-17"
+      ],
+      "sourceEventIds": [
+        "event-c63-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-04.svg",
+      "assetAlt": "表面融水"
+    },
+    {
+      "id": "evidence-c63-05",
+      "kind": "record",
+      "titleKey": "evidence.c63.5.title",
+      "observationKey": "evidence.c63.5.observation",
+      "sourceFactIds": [
+        "fact-c63-05",
+        "fact-c63-18"
+      ],
+      "sourceEventIds": [
+        "event-c63-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-05.svg",
+      "assetAlt": "相态变化"
+    },
+    {
+      "id": "evidence-c63-06",
+      "kind": "object",
+      "titleKey": "evidence.c63.6.title",
+      "observationKey": "evidence.c63.6.observation",
+      "sourceFactIds": [
+        "fact-c63-06",
+        "fact-c63-19"
+      ],
+      "sourceEventIds": [
+        "event-c63-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-01.svg",
+      "assetAlt": "冷库温度"
+    },
+    {
+      "id": "evidence-c63-07",
+      "kind": "scene",
+      "titleKey": "evidence.c63.7.title",
+      "observationKey": "evidence.c63.7.observation",
+      "sourceFactIds": [
+        "fact-c63-07",
+        "fact-c63-20"
+      ],
+      "sourceEventIds": [
+        "event-c63-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-02.svg",
+      "assetAlt": "局部浓度"
+    },
+    {
+      "id": "evidence-c63-08",
+      "kind": "record",
+      "titleKey": "evidence.c63.8.title",
+      "observationKey": "evidence.c63.8.observation",
+      "sourceFactIds": [
+        "fact-c63-08",
+        "fact-c63-21"
+      ],
+      "sourceEventIds": [
+        "event-c63-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-03.svg",
+      "assetAlt": "复冻结"
+    },
+    {
+      "id": "evidence-c63-09",
+      "kind": "object",
+      "titleKey": "evidence.c63.9.title",
+      "observationKey": "evidence.c63.9.observation",
+      "sourceFactIds": [
+        "fact-c63-09"
+      ],
+      "sourceEventIds": [
+        "event-c63-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-04.svg",
+      "assetAlt": "热交换"
+    },
+    {
+      "id": "evidence-c63-10",
+      "kind": "scene",
+      "titleKey": "evidence.c63.10.title",
+      "observationKey": "evidence.c63.10.observation",
+      "sourceFactIds": [
+        "fact-c63-10"
+      ],
+      "sourceEventIds": [
+        "event-c63-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-05.svg",
+      "assetAlt": "温度探头"
+    },
+    {
+      "id": "evidence-c63-11",
+      "kind": "record",
+      "titleKey": "evidence.c63.11.title",
+      "observationKey": "evidence.c63.11.observation",
+      "sourceFactIds": [
+        "fact-c63-11"
+      ],
+      "sourceEventIds": [
+        "event-c63-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-01.svg",
+      "assetAlt": "盐水夹层"
+    },
+    {
+      "id": "evidence-c63-12",
+      "kind": "object",
+      "titleKey": "evidence.c63.12.title",
+      "observationKey": "evidence.c63.12.observation",
+      "sourceFactIds": [
+        "fact-c63-12"
+      ],
+      "sourceEventIds": [
+        "event-c63-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-02.svg",
+      "assetAlt": "融化阈值"
+    },
+    {
+      "id": "evidence-c63-13",
+      "kind": "scene",
+      "titleKey": "evidence.c63.13.title",
+      "observationKey": "evidence.c63.13.observation",
+      "sourceFactIds": [
+        "fact-c63-13"
+      ],
+      "sourceEventIds": [
+        "event-c63-13"
+      ],
+      "relatedEntityIds": [
+        "entity-c63-system",
+        "location-c63"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c63-ice-melts-first/evidence-03.svg",
+      "assetAlt": "冰芯温度"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c63.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c63-01",
+          "event-c63-02",
+          "event-c63-03",
+          "event-c63-04",
+          "event-c63-05",
+          "event-c63-06",
+          "event-c63-07",
+          "event-c63-08",
+          "event-c63-09",
+          "event-c63-10",
+          "event-c63-11",
+          "event-c63-12"
+        ],
+        "motiveKey": "用局部阈值解释同一物体的不同状态"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c63-01",
+        "evidence-c63-02",
+        "evidence-c63-03",
+        "evidence-c63-04",
+        "evidence-c63-05",
+        "evidence-c63-06",
+        "evidence-c63-07",
+        "evidence-c63-08",
+        "evidence-c63-09",
+        "evidence-c63-10",
+        "evidence-c63-11",
+        "evidence-c63-12"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c63-1",
+        "contradiction-c63-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c63-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c63.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "冰芯温度计读错了"
+        ],
+        "motiveKey": "motive-c63-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c63-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c63-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c63-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c63.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "有人提前把冰块加热过"
+        ],
+        "motiveKey": "motive-c63-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c63-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c63-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c63-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c63-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c63-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c63-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c63-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c63-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c63-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c63-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c63-01",
+      "fact-c63-02",
+      "fact-c63-03",
+      "fact-c63-04",
+      "fact-c63-05",
+      "fact-c63-06",
+      "fact-c63-07",
+      "fact-c63-08",
+      "fact-c63-09",
+      "fact-c63-10",
+      "fact-c63-11",
+      "fact-c63-12"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c63-01",
+      "evidence-c63-02",
+      "evidence-c63-03",
+      "evidence-c63-04",
+      "evidence-c63-05",
+      "evidence-c63-06",
+      "evidence-c63-07",
+      "evidence-c63-08",
+      "evidence-c63-09",
+      "evidence-c63-10",
+      "evidence-c63-11",
+      "evidence-c63-12"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c63-01",
+        "event-c63-02"
+      ],
+      [
+        "event-c63-02",
+        "event-c63-03"
+      ],
+      [
+        "event-c63-03",
+        "event-c63-04"
+      ],
+      [
+        "event-c63-04",
+        "event-c63-05"
+      ],
+      [
+        "event-c63-05",
+        "event-c63-06"
+      ],
+      [
+        "event-c63-06",
+        "event-c63-07"
+      ],
+      [
+        "event-c63-07",
+        "event-c63-08"
+      ],
+      [
+        "event-c63-08",
+        "event-c63-09"
+      ],
+      [
+        "event-c63-09",
+        "event-c63-10"
+      ],
+      [
+        "event-c63-10",
+        "event-c63-11"
+      ],
+      [
+        "event-c63-11",
+        "event-c63-12"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c63-1",
+      "contradiction-c63-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c63-alternative-1",
+      "hypothesis-c63-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c63-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c63-a",
+        "evidenceIds": [
+          "evidence-c63-01",
+          "evidence-c63-02",
+          "evidence-c63-03",
+          "evidence-c63-04",
+          "evidence-c63-05",
+          "evidence-c63-06",
+          "evidence-c63-07",
+          "evidence-c63-08"
+        ]
+      },
+      {
+        "id": "proof-c63-b",
+        "evidenceIds": [
+          "evidence-c63-01",
+          "evidence-c63-02",
+          "evidence-c63-09",
+          "evidence-c63-10",
+          "evidence-c63-11",
+          "evidence-c63-12"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "用局部阈值解释同一物体的不同状态"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c63-1",
+        "kind": "measurement",
+        "boardId": "board-c63-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c63-1-1",
+            "eventId": "event-c63-01"
+          },
+          {
+            "slotId": "slot-c63-1-2",
+            "eventId": "event-c63-03"
+          },
+          {
+            "slotId": "slot-c63-1-3",
+            "eventId": "event-c63-05"
+          },
+          {
+            "slotId": "slot-c63-1-4",
+            "eventId": "event-c63-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c63-01",
+            "toEventId": "event-c63-03",
+            "relation": "reaches"
+          },
+          {
+            "fromEventId": "event-c63-03",
+            "toEventId": "event-c63-05",
+            "relation": "reaches"
+          },
+          {
+            "fromEventId": "event-c63-05",
+            "toEventId": "event-c63-12",
+            "relation": "reaches"
+          }
+        ],
+        "failureCategory": "measurement"
+      },
+      {
+        "id": "obligation-c63-2",
+        "kind": "state-transition",
+        "boardId": "board-c63-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c63-2-1",
+            "eventId": "event-c63-02"
+          },
+          {
+            "slotId": "slot-c63-2-2",
+            "eventId": "event-c63-04"
+          },
+          {
+            "slotId": "slot-c63-2-3",
+            "eventId": "event-c63-06"
+          },
+          {
+            "slotId": "slot-c63-2-4",
+            "eventId": "event-c63-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c63-02",
+            "toEventId": "event-c63-04",
+            "relation": "transitions-to"
+          },
+          {
+            "fromEventId": "event-c63-04",
+            "toEventId": "event-c63-06",
+            "relation": "transitions-to"
+          },
+          {
+            "fromEventId": "event-c63-06",
+            "toEventId": "event-c63-12",
+            "relation": "transitions-to"
+          }
+        ],
+        "failureCategory": "state-transition"
+      }
+    ],
+    "uniquenessClaim": "盐水夹层降低了表面局部融化阈值，表面状态先于核心温度变化；单一温度读数不能代表全部相态。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c63-1",
+      "eventId": "event-c63-02",
+      "factIds": [
+        "fact-c63-01"
+      ],
+      "captionKey": "event.c63.2"
+    },
+    {
+      "id": "replay-c63-2",
+      "eventId": "event-c63-03",
+      "factIds": [
+        "fact-c63-02"
+      ],
+      "captionKey": "event.c63.3"
+    },
+    {
+      "id": "replay-c63-3",
+      "eventId": "event-c63-04",
+      "factIds": [
+        "fact-c63-03"
+      ],
+      "captionKey": "event.c63.4"
+    },
+    {
+      "id": "replay-c63-4",
+      "eventId": "event-c63-05",
+      "factIds": [
+        "fact-c63-04"
+      ],
+      "captionKey": "event.c63.5"
+    },
+    {
+      "id": "replay-c63-5",
+      "eventId": "event-c63-06",
+      "factIds": [
+        "fact-c63-05"
+      ],
+      "captionKey": "event.c63.6"
+    },
+    {
+      "id": "replay-c63-6",
+      "eventId": "event-c63-07",
+      "factIds": [
+        "fact-c63-01",
+        "fact-c63-02",
+        "fact-c63-03",
+        "fact-c63-04",
+        "fact-c63-05",
+        "fact-c63-06",
+        "fact-c63-07",
+        "fact-c63-08",
+        "fact-c63-09",
+        "fact-c63-10",
+        "fact-c63-11",
+        "fact-c63-12"
+      ],
+      "captionKey": "event.c63.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c63.title": "冷库里先融化的冰",
+      "case.c63.surface": "冰芯温度仍在零度以下，表面却已经出现了一圈融水。",
+      "case.c63.truth": "盐水夹层降低了表面局部融化阈值，表面状态先于核心温度变化；单一温度读数不能代表全部相态。",
+      "entity.c63.system": "现场对象与记录链",
+      "location.c63": "相变",
+      "hypothesis.c63.canonical": "盐水夹层降低了表面局部融化阈值，表面状态先于核心温度变化；单一温度读数不能代表全部相态。",
+      "hypothesis.c63.alternative.1": "冰芯温度计读错了",
+      "hypothesis.c63.alternative.2": "有人提前把冰块加热过",
+      "motive.用局部阈值解释同一物体的不同状态": "用局部阈值解释同一物体的不同状态",
+      "chapter.c63.one": "固定异常",
+      "chapter.c63.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c63.1": "盐水夹层是否成立？",
+      "query.c63.2": "融化阈值是否成立？",
+      "query.c63.3": "冰芯温度是否成立？",
+      "query.c63.4": "表面融水是否成立？",
+      "query.c63.5": "相态变化是否成立？",
+      "query.c63.6": "冷库温度是否成立？",
+      "query.c63.7": "局部浓度是否成立？",
+      "query.c63.8": "复冻结是否成立？",
+      "query.c63.9": "热交换是否成立？",
+      "query.c63.10": "温度探头是否成立？",
+      "event.c63.1": "阶段 1：盐水夹层进入记录链",
+      "event.c63.2": "阶段 2：融化阈值进入记录链",
+      "event.c63.3": "阶段 3：冰芯温度进入记录链",
+      "event.c63.4": "阶段 4：表面融水进入记录链",
+      "event.c63.5": "阶段 5：相态变化进入记录链",
+      "event.c63.6": "阶段 6：冷库温度进入记录链",
+      "event.c63.7": "阶段 7：局部浓度进入记录链",
+      "event.c63.8": "阶段 8：复冻结进入记录链",
+      "event.c63.9": "阶段 9：热交换进入记录链",
+      "event.c63.10": "阶段 10：温度探头进入记录链",
+      "event.c63.11": "阶段 11：盐水夹层进入记录链",
+      "event.c63.12": "阶段 12：融化阈值进入记录链",
+      "event.c63.13": "阶段 13：冰芯温度进入记录链",
+      "evidence.c63.1.title": "盐水夹层记录",
+      "evidence.c63.1.observation": "来源材料显示“盐水夹层”在该阶段可复核。",
+      "evidence.c63.2.title": "融化阈值记录",
+      "evidence.c63.2.observation": "来源材料显示“融化阈值”在该阶段可复核。",
+      "evidence.c63.3.title": "冰芯温度记录",
+      "evidence.c63.3.observation": "来源材料显示“冰芯温度”在该阶段可复核。",
+      "evidence.c63.4.title": "表面融水记录",
+      "evidence.c63.4.observation": "来源材料显示“表面融水”在该阶段可复核。",
+      "evidence.c63.5.title": "相态变化记录",
+      "evidence.c63.5.observation": "来源材料显示“相态变化”在该阶段可复核。",
+      "evidence.c63.6.title": "冷库温度记录",
+      "evidence.c63.6.observation": "来源材料显示“冷库温度”在该阶段可复核。",
+      "evidence.c63.7.title": "局部浓度记录",
+      "evidence.c63.7.observation": "来源材料显示“局部浓度”在该阶段可复核。",
+      "evidence.c63.8.title": "复冻结记录",
+      "evidence.c63.8.observation": "来源材料显示“复冻结”在该阶段可复核。",
+      "evidence.c63.9.title": "热交换记录",
+      "evidence.c63.9.observation": "来源材料显示“热交换”在该阶段可复核。",
+      "evidence.c63.10.title": "温度探头记录",
+      "evidence.c63.10.observation": "来源材料显示“温度探头”在该阶段可复核。",
+      "evidence.c63.11.title": "盐水夹层记录",
+      "evidence.c63.11.observation": "来源材料显示“盐水夹层”在该阶段可复核。",
+      "evidence.c63.12.title": "融化阈值记录",
+      "evidence.c63.12.observation": "来源材料显示“融化阈值”在该阶段可复核。",
+      "evidence.c63.13.title": "冰芯温度记录",
+      "evidence.c63.13.observation": "来源材料显示“冰芯温度”在该阶段可复核。",
+      "board.c63.1.title": "冷库里先融化的冰 · threshold-ladder",
+      "board.c63.1.slot.1": "起始来源",
+      "board.c63.1.slot.2": "关键变化",
+      "board.c63.1.slot.3": "观测结果",
+      "board.c63.1.slot.4": "排除替代",
+      "board.c63.2.title": "冷库里先融化的冰 · state-trace",
+      "board.c63.2.slot.1": "起始来源",
+      "board.c63.2.slot.2": "关键变化",
+      "board.c63.2.slot.3": "观测结果",
+      "board.c63.2.slot.4": "排除替代"
+    }
+  }
+}

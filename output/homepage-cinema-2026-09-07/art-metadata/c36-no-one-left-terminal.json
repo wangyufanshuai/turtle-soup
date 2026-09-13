@@ -1,0 +1,32 @@
+{
+  "id": "c36-no-one-left-terminal",
+  "title": "终点站没有下车的人",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-8a06abef-212f-471c-9a9b-cd50195913d4.png",
+  "sourceSha256": "a606efa2505bd85281ca4ca6350a170a50e01901f4ed18c8512cd841989dc512",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 终点站没有下车的人 — 列车到达终点时车载计数显示少了一人，刷卡记录也有一名乘客未出站；站台录像却没有任何人留在车上。\nArt direction: An empty train carriage at a terminus under sodium platform light, wet dark windows and open platform perspective.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c36-no-one-left-terminal.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 122638,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "6385a27a27344d32890b28b22005161685122fecdc472685f2d7c2ab2f0459b0"
+    },
+    {
+      "path": "/assets/home-cinema/c36-no-one-left-terminal-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 35804,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "9cd5f9b517af23d7a3cedb74f26ca250c1f3e8602974e515fbcbc848f676e434"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.594148+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

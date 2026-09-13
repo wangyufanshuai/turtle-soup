@@ -1,0 +1,2189 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c73-phantom-exit",
+  "metadata": {
+    "titleKey": "case.c73.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "反射几何",
+      "空间观察",
+      "视觉证据"
+    ],
+    "targetMinutes": {
+      "min": 9,
+      "max": 19
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:d87e6dfb889e39f01cc01d425eedeb284e35a2fbb8f4c700c006abca4fce3834",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-acoustic-lab",
+    "sceneAsset": "/assets/cases/c73-phantom-exit/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c73-phantom-exit/scene-mobile.svg",
+    "palette": "season5-acoustic-lab",
+    "accent": "#d7b27a",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "occlusion-map-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "occlusion-map"
+  },
+  "surface": {
+    "titleKey": "case.c73.title",
+    "textKey": "case.c73.surface",
+    "publicFactIds": [
+      "fact-c73-01",
+      "fact-c73-02",
+      "fact-c73-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c73-01",
+      "query-c73-02",
+      "query-c73-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c73-one",
+      "titleKey": "chapter.c73.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c73-1",
+      "titleKey": "board.c73.1.title",
+      "mode": "occlusion-map",
+      "slots": [
+        {
+          "id": "slot-c73-1-1",
+          "labelKey": "board.c73.1.slot.1",
+          "acceptsEventIds": [
+            "event-c73-01"
+          ]
+        },
+        {
+          "id": "slot-c73-1-2",
+          "labelKey": "board.c73.1.slot.2",
+          "acceptsEventIds": [
+            "event-c73-03"
+          ]
+        },
+        {
+          "id": "slot-c73-1-3",
+          "labelKey": "board.c73.1.slot.3",
+          "acceptsEventIds": [
+            "event-c73-05"
+          ]
+        },
+        {
+          "id": "slot-c73-1-4",
+          "labelKey": "board.c73.1.slot.4",
+          "acceptsEventIds": [
+            "event-c73-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "sees",
+        "occludes",
+        "reveals"
+      ]
+    },
+    {
+      "id": "board-c73-2",
+      "titleKey": "board.c73.2.title",
+      "mode": "spatial-map",
+      "slots": [
+        {
+          "id": "slot-c73-2-1",
+          "labelKey": "board.c73.2.slot.1",
+          "acceptsEventIds": [
+            "event-c73-02"
+          ]
+        },
+        {
+          "id": "slot-c73-2-2",
+          "labelKey": "board.c73.2.slot.2",
+          "acceptsEventIds": [
+            "event-c73-04"
+          ]
+        },
+        {
+          "id": "slot-c73-2-3",
+          "labelKey": "board.c73.2.slot.3",
+          "acceptsEventIds": [
+            "event-c73-06"
+          ]
+        },
+        {
+          "id": "slot-c73-2-4",
+          "labelKey": "board.c73.2.slot.4",
+          "acceptsEventIds": [
+            "event-c73-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "moves-to",
+        "overlaps",
+        "precedes"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c73-system",
+      "kind": "object",
+      "labelKey": "entity.c73.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c73",
+      "kind": "location",
+      "labelKey": "location.c73",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c73-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-1",
+      "labelKey": "event.c73.1",
+      "effectFactIds": [
+        "fact-c73-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-2",
+      "labelKey": "event.c73.2",
+      "effectFactIds": [
+        "fact-c73-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-3",
+      "labelKey": "event.c73.3",
+      "effectFactIds": [
+        "fact-c73-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-4",
+      "labelKey": "event.c73.4",
+      "effectFactIds": [
+        "fact-c73-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-5",
+      "labelKey": "event.c73.5",
+      "effectFactIds": [
+        "fact-c73-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-6",
+      "labelKey": "event.c73.6",
+      "effectFactIds": [
+        "fact-c73-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "20:24"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-7",
+      "labelKey": "event.c73.7",
+      "effectFactIds": [
+        "fact-c73-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-8",
+      "labelKey": "event.c73.8",
+      "effectFactIds": [
+        "fact-c73-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-9",
+      "labelKey": "event.c73.9",
+      "effectFactIds": [
+        "fact-c73-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-10",
+      "labelKey": "event.c73.10",
+      "effectFactIds": [
+        "fact-c73-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-11",
+      "labelKey": "event.c73.11",
+      "effectFactIds": [
+        "fact-c73-11"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "21:44"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-12",
+      "labelKey": "event.c73.12",
+      "effectFactIds": [
+        "fact-c73-12"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c73-13",
+      "order": 130,
+      "time": {
+        "kind": "instant",
+        "value": "21:48"
+      },
+      "participants": [
+        "entity-c73-system"
+      ],
+      "locationId": "location-c73",
+      "action": "step-c73-13",
+      "labelKey": "event.c73.13",
+      "effectFactIds": [
+        "fact-c73-13"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c73-1-1",
+      "type": "precedes",
+      "fromId": "entity-c73-system",
+      "toId": "location-c73",
+      "eventId": "event-c73-01",
+      "factId": "fact-c73-01"
+    },
+    {
+      "id": "relation-c73-1-2",
+      "type": "causes",
+      "fromId": "entity-c73-system",
+      "toId": "location-c73",
+      "eventId": "event-c73-03",
+      "factId": "fact-c73-02"
+    },
+    {
+      "id": "relation-c73-1-3",
+      "type": "causes",
+      "fromId": "entity-c73-system",
+      "toId": "location-c73",
+      "eventId": "event-c73-05",
+      "factId": "fact-c73-03"
+    },
+    {
+      "id": "relation-c73-2-1",
+      "type": "precedes",
+      "fromId": "entity-c73-system",
+      "toId": "location-c73",
+      "eventId": "event-c73-02",
+      "factId": "fact-c73-02"
+    },
+    {
+      "id": "relation-c73-2-2",
+      "type": "causes",
+      "fromId": "entity-c73-system",
+      "toId": "location-c73",
+      "eventId": "event-c73-04",
+      "factId": "fact-c73-03"
+    },
+    {
+      "id": "relation-c73-2-3",
+      "type": "causes",
+      "fromId": "entity-c73-system",
+      "toId": "location-c73",
+      "eventId": "event-c73-06",
+      "factId": "fact-c73-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c73-01",
+      "predicate": "verified_c73_1",
+      "args": {
+        "term": "玻璃反射"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.1"
+    },
+    {
+      "id": "fact-c73-02",
+      "predicate": "verified_c73_2",
+      "args": {
+        "term": "第二出口"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.2"
+    },
+    {
+      "id": "fact-c73-03",
+      "predicate": "verified_c73_3",
+      "args": {
+        "term": "门框"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.3"
+    },
+    {
+      "id": "fact-c73-04",
+      "predicate": "verified_c73_4",
+      "args": {
+        "term": "平面图"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.4"
+    },
+    {
+      "id": "fact-c73-05",
+      "predicate": "verified_c73_5",
+      "args": {
+        "term": "观察角度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.5"
+    },
+    {
+      "id": "fact-c73-06",
+      "predicate": "verified_c73_6",
+      "args": {
+        "term": "反射面"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.6"
+    },
+    {
+      "id": "fact-c73-07",
+      "predicate": "verified_c73_7",
+      "args": {
+        "term": "真实门"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.7"
+    },
+    {
+      "id": "fact-c73-08",
+      "predicate": "verified_c73_8",
+      "args": {
+        "term": "视线遮挡"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.8"
+    },
+    {
+      "id": "fact-c73-09",
+      "predicate": "verified_c73_9",
+      "args": {
+        "term": "玻璃倾角"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.9"
+    },
+    {
+      "id": "fact-c73-10",
+      "predicate": "verified_c73_10",
+      "args": {
+        "term": "出口位置"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.10"
+    },
+    {
+      "id": "fact-c73-11",
+      "predicate": "verified_c73_11",
+      "args": {
+        "term": "玻璃反射"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.11"
+    },
+    {
+      "id": "fact-c73-12",
+      "predicate": "verified_c73_12",
+      "args": {
+        "term": "第二出口"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-12"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c73.12"
+    },
+    {
+      "id": "fact-c73-13",
+      "predicate": "verified_c73_13",
+      "args": {
+        "term": "门框"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-13"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-13"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-13"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c73.13"
+    },
+    {
+      "id": "fact-c73-14",
+      "predicate": "verified_c73_14",
+      "args": {
+        "term": "平面图"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c73.14"
+    },
+    {
+      "id": "fact-c73-15",
+      "predicate": "verified_c73_15",
+      "args": {
+        "term": "观察角度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c73.15"
+    },
+    {
+      "id": "fact-c73-16",
+      "predicate": "verified_c73_16",
+      "args": {
+        "term": "反射面"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c73.16"
+    },
+    {
+      "id": "fact-c73-17",
+      "predicate": "verified_c73_17",
+      "args": {
+        "term": "真实门"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c73.17"
+    },
+    {
+      "id": "fact-c73-18",
+      "predicate": "verified_c73_18",
+      "args": {
+        "term": "视线遮挡"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c73.18"
+    },
+    {
+      "id": "fact-c73-19",
+      "predicate": "verified_c73_19",
+      "args": {
+        "term": "玻璃倾角"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c73.19"
+    },
+    {
+      "id": "fact-c73-20",
+      "predicate": "verified_c73_20",
+      "args": {
+        "term": "出口位置"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c73.20"
+    },
+    {
+      "id": "fact-c73-21",
+      "predicate": "verified_c73_21",
+      "args": {
+        "term": "玻璃反射"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c73-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c73-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c73.21"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c73-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-01",
+        "fact-c73-02",
+        "fact-c73-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c73-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-01",
+        "fact-c73-02",
+        "fact-c73-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c73-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-02",
+        "fact-c73-15"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c73-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-03",
+        "fact-c73-16"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c73-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-04",
+        "fact-c73-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c73-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-05",
+        "fact-c73-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c73-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-06",
+        "fact-c73-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c73-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-07",
+        "fact-c73-20"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c73-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-08",
+        "fact-c73-21"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c73-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c73-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c73-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c73-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-12"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c73-13",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c73-13"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c73-13"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c73-01",
+      "labelKey": "query.c73.1",
+      "intent": "verify",
+      "predicate": "verified_c73_1",
+      "slots": {
+        "subjectId": "entity-c73-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c73-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-opening"
+      ],
+      "examplePhrases": [
+        "玻璃反射是否成立？",
+        "能确认玻璃反射吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "玻璃反射"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c73-02",
+      "labelKey": "query.c73.2",
+      "intent": "verify",
+      "predicate": "verified_c73_2",
+      "slots": {
+        "subjectId": "entity-c73-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c73-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-opening"
+      ],
+      "examplePhrases": [
+        "第二出口是否成立？",
+        "能确认第二出口吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "第二出口"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c73-03",
+      "labelKey": "query.c73.3",
+      "intent": "verify",
+      "predicate": "verified_c73_3",
+      "slots": {
+        "subjectId": "entity-c73-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c73-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-opening"
+      ],
+      "examplePhrases": [
+        "门框是否成立？",
+        "能确认门框吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "门框"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c73-04",
+      "labelKey": "query.c73.4",
+      "intent": "verify",
+      "predicate": "verified_c73_4",
+      "slots": {
+        "subjectId": "entity-c73-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c73-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-04"
+      ],
+      "examplePhrases": [
+        "平面图是否成立？",
+        "能确认平面图吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "平面图"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c73-05",
+      "labelKey": "query.c73.5",
+      "intent": "verify",
+      "predicate": "verified_c73_5",
+      "slots": {
+        "subjectId": "entity-c73-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c73-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-05"
+      ],
+      "examplePhrases": [
+        "观察角度是否成立？",
+        "能确认观察角度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "观察角度"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c73-06",
+      "labelKey": "query.c73.6",
+      "intent": "verify",
+      "predicate": "verified_c73_6",
+      "slots": {
+        "subjectId": "entity-c73-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c73-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-06"
+      ],
+      "examplePhrases": [
+        "反射面是否成立？",
+        "能确认反射面吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "反射面"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c73-07",
+      "labelKey": "query.c73.7",
+      "intent": "verify",
+      "predicate": "verified_c73_7",
+      "slots": {
+        "subjectId": "entity-c73-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c73-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-07"
+      ],
+      "examplePhrases": [
+        "真实门是否成立？",
+        "能确认真实门吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "真实门"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c73-08",
+      "labelKey": "query.c73.8",
+      "intent": "verify",
+      "predicate": "verified_c73_8",
+      "slots": {
+        "subjectId": "entity-c73-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c73-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-08"
+      ],
+      "examplePhrases": [
+        "视线遮挡是否成立？",
+        "能确认视线遮挡吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "视线遮挡"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c73-09",
+      "labelKey": "query.c73.9",
+      "intent": "verify",
+      "predicate": "verified_c73_9",
+      "slots": {
+        "subjectId": "entity-c73-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c73-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-09"
+      ],
+      "examplePhrases": [
+        "玻璃倾角是否成立？",
+        "能确认玻璃倾角吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "玻璃倾角"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c73-10",
+      "labelKey": "query.c73.10",
+      "intent": "verify",
+      "predicate": "verified_c73_10",
+      "slots": {
+        "subjectId": "entity-c73-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c73-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c73-10"
+      ],
+      "examplePhrases": [
+        "出口位置是否成立？",
+        "能确认出口位置吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "出口位置"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c73-01",
+      "kind": "scene",
+      "titleKey": "evidence.c73.1.title",
+      "observationKey": "evidence.c73.1.observation",
+      "sourceFactIds": [
+        "fact-c73-01",
+        "fact-c73-02",
+        "fact-c73-03"
+      ],
+      "sourceEventIds": [
+        "event-c73-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c73-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-01.svg",
+      "assetAlt": "玻璃反射"
+    },
+    {
+      "id": "evidence-c73-02",
+      "kind": "record",
+      "titleKey": "evidence.c73.2.title",
+      "observationKey": "evidence.c73.2.observation",
+      "sourceFactIds": [
+        "fact-c73-02",
+        "fact-c73-15"
+      ],
+      "sourceEventIds": [
+        "event-c73-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c73-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-02.svg",
+      "assetAlt": "第二出口"
+    },
+    {
+      "id": "evidence-c73-03",
+      "kind": "object",
+      "titleKey": "evidence.c73.3.title",
+      "observationKey": "evidence.c73.3.observation",
+      "sourceFactIds": [
+        "fact-c73-03",
+        "fact-c73-16"
+      ],
+      "sourceEventIds": [
+        "event-c73-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-03.svg",
+      "assetAlt": "门框"
+    },
+    {
+      "id": "evidence-c73-04",
+      "kind": "scene",
+      "titleKey": "evidence.c73.4.title",
+      "observationKey": "evidence.c73.4.observation",
+      "sourceFactIds": [
+        "fact-c73-04",
+        "fact-c73-17"
+      ],
+      "sourceEventIds": [
+        "event-c73-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-04.svg",
+      "assetAlt": "平面图"
+    },
+    {
+      "id": "evidence-c73-05",
+      "kind": "record",
+      "titleKey": "evidence.c73.5.title",
+      "observationKey": "evidence.c73.5.observation",
+      "sourceFactIds": [
+        "fact-c73-05",
+        "fact-c73-18"
+      ],
+      "sourceEventIds": [
+        "event-c73-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-05.svg",
+      "assetAlt": "观察角度"
+    },
+    {
+      "id": "evidence-c73-06",
+      "kind": "object",
+      "titleKey": "evidence.c73.6.title",
+      "observationKey": "evidence.c73.6.observation",
+      "sourceFactIds": [
+        "fact-c73-06",
+        "fact-c73-19"
+      ],
+      "sourceEventIds": [
+        "event-c73-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-01.svg",
+      "assetAlt": "反射面"
+    },
+    {
+      "id": "evidence-c73-07",
+      "kind": "scene",
+      "titleKey": "evidence.c73.7.title",
+      "observationKey": "evidence.c73.7.observation",
+      "sourceFactIds": [
+        "fact-c73-07",
+        "fact-c73-20"
+      ],
+      "sourceEventIds": [
+        "event-c73-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-02.svg",
+      "assetAlt": "真实门"
+    },
+    {
+      "id": "evidence-c73-08",
+      "kind": "record",
+      "titleKey": "evidence.c73.8.title",
+      "observationKey": "evidence.c73.8.observation",
+      "sourceFactIds": [
+        "fact-c73-08",
+        "fact-c73-21"
+      ],
+      "sourceEventIds": [
+        "event-c73-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-03.svg",
+      "assetAlt": "视线遮挡"
+    },
+    {
+      "id": "evidence-c73-09",
+      "kind": "object",
+      "titleKey": "evidence.c73.9.title",
+      "observationKey": "evidence.c73.9.observation",
+      "sourceFactIds": [
+        "fact-c73-09"
+      ],
+      "sourceEventIds": [
+        "event-c73-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-04.svg",
+      "assetAlt": "玻璃倾角"
+    },
+    {
+      "id": "evidence-c73-10",
+      "kind": "scene",
+      "titleKey": "evidence.c73.10.title",
+      "observationKey": "evidence.c73.10.observation",
+      "sourceFactIds": [
+        "fact-c73-10"
+      ],
+      "sourceEventIds": [
+        "event-c73-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-05.svg",
+      "assetAlt": "出口位置"
+    },
+    {
+      "id": "evidence-c73-11",
+      "kind": "record",
+      "titleKey": "evidence.c73.11.title",
+      "observationKey": "evidence.c73.11.observation",
+      "sourceFactIds": [
+        "fact-c73-11"
+      ],
+      "sourceEventIds": [
+        "event-c73-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-01.svg",
+      "assetAlt": "玻璃反射"
+    },
+    {
+      "id": "evidence-c73-12",
+      "kind": "object",
+      "titleKey": "evidence.c73.12.title",
+      "observationKey": "evidence.c73.12.observation",
+      "sourceFactIds": [
+        "fact-c73-12"
+      ],
+      "sourceEventIds": [
+        "event-c73-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-02.svg",
+      "assetAlt": "第二出口"
+    },
+    {
+      "id": "evidence-c73-13",
+      "kind": "scene",
+      "titleKey": "evidence.c73.13.title",
+      "observationKey": "evidence.c73.13.observation",
+      "sourceFactIds": [
+        "fact-c73-13"
+      ],
+      "sourceEventIds": [
+        "event-c73-13"
+      ],
+      "relatedEntityIds": [
+        "entity-c73-system",
+        "location-c73"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c73-phantom-exit/evidence-03.svg",
+      "assetAlt": "门框"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c73.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c73-01",
+          "event-c73-02",
+          "event-c73-03",
+          "event-c73-04",
+          "event-c73-05",
+          "event-c73-06",
+          "event-c73-07",
+          "event-c73-08",
+          "event-c73-09",
+          "event-c73-10",
+          "event-c73-11",
+          "event-c73-12"
+        ],
+        "motiveKey": "用观察者、反射面和真实目标重建视觉证据"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c73-01",
+        "evidence-c73-02",
+        "evidence-c73-03",
+        "evidence-c73-04",
+        "evidence-c73-05",
+        "evidence-c73-06",
+        "evidence-c73-07",
+        "evidence-c73-08",
+        "evidence-c73-09",
+        "evidence-c73-10",
+        "evidence-c73-11",
+        "evidence-c73-12"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c73-1",
+        "contradiction-c73-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c73-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c73.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "平面图漏画了一扇门"
+        ],
+        "motiveKey": "motive-c73-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c73-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c73-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c73-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c73.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "有人把可移动门临时藏起来了"
+        ],
+        "motiveKey": "motive-c73-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c73-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c73-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c73-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c73-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c73-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c73-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c73-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c73-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c73-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c73-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c73-01",
+      "fact-c73-02",
+      "fact-c73-03",
+      "fact-c73-04",
+      "fact-c73-05",
+      "fact-c73-06",
+      "fact-c73-07",
+      "fact-c73-08",
+      "fact-c73-09",
+      "fact-c73-10",
+      "fact-c73-11",
+      "fact-c73-12"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c73-01",
+      "evidence-c73-02",
+      "evidence-c73-03",
+      "evidence-c73-04",
+      "evidence-c73-05",
+      "evidence-c73-06",
+      "evidence-c73-07",
+      "evidence-c73-08",
+      "evidence-c73-09",
+      "evidence-c73-10",
+      "evidence-c73-11",
+      "evidence-c73-12"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c73-01",
+        "event-c73-02"
+      ],
+      [
+        "event-c73-02",
+        "event-c73-03"
+      ],
+      [
+        "event-c73-03",
+        "event-c73-04"
+      ],
+      [
+        "event-c73-04",
+        "event-c73-05"
+      ],
+      [
+        "event-c73-05",
+        "event-c73-06"
+      ],
+      [
+        "event-c73-06",
+        "event-c73-07"
+      ],
+      [
+        "event-c73-07",
+        "event-c73-08"
+      ],
+      [
+        "event-c73-08",
+        "event-c73-09"
+      ],
+      [
+        "event-c73-09",
+        "event-c73-10"
+      ],
+      [
+        "event-c73-10",
+        "event-c73-11"
+      ],
+      [
+        "event-c73-11",
+        "event-c73-12"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c73-1",
+      "contradiction-c73-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c73-alternative-1",
+      "hypothesis-c73-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c73-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c73-a",
+        "evidenceIds": [
+          "evidence-c73-01",
+          "evidence-c73-02",
+          "evidence-c73-03",
+          "evidence-c73-04",
+          "evidence-c73-05",
+          "evidence-c73-06",
+          "evidence-c73-07",
+          "evidence-c73-08"
+        ]
+      },
+      {
+        "id": "proof-c73-b",
+        "evidenceIds": [
+          "evidence-c73-01",
+          "evidence-c73-02",
+          "evidence-c73-09",
+          "evidence-c73-10",
+          "evidence-c73-11",
+          "evidence-c73-12"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "用观察者、反射面和真实目标重建视觉证据"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c73-1",
+        "kind": "space",
+        "boardId": "board-c73-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c73-1-1",
+            "eventId": "event-c73-01"
+          },
+          {
+            "slotId": "slot-c73-1-2",
+            "eventId": "event-c73-03"
+          },
+          {
+            "slotId": "slot-c73-1-3",
+            "eventId": "event-c73-05"
+          },
+          {
+            "slotId": "slot-c73-1-4",
+            "eventId": "event-c73-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c73-01",
+            "toEventId": "event-c73-03",
+            "relation": "sees"
+          },
+          {
+            "fromEventId": "event-c73-03",
+            "toEventId": "event-c73-05",
+            "relation": "sees"
+          },
+          {
+            "fromEventId": "event-c73-05",
+            "toEventId": "event-c73-12",
+            "relation": "sees"
+          }
+        ],
+        "failureCategory": "space"
+      },
+      {
+        "id": "obligation-c73-2",
+        "kind": "space",
+        "boardId": "board-c73-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c73-2-1",
+            "eventId": "event-c73-02"
+          },
+          {
+            "slotId": "slot-c73-2-2",
+            "eventId": "event-c73-04"
+          },
+          {
+            "slotId": "slot-c73-2-3",
+            "eventId": "event-c73-06"
+          },
+          {
+            "slotId": "slot-c73-2-4",
+            "eventId": "event-c73-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c73-02",
+            "toEventId": "event-c73-04",
+            "relation": "moves-to"
+          },
+          {
+            "fromEventId": "event-c73-04",
+            "toEventId": "event-c73-06",
+            "relation": "moves-to"
+          },
+          {
+            "fromEventId": "event-c73-06",
+            "toEventId": "event-c73-12",
+            "relation": "moves-to"
+          }
+        ],
+        "failureCategory": "space"
+      }
+    ],
+    "uniquenessClaim": "倾斜玻璃反射出另一侧门框，视觉出口并不存在；观察路径被反射面折叠。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c73-1",
+      "eventId": "event-c73-02",
+      "factIds": [
+        "fact-c73-01"
+      ],
+      "captionKey": "event.c73.2"
+    },
+    {
+      "id": "replay-c73-2",
+      "eventId": "event-c73-03",
+      "factIds": [
+        "fact-c73-02"
+      ],
+      "captionKey": "event.c73.3"
+    },
+    {
+      "id": "replay-c73-3",
+      "eventId": "event-c73-04",
+      "factIds": [
+        "fact-c73-03"
+      ],
+      "captionKey": "event.c73.4"
+    },
+    {
+      "id": "replay-c73-4",
+      "eventId": "event-c73-05",
+      "factIds": [
+        "fact-c73-04"
+      ],
+      "captionKey": "event.c73.5"
+    },
+    {
+      "id": "replay-c73-5",
+      "eventId": "event-c73-06",
+      "factIds": [
+        "fact-c73-05"
+      ],
+      "captionKey": "event.c73.6"
+    },
+    {
+      "id": "replay-c73-6",
+      "eventId": "event-c73-07",
+      "factIds": [
+        "fact-c73-01",
+        "fact-c73-02",
+        "fact-c73-03",
+        "fact-c73-04",
+        "fact-c73-05",
+        "fact-c73-06",
+        "fact-c73-07",
+        "fact-c73-08",
+        "fact-c73-09",
+        "fact-c73-10",
+        "fact-c73-11",
+        "fact-c73-12"
+      ],
+      "captionKey": "event.c73.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c73.title": "玻璃里多出的出口",
+      "case.c73.surface": "值班员在玻璃里看见第二个出口，平面图上却只有一扇门。",
+      "case.c73.truth": "倾斜玻璃反射出另一侧门框，视觉出口并不存在；观察路径被反射面折叠。",
+      "entity.c73.system": "现场对象与记录链",
+      "location.c73": "反射几何",
+      "hypothesis.c73.canonical": "倾斜玻璃反射出另一侧门框，视觉出口并不存在；观察路径被反射面折叠。",
+      "hypothesis.c73.alternative.1": "平面图漏画了一扇门",
+      "hypothesis.c73.alternative.2": "有人把可移动门临时藏起来了",
+      "motive.用观察者、反射面和真实目标重建视觉证据": "用观察者、反射面和真实目标重建视觉证据",
+      "chapter.c73.one": "固定异常",
+      "chapter.c73.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c73.1": "玻璃反射是否成立？",
+      "query.c73.2": "第二出口是否成立？",
+      "query.c73.3": "门框是否成立？",
+      "query.c73.4": "平面图是否成立？",
+      "query.c73.5": "观察角度是否成立？",
+      "query.c73.6": "反射面是否成立？",
+      "query.c73.7": "真实门是否成立？",
+      "query.c73.8": "视线遮挡是否成立？",
+      "query.c73.9": "玻璃倾角是否成立？",
+      "query.c73.10": "出口位置是否成立？",
+      "event.c73.1": "阶段 1：玻璃反射进入记录链",
+      "event.c73.2": "阶段 2：第二出口进入记录链",
+      "event.c73.3": "阶段 3：门框进入记录链",
+      "event.c73.4": "阶段 4：平面图进入记录链",
+      "event.c73.5": "阶段 5：观察角度进入记录链",
+      "event.c73.6": "阶段 6：反射面进入记录链",
+      "event.c73.7": "阶段 7：真实门进入记录链",
+      "event.c73.8": "阶段 8：视线遮挡进入记录链",
+      "event.c73.9": "阶段 9：玻璃倾角进入记录链",
+      "event.c73.10": "阶段 10：出口位置进入记录链",
+      "event.c73.11": "阶段 11：玻璃反射进入记录链",
+      "event.c73.12": "阶段 12：第二出口进入记录链",
+      "event.c73.13": "阶段 13：门框进入记录链",
+      "evidence.c73.1.title": "玻璃反射记录",
+      "evidence.c73.1.observation": "来源材料显示“玻璃反射”在该阶段可复核。",
+      "evidence.c73.2.title": "第二出口记录",
+      "evidence.c73.2.observation": "来源材料显示“第二出口”在该阶段可复核。",
+      "evidence.c73.3.title": "门框记录",
+      "evidence.c73.3.observation": "来源材料显示“门框”在该阶段可复核。",
+      "evidence.c73.4.title": "平面图记录",
+      "evidence.c73.4.observation": "来源材料显示“平面图”在该阶段可复核。",
+      "evidence.c73.5.title": "观察角度记录",
+      "evidence.c73.5.observation": "来源材料显示“观察角度”在该阶段可复核。",
+      "evidence.c73.6.title": "反射面记录",
+      "evidence.c73.6.observation": "来源材料显示“反射面”在该阶段可复核。",
+      "evidence.c73.7.title": "真实门记录",
+      "evidence.c73.7.observation": "来源材料显示“真实门”在该阶段可复核。",
+      "evidence.c73.8.title": "视线遮挡记录",
+      "evidence.c73.8.observation": "来源材料显示“视线遮挡”在该阶段可复核。",
+      "evidence.c73.9.title": "玻璃倾角记录",
+      "evidence.c73.9.observation": "来源材料显示“玻璃倾角”在该阶段可复核。",
+      "evidence.c73.10.title": "出口位置记录",
+      "evidence.c73.10.observation": "来源材料显示“出口位置”在该阶段可复核。",
+      "evidence.c73.11.title": "玻璃反射记录",
+      "evidence.c73.11.observation": "来源材料显示“玻璃反射”在该阶段可复核。",
+      "evidence.c73.12.title": "第二出口记录",
+      "evidence.c73.12.observation": "来源材料显示“第二出口”在该阶段可复核。",
+      "evidence.c73.13.title": "门框记录",
+      "evidence.c73.13.observation": "来源材料显示“门框”在该阶段可复核。",
+      "board.c73.1.title": "玻璃里多出的出口 · occlusion-map",
+      "board.c73.1.slot.1": "起始来源",
+      "board.c73.1.slot.2": "关键变化",
+      "board.c73.1.slot.3": "观测结果",
+      "board.c73.1.slot.4": "排除替代",
+      "board.c73.2.title": "玻璃里多出的出口 · spatial-map",
+      "board.c73.2.slot.1": "起始来源",
+      "board.c73.2.slot.2": "关键变化",
+      "board.c73.2.slot.3": "观测结果",
+      "board.c73.2.slot.4": "排除替代"
+    }
+  }
+}

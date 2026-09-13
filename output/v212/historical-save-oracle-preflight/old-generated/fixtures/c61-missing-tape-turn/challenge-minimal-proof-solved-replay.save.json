@@ -1,0 +1,1122 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c61-missing-tape-turn",
+  "caseVersion": 1,
+  "contentHash": "sha256:3adbf127e8fc3bad61c326463eb162b42bf013d721858b69aef0de5dc103821d",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "卷盘芯径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "胶带圈数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余长度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "计数器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘更换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "带材厚度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "长度测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "标尺读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余材料是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘芯径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "胶带圈数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余长度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "计数器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘更换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "带材厚度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "长度测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "标尺读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余材料是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c61"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘芯径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "胶带圈数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余长度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "计数器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘更换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "带材厚度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "长度测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "标尺读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余材料是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c61"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘芯径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "胶带圈数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余长度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "计数器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘更换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "带材厚度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "长度测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "标尺读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余材料是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c61"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-10",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "区分离散圈数与连续长度的测量关系"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "calibrates"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "calibrates"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-10",
+      "relation": "calibrates"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "flows-in"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "flows-in"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-10",
+      "relation": "flows-in"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    },
+    {
+      "type": "set_replay_mode",
+      "mode": "minimal-proof"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘芯径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "胶带圈数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余长度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "计数器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘更换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "带材厚度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "长度测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "标尺读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余材料是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘芯径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "胶带圈数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余长度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "计数器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘更换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "带材厚度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "长度测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "标尺读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余材料是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c61"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘芯径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "胶带圈数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余长度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "计数器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘更换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "带材厚度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "长度测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "标尺读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余材料是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c61"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘芯径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "胶带圈数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余长度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "计数器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "卷盘更换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "带材厚度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "长度测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "标尺读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "剩余材料是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c61"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c61-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c61-10",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "区分离散圈数与连续长度的测量关系"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "calibrates"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "calibrates"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-10",
+      "relation": "calibrates"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "flows-in"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "flows-in"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-10",
+      "relation": "flows-in"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

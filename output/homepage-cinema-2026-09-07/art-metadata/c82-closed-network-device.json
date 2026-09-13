@@ -1,0 +1,32 @@
+{
+  "id": "c82-closed-network-device",
+  "title": "封闭网络里的新设备",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-71c9328a-5674-4c0a-a71b-c40f2e76d228.png",
+  "sourceSha256": "f3a1af5d776cb8f7244fd9f01973eceabd4f65981f0de37aca96010c3bf46145",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 封闭网络里的新设备 — 设备在没有联网的日期已经出现在机房，入网日志却晚了两天。\nArt direction: A sealed server-room rack and a new boxed small device on a trolley, isolated local cabling, no labels or dates.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c82-closed-network-device.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 91368,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "4e68f55fad78200e77c7878d36bd2fd2ddb5eff707a849c4c23cd516efb5afc4"
+    },
+    {
+      "path": "/assets/home-cinema/c82-closed-network-device-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 30104,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "1464e8f9eed9d6861c1ba66fd68360220a897f9b3caa975cb5a01c09b7206f1c"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.616574+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

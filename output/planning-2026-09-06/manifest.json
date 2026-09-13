@@ -1,0 +1,85 @@
+{
+  "scope": "Planning audit, not full gameplay validation",
+  "createdAt": "2026-09-06T12:45:54.0308964Z",
+  "runId": "v212-2026-09-06T10-08-11-942Z-f54095c9",
+  "sourceTreeDigest": "0ce774e89eed48aaabf625fe3c36f64ce8460fd852951f8834803cd3157f3eb8",
+  "buildHash": "a88f90d18c47fd26bdeceb3cbc90d190a5acd02925dc7c6f0dc02a2db5fbc823",
+  "browser": "Codex In-app Browser / Chromium",
+  "actualCaseScopes": [
+    "C01 opening, neutral theory, two questions and evidence navigation",
+    "C61 question opening and builder"
+  ],
+  "completeUiFlows": 0,
+  "coreTests": {
+    "failed": 0,
+    "total": 145,
+    "passed": 145
+  },
+  "files": [
+    {
+      "path": "output/planning-2026-09-06/01-home-desktop.png",
+      "bytes": 133942,
+      "sha256": "6136b7c6a20adc93379cd1b0d240519c1de28eadd4fbf9d5a4fa955c606efde6"
+    },
+    {
+      "path": "output/planning-2026-09-06/02-c01-opening-desktop.png",
+      "bytes": 77244,
+      "sha256": "c6a20431a150c030e196c7122089f78e498cd8d00a392d76cb121ac174e986d3"
+    },
+    {
+      "path": "output/planning-2026-09-06/03-c01-neutral-theory-desktop.png",
+      "bytes": 63137,
+      "sha256": "8001b3dd75a26e9699aaedbfd9c085404c6a0808411e3719d1b12be8f8f34257"
+    },
+    {
+      "path": "output/planning-2026-09-06/04-c01-question-starters.contains-hints.png",
+      "bytes": 80841,
+      "sha256": "03164843af0c711ba90645716b9ef9d507aff491945a30ce21a4ed97c1525452"
+    },
+    {
+      "path": "output/planning-2026-09-06/05-c01-routing-mismatch.contains-hints.dom.txt",
+      "bytes": 2069,
+      "sha256": "37437880f53e9e609a3fc4c5557ba93b11d6c97337ef1c3917b5236c56cc72a5"
+    },
+    {
+      "path": "output/planning-2026-09-06/05-c01-routing-mismatch.contains-hints.png",
+      "bytes": 75955,
+      "sha256": "07c29ef8c7b0dc070cb5f523e1d9c9863d4f426823e361b3f7fdfc05597e0246"
+    },
+    {
+      "path": "output/planning-2026-09-06/06-c01-routing-control.dom.txt",
+      "bytes": 2486,
+      "sha256": "51d5afad19e1c5222a33448df32d7816b94739ea83ba5b7a51157e579969e7eb"
+    },
+    {
+      "path": "output/planning-2026-09-06/07-c01-questions-mobile.contains-hints.png",
+      "bytes": 38546,
+      "sha256": "47ba14f01f5b55bce227530bc29d253d092430503998b81890af4d51124c6181"
+    },
+    {
+      "path": "output/planning-2026-09-06/08-c01-evidence-mobile.dom.txt",
+      "bytes": 2251,
+      "sha256": "d8f1bcdd1d6625be1b0a7c30540e6513fae4a737c5e6daf6ce17c584f39da04b"
+    },
+    {
+      "path": "output/planning-2026-09-06/09-c61-questions-mobile.png",
+      "bytes": 34017,
+      "sha256": "996a829e3859408bbb7526d7bb03a76dfff42806fea7f3d398ff7f9c14024975"
+    },
+    {
+      "path": "output/planning-2026-09-06/10-c61-question-builder.dom.txt",
+      "bytes": 2473,
+      "sha256": "f474feed9b5f7d2b390547aa17f3f4ff218e4a3bac3388c0c6225bfdec11238c"
+    },
+    {
+      "path": "output/planning-2026-09-06/11-c61-builder-mobile.png",
+      "bytes": 36242,
+      "sha256": "7c129adfb7ab33589dadd3b572713bc9f3849c45cb6bc10ce66e608e6068b7ce"
+    },
+    {
+      "path": "output/planning-2026-09-06/core-tests.log",
+      "bytes": 20122,
+      "sha256": "a0fce75b4bc5874cd9152cb44e02deafc8f8404bff1b50e01def572f61c57b5b"
+    }
+  ]
+}

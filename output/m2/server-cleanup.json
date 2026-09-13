@@ -1,0 +1,20 @@
+[
+  {
+    "port": 8110,
+    "stopped": true,
+    "pid": 28832,
+    "verifiedCommand": "\"D:\\nvm\\v24.14.0\\node.exe\" --experimental-strip-types tools/serve-fun-gate.ts apps/web/out 8110"
+  },
+  {
+    "port": 8111,
+    "stopped": true,
+    "pid": 39516,
+    "verifiedCommand": "\"D:\\nvm\\v24.14.0\\node.exe\" --experimental-strip-types tools/serve-fun-gate.ts apps/web/out 8111"
+  },
+  {
+    "port": 8112,
+    "stopped": true,
+    "pid": 37100,
+    "verifiedCommand": "\"D:\\nvm\\v24.14.0\\node.exe\" --experimental-strip-types tools/serve-fun-gate.ts apps/web/out 8112"
+  }
+]

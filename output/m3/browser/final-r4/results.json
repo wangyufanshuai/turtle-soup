@@ -1,0 +1,115 @@
+[
+  {
+    "flow": "c61-desktop",
+    "passed": true,
+    "method": "Visible UI, authoring reference for correct structure",
+    "checks": [
+      "wrong theory",
+      "wrong slot",
+      "relation replace",
+      "undo",
+      "refresh",
+      "motive clear/select",
+      "solve",
+      "replay",
+      "independent alternate",
+      "archived result"
+    ]
+  },
+  {
+    "flow": "c84-desktop",
+    "passed": true,
+    "method": "Visible UI, authoring reference for correct structure",
+    "checks": [
+      "wrong explanation",
+      "three separate boards",
+      "temporal cycle fails",
+      "persistent feedback",
+      "undo cycle",
+      "solve",
+      "replay"
+    ]
+  },
+  {
+    "flow": "c01-desktop",
+    "passed": true,
+    "checks": [
+      "answer source reload",
+      "unsent question preserved",
+      "wrong theory feedback",
+      "delete and undo",
+      "two notes",
+      "clear choice and undo",
+      "refresh"
+    ]
+  },
+  {
+    "flow": "c03-desktop",
+    "passed": true,
+    "checks": [
+      "source modal reload",
+      "unsent draft preserved",
+      "wrong theory feedback",
+      "clear and undo",
+      "theory note refresh",
+      "pending clarification refresh"
+    ]
+  },
+  {
+    "flow": "c61-mobile",
+    "passed": true,
+    "method": "Visible UI, authoring reference for correct structure",
+    "checks": [
+      "no default",
+      "wrong relation",
+      "touch relation editor",
+      "delete and undo",
+      "refresh",
+      "solve",
+      "replay",
+      "draft isolation",
+      "note and archive"
+    ]
+  },
+  {
+    "flow": "c84-mobile",
+    "passed": true,
+    "method": "Visible UI, authoring reference for correct structure",
+    "checks": [
+      "three boards",
+      "wrong relation",
+      "feedback refresh",
+      "touch relation editor",
+      "cycle fails",
+      "undo",
+      "solve",
+      "replay",
+      "archive refresh"
+    ]
+  },
+  {
+    "flow": "c01-mobile",
+    "passed": true,
+    "checks": [
+      "source reload",
+      "unsent question preserved",
+      "wrong theory feedback",
+      "event deletion undo",
+      "two drafts",
+      "choice clear undo",
+      "refresh"
+    ]
+  },
+  {
+    "flow": "c03-mobile",
+    "passed": true,
+    "checks": [
+      "source modal reload",
+      "unsent question preserved",
+      "wrong theory feedback",
+      "choice clear and undo",
+      "note refresh",
+      "pending clarification refresh"
+    ]
+  }
+]

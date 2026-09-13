@@ -1,0 +1,1302 @@
+{
+  "source": "pinned-old-runtime generated oracle",
+  "pinnedRef": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "expected": {
+    "game": {
+      "caseId": "c06-nonexistent-ticket",
+      "discoveredEvidenceIds": [
+        "evidence-audit",
+        "evidence-camera",
+        "evidence-departure",
+        "evidence-gate-log",
+        "evidence-manifest",
+        "evidence-radio",
+        "evidence-signage",
+        "evidence-terminal",
+        "evidence-umbrella"
+      ],
+      "visitedLocationIds": [
+        "location-ferry",
+        "location-harbor-gate"
+      ],
+      "answeredQueryIds": [
+        "query-courier",
+        "query-ferry-departed",
+        "query-late-boarding",
+        "query-left-before",
+        "query-passenger-ticket",
+        "query-sync-time",
+        "query-terminal-offline",
+        "query-ticket-real",
+        "query-umbrella-color"
+      ],
+      "activeRuleIds": [
+        "rule-audit",
+        "rule-camera",
+        "rule-departure",
+        "rule-manifest",
+        "rule-opening",
+        "rule-red-herring",
+        "rule-terminal"
+      ],
+      "visibleFactIds": [
+        "fact-cargo-not-passenger",
+        "fact-cargo-scan",
+        "fact-display-after-departure",
+        "fact-ferry-departed",
+        "fact-log-reconciled",
+        "fact-no-passenger-after",
+        "fact-original-scan-before",
+        "fact-terminal-offline",
+        "fact-ticket-expired",
+        "fact-ticket-seen",
+        "fact-umbrella-found"
+      ]
+    },
+    "transcript": [
+      {
+        "id": "q-1",
+        "rawQuestion": "这张票是在渡轮离港前被扫描的吗？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-2",
+        "rawQuestion": "23:52是扫描发生的时间吗？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-3",
+        "rawQuestion": "这是一张普通乘客船票吗？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-4",
+        "rawQuestion": "闸机当时断网了吗？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-5",
+        "rawQuestion": "渡轮23:50已经离港了吗？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-6",
+        "rawQuestion": "渡轮离港后还有乘客上船吗？",
+        "answerCode": "no",
+        "repeated": false
+      },
+      {
+        "id": "q-7",
+        "rawQuestion": "沈洛是在23:48通过闸机的吗？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-8",
+        "rawQuestion": "雨伞是什么颜色？",
+        "answerCode": "irrelevant",
+        "repeated": false
+      },
+      {
+        "id": "q-9",
+        "rawQuestion": "闸机真的读到了这张票吗？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-10",
+        "rawQuestion": "这张票是在渡轮离港前被扫描的吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-11",
+        "rawQuestion": "23:52是扫描发生的时间吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-12",
+        "rawQuestion": "这是一张普通乘客船票吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-13",
+        "rawQuestion": "闸机当时断网了吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-14",
+        "rawQuestion": "渡轮23:50已经离港了吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-15",
+        "rawQuestion": "渡轮离港后还有乘客上船吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-16",
+        "rawQuestion": "沈洛是在23:48通过闸机的吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-17",
+        "rawQuestion": "雨伞是什么颜色？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      },
+      {
+        "id": "q-18",
+        "rawQuestion": "闸机真的读到了这张票吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-19",
+        "rawQuestion": "这张票是在渡轮离港前被扫描的吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-20",
+        "rawQuestion": "23:52是扫描发生的时间吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-21",
+        "rawQuestion": "这是一张普通乘客船票吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-22",
+        "rawQuestion": "闸机当时断网了吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-23",
+        "rawQuestion": "渡轮23:50已经离港了吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-24",
+        "rawQuestion": "渡轮离港后还有乘客上船吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-25",
+        "rawQuestion": "沈洛是在23:48通过闸机的吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-26",
+        "rawQuestion": "雨伞是什么颜色？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      },
+      {
+        "id": "q-27",
+        "rawQuestion": "闸机真的读到了这张票吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-28",
+        "rawQuestion": "这张票是在渡轮离港前被扫描的吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-29",
+        "rawQuestion": "23:52是扫描发生的时间吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-30",
+        "rawQuestion": "这是一张普通乘客船票吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-31",
+        "rawQuestion": "闸机当时断网了吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-32",
+        "rawQuestion": "渡轮23:50已经离港了吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-33",
+        "rawQuestion": "渡轮离港后还有乘客上船吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-34",
+        "rawQuestion": "沈洛是在23:48通过闸机的吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-35",
+        "rawQuestion": "雨伞是什么颜色？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      },
+      {
+        "id": "q-36",
+        "rawQuestion": "闸机真的读到了这张票吗？",
+        "answerCode": "yes",
+        "repeated": true
+      }
+    ],
+    "evidenceStates": {
+      "evidence-gate-log": "connected",
+      "evidence-camera": "connected",
+      "evidence-terminal": "connected",
+      "evidence-departure": "connected",
+      "evidence-manifest": "connected",
+      "evidence-audit": "connected",
+      "evidence-radio": "connected",
+      "evidence-umbrella": "examined",
+      "evidence-signage": "connected"
+    },
+    "theoryDrafts": [
+      {
+        "id": "theory-a",
+        "hypothesisId": "hypothesis-canonical",
+        "eventIds": [
+          "event-courier-scans",
+          "event-terminal-offline",
+          "event-ferry-departs",
+          "event-log-syncs",
+          "event-manifest-files",
+          "event-audit-closes",
+          "event-ticket-expires"
+        ],
+        "evidenceIds": [
+          "evidence-audit",
+          "evidence-camera",
+          "evidence-departure",
+          "evidence-gate-log",
+          "evidence-manifest",
+          "evidence-radio",
+          "evidence-signage",
+          "evidence-terminal"
+        ],
+        "motiveKey": "motive-cargo-transfer"
+      },
+      {
+        "id": "theory-b",
+        "hypothesisId": "hypothesis-stowaway",
+        "eventIds": [],
+        "evidenceIds": [],
+        "motiveKey": null
+      }
+    ],
+    "activeTheoryId": "theory-a",
+    "pendingInterpretation": null,
+    "lastQuestionSnapshot": {
+      "game": {
+        "caseId": "c06-nonexistent-ticket",
+        "discoveredEvidenceIds": [
+          "evidence-audit",
+          "evidence-camera",
+          "evidence-departure",
+          "evidence-gate-log",
+          "evidence-manifest",
+          "evidence-radio",
+          "evidence-signage",
+          "evidence-terminal",
+          "evidence-umbrella"
+        ],
+        "visitedLocationIds": [
+          "location-ferry",
+          "location-harbor-gate"
+        ],
+        "answeredQueryIds": [
+          "query-courier",
+          "query-ferry-departed",
+          "query-late-boarding",
+          "query-left-before",
+          "query-passenger-ticket",
+          "query-sync-time",
+          "query-terminal-offline",
+          "query-ticket-real",
+          "query-umbrella-color"
+        ],
+        "activeRuleIds": [
+          "rule-audit",
+          "rule-camera",
+          "rule-departure",
+          "rule-manifest",
+          "rule-opening",
+          "rule-red-herring",
+          "rule-terminal"
+        ],
+        "visibleFactIds": [
+          "fact-cargo-not-passenger",
+          "fact-cargo-scan",
+          "fact-display-after-departure",
+          "fact-ferry-departed",
+          "fact-log-reconciled",
+          "fact-no-passenger-after",
+          "fact-original-scan-before",
+          "fact-terminal-offline",
+          "fact-ticket-expired",
+          "fact-ticket-seen",
+          "fact-umbrella-found"
+        ]
+      },
+      "transcriptLength": 35
+    },
+    "solved": true,
+    "replayBeatIds": [
+      "replay-c06-scan",
+      "replay-c06-offline",
+      "replay-c06-departure",
+      "replay-c06-sync",
+      "replay-c06-audit"
+    ],
+    "acceptedCommandCount": 88,
+    "unlockedChapterIds": [],
+    "reasoningBoards": {},
+    "replayMode": "standard"
+  },
+  "oldLiveEqualsOldReplay": true,
+  "expectations": {
+    "solved": true
+  },
+  "steps": [
+    {
+      "index": 0,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "type": "set_theory_hypothesis",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "type": "set_theory_motive",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "type": "submit_theory",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_judged",
+          "judgement": "solved",
+          "proofFailureCategory": null
+        },
+        {
+          "type": "case_solved"
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "type": "request_proof_replay",
+      "accepted": true,
+      "events": [
+        {
+          "type": "replay_ready"
+        }
+      ]
+    }
+  ]
+}

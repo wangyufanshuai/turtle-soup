@@ -1,0 +1,9 @@
+Browser tab: 1, Title: "The Black Soup — 深汤案件档案", URL: "http://127.0.0.1:8139/".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 66-242
+~			40 button (collapsed) 筛选 2, Secondary Actions: Expand
++				246 text 筛选
++				247 text 2
++			248 button 移除难度：入门
++			249 button 移除状态筛选
+The focused UI element is 40 button (collapsed) 筛选 2, Secondary Actions: Expand

@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c17-twelve-strikes",
+  "caseVersion": 1,
+  "contentHash": "sha256:c17-twelve-strikes-v1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "表针锁销这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "走时轮这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报时配重这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "午夜凸轮这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "释放杆这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "落锤计数这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "表盘录像这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "钟声波形这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双轮系这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "庆典录音这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "表针锁销这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "走时轮这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报时配重这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "午夜凸轮这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "释放杆这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "落锤计数这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "表盘录像这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "钟声波形这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双轮系这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "庆典录音这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c17"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "表针锁销这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "走时轮这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报时配重这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "午夜凸轮这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "释放杆这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "落锤计数这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "表盘录像这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "钟声波形这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双轮系这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "庆典录音这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c17"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "表针锁销这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "走时轮这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报时配重这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "午夜凸轮这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "释放杆这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "落锤计数这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "表盘录像这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "钟声波形这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双轮系这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "庆典录音这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c17"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c17-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c17-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c17-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c17-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c17-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c17-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c17-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c17-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c17-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c17-09",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "在表盘维修期间保留法定报时功能"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-07"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-09"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-04",
+      "toItemId": "event-07",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-07",
+      "toItemId": "event-09",
+      "relation": "causes"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

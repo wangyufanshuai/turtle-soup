@@ -1,0 +1,577 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c21-missing-seven-minutes",
+  "caseVersion": 1,
+  "contentHash": "sha256:c21-missing-seven-minutes-v1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "正常帧率这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电池阈值这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "模式切换这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "索引说明这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "帧间隔这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "慢移轨迹这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "七张原始帧这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "供电恢复这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "哈希链这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络心跳这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "播放器时间轴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "屏保片段这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "正常帧率这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电池阈值这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "模式切换这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "索引说明这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "帧间隔这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "慢移轨迹这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "七张原始帧这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "供电恢复这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "哈希链这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络心跳这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "播放器时间轴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "屏保片段这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c21"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-12",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "正常帧率这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电池阈值这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "模式切换这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "索引说明这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "帧间隔这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "慢移轨迹这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "七张原始帧这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "供电恢复这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "哈希链这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络心跳这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "播放器时间轴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "屏保片段这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c21"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-12",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "正常帧率这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电池阈值这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "模式切换这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "索引说明这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "帧间隔这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "慢移轨迹这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "七张原始帧这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "供电恢复这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "哈希链这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络心跳这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "播放器时间轴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "屏保片段这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c21"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c21-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c21-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c21-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c21-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c21-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c21-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c21-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c21-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c21-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c21-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c21-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c21-11",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "在备用电源不足时延长监控续航"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-08"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-11"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-04",
+      "toItemId": "event-08",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-08",
+      "toItemId": "event-11",
+      "relation": "causes"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

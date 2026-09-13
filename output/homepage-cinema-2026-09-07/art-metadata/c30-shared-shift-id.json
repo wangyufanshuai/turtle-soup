@@ -1,0 +1,32 @@
+{
+  "id": "c30-shared-shift-id",
+  "title": "同一工号的两次值班",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-ce5017d5-0fa7-43ef-b8e7-7e5cad2ade14.png",
+  "sourceSha256": "379a6e2d3980be6bb1b7ac5e9b7c2f8248ba2b013ead3b93926ed8433d738424",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 同一工号的两次值班 — 同一工号从傍晚一直工作到清晨，记录之间没有退出；监控却显示前后是两个完全不同的人。\nArt direction: An employee badge and a night-shift station under cold desk light; avoid readable identity or multiple characters.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c30-shared-shift-id.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 70418,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "18edd806de596a8c2d1be45a7b055b4ef671d5338f05c71f577ccd58aa76c618"
+    },
+    {
+      "path": "/assets/home-cinema/c30-shared-shift-id-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 24698,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "2b71b53a3a25e285e57c929f6b480c83656cc3f99a4e3921182cf5c657e238fd"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.590802+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

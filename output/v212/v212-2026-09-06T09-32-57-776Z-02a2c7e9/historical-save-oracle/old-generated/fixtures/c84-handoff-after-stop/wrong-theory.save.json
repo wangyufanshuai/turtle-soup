@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c84-handoff-after-stop",
+  "caseVersion": 1,
+  "contentHash": "sha256:e57095815b8ca3386e1e04194a712ddc85c9ca945f11de0fbc412de1171d634e",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "停止命令是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "在途交接是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "审计提交是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制层接收是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "完成时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "消息顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "两个章节是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "最后交接是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "系统停止是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行回执是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "停止命令是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "在途交接是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "审计提交是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制层接收是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "完成时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "消息顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "两个章节是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "最后交接是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "系统停止是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行回执是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c84"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-14",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "停止命令是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "在途交接是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "审计提交是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制层接收是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "完成时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "消息顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "两个章节是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "最后交接是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "系统停止是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行回执是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c84"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-14",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "停止命令是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "在途交接是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "审计提交是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制层接收是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "完成时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "消息顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "两个章节是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "最后交接是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "系统停止是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行回执是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c84"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c84-14",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-c84-alternative-1"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": false
+}

@@ -1,0 +1,32 @@
+{
+  "id": "c70-grace-late-arrival",
+  "title": "没有迟到的迟到者",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-32b0d5e0-b587-4346-b02e-d825bace0387.png",
+  "sourceSha256": "1cf700b7656f8404a149e2d35c0c339ddc3fefaf3e15435a08127fbdde04e6e7",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 没有迟到的迟到者 — 考勤系统显示员工准时，门口摄像头却记录他在宽限时间后才到。\nArt direction: A quiet company entry hall at dawn with an attendance terminal and wall clock; no readable timestamps or people.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c70-grace-late-arrival.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 84438,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "623144009b3c9c34421c9f8e3e9c74ff2abe41b3fb3a3a74b78321089387848d"
+    },
+    {
+      "path": "/assets/home-cinema/c70-grace-late-arrival-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 25250,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "6715c5b40caf80babfb17ab9abd36b9b9e64c3525bb018ba6e964194dbef9420"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.610484+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

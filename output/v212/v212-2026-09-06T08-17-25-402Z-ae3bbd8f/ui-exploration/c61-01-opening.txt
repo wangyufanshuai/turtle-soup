@@ -1,0 +1,49 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- alert
+- main:
+  - link "← 全部案件":
+    - /url: /
+  - generic: THE BLACK SOUP · C61
+  - heading "少了一圈的胶带" [level=1]
+  - navigation:
+    - generic: 离线可玩 · 已保存
+    - button "设置"
+  - navigation "调查工作区":
+    - button "现场 1 查看异常与位置" [pressed]:
+      - text: 现场
+      - generic: "1"
+      - generic: 查看异常与位置
+    - button "提问 2 验证具体事实":
+      - text: 提问
+      - generic: "2"
+      - generic: 验证具体事实
+    - button "证据 3 检查与取舍":
+      - text: 证据
+      - generic: "3"
+      - generic: 检查与取舍
+    - button "推断 4 组织并证明":
+      - text: 推断
+      - generic: "4"
+      - generic: 组织并证明
+  - text: 案件异常 · 先读这一句
+  - paragraph: 计数器显示胶带少了一圈，但剩余长度与现场测量对不上。
+  - generic: 先检查现场，再问一个可证实或否定的问题。不必现在猜中真相。
+  - img "少了一圈的胶带的公开现场；必要线索同时以文字给出"
+  - generic: 全部必要线索均有文字说明
+  - heading "可以检查" [level=2]
+  - button "材料推理 检查这里":
+    - generic: 材料推理
+    - generic: 检查这里
+  - button "问一个事实 →"
+  - button "查看公开证据"
+  - complementary "调查本":
+    - text: 调查本
+    - heading "最近确认的事实" [level=2]
+    - generic: "0"
+    - list
+    - paragraph: 这里会保留最近的事实回答，调查时可以随时对照。
+    - text: 我的真相
+    - textbox "我的真相 只保存在本机，不参与胜负，也不会发送给 AI。":
+      - /placeholder: 我认为发生了什么，以及为什么…
+    - generic: 只保存在本机，不参与胜负，也不会发送给 AI。

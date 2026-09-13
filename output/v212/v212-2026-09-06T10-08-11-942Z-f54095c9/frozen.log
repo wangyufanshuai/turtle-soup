@@ -1,0 +1,12 @@
+{
+  "snapshotPath": "docs/v2.12-frozen-baseline.json",
+  "checkOnly": true,
+  "measuredAt": "2026-09-06T10:17:11.870Z",
+  "cases": 84,
+  "historicalZips": 25,
+  "files": 427,
+  "passed": true,
+  "failures": []
+}
+(node:35284) ExperimentalWarning: Transform Types is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

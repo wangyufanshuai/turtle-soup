@@ -1,0 +1,1916 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c75-two-weather-photo",
+  "metadata": {
+    "titleKey": "case.c75.title",
+    "difficulty": "expert",
+    "ageRating": "16+",
+    "contentTags": [
+      "分时采样",
+      "摄影合成",
+      "视觉来源"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:7294163df21dbfc2dd42b37c931bfaa110242f2a55bea9316dc55091ee087654",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-acoustic-lab",
+    "sceneAsset": "/assets/cases/c75-two-weather-photo/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c75-two-weather-photo/scene-mobile.svg",
+    "palette": "season5-acoustic-lab",
+    "accent": "#c9a7d9",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "sampling-window-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "sampling-window"
+  },
+  "surface": {
+    "titleKey": "case.c75.title",
+    "textKey": "case.c75.surface",
+    "publicFactIds": [
+      "fact-c75-01",
+      "fact-c75-02",
+      "fact-c75-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c75-01",
+      "query-c75-02",
+      "query-c75-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c75-one",
+      "titleKey": "chapter.c75.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c75-1",
+      "titleKey": "board.c75.1.title",
+      "mode": "sampling-window",
+      "slots": [
+        {
+          "id": "slot-c75-1-1",
+          "labelKey": "board.c75.1.slot.1",
+          "acceptsEventIds": [
+            "event-c75-01"
+          ]
+        },
+        {
+          "id": "slot-c75-1-2",
+          "labelKey": "board.c75.1.slot.2",
+          "acceptsEventIds": [
+            "event-c75-03"
+          ]
+        },
+        {
+          "id": "slot-c75-1-3",
+          "labelKey": "board.c75.1.slot.3",
+          "acceptsEventIds": [
+            "event-c75-05"
+          ]
+        },
+        {
+          "id": "slot-c75-1-4",
+          "labelKey": "board.c75.1.slot.4",
+          "acceptsEventIds": [
+            "event-c75-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "sampled-before",
+        "buffers",
+        "explains"
+      ]
+    },
+    {
+      "id": "board-c75-2",
+      "titleKey": "board.c75.2.title",
+      "mode": "occlusion-map",
+      "slots": [
+        {
+          "id": "slot-c75-2-1",
+          "labelKey": "board.c75.2.slot.1",
+          "acceptsEventIds": [
+            "event-c75-02"
+          ]
+        },
+        {
+          "id": "slot-c75-2-2",
+          "labelKey": "board.c75.2.slot.2",
+          "acceptsEventIds": [
+            "event-c75-04"
+          ]
+        },
+        {
+          "id": "slot-c75-2-3",
+          "labelKey": "board.c75.2.slot.3",
+          "acceptsEventIds": [
+            "event-c75-06"
+          ]
+        },
+        {
+          "id": "slot-c75-2-4",
+          "labelKey": "board.c75.2.slot.4",
+          "acceptsEventIds": [
+            "event-c75-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "sees",
+        "occludes",
+        "reveals"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c75-system",
+      "kind": "object",
+      "labelKey": "entity.c75.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c75",
+      "kind": "location",
+      "labelKey": "location.c75",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c75-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c75-system"
+      ],
+      "locationId": "location-c75",
+      "action": "step-c75-1",
+      "labelKey": "event.c75.1",
+      "effectFactIds": [
+        "fact-c75-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c75-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c75-system"
+      ],
+      "locationId": "location-c75",
+      "action": "step-c75-2",
+      "labelKey": "event.c75.2",
+      "effectFactIds": [
+        "fact-c75-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c75-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c75-system"
+      ],
+      "locationId": "location-c75",
+      "action": "step-c75-3",
+      "labelKey": "event.c75.3",
+      "effectFactIds": [
+        "fact-c75-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c75-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c75-system"
+      ],
+      "locationId": "location-c75",
+      "action": "step-c75-4",
+      "labelKey": "event.c75.4",
+      "effectFactIds": [
+        "fact-c75-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c75-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c75-system"
+      ],
+      "locationId": "location-c75",
+      "action": "step-c75-5",
+      "labelKey": "event.c75.5",
+      "effectFactIds": [
+        "fact-c75-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c75-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "21:20"
+      },
+      "participants": [
+        "entity-c75-system"
+      ],
+      "locationId": "location-c75",
+      "action": "step-c75-6",
+      "labelKey": "event.c75.6",
+      "effectFactIds": [
+        "fact-c75-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c75-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "21:24"
+      },
+      "participants": [
+        "entity-c75-system"
+      ],
+      "locationId": "location-c75",
+      "action": "step-c75-7",
+      "labelKey": "event.c75.7",
+      "effectFactIds": [
+        "fact-c75-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c75-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c75-system"
+      ],
+      "locationId": "location-c75",
+      "action": "step-c75-8",
+      "labelKey": "event.c75.8",
+      "effectFactIds": [
+        "fact-c75-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c75-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c75-system"
+      ],
+      "locationId": "location-c75",
+      "action": "step-c75-9",
+      "labelKey": "event.c75.9",
+      "effectFactIds": [
+        "fact-c75-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c75-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c75-system"
+      ],
+      "locationId": "location-c75",
+      "action": "step-c75-10",
+      "labelKey": "event.c75.10",
+      "effectFactIds": [
+        "fact-c75-10"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c75-1-1",
+      "type": "precedes",
+      "fromId": "entity-c75-system",
+      "toId": "location-c75",
+      "eventId": "event-c75-01",
+      "factId": "fact-c75-01"
+    },
+    {
+      "id": "relation-c75-1-2",
+      "type": "causes",
+      "fromId": "entity-c75-system",
+      "toId": "location-c75",
+      "eventId": "event-c75-03",
+      "factId": "fact-c75-02"
+    },
+    {
+      "id": "relation-c75-1-3",
+      "type": "causes",
+      "fromId": "entity-c75-system",
+      "toId": "location-c75",
+      "eventId": "event-c75-05",
+      "factId": "fact-c75-03"
+    },
+    {
+      "id": "relation-c75-2-1",
+      "type": "precedes",
+      "fromId": "entity-c75-system",
+      "toId": "location-c75",
+      "eventId": "event-c75-02",
+      "factId": "fact-c75-02"
+    },
+    {
+      "id": "relation-c75-2-2",
+      "type": "causes",
+      "fromId": "entity-c75-system",
+      "toId": "location-c75",
+      "eventId": "event-c75-04",
+      "factId": "fact-c75-03"
+    },
+    {
+      "id": "relation-c75-2-3",
+      "type": "causes",
+      "fromId": "entity-c75-system",
+      "toId": "location-c75",
+      "eventId": "event-c75-06",
+      "factId": "fact-c75-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c75-01",
+      "predicate": "verified_c75_1",
+      "args": {
+        "term": "HDR合成"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c75.1"
+    },
+    {
+      "id": "fact-c75-02",
+      "predicate": "verified_c75_2",
+      "args": {
+        "term": "不同曝光"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c75.2"
+    },
+    {
+      "id": "fact-c75-03",
+      "predicate": "verified_c75_3",
+      "args": {
+        "term": "晴天"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c75.3"
+    },
+    {
+      "id": "fact-c75-04",
+      "predicate": "verified_c75_4",
+      "args": {
+        "term": "雨后"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c75.4"
+    },
+    {
+      "id": "fact-c75-05",
+      "predicate": "verified_c75_5",
+      "args": {
+        "term": "照片时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c75.5"
+    },
+    {
+      "id": "fact-c75-06",
+      "predicate": "verified_c75_6",
+      "args": {
+        "term": "采样时刻"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c75.6"
+    },
+    {
+      "id": "fact-c75-07",
+      "predicate": "verified_c75_7",
+      "args": {
+        "term": "合成图像"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c75.7"
+    },
+    {
+      "id": "fact-c75-08",
+      "predicate": "verified_c75_8",
+      "args": {
+        "term": "左侧天空"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c75.8"
+    },
+    {
+      "id": "fact-c75-09",
+      "predicate": "verified_c75_9",
+      "args": {
+        "term": "右侧地面"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c75.9"
+    },
+    {
+      "id": "fact-c75-10",
+      "predicate": "verified_c75_10",
+      "args": {
+        "term": "相机快门"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-10"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c75.10"
+    },
+    {
+      "id": "fact-c75-11",
+      "predicate": "verified_c75_11",
+      "args": {
+        "term": "HDR合成"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c75.11"
+    },
+    {
+      "id": "fact-c75-12",
+      "predicate": "verified_c75_12",
+      "args": {
+        "term": "不同曝光"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c75.12"
+    },
+    {
+      "id": "fact-c75-13",
+      "predicate": "verified_c75_13",
+      "args": {
+        "term": "晴天"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c75.13"
+    },
+    {
+      "id": "fact-c75-14",
+      "predicate": "verified_c75_14",
+      "args": {
+        "term": "雨后"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c75.14"
+    },
+    {
+      "id": "fact-c75-15",
+      "predicate": "verified_c75_15",
+      "args": {
+        "term": "照片时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c75.15"
+    },
+    {
+      "id": "fact-c75-16",
+      "predicate": "verified_c75_16",
+      "args": {
+        "term": "采样时刻"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c75.16"
+    },
+    {
+      "id": "fact-c75-17",
+      "predicate": "verified_c75_17",
+      "args": {
+        "term": "合成图像"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c75.17"
+    },
+    {
+      "id": "fact-c75-18",
+      "predicate": "verified_c75_18",
+      "args": {
+        "term": "左侧天空"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c75-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c75-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c75.18"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c75-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c75-01",
+        "fact-c75-02",
+        "fact-c75-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c75-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c75-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c75-01",
+        "fact-c75-02",
+        "fact-c75-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c75-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c75-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c75-02",
+        "fact-c75-12"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c75-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c75-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c75-03",
+        "fact-c75-13"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c75-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c75-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c75-04",
+        "fact-c75-14"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c75-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c75-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c75-05",
+        "fact-c75-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c75-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c75-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c75-06",
+        "fact-c75-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c75-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c75-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c75-07",
+        "fact-c75-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c75-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c75-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c75-08",
+        "fact-c75-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c75-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c75-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c75-09"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c75-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c75-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c75-10"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c75-01",
+      "labelKey": "query.c75.1",
+      "intent": "verify",
+      "predicate": "verified_c75_1",
+      "slots": {
+        "subjectId": "entity-c75-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c75-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-opening"
+      ],
+      "examplePhrases": [
+        "HDR合成是否成立？",
+        "能确认HDR合成吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "HDR合成"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c75-02",
+      "labelKey": "query.c75.2",
+      "intent": "verify",
+      "predicate": "verified_c75_2",
+      "slots": {
+        "subjectId": "entity-c75-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c75-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-opening"
+      ],
+      "examplePhrases": [
+        "不同曝光是否成立？",
+        "能确认不同曝光吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "不同曝光"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c75-03",
+      "labelKey": "query.c75.3",
+      "intent": "verify",
+      "predicate": "verified_c75_3",
+      "slots": {
+        "subjectId": "entity-c75-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c75-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-opening"
+      ],
+      "examplePhrases": [
+        "晴天是否成立？",
+        "能确认晴天吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "晴天"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c75-04",
+      "labelKey": "query.c75.4",
+      "intent": "verify",
+      "predicate": "verified_c75_4",
+      "slots": {
+        "subjectId": "entity-c75-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c75-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-04"
+      ],
+      "examplePhrases": [
+        "雨后是否成立？",
+        "能确认雨后吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "雨后"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c75-05",
+      "labelKey": "query.c75.5",
+      "intent": "verify",
+      "predicate": "verified_c75_5",
+      "slots": {
+        "subjectId": "entity-c75-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c75-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-05"
+      ],
+      "examplePhrases": [
+        "照片时间是否成立？",
+        "能确认照片时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "照片时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c75-06",
+      "labelKey": "query.c75.6",
+      "intent": "verify",
+      "predicate": "verified_c75_6",
+      "slots": {
+        "subjectId": "entity-c75-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c75-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-06"
+      ],
+      "examplePhrases": [
+        "采样时刻是否成立？",
+        "能确认采样时刻吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "采样时刻"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c75-07",
+      "labelKey": "query.c75.7",
+      "intent": "verify",
+      "predicate": "verified_c75_7",
+      "slots": {
+        "subjectId": "entity-c75-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c75-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-07"
+      ],
+      "examplePhrases": [
+        "合成图像是否成立？",
+        "能确认合成图像吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "合成图像"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c75-08",
+      "labelKey": "query.c75.8",
+      "intent": "verify",
+      "predicate": "verified_c75_8",
+      "slots": {
+        "subjectId": "entity-c75-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c75-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-08"
+      ],
+      "examplePhrases": [
+        "左侧天空是否成立？",
+        "能确认左侧天空吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "左侧天空"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c75-09",
+      "labelKey": "query.c75.9",
+      "intent": "verify",
+      "predicate": "verified_c75_9",
+      "slots": {
+        "subjectId": "entity-c75-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c75-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-09"
+      ],
+      "examplePhrases": [
+        "右侧地面是否成立？",
+        "能确认右侧地面吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "右侧地面"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c75-10",
+      "labelKey": "query.c75.10",
+      "intent": "eliminate",
+      "predicate": "verified_c75_10",
+      "slots": {
+        "subjectId": "entity-c75-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c75-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c75-10"
+      ],
+      "examplePhrases": [
+        "相机快门是否成立？",
+        "能确认相机快门吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "相机快门"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c75-01",
+      "kind": "scene",
+      "titleKey": "evidence.c75.1.title",
+      "observationKey": "evidence.c75.1.observation",
+      "sourceFactIds": [
+        "fact-c75-01",
+        "fact-c75-02",
+        "fact-c75-03"
+      ],
+      "sourceEventIds": [
+        "event-c75-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c75-system",
+        "location-c75"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c75-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c75-two-weather-photo/evidence-01.svg",
+      "assetAlt": "HDR合成"
+    },
+    {
+      "id": "evidence-c75-02",
+      "kind": "record",
+      "titleKey": "evidence.c75.2.title",
+      "observationKey": "evidence.c75.2.observation",
+      "sourceFactIds": [
+        "fact-c75-02",
+        "fact-c75-12"
+      ],
+      "sourceEventIds": [
+        "event-c75-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c75-system",
+        "location-c75"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c75-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c75-two-weather-photo/evidence-02.svg",
+      "assetAlt": "不同曝光"
+    },
+    {
+      "id": "evidence-c75-03",
+      "kind": "object",
+      "titleKey": "evidence.c75.3.title",
+      "observationKey": "evidence.c75.3.observation",
+      "sourceFactIds": [
+        "fact-c75-03",
+        "fact-c75-13"
+      ],
+      "sourceEventIds": [
+        "event-c75-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c75-system",
+        "location-c75"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c75-two-weather-photo/evidence-03.svg",
+      "assetAlt": "晴天"
+    },
+    {
+      "id": "evidence-c75-04",
+      "kind": "scene",
+      "titleKey": "evidence.c75.4.title",
+      "observationKey": "evidence.c75.4.observation",
+      "sourceFactIds": [
+        "fact-c75-04",
+        "fact-c75-14"
+      ],
+      "sourceEventIds": [
+        "event-c75-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c75-system",
+        "location-c75"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c75-two-weather-photo/evidence-04.svg",
+      "assetAlt": "雨后"
+    },
+    {
+      "id": "evidence-c75-05",
+      "kind": "record",
+      "titleKey": "evidence.c75.5.title",
+      "observationKey": "evidence.c75.5.observation",
+      "sourceFactIds": [
+        "fact-c75-05",
+        "fact-c75-15"
+      ],
+      "sourceEventIds": [
+        "event-c75-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c75-system",
+        "location-c75"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c75-two-weather-photo/evidence-05.svg",
+      "assetAlt": "照片时间"
+    },
+    {
+      "id": "evidence-c75-06",
+      "kind": "object",
+      "titleKey": "evidence.c75.6.title",
+      "observationKey": "evidence.c75.6.observation",
+      "sourceFactIds": [
+        "fact-c75-06",
+        "fact-c75-16"
+      ],
+      "sourceEventIds": [
+        "event-c75-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c75-system",
+        "location-c75"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c75-two-weather-photo/evidence-01.svg",
+      "assetAlt": "采样时刻"
+    },
+    {
+      "id": "evidence-c75-07",
+      "kind": "scene",
+      "titleKey": "evidence.c75.7.title",
+      "observationKey": "evidence.c75.7.observation",
+      "sourceFactIds": [
+        "fact-c75-07",
+        "fact-c75-17"
+      ],
+      "sourceEventIds": [
+        "event-c75-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c75-system",
+        "location-c75"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c75-two-weather-photo/evidence-02.svg",
+      "assetAlt": "合成图像"
+    },
+    {
+      "id": "evidence-c75-08",
+      "kind": "record",
+      "titleKey": "evidence.c75.8.title",
+      "observationKey": "evidence.c75.8.observation",
+      "sourceFactIds": [
+        "fact-c75-08",
+        "fact-c75-18"
+      ],
+      "sourceEventIds": [
+        "event-c75-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c75-system",
+        "location-c75"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c75-two-weather-photo/evidence-03.svg",
+      "assetAlt": "左侧天空"
+    },
+    {
+      "id": "evidence-c75-09",
+      "kind": "object",
+      "titleKey": "evidence.c75.9.title",
+      "observationKey": "evidence.c75.9.observation",
+      "sourceFactIds": [
+        "fact-c75-09"
+      ],
+      "sourceEventIds": [
+        "event-c75-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c75-system",
+        "location-c75"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c75-two-weather-photo/evidence-04.svg",
+      "assetAlt": "右侧地面"
+    },
+    {
+      "id": "evidence-c75-10",
+      "kind": "scene",
+      "titleKey": "evidence.c75.10.title",
+      "observationKey": "evidence.c75.10.observation",
+      "sourceFactIds": [
+        "fact-c75-10"
+      ],
+      "sourceEventIds": [
+        "event-c75-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c75-system",
+        "location-c75"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c75-two-weather-photo/evidence-05.svg",
+      "assetAlt": "相机快门"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c75.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c75-01",
+          "event-c75-02",
+          "event-c75-03",
+          "event-c75-04",
+          "event-c75-05",
+          "event-c75-06",
+          "event-c75-07",
+          "event-c75-08",
+          "event-c75-09"
+        ],
+        "motiveKey": "用采样窗口解释一张完整图像的非同时性"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c75-01",
+        "evidence-c75-02",
+        "evidence-c75-03",
+        "evidence-c75-04",
+        "evidence-c75-05",
+        "evidence-c75-06",
+        "evidence-c75-07",
+        "evidence-c75-08",
+        "evidence-c75-09"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c75-1",
+        "contradiction-c75-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c75-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c75.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "照片被后期拼接了"
+        ],
+        "motiveKey": "motive-c75-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c75-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c75-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c75-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c75.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "现场同时出现了两种天气"
+        ],
+        "motiveKey": "motive-c75-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c75-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c75-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c75-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c75-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c75-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c75-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c75-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c75-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c75-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c75-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c75-01",
+      "fact-c75-02",
+      "fact-c75-03",
+      "fact-c75-04",
+      "fact-c75-05",
+      "fact-c75-06",
+      "fact-c75-07",
+      "fact-c75-08",
+      "fact-c75-09"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c75-01",
+      "evidence-c75-02",
+      "evidence-c75-03",
+      "evidence-c75-04",
+      "evidence-c75-05",
+      "evidence-c75-06",
+      "evidence-c75-07",
+      "evidence-c75-08",
+      "evidence-c75-09"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c75-01",
+        "event-c75-02"
+      ],
+      [
+        "event-c75-02",
+        "event-c75-03"
+      ],
+      [
+        "event-c75-03",
+        "event-c75-04"
+      ],
+      [
+        "event-c75-04",
+        "event-c75-05"
+      ],
+      [
+        "event-c75-05",
+        "event-c75-06"
+      ],
+      [
+        "event-c75-06",
+        "event-c75-07"
+      ],
+      [
+        "event-c75-07",
+        "event-c75-08"
+      ],
+      [
+        "event-c75-08",
+        "event-c75-09"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c75-1",
+      "contradiction-c75-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c75-alternative-1",
+      "hypothesis-c75-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c75-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c75-a",
+        "evidenceIds": [
+          "evidence-c75-01",
+          "evidence-c75-02",
+          "evidence-c75-03",
+          "evidence-c75-04",
+          "evidence-c75-05",
+          "evidence-c75-06",
+          "evidence-c75-07",
+          "evidence-c75-08"
+        ]
+      },
+      {
+        "id": "proof-c75-b",
+        "evidenceIds": [
+          "evidence-c75-01",
+          "evidence-c75-02",
+          "evidence-c75-09"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "用采样窗口解释一张完整图像的非同时性"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c75-1",
+        "kind": "time",
+        "boardId": "board-c75-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c75-1-1",
+            "eventId": "event-c75-01"
+          },
+          {
+            "slotId": "slot-c75-1-2",
+            "eventId": "event-c75-03"
+          },
+          {
+            "slotId": "slot-c75-1-3",
+            "eventId": "event-c75-05"
+          },
+          {
+            "slotId": "slot-c75-1-4",
+            "eventId": "event-c75-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c75-01",
+            "toEventId": "event-c75-03",
+            "relation": "sampled-before"
+          },
+          {
+            "fromEventId": "event-c75-03",
+            "toEventId": "event-c75-05",
+            "relation": "sampled-before"
+          },
+          {
+            "fromEventId": "event-c75-05",
+            "toEventId": "event-c75-09",
+            "relation": "sampled-before"
+          }
+        ],
+        "failureCategory": "time"
+      },
+      {
+        "id": "obligation-c75-2",
+        "kind": "space",
+        "boardId": "board-c75-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c75-2-1",
+            "eventId": "event-c75-02"
+          },
+          {
+            "slotId": "slot-c75-2-2",
+            "eventId": "event-c75-04"
+          },
+          {
+            "slotId": "slot-c75-2-3",
+            "eventId": "event-c75-06"
+          },
+          {
+            "slotId": "slot-c75-2-4",
+            "eventId": "event-c75-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c75-02",
+            "toEventId": "event-c75-04",
+            "relation": "sees"
+          },
+          {
+            "fromEventId": "event-c75-04",
+            "toEventId": "event-c75-06",
+            "relation": "sees"
+          },
+          {
+            "fromEventId": "event-c75-06",
+            "toEventId": "event-c75-09",
+            "relation": "sees"
+          }
+        ],
+        "failureCategory": "space"
+      }
+    ],
+    "uniquenessClaim": "相机以不同曝光时刻采样并合成 HDR，照片中的两种天气来自不同时间。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c75-1",
+      "eventId": "event-c75-02",
+      "factIds": [
+        "fact-c75-01"
+      ],
+      "captionKey": "event.c75.2"
+    },
+    {
+      "id": "replay-c75-2",
+      "eventId": "event-c75-03",
+      "factIds": [
+        "fact-c75-02"
+      ],
+      "captionKey": "event.c75.3"
+    },
+    {
+      "id": "replay-c75-3",
+      "eventId": "event-c75-04",
+      "factIds": [
+        "fact-c75-03"
+      ],
+      "captionKey": "event.c75.4"
+    },
+    {
+      "id": "replay-c75-4",
+      "eventId": "event-c75-05",
+      "factIds": [
+        "fact-c75-04"
+      ],
+      "captionKey": "event.c75.5"
+    },
+    {
+      "id": "replay-c75-5",
+      "eventId": "event-c75-06",
+      "factIds": [
+        "fact-c75-05"
+      ],
+      "captionKey": "event.c75.6"
+    },
+    {
+      "id": "replay-c75-6",
+      "eventId": "event-c75-07",
+      "factIds": [
+        "fact-c75-01",
+        "fact-c75-02",
+        "fact-c75-03",
+        "fact-c75-04",
+        "fact-c75-05",
+        "fact-c75-06",
+        "fact-c75-07",
+        "fact-c75-08",
+        "fact-c75-09"
+      ],
+      "captionKey": "event.c75.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c75.title": "同一照片的两种天气",
+      "case.c75.surface": "一张照片左边是晴天，右边却像刚下过雨。",
+      "case.c75.truth": "相机以不同曝光时刻采样并合成 HDR，照片中的两种天气来自不同时间。",
+      "entity.c75.system": "现场对象与记录链",
+      "location.c75": "分时采样",
+      "hypothesis.c75.canonical": "相机以不同曝光时刻采样并合成 HDR，照片中的两种天气来自不同时间。",
+      "hypothesis.c75.alternative.1": "照片被后期拼接了",
+      "hypothesis.c75.alternative.2": "现场同时出现了两种天气",
+      "motive.用采样窗口解释一张完整图像的非同时性": "用采样窗口解释一张完整图像的非同时性",
+      "chapter.c75.one": "固定异常",
+      "chapter.c75.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c75.1": "HDR合成是否成立？",
+      "query.c75.2": "不同曝光是否成立？",
+      "query.c75.3": "晴天是否成立？",
+      "query.c75.4": "雨后是否成立？",
+      "query.c75.5": "照片时间是否成立？",
+      "query.c75.6": "采样时刻是否成立？",
+      "query.c75.7": "合成图像是否成立？",
+      "query.c75.8": "左侧天空是否成立？",
+      "query.c75.9": "右侧地面是否成立？",
+      "query.c75.10": "相机快门是否成立？",
+      "event.c75.1": "阶段 1：HDR合成进入记录链",
+      "event.c75.2": "阶段 2：不同曝光进入记录链",
+      "event.c75.3": "阶段 3：晴天进入记录链",
+      "event.c75.4": "阶段 4：雨后进入记录链",
+      "event.c75.5": "阶段 5：照片时间进入记录链",
+      "event.c75.6": "阶段 6：采样时刻进入记录链",
+      "event.c75.7": "阶段 7：合成图像进入记录链",
+      "event.c75.8": "阶段 8：左侧天空进入记录链",
+      "event.c75.9": "阶段 9：右侧地面进入记录链",
+      "event.c75.10": "阶段 10：相机快门进入记录链",
+      "evidence.c75.1.title": "HDR合成记录",
+      "evidence.c75.1.observation": "来源材料显示“HDR合成”在该阶段可复核。",
+      "evidence.c75.2.title": "不同曝光记录",
+      "evidence.c75.2.observation": "来源材料显示“不同曝光”在该阶段可复核。",
+      "evidence.c75.3.title": "晴天记录",
+      "evidence.c75.3.observation": "来源材料显示“晴天”在该阶段可复核。",
+      "evidence.c75.4.title": "雨后记录",
+      "evidence.c75.4.observation": "来源材料显示“雨后”在该阶段可复核。",
+      "evidence.c75.5.title": "照片时间记录",
+      "evidence.c75.5.observation": "来源材料显示“照片时间”在该阶段可复核。",
+      "evidence.c75.6.title": "采样时刻记录",
+      "evidence.c75.6.observation": "来源材料显示“采样时刻”在该阶段可复核。",
+      "evidence.c75.7.title": "合成图像记录",
+      "evidence.c75.7.observation": "来源材料显示“合成图像”在该阶段可复核。",
+      "evidence.c75.8.title": "左侧天空记录",
+      "evidence.c75.8.observation": "来源材料显示“左侧天空”在该阶段可复核。",
+      "evidence.c75.9.title": "右侧地面记录",
+      "evidence.c75.9.observation": "来源材料显示“右侧地面”在该阶段可复核。",
+      "evidence.c75.10.title": "相机快门记录",
+      "evidence.c75.10.observation": "来源材料显示“相机快门”在该阶段可复核。",
+      "board.c75.1.title": "同一照片的两种天气 · sampling-window",
+      "board.c75.1.slot.1": "起始来源",
+      "board.c75.1.slot.2": "关键变化",
+      "board.c75.1.slot.3": "观测结果",
+      "board.c75.1.slot.4": "排除替代",
+      "board.c75.2.title": "同一照片的两种天气 · occlusion-map",
+      "board.c75.2.slot.1": "起始来源",
+      "board.c75.2.slot.2": "关键变化",
+      "board.c75.2.slot.3": "观测结果",
+      "board.c75.2.slot.4": "排除替代"
+    }
+  }
+}

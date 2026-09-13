@@ -13,17 +13,27 @@
   --panel: #111318;
   --panel-deep: #0b0d10;
   --display: "FZSong", "STSong", "Songti SC", Georgia, serif;
-  --body: "Noto Sans CJK SC", "Microsoft YaHei UI", sans-serif;
+  --body: system-ui, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   --mono: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+  --font-serif: var(--display);
+  --font-sans: var(--body);
+  --font-mono: var(--mono);
+  --text-body: 1rem;
+  --text-label: .875rem;
+  --text-meta: .75rem;
+  --space-sm: .5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
 }
 
 * { box-sizing: border-box; }
-html { background: var(--black); scroll-behavior: smooth; }
+html { background: var(--black); scroll-behavior: smooth; scrollbar-gutter:stable; }
+html:has([data-reduced-motion="true"]) { scroll-behavior: auto; }
 h1, h2, h3, [id] { scroll-margin-top: 5rem; }
 a, button, summary, input, select { touch-action: manipulation; -webkit-tap-highlight-color: rgba(184, 207, 121, .18); }
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 0;
   background:
     radial-gradient(circle at 50% -12%, rgba(108, 29, 42, .28), transparent 37rem),
     linear-gradient(120deg, rgba(255,255,255,.014) 1px, transparent 1px),
@@ -42,17 +52,23 @@ body {
 .funGateMenu > div { display: flex; gap: .4rem; }
 .funGateMenu > div button { flex: 1; }
 
-button, input, select { font: inherit; }
+button, input, select, textarea { font: inherit; }
 button { color: inherit; }
-button:focus-visible, input:focus-visible, select:focus-visible {
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible, a:focus-visible {
   outline: 2px solid var(--acid);
   outline-offset: 3px;
 }
 ::selection { background: var(--wine); color: white; }
 
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+.storageRestartConfirm { display:flex; flex-wrap:wrap; align-items:center; gap:.5rem; max-width:32rem; }
+.storageRestartConfirm p { flex-basis:100%; font-size:.875rem; line-height:1.6; }
+.storageRecovery button,.archiveToolsBody button { min-height:44px; font-size:.875rem; }
+.archiveTools summary,.archiveToolsBody p { font-size:.875rem; line-height:1.6; }
 
 .srOnly { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important; }
 .skipLink { position: fixed; z-index: 200; top: 8px; left: 8px; transform: translateY(-160%); opacity: 0; pointer-events: none; padding: .65rem .9rem; border: 2px solid var(--acid); background: #08090b; color: #fff; text-decoration: none; }
@@ -87,3 +103,4 @@ button:focus-visible, input:focus-visible, select:focus-visible {
   button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid Highlight !important; outline-offset: 3px; }
   [data-active], [data-linked], [data-state="verified"], [data-state="connected"] { border-color: Highlight !important; }
 }
+@media(max-width:600px) { html { scrollbar-gutter:auto; } }

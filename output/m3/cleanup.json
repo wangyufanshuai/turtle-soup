@@ -1,0 +1,20 @@
+{
+  "servers": [
+    {
+      "stopped": true,
+      "processId": 13348,
+      "ownershipVerified": true,
+      "port": 8124
+    },
+    {
+      "stopped": true,
+      "processId": 44524,
+      "ownershipVerified": true,
+      "port": 8125
+    }
+  ],
+  "viewportReset": true,
+  "at": "2026-09-06T15:54:34.8517084Z",
+  "browserTestTabClosed": true,
+  "residual": "Browser error tab 7 from an early local server connection refusal could not be closed through the supported Browser runtime because URL policy blocks acquiring the data error page. No bypass attempted."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "c83-two-unloads",
+  "title": "一辆车的两次卸货",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-2fccf5ea-231f-4f1d-a92e-5430b98660e4.png",
+  "sourceSha256": "ee369dc8d01b0a25b4fac07a6ec54d2f4b0e624da4cf2c6eebe5061f35c63ae8",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 一辆车的两次卸货 — 同一批次只对应一辆车，卸货记录却出现两次。\nArt direction: Two sealed cargo loads on an unloading dock, neutral crates and soft amber loading-bay light, no quantities or route explanation.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c83-two-unloads.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 106936,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "0d985a90592b8edf0e89f31a85415d5badd763d1295e617b72c8a6f5042fb02d"
+    },
+    {
+      "path": "/assets/home-cinema/c83-two-unloads-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 32464,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "28e848b897c35aa18f889c320e87b05fb6446169b7a45bda7d58e2bde7061062"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.617573+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

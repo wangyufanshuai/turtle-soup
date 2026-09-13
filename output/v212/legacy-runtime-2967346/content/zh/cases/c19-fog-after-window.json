@@ -1,0 +1,1726 @@
+{
+  "schemaVersion": "1.0",
+  "id": "c19-fog-after-window",
+  "metadata": {
+    "titleKey": "case.c19.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "阈值",
+      "环境滞后",
+      "相变"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:c19-fog-after-window-v1",
+    "status": "internal-rc",
+    "seasonId": "season-2"
+  },
+  "presentation": {
+    "layoutId": "dewpoint-room",
+    "sceneAsset": "/scene-fog-after-window.svg",
+    "palette": "mist-cyan",
+    "accent": "#9ccbd0",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "state-trace-dossier",
+    "mobileNavigation": [
+      "雾室",
+      "环境曲线",
+      "阈值链"
+    ],
+    "boardMode": "state-trace"
+  },
+  "surface": {
+    "titleKey": "case.c19.title",
+    "textKey": "case.c19.surface",
+    "publicFactIds": [
+      "fact-c19-01",
+      "fact-c19-02",
+      "fact-c19-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c19-01",
+      "query-c19-02",
+      "query-c19-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c19-one",
+      "titleKey": "chapter.c19.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c19-main",
+      "titleKey": "board.c19.title",
+      "mode": "state-trace",
+      "slots": [
+        {
+          "id": "slot-c19-1",
+          "labelKey": "board.c19.slot.1",
+          "acceptsEventIds": [
+            "event-c19-02"
+          ]
+        },
+        {
+          "id": "slot-c19-2",
+          "labelKey": "board.c19.slot.2",
+          "acceptsEventIds": [
+            "event-c19-04"
+          ]
+        },
+        {
+          "id": "slot-c19-3",
+          "labelKey": "board.c19.slot.3",
+          "acceptsEventIds": [
+            "event-c19-07"
+          ]
+        },
+        {
+          "id": "slot-c19-4",
+          "labelKey": "board.c19.slot.4",
+          "acceptsEventIds": [
+            "event-c19-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "causes",
+        "precedes",
+        "explains"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 12
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c19-mechanism",
+      "kind": "object",
+      "labelKey": "entity.c19.mechanism",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c19",
+      "kind": "location",
+      "labelKey": "location.c19",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c19-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "00:00"
+      },
+      "participants": [
+        "entity-c19-mechanism"
+      ],
+      "locationId": "location-c19",
+      "action": "step-c19-1",
+      "labelKey": "event.c19.1",
+      "effectFactIds": [
+        "fact-c19-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c19-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "00:02"
+      },
+      "participants": [
+        "entity-c19-mechanism"
+      ],
+      "locationId": "location-c19",
+      "action": "step-c19-2",
+      "labelKey": "event.c19.2",
+      "effectFactIds": [
+        "fact-c19-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c19-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "00:04"
+      },
+      "participants": [
+        "entity-c19-mechanism"
+      ],
+      "locationId": "location-c19",
+      "action": "step-c19-3",
+      "labelKey": "event.c19.3",
+      "effectFactIds": [
+        "fact-c19-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c19-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "00:06"
+      },
+      "participants": [
+        "entity-c19-mechanism"
+      ],
+      "locationId": "location-c19",
+      "action": "step-c19-4",
+      "labelKey": "event.c19.4",
+      "effectFactIds": [
+        "fact-c19-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c19-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "00:08"
+      },
+      "participants": [
+        "entity-c19-mechanism"
+      ],
+      "locationId": "location-c19",
+      "action": "step-c19-5",
+      "labelKey": "event.c19.5",
+      "effectFactIds": [
+        "fact-c19-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c19-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "00:10"
+      },
+      "participants": [
+        "entity-c19-mechanism"
+      ],
+      "locationId": "location-c19",
+      "action": "step-c19-6",
+      "labelKey": "event.c19.6",
+      "effectFactIds": [
+        "fact-c19-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c19-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "00:12"
+      },
+      "participants": [
+        "entity-c19-mechanism"
+      ],
+      "locationId": "location-c19",
+      "action": "step-c19-7",
+      "labelKey": "event.c19.7",
+      "effectFactIds": [
+        "fact-c19-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c19-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "00:14"
+      },
+      "participants": [
+        "entity-c19-mechanism"
+      ],
+      "locationId": "location-c19",
+      "action": "step-c19-8",
+      "labelKey": "event.c19.8",
+      "effectFactIds": [
+        "fact-c19-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c19-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "00:16"
+      },
+      "participants": [
+        "entity-c19-mechanism"
+      ],
+      "locationId": "location-c19",
+      "action": "step-c19-9",
+      "labelKey": "event.c19.9",
+      "effectFactIds": [
+        "fact-c19-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c19-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "00:18"
+      },
+      "participants": [
+        "entity-c19-mechanism"
+      ],
+      "locationId": "location-c19",
+      "action": "step-c19-10",
+      "labelKey": "event.c19.10",
+      "effectFactIds": [
+        "fact-c19-10"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c19-1",
+      "type": "precedes",
+      "fromId": "entity-c19-mechanism",
+      "toId": "location-c19",
+      "eventId": "event-c19-02",
+      "factId": "fact-c19-02"
+    },
+    {
+      "id": "relation-c19-2",
+      "type": "causes",
+      "fromId": "entity-c19-mechanism",
+      "toId": "location-c19",
+      "eventId": "event-c19-04",
+      "factId": "fact-c19-03"
+    },
+    {
+      "id": "relation-c19-3",
+      "type": "causes",
+      "fromId": "entity-c19-mechanism",
+      "toId": "location-c19",
+      "eventId": "event-c19-07",
+      "factId": "fact-c19-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c19-01",
+      "predicate": "claim_c19_1",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 1
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c19.1"
+    },
+    {
+      "id": "fact-c19-02",
+      "predicate": "claim_c19_2",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 2
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c19.2"
+    },
+    {
+      "id": "fact-c19-03",
+      "predicate": "claim_c19_3",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 3
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c19.3"
+    },
+    {
+      "id": "fact-c19-04",
+      "predicate": "claim_c19_4",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 4
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c19.4"
+    },
+    {
+      "id": "fact-c19-05",
+      "predicate": "claim_c19_5",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 5
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c19.5"
+    },
+    {
+      "id": "fact-c19-06",
+      "predicate": "claim_c19_6",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 6
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c19.6"
+    },
+    {
+      "id": "fact-c19-07",
+      "predicate": "claim_c19_7",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 7
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c19.7"
+    },
+    {
+      "id": "fact-c19-08",
+      "predicate": "claim_c19_8",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 8
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c19.8"
+    },
+    {
+      "id": "fact-c19-09",
+      "predicate": "claim_c19_9",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 9
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-09"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c19.9"
+    },
+    {
+      "id": "fact-c19-10",
+      "predicate": "claim_c19_10",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 10
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-10"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c19.10"
+    },
+    {
+      "id": "fact-c19-11",
+      "predicate": "claim_c19_11",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 11
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-04"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c19.11"
+    },
+    {
+      "id": "fact-c19-12",
+      "predicate": "claim_c19_12",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 12
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-05"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c19.12"
+    },
+    {
+      "id": "fact-c19-13",
+      "predicate": "claim_c19_13",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 13
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-06"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c19.13"
+    },
+    {
+      "id": "fact-c19-14",
+      "predicate": "claim_c19_14",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 14
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-07"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c19.14"
+    },
+    {
+      "id": "fact-c19-15",
+      "predicate": "claim_c19_15",
+      "args": {
+        "caseId": "c19-fog-after-window",
+        "step": 15
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c19-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c19-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c19.15"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c19-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c19-01",
+        "fact-c19-02",
+        "fact-c19-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c19-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c19-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c19-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c19-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c19-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c19-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c19-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c19-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c19-04",
+        "fact-c19-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c19-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c19-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c19-05",
+        "fact-c19-12"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c19-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c19-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c19-06",
+        "fact-c19-13"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c19-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c19-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c19-07",
+        "fact-c19-14"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c19-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c19-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c19-08",
+        "fact-c19-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c19-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c19-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c19-09"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c19-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c19-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c19-10"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c19-01",
+      "labelKey": "query.c19.1",
+      "intent": "verify",
+      "predicate": "claim_c19_1",
+      "slots": {
+        "subjectId": "entity-c19-mechanism"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c19-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-opening"
+      ],
+      "examplePhrases": [
+        "清洗湿气这条信息是否成立？",
+        "能确认清洗湿气吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "清洗湿气"
+          ],
+          "priority": 9
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c19-02",
+      "labelKey": "query.c19.2",
+      "intent": "verify",
+      "predicate": "claim_c19_2",
+      "slots": {
+        "subjectId": "entity-c19-mechanism"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c19-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-opening"
+      ],
+      "examplePhrases": [
+        "开窗湿度这条信息是否成立？",
+        "能确认开窗湿度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "开窗湿度"
+          ],
+          "priority": 9
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c19-03",
+      "labelKey": "query.c19.3",
+      "intent": "verify",
+      "predicate": "claim_c19_3",
+      "slots": {
+        "subjectId": "entity-c19-mechanism"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c19-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-opening"
+      ],
+      "examplePhrases": [
+        "窗磁这条信息是否成立？",
+        "能确认窗磁吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "窗磁"
+          ],
+          "priority": 9
+        }
+      ]
+    },
+    {
+      "id": "query-c19-04",
+      "labelKey": "query.c19.4",
+      "intent": "verify",
+      "predicate": "claim_c19_4",
+      "slots": {
+        "subjectId": "entity-c19-mechanism"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c19-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-04"
+      ],
+      "examplePhrases": [
+        "通风流速这条信息是否成立？",
+        "能确认通风流速吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "通风流速"
+          ],
+          "priority": 9
+        }
+      ]
+    },
+    {
+      "id": "query-c19-05",
+      "labelKey": "query.c19.5",
+      "intent": "verify",
+      "predicate": "claim_c19_5",
+      "slots": {
+        "subjectId": "entity-c19-mechanism"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c19-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-05"
+      ],
+      "examplePhrases": [
+        "玻璃温度这条信息是否成立？",
+        "能确认玻璃温度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "玻璃温度"
+          ],
+          "priority": 9
+        }
+      ]
+    },
+    {
+      "id": "query-c19-06",
+      "labelKey": "query.c19.6",
+      "intent": "verify",
+      "predicate": "claim_c19_6",
+      "slots": {
+        "subjectId": "entity-c19-mechanism"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c19-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-06"
+      ],
+      "examplePhrases": [
+        "湿度曲线这条信息是否成立？",
+        "能确认湿度曲线吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "湿度曲线"
+          ],
+          "priority": 9
+        }
+      ]
+    },
+    {
+      "id": "query-c19-07",
+      "labelKey": "query.c19.7",
+      "intent": "verify",
+      "predicate": "claim_c19_7",
+      "slots": {
+        "subjectId": "entity-c19-mechanism"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c19-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-07"
+      ],
+      "examplePhrases": [
+        "露点这条信息是否成立？",
+        "能确认露点吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "露点"
+          ],
+          "priority": 9
+        }
+      ]
+    },
+    {
+      "id": "query-c19-08",
+      "labelKey": "query.c19.8",
+      "intent": "verify",
+      "predicate": "claim_c19_8",
+      "slots": {
+        "subjectId": "entity-c19-mechanism"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c19-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-08"
+      ],
+      "examplePhrases": [
+        "雾滴这条信息是否成立？",
+        "能确认雾滴吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "雾滴"
+          ],
+          "priority": 9
+        }
+      ]
+    },
+    {
+      "id": "query-c19-09",
+      "labelKey": "query.c19.9",
+      "intent": "eliminate",
+      "predicate": "claim_c19_9",
+      "slots": {
+        "subjectId": "entity-c19-mechanism"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c19-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-09"
+      ],
+      "examplePhrases": [
+        "水源排除这条信息是否成立？",
+        "能确认水源排除吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "水源排除"
+          ],
+          "priority": 9
+        }
+      ]
+    },
+    {
+      "id": "query-c19-10",
+      "labelKey": "query.c19.10",
+      "intent": "eliminate",
+      "predicate": "claim_c19_10",
+      "slots": {
+        "subjectId": "entity-c19-mechanism"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c19-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c19-10"
+      ],
+      "examplePhrases": [
+        "香氛瓶这条信息是否成立？",
+        "能确认香氛瓶吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "香氛瓶"
+          ],
+          "priority": 9
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把这个问题对应到一个明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c19-01",
+      "kind": "scene",
+      "titleKey": "evidence.c19.1.title",
+      "observationKey": "evidence.c19.1.observation",
+      "sourceFactIds": [
+        "fact-c19-01"
+      ],
+      "sourceEventIds": [
+        "event-c19-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c19-mechanism",
+        "location-c19"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c19-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required"
+    },
+    {
+      "id": "evidence-c19-02",
+      "kind": "record",
+      "titleKey": "evidence.c19.2.title",
+      "observationKey": "evidence.c19.2.observation",
+      "sourceFactIds": [
+        "fact-c19-02"
+      ],
+      "sourceEventIds": [
+        "event-c19-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c19-mechanism",
+        "location-c19"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c19-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required"
+    },
+    {
+      "id": "evidence-c19-03",
+      "kind": "object",
+      "titleKey": "evidence.c19.3.title",
+      "observationKey": "evidence.c19.3.observation",
+      "sourceFactIds": [
+        "fact-c19-03"
+      ],
+      "sourceEventIds": [
+        "event-c19-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c19-mechanism",
+        "location-c19"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required"
+    },
+    {
+      "id": "evidence-c19-04",
+      "kind": "scene",
+      "titleKey": "evidence.c19.4.title",
+      "observationKey": "evidence.c19.4.observation",
+      "sourceFactIds": [
+        "fact-c19-04",
+        "fact-c19-11"
+      ],
+      "sourceEventIds": [
+        "event-c19-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c19-mechanism",
+        "location-c19"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required"
+    },
+    {
+      "id": "evidence-c19-05",
+      "kind": "record",
+      "titleKey": "evidence.c19.5.title",
+      "observationKey": "evidence.c19.5.observation",
+      "sourceFactIds": [
+        "fact-c19-05",
+        "fact-c19-12"
+      ],
+      "sourceEventIds": [
+        "event-c19-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c19-mechanism",
+        "location-c19"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required"
+    },
+    {
+      "id": "evidence-c19-06",
+      "kind": "object",
+      "titleKey": "evidence.c19.6.title",
+      "observationKey": "evidence.c19.6.observation",
+      "sourceFactIds": [
+        "fact-c19-06",
+        "fact-c19-13"
+      ],
+      "sourceEventIds": [
+        "event-c19-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c19-mechanism",
+        "location-c19"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required"
+    },
+    {
+      "id": "evidence-c19-07",
+      "kind": "scene",
+      "titleKey": "evidence.c19.7.title",
+      "observationKey": "evidence.c19.7.observation",
+      "sourceFactIds": [
+        "fact-c19-07",
+        "fact-c19-14"
+      ],
+      "sourceEventIds": [
+        "event-c19-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c19-mechanism",
+        "location-c19"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required"
+    },
+    {
+      "id": "evidence-c19-08",
+      "kind": "record",
+      "titleKey": "evidence.c19.8.title",
+      "observationKey": "evidence.c19.8.observation",
+      "sourceFactIds": [
+        "fact-c19-08",
+        "fact-c19-15"
+      ],
+      "sourceEventIds": [
+        "event-c19-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c19-mechanism",
+        "location-c19"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required"
+    },
+    {
+      "id": "evidence-c19-09",
+      "kind": "object",
+      "titleKey": "evidence.c19.9.title",
+      "observationKey": "evidence.c19.9.observation",
+      "sourceFactIds": [
+        "fact-c19-09"
+      ],
+      "sourceEventIds": [
+        "event-c19-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c19-mechanism",
+        "location-c19"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required"
+    },
+    {
+      "id": "evidence-c19-10",
+      "kind": "scene",
+      "titleKey": "evidence.c19.10.title",
+      "observationKey": "evidence.c19.10.observation",
+      "sourceFactIds": [
+        "fact-c19-10"
+      ],
+      "sourceEventIds": [
+        "event-c19-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c19-mechanism",
+        "location-c19"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c19.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c19-01",
+          "event-c19-02",
+          "event-c19-03",
+          "event-c19-04",
+          "event-c19-05",
+          "event-c19-06",
+          "event-c19-07",
+          "event-c19-08",
+          "event-c19-09"
+        ],
+        "motiveKey": "完成低温密封环境的露点测试"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c19-01",
+        "evidence-c19-02",
+        "evidence-c19-03",
+        "evidence-c19-04",
+        "evidence-c19-05",
+        "evidence-c19-06",
+        "evidence-c19-07",
+        "evidence-c19-08",
+        "evidence-c19-09"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c19-1",
+        "contradiction-c19-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c19-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c19.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "有人偷偷启动隐藏加湿器"
+        ],
+        "motiveKey": "motive-c19-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c19-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c19-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c19-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c19.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "屋顶漏水在关窗后突然加重"
+        ],
+        "motiveKey": "motive-c19-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c19-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c19-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c19-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c19-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c19-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c19-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c19-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c19-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c19-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c19-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c19-01",
+      "fact-c19-02",
+      "fact-c19-03",
+      "fact-c19-04",
+      "fact-c19-05",
+      "fact-c19-06",
+      "fact-c19-07",
+      "fact-c19-08"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c19-01",
+      "evidence-c19-02",
+      "evidence-c19-03",
+      "evidence-c19-04",
+      "evidence-c19-05",
+      "evidence-c19-06",
+      "evidence-c19-07",
+      "evidence-c19-08",
+      "evidence-c19-09"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c19-01",
+        "event-c19-02"
+      ],
+      [
+        "event-c19-02",
+        "event-c19-03"
+      ],
+      [
+        "event-c19-03",
+        "event-c19-04"
+      ],
+      [
+        "event-c19-04",
+        "event-c19-05"
+      ],
+      [
+        "event-c19-05",
+        "event-c19-06"
+      ],
+      [
+        "event-c19-06",
+        "event-c19-07"
+      ],
+      [
+        "event-c19-07",
+        "event-c19-08"
+      ],
+      [
+        "event-c19-08",
+        "event-c19-09"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c19-1",
+      "contradiction-c19-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c19-alternative-1",
+      "hypothesis-c19-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c19-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c19-a",
+        "evidenceIds": [
+          "evidence-c19-01",
+          "evidence-c19-02",
+          "evidence-c19-03",
+          "evidence-c19-04",
+          "evidence-c19-05",
+          "evidence-c19-06",
+          "evidence-c19-07",
+          "evidence-c19-08"
+        ]
+      },
+      {
+        "id": "proof-c19-b",
+        "evidenceIds": [
+          "evidence-c19-01",
+          "evidence-c19-02",
+          "evidence-c19-03",
+          "evidence-c19-04",
+          "evidence-c19-05",
+          "evidence-c19-06",
+          "evidence-c19-08",
+          "evidence-c19-09"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "完成低温密封环境的露点测试"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c19-main",
+        "kind": "state-transition",
+        "boardId": "board-c19-main",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c19-1",
+            "eventId": "event-c19-02"
+          },
+          {
+            "slotId": "slot-c19-2",
+            "eventId": "event-c19-04"
+          },
+          {
+            "slotId": "slot-c19-3",
+            "eventId": "event-c19-07"
+          },
+          {
+            "slotId": "slot-c19-4",
+            "eventId": "event-c19-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c19-02",
+            "toEventId": "event-c19-04",
+            "relation": "causes"
+          },
+          {
+            "fromEventId": "event-c19-04",
+            "toEventId": "event-c19-07",
+            "relation": "causes"
+          },
+          {
+            "fromEventId": "event-c19-07",
+            "toEventId": "event-c19-09",
+            "relation": "causes"
+          }
+        ],
+        "failureCategory": "state-transition"
+      }
+    ],
+    "uniquenessClaim": "关窗同时停止通风，室内湿气累积并越过冷玻璃的露点；白雾是延迟凝结，不是新增水源。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c19-1",
+      "eventId": "event-c19-02",
+      "factIds": [
+        "fact-c19-01"
+      ],
+      "captionKey": "event.c19.2"
+    },
+    {
+      "id": "replay-c19-2",
+      "eventId": "event-c19-03",
+      "factIds": [
+        "fact-c19-02"
+      ],
+      "captionKey": "event.c19.3"
+    },
+    {
+      "id": "replay-c19-3",
+      "eventId": "event-c19-04",
+      "factIds": [
+        "fact-c19-03"
+      ],
+      "captionKey": "event.c19.4"
+    },
+    {
+      "id": "replay-c19-4",
+      "eventId": "event-c19-05",
+      "factIds": [
+        "fact-c19-04"
+      ],
+      "captionKey": "event.c19.5"
+    },
+    {
+      "id": "replay-c19-5",
+      "eventId": "event-c19-06",
+      "factIds": [
+        "fact-c19-05"
+      ],
+      "captionKey": "event.c19.6"
+    },
+    {
+      "id": "replay-c19-6",
+      "eventId": "event-c19-07",
+      "factIds": [
+        "fact-c19-06",
+        "fact-c19-07",
+        "fact-c19-08"
+      ],
+      "captionKey": "event.c19.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c19.title": "关窗后才出现的雾",
+      "case.c19.surface": "窗户敞开时房间清澈，关闭并密封后反而出现白雾；没有漏水，也没有人启动加湿器。",
+      "case.c19.truth": "关窗同时停止通风，室内湿气累积并越过冷玻璃的露点；白雾是延迟凝结，不是新增水源。",
+      "entity.c19.mechanism": "关键装置与记录",
+      "location.c19": "雾室",
+      "board.c19.title": "阈值链",
+      "chapter.c19.one": "异常固定",
+      "chapter.c19.two": "来源与约束",
+      "hypothesis.c19.canonical": "关窗同时停止通风，室内湿气累积并越过冷玻璃的露点；白雾是延迟凝结，不是新增水源。",
+      "hypothesis.c19.alternative.1": "有人偷偷启动隐藏加湿器",
+      "hypothesis.c19.alternative.2": "屋顶漏水在关窗后突然加重",
+      "motive.完成低温密封环境的露点测试": "完成低温密封环境的露点测试",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "event.c19.1": "白天清洗作业增加室内湿气",
+      "event.c19.2": "开窗通风维持低湿度",
+      "event.c19.3": "夜班关闭并密封窗户",
+      "event.c19.4": "自然通风随之停止",
+      "event.c19.5": "冷却盘管继续降低玻璃温度",
+      "event.c19.6": "室内相对湿度持续上升",
+      "event.c19.7": "玻璃表面温度跌破露点",
+      "event.c19.8": "微小水滴形成可见白雾",
+      "event.c19.9": "屋顶与加湿器检查均为阴性",
+      "event.c19.10": "香氛瓶被发现但不产生水汽",
+      "evidence.c19.1.title": "清洗作业单",
+      "evidence.c19.1.observation": "傍晚清洗为室内留下了可测湿负荷。",
+      "evidence.c19.2.title": "开窗湿度段",
+      "evidence.c19.2.observation": "窗户开启时相对湿度稳定在露点以下。",
+      "evidence.c19.3.title": "窗磁记录",
+      "evidence.c19.3.observation": "22:04窗户关闭后没有再次开启。",
+      "evidence.c19.4.title": "通风流速计",
+      "evidence.c19.4.observation": "关窗后换气量迅速降到接近零。",
+      "evidence.c19.5.title": "玻璃温度探头",
+      "evidence.c19.5.observation": "冷却盘管使玻璃持续降温。",
+      "evidence.c19.6.title": "湿度上升曲线",
+      "evidence.c19.6.observation": "密封后湿度缓慢上升而非突然增加。",
+      "evidence.c19.7.title": "露点计算表",
+      "evidence.c19.7.observation": "22:17玻璃温度首次低于当时露点。",
+      "evidence.c19.8.title": "雾滴显微图",
+      "evidence.c19.8.observation": "水滴只附着在冷表面，没有喷射方向。",
+      "evidence.c19.9.title": "水源排除单",
+      "evidence.c19.9.observation": "屋顶、管线和加湿器均未发现供水。",
+      "evidence.c19.10.title": "香氛瓶",
+      "evidence.c19.10.observation": "瓶盖完好，挥发量不足以形成白雾。",
+      "query.c19.1": "清洗湿气这条信息是否成立？",
+      "query.c19.2": "开窗湿度这条信息是否成立？",
+      "query.c19.3": "窗磁这条信息是否成立？",
+      "query.c19.4": "通风流速这条信息是否成立？",
+      "query.c19.5": "玻璃温度这条信息是否成立？",
+      "query.c19.6": "湿度曲线这条信息是否成立？",
+      "query.c19.7": "露点这条信息是否成立？",
+      "query.c19.8": "雾滴这条信息是否成立？",
+      "query.c19.9": "水源排除这条信息是否成立？",
+      "query.c19.10": "香氛瓶这条信息是否成立？",
+      "board.c19.slot.1": "起始条件",
+      "board.c19.slot.2": "关键变化",
+      "board.c19.slot.3": "可见结果",
+      "board.c19.slot.4": "排除替代"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+✔ M2 fresh drafts have no chosen explanation and no anonymous numbered alternatives (13.3048ms)
+✔ c01-cold-room-knock: all alternatives appear together after reading, explicit choices and notes survive save/undo/restart (10.817ms)
+✔ c03-second-shadow: all alternatives appear together after reading, explicit choices and notes survive save/undo/restart (7.6757ms)
+✔ c61-missing-tape-turn: all alternatives appear together after reading, explicit choices and notes survive save/undo/restart (29.2963ms)
+✔ c84-handoff-after-stop: all alternatives appear together after reading, explicit choices and notes survive save/undo/restart (30.8505ms)
+✔ stale confirmations fail after a newer question; cancel, notes and two drafts remain separate (5.3888ms)
+✔ M2 command validation preserves note whitespace and rejects malformed revisions and overlong notes (0.1199ms)
+✔ unrelated answers have no invented sources, while unknown facts never reveal hidden evidence identities (1.9423ms)
+✔ M2 answer links contain only currently public evidence supporting the interpreted proposition (1.538ms)
+✔ M2 old default is not a player choice, while explicit historical selection remains intact (2.0853ms)
+✔ M3 board references share event membership while draft boards and temporal order remain independent (46.7328ms)
+✔ M3 failed composite writes neither partial structure nor a log entry (15.3489ms)
+✔ M3 swap is one saved edit and preserves connections; removing from chain removes board dependencies (27.9161ms)
+✔ M3 envelope rejects nested transactions, mixed drafts and unsupported revisions (0.1233ms)
+✔ M3 undo restores the entire dependency edit, keeps later notes, and survives refresh (28.9463ms)
+✔ M3 question undo keeps later inspections and their event references (7.7985ms)
+✔ M3 evidence remains connected when still used by the other draft (16.632ms)
+✔ M3 editing a solved proof requires resubmission and preserves its previous verified replay (115.4591ms)
+✔ live F01 preserves occupancy rather than substituting the agent causing a sound (14.2686ms)
+✔ clarification, cancel, rewrite, undo, limited counting and forged resolution survive the actual Worker boundary (10.6047ms)
+✔ the place name 后台 is not classified as a changed time in a negative C03 question (2.254ms)
+✔ c01-cold-room-knock: starters are safe, canonical identities unchanged, old AI context replays but is not live authority (2.1913ms)
+✔ c03-second-shadow: starters are safe, canonical identities unchanged, old AI context replays but is not live authority (1.5438ms)
+✔ c61-missing-tape-turn: starters are safe, canonical identities unchanged, old AI context replays but is not live authority (4.416ms)
+✔ c84-handoff-after-stop: starters are safe, canonical identities unchanged, old AI context replays but is not live authority (4.8231ms)
+✔ relation neighbours, unsupported time and negation never silently choose the wrong proposition (2.7912ms)
+✔ new live routing has an explicit replay identity; old raw-text commands preserve their historical meaning (3.0022ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 400.2103

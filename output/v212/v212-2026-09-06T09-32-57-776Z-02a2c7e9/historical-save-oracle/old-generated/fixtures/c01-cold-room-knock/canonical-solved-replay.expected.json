@@ -1,0 +1,1344 @@
+{
+  "source": "pinned-old-runtime generated oracle",
+  "pinnedRef": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "expected": {
+    "game": {
+      "caseId": "c01-cold-room-knock",
+      "discoveredEvidenceIds": [
+        "evidence-access-log",
+        "evidence-cctv-exit",
+        "evidence-door-latch",
+        "evidence-intent-chain",
+        "evidence-knock-recording",
+        "evidence-metal-tray-mark",
+        "evidence-phone-in-room",
+        "evidence-phone-pairing",
+        "evidence-sample-locker",
+        "evidence-security-log"
+      ],
+      "visitedLocationIds": [
+        "location-cold-room",
+        "location-corridor",
+        "location-external-locker"
+      ],
+      "answeredQueryIds": [
+        "query-door-mechanism",
+        "query-fang-entered",
+        "query-irrelevant-color",
+        "query-knock-source",
+        "query-lin-motive",
+        "query-lin-ownership",
+        "query-person-inside",
+        "query-phone-inside",
+        "query-sample-location"
+      ],
+      "activeRuleIds": [
+        "rule-door",
+        "rule-intent",
+        "rule-knock-source",
+        "rule-opening",
+        "rule-phone",
+        "rule-sample"
+      ],
+      "visibleFactIds": [
+        "fact-alarm-set",
+        "fact-cctv-lin-exited",
+        "fact-door-auto-latched",
+        "fact-door-sealed",
+        "fact-fang-no-override",
+        "fact-inspection-delayed",
+        "fact-knock-independently-recorded",
+        "fact-lin-authorized",
+        "fact-lin-intent-delay",
+        "fact-lin-left-before-knock",
+        "fact-no-entry-after-lock",
+        "fact-no-person-inside",
+        "fact-phone-inside",
+        "fact-phone-paired-to-lin",
+        "fact-sample-found-outside",
+        "fact-sample-in-locker",
+        "fact-sample-outside",
+        "fact-three-knocks",
+        "fact-vibration-caused-knock"
+      ]
+    },
+    "transcript": [
+      {
+        "id": "q-1",
+        "rawQuestion": "里面有人吗？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-2",
+        "rawQuestion": "敲门声是人敲的吗？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-3",
+        "rawQuestion": "门为什么像从里面锁上？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-4",
+        "rawQuestion": "手机在冷藏室里吗？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-5",
+        "rawQuestion": "那部手机是林澈的吗？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-6",
+        "rawQuestion": "样本在外面的储物柜里吗？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-7",
+        "rawQuestion": "林澈故意制造敲门声吗？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-8",
+        "rawQuestion": "方砚后来进过冷藏室吗？",
+        "answerCode": "no",
+        "repeated": false
+      },
+      {
+        "id": "q-9",
+        "rawQuestion": "托盘是不是蓝色的？",
+        "answerCode": "irrelevant",
+        "repeated": false
+      },
+      {
+        "id": "q-10",
+        "rawQuestion": "里面有人吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-11",
+        "rawQuestion": "敲门声是人敲的吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-12",
+        "rawQuestion": "门为什么像从里面锁上？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-13",
+        "rawQuestion": "手机在冷藏室里吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-14",
+        "rawQuestion": "那部手机是林澈的吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-15",
+        "rawQuestion": "样本在外面的储物柜里吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-16",
+        "rawQuestion": "林澈故意制造敲门声吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-17",
+        "rawQuestion": "方砚后来进过冷藏室吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-18",
+        "rawQuestion": "托盘是不是蓝色的？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      },
+      {
+        "id": "q-19",
+        "rawQuestion": "里面有人吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-20",
+        "rawQuestion": "敲门声是人敲的吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-21",
+        "rawQuestion": "门为什么像从里面锁上？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-22",
+        "rawQuestion": "手机在冷藏室里吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-23",
+        "rawQuestion": "那部手机是林澈的吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-24",
+        "rawQuestion": "样本在外面的储物柜里吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-25",
+        "rawQuestion": "林澈故意制造敲门声吗？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-26",
+        "rawQuestion": "方砚后来进过冷藏室吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-27",
+        "rawQuestion": "托盘是不是蓝色的？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      },
+      {
+        "id": "q-28",
+        "rawQuestion": "里面有人吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-29",
+        "rawQuestion": "敲门声是人敲的吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-30",
+        "rawQuestion": "门为什么像从里面锁上？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-31",
+        "rawQuestion": "手机在冷藏室里吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-32",
+        "rawQuestion": "那部手机是林澈的吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-33",
+        "rawQuestion": "样本在外面的储物柜里吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-34",
+        "rawQuestion": "林澈故意制造敲门声吗？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-35",
+        "rawQuestion": "方砚后来进过冷藏室吗？",
+        "answerCode": "no",
+        "repeated": true
+      },
+      {
+        "id": "q-36",
+        "rawQuestion": "托盘是不是蓝色的？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      }
+    ],
+    "evidenceStates": {
+      "evidence-cctv-exit": "connected",
+      "evidence-door-latch": "connected",
+      "evidence-metal-tray-mark": "connected",
+      "evidence-phone-in-room": "connected",
+      "evidence-phone-pairing": "connected",
+      "evidence-knock-recording": "connected",
+      "evidence-access-log": "connected",
+      "evidence-sample-locker": "connected",
+      "evidence-security-log": "examined",
+      "evidence-intent-chain": "connected"
+    },
+    "theoryDrafts": [
+      {
+        "id": "theory-a",
+        "hypothesisId": "hypothesis-canonical",
+        "eventIds": [
+          "event-lin-removes-sample",
+          "event-lin-hides-sample",
+          "event-lin-places-phone",
+          "event-lin-exits",
+          "event-phone-vibrates",
+          "event-yu-delays-entry"
+        ],
+        "evidenceIds": [
+          "evidence-access-log",
+          "evidence-cctv-exit",
+          "evidence-door-latch",
+          "evidence-intent-chain",
+          "evidence-knock-recording",
+          "evidence-metal-tray-mark",
+          "evidence-phone-in-room",
+          "evidence-phone-pairing",
+          "evidence-sample-locker"
+        ],
+        "motiveKey": "motive-delay-inspection"
+      },
+      {
+        "id": "theory-b",
+        "hypothesisId": "hypothesis-guard-faked",
+        "eventIds": [],
+        "evidenceIds": [],
+        "motiveKey": null
+      }
+    ],
+    "activeTheoryId": "theory-a",
+    "pendingInterpretation": null,
+    "lastQuestionSnapshot": {
+      "game": {
+        "caseId": "c01-cold-room-knock",
+        "discoveredEvidenceIds": [
+          "evidence-access-log",
+          "evidence-cctv-exit",
+          "evidence-door-latch",
+          "evidence-intent-chain",
+          "evidence-knock-recording",
+          "evidence-metal-tray-mark",
+          "evidence-phone-in-room",
+          "evidence-phone-pairing",
+          "evidence-sample-locker",
+          "evidence-security-log"
+        ],
+        "visitedLocationIds": [
+          "location-cold-room",
+          "location-corridor",
+          "location-external-locker"
+        ],
+        "answeredQueryIds": [
+          "query-door-mechanism",
+          "query-fang-entered",
+          "query-irrelevant-color",
+          "query-knock-source",
+          "query-lin-motive",
+          "query-lin-ownership",
+          "query-person-inside",
+          "query-phone-inside",
+          "query-sample-location"
+        ],
+        "activeRuleIds": [
+          "rule-door",
+          "rule-intent",
+          "rule-knock-source",
+          "rule-opening",
+          "rule-phone",
+          "rule-sample"
+        ],
+        "visibleFactIds": [
+          "fact-alarm-set",
+          "fact-cctv-lin-exited",
+          "fact-door-auto-latched",
+          "fact-door-sealed",
+          "fact-fang-no-override",
+          "fact-inspection-delayed",
+          "fact-knock-independently-recorded",
+          "fact-lin-authorized",
+          "fact-lin-intent-delay",
+          "fact-lin-left-before-knock",
+          "fact-no-entry-after-lock",
+          "fact-no-person-inside",
+          "fact-phone-inside",
+          "fact-phone-paired-to-lin",
+          "fact-sample-found-outside",
+          "fact-sample-in-locker",
+          "fact-sample-outside",
+          "fact-three-knocks",
+          "fact-vibration-caused-knock"
+        ]
+      },
+      "transcriptLength": 35
+    },
+    "solved": true,
+    "replayBeatIds": [
+      "replay-sample",
+      "replay-phone",
+      "replay-exit",
+      "replay-knock",
+      "replay-delay"
+    ],
+    "acceptedCommandCount": 90,
+    "unlockedChapterIds": [],
+    "reasoningBoards": {},
+    "replayMode": "standard"
+  },
+  "oldLiveEqualsOldReplay": true,
+  "expectations": {
+    "solved": true
+  },
+  "steps": [
+    {
+      "index": 0,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "type": "set_theory_hypothesis",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "type": "set_theory_motive",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "type": "submit_theory",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_judged",
+          "judgement": "solved",
+          "proofFailureCategory": null
+        },
+        {
+          "type": "case_solved"
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "type": "request_proof_replay",
+      "accepted": true,
+      "events": [
+        {
+          "type": "replay_ready"
+        }
+      ]
+    }
+  ]
+}

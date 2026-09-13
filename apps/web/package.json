@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "@turtle-soup/mystery-core": "0.1.0",
     "next": "^16.0.0",
     "react": "^19.0.0",

@@ -1,0 +1,9 @@
+{
+  "family": "Noto Serif SC",
+  "source": "https://github.com/google/fonts/tree/main/ofl/notoserifsc",
+  "license": "SIL Open Font License 1.1",
+  "weight": 400,
+  "subsetCharacters": 549,
+  "output": "/assets/home-cinema/fonts/cinema-serif.woff2",
+  "bytes": 91728
+}

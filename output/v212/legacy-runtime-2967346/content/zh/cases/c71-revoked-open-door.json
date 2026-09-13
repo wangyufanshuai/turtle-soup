@@ -1,0 +1,2007 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c71-revoked-open-door",
+  "metadata": {
+    "titleKey": "case.c71.title",
+    "difficulty": "expert",
+    "ageRating": "16+",
+    "contentTags": [
+      "权限缓存",
+      "网络同步",
+      "因果链"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:51f881e3fbb09bd32b3bac32609137535228287284c0795c15ac3a1f33cdfabd",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-network-control",
+    "sceneAsset": "/assets/cases/c71-revoked-open-door/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c71-revoked-open-door/scene-mobile.svg",
+    "palette": "season5-network-control",
+    "accent": "#c9a7d9",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "network-topology-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "network-topology"
+  },
+  "surface": {
+    "titleKey": "case.c71.title",
+    "textKey": "case.c71.surface",
+    "publicFactIds": [
+      "fact-c71-01",
+      "fact-c71-02",
+      "fact-c71-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c71-01",
+      "query-c71-02",
+      "query-c71-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c71-one",
+      "titleKey": "chapter.c71.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c71-1",
+      "titleKey": "board.c71.1.title",
+      "mode": "network-topology",
+      "slots": [
+        {
+          "id": "slot-c71-1-1",
+          "labelKey": "board.c71.1.slot.1",
+          "acceptsEventIds": [
+            "event-c71-01"
+          ]
+        },
+        {
+          "id": "slot-c71-1-2",
+          "labelKey": "board.c71.1.slot.2",
+          "acceptsEventIds": [
+            "event-c71-03"
+          ]
+        },
+        {
+          "id": "slot-c71-1-3",
+          "labelKey": "board.c71.1.slot.3",
+          "acceptsEventIds": [
+            "event-c71-05"
+          ]
+        },
+        {
+          "id": "slot-c71-1-4",
+          "labelKey": "board.c71.1.slot.4",
+          "acceptsEventIds": [
+            "event-c71-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "routes-through",
+        "deduplicates",
+        "acknowledges"
+      ]
+    },
+    {
+      "id": "board-c71-2",
+      "titleKey": "board.c71.2.title",
+      "mode": "causal-graph",
+      "slots": [
+        {
+          "id": "slot-c71-2-1",
+          "labelKey": "board.c71.2.slot.1",
+          "acceptsEventIds": [
+            "event-c71-02"
+          ]
+        },
+        {
+          "id": "slot-c71-2-2",
+          "labelKey": "board.c71.2.slot.2",
+          "acceptsEventIds": [
+            "event-c71-04"
+          ]
+        },
+        {
+          "id": "slot-c71-2-3",
+          "labelKey": "board.c71.2.slot.3",
+          "acceptsEventIds": [
+            "event-c71-06"
+          ]
+        },
+        {
+          "id": "slot-c71-2-4",
+          "labelKey": "board.c71.2.slot.4",
+          "acceptsEventIds": [
+            "event-c71-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "triggers",
+        "causes",
+        "explains"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c71-system",
+      "kind": "object",
+      "labelKey": "entity.c71.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c71",
+      "kind": "location",
+      "labelKey": "location.c71",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c71-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c71-system"
+      ],
+      "locationId": "location-c71",
+      "action": "step-c71-1",
+      "labelKey": "event.c71.1",
+      "effectFactIds": [
+        "fact-c71-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c71-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c71-system"
+      ],
+      "locationId": "location-c71",
+      "action": "step-c71-2",
+      "labelKey": "event.c71.2",
+      "effectFactIds": [
+        "fact-c71-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c71-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c71-system"
+      ],
+      "locationId": "location-c71",
+      "action": "step-c71-3",
+      "labelKey": "event.c71.3",
+      "effectFactIds": [
+        "fact-c71-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c71-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c71-system"
+      ],
+      "locationId": "location-c71",
+      "action": "step-c71-4",
+      "labelKey": "event.c71.4",
+      "effectFactIds": [
+        "fact-c71-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c71-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c71-system"
+      ],
+      "locationId": "location-c71",
+      "action": "step-c71-5",
+      "labelKey": "event.c71.5",
+      "effectFactIds": [
+        "fact-c71-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c71-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c71-system"
+      ],
+      "locationId": "location-c71",
+      "action": "step-c71-6",
+      "labelKey": "event.c71.6",
+      "effectFactIds": [
+        "fact-c71-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c71-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "21:24"
+      },
+      "participants": [
+        "entity-c71-system"
+      ],
+      "locationId": "location-c71",
+      "action": "step-c71-7",
+      "labelKey": "event.c71.7",
+      "effectFactIds": [
+        "fact-c71-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c71-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c71-system"
+      ],
+      "locationId": "location-c71",
+      "action": "step-c71-8",
+      "labelKey": "event.c71.8",
+      "effectFactIds": [
+        "fact-c71-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c71-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c71-system"
+      ],
+      "locationId": "location-c71",
+      "action": "step-c71-9",
+      "labelKey": "event.c71.9",
+      "effectFactIds": [
+        "fact-c71-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c71-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c71-system"
+      ],
+      "locationId": "location-c71",
+      "action": "step-c71-10",
+      "labelKey": "event.c71.10",
+      "effectFactIds": [
+        "fact-c71-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c71-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c71-system"
+      ],
+      "locationId": "location-c71",
+      "action": "step-c71-11",
+      "labelKey": "event.c71.11",
+      "effectFactIds": [
+        "fact-c71-11"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c71-1-1",
+      "type": "precedes",
+      "fromId": "entity-c71-system",
+      "toId": "location-c71",
+      "eventId": "event-c71-01",
+      "factId": "fact-c71-01"
+    },
+    {
+      "id": "relation-c71-1-2",
+      "type": "causes",
+      "fromId": "entity-c71-system",
+      "toId": "location-c71",
+      "eventId": "event-c71-03",
+      "factId": "fact-c71-02"
+    },
+    {
+      "id": "relation-c71-1-3",
+      "type": "causes",
+      "fromId": "entity-c71-system",
+      "toId": "location-c71",
+      "eventId": "event-c71-05",
+      "factId": "fact-c71-03"
+    },
+    {
+      "id": "relation-c71-2-1",
+      "type": "precedes",
+      "fromId": "entity-c71-system",
+      "toId": "location-c71",
+      "eventId": "event-c71-02",
+      "factId": "fact-c71-02"
+    },
+    {
+      "id": "relation-c71-2-2",
+      "type": "causes",
+      "fromId": "entity-c71-system",
+      "toId": "location-c71",
+      "eventId": "event-c71-04",
+      "factId": "fact-c71-03"
+    },
+    {
+      "id": "relation-c71-2-3",
+      "type": "causes",
+      "fromId": "entity-c71-system",
+      "toId": "location-c71",
+      "eventId": "event-c71-06",
+      "factId": "fact-c71-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c71-01",
+      "predicate": "verified_c71_1",
+      "args": {
+        "term": "权限撤销"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c71.1"
+    },
+    {
+      "id": "fact-c71-02",
+      "predicate": "verified_c71_2",
+      "args": {
+        "term": "本地缓存"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c71.2"
+    },
+    {
+      "id": "fact-c71-03",
+      "predicate": "verified_c71_3",
+      "args": {
+        "term": "同步队列"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c71.3"
+    },
+    {
+      "id": "fact-c71-04",
+      "predicate": "verified_c71_4",
+      "args": {
+        "term": "侧门打开"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c71.4"
+    },
+    {
+      "id": "fact-c71-05",
+      "predicate": "verified_c71_5",
+      "args": {
+        "term": "门禁接收"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c71.5"
+    },
+    {
+      "id": "fact-c71-06",
+      "predicate": "verified_c71_6",
+      "args": {
+        "term": "权限失效"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c71.6"
+    },
+    {
+      "id": "fact-c71-07",
+      "predicate": "verified_c71_7",
+      "args": {
+        "term": "网络延迟"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c71.7"
+    },
+    {
+      "id": "fact-c71-08",
+      "predicate": "verified_c71_8",
+      "args": {
+        "term": "缓存版本"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c71.8"
+    },
+    {
+      "id": "fact-c71-09",
+      "predicate": "verified_c71_9",
+      "args": {
+        "term": "开门记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c71.9"
+    },
+    {
+      "id": "fact-c71-10",
+      "predicate": "verified_c71_10",
+      "args": {
+        "term": "撤销消息"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c71.10"
+    },
+    {
+      "id": "fact-c71-11",
+      "predicate": "verified_c71_11",
+      "args": {
+        "term": "权限撤销"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-11"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c71.11"
+    },
+    {
+      "id": "fact-c71-12",
+      "predicate": "verified_c71_12",
+      "args": {
+        "term": "本地缓存"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c71.12"
+    },
+    {
+      "id": "fact-c71-13",
+      "predicate": "verified_c71_13",
+      "args": {
+        "term": "同步队列"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c71.13"
+    },
+    {
+      "id": "fact-c71-14",
+      "predicate": "verified_c71_14",
+      "args": {
+        "term": "侧门打开"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c71.14"
+    },
+    {
+      "id": "fact-c71-15",
+      "predicate": "verified_c71_15",
+      "args": {
+        "term": "门禁接收"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c71.15"
+    },
+    {
+      "id": "fact-c71-16",
+      "predicate": "verified_c71_16",
+      "args": {
+        "term": "权限失效"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c71.16"
+    },
+    {
+      "id": "fact-c71-17",
+      "predicate": "verified_c71_17",
+      "args": {
+        "term": "网络延迟"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c71.17"
+    },
+    {
+      "id": "fact-c71-18",
+      "predicate": "verified_c71_18",
+      "args": {
+        "term": "缓存版本"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c71.18"
+    },
+    {
+      "id": "fact-c71-19",
+      "predicate": "verified_c71_19",
+      "args": {
+        "term": "开门记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c71-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c71-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c71.19"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c71-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-01",
+        "fact-c71-02",
+        "fact-c71-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c71-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c71-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-01",
+        "fact-c71-02",
+        "fact-c71-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c71-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c71-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-02",
+        "fact-c71-13"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c71-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c71-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-03",
+        "fact-c71-14"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c71-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c71-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-04",
+        "fact-c71-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c71-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c71-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-05",
+        "fact-c71-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c71-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c71-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-06",
+        "fact-c71-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c71-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c71-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-07",
+        "fact-c71-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c71-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c71-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-08",
+        "fact-c71-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c71-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c71-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c71-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c71-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-10"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c71-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c71-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c71-11"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c71-01",
+      "labelKey": "query.c71.1",
+      "intent": "verify",
+      "predicate": "verified_c71_1",
+      "slots": {
+        "subjectId": "entity-c71-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c71-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-opening"
+      ],
+      "examplePhrases": [
+        "权限撤销是否成立？",
+        "能确认权限撤销吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "权限撤销"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c71-02",
+      "labelKey": "query.c71.2",
+      "intent": "verify",
+      "predicate": "verified_c71_2",
+      "slots": {
+        "subjectId": "entity-c71-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c71-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-opening"
+      ],
+      "examplePhrases": [
+        "本地缓存是否成立？",
+        "能确认本地缓存吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "本地缓存"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c71-03",
+      "labelKey": "query.c71.3",
+      "intent": "verify",
+      "predicate": "verified_c71_3",
+      "slots": {
+        "subjectId": "entity-c71-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c71-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-opening"
+      ],
+      "examplePhrases": [
+        "同步队列是否成立？",
+        "能确认同步队列吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "同步队列"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c71-04",
+      "labelKey": "query.c71.4",
+      "intent": "verify",
+      "predicate": "verified_c71_4",
+      "slots": {
+        "subjectId": "entity-c71-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c71-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-04"
+      ],
+      "examplePhrases": [
+        "侧门打开是否成立？",
+        "能确认侧门打开吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "侧门打开"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c71-05",
+      "labelKey": "query.c71.5",
+      "intent": "verify",
+      "predicate": "verified_c71_5",
+      "slots": {
+        "subjectId": "entity-c71-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c71-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-05"
+      ],
+      "examplePhrases": [
+        "门禁接收是否成立？",
+        "能确认门禁接收吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "门禁接收"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c71-06",
+      "labelKey": "query.c71.6",
+      "intent": "verify",
+      "predicate": "verified_c71_6",
+      "slots": {
+        "subjectId": "entity-c71-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c71-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-06"
+      ],
+      "examplePhrases": [
+        "权限失效是否成立？",
+        "能确认权限失效吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "权限失效"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c71-07",
+      "labelKey": "query.c71.7",
+      "intent": "verify",
+      "predicate": "verified_c71_7",
+      "slots": {
+        "subjectId": "entity-c71-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c71-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-07"
+      ],
+      "examplePhrases": [
+        "网络延迟是否成立？",
+        "能确认网络延迟吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "网络延迟"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c71-08",
+      "labelKey": "query.c71.8",
+      "intent": "verify",
+      "predicate": "verified_c71_8",
+      "slots": {
+        "subjectId": "entity-c71-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c71-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-08"
+      ],
+      "examplePhrases": [
+        "缓存版本是否成立？",
+        "能确认缓存版本吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "缓存版本"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c71-09",
+      "labelKey": "query.c71.9",
+      "intent": "verify",
+      "predicate": "verified_c71_9",
+      "slots": {
+        "subjectId": "entity-c71-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c71-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-09"
+      ],
+      "examplePhrases": [
+        "开门记录是否成立？",
+        "能确认开门记录吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "开门记录"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c71-10",
+      "labelKey": "query.c71.10",
+      "intent": "verify",
+      "predicate": "verified_c71_10",
+      "slots": {
+        "subjectId": "entity-c71-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c71-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c71-10"
+      ],
+      "examplePhrases": [
+        "撤销消息是否成立？",
+        "能确认撤销消息吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "撤销消息"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c71-01",
+      "kind": "scene",
+      "titleKey": "evidence.c71.1.title",
+      "observationKey": "evidence.c71.1.observation",
+      "sourceFactIds": [
+        "fact-c71-01",
+        "fact-c71-02",
+        "fact-c71-03"
+      ],
+      "sourceEventIds": [
+        "event-c71-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c71-system",
+        "location-c71"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c71-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c71-revoked-open-door/evidence-01.svg",
+      "assetAlt": "权限撤销"
+    },
+    {
+      "id": "evidence-c71-02",
+      "kind": "record",
+      "titleKey": "evidence.c71.2.title",
+      "observationKey": "evidence.c71.2.observation",
+      "sourceFactIds": [
+        "fact-c71-02",
+        "fact-c71-13"
+      ],
+      "sourceEventIds": [
+        "event-c71-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c71-system",
+        "location-c71"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c71-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c71-revoked-open-door/evidence-02.svg",
+      "assetAlt": "本地缓存"
+    },
+    {
+      "id": "evidence-c71-03",
+      "kind": "object",
+      "titleKey": "evidence.c71.3.title",
+      "observationKey": "evidence.c71.3.observation",
+      "sourceFactIds": [
+        "fact-c71-03",
+        "fact-c71-14"
+      ],
+      "sourceEventIds": [
+        "event-c71-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c71-system",
+        "location-c71"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c71-revoked-open-door/evidence-03.svg",
+      "assetAlt": "同步队列"
+    },
+    {
+      "id": "evidence-c71-04",
+      "kind": "scene",
+      "titleKey": "evidence.c71.4.title",
+      "observationKey": "evidence.c71.4.observation",
+      "sourceFactIds": [
+        "fact-c71-04",
+        "fact-c71-15"
+      ],
+      "sourceEventIds": [
+        "event-c71-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c71-system",
+        "location-c71"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c71-revoked-open-door/evidence-04.svg",
+      "assetAlt": "侧门打开"
+    },
+    {
+      "id": "evidence-c71-05",
+      "kind": "record",
+      "titleKey": "evidence.c71.5.title",
+      "observationKey": "evidence.c71.5.observation",
+      "sourceFactIds": [
+        "fact-c71-05",
+        "fact-c71-16"
+      ],
+      "sourceEventIds": [
+        "event-c71-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c71-system",
+        "location-c71"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c71-revoked-open-door/evidence-05.svg",
+      "assetAlt": "门禁接收"
+    },
+    {
+      "id": "evidence-c71-06",
+      "kind": "object",
+      "titleKey": "evidence.c71.6.title",
+      "observationKey": "evidence.c71.6.observation",
+      "sourceFactIds": [
+        "fact-c71-06",
+        "fact-c71-17"
+      ],
+      "sourceEventIds": [
+        "event-c71-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c71-system",
+        "location-c71"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c71-revoked-open-door/evidence-01.svg",
+      "assetAlt": "权限失效"
+    },
+    {
+      "id": "evidence-c71-07",
+      "kind": "scene",
+      "titleKey": "evidence.c71.7.title",
+      "observationKey": "evidence.c71.7.observation",
+      "sourceFactIds": [
+        "fact-c71-07",
+        "fact-c71-18"
+      ],
+      "sourceEventIds": [
+        "event-c71-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c71-system",
+        "location-c71"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c71-revoked-open-door/evidence-02.svg",
+      "assetAlt": "网络延迟"
+    },
+    {
+      "id": "evidence-c71-08",
+      "kind": "record",
+      "titleKey": "evidence.c71.8.title",
+      "observationKey": "evidence.c71.8.observation",
+      "sourceFactIds": [
+        "fact-c71-08",
+        "fact-c71-19"
+      ],
+      "sourceEventIds": [
+        "event-c71-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c71-system",
+        "location-c71"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c71-revoked-open-door/evidence-03.svg",
+      "assetAlt": "缓存版本"
+    },
+    {
+      "id": "evidence-c71-09",
+      "kind": "object",
+      "titleKey": "evidence.c71.9.title",
+      "observationKey": "evidence.c71.9.observation",
+      "sourceFactIds": [
+        "fact-c71-09"
+      ],
+      "sourceEventIds": [
+        "event-c71-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c71-system",
+        "location-c71"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c71-revoked-open-door/evidence-04.svg",
+      "assetAlt": "开门记录"
+    },
+    {
+      "id": "evidence-c71-10",
+      "kind": "scene",
+      "titleKey": "evidence.c71.10.title",
+      "observationKey": "evidence.c71.10.observation",
+      "sourceFactIds": [
+        "fact-c71-10"
+      ],
+      "sourceEventIds": [
+        "event-c71-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c71-system",
+        "location-c71"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c71-revoked-open-door/evidence-05.svg",
+      "assetAlt": "撤销消息"
+    },
+    {
+      "id": "evidence-c71-11",
+      "kind": "record",
+      "titleKey": "evidence.c71.11.title",
+      "observationKey": "evidence.c71.11.observation",
+      "sourceFactIds": [
+        "fact-c71-11"
+      ],
+      "sourceEventIds": [
+        "event-c71-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c71-system",
+        "location-c71"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c71-revoked-open-door/evidence-01.svg",
+      "assetAlt": "权限撤销"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c71.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c71-01",
+          "event-c71-02",
+          "event-c71-03",
+          "event-c71-04",
+          "event-c71-05",
+          "event-c71-06",
+          "event-c71-07",
+          "event-c71-08",
+          "event-c71-09",
+          "event-c71-10"
+        ],
+        "motiveKey": "重建撤销、传播和执行之间的因果延迟"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c71-01",
+        "evidence-c71-02",
+        "evidence-c71-03",
+        "evidence-c71-04",
+        "evidence-c71-05",
+        "evidence-c71-06",
+        "evidence-c71-07",
+        "evidence-c71-08",
+        "evidence-c71-09",
+        "evidence-c71-10"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c71-1",
+        "contradiction-c71-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c71-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c71.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "有人重新授予了权限"
+        ],
+        "motiveKey": "motive-c71-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c71-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c71-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c71-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c71.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "门锁完全脱离了控制系统"
+        ],
+        "motiveKey": "motive-c71-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c71-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c71-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c71-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c71-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c71-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c71-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c71-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c71-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c71-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c71-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c71-01",
+      "fact-c71-02",
+      "fact-c71-03",
+      "fact-c71-04",
+      "fact-c71-05",
+      "fact-c71-06",
+      "fact-c71-07",
+      "fact-c71-08",
+      "fact-c71-09",
+      "fact-c71-10"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c71-01",
+      "evidence-c71-02",
+      "evidence-c71-03",
+      "evidence-c71-04",
+      "evidence-c71-05",
+      "evidence-c71-06",
+      "evidence-c71-07",
+      "evidence-c71-08",
+      "evidence-c71-09",
+      "evidence-c71-10"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c71-01",
+        "event-c71-02"
+      ],
+      [
+        "event-c71-02",
+        "event-c71-03"
+      ],
+      [
+        "event-c71-03",
+        "event-c71-04"
+      ],
+      [
+        "event-c71-04",
+        "event-c71-05"
+      ],
+      [
+        "event-c71-05",
+        "event-c71-06"
+      ],
+      [
+        "event-c71-06",
+        "event-c71-07"
+      ],
+      [
+        "event-c71-07",
+        "event-c71-08"
+      ],
+      [
+        "event-c71-08",
+        "event-c71-09"
+      ],
+      [
+        "event-c71-09",
+        "event-c71-10"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c71-1",
+      "contradiction-c71-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c71-alternative-1",
+      "hypothesis-c71-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c71-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c71-a",
+        "evidenceIds": [
+          "evidence-c71-01",
+          "evidence-c71-02",
+          "evidence-c71-03",
+          "evidence-c71-04",
+          "evidence-c71-05",
+          "evidence-c71-06",
+          "evidence-c71-07",
+          "evidence-c71-08"
+        ]
+      },
+      {
+        "id": "proof-c71-b",
+        "evidenceIds": [
+          "evidence-c71-01",
+          "evidence-c71-02",
+          "evidence-c71-09",
+          "evidence-c71-10"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "重建撤销、传播和执行之间的因果延迟"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c71-1",
+        "kind": "source",
+        "boardId": "board-c71-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c71-1-1",
+            "eventId": "event-c71-01"
+          },
+          {
+            "slotId": "slot-c71-1-2",
+            "eventId": "event-c71-03"
+          },
+          {
+            "slotId": "slot-c71-1-3",
+            "eventId": "event-c71-05"
+          },
+          {
+            "slotId": "slot-c71-1-4",
+            "eventId": "event-c71-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c71-01",
+            "toEventId": "event-c71-03",
+            "relation": "routes-through"
+          },
+          {
+            "fromEventId": "event-c71-03",
+            "toEventId": "event-c71-05",
+            "relation": "routes-through"
+          },
+          {
+            "fromEventId": "event-c71-05",
+            "toEventId": "event-c71-10",
+            "relation": "routes-through"
+          }
+        ],
+        "failureCategory": "source"
+      },
+      {
+        "id": "obligation-c71-2",
+        "kind": "state-transition",
+        "boardId": "board-c71-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c71-2-1",
+            "eventId": "event-c71-02"
+          },
+          {
+            "slotId": "slot-c71-2-2",
+            "eventId": "event-c71-04"
+          },
+          {
+            "slotId": "slot-c71-2-3",
+            "eventId": "event-c71-06"
+          },
+          {
+            "slotId": "slot-c71-2-4",
+            "eventId": "event-c71-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c71-02",
+            "toEventId": "event-c71-04",
+            "relation": "triggers"
+          },
+          {
+            "fromEventId": "event-c71-04",
+            "toEventId": "event-c71-06",
+            "relation": "triggers"
+          },
+          {
+            "fromEventId": "event-c71-06",
+            "toEventId": "event-c71-10",
+            "relation": "triggers"
+          }
+        ],
+        "failureCategory": "state-transition"
+      }
+    ],
+    "uniquenessClaim": "撤销消息仍在同步队列中，门禁使用本地旧权限缓存；权限失效时间与门锁接收时间分离。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c71-1",
+      "eventId": "event-c71-02",
+      "factIds": [
+        "fact-c71-01"
+      ],
+      "captionKey": "event.c71.2"
+    },
+    {
+      "id": "replay-c71-2",
+      "eventId": "event-c71-03",
+      "factIds": [
+        "fact-c71-02"
+      ],
+      "captionKey": "event.c71.3"
+    },
+    {
+      "id": "replay-c71-3",
+      "eventId": "event-c71-04",
+      "factIds": [
+        "fact-c71-03"
+      ],
+      "captionKey": "event.c71.4"
+    },
+    {
+      "id": "replay-c71-4",
+      "eventId": "event-c71-05",
+      "factIds": [
+        "fact-c71-04"
+      ],
+      "captionKey": "event.c71.5"
+    },
+    {
+      "id": "replay-c71-5",
+      "eventId": "event-c71-06",
+      "factIds": [
+        "fact-c71-05"
+      ],
+      "captionKey": "event.c71.6"
+    },
+    {
+      "id": "replay-c71-6",
+      "eventId": "event-c71-07",
+      "factIds": [
+        "fact-c71-01",
+        "fact-c71-02",
+        "fact-c71-03",
+        "fact-c71-04",
+        "fact-c71-05",
+        "fact-c71-06",
+        "fact-c71-07",
+        "fact-c71-08",
+        "fact-c71-09",
+        "fact-c71-10"
+      ],
+      "captionKey": "event.c71.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c71.title": "失效后仍能开的权限",
+      "case.c71.surface": "权限已经撤销，侧门在撤销后仍然被打开了一次。",
+      "case.c71.truth": "撤销消息仍在同步队列中，门禁使用本地旧权限缓存；权限失效时间与门锁接收时间分离。",
+      "entity.c71.system": "现场对象与记录链",
+      "location.c71": "权限缓存",
+      "hypothesis.c71.canonical": "撤销消息仍在同步队列中，门禁使用本地旧权限缓存；权限失效时间与门锁接收时间分离。",
+      "hypothesis.c71.alternative.1": "有人重新授予了权限",
+      "hypothesis.c71.alternative.2": "门锁完全脱离了控制系统",
+      "motive.重建撤销、传播和执行之间的因果延迟": "重建撤销、传播和执行之间的因果延迟",
+      "chapter.c71.one": "固定异常",
+      "chapter.c71.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c71.1": "权限撤销是否成立？",
+      "query.c71.2": "本地缓存是否成立？",
+      "query.c71.3": "同步队列是否成立？",
+      "query.c71.4": "侧门打开是否成立？",
+      "query.c71.5": "门禁接收是否成立？",
+      "query.c71.6": "权限失效是否成立？",
+      "query.c71.7": "网络延迟是否成立？",
+      "query.c71.8": "缓存版本是否成立？",
+      "query.c71.9": "开门记录是否成立？",
+      "query.c71.10": "撤销消息是否成立？",
+      "event.c71.1": "阶段 1：权限撤销进入记录链",
+      "event.c71.2": "阶段 2：本地缓存进入记录链",
+      "event.c71.3": "阶段 3：同步队列进入记录链",
+      "event.c71.4": "阶段 4：侧门打开进入记录链",
+      "event.c71.5": "阶段 5：门禁接收进入记录链",
+      "event.c71.6": "阶段 6：权限失效进入记录链",
+      "event.c71.7": "阶段 7：网络延迟进入记录链",
+      "event.c71.8": "阶段 8：缓存版本进入记录链",
+      "event.c71.9": "阶段 9：开门记录进入记录链",
+      "event.c71.10": "阶段 10：撤销消息进入记录链",
+      "event.c71.11": "阶段 11：权限撤销进入记录链",
+      "evidence.c71.1.title": "权限撤销记录",
+      "evidence.c71.1.observation": "来源材料显示“权限撤销”在该阶段可复核。",
+      "evidence.c71.2.title": "本地缓存记录",
+      "evidence.c71.2.observation": "来源材料显示“本地缓存”在该阶段可复核。",
+      "evidence.c71.3.title": "同步队列记录",
+      "evidence.c71.3.observation": "来源材料显示“同步队列”在该阶段可复核。",
+      "evidence.c71.4.title": "侧门打开记录",
+      "evidence.c71.4.observation": "来源材料显示“侧门打开”在该阶段可复核。",
+      "evidence.c71.5.title": "门禁接收记录",
+      "evidence.c71.5.observation": "来源材料显示“门禁接收”在该阶段可复核。",
+      "evidence.c71.6.title": "权限失效记录",
+      "evidence.c71.6.observation": "来源材料显示“权限失效”在该阶段可复核。",
+      "evidence.c71.7.title": "网络延迟记录",
+      "evidence.c71.7.observation": "来源材料显示“网络延迟”在该阶段可复核。",
+      "evidence.c71.8.title": "缓存版本记录",
+      "evidence.c71.8.observation": "来源材料显示“缓存版本”在该阶段可复核。",
+      "evidence.c71.9.title": "开门记录记录",
+      "evidence.c71.9.observation": "来源材料显示“开门记录”在该阶段可复核。",
+      "evidence.c71.10.title": "撤销消息记录",
+      "evidence.c71.10.observation": "来源材料显示“撤销消息”在该阶段可复核。",
+      "evidence.c71.11.title": "权限撤销记录",
+      "evidence.c71.11.observation": "来源材料显示“权限撤销”在该阶段可复核。",
+      "board.c71.1.title": "失效后仍能开的权限 · network-topology",
+      "board.c71.1.slot.1": "起始来源",
+      "board.c71.1.slot.2": "关键变化",
+      "board.c71.1.slot.3": "观测结果",
+      "board.c71.1.slot.4": "排除替代",
+      "board.c71.2.title": "失效后仍能开的权限 · causal-graph",
+      "board.c71.2.slot.1": "起始来源",
+      "board.c71.2.slot.2": "关键变化",
+      "board.c71.2.slot.3": "观测结果",
+      "board.c71.2.slot.4": "排除替代"
+    }
+  }
+}

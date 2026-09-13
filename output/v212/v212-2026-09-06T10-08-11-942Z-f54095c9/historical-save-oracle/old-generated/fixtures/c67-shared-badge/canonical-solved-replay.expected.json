@@ -1,0 +1,1743 @@
+{
+  "source": "pinned-old-runtime generated oracle",
+  "pinnedRef": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "expected": {
+    "game": {
+      "caseId": "c67-shared-badge",
+      "discoveredEvidenceIds": [
+        "evidence-c67-01",
+        "evidence-c67-02",
+        "evidence-c67-03",
+        "evidence-c67-04",
+        "evidence-c67-05",
+        "evidence-c67-06",
+        "evidence-c67-07",
+        "evidence-c67-08",
+        "evidence-c67-09",
+        "evidence-c67-10",
+        "evidence-c67-11",
+        "evidence-c67-12"
+      ],
+      "visitedLocationIds": [
+        "location-c67"
+      ],
+      "answeredQueryIds": [
+        "query-c67-01",
+        "query-c67-02",
+        "query-c67-03",
+        "query-c67-04",
+        "query-c67-05",
+        "query-c67-06",
+        "query-c67-07",
+        "query-c67-08",
+        "query-c67-09",
+        "query-c67-10"
+      ],
+      "activeRuleIds": [
+        "rule-c67-01",
+        "rule-c67-02",
+        "rule-c67-03",
+        "rule-c67-04",
+        "rule-c67-05",
+        "rule-c67-06",
+        "rule-c67-07",
+        "rule-c67-08",
+        "rule-c67-09",
+        "rule-c67-10",
+        "rule-c67-11",
+        "rule-c67-12",
+        "rule-c67-opening"
+      ],
+      "visibleFactIds": [
+        "fact-c67-01",
+        "fact-c67-02",
+        "fact-c67-03",
+        "fact-c67-04",
+        "fact-c67-05",
+        "fact-c67-06",
+        "fact-c67-07",
+        "fact-c67-08",
+        "fact-c67-09",
+        "fact-c67-10",
+        "fact-c67-11",
+        "fact-c67-12",
+        "fact-c67-14",
+        "fact-c67-15",
+        "fact-c67-16",
+        "fact-c67-17",
+        "fact-c67-18",
+        "fact-c67-19",
+        "fact-c67-20"
+      ]
+    },
+    "transcript": [
+      {
+        "id": "q-1",
+        "rawQuestion": "胸牌转交是否成立？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-2",
+        "rawQuestion": "读卡器是否成立？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-3",
+        "rawQuestion": "持有人身份是否成立？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-4",
+        "rawQuestion": "门禁记录是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-5",
+        "rawQuestion": "员工在场是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-6",
+        "rawQuestion": "凭证编号是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-7",
+        "rawQuestion": "交接时间是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-8",
+        "rawQuestion": "摄像头是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-9",
+        "rawQuestion": "个人授权是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-10",
+        "rawQuestion": "同一胸牌是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": false
+      },
+      {
+        "id": "q-11",
+        "rawQuestion": "胸牌转交是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-12",
+        "rawQuestion": "读卡器是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-13",
+        "rawQuestion": "持有人身份是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-14",
+        "rawQuestion": "门禁记录是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-15",
+        "rawQuestion": "员工在场是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-16",
+        "rawQuestion": "凭证编号是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-17",
+        "rawQuestion": "交接时间是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-18",
+        "rawQuestion": "摄像头是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-19",
+        "rawQuestion": "个人授权是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-20",
+        "rawQuestion": "同一胸牌是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      },
+      {
+        "id": "q-21",
+        "rawQuestion": "胸牌转交是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-22",
+        "rawQuestion": "读卡器是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-23",
+        "rawQuestion": "持有人身份是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-24",
+        "rawQuestion": "门禁记录是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-25",
+        "rawQuestion": "员工在场是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-26",
+        "rawQuestion": "凭证编号是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-27",
+        "rawQuestion": "交接时间是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-28",
+        "rawQuestion": "摄像头是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-29",
+        "rawQuestion": "个人授权是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-30",
+        "rawQuestion": "同一胸牌是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      },
+      {
+        "id": "q-31",
+        "rawQuestion": "胸牌转交是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-32",
+        "rawQuestion": "读卡器是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-33",
+        "rawQuestion": "持有人身份是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-34",
+        "rawQuestion": "门禁记录是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-35",
+        "rawQuestion": "员工在场是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-36",
+        "rawQuestion": "凭证编号是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-37",
+        "rawQuestion": "交接时间是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-38",
+        "rawQuestion": "摄像头是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-39",
+        "rawQuestion": "个人授权是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-40",
+        "rawQuestion": "同一胸牌是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      }
+    ],
+    "evidenceStates": {
+      "evidence-c67-01": "connected",
+      "evidence-c67-02": "connected",
+      "evidence-c67-03": "connected",
+      "evidence-c67-04": "connected",
+      "evidence-c67-05": "connected",
+      "evidence-c67-06": "connected",
+      "evidence-c67-07": "connected",
+      "evidence-c67-08": "connected",
+      "evidence-c67-09": "connected",
+      "evidence-c67-10": "connected",
+      "evidence-c67-11": "connected",
+      "evidence-c67-12": "examined"
+    },
+    "theoryDrafts": [
+      {
+        "id": "theory-a",
+        "hypothesisId": "hypothesis-canonical",
+        "eventIds": [
+          "event-c67-01",
+          "event-c67-02",
+          "event-c67-03",
+          "event-c67-04",
+          "event-c67-05",
+          "event-c67-06",
+          "event-c67-07",
+          "event-c67-08",
+          "event-c67-09",
+          "event-c67-10",
+          "event-c67-11"
+        ],
+        "evidenceIds": [
+          "evidence-c67-01",
+          "evidence-c67-02",
+          "evidence-c67-03",
+          "evidence-c67-04",
+          "evidence-c67-05",
+          "evidence-c67-06",
+          "evidence-c67-07",
+          "evidence-c67-08",
+          "evidence-c67-09",
+          "evidence-c67-10",
+          "evidence-c67-11"
+        ],
+        "motiveKey": "把凭证使用与人物在场分开证明"
+      },
+      {
+        "id": "theory-b",
+        "hypothesisId": "hypothesis-c67-alternative-1",
+        "eventIds": [],
+        "evidenceIds": [],
+        "motiveKey": null
+      }
+    ],
+    "activeTheoryId": "theory-a",
+    "pendingInterpretation": null,
+    "lastQuestionSnapshot": {
+      "game": {
+        "caseId": "c67-shared-badge",
+        "discoveredEvidenceIds": [
+          "evidence-c67-01",
+          "evidence-c67-02",
+          "evidence-c67-03",
+          "evidence-c67-04",
+          "evidence-c67-05",
+          "evidence-c67-06",
+          "evidence-c67-07",
+          "evidence-c67-08",
+          "evidence-c67-09",
+          "evidence-c67-10",
+          "evidence-c67-11",
+          "evidence-c67-12"
+        ],
+        "visitedLocationIds": [
+          "location-c67"
+        ],
+        "answeredQueryIds": [
+          "query-c67-01",
+          "query-c67-02",
+          "query-c67-03",
+          "query-c67-04",
+          "query-c67-05",
+          "query-c67-06",
+          "query-c67-07",
+          "query-c67-08",
+          "query-c67-09",
+          "query-c67-10"
+        ],
+        "activeRuleIds": [
+          "rule-c67-01",
+          "rule-c67-02",
+          "rule-c67-03",
+          "rule-c67-04",
+          "rule-c67-05",
+          "rule-c67-06",
+          "rule-c67-07",
+          "rule-c67-08",
+          "rule-c67-09",
+          "rule-c67-10",
+          "rule-c67-11",
+          "rule-c67-12",
+          "rule-c67-opening"
+        ],
+        "visibleFactIds": [
+          "fact-c67-01",
+          "fact-c67-02",
+          "fact-c67-03",
+          "fact-c67-04",
+          "fact-c67-05",
+          "fact-c67-06",
+          "fact-c67-07",
+          "fact-c67-08",
+          "fact-c67-09",
+          "fact-c67-10",
+          "fact-c67-11",
+          "fact-c67-12",
+          "fact-c67-14",
+          "fact-c67-15",
+          "fact-c67-16",
+          "fact-c67-17",
+          "fact-c67-18",
+          "fact-c67-19",
+          "fact-c67-20"
+        ]
+      },
+      "transcriptLength": 39
+    },
+    "solved": true,
+    "replayBeatIds": [
+      "replay-c67-1",
+      "replay-c67-2",
+      "replay-c67-3",
+      "replay-c67-4",
+      "replay-c67-5",
+      "replay-c67-6"
+    ],
+    "acceptedCommandCount": 119,
+    "unlockedChapterIds": [
+      "chapter-c67-one"
+    ],
+    "reasoningBoards": {
+      "board-c67-1": {
+        "placements": {
+          "slot-c67-1-1": "event-c67-01",
+          "slot-c67-1-2": "event-c67-03",
+          "slot-c67-1-3": "event-c67-05",
+          "slot-c67-1-4": "event-c67-11"
+        },
+        "connections": [
+          {
+            "fromEventId": "event-c67-01",
+            "toEventId": "event-c67-03",
+            "relation": "appears-as"
+          },
+          {
+            "fromEventId": "event-c67-03",
+            "toEventId": "event-c67-05",
+            "relation": "appears-as"
+          },
+          {
+            "fromEventId": "event-c67-05",
+            "toEventId": "event-c67-11",
+            "relation": "appears-as"
+          }
+        ]
+      },
+      "board-c67-2": {
+        "placements": {
+          "slot-c67-2-1": "event-c67-02",
+          "slot-c67-2-2": "event-c67-04",
+          "slot-c67-2-3": "event-c67-06",
+          "slot-c67-2-4": "event-c67-11"
+        },
+        "connections": [
+          {
+            "fromEventId": "event-c67-02",
+            "toEventId": "event-c67-04",
+            "relation": "if"
+          },
+          {
+            "fromEventId": "event-c67-04",
+            "toEventId": "event-c67-06",
+            "relation": "if"
+          },
+          {
+            "fromEventId": "event-c67-06",
+            "toEventId": "event-c67-11",
+            "relation": "if"
+          }
+        ]
+      }
+    },
+    "replayMode": "standard"
+  },
+  "oldLiveEqualsOldReplay": true,
+  "expectations": {
+    "solved": true
+  },
+  "steps": [
+    {
+      "index": 0,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "type": "set_theory_hypothesis",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 91,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 93,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 97,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 100,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 101,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 102,
+      "type": "set_theory_motive",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 103,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 104,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 105,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 106,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 107,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 108,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 109,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 110,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 111,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 112,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 113,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 114,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 115,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 116,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 117,
+      "type": "submit_theory",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_judged",
+          "judgement": "solved",
+          "proofFailureCategory": null
+        },
+        {
+          "type": "case_solved"
+        }
+      ]
+    },
+    {
+      "index": 118,
+      "type": "request_proof_replay",
+      "accepted": true,
+      "events": [
+        {
+          "type": "replay_ready"
+        }
+      ]
+    }
+  ]
+}

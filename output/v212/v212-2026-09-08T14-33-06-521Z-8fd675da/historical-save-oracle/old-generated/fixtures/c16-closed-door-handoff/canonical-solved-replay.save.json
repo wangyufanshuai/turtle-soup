@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c16-closed-door-handoff",
+  "caseVersion": 1,
+  "contentHash": "sha256:c16-closed-door-handoff-v1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "封袋编号这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "甲室门磁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "甲侧柜锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "柜筒容积这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旋转轴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "机械互锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "乙侧柜锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "乙室签收这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双门审计这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "清洁车这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "封袋编号这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "甲室门磁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "甲侧柜锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "柜筒容积这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旋转轴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "机械互锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "乙侧柜锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "乙室签收这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双门审计这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "清洁车这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c16"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "封袋编号这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "甲室门磁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "甲侧柜锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "柜筒容积这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旋转轴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "机械互锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "乙侧柜锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "乙室签收这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双门审计这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "清洁车这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c16"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "封袋编号这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "甲室门磁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "甲侧柜锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "柜筒容积这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旋转轴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "机械互锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "乙侧柜锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "乙室签收这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双门审计这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "清洁车这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c16"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c16-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c16-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c16-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c16-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c16-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c16-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c16-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c16-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c16-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c16-09",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "在不破坏双室洁净隔离的条件下移交证物"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-07"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-09"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-04",
+      "toItemId": "event-07",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-07",
+      "toItemId": "event-09",
+      "relation": "causes"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

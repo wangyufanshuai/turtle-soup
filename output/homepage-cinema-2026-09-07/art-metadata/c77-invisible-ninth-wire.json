@@ -1,0 +1,32 @@
+{
+  "id": "c77-invisible-ninth-wire",
+  "title": "看不见的第九根线",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-25958781-f093-421d-aedb-7ff186c7920e.png",
+  "sourceSha256": "1646a4f9233512b6c8ec18c5fb0afcd1ac35daa60d13537889e3a4e59b6d0645",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 看不见的第九根线 — 摄像头拍不到第九根线，安全系统却在它断开时报警。\nArt direction: A bundle of fine cables disappearing into the darkness of an equipment rack, dramatic macro side light; no numbered wires or infrared explanation.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c77-invisible-ninth-wire.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 89056,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "f2d76bbc76e8c03b2ddac1142df2327424d7b4f100a69ec71f3e2390fa4492f8"
+    },
+    {
+      "path": "/assets/home-cinema/c77-invisible-ninth-wire-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 32810,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "5efd7de3fffce4161f1b60ddc03c3b3eed1ab9540b657c6655d4caa50a44fde2"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.614575+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

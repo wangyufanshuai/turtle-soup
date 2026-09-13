@@ -27,7 +27,9 @@ export interface ReleaseCaseEntry {
   public?: Record<string, unknown>;
 }
 
-export function releaseProfilePath(root: string, profileId = process.env.TURTLE_SOUP_RELEASE_PROFILE ?? "v1.4-internal-rc") {
+export const CURRENT_RELEASE_PROFILE = "v2.12-internal-rc";
+
+export function releaseProfilePath(root: string, profileId = process.env.TURTLE_SOUP_RELEASE_PROFILE ?? CURRENT_RELEASE_PROFILE) {
   return resolve(root, "content/zh/releases", `${profileId}.json`);
 }
 

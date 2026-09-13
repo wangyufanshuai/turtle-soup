@@ -2,137 +2,374 @@
 
 import Link from "next/link";
 import type { SaveEnvelope } from "@turtle-soup/mystery-core";
-import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { ArrowRightIcon } from "@phosphor-icons/react/dist/csr/ArrowRight";
 import { CASE_CATALOG, RELEASE_PROFILE } from "@/lib/case-catalog";
 import { listCaseSaves } from "@/lib/save-store";
 import { listMastery, masterySummary } from "@/lib/mastery-store";
 import { GOLDEN_PATH } from "@/lib/golden-experience";
-import { isLocalHostEndpoint } from "@/lib/ai-provider-defaults";
-import styles from "./case-select.module.css";
+import { homeCaseArt } from "@/lib/home-cinema-assets";
 import { ArchiveTools } from "./archive-tools";
+import { CinemaHero } from "./home/cinema-hero";
+import { SeasonSelector } from "./home/season-selector";
+import {
+  CaseFilters,
+  difficultyLabel,
+  type CompletionFilter,
+} from "./home/case-filters";
+import { CaseDirectory } from "./home/case-directory";
+import styles from "./case-select.module.css";
 
-type CompletionFilter = "all" | "open" | "closed";
 const SEASON_KEY = "black-soup:active-season:v19";
-const DIFFICULTY_LABELS: Record<string, string> = { intro: "入门", intermediate: "进阶", advanced: "高难", expert: "专家" };
 const TAG_LABELS: Record<string, string> = {
-  suspense: "悬疑", "non-graphic-danger": "非血腥危险", "lateral-thinking": "情境推理", "physical-deduction": "物理推理",
-  "identity-deduction": "身份推理", theater: "剧院", "document-chain": "文书来源", "time-verification": "时间核验",
-  "electrical-topology": "电路拓扑", perspective: "视角", "record-provenance": "记录来源", "time-order": "时序",
-  "mechanical-causality": "机械因果", "space-constraint": "空间约束", "audio-provenance": "音频来源", "buffered-recording": "缓存记录",
-  "environmental-lag": "环境延迟", "water-system": "水系统", "telephony-protocol": "电话协议", "endpoint-state": "终端状态",
-  "call-provenance": "呼叫来源", "document-provenance": "文档来源", "stamp-impression": "印章痕迹", "timeline-proof": "时间链证明",
-  "state-machine": "状态机", "display-vs-motion": "显示与运动", "sensor-provenance": "传感器来源",
+  suspense: "悬疑",
+  "non-graphic-danger": "非血腥危险",
+  "lateral-thinking": "情境推理",
+  "physical-deduction": "物理推理",
+  "identity-deduction": "身份推理",
+  theater: "剧院",
+  "document-chain": "文书来源",
+  "time-verification": "时间核验",
+  "electrical-topology": "电路拓扑",
+  perspective: "视角",
+  "record-provenance": "记录来源",
+  "time-order": "时序",
+  "mechanical-causality": "机械因果",
+  "space-constraint": "空间约束",
+  "audio-provenance": "音频来源",
+  "buffered-recording": "缓存记录",
+  "environmental-lag": "环境延迟",
+  "water-system": "水系统",
+  "telephony-protocol": "电话协议",
+  "endpoint-state": "终端状态",
+  "call-provenance": "呼叫来源",
+  "document-provenance": "文档来源",
+  "stamp-impression": "印章痕迹",
+  "timeline-proof": "时间链证明",
+  "state-machine": "状态机",
+  "display-vs-motion": "显示与运动",
+  "sensor-provenance": "传感器来源",
 };
-function difficultyLabel(value: string) { return DIFFICULTY_LABELS[value] ?? value; }
-function tagLabel(value: string) { return TAG_LABELS[value] ?? value; }
-
-function releaseStatus() {
-  const status = String(RELEASE_PROFILE.status);
-  return status === "published" ? "正式版" : status === "public-preview" ? "公开预览 · 等待真人评测" : "内部候选 · 等待真人评测";
-}
-
-function readAiStatus() {
-  if (typeof window === "undefined") return "离线可玩";
-  if (!navigator.onLine) return "离线可玩";
-  try {
-    const settings = JSON.parse(localStorage.getItem("black-soup:ai-router-settings:v1") ?? "null") as { enabled?: boolean } | null;
-    const endpoint = localStorage.getItem("black-soup:ai-router-endpoint:v1") ?? "";
-    const key = sessionStorage.getItem("black-soup:ai-router-key:v1");
-    return settings?.enabled && (Boolean(key) || isLocalHostEndpoint(endpoint)) ? "已配置" : "未配置";
-  } catch { return "未配置"; }
-}
+const tagLabel = (value: string) => TAG_LABELS[value] ?? value;
+const SKILLS = [
+  ...new Set(
+    CASE_CATALOG.flatMap((entry) => entry.mechanicTags ?? entry.contentTags),
+  ),
+].map((value) => ({ value, label: tagLabel(value) }));
+const DIFFICULTIES = [
+  ...new Set(CASE_CATALOG.map((entry) => entry.difficulty)),
+];
+const CATALOG_IDS = new Set<string>(CASE_CATALOG.map((entry) => entry.id));
 
 export function CaseSelect() {
   const [saves, setSaves] = useState<SaveEnvelope[]>([]);
-  const [mastery, setMastery] = useState<Record<string, Awaited<ReturnType<typeof listMastery>>[number]>>({});
+  const [mastery, setMastery] = useState<
+    Record<string, Awaited<ReturnType<typeof listMastery>>[number]>
+  >({});
   const [revision, setRevision] = useState(0);
+  const [storageError, setStorageError] = useState(false);
   const [difficulty, setDifficulty] = useState("all");
   const [skill, setSkill] = useState("all");
   const [completion, setCompletion] = useState<CompletionFilter>("all");
   const [search, setSearch] = useState("");
   const [activeSeason, setActiveSeason] = useState("season-1");
-  const [aiStatus, setAiStatus] = useState("离线可玩");
-  const seasonTabRefs = useRef<Array<HTMLButtonElement | null>>([]);
 
   useEffect(() => {
-    void listCaseSaves().then(setSaves).catch(() => undefined);
-    void listMastery().then((records) => setMastery(Object.fromEntries(records.map((record) => [record.caseId, record])))).catch(() => undefined);
-    try { const storedSeason = localStorage.getItem(SEASON_KEY); if (storedSeason && CASE_CATALOG.some((entry) => (entry.seasonId ?? "season-1") === storedSeason)) setActiveSeason(storedSeason); } catch { /* UI preference only */ }
-    const updateAi = () => setAiStatus(readAiStatus());
-    updateAi(); window.addEventListener("online", updateAi); window.addEventListener("offline", updateAi);
-    return () => { window.removeEventListener("online", updateAi); window.removeEventListener("offline", updateAi); };
+    try {
+      const stored = localStorage.getItem(SEASON_KEY);
+      if (
+        stored &&
+        CASE_CATALOG.some((entry) => (entry.seasonId ?? "season-1") === stored)
+      )
+        setActiveSeason(stored);
+    } catch {
+      /* A season preference is optional. */
+    }
+  }, []);
+  useEffect(() => {
+    let active = true;
+    const refresh = () => {
+      void listCaseSaves()
+        .then((records) => {
+          if (active) {
+            setSaves(records.filter((save) => CATALOG_IDS.has(save.caseId)));
+            setStorageError(false);
+          }
+        })
+        .catch(() => {
+          if (active) setStorageError(true);
+        });
+      void listMastery()
+        .then((records) => {
+          if (active)
+            setMastery(
+              Object.fromEntries(
+                records.map((record) => [record.caseId, record]),
+              ),
+            );
+        })
+        .catch(() => undefined);
+    };
+    const onVisible = () => {
+      if (document.visibilityState === "visible") refresh();
+    };
+    refresh();
+    window.addEventListener("pageshow", refresh);
+    document.addEventListener("visibilitychange", onVisible);
+    return () => {
+      active = false;
+      window.removeEventListener("pageshow", refresh);
+      document.removeEventListener("visibilitychange", onVisible);
+    };
   }, [revision]);
 
-  const completed = useMemo(() => new Set(saves.filter((save) => save.completed).map((save) => save.caseId)), [saves]);
-  const orderedSaves = useMemo(() => [...saves].sort((left, right) => Date.parse(right.updatedAt) - Date.parse(left.updatedAt)), [saves]);
-  const latest = orderedSaves[0];
-  const recentCases = orderedSaves.slice(0, 3).map((save) => ({ save, entry: CASE_CATALOG.find((entry) => entry.id === save.caseId) })).filter((item) => item.entry);
-  const skills = useMemo(() => [...new Set(CASE_CATALOG.flatMap((entry) => entry.mechanicTags ?? entry.contentTags))], []);
-  const seasons = useMemo(() => [...new Set(CASE_CATALOG.map((entry) => entry.seasonId ?? "season-1"))], []);
-  const solvedOrMastered = useMemo(() => new Set([...completed, ...Object.values(mastery).filter((record) => record.standardSolved).map((record) => record.caseId)]), [completed, mastery]);
-  const firstUnfinishedStep = GOLDEN_PATH.find((step) => !solvedOrMastered.has(step.caseId)) ?? GOLDEN_PATH[GOLDEN_PATH.length - 1];
-  // Keep a fresh home screen from presenting the same case twice. The first
-  // card is the invitation to start C01; the second card points to the next
-  // curated step while remaining directly accessible (no unlock wall).
-  const recommendedStep = !latest && firstUnfinishedStep.caseId === "c01-cold-room-knock"
-    ? (GOLDEN_PATH[1] ?? firstUnfinishedStep)
-    : firstUnfinishedStep;
-  const recommendedCase = CASE_CATALOG.find((entry) => entry.id === recommendedStep.caseId);
-  const filtered = CASE_CATALOG.filter((entry) => {
-    if ((entry.seasonId ?? "season-1") !== activeSeason) return false;
-    const needle = search.trim().toLocaleLowerCase("zh-CN");
-    if (needle && ![entry.id, entry.title, entry.surface, ...(entry.mechanicTags ?? entry.contentTags), ...entry.contentTags].join(" ").toLocaleLowerCase("zh-CN").includes(needle)) return false;
+  const completed = useMemo(
+    () =>
+      new Set(
+        saves.filter((save) => save.completed).map((save) => save.caseId),
+      ),
+    [saves],
+  );
+  const started = useMemo(
+    () => new Set(saves.map((save) => save.caseId)),
+    [saves],
+  );
+  const orderedSaves = useMemo(
+    () =>
+      [...saves].sort(
+        (a, b) => Date.parse(b.updatedAt) - Date.parse(a.updatedAt),
+      ),
+    [saves],
+  );
+  const latest =
+    orderedSaves.find((save) => !save.completed) ?? orderedSaves[0];
+  const featured =
+    CASE_CATALOG.find(
+      (entry) => entry.id === (latest?.caseId ?? "c01-cold-room-knock"),
+    ) ?? CASE_CATALOG[0];
+  const recent = orderedSaves.slice(0, 3).flatMap((save) => {
+    const entry = CASE_CATALOG.find((entry) => entry.id === save.caseId);
+    return entry ? [{ save, entry }] : [];
+  });
+  const solvedOrMastered = new Set([
+    ...completed,
+    ...Object.values(mastery)
+      .filter((record) => record.standardSolved)
+      .map((record) => record.caseId),
+  ]);
+  const firstUnfinished =
+    GOLDEN_PATH.find((step) => !solvedOrMastered.has(step.caseId)) ??
+    GOLDEN_PATH[GOLDEN_PATH.length - 1];
+  const recommendedStep =
+    firstUnfinished.caseId === featured.id
+      ? (GOLDEN_PATH.find(
+          (step) =>
+            step.caseId !== featured.id && !solvedOrMastered.has(step.caseId),
+        ) ?? firstUnfinished)
+      : firstUnfinished;
+  const recommended = CASE_CATALOG.find(
+    (entry) => entry.id === recommendedStep.caseId,
+  )!;
+  const seasonEntries = CASE_CATALOG.filter(
+    (entry) => (entry.seasonId ?? "season-1") === activeSeason,
+  );
+  const needle = search.trim().toLocaleLowerCase("zh-CN");
+  const filtered = seasonEntries.filter((entry) => {
+    if (
+      needle &&
+      ![
+        entry.id,
+        entry.title,
+        entry.surface,
+        ...(entry.mechanicTags ?? entry.contentTags).flatMap((tag) => [
+          tag,
+          tagLabel(tag),
+        ]),
+        ...entry.contentTags,
+      ]
+        .join(" ")
+        .toLocaleLowerCase("zh-CN")
+        .includes(needle)
+    )
+      return false;
     if (difficulty !== "all" && entry.difficulty !== difficulty) return false;
-    if (skill !== "all" && !(entry.mechanicTags ?? entry.contentTags).includes(skill)) return false;
+    if (
+      skill !== "all" &&
+      !(entry.mechanicTags ?? entry.contentTags).includes(skill)
+    )
+      return false;
     if (completion === "closed" && !completed.has(entry.id)) return false;
     if (completion === "open" && completed.has(entry.id)) return false;
+    if (
+      completion === "progress" &&
+      (!started.has(entry.id) || completed.has(entry.id))
+    )
+      return false;
     return true;
   });
-  const activeSeasonEntries = CASE_CATALOG.filter((entry) => (entry.seasonId ?? "season-1") === activeSeason);
-  const seasonTitle = activeSeasonEntries[0]?.seasonTitle ?? "黑汤档案";
-  const selectSeason = (seasonId: string) => { setActiveSeason(seasonId); try { localStorage.setItem(SEASON_KEY, seasonId); } catch { /* UI preference only */ } };
-  const onSeasonKeyDown = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
-    const direction = event.key === "ArrowRight" || event.key === "ArrowDown" ? 1 : event.key === "ArrowLeft" || event.key === "ArrowUp" ? -1 : 0;
-    const nextIndex = event.key === "Home" ? 0 : event.key === "End" ? seasons.length - 1 : direction ? (index + direction + seasons.length) % seasons.length : -1;
-    if (nextIndex < 0) return;
-    event.preventDefault(); selectSeason(seasons[nextIndex]); requestAnimationFrame(() => seasonTabRefs.current[nextIndex]?.focus());
+  const clear = () => {
+    setSearch("");
+    setDifficulty("all");
+    setSkill("all");
+    setCompletion("all");
   };
+  const selectSeason = (id: string) => {
+    setActiveSeason(id);
+    try {
+      localStorage.setItem(SEASON_KEY, id);
+    } catch {
+      /* UI preference only. */
+    }
+  };
+  const challenges = Object.fromEntries(
+    Object.entries(mastery).map(([id, record]) => [
+      id,
+      masterySummary(record).completedCount,
+    ]),
+  );
 
-  return <main id="main-content" tabIndex={-1} className={styles.page}>
-    <header className={styles.header}>
-      <div className={styles.mark}>深</div>
-      <div><small>黑汤档案室 · {CASE_CATALOG.length} 件确定性谜案</small><h1>从一个异常开始调查</h1><p>提问验证事实，检查来源，最后用证据证明事情如何发生。</p></div>
-      <div className={styles.status}><b>{releaseStatus()}</b><span>AI：{aiStatus}</span><em>没有 API 也能完整游玩</em></div>
-    </header>
-
-    <section className={styles.firstScreen} aria-label="继续与推荐">
-      <div className={styles.primaryActions}>
-        {latest ? <Link prefetch={false} className={styles.continueCase} href={`/case/${latest.caseId}`}><small>{latest.completed ? "回看刚结案件" : "继续调查"}</small><b>{CASE_CATALOG.find((entry) => entry.id === latest.caseId)?.title ?? latest.caseId}</b><span>{latest.completed ? "查看我的解释、回放与挑战" : "从上次保存的位置继续"} →</span></Link> : <Link prefetch={false} className={styles.continueCase} href="/case/c01-cold-room-knock"><small>开始第一案</small><b>冷藏室的敲门声</b><span>所有案件都可以直接进入 →</span></Link>}
-        <Link prefetch={false} className={styles.recommendedCase} href={`/case/${recommendedStep.caseId}`} aria-label={`推荐下一案：${recommendedCase?.title ?? recommendedStep.caseId}`}><small>推荐下一案</small><b>{recommendedCase?.title ?? recommendedStep.caseId}</b><span>{recommendedStep.estimatedMinutes.min}–{recommendedStep.estimatedMinutes.max} 分钟 · 练习{recommendedStep.nextSkill} →</span></Link>
+  return (
+    <main id="main-content" tabIndex={-1} className={styles.page}>
+      <CinemaHero
+        entry={featured}
+        state={latest ? (latest.completed ? "closed" : "continue") : "new"}
+        difficulty={difficultyLabel(featured.difficulty)}
+      />
+      <div className={styles.content}>
+        {storageError && (
+          <div className={styles.storageNotice} role="status">
+            <p>
+              暂时无法读取本地存档。你仍可以打开案件，进度能否保存取决于浏览器的存储权限。
+            </p>
+            <button
+              type="button"
+              onClick={() => setRevision((value) => value + 1)}
+            >
+              重新读取
+            </button>
+          </div>
+        )}
+        <SeasonSelector
+          selected={activeSeason}
+          completed={completed}
+          onSelect={selectSeason}
+        />
+        {recent.length > 0 && (
+          <section className={styles.recent} aria-label="最近调查">
+            <h2>最近调查</h2>
+            <div>
+              {recent.map(({ entry, save }) => (
+                <Link
+                  href={`/case/${entry.id}`}
+                  key={entry.id}
+                  prefetch={false}
+                >
+                  <span>{save.completed ? "已结案" : "调查中"}</span>
+                  <b>{entry.title}</b>
+                  <ArrowRightIcon size={17} aria-hidden="true" />
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+        <section
+          id="case-library"
+          className={styles.library}
+          aria-labelledby="library-heading"
+        >
+          <div className={styles.libraryHeading}>
+            <div>
+              <p className={styles.eyebrow}>THE CASE FILES</p>
+              <h2 id="library-heading">{seasonEntries[0]?.seasonTitle}</h2>
+            </div>
+            <span>
+              {seasonEntries.filter((entry) => completed.has(entry.id)).length}
+              <small> / {seasonEntries.length} 已结案</small>
+            </span>
+          </div>
+          <Link
+            prefetch={false}
+            href={`/case/${recommended.id}`}
+            className={styles.recommendation}
+            aria-label={`推荐下一案：${recommended.title}`}
+          >
+            <img
+              src={homeCaseArt(recommended.id).thumbnail}
+              alt=""
+              width={640}
+              height={400}
+              loading="lazy"
+            />
+            <div>
+              <span className={styles.eyebrow}>下一份值得打开的档案</span>
+              <h3>{recommended.title}</h3>
+              <p>
+                {recommendedStep.estimatedMinutes.min}–
+                {recommendedStep.estimatedMinutes.max} 分钟
+                <span>练习{recommendedStep.nextSkill}</span>
+              </p>
+            </div>
+            <span className={styles.recommendationAction}>
+              开始调查
+              <ArrowRightIcon size={22} weight="light" aria-hidden="true" />
+            </span>
+          </Link>
+          <CaseFilters
+            search={search}
+            difficulty={difficulty}
+            skill={skill}
+            completion={completion}
+            resultCount={filtered.length}
+            skills={SKILLS}
+            difficulties={DIFFICULTIES}
+            onSearch={setSearch}
+            onDifficulty={setDifficulty}
+            onSkill={setSkill}
+            onCompletion={setCompletion}
+            onClear={clear}
+          />
+          <div
+            id="active-season-cases"
+            role="tabpanel"
+            aria-labelledby={`tab-${activeSeason}`}
+            tabIndex={0}
+            key={activeSeason}
+            className={styles.casePanel}
+          >
+            <CaseDirectory
+              entries={filtered}
+              completed={completed}
+              started={started}
+              challenges={challenges}
+              onClear={clear}
+            />
+          </div>
+        </section>
+        <section
+          id="local-archive"
+          className={styles.localArchive}
+          aria-label="存档管理"
+        >
+          <ArchiveTools onImported={() => setRevision((value) => value + 1)} />
+        </section>
+        <footer className={styles.footer}>
+          <div>
+            <span className={styles.footerBrand}>深汤</span>
+            <span>THE BLACK SOUP</span>
+          </div>
+          <details>
+            <summary>版本说明 · {RELEASE_PROFILE.id.toUpperCase()}</summary>
+            <p>
+              五季 · {CASE_CATALOG.length}{" "}
+              案。当前为开发预览版，尚未完成真人评测。存档保存在本机，可在上方导出备份。
+            </p>
+          </details>
+          <a href="#main-content">
+            回到开场
+            <ArrowRightIcon size={16} aria-hidden="true" />
+          </a>
+        </footer>
       </div>
-      <div className={styles.recent}><h2>最近调查</h2>{recentCases.length ? recentCases.map(({ save, entry }) => <Link key={save.caseId} href={`/case/${save.caseId}`} prefetch={false}><span>{save.completed ? "已结案" : "调查中"}</span><b>{entry!.title}</b></Link>) : <p>完成第一次操作后，这里会保留最近三案。</p>}</div>
-    </section>
-
-    <section className={styles.archive} aria-labelledby="season-heading">
-      <div className={styles.seasonHead}><div><small>选择季节</small><h2 id="season-heading">{seasonTitle}</h2></div><span>{activeSeasonEntries.filter((entry) => completed.has(entry.id)).length}/{activeSeasonEntries.length} 已结案</span></div>
-      <div className={styles.seasonTabs} role="tablist" aria-label="案件季节">{seasons.map((seasonId, index) => { const entries = CASE_CATALOG.filter((entry) => (entry.seasonId ?? "season-1") === seasonId), selected = activeSeason === seasonId; return <button ref={(node) => { seasonTabRefs.current[index] = node; }} role="tab" tabIndex={selected ? 0 : -1} aria-selected={selected} aria-controls="active-season-cases" id={`tab-${seasonId}`} key={seasonId} onClick={() => selectSeason(seasonId)} onKeyDown={(event) => onSeasonKeyDown(event, index)}><b>第{index + 1}季</b><span>{entries.filter((entry) => completed.has(entry.id)).length}/{entries.length}</span></button>; })}</div>
-      <details className={styles.filterDrawer}><summary>筛选案件 <span>{filtered.length} 件可见</span></summary><div className={styles.filters}>
-        <label className={styles.search}>搜索当前季<input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="案件名、编号、题面或技能" autoComplete="off" /></label>
-        <label>难度<select value={difficulty} onChange={(event) => setDifficulty(event.target.value)}><option value="all">全部难度</option>{[...new Set(CASE_CATALOG.map((entry) => entry.difficulty))].map((value) => <option key={value} value={value}>{difficultyLabel(value)}</option>)}</select></label>
-        <label>推理技能<select value={skill} onChange={(event) => setSkill(event.target.value)}><option value="all">全部技能</option>{skills.map((value) => <option key={value} value={value}>{tagLabel(value)}</option>)}</select></label>
-        <label>档案状态<select value={completion} onChange={(event) => setCompletion(event.target.value as CompletionFilter)}><option value="all">全部档案</option><option value="open">调查中</option><option value="closed">已结案</option></select></label>
-      </div></details>
-      <div id="active-season-cases" role="tabpanel" aria-labelledby={`tab-${activeSeason}`} className={styles.caseGrid}>{filtered.map((entry) => {
-        const number = entry.id.match(/^c(\d+)/)?.[1] ?? "--";
-        const summary = masterySummary(mastery[entry.id]);
-        return <Link prefetch={false} className={styles.caseCard} data-layout={entry.layoutId} href={`/case/${entry.id}`} key={entry.id} style={{ "--card-accent": entry.accent } as React.CSSProperties}>
-          <div className={styles.thumb}><picture>{entry.sceneAssetMobile && <source media="(max-width: 900px)" srcSet={entry.sceneAssetMobile} />}<img src={entry.sceneAsset} alt="" width={640} height={360} loading="lazy" /></picture><span>C{number} · {completed.has(entry.id) ? "已结案" : "可调查"}</span></div>
-          <div className={styles.cardBody}><small>{difficultyLabel(entry.difficulty)} · {entry.targetMinutes.min}–{entry.targetMinutes.max} 分钟</small><h3>{entry.title}</h3><p>{entry.surface}</p><div>{entry.contentTags.slice(0, 3).map((tag) => <span key={tag}>{tagLabel(tag)}</span>)}</div>{mastery[entry.id] && <em>挑战 {summary.completedCount}/3</em>}</div>
-        </Link>;
-      })}{filtered.length === 0 && <div className={styles.noResults}><b>这个筛选下没有案件</b><button onClick={() => { setSearch(""); setDifficulty("all"); setSkill("all"); setCompletion("all"); }}>清除筛选</button></div>}</div>
-    </section>
-
-    <ArchiveTools onImported={() => setRevision((value) => value + 1)} />
-    <footer className={styles.footer}><span>深汤 / {RELEASE_PROFILE.id.toUpperCase()}</span><span>INTERNAL RC · HUMAN EVALUATION PENDING</span></footer>
-  </main>;
+    </main>
+  );
 }

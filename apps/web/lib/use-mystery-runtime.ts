@@ -15,7 +15,22 @@ export function useMysteryRuntime(caseId: CaseId) {
   const [restoreStatus, setRestoreStatus] = useState<"new" | "restored" | "incompatible" | "corrupt" | undefined>(undefined);
   const [latestSave, setLatestSave] = useState<SaveEnvelope>();
   const [storageIssue, setStorageIssue] = useState<string>();
+  const persistenceBlockedRef = useRef(false);
+  const saveQueueRef = useRef(Promise.resolve());
+  const latestSaveRef = useRef<SaveEnvelope | undefined>(undefined);
+  const saveRevisionRef = useRef(0);
   const routingRequestsRef = useRef(new Map<number, { resolve: (offer: QuestionRoutingOffer) => void; reject: (error: Error) => void }>());
+
+  const enqueueSave = useCallback((save: SaveEnvelope) => {
+    const owner = workerRef.current;
+    const revision = ++saveRevisionRef.current;
+    setSaveState("saving");
+    const isCurrent = () => workerRef.current === owner && saveRevisionRef.current === revision && !persistenceBlockedRef.current;
+    saveQueueRef.current = saveQueueRef.current.catch(() => undefined)
+      .then(() => workerRef.current === owner && !persistenceBlockedRef.current ? saveCase(save) : undefined)
+      .then(() => { if (isCurrent()) { setSaveState("saved"); setStorageIssue(undefined); } })
+      .catch((error: unknown) => { if (isCurrent()) { setSaveState("error"); setStorageIssue(error instanceof Error ? error.message : "本地存档写入失败"); } });
+  }, []);
 
   useEffect(() => {
     const worker = new Worker(new URL("../workers/mystery-runtime.worker.ts", import.meta.url), { type: "module" });
@@ -45,13 +60,17 @@ export function useMysteryRuntime(caseId: CaseId) {
       }
       setProjection(message.data.projection);
       setEvents(message.data.events);
-      setRestoreStatus(message.data.restoreStatus);
-      setLatestSave(message.data.save);
+      if (message.data.restoreStatus) setRestoreStatus(message.data.restoreStatus);
+      persistenceBlockedRef.current = Boolean(message.data.persistenceBlocked);
+      latestSaveRef.current = message.data.persistenceBlocked ? message.data.recoverySave : message.data.save;
+      setLatestSave(latestSaveRef.current);
       setStatus("ready");
-      setSaveState("saving");
-      void saveCase(message.data.save)
-        .then(() => { if (active) { setSaveState("saved"); setStorageIssue(undefined); } })
-        .catch((error: unknown) => { if (active) { setSaveState("error"); setStorageIssue(error instanceof Error ? error.message : "本地存档写入失败"); } });
+      if (message.data.persistenceBlocked) {
+        setSaveState("error");
+        setStorageIssue("原存档无法完整恢复，已保留且未覆盖。请导出备份，或明确选择重新开始。");
+        return;
+      }
+      enqueueSave(message.data.save);
     };
     worker.onerror = () => active && setStatus("error");
 
@@ -64,7 +83,7 @@ export function useMysteryRuntime(caseId: CaseId) {
       .catch(() => {
         if (!active) return;
         setStorageIssue("浏览器无法读取本地存档；当前调查仍可运行，请在关闭前导出进度。");
-        const request: RuntimeWorkerRequest = { id: ++requestIdRef.current, type: "initialize", caseId };
+        const request: RuntimeWorkerRequest = { id: ++requestIdRef.current, type: "initialize", caseId, saveReadFailed: true };
         worker.postMessage(request);
       });
 
@@ -75,7 +94,7 @@ export function useMysteryRuntime(caseId: CaseId) {
       worker.terminate();
       workerRef.current = null;
     };
-  }, [caseId]);
+  }, [caseId, enqueueSave]);
 
   const dispatch = useCallback((command: GameCommand) => {
     const worker = workerRef.current;
@@ -94,12 +113,9 @@ export function useMysteryRuntime(caseId: CaseId) {
   }), []);
 
   const retrySave = useCallback(() => {
-    if (!latestSave) return;
-    setSaveState("saving");
-    void saveCase(latestSave)
-      .then(() => { setSaveState("saved"); setStorageIssue(undefined); })
-      .catch((error: unknown) => { setSaveState("error"); setStorageIssue(error instanceof Error ? error.message : "本地存档写入失败"); });
-  }, [latestSave]);
+    if (!latestSaveRef.current || persistenceBlockedRef.current) return;
+    enqueueSave(latestSaveRef.current);
+  }, [enqueueSave]);
 
   return { projection, events, status, saveState, restoreStatus, latestSave, storageIssue, retrySave, dispatch, prepareQuestionRouting };
 }

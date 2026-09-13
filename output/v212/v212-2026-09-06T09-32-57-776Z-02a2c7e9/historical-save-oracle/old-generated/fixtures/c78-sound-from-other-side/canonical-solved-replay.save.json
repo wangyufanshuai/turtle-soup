@@ -1,0 +1,616 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c78-sound-from-other-side",
+  "caseVersion": 1,
+  "contentHash": "sha256:6231f8cbc3a1ee480b41030c4df733c205aaa379f6e969fee211a44bad89a7a4",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "结构传声是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "空气传声是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "东墙定位是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "西侧设备是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "到达时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "墙体路径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位算法是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声源方向是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "振动传感器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声音传播是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "结构传声是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "空气传声是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "东墙定位是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "西侧设备是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "到达时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "墙体路径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位算法是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声源方向是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "振动传感器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声音传播是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c78"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-13",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "结构传声是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "空气传声是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "东墙定位是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "西侧设备是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "到达时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "墙体路径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位算法是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声源方向是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "振动传感器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声音传播是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c78"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-13",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "结构传声是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "空气传声是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "东墙定位是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "西侧设备是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "到达时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "墙体路径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位算法是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声源方向是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "振动传感器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声音传播是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c78"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c78-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-11",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c78-12",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-12"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "对比不同介质的传播路径和到达顺序"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-12"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "propagates-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "propagates-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-12",
+      "relation": "propagates-to"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-12"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "moves-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "moves-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-12",
+      "relation": "moves-to"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

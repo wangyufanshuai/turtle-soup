@@ -1,0 +1,1953 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c46-pilot-pressure-valve",
+  "metadata": {
+    "titleKey": "case.c46.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "科学测量",
+      "复杂系统",
+      "来源边界"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:174454209084af21392f0f6d3261a2884cecf1023fc53ead75511174eef39e2b",
+    "status": "public-preview",
+    "seasonId": "season-4"
+  },
+  "presentation": {
+    "layoutId": "season4-control-loop",
+    "sceneAsset": "/assets/cases/c46/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c46/scene-mobile.svg",
+    "palette": "season4-c46",
+    "accent": "#d7aa76",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "control-loop-lab",
+    "mobileNavigation": [
+      "现场",
+      "记录",
+      "推理板"
+    ],
+    "boardMode": "control-loop"
+  },
+  "surface": {
+    "titleKey": "case.c46.title",
+    "textKey": "case.c46.surface",
+    "publicFactIds": [
+      "fact-c46-01",
+      "fact-c46-02",
+      "fact-c46-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c46-01",
+      "query-c46-02",
+      "query-c46-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c46-one",
+      "titleKey": "chapter.c46.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c46-1",
+      "titleKey": "board.c46.1.title",
+      "mode": "control-loop",
+      "slots": [
+        {
+          "id": "slot-c46-1-1",
+          "labelKey": "board.c46.1.slot.1",
+          "acceptsEventIds": [
+            "event-c46-01"
+          ]
+        },
+        {
+          "id": "slot-c46-1-2",
+          "labelKey": "board.c46.1.slot.2",
+          "acceptsEventIds": [
+            "event-c46-03"
+          ]
+        },
+        {
+          "id": "slot-c46-1-3",
+          "labelKey": "board.c46.1.slot.3",
+          "acceptsEventIds": [
+            "event-c46-05"
+          ]
+        },
+        {
+          "id": "slot-c46-1-4",
+          "labelKey": "board.c46.1.slot.4",
+          "acceptsEventIds": [
+            "event-c46-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "commands",
+        "feeds-back",
+        "settles"
+      ]
+    },
+    {
+      "id": "board-c46-2",
+      "titleKey": "board.c46.2.title",
+      "mode": "provenance-chain",
+      "slots": [
+        {
+          "id": "slot-c46-2-1",
+          "labelKey": "board.c46.2.slot.1",
+          "acceptsEventIds": [
+            "event-c46-02"
+          ]
+        },
+        {
+          "id": "slot-c46-2-2",
+          "labelKey": "board.c46.2.slot.2",
+          "acceptsEventIds": [
+            "event-c46-04"
+          ]
+        },
+        {
+          "id": "slot-c46-2-3",
+          "labelKey": "board.c46.2.slot.3",
+          "acceptsEventIds": [
+            "event-c46-06"
+          ]
+        },
+        {
+          "id": "slot-c46-2-4",
+          "labelKey": "board.c46.2.slot.4",
+          "acceptsEventIds": [
+            "event-c46-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "transfers-to",
+        "recorded-by",
+        "verifies"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c46-system",
+      "kind": "object",
+      "labelKey": "entity.c46.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c46",
+      "kind": "location",
+      "labelKey": "location.c46",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c46-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "14:00"
+      },
+      "participants": [
+        "entity-c46-system"
+      ],
+      "locationId": "location-c46",
+      "action": "step-c46-1",
+      "labelKey": "event.c46.1",
+      "effectFactIds": [
+        "fact-c46-01"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c46-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "14:04"
+      },
+      "participants": [
+        "entity-c46-system"
+      ],
+      "locationId": "location-c46",
+      "action": "step-c46-2",
+      "labelKey": "event.c46.2",
+      "effectFactIds": [
+        "fact-c46-02"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c46-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "14:08"
+      },
+      "participants": [
+        "entity-c46-system"
+      ],
+      "locationId": "location-c46",
+      "action": "step-c46-3",
+      "labelKey": "event.c46.3",
+      "effectFactIds": [
+        "fact-c46-03"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c46-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "14:12"
+      },
+      "participants": [
+        "entity-c46-system"
+      ],
+      "locationId": "location-c46",
+      "action": "step-c46-4",
+      "labelKey": "event.c46.4",
+      "effectFactIds": [
+        "fact-c46-04"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c46-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "14:16"
+      },
+      "participants": [
+        "entity-c46-system"
+      ],
+      "locationId": "location-c46",
+      "action": "step-c46-5",
+      "labelKey": "event.c46.5",
+      "effectFactIds": [
+        "fact-c46-05"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c46-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "14:20"
+      },
+      "participants": [
+        "entity-c46-system"
+      ],
+      "locationId": "location-c46",
+      "action": "step-c46-6",
+      "labelKey": "event.c46.6",
+      "effectFactIds": [
+        "fact-c46-06"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c46-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "15:24"
+      },
+      "participants": [
+        "entity-c46-system"
+      ],
+      "locationId": "location-c46",
+      "action": "step-c46-7",
+      "labelKey": "event.c46.7",
+      "effectFactIds": [
+        "fact-c46-07"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c46-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "15:28"
+      },
+      "participants": [
+        "entity-c46-system"
+      ],
+      "locationId": "location-c46",
+      "action": "step-c46-8",
+      "labelKey": "event.c46.8",
+      "effectFactIds": [
+        "fact-c46-08"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c46-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "15:32"
+      },
+      "participants": [
+        "entity-c46-system"
+      ],
+      "locationId": "location-c46",
+      "action": "step-c46-9",
+      "labelKey": "event.c46.9",
+      "effectFactIds": [
+        "fact-c46-09"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c46-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "15:36"
+      },
+      "participants": [
+        "entity-c46-system"
+      ],
+      "locationId": "location-c46",
+      "action": "step-c46-10",
+      "labelKey": "event.c46.10",
+      "effectFactIds": [
+        "fact-c46-10"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c46-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "15:40"
+      },
+      "participants": [
+        "entity-c46-system"
+      ],
+      "locationId": "location-c46",
+      "action": "step-c46-11",
+      "labelKey": "event.c46.11",
+      "effectFactIds": [
+        "fact-c46-11"
+      ],
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c46-1-1",
+      "type": "precedes",
+      "fromId": "entity-c46-system",
+      "toId": "location-c46",
+      "eventId": "event-c46-01",
+      "factId": "fact-c46-01"
+    },
+    {
+      "id": "relation-c46-1-2",
+      "type": "causes",
+      "fromId": "entity-c46-system",
+      "toId": "location-c46",
+      "eventId": "event-c46-03",
+      "factId": "fact-c46-02"
+    },
+    {
+      "id": "relation-c46-1-3",
+      "type": "causes",
+      "fromId": "entity-c46-system",
+      "toId": "location-c46",
+      "eventId": "event-c46-05",
+      "factId": "fact-c46-03"
+    },
+    {
+      "id": "relation-c46-2-1",
+      "type": "precedes",
+      "fromId": "entity-c46-system",
+      "toId": "location-c46",
+      "eventId": "event-c46-02",
+      "factId": "fact-c46-02"
+    },
+    {
+      "id": "relation-c46-2-2",
+      "type": "causes",
+      "fromId": "entity-c46-system",
+      "toId": "location-c46",
+      "eventId": "event-c46-04",
+      "factId": "fact-c46-03"
+    },
+    {
+      "id": "relation-c46-2-3",
+      "type": "causes",
+      "fromId": "entity-c46-system",
+      "toId": "location-c46",
+      "eventId": "event-c46-06",
+      "factId": "fact-c46-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c46-01",
+      "predicate": "verified_c46_1",
+      "args": {
+        "term": "先导压力"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c46.1"
+    },
+    {
+      "id": "fact-c46-02",
+      "predicate": "verified_c46_2",
+      "args": {
+        "term": "阀芯位置"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c46.2"
+    },
+    {
+      "id": "fact-c46-03",
+      "predicate": "verified_c46_3",
+      "args": {
+        "term": "控制面板"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c46.3"
+    },
+    {
+      "id": "fact-c46-04",
+      "predicate": "verified_c46_4",
+      "args": {
+        "term": "机械开度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c46.4"
+    },
+    {
+      "id": "fact-c46-05",
+      "predicate": "verified_c46_5",
+      "args": {
+        "term": "流量变化"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c46.5"
+    },
+    {
+      "id": "fact-c46-06",
+      "predicate": "verified_c46_6",
+      "args": {
+        "term": "反馈传感器"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c46.6"
+    },
+    {
+      "id": "fact-c46-07",
+      "predicate": "verified_c46_7",
+      "args": {
+        "term": "气路"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c46.7"
+    },
+    {
+      "id": "fact-c46-08",
+      "predicate": "verified_c46_8",
+      "args": {
+        "term": "指令日志"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c46.8"
+    },
+    {
+      "id": "fact-c46-09",
+      "predicate": "verified_c46_9",
+      "args": {
+        "term": "阀门弹簧"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c46.9"
+    },
+    {
+      "id": "fact-c46-10",
+      "predicate": "verified_c46_10",
+      "args": {
+        "term": "执行器"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c46.10"
+    },
+    {
+      "id": "fact-c46-11",
+      "predicate": "verified_c46_11",
+      "args": {
+        "term": "先导压力"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-11"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c46.11"
+    },
+    {
+      "id": "fact-c46-12",
+      "predicate": "verified_c46_12",
+      "args": {
+        "term": "阀芯位置"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c46.12"
+    },
+    {
+      "id": "fact-c46-13",
+      "predicate": "verified_c46_13",
+      "args": {
+        "term": "控制面板"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c46.13"
+    },
+    {
+      "id": "fact-c46-14",
+      "predicate": "verified_c46_14",
+      "args": {
+        "term": "机械开度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c46.14"
+    },
+    {
+      "id": "fact-c46-15",
+      "predicate": "verified_c46_15",
+      "args": {
+        "term": "流量变化"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c46.15"
+    },
+    {
+      "id": "fact-c46-16",
+      "predicate": "verified_c46_16",
+      "args": {
+        "term": "反馈传感器"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c46.16"
+    },
+    {
+      "id": "fact-c46-17",
+      "predicate": "verified_c46_17",
+      "args": {
+        "term": "气路"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c46-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c46-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c46.17"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c46-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-01",
+        "fact-c46-02",
+        "fact-c46-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c46-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c46-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-01",
+        "fact-c46-02",
+        "fact-c46-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c46-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c46-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-02",
+        "fact-c46-13"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c46-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c46-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-03",
+        "fact-c46-14"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c46-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c46-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-04",
+        "fact-c46-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c46-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c46-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-05",
+        "fact-c46-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c46-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c46-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-06",
+        "fact-c46-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c46-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c46-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-07"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c46-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c46-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-08"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c46-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c46-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c46-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c46-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c46-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c46-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c46-11"
+      ],
+      "spoilerLevel": "sensitive"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c46-01",
+      "labelKey": "query.c46.1",
+      "intent": "verify",
+      "predicate": "verified_c46_1",
+      "slots": {
+        "subjectId": "entity-c46-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c46-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-opening"
+      ],
+      "examplePhrases": [
+        "先导压力是否成立？",
+        "能确认先导压力吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "先导压力"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c46-02",
+      "labelKey": "query.c46.2",
+      "intent": "verify",
+      "predicate": "verified_c46_2",
+      "slots": {
+        "subjectId": "entity-c46-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c46-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-opening"
+      ],
+      "examplePhrases": [
+        "阀芯位置是否成立？",
+        "能确认阀芯位置吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "阀芯位置"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c46-03",
+      "labelKey": "query.c46.3",
+      "intent": "verify",
+      "predicate": "verified_c46_3",
+      "slots": {
+        "subjectId": "entity-c46-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c46-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-opening"
+      ],
+      "examplePhrases": [
+        "控制面板是否成立？",
+        "能确认控制面板吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "控制面板"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c46-04",
+      "labelKey": "query.c46.4",
+      "intent": "verify",
+      "predicate": "verified_c46_4",
+      "slots": {
+        "subjectId": "entity-c46-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c46-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-04"
+      ],
+      "examplePhrases": [
+        "机械开度是否成立？",
+        "能确认机械开度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "机械开度"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c46-05",
+      "labelKey": "query.c46.5",
+      "intent": "verify",
+      "predicate": "verified_c46_5",
+      "slots": {
+        "subjectId": "entity-c46-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c46-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-05"
+      ],
+      "examplePhrases": [
+        "流量变化是否成立？",
+        "能确认流量变化吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "流量变化"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c46-06",
+      "labelKey": "query.c46.6",
+      "intent": "verify",
+      "predicate": "verified_c46_6",
+      "slots": {
+        "subjectId": "entity-c46-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c46-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-06"
+      ],
+      "examplePhrases": [
+        "反馈传感器是否成立？",
+        "能确认反馈传感器吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "反馈传感器"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c46-07",
+      "labelKey": "query.c46.7",
+      "intent": "verify",
+      "predicate": "verified_c46_7",
+      "slots": {
+        "subjectId": "entity-c46-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c46-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-07"
+      ],
+      "examplePhrases": [
+        "气路是否成立？",
+        "能确认气路吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "气路"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c46-08",
+      "labelKey": "query.c46.8",
+      "intent": "verify",
+      "predicate": "verified_c46_8",
+      "slots": {
+        "subjectId": "entity-c46-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c46-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-08"
+      ],
+      "examplePhrases": [
+        "指令日志是否成立？",
+        "能确认指令日志吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "指令日志"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c46-09",
+      "labelKey": "query.c46.9",
+      "intent": "verify",
+      "predicate": "verified_c46_9",
+      "slots": {
+        "subjectId": "entity-c46-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c46-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-09"
+      ],
+      "examplePhrases": [
+        "阀门弹簧是否成立？",
+        "能确认阀门弹簧吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "阀门弹簧"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c46-10",
+      "labelKey": "query.c46.10",
+      "intent": "verify",
+      "predicate": "verified_c46_10",
+      "slots": {
+        "subjectId": "entity-c46-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c46-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c46-10"
+      ],
+      "examplePhrases": [
+        "执行器是否成立？",
+        "能确认执行器吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "执行器"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c46-01",
+      "kind": "scene",
+      "titleKey": "evidence.c46.1.title",
+      "observationKey": "evidence.c46.1.observation",
+      "sourceFactIds": [
+        "fact-c46-01",
+        "fact-c46-02",
+        "fact-c46-03"
+      ],
+      "sourceEventIds": [
+        "event-c46-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c46-system",
+        "location-c46"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c46-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c46/evidence-01.svg",
+      "assetAlt": "先导压力"
+    },
+    {
+      "id": "evidence-c46-02",
+      "kind": "record",
+      "titleKey": "evidence.c46.2.title",
+      "observationKey": "evidence.c46.2.observation",
+      "sourceFactIds": [
+        "fact-c46-02",
+        "fact-c46-13"
+      ],
+      "sourceEventIds": [
+        "event-c46-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c46-system",
+        "location-c46"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c46-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c46/evidence-02.svg",
+      "assetAlt": "阀芯位置"
+    },
+    {
+      "id": "evidence-c46-03",
+      "kind": "object",
+      "titleKey": "evidence.c46.3.title",
+      "observationKey": "evidence.c46.3.observation",
+      "sourceFactIds": [
+        "fact-c46-03",
+        "fact-c46-14"
+      ],
+      "sourceEventIds": [
+        "event-c46-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c46-system",
+        "location-c46"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c46/evidence-03.svg",
+      "assetAlt": "控制面板"
+    },
+    {
+      "id": "evidence-c46-04",
+      "kind": "scene",
+      "titleKey": "evidence.c46.4.title",
+      "observationKey": "evidence.c46.4.observation",
+      "sourceFactIds": [
+        "fact-c46-04",
+        "fact-c46-15"
+      ],
+      "sourceEventIds": [
+        "event-c46-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c46-system",
+        "location-c46"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c46/evidence-04.svg",
+      "assetAlt": "机械开度"
+    },
+    {
+      "id": "evidence-c46-05",
+      "kind": "record",
+      "titleKey": "evidence.c46.5.title",
+      "observationKey": "evidence.c46.5.observation",
+      "sourceFactIds": [
+        "fact-c46-05",
+        "fact-c46-16"
+      ],
+      "sourceEventIds": [
+        "event-c46-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c46-system",
+        "location-c46"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c46/evidence-05.svg",
+      "assetAlt": "流量变化"
+    },
+    {
+      "id": "evidence-c46-06",
+      "kind": "object",
+      "titleKey": "evidence.c46.6.title",
+      "observationKey": "evidence.c46.6.observation",
+      "sourceFactIds": [
+        "fact-c46-06",
+        "fact-c46-17"
+      ],
+      "sourceEventIds": [
+        "event-c46-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c46-system",
+        "location-c46"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c46/evidence-01.svg",
+      "assetAlt": "反馈传感器"
+    },
+    {
+      "id": "evidence-c46-07",
+      "kind": "scene",
+      "titleKey": "evidence.c46.7.title",
+      "observationKey": "evidence.c46.7.observation",
+      "sourceFactIds": [
+        "fact-c46-07"
+      ],
+      "sourceEventIds": [
+        "event-c46-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c46-system",
+        "location-c46"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c46/evidence-02.svg",
+      "assetAlt": "气路"
+    },
+    {
+      "id": "evidence-c46-08",
+      "kind": "record",
+      "titleKey": "evidence.c46.8.title",
+      "observationKey": "evidence.c46.8.observation",
+      "sourceFactIds": [
+        "fact-c46-08"
+      ],
+      "sourceEventIds": [
+        "event-c46-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c46-system",
+        "location-c46"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c46/evidence-03.svg",
+      "assetAlt": "指令日志"
+    },
+    {
+      "id": "evidence-c46-09",
+      "kind": "object",
+      "titleKey": "evidence.c46.9.title",
+      "observationKey": "evidence.c46.9.observation",
+      "sourceFactIds": [
+        "fact-c46-09"
+      ],
+      "sourceEventIds": [
+        "event-c46-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c46-system",
+        "location-c46"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c46/evidence-04.svg",
+      "assetAlt": "阀门弹簧"
+    },
+    {
+      "id": "evidence-c46-10",
+      "kind": "scene",
+      "titleKey": "evidence.c46.10.title",
+      "observationKey": "evidence.c46.10.observation",
+      "sourceFactIds": [
+        "fact-c46-10"
+      ],
+      "sourceEventIds": [
+        "event-c46-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c46-system",
+        "location-c46"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c46/evidence-05.svg",
+      "assetAlt": "执行器"
+    },
+    {
+      "id": "evidence-c46-11",
+      "kind": "record",
+      "titleKey": "evidence.c46.11.title",
+      "observationKey": "evidence.c46.11.observation",
+      "sourceFactIds": [
+        "fact-c46-11"
+      ],
+      "sourceEventIds": [
+        "event-c46-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c46-system",
+        "location-c46"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c46/evidence-01.svg",
+      "assetAlt": "先导压力"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c46.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c46-01",
+          "event-c46-02",
+          "event-c46-03",
+          "event-c46-04",
+          "event-c46-05",
+          "event-c46-06",
+          "event-c46-07",
+          "event-c46-08",
+          "event-c46-09",
+          "event-c46-10"
+        ],
+        "motiveKey": "在远程控制回路中区分命令与执行结果"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c46-01",
+        "evidence-c46-02",
+        "evidence-c46-03",
+        "evidence-c46-04",
+        "evidence-c46-05",
+        "evidence-c46-06",
+        "evidence-c46-07",
+        "evidence-c46-08",
+        "evidence-c46-09",
+        "evidence-c46-10"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c46-1",
+        "contradiction-c46-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c46-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c46.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "有人偷偷打开了阀门"
+        ],
+        "motiveKey": "motive-c46-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c46-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c46-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c46-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c46.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "流量计读数突然失真"
+        ],
+        "motiveKey": "motive-c46-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c46-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c46-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c46-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c46-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c46-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c46-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c46-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c46-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c46-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c46-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c46-01",
+      "fact-c46-02",
+      "fact-c46-03",
+      "fact-c46-04",
+      "fact-c46-05",
+      "fact-c46-06",
+      "fact-c46-07",
+      "fact-c46-08",
+      "fact-c46-09",
+      "fact-c46-10"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c46-01",
+      "evidence-c46-02",
+      "evidence-c46-03",
+      "evidence-c46-04",
+      "evidence-c46-05",
+      "evidence-c46-06",
+      "evidence-c46-07",
+      "evidence-c46-08",
+      "evidence-c46-09",
+      "evidence-c46-10"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c46-01",
+        "event-c46-02"
+      ],
+      [
+        "event-c46-02",
+        "event-c46-03"
+      ],
+      [
+        "event-c46-03",
+        "event-c46-04"
+      ],
+      [
+        "event-c46-04",
+        "event-c46-05"
+      ],
+      [
+        "event-c46-05",
+        "event-c46-06"
+      ],
+      [
+        "event-c46-06",
+        "event-c46-07"
+      ],
+      [
+        "event-c46-07",
+        "event-c46-08"
+      ],
+      [
+        "event-c46-08",
+        "event-c46-09"
+      ],
+      [
+        "event-c46-09",
+        "event-c46-10"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c46-1",
+      "contradiction-c46-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c46-alternative-1",
+      "hypothesis-c46-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c46-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c46-a",
+        "evidenceIds": [
+          "evidence-c46-01",
+          "evidence-c46-02",
+          "evidence-c46-03",
+          "evidence-c46-04",
+          "evidence-c46-05",
+          "evidence-c46-06",
+          "evidence-c46-07",
+          "evidence-c46-08"
+        ]
+      },
+      {
+        "id": "proof-c46-b",
+        "evidenceIds": [
+          "evidence-c46-01",
+          "evidence-c46-02",
+          "evidence-c46-09",
+          "evidence-c46-10"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "在远程控制回路中区分命令与执行结果"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c46-1",
+        "kind": "state-transition",
+        "boardId": "board-c46-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c46-1-1",
+            "eventId": "event-c46-01"
+          },
+          {
+            "slotId": "slot-c46-1-2",
+            "eventId": "event-c46-03"
+          },
+          {
+            "slotId": "slot-c46-1-3",
+            "eventId": "event-c46-05"
+          },
+          {
+            "slotId": "slot-c46-1-4",
+            "eventId": "event-c46-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c46-01",
+            "toEventId": "event-c46-03",
+            "relation": "commands"
+          },
+          {
+            "fromEventId": "event-c46-03",
+            "toEventId": "event-c46-05",
+            "relation": "commands"
+          },
+          {
+            "fromEventId": "event-c46-05",
+            "toEventId": "event-c46-10",
+            "relation": "commands"
+          }
+        ],
+        "failureCategory": "state-transition"
+      },
+      {
+        "id": "obligation-c46-2",
+        "kind": "source",
+        "boardId": "board-c46-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c46-2-1",
+            "eventId": "event-c46-02"
+          },
+          {
+            "slotId": "slot-c46-2-2",
+            "eventId": "event-c46-04"
+          },
+          {
+            "slotId": "slot-c46-2-3",
+            "eventId": "event-c46-06"
+          },
+          {
+            "slotId": "slot-c46-2-4",
+            "eventId": "event-c46-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c46-02",
+            "toEventId": "event-c46-04",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c46-04",
+            "toEventId": "event-c46-06",
+            "relation": "transfers-to"
+          },
+          {
+            "fromEventId": "event-c46-06",
+            "toEventId": "event-c46-10",
+            "relation": "transfers-to"
+          }
+        ],
+        "failureCategory": "source"
+      }
+    ],
+    "uniquenessClaim": "先导压力改变了阀芯状态，面板显示的是控制命令而非机械开度。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c46-1",
+      "eventId": "event-c46-02",
+      "factIds": [
+        "fact-c46-01"
+      ],
+      "captionKey": "event.c46.2"
+    },
+    {
+      "id": "replay-c46-2",
+      "eventId": "event-c46-03",
+      "factIds": [
+        "fact-c46-02"
+      ],
+      "captionKey": "event.c46.3"
+    },
+    {
+      "id": "replay-c46-3",
+      "eventId": "event-c46-04",
+      "factIds": [
+        "fact-c46-03"
+      ],
+      "captionKey": "event.c46.4"
+    },
+    {
+      "id": "replay-c46-4",
+      "eventId": "event-c46-05",
+      "factIds": [
+        "fact-c46-04"
+      ],
+      "captionKey": "event.c46.5"
+    },
+    {
+      "id": "replay-c46-5",
+      "eventId": "event-c46-06",
+      "factIds": [
+        "fact-c46-05"
+      ],
+      "captionKey": "event.c46.6"
+    },
+    {
+      "id": "replay-c46-6",
+      "eventId": "event-c46-07",
+      "factIds": [
+        "fact-c46-01",
+        "fact-c46-02",
+        "fact-c46-03",
+        "fact-c46-04",
+        "fact-c46-05",
+        "fact-c46-06",
+        "fact-c46-07",
+        "fact-c46-08",
+        "fact-c46-09",
+        "fact-c46-10"
+      ],
+      "captionKey": "event.c46.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c46.title": "没有打开的阀门",
+      "case.c46.surface": "控制面板显示阀门关闭，流量却已经改变；现场没有人操作手轮。",
+      "case.c46.truth": "先导压力改变了阀芯状态，面板显示的是控制命令而非机械开度。",
+      "entity.c46.system": "测量系统与记录链",
+      "location.c46": "科学系统现场",
+      "hypothesis.c46.canonical": "先导压力改变了阀芯状态，面板显示的是控制命令而非机械开度。",
+      "hypothesis.c46.alternative.1": "有人偷偷打开了阀门",
+      "hypothesis.c46.alternative.2": "流量计读数突然失真",
+      "motive.在远程控制回路中区分命令与执行结果": "在远程控制回路中区分命令与执行结果",
+      "chapter.c46.one": "固定异常",
+      "chapter.c46.two": "统一测量边界",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c46.1": "先导压力是否成立？",
+      "query.c46.2": "阀芯位置是否成立？",
+      "query.c46.3": "控制面板是否成立？",
+      "query.c46.4": "机械开度是否成立？",
+      "query.c46.5": "流量变化是否成立？",
+      "query.c46.6": "反馈传感器是否成立？",
+      "query.c46.7": "气路是否成立？",
+      "query.c46.8": "指令日志是否成立？",
+      "query.c46.9": "阀门弹簧是否成立？",
+      "query.c46.10": "执行器是否成立？",
+      "event.c46.1": "阶段 1：先导压力进入记录链",
+      "event.c46.2": "阶段 2：阀芯位置进入记录链",
+      "event.c46.3": "阶段 3：控制面板进入记录链",
+      "event.c46.4": "阶段 4：机械开度进入记录链",
+      "event.c46.5": "阶段 5：流量变化进入记录链",
+      "event.c46.6": "阶段 6：反馈传感器进入记录链",
+      "event.c46.7": "阶段 7：气路进入记录链",
+      "event.c46.8": "阶段 8：指令日志进入记录链",
+      "event.c46.9": "阶段 9：阀门弹簧进入记录链",
+      "event.c46.10": "阶段 10：执行器进入记录链",
+      "event.c46.11": "阶段 11：先导压力进入记录链",
+      "evidence.c46.1.title": "先导压力记录",
+      "evidence.c46.1.observation": "来源记录显示“先导压力”在该阶段保持可复核。",
+      "evidence.c46.2.title": "阀芯位置记录",
+      "evidence.c46.2.observation": "来源记录显示“阀芯位置”在该阶段保持可复核。",
+      "evidence.c46.3.title": "控制面板记录",
+      "evidence.c46.3.observation": "来源记录显示“控制面板”在该阶段保持可复核。",
+      "evidence.c46.4.title": "机械开度记录",
+      "evidence.c46.4.observation": "来源记录显示“机械开度”在该阶段保持可复核。",
+      "evidence.c46.5.title": "流量变化记录",
+      "evidence.c46.5.observation": "来源记录显示“流量变化”在该阶段保持可复核。",
+      "evidence.c46.6.title": "反馈传感器记录",
+      "evidence.c46.6.observation": "来源记录显示“反馈传感器”在该阶段保持可复核。",
+      "evidence.c46.7.title": "气路记录",
+      "evidence.c46.7.observation": "来源记录显示“气路”在该阶段保持可复核。",
+      "evidence.c46.8.title": "指令日志记录",
+      "evidence.c46.8.observation": "来源记录显示“指令日志”在该阶段保持可复核。",
+      "evidence.c46.9.title": "阀门弹簧记录",
+      "evidence.c46.9.observation": "来源记录显示“阀门弹簧”在该阶段保持可复核。",
+      "evidence.c46.10.title": "执行器记录",
+      "evidence.c46.10.observation": "来源记录显示“执行器”在该阶段保持可复核。",
+      "evidence.c46.11.title": "先导压力记录",
+      "evidence.c46.11.observation": "来源记录显示“先导压力”在该阶段保持可复核。",
+      "board.c46.1.title": "没有打开的阀门 · control-loop",
+      "board.c46.1.slot.1": "起始来源",
+      "board.c46.1.slot.2": "关键变化",
+      "board.c46.1.slot.3": "观测结果",
+      "board.c46.1.slot.4": "排除替代",
+      "board.c46.2.title": "没有打开的阀门 · provenance-chain",
+      "board.c46.2.slot.1": "起始来源",
+      "board.c46.2.slot.2": "关键变化",
+      "board.c46.2.slot.3": "观测结果",
+      "board.c46.2.slot.4": "排除替代"
+    }
+  }
+}

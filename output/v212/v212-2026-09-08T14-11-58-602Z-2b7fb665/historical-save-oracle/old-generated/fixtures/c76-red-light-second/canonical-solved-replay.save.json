@@ -1,0 +1,564 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c76-red-light-second",
+  "caseVersion": 1,
+  "contentHash": "sha256:504bba955ac12ec130de6361e832e47aa6fd7767294e2f15ac43ec86322b737e",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "红灯先亮是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "绿灯切换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "滚动快门是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "逐行采样是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "监控画面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同一帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "灯光时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "曝光顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "帧内时刻是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "红灯先亮是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "绿灯切换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "滚动快门是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "逐行采样是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "监控画面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同一帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "灯光时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "曝光顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "帧内时刻是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c76"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "红灯先亮是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "绿灯切换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "滚动快门是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "逐行采样是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "监控画面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同一帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "灯光时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "曝光顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "帧内时刻是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c76"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "红灯先亮是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "绿灯切换是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "滚动快门是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "逐行采样是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "监控画面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同一帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "灯光时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "曝光顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "帧内时刻是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c76"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c76-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c76-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c76-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c76-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c76-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c76-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c76-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c76-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c76-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c76-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c76-10",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "将单帧画面拆成逐行时间区间"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "precedes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "precedes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-10",
+      "relation": "precedes"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "reframes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "reframes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-10",
+      "relation": "reframes"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

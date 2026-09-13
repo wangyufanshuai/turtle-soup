@@ -1,0 +1,338 @@
+{
+  "c01-cold-room-knock": [
+    {
+      "sourceProfile": "v2.11-internal-rc",
+      "caseId": "c01-cold-room-knock",
+      "caseVersion": 1,
+      "contentHash": "sha256:c01-cold-room-knock-v1",
+      "candidates": [
+        {
+          "queryId": "query-person-inside",
+          "label": "敲击发生时，冷藏室里是否有人？",
+          "target": "冷藏室",
+          "predicate": "验证现场是否有人",
+          "qualifier": "02:00"
+        },
+        {
+          "queryId": "query-knock-source",
+          "label": "三下敲击是否真的来自门内？",
+          "target": "冷藏室",
+          "predicate": "验证敲击声的来源",
+          "qualifier": "02:00"
+        },
+        {
+          "queryId": "query-lin-motive",
+          "label": "延迟检查会让林澈获利吗？",
+          "target": "林澈",
+          "predicate": "验证行为目的"
+        },
+        {
+          "queryId": "query-door-mechanism",
+          "label": "这扇门关闭后会自动锁住吗？",
+          "target": "冷藏室",
+          "predicate": "验证门锁机制"
+        },
+        {
+          "queryId": "query-phone-inside",
+          "label": "敲击前，室内是否留有会震动的设备？",
+          "target": "手机",
+          "predicate": "验证物品位置",
+          "qualifier": "02:00"
+        },
+        {
+          "queryId": "query-lin-ownership",
+          "label": "留下的设备属于林澈吗？",
+          "target": "手机",
+          "predicate": "验证物品归属"
+        },
+        {
+          "queryId": "query-sample-location",
+          "label": "样本最后在哪里被找到？",
+          "target": "低温样本盒",
+          "predicate": "验证物品位置"
+        },
+        {
+          "queryId": "query-fang-entered",
+          "label": "锁门以后，有人再次进入过吗？",
+          "target": "方砚",
+          "predicate": "排除锁门后的进入"
+        },
+        {
+          "queryId": "query-irrelevant-color",
+          "label": "托盘的颜色会影响敲击机制吗？",
+          "target": "金属托盘",
+          "predicate": "验证外观细节"
+        }
+      ]
+    },
+    {
+      "sourceProfile": "v2.12-internal-rc",
+      "caseId": "c01-cold-room-knock",
+      "caseVersion": 1,
+      "contentHash": "sha256:c01-cold-room-knock-v1",
+      "candidates": [
+        {
+          "queryId": "query-person-inside",
+          "label": "敲击发生时，冷藏室里是否有人？",
+          "target": "冷藏室",
+          "predicate": "验证现场是否有人",
+          "qualifier": "02:00"
+        },
+        {
+          "queryId": "query-knock-source",
+          "label": "敲门声是人敲的吗？",
+          "target": "冷藏室",
+          "predicate": "验证敲击声的来源",
+          "qualifier": "02:00"
+        },
+        {
+          "queryId": "query-lin-motive",
+          "label": "林澈这么做是为了拖延检查吗？",
+          "target": "林澈",
+          "predicate": "验证行为目的"
+        },
+        {
+          "queryId": "query-door-mechanism",
+          "label": "这扇门关闭后会自动锁住吗？",
+          "target": "冷藏室",
+          "predicate": "验证门锁机制"
+        },
+        {
+          "queryId": "query-phone-inside",
+          "label": "手机在冷藏室里吗？",
+          "target": "手机",
+          "predicate": "验证物品位置",
+          "qualifier": "02:00"
+        },
+        {
+          "queryId": "query-lin-ownership",
+          "label": "留下的设备属于林澈吗？",
+          "target": "手机",
+          "predicate": "验证物品归属"
+        },
+        {
+          "queryId": "query-sample-location",
+          "label": "样本在外面的储物柜里吗？",
+          "target": "低温样本盒",
+          "predicate": "验证物品位置"
+        },
+        {
+          "queryId": "query-fang-entered",
+          "label": "方砚后来进过冷藏室吗？",
+          "target": "方砚",
+          "predicate": "排除锁门后的进入"
+        },
+        {
+          "queryId": "query-irrelevant-color",
+          "label": "金属托盘是什么颜色？",
+          "target": "金属托盘",
+          "predicate": "验证外观细节"
+        }
+      ]
+    }
+  ],
+  "c03-second-shadow": [
+    {
+      "sourceProfile": "v2.12-internal-rc",
+      "caseId": "c03-second-shadow",
+      "caseVersion": 1,
+      "contentHash": "sha256:c03-second-shadow-v1",
+      "candidates": [
+        {
+          "queryId": "query-role-person",
+          "label": "台上的角色就是罗弈本人吗？",
+          "target": "案件事实",
+          "predicate": "role_not_person"
+        },
+        {
+          "queryId": "query-two-people",
+          "label": "台上真的有两个人吗？",
+          "target": "主舞台",
+          "predicate": "two_people"
+        },
+        {
+          "queryId": "query-lighting-source",
+          "label": "第二个影子是灯光造成的吗？",
+          "target": "遮影屏",
+          "predicate": "shadow_caused_by"
+        },
+        {
+          "queryId": "query-actor-present",
+          "label": "罗弈当时在后台吗？",
+          "target": "罗弈",
+          "predicate": "stays_at"
+        },
+        {
+          "queryId": "query-coat-owner",
+          "label": "那件披风属于罗弈吗？",
+          "target": "红王子披风",
+          "predicate": "borrowed_by"
+        },
+        {
+          "queryId": "query-call-sheet",
+          "label": "罗弈签过交班表吗？",
+          "target": "罗弈",
+          "predicate": "signed_record"
+        },
+        {
+          "queryId": "query-understudy-role",
+          "label": "颜希是替补演员吗？",
+          "target": "颜希",
+          "predicate": "prepares_role"
+        },
+        {
+          "queryId": "query-unregistered",
+          "label": "剧院里有未登记演员吗？",
+          "target": "剧院后台",
+          "predicate": "no_unregistered_actor"
+        },
+        {
+          "queryId": "query-prop-color",
+          "label": "披风是什么颜色？",
+          "target": "红王子披风",
+          "predicate": "验证外观细节"
+        }
+      ]
+    }
+  ],
+  "c61-missing-tape-turn": [
+    {
+      "sourceProfile": "v2.12-internal-rc",
+      "caseId": "c61-missing-tape-turn",
+      "caseVersion": 1,
+      "contentHash": "sha256:3adbf127e8fc3bad61c326463eb162b42bf013d721858b69aef0de5dc103821d",
+      "candidates": [
+        {
+          "queryId": "query-c61-01",
+          "label": "卷盘芯径是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c61_1"
+        },
+        {
+          "queryId": "query-c61-02",
+          "label": "胶带圈数是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c61_2"
+        },
+        {
+          "queryId": "query-c61-03",
+          "label": "剩余长度是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c61_3"
+        },
+        {
+          "queryId": "query-c61-04",
+          "label": "计数器是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c61_4"
+        },
+        {
+          "queryId": "query-c61-05",
+          "label": "校准曲线是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c61_5"
+        },
+        {
+          "queryId": "query-c61-06",
+          "label": "卷盘更换是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c61_6"
+        },
+        {
+          "queryId": "query-c61-07",
+          "label": "带材厚度是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c61_7"
+        },
+        {
+          "queryId": "query-c61-08",
+          "label": "长度测量是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c61_8"
+        },
+        {
+          "queryId": "query-c61-09",
+          "label": "标尺读数是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c61_9"
+        },
+        {
+          "queryId": "query-c61-10",
+          "label": "剩余材料是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c61_10"
+        }
+      ]
+    }
+  ],
+  "c84-handoff-after-stop": [
+    {
+      "sourceProfile": "v2.12-internal-rc",
+      "caseId": "c84-handoff-after-stop",
+      "caseVersion": 1,
+      "contentHash": "sha256:e57095815b8ca3386e1e04194a712ddc85c9ca945f11de0fbc412de1171d634e",
+      "candidates": [
+        {
+          "queryId": "query-c84-01",
+          "label": "停止命令是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c84_1"
+        },
+        {
+          "queryId": "query-c84-02",
+          "label": "在途交接是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c84_2"
+        },
+        {
+          "queryId": "query-c84-03",
+          "label": "审计提交是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c84_3"
+        },
+        {
+          "queryId": "query-c84-04",
+          "label": "控制层接收是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c84_4"
+        },
+        {
+          "queryId": "query-c84-05",
+          "label": "完成时间是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c84_5"
+        },
+        {
+          "queryId": "query-c84-06",
+          "label": "消息顺序是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c84_6"
+        },
+        {
+          "queryId": "query-c84-07",
+          "label": "两个章节是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c84_7"
+        },
+        {
+          "queryId": "query-c84-08",
+          "label": "最后交接是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c84_8"
+        },
+        {
+          "queryId": "query-c84-09",
+          "label": "系统停止是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c84_9"
+        },
+        {
+          "queryId": "query-c84-10",
+          "label": "执行回执是否成立？",
+          "target": "现场对象与记录链",
+          "predicate": "verified_c84_10"
+        }
+      ]
+    }
+  ]
+}

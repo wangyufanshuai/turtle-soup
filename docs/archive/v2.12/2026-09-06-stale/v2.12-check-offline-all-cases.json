@@ -1,0 +1,1503 @@
+{
+  "runId": "v212-2026-09-06T10-08-11-942Z-f54095c9",
+  "releaseProfile": "v2.12-internal-rc",
+  "sourceHead": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "sourceTreeDigest": "0ce774e89eed48aaabf625fe3c36f64ce8460fd852951f8834803cd3157f3eb8",
+  "profileSha256": "0c58dc769f45bb9d29232b9774bc6d01a06ff1e97229446a224131ce12bf658c",
+  "buildHash": "a88f90d18c47fd26bdeceb3cbc90d190a5acd02925dc7c6f0dc02a2db5fbc823",
+  "id": "offline-all-cases",
+  "coverage": "measured",
+  "passed": true,
+  "scope": "Actual Codex in-app Chromium at 390x844 navigated all 84 selected case routes after the task-owned HTTP origin server on 127.0.0.1:8096 was stopped and a direct no-proxy origin request failed. Public initialized investigation projections rendered from the previously cached application. This is origin-server-unavailable startup/recovery coverage, not an OS/browser network-toggle test, full offline solving, or cross-engine coverage.",
+  "browser": "Codex in-app Chromium",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "origin": "http://127.0.0.1:8096",
+  "firstObservedAt": "2026-09-06T10:16:58.225Z",
+  "lastObservedAt": "2026-09-06T10:18:58.892Z",
+  "verifiedAt": "2026-09-06T10:21:58.763Z",
+  "verificationMethod": "Read-only audit of the executor's current-run browser observations, pre-navigation origin probe and 84 public DOM transcripts; recomputed every referenced file SHA-256, checked exact selected-manifest coverage and visible initialized case projections, verified all observation timestamps follow the origin probe, and recomputed current source/profile/build identity through tools/lib/v212-evidence.ts loadRun. This audit did not run a new browser test, inspect browser storage, or substitute a Node/live-Service-Worker simulation for the recorded browser run.",
+  "caseCount": 84,
+  "passedCaseCount": 84,
+  "failedCaseIds": [],
+  "missingCaseIds": [],
+  "duplicateCaseIds": [],
+  "aggregateChecks": {
+    "selectedManifestCount": true,
+    "selectedManifestIdsUnique": true,
+    "recordedCaseCount": true,
+    "resultCount": true,
+    "resultIdsUnique": true,
+    "exactManifestCoverage": true,
+    "observationIdentityMatches": true,
+    "allTranscriptsPass": true,
+    "consoleErrorsEmpty": true,
+    "onlyExpectedTextFiles": true,
+    "originProbeBeforeAllObservations": true,
+    "originListenerAbsent": true,
+    "originDirectRequestFailed": true,
+    "ownedServerStopRecorded": true
+  },
+  "perCaseCheckPassedCounts": {
+    "selectedManifestId": 84,
+    "pathMatchesCase": 84,
+    "sha256Matches": 84,
+    "caseMarkerVisible": 84,
+    "headingVisible": 84,
+    "investigationNavigationVisible": 84,
+    "fourControlsVisible": 84,
+    "initializedProjectionVisible": 84,
+    "noLoadingOrErrorPage": 84,
+    "recordedPass": 84,
+    "observedAfterOriginProbe": 84
+  },
+  "publicDomCriteria": {
+    "caseMarker": "THE BLACK SOUP · Cnn must match the case ID.",
+    "heading": "A level-one case heading must be present.",
+    "navigation": "Investigation navigation and the four public controls 现场 / 提问 / 证据 / 推断 must be present.",
+    "initializedProjection": "A scene inspection heading 可以检查 or an actual recovered public investigation projection must be present; a shell alone is insufficient. Here 83 cases show scene inspection; C01 shows the selected question workspace, heading 你想先确认什么？, question textbox, two recorded factual answers and the undo control.",
+    "loadingOrErrorPage": "No observed 正在加载 / 加载案件 / 初始化失败 / 加载失败 / 发生错误 / Application error / This site cannot be reached / ERR_CONNECTION|INTERNET|NETWORK|CACHE marker.",
+    "emptyAlert": "The empty '- alert' accessibility node in the snapshots is not treated as an error message."
+  },
+  "sourceIdentityVerification": {
+    "sameRunIdentity": true,
+    "sourceHeadMatches": true,
+    "sourceTreeDigestMatches": true,
+    "profileSha256Matches": true,
+    "buildHashMatches": true,
+    "implementation": "tools/lib/v212-evidence.ts loadRun/evidenceIdentity/currentSource; reports and output artifacts are excluded by that existing implementation."
+  },
+  "selectedManifests": [
+    {
+      "path": "content/zh/cases/manifest.v0.6.json",
+      "sha256": "5a0fc165bd1eda1088edd8fcb9a47783a19a1d2d4b4a841f8999ff14dc0a4c1b",
+      "caseCount": 12
+    },
+    {
+      "path": "content/zh/cases/manifest.season2.v1.0.json",
+      "sha256": "59ab55090bc29e1d1a015904e615c456d87d776f4a6c433b4cf1f0a255abb0f6",
+      "caseCount": 12
+    },
+    {
+      "path": "content/zh/cases/manifest.season3.v1.1.json",
+      "sha256": "e35cc0ad893eaa230e73a03e6689b59fd7d26fa9c115fb16421d864e3366cb68",
+      "caseCount": 12
+    },
+    {
+      "path": "content/zh/cases/manifest.season4.v1.3.json",
+      "sha256": "7d0e7b25d118f258c6b9464fbc294439f122426834aba84f36791c8fbab0e941",
+      "caseCount": 24
+    },
+    {
+      "path": "content/zh/cases/manifest.season5.v2.5.json",
+      "sha256": "8463b4a40a9f350e883f07addc47046a9076e9299ff00c894fea6b8ac32d02ee",
+      "caseCount": 24
+    }
+  ],
+  "originAvailability": {
+    "failureMode": "Task-owned local HTTP server stopped; global OS networking was not disabled.",
+    "preNavigationAction": "Executor verified the exact task-owned Python http.server 8096 process command line serving turtle-soup/apps/web/out, stopped only that process and then recorded the direct no-proxy connection-refusal probe before the 84 browser navigation checks.",
+    "retainedProbe": {
+      "timing": "Before all 84 recorded case observations; not a continuous packet capture.",
+      "probedAt": "2026-09-06T10:16:42.9118493Z",
+      "stoppedOwnedProcess": 46684,
+      "listenersOn8096": 0,
+      "curlExit": 7,
+      "httpStatus": "000",
+      "result": "Could not connect to 127.0.0.1 port 8096.",
+      "allObservationTimestampsAfterProbe": true,
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/origin-pre-navigation-probe.log",
+        "sha256": "2da27dfd18f16898b4452bbe0c2e280f2e51ed5adf99d2dbf9d5f170ab3976da"
+      }
+    },
+    "observationTiming": "Per-case 'at' values in the original observations are preserved as observedAt. They are not relabeled as navigation start/end timings."
+  },
+  "projectionCounts": {
+    "scene-startup": 83,
+    "restored-question-history": 1
+  },
+  "recoveryObservation": {
+    "caseId": "c01-cold-room-knock",
+    "currentRunProjection": "Selected question workspace restored with a question textbox, two factual-answer history entries and the undo control visible.",
+    "publicChecks": {
+      "questionWorkspaceSelected": true,
+      "questionHeadingVisible": true,
+      "questionInputVisible": true,
+      "questionHistoryVisible": true,
+      "undoControlVisible": true
+    },
+    "currentRunEvidence": {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c01-cold-room-knock.txt",
+      "sha256": "9dc08b7e0fd6f32d2be8eb403210ee497065863a433d1b78516b9addacd091b3"
+    },
+    "claimBoundary": "This is an observed recovered question-history state, not proof that those questions were submitted or evaluated while the origin was unavailable. C61 in this run shows scene startup, not a solved-case recovery. No earlier-run evidence is imported or relabeled."
+  },
+  "recordedConsoleErrors": [],
+  "evidence": [
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/offline-observations.json",
+      "sha256": "dae85add834af88a560270d5733b8c6de5be1e1a0274495aa319e71ab670ce56"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c01-cold-room-knock.txt",
+      "sha256": "9dc08b7e0fd6f32d2be8eb403210ee497065863a433d1b78516b9addacd091b3"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c02-snow-route.txt",
+      "sha256": "787290a1d386fb0d671eff865e897c7603a1cd0f289414213434b1f5c79d3b08"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c03-second-shadow.txt",
+      "sha256": "dbfe60a15030fcf80bcba60bf128a22f8d96d48450b7d48f1be522e6ac607701"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c04-unpostable-reply.txt",
+      "sha256": "0f3c87ef02995ed2f6c10f8346e5d7c39054496e7db970668f8203a43698738b"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c05-third-lamp.txt",
+      "sha256": "7ce48472c9c0d53093ddf5b269069f103d476b01ac42e8a522769ed43a4f47d9"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c06-nonexistent-ticket.txt",
+      "sha256": "88ce933ce4b81d1208192ea24899c2b75b761671df606db286981ba983c1f5d9"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c07-key-returns.txt",
+      "sha256": "3ef9353976fa22ed5d39efc1f1143041733e1e0e52c090680554dbb6057bb023"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c08-unclaimed-recording.txt",
+      "sha256": "1e4872402efa9304c1aaf16c69f5e99575624271c8ef7a2cd699a41178192c75"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c09-rain-room.txt",
+      "sha256": "a9a689bc97ed9ce1d226e755c117f2f3c2d9b48aaec273901558a65b17f3184d"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c10-single-ring.txt",
+      "sha256": "94e99a44e75e1e6b0fa4caf8e2724b7909f3eefbb8b58a3135686909c962ccda"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c11-borrowed-signature.txt",
+      "sha256": "6c6819a9cdd09a56245a4225359814e58a3b499508c1ad4fe2256aa24aa7ed8c"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c12-zero-floor-elevator.txt",
+      "sha256": "f55be18b6bb090194f672a1f7163243accb239bf24d3826b357585422cf55f64"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c13-second-waterline.txt",
+      "sha256": "6dbcb82bae9e946bd61e434d60a89695c76cd948700fad7d99b8685518e596c6"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c14-moving-red-box.txt",
+      "sha256": "0e1cae46d491a0165be61e0182d4dde7e7e03c44db68628ffee01a46fcd7ad00"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c15-sixth-panorama.txt",
+      "sha256": "a1dd86784f128227fb8437e2237a37bb6794ad3c42830e11fb44f4b3fbbbc153"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c16-closed-door-handoff.txt",
+      "sha256": "e965df9c4dec0e149dfeedc8fb18e1929517ab896341ec8d57bd6c0b2d113591"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c17-twelve-strikes.txt",
+      "sha256": "e50d8cd5b8178a25863a2394ddb92ce7d67100cd63deddad253514068e2649ca"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c18-lighter-sealed-crate.txt",
+      "sha256": "14728b5b71fa42b051df9bebf1f4278da7a60330eebae1046b23a353c06cb5e8"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c19-fog-after-window.txt",
+      "sha256": "4933adb2d43e46dc2c84f601ca5a1a929c36e393d1f1de2e424f84e7edb0cef8"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c20-fifth-worker.txt",
+      "sha256": "90fb9a32d947b030104903cac067c2cce61bf1d52e474efc4fa8557737986ce6"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c21-missing-seven-minutes.txt",
+      "sha256": "3f984aea74ae49d138e8732fc4980f26eba038b847f21798112734aa9adbdcf4"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c22-overloaded-bridge.txt",
+      "sha256": "20e16b33ea2495168f4705bd878a5a6ce6fb610ae726ccbe9bc738940c196a27"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c23-clean-air-sample.txt",
+      "sha256": "59df61b12cef4e816264a9f26614aba4f795b13a69bf7fd58c136aad8294d957"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c24-turned-painting.txt",
+      "sha256": "79a55acede8fe342ce31383d3baef60aff6cb47b3fe93ae0c51307ae849eddd1"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c25-silent-second-bell.txt",
+      "sha256": "68be1df2b2a3b29e1abe3376d44705d03273f09ca7fe5ad59b461fd166f51e93"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c26-short-map-pipeline.txt",
+      "sha256": "58968d98cca49089b8597c45fda866525a417d35ad06b92eac24bcb6310ca410"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c27-stationary-moving-platform.txt",
+      "sha256": "63818865203bbacd1c1b76c8253d59ee9c5b9d5a6d118dbdfdd3d979cca71d72"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c28-ninth-minute-temperature.txt",
+      "sha256": "e6b370a332208ca65f1b7a4491e53ce45f4e764db3e0c137ebb33c12fb84b0d4"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c29-role-stamp-signature.txt",
+      "sha256": "bee4ce4ed90247fb9db291f7d0033cf2e43c454d064d842b3189060ef2b45449"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c30-shared-shift-id.txt",
+      "sha256": "82c390f6d4de784c12d9b7c934abc7a30407b49bcd7da5bf9126728736be78bd"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c31-eighth-unchecked-guest.txt",
+      "sha256": "ac34675a812227f38d3385fd8f41cb81100ddc3acfe95daa141f031bbc725411"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c32-approved-unauthorized-door.txt",
+      "sha256": "a104e50d1c7714e59d94f9834de497bbb5c9adb3484ab65caf391d14a547e1a2"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c33-early-late-arrival.txt",
+      "sha256": "8bbfe0c7259f1eb2831d9c7068296a9bde7f831cf71899410987d10bb09b9aaf"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c34-tomorrow-seal.txt",
+      "sha256": "16a70516bbace2c0862d27f88bae790e1c75747bf204c7133c874057007abbab"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c35-extra-glass-attendant.txt",
+      "sha256": "f69f0e1e8dbd63b9981c3703efc4387547ea9d3188f5ad87c9b1665359f11565"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c36-no-one-left-terminal.txt",
+      "sha256": "91b27676d02d9a00d518a70b8fe2f2d07d2755dc315c6f5a05f85eed3da71592"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c37-zeroed-pressure-gauge.txt",
+      "sha256": "89a70f7eb1a5bd72bca4901ab89b2f2793f7f1a8f53563012174257f544d65fb"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c38-no-missing-seventh-packet.txt",
+      "sha256": "3fa7cd25f8b94ae36be23cc89f14eec48ae59336d8b8039dd92826368ed00d61"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c39-duplicated-heartbeat.txt",
+      "sha256": "7774f718f4bc7652f4190676172187e8bc6f39f85b3ab9a49fdd3bd252aef0f2"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c40-early-liquid-front.txt",
+      "sha256": "00cd35a57b163a767400e1109c9944cde2c06b60fef8f43112b87656e23dcfeb"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c41-hysteresis-overheat.txt",
+      "sha256": "52a748a5a34e148ec82be26e66f5fe2f9c399b511f7ff0e1c1da44d208b87e15"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c42-same-weight-different-load.txt",
+      "sha256": "b3033e11f9dd6bd1b2f6cf71083ec4f72791fb342a6f02495c1fc09546756cc3"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c43-train-stop-reference.txt",
+      "sha256": "a82da906992ed4fc8081e77c04248e380b4240d53eedd517cf564924c9d4e1d8"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c44-hidden-overload-spike.txt",
+      "sha256": "9e888281f3e9b2e358aebe4484e90aadcafa48bdfb6ccf7bd3927df4724c7e7e"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c45-double-location-second.txt",
+      "sha256": "36c4b6b9b85ee23f931baf5b30f63c8bdb2d019b3c33f5eadb1d552b76cb9d50"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c46-pilot-pressure-valve.txt",
+      "sha256": "6d417ed2c43a2f927e2efb299747fb865a880910df277cd737ea493b9263bc1f"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c47-offline-buffered-device.txt",
+      "sha256": "61425710d6c1a516fe483d425eedb2a88a7a6b1d35fd7feb723b193b24a18853"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c48-two-point-calibration.txt",
+      "sha256": "56454c18eba51a8cdb9602f23db56bd6c263b03f03e71e713291fcd2fb0a0098"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c49-gimbal-turn-drone.txt",
+      "sha256": "514ee419e096d137264e83835a39db76c716334f3a611ce99301ecfc7d2b3a50"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c50-extra-warehouse-pallet.txt",
+      "sha256": "d97cfc36c3d52f50f94b65dc3b56d1bb6d6114c1c204f5664c246690cd3b8bf8"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c51-equivalent-resistance.txt",
+      "sha256": "2d79f055b0f23ff505ec771ed767931263514f155e2150eb75965aa34890bf86"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c52-shorter-river-night.txt",
+      "sha256": "2113f0e2e41d012d72067a570e766c184cdc6feddcb367cc2f455e97208a5a05"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c53-late-fiber-echo.txt",
+      "sha256": "f25478fa059c9e78ed1fff4944d9c8fd385474d01531a5e564c788733db80964"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c54-elevator-counterweight.txt",
+      "sha256": "9022e45f0ff5fd17921580e24df74b89cfa556935061c24ea2d8c8e86992c546"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c55-merged-multi-alarm.txt",
+      "sha256": "576cf8f8c8e091addda6189cea7c8d457cd9b862cf35c1d318f0679f23a6ee79"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c56-interpolated-temperature-map.txt",
+      "sha256": "e6c0270b23462d4f497f70cff6d63839906a52e939121a552e044cb1397ce44a"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c57-lagging-wind-vane.txt",
+      "sha256": "ae993f7329151ddae35be8ad95d1bcba1fe9d9ba707669e8703af7a69f4d9d52"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c58-same-volume-two-levels.txt",
+      "sha256": "a66da2d69a24e560995387e2503f0fc0130082b6c4c84a20d19c456127e92e35"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c59-extra-ninth-floor.txt",
+      "sha256": "1cfe0057fcb026e23a10a5e35f17edaed8f8e015d1a52b586e8ad3a380742a82"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c60-last-sample-before-stop.txt",
+      "sha256": "b5139013a01626add771293c3145db249fecc08d746ebbe8c3a06bd0b7e305a7"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c61-missing-tape-turn.txt",
+      "sha256": "1238d7f892bbabb4ab1f725c6a9212b550fc9897411bc9746f57e19a57a65d4f"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c62-rope-not-shorter.txt",
+      "sha256": "370a63c0f3491edbe6891c31c4a8e8bd3aad3fd7d9ac979cc3075946f4e8faeb"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c63-ice-melts-first.txt",
+      "sha256": "a3ca0a35c618a49839ae4b3df24b754645bed9aadd40865897350029c1a64d28"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c64-uncracked-glass.txt",
+      "sha256": "2c827d3fec0488224d1716e4df2ad1581befc1f68f1bdb82c3362fc4dd109a5a"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c65-twin-watermarks.txt",
+      "sha256": "f3e8439cfce95ccf2b93bb9691cd7ba2a1679df3af4162b0dd0d20ec7111c48d"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c66-still-weight.txt",
+      "sha256": "d48cafbd12eb180632da2e86ae5a2fab7fd3b13620cb4d17740398918dd440c1"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c67-shared-badge.txt",
+      "sha256": "c1674dd65483af1144c214a2f33ce08ab6e78e26393aee52b83c214de1b35d48"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c68-empty-seat-proof.txt",
+      "sha256": "fd9b7ed841293771eb0081aa18a9ef4e114aad040ab2d79ca01de962c07d214c"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c69-third-minutes.txt",
+      "sha256": "529106455a25d71c6e9c4b3b39408d8fe742b1fca85dee31f27b6bcda30ee335"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c70-grace-late-arrival.txt",
+      "sha256": "72efc38648a397c019497f347632231b371c6b9c421642bab411c3d58de3fd4d"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c71-revoked-open-door.txt",
+      "sha256": "906e0b07e20b77dd26583c6732f2132fb10ce7f48b975678fe2fae0df314e8e1"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c72-message-read-twice.txt",
+      "sha256": "12c6e9a8ea889e8c819e42a13f92edb1f93184955c9e3d86cc35b1b68add038e"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c73-phantom-exit.txt",
+      "sha256": "e27c417cd328921e28182e216b0211dc5c5483ff7211728e57a03a15929efb35"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c74-silent-footsteps.txt",
+      "sha256": "0c077417176d328fb9dc4697cbd1b40728fc2434afac48ee017e21cb1e6e31a9"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c75-two-weather-photo.txt",
+      "sha256": "24015522bb83991c63f6169becef578b035fa9aafc369f16806de3962ab90da1"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c76-red-light-second.txt",
+      "sha256": "9f3f35a7461baec9051090c110555b1bbdb557dff9e36a7448936d931f8224cf"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c77-invisible-ninth-wire.txt",
+      "sha256": "876c87fd49653224d434207edd06f640ec5d3283e27c2b7e8584482b57848469"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c78-sound-from-other-side.txt",
+      "sha256": "b89448e90c6efacca589f498f2f52796fe0d11a755b3bfcc12ab30ced52974ee"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c79-extra-queue-order.txt",
+      "sha256": "5fb8d7b8e1ed39735ff54b7b4c5e3b2fde88fa401717084b201d49319f5d8a37"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c80-power-on-restart.txt",
+      "sha256": "7740b3090e381ebf04956152968842e56064a61f4318368a1db2853c54d2ab2f"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c81-lost-ack.txt",
+      "sha256": "d9e97131e88f8ea95cb547355d9dd6b27055864ea13948262eb1136b4bf2e469"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c82-closed-network-device.txt",
+      "sha256": "b72abf1d1aeac77e29d4398ec403978650522e9c71c562a018091ffec5a4aad9"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c83-two-unloads.txt",
+      "sha256": "0a79f53fb7c0aa5a25cae82db08cb9e42c810c1faee870f6088eaebb1152b61d"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c84-handoff-after-stop.txt",
+      "sha256": "8a6c9167740777212c6a17068770e9bdfb966c7361263f84fd9f45976ba9f3b8"
+    },
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/origin-pre-navigation-probe.log",
+      "sha256": "2da27dfd18f16898b4452bbe0c2e280f2e51ed5adf99d2dbf9d5f170ab3976da"
+    }
+  ],
+  "results": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "observedAt": "2026-09-06T10:16:58.225Z",
+      "passed": true,
+      "projection": "restored-question-history",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c01-cold-room-knock.txt",
+        "sha256": "9dc08b7e0fd6f32d2be8eb403210ee497065863a433d1b78516b9addacd091b3",
+        "bytes": 1527
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c02-snow-route",
+      "observedAt": "2026-09-06T10:16:58.798Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c02-snow-route.txt",
+        "sha256": "787290a1d386fb0d671eff865e897c7603a1cd0f289414213434b1f5c79d3b08",
+        "bytes": 1136
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "observedAt": "2026-09-06T10:16:59.344Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c03-second-shadow.txt",
+        "sha256": "dbfe60a15030fcf80bcba60bf128a22f8d96d48450b7d48f1be522e6ac607701",
+        "bytes": 1154
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "observedAt": "2026-09-06T10:16:59.866Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c04-unpostable-reply.txt",
+        "sha256": "0f3c87ef02995ed2f6c10f8346e5d7c39054496e7db970668f8203a43698738b",
+        "bytes": 1010
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "observedAt": "2026-09-06T10:17:00.408Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c05-third-lamp.txt",
+        "sha256": "7ce48472c9c0d53093ddf5b269069f103d476b01ac42e8a522769ed43a4f47d9",
+        "bytes": 1097
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "observedAt": "2026-09-06T10:17:00.966Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c06-nonexistent-ticket.txt",
+        "sha256": "88ce933ce4b81d1208192ea24899c2b75b761671df606db286981ba983c1f5d9",
+        "bytes": 1147
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c07-key-returns",
+      "observedAt": "2026-09-06T10:17:01.503Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c07-key-returns.txt",
+        "sha256": "3ef9353976fa22ed5d39efc1f1143041733e1e0e52c090680554dbb6057bb023",
+        "bytes": 1031
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "observedAt": "2026-09-06T10:17:02.057Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c08-unclaimed-recording.txt",
+        "sha256": "1e4872402efa9304c1aaf16c69f5e99575624271c8ef7a2cd699a41178192c75",
+        "bytes": 1028
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c09-rain-room",
+      "observedAt": "2026-09-06T10:17:02.637Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c09-rain-room.txt",
+        "sha256": "a9a689bc97ed9ce1d226e755c117f2f3c2d9b48aaec273901558a65b17f3184d",
+        "bytes": 1054
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c10-single-ring",
+      "observedAt": "2026-09-06T10:17:03.198Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c10-single-ring.txt",
+        "sha256": "94e99a44e75e1e6b0fa4caf8e2724b7909f3eefbb8b58a3135686909c962ccda",
+        "bytes": 1036
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "observedAt": "2026-09-06T10:17:03.739Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c11-borrowed-signature.txt",
+        "sha256": "6c6819a9cdd09a56245a4225359814e58a3b499508c1ad4fe2256aa24aa7ed8c",
+        "bytes": 1001
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "observedAt": "2026-09-06T10:17:04.280Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c12-zero-floor-elevator.txt",
+        "sha256": "f55be18b6bb090194f672a1f7163243accb239bf24d3826b357585422cf55f64",
+        "bytes": 1046
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "observedAt": "2026-09-06T10:17:04.808Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c13-second-waterline.txt",
+        "sha256": "6dbcb82bae9e946bd61e434d60a89695c76cd948700fad7d99b8685518e596c6",
+        "bytes": 1067
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "observedAt": "2026-09-06T10:17:05.381Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c14-moving-red-box.txt",
+        "sha256": "0e1cae46d491a0165be61e0182d4dde7e7e03c44db68628ffee01a46fcd7ad00",
+        "bytes": 1016
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "observedAt": "2026-09-06T10:17:05.953Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c15-sixth-panorama.txt",
+        "sha256": "a1dd86784f128227fb8437e2237a37bb6794ad3c42830e11fb44f4b3fbbbc153",
+        "bytes": 1028
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "observedAt": "2026-09-06T10:17:06.483Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c16-closed-door-handoff.txt",
+        "sha256": "e965df9c4dec0e149dfeedc8fb18e1929517ab896341ec8d57bd6c0b2d113591",
+        "bytes": 1001
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "observedAt": "2026-09-06T10:17:07.082Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c17-twelve-strikes.txt",
+        "sha256": "e50d8cd5b8178a25863a2394ddb92ce7d67100cd63deddad253514068e2649ca",
+        "bytes": 1010
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "observedAt": "2026-09-06T10:17:07.671Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c18-lighter-sealed-crate.txt",
+        "sha256": "14728b5b71fa42b051df9bebf1f4278da7a60330eebae1046b23a353c06cb5e8",
+        "bytes": 1040
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "observedAt": "2026-09-06T10:17:08.282Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c19-fog-after-window.txt",
+        "sha256": "4933adb2d43e46dc2c84f601ca5a1a929c36e393d1f1de2e424f84e7edb0cef8",
+        "bytes": 1019
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "observedAt": "2026-09-06T10:17:08.822Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c20-fifth-worker.txt",
+        "sha256": "90fb9a32d947b030104903cac067c2cce61bf1d52e474efc4fa8557737986ce6",
+        "bytes": 1022
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "observedAt": "2026-09-06T10:17:09.387Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c21-missing-seven-minutes.txt",
+        "sha256": "3f984aea74ae49d138e8732fc4980f26eba038b847f21798112734aa9adbdcf4",
+        "bytes": 1047
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "observedAt": "2026-09-06T10:17:40.434Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c22-overloaded-bridge.txt",
+        "sha256": "20e16b33ea2495168f4705bd878a5a6ce6fb610ae726ccbe9bc738940c196a27",
+        "bytes": 1016
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "observedAt": "2026-09-06T10:17:40.975Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c23-clean-air-sample.txt",
+        "sha256": "59df61b12cef4e816264a9f26614aba4f795b13a69bf7fd58c136aad8294d957",
+        "bytes": 1040
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "observedAt": "2026-09-06T10:17:41.507Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c24-turned-painting.txt",
+        "sha256": "79a55acede8fe342ce31383d3baef60aff6cb47b3fe93ae0c51307ae849eddd1",
+        "bytes": 1022
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "observedAt": "2026-09-06T10:17:42.051Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c25-silent-second-bell.txt",
+        "sha256": "68be1df2b2a3b29e1abe3376d44705d03273f09ca7fe5ad59b461fd166f51e93",
+        "bytes": 1088
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "observedAt": "2026-09-06T10:17:42.582Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c26-short-map-pipeline.txt",
+        "sha256": "58968d98cca49089b8597c45fda866525a417d35ad06b92eac24bcb6310ca410",
+        "bytes": 1013
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "observedAt": "2026-09-06T10:17:43.114Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c27-stationary-moving-platform.txt",
+        "sha256": "63818865203bbacd1c1b76c8253d59ee9c5b9d5a6d118dbdfdd3d979cca71d72",
+        "bytes": 1025
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "observedAt": "2026-09-06T10:17:43.627Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c28-ninth-minute-temperature.txt",
+        "sha256": "e6b370a332208ca65f1b7a4491e53ce45f4e764db3e0c137ebb33c12fb84b0d4",
+        "bytes": 1025
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "observedAt": "2026-09-06T10:17:44.173Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c29-role-stamp-signature.txt",
+        "sha256": "bee4ce4ed90247fb9db291f7d0033cf2e43c454d064d842b3189060ef2b45449",
+        "bytes": 1022
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "observedAt": "2026-09-06T10:17:44.747Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c30-shared-shift-id.txt",
+        "sha256": "82c390f6d4de784c12d9b7c934abc7a30407b49bcd7da5bf9126728736be78bd",
+        "bytes": 1040
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "observedAt": "2026-09-06T10:17:45.309Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c31-eighth-unchecked-guest.txt",
+        "sha256": "ac34675a812227f38d3385fd8f41cb81100ddc3acfe95daa141f031bbc725411",
+        "bytes": 1016
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "observedAt": "2026-09-06T10:17:45.855Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c32-approved-unauthorized-door.txt",
+        "sha256": "a104e50d1c7714e59d94f9834de497bbb5c9adb3484ab65caf391d14a547e1a2",
+        "bytes": 1010
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "observedAt": "2026-09-06T10:17:46.470Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c33-early-late-arrival.txt",
+        "sha256": "8bbfe0c7259f1eb2831d9c7068296a9bde7f831cf71899410987d10bb09b9aaf",
+        "bytes": 1012
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "observedAt": "2026-09-06T10:17:46.971Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c34-tomorrow-seal.txt",
+        "sha256": "16a70516bbace2c0862d27f88bae790e1c75747bf204c7133c874057007abbab",
+        "bytes": 1019
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "observedAt": "2026-09-06T10:17:47.531Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c35-extra-glass-attendant.txt",
+        "sha256": "f69f0e1e8dbd63b9981c3703efc4387547ea9d3188f5ad87c9b1665359f11565",
+        "bytes": 1031
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "observedAt": "2026-09-06T10:17:48.073Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c36-no-one-left-terminal.txt",
+        "sha256": "91b27676d02d9a00d518a70b8fe2f2d07d2755dc315c6f5a05f85eed3da71592",
+        "bytes": 1058
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "observedAt": "2026-09-06T10:17:48.622Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c37-zeroed-pressure-gauge.txt",
+        "sha256": "89a70f7eb1a5bd72bca4901ab89b2f2793f7f1a8f53563012174257f544d65fb",
+        "bytes": 1103
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "observedAt": "2026-09-06T10:17:49.184Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c38-no-missing-seventh-packet.txt",
+        "sha256": "3fa7cd25f8b94ae36be23cc89f14eec48ae59336d8b8039dd92826368ed00d61",
+        "bytes": 1010
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "observedAt": "2026-09-06T10:17:49.723Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c39-duplicated-heartbeat.txt",
+        "sha256": "7774f718f4bc7652f4190676172187e8bc6f39f85b3ab9a49fdd3bd252aef0f2",
+        "bytes": 1019
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "observedAt": "2026-09-06T10:17:50.217Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c40-early-liquid-front.txt",
+        "sha256": "00cd35a57b163a767400e1109c9944cde2c06b60fef8f43112b87656e23dcfeb",
+        "bytes": 1007
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "observedAt": "2026-09-06T10:17:50.731Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c41-hysteresis-overheat.txt",
+        "sha256": "52a748a5a34e148ec82be26e66f5fe2f9c399b511f7ff0e1c1da44d208b87e15",
+        "bytes": 1013
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "observedAt": "2026-09-06T10:17:51.245Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c42-same-weight-different-load.txt",
+        "sha256": "b3033e11f9dd6bd1b2f6cf71083ec4f72791fb342a6f02495c1fc09546756cc3",
+        "bytes": 1016
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "observedAt": "2026-09-06T10:18:11.583Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c43-train-stop-reference.txt",
+        "sha256": "a82da906992ed4fc8081e77c04248e380b4240d53eedd517cf564924c9d4e1d8",
+        "bytes": 1004
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "observedAt": "2026-09-06T10:18:12.143Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c44-hidden-overload-spike.txt",
+        "sha256": "9e888281f3e9b2e358aebe4484e90aadcafa48bdfb6ccf7bd3927df4724c7e7e",
+        "bytes": 1019
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "observedAt": "2026-09-06T10:18:12.698Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c45-double-location-second.txt",
+        "sha256": "36c4b6b9b85ee23f931baf5b30f63c8bdb2d019b3c33f5eadb1d552b76cb9d50",
+        "bytes": 1013
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "observedAt": "2026-09-06T10:18:13.209Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c46-pilot-pressure-valve.txt",
+        "sha256": "6d417ed2c43a2f927e2efb299747fb865a880910df277cd737ea493b9263bc1f",
+        "bytes": 1010
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "observedAt": "2026-09-06T10:18:13.724Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c47-offline-buffered-device.txt",
+        "sha256": "61425710d6c1a516fe483d425eedb2a88a7a6b1d35fd7feb723b193b24a18853",
+        "bytes": 1031
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "observedAt": "2026-09-06T10:18:14.219Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c48-two-point-calibration.txt",
+        "sha256": "56454c18eba51a8cdb9602f23db56bd6c263b03f03e71e713291fcd2fb0a0098",
+        "bytes": 1049
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "observedAt": "2026-09-06T10:18:14.713Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c49-gimbal-turn-drone.txt",
+        "sha256": "514ee419e096d137264e83835a39db76c716334f3a611ce99301ecfc7d2b3a50",
+        "bytes": 995
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "observedAt": "2026-09-06T10:18:15.239Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c50-extra-warehouse-pallet.txt",
+        "sha256": "d97cfc36c3d52f50f94b65dc3b56d1bb6d6114c1c204f5664c246690cd3b8bf8",
+        "bytes": 995
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "observedAt": "2026-09-06T10:18:15.752Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c51-equivalent-resistance.txt",
+        "sha256": "2d79f055b0f23ff505ec771ed767931263514f155e2150eb75965aa34890bf86",
+        "bytes": 1001
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "observedAt": "2026-09-06T10:18:16.269Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c52-shorter-river-night.txt",
+        "sha256": "2113f0e2e41d012d72067a570e766c184cdc6feddcb367cc2f455e97208a5a05",
+        "bytes": 989
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "observedAt": "2026-09-06T10:18:16.777Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c53-late-fiber-echo.txt",
+        "sha256": "f25478fa059c9e78ed1fff4944d9c8fd385474d01531a5e564c788733db80964",
+        "bytes": 986
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "observedAt": "2026-09-06T10:18:17.306Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c54-elevator-counterweight.txt",
+        "sha256": "9022e45f0ff5fd17921580e24df74b89cfa556935061c24ea2d8c8e86992c546",
+        "bytes": 998
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "observedAt": "2026-09-06T10:18:17.831Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c55-merged-multi-alarm.txt",
+        "sha256": "576cf8f8c8e091addda6189cea7c8d457cd9b862cf35c1d318f0679f23a6ee79",
+        "bytes": 1010
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "observedAt": "2026-09-06T10:18:18.340Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c56-interpolated-temperature-map.txt",
+        "sha256": "e6c0270b23462d4f497f70cff6d63839906a52e939121a552e044cb1397ce44a",
+        "bytes": 1016
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "observedAt": "2026-09-06T10:18:18.853Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c57-lagging-wind-vane.txt",
+        "sha256": "ae993f7329151ddae35be8ad95d1bcba1fe9d9ba707669e8703af7a69f4d9d52",
+        "bytes": 980
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "observedAt": "2026-09-06T10:18:19.368Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c58-same-volume-two-levels.txt",
+        "sha256": "a66da2d69a24e560995387e2503f0fc0130082b6c4c84a20d19c456127e92e35",
+        "bytes": 998
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "observedAt": "2026-09-06T10:18:19.876Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c59-extra-ninth-floor.txt",
+        "sha256": "1cfe0057fcb026e23a10a5e35f17edaed8f8e015d1a52b586e8ad3a380742a82",
+        "bytes": 1004
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "observedAt": "2026-09-06T10:18:20.365Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c60-last-sample-before-stop.txt",
+        "sha256": "b5139013a01626add771293c3145db249fecc08d746ebbe8c3a06bd0b7e305a7",
+        "bytes": 1103
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "observedAt": "2026-09-06T10:18:20.880Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c61-missing-tape-turn.txt",
+        "sha256": "1238d7f892bbabb4ab1f725c6a9212b550fc9897411bc9746f57e19a57a65d4f",
+        "bytes": 989
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c62-rope-not-shorter",
+      "observedAt": "2026-09-06T10:18:21.379Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c62-rope-not-shorter.txt",
+        "sha256": "370a63c0f3491edbe6891c31c4a8e8bd3aad3fd7d9ac979cc3075946f4e8faeb",
+        "bytes": 980
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c63-ice-melts-first",
+      "observedAt": "2026-09-06T10:18:21.876Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c63-ice-melts-first.txt",
+        "sha256": "a3ca0a35c618a49839ae4b3df24b754645bed9aadd40865897350029c1a64d28",
+        "bytes": 977
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c64-uncracked-glass",
+      "observedAt": "2026-09-06T10:18:48.650Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c64-uncracked-glass.txt",
+        "sha256": "2c827d3fec0488224d1716e4df2ad1581befc1f68f1bdb82c3362fc4dd109a5a",
+        "bytes": 983
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c65-twin-watermarks",
+      "observedAt": "2026-09-06T10:18:49.188Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c65-twin-watermarks.txt",
+        "sha256": "f3e8439cfce95ccf2b93bb9691cd7ba2a1679df3af4162b0dd0d20ec7111c48d",
+        "bytes": 989
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c66-still-weight",
+      "observedAt": "2026-09-06T10:18:49.687Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c66-still-weight.txt",
+        "sha256": "d48cafbd12eb180632da2e86ae5a2fab7fd3b13620cb4d17740398918dd440c1",
+        "bytes": 983
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c67-shared-badge",
+      "observedAt": "2026-09-06T10:18:50.188Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c67-shared-badge.txt",
+        "sha256": "c1674dd65483af1144c214a2f33ce08ab6e78e26393aee52b83c214de1b35d48",
+        "bytes": 1016
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c68-empty-seat-proof",
+      "observedAt": "2026-09-06T10:18:50.696Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c68-empty-seat-proof.txt",
+        "sha256": "fd9b7ed841293771eb0081aa18a9ef4e114aad040ab2d79ca01de962c07d214c",
+        "bytes": 989
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c69-third-minutes",
+      "observedAt": "2026-09-06T10:18:51.255Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c69-third-minutes.txt",
+        "sha256": "529106455a25d71c6e9c4b3b39408d8fe742b1fca85dee31f27b6bcda30ee335",
+        "bytes": 989
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c70-grace-late-arrival",
+      "observedAt": "2026-09-06T10:18:51.757Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c70-grace-late-arrival.txt",
+        "sha256": "72efc38648a397c019497f347632231b371c6b9c421642bab411c3d58de3fd4d",
+        "bytes": 1004
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c71-revoked-open-door",
+      "observedAt": "2026-09-06T10:18:52.270Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c71-revoked-open-door.txt",
+        "sha256": "906e0b07e20b77dd26583c6732f2132fb10ce7f48b975678fe2fae0df314e8e1",
+        "bytes": 989
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c72-message-read-twice",
+      "observedAt": "2026-09-06T10:18:52.766Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c72-message-read-twice.txt",
+        "sha256": "12c6e9a8ea889e8c819e42a13f92edb1f93184955c9e3d86cc35b1b68add038e",
+        "bytes": 1001
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c73-phantom-exit",
+      "observedAt": "2026-09-06T10:18:53.263Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c73-phantom-exit.txt",
+        "sha256": "e27c417cd328921e28182e216b0211dc5c5483ff7211728e57a03a15929efb35",
+        "bytes": 995
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c74-silent-footsteps",
+      "observedAt": "2026-09-06T10:18:53.761Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c74-silent-footsteps.txt",
+        "sha256": "0c077417176d328fb9dc4697cbd1b40728fc2434afac48ee017e21cb1e6e31a9",
+        "bytes": 986
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c75-two-weather-photo",
+      "observedAt": "2026-09-06T10:18:54.266Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c75-two-weather-photo.txt",
+        "sha256": "24015522bb83991c63f6169becef578b035fa9aafc369f16806de3962ab90da1",
+        "bytes": 980
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c76-red-light-second",
+      "observedAt": "2026-09-06T10:18:54.788Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c76-red-light-second.txt",
+        "sha256": "9f3f35a7461baec9051090c110555b1bbdb557dff9e36a7448936d931f8224cf",
+        "bytes": 1004
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c77-invisible-ninth-wire",
+      "observedAt": "2026-09-06T10:18:55.286Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c77-invisible-ninth-wire.txt",
+        "sha256": "876c87fd49653224d434207edd06f640ec5d3283e27c2b7e8584482b57848469",
+        "bytes": 989
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c78-sound-from-other-side",
+      "observedAt": "2026-09-06T10:18:55.799Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c78-sound-from-other-side.txt",
+        "sha256": "b89448e90c6efacca589f498f2f52796fe0d11a755b3bfcc12ab30ced52974ee",
+        "bytes": 998
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c79-extra-queue-order",
+      "observedAt": "2026-09-06T10:18:56.310Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c79-extra-queue-order.txt",
+        "sha256": "5fb8d7b8e1ed39735ff54b7b4c5e3b2fde88fa401717084b201d49319f5d8a37",
+        "bytes": 995
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c80-power-on-restart",
+      "observedAt": "2026-09-06T10:18:56.822Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c80-power-on-restart.txt",
+        "sha256": "7740b3090e381ebf04956152968842e56064a61f4318368a1db2853c54d2ab2f",
+        "bytes": 968
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c81-lost-ack",
+      "observedAt": "2026-09-06T10:18:57.348Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c81-lost-ack.txt",
+        "sha256": "d9e97131e88f8ea95cb547355d9dd6b27055864ea13948262eb1136b4bf2e469",
+        "bytes": 974
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c82-closed-network-device",
+      "observedAt": "2026-09-06T10:18:57.871Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c82-closed-network-device.txt",
+        "sha256": "b72abf1d1aeac77e29d4398ec403978650522e9c71c562a018091ffec5a4aad9",
+        "bytes": 1007
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c83-two-unloads",
+      "observedAt": "2026-09-06T10:18:58.384Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c83-two-unloads.txt",
+        "sha256": "0a79f53fb7c0aa5a25cae82db08cb9e42c810c1faee870f6088eaebb1152b61d",
+        "bytes": 980
+      },
+      "failedChecks": []
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "observedAt": "2026-09-06T10:18:58.892Z",
+      "passed": true,
+      "projection": "scene-startup",
+      "evidence": {
+        "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/offline/c84-handoff-after-stop.txt",
+        "sha256": "8a6c9167740777212c6a17068770e9bdfb966c7361263f84fd9f45976ba9f3b8",
+        "bytes": 1013
+      },
+      "failedChecks": []
+    }
+  ],
+  "limitations": [
+    "One browser engine and one 390x844 viewport only; Firefox, WebKit, other viewport widths and physical-device behavior were not tested by this evidence.",
+    "Origin HTTP server unavailability is the measured failure mode; OS networking, browser network emulation, third-party connectivity and offline fetch behavior for unrelated origins were not toggled or established.",
+    "The application had been cached before this run. This does not demonstrate first installation without a network, exhaustive cache contents, every interaction or asset, all-case completion, or every save/recovery state.",
+    "The retained probe establishes the unavailable origin before the recorded observations, not uninterrupted network monitoring throughout the entire sequence.",
+    "DOM transcripts establish visible initialized projections, not internal Worker or cache state. Browser storage was not inspected during this report verification.",
+    "The empty consoleErrors array is the executor's recorded result, not a claim that every background network event was captured."
+  ]
+}

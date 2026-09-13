@@ -1,0 +1,32 @@
+{
+  "id": "c60-last-sample-before-stop",
+  "title": "终点前的最后一次采样",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-b54db6a1-f4b7-4c6b-a7b6-844832298872.png",
+  "sourceSha256": "d6272927f87754893dcfb4b01c407c7af6a561c32a332e25c982c528f64443da",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 终点前的最后一次采样 — 停止命令已经被系统确认；终端却在确认之后显示一条编号连续的新采样。命令、采集和显示，哪一个才真正发生在最后？\nArt direction: A dark measurement terminal with a physical stop button and a sampling probe, no timestamps or control-chain diagram.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c60-last-sample-before-stop.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 73352,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "9cde3b87075c49c481e3321427923d461a449c3b8041f95bb8f9404d659fb554"
+    },
+    {
+      "path": "/assets/home-cinema/c60-last-sample-before-stop-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 25196,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "55873dc69d4fcccf48436c449a4f1701045fd78dbed9522983080e3b278b2ac7"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.606180+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

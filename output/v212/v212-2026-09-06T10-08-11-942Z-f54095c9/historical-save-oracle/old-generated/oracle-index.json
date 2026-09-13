@@ -1,0 +1,1972 @@
+{
+  "version": 1,
+  "generator": "pinned-old-runtime generated oracle",
+  "pinnedRef": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "profile": "v2.11-internal-rc",
+  "humanParticipants": 0,
+  "noHistoricalHumanSaveClaim": true,
+  "nodeVersion": "v24.14.0",
+  "caseCount": 84,
+  "fixtures": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "canonical-solved-replay",
+      "commands": 90,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/canonical-solved-replay.save.json",
+        "sha256": "7c04a23cbcee6d263a5f983818061a03e7941f3ea0c0efb30c8e86ef1c3085da",
+        "bytes": 9681
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/canonical-solved-replay.expected.json",
+        "sha256": "f8771931a82f8cb0aab929f6442a50c4878627baf8d459715e537c7c520cfc1b",
+        "bytes": 27106
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "empty",
+      "commands": 0,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/empty.save.json",
+        "sha256": "81050fe290f66f0ac278c138e3ed24694a65d05d7c516ce9abb7577598123c28",
+        "bytes": 214
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/empty.expected.json",
+        "sha256": "2853908d091f5065065f83e83880c03f9602e3e98c1fb25af70e372625a4b4b1",
+        "bytes": 1398
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "partial-question",
+      "commands": 1,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/partial-question.save.json",
+        "sha256": "ee1d532a5649c98e3851b146cf9d027537dacb0011feda2f49468a42a8f0e19b",
+        "bytes": 293
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/partial-question.expected.json",
+        "sha256": "f6c3a9ca13ce1363696b7a7dd5ba06ce79f275eb6459f7abccea061639aa74c1",
+        "bytes": 2285
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "undo-question",
+      "commands": 2,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/undo-question.save.json",
+        "sha256": "4d00016a3fc502782e071d4852a922f2167b86e7f24b92d4091971bd7b88297b",
+        "bytes": 341
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/undo-question.expected.json",
+        "sha256": "f5be0b5530dd9bffaddbbfb3b6e25aada5e27a161866746d69828b0bc98123e9",
+        "bytes": 1760
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "investigated-evidence",
+      "commands": 71,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/investigated-evidence.save.json",
+        "sha256": "afb3666c79cc604f38b3b03424cc7d5a6f8c25f9b77f7fec1befc67f8e703495",
+        "bytes": 7338
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/investigated-evidence.expected.json",
+        "sha256": "90dce3448d678237f43c2747fba57787c61ec069375fb893b342783b2a618fec",
+        "bytes": 22471
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "wrong-theory",
+      "commands": 73,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/wrong-theory.save.json",
+        "sha256": "8dd14aa5ffae1443d0b57e11f6e23255ca8d871f50ba2a8ba1db93c1485b45b3",
+        "bytes": 7533
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/wrong-theory.expected.json",
+        "sha256": "3b17745937a9054f0dd7a5808d6fbead066799a381cfd2f91a249b0ff3596c7a",
+        "bytes": 22892
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "solved-before-replay",
+      "commands": 89,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/solved-before-replay.save.json",
+        "sha256": "974329ea035f87ba163af9aa26561986d01369be0b562b42c8da02cec3f38ed9",
+        "bytes": 9631
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/solved-before-replay.expected.json",
+        "sha256": "7d76ee9055d0b1db516734667c24951eee60ae2fe6dd4dba19ab5dde57e57036",
+        "bytes": 26844
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "challenge-limited-questions-start",
+      "commands": 91,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/challenge-limited-questions-start.save.json",
+        "sha256": "58ade9c67f93fa56257b31f28c18ab2dd978b0f25fe54c8447d7a0a933d0b2ee",
+        "bytes": 9762
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/challenge-limited-questions-start.expected.json",
+        "sha256": "39ef412e258d4469206c50dcf617b9110ed1dd6094f783bcbd48a5e68dcf77e5",
+        "bytes": 17684
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "challenge-limited-questions-partial",
+      "commands": 92,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/challenge-limited-questions-partial.save.json",
+        "sha256": "1b5f5e5932d30265b2422c31fab9877f4f71306da61c2bae30b02e29f3617081",
+        "bytes": 9839
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/challenge-limited-questions-partial.expected.json",
+        "sha256": "8d8002297277dc209e20100c3544cd7a97241321c6252d96386c1d0e5d8fa944",
+        "bytes": 18523
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "challenge-minimal-proof-start",
+      "commands": 91,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/challenge-minimal-proof-start.save.json",
+        "sha256": "9753c3d0a88797253a399e3d1040a7c4507bb43b196a03dc62807cc70c429f01",
+        "bytes": 9758
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/challenge-minimal-proof-start.expected.json",
+        "sha256": "fd9eaa7c7f425a63f54a9085ecaa0fc63da7ed64a03d30406a5a0cf136fdfcb1",
+        "bytes": 17676
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "challenge-minimal-proof-partial",
+      "commands": 92,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/challenge-minimal-proof-partial.save.json",
+        "sha256": "e36cf0bbee726ce639fec8217143f06160055aee23bff062b7f85c1f25f732d6",
+        "bytes": 9835
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/challenge-minimal-proof-partial.expected.json",
+        "sha256": "bb59e78c642f7ba5ca853e1c3e8adb04beead93f8af5c593c801358be32c48e6",
+        "bytes": 18515
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "challenge-minimal-proof-solved-replay",
+      "commands": 181,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/challenge-minimal-proof-solved-replay.save.json",
+        "sha256": "a22603129d6e564019b427e8eea89730ce1f6e5da361565117757c388659eaca",
+        "bytes": 19223
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/challenge-minimal-proof-solved-replay.expected.json",
+        "sha256": "48ae86ab7a7f4bba598e8daea606653db173d2719003c5a48cef01ecf3fc0767",
+        "bytes": 43426
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "challenge-no-scaffolds-start",
+      "commands": 91,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/challenge-no-scaffolds-start.save.json",
+        "sha256": "05346b74471785c3b4c6fb223b4764ba1507e7e1dab285685f95ea1cdd282153",
+        "bytes": 9757
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/challenge-no-scaffolds-start.expected.json",
+        "sha256": "1a7915ebc58cf42004bc00c5705f3d2584ef1e305f253bd6185cbf50f07afd52",
+        "bytes": 17674
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "challenge-no-scaffolds-partial",
+      "commands": 92,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/challenge-no-scaffolds-partial.save.json",
+        "sha256": "03474f89bb66e6c211375b318a60ea015df8c9627188f3d7db7942bb1e910a50",
+        "bytes": 9834
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/challenge-no-scaffolds-partial.expected.json",
+        "sha256": "c33c5374f36f8c11d98d9c4e8bbfaf102ab388f133f6e1f5ce1931d0b6d009e9",
+        "bytes": 18513
+      }
+    },
+    {
+      "caseId": "c01-cold-room-knock",
+      "name": "challenge-no-scaffolds-solved-replay",
+      "commands": 181,
+      "raw": {
+        "path": "fixtures/c01-cold-room-knock/challenge-no-scaffolds-solved-replay.save.json",
+        "sha256": "38e7f5da9323e404d4e4c83ffa546d4dea3ce2f8e4041af4bbdd71ff4bdf23f1",
+        "bytes": 19222
+      },
+      "oracle": {
+        "path": "fixtures/c01-cold-room-knock/challenge-no-scaffolds-solved-replay.expected.json",
+        "sha256": "9eed5d0d4dded4b2bbf0c722a70a888ac136b025715742a181090b5c364e0115",
+        "bytes": 43424
+      }
+    },
+    {
+      "caseId": "c02-snow-route",
+      "name": "canonical-solved-replay",
+      "commands": 85,
+      "raw": {
+        "path": "fixtures/c02-snow-route/canonical-solved-replay.save.json",
+        "sha256": "c3cdaeb8a2ef1b749458363869a3a7e2c46dd07fa7c3d046f17f747e9e7c2bef",
+        "bytes": 9124
+      },
+      "oracle": {
+        "path": "fixtures/c02-snow-route/canonical-solved-replay.expected.json",
+        "sha256": "624da6b9f1c17fd1bcc91eac11ea0515ca95e7823154f2e8ef599f0861308593",
+        "bytes": 24856
+      }
+    },
+    {
+      "caseId": "c03-second-shadow",
+      "name": "canonical-solved-replay",
+      "commands": 89,
+      "raw": {
+        "path": "fixtures/c03-second-shadow/canonical-solved-replay.save.json",
+        "sha256": "87d55620da9f56979b86ab9c3ce9f360da576a65a1c34d05ac4178ea3342bf43",
+        "bytes": 9595
+      },
+      "oracle": {
+        "path": "fixtures/c03-second-shadow/canonical-solved-replay.expected.json",
+        "sha256": "e97d3bb9cafa987cda1b082f9d595807d1822cef01401c12cd7d342b35fcc729",
+        "bytes": 26458
+      }
+    },
+    {
+      "caseId": "c04-unpostable-reply",
+      "name": "canonical-solved-replay",
+      "commands": 85,
+      "raw": {
+        "path": "fixtures/c04-unpostable-reply/canonical-solved-replay.save.json",
+        "sha256": "1516dd6c049cb556ce48fa4e5c90706b5962150cae6420c3e520d64b0e30b716",
+        "bytes": 9176
+      },
+      "oracle": {
+        "path": "fixtures/c04-unpostable-reply/canonical-solved-replay.expected.json",
+        "sha256": "f54ef27ce885963ed62857dc2e539dd5d72e83138f12d8edc9d17a7d075abaef",
+        "bytes": 25395
+      }
+    },
+    {
+      "caseId": "c05-third-lamp",
+      "name": "canonical-solved-replay",
+      "commands": 88,
+      "raw": {
+        "path": "fixtures/c05-third-lamp/canonical-solved-replay.save.json",
+        "sha256": "ad0887d625eea3792d5c626e33c5e7ed5c1c08c5c1efea6cc02d86da550c2a66",
+        "bytes": 9342
+      },
+      "oracle": {
+        "path": "fixtures/c05-third-lamp/canonical-solved-replay.expected.json",
+        "sha256": "9992a9ec4275b8bda9b2fa13c1451d4253fd70c8c2eff6d322aff15ccd1c8b3c",
+        "bytes": 25851
+      }
+    },
+    {
+      "caseId": "c06-nonexistent-ticket",
+      "name": "canonical-solved-replay",
+      "commands": 88,
+      "raw": {
+        "path": "fixtures/c06-nonexistent-ticket/canonical-solved-replay.save.json",
+        "sha256": "55f1ba2c7d7ca267564419a8f81b0781a6b7933709dc5e240034b08e1ae5ed5f",
+        "bytes": 9480
+      },
+      "oracle": {
+        "path": "fixtures/c06-nonexistent-ticket/canonical-solved-replay.expected.json",
+        "sha256": "76e00c4250e68c9bbea242fd3b786fc04771ba7acc9da883e16f1528a35b8967",
+        "bytes": 26020
+      }
+    },
+    {
+      "caseId": "c07-key-returns",
+      "name": "canonical-solved-replay",
+      "commands": 76,
+      "raw": {
+        "path": "fixtures/c07-key-returns/canonical-solved-replay.save.json",
+        "sha256": "485c5cb45e79464aee6f24ed0517bd02fed7cbbf141180f46ab5ce84f8fbd965",
+        "bytes": 8131
+      },
+      "oracle": {
+        "path": "fixtures/c07-key-returns/canonical-solved-replay.expected.json",
+        "sha256": "0a262a8d46d15ec3edf560f17cdb310fd794a141b796bff91682e18291597f81",
+        "bytes": 22651
+      }
+    },
+    {
+      "caseId": "c08-unclaimed-recording",
+      "name": "canonical-solved-replay",
+      "commands": 77,
+      "raw": {
+        "path": "fixtures/c08-unclaimed-recording/canonical-solved-replay.save.json",
+        "sha256": "80beca0904ecd3ddbf38409b24fc6221a83f10a9df57e533080e22e5f0a321dd",
+        "bytes": 8434
+      },
+      "oracle": {
+        "path": "fixtures/c08-unclaimed-recording/canonical-solved-replay.expected.json",
+        "sha256": "b0cb138280063fa6299ffb6dc457c465b1179a4a4eb39e4a17a47dea0eb551db",
+        "bytes": 23007
+      }
+    },
+    {
+      "caseId": "c09-rain-room",
+      "name": "canonical-solved-replay",
+      "commands": 81,
+      "raw": {
+        "path": "fixtures/c09-rain-room/canonical-solved-replay.save.json",
+        "sha256": "441d3e94466937b0082a1c969fcc6021547c4cb732f45c383dd43eb307189faa",
+        "bytes": 8735
+      },
+      "oracle": {
+        "path": "fixtures/c09-rain-room/canonical-solved-replay.expected.json",
+        "sha256": "deaa64d82fac328986d468cfcd9846d891e8c34844ae20e7d8c983785e846dee",
+        "bytes": 23789
+      }
+    },
+    {
+      "caseId": "c10-single-ring",
+      "name": "canonical-solved-replay",
+      "commands": 77,
+      "raw": {
+        "path": "fixtures/c10-single-ring/canonical-solved-replay.save.json",
+        "sha256": "2779a42672942816a653633c10699c9375c874864ad53f1cef577244fdd17991",
+        "bytes": 8480
+      },
+      "oracle": {
+        "path": "fixtures/c10-single-ring/canonical-solved-replay.expected.json",
+        "sha256": "f8133cfa84f3328e79607c0a185eb08f941eeab27655fd1cf2a18bd92424fa12",
+        "bytes": 23112
+      }
+    },
+    {
+      "caseId": "c11-borrowed-signature",
+      "name": "canonical-solved-replay",
+      "commands": 77,
+      "raw": {
+        "path": "fixtures/c11-borrowed-signature/canonical-solved-replay.save.json",
+        "sha256": "22f0fd405f7e5ddbfcddd6a0f5a82eabdfb09fbbec9485fdf530d1fe0276be71",
+        "bytes": 8422
+      },
+      "oracle": {
+        "path": "fixtures/c11-borrowed-signature/canonical-solved-replay.expected.json",
+        "sha256": "6821c6e4b48207ccfd23e27ef71f189979c1eb701b307f475175244c436eecfe",
+        "bytes": 23095
+      }
+    },
+    {
+      "caseId": "c12-zero-floor-elevator",
+      "name": "canonical-solved-replay",
+      "commands": 77,
+      "raw": {
+        "path": "fixtures/c12-zero-floor-elevator/canonical-solved-replay.save.json",
+        "sha256": "b58191d0e6cdd4d2fcc23263b1608564796012b5e370e69e7cb9a8ea0cf34d00",
+        "bytes": 8427
+      },
+      "oracle": {
+        "path": "fixtures/c12-zero-floor-elevator/canonical-solved-replay.expected.json",
+        "sha256": "eff3c567e70bd40a12014bb0dc43b82919828ad404482b2b93c1b180d2bdde96",
+        "bytes": 23083
+      }
+    },
+    {
+      "caseId": "c13-second-waterline",
+      "name": "canonical-solved-replay",
+      "commands": 102,
+      "raw": {
+        "path": "fixtures/c13-second-waterline/canonical-solved-replay.save.json",
+        "sha256": "946166e8e75818372e2af780495bd3558ddb5809a98fbe5debe0842129e3e2c8",
+        "bytes": 11317
+      },
+      "oracle": {
+        "path": "fixtures/c13-second-waterline/canonical-solved-replay.expected.json",
+        "sha256": "e099e4a2d1b552e952cfaff27da30c66ca21f05f062b211d7b8316c9717ff173",
+        "bytes": 30069
+      }
+    },
+    {
+      "caseId": "c14-moving-red-box",
+      "name": "canonical-solved-replay",
+      "commands": 102,
+      "raw": {
+        "path": "fixtures/c14-moving-red-box/canonical-solved-replay.save.json",
+        "sha256": "7114f19407781e91971a65d06ccfe6db664833439af056d3ea4c6c96c0d1e5f4",
+        "bytes": 11400
+      },
+      "oracle": {
+        "path": "fixtures/c14-moving-red-box/canonical-solved-replay.expected.json",
+        "sha256": "4a62d83fafc4d8825dec023529260a748ee1a7f944ae45530441025d0925b9f1",
+        "bytes": 30152
+      }
+    },
+    {
+      "caseId": "c15-sixth-panorama",
+      "name": "canonical-solved-replay",
+      "commands": 102,
+      "raw": {
+        "path": "fixtures/c15-sixth-panorama/canonical-solved-replay.save.json",
+        "sha256": "b09b5d1a0534bc65627296f8cf0151d4a6d6bec4f74d0a89e13885ec71bd458e",
+        "bytes": 11466
+      },
+      "oracle": {
+        "path": "fixtures/c15-sixth-panorama/canonical-solved-replay.expected.json",
+        "sha256": "32b3f68327a8d4c719f7155bf6eba15d2bf8a83134268d78af78ba23d28fe27e",
+        "bytes": 30218
+      }
+    },
+    {
+      "caseId": "c16-closed-door-handoff",
+      "name": "canonical-solved-replay",
+      "commands": 102,
+      "raw": {
+        "path": "fixtures/c16-closed-door-handoff/canonical-solved-replay.save.json",
+        "sha256": "d5039d1661b5b7100cfcf137c9b72c9bdbc4a66900f6d48a6e3a002e983d2393",
+        "bytes": 11470
+      },
+      "oracle": {
+        "path": "fixtures/c16-closed-door-handoff/canonical-solved-replay.expected.json",
+        "sha256": "eb046e5f3b9661c83aadbdf9c11fe0073ae266278f5bfeb5caabf962edfe5cad",
+        "bytes": 30222
+      }
+    },
+    {
+      "caseId": "c17-twelve-strikes",
+      "name": "canonical-solved-replay",
+      "commands": 102,
+      "raw": {
+        "path": "fixtures/c17-twelve-strikes/canonical-solved-replay.save.json",
+        "sha256": "1d72f7f7c0ce3fb8dbba28ef64895860c4b7285eb461e6a9573177c6371bb15f",
+        "bytes": 11439
+      },
+      "oracle": {
+        "path": "fixtures/c17-twelve-strikes/canonical-solved-replay.expected.json",
+        "sha256": "a448d57c51ef371fb1c4077734b3b756dc6e0193caf8c88df01e2ec4d0237ee7",
+        "bytes": 30191
+      }
+    },
+    {
+      "caseId": "c18-lighter-sealed-crate",
+      "name": "canonical-solved-replay",
+      "commands": 102,
+      "raw": {
+        "path": "fixtures/c18-lighter-sealed-crate/canonical-solved-replay.save.json",
+        "sha256": "b03258a01ba4d08aad44d4dc062c16530894b94c4c124a0f763c562423ab76e9",
+        "bytes": 11424
+      },
+      "oracle": {
+        "path": "fixtures/c18-lighter-sealed-crate/canonical-solved-replay.expected.json",
+        "sha256": "7c40daca5595e6aa54b25e4ef4a592cf39e347b589af1578a60bf959afafbcca",
+        "bytes": 30176
+      }
+    },
+    {
+      "caseId": "c19-fog-after-window",
+      "name": "canonical-solved-replay",
+      "commands": 102,
+      "raw": {
+        "path": "fixtures/c19-fog-after-window/canonical-solved-replay.save.json",
+        "sha256": "eb23f7c7ec4aca8f30775a0c0351d14bc1877ebbd9fee56d1626997703b28fe8",
+        "bytes": 11389
+      },
+      "oracle": {
+        "path": "fixtures/c19-fog-after-window/canonical-solved-replay.expected.json",
+        "sha256": "b6f1c616092a37628f5688e52773b0eb16d24d356617a198d4a3156c21dcd319",
+        "bytes": 30141
+      }
+    },
+    {
+      "caseId": "c20-fifth-worker",
+      "name": "canonical-solved-replay",
+      "commands": 102,
+      "raw": {
+        "path": "fixtures/c20-fifth-worker/canonical-solved-replay.save.json",
+        "sha256": "835995b17de31175b9790036172bdfb03db7db037b9e87b32afb55b599a13f1e",
+        "bytes": 11450
+      },
+      "oracle": {
+        "path": "fixtures/c20-fifth-worker/canonical-solved-replay.expected.json",
+        "sha256": "7377cdb6f4dc3d5fb0785f2982f188b7c280bd392890d988181378c83675ce77",
+        "bytes": 30202
+      }
+    },
+    {
+      "caseId": "c21-missing-seven-minutes",
+      "name": "canonical-solved-replay",
+      "commands": 120,
+      "raw": {
+        "path": "fixtures/c21-missing-seven-minutes/canonical-solved-replay.save.json",
+        "sha256": "f1b31e1ea4b27ef85be95dc8e83b839dbe8d6bd55cf9e1344fc927dd558bb654",
+        "bytes": 13464
+      },
+      "oracle": {
+        "path": "fixtures/c21-missing-seven-minutes/canonical-solved-replay.expected.json",
+        "sha256": "26479ed9e44a2a18ace53f792665d3b6a8193ec7f4166637c80cca2ec818f428",
+        "bytes": 35445
+      }
+    },
+    {
+      "caseId": "c22-overloaded-bridge",
+      "name": "canonical-solved-replay",
+      "commands": 120,
+      "raw": {
+        "path": "fixtures/c22-overloaded-bridge/canonical-solved-replay.save.json",
+        "sha256": "89835923351fb14c45115bfc115c0f9fee363e2899d556f1d6e5d4badd9ae16b",
+        "bytes": 13411
+      },
+      "oracle": {
+        "path": "fixtures/c22-overloaded-bridge/canonical-solved-replay.expected.json",
+        "sha256": "2a8862b415258ddfd7515ff31d5d9cca95518bcfaec56bf6b81fa161b5100a99",
+        "bytes": 35392
+      }
+    },
+    {
+      "caseId": "c23-clean-air-sample",
+      "name": "canonical-solved-replay",
+      "commands": 120,
+      "raw": {
+        "path": "fixtures/c23-clean-air-sample/canonical-solved-replay.save.json",
+        "sha256": "8de3728b78cd55c9f3ac11225aefd3e45b65c715adf324ee72bf98fb69042c85",
+        "bytes": 13451
+      },
+      "oracle": {
+        "path": "fixtures/c23-clean-air-sample/canonical-solved-replay.expected.json",
+        "sha256": "060922252090ab479925215cf59a534086cc34b03a8328e67cdb08e708834854",
+        "bytes": 35432
+      }
+    },
+    {
+      "caseId": "c24-turned-painting",
+      "name": "canonical-solved-replay",
+      "commands": 120,
+      "raw": {
+        "path": "fixtures/c24-turned-painting/canonical-solved-replay.save.json",
+        "sha256": "eeb0814eaab7e1f95d656bddbac8aedf6a030dcfc15ce063c5933c00124b5d1d",
+        "bytes": 13479
+      },
+      "oracle": {
+        "path": "fixtures/c24-turned-painting/canonical-solved-replay.expected.json",
+        "sha256": "fe9890059c7f152c78ba35fe842cbeb5e409ea5777695021e86049a9eeea5080",
+        "bytes": 35460
+      }
+    },
+    {
+      "caseId": "c25-silent-second-bell",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c25-silent-second-bell/canonical-solved-replay.save.json",
+        "sha256": "706dcc3c2780fdb28d54a8793a87fd3de770634213d4e5f05ba9305b0a157855",
+        "bytes": 12169
+      },
+      "oracle": {
+        "path": "fixtures/c25-silent-second-bell/canonical-solved-replay.expected.json",
+        "sha256": "1f454e10a3767c90ff25ca347a5bb99cd086181d8cab026705a830e9dfc159a9",
+        "bytes": 31881
+      }
+    },
+    {
+      "caseId": "c26-short-map-pipeline",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c26-short-map-pipeline/canonical-solved-replay.save.json",
+        "sha256": "c3aa26eabf3f730c40bc0656c2441a7d444bf70c3ff9655fb7def5cf64590d22",
+        "bytes": 12121
+      },
+      "oracle": {
+        "path": "fixtures/c26-short-map-pipeline/canonical-solved-replay.expected.json",
+        "sha256": "2812a4f2e20d39d630e1a3884ae47abf6e8e8505c3c87de6146b42bc017dc792",
+        "bytes": 31833
+      }
+    },
+    {
+      "caseId": "c27-stationary-moving-platform",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c27-stationary-moving-platform/canonical-solved-replay.save.json",
+        "sha256": "55c9b910d9fb879c11bc0bc65577e9f6107e1aac9e78a86c99d28083a9d8d861",
+        "bytes": 12117
+      },
+      "oracle": {
+        "path": "fixtures/c27-stationary-moving-platform/canonical-solved-replay.expected.json",
+        "sha256": "6fa1a19c2048e46f26b928b0da3480f4ad74b35f95c3b880af68678b7cbfcfb4",
+        "bytes": 31837
+      }
+    },
+    {
+      "caseId": "c28-ninth-minute-temperature",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c28-ninth-minute-temperature/canonical-solved-replay.save.json",
+        "sha256": "b8a6eb81472eb3f5e747a90525bfe628c9095c062548a915af28458d4db3531b",
+        "bytes": 12148
+      },
+      "oracle": {
+        "path": "fixtures/c28-ninth-minute-temperature/canonical-solved-replay.expected.json",
+        "sha256": "341b7d3b8215587efe3b708161c7cc0912cf8ce10510ea056f243b075cd89598",
+        "bytes": 31866
+      }
+    },
+    {
+      "caseId": "c29-role-stamp-signature",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c29-role-stamp-signature/canonical-solved-replay.save.json",
+        "sha256": "0b95fac98a73e060e5dc9d98661881f7206469af92f005e73c79b0c749ed3712",
+        "bytes": 12126
+      },
+      "oracle": {
+        "path": "fixtures/c29-role-stamp-signature/canonical-solved-replay.expected.json",
+        "sha256": "a4de03a81955792d1264be1513b4352dc18d63568a1edd260c165196d68841c8",
+        "bytes": 31840
+      }
+    },
+    {
+      "caseId": "c30-shared-shift-id",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c30-shared-shift-id/canonical-solved-replay.save.json",
+        "sha256": "dfa89f6231b18d64120511dc185064e6c1a71518fb607707cc87a077ca276745",
+        "bytes": 12127
+      },
+      "oracle": {
+        "path": "fixtures/c30-shared-shift-id/canonical-solved-replay.expected.json",
+        "sha256": "8645a159b7e846fec79ec34d1326ca01aa813928696831e48749b77cf485aec2",
+        "bytes": 31836
+      }
+    },
+    {
+      "caseId": "c31-eighth-unchecked-guest",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c31-eighth-unchecked-guest/canonical-solved-replay.save.json",
+        "sha256": "3801f2b0f3850bd2ae7232065c5fd121999c6d57f11e22a9e424c34641553cb8",
+        "bytes": 12131
+      },
+      "oracle": {
+        "path": "fixtures/c31-eighth-unchecked-guest/canonical-solved-replay.expected.json",
+        "sha256": "1961afed315c5ec195d870301ecb4c3b9c4b9e1f0a520437e6bffb780e1090cb",
+        "bytes": 31847
+      }
+    },
+    {
+      "caseId": "c32-approved-unauthorized-door",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c32-approved-unauthorized-door/canonical-solved-replay.save.json",
+        "sha256": "8fa07ab0eb3452219c3dea9e254468c772e7cb73a23de1e813bf8902c43d5d26",
+        "bytes": 12093
+      },
+      "oracle": {
+        "path": "fixtures/c32-approved-unauthorized-door/canonical-solved-replay.expected.json",
+        "sha256": "f58235eed59886c106af8147180d745fb5098a0e49ad270a22c0351da69a8181",
+        "bytes": 31813
+      }
+    },
+    {
+      "caseId": "c33-early-late-arrival",
+      "name": "canonical-solved-replay",
+      "commands": 134,
+      "raw": {
+        "path": "fixtures/c33-early-late-arrival/canonical-solved-replay.save.json",
+        "sha256": "e4a0ff0ef19dc57713ed6928735935d58765877795b56d454342f8f1cef67e01",
+        "bytes": 15010
+      },
+      "oracle": {
+        "path": "fixtures/c33-early-late-arrival/canonical-solved-replay.expected.json",
+        "sha256": "b914c3f2f6de357ae912c8f27530bcb0dc5150fb0874d961c333fda1b484de1f",
+        "bytes": 38897
+      }
+    },
+    {
+      "caseId": "c34-tomorrow-seal",
+      "name": "canonical-solved-replay",
+      "commands": 127,
+      "raw": {
+        "path": "fixtures/c34-tomorrow-seal/canonical-solved-replay.save.json",
+        "sha256": "d01d16c19727297c5e123b4997cb126bcfd4f0982095ad2107cb523de8d661b6",
+        "bytes": 13950
+      },
+      "oracle": {
+        "path": "fixtures/c34-tomorrow-seal/canonical-solved-replay.expected.json",
+        "sha256": "fa59aaa734f4ef1df136dbe9ef773493b70f0fcce22c53467b8d96f2fe6334b3",
+        "bytes": 36886
+      }
+    },
+    {
+      "caseId": "c35-extra-glass-attendant",
+      "name": "canonical-solved-replay",
+      "commands": 127,
+      "raw": {
+        "path": "fixtures/c35-extra-glass-attendant/canonical-solved-replay.save.json",
+        "sha256": "c11c3fa960d3f60610b636ee3be1c5858dc1dc09bccc2bf3074cd3aaf0199253",
+        "bytes": 13964
+      },
+      "oracle": {
+        "path": "fixtures/c35-extra-glass-attendant/canonical-solved-replay.expected.json",
+        "sha256": "e6b35848fc16a48707b21b3fc016717e8690b0a6667c1ee19d4adaf3a90d7b8f",
+        "bytes": 36908
+      }
+    },
+    {
+      "caseId": "c36-no-one-left-terminal",
+      "name": "canonical-solved-replay",
+      "commands": 152,
+      "raw": {
+        "path": "fixtures/c36-no-one-left-terminal/canonical-solved-replay.save.json",
+        "sha256": "09e2eb54a8200153e4894b09ae0681fe64b94dcffc7ce897321b3d70bf3dda8a",
+        "bytes": 16918
+      },
+      "oracle": {
+        "path": "fixtures/c36-no-one-left-terminal/canonical-solved-replay.expected.json",
+        "sha256": "7cd151c691e16a151e1f2a7d3961324a24c54207e2f35caa2866a2752d9f5011",
+        "bytes": 43931
+      }
+    },
+    {
+      "caseId": "c37-zeroed-pressure-gauge",
+      "name": "canonical-solved-replay",
+      "commands": 119,
+      "raw": {
+        "path": "fixtures/c37-zeroed-pressure-gauge/canonical-solved-replay.save.json",
+        "sha256": "bf57a9ef799d353a0b3244a264b096cf2929a4b94afc10bb9ebfcae8cade2277",
+        "bytes": 13315
+      },
+      "oracle": {
+        "path": "fixtures/c37-zeroed-pressure-gauge/canonical-solved-replay.expected.json",
+        "sha256": "6807576f81943c039f2c6566414f3f579d1496e989646d2f88a9775651dea386",
+        "bytes": 34164
+      }
+    },
+    {
+      "caseId": "c38-no-missing-seventh-packet",
+      "name": "canonical-solved-replay",
+      "commands": 124,
+      "raw": {
+        "path": "fixtures/c38-no-missing-seventh-packet/canonical-solved-replay.save.json",
+        "sha256": "c4304677f1ff176be9d8a91f8bb20ced2592ece27c321d86c1c3ef0bc72b5859",
+        "bytes": 13874
+      },
+      "oracle": {
+        "path": "fixtures/c38-no-missing-seventh-packet/canonical-solved-replay.expected.json",
+        "sha256": "a950ea2cd717a13aa1563baf4d4c210c575170fb7e34caf11c6eca662b9d0f00",
+        "bytes": 35318
+      }
+    },
+    {
+      "caseId": "c39-duplicated-heartbeat",
+      "name": "canonical-solved-replay",
+      "commands": 129,
+      "raw": {
+        "path": "fixtures/c39-duplicated-heartbeat/canonical-solved-replay.save.json",
+        "sha256": "196462a8cbcb7235a7a21f957f8adc2a43845c24b839adb872f03b5ceda5ad79",
+        "bytes": 14463
+      },
+      "oracle": {
+        "path": "fixtures/c39-duplicated-heartbeat/canonical-solved-replay.expected.json",
+        "sha256": "fefa87bed42ced34213a1705d26ab46eeda8a4933cef9734f43c9160f2899833",
+        "bytes": 36493
+      }
+    },
+    {
+      "caseId": "c40-early-liquid-front",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c40-early-liquid-front/canonical-solved-replay.save.json",
+        "sha256": "e95215bc93c34fc84e1d71174a8546c116890c560af1331b787d11a189d278d8",
+        "bytes": 12103
+      },
+      "oracle": {
+        "path": "fixtures/c40-early-liquid-front/canonical-solved-replay.expected.json",
+        "sha256": "6da3b18f4456a0767a87956eee3c6a6be0b3dedb879dfd8622b74993be7c1e47",
+        "bytes": 31767
+      }
+    },
+    {
+      "caseId": "c41-hysteresis-overheat",
+      "name": "canonical-solved-replay",
+      "commands": 114,
+      "raw": {
+        "path": "fixtures/c41-hysteresis-overheat/canonical-solved-replay.save.json",
+        "sha256": "fa43500adbfe90477345618842da5f1d162c0e8292a42a1af4697a03f105f946",
+        "bytes": 12716
+      },
+      "oracle": {
+        "path": "fixtures/c41-hysteresis-overheat/canonical-solved-replay.expected.json",
+        "sha256": "373c9872d19eea7f6ef54db1d3d61654a2ac1a68a651e20bf982a2094d49c8f0",
+        "bytes": 32972
+      }
+    },
+    {
+      "caseId": "c42-same-weight-different-load",
+      "name": "canonical-solved-replay",
+      "commands": 119,
+      "raw": {
+        "path": "fixtures/c42-same-weight-different-load/canonical-solved-replay.save.json",
+        "sha256": "f036dfd39f9e1b4ef5866425eb5b40911f01e9593705919183c4dea7c6e12814",
+        "bytes": 13263
+      },
+      "oracle": {
+        "path": "fixtures/c42-same-weight-different-load/canonical-solved-replay.expected.json",
+        "sha256": "ce294aa65e7e87889b4d3025157ca6208927f208f5bcc9d81c08a19ad1b2efb7",
+        "bytes": 34117
+      }
+    },
+    {
+      "caseId": "c43-train-stop-reference",
+      "name": "canonical-solved-replay",
+      "commands": 124,
+      "raw": {
+        "path": "fixtures/c43-train-stop-reference/canonical-solved-replay.save.json",
+        "sha256": "54db1b6acc831f1594361d443e5d705964d6d6c21ccc2dfb8e566002ebb8ac46",
+        "bytes": 13911
+      },
+      "oracle": {
+        "path": "fixtures/c43-train-stop-reference/canonical-solved-replay.expected.json",
+        "sha256": "25d79608a125c18005a3fb326fe2416e28e755096ee50a34d60297e66edc832f",
+        "bytes": 35350
+      }
+    },
+    {
+      "caseId": "c44-hidden-overload-spike",
+      "name": "canonical-solved-replay",
+      "commands": 129,
+      "raw": {
+        "path": "fixtures/c44-hidden-overload-spike/canonical-solved-replay.save.json",
+        "sha256": "b77a43e78bce712a786fac1470bcd7ba4ff8eec0c86c3284e3a82c0244e773c6",
+        "bytes": 14467
+      },
+      "oracle": {
+        "path": "fixtures/c44-hidden-overload-spike/canonical-solved-replay.expected.json",
+        "sha256": "5084e519c372e98b52f0a498ec249c90be9fd1144d992dae86991ed4aea9534f",
+        "bytes": 36498
+      }
+    },
+    {
+      "caseId": "c45-double-location-second",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c45-double-location-second/canonical-solved-replay.save.json",
+        "sha256": "b451c8df6914a47448d8abdcc2c61e35fecc1382a26b6a314c4570a631cca4ce",
+        "bytes": 12119
+      },
+      "oracle": {
+        "path": "fixtures/c45-double-location-second/canonical-solved-replay.expected.json",
+        "sha256": "34827d95786315cd8e02a5e112a29a7e9c6fb74adf9fa324659c1e0e6425ea13",
+        "bytes": 31787
+      }
+    },
+    {
+      "caseId": "c46-pilot-pressure-valve",
+      "name": "canonical-solved-replay",
+      "commands": 114,
+      "raw": {
+        "path": "fixtures/c46-pilot-pressure-valve/canonical-solved-replay.save.json",
+        "sha256": "336154a43901b641561aac530e02a2e53fb5f5ce1c06f62cde111683950c2ff4",
+        "bytes": 12693
+      },
+      "oracle": {
+        "path": "fixtures/c46-pilot-pressure-valve/canonical-solved-replay.expected.json",
+        "sha256": "ee9477bbb89cb12e43624db318c9b28eada9cf86a362084084359b7b4984e468",
+        "bytes": 32950
+      }
+    },
+    {
+      "caseId": "c47-offline-buffered-device",
+      "name": "canonical-solved-replay",
+      "commands": 119,
+      "raw": {
+        "path": "fixtures/c47-offline-buffered-device/canonical-solved-replay.save.json",
+        "sha256": "0ced08cf6241c303dc3c6fbcbe2bf965c61e1ef38bfff762e4a1d46122c27780",
+        "bytes": 13314
+      },
+      "oracle": {
+        "path": "fixtures/c47-offline-buffered-device/canonical-solved-replay.expected.json",
+        "sha256": "242fe05eacf401184a5d48ab48a3f6d05d6efa996559162b4283b27e7df4d959",
+        "bytes": 34165
+      }
+    },
+    {
+      "caseId": "c48-two-point-calibration",
+      "name": "canonical-solved-replay",
+      "commands": 124,
+      "raw": {
+        "path": "fixtures/c48-two-point-calibration/canonical-solved-replay.save.json",
+        "sha256": "4663c327ae5ca1486a4f83ecce7f98e66951a976bb28a5715b69ace88f34f108",
+        "bytes": 13840
+      },
+      "oracle": {
+        "path": "fixtures/c48-two-point-calibration/canonical-solved-replay.expected.json",
+        "sha256": "fe2b1791ad3546e681e730b9bf7855c4c3d770ba94e9cbe8e3f34bcfbad8484f",
+        "bytes": 35280
+      }
+    },
+    {
+      "caseId": "c49-gimbal-turn-drone",
+      "name": "canonical-solved-replay",
+      "commands": 129,
+      "raw": {
+        "path": "fixtures/c49-gimbal-turn-drone/canonical-solved-replay.save.json",
+        "sha256": "47f149d2f9ea71f708d4af27db72074ee6b70b7bb4e174ee93829daedfcd6e86",
+        "bytes": 14439
+      },
+      "oracle": {
+        "path": "fixtures/c49-gimbal-turn-drone/canonical-solved-replay.expected.json",
+        "sha256": "1d6a49a357de6c8c336213c725f737aa01e3f6bad49ec5b8361f4628f4fc0754",
+        "bytes": 36466
+      }
+    },
+    {
+      "caseId": "c50-extra-warehouse-pallet",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c50-extra-warehouse-pallet/canonical-solved-replay.save.json",
+        "sha256": "208598e660ee8b74633a1075494a4f395a6aa37a723576c687572a7569cbcef6",
+        "bytes": 12122
+      },
+      "oracle": {
+        "path": "fixtures/c50-extra-warehouse-pallet/canonical-solved-replay.expected.json",
+        "sha256": "97914bfce7bc90e55136e9fb624e616904c08b1bee0930deaf866a929feb6e5e",
+        "bytes": 31790
+      }
+    },
+    {
+      "caseId": "c51-equivalent-resistance",
+      "name": "canonical-solved-replay",
+      "commands": 114,
+      "raw": {
+        "path": "fixtures/c51-equivalent-resistance/canonical-solved-replay.save.json",
+        "sha256": "ecb054917dd7486862388275af3d4565bdfe4101f62c9391fb6bc0691e49715f",
+        "bytes": 12730
+      },
+      "oracle": {
+        "path": "fixtures/c51-equivalent-resistance/canonical-solved-replay.expected.json",
+        "sha256": "fa27cb9eb7d8094a39b925a2fb8e35f8ab0c50656e17740321e6d32773a716f4",
+        "bytes": 32988
+      }
+    },
+    {
+      "caseId": "c52-shorter-river-night",
+      "name": "canonical-solved-replay",
+      "commands": 119,
+      "raw": {
+        "path": "fixtures/c52-shorter-river-night/canonical-solved-replay.save.json",
+        "sha256": "74104589d6ae62370a0ffcbbd0399a59d2e8f4364fca5a1692f8fc067d0eaf8b",
+        "bytes": 13268
+      },
+      "oracle": {
+        "path": "fixtures/c52-shorter-river-night/canonical-solved-replay.expected.json",
+        "sha256": "a413921d82a99b3495ea42316f569e15309f4db270852b26602827c86bd7d109",
+        "bytes": 34115
+      }
+    },
+    {
+      "caseId": "c53-late-fiber-echo",
+      "name": "canonical-solved-replay",
+      "commands": 124,
+      "raw": {
+        "path": "fixtures/c53-late-fiber-echo/canonical-solved-replay.save.json",
+        "sha256": "5a8431045999f18b39221f791731b57b38f3cb93b3432d6ebbee1b4667f02e9e",
+        "bytes": 13873
+      },
+      "oracle": {
+        "path": "fixtures/c53-late-fiber-echo/canonical-solved-replay.expected.json",
+        "sha256": "15782f064b5fb229eff0225b9d0bacb8dbaf9f12a496f43a9ac5678e4034cf02",
+        "bytes": 35307
+      }
+    },
+    {
+      "caseId": "c54-elevator-counterweight",
+      "name": "canonical-solved-replay",
+      "commands": 129,
+      "raw": {
+        "path": "fixtures/c54-elevator-counterweight/canonical-solved-replay.save.json",
+        "sha256": "e314bc374cbc4f95d10784becc75829a96722db85477acf42a2acd9313c9ccd2",
+        "bytes": 14477
+      },
+      "oracle": {
+        "path": "fixtures/c54-elevator-counterweight/canonical-solved-replay.expected.json",
+        "sha256": "9454988204fae32ab7998a157f96afe718a9c464473355454e0adbe45d30a9f0",
+        "bytes": 36509
+      }
+    },
+    {
+      "caseId": "c55-merged-multi-alarm",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c55-merged-multi-alarm/canonical-solved-replay.save.json",
+        "sha256": "eb2d87a5fce38541eab89d7c59e094cca6a3983351abd0c38e5fa59c8e0c93ae",
+        "bytes": 12067
+      },
+      "oracle": {
+        "path": "fixtures/c55-merged-multi-alarm/canonical-solved-replay.expected.json",
+        "sha256": "bda7e82a6a9e6505b573af38f2fdd0aa3b89bc037388a0a0176aecef8a1905da",
+        "bytes": 31731
+      }
+    },
+    {
+      "caseId": "c56-interpolated-temperature-map",
+      "name": "canonical-solved-replay",
+      "commands": 114,
+      "raw": {
+        "path": "fixtures/c56-interpolated-temperature-map/canonical-solved-replay.save.json",
+        "sha256": "0e486a45436f00b57bccccb7588e7497cb1ed83d93f0b8e8b1928172184cbfd9",
+        "bytes": 12692
+      },
+      "oracle": {
+        "path": "fixtures/c56-interpolated-temperature-map/canonical-solved-replay.expected.json",
+        "sha256": "550fe64094e38bf7838e3cb7e52fc98cfb321c8516b3a829ef42069f014ea8d9",
+        "bytes": 32957
+      }
+    },
+    {
+      "caseId": "c57-lagging-wind-vane",
+      "name": "canonical-solved-replay",
+      "commands": 119,
+      "raw": {
+        "path": "fixtures/c57-lagging-wind-vane/canonical-solved-replay.save.json",
+        "sha256": "54b2d027d4dbca1df96a1cb0e98ef3559c9b87528743a633e0bef23e1fab4f4c",
+        "bytes": 13290
+      },
+      "oracle": {
+        "path": "fixtures/c57-lagging-wind-vane/canonical-solved-replay.expected.json",
+        "sha256": "7329dfee40715e70231d9f6ebed19be0af2524a0021648eaf1bc0516d66e193d",
+        "bytes": 34135
+      }
+    },
+    {
+      "caseId": "c58-same-volume-two-levels",
+      "name": "canonical-solved-replay",
+      "commands": 124,
+      "raw": {
+        "path": "fixtures/c58-same-volume-two-levels/canonical-solved-replay.save.json",
+        "sha256": "c953a877e79f1b59b3f3cbb7dc269b07e89ac608c552bda4f0a32f69388767ba",
+        "bytes": 13862
+      },
+      "oracle": {
+        "path": "fixtures/c58-same-volume-two-levels/canonical-solved-replay.expected.json",
+        "sha256": "febf996b5d491d557464d23690d56ce96ee1ac82a10da114447152a4a8b86f6c",
+        "bytes": 35303
+      }
+    },
+    {
+      "caseId": "c59-extra-ninth-floor",
+      "name": "canonical-solved-replay",
+      "commands": 129,
+      "raw": {
+        "path": "fixtures/c59-extra-ninth-floor/canonical-solved-replay.save.json",
+        "sha256": "adc1f52b1d0c637e9732fecc854233f8cb4894ff00db95a2197557b351667df4",
+        "bytes": 14442
+      },
+      "oracle": {
+        "path": "fixtures/c59-extra-ninth-floor/canonical-solved-replay.expected.json",
+        "sha256": "8cb9c8de5266d9de0f949ccd1561cd4ef16890622ba281c6b53b860e7c931f0f",
+        "bytes": 36469
+      }
+    },
+    {
+      "caseId": "c60-last-sample-before-stop",
+      "name": "canonical-solved-replay",
+      "commands": 131,
+      "raw": {
+        "path": "fixtures/c60-last-sample-before-stop/canonical-solved-replay.save.json",
+        "sha256": "04fff02926e8166924fae724dad6ed82596edd1bf8fef4aae53fe0004dc02a80",
+        "bytes": 14969
+      },
+      "oracle": {
+        "path": "fixtures/c60-last-sample-before-stop/canonical-solved-replay.expected.json",
+        "sha256": "7f5d253f5a9ddf4415752a82d491092cd7a22ad61513cfe1f139b7c028a71908",
+        "bytes": 37484
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "canonical-solved-replay",
+      "commands": 114,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/canonical-solved-replay.save.json",
+        "sha256": "dbe72b4c99f6901d5b74966d90780f52cceaef5e903b3fbaf4d96d45b70c9bba",
+        "bytes": 12693
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/canonical-solved-replay.expected.json",
+        "sha256": "0499a77b47838f20fe60c53425727395f0ec25294090a7f6623caba8dc120528",
+        "bytes": 33043
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "empty",
+      "commands": 0,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/empty.save.json",
+        "sha256": "b951ce7131b6eb7e591eee54add7d3c53adc3eb91ee04c1db8202f2757be7afc",
+        "bytes": 258
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/empty.expected.json",
+        "sha256": "2c63aa0f688519513301582b34da48b524d3fe454c7bacfdbdd72a27141616b5",
+        "bytes": 1513
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "partial-question",
+      "commands": 1,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/partial-question.save.json",
+        "sha256": "1d91cdf32a3b3b6289be45128f0992d4426c6284222abd59ad3397111a6eb0a4",
+        "bytes": 346
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/partial-question.expected.json",
+        "sha256": "1850eafc77ebed34703b38577edb1c7ffa75543837a1f878c7ad854baa4040ef",
+        "bytes": 2279
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "undo-question",
+      "commands": 2,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/undo-question.save.json",
+        "sha256": "25c0fc249c728a6249b96a1b494ff50364351ce52f887c184a79347d5afe6e89",
+        "bytes": 394
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/undo-question.expected.json",
+        "sha256": "c5413a91a8ccfb918f87b13015a7c5423631995493fadba99d9e7e7f353077c6",
+        "bytes": 1875
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "investigated-evidence",
+      "commands": 76,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/investigated-evidence.save.json",
+        "sha256": "909d7bd5500f626a879e2ef341faceb655ba10890a504721eb0e3de36b76ac15",
+        "bytes": 7690
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/investigated-evidence.expected.json",
+        "sha256": "2a5612234e245529e2db9576d98fb64bfb584fa390f06a3897bb2f82ceeb5402",
+        "bytes": 23556
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "wrong-theory",
+      "commands": 78,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/wrong-theory.save.json",
+        "sha256": "760c008477460c2204a07108707b23397243f48a28194441d81d3798c70190b9",
+        "bytes": 7892
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/wrong-theory.expected.json",
+        "sha256": "5c56aef69c00b6dd7918aa6c66fbd5295ce884e4e0444990e886168a8ceb9abe",
+        "bytes": 23985
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "solved-before-replay",
+      "commands": 113,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/solved-before-replay.save.json",
+        "sha256": "17a2a8a240a4d30bf05d54e3d546771ced5118a17191c61084e3e4a414a4072d",
+        "bytes": 12643
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/solved-before-replay.expected.json",
+        "sha256": "fd02080972685e5ef573c28a4adb7a792e9f6abaebee435cfc189ad8b2498b1c",
+        "bytes": 32758
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "partial-board",
+      "commands": 99,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/partial-board.save.json",
+        "sha256": "ce83f6bfbaa1a595c84dd7d0e7f14e47c065db6b356a0c59be5730d453100c7f",
+        "bytes": 10583
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/partial-board.expected.json",
+        "sha256": "738ac26594d48de1db08b8aece12c7f046cac393ce4882f5058f31cd900601d4",
+        "bytes": 28830
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "challenge-limited-questions-start",
+      "commands": 115,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-limited-questions-start.save.json",
+        "sha256": "44d24b2ff5f5887da5e40c021e2bff735c56503679163a9c2d9c7d06d2772c7a",
+        "bytes": 12774
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-limited-questions-start.expected.json",
+        "sha256": "83145764ce46fd490a77e3c9e6f847a230d6d0e1d5ddb1fe61b9b3685364da7a",
+        "bytes": 22196
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "challenge-limited-questions-partial",
+      "commands": 116,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-limited-questions-partial.save.json",
+        "sha256": "6736f2d413e8fdc30e5df758ea2c6ddb97b40556de6872494ab245fb524ba278",
+        "bytes": 12860
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-limited-questions-partial.expected.json",
+        "sha256": "0d33629ca59d26558536fc4be0d2bbf7f0f5be73a633f2e18eaea90c37617fbf",
+        "bytes": 22915
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "challenge-minimal-proof-start",
+      "commands": 115,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-minimal-proof-start.save.json",
+        "sha256": "1dd102a54438f678ba8ceb9c79ecbfbb07b8dae6ba4962ff854b615a2486be03",
+        "bytes": 12770
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-minimal-proof-start.expected.json",
+        "sha256": "0e810d5942071acbe5525524dcd79d13a4bf3068b2fa4744a6bb8ef8cdae34b3",
+        "bytes": 22188
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "challenge-minimal-proof-partial",
+      "commands": 116,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-minimal-proof-partial.save.json",
+        "sha256": "1ec333c571d4fc44389d33b99a137e314c1c05cae51586250654816a18707928",
+        "bytes": 12856
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-minimal-proof-partial.expected.json",
+        "sha256": "556966d276e8c24d3a2cf5ce2bf34cbf11db8839d0e570d8d1398ebfeeab1749",
+        "bytes": 22907
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "challenge-minimal-proof-solved-replay",
+      "commands": 229,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-minimal-proof-solved-replay.save.json",
+        "sha256": "9519405bc78564dca05229c2109c7ecc3bdc7bcbcef66204d1285419b9e1ead3",
+        "bytes": 25203
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-minimal-proof-solved-replay.expected.json",
+        "sha256": "d60771d68aa94500ef35fe964c5afa022e164426255fffaa7ac8466f5912ebc7",
+        "bytes": 53779
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "challenge-no-scaffolds-start",
+      "commands": 115,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-no-scaffolds-start.save.json",
+        "sha256": "563cf3a377477713363f652778ed7835f3f8f3582b3e135711fc1ad0e548d8d9",
+        "bytes": 12769
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-no-scaffolds-start.expected.json",
+        "sha256": "a0fa94d3e8f4daade27fbd53f33ee3b974722b93e425c901628ea4a39a408b3f",
+        "bytes": 22186
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "challenge-no-scaffolds-partial",
+      "commands": 116,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-no-scaffolds-partial.save.json",
+        "sha256": "80fe0a5c41a7287782c9e630c868bda47e90861010982478a001d2efbfd515a5",
+        "bytes": 12855
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-no-scaffolds-partial.expected.json",
+        "sha256": "11b036c85bb77d0de290e6fe93feeb8b3c1418fa11d82da5eb09d74bf79ed6f1",
+        "bytes": 22905
+      }
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "challenge-no-scaffolds-solved-replay",
+      "commands": 229,
+      "raw": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-no-scaffolds-solved-replay.save.json",
+        "sha256": "935bbea26dae9d30ba3a731d1f5438cf911e943d6ef43b0a9535a24296933c8e",
+        "bytes": 25202
+      },
+      "oracle": {
+        "path": "fixtures/c61-missing-tape-turn/challenge-no-scaffolds-solved-replay.expected.json",
+        "sha256": "280eb2ac8e3c8350697931c013f048cc67adbb8468c5c0785bd360c4f5605fbd",
+        "bytes": 53777
+      }
+    },
+    {
+      "caseId": "c62-rope-not-shorter",
+      "name": "canonical-solved-replay",
+      "commands": 119,
+      "raw": {
+        "path": "fixtures/c62-rope-not-shorter/canonical-solved-replay.save.json",
+        "sha256": "df573184b74cf7f009ba4dc66fc45490df1f519afb44853f378d129f110f199c",
+        "bytes": 13259
+      },
+      "oracle": {
+        "path": "fixtures/c62-rope-not-shorter/canonical-solved-replay.expected.json",
+        "sha256": "bca75f0b0df9577ec74fb3ca50b4b9bc43b4bc7986ffa38e36fd3bcbf384b530",
+        "bytes": 34199
+      }
+    },
+    {
+      "caseId": "c63-ice-melts-first",
+      "name": "canonical-solved-replay",
+      "commands": 124,
+      "raw": {
+        "path": "fixtures/c63-ice-melts-first/canonical-solved-replay.save.json",
+        "sha256": "4763c703bb4e74337c6be09a32116affb09eb3b152a6d78863ca52221500a0b1",
+        "bytes": 13870
+      },
+      "oracle": {
+        "path": "fixtures/c63-ice-melts-first/canonical-solved-replay.expected.json",
+        "sha256": "1a49b7b0a4ec334363ec37be10f0bb5ad55af8f405a0014c4b2dac591d0a671a",
+        "bytes": 35400
+      }
+    },
+    {
+      "caseId": "c64-uncracked-glass",
+      "name": "canonical-solved-replay",
+      "commands": 129,
+      "raw": {
+        "path": "fixtures/c64-uncracked-glass/canonical-solved-replay.save.json",
+        "sha256": "11ee678a7b2d39d138fb208df73604a2992c99eab35e6f3c0d1b8df53831b25f",
+        "bytes": 14491
+      },
+      "oracle": {
+        "path": "fixtures/c64-uncracked-glass/canonical-solved-replay.expected.json",
+        "sha256": "e76c5ed3bc68470d421c0c8412b4859d225db7ae3c3299c7294d8d6439e337b0",
+        "bytes": 36612
+      }
+    },
+    {
+      "caseId": "c65-twin-watermarks",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c65-twin-watermarks/canonical-solved-replay.save.json",
+        "sha256": "127bae304ec3d368fbd1d876d5744bdbe79f104ff989c03f5105e70bf6afd4c7",
+        "bytes": 12073
+      },
+      "oracle": {
+        "path": "fixtures/c65-twin-watermarks/canonical-solved-replay.expected.json",
+        "sha256": "31978f54f1298c2da9d387d95973490f7cbe95c973864710838b50a6ad6f2807",
+        "bytes": 31830
+      }
+    },
+    {
+      "caseId": "c66-still-weight",
+      "name": "canonical-solved-replay",
+      "commands": 114,
+      "raw": {
+        "path": "fixtures/c66-still-weight/canonical-solved-replay.save.json",
+        "sha256": "978797f2da6eec6f1c306a364ec8fe9c018973fa32a4c2e15267cde41c680cd3",
+        "bytes": 12685
+      },
+      "oracle": {
+        "path": "fixtures/c66-still-weight/canonical-solved-replay.expected.json",
+        "sha256": "59880ffccb138d510d6122ae5c4e9600b4a6a124cc08fb830e2267d863e9ed8d",
+        "bytes": 33030
+      }
+    },
+    {
+      "caseId": "c67-shared-badge",
+      "name": "canonical-solved-replay",
+      "commands": 119,
+      "raw": {
+        "path": "fixtures/c67-shared-badge/canonical-solved-replay.save.json",
+        "sha256": "f2ed9352dbb63cdf50315c4ccc94e0b7aa260d19b2c90793cfed6e34356b7128",
+        "bytes": 13255
+      },
+      "oracle": {
+        "path": "fixtures/c67-shared-badge/canonical-solved-replay.expected.json",
+        "sha256": "3e48fd89726ff6b9cc1e83f712eac8519ddeb5067e328aa5df395d4cea1c10e0",
+        "bytes": 34191
+      }
+    },
+    {
+      "caseId": "c68-empty-seat-proof",
+      "name": "canonical-solved-replay",
+      "commands": 124,
+      "raw": {
+        "path": "fixtures/c68-empty-seat-proof/canonical-solved-replay.save.json",
+        "sha256": "3e5b4d12b3f413e0ae8c98cf14c83360d68c3570b1c4745d97fca5604b64dec9",
+        "bytes": 13877
+      },
+      "oracle": {
+        "path": "fixtures/c68-empty-seat-proof/canonical-solved-replay.expected.json",
+        "sha256": "74360e837b570be4347b717b67175dce2a1fcede63ac70d1d4fcc827ed0fd79d",
+        "bytes": 35408
+      }
+    },
+    {
+      "caseId": "c69-third-minutes",
+      "name": "canonical-solved-replay",
+      "commands": 129,
+      "raw": {
+        "path": "fixtures/c69-third-minutes/canonical-solved-replay.save.json",
+        "sha256": "366a0e513e9b8472528bf816aa2447bee6647a13c42bc964fa581d8244ec3cad",
+        "bytes": 14480
+      },
+      "oracle": {
+        "path": "fixtures/c69-third-minutes/canonical-solved-replay.expected.json",
+        "sha256": "03526826a33c6e4b6746a7e26648e9bfdc165fce93de7b40a61d3a179fd80f11",
+        "bytes": 36599
+      }
+    },
+    {
+      "caseId": "c70-grace-late-arrival",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c70-grace-late-arrival/canonical-solved-replay.save.json",
+        "sha256": "b268a446607755149118600eb43ce2682030bcd777e5be1054f56f3e47b26073",
+        "bytes": 12118
+      },
+      "oracle": {
+        "path": "fixtures/c70-grace-late-arrival/canonical-solved-replay.expected.json",
+        "sha256": "ef2f6b515f32b91a0a7092236041021a354c7751680f2e75a30fbc1e417caca9",
+        "bytes": 31878
+      }
+    },
+    {
+      "caseId": "c71-revoked-open-door",
+      "name": "canonical-solved-replay",
+      "commands": 114,
+      "raw": {
+        "path": "fixtures/c71-revoked-open-door/canonical-solved-replay.save.json",
+        "sha256": "9bd5f7a4ada579f57bff974f792943d74395a7246f6b473675338921c6a3a8ce",
+        "bytes": 12720
+      },
+      "oracle": {
+        "path": "fixtures/c71-revoked-open-door/canonical-solved-replay.expected.json",
+        "sha256": "cdc603d640b8e6c30e38da1c136861c9742efb36fa7b96f0fd2c921bddc73d81",
+        "bytes": 33070
+      }
+    },
+    {
+      "caseId": "c72-message-read-twice",
+      "name": "canonical-solved-replay",
+      "commands": 119,
+      "raw": {
+        "path": "fixtures/c72-message-read-twice/canonical-solved-replay.save.json",
+        "sha256": "2e7ca5d0c1964863652d6f36a25ff508893b22318845a568417e1278bab9930d",
+        "bytes": 13315
+      },
+      "oracle": {
+        "path": "fixtures/c72-message-read-twice/canonical-solved-replay.expected.json",
+        "sha256": "3e0a0238626b153ed0810d2c1da1a4a6f1fbe6399be2229dde6f392a32e170d5",
+        "bytes": 34257
+      }
+    },
+    {
+      "caseId": "c73-phantom-exit",
+      "name": "canonical-solved-replay",
+      "commands": 124,
+      "raw": {
+        "path": "fixtures/c73-phantom-exit/canonical-solved-replay.save.json",
+        "sha256": "0be4720c69c7ce17df3800610068afb5aa5f8ac7763e2d80908fa6950718a98b",
+        "bytes": 13813
+      },
+      "oracle": {
+        "path": "fixtures/c73-phantom-exit/canonical-solved-replay.expected.json",
+        "sha256": "03cad814e716c82ff2d5138f1b17662989e959edff64a4cace705fd93a374cfa",
+        "bytes": 35340
+      }
+    },
+    {
+      "caseId": "c74-silent-footsteps",
+      "name": "canonical-solved-replay",
+      "commands": 129,
+      "raw": {
+        "path": "fixtures/c74-silent-footsteps/canonical-solved-replay.save.json",
+        "sha256": "79b31f8e9e597682ce0b5ba09ad5829faa512cc113d06c346e54fa1cd461c77d",
+        "bytes": 14441
+      },
+      "oracle": {
+        "path": "fixtures/c74-silent-footsteps/canonical-solved-replay.expected.json",
+        "sha256": "41ef7d7d8c05498f29b6f8b6abb53cf3fdf3a012ce7999e94aa3b2c94e7f2128",
+        "bytes": 36563
+      }
+    },
+    {
+      "caseId": "c75-two-weather-photo",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c75-two-weather-photo/canonical-solved-replay.save.json",
+        "sha256": "f8dfdda424cde657b729ebd356422e79c1ed24b0d8a9a0f92f96fdf8f704d928",
+        "bytes": 12060
+      },
+      "oracle": {
+        "path": "fixtures/c75-two-weather-photo/canonical-solved-replay.expected.json",
+        "sha256": "792a34779ea89a673343dd4da3b7176a1c3a2d714d2eacd35b72d6bd12be9eed",
+        "bytes": 31819
+      }
+    },
+    {
+      "caseId": "c76-red-light-second",
+      "name": "canonical-solved-replay",
+      "commands": 114,
+      "raw": {
+        "path": "fixtures/c76-red-light-second/canonical-solved-replay.save.json",
+        "sha256": "2d0125602614d46d70c23948a0d266607996e6a20d1497857d626c1ee5d8c667",
+        "bytes": 12677
+      },
+      "oracle": {
+        "path": "fixtures/c76-red-light-second/canonical-solved-replay.expected.json",
+        "sha256": "b447d35d6260944509cd5606d40b2133156ba3be890d9dcc1519034699ba76d6",
+        "bytes": 33026
+      }
+    },
+    {
+      "caseId": "c77-invisible-ninth-wire",
+      "name": "canonical-solved-replay",
+      "commands": 119,
+      "raw": {
+        "path": "fixtures/c77-invisible-ninth-wire/canonical-solved-replay.save.json",
+        "sha256": "d5f88bd03798d593aae3d9589454a852bb24b41fb6a747aa0f8b5627f4653c6f",
+        "bytes": 13263
+      },
+      "oracle": {
+        "path": "fixtures/c77-invisible-ninth-wire/canonical-solved-replay.expected.json",
+        "sha256": "f5d5dbf0fc287109266a8aca9afafcd6297ea6cdd0c2b1a117c00ab0147533c3",
+        "bytes": 34207
+      }
+    },
+    {
+      "caseId": "c78-sound-from-other-side",
+      "name": "canonical-solved-replay",
+      "commands": 124,
+      "raw": {
+        "path": "fixtures/c78-sound-from-other-side/canonical-solved-replay.save.json",
+        "sha256": "647e971eb796c72e932060a33353fb2c1e2393b6b0de8448b2e13edf6835a5d1",
+        "bytes": 13912
+      },
+      "oracle": {
+        "path": "fixtures/c78-sound-from-other-side/canonical-solved-replay.expected.json",
+        "sha256": "4f812a6d9659eba96b5cc7773cddbdff4fb3cf8346a1e79755fcf14a84f7cc6c",
+        "bytes": 35448
+      }
+    },
+    {
+      "caseId": "c79-extra-queue-order",
+      "name": "canonical-solved-replay",
+      "commands": 129,
+      "raw": {
+        "path": "fixtures/c79-extra-queue-order/canonical-solved-replay.save.json",
+        "sha256": "cf611ef2acadaff08d0118af8a53f04dc598dcc511e25033d48de1f518f57b74",
+        "bytes": 14427
+      },
+      "oracle": {
+        "path": "fixtures/c79-extra-queue-order/canonical-solved-replay.expected.json",
+        "sha256": "6c21494dd9796b19c9e5983e3dfca0a014fa30f54b1b919b994efadcd6fd6ce8",
+        "bytes": 36550
+      }
+    },
+    {
+      "caseId": "c80-power-on-restart",
+      "name": "canonical-solved-replay",
+      "commands": 109,
+      "raw": {
+        "path": "fixtures/c80-power-on-restart/canonical-solved-replay.save.json",
+        "sha256": "5c5adaf075bf77843b752802bad997682b9a6ea40b65afd761fca5a008cf119e",
+        "bytes": 12116
+      },
+      "oracle": {
+        "path": "fixtures/c80-power-on-restart/canonical-solved-replay.expected.json",
+        "sha256": "ba3ff95d2368f50b07fef5b424eacb58acd1ed78214f9381dbc457975707875f",
+        "bytes": 31874
+      }
+    },
+    {
+      "caseId": "c81-lost-ack",
+      "name": "canonical-solved-replay",
+      "commands": 114,
+      "raw": {
+        "path": "fixtures/c81-lost-ack/canonical-solved-replay.save.json",
+        "sha256": "a837f04b50ab980c3d45924a87d313d753ab3c7d5f1c1c24cd90c466d65d2d4c",
+        "bytes": 12663
+      },
+      "oracle": {
+        "path": "fixtures/c81-lost-ack/canonical-solved-replay.expected.json",
+        "sha256": "e6a1d765d469c4825c3172d21c21ef2327681b8e92d0cc0bd95900e636fa49b7",
+        "bytes": 33004
+      }
+    },
+    {
+      "caseId": "c82-closed-network-device",
+      "name": "canonical-solved-replay",
+      "commands": 119,
+      "raw": {
+        "path": "fixtures/c82-closed-network-device/canonical-solved-replay.save.json",
+        "sha256": "76cddf01e6ebe1d0e6095a8537b51815f814f0f11345f41f279d74a3eb4e7ddc",
+        "bytes": 13312
+      },
+      "oracle": {
+        "path": "fixtures/c82-closed-network-device/canonical-solved-replay.expected.json",
+        "sha256": "d309c0d2758e394cce2cf850102deb1e7af7ccfd1423c043061bb590af6f1891",
+        "bytes": 34257
+      }
+    },
+    {
+      "caseId": "c83-two-unloads",
+      "name": "canonical-solved-replay",
+      "commands": 124,
+      "raw": {
+        "path": "fixtures/c83-two-unloads/canonical-solved-replay.save.json",
+        "sha256": "dad40a8ce97254669f28a629403e4ecc890aa701244c9464f9e2b40858a4ef7f",
+        "bytes": 13866
+      },
+      "oracle": {
+        "path": "fixtures/c83-two-unloads/canonical-solved-replay.expected.json",
+        "sha256": "d842d09896cf264c3cc5b527aa316a7a1ba6b8836a718a477293282235ae7f26",
+        "bytes": 35392
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "canonical-solved-replay",
+      "commands": 136,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/canonical-solved-replay.save.json",
+        "sha256": "5a34aa858996e65fbd9747d8981ddc4d88a79bf433b5fca575f78061bfecca6f",
+        "bytes": 15531
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/canonical-solved-replay.expected.json",
+        "sha256": "617f285729f6b5add1b8e80b40c3cdc7385f358325c2f391f290f6b7e5f42a4c",
+        "bytes": 38728
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "empty",
+      "commands": 0,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/empty.save.json",
+        "sha256": "9ea32940f4ced47fc10a34453af2e11ca115b85b2d3924bee3b4c68b7ba2d42b",
+        "bytes": 259
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/empty.expected.json",
+        "sha256": "9f176ef81d5c43133e3637d135722b678386e113de89a3a2967609d4e316e1ba",
+        "bytes": 1598
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "partial-question",
+      "commands": 1,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/partial-question.save.json",
+        "sha256": "100e22075d75138313f203eb80db41bc84afc62496dc52b77190346825ae8ecf",
+        "bytes": 347
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/partial-question.expected.json",
+        "sha256": "5b4a9e3ba66c5768cca111a2ff3b90c920009d32d25115b8d0e7f6975e7d41a2",
+        "bytes": 2365
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "undo-question",
+      "commands": 2,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/undo-question.save.json",
+        "sha256": "0161ad1c859e6d4583143b825a2d8652b52af165ce3ac1bc27a3497544137665",
+        "bytes": 395
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/undo-question.expected.json",
+        "sha256": "b70dd291598ed7193a87cc8a1eee3d68e7774185a90168069c5523bb0f230cf6",
+        "bytes": 1960
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "investigated-evidence",
+      "commands": 85,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/investigated-evidence.save.json",
+        "sha256": "4ec23cb2e81f6f7e34f18c5a95f1c633ccaf6e89abb7b88425a923fef7b3a1c4",
+        "bytes": 8741
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/investigated-evidence.expected.json",
+        "sha256": "f37955011f8c850facfa9bd4e20a9541c1ed7cf24a9b2790b78af41149685cf7",
+        "bytes": 25891
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "wrong-theory",
+      "commands": 87,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/wrong-theory.save.json",
+        "sha256": "b7ce62e063f2cfdc77ba27f6ba8db46d0ca3c9fce6f5a4405d860fa714f99d3c",
+        "bytes": 8943
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/wrong-theory.expected.json",
+        "sha256": "dba8a4dc1f180747a2f81eeb2ecb859275a9eeafe34ef639b999aef56167b0c3",
+        "bytes": 26320
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "solved-before-replay",
+      "commands": 135,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/solved-before-replay.save.json",
+        "sha256": "43d32dc4a5344553aca258d6a91b66915e0bdd53101e49505f20ab773046cdac",
+        "bytes": 15481
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/solved-before-replay.expected.json",
+        "sha256": "9f6b269edb81826400f9b9fe341e1243a765431053c8087e28aa1a155513615a",
+        "bytes": 38399
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "partial-board",
+      "commands": 114,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/partial-board.save.json",
+        "sha256": "fe6ca6b0814c1d5b95529800ec16d33b14ffdf6d4a143a4e01cdbaf83001828b",
+        "bytes": 12387
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/partial-board.expected.json",
+        "sha256": "04e5e6f910465dbd988bd443dc5382f5ea27cabca8ce62cb0202de5c7aa3c619",
+        "bytes": 32575
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "challenge-limited-questions-start",
+      "commands": 137,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-limited-questions-start.save.json",
+        "sha256": "25c8085549ebd40686e431251342ca4bc127f7c1aff60625eeb56e8c11e7d8a7",
+        "bytes": 15612
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-limited-questions-start.expected.json",
+        "sha256": "066b3ba56418f94a8c38b02c5d97977dabb22c1f982f5d3dcb4a8087d6c35688",
+        "bytes": 26454
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "challenge-limited-questions-partial",
+      "commands": 138,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-limited-questions-partial.save.json",
+        "sha256": "8c9bf36203d2b5b5b0bbf985c48836890d12a16b8f77255528135a16f1adc8a0",
+        "bytes": 15698
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-limited-questions-partial.expected.json",
+        "sha256": "63a62d7146536411b1030290b13f82ad7dc129c939244ba0b1e8c67a61fd9d5b",
+        "bytes": 27174
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "challenge-minimal-proof-start",
+      "commands": 137,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-minimal-proof-start.save.json",
+        "sha256": "74cab579a9cb018d4d6ab9904174b71c64d4d58c247ee42f4dbaf8abc35a071c",
+        "bytes": 15608
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-minimal-proof-start.expected.json",
+        "sha256": "aa775de3e9a6e0c8e15094398f536a1eff7b4c222a71c5c02b1bacc2559c2a98",
+        "bytes": 26446
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "challenge-minimal-proof-partial",
+      "commands": 138,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-minimal-proof-partial.save.json",
+        "sha256": "1d0b7bb99d65886d993646a5f6d4204181736f8412d3d58b075025b4ce06365a",
+        "bytes": 15694
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-minimal-proof-partial.expected.json",
+        "sha256": "051063e53c501e92c39ece9dead6990bdb731eb9bb3c5f56d4dbe3daa2ef9f18",
+        "bytes": 27166
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "challenge-minimal-proof-solved-replay",
+      "commands": 273,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-minimal-proof-solved-replay.save.json",
+        "sha256": "5be05178833d9988d73a3f9f46ed4b60ff4c5bfc9f932858b60ec13386c1c0ff",
+        "bytes": 30878
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-minimal-proof-solved-replay.expected.json",
+        "sha256": "ef3a4d7c31ce40cd4deed8494481d946854c80d41bdf863bd2d7dadfbb3eb71d",
+        "bytes": 63637
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "challenge-no-scaffolds-start",
+      "commands": 137,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-no-scaffolds-start.save.json",
+        "sha256": "e47555626bd9695889b942f544c1fe97dcf6f051436671a501819fb60f5ce563",
+        "bytes": 15607
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-no-scaffolds-start.expected.json",
+        "sha256": "c9fd979ae9aa9e41092fab9c6a5f9c93bfde7d26b0cbd25512566b6a7a710847",
+        "bytes": 26444
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "challenge-no-scaffolds-partial",
+      "commands": 138,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-no-scaffolds-partial.save.json",
+        "sha256": "a42dcd570a58ed001167d7239d64efb4d2beae3a72a78ee139880c024e3940d3",
+        "bytes": 15693
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-no-scaffolds-partial.expected.json",
+        "sha256": "35e87319b778a518447d29a29529a695a04dba40e6e4b1f18b6d1235ab198c99",
+        "bytes": 27164
+      }
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "name": "challenge-no-scaffolds-solved-replay",
+      "commands": 273,
+      "raw": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-no-scaffolds-solved-replay.save.json",
+        "sha256": "62a0e2bc9a08eb093cb2ed2d30eed26271b9a92c942ec28f2c37839046179718",
+        "bytes": 30877
+      },
+      "oracle": {
+        "path": "fixtures/c84-handoff-after-stop/challenge-no-scaffolds-solved-replay.expected.json",
+        "sha256": "cbb13890a9df3a6a90c7262d06f7bb1322c7ec34ba2f65efe31f5d3e847cf1cf",
+        "bytes": 63635
+      }
+    }
+  ],
+  "negatives": [
+    {
+      "caseId": "c61-missing-tape-turn",
+      "name": "confirm-only-irrecoverable",
+      "raw": {
+        "path": "negative/c61-missing-tape-turn-confirm-only.save.json",
+        "sha256": "99f9b30b3dfce62204a08cf254f931702c42501ae65de1ae4759c98582c96d98",
+        "bytes": 345
+      },
+      "oracle": {
+        "path": "negative/c61-missing-tape-turn-confirm-only.expected.json",
+        "sha256": "9cd4b50754812b41a4187fcaeab6fc75144fb37b19bca4ffb00bf27de8907394",
+        "bytes": 3721
+      }
+    }
+  ],
+  "milestoneCoverage": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "stage": "challenge-limited-questions-recompletion",
+      "coverage": "not-run",
+      "passed": null,
+      "reason": "Only challenge reset and first question are covered; no claim of full limited-question re-completion."
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "stage": "challenge-limited-questions-recompletion",
+      "coverage": "not-run",
+      "passed": null,
+      "reason": "Only challenge reset and first question are covered; no claim of full limited-question re-completion."
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "stage": "challenge-limited-questions-recompletion",
+      "coverage": "not-run",
+      "passed": null,
+      "reason": "Only challenge reset and first question are covered; no claim of full limited-question re-completion."
+    }
+  ],
+  "normalization": "Old RuntimeState facts/evidence and internal theory order; board/slot/event public IDs mapped explicitly to authored semantic IDs. UI labels are not compatibility invariants."
+}

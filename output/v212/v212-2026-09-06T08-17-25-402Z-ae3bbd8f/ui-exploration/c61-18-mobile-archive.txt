@@ -1,0 +1,46 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- alert
+- main:
+  - generic: THE BLACK SOUP · C61
+  - heading "少了一圈的胶带" [level=1]
+  - navigation:
+    - button "设置"
+  - navigation "调查工作区":
+    - button "现场":
+      - generic: 现场
+    - button "提问":
+      - generic: 提问
+    - button "证据":
+      - generic: 证据
+    - button "推断" [pressed]:
+      - generic: 推断
+  - text: 结案档案
+  - heading "你已经证明事件如何发生" [level=2]
+  - generic: 回放已解锁
+  - region "你的证明成立":
+    - text: CASE CLOSED · 这是你亲手还原的真相
+    - heading "你的证明成立" [level=2]
+    - paragraph: 答案不是系统替你揭晓的；事件、来源和证据已经由你的证明闭合。
+    - button "从头查看证据回放"
+    - link "继续下一案：绳子没有变短":
+      - /url: /case/c62-rope-not-shorter/
+    - generic: 本案下一挑战：限定 14 问
+    - generic: 结
+    - generic "本次结案统计":
+      - term: 证明完整度
+      - definition: 100%
+      - term: 有效提问
+      - definition: "4"
+      - term: 重复验证
+      - definition: "1"
+      - term: 采用证据
+      - definition: "10"
+    - generic: 我的解释
+    - paragraph: 测试记录：我把已公开材料、事件顺序和两组关系放在一起，解释这次计数与测量之间的矛盾。
+    - generic: 证据回放
+    - paragraph: 按事件发生的顺序，逐拍对照你选过的证据。
+    - button "开始回放"
+    - text: 继续精通本案
+    - paragraph: 精通挑战 0/3
+    - button "开始限定 14 问"

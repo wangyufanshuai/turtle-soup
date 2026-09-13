@@ -1,0 +1,2098 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c67-shared-badge",
+  "metadata": {
+    "titleKey": "case.c67.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "身份语义",
+      "凭证转交",
+      "反事实"
+    ],
+    "targetMinutes": {
+      "min": 9,
+      "max": 19
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:53d0bd812d925d9f434b6b8c74156d061ce0992f1a8f99fa3f6a12c58e8bb836",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-civic-archive",
+    "sceneAsset": "/assets/cases/c67-shared-badge/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c67-shared-badge/scene-mobile.svg",
+    "palette": "season5-civic-archive",
+    "accent": "#c9a7d9",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "identity-matrix-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "identity-matrix"
+  },
+  "surface": {
+    "titleKey": "case.c67.title",
+    "textKey": "case.c67.surface",
+    "publicFactIds": [
+      "fact-c67-01",
+      "fact-c67-02",
+      "fact-c67-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c67-01",
+      "query-c67-02",
+      "query-c67-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c67-one",
+      "titleKey": "chapter.c67.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c67-1",
+      "titleKey": "board.c67.1.title",
+      "mode": "identity-matrix",
+      "slots": [
+        {
+          "id": "slot-c67-1-1",
+          "labelKey": "board.c67.1.slot.1",
+          "acceptsEventIds": [
+            "event-c67-01"
+          ]
+        },
+        {
+          "id": "slot-c67-1-2",
+          "labelKey": "board.c67.1.slot.2",
+          "acceptsEventIds": [
+            "event-c67-03"
+          ]
+        },
+        {
+          "id": "slot-c67-1-3",
+          "labelKey": "board.c67.1.slot.3",
+          "acceptsEventIds": [
+            "event-c67-05"
+          ]
+        },
+        {
+          "id": "slot-c67-1-4",
+          "labelKey": "board.c67.1.slot.4",
+          "acceptsEventIds": [
+            "event-c67-11"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "appears-as",
+        "assigned-to",
+        "excludes"
+      ]
+    },
+    {
+      "id": "board-c67-2",
+      "titleKey": "board.c67.2.title",
+      "mode": "counterfactual-tree",
+      "slots": [
+        {
+          "id": "slot-c67-2-1",
+          "labelKey": "board.c67.2.slot.1",
+          "acceptsEventIds": [
+            "event-c67-02"
+          ]
+        },
+        {
+          "id": "slot-c67-2-2",
+          "labelKey": "board.c67.2.slot.2",
+          "acceptsEventIds": [
+            "event-c67-04"
+          ]
+        },
+        {
+          "id": "slot-c67-2-3",
+          "labelKey": "board.c67.2.slot.3",
+          "acceptsEventIds": [
+            "event-c67-06"
+          ]
+        },
+        {
+          "id": "slot-c67-2-4",
+          "labelKey": "board.c67.2.slot.4",
+          "acceptsEventIds": [
+            "event-c67-11"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "if",
+        "otherwise",
+        "excludes"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c67-system",
+      "kind": "object",
+      "labelKey": "entity.c67.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c67",
+      "kind": "location",
+      "labelKey": "location.c67",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c67-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-1",
+      "labelKey": "event.c67.1",
+      "effectFactIds": [
+        "fact-c67-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c67-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-2",
+      "labelKey": "event.c67.2",
+      "effectFactIds": [
+        "fact-c67-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c67-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-3",
+      "labelKey": "event.c67.3",
+      "effectFactIds": [
+        "fact-c67-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c67-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-4",
+      "labelKey": "event.c67.4",
+      "effectFactIds": [
+        "fact-c67-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c67-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-5",
+      "labelKey": "event.c67.5",
+      "effectFactIds": [
+        "fact-c67-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c67-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-6",
+      "labelKey": "event.c67.6",
+      "effectFactIds": [
+        "fact-c67-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c67-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "21:24"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-7",
+      "labelKey": "event.c67.7",
+      "effectFactIds": [
+        "fact-c67-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c67-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-8",
+      "labelKey": "event.c67.8",
+      "effectFactIds": [
+        "fact-c67-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c67-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-9",
+      "labelKey": "event.c67.9",
+      "effectFactIds": [
+        "fact-c67-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c67-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-10",
+      "labelKey": "event.c67.10",
+      "effectFactIds": [
+        "fact-c67-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c67-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-11",
+      "labelKey": "event.c67.11",
+      "effectFactIds": [
+        "fact-c67-11"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c67-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "21:44"
+      },
+      "participants": [
+        "entity-c67-system"
+      ],
+      "locationId": "location-c67",
+      "action": "step-c67-12",
+      "labelKey": "event.c67.12",
+      "effectFactIds": [
+        "fact-c67-12"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c67-1-1",
+      "type": "precedes",
+      "fromId": "entity-c67-system",
+      "toId": "location-c67",
+      "eventId": "event-c67-01",
+      "factId": "fact-c67-01"
+    },
+    {
+      "id": "relation-c67-1-2",
+      "type": "causes",
+      "fromId": "entity-c67-system",
+      "toId": "location-c67",
+      "eventId": "event-c67-03",
+      "factId": "fact-c67-02"
+    },
+    {
+      "id": "relation-c67-1-3",
+      "type": "causes",
+      "fromId": "entity-c67-system",
+      "toId": "location-c67",
+      "eventId": "event-c67-05",
+      "factId": "fact-c67-03"
+    },
+    {
+      "id": "relation-c67-2-1",
+      "type": "precedes",
+      "fromId": "entity-c67-system",
+      "toId": "location-c67",
+      "eventId": "event-c67-02",
+      "factId": "fact-c67-02"
+    },
+    {
+      "id": "relation-c67-2-2",
+      "type": "causes",
+      "fromId": "entity-c67-system",
+      "toId": "location-c67",
+      "eventId": "event-c67-04",
+      "factId": "fact-c67-03"
+    },
+    {
+      "id": "relation-c67-2-3",
+      "type": "causes",
+      "fromId": "entity-c67-system",
+      "toId": "location-c67",
+      "eventId": "event-c67-06",
+      "factId": "fact-c67-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c67-01",
+      "predicate": "verified_c67_1",
+      "args": {
+        "term": "胸牌转交"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c67.1"
+    },
+    {
+      "id": "fact-c67-02",
+      "predicate": "verified_c67_2",
+      "args": {
+        "term": "读卡器"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c67.2"
+    },
+    {
+      "id": "fact-c67-03",
+      "predicate": "verified_c67_3",
+      "args": {
+        "term": "持有人身份"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c67.3"
+    },
+    {
+      "id": "fact-c67-04",
+      "predicate": "verified_c67_4",
+      "args": {
+        "term": "门禁记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c67.4"
+    },
+    {
+      "id": "fact-c67-05",
+      "predicate": "verified_c67_5",
+      "args": {
+        "term": "员工在场"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c67.5"
+    },
+    {
+      "id": "fact-c67-06",
+      "predicate": "verified_c67_6",
+      "args": {
+        "term": "凭证编号"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c67.6"
+    },
+    {
+      "id": "fact-c67-07",
+      "predicate": "verified_c67_7",
+      "args": {
+        "term": "交接时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c67.7"
+    },
+    {
+      "id": "fact-c67-08",
+      "predicate": "verified_c67_8",
+      "args": {
+        "term": "摄像头"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c67.8"
+    },
+    {
+      "id": "fact-c67-09",
+      "predicate": "verified_c67_9",
+      "args": {
+        "term": "个人授权"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c67.9"
+    },
+    {
+      "id": "fact-c67-10",
+      "predicate": "verified_c67_10",
+      "args": {
+        "term": "同一胸牌"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c67.10"
+    },
+    {
+      "id": "fact-c67-11",
+      "predicate": "verified_c67_11",
+      "args": {
+        "term": "胸牌转交"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c67.11"
+    },
+    {
+      "id": "fact-c67-12",
+      "predicate": "verified_c67_12",
+      "args": {
+        "term": "读卡器"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-12"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c67.12"
+    },
+    {
+      "id": "fact-c67-13",
+      "predicate": "verified_c67_13",
+      "args": {
+        "term": "持有人身份"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c67.13"
+    },
+    {
+      "id": "fact-c67-14",
+      "predicate": "verified_c67_14",
+      "args": {
+        "term": "门禁记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c67.14"
+    },
+    {
+      "id": "fact-c67-15",
+      "predicate": "verified_c67_15",
+      "args": {
+        "term": "员工在场"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c67.15"
+    },
+    {
+      "id": "fact-c67-16",
+      "predicate": "verified_c67_16",
+      "args": {
+        "term": "凭证编号"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c67.16"
+    },
+    {
+      "id": "fact-c67-17",
+      "predicate": "verified_c67_17",
+      "args": {
+        "term": "交接时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c67.17"
+    },
+    {
+      "id": "fact-c67-18",
+      "predicate": "verified_c67_18",
+      "args": {
+        "term": "摄像头"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c67.18"
+    },
+    {
+      "id": "fact-c67-19",
+      "predicate": "verified_c67_19",
+      "args": {
+        "term": "个人授权"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c67.19"
+    },
+    {
+      "id": "fact-c67-20",
+      "predicate": "verified_c67_20",
+      "args": {
+        "term": "同一胸牌"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c67-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c67-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c67.20"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c67-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-01",
+        "fact-c67-02",
+        "fact-c67-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c67-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-01",
+        "fact-c67-02",
+        "fact-c67-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c67-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-02",
+        "fact-c67-14"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c67-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-03",
+        "fact-c67-15"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c67-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-04",
+        "fact-c67-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c67-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-05",
+        "fact-c67-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c67-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-06",
+        "fact-c67-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c67-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-07",
+        "fact-c67-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c67-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-08",
+        "fact-c67-20"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c67-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c67-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c67-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-11"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c67-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c67-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c67-12"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c67-01",
+      "labelKey": "query.c67.1",
+      "intent": "verify",
+      "predicate": "verified_c67_1",
+      "slots": {
+        "subjectId": "entity-c67-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c67-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-opening"
+      ],
+      "examplePhrases": [
+        "胸牌转交是否成立？",
+        "能确认胸牌转交吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "胸牌转交"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c67-02",
+      "labelKey": "query.c67.2",
+      "intent": "verify",
+      "predicate": "verified_c67_2",
+      "slots": {
+        "subjectId": "entity-c67-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c67-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-opening"
+      ],
+      "examplePhrases": [
+        "读卡器是否成立？",
+        "能确认读卡器吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "读卡器"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c67-03",
+      "labelKey": "query.c67.3",
+      "intent": "verify",
+      "predicate": "verified_c67_3",
+      "slots": {
+        "subjectId": "entity-c67-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c67-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-opening"
+      ],
+      "examplePhrases": [
+        "持有人身份是否成立？",
+        "能确认持有人身份吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "持有人身份"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c67-04",
+      "labelKey": "query.c67.4",
+      "intent": "verify",
+      "predicate": "verified_c67_4",
+      "slots": {
+        "subjectId": "entity-c67-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c67-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-04"
+      ],
+      "examplePhrases": [
+        "门禁记录是否成立？",
+        "能确认门禁记录吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "门禁记录"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c67-05",
+      "labelKey": "query.c67.5",
+      "intent": "verify",
+      "predicate": "verified_c67_5",
+      "slots": {
+        "subjectId": "entity-c67-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c67-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-05"
+      ],
+      "examplePhrases": [
+        "员工在场是否成立？",
+        "能确认员工在场吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "员工在场"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c67-06",
+      "labelKey": "query.c67.6",
+      "intent": "verify",
+      "predicate": "verified_c67_6",
+      "slots": {
+        "subjectId": "entity-c67-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c67-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-06"
+      ],
+      "examplePhrases": [
+        "凭证编号是否成立？",
+        "能确认凭证编号吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "凭证编号"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c67-07",
+      "labelKey": "query.c67.7",
+      "intent": "verify",
+      "predicate": "verified_c67_7",
+      "slots": {
+        "subjectId": "entity-c67-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c67-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-07"
+      ],
+      "examplePhrases": [
+        "交接时间是否成立？",
+        "能确认交接时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "交接时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c67-08",
+      "labelKey": "query.c67.8",
+      "intent": "verify",
+      "predicate": "verified_c67_8",
+      "slots": {
+        "subjectId": "entity-c67-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c67-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-08"
+      ],
+      "examplePhrases": [
+        "摄像头是否成立？",
+        "能确认摄像头吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "摄像头"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c67-09",
+      "labelKey": "query.c67.9",
+      "intent": "verify",
+      "predicate": "verified_c67_9",
+      "slots": {
+        "subjectId": "entity-c67-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c67-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-09"
+      ],
+      "examplePhrases": [
+        "个人授权是否成立？",
+        "能确认个人授权吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "个人授权"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c67-10",
+      "labelKey": "query.c67.10",
+      "intent": "verify",
+      "predicate": "verified_c67_10",
+      "slots": {
+        "subjectId": "entity-c67-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c67-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c67-10"
+      ],
+      "examplePhrases": [
+        "同一胸牌是否成立？",
+        "能确认同一胸牌吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "同一胸牌"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c67-01",
+      "kind": "scene",
+      "titleKey": "evidence.c67.1.title",
+      "observationKey": "evidence.c67.1.observation",
+      "sourceFactIds": [
+        "fact-c67-01",
+        "fact-c67-02",
+        "fact-c67-03"
+      ],
+      "sourceEventIds": [
+        "event-c67-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c67-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-01.svg",
+      "assetAlt": "胸牌转交"
+    },
+    {
+      "id": "evidence-c67-02",
+      "kind": "record",
+      "titleKey": "evidence.c67.2.title",
+      "observationKey": "evidence.c67.2.observation",
+      "sourceFactIds": [
+        "fact-c67-02",
+        "fact-c67-14"
+      ],
+      "sourceEventIds": [
+        "event-c67-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c67-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-02.svg",
+      "assetAlt": "读卡器"
+    },
+    {
+      "id": "evidence-c67-03",
+      "kind": "object",
+      "titleKey": "evidence.c67.3.title",
+      "observationKey": "evidence.c67.3.observation",
+      "sourceFactIds": [
+        "fact-c67-03",
+        "fact-c67-15"
+      ],
+      "sourceEventIds": [
+        "event-c67-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-03.svg",
+      "assetAlt": "持有人身份"
+    },
+    {
+      "id": "evidence-c67-04",
+      "kind": "scene",
+      "titleKey": "evidence.c67.4.title",
+      "observationKey": "evidence.c67.4.observation",
+      "sourceFactIds": [
+        "fact-c67-04",
+        "fact-c67-16"
+      ],
+      "sourceEventIds": [
+        "event-c67-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-04.svg",
+      "assetAlt": "门禁记录"
+    },
+    {
+      "id": "evidence-c67-05",
+      "kind": "record",
+      "titleKey": "evidence.c67.5.title",
+      "observationKey": "evidence.c67.5.observation",
+      "sourceFactIds": [
+        "fact-c67-05",
+        "fact-c67-17"
+      ],
+      "sourceEventIds": [
+        "event-c67-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-05.svg",
+      "assetAlt": "员工在场"
+    },
+    {
+      "id": "evidence-c67-06",
+      "kind": "object",
+      "titleKey": "evidence.c67.6.title",
+      "observationKey": "evidence.c67.6.observation",
+      "sourceFactIds": [
+        "fact-c67-06",
+        "fact-c67-18"
+      ],
+      "sourceEventIds": [
+        "event-c67-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-01.svg",
+      "assetAlt": "凭证编号"
+    },
+    {
+      "id": "evidence-c67-07",
+      "kind": "scene",
+      "titleKey": "evidence.c67.7.title",
+      "observationKey": "evidence.c67.7.observation",
+      "sourceFactIds": [
+        "fact-c67-07",
+        "fact-c67-19"
+      ],
+      "sourceEventIds": [
+        "event-c67-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-02.svg",
+      "assetAlt": "交接时间"
+    },
+    {
+      "id": "evidence-c67-08",
+      "kind": "record",
+      "titleKey": "evidence.c67.8.title",
+      "observationKey": "evidence.c67.8.observation",
+      "sourceFactIds": [
+        "fact-c67-08",
+        "fact-c67-20"
+      ],
+      "sourceEventIds": [
+        "event-c67-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-03.svg",
+      "assetAlt": "摄像头"
+    },
+    {
+      "id": "evidence-c67-09",
+      "kind": "object",
+      "titleKey": "evidence.c67.9.title",
+      "observationKey": "evidence.c67.9.observation",
+      "sourceFactIds": [
+        "fact-c67-09"
+      ],
+      "sourceEventIds": [
+        "event-c67-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-04.svg",
+      "assetAlt": "个人授权"
+    },
+    {
+      "id": "evidence-c67-10",
+      "kind": "scene",
+      "titleKey": "evidence.c67.10.title",
+      "observationKey": "evidence.c67.10.observation",
+      "sourceFactIds": [
+        "fact-c67-10"
+      ],
+      "sourceEventIds": [
+        "event-c67-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-05.svg",
+      "assetAlt": "同一胸牌"
+    },
+    {
+      "id": "evidence-c67-11",
+      "kind": "record",
+      "titleKey": "evidence.c67.11.title",
+      "observationKey": "evidence.c67.11.observation",
+      "sourceFactIds": [
+        "fact-c67-11"
+      ],
+      "sourceEventIds": [
+        "event-c67-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-01.svg",
+      "assetAlt": "胸牌转交"
+    },
+    {
+      "id": "evidence-c67-12",
+      "kind": "object",
+      "titleKey": "evidence.c67.12.title",
+      "observationKey": "evidence.c67.12.observation",
+      "sourceFactIds": [
+        "fact-c67-12"
+      ],
+      "sourceEventIds": [
+        "event-c67-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c67-system",
+        "location-c67"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c67-shared-badge/evidence-02.svg",
+      "assetAlt": "读卡器"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c67.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c67-01",
+          "event-c67-02",
+          "event-c67-03",
+          "event-c67-04",
+          "event-c67-05",
+          "event-c67-06",
+          "event-c67-07",
+          "event-c67-08",
+          "event-c67-09",
+          "event-c67-10",
+          "event-c67-11"
+        ],
+        "motiveKey": "把凭证使用与人物在场分开证明"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c67-01",
+        "evidence-c67-02",
+        "evidence-c67-03",
+        "evidence-c67-04",
+        "evidence-c67-05",
+        "evidence-c67-06",
+        "evidence-c67-07",
+        "evidence-c67-08",
+        "evidence-c67-09",
+        "evidence-c67-10",
+        "evidence-c67-11"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c67-1",
+        "contradiction-c67-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c67-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c67.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "系统把两个人合并成一个账户"
+        ],
+        "motiveKey": "motive-c67-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c67-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c67-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c67-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c67.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "有人复制了两枚完全相同的胸牌"
+        ],
+        "motiveKey": "motive-c67-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c67-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c67-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c67-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c67-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c67-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c67-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c67-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c67-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c67-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c67-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c67-01",
+      "fact-c67-02",
+      "fact-c67-03",
+      "fact-c67-04",
+      "fact-c67-05",
+      "fact-c67-06",
+      "fact-c67-07",
+      "fact-c67-08",
+      "fact-c67-09",
+      "fact-c67-10",
+      "fact-c67-11"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c67-01",
+      "evidence-c67-02",
+      "evidence-c67-03",
+      "evidence-c67-04",
+      "evidence-c67-05",
+      "evidence-c67-06",
+      "evidence-c67-07",
+      "evidence-c67-08",
+      "evidence-c67-09",
+      "evidence-c67-10",
+      "evidence-c67-11"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c67-01",
+        "event-c67-02"
+      ],
+      [
+        "event-c67-02",
+        "event-c67-03"
+      ],
+      [
+        "event-c67-03",
+        "event-c67-04"
+      ],
+      [
+        "event-c67-04",
+        "event-c67-05"
+      ],
+      [
+        "event-c67-05",
+        "event-c67-06"
+      ],
+      [
+        "event-c67-06",
+        "event-c67-07"
+      ],
+      [
+        "event-c67-07",
+        "event-c67-08"
+      ],
+      [
+        "event-c67-08",
+        "event-c67-09"
+      ],
+      [
+        "event-c67-09",
+        "event-c67-10"
+      ],
+      [
+        "event-c67-10",
+        "event-c67-11"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c67-1",
+      "contradiction-c67-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c67-alternative-1",
+      "hypothesis-c67-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c67-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c67-a",
+        "evidenceIds": [
+          "evidence-c67-01",
+          "evidence-c67-02",
+          "evidence-c67-03",
+          "evidence-c67-04",
+          "evidence-c67-05",
+          "evidence-c67-06",
+          "evidence-c67-07",
+          "evidence-c67-08"
+        ]
+      },
+      {
+        "id": "proof-c67-b",
+        "evidenceIds": [
+          "evidence-c67-01",
+          "evidence-c67-02",
+          "evidence-c67-09",
+          "evidence-c67-10",
+          "evidence-c67-11"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "把凭证使用与人物在场分开证明"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c67-1",
+        "kind": "identity",
+        "boardId": "board-c67-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c67-1-1",
+            "eventId": "event-c67-01"
+          },
+          {
+            "slotId": "slot-c67-1-2",
+            "eventId": "event-c67-03"
+          },
+          {
+            "slotId": "slot-c67-1-3",
+            "eventId": "event-c67-05"
+          },
+          {
+            "slotId": "slot-c67-1-4",
+            "eventId": "event-c67-11"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c67-01",
+            "toEventId": "event-c67-03",
+            "relation": "appears-as"
+          },
+          {
+            "fromEventId": "event-c67-03",
+            "toEventId": "event-c67-05",
+            "relation": "appears-as"
+          },
+          {
+            "fromEventId": "event-c67-05",
+            "toEventId": "event-c67-11",
+            "relation": "appears-as"
+          }
+        ],
+        "failureCategory": "identity"
+      },
+      {
+        "id": "obligation-c67-2",
+        "kind": "identity",
+        "boardId": "board-c67-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c67-2-1",
+            "eventId": "event-c67-02"
+          },
+          {
+            "slotId": "slot-c67-2-2",
+            "eventId": "event-c67-04"
+          },
+          {
+            "slotId": "slot-c67-2-3",
+            "eventId": "event-c67-06"
+          },
+          {
+            "slotId": "slot-c67-2-4",
+            "eventId": "event-c67-11"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c67-02",
+            "toEventId": "event-c67-04",
+            "relation": "if"
+          },
+          {
+            "fromEventId": "event-c67-04",
+            "toEventId": "event-c67-06",
+            "relation": "if"
+          },
+          {
+            "fromEventId": "event-c67-06",
+            "toEventId": "event-c67-11",
+            "relation": "if"
+          }
+        ],
+        "failureCategory": "identity"
+      }
+    ],
+    "uniquenessClaim": "胸牌在交接时被转交，读卡器证明凭证被使用，不证明具体持有人身份。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c67-1",
+      "eventId": "event-c67-02",
+      "factIds": [
+        "fact-c67-01"
+      ],
+      "captionKey": "event.c67.2"
+    },
+    {
+      "id": "replay-c67-2",
+      "eventId": "event-c67-03",
+      "factIds": [
+        "fact-c67-02"
+      ],
+      "captionKey": "event.c67.3"
+    },
+    {
+      "id": "replay-c67-3",
+      "eventId": "event-c67-04",
+      "factIds": [
+        "fact-c67-03"
+      ],
+      "captionKey": "event.c67.4"
+    },
+    {
+      "id": "replay-c67-4",
+      "eventId": "event-c67-05",
+      "factIds": [
+        "fact-c67-04"
+      ],
+      "captionKey": "event.c67.5"
+    },
+    {
+      "id": "replay-c67-5",
+      "eventId": "event-c67-06",
+      "factIds": [
+        "fact-c67-05"
+      ],
+      "captionKey": "event.c67.6"
+    },
+    {
+      "id": "replay-c67-6",
+      "eventId": "event-c67-07",
+      "factIds": [
+        "fact-c67-01",
+        "fact-c67-02",
+        "fact-c67-03",
+        "fact-c67-04",
+        "fact-c67-05",
+        "fact-c67-06",
+        "fact-c67-07",
+        "fact-c67-08",
+        "fact-c67-09",
+        "fact-c67-10",
+        "fact-c67-11"
+      ],
+      "captionKey": "event.c67.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c67.title": "两个人的同一枚胸牌",
+      "case.c67.surface": "门禁记录显示两名员工用过同一枚胸牌，系统却认为只有一个人在场。",
+      "case.c67.truth": "胸牌在交接时被转交，读卡器证明凭证被使用，不证明具体持有人身份。",
+      "entity.c67.system": "现场对象与记录链",
+      "location.c67": "身份语义",
+      "hypothesis.c67.canonical": "胸牌在交接时被转交，读卡器证明凭证被使用，不证明具体持有人身份。",
+      "hypothesis.c67.alternative.1": "系统把两个人合并成一个账户",
+      "hypothesis.c67.alternative.2": "有人复制了两枚完全相同的胸牌",
+      "motive.把凭证使用与人物在场分开证明": "把凭证使用与人物在场分开证明",
+      "chapter.c67.one": "固定异常",
+      "chapter.c67.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c67.1": "胸牌转交是否成立？",
+      "query.c67.2": "读卡器是否成立？",
+      "query.c67.3": "持有人身份是否成立？",
+      "query.c67.4": "门禁记录是否成立？",
+      "query.c67.5": "员工在场是否成立？",
+      "query.c67.6": "凭证编号是否成立？",
+      "query.c67.7": "交接时间是否成立？",
+      "query.c67.8": "摄像头是否成立？",
+      "query.c67.9": "个人授权是否成立？",
+      "query.c67.10": "同一胸牌是否成立？",
+      "event.c67.1": "阶段 1：胸牌转交进入记录链",
+      "event.c67.2": "阶段 2：读卡器进入记录链",
+      "event.c67.3": "阶段 3：持有人身份进入记录链",
+      "event.c67.4": "阶段 4：门禁记录进入记录链",
+      "event.c67.5": "阶段 5：员工在场进入记录链",
+      "event.c67.6": "阶段 6：凭证编号进入记录链",
+      "event.c67.7": "阶段 7：交接时间进入记录链",
+      "event.c67.8": "阶段 8：摄像头进入记录链",
+      "event.c67.9": "阶段 9：个人授权进入记录链",
+      "event.c67.10": "阶段 10：同一胸牌进入记录链",
+      "event.c67.11": "阶段 11：胸牌转交进入记录链",
+      "event.c67.12": "阶段 12：读卡器进入记录链",
+      "evidence.c67.1.title": "胸牌转交记录",
+      "evidence.c67.1.observation": "来源材料显示“胸牌转交”在该阶段可复核。",
+      "evidence.c67.2.title": "读卡器记录",
+      "evidence.c67.2.observation": "来源材料显示“读卡器”在该阶段可复核。",
+      "evidence.c67.3.title": "持有人身份记录",
+      "evidence.c67.3.observation": "来源材料显示“持有人身份”在该阶段可复核。",
+      "evidence.c67.4.title": "门禁记录记录",
+      "evidence.c67.4.observation": "来源材料显示“门禁记录”在该阶段可复核。",
+      "evidence.c67.5.title": "员工在场记录",
+      "evidence.c67.5.observation": "来源材料显示“员工在场”在该阶段可复核。",
+      "evidence.c67.6.title": "凭证编号记录",
+      "evidence.c67.6.observation": "来源材料显示“凭证编号”在该阶段可复核。",
+      "evidence.c67.7.title": "交接时间记录",
+      "evidence.c67.7.observation": "来源材料显示“交接时间”在该阶段可复核。",
+      "evidence.c67.8.title": "摄像头记录",
+      "evidence.c67.8.observation": "来源材料显示“摄像头”在该阶段可复核。",
+      "evidence.c67.9.title": "个人授权记录",
+      "evidence.c67.9.observation": "来源材料显示“个人授权”在该阶段可复核。",
+      "evidence.c67.10.title": "同一胸牌记录",
+      "evidence.c67.10.observation": "来源材料显示“同一胸牌”在该阶段可复核。",
+      "evidence.c67.11.title": "胸牌转交记录",
+      "evidence.c67.11.observation": "来源材料显示“胸牌转交”在该阶段可复核。",
+      "evidence.c67.12.title": "读卡器记录",
+      "evidence.c67.12.observation": "来源材料显示“读卡器”在该阶段可复核。",
+      "board.c67.1.title": "两个人的同一枚胸牌 · identity-matrix",
+      "board.c67.1.slot.1": "起始来源",
+      "board.c67.1.slot.2": "关键变化",
+      "board.c67.1.slot.3": "观测结果",
+      "board.c67.1.slot.4": "排除替代",
+      "board.c67.2.title": "两个人的同一枚胸牌 · counterfactual-tree",
+      "board.c67.2.slot.1": "起始来源",
+      "board.c67.2.slot.2": "关键变化",
+      "board.c67.2.slot.3": "观测结果",
+      "board.c67.2.slot.4": "排除替代"
+    }
+  }
+}

@@ -1,0 +1,577 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c23-clean-air-sample",
+  "caseVersion": 1,
+  "contentHash": "sha256:c23-clean-air-sample-v1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "取样口地图这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样管长度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "泄漏阀门这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场探头这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "管内流速这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "吸入时间这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "清洁窗口这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "延迟结束这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "浓度曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准气体这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "风向这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "废弃口罩这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "取样口地图这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样管长度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "泄漏阀门这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场探头这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "管内流速这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "吸入时间这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "清洁窗口这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "延迟结束这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "浓度曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准气体这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "风向这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "废弃口罩这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c23"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-12",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "取样口地图这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样管长度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "泄漏阀门这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场探头这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "管内流速这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "吸入时间这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "清洁窗口这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "延迟结束这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "浓度曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准气体这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "风向这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "废弃口罩这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c23"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-12",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "取样口地图这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样管长度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "泄漏阀门这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场探头这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "管内流速这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "吸入时间这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "清洁窗口这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "延迟结束这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "浓度曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准气体这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "风向这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "废弃口罩这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c23"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c23-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c23-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c23-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c23-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c23-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c23-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c23-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c23-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c23-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c23-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c23-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c23-11",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "使用集中分析仪连续监测多条远端管线"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-08"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-11"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-04",
+      "toItemId": "event-08",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-08",
+      "toItemId": "event-11",
+      "relation": "causes"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

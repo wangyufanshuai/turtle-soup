@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c50-extra-warehouse-pallet",
+  "caseVersion": 1,
+  "contentHash": "sha256:d0da1e95d1504cf1a5a4160623cbe3c5ad0cff06fbdd476c62524e3d0da104b1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "托盘数量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "批次总量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "拆分记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "托盘标签是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "库存口径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入库队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "货物件数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "盘点时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合并批次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "出库单是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "托盘数量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "批次总量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "拆分记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "托盘标签是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "库存口径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入库队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "货物件数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "盘点时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合并批次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "出库单是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c50"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "托盘数量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "批次总量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "拆分记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "托盘标签是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "库存口径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入库队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "货物件数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "盘点时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合并批次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "出库单是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c50"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "托盘数量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "批次总量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "拆分记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "托盘标签是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "库存口径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入库队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "货物件数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "盘点时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合并批次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "出库单是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c50"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c50-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c50-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c50-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c50-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c50-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c50-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c50-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c50-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c50-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c50-09",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "让批次、容器和货物数量可以同时对账"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-09"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "contributes-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "contributes-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-09",
+      "relation": "contributes-to"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-09"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "enqueues"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "enqueues"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-09",
+      "relation": "enqueues"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

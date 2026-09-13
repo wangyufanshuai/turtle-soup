@@ -1,0 +1,20 @@
+{
+  "clientWidth": 375,
+  "dialogs": [],
+  "focus": "",
+  "height": 844,
+  "inputs": [
+    {
+      "name": "tentative-explanation",
+      "value": "c84：保留另一种可能，等待反证。"
+    },
+    {
+      "name": "player-summary-desktop",
+      "value": ""
+    }
+  ],
+  "scrollWidth": 375,
+  "text": "跳到主要内容\nTHE BLACK SOUP · C84\n停止以后仍完成的交接\n设置\n\n◇\n调查记录已更新。\n\n现场\n提问\n证据\n推断\n我的推断\n让证据支持你的解释\n暂定解释\n你的想法\n推理板\n0/12 槽\n事件链\n0 个事件\n证明篮\n0 件证据\n主假设\n0 个事件 · 已选择解释\n备选假设\n0 个事件 · 尚未选择\n我的暂定解释 · 备选假设\n随调查存档保存。可以先写自己的想法，再比较下面的解释；文字本身不参与判定。\n哪种解释更值得验证？\n\n这些都是待检验的可能性。选择不会改变已整理的事件与证据。\n\n选择并检验\n停止命令没有生效\n选择并检验\n接收命令、完成交接与审计写入是不同步骤\n选择并检验\n审计记录是事后伪造的",
+  "url": "http://127.0.0.1:8112/case/c84-handoff-after-stop/#theory",
+  "width": 390
+}

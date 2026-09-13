@@ -1,0 +1,64 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- alert
+- main:
+  - link "← 全部案件":
+    - /url: /
+  - generic: THE BLACK SOUP · C84
+  - heading "停止以后仍完成的交接" [level=1]
+  - navigation:
+    - generic: 离线可玩 · 已保存
+    - button "设置"
+  - navigation "调查工作区":
+    - button "现场 1 查看异常与位置":
+      - text: 现场
+      - generic: "1"
+      - generic: 查看异常与位置
+    - button "提问 2 验证具体事实":
+      - text: 提问
+      - generic: "2"
+      - generic: 验证具体事实
+    - button "证据 3 检查与取舍":
+      - text: 证据
+      - generic: "3"
+      - generic: 检查与取舍
+    - button "推断 4 组织并证明" [active] [pressed]:
+      - text: 推断
+      - generic: "4"
+      - generic: 组织并证明
+  - text: 我的推断
+  - heading "让证据支持你的解释" [level=2]
+  - navigation "推断步骤":
+    - button "暂定解释 已选解释" [pressed]:
+      - generic: 暂定解释
+      - generic: 已选解释
+    - button "推理板 0/12 槽":
+      - generic: 推理板
+      - generic: 0/12 槽
+    - button "事件链 0 个事件":
+      - generic: 事件链
+      - generic: 0 个事件
+    - button "证明篮 0 件证据":
+      - generic: 证明篮
+      - generic: 0 件证据
+  - button "主假设 0 个事件" [pressed]:
+    - generic: 主假设
+    - generic: 0 个事件
+  - button "备选假设 0 个事件":
+    - generic: 备选假设
+    - generic: 0 个事件
+  - text: 当前解释
+  - combobox "当前解释":
+    - option "待验证解释 1（先整理证据）" [selected]
+    - option "待验证解释 2（先整理证据）"
+    - option "待验证解释 3（先整理证据）"
+  - complementary "调查本":
+    - text: 调查本
+    - heading "最近回答" [level=2]
+    - generic: "0"
+    - list
+    - paragraph: 这里会保留最近的事实回答，调查时可以随时对照。
+    - text: 我的真相
+    - textbox "我的真相 只保存在本机，不参与胜负，也不会发送给 AI。":
+      - /placeholder: 我认为发生了什么，以及为什么…
+    - generic: 只保存在本机，不参与胜负，也不会发送给 AI。

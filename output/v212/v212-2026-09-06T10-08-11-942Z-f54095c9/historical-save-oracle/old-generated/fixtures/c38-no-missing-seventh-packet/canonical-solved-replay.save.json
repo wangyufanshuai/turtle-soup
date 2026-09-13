@@ -1,0 +1,616 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c38-no-missing-seventh-packet",
+  "caseVersion": 1,
+  "contentHash": "sha256:ee008cea7b16b59bec15e1035eaf83a51c457903e3085aa937f15c4e03bf0216",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "第七码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "去重键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重传包是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "接收队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "序列号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "路由跳点是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校验和是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "发送日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "接收确认是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "数据包内容是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "第七码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "去重键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重传包是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "接收队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "序列号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "路由跳点是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校验和是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "发送日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "接收确认是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "数据包内容是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c38"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-13",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "第七码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "去重键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重传包是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "接收队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "序列号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "路由跳点是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校验和是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "发送日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "接收确认是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "数据包内容是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c38"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-13",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "第七码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "去重键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重传包是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "接收队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "序列号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "路由跳点是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校验和是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "发送日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "接收确认是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "数据包内容是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c38"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c38-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-11",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c38-12",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-12"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "在拥塞网络中避免重复数据污染业务流"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-12"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "routes-through"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "routes-through"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-12",
+      "relation": "routes-through"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-12"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-12",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

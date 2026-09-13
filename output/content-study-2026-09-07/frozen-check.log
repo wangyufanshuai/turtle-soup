@@ -1,0 +1,10 @@
+{
+  "snapshotPath": "docs/v2.12-frozen-baseline.json",
+  "checkOnly": true,
+  "measuredAt": "2026-09-07T01:47:35.342Z",
+  "cases": 84,
+  "historicalZips": 25,
+  "files": 427,
+  "passed": true,
+  "failures": []
+}

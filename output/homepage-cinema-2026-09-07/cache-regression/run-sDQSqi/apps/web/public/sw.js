@@ -1,0 +1,72 @@
+const CACHE_NAME = "black-soup-v24-investigation-rhythm-rc-1";
+const CACHE_PREFIX = "black-soup-v24-";
+const PRECACHE = [
+  "/",
+  "/case/c01-cold-room-knock/",
+  "/case/c02-snow-route/",
+  "/case/c03-second-shadow/",
+  "/case/c04-unpostable-reply/",
+  "/case/c05-third-lamp/",
+  "/case/c06-nonexistent-ticket/",
+  "/case/c07-key-returns/",
+  "/case/c08-unclaimed-recording/",
+  "/case/c09-rain-room/",
+  "/case/c10-single-ring/",
+  "/case/c11-borrowed-signature/",
+  "/case/c12-zero-floor-elevator/",
+  "/manifest.webmanifest",
+  "/icon.svg",
+  "/icon-192.png",
+  "/icon-512.png",
+  "/scene-cold-room.svg",
+  "/scene-snow-route.svg",
+  "/scene-second-shadow.svg",
+  "/scene-unpostable-reply.svg",
+  "/scene-third-lamp.svg",
+  "/scene-nonexistent-ticket.svg",
+  "/scene-key-returns.svg",
+  "/scene-unclaimed-recording.svg",
+  "/scene-rain-room.svg",
+  "/scene-single-ring.svg",
+  "/scene-borrowed-signature.svg",
+  "/scene-zero-floor-elevator.svg",
+];
+
+self.addEventListener("install", (event) => {
+  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE)));
+});
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    caches.keys()
+      .then((keys) => Promise.all(keys.filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE_NAME).map((key) => caches.delete(key))))
+      .then(() => self.clients.claim()),
+  );
+});
+
+self.addEventListener("message", (event) => {
+  if (event.data?.type === "SKIP_WAITING") self.skipWaiting();
+});
+
+self.addEventListener("fetch", (event) => {
+  if (event.request.method !== "GET" || new URL(event.request.url).origin !== self.location.origin) return;
+  event.respondWith(
+    caches.open(CACHE_NAME).then(async (cache) => {
+      const url = new URL(event.request.url);
+      const navigationKey = url.pathname === "/" ? "/" : `${url.pathname.replace(/\/$/, "")}/`;
+      // Static-export RSC files carry a router cache-busting parameter. Their
+      // bytes are already versioned by this service worker's precache manifest.
+      const staticQuery = [...url.searchParams.keys()].every((key) => key === "_rsc");
+      const cached = event.request.mode === "navigate"
+        ? await cache.match(navigationKey, { ignoreSearch: true })
+        : !staticQuery ? undefined : await cache.match(event.request) ?? await cache.match(decodeURIComponent(url.pathname));
+      if (cached) return cached;
+      try {
+        const response = await fetch(event.request);
+        return response;
+      } catch {
+        return event.request.mode === "navigate" ? await cache.match(navigationKey) ?? await cache.match("/") ?? Response.error() : Response.error();
+      }
+    }),
+  );
+});

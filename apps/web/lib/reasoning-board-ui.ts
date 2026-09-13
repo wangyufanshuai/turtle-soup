@@ -7,7 +7,7 @@ export const REASONING_BOARD_MODES = [
 ] as const satisfies readonly ReasoningBoardMode[];
 
 export const REASONING_BOARD_UI: Record<ReasoningBoardMode, { label: string; guide: string; direct: boolean }> = {
-  timeline: { label: "时间链", guide: "把事件直接放入时间槽；使用箭头调整先后，再连接关键因果。", direct: true },
+  timeline: { label: "时间链", guide: "按公开材料排列事件的先后，再单独检验允许的关系。先后不等于因果。", direct: true },
   "state-trace": { label: "状态转换", guide: "选择事件，再放入触发、保持、复位或观察状态；相邻状态必须由公开证据支持。", direct: true },
   "spatial-map": { label: "空间参照", guide: "先固定参照物，再把路径与位置放到对应区域；位置标签不等于真实移动。", direct: true },
   "provenance-chain": { label: "来源保管链", guide: "沿来源与保管顺序追踪记录，确认每次转移由谁证明。", direct: true },
@@ -28,7 +28,7 @@ export const REASONING_BOARD_UI: Record<ReasoningBoardMode, { label: string; gui
   "occlusion-map": { label: "遮挡图", guide: "依次固定观察者、遮挡物与目标，重建当时真正可见的路径。", direct: true },
   "acoustic-path": { label: "声学路径", guide: "连接声源、传播介质与接收端，比较直达、反射和抵消路径。", direct: true },
   "interval-logic": { label: "区间逻辑", guide: "排列开始、重叠与结束区间；同一时段不代表同一瞬间。", direct: true },
-  "counterfactual-tree": { label: "反事实树", guide: "先放置错误假设，再沿如果/否则分支附上能够排除它的公开证据。", direct: true },
+  "counterfactual-tree": { label: "反事实树", guide: "比较假设成立时应有的事件与观察；用如果、否则标出分支，再核对排除所需的证据。", direct: true },
   "capacity-model": { label: "容量模型", guide: "把需求、处理容量与积压分开，追踪重试如何改变队列而不改变实体。", direct: true },
 };
 

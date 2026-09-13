@@ -1,0 +1,165 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- alert
+- main:
+  - link "← 全部案件":
+    - /url: /
+  - generic: THE BLACK SOUP · C61
+  - heading "少了一圈的胶带" [level=1]
+  - navigation:
+    - generic: 离线可玩 · 已保存
+    - button "设置"
+  - status:
+    - generic: ◇
+    - text: 推理板已更新；提交时会检查全部结构。
+  - navigation "调查工作区":
+    - button "现场 1 查看异常与位置":
+      - text: 现场
+      - generic: "1"
+      - generic: 查看异常与位置
+    - button "提问 2 验证具体事实":
+      - text: 提问
+      - generic: "2"
+      - generic: 验证具体事实
+    - button "证据 3 检查与取舍":
+      - text: 证据
+      - generic: "3"
+      - generic: 检查与取舍
+    - button "推断 4 组织并证明" [pressed]:
+      - text: 推断
+      - generic: "4"
+      - generic: 组织并证明
+  - text: 我的推断
+  - heading "让证据支持你的解释" [level=2]
+  - navigation "推断步骤":
+    - button "暂定解释 已选解释":
+      - generic: 暂定解释
+      - generic: 已选解释
+    - button "推理板 4/8 槽" [pressed]:
+      - generic: 推理板
+      - generic: 4/8 槽
+    - button "事件链 10 个事件":
+      - generic: 事件链
+      - generic: 10 个事件
+    - button "证明篮 10 件证据":
+      - generic: 证明篮
+      - generic: 10 件证据
+  - group "选择推理板":
+    - button "1. 少了一圈的胶带 校准曲线 · 4/4 已放置 · 3 条关系" [pressed]:
+      - generic: 1. 少了一圈的胶带
+      - generic: 校准曲线 · 4/4 已放置 · 3 条关系
+    - button "2. 少了一圈的胶带 物质守恒 · 0/4 已放置 · 0 条关系":
+      - generic: 2. 少了一圈的胶带
+      - generic: 物质守恒 · 0/4 已放置 · 0 条关系
+  - region "校准曲线推理板":
+    - text: 校准曲线
+    - heading "少了一圈的胶带" [level=3]
+    - generic: 4/4
+    - paragraph: 把公开事件放到参考点、中段和误差区，再连接校准与插值关系。
+    - generic "公开事件库":
+      - generic: 1. 选择一张事件片，再放入下方位置
+      - button "20:16 阶段 5：校准曲线进入记录链 已放置 · 可重新安排":
+        - time: 20:16
+        - generic: 阶段 5：校准曲线进入记录链
+        - generic: 已放置 · 可重新安排
+      - button "20:04 阶段 2：胶带圈数进入记录链":
+        - time: 20:04
+        - generic: 阶段 2：胶带圈数进入记录链
+      - button "20:20 阶段 6：卷盘更换进入记录链":
+        - time: 20:20
+        - generic: 阶段 6：卷盘更换进入记录链
+      - button "21:24 阶段 7：带材厚度进入记录链":
+        - time: 21:24
+        - generic: 阶段 7：带材厚度进入记录链
+      - button "20:08 阶段 3：剩余长度进入记录链 已放置 · 可重新安排":
+        - time: 20:08
+        - generic: 阶段 3：剩余长度进入记录链
+        - generic: 已放置 · 可重新安排
+      - button "21:28 阶段 8：长度测量进入记录链":
+        - time: 21:28
+        - generic: 阶段 8：长度测量进入记录链
+      - button "20:00 阶段 1：卷盘芯径进入记录链 已放置 · 可重新安排":
+        - time: 20:00
+        - generic: 阶段 1：卷盘芯径进入记录链
+        - generic: 已放置 · 可重新安排
+      - button "21:36 阶段 10：剩余材料进入记录链 已放置 · 可重新安排":
+        - time: 21:36
+        - generic: 阶段 10：剩余材料进入记录链
+        - generic: 已放置 · 可重新安排
+      - button "21:32 阶段 9：标尺读数进入记录链":
+        - time: 21:32
+        - generic: 阶段 9：标尺读数进入记录链
+      - button "20:12 阶段 4：计数器进入记录链":
+        - time: 20:12
+        - generic: 阶段 4：计数器进入记录链
+    - generic "校准曲线直接操作区":
+      - generic: 显示
+      - generic: 参考
+      - button "端点，已放置阶段 1：卷盘芯径进入记录链":
+        - generic: 01 / 端点
+        - time: 20:00
+        - generic: 阶段 1：卷盘芯径进入记录链
+      - button "移除阶段 1：卷盘芯径进入记录链": ×
+      - button "中段，已放置阶段 3：剩余长度进入记录链":
+        - generic: 02 / 中段
+        - time: 20:08
+        - generic: 阶段 3：剩余长度进入记录链
+      - button "移除阶段 3：剩余长度进入记录链": ×
+      - button "误差带，已放置阶段 5：校准曲线进入记录链":
+        - generic: 03 / 误差带
+        - time: 20:16
+        - generic: 阶段 5：校准曲线进入记录链
+      - button "移除阶段 5：校准曲线进入记录链": ×
+      - button "排除替代，已放置阶段 10：剩余材料进入记录链":
+        - generic: 04 / 排除替代
+        - time: 21:36
+        - generic: 阶段 10：剩余材料进入记录链
+      - button "移除阶段 10：剩余材料进入记录链": ×
+    - text: 2. 依次点选起点、终点，再选择它们的关系
+    - button "阶段 1：卷盘芯径进入记录链 节点":
+      - text: 阶段 1：卷盘芯径进入记录链
+      - generic: 节点
+    - button "阶段 3：剩余长度进入记录链 节点":
+      - text: 阶段 3：剩余长度进入记录链
+      - generic: 节点
+    - button "阶段 5：校准曲线进入记录链 节点":
+      - text: 阶段 5：校准曲线进入记录链
+      - generic: 节点
+    - button "阶段 10：剩余材料进入记录链 节点":
+      - text: 阶段 10：剩余材料进入记录链
+      - generic: 节点
+    - button "校准"
+    - button "插值"
+    - button "界定"
+    - button "连接选中节点" [disabled]
+    - list:
+      - generic: 阶段 1：卷盘芯径进入记录链
+      - generic: 校准
+      - generic: 阶段 3：剩余长度进入记录链
+      - button "移除关系 1": ×
+      - generic: 阶段 3：剩余长度进入记录链
+      - generic: 校准
+      - generic: 阶段 5：校准曲线进入记录链
+      - button "移除关系 2": ×
+      - generic: 阶段 5：校准曲线进入记录链
+      - generic: 校准
+      - generic: 阶段 10：剩余材料进入记录链
+      - button "移除关系 3": ×
+  - paragraph: 切换只改变当前视图；提交时仍会检查所有推理板和事件链。
+  - complementary "调查本":
+    - text: 调查本
+    - heading "最近确认的事实" [level=2]
+    - generic: "4"
+    - list:
+      - generic: 是
+      - generic: 卷盘芯径是否成立？
+      - generic: 是
+      - generic: 剩余长度是否成立？
+      - generic: 是
+      - generic: 胶带圈数是否成立？
+      - generic: 是
+      - generic: 卷盘芯径是否成立？
+    - text: 我的真相
+    - textbox "我的真相 只保存在本机，不参与胜负，也不会发送给 AI。":
+      - /placeholder: 我认为发生了什么，以及为什么…
+    - generic: 只保存在本机，不参与胜负，也不会发送给 AI。

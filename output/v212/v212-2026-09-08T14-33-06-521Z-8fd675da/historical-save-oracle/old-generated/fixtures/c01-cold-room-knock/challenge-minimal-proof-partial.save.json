@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c01-cold-room-knock",
+  "caseVersion": 1,
+  "contentHash": "sha256:c01-cold-room-knock-v1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "里面有人吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "敲门声是人敲的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门为什么像从里面锁上？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "手机在冷藏室里吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "那部手机是林澈的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "样本在外面的储物柜里吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "林澈故意制造敲门声吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "方砚后来进过冷藏室吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "托盘是不是蓝色的？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "里面有人吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "敲门声是人敲的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门为什么像从里面锁上？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "手机在冷藏室里吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "那部手机是林澈的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "样本在外面的储物柜里吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "林澈故意制造敲门声吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "方砚后来进过冷藏室吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "托盘是不是蓝色的？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-cold-room"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-corridor"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-cctv-exit",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-door-latch",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-metal-tray-mark",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-phone-in-room",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-phone-pairing",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-knock-recording",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-access-log",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "里面有人吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "敲门声是人敲的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门为什么像从里面锁上？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "手机在冷藏室里吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "那部手机是林澈的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "样本在外面的储物柜里吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "林澈故意制造敲门声吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "方砚后来进过冷藏室吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "托盘是不是蓝色的？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-cold-room"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-corridor"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-external-locker"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-cctv-exit",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-door-latch",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-metal-tray-mark",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-phone-in-room",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-phone-pairing",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-knock-recording",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-access-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-sample-locker",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-security-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-intent-chain",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "里面有人吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "敲门声是人敲的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门为什么像从里面锁上？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "手机在冷藏室里吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "那部手机是林澈的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "样本在外面的储物柜里吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "林澈故意制造敲门声吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "方砚后来进过冷藏室吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "托盘是不是蓝色的？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-cold-room"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-corridor"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-external-locker"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-cctv-exit",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-door-latch",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-metal-tray-mark",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-phone-in-room",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-phone-pairing",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-knock-recording",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-access-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-sample-locker",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-security-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-intent-chain",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-delayed-sound"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-cctv-exit",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-door-latch",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-metal-tray-mark",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-knock-recording",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-access-log",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-phone-in-room",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-phone-pairing",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-sample-locker",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-intent-chain",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "motive-delay-inspection"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    },
+    {
+      "type": "set_replay_mode",
+      "mode": "minimal-proof"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "里面有人吗？"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": false
+}

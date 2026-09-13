@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c55-merged-multi-alarm",
+  "caseVersion": 1,
+  "contentHash": "sha256:31a406e477a68828079e2727a41198d217448a67dd76a82b0883dd2e28e441fa",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "告警源是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "队列合并是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "提示音是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "优先级是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "源事件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声学输出是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "确认按钮是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "队列窗口是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "状态迁移是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "告警编号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "告警源是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "队列合并是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "提示音是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "优先级是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "源事件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声学输出是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "确认按钮是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "队列窗口是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "状态迁移是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "告警编号是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c55"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "告警源是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "队列合并是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "提示音是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "优先级是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "源事件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声学输出是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "确认按钮是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "队列窗口是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "状态迁移是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "告警编号是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c55"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "告警源是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "队列合并是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "提示音是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "优先级是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "源事件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "声学输出是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "确认按钮是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "队列窗口是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "状态迁移是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "告警编号是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c55"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c55-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c55-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c55-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c55-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c55-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c55-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c55-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c55-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c55-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c55-09",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "避免告警风暴淹没关键提示"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-09"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "enqueues"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "enqueues"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-09",
+      "relation": "enqueues"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-09"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "transitions-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "transitions-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-09",
+      "relation": "transitions-to"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

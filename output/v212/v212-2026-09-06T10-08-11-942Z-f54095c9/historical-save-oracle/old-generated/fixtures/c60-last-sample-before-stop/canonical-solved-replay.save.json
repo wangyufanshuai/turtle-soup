@@ -1,0 +1,661 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c60-last-sample-before-stop",
+  "caseVersion": 1,
+  "contentHash": "sha256:21b820f1b4c91def40e4ec5464965d88b2621d196d2e7bccb202aca9cf7c3a09",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "停止命令是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "缓存窗口是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "最终采样是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行回执是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样序号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "发送队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "停止状态是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "时间顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制回路是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "终点记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "停止命令是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "缓存窗口是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "最终采样是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行回执是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样序号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "发送队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "停止状态是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "时间顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制回路是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "终点记录是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c60"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-13",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "停止命令是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "缓存窗口是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "最终采样是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行回执是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样序号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "发送队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "停止状态是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "时间顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制回路是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "终点记录是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c60"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-13",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "停止命令是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "缓存窗口是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "最终采样是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行回执是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样序号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "发送队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "停止状态是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "时间顺序是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制回路是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "终点记录是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c60"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c60-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-11",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c60-12",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-12"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "在停机边界保留最后一个可解释样本"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-12"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "commands"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "commands"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-12",
+      "relation": "commands"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-12"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "propagates"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "propagates"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-12",
+      "relation": "propagates"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-03",
+      "slotId": "slot-01",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-03",
+      "slotId": "slot-02",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-03",
+      "slotId": "slot-03",
+      "itemId": "event-07"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-03",
+      "slotId": "slot-04",
+      "itemId": "event-12"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-03",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "sampled-before"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-03",
+      "fromItemId": "event-05",
+      "toItemId": "event-07",
+      "relation": "sampled-before"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-03",
+      "fromItemId": "event-07",
+      "toItemId": "event-12",
+      "relation": "sampled-before"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

@@ -1,0 +1,470 @@
+{
+  "runId": "v212-2026-09-06T10-08-11-942Z-f54095c9",
+  "releaseProfile": "v2.12-internal-rc",
+  "sourceHead": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "sourceTreeDigest": "0ce774e89eed48aaabf625fe3c36f64ce8460fd852951f8834803cd3157f3eb8",
+  "profileSha256": "0c58dc769f45bb9d29232b9774bc6d01a06ff1e97229446a224131ce12bf658c",
+  "buildHash": "a88f90d18c47fd26bdeceb3cbc90d190a5acd02925dc7c6f0dc02a2db5fbc823",
+  "measuredAt": "2026-09-06T10:13:05.305Z",
+  "scope": "Static artifact checks only",
+  "coverage": "static",
+  "staticChecksPassed": true,
+  "passed": null,
+  "totalUncompressedBytes": 8264606,
+  "fileCount": 1179,
+  "gates": [
+    {
+      "id": "static-routes",
+      "coverage": "static",
+      "passed": true,
+      "scope": "84 selected manifest routes exist on disk; HTTP status and Worker startup NOT measured",
+      "evidence": [
+        {
+          "caseId": "c01-cold-room-knock",
+          "exists": true
+        },
+        {
+          "caseId": "c02-snow-route",
+          "exists": true
+        },
+        {
+          "caseId": "c03-second-shadow",
+          "exists": true
+        },
+        {
+          "caseId": "c04-unpostable-reply",
+          "exists": true
+        },
+        {
+          "caseId": "c05-third-lamp",
+          "exists": true
+        },
+        {
+          "caseId": "c06-nonexistent-ticket",
+          "exists": true
+        },
+        {
+          "caseId": "c07-key-returns",
+          "exists": true
+        },
+        {
+          "caseId": "c08-unclaimed-recording",
+          "exists": true
+        },
+        {
+          "caseId": "c09-rain-room",
+          "exists": true
+        },
+        {
+          "caseId": "c10-single-ring",
+          "exists": true
+        },
+        {
+          "caseId": "c11-borrowed-signature",
+          "exists": true
+        },
+        {
+          "caseId": "c12-zero-floor-elevator",
+          "exists": true
+        },
+        {
+          "caseId": "c13-second-waterline",
+          "exists": true
+        },
+        {
+          "caseId": "c14-moving-red-box",
+          "exists": true
+        },
+        {
+          "caseId": "c15-sixth-panorama",
+          "exists": true
+        },
+        {
+          "caseId": "c16-closed-door-handoff",
+          "exists": true
+        },
+        {
+          "caseId": "c17-twelve-strikes",
+          "exists": true
+        },
+        {
+          "caseId": "c18-lighter-sealed-crate",
+          "exists": true
+        },
+        {
+          "caseId": "c19-fog-after-window",
+          "exists": true
+        },
+        {
+          "caseId": "c20-fifth-worker",
+          "exists": true
+        },
+        {
+          "caseId": "c21-missing-seven-minutes",
+          "exists": true
+        },
+        {
+          "caseId": "c22-overloaded-bridge",
+          "exists": true
+        },
+        {
+          "caseId": "c23-clean-air-sample",
+          "exists": true
+        },
+        {
+          "caseId": "c24-turned-painting",
+          "exists": true
+        },
+        {
+          "caseId": "c25-silent-second-bell",
+          "exists": true
+        },
+        {
+          "caseId": "c26-short-map-pipeline",
+          "exists": true
+        },
+        {
+          "caseId": "c27-stationary-moving-platform",
+          "exists": true
+        },
+        {
+          "caseId": "c28-ninth-minute-temperature",
+          "exists": true
+        },
+        {
+          "caseId": "c29-role-stamp-signature",
+          "exists": true
+        },
+        {
+          "caseId": "c30-shared-shift-id",
+          "exists": true
+        },
+        {
+          "caseId": "c31-eighth-unchecked-guest",
+          "exists": true
+        },
+        {
+          "caseId": "c32-approved-unauthorized-door",
+          "exists": true
+        },
+        {
+          "caseId": "c33-early-late-arrival",
+          "exists": true
+        },
+        {
+          "caseId": "c34-tomorrow-seal",
+          "exists": true
+        },
+        {
+          "caseId": "c35-extra-glass-attendant",
+          "exists": true
+        },
+        {
+          "caseId": "c36-no-one-left-terminal",
+          "exists": true
+        },
+        {
+          "caseId": "c37-zeroed-pressure-gauge",
+          "exists": true
+        },
+        {
+          "caseId": "c38-no-missing-seventh-packet",
+          "exists": true
+        },
+        {
+          "caseId": "c39-duplicated-heartbeat",
+          "exists": true
+        },
+        {
+          "caseId": "c40-early-liquid-front",
+          "exists": true
+        },
+        {
+          "caseId": "c41-hysteresis-overheat",
+          "exists": true
+        },
+        {
+          "caseId": "c42-same-weight-different-load",
+          "exists": true
+        },
+        {
+          "caseId": "c43-train-stop-reference",
+          "exists": true
+        },
+        {
+          "caseId": "c44-hidden-overload-spike",
+          "exists": true
+        },
+        {
+          "caseId": "c45-double-location-second",
+          "exists": true
+        },
+        {
+          "caseId": "c46-pilot-pressure-valve",
+          "exists": true
+        },
+        {
+          "caseId": "c47-offline-buffered-device",
+          "exists": true
+        },
+        {
+          "caseId": "c48-two-point-calibration",
+          "exists": true
+        },
+        {
+          "caseId": "c49-gimbal-turn-drone",
+          "exists": true
+        },
+        {
+          "caseId": "c50-extra-warehouse-pallet",
+          "exists": true
+        },
+        {
+          "caseId": "c51-equivalent-resistance",
+          "exists": true
+        },
+        {
+          "caseId": "c52-shorter-river-night",
+          "exists": true
+        },
+        {
+          "caseId": "c53-late-fiber-echo",
+          "exists": true
+        },
+        {
+          "caseId": "c54-elevator-counterweight",
+          "exists": true
+        },
+        {
+          "caseId": "c55-merged-multi-alarm",
+          "exists": true
+        },
+        {
+          "caseId": "c56-interpolated-temperature-map",
+          "exists": true
+        },
+        {
+          "caseId": "c57-lagging-wind-vane",
+          "exists": true
+        },
+        {
+          "caseId": "c58-same-volume-two-levels",
+          "exists": true
+        },
+        {
+          "caseId": "c59-extra-ninth-floor",
+          "exists": true
+        },
+        {
+          "caseId": "c60-last-sample-before-stop",
+          "exists": true
+        },
+        {
+          "caseId": "c61-missing-tape-turn",
+          "exists": true
+        },
+        {
+          "caseId": "c62-rope-not-shorter",
+          "exists": true
+        },
+        {
+          "caseId": "c63-ice-melts-first",
+          "exists": true
+        },
+        {
+          "caseId": "c64-uncracked-glass",
+          "exists": true
+        },
+        {
+          "caseId": "c65-twin-watermarks",
+          "exists": true
+        },
+        {
+          "caseId": "c66-still-weight",
+          "exists": true
+        },
+        {
+          "caseId": "c67-shared-badge",
+          "exists": true
+        },
+        {
+          "caseId": "c68-empty-seat-proof",
+          "exists": true
+        },
+        {
+          "caseId": "c69-third-minutes",
+          "exists": true
+        },
+        {
+          "caseId": "c70-grace-late-arrival",
+          "exists": true
+        },
+        {
+          "caseId": "c71-revoked-open-door",
+          "exists": true
+        },
+        {
+          "caseId": "c72-message-read-twice",
+          "exists": true
+        },
+        {
+          "caseId": "c73-phantom-exit",
+          "exists": true
+        },
+        {
+          "caseId": "c74-silent-footsteps",
+          "exists": true
+        },
+        {
+          "caseId": "c75-two-weather-photo",
+          "exists": true
+        },
+        {
+          "caseId": "c76-red-light-second",
+          "exists": true
+        },
+        {
+          "caseId": "c77-invisible-ninth-wire",
+          "exists": true
+        },
+        {
+          "caseId": "c78-sound-from-other-side",
+          "exists": true
+        },
+        {
+          "caseId": "c79-extra-queue-order",
+          "exists": true
+        },
+        {
+          "caseId": "c80-power-on-restart",
+          "exists": true
+        },
+        {
+          "caseId": "c81-lost-ack",
+          "exists": true
+        },
+        {
+          "caseId": "c82-closed-network-device",
+          "exists": true
+        },
+        {
+          "caseId": "c83-two-unloads",
+          "exists": true
+        },
+        {
+          "caseId": "c84-handoff-after-stop",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "home-script-budget",
+      "coverage": "static",
+      "passed": true,
+      "scope": "Uncompressed bytes of home script src files only; excludes Worker/dynamic chunks/media/SW prefetch and is NOT total first-load traffic",
+      "evidence": [
+        {
+          "url": "/_next/static/chunks/87c73c54-fd33669cffb637e8.js",
+          "bytes": 201054
+        },
+        {
+          "url": "/_next/static/chunks/1968-04a35088649de767.js",
+          "bytes": 241318
+        },
+        {
+          "url": "/_next/static/chunks/main-app-b47f01cc1c452d5e.js",
+          "bytes": 511
+        },
+        {
+          "url": "/_next/static/chunks/app/layout-896a5beb8ef5ecb2.js",
+          "bytes": 1915
+        },
+        {
+          "url": "/_next/static/chunks/5587-4d713d181b163368.js",
+          "bytes": 8641
+        },
+        {
+          "url": "/_next/static/chunks/2228-c09dd65c67b1f3dc.js",
+          "bytes": 90748
+        },
+        {
+          "url": "/_next/static/chunks/app/page-67d4107581f964e7.js",
+          "bytes": 12292
+        },
+        {
+          "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+          "bytes": 112594
+        },
+        {
+          "url": "/_next/static/chunks/webpack-e0c2dd0738ae5cc7.js",
+          "bytes": 5064
+        }
+      ],
+      "bytes": 674137,
+      "budget": 700000
+    },
+    {
+      "id": "maximum-file",
+      "coverage": "static",
+      "passed": true,
+      "scope": "Largest uncompressed static file on disk",
+      "evidence": [
+        {
+          "path": "_next/static/chunks/5542.2ff922f9742b7b1e.js",
+          "bytes": 400480,
+          "sha256": "bcaa4a96f2e852c14bc50f8055609241bccc7716d9b96e3c19e57ea285826238"
+        },
+        {
+          "path": "_next/static/chunks/1968-04a35088649de767.js",
+          "bytes": 241318,
+          "sha256": "3ad38552bd26f3bb3e63749580d476925264ad2fb9e71f368db4d642506b8a42"
+        },
+        {
+          "path": "_next/static/chunks/87c73c54-fd33669cffb637e8.js",
+          "bytes": 201054,
+          "sha256": "fb67ea0737e6ab4899bfaf2270b781f7dd2184d9f19fb415ad8d7caff95848c7"
+        },
+        {
+          "path": "_next/static/chunks/framework-d36026172313d93d.js",
+          "bytes": 189663,
+          "sha256": "ab57de39e6c384aba318defb9c1a409ec1da5b64e3e2adb58ecaaea73e4447d3"
+        },
+        {
+          "path": "_next/static/chunks/main-acddd45e17747c1b.js",
+          "bytes": 133637,
+          "sha256": "7d6f54a73a15fc49157122d6aa2dc6a7fdbfbd6adc1d5fdec8e7670790e0f990"
+        }
+      ],
+      "budget": 450000
+    },
+    {
+      "id": "precache-resources",
+      "coverage": "static",
+      "passed": true,
+      "scope": "Full-package pre-cache list is locally complete; service-worker installation and offline startup NOT measured",
+      "entries": 1178,
+      "scheduledUncompressedBytes": 8208395,
+      "missing": [],
+      "evidence": [
+        "apps/web/out/sw.js"
+      ]
+    },
+    {
+      "id": "initial-network-transfer",
+      "scope": "Actual cold browser request waterfall including service worker installation",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not inferable from static file sizes; current implementation pre-caches the full package"
+    },
+    {
+      "id": "interaction-latency",
+      "scope": "Visible action feedback p95 / long tasks on specified devices",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    }
+  ],
+  "qualification": "No claims about current-case-only downloads, first-load transferred bytes, TTI, INP or offline execution"
+}

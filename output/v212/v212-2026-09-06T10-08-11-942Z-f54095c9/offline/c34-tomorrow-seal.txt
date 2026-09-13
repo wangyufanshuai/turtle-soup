@@ -1,0 +1,28 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- alert
+- main:
+  - generic: THE BLACK SOUP · C34
+  - heading "封条上的明天" [level=1]
+  - navigation:
+    - button "设置"
+  - navigation "调查工作区":
+    - button "现场" [pressed]:
+      - generic: 现场
+    - button "提问":
+      - generic: 提问
+    - button "证据":
+      - generic: 证据
+    - button "推断":
+      - generic: 推断
+  - text: 案件异常 · 先读这一句
+  - paragraph: 箱子在周一晚上完成封存，完整封条却印着周二日期；物流链没有中断，封条也没有更换。
+  - generic: 先检查现场，再问一个可证实或否定的问题。不必现在猜中真相。
+  - img "封条上的明天的公开现场；必要线索同时以文字给出"
+  - generic: 全部必要线索均有文字说明
+  - heading "可以检查" [level=2]
+  - button "封装台 检查这里":
+    - generic: 封装台
+    - generic: 检查这里
+  - button "问一个事实 →"
+  - button "查看公开证据"

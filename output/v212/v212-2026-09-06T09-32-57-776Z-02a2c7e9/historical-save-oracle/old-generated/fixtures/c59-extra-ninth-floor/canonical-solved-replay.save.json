@@ -1,0 +1,642 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c59-extra-ninth-floor",
+  "caseVersion": 1,
+  "contentHash": "sha256:6eeeb71c008a1d841c0292f86974615852c6fc6013dfd0da3e046a280aed430a",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "气压楼层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "夹层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "设备层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "建筑层数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "气压模型是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电梯楼层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "消防图是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "高度基准是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重复计入是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "楼层估计是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "气压楼层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "夹层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "设备层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "建筑层数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "气压模型是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电梯楼层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "消防图是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "高度基准是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重复计入是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "楼层估计是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c59"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-14",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "气压楼层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "夹层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "设备层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "建筑层数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "气压模型是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电梯楼层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "消防图是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "高度基准是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重复计入是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "楼层估计是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c59"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-14",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "气压楼层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "夹层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "设备层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "建筑层数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "气压模型是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电梯楼层是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "消防图是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "高度基准是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重复计入是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "楼层估计是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c59"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c59-14",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-11",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-12",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c59-13",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-12"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-13"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "区分连续高度估计和离散建筑层定义"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-13"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "reframes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "reframes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-13",
+      "relation": "reframes"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-13"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "contributes-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "contributes-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-13",
+      "relation": "contributes-to"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

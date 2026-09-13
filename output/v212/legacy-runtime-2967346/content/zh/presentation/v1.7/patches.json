@@ -1,0 +1,30 @@
+[
+  {
+    "caseId": "c25-silent-second-bell",
+    "baseCanonicalHash": "sha256:f0b2ed2069fc10b0ce79f86ac9174a4b27b7bef1ce9ad322ad407755162ece6d",
+    "presentationRevision": 4,
+    "surface": "十秒内，访客确实按了两次门铃，控制器也收到两次触发；屋内录音却只有一段完整铃声。第二次触发为何没有变成第二次响铃？",
+    "questionLabels": {
+      "query-c25-04": "十秒防抖会把第二次触发并入当前响铃吗？",
+      "query-c25-06": "第二次按下时，控制器仍处在响铃状态吗？",
+      "query-c25-09": "住户听到的是一次连续响铃吗？"
+    },
+    "feedbackCopy": {
+      "missing-state": "触发已经到达控制器；仍需证明第二次触发发生时，当前响铃状态为何没有重新启动。"
+    }
+  },
+  {
+    "caseId": "c37-zeroed-pressure-gauge",
+    "baseCanonicalHash": "sha256:43d42046a74b38395edb1ae867d3bbb7c1e7e9f67e4651a4967c2498733d8423",
+    "presentationRevision": 4,
+    "surface": "管线泄压后，机械压力表的指针回到零线。环境温度改变，再用独立传感器复测时，两套读数却不一致。指针回零究竟证明了什么？",
+    "questionLabels": {
+      "query-c37-01": "指针回到零线时，仪表的零位基准仍可能移动吗？",
+      "query-c37-04": "仪表整条校准曲线是否发生了整体偏移？",
+      "query-c37-07": "常温零压校准时，零线代表什么？"
+    },
+    "feedbackCopy": {
+      "missing-measurement": "指针位置已经确认；仍需把温度、零位修正和参考读数放进同一个测量模型。"
+    }
+  }
+]

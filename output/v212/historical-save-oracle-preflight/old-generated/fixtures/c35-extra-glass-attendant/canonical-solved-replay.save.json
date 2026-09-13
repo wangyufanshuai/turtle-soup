@@ -1,0 +1,622 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c35-extra-glass-attendant",
+  "caseVersion": 1,
+  "contentHash": "sha256:8978a4ad427d2faa1677029ee390067ea40b55299165449296bbba144950c145",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "门禁记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "排班身份是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "备用制服是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "大厅平面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "原始帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "玻璃曲率是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "偏振复拍是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同步运动是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "离场帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁复核是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "光线模型是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "反光背心是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "排班身份是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "备用制服是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "大厅平面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "原始帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "玻璃曲率是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "偏振复拍是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同步运动是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "离场帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁复核是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "光线模型是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "反光背心是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c35"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-12",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "排班身份是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "备用制服是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "大厅平面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "原始帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "玻璃曲率是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "偏振复拍是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同步运动是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "离场帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁复核是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "光线模型是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "反光背心是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c35"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-12",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "排班身份是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "备用制服是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "大厅平面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "原始帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "玻璃曲率是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "偏振复拍是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同步运动是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "离场帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁复核是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "光线模型是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "反光背心是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c35"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c35-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c35-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c35-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c35-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c35-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c35-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c35-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c35-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c35-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c35-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c35-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c35-11",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "在夜间值班时保留一件干燥备用制服"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-11"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "appears-as"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "appears-as"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-11",
+      "relation": "appears-as"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-07"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-11"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "moves-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-05",
+      "toItemId": "event-07",
+      "relation": "moves-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-07",
+      "toItemId": "event-11",
+      "relation": "moves-to"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

@@ -1,0 +1,32 @@
+{
+  "id": "c47-offline-buffered-device",
+  "title": "断线后继续在线的设备",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-5294d38b-3d4b-4e92-b1ca-9ed79e74d69a.png",
+  "sourceSha256": "9ef6424f13c91f0dddc0ece8da83c224c9373eb2a067f45d04d7bed3e7319c28",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 断线后继续在线的设备 — 设备断线期间平台显示它仍在线，恢复连接后又一次性补传了数据。\nArt direction: A disconnected network plug next to a quietly glowing device in a deserted equipment room.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c47-offline-buffered-device.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 51378,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "591f798710d5542aa434231f18bd68828ccae0cae8b962dbf655ac6e0d2c4de5"
+    },
+    {
+      "path": "/assets/home-cinema/c47-offline-buffered-device-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 20632,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "3aff74584c77a28279924bdb250e72e6c2c7564d7e69f888529416dcf67a5f74"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.600157+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

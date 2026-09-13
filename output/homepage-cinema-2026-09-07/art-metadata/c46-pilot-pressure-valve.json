@@ -1,0 +1,32 @@
+{
+  "id": "c46-pilot-pressure-valve",
+  "title": "没有打开的阀门",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-1787b091-8510-4a4b-9a17-3580ea9250fb.png",
+  "sourceSha256": "f97b035210bd92ab9f415ee538b223012c2f0c920dbe2a1d86b058fdc74579c6",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 没有打开的阀门 — 控制面板显示阀门关闭，流量却已经改变；现场没有人操作手轮。\nArt direction: A large closed industrial handwheel valve in a dark pumping room, hints of pipes and condensation; no cutaway.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c46-pilot-pressure-valve.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 67476,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "bddb27699451b52860b771b3914b017886bfcf5e2692d0af240f5281e8b3e540"
+    },
+    {
+      "path": "/assets/home-cinema/c46-pilot-pressure-valve-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 24126,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "b91bbee9ca4c4a84f58e7f90c040e8867cb954804a48f6ccec687686390308dc"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.599156+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "c24-turned-painting",
+  "title": "闭馆后转向的画",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-40b3221e-e4c0-44b1-afe2-e855ee55e327.png",
+  "sourceSha256": "18d1e4cc37fd0b748e70e0ff427b3eaf404ff4b6ca6b3228c56fdfc612ffda85",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 闭馆后转向的画 — 展厅门整夜未开，画框封条完好，连续全景监控也没有拍到搬运；清晨画却朝向了相反方向。\nArt direction: An empty art gallery after hours with a framed painting seen obliquely, waxed floor, no rotating wall or hidden route.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c24-turned-painting.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 55564,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "2169278fccfcdacae1df6079ccd4d61cb2ce85751852e4973dde6ce689e82e8c"
+    },
+    {
+      "path": "/assets/home-cinema/c24-turned-painting-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 17614,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "d531b2698018d499439e0046a43fa71674d2e0be86fc5eb68454688e6b81c20d"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.587295+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

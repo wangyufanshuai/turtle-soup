@@ -1,0 +1,7 @@
+Actual verified server stop and direct no-proxy request BEFORE the 84 navigation checks.
+Only the task-owned Python http.server 8096 turtle-soup/apps/web/out process was stopped. No system networking settings changed.
+stoppedOwnedProcess=46684
+probeTime=2026-09-06T10:16:42.9118493Z
+listenersOn8096=0
+curl: (7) Failed to connect to 127.0.0.1 port 8096 after 2065 ms: Could not connect to server
+httpStatus=000curlExit=7

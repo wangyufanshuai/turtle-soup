@@ -1,0 +1,564 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c41-hysteresis-overheat",
+  "caseVersion": 1,
+  "contentHash": "sha256:0f03c68ae5836371d340feb191874e5ba4416e81d1fef80189c23e8360b1ba1d",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "过热阈值是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "滞回区间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报警状态是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "复位条件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "温度曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "继电器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报警日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样间隔是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "冷却斜率是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "状态迁移是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "过热阈值是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "滞回区间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报警状态是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "复位条件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "温度曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "继电器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报警日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样间隔是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "冷却斜率是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "状态迁移是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c41"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "过热阈值是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "滞回区间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报警状态是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "复位条件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "温度曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "继电器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报警日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样间隔是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "冷却斜率是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "状态迁移是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c41"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "过热阈值是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "滞回区间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报警状态是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "复位条件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "温度曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "继电器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报警日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采样间隔是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "冷却斜率是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "状态迁移是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c41"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c41-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c41-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c41-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c41-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c41-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c41-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c41-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c41-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c41-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c41-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c41-10",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "防止阈值附近的报警抖动"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "transitions-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "transitions-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-10",
+      "relation": "transitions-to"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "measured-against"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "measured-against"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-10",
+      "relation": "measured-against"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

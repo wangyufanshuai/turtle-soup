@@ -1,0 +1,1681 @@
+{
+  "source": "pinned-old-runtime generated oracle",
+  "pinnedRef": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "expected": {
+    "game": {
+      "caseId": "c76-red-light-second",
+      "discoveredEvidenceIds": [
+        "evidence-c76-01",
+        "evidence-c76-02",
+        "evidence-c76-03",
+        "evidence-c76-04",
+        "evidence-c76-05",
+        "evidence-c76-06",
+        "evidence-c76-07",
+        "evidence-c76-08",
+        "evidence-c76-09",
+        "evidence-c76-10",
+        "evidence-c76-11"
+      ],
+      "visitedLocationIds": [
+        "location-c76"
+      ],
+      "answeredQueryIds": [
+        "query-c76-01",
+        "query-c76-02",
+        "query-c76-03",
+        "query-c76-04",
+        "query-c76-05",
+        "query-c76-06",
+        "query-c76-07",
+        "query-c76-08",
+        "query-c76-09",
+        "query-c76-10"
+      ],
+      "activeRuleIds": [
+        "rule-c76-01",
+        "rule-c76-02",
+        "rule-c76-03",
+        "rule-c76-04",
+        "rule-c76-05",
+        "rule-c76-06",
+        "rule-c76-07",
+        "rule-c76-08",
+        "rule-c76-09",
+        "rule-c76-10",
+        "rule-c76-11",
+        "rule-c76-opening"
+      ],
+      "visibleFactIds": [
+        "fact-c76-01",
+        "fact-c76-02",
+        "fact-c76-03",
+        "fact-c76-04",
+        "fact-c76-05",
+        "fact-c76-06",
+        "fact-c76-07",
+        "fact-c76-08",
+        "fact-c76-09",
+        "fact-c76-10",
+        "fact-c76-11",
+        "fact-c76-13",
+        "fact-c76-14",
+        "fact-c76-15",
+        "fact-c76-16",
+        "fact-c76-17",
+        "fact-c76-18",
+        "fact-c76-19"
+      ]
+    },
+    "transcript": [
+      {
+        "id": "q-1",
+        "rawQuestion": "红灯先亮是否成立？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-2",
+        "rawQuestion": "绿灯切换是否成立？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-3",
+        "rawQuestion": "滚动快门是否成立？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-4",
+        "rawQuestion": "逐行采样是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-5",
+        "rawQuestion": "监控画面是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-6",
+        "rawQuestion": "同一帧是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-7",
+        "rawQuestion": "灯光时间是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-8",
+        "rawQuestion": "曝光顺序是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-9",
+        "rawQuestion": "现场记录是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-10",
+        "rawQuestion": "帧内时刻是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": false
+      },
+      {
+        "id": "q-11",
+        "rawQuestion": "红灯先亮是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-12",
+        "rawQuestion": "绿灯切换是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-13",
+        "rawQuestion": "滚动快门是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-14",
+        "rawQuestion": "逐行采样是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-15",
+        "rawQuestion": "监控画面是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-16",
+        "rawQuestion": "同一帧是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-17",
+        "rawQuestion": "灯光时间是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-18",
+        "rawQuestion": "曝光顺序是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-19",
+        "rawQuestion": "现场记录是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-20",
+        "rawQuestion": "帧内时刻是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      },
+      {
+        "id": "q-21",
+        "rawQuestion": "红灯先亮是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-22",
+        "rawQuestion": "绿灯切换是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-23",
+        "rawQuestion": "滚动快门是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-24",
+        "rawQuestion": "逐行采样是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-25",
+        "rawQuestion": "监控画面是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-26",
+        "rawQuestion": "同一帧是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-27",
+        "rawQuestion": "灯光时间是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-28",
+        "rawQuestion": "曝光顺序是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-29",
+        "rawQuestion": "现场记录是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-30",
+        "rawQuestion": "帧内时刻是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      },
+      {
+        "id": "q-31",
+        "rawQuestion": "红灯先亮是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-32",
+        "rawQuestion": "绿灯切换是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-33",
+        "rawQuestion": "滚动快门是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-34",
+        "rawQuestion": "逐行采样是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-35",
+        "rawQuestion": "监控画面是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-36",
+        "rawQuestion": "同一帧是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-37",
+        "rawQuestion": "灯光时间是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-38",
+        "rawQuestion": "曝光顺序是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-39",
+        "rawQuestion": "现场记录是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-40",
+        "rawQuestion": "帧内时刻是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      }
+    ],
+    "evidenceStates": {
+      "evidence-c76-01": "connected",
+      "evidence-c76-02": "connected",
+      "evidence-c76-03": "connected",
+      "evidence-c76-04": "connected",
+      "evidence-c76-05": "connected",
+      "evidence-c76-06": "connected",
+      "evidence-c76-07": "connected",
+      "evidence-c76-08": "connected",
+      "evidence-c76-09": "connected",
+      "evidence-c76-10": "connected",
+      "evidence-c76-11": "examined"
+    },
+    "theoryDrafts": [
+      {
+        "id": "theory-a",
+        "hypothesisId": "hypothesis-canonical",
+        "eventIds": [
+          "event-c76-01",
+          "event-c76-02",
+          "event-c76-03",
+          "event-c76-04",
+          "event-c76-05",
+          "event-c76-06",
+          "event-c76-07",
+          "event-c76-08",
+          "event-c76-09",
+          "event-c76-10"
+        ],
+        "evidenceIds": [
+          "evidence-c76-01",
+          "evidence-c76-02",
+          "evidence-c76-03",
+          "evidence-c76-04",
+          "evidence-c76-05",
+          "evidence-c76-06",
+          "evidence-c76-07",
+          "evidence-c76-08",
+          "evidence-c76-09",
+          "evidence-c76-10"
+        ],
+        "motiveKey": "将单帧画面拆成逐行时间区间"
+      },
+      {
+        "id": "theory-b",
+        "hypothesisId": "hypothesis-c76-alternative-1",
+        "eventIds": [],
+        "evidenceIds": [],
+        "motiveKey": null
+      }
+    ],
+    "activeTheoryId": "theory-a",
+    "pendingInterpretation": null,
+    "lastQuestionSnapshot": {
+      "game": {
+        "caseId": "c76-red-light-second",
+        "discoveredEvidenceIds": [
+          "evidence-c76-01",
+          "evidence-c76-02",
+          "evidence-c76-03",
+          "evidence-c76-04",
+          "evidence-c76-05",
+          "evidence-c76-06",
+          "evidence-c76-07",
+          "evidence-c76-08",
+          "evidence-c76-09",
+          "evidence-c76-10",
+          "evidence-c76-11"
+        ],
+        "visitedLocationIds": [
+          "location-c76"
+        ],
+        "answeredQueryIds": [
+          "query-c76-01",
+          "query-c76-02",
+          "query-c76-03",
+          "query-c76-04",
+          "query-c76-05",
+          "query-c76-06",
+          "query-c76-07",
+          "query-c76-08",
+          "query-c76-09",
+          "query-c76-10"
+        ],
+        "activeRuleIds": [
+          "rule-c76-01",
+          "rule-c76-02",
+          "rule-c76-03",
+          "rule-c76-04",
+          "rule-c76-05",
+          "rule-c76-06",
+          "rule-c76-07",
+          "rule-c76-08",
+          "rule-c76-09",
+          "rule-c76-10",
+          "rule-c76-11",
+          "rule-c76-opening"
+        ],
+        "visibleFactIds": [
+          "fact-c76-01",
+          "fact-c76-02",
+          "fact-c76-03",
+          "fact-c76-04",
+          "fact-c76-05",
+          "fact-c76-06",
+          "fact-c76-07",
+          "fact-c76-08",
+          "fact-c76-09",
+          "fact-c76-10",
+          "fact-c76-11",
+          "fact-c76-13",
+          "fact-c76-14",
+          "fact-c76-15",
+          "fact-c76-16",
+          "fact-c76-17",
+          "fact-c76-18",
+          "fact-c76-19"
+        ]
+      },
+      "transcriptLength": 39
+    },
+    "solved": true,
+    "replayBeatIds": [
+      "replay-c76-1",
+      "replay-c76-2",
+      "replay-c76-3",
+      "replay-c76-4",
+      "replay-c76-5",
+      "replay-c76-6"
+    ],
+    "acceptedCommandCount": 114,
+    "unlockedChapterIds": [
+      "chapter-c76-one"
+    ],
+    "reasoningBoards": {
+      "board-c76-1": {
+        "placements": {
+          "slot-c76-1-1": "event-c76-01",
+          "slot-c76-1-2": "event-c76-03",
+          "slot-c76-1-3": "event-c76-05",
+          "slot-c76-1-4": "event-c76-10"
+        },
+        "connections": [
+          {
+            "fromEventId": "event-c76-01",
+            "toEventId": "event-c76-03",
+            "relation": "precedes"
+          },
+          {
+            "fromEventId": "event-c76-03",
+            "toEventId": "event-c76-05",
+            "relation": "precedes"
+          },
+          {
+            "fromEventId": "event-c76-05",
+            "toEventId": "event-c76-10",
+            "relation": "precedes"
+          }
+        ]
+      },
+      "board-c76-2": {
+        "placements": {
+          "slot-c76-2-1": "event-c76-02",
+          "slot-c76-2-2": "event-c76-04",
+          "slot-c76-2-3": "event-c76-06",
+          "slot-c76-2-4": "event-c76-10"
+        },
+        "connections": [
+          {
+            "fromEventId": "event-c76-02",
+            "toEventId": "event-c76-04",
+            "relation": "reframes"
+          },
+          {
+            "fromEventId": "event-c76-04",
+            "toEventId": "event-c76-06",
+            "relation": "reframes"
+          },
+          {
+            "fromEventId": "event-c76-06",
+            "toEventId": "event-c76-10",
+            "relation": "reframes"
+          }
+        ]
+      }
+    },
+    "replayMode": "standard"
+  },
+  "oldLiveEqualsOldReplay": true,
+  "expectations": {
+    "solved": true
+  },
+  "steps": [
+    {
+      "index": 0,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "type": "set_theory_hypothesis",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 91,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 93,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 97,
+      "type": "set_theory_motive",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 100,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 101,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 102,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 103,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 104,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 105,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 106,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 107,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 108,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 109,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 110,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 111,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 112,
+      "type": "submit_theory",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_judged",
+          "judgement": "solved",
+          "proofFailureCategory": null
+        },
+        {
+          "type": "case_solved"
+        }
+      ]
+    },
+    {
+      "index": 113,
+      "type": "request_proof_replay",
+      "accepted": true,
+      "events": [
+        {
+          "type": "replay_ready"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "at": "2026-09-07T01:48:50.762Z",
+  "fictionalAuthoredData": true,
+  "baseCasesUnmodified": true,
+  "judgeSourceSha256": "787f88cf60f41de73de5dc50890bdc698b7b19f84f8731d50f9cbc66452d98f6",
+  "cases": [
+    {
+      "studyId": "c61",
+      "revision": "ts015-c61-r1",
+      "publicContentDigest": "a4d7ce2094b798032e8dec8f50d8aedcfdaabe8bd1158ce17fdf382153fc7c65",
+      "base": {
+        "id": "c61-missing-tape-turn",
+        "path": "content/zh/cases/c61-missing-tape-turn.json",
+        "sha256": "85aae7dfdd1981c805353c73b3d0064940ab2fefc69d2780dd5ba526fce3a63f",
+        "truth": "卷盘更换了芯径，计数器只记录圈数而没有重新校准；圈数不等于剩余长度。",
+        "requiredEvidence": 10,
+        "requiredRelations": [
+          {
+            "fromEventId": "event-c61-01",
+            "toEventId": "event-c61-03",
+            "relation": "calibrates"
+          },
+          {
+            "fromEventId": "event-c61-03",
+            "toEventId": "event-c61-05",
+            "relation": "calibrates"
+          },
+          {
+            "fromEventId": "event-c61-05",
+            "toEventId": "event-c61-10",
+            "relation": "calibrates"
+          },
+          {
+            "fromEventId": "event-c61-02",
+            "toEventId": "event-c61-04",
+            "relation": "flows-in"
+          },
+          {
+            "fromEventId": "event-c61-04",
+            "toEventId": "event-c61-06",
+            "relation": "flows-in"
+          },
+          {
+            "fromEventId": "event-c61-06",
+            "toEventId": "event-c61-10",
+            "relation": "flows-in"
+          }
+        ]
+      },
+      "mapping": [
+        {
+          "oldEvidence": "evidence-c61-01",
+          "oldTitle": "卷盘芯径记录",
+          "oldObservation": "来源材料显示“卷盘芯径”在该阶段可复核。",
+          "newSources": [
+            "S02",
+            "S03"
+          ],
+          "note": "新版改为测量有效外径；不能与旧芯径命题共用 canonical 身份。"
+        },
+        {
+          "oldEvidence": "evidence-c61-02",
+          "oldTitle": "胶带圈数记录",
+          "oldObservation": "来源材料显示“胶带圈数”在该阶段可复核。",
+          "newSources": [
+            "S04"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c61-03",
+          "oldTitle": "剩余长度记录",
+          "oldObservation": "来源材料显示“剩余长度”在该阶段可复核。",
+          "newSources": [
+            "S05"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c61-04",
+          "oldTitle": "计数器记录",
+          "oldObservation": "来源材料显示“计数器”在该阶段可复核。",
+          "newSources": [
+            "S04"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c61-05",
+          "oldTitle": "校准曲线记录",
+          "oldObservation": "来源材料显示“校准曲线”在该阶段可复核。",
+          "newSources": [
+            "S01",
+            "S03"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c61-06",
+          "oldTitle": "卷盘更换记录",
+          "oldObservation": "来源材料显示“卷盘更换”在该阶段可复核。",
+          "newSources": [
+            "S02"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c61-07",
+          "oldTitle": "带材厚度记录",
+          "oldObservation": "来源材料显示“带材厚度”在该阶段可复核。",
+          "newSources": [
+            "S02"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c61-08",
+          "oldTitle": "长度测量记录",
+          "oldObservation": "来源材料显示“长度测量”在该阶段可复核。",
+          "newSources": [
+            "S05"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c61-09",
+          "oldTitle": "标尺读数记录",
+          "oldObservation": "来源材料显示“标尺读数”在该阶段可复核。",
+          "newSources": [
+            "S05"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c61-10",
+          "oldTitle": "剩余材料记录",
+          "oldObservation": "来源材料显示“剩余材料”在该阶段可复核。",
+          "newSources": [
+            "S05",
+            "S06"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c61-11",
+          "oldTitle": "卷盘芯径记录",
+          "oldObservation": "来源材料显示“卷盘芯径”在该阶段可复核。",
+          "newSources": [
+            "S02",
+            "S03"
+          ],
+          "note": "新版改为测量有效外径；不能与旧芯径命题共用 canonical 身份。"
+        }
+      ],
+      "obligations": [
+        {
+          "id": "basis",
+          "title": "当次换算基准",
+          "passed": true,
+          "sources": [
+            "S02",
+            "S03"
+          ],
+          "message": "使用当次卷径适用的校准记录。"
+        },
+        {
+          "id": "length",
+          "title": "一整圈的放带长度",
+          "passed": true,
+          "sources": [
+            "S03",
+            "S04"
+          ],
+          "message": "放带长度与一整圈的校准区间相符。"
+        },
+        {
+          "id": "balance",
+          "title": "本次材料收支",
+          "passed": true,
+          "sources": [
+            "S05",
+            "S06"
+          ],
+          "message": "收支差处于测量误差内，没有额外缺失需要解释。"
+        }
+      ],
+      "replay": [
+        {
+          "text": "换盘后，平均有效卷径约为 200 mm。旧换算卡只适用于 100 mm。",
+          "sources": [
+            "S01",
+            "S02"
+          ]
+        },
+        {
+          "text": "相机只拍到一整圈；当次校准卡给出一圈 628 ± 1 mm。",
+          "sources": [
+            "S03",
+            "S04"
+          ]
+        },
+        {
+          "text": "5000 − 4372 − 628 = 0 mm；封闭工位记录排除了本次未计入的流出。",
+          "sources": [
+            "S05",
+            "S06"
+          ]
+        }
+      ]
+    },
+    {
+      "studyId": "c84",
+      "revision": "ts015-c84-r1",
+      "publicContentDigest": "d4bc525b73c02e6a95b8fa3fc2c64c96d08bfcbbfd0e92d7879fb5bced4e1060",
+      "base": {
+        "id": "c84-handoff-after-stop",
+        "path": "content/zh/cases/c84-handoff-after-stop.json",
+        "sha256": "fab21caf0c710333068b6aa70a965fcfa38d42a8a6271135e66dd5d2088270bd",
+        "truth": "停止命令先被控制层接收，在途交接随后完成，审计提交最后写入；三个事件跨两个章节按不同顺序发生。",
+        "requiredEvidence": 13,
+        "requiredRelations": [
+          {
+            "fromEventId": "event-c84-01",
+            "toEventId": "event-c84-03",
+            "relation": "triggers"
+          },
+          {
+            "fromEventId": "event-c84-03",
+            "toEventId": "event-c84-05",
+            "relation": "triggers"
+          },
+          {
+            "fromEventId": "event-c84-05",
+            "toEventId": "event-c84-13",
+            "relation": "triggers"
+          },
+          {
+            "fromEventId": "event-c84-02",
+            "toEventId": "event-c84-04",
+            "relation": "precedes"
+          },
+          {
+            "fromEventId": "event-c84-04",
+            "toEventId": "event-c84-06",
+            "relation": "precedes"
+          },
+          {
+            "fromEventId": "event-c84-06",
+            "toEventId": "event-c84-13",
+            "relation": "precedes"
+          },
+          {
+            "fromEventId": "event-c84-03",
+            "toEventId": "event-c84-05",
+            "relation": "if"
+          },
+          {
+            "fromEventId": "event-c84-05",
+            "toEventId": "event-c84-07",
+            "relation": "if"
+          },
+          {
+            "fromEventId": "event-c84-07",
+            "toEventId": "event-c84-13",
+            "relation": "if"
+          }
+        ]
+      },
+      "mapping": [
+        {
+          "oldEvidence": "evidence-c84-01",
+          "oldTitle": "停止命令记录",
+          "oldObservation": "来源材料显示“停止命令”在该阶段可复核。",
+          "newSources": [
+            "S02"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-02",
+          "oldTitle": "在途交接记录",
+          "oldObservation": "来源材料显示“在途交接”在该阶段可复核。",
+          "newSources": [
+            "S01",
+            "S02"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-03",
+          "oldTitle": "审计提交记录",
+          "oldObservation": "来源材料显示“审计提交”在该阶段可复核。",
+          "newSources": [
+            "S05"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-04",
+          "oldTitle": "控制层接收记录",
+          "oldObservation": "来源材料显示“控制层接收”在该阶段可复核。",
+          "newSources": [
+            "S02"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-05",
+          "oldTitle": "完成时间记录",
+          "oldObservation": "来源材料显示“完成时间”在该阶段可复核。",
+          "newSources": [
+            "S04"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-06",
+          "oldTitle": "消息顺序记录",
+          "oldObservation": "来源材料显示“消息顺序”在该阶段可复核。",
+          "newSources": [
+            "S01",
+            "S02",
+            "S04",
+            "S05"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-07",
+          "oldTitle": "两个章节记录",
+          "oldObservation": "来源材料显示“两个章节”在该阶段可复核。",
+          "newSources": [],
+          "note": "章节是编排元数据，不再作为故事中的可证明事实。"
+        },
+        {
+          "oldEvidence": "evidence-c84-08",
+          "oldTitle": "最后交接记录",
+          "oldObservation": "来源材料显示“最后交接”在该阶段可复核。",
+          "newSources": [
+            "S01",
+            "S04"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-09",
+          "oldTitle": "系统停止记录",
+          "oldObservation": "来源材料显示“系统停止”在该阶段可复核。",
+          "newSources": [
+            "S02",
+            "S03",
+            "S06"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-10",
+          "oldTitle": "执行回执记录",
+          "oldObservation": "来源材料显示“执行回执”在该阶段可复核。",
+          "newSources": [
+            "S04"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-11",
+          "oldTitle": "停止命令记录",
+          "oldObservation": "来源材料显示“停止命令”在该阶段可复核。",
+          "newSources": [
+            "S02"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-12",
+          "oldTitle": "在途交接记录",
+          "oldObservation": "来源材料显示“在途交接”在该阶段可复核。",
+          "newSources": [
+            "S01",
+            "S02"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-13",
+          "oldTitle": "审计提交记录",
+          "oldObservation": "来源材料显示“审计提交”在该阶段可复核。",
+          "newSources": [
+            "S05"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        },
+        {
+          "oldEvidence": "evidence-c84-14",
+          "oldTitle": "控制层接收记录",
+          "oldObservation": "来源材料显示“控制层接收”在该阶段可复核。",
+          "newSources": [
+            "S02"
+          ],
+          "note": "按具体内容重写，不能视为原命题的自动迁移。"
+        }
+      ],
+      "obligations": [
+        {
+          "id": "order",
+          "title": "同一笔交接的先后",
+          "passed": true,
+          "sources": [
+            "S01",
+            "S02",
+            "S04",
+            "S05"
+          ],
+          "message": "T17 先启动，随后收到停止，接收端完成后才写入审计。"
+        },
+        {
+          "id": "scope",
+          "title": "停止命令的边界",
+          "passed": true,
+          "sources": [
+            "S02",
+            "S03",
+            "S06"
+          ],
+          "message": "停止阻止新的启动，T18 的拒绝记录验证了这个边界。"
+        },
+        {
+          "id": "counterfactual",
+          "title": "只改变停止时刻",
+          "passed": true,
+          "sources": [
+            "S01",
+            "S06"
+          ],
+          "message": "若在 20:00:00.060 停止，T17 到达启动时刻时已受阻，不能产生该笔完成回执。"
+        }
+      ],
+      "replay": [
+        {
+          "text": "20:00:00.080，T17 开始执行；20:00:00.100，停止接单生效。",
+          "sources": [
+            "S01",
+            "S02"
+          ]
+        },
+        {
+          "text": "20:00:00.120 的新请求 T18 被拒绝，而已经在途的 T17 继续。",
+          "sources": [
+            "S03",
+            "S06"
+          ]
+        },
+        {
+          "text": "20:00:00.420，接收端产生 R17；20:00:00.900，审计页写入同一个回执。",
+          "sources": [
+            "S04",
+            "S05"
+          ]
+        }
+      ]
+    }
+  ]
+}

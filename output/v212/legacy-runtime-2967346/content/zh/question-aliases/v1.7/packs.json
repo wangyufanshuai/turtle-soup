@@ -1,0 +1,602 @@
+[
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.7-internal-rc",
+    "caseId": "c25-silent-second-bell",
+    "baseCanonicalHash": "sha256:f0b2ed2069fc10b0ce79f86ac9174a4b27b7bef1ce9ad322ad407755162ece6d",
+    "revision": 2,
+    "aliases": [
+      {
+        "text": "按钮真的闭合了两次吗？",
+        "queryId": "query-c25-01",
+        "category": "colloquial"
+      },
+      {
+        "text": "那按钮真的闭合了两次吗？",
+        "queryId": "query-c25-01",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，按钮真的闭合了两次吗？",
+        "queryId": "query-c25-01",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：按钮真的闭合了两次吗？",
+        "queryId": "query-c25-01",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，按钮真的闭合了两次吗？",
+        "queryId": "query-c25-01",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "按钮真的闭合了两次嘛？",
+        "queryId": "query-c25-01",
+        "category": "typo"
+      },
+      {
+        "text": "控制器也累计了两次触发吗？",
+        "queryId": "query-c25-02",
+        "category": "colloquial"
+      },
+      {
+        "text": "那控制器也累计了两次触发吗？",
+        "queryId": "query-c25-02",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，控制器也累计了两次触发吗？",
+        "queryId": "query-c25-02",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：控制器也累计了两次触发吗？",
+        "queryId": "query-c25-02",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，控制器也累计了两次触发吗？",
+        "queryId": "query-c25-02",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "控制器也累计了两次触发嘛？",
+        "queryId": "query-c25-02",
+        "category": "typo"
+      },
+      {
+        "text": "屋内录音里到底有几次完整铃声？",
+        "queryId": "query-c25-03",
+        "category": "colloquial"
+      },
+      {
+        "text": "那屋内录音里到底有几次完整铃声？",
+        "queryId": "query-c25-03",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，屋内录音里到底有几次完整铃声？",
+        "queryId": "query-c25-03",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：屋内录音里到底有几次完整铃声？",
+        "queryId": "query-c25-03",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，屋内录音里到底有几次完整铃声？",
+        "queryId": "query-c25-03",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "十秒防抖会把第二次触发并入当前响铃吗？",
+        "queryId": "query-c25-04",
+        "category": "colloquial"
+      },
+      {
+        "text": "那十秒防抖会把第二次触发并入当前响铃吗？",
+        "queryId": "query-c25-04",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，十秒防抖会把第二次触发并入当前响铃吗？",
+        "queryId": "query-c25-04",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：十秒防抖会把第二次触发并入当前响铃吗？",
+        "queryId": "query-c25-04",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，十秒防抖会把第二次触发并入当前响铃吗？",
+        "queryId": "query-c25-04",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "十秒防抖会把第二次触发并入当前响铃嘛？",
+        "queryId": "query-c25-04",
+        "category": "typo"
+      },
+      {
+        "text": "两次按压相隔多久？",
+        "queryId": "query-c25-05",
+        "category": "colloquial"
+      },
+      {
+        "text": "那两次按压相隔多久？",
+        "queryId": "query-c25-05",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，两次按压相隔多久？",
+        "queryId": "query-c25-05",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：两次按压相隔多久？",
+        "queryId": "query-c25-05",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，两次按压相隔多久？",
+        "queryId": "query-c25-05",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "第二次按下时，控制器仍处在响铃状态吗？",
+        "queryId": "query-c25-06",
+        "category": "colloquial"
+      },
+      {
+        "text": "那第二次按下时，控制器仍处在响铃状态吗？",
+        "queryId": "query-c25-06",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，第二次按下时，控制器仍处在响铃状态吗？",
+        "queryId": "query-c25-06",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：第二次按下时，控制器仍处在响铃状态吗？",
+        "queryId": "query-c25-06",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，第二次按下时，控制器仍处在响铃状态吗？",
+        "queryId": "query-c25-06",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "第二次按下时，控制器仍处在响铃状态嘛？",
+        "queryId": "query-c25-06",
+        "category": "typo"
+      },
+      {
+        "text": "扬声器本身发生过故障吗？",
+        "queryId": "query-c25-07",
+        "category": "colloquial"
+      },
+      {
+        "text": "那扬声器本身发生过故障吗？",
+        "queryId": "query-c25-07",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，扬声器本身发生过故障吗？",
+        "queryId": "query-c25-07",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：扬声器本身发生过故障吗？",
+        "queryId": "query-c25-07",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，扬声器本身发生过故障吗？",
+        "queryId": "query-c25-07",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "扬声器本身发生过故障嘛？",
+        "queryId": "query-c25-07",
+        "category": "typo"
+      },
+      {
+        "text": "两次按压期间供电正常吗？",
+        "queryId": "query-c25-08",
+        "category": "colloquial"
+      },
+      {
+        "text": "那两次按压期间供电正常吗？",
+        "queryId": "query-c25-08",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，两次按压期间供电正常吗？",
+        "queryId": "query-c25-08",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：两次按压期间供电正常吗？",
+        "queryId": "query-c25-08",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，两次按压期间供电正常吗？",
+        "queryId": "query-c25-08",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "两次按压期间供电正常嘛？",
+        "queryId": "query-c25-08",
+        "category": "typo"
+      },
+      {
+        "text": "住户听到的是一次连续响铃吗？",
+        "queryId": "query-c25-09",
+        "category": "colloquial"
+      },
+      {
+        "text": "那住户听到的是一次连续响铃吗？",
+        "queryId": "query-c25-09",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，住户听到的是一次连续响铃吗？",
+        "queryId": "query-c25-09",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：住户听到的是一次连续响铃吗？",
+        "queryId": "query-c25-09",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，住户听到的是一次连续响铃吗？",
+        "queryId": "query-c25-09",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "住户听到的是一次连续响铃嘛？",
+        "queryId": "query-c25-09",
+        "category": "typo"
+      },
+      {
+        "text": "旧电池警告与这次少响一声有关吗？",
+        "queryId": "query-c25-10",
+        "category": "colloquial"
+      },
+      {
+        "text": "那旧电池警告与这次少响一声有关吗？",
+        "queryId": "query-c25-10",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，旧电池警告与这次少响一声有关吗？",
+        "queryId": "query-c25-10",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：旧电池警告与这次少响一声有关吗？",
+        "queryId": "query-c25-10",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，旧电池警告与这次少响一声有关吗？",
+        "queryId": "query-c25-10",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "旧电池警告与这次少响一声有关嘛？",
+        "queryId": "query-c25-10",
+        "category": "typo"
+      }
+    ],
+    "ambiguousPhrases": []
+  },
+  {
+    "schemaVersion": 1,
+    "releaseProfile": "v1.7-internal-rc",
+    "caseId": "c37-zeroed-pressure-gauge",
+    "baseCanonicalHash": "sha256:43d42046a74b38395edb1ae867d3bbb7c1e7e9f67e4651a4967c2498733d8423",
+    "revision": 2,
+    "aliases": [
+      {
+        "text": "指针回到零线时，仪表的零位基准仍可能移动吗？",
+        "queryId": "query-c37-01",
+        "category": "colloquial"
+      },
+      {
+        "text": "那指针回到零线时，仪表的零位基准仍可能移动吗？",
+        "queryId": "query-c37-01",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，指针回到零线时，仪表的零位基准仍可能移动吗？",
+        "queryId": "query-c37-01",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：指针回到零线时，仪表的零位基准仍可能移动吗？",
+        "queryId": "query-c37-01",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，指针回到零线时，仪表的零位基准仍可能移动吗？",
+        "queryId": "query-c37-01",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "指针回到零线时，仪表的零位基准仍可能移动嘛？",
+        "queryId": "query-c37-01",
+        "category": "typo"
+      },
+      {
+        "text": "这只表的零位需要随温度修正吗？",
+        "queryId": "query-c37-02",
+        "category": "colloquial"
+      },
+      {
+        "text": "那这只表的零位需要随温度修正吗？",
+        "queryId": "query-c37-02",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，这只表的零位需要随温度修正吗？",
+        "queryId": "query-c37-02",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：这只表的零位需要随温度修正吗？",
+        "queryId": "query-c37-02",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，这只表的零位需要随温度修正吗？",
+        "queryId": "query-c37-02",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "这只表的零位需要随温度修正嘛？",
+        "queryId": "query-c37-02",
+        "category": "typo"
+      },
+      {
+        "text": "管线当时确实完成泄压了吗？",
+        "queryId": "query-c37-03",
+        "category": "colloquial"
+      },
+      {
+        "text": "那管线当时确实完成泄压了吗？",
+        "queryId": "query-c37-03",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，管线当时确实完成泄压了吗？",
+        "queryId": "query-c37-03",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：管线当时确实完成泄压了吗？",
+        "queryId": "query-c37-03",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，管线当时确实完成泄压了吗？",
+        "queryId": "query-c37-03",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "管线当时确实完成泄压了嘛？",
+        "queryId": "query-c37-03",
+        "category": "typo"
+      },
+      {
+        "text": "仪表整条校准曲线是否发生了整体偏移？",
+        "queryId": "query-c37-04",
+        "category": "colloquial"
+      },
+      {
+        "text": "那仪表整条校准曲线是否发生了整体偏移？",
+        "queryId": "query-c37-04",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，仪表整条校准曲线是否发生了整体偏移？",
+        "queryId": "query-c37-04",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：仪表整条校准曲线是否发生了整体偏移？",
+        "queryId": "query-c37-04",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，仪表整条校准曲线是否发生了整体偏移？",
+        "queryId": "query-c37-04",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "独立参考传感器测到了非零压力吗？",
+        "queryId": "query-c37-05",
+        "category": "colloquial"
+      },
+      {
+        "text": "那独立参考传感器测到了非零压力吗？",
+        "queryId": "query-c37-05",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，独立参考传感器测到了非零压力吗？",
+        "queryId": "query-c37-05",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：独立参考传感器测到了非零压力吗？",
+        "queryId": "query-c37-05",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，独立参考传感器测到了非零压力吗？",
+        "queryId": "query-c37-05",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "独立参考传感器测到了非零压力嘛？",
+        "queryId": "query-c37-05",
+        "category": "typo"
+      },
+      {
+        "text": "录像能确认表针确实指在零线上吗？",
+        "queryId": "query-c37-06",
+        "category": "colloquial"
+      },
+      {
+        "text": "那录像能确认表针确实指在零线上吗？",
+        "queryId": "query-c37-06",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，录像能确认表针确实指在零线上吗？",
+        "queryId": "query-c37-06",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：录像能确认表针确实指在零线上吗？",
+        "queryId": "query-c37-06",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，录像能确认表针确实指在零线上吗？",
+        "queryId": "query-c37-06",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "录像能确认表针确实指在零线上嘛？",
+        "queryId": "query-c37-06",
+        "category": "typo"
+      },
+      {
+        "text": "常温零压校准时，零线代表什么？",
+        "queryId": "query-c37-07",
+        "category": "colloquial"
+      },
+      {
+        "text": "那常温零压校准时，零线代表什么？",
+        "queryId": "query-c37-07",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，常温零压校准时，零线代表什么？",
+        "queryId": "query-c37-07",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：常温零压校准时，零线代表什么？",
+        "queryId": "query-c37-07",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，常温零压校准时，零线代表什么？",
+        "queryId": "query-c37-07",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "两次测量的环境温度相同吗？",
+        "queryId": "query-c37-08",
+        "category": "colloquial"
+      },
+      {
+        "text": "那两次测量的环境温度相同吗？",
+        "queryId": "query-c37-08",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，两次测量的环境温度相同吗？",
+        "queryId": "query-c37-08",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：两次测量的环境温度相同吗？",
+        "queryId": "query-c37-08",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，两次测量的环境温度相同吗？",
+        "queryId": "query-c37-08",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "两次测量的环境温度相同嘛？",
+        "queryId": "query-c37-08",
+        "category": "typo"
+      },
+      {
+        "text": "按温度修正后，两套读数能互相对应吗？",
+        "queryId": "query-c37-09",
+        "category": "colloquial"
+      },
+      {
+        "text": "那按温度修正后，两套读数能互相对应吗？",
+        "queryId": "query-c37-09",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，按温度修正后，两套读数能互相对应吗？",
+        "queryId": "query-c37-09",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：按温度修正后，两套读数能互相对应吗？",
+        "queryId": "query-c37-09",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，按温度修正后，两套读数能互相对应吗？",
+        "queryId": "query-c37-09",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "按温度修正后，两套读数能互相对应嘛？",
+        "queryId": "query-c37-09",
+        "category": "typo"
+      },
+      {
+        "text": "传感器响应滞后能解释稳定后的固定偏差吗？",
+        "queryId": "query-c37-10",
+        "category": "colloquial"
+      },
+      {
+        "text": "那传感器响应滞后能解释稳定后的固定偏差吗？",
+        "queryId": "query-c37-10",
+        "category": "colloquial"
+      },
+      {
+        "text": "所以说，传感器响应滞后能解释稳定后的固定偏差吗？",
+        "queryId": "query-c37-10",
+        "category": "colloquial"
+      },
+      {
+        "text": "只确认：传感器响应滞后能解释稳定后的固定偏差吗？",
+        "queryId": "query-c37-10",
+        "category": "ellipsis"
+      },
+      {
+        "text": "从记录看，传感器响应滞后能解释稳定后的固定偏差吗？",
+        "queryId": "query-c37-10",
+        "category": "time-qualifier"
+      },
+      {
+        "text": "传感器响应滞后能解释稳定后的固定偏差嘛？",
+        "queryId": "query-c37-10",
+        "category": "typo"
+      }
+    ],
+    "ambiguousPhrases": []
+  }
+]

@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c05-third-lamp",
+  "caseVersion": 1,
+  "contentHash": "sha256:c05-third-lamp-v1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "仓库真的停电了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "第三盏灯是反光造成的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "真的有第三条电路吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "应急灯是电池供电吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "走廊外有红色信标吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "有人趁停电进入仓库吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "严琪是在走廊看见的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场其实只有两个光源吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电池是什么颜色？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "仓库真的停电了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "第三盏灯是反光造成的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "真的有第三条电路吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "应急灯是电池供电吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "走廊外有红色信标吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "有人趁停电进入仓库吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "严琪是在走廊看见的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场其实只有两个光源吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电池是什么颜色？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-warehouse"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-corridor"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-breaker",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-witness",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-lamp",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-reflector",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-beacon",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-circuit-map",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-access",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-battery-receipt",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-window",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "仓库真的停电了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "第三盏灯是反光造成的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "真的有第三条电路吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "应急灯是电池供电吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "走廊外有红色信标吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "有人趁停电进入仓库吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "严琪是在走廊看见的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场其实只有两个光源吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电池是什么颜色？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-warehouse"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-corridor"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-breaker",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-witness",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-lamp",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-reflector",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-beacon",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-circuit-map",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-access",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-battery-receipt",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-window",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "仓库真的停电了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "第三盏灯是反光造成的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "真的有第三条电路吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "应急灯是电池供电吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "走廊外有红色信标吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "有人趁停电进入仓库吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "严琪是在走廊看见的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场其实只有两个光源吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电池是什么颜色？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-warehouse"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-corridor"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-breaker",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-witness",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-lamp",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-reflector",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-beacon",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-circuit-map",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-access",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-battery-receipt",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-window",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-breaker",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-witness",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-lamp",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-reflector",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-beacon",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-circuit-map",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-access",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-window",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "motive-safety-check"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

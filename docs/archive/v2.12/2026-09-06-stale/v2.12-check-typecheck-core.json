@@ -1,0 +1,33 @@
+{
+  "runId": "v212-2026-09-06T10-08-11-942Z-f54095c9",
+  "releaseProfile": "v2.12-internal-rc",
+  "sourceHead": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "sourceTreeDigest": "0ce774e89eed48aaabf625fe3c36f64ce8460fd852951f8834803cd3157f3eb8",
+  "profileSha256": "0c58dc769f45bb9d29232b9774bc6d01a06ff1e97229446a224131ce12bf658c",
+  "buildHash": "a88f90d18c47fd26bdeceb3cbc90d190a5acd02925dc7c6f0dc02a2db5fbc823",
+  "startedAt": "2026-09-06T10:13:14.794Z",
+  "endedAt": "2026-09-06T10:13:15.644Z",
+  "id": "typecheck-core",
+  "coverage": "static",
+  "passed": true,
+  "scope": "TypeScript static diagnostics for packages/**/*.ts",
+  "command": {
+    "executable": "node",
+    "args": [
+      "node_modules/typescript/bin/tsc",
+      "--noEmit"
+    ],
+    "cwd": "."
+  },
+  "exitCode": 0,
+  "unchangedDuringCheck": true,
+  "tests": null,
+  "failures": null,
+  "skips": null,
+  "evidence": [
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/typecheck-core.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

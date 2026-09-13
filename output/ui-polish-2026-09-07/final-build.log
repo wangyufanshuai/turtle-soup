@@ -1,0 +1,33 @@
+
+> @turtle-soup/web@0.1.0 build
+> next build --webpack
+
+▲ Next.js 16.3.2 (webpack)
+✓ Running next.config.ts took 94ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 3.7s
+  Running TypeScript ...
+  Finished TypeScript in 533ms ...
+  Collecting page data using 5 workers ...
+  Generating static pages using 5 workers (0/87) ...
+  Generating static pages using 5 workers (21/87) 
+  Generating static pages using 5 workers (43/87) 
+  Generating static pages using 5 workers (65/87) 
+✓ Generating static pages using 5 workers (87/87) in 1169ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+└   /case/[caseId]
+  ├ ● /case/c01-cold-room-knock
+  ├ ● /case/c02-snow-route
+  ├ ● /case/c03-second-shadow
+  └ ● [+81 more paths]
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

@@ -1,0 +1,12 @@
+{
+  "sourceDigest": "f5a7461c96818792576e0b9749443ac91bc5885bbcebebac584941a98eee794c",
+  "buildHash": "43ece9b5abcdc1ad4a7c912d8e42284aa00275347c5d3ec4ee83c25a7365726c",
+  "buildFiles": 1179,
+  "browserFlows": 8,
+  "browserArtifacts": 112,
+  "oldClientProbe": {
+    "version": "pinned v2.11 validator",
+    "rejected": true,
+    "inputUnchanged": true
+  }
+}

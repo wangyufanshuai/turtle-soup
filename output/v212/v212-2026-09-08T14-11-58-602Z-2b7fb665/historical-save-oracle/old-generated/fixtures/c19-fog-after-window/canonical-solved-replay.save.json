@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c19-fog-after-window",
+  "caseVersion": 1,
+  "contentHash": "sha256:c19-fog-after-window-v1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "清洗湿气这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "开窗湿度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "窗磁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "通风流速这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "玻璃温度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "湿度曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "露点这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "雾滴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "水源排除这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "香氛瓶这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "清洗湿气这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "开窗湿度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "窗磁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "通风流速这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "玻璃温度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "湿度曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "露点这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "雾滴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "水源排除这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "香氛瓶这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c19"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "清洗湿气这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "开窗湿度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "窗磁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "通风流速这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "玻璃温度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "湿度曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "露点这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "雾滴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "水源排除这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "香氛瓶这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c19"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "清洗湿气这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "开窗湿度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "窗磁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "通风流速这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "玻璃温度这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "湿度曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "露点这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "雾滴这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "水源排除这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "香氛瓶这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c19"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c19-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c19-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c19-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c19-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c19-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c19-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c19-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c19-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c19-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c19-09",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "完成低温密封环境的露点测试"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-07"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-09"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-04",
+      "toItemId": "event-07",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-07",
+      "toItemId": "event-09",
+      "relation": "causes"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

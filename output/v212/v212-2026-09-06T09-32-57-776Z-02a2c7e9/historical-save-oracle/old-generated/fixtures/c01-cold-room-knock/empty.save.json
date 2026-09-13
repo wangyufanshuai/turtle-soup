@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c01-cold-room-knock",
+  "caseVersion": 1,
+  "contentHash": "sha256:c01-cold-room-knock-v1",
+  "commands": [],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": false
+}

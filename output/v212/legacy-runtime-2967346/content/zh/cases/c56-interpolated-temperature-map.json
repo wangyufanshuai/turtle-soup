@@ -1,0 +1,1953 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c56-interpolated-temperature-map",
+  "metadata": {
+    "titleKey": "case.c56.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "科学测量",
+      "复杂系统",
+      "来源边界"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:764c7910a24003dedb61ae4d48fd01c3a5f992d6c027ac33fceeafdacffcefb8",
+    "status": "public-preview",
+    "seasonId": "season-4"
+  },
+  "presentation": {
+    "layoutId": "season4-sampling-window",
+    "sceneAsset": "/assets/cases/c56/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c56/scene-mobile.svg",
+    "palette": "season4-c56",
+    "accent": "#b7d6a4",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "sampling-window-lab",
+    "mobileNavigation": [
+      "现场",
+      "记录",
+      "推理板"
+    ],
+    "boardMode": "sampling-window"
+  },
+  "surface": {
+    "titleKey": "case.c56.title",
+    "textKey": "case.c56.surface",
+    "publicFactIds": [
+      "fact-c56-01",
+      "fact-c56-02",
+      "fact-c56-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c56-01",
+      "query-c56-02",
+      "query-c56-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c56-one",
+      "titleKey": "chapter.c56.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c56-1",
+      "titleKey": "board.c56.1.title",
+      "mode": "sampling-window",
+      "slots": [
+        {
+          "id": "slot-c56-1-1",
+          "labelKey": "board.c56.1.slot.1",
+          "acceptsEventIds": [
+            "event-c56-01"
+          ]
+        },
+        {
+          "id": "slot-c56-1-2",
+          "labelKey": "board.c56.1.slot.2",
+          "acceptsEventIds": [
+            "event-c56-03"
+          ]
+        },
+        {
+          "id": "slot-c56-1-3",
+          "labelKey": "board.c56.1.slot.3",
+          "acceptsEventIds": [
+            "event-c56-05"
+          ]
+        },
+        {
+          "id": "slot-c56-1-4",
+          "labelKey": "board.c56.1.slot.4",
+          "acceptsEventIds": [
+            "event-c56-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "sampled-before",
+        "buffers",
+        "explains"
+      ]
+    },
+    {
+      "id": "board-c56-2",
+      "titleKey": "board.c56.2.title",
+      "mode": "uncertainty-band",
+      "slots": [
+        {
+          "id": "slot-c56-2-1",
+          "labelKey": "board.c56.2.slot.1",
+          "acceptsEventIds": [
+            "event-c56-02"
+          ]
+        },
+        {
+          "id": "slot-c56-2-2",
+          "labelKey": "board.c56.2.slot.2",
+          "acceptsEventIds": [
+            "event-c56-04"
+          ]
+        },
+        {
+          "id": "slot-c56-2-3",
+          "labelKey": "board.c56.2.slot.3",
+          "acceptsEventIds": [
+            "event-c56-06"
+          ]
+        },
+        {
+          "id": "slot-c56-2-4",
+          "labelKey": "board.c56.2.slot.4",
+          "acceptsEventIds": [
+            "event-c56-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "bounds",
+        "overlaps",
+        "excludes"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c56-system",
+      "kind": "object",
+      "labelKey": "entity.c56.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c56",
+      "kind": "location",
+      "labelKey": "location.c56",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c56-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "14:00"
+      },
+      "participants": [
+        "entity-c56-system"
+      ],
+      "locationId": "location-c56",
+      "action": "step-c56-1",
+      "labelKey": "event.c56.1",
+      "effectFactIds": [
+        "fact-c56-01"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c56-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "14:04"
+      },
+      "participants": [
+        "entity-c56-system"
+      ],
+      "locationId": "location-c56",
+      "action": "step-c56-2",
+      "labelKey": "event.c56.2",
+      "effectFactIds": [
+        "fact-c56-02"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c56-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "14:08"
+      },
+      "participants": [
+        "entity-c56-system"
+      ],
+      "locationId": "location-c56",
+      "action": "step-c56-3",
+      "labelKey": "event.c56.3",
+      "effectFactIds": [
+        "fact-c56-03"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c56-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "14:12"
+      },
+      "participants": [
+        "entity-c56-system"
+      ],
+      "locationId": "location-c56",
+      "action": "step-c56-4",
+      "labelKey": "event.c56.4",
+      "effectFactIds": [
+        "fact-c56-04"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c56-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "14:16"
+      },
+      "participants": [
+        "entity-c56-system"
+      ],
+      "locationId": "location-c56",
+      "action": "step-c56-5",
+      "labelKey": "event.c56.5",
+      "effectFactIds": [
+        "fact-c56-05"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c56-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "14:20"
+      },
+      "participants": [
+        "entity-c56-system"
+      ],
+      "locationId": "location-c56",
+      "action": "step-c56-6",
+      "labelKey": "event.c56.6",
+      "effectFactIds": [
+        "fact-c56-06"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c56-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "15:24"
+      },
+      "participants": [
+        "entity-c56-system"
+      ],
+      "locationId": "location-c56",
+      "action": "step-c56-7",
+      "labelKey": "event.c56.7",
+      "effectFactIds": [
+        "fact-c56-07"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c56-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "15:28"
+      },
+      "participants": [
+        "entity-c56-system"
+      ],
+      "locationId": "location-c56",
+      "action": "step-c56-8",
+      "labelKey": "event.c56.8",
+      "effectFactIds": [
+        "fact-c56-08"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c56-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "15:32"
+      },
+      "participants": [
+        "entity-c56-system"
+      ],
+      "locationId": "location-c56",
+      "action": "step-c56-9",
+      "labelKey": "event.c56.9",
+      "effectFactIds": [
+        "fact-c56-09"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c56-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "15:36"
+      },
+      "participants": [
+        "entity-c56-system"
+      ],
+      "locationId": "location-c56",
+      "action": "step-c56-10",
+      "labelKey": "event.c56.10",
+      "effectFactIds": [
+        "fact-c56-10"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c56-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "15:40"
+      },
+      "participants": [
+        "entity-c56-system"
+      ],
+      "locationId": "location-c56",
+      "action": "step-c56-11",
+      "labelKey": "event.c56.11",
+      "effectFactIds": [
+        "fact-c56-11"
+      ],
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c56-1-1",
+      "type": "precedes",
+      "fromId": "entity-c56-system",
+      "toId": "location-c56",
+      "eventId": "event-c56-01",
+      "factId": "fact-c56-01"
+    },
+    {
+      "id": "relation-c56-1-2",
+      "type": "causes",
+      "fromId": "entity-c56-system",
+      "toId": "location-c56",
+      "eventId": "event-c56-03",
+      "factId": "fact-c56-02"
+    },
+    {
+      "id": "relation-c56-1-3",
+      "type": "causes",
+      "fromId": "entity-c56-system",
+      "toId": "location-c56",
+      "eventId": "event-c56-05",
+      "factId": "fact-c56-03"
+    },
+    {
+      "id": "relation-c56-2-1",
+      "type": "precedes",
+      "fromId": "entity-c56-system",
+      "toId": "location-c56",
+      "eventId": "event-c56-02",
+      "factId": "fact-c56-02"
+    },
+    {
+      "id": "relation-c56-2-2",
+      "type": "causes",
+      "fromId": "entity-c56-system",
+      "toId": "location-c56",
+      "eventId": "event-c56-04",
+      "factId": "fact-c56-03"
+    },
+    {
+      "id": "relation-c56-2-3",
+      "type": "causes",
+      "fromId": "entity-c56-system",
+      "toId": "location-c56",
+      "eventId": "event-c56-06",
+      "factId": "fact-c56-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c56-01",
+      "predicate": "verified_c56_1",
+      "args": {
+        "term": "温度图"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c56.1"
+    },
+    {
+      "id": "fact-c56-02",
+      "predicate": "verified_c56_2",
+      "args": {
+        "term": "插值区间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c56.2"
+    },
+    {
+      "id": "fact-c56-03",
+      "predicate": "verified_c56_3",
+      "args": {
+        "term": "缺失采样"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c56.3"
+    },
+    {
+      "id": "fact-c56-04",
+      "predicate": "verified_c56_4",
+      "args": {
+        "term": "原始点"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c56.4"
+    },
+    {
+      "id": "fact-c56-05",
+      "predicate": "verified_c56_5",
+      "args": {
+        "term": "绘图连续"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c56.5"
+    },
+    {
+      "id": "fact-c56-06",
+      "predicate": "verified_c56_6",
+      "args": {
+        "term": "不确定性带"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c56.6"
+    },
+    {
+      "id": "fact-c56-07",
+      "predicate": "verified_c56_7",
+      "args": {
+        "term": "断线时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c56.7"
+    },
+    {
+      "id": "fact-c56-08",
+      "predicate": "verified_c56_8",
+      "args": {
+        "term": "采样频率"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c56.8"
+    },
+    {
+      "id": "fact-c56-09",
+      "predicate": "verified_c56_9",
+      "args": {
+        "term": "估计值"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c56.9"
+    },
+    {
+      "id": "fact-c56-10",
+      "predicate": "verified_c56_10",
+      "args": {
+        "term": "真实测量"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c56.10"
+    },
+    {
+      "id": "fact-c56-11",
+      "predicate": "verified_c56_11",
+      "args": {
+        "term": "温度图"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-11"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c56.11"
+    },
+    {
+      "id": "fact-c56-12",
+      "predicate": "verified_c56_12",
+      "args": {
+        "term": "插值区间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c56.12"
+    },
+    {
+      "id": "fact-c56-13",
+      "predicate": "verified_c56_13",
+      "args": {
+        "term": "缺失采样"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c56.13"
+    },
+    {
+      "id": "fact-c56-14",
+      "predicate": "verified_c56_14",
+      "args": {
+        "term": "原始点"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c56.14"
+    },
+    {
+      "id": "fact-c56-15",
+      "predicate": "verified_c56_15",
+      "args": {
+        "term": "绘图连续"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c56.15"
+    },
+    {
+      "id": "fact-c56-16",
+      "predicate": "verified_c56_16",
+      "args": {
+        "term": "不确定性带"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c56.16"
+    },
+    {
+      "id": "fact-c56-17",
+      "predicate": "verified_c56_17",
+      "args": {
+        "term": "断线时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c56-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c56-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c56.17"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c56-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-01",
+        "fact-c56-02",
+        "fact-c56-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c56-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c56-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-01",
+        "fact-c56-02",
+        "fact-c56-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c56-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c56-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-02",
+        "fact-c56-13"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c56-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c56-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-03",
+        "fact-c56-14"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c56-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c56-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-04",
+        "fact-c56-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c56-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c56-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-05",
+        "fact-c56-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c56-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c56-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-06",
+        "fact-c56-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c56-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c56-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-07"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c56-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c56-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-08"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c56-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c56-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c56-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c56-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c56-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c56-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c56-11"
+      ],
+      "spoilerLevel": "sensitive"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c56-01",
+      "labelKey": "query.c56.1",
+      "intent": "verify",
+      "predicate": "verified_c56_1",
+      "slots": {
+        "subjectId": "entity-c56-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c56-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-opening"
+      ],
+      "examplePhrases": [
+        "温度图是否成立？",
+        "能确认温度图吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "温度图"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c56-02",
+      "labelKey": "query.c56.2",
+      "intent": "verify",
+      "predicate": "verified_c56_2",
+      "slots": {
+        "subjectId": "entity-c56-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c56-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-opening"
+      ],
+      "examplePhrases": [
+        "插值区间是否成立？",
+        "能确认插值区间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "插值区间"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c56-03",
+      "labelKey": "query.c56.3",
+      "intent": "verify",
+      "predicate": "verified_c56_3",
+      "slots": {
+        "subjectId": "entity-c56-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c56-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-opening"
+      ],
+      "examplePhrases": [
+        "缺失采样是否成立？",
+        "能确认缺失采样吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "缺失采样"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c56-04",
+      "labelKey": "query.c56.4",
+      "intent": "verify",
+      "predicate": "verified_c56_4",
+      "slots": {
+        "subjectId": "entity-c56-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c56-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-04"
+      ],
+      "examplePhrases": [
+        "原始点是否成立？",
+        "能确认原始点吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "原始点"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c56-05",
+      "labelKey": "query.c56.5",
+      "intent": "verify",
+      "predicate": "verified_c56_5",
+      "slots": {
+        "subjectId": "entity-c56-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c56-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-05"
+      ],
+      "examplePhrases": [
+        "绘图连续是否成立？",
+        "能确认绘图连续吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "绘图连续"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c56-06",
+      "labelKey": "query.c56.6",
+      "intent": "verify",
+      "predicate": "verified_c56_6",
+      "slots": {
+        "subjectId": "entity-c56-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c56-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-06"
+      ],
+      "examplePhrases": [
+        "不确定性带是否成立？",
+        "能确认不确定性带吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "不确定性带"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c56-07",
+      "labelKey": "query.c56.7",
+      "intent": "verify",
+      "predicate": "verified_c56_7",
+      "slots": {
+        "subjectId": "entity-c56-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c56-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-07"
+      ],
+      "examplePhrases": [
+        "断线时间是否成立？",
+        "能确认断线时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "断线时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c56-08",
+      "labelKey": "query.c56.8",
+      "intent": "verify",
+      "predicate": "verified_c56_8",
+      "slots": {
+        "subjectId": "entity-c56-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c56-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-08"
+      ],
+      "examplePhrases": [
+        "采样频率是否成立？",
+        "能确认采样频率吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "采样频率"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c56-09",
+      "labelKey": "query.c56.9",
+      "intent": "verify",
+      "predicate": "verified_c56_9",
+      "slots": {
+        "subjectId": "entity-c56-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c56-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-09"
+      ],
+      "examplePhrases": [
+        "估计值是否成立？",
+        "能确认估计值吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "估计值"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c56-10",
+      "labelKey": "query.c56.10",
+      "intent": "verify",
+      "predicate": "verified_c56_10",
+      "slots": {
+        "subjectId": "entity-c56-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c56-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c56-10"
+      ],
+      "examplePhrases": [
+        "真实测量是否成立？",
+        "能确认真实测量吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "真实测量"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c56-01",
+      "kind": "scene",
+      "titleKey": "evidence.c56.1.title",
+      "observationKey": "evidence.c56.1.observation",
+      "sourceFactIds": [
+        "fact-c56-01",
+        "fact-c56-02",
+        "fact-c56-03"
+      ],
+      "sourceEventIds": [
+        "event-c56-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c56-system",
+        "location-c56"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c56-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c56/evidence-01.svg",
+      "assetAlt": "温度图"
+    },
+    {
+      "id": "evidence-c56-02",
+      "kind": "record",
+      "titleKey": "evidence.c56.2.title",
+      "observationKey": "evidence.c56.2.observation",
+      "sourceFactIds": [
+        "fact-c56-02",
+        "fact-c56-13"
+      ],
+      "sourceEventIds": [
+        "event-c56-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c56-system",
+        "location-c56"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c56-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c56/evidence-02.svg",
+      "assetAlt": "插值区间"
+    },
+    {
+      "id": "evidence-c56-03",
+      "kind": "object",
+      "titleKey": "evidence.c56.3.title",
+      "observationKey": "evidence.c56.3.observation",
+      "sourceFactIds": [
+        "fact-c56-03",
+        "fact-c56-14"
+      ],
+      "sourceEventIds": [
+        "event-c56-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c56-system",
+        "location-c56"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c56/evidence-03.svg",
+      "assetAlt": "缺失采样"
+    },
+    {
+      "id": "evidence-c56-04",
+      "kind": "scene",
+      "titleKey": "evidence.c56.4.title",
+      "observationKey": "evidence.c56.4.observation",
+      "sourceFactIds": [
+        "fact-c56-04",
+        "fact-c56-15"
+      ],
+      "sourceEventIds": [
+        "event-c56-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c56-system",
+        "location-c56"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c56/evidence-04.svg",
+      "assetAlt": "原始点"
+    },
+    {
+      "id": "evidence-c56-05",
+      "kind": "record",
+      "titleKey": "evidence.c56.5.title",
+      "observationKey": "evidence.c56.5.observation",
+      "sourceFactIds": [
+        "fact-c56-05",
+        "fact-c56-16"
+      ],
+      "sourceEventIds": [
+        "event-c56-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c56-system",
+        "location-c56"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c56/evidence-05.svg",
+      "assetAlt": "绘图连续"
+    },
+    {
+      "id": "evidence-c56-06",
+      "kind": "object",
+      "titleKey": "evidence.c56.6.title",
+      "observationKey": "evidence.c56.6.observation",
+      "sourceFactIds": [
+        "fact-c56-06",
+        "fact-c56-17"
+      ],
+      "sourceEventIds": [
+        "event-c56-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c56-system",
+        "location-c56"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c56/evidence-01.svg",
+      "assetAlt": "不确定性带"
+    },
+    {
+      "id": "evidence-c56-07",
+      "kind": "scene",
+      "titleKey": "evidence.c56.7.title",
+      "observationKey": "evidence.c56.7.observation",
+      "sourceFactIds": [
+        "fact-c56-07"
+      ],
+      "sourceEventIds": [
+        "event-c56-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c56-system",
+        "location-c56"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c56/evidence-02.svg",
+      "assetAlt": "断线时间"
+    },
+    {
+      "id": "evidence-c56-08",
+      "kind": "record",
+      "titleKey": "evidence.c56.8.title",
+      "observationKey": "evidence.c56.8.observation",
+      "sourceFactIds": [
+        "fact-c56-08"
+      ],
+      "sourceEventIds": [
+        "event-c56-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c56-system",
+        "location-c56"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c56/evidence-03.svg",
+      "assetAlt": "采样频率"
+    },
+    {
+      "id": "evidence-c56-09",
+      "kind": "object",
+      "titleKey": "evidence.c56.9.title",
+      "observationKey": "evidence.c56.9.observation",
+      "sourceFactIds": [
+        "fact-c56-09"
+      ],
+      "sourceEventIds": [
+        "event-c56-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c56-system",
+        "location-c56"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c56/evidence-04.svg",
+      "assetAlt": "估计值"
+    },
+    {
+      "id": "evidence-c56-10",
+      "kind": "scene",
+      "titleKey": "evidence.c56.10.title",
+      "observationKey": "evidence.c56.10.observation",
+      "sourceFactIds": [
+        "fact-c56-10"
+      ],
+      "sourceEventIds": [
+        "event-c56-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c56-system",
+        "location-c56"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c56/evidence-05.svg",
+      "assetAlt": "真实测量"
+    },
+    {
+      "id": "evidence-c56-11",
+      "kind": "record",
+      "titleKey": "evidence.c56.11.title",
+      "observationKey": "evidence.c56.11.observation",
+      "sourceFactIds": [
+        "fact-c56-11"
+      ],
+      "sourceEventIds": [
+        "event-c56-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c56-system",
+        "location-c56"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c56/evidence-01.svg",
+      "assetAlt": "温度图"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c56.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c56-01",
+          "event-c56-02",
+          "event-c56-03",
+          "event-c56-04",
+          "event-c56-05",
+          "event-c56-06",
+          "event-c56-07",
+          "event-c56-08",
+          "event-c56-09",
+          "event-c56-10"
+        ],
+        "motiveKey": "把估计曲线与原始观测明确分层"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c56-01",
+        "evidence-c56-02",
+        "evidence-c56-03",
+        "evidence-c56-04",
+        "evidence-c56-05",
+        "evidence-c56-06",
+        "evidence-c56-07",
+        "evidence-c56-08",
+        "evidence-c56-09",
+        "evidence-c56-10"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c56-1",
+        "contradiction-c56-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c56-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c56.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "设备从未断线"
+        ],
+        "motiveKey": "motive-c56-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c56-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c56-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c56-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c56.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "温度在断线期间完全不变"
+        ],
+        "motiveKey": "motive-c56-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c56-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c56-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c56-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c56-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c56-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c56-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c56-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c56-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c56-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c56-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c56-01",
+      "fact-c56-02",
+      "fact-c56-03",
+      "fact-c56-04",
+      "fact-c56-05",
+      "fact-c56-06",
+      "fact-c56-07",
+      "fact-c56-08",
+      "fact-c56-09",
+      "fact-c56-10"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c56-01",
+      "evidence-c56-02",
+      "evidence-c56-03",
+      "evidence-c56-04",
+      "evidence-c56-05",
+      "evidence-c56-06",
+      "evidence-c56-07",
+      "evidence-c56-08",
+      "evidence-c56-09",
+      "evidence-c56-10"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c56-01",
+        "event-c56-02"
+      ],
+      [
+        "event-c56-02",
+        "event-c56-03"
+      ],
+      [
+        "event-c56-03",
+        "event-c56-04"
+      ],
+      [
+        "event-c56-04",
+        "event-c56-05"
+      ],
+      [
+        "event-c56-05",
+        "event-c56-06"
+      ],
+      [
+        "event-c56-06",
+        "event-c56-07"
+      ],
+      [
+        "event-c56-07",
+        "event-c56-08"
+      ],
+      [
+        "event-c56-08",
+        "event-c56-09"
+      ],
+      [
+        "event-c56-09",
+        "event-c56-10"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c56-1",
+      "contradiction-c56-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c56-alternative-1",
+      "hypothesis-c56-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c56-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c56-a",
+        "evidenceIds": [
+          "evidence-c56-01",
+          "evidence-c56-02",
+          "evidence-c56-03",
+          "evidence-c56-04",
+          "evidence-c56-05",
+          "evidence-c56-06",
+          "evidence-c56-07",
+          "evidence-c56-08"
+        ]
+      },
+      {
+        "id": "proof-c56-b",
+        "evidenceIds": [
+          "evidence-c56-01",
+          "evidence-c56-02",
+          "evidence-c56-09",
+          "evidence-c56-10"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "把估计曲线与原始观测明确分层"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c56-1",
+        "kind": "time",
+        "boardId": "board-c56-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c56-1-1",
+            "eventId": "event-c56-01"
+          },
+          {
+            "slotId": "slot-c56-1-2",
+            "eventId": "event-c56-03"
+          },
+          {
+            "slotId": "slot-c56-1-3",
+            "eventId": "event-c56-05"
+          },
+          {
+            "slotId": "slot-c56-1-4",
+            "eventId": "event-c56-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c56-01",
+            "toEventId": "event-c56-03",
+            "relation": "sampled-before"
+          },
+          {
+            "fromEventId": "event-c56-03",
+            "toEventId": "event-c56-05",
+            "relation": "sampled-before"
+          },
+          {
+            "fromEventId": "event-c56-05",
+            "toEventId": "event-c56-10",
+            "relation": "sampled-before"
+          }
+        ],
+        "failureCategory": "time"
+      },
+      {
+        "id": "obligation-c56-2",
+        "kind": "measurement",
+        "boardId": "board-c56-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c56-2-1",
+            "eventId": "event-c56-02"
+          },
+          {
+            "slotId": "slot-c56-2-2",
+            "eventId": "event-c56-04"
+          },
+          {
+            "slotId": "slot-c56-2-3",
+            "eventId": "event-c56-06"
+          },
+          {
+            "slotId": "slot-c56-2-4",
+            "eventId": "event-c56-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c56-02",
+            "toEventId": "event-c56-04",
+            "relation": "bounds"
+          },
+          {
+            "fromEventId": "event-c56-04",
+            "toEventId": "event-c56-06",
+            "relation": "bounds"
+          },
+          {
+            "fromEventId": "event-c56-06",
+            "toEventId": "event-c56-10",
+            "relation": "bounds"
+          }
+        ],
+        "failureCategory": "measurement"
+      }
+    ],
+    "uniquenessClaim": "缺失区间被插值补齐，图像连续只说明绘图连续，不代表采样连续。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c56-1",
+      "eventId": "event-c56-02",
+      "factIds": [
+        "fact-c56-01"
+      ],
+      "captionKey": "event.c56.2"
+    },
+    {
+      "id": "replay-c56-2",
+      "eventId": "event-c56-03",
+      "factIds": [
+        "fact-c56-02"
+      ],
+      "captionKey": "event.c56.3"
+    },
+    {
+      "id": "replay-c56-3",
+      "eventId": "event-c56-04",
+      "factIds": [
+        "fact-c56-03"
+      ],
+      "captionKey": "event.c56.4"
+    },
+    {
+      "id": "replay-c56-4",
+      "eventId": "event-c56-05",
+      "factIds": [
+        "fact-c56-04"
+      ],
+      "captionKey": "event.c56.5"
+    },
+    {
+      "id": "replay-c56-5",
+      "eventId": "event-c56-06",
+      "factIds": [
+        "fact-c56-05"
+      ],
+      "captionKey": "event.c56.6"
+    },
+    {
+      "id": "replay-c56-6",
+      "eventId": "event-c56-07",
+      "factIds": [
+        "fact-c56-01",
+        "fact-c56-02",
+        "fact-c56-03",
+        "fact-c56-04",
+        "fact-c56-05",
+        "fact-c56-06",
+        "fact-c56-07",
+        "fact-c56-08",
+        "fact-c56-09",
+        "fact-c56-10"
+      ],
+      "captionKey": "event.c56.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c56.title": "完整却不连续的温度图",
+      "case.c56.surface": "温度图从头到尾没有空白，但采样设备中途确实断过线。",
+      "case.c56.truth": "缺失区间被插值补齐，图像连续只说明绘图连续，不代表采样连续。",
+      "entity.c56.system": "测量系统与记录链",
+      "location.c56": "科学系统现场",
+      "hypothesis.c56.canonical": "缺失区间被插值补齐，图像连续只说明绘图连续，不代表采样连续。",
+      "hypothesis.c56.alternative.1": "设备从未断线",
+      "hypothesis.c56.alternative.2": "温度在断线期间完全不变",
+      "motive.把估计曲线与原始观测明确分层": "把估计曲线与原始观测明确分层",
+      "chapter.c56.one": "固定异常",
+      "chapter.c56.two": "统一测量边界",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c56.1": "温度图是否成立？",
+      "query.c56.2": "插值区间是否成立？",
+      "query.c56.3": "缺失采样是否成立？",
+      "query.c56.4": "原始点是否成立？",
+      "query.c56.5": "绘图连续是否成立？",
+      "query.c56.6": "不确定性带是否成立？",
+      "query.c56.7": "断线时间是否成立？",
+      "query.c56.8": "采样频率是否成立？",
+      "query.c56.9": "估计值是否成立？",
+      "query.c56.10": "真实测量是否成立？",
+      "event.c56.1": "阶段 1：温度图进入记录链",
+      "event.c56.2": "阶段 2：插值区间进入记录链",
+      "event.c56.3": "阶段 3：缺失采样进入记录链",
+      "event.c56.4": "阶段 4：原始点进入记录链",
+      "event.c56.5": "阶段 5：绘图连续进入记录链",
+      "event.c56.6": "阶段 6：不确定性带进入记录链",
+      "event.c56.7": "阶段 7：断线时间进入记录链",
+      "event.c56.8": "阶段 8：采样频率进入记录链",
+      "event.c56.9": "阶段 9：估计值进入记录链",
+      "event.c56.10": "阶段 10：真实测量进入记录链",
+      "event.c56.11": "阶段 11：温度图进入记录链",
+      "evidence.c56.1.title": "温度图记录",
+      "evidence.c56.1.observation": "来源记录显示“温度图”在该阶段保持可复核。",
+      "evidence.c56.2.title": "插值区间记录",
+      "evidence.c56.2.observation": "来源记录显示“插值区间”在该阶段保持可复核。",
+      "evidence.c56.3.title": "缺失采样记录",
+      "evidence.c56.3.observation": "来源记录显示“缺失采样”在该阶段保持可复核。",
+      "evidence.c56.4.title": "原始点记录",
+      "evidence.c56.4.observation": "来源记录显示“原始点”在该阶段保持可复核。",
+      "evidence.c56.5.title": "绘图连续记录",
+      "evidence.c56.5.observation": "来源记录显示“绘图连续”在该阶段保持可复核。",
+      "evidence.c56.6.title": "不确定性带记录",
+      "evidence.c56.6.observation": "来源记录显示“不确定性带”在该阶段保持可复核。",
+      "evidence.c56.7.title": "断线时间记录",
+      "evidence.c56.7.observation": "来源记录显示“断线时间”在该阶段保持可复核。",
+      "evidence.c56.8.title": "采样频率记录",
+      "evidence.c56.8.observation": "来源记录显示“采样频率”在该阶段保持可复核。",
+      "evidence.c56.9.title": "估计值记录",
+      "evidence.c56.9.observation": "来源记录显示“估计值”在该阶段保持可复核。",
+      "evidence.c56.10.title": "真实测量记录",
+      "evidence.c56.10.observation": "来源记录显示“真实测量”在该阶段保持可复核。",
+      "evidence.c56.11.title": "温度图记录",
+      "evidence.c56.11.observation": "来源记录显示“温度图”在该阶段保持可复核。",
+      "board.c56.1.title": "完整却不连续的温度图 · sampling-window",
+      "board.c56.1.slot.1": "起始来源",
+      "board.c56.1.slot.2": "关键变化",
+      "board.c56.1.slot.3": "观测结果",
+      "board.c56.1.slot.4": "排除替代",
+      "board.c56.2.title": "完整却不连续的温度图 · uncertainty-band",
+      "board.c56.2.slot.1": "起始来源",
+      "board.c56.2.slot.2": "关键变化",
+      "board.c56.2.slot.3": "观测结果",
+      "board.c56.2.slot.4": "排除替代"
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import type { EvidencePlayerState, GameCommand, SaveEnvelope } from "./types.ts";
+import { isProofOperation } from './proof-workspace-m3.ts';
 
 export type SaveValidationCode = "invalid" | "unsupported_schema" | "incompatible";
 
@@ -27,6 +28,9 @@ const EVIDENCE_STATES = new Set<EvidencePlayerState>([
   "dismissed",
 ]);
 
+export const MAX_ARCHIVE_SAVES = 1_000;
+export const MAX_ARCHIVE_COMMANDS = 100_000;
+
 function record(value: unknown): Record<string, unknown> | undefined {
   return typeof value === "object" && value !== null && !Array.isArray(value)
     ? value as Record<string, unknown>
@@ -41,17 +45,74 @@ function theoryId(value: unknown): "theory-a" | "theory-b" | undefined {
   return value === "theory-a" || value === "theory-b" ? value : undefined;
 }
 
-function sanitizeCommand(value: unknown): GameCommand | undefined {
+export function sanitizeGameCommand(value: unknown): GameCommand | undefined {
   const item = record(value);
   if (!item || typeof item.type !== "string") return undefined;
   const id = (key: string) => text(item[key]);
   const draftId = () => theoryId(item.theoryId);
 
   switch (item.type) {
-    case "start_case": return { type: "start_case" };
+    case 'undo_proof_edit': {
+      const value=draftId();
+      return item.revision==='m3' && value ? {type:'undo_proof_edit',revision:'m3',theoryId:value} : undefined;
+    }
+    case 'proof_action': {
+      const actionItem = record(item.action);
+      if (item.revision !== 'm3' || !actionItem || ['proof_action','edit_proof','undo_proof_edit'].includes(String(actionItem.type))) return undefined;
+      const action = sanitizeGameCommand(actionItem);
+      return action && action.type !== 'proof_action' && action.type !== 'edit_proof' && action.type !== 'undo_proof_edit' ? {type:'proof_action',revision:'m3',action} : undefined;
+    }
+    case 'edit_proof': {
+      const value = draftId();
+      if (item.revision !== 'm3' || !value || !Array.isArray(item.operations) || !item.operations.length || item.operations.length > 32) return undefined;
+      const operations = [];
+      for (const candidate of item.operations) {
+        const raw = record(candidate);
+        if (!raw || ['proof_action','edit_proof','undo_proof_edit'].includes(String(raw.type))) return undefined;
+        const op = sanitizeGameCommand(raw);
+        if (!op || op.type === 'proof_action' || op.type === 'edit_proof' || op.type === 'undo_proof_edit' || !isProofOperation(op) || ('theoryId' in op && op.theoryId !== value)) return undefined;
+        operations.push(op);
+      }
+      return {type:'edit_proof',revision:'m3',theoryId:value,operations};
+    }
+    case "begin_investigation": return item.revision === "m2" ? { type: "begin_investigation", revision: "m2" } : undefined;
+    case "choose_explanation": {
+      const value = draftId(), hypothesisId = id("hypothesisId");
+      return item.revision === "m2" && value && hypothesisId ? { type: "choose_explanation", revision: "m2", theoryId: value, hypothesisId } : undefined;
+    }
+    case "clear_explanation":
+    case "submit_investigation": {
+      const value = draftId();
+      return item.revision === "m2" && value ? { type: item.type, revision: "m2", theoryId: value } : undefined;
+    }
+    case "set_theory_note": {
+      const value = draftId();
+      return item.revision === "m2" && value && typeof item.text === "string" && item.text.length <= 4000
+        ? { type: "set_theory_note", revision: "m2", theoryId: value, text: item.text } : undefined;
+    }
+    case "start_case": return item.initialDraftOrder === undefined ? { type: "start_case" }
+      : item.initialDraftOrder === "opaque" ? { type: "start_case", initialDraftOrder: "opaque" } : undefined;
     case "ask_text": {
       const rawText = text(item.rawText, 2_000);
       return rawText ? { type: "ask_text", rawText } : undefined;
+    }
+    case "ask_proposition": {
+      const rawText = text(item.rawText, 2_000);
+      const queryId = item.queryId === null ? null : id("queryId");
+      const candidates = item.candidateQueryIds;
+      return rawText && queryId !== undefined && item.resolverRevision === "m01" && Array.isArray(candidates)
+        && candidates.length <= 100 && candidates.every(value => text(value)) && new Set(candidates).size === candidates.length
+        ? { type: "ask_proposition", rawText, resolverRevision: "m01", queryId, candidateQueryIds: [...candidates] as string[] } : undefined;
+    }
+    case "confirm_proposition": {
+      const rawText = text(item.rawText, 2_000);
+      const queryId = id("queryId");
+      return rawText && queryId && item.resolverRevision === "m01"
+        ? { type: "confirm_proposition", rawText, queryId, resolverRevision: "m01" } : undefined;
+    }
+    case "dismiss_interpretation": {
+      const rawText = text(item.rawText, 2_000);
+      return rawText ? { type: "dismiss_interpretation", rawText } : undefined;
     }
     case "ask_resolved_text": {
       const rawText = text(item.rawText, 2_000);
@@ -63,7 +124,9 @@ function sanitizeCommand(value: unknown): GameCommand | undefined {
     }
     case "confirm_interpretation": {
       const queryId = id("queryId");
-      return queryId ? { type: "confirm_interpretation", queryId } : undefined;
+      const rawText = item.rawText === undefined ? undefined : text(item.rawText, 2_000);
+      return queryId && (item.rawText === undefined || rawText)
+        ? { type: "confirm_interpretation", queryId, ...(rawText ? { rawText } : {}) } : undefined;
     }
     case "undo_last_question": return { type: "undo_last_question" };
     case "visit_location": {
@@ -189,7 +252,7 @@ export function validateSaveEnvelope(value: unknown): SaveValidationResult<SaveE
   if (!Array.isArray(item.commands) || item.commands.length > 10_000) {
     return { ok: false, code: "invalid", reason: "命令日志缺失或过长" };
   }
-  const commands = item.commands.map(sanitizeCommand);
+  const commands = item.commands.map(sanitizeGameCommand);
   const invalidCommand = commands.findIndex((command) => !command);
   if (invalidCommand >= 0) return { ok: false, code: "invalid", reason: `命令日志第 ${invalidCommand + 1} 项无效` };
   const updatedAt = text(item.updatedAt);
@@ -223,15 +286,19 @@ export function validateCompatibleSave(value: unknown, caseId: string, identity:
 }
 
 export function createSaveArchive(saves: unknown[], exportedAt = new Date().toISOString()): SaveArchive {
+  if (saves.length > MAX_ARCHIVE_SAVES) throw new Error("存档包案件数量超出安全上限");
   const validated = saves.map(validateSaveEnvelope);
   const failure = validated.find((result) => !result.ok);
   if (failure && !failure.ok) throw new Error(failure.reason);
-  return {
+  const archive: SaveArchive = {
     archiveSchemaVersion: 1,
     product: "turtle-soup",
     exportedAt,
     saves: validated.map((result) => result.ok ? result.value : neverResult()),
   };
+  const checked = validateSaveArchive(archive);
+  if (!checked.ok) throw new Error(checked.reason);
+  return checked.value;
 }
 
 function neverResult(): never {
@@ -243,12 +310,16 @@ export function validateSaveArchive(value: unknown, identities?: Readonly<Record
   if (!item || item.product !== "turtle-soup") return { ok: false, code: "invalid", reason: "不是 TURTLE SOUP 存档包" };
   if (item.archiveSchemaVersion !== 1) return { ok: false, code: "unsupported_schema", reason: "存档包版本不受支持" };
   const exportedAt = text(item.exportedAt);
-  if (!exportedAt || Number.isNaN(Date.parse(exportedAt)) || !Array.isArray(item.saves) || item.saves.length > 50) {
+  if (!exportedAt || Number.isNaN(Date.parse(exportedAt)) || !Array.isArray(item.saves) || item.saves.length > MAX_ARCHIVE_SAVES) {
     return { ok: false, code: "invalid", reason: "存档包结构无效" };
   }
   const saves: SaveEnvelope[] = [];
   const seen = new Set<string>();
+  let commandCount = 0;
   for (const candidate of item.saves) {
+    const candidateRecord = record(candidate);
+    commandCount += Array.isArray(candidateRecord?.commands) ? candidateRecord.commands.length : 0;
+    if (commandCount > MAX_ARCHIVE_COMMANDS) return { ok: false, code: "invalid", reason: "存档包命令总量超出安全上限" };
     const validation = validateSaveEnvelope(candidate);
     if (!validation.ok) return validation;
     const save = validation.value;

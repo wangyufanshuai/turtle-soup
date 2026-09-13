@@ -1,0 +1,32 @@
+{
+  "id": "c65-twin-watermarks",
+  "title": "同样高度的两道水印",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-9d479757-aa69-4db7-937c-6f10b470d9b4.png",
+  "sourceSha256": "36879f6525740f9c2bcad8b9eea4cee24e8c88507000211ce92a751634211e5f",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 同样高度的两道水印 — 两张纸的水印都在同一高度，裁切线却无法对齐。\nArt direction: Two off-white sheets with faint watermark-like wet edges on a paper inspection table, unmarked cutting guide nearby.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c65-twin-watermarks.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 63184,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "9986cb0101b4ebd92eeb97ba0a3e068aac8ae07c718e663d89ae29f851b14abb"
+    },
+    {
+      "path": "/assets/home-cinema/c65-twin-watermarks-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 23178,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "a656bd798ac7b96fdd784a6d935a9b54c01d81b7d99f93fa803595f7573a65f1"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.608180+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

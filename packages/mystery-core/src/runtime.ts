@@ -8,6 +8,7 @@ import {
   normalizeQuestion,
   visitLocation,
 } from "./engine.ts";
+import { boardsFor, reduceProofCommand } from "./proof-workspace-m3.ts";
 import type {
   AnswerCode,
   CaseFile,
@@ -26,12 +27,15 @@ import type {
   RuntimeResult,
   RuntimeState,
   TheoryDraft,
+  ProofFeedback,
   TheoryOptionProjection,
   TranscriptEntry,
   ProofObligationKind,
   ReasoningBoardDraft,
 } from "./types.ts";
 import { reasoningBoardBehavior } from "./board-behavior.ts";
+import { propositionCopy, propositionVisible, resolvePropositionM01 } from "./question-language-m01.ts";
+import { explanationPolicy, investigationM2 } from "./investigation-m2.ts";
 
 const DEFAULT_TARGET_MINUTES = { min: 5, max: 20 };
 
@@ -88,7 +92,8 @@ const MOTIVE_LABELS: Record<string, string> = {
   "motive-attention": "吸引他人注意",
 };
 
-function publicHypothesisId(caseFile: CaseFile, hypothesisId: string): string {
+/** Read-only decoder for schema-one logs written before v2.12. Never project these aliases. */
+function legacyHypothesisId(caseFile: CaseFile, hypothesisId: string): string {
   if (hypothesisId === caseFile.solutionCertificate.canonicalHypothesisId) {
     return caseFile.id === "c01-cold-room-knock" ? "path-delayed-sound" : "path-canonical";
   }
@@ -99,18 +104,24 @@ function publicHypothesisId(caseFile: CaseFile, hypothesisId: string): string {
   return aliases[hypothesisId] ?? `path-${hypothesisId.replace(/^hypothesis-/, "")}`;
 }
 
+function publicHypothesisId(caseFile: CaseFile, hypothesisId: string): string {
+  return `path-${opaqueIdentityHash(`${caseFile.id}:hypothesis:${hypothesisId}`)}`;
+}
+
 function internalHypothesisId(caseFile: CaseFile, publicId: string): string | undefined {
-  return caseFile.hypotheses.find((item) => publicHypothesisId(caseFile, item.id) === publicId)?.id;
+  return caseFile.hypotheses.find((item) => publicHypothesisId(caseFile, item.id) === publicId || legacyHypothesisId(caseFile, item.id) === publicId)?.id;
 }
 
 function publicEventId(caseFile: CaseFile, eventId: string): string {
-  const index = [...caseFile.events].sort((left, right) => left.order - right.order).findIndex((event) => event.id === eventId);
-  return index >= 0 ? `event-${String(index + 1).padStart(2, "0")}` : "event-unknown";
+  return caseFile.events.some((event) => event.id === eventId)
+    ? `event-${opaqueIdentityHash(`${caseFile.id}:event:${eventId}`)}` : "event-unknown";
 }
 
 function internalEventId(caseFile: CaseFile, publicId: string): string | undefined {
-  return [...caseFile.events].sort((left, right) => left.order - right.order)
-    .find((event) => publicEventId(caseFile, event.id) === publicId)?.id;
+  const current = caseFile.events.find((event) => publicEventId(caseFile, event.id) === publicId);
+  if (current) return current.id;
+  const legacyIndex = /^event-(\d{2})$/.exec(publicId);
+  return legacyIndex ? [...caseFile.events].sort((left, right) => left.order - right.order)[Number(legacyIndex[1]) - 1]?.id : undefined;
 }
 
 function localizations(caseFile: CaseFile): Record<string, string> {
@@ -140,7 +151,8 @@ function entityLabel(caseFile: CaseFile, id: unknown): string {
 function queryProjection(caseFile: CaseFile, queryId: string): QuestionCandidateProjection | undefined {
   const query = caseFile.questionSemantics.find((item) => item.id === queryId);
   if (!query) return undefined;
-  const firstPhrase = translate(caseFile, query.labelKey, query.examplePhrases?.[0] ?? PREDICATE_LABELS[String(query.predicate)] ?? "验证一个事实");
+  const copy = propositionCopy(caseFile, queryId);
+  const firstPhrase = copy?.label ?? translate(caseFile, query.labelKey, query.examplePhrases?.[0] ?? PREDICATE_LABELS[String(query.predicate)] ?? "验证一个事实");
   const slots = (query.slots ?? {}) as Record<string, unknown>;
   const target = entityLabel(caseFile, slots.subjectId ?? slots.locationId ?? slots.objectId ?? slots.effect ?? "案件事实");
   const qualifier = slots.time ? String(slots.time) : undefined;
@@ -150,6 +162,7 @@ function queryProjection(caseFile: CaseFile, queryId: string): QuestionCandidate
     target,
     predicate: PREDICATE_LABELS[String(query.predicate)] ?? String(query.predicate ?? "验证"),
     qualifier,
+    ...(copy ? { starterEligible: Boolean(copy.starter) } : {}),
   };
 }
 
@@ -204,26 +217,69 @@ function compactHash(value: string): string {
   return (hash >>> 0).toString(16).padStart(8, "0");
 }
 
-function routingCandidates(caseFile: CaseFile, state: RuntimeState) {
+/** Stable public handles, not encryption: avalanche prevents common authoring suffixes implying rank. */
+function opaqueIdentityHash(value: string): string {
+  let hash = Number.parseInt(compactHash(value), 16);
+  hash = Math.imul(hash ^ (hash >>> 16), 0x85ebca6b);
+  hash = Math.imul(hash ^ (hash >>> 13), 0xc2b2ae35);
+  return ((hash ^ (hash >>> 16)) >>> 0).toString(16).padStart(8, "0");
+}
+
+function routingCandidates(caseFile: CaseFile, state: Pick<RuntimeState, "replayMode"> & Partial<Pick<RuntimeState, "game">>) {
   if (state.replayMode === "no-scaffolds") return [];
   const initialIds = caseFile.surface?.initialQuestionPrompts ?? [];
   const orderedIds = [...initialIds, ...caseFile.questionSemantics.map((query) => query.id).filter((id) => !initialIds.includes(id))];
-  return orderedIds.map((id) => queryProjection(caseFile, id)).filter((item): item is QuestionCandidateProjection => Boolean(item));
+  return orderedIds.filter(id => !state.game || propositionVisible(caseFile, { game: state.game }, id))
+    .map((id) => queryProjection(caseFile, id)).filter((item): item is QuestionCandidateProjection => Boolean(item));
+}
+
+/** Worker-owned historical public routing metadata, never supplied by a save or live request. */
+export interface HistoricalQuestionRoutingContext {
+  readonly sourceProfile: "v2.11-internal-rc" | "v2.12-internal-rc";
+  readonly caseId: CaseFile["id"];
+  readonly caseVersion: number;
+  readonly contentHash: string;
+  readonly candidates: readonly Readonly<QuestionCandidateProjection>[];
+}
+
+export interface ReplayValidationOptions {
+  readonly historicalQuestionRoutingContexts?: readonly HistoricalQuestionRoutingContext[];
+}
+
+/** Capture only routing fields from an independently pinned historical presentation + alias profile. */
+export function createQuestionRoutingReplayContext(
+  caseFile: CaseFile,
+  sourceProfile: HistoricalQuestionRoutingContext["sourceProfile"],
+): HistoricalQuestionRoutingContext {
+  return {
+    sourceProfile,
+    caseId: caseFile.id,
+    caseVersion: caseFile.metadata?.contentVersion ?? 1,
+    contentHash: caseFile.metadata?.canonicalHash ?? "unversioned",
+    candidates: routingCandidates(caseFile, { replayMode: "standard" }),
+  };
+}
+
+function questionRoutingContextHash(
+  caseId: string,
+  version: number,
+  hash: string,
+  replayMode: RuntimeState["replayMode"],
+  raw: string,
+  candidates: readonly Readonly<QuestionCandidateProjection>[],
+): string {
+  return compactHash(JSON.stringify({
+    caseId, version, hash, replayMode, raw,
+    candidates: candidates.map((item) => [item.queryId, item.label, item.target, item.predicate, item.qualifier ?? ""]),
+  }));
 }
 
 /** Builds a truth-free routing offer. Opaque tokens, not query ids, are sent to AI. */
 export function createQuestionRoutingOffer(caseFile: CaseFile, state: RuntimeState, rawQuestion: string): QuestionRoutingOffer {
   const raw = rawQuestion.trim();
   const candidates = routingCandidates(caseFile, state);
-  const identity = JSON.stringify({
-    caseId: caseFile.id,
-    version: caseFile.metadata?.contentVersion ?? 1,
-    hash: caseFile.metadata?.canonicalHash ?? "unversioned",
-    replayMode: state.replayMode,
-    raw,
-    candidates: candidates.map((item) => [item.queryId, item.label, item.target, item.predicate, item.qualifier ?? ""]),
-  });
-  const contextHash = compactHash(identity);
+  const contextHash = questionRoutingContextHash(caseFile.id, caseFile.metadata?.contentVersion ?? 1,
+    caseFile.metadata?.canonicalHash ?? "unversioned", state.replayMode, raw, candidates);
   const bindings = candidates.map((candidate, index) => ({
     token: `candidate-${String(index + 1).padStart(2, "0")}-${compactHash(`${contextHash}:${candidate.queryId}`).slice(0, 4)}`,
     queryId: candidate.queryId,
@@ -245,6 +301,27 @@ export function createQuestionRoutingOffer(caseFile: CaseFile, state: RuntimeSta
     },
     bindings,
   };
+}
+
+function matchesHistoricalQuestionRoutingContext(
+  caseFile: CaseFile,
+  state: RuntimeState,
+  command: Extract<GameCommand, { type: "ask_resolved_text" }>,
+  offer: QuestionRoutingOffer,
+  options?: ReplayValidationOptions,
+): boolean {
+  if (!/^[0-9a-f]{8}$/.test(command.contextHash) || state.replayMode === "no-scaffolds") return false;
+  const currentIds = new Set(caseFile.questionSemantics.map(query => query.id));
+  return options?.historicalQuestionRoutingContexts?.some((historical) => {
+    if (!["v2.11-internal-rc", "v2.12-internal-rc"].includes(historical.sourceProfile) || historical.caseId !== caseFile.id
+      || historical.caseVersion !== (caseFile.metadata?.contentVersion ?? 1)
+      || historical.contentHash !== (caseFile.metadata?.canonicalHash ?? "unversioned")) return false;
+    const historicalIds = new Set(historical.candidates.map((candidate) => candidate.queryId));
+    if (historicalIds.size !== historical.candidates.length || historicalIds.size !== currentIds.size
+      || !historicalIds.has(command.queryId) || ![...historicalIds].every((id) => currentIds.has(id))) return false;
+    return questionRoutingContextHash(historical.caseId, historical.caseVersion, historical.contentHash,
+      state.replayMode, command.rawText.trim(), historical.candidates) === command.contextHash;
+  }) ?? false;
 }
 
 function answerText(caseFile: CaseFile, code: AnswerCode): string {
@@ -276,17 +353,21 @@ function initialEvidenceStates(caseFile: CaseFile): Record<string, EvidencePlaye
   );
 }
 
-export function createRuntimeState(caseFile: CaseFile): RuntimeState {
+export function createRuntimeState(caseFile: CaseFile, initialDraftOrder?: "opaque", investigationRevision?: "m2"): RuntimeState {
   const authoredHypotheses = caseFile.hypotheses.map((hypothesis) => hypothesis.id);
-  const firstHypothesis = caseFile.id === "c01-cold-room-knock" ? "hypothesis-fang-entered" : (authoredHypotheses[0] ?? "hypothesis-canonical");
-  const secondHypothesis = caseFile.id === "c01-cold-room-knock" ? "hypothesis-guard-faked" : (authoredHypotheses[1] ?? firstHypothesis);
+  if (initialDraftOrder === "opaque") authoredHypotheses.sort((left, right) => publicHypothesisId(caseFile, left).localeCompare(publicHypothesisId(caseFile, right)));
+  const legacyC01 = initialDraftOrder !== "opaque" && caseFile.id === "c01-cold-room-knock";
+  const firstHypothesis = legacyC01 ? "hypothesis-fang-entered" : (authoredHypotheses[0] ?? "hypothesis-canonical");
+  const secondHypothesis = legacyC01 ? "hypothesis-guard-faked" : (authoredHypotheses[1] ?? firstHypothesis);
   return {
+    ...(investigationRevision ? { investigationRevision, explicitExplanationChoices: {}, transcriptQueryIds: [] } : {}),
+    ...(initialDraftOrder ? { initialDraftOrder } : {}),
     game: createInitialState(caseFile),
     transcript: [],
     evidenceStates: initialEvidenceStates(caseFile),
     theoryDrafts: [
-      { id: "theory-a", title: "主假设", hypothesisId: firstHypothesis, eventIds: [], evidenceIds: [] },
-      { id: "theory-b", title: "备选假设", hypothesisId: secondHypothesis, eventIds: [], evidenceIds: [] },
+      { id: "theory-a", title: "主假设", hypothesisId: investigationRevision ? "" : firstHypothesis, eventIds: [], evidenceIds: [] },
+      { id: "theory-b", title: "备选假设", hypothesisId: investigationRevision ? "" : secondHypothesis, eventIds: [], evidenceIds: [] },
     ],
     activeTheoryId: "theory-a",
     solved: false,
@@ -395,7 +476,7 @@ function projectedLocations(caseFile: CaseFile, state: RuntimeState): LocationPr
 
 function eventTimeLabel(event: CaseFile["events"][number]): string {
   const time = event.time as { value?: string } | undefined;
-  return time?.value ?? `序列 ${event.order}`;
+  return time?.value ?? "时间待核对";
 }
 
 function projectedEventOptions(caseFile: CaseFile, state: RuntimeState): EventOptionProjection[] {
@@ -412,7 +493,7 @@ function projectedEventOptions(caseFile: CaseFile, state: RuntimeState): EventOp
 
   return caseFile.events
     .filter((event) => visibleEvents.has(event.id))
-    .sort((left, right) => left.order - right.order)
+    .sort((left, right) => publicEventId(caseFile, left.id).localeCompare(publicEventId(caseFile, right.id)))
     .map((event) => ({
       id: publicEventId(caseFile, event.id),
       timeLabel: eventTimeLabel(event),
@@ -423,23 +504,24 @@ function projectedEventOptions(caseFile: CaseFile, state: RuntimeState): EventOp
 }
 
 function projectedTheoryOptions(caseFile: CaseFile, state: RuntimeState): TheoryOptionProjection[] {
+  const m2 = investigationM2(caseFile, state);
+  const policy = explanationPolicy(caseFile, state);
+  const chosen = new Set(state.theoryDrafts.filter(d => state.explicitExplanationChoices?.[d.id]).map(d => d.hypothesisId));
   const intentVisible = state.game.visibleFactIds.includes("fact-lin-intent-delay");
-  const selected = new Set(state.theoryDrafts.map((draft) => draft.hypothesisId));
-  const discovered = new Set(state.game.discoveredEvidenceIds);
-  return caseFile.hypotheses.filter((hypothesis) => {
-    if (selected.has(hypothesis.id)) return true;
-    if (hypothesis.id === "hypothesis-canonical") return state.game.visibleFactIds.includes("fact-vibration-caused-knock");
-    if (hypothesis.id === "hypothesis-guard-faked") return discovered.has("evidence-knock-recording");
-    return true;
-  }).map((hypothesis) => {
+  const interpretationVisible = state.solved || (caseFile.solutionCertificate.requiredFactIds.length > 0
+    && caseFile.solutionCertificate.requiredFactIds.every((id) => state.game.visibleFactIds.includes(id)));
+  return [...caseFile.hypotheses]
+    .filter(hypothesis => !m2 || policy.ready || chosen.has(hypothesis.id))
+    .sort((left, right) => publicHypothesisId(caseFile, left.id).localeCompare(publicHypothesisId(caseFile, right.id)))
+    .map((hypothesis, index) => {
     const motiveKey = String(hypothesis.claim?.motiveKey ?? "");
-    const motiveVisible = hypothesis.kind !== "canonical" || intentVisible || selected.has(hypothesis.id);
+    const motiveVisible = interpretationVisible || (caseFile.id === "c01-cold-room-knock" && intentVisible);
     return {
       id: publicHypothesisId(caseFile, hypothesis.id),
-      label: caseFile.id === "c01-cold-room-knock" && hypothesis.id === "hypothesis-canonical" && !state.game.visibleFactIds.includes("fact-phone-inside")
-        ? "室内物体制造了延时声响"
+      label: m2 && !state.solved ? policy.labels?.[hypothesis.id] ?? (interpretationVisible ? translate(caseFile, hypothesis.labelKey, HYPOTHESIS_LABELS[hypothesis.id] ?? "待验证理论") : "此前选择的解释（继续核对材料）") : !interpretationVisible
+        ? `待验证解释 ${index + 1}（先整理证据）`
         : translate(caseFile, hypothesis.labelKey, HYPOTHESIS_LABELS[hypothesis.id] ?? "待验证理论"),
-      motiveOptions: motiveKey && motiveVisible
+      motiveOptions: motiveKey && motiveVisible && (!(caseFile.proofRevision || state.proofWorkspace) || translate(caseFile, `motive.${motiveKey}`, MOTIVE_LABELS[motiveKey] ?? '') !== '')
         ? [{ id: motiveKey, label: translate(caseFile, `motive.${motiveKey}`, MOTIVE_LABELS[motiveKey] ?? "未知动机") }]
         : [],
     };
@@ -481,6 +563,10 @@ function debrief(caseFile: CaseFile, state: RuntimeState): DebriefReport | undef
 }
 
 export function projectPlayerState(caseFile: CaseFile, state: RuntimeState): PlayerProjection {
+  const m2 = investigationM2(caseFile, state);
+  const evidence = projectedEvidence(caseFile, state);
+  const visibleEvidence = new Set(evidence.map(item => item.id));
+  const policy = explanationPolicy(caseFile, state);
   const title = translate(caseFile, caseFile.surface?.titleKey ?? caseFile.metadata?.titleKey, "未命名案件");
   const surface = translate(caseFile, caseFile.surface?.textKey, "一件无法解释的事件等待调查。");
   const initialIds = caseFile.surface?.initialQuestionPrompts ?? [];
@@ -489,15 +575,23 @@ export function projectPlayerState(caseFile: CaseFile, state: RuntimeState): Pla
     ...caseFile.questionSemantics.map((query) => query.id).filter((id) => !initialIds.includes(id)),
   ];
   const questionScaffolds = state.replayMode === "no-scaffolds" ? [] : orderedQueries
+    .filter(id => propositionVisible(caseFile, state, id))
     .map((id) => queryProjection(caseFile, id))
     .filter((item): item is QuestionCandidateProjection => Boolean(item))
     .map(publicQuestionCandidate);
   const active = state.theoryDrafts.find((item) => item.id === state.activeTheoryId);
   const interpretation = state.pendingInterpretation
-    ? interpretationFor(caseFile, state.pendingInterpretation.rawText, "ambiguous", state.pendingInterpretation.candidateQueryIds)
+    ? { ...interpretationFor(state.pendingInterpretation.resolverRevision ? caseFile : { ...caseFile, questionLanguageRevision: undefined }, state.pendingInterpretation.rawText, "ambiguous", state.pendingInterpretation.candidateQueryIds),
+      ...(state.pendingInterpretation.explanation ? { explanation: state.pendingInterpretation.explanation } : {}) }
     : undefined;
 
   return {
+    ...(m2 ? { investigationRevision: "m2" as const, explanationPreparation: { ready: policy.ready, evidenceIds: policy.remainingEvidenceIds.filter(id => visibleEvidence.has(id)) } } : {}),
+    ...(caseFile.proofRevision || state.proofWorkspace ? {proofRevision: 'm3' as const,
+      canUndoProofEdit: Boolean(state.proofWorkspace?.history?.[state.activeTheoryId]?.length),
+      previousVerifiedProof: state.proofWorkspace?.archive,
+      proofFeedback: state.proofWorkspace?.feedback?.[state.activeTheoryId],
+    } : {}),
     case: {
       id: caseFile.id,
       version: caseFile.metadata?.contentVersion ?? 1,
@@ -511,20 +605,25 @@ export function projectPlayerState(caseFile: CaseFile, state: RuntimeState): Pla
       presentationRevision: typeof caseFile.metadata?.presentationRevision === "number" ? caseFile.metadata.presentationRevision : undefined,
       presentationPatchHash: typeof caseFile.metadata?.presentationPatchHash === "string" ? caseFile.metadata.presentationPatchHash : undefined,
     },
-    transcript: state.transcript,
+    transcript: m2 ? state.transcript.map((entry, index) => {
+      const query = caseFile.questionSemantics.find(item => item.id === state.transcriptQueryIds?.[index]);
+      const facts = new Set(query?.supportingFactIds ?? []);
+      return { ...entry, relatedEvidenceIds: caseFile.evidenceItems.filter(item => visibleEvidence.has(item.id)
+        && item.sourceFactIds?.some(id => facts.has(id))).map(item => item.id) };
+    }) : state.transcript,
     interpretation,
-    evidence: projectedEvidence(caseFile, state),
+    evidence,
     locations: projectedLocations(caseFile, state),
     questionScaffolds,
     eventOptions: projectedEventOptions(caseFile, state),
     theoryOptions: projectedTheoryOptions(caseFile, state),
     theoryDrafts: state.theoryDrafts.map((draft) => ({
       ...draft,
-      hypothesisId: publicHypothesisId(caseFile, draft.hypothesisId),
+      hypothesisId: m2 && !state.solved && !state.explicitExplanationChoices?.[draft.id] ? "" : draft.hypothesisId ? publicHypothesisId(caseFile, draft.hypothesisId) : "",
       eventIds: draft.eventIds.map((eventId) => publicEventId(caseFile, eventId)),
     })),
     activeTheoryId: state.activeTheoryId,
-    canSubmit: Boolean(active && active.eventIds.length > 0 && active.evidenceIds.length > 0),
+    canSubmit: Boolean(active && (!m2 || state.explicitExplanationChoices?.[active.id]) && active.eventIds.length > 0 && active.evidenceIds.length > 0),
     solved: state.solved,
     replay: replayProjection(caseFile, state),
     debrief: debrief(caseFile, state),
@@ -535,7 +634,7 @@ export function projectPlayerState(caseFile: CaseFile, state: RuntimeState): Pla
     })),
     reasoningBoards: (caseFile.reasoningBoards ?? []).map((board, boardIndex) => {
       const boardId = `board-${String(boardIndex + 1).padStart(2, "0")}`;
-      const draft = state.reasoningBoards[boardId] ?? { placements: {}, connections: [] };
+      const draft = boardsFor(state)[boardId] ?? { placements: {}, connections: [] };
       return {
         id: boardId,
         title: translate(caseFile, board.titleKey, "推理板"),
@@ -628,6 +727,29 @@ function withDraft(state: RuntimeState, theoryId: TheoryDraft["id"], update: (dr
   };
 }
 
+/** Feedback identifies a workspace to revisit, never the hidden required item or relation. */
+function proofFeedbackM3(file: CaseFile, state: RuntimeState): ProofFeedback {
+  const draft=state.theoryDrafts.find(d=>d.id===state.activeTheoryId)!;
+  const feedback=(message:string,nextStep:ProofFeedback['nextStep'],boardId?:string):ProofFeedback=>({message,nextStep,boardId,stale:false});
+  if (!draft.hypothesisId) return feedback('先主动选择一个暂定解释，再检验它。你的原稿和证据仍在。','claim');
+  const judged=judgeTheory(file,state.game,draft);
+  if (judged.judgement==='invalidated') return feedback('这个解释与已经核实的事实有冲突。回到暂定解释，对照材料比较其他可能；原稿会保留。','claim');
+  const publicBoards=projectPlayerState(file,state).reasoningBoards;
+  const empty=publicBoards.find(b=>b.slots.some(s=>!s.itemId));
+  if (empty) return feedback(`“${empty.title.replace(/\s*[·•]\s*[a-z-]+$/u,'')}”还有未整理的位置。检查哪些公开事件与这些位置有关。`,'board',empty.id);
+  if (!draft.eventIds.length) return feedback('事件链里还没有片段。选入与你的解释有关的公开事件。','chain');
+  if (judged.missingFactIds.length) return feedback('还有事实未通过调查核实。回到公开材料，检查来源并继续提问。','evidence');
+  if (judged.missingEvidenceIds.length || !draft.evidenceIds.length) return feedback('当前证明还缺少材料支撑。核对已经检查的材料，把相关证据接入这份假设。','proof');
+  if (judged.missingContradictionResolutionIds.length) return feedback('仍有其他解释没有排除。检查当前材料能否反驳它们，并补充相应证据。','proof');
+  if (judged.missingMotiveKey) return feedback('这份解释还没有说明驱动条件。核对证据，再选择它为何会这样发生。','proof');
+  for (const obligation of file.solutionCertificate.proofObligations ?? []) {
+    const gap=missingBoardObligation({...file,solutionCertificate:{...file.solutionCertificate,proofObligations:[obligation]}},state);
+    if (gap) return feedback(`${boardGapText(file,gap)} 核对这张板上的事件、方向和关系类型，再提交检验。`,'board',publicBoardId(file,obligation.boardId));
+  }
+  if (judged.judgement==='plausible') return feedback('当前解释还不能排除其他可能。回到暂定解释，对照已有材料继续比较。','claim');
+  return feedback('当前事件链的顺序或片段还不足以证明解释。对照公开时间和前后条件，检查遗漏与先后。','chain');
+}
+
 function answerQuery(caseFile: CaseFile, state: RuntimeState, queryId: string, rawText: string): RuntimeResult {
   const candidate = queryProjection(caseFile, queryId);
   if (!candidate) return rejected(caseFile, state, "这个解释已经不在当前案件中。 ");
@@ -645,6 +767,7 @@ function answerQuery(caseFile: CaseFile, state: RuntimeState, queryId: string, r
     ...state,
     game: result.state,
     transcript: [...state.transcript, entry],
+    ...(investigationM2(caseFile, state) ? { transcriptQueryIds: [...(state.transcriptQueryIds ?? []), queryId] } : {}),
     pendingInterpretation: undefined,
     lastQuestionSnapshot: {
       game: { ...state.game, discoveredEvidenceIds: [...state.game.discoveredEvidenceIds], visitedLocationIds: [...state.game.visitedLocationIds], answeredQueryIds: [...state.game.answeredQueryIds], activeRuleIds: [...state.game.activeRuleIds], visibleFactIds: [...state.game.visibleFactIds] },
@@ -655,13 +778,79 @@ function answerQuery(caseFile: CaseFile, state: RuntimeState, queryId: string, r
 }
 
 export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, command: GameCommand): RuntimeResult {
+  return reduceCommand(caseFile, state, command);
+}
+
+/** Compatibility authority is only passed by saved-log replay, never by the live reducer. */
+function reduceCommand(caseFile: CaseFile, state: RuntimeState, command: GameCommand, replayOptions?: ReplayValidationOptions): RuntimeResult {
+  if (command.type === 'proof_action' || command.type === 'edit_proof' || command.type === 'undo_proof_edit') return reduceProofCommand(caseFile,state,command,{
+    reduce: (file,current,action) => reduceCommand(file,current,action,replayOptions), project:projectPlayerState,
+    eventId:internalEventId, publicEventId,
+    feedback: proofFeedbackM3,
+    chapters: (file,current) => unlockedChapterIds(file,current.game),
+    validProof: (file,current) => {
+      const draft = current.theoryDrafts.find(d => d.id === current.activeTheoryId);
+      return Boolean(draft && (!current.investigationRevision || current.explicitExplanationChoices?.[draft.id]) && judgeTheory(file,current.game,draft).judgement === 'solved'
+        && !missingBoardObligation(file,current));
+    },
+  });
+  if (command.type === "begin_investigation") {
+    if (command.revision !== "m2") return rejected(caseFile, state, "无法读取调查版本。");
+    const next = createRuntimeState(caseFile, "opaque", "m2");
+    return { state: next, projection: projectPlayerState(caseFile, next), events: [{ type: "case_started" }], accepted: true };
+  }
+  if (command.type === "set_theory_note") {
+    if (command.revision !== "m2" || command.text.length > 4000) return rejected(caseFile, state, "暂定解释过长或版本不匹配。");
+    const next = withDraft(state, command.theoryId, draft => ({ ...draft, note: command.text }));
+    // Notes have no gameplay effects. Consecutive edits can be compacted in the saved log.
+    return next ? { state: next, projection: projectPlayerState(caseFile, next), events: [{ type: "theory_updated", theoryId: command.theoryId }], accepted: true }
+      : rejected(caseFile, state, "未知的理论草稿。");
+  }
+  if (command.type === "clear_explanation") {
+    if (command.revision !== "m2") return rejected(caseFile, state, "无法读取调查版本。");
+    const next = withDraft(state, command.theoryId, draft => ({...draft,hypothesisId:"",motiveKey:undefined}));
+    if (!next) return rejected(caseFile, state, "未知的理论草稿。");
+    const choices = {...state.explicitExplanationChoices};
+    delete choices[command.theoryId];
+    return accepted(caseFile,{...next,explicitExplanationChoices:choices},[{type:"theory_updated",theoryId:command.theoryId}]);
+  }
   if (command.type === "start_case") {
-    const next = createRuntimeState(caseFile);
+    const next = createRuntimeState(caseFile, command.initialDraftOrder);
     return { state: next, projection: projectPlayerState(caseFile, next), events: [{ type: "case_started" }], accepted: true };
   }
   if (command.type === "restart_case") {
-    const next = createRuntimeState(caseFile);
+    const next = createRuntimeState(caseFile, state.initialDraftOrder, state.investigationRevision);
     return { state: next, projection: projectPlayerState(caseFile, next), events: [{ type: "case_started" }], accepted: true };
+  }
+
+  if (command.type === "dismiss_interpretation") {
+    if (!state.pendingInterpretation || command.rawText !== state.pendingInterpretation.rawText) return rejected(caseFile, state, "这个问题已经不在等待确认。");
+    return accepted(caseFile, { ...state, pendingInterpretation: undefined }, [{ type: "interpretation_dismissed" }]);
+  }
+
+  if (command.type === "ask_proposition" || command.type === "confirm_proposition") {
+    if (command.resolverRevision !== "m01" || !command.rawText.trim()) return rejected(caseFile, state, "无法读取这个问题的解释版本。");
+    const rawText = command.rawText.trim();
+    const normalized = resolvePropositionM01(caseFile, rawText);
+    if (command.type === "ask_proposition" && (command.queryId !== normalized.queryId
+      || JSON.stringify(command.candidateQueryIds) !== JSON.stringify(normalized.candidateQueryIds))) return rejected(caseFile, state, "问题身份与原句不一致。");
+    if (command.type === "confirm_proposition") {
+      const pending = state.pendingInterpretation;
+      if (!pending || pending.resolverRevision !== "m01" || pending.rawText !== rawText || normalized.status !== "ambiguous"
+        || !normalized.candidateQueryIds.includes(command.queryId) || !pending.candidateQueryIds.includes(command.queryId)) return rejected(caseFile, state, "这个解释不属于当前待确认问题。");
+    }
+    if (state.replayMode === "limited-questions") {
+      const limit = caseFile.replayChallenges?.find(item => item.mode === "limited-questions")?.questionLimit ?? 12;
+      if (state.transcript.length >= limit) return rejected(caseFile, state, `限定问题挑战最多允许 ${limit} 次有效提问。`);
+    }
+    if (command.queryId) return answerQuery({ ...caseFile, questionLanguageRevision: "m01" }, state, command.queryId, rawText);
+    const interpretation = { ...interpretationFor(caseFile, rawText, normalized.status, normalized.candidateQueryIds), explanation: normalized.explanation };
+    if (normalized.status === "ambiguous") {
+      const next: RuntimeState = { ...state, pendingInterpretation: { rawText, candidateQueryIds: normalized.candidateQueryIds, resolverRevision: "m01", explanation: normalized.explanation } };
+      return { state: next, projection: projectPlayerState(caseFile, next), events: [{ type: "interpretation_required", interpretation }], accepted: false };
+    }
+    const next = { ...state, pendingInterpretation: undefined };
+    return { state: next, projection: projectPlayerState(caseFile, next), events: [...(state.pendingInterpretation ? [{ type: "interpretation_dismissed" as const }] : []), { type: "question_rejected", interpretation }], accepted: false };
   }
 
   if (command.type === "ask_text") {
@@ -672,7 +861,7 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
       if (state.transcript.length >= limit) return rejected(caseFile, state, `限定问题挑战最多允许 ${limit} 次有效提问。`);
     }
     const normalized = normalizeQuestion(caseFile, rawText);
-    if (normalized.status === "matched" && normalized.queryId) return answerQuery(caseFile, state, normalized.queryId, rawText);
+    if (normalized.status === "matched" && normalized.queryId) return answerQuery({ ...caseFile, questionLanguageRevision: undefined }, state, normalized.queryId, rawText);
     const interpretation = interpretationFor(caseFile, rawText, normalized.status, normalized.candidateQueryIds);
     if (normalized.status === "ambiguous") {
       const next = { ...state, pendingInterpretation: { rawText, candidateQueryIds: normalized.candidateQueryIds } };
@@ -687,7 +876,10 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
     if (state.replayMode === "no-scaffolds") return rejected(caseFile, state, "无辅助挑战中不能使用 AI 问题解释。 ");
     const offer = createQuestionRoutingOffer(caseFile, state, rawText);
     const allowed = offer.bindings.some((binding) => binding.queryId === command.queryId);
-    if (offer.context.contextHash !== command.contextHash || !allowed) return rejected(caseFile, state, "问题解释已经过期或不属于当前公开候选。 ");
+    const currentContext = offer.context.contextHash === command.contextHash;
+    if (!(allowed && currentContext) && !matchesHistoricalQuestionRoutingContext(caseFile, state, command, offer, replayOptions)) {
+      return rejected(caseFile, state, "问题解释已经过期或不属于当前公开候选。 ");
+    }
     if (state.replayMode === "limited-questions") {
       const limit = caseFile.replayChallenges?.find((item) => item.mode === "limited-questions")?.questionLimit ?? 12;
       if (state.transcript.length >= limit) return rejected(caseFile, state, `限定问题挑战最多允许 ${limit} 次有效提问。`);
@@ -697,8 +889,17 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
 
   if (command.type === "confirm_interpretation") {
     const pending = state.pendingInterpretation;
-    if (!pending?.candidateQueryIds.includes(command.queryId)) return rejected(caseFile, state, "这个解释不属于当前待确认问题。 ");
-    return answerQuery(caseFile, state, command.queryId, pending.rawText);
+    if (pending?.resolverRevision) return rejected(caseFile, state, "请使用当前版本的问题确认。");
+    const rawText = command.rawText?.trim() ?? pending?.rawText;
+    if (!rawText || (pending && pending.rawText !== rawText)) return rejected(caseFile, state, "这个解释不属于当前待确认问题。 ");
+    const normalized = normalizeQuestion(caseFile, rawText);
+    if (normalized.status !== "ambiguous" || !normalized.candidateQueryIds.includes(command.queryId)
+      || (pending && !pending.candidateQueryIds.includes(command.queryId))) return rejected(caseFile, state, "这个解释不属于当前待确认问题。 ");
+    if (state.replayMode === "limited-questions") {
+      const limit = caseFile.replayChallenges?.find((item) => item.mode === "limited-questions")?.questionLimit ?? 12;
+      if (state.transcript.length >= limit) return rejected(caseFile, state, `限定问题挑战最多允许 ${limit} 次有效提问。`);
+    }
+    return answerQuery({ ...caseFile, questionLanguageRevision: undefined }, state, command.queryId, rawText);
   }
 
   if (command.type === "undo_last_question") {
@@ -707,6 +908,7 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
       ...state,
       game: state.lastQuestionSnapshot.game,
       transcript: state.transcript.slice(0, state.lastQuestionSnapshot.transcriptLength),
+      ...(state.transcriptQueryIds ? { transcriptQueryIds: state.transcriptQueryIds.slice(0, state.lastQuestionSnapshot.transcriptLength) } : {}),
       lastQuestionSnapshot: undefined,
       pendingInterpretation: undefined,
     };
@@ -744,16 +946,21 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
     return accepted(caseFile, { ...state, activeTheoryId: command.theoryId }, [{ type: "theory_updated", theoryId: command.theoryId }]);
   }
 
-  if (command.type === "set_theory_hypothesis") {
+  if (command.type === "set_theory_hypothesis" || command.type === "choose_explanation") {
+    if (command.type === "choose_explanation" && (command.revision !== "m2" || !projectedTheoryOptions(caseFile, state).some(option => option.id === command.hypothesisId))) {
+      return rejected(caseFile, state, "先检查公开材料，再主动选择一个可比较的解释。");
+    }
     const hypothesisId = internalHypothesisId(caseFile, command.hypothesisId);
     if (!hypothesisId) return rejected(caseFile, state, "未知的理论路径。 ");
     const next = withDraft(state, command.theoryId, (draft) => ({ ...draft, hypothesisId, motiveKey: undefined }));
-    return next ? accepted(caseFile, next, [{ type: "theory_updated", theoryId: command.theoryId }]) : rejected(caseFile, state, "未知的理论草稿。 ");
+    return next ? accepted(caseFile, investigationM2(caseFile, state) || command.type === "choose_explanation"
+      ? { ...next, explicitExplanationChoices: { ...next.explicitExplanationChoices, [command.theoryId]: true } } : next,
+      [{ type: "theory_updated", theoryId: command.theoryId }]) : rejected(caseFile, state, "未知的理论草稿。 ");
   }
 
   if (command.type === "upsert_theory_event") {
     const internalId = internalEventId(caseFile, command.eventId);
-    if (!internalId || !projectedEventOptions(caseFile, state).some((item) => item.id === command.eventId)) return rejected(caseFile, state, "这个事件还没有证据支持。 ");
+    if (!internalId || !projectedEventOptions(caseFile, state).some((item) => item.id === publicEventId(caseFile, internalId))) return rejected(caseFile, state, "这个事件还没有证据支持。 ");
     const next = withDraft(state, command.theoryId, (draft) => {
       const without = draft.eventIds.filter((id) => id !== internalId);
       const index = Math.max(0, Math.min(command.index ?? without.length, without.length));
@@ -804,17 +1011,20 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
   }
 
   if (command.type === "set_theory_motive") {
-    const allowed = projectedTheoryOptions(caseFile, state)
-      .flatMap((option) => option.motiveOptions)
-      .some((option) => option.id === command.motiveKey);
+    // Legacy logs could choose a motive before all observations were disclosed.
+    // Continue accepting authored keys; new projections withhold premature copy.
+    const allowed = caseFile.hypotheses.some((hypothesis) => hypothesis.claim?.motiveKey === command.motiveKey);
     if (command.motiveKey && !allowed) return rejected(caseFile, state, "这个驱动条件还没有足够证据。 ");
     const next = withDraft(state, command.theoryId, (draft) => ({ ...draft, motiveKey: command.motiveKey }));
     return next ? accepted(caseFile, next, [{ type: "theory_updated", theoryId: command.theoryId }]) : rejected(caseFile, state, "未知的理论草稿。 ");
   }
 
-  if (command.type === "submit_theory") {
+  if (command.type === "submit_theory" || command.type === "submit_investigation") {
     const draft = state.theoryDrafts.find((item) => item.id === command.theoryId);
     if (!draft) return rejected(caseFile, state, "未知的理论草稿。 ");
+    if (command.type === "submit_investigation" && (command.revision !== "m2" || !state.explicitExplanationChoices?.[draft.id])) {
+      return rejected(caseFile, state, "还没有主动选择解释。先比较公开材料支持的可能性。");
+    }
     const judgement = judgeTheory(caseFile, state.game, {
       hypothesisId: draft.hypothesisId,
       eventIds: draft.eventIds,
@@ -835,10 +1045,11 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
     const slot = board ? internalSlot(board, command.slotId) : undefined;
     const internalEvent = internalEventId(caseFile, command.itemId);
     if (!board || !slot || !internalEvent || !slot.acceptsEventIds.includes(internalEvent)) return rejected(caseFile, state, "这个事件不能放入该推理位置。 ");
-    if (!projectedEventOptions(caseFile, state).some((event) => event.id === command.itemId)) return rejected(caseFile, state, "这个事件还没有证据支持。 ");
+    const itemId = publicEventId(caseFile, internalEvent);
+    if (!projectedEventOptions(caseFile, state).some((event) => event.id === itemId)) return rejected(caseFile, state, "这个事件还没有证据支持。 ");
     const current = state.reasoningBoards[command.boardId] ?? { placements: {}, connections: [] };
-    const placements = Object.fromEntries(Object.entries(current.placements).filter(([, itemId]) => itemId !== command.itemId));
-    placements[command.slotId] = command.itemId;
+    const placements = Object.fromEntries(Object.entries(current.placements).filter(([, placedId]) => placedId !== itemId));
+    placements[command.slotId] = itemId;
     const next = { ...state, reasoningBoards: { ...state.reasoningBoards, [command.boardId]: { ...current, placements } } };
     return accepted(caseFile, next, [{ type: "reasoning_board_updated", boardId: command.boardId }]);
   }
@@ -860,12 +1071,14 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
     const board = internalBoard(caseFile, command.boardId);
     const current = state.reasoningBoards[command.boardId];
     const placed = new Set(Object.values(current?.placements ?? {}));
-    if (!board || !current || !placed.has(command.fromItemId) || !placed.has(command.toItemId) || !(board.allowedRelations ?? ["causes", "precedes", "explains"]).includes(command.relation)) {
+    const fromItemId = publicEventId(caseFile, internalEventId(caseFile, command.fromItemId) ?? "");
+    const toItemId = publicEventId(caseFile, internalEventId(caseFile, command.toItemId) ?? "");
+    if (!board || !current || !placed.has(fromItemId) || !placed.has(toItemId) || !(board.allowedRelations ?? ["causes", "precedes", "explains"]).includes(command.relation)) {
       return rejected(caseFile, state, "只能连接已放入推理板的事件。 ");
     }
-    const keyMatches = (item: { fromItemId: string; toItemId: string; relation: string }) => item.fromItemId === command.fromItemId && item.toItemId === command.toItemId && item.relation === command.relation;
+    const keyMatches = (item: { fromItemId: string; toItemId: string; relation: string }) => item.fromItemId === fromItemId && item.toItemId === toItemId && item.relation === command.relation;
     const connections = command.type === "connect_reasoning_items"
-      ? current.connections.some(keyMatches) ? current.connections : [...current.connections, { fromItemId: command.fromItemId, toItemId: command.toItemId, relation: command.relation }]
+      ? current.connections.some(keyMatches) ? current.connections : [...current.connections, { fromItemId, toItemId, relation: command.relation }]
       : current.connections.filter((item) => !keyMatches(item));
     const next = { ...state, reasoningBoards: { ...state.reasoningBoards, [command.boardId]: { ...current, connections } } };
     return accepted(caseFile, next, [{ type: "reasoning_board_updated", boardId: command.boardId }]);
@@ -874,7 +1087,7 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
   if (command.type === "set_replay_mode") {
     if (!state.solved) return rejected(caseFile, state, "完成案件后才能开始重玩挑战。 ");
     if (command.mode !== "standard" && !caseFile.replayChallenges?.some((item) => item.mode === command.mode)) return rejected(caseFile, state, "这个案件没有定义该重玩挑战。 ");
-    const next = { ...createRuntimeState(caseFile), replayMode: command.mode };
+    const next = { ...createRuntimeState(caseFile, state.initialDraftOrder, state.investigationRevision), replayMode: command.mode };
     return accepted(caseFile, next, [{ type: "replay_mode_started", mode: command.mode }]);
   }
 
@@ -895,13 +1108,19 @@ export function reduceGameCommand(caseFile: CaseFile, state: RuntimeState, comma
   return rejected(caseFile, state, "不支持的调查操作。 ");
 }
 
-export function replayCommands(caseFile: CaseFile, commands: GameCommand[]): RuntimeResult {
+/** Pending interpretation changes UI state without charging a question. Both live and replay commit it. */
+export function commitsRuntimeTransition(result: RuntimeResult): boolean {
+  return result.accepted || result.events.some((event) => event.type === "interpretation_required" || event.type === "interpretation_dismissed");
+}
+
+export function replayCommands(caseFile: CaseFile, commands: GameCommand[], options?: ReplayValidationOptions): RuntimeResult {
   let state = createRuntimeState(caseFile);
   let last: RuntimeResult = { state, projection: projectPlayerState(caseFile, state), events: [], accepted: true };
-  for (const command of commands) {
-    if (command.type === "start_case") continue;
-    last = reduceGameCommand(caseFile, state, command);
-    if (last.accepted) state = last.state;
+  for (const [index, command] of commands.entries()) {
+    if (command.type === "start_case" && command.initialDraftOrder === undefined) continue;
+    last = reduceCommand(caseFile, state, command, options);
+    if (!commitsRuntimeTransition(last)) throw new Error(`存档第 ${index + 1} 个操作无法重放；原存档已保留。`);
+    state = last.state;
   }
   return { ...last, state, projection: projectPlayerState(caseFile, state) };
 }

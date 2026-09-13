@@ -1,0 +1,1781 @@
+{
+  "source": "pinned-old-runtime generated oracle",
+  "pinnedRef": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "expected": {
+    "game": {
+      "caseId": "c21-missing-seven-minutes",
+      "discoveredEvidenceIds": [
+        "evidence-c21-01",
+        "evidence-c21-02",
+        "evidence-c21-03",
+        "evidence-c21-04",
+        "evidence-c21-05",
+        "evidence-c21-06",
+        "evidence-c21-07",
+        "evidence-c21-08",
+        "evidence-c21-09",
+        "evidence-c21-10",
+        "evidence-c21-11",
+        "evidence-c21-12"
+      ],
+      "visitedLocationIds": [
+        "location-c21"
+      ],
+      "answeredQueryIds": [
+        "query-c21-01",
+        "query-c21-02",
+        "query-c21-03",
+        "query-c21-04",
+        "query-c21-05",
+        "query-c21-06",
+        "query-c21-07",
+        "query-c21-08",
+        "query-c21-09",
+        "query-c21-10",
+        "query-c21-11",
+        "query-c21-12"
+      ],
+      "activeRuleIds": [
+        "rule-c21-01",
+        "rule-c21-02",
+        "rule-c21-03",
+        "rule-c21-04",
+        "rule-c21-05",
+        "rule-c21-06",
+        "rule-c21-07",
+        "rule-c21-08",
+        "rule-c21-09",
+        "rule-c21-10",
+        "rule-c21-11",
+        "rule-c21-12",
+        "rule-c21-opening"
+      ],
+      "visibleFactIds": [
+        "fact-c21-01",
+        "fact-c21-02",
+        "fact-c21-03",
+        "fact-c21-04",
+        "fact-c21-05",
+        "fact-c21-06",
+        "fact-c21-07",
+        "fact-c21-08",
+        "fact-c21-09",
+        "fact-c21-10",
+        "fact-c21-11",
+        "fact-c21-12",
+        "fact-c21-13",
+        "fact-c21-14",
+        "fact-c21-15",
+        "fact-c21-16",
+        "fact-c21-17"
+      ]
+    },
+    "transcript": [
+      {
+        "id": "q-1",
+        "rawQuestion": "正常帧率这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-2",
+        "rawQuestion": "电池阈值这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-3",
+        "rawQuestion": "模式切换这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": false
+      },
+      {
+        "id": "q-4",
+        "rawQuestion": "索引说明这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-5",
+        "rawQuestion": "帧间隔这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-6",
+        "rawQuestion": "慢移轨迹这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-7",
+        "rawQuestion": "七张原始帧这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-8",
+        "rawQuestion": "供电恢复这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-9",
+        "rawQuestion": "哈希链这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-10",
+        "rawQuestion": "网络心跳这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-11",
+        "rawQuestion": "播放器时间轴这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": false
+      },
+      {
+        "id": "q-12",
+        "rawQuestion": "屏保片段这条信息是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": false
+      },
+      {
+        "id": "q-13",
+        "rawQuestion": "正常帧率这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-14",
+        "rawQuestion": "电池阈值这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-15",
+        "rawQuestion": "模式切换这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-16",
+        "rawQuestion": "索引说明这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-17",
+        "rawQuestion": "帧间隔这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-18",
+        "rawQuestion": "慢移轨迹这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-19",
+        "rawQuestion": "七张原始帧这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-20",
+        "rawQuestion": "供电恢复这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-21",
+        "rawQuestion": "哈希链这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-22",
+        "rawQuestion": "网络心跳这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-23",
+        "rawQuestion": "播放器时间轴这条信息是否成立？",
+        "answerCode": "unknown",
+        "repeated": true
+      },
+      {
+        "id": "q-24",
+        "rawQuestion": "屏保片段这条信息是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      },
+      {
+        "id": "q-25",
+        "rawQuestion": "正常帧率这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-26",
+        "rawQuestion": "电池阈值这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-27",
+        "rawQuestion": "模式切换这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-28",
+        "rawQuestion": "索引说明这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-29",
+        "rawQuestion": "帧间隔这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-30",
+        "rawQuestion": "慢移轨迹这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-31",
+        "rawQuestion": "七张原始帧这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-32",
+        "rawQuestion": "供电恢复这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-33",
+        "rawQuestion": "哈希链这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-34",
+        "rawQuestion": "网络心跳这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-35",
+        "rawQuestion": "播放器时间轴这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-36",
+        "rawQuestion": "屏保片段这条信息是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      },
+      {
+        "id": "q-37",
+        "rawQuestion": "正常帧率这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-38",
+        "rawQuestion": "电池阈值这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-39",
+        "rawQuestion": "模式切换这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-40",
+        "rawQuestion": "索引说明这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-41",
+        "rawQuestion": "帧间隔这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-42",
+        "rawQuestion": "慢移轨迹这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-43",
+        "rawQuestion": "七张原始帧这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-44",
+        "rawQuestion": "供电恢复这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-45",
+        "rawQuestion": "哈希链这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-46",
+        "rawQuestion": "网络心跳这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-47",
+        "rawQuestion": "播放器时间轴这条信息是否成立？",
+        "answerCode": "yes",
+        "repeated": true
+      },
+      {
+        "id": "q-48",
+        "rawQuestion": "屏保片段这条信息是否成立？",
+        "answerCode": "irrelevant",
+        "repeated": true
+      }
+    ],
+    "evidenceStates": {
+      "evidence-c21-01": "connected",
+      "evidence-c21-02": "connected",
+      "evidence-c21-03": "connected",
+      "evidence-c21-04": "connected",
+      "evidence-c21-05": "connected",
+      "evidence-c21-06": "connected",
+      "evidence-c21-07": "connected",
+      "evidence-c21-08": "connected",
+      "evidence-c21-09": "connected",
+      "evidence-c21-10": "connected",
+      "evidence-c21-11": "connected",
+      "evidence-c21-12": "examined"
+    },
+    "theoryDrafts": [
+      {
+        "id": "theory-a",
+        "hypothesisId": "hypothesis-canonical",
+        "eventIds": [
+          "event-c21-01",
+          "event-c21-02",
+          "event-c21-03",
+          "event-c21-04",
+          "event-c21-05",
+          "event-c21-06",
+          "event-c21-07",
+          "event-c21-08",
+          "event-c21-09",
+          "event-c21-10",
+          "event-c21-11"
+        ],
+        "evidenceIds": [
+          "evidence-c21-01",
+          "evidence-c21-02",
+          "evidence-c21-03",
+          "evidence-c21-04",
+          "evidence-c21-05",
+          "evidence-c21-06",
+          "evidence-c21-07",
+          "evidence-c21-08",
+          "evidence-c21-09",
+          "evidence-c21-10",
+          "evidence-c21-11"
+        ],
+        "motiveKey": "在备用电源不足时延长监控续航"
+      },
+      {
+        "id": "theory-b",
+        "hypothesisId": "hypothesis-c21-alternative-1",
+        "eventIds": [],
+        "evidenceIds": [],
+        "motiveKey": null
+      }
+    ],
+    "activeTheoryId": "theory-a",
+    "pendingInterpretation": null,
+    "lastQuestionSnapshot": {
+      "game": {
+        "caseId": "c21-missing-seven-minutes",
+        "discoveredEvidenceIds": [
+          "evidence-c21-01",
+          "evidence-c21-02",
+          "evidence-c21-03",
+          "evidence-c21-04",
+          "evidence-c21-05",
+          "evidence-c21-06",
+          "evidence-c21-07",
+          "evidence-c21-08",
+          "evidence-c21-09",
+          "evidence-c21-10",
+          "evidence-c21-11",
+          "evidence-c21-12"
+        ],
+        "visitedLocationIds": [
+          "location-c21"
+        ],
+        "answeredQueryIds": [
+          "query-c21-01",
+          "query-c21-02",
+          "query-c21-03",
+          "query-c21-04",
+          "query-c21-05",
+          "query-c21-06",
+          "query-c21-07",
+          "query-c21-08",
+          "query-c21-09",
+          "query-c21-10",
+          "query-c21-11",
+          "query-c21-12"
+        ],
+        "activeRuleIds": [
+          "rule-c21-01",
+          "rule-c21-02",
+          "rule-c21-03",
+          "rule-c21-04",
+          "rule-c21-05",
+          "rule-c21-06",
+          "rule-c21-07",
+          "rule-c21-08",
+          "rule-c21-09",
+          "rule-c21-10",
+          "rule-c21-11",
+          "rule-c21-12",
+          "rule-c21-opening"
+        ],
+        "visibleFactIds": [
+          "fact-c21-01",
+          "fact-c21-02",
+          "fact-c21-03",
+          "fact-c21-04",
+          "fact-c21-05",
+          "fact-c21-06",
+          "fact-c21-07",
+          "fact-c21-08",
+          "fact-c21-09",
+          "fact-c21-10",
+          "fact-c21-11",
+          "fact-c21-12",
+          "fact-c21-13",
+          "fact-c21-14",
+          "fact-c21-15",
+          "fact-c21-16",
+          "fact-c21-17"
+        ]
+      },
+      "transcriptLength": 47
+    },
+    "solved": true,
+    "replayBeatIds": [
+      "replay-c21-1",
+      "replay-c21-2",
+      "replay-c21-3",
+      "replay-c21-4",
+      "replay-c21-5",
+      "replay-c21-6",
+      "replay-c21-7"
+    ],
+    "acceptedCommandCount": 120,
+    "unlockedChapterIds": [
+      "chapter-c21-one",
+      "chapter-c21-two"
+    ],
+    "reasoningBoards": {
+      "board-c21-main": {
+        "placements": {
+          "slot-c21-1": "event-c21-02",
+          "slot-c21-2": "event-c21-04",
+          "slot-c21-3": "event-c21-08",
+          "slot-c21-4": "event-c21-11"
+        },
+        "connections": [
+          {
+            "fromEventId": "event-c21-02",
+            "toEventId": "event-c21-04",
+            "relation": "causes"
+          },
+          {
+            "fromEventId": "event-c21-04",
+            "toEventId": "event-c21-08",
+            "relation": "causes"
+          },
+          {
+            "fromEventId": "event-c21-08",
+            "toEventId": "event-c21-11",
+            "relation": "causes"
+          }
+        ]
+      }
+    },
+    "replayMode": "standard"
+  },
+  "oldLiveEqualsOldReplay": true,
+  "expectations": {
+    "solved": true
+  },
+  "steps": [
+    {
+      "index": 0,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "chapter_unlocked"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "type": "visit_location",
+      "accepted": true,
+      "events": [
+        {
+          "type": "location_visited"
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "type": "set_evidence_state",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "type": "set_theory_hypothesis",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 91,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 93,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 97,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "type": "link_theory_evidence",
+      "accepted": true,
+      "events": [
+        {
+          "type": "evidence_updated"
+        },
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 100,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 101,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 102,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 103,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 104,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 105,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 106,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 107,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 108,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 109,
+      "type": "upsert_theory_event",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 110,
+      "type": "set_theory_motive",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_updated"
+        }
+      ]
+    },
+    {
+      "index": 111,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 112,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 113,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 114,
+      "type": "place_reasoning_item",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 115,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 116,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 117,
+      "type": "connect_reasoning_items",
+      "accepted": true,
+      "events": [
+        {
+          "type": "reasoning_board_updated"
+        }
+      ]
+    },
+    {
+      "index": 118,
+      "type": "submit_theory",
+      "accepted": true,
+      "events": [
+        {
+          "type": "theory_judged",
+          "judgement": "solved",
+          "proofFailureCategory": null
+        },
+        {
+          "type": "case_solved"
+        }
+      ]
+    },
+    {
+      "index": 119,
+      "type": "request_proof_replay",
+      "accepted": true,
+      "events": [
+        {
+          "type": "replay_ready"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c31-eighth-unchecked-guest",
+  "caseVersion": 1,
+  "contentHash": "sha256:1cd50d86090f06e67551aad5eb250a2bdc039f0f8e73d6d8d4e3f500d760eed2",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "身份核验是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合同主键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "床位申请是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "第八合同是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入住规则是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁去重是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "早餐计数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双床门卡是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "工作床位是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "取消订单是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "身份核验是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合同主键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "床位申请是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "第八合同是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入住规则是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁去重是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "早餐计数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双床门卡是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "工作床位是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "取消订单是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c31"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "身份核验是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合同主键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "床位申请是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "第八合同是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入住规则是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁去重是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "早餐计数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双床门卡是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "工作床位是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "取消订单是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c31"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "身份核验是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合同主键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "床位申请是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "第八合同是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入住规则是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁去重是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "早餐计数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "双床门卡是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "工作床位是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "取消订单是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c31"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c31-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c31-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c31-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c31-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c31-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c31-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c31-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c31-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c31-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c31-09",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "为长住设计师提供相邻工作空间"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-09"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "contributes-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "contributes-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-09",
+      "relation": "contributes-to"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-07"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-09"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "appears-as"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-05",
+      "toItemId": "event-07",
+      "relation": "appears-as"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-07",
+      "toItemId": "event-09",
+      "relation": "appears-as"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

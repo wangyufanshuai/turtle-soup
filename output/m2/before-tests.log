@@ -1,0 +1,64 @@
+✖ M2 fresh drafts have no chosen explanation and no anonymous numbered alternatives (23.9827ms)
+✖ M2 answer links contain only currently public evidence supporting the interpreted proposition (8.1233ms)
+✖ M2 old default is not a player choice, while explicit historical selection remains intact (4.2161ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 0
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 241.07
+
+✖ failing tests:
+
+test at apps\web\workers\investigation-m2.test.ts:21:1
+✖ M2 fresh drafts have no chosen explanation and no anonymous numbered alternatives (23.9827ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(w.initial.projection.theoryDrafts.every(d=>d.hypothesisId===''))
+  
+      at TestContext.<anonymous> (file:///E:/xuexi/turtle-soup/apps/web/workers/investigation-m2.test.ts:23:10)
+      at async Test.run (node:internal/test_runner/test:1125:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at apps\web\workers\investigation-m2.test.ts:28:1
+✖ M2 answer links contain only currently public evidence supporting the interpreted proposition (8.1233ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(entry.relatedEvidenceIds?.includes('evidence-door-latch'))
+  
+      at TestContext.<anonymous> (file:///E:/xuexi/turtle-soup/apps/web/workers/investigation-m2.test.ts:33:10)
+      at async Test.run (node:internal/test_runner/test:1125:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at apps\web\workers\investigation-m2.test.ts:38:1
+✖ M2 old default is not a player choice, while explicit historical selection remains intact (4.2161ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(restored.initial.projection.theoryDrafts.every(d=>d.hypothesisId===''))
+  
+      at TestContext.<anonymous> (file:///E:/xuexi/turtle-soup/apps/web/workers/investigation-m2.test.ts:43:10)
+      at async Test.run (node:internal/test_runner/test:1125:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

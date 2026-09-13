@@ -1,0 +1,642 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c79-extra-queue-order",
+  "caseVersion": 1,
+  "contentHash": "sha256:69f22e56a9a9620491a1752b7cbf8cf51810a51b17756f473b2c6fcbead557f7",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "订单总数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "客户提交是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "确认包是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "至少一次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重试是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "库存实体是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "幂等键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "业务队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "仓库数量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重复订单是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "订单总数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "客户提交是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "确认包是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "至少一次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重试是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "库存实体是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "幂等键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "业务队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "仓库数量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重复订单是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c79"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-14",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "订单总数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "客户提交是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "确认包是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "至少一次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重试是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "库存实体是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "幂等键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "业务队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "仓库数量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重复订单是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c79"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-14",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "订单总数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "客户提交是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "确认包是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "至少一次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重试是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "库存实体是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "幂等键是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "业务队列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "仓库数量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "重复订单是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c79"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c79-14",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-11",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-12",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c79-13",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-12"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-13"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "用队列和容量约束区分请求次数与实体数量"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-13"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "enters"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "enters"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-13",
+      "relation": "enters"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-13"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "enqueues"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "enqueues"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-13",
+      "relation": "enqueues"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

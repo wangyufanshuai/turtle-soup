@@ -1,0 +1,2043 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c47-offline-buffered-device",
+  "metadata": {
+    "titleKey": "case.c47.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "科学测量",
+      "复杂系统",
+      "来源边界"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:c8b3ac1cb6751d63822ff72013e3af5bd02d9cb2cbce77048210478a4a903e52",
+    "status": "public-preview",
+    "seasonId": "season-4"
+  },
+  "presentation": {
+    "layoutId": "season4-network-topology",
+    "sceneAsset": "/assets/cases/c47/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c47/scene-mobile.svg",
+    "palette": "season4-c47",
+    "accent": "#c49bd8",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "network-topology-lab",
+    "mobileNavigation": [
+      "现场",
+      "记录",
+      "推理板"
+    ],
+    "boardMode": "network-topology"
+  },
+  "surface": {
+    "titleKey": "case.c47.title",
+    "textKey": "case.c47.surface",
+    "publicFactIds": [
+      "fact-c47-01",
+      "fact-c47-02",
+      "fact-c47-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c47-01",
+      "query-c47-02",
+      "query-c47-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c47-one",
+      "titleKey": "chapter.c47.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c47-1",
+      "titleKey": "board.c47.1.title",
+      "mode": "network-topology",
+      "slots": [
+        {
+          "id": "slot-c47-1-1",
+          "labelKey": "board.c47.1.slot.1",
+          "acceptsEventIds": [
+            "event-c47-01"
+          ]
+        },
+        {
+          "id": "slot-c47-1-2",
+          "labelKey": "board.c47.1.slot.2",
+          "acceptsEventIds": [
+            "event-c47-03"
+          ]
+        },
+        {
+          "id": "slot-c47-1-3",
+          "labelKey": "board.c47.1.slot.3",
+          "acceptsEventIds": [
+            "event-c47-05"
+          ]
+        },
+        {
+          "id": "slot-c47-1-4",
+          "labelKey": "board.c47.1.slot.4",
+          "acceptsEventIds": [
+            "event-c47-11"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "routes-through",
+        "deduplicates",
+        "acknowledges"
+      ]
+    },
+    {
+      "id": "board-c47-2",
+      "titleKey": "board.c47.2.title",
+      "mode": "sampling-window",
+      "slots": [
+        {
+          "id": "slot-c47-2-1",
+          "labelKey": "board.c47.2.slot.1",
+          "acceptsEventIds": [
+            "event-c47-02"
+          ]
+        },
+        {
+          "id": "slot-c47-2-2",
+          "labelKey": "board.c47.2.slot.2",
+          "acceptsEventIds": [
+            "event-c47-04"
+          ]
+        },
+        {
+          "id": "slot-c47-2-3",
+          "labelKey": "board.c47.2.slot.3",
+          "acceptsEventIds": [
+            "event-c47-06"
+          ]
+        },
+        {
+          "id": "slot-c47-2-4",
+          "labelKey": "board.c47.2.slot.4",
+          "acceptsEventIds": [
+            "event-c47-11"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "sampled-before",
+        "buffers",
+        "explains"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c47-system",
+      "kind": "object",
+      "labelKey": "entity.c47.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c47",
+      "kind": "location",
+      "labelKey": "location.c47",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c47-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "14:00"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-1",
+      "labelKey": "event.c47.1",
+      "effectFactIds": [
+        "fact-c47-01"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c47-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "14:04"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-2",
+      "labelKey": "event.c47.2",
+      "effectFactIds": [
+        "fact-c47-02"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c47-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "14:08"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-3",
+      "labelKey": "event.c47.3",
+      "effectFactIds": [
+        "fact-c47-03"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c47-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "14:12"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-4",
+      "labelKey": "event.c47.4",
+      "effectFactIds": [
+        "fact-c47-04"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c47-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "14:16"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-5",
+      "labelKey": "event.c47.5",
+      "effectFactIds": [
+        "fact-c47-05"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c47-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "14:20"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-6",
+      "labelKey": "event.c47.6",
+      "effectFactIds": [
+        "fact-c47-06"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c47-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "15:24"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-7",
+      "labelKey": "event.c47.7",
+      "effectFactIds": [
+        "fact-c47-07"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c47-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "15:28"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-8",
+      "labelKey": "event.c47.8",
+      "effectFactIds": [
+        "fact-c47-08"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c47-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "15:32"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-9",
+      "labelKey": "event.c47.9",
+      "effectFactIds": [
+        "fact-c47-09"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c47-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "15:36"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-10",
+      "labelKey": "event.c47.10",
+      "effectFactIds": [
+        "fact-c47-10"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c47-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "15:40"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-11",
+      "labelKey": "event.c47.11",
+      "effectFactIds": [
+        "fact-c47-11"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c47-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "15:44"
+      },
+      "participants": [
+        "entity-c47-system"
+      ],
+      "locationId": "location-c47",
+      "action": "step-c47-12",
+      "labelKey": "event.c47.12",
+      "effectFactIds": [
+        "fact-c47-12"
+      ],
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c47-1-1",
+      "type": "precedes",
+      "fromId": "entity-c47-system",
+      "toId": "location-c47",
+      "eventId": "event-c47-01",
+      "factId": "fact-c47-01"
+    },
+    {
+      "id": "relation-c47-1-2",
+      "type": "causes",
+      "fromId": "entity-c47-system",
+      "toId": "location-c47",
+      "eventId": "event-c47-03",
+      "factId": "fact-c47-02"
+    },
+    {
+      "id": "relation-c47-1-3",
+      "type": "causes",
+      "fromId": "entity-c47-system",
+      "toId": "location-c47",
+      "eventId": "event-c47-05",
+      "factId": "fact-c47-03"
+    },
+    {
+      "id": "relation-c47-2-1",
+      "type": "precedes",
+      "fromId": "entity-c47-system",
+      "toId": "location-c47",
+      "eventId": "event-c47-02",
+      "factId": "fact-c47-02"
+    },
+    {
+      "id": "relation-c47-2-2",
+      "type": "causes",
+      "fromId": "entity-c47-system",
+      "toId": "location-c47",
+      "eventId": "event-c47-04",
+      "factId": "fact-c47-03"
+    },
+    {
+      "id": "relation-c47-2-3",
+      "type": "causes",
+      "fromId": "entity-c47-system",
+      "toId": "location-c47",
+      "eventId": "event-c47-06",
+      "factId": "fact-c47-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c47-01",
+      "predicate": "verified_c47_1",
+      "args": {
+        "term": "离线缓存"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c47.1"
+    },
+    {
+      "id": "fact-c47-02",
+      "predicate": "verified_c47_2",
+      "args": {
+        "term": "批量补传"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c47.2"
+    },
+    {
+      "id": "fact-c47-03",
+      "predicate": "verified_c47_3",
+      "args": {
+        "term": "采集时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c47.3"
+    },
+    {
+      "id": "fact-c47-04",
+      "predicate": "verified_c47_4",
+      "args": {
+        "term": "接收时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c47.4"
+    },
+    {
+      "id": "fact-c47-05",
+      "predicate": "verified_c47_5",
+      "args": {
+        "term": "连接心跳"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c47.5"
+    },
+    {
+      "id": "fact-c47-06",
+      "predicate": "verified_c47_6",
+      "args": {
+        "term": "缓冲区"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c47.6"
+    },
+    {
+      "id": "fact-c47-07",
+      "predicate": "verified_c47_7",
+      "args": {
+        "term": "网络断线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c47.7"
+    },
+    {
+      "id": "fact-c47-08",
+      "predicate": "verified_c47_8",
+      "args": {
+        "term": "补传顺序"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c47.8"
+    },
+    {
+      "id": "fact-c47-09",
+      "predicate": "verified_c47_9",
+      "args": {
+        "term": "设备时钟"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c47.9"
+    },
+    {
+      "id": "fact-c47-10",
+      "predicate": "verified_c47_10",
+      "args": {
+        "term": "平台在线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c47.10"
+    },
+    {
+      "id": "fact-c47-11",
+      "predicate": "verified_c47_11",
+      "args": {
+        "term": "离线缓存"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c47.11"
+    },
+    {
+      "id": "fact-c47-12",
+      "predicate": "verified_c47_12",
+      "args": {
+        "term": "批量补传"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-12"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c47.12"
+    },
+    {
+      "id": "fact-c47-13",
+      "predicate": "verified_c47_13",
+      "args": {
+        "term": "采集时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c47.13"
+    },
+    {
+      "id": "fact-c47-14",
+      "predicate": "verified_c47_14",
+      "args": {
+        "term": "接收时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c47.14"
+    },
+    {
+      "id": "fact-c47-15",
+      "predicate": "verified_c47_15",
+      "args": {
+        "term": "连接心跳"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c47.15"
+    },
+    {
+      "id": "fact-c47-16",
+      "predicate": "verified_c47_16",
+      "args": {
+        "term": "缓冲区"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c47.16"
+    },
+    {
+      "id": "fact-c47-17",
+      "predicate": "verified_c47_17",
+      "args": {
+        "term": "网络断线"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c47.17"
+    },
+    {
+      "id": "fact-c47-18",
+      "predicate": "verified_c47_18",
+      "args": {
+        "term": "补传顺序"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c47-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c47-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c47.18"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c47-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-01",
+        "fact-c47-02",
+        "fact-c47-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c47-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-01",
+        "fact-c47-02",
+        "fact-c47-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c47-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-02",
+        "fact-c47-14"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c47-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-03",
+        "fact-c47-15"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c47-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-04",
+        "fact-c47-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c47-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-05",
+        "fact-c47-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c47-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-06",
+        "fact-c47-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c47-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-07"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c47-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-08"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c47-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c47-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c47-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c47-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c47-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c47-12"
+      ],
+      "spoilerLevel": "sensitive"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c47-01",
+      "labelKey": "query.c47.1",
+      "intent": "verify",
+      "predicate": "verified_c47_1",
+      "slots": {
+        "subjectId": "entity-c47-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c47-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-opening"
+      ],
+      "examplePhrases": [
+        "离线缓存是否成立？",
+        "能确认离线缓存吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "离线缓存"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c47-02",
+      "labelKey": "query.c47.2",
+      "intent": "verify",
+      "predicate": "verified_c47_2",
+      "slots": {
+        "subjectId": "entity-c47-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c47-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-opening"
+      ],
+      "examplePhrases": [
+        "批量补传是否成立？",
+        "能确认批量补传吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "批量补传"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c47-03",
+      "labelKey": "query.c47.3",
+      "intent": "verify",
+      "predicate": "verified_c47_3",
+      "slots": {
+        "subjectId": "entity-c47-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c47-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-opening"
+      ],
+      "examplePhrases": [
+        "采集时间是否成立？",
+        "能确认采集时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "采集时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c47-04",
+      "labelKey": "query.c47.4",
+      "intent": "verify",
+      "predicate": "verified_c47_4",
+      "slots": {
+        "subjectId": "entity-c47-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c47-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-04"
+      ],
+      "examplePhrases": [
+        "接收时间是否成立？",
+        "能确认接收时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "接收时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c47-05",
+      "labelKey": "query.c47.5",
+      "intent": "verify",
+      "predicate": "verified_c47_5",
+      "slots": {
+        "subjectId": "entity-c47-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c47-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-05"
+      ],
+      "examplePhrases": [
+        "连接心跳是否成立？",
+        "能确认连接心跳吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "连接心跳"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c47-06",
+      "labelKey": "query.c47.6",
+      "intent": "verify",
+      "predicate": "verified_c47_6",
+      "slots": {
+        "subjectId": "entity-c47-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c47-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-06"
+      ],
+      "examplePhrases": [
+        "缓冲区是否成立？",
+        "能确认缓冲区吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "缓冲区"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c47-07",
+      "labelKey": "query.c47.7",
+      "intent": "verify",
+      "predicate": "verified_c47_7",
+      "slots": {
+        "subjectId": "entity-c47-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c47-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-07"
+      ],
+      "examplePhrases": [
+        "网络断线是否成立？",
+        "能确认网络断线吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "网络断线"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c47-08",
+      "labelKey": "query.c47.8",
+      "intent": "verify",
+      "predicate": "verified_c47_8",
+      "slots": {
+        "subjectId": "entity-c47-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c47-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-08"
+      ],
+      "examplePhrases": [
+        "补传顺序是否成立？",
+        "能确认补传顺序吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "补传顺序"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c47-09",
+      "labelKey": "query.c47.9",
+      "intent": "verify",
+      "predicate": "verified_c47_9",
+      "slots": {
+        "subjectId": "entity-c47-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c47-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-09"
+      ],
+      "examplePhrases": [
+        "设备时钟是否成立？",
+        "能确认设备时钟吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "设备时钟"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c47-10",
+      "labelKey": "query.c47.10",
+      "intent": "verify",
+      "predicate": "verified_c47_10",
+      "slots": {
+        "subjectId": "entity-c47-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c47-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c47-10"
+      ],
+      "examplePhrases": [
+        "平台在线是否成立？",
+        "能确认平台在线吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "平台在线"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c47-01",
+      "kind": "scene",
+      "titleKey": "evidence.c47.1.title",
+      "observationKey": "evidence.c47.1.observation",
+      "sourceFactIds": [
+        "fact-c47-01",
+        "fact-c47-02",
+        "fact-c47-03"
+      ],
+      "sourceEventIds": [
+        "event-c47-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c47-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c47/evidence-01.svg",
+      "assetAlt": "离线缓存"
+    },
+    {
+      "id": "evidence-c47-02",
+      "kind": "record",
+      "titleKey": "evidence.c47.2.title",
+      "observationKey": "evidence.c47.2.observation",
+      "sourceFactIds": [
+        "fact-c47-02",
+        "fact-c47-14"
+      ],
+      "sourceEventIds": [
+        "event-c47-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c47-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c47/evidence-02.svg",
+      "assetAlt": "批量补传"
+    },
+    {
+      "id": "evidence-c47-03",
+      "kind": "object",
+      "titleKey": "evidence.c47.3.title",
+      "observationKey": "evidence.c47.3.observation",
+      "sourceFactIds": [
+        "fact-c47-03",
+        "fact-c47-15"
+      ],
+      "sourceEventIds": [
+        "event-c47-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c47/evidence-03.svg",
+      "assetAlt": "采集时间"
+    },
+    {
+      "id": "evidence-c47-04",
+      "kind": "scene",
+      "titleKey": "evidence.c47.4.title",
+      "observationKey": "evidence.c47.4.observation",
+      "sourceFactIds": [
+        "fact-c47-04",
+        "fact-c47-16"
+      ],
+      "sourceEventIds": [
+        "event-c47-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c47/evidence-04.svg",
+      "assetAlt": "接收时间"
+    },
+    {
+      "id": "evidence-c47-05",
+      "kind": "record",
+      "titleKey": "evidence.c47.5.title",
+      "observationKey": "evidence.c47.5.observation",
+      "sourceFactIds": [
+        "fact-c47-05",
+        "fact-c47-17"
+      ],
+      "sourceEventIds": [
+        "event-c47-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c47/evidence-05.svg",
+      "assetAlt": "连接心跳"
+    },
+    {
+      "id": "evidence-c47-06",
+      "kind": "object",
+      "titleKey": "evidence.c47.6.title",
+      "observationKey": "evidence.c47.6.observation",
+      "sourceFactIds": [
+        "fact-c47-06",
+        "fact-c47-18"
+      ],
+      "sourceEventIds": [
+        "event-c47-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c47/evidence-01.svg",
+      "assetAlt": "缓冲区"
+    },
+    {
+      "id": "evidence-c47-07",
+      "kind": "scene",
+      "titleKey": "evidence.c47.7.title",
+      "observationKey": "evidence.c47.7.observation",
+      "sourceFactIds": [
+        "fact-c47-07"
+      ],
+      "sourceEventIds": [
+        "event-c47-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c47/evidence-02.svg",
+      "assetAlt": "网络断线"
+    },
+    {
+      "id": "evidence-c47-08",
+      "kind": "record",
+      "titleKey": "evidence.c47.8.title",
+      "observationKey": "evidence.c47.8.observation",
+      "sourceFactIds": [
+        "fact-c47-08"
+      ],
+      "sourceEventIds": [
+        "event-c47-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c47/evidence-03.svg",
+      "assetAlt": "补传顺序"
+    },
+    {
+      "id": "evidence-c47-09",
+      "kind": "object",
+      "titleKey": "evidence.c47.9.title",
+      "observationKey": "evidence.c47.9.observation",
+      "sourceFactIds": [
+        "fact-c47-09"
+      ],
+      "sourceEventIds": [
+        "event-c47-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c47/evidence-04.svg",
+      "assetAlt": "设备时钟"
+    },
+    {
+      "id": "evidence-c47-10",
+      "kind": "scene",
+      "titleKey": "evidence.c47.10.title",
+      "observationKey": "evidence.c47.10.observation",
+      "sourceFactIds": [
+        "fact-c47-10"
+      ],
+      "sourceEventIds": [
+        "event-c47-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c47/evidence-05.svg",
+      "assetAlt": "平台在线"
+    },
+    {
+      "id": "evidence-c47-11",
+      "kind": "record",
+      "titleKey": "evidence.c47.11.title",
+      "observationKey": "evidence.c47.11.observation",
+      "sourceFactIds": [
+        "fact-c47-11"
+      ],
+      "sourceEventIds": [
+        "event-c47-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c47/evidence-01.svg",
+      "assetAlt": "离线缓存"
+    },
+    {
+      "id": "evidence-c47-12",
+      "kind": "object",
+      "titleKey": "evidence.c47.12.title",
+      "observationKey": "evidence.c47.12.observation",
+      "sourceFactIds": [
+        "fact-c47-12"
+      ],
+      "sourceEventIds": [
+        "event-c47-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c47-system",
+        "location-c47"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c47/evidence-02.svg",
+      "assetAlt": "批量补传"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c47.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c47-01",
+          "event-c47-02",
+          "event-c47-03",
+          "event-c47-04",
+          "event-c47-05",
+          "event-c47-06",
+          "event-c47-07",
+          "event-c47-08",
+          "event-c47-09",
+          "event-c47-10",
+          "event-c47-11"
+        ],
+        "motiveKey": "在间歇网络中保持测量数据完整"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c47-01",
+        "evidence-c47-02",
+        "evidence-c47-03",
+        "evidence-c47-04",
+        "evidence-c47-05",
+        "evidence-c47-06",
+        "evidence-c47-07",
+        "evidence-c47-08",
+        "evidence-c47-09",
+        "evidence-c47-10",
+        "evidence-c47-11"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c47-1",
+        "contradiction-c47-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c47-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c47.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "设备从未断线"
+        ],
+        "motiveKey": "motive-c47-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c47-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c47-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c47-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c47.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "有人事后伪造了缓存数据"
+        ],
+        "motiveKey": "motive-c47-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c47-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c47-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c47-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c47-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c47-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c47-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c47-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c47-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c47-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c47-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c47-01",
+      "fact-c47-02",
+      "fact-c47-03",
+      "fact-c47-04",
+      "fact-c47-05",
+      "fact-c47-06",
+      "fact-c47-07",
+      "fact-c47-08",
+      "fact-c47-09",
+      "fact-c47-10",
+      "fact-c47-11"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c47-01",
+      "evidence-c47-02",
+      "evidence-c47-03",
+      "evidence-c47-04",
+      "evidence-c47-05",
+      "evidence-c47-06",
+      "evidence-c47-07",
+      "evidence-c47-08",
+      "evidence-c47-09",
+      "evidence-c47-10",
+      "evidence-c47-11"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c47-01",
+        "event-c47-02"
+      ],
+      [
+        "event-c47-02",
+        "event-c47-03"
+      ],
+      [
+        "event-c47-03",
+        "event-c47-04"
+      ],
+      [
+        "event-c47-04",
+        "event-c47-05"
+      ],
+      [
+        "event-c47-05",
+        "event-c47-06"
+      ],
+      [
+        "event-c47-06",
+        "event-c47-07"
+      ],
+      [
+        "event-c47-07",
+        "event-c47-08"
+      ],
+      [
+        "event-c47-08",
+        "event-c47-09"
+      ],
+      [
+        "event-c47-09",
+        "event-c47-10"
+      ],
+      [
+        "event-c47-10",
+        "event-c47-11"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c47-1",
+      "contradiction-c47-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c47-alternative-1",
+      "hypothesis-c47-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c47-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c47-a",
+        "evidenceIds": [
+          "evidence-c47-01",
+          "evidence-c47-02",
+          "evidence-c47-03",
+          "evidence-c47-04",
+          "evidence-c47-05",
+          "evidence-c47-06",
+          "evidence-c47-07",
+          "evidence-c47-08"
+        ]
+      },
+      {
+        "id": "proof-c47-b",
+        "evidenceIds": [
+          "evidence-c47-01",
+          "evidence-c47-02",
+          "evidence-c47-09",
+          "evidence-c47-10",
+          "evidence-c47-11"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "在间歇网络中保持测量数据完整"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c47-1",
+        "kind": "source",
+        "boardId": "board-c47-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c47-1-1",
+            "eventId": "event-c47-01"
+          },
+          {
+            "slotId": "slot-c47-1-2",
+            "eventId": "event-c47-03"
+          },
+          {
+            "slotId": "slot-c47-1-3",
+            "eventId": "event-c47-05"
+          },
+          {
+            "slotId": "slot-c47-1-4",
+            "eventId": "event-c47-11"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c47-01",
+            "toEventId": "event-c47-03",
+            "relation": "routes-through"
+          },
+          {
+            "fromEventId": "event-c47-03",
+            "toEventId": "event-c47-05",
+            "relation": "routes-through"
+          },
+          {
+            "fromEventId": "event-c47-05",
+            "toEventId": "event-c47-11",
+            "relation": "routes-through"
+          }
+        ],
+        "failureCategory": "source"
+      },
+      {
+        "id": "obligation-c47-2",
+        "kind": "time",
+        "boardId": "board-c47-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c47-2-1",
+            "eventId": "event-c47-02"
+          },
+          {
+            "slotId": "slot-c47-2-2",
+            "eventId": "event-c47-04"
+          },
+          {
+            "slotId": "slot-c47-2-3",
+            "eventId": "event-c47-06"
+          },
+          {
+            "slotId": "slot-c47-2-4",
+            "eventId": "event-c47-11"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c47-02",
+            "toEventId": "event-c47-04",
+            "relation": "sampled-before"
+          },
+          {
+            "fromEventId": "event-c47-04",
+            "toEventId": "event-c47-06",
+            "relation": "sampled-before"
+          },
+          {
+            "fromEventId": "event-c47-06",
+            "toEventId": "event-c47-11",
+            "relation": "sampled-before"
+          }
+        ],
+        "failureCategory": "time"
+      }
+    ],
+    "uniquenessClaim": "设备离线缓存后批量补传，接收时间和采集时间分别真实；在线状态是平台连接状态。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c47-1",
+      "eventId": "event-c47-02",
+      "factIds": [
+        "fact-c47-01"
+      ],
+      "captionKey": "event.c47.2"
+    },
+    {
+      "id": "replay-c47-2",
+      "eventId": "event-c47-03",
+      "factIds": [
+        "fact-c47-02"
+      ],
+      "captionKey": "event.c47.3"
+    },
+    {
+      "id": "replay-c47-3",
+      "eventId": "event-c47-04",
+      "factIds": [
+        "fact-c47-03"
+      ],
+      "captionKey": "event.c47.4"
+    },
+    {
+      "id": "replay-c47-4",
+      "eventId": "event-c47-05",
+      "factIds": [
+        "fact-c47-04"
+      ],
+      "captionKey": "event.c47.5"
+    },
+    {
+      "id": "replay-c47-5",
+      "eventId": "event-c47-06",
+      "factIds": [
+        "fact-c47-05"
+      ],
+      "captionKey": "event.c47.6"
+    },
+    {
+      "id": "replay-c47-6",
+      "eventId": "event-c47-07",
+      "factIds": [
+        "fact-c47-01",
+        "fact-c47-02",
+        "fact-c47-03",
+        "fact-c47-04",
+        "fact-c47-05",
+        "fact-c47-06",
+        "fact-c47-07",
+        "fact-c47-08",
+        "fact-c47-09",
+        "fact-c47-10",
+        "fact-c47-11"
+      ],
+      "captionKey": "event.c47.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c47.title": "断线后继续在线的设备",
+      "case.c47.surface": "设备断线期间平台显示它仍在线，恢复连接后又一次性补传了数据。",
+      "case.c47.truth": "设备离线缓存后批量补传，接收时间和采集时间分别真实；在线状态是平台连接状态。",
+      "entity.c47.system": "测量系统与记录链",
+      "location.c47": "科学系统现场",
+      "hypothesis.c47.canonical": "设备离线缓存后批量补传，接收时间和采集时间分别真实；在线状态是平台连接状态。",
+      "hypothesis.c47.alternative.1": "设备从未断线",
+      "hypothesis.c47.alternative.2": "有人事后伪造了缓存数据",
+      "motive.在间歇网络中保持测量数据完整": "在间歇网络中保持测量数据完整",
+      "chapter.c47.one": "固定异常",
+      "chapter.c47.two": "统一测量边界",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c47.1": "离线缓存是否成立？",
+      "query.c47.2": "批量补传是否成立？",
+      "query.c47.3": "采集时间是否成立？",
+      "query.c47.4": "接收时间是否成立？",
+      "query.c47.5": "连接心跳是否成立？",
+      "query.c47.6": "缓冲区是否成立？",
+      "query.c47.7": "网络断线是否成立？",
+      "query.c47.8": "补传顺序是否成立？",
+      "query.c47.9": "设备时钟是否成立？",
+      "query.c47.10": "平台在线是否成立？",
+      "event.c47.1": "阶段 1：离线缓存进入记录链",
+      "event.c47.2": "阶段 2：批量补传进入记录链",
+      "event.c47.3": "阶段 3：采集时间进入记录链",
+      "event.c47.4": "阶段 4：接收时间进入记录链",
+      "event.c47.5": "阶段 5：连接心跳进入记录链",
+      "event.c47.6": "阶段 6：缓冲区进入记录链",
+      "event.c47.7": "阶段 7：网络断线进入记录链",
+      "event.c47.8": "阶段 8：补传顺序进入记录链",
+      "event.c47.9": "阶段 9：设备时钟进入记录链",
+      "event.c47.10": "阶段 10：平台在线进入记录链",
+      "event.c47.11": "阶段 11：离线缓存进入记录链",
+      "event.c47.12": "阶段 12：批量补传进入记录链",
+      "evidence.c47.1.title": "离线缓存记录",
+      "evidence.c47.1.observation": "来源记录显示“离线缓存”在该阶段保持可复核。",
+      "evidence.c47.2.title": "批量补传记录",
+      "evidence.c47.2.observation": "来源记录显示“批量补传”在该阶段保持可复核。",
+      "evidence.c47.3.title": "采集时间记录",
+      "evidence.c47.3.observation": "来源记录显示“采集时间”在该阶段保持可复核。",
+      "evidence.c47.4.title": "接收时间记录",
+      "evidence.c47.4.observation": "来源记录显示“接收时间”在该阶段保持可复核。",
+      "evidence.c47.5.title": "连接心跳记录",
+      "evidence.c47.5.observation": "来源记录显示“连接心跳”在该阶段保持可复核。",
+      "evidence.c47.6.title": "缓冲区记录",
+      "evidence.c47.6.observation": "来源记录显示“缓冲区”在该阶段保持可复核。",
+      "evidence.c47.7.title": "网络断线记录",
+      "evidence.c47.7.observation": "来源记录显示“网络断线”在该阶段保持可复核。",
+      "evidence.c47.8.title": "补传顺序记录",
+      "evidence.c47.8.observation": "来源记录显示“补传顺序”在该阶段保持可复核。",
+      "evidence.c47.9.title": "设备时钟记录",
+      "evidence.c47.9.observation": "来源记录显示“设备时钟”在该阶段保持可复核。",
+      "evidence.c47.10.title": "平台在线记录",
+      "evidence.c47.10.observation": "来源记录显示“平台在线”在该阶段保持可复核。",
+      "evidence.c47.11.title": "离线缓存记录",
+      "evidence.c47.11.observation": "来源记录显示“离线缓存”在该阶段保持可复核。",
+      "evidence.c47.12.title": "批量补传记录",
+      "evidence.c47.12.observation": "来源记录显示“批量补传”在该阶段保持可复核。",
+      "board.c47.1.title": "断线后继续在线的设备 · network-topology",
+      "board.c47.1.slot.1": "起始来源",
+      "board.c47.1.slot.2": "关键变化",
+      "board.c47.1.slot.3": "观测结果",
+      "board.c47.1.slot.4": "排除替代",
+      "board.c47.2.title": "断线后继续在线的设备 · sampling-window",
+      "board.c47.2.slot.1": "起始来源",
+      "board.c47.2.slot.2": "关键变化",
+      "board.c47.2.slot.3": "观测结果",
+      "board.c47.2.slot.4": "排除替代"
+    }
+  }
+}

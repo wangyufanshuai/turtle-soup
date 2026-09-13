@@ -1,0 +1,589 @@
+{
+  "generatedAt": "2026-09-08T14:34:13.260Z",
+  "releaseProfile": "v2.12-internal-rc",
+  "sourceTreeDigest": "be51f064c7694a08a3ab7fd033297ecc54753e3d9efbb906a9281513fecb4163",
+  "coverage": "static",
+  "passed": null,
+  "browserExecuted": false,
+  "scriptSha256": "eab6aa0c12e619d9a8652067ff80dec9fb5d23f0fa8368c6bc3bc461027bef40",
+  "recipes": [
+    {
+      "caseId": "c01-cold-room-knock",
+      "route": "/case/c01-cold-room-knock/",
+      "title": "冷藏室的敲门声",
+      "purpose": "Known-answer UI execution guide, not a blind discovery test. Contains solution spoilers after investigation.",
+      "startup": "Use a fresh test origin or UI restart. Never clear unrelated user storage. AI remains off.",
+      "naturalQuestions": [
+        "敲击发生时，冷藏室里是否有人？",
+        "敲门声是人敲的吗？",
+        "林澈这么做是为了拖延检查吗？",
+        "这扇门关闭后会自动锁住吗？",
+        "手机在冷藏室里吗？",
+        "留下的设备属于林澈吗？",
+        "样本在外面的储物柜里吗？",
+        "方砚后来进过冷藏室吗？",
+        "金属托盘是什么颜色？"
+      ],
+      "ambiguity": {
+        "rawText": "调查复核歧义1：里面有人吗？，以及敲门声是人敲的吗？，是否都成立？",
+        "action": "Read the actually visible candidate labels; confirm a candidate, observe the answer count/text, reload and compare."
+      },
+      "discover": "Visit each visible location and inspect newly reachable evidence through the UI; re-check after questions or evidence reveal a new location. Do not use global state, DOM hidden fields, IndexedDB injection or postMessage.",
+      "locationLabels": [
+        "冷藏室",
+        "冷藏室外走廊",
+        "外部储物柜"
+      ],
+      "evidenceTitles": [
+        "01:00 · 最后一次离开",
+        "门框内侧的自动门闩",
+        "托盘边缘的三处震痕",
+        "托盘下的定时手机",
+        "设备绑定页",
+        "走廊独立录音",
+        "门禁与储物柜的交叉记录",
+        "外部储物柜中的样本盒",
+        "被推迟的开门检查",
+        "敲击与延迟的闭合记录"
+      ],
+      "proofEvidenceTitles": [
+        "01:00 · 最后一次离开",
+        "门框内侧的自动门闩",
+        "托盘边缘的三处震痕",
+        "托盘下的定时手机",
+        "设备绑定页",
+        "走廊独立录音",
+        "门禁与储物柜的交叉记录",
+        "外部储物柜中的样本盒",
+        "敲击与延迟的闭合记录"
+      ],
+      "incorrectTheoryLabels": [
+        "方砚在锁门后重新进入并亲自敲击",
+        "值班员伪造了敲击录音与房间占用状态"
+      ],
+      "theoryLabelAfterDiscovery": "定时震动撞击托盘，敲击声让值班员延迟检查",
+      "motiveLabel": "拖延样本检查",
+      "eventChain": [
+        {
+          "timeLabel": "00:45",
+          "label": "样本被带离冷藏室"
+        },
+        {
+          "timeLabel": "00:47",
+          "label": "样本被放入外部储物柜"
+        },
+        {
+          "timeLabel": "00:50",
+          "label": "定时手机被放在金属托盘旁"
+        },
+        {
+          "timeLabel": "01:00",
+          "label": "林澈离开，门闩自动闭合"
+        },
+        {
+          "timeLabel": "02:00",
+          "label": "手机震动撞击托盘"
+        },
+        {
+          "timeLabel": "02:05",
+          "label": "检查被延迟"
+        }
+      ],
+      "boards": [],
+      "requiredObservationStages": [
+        "clean-start",
+        "opening-observation",
+        "natural-questions",
+        "ambiguity-confirmation",
+        "ambiguity-refresh",
+        "evidence-inspection",
+        "wrong-theory",
+        "proof-gap",
+        "organize-proof",
+        "correct-submission",
+        "proof-replay",
+        "refresh-recovery"
+      ],
+      "procedure": [
+        "Capture the zero-question scene and theory workspace. Do not inspect the solution fields in this guide until opening exposure is checked.",
+        "Fill and submit at least three natural questions through the labeled input. Read both system-understanding and fact-answer text.",
+        "Exercise ambiguity confirmation and compare the visible transcript before and after page reload.",
+        "Inspect reachable evidence, add supporting material through its action button, and record actual modal close/focus behavior.",
+        "Submit an author-provided incorrect theory through UI and observe rejection, then select your causal explanation.",
+        "Submit an incomplete proof and capture the visible gap. Only then organize the correct event chain and every board using event/slot labels.",
+        "Select the visible motive and attach proof evidence. Submit, observe solved text, open the replay and step through it.",
+        "Reload and compare the solved archive. Offline recovery, challenge re-completion, touch, keyboard and visual/a11y audits are separate evidence gates, not implied by this recipe."
+      ]
+    },
+    {
+      "caseId": "c61-missing-tape-turn",
+      "route": "/case/c61-missing-tape-turn/",
+      "title": "少了一圈的胶带",
+      "purpose": "Known-answer UI execution guide, not a blind discovery test. Contains solution spoilers after investigation.",
+      "startup": "Use a fresh test origin or UI restart. Never clear unrelated user storage. AI remains off.",
+      "naturalQuestions": [
+        "卷盘芯径是否成立？",
+        "胶带圈数是否成立？",
+        "剩余长度是否成立？",
+        "计数器是否成立？",
+        "校准曲线是否成立？",
+        "卷盘更换是否成立？",
+        "带材厚度是否成立？",
+        "长度测量是否成立？",
+        "标尺读数是否成立？",
+        "剩余材料是否成立？"
+      ],
+      "ambiguity": {
+        "rawText": "关键记录是否相关，按第1种理解？",
+        "action": "Read the actually visible candidate labels; confirm a candidate, observe the answer count/text, reload and compare."
+      },
+      "discover": "Visit each visible location and inspect newly reachable evidence through the UI; re-check after questions or evidence reveal a new location. Do not use global state, DOM hidden fields, IndexedDB injection or postMessage.",
+      "locationLabels": [
+        "材料推理"
+      ],
+      "evidenceTitles": [
+        "卷盘芯径记录",
+        "胶带圈数记录",
+        "剩余长度记录",
+        "计数器记录",
+        "校准曲线记录",
+        "卷盘更换记录",
+        "带材厚度记录",
+        "长度测量记录",
+        "标尺读数记录",
+        "剩余材料记录",
+        "卷盘芯径记录"
+      ],
+      "proofEvidenceTitles": [
+        "卷盘芯径记录",
+        "胶带圈数记录",
+        "剩余长度记录",
+        "计数器记录",
+        "校准曲线记录",
+        "卷盘更换记录",
+        "带材厚度记录",
+        "长度测量记录",
+        "标尺读数记录",
+        "剩余材料记录"
+      ],
+      "incorrectTheoryLabels": [
+        "胶带被人偷偷剪走了",
+        "计数器中途跳过了一圈"
+      ],
+      "theoryLabelAfterDiscovery": "卷盘更换了芯径，计数器只记录圈数而没有重新校准；圈数不等于剩余长度。",
+      "motiveLabel": "区分离散圈数与连续长度的测量关系",
+      "eventChain": [
+        {
+          "timeLabel": "20:00",
+          "label": "阶段 1：卷盘芯径进入记录链"
+        },
+        {
+          "timeLabel": "20:04",
+          "label": "阶段 2：胶带圈数进入记录链"
+        },
+        {
+          "timeLabel": "20:08",
+          "label": "阶段 3：剩余长度进入记录链"
+        },
+        {
+          "timeLabel": "20:12",
+          "label": "阶段 4：计数器进入记录链"
+        },
+        {
+          "timeLabel": "20:16",
+          "label": "阶段 5：校准曲线进入记录链"
+        },
+        {
+          "timeLabel": "20:20",
+          "label": "阶段 6：卷盘更换进入记录链"
+        },
+        {
+          "timeLabel": "21:24",
+          "label": "阶段 7：带材厚度进入记录链"
+        },
+        {
+          "timeLabel": "21:28",
+          "label": "阶段 8：长度测量进入记录链"
+        },
+        {
+          "timeLabel": "21:32",
+          "label": "阶段 9：标尺读数进入记录链"
+        },
+        {
+          "timeLabel": "21:36",
+          "label": "阶段 10：剩余材料进入记录链"
+        }
+      ],
+      "boards": [
+        {
+          "label": "校准曲线推理板",
+          "title": "少了一圈的胶带 · calibration-curve",
+          "mode": "calibration-curve",
+          "placements": [
+            {
+              "slotLabel": "端点",
+              "eventLabel": "阶段 1：卷盘芯径进入记录链"
+            },
+            {
+              "slotLabel": "中段",
+              "eventLabel": "阶段 3：剩余长度进入记录链"
+            },
+            {
+              "slotLabel": "误差带",
+              "eventLabel": "阶段 5：校准曲线进入记录链"
+            },
+            {
+              "slotLabel": "排除替代",
+              "eventLabel": "阶段 10：剩余材料进入记录链"
+            }
+          ],
+          "connections": [
+            {
+              "fromLabel": "阶段 1：卷盘芯径进入记录链",
+              "toLabel": "阶段 3：剩余长度进入记录链",
+              "relationLabel": "校准"
+            },
+            {
+              "fromLabel": "阶段 3：剩余长度进入记录链",
+              "toLabel": "阶段 5：校准曲线进入记录链",
+              "relationLabel": "校准"
+            },
+            {
+              "fromLabel": "阶段 5：校准曲线进入记录链",
+              "toLabel": "阶段 10：剩余材料进入记录链",
+              "relationLabel": "校准"
+            }
+          ]
+        },
+        {
+          "label": "物质守恒推理板",
+          "title": "少了一圈的胶带 · material-balance",
+          "mode": "material-balance",
+          "placements": [
+            {
+              "slotLabel": "进入",
+              "eventLabel": "阶段 2：胶带圈数进入记录链"
+            },
+            {
+              "slotLabel": "保留",
+              "eventLabel": "阶段 4：计数器进入记录链"
+            },
+            {
+              "slotLabel": "离开",
+              "eventLabel": "阶段 6：卷盘更换进入记录链"
+            },
+            {
+              "slotLabel": "排除替代",
+              "eventLabel": "阶段 10：剩余材料进入记录链"
+            }
+          ],
+          "connections": [
+            {
+              "fromLabel": "阶段 2：胶带圈数进入记录链",
+              "toLabel": "阶段 4：计数器进入记录链",
+              "relationLabel": "流入"
+            },
+            {
+              "fromLabel": "阶段 4：计数器进入记录链",
+              "toLabel": "阶段 6：卷盘更换进入记录链",
+              "relationLabel": "流入"
+            },
+            {
+              "fromLabel": "阶段 6：卷盘更换进入记录链",
+              "toLabel": "阶段 10：剩余材料进入记录链",
+              "relationLabel": "流入"
+            }
+          ]
+        }
+      ],
+      "requiredObservationStages": [
+        "clean-start",
+        "opening-observation",
+        "natural-questions",
+        "ambiguity-confirmation",
+        "ambiguity-refresh",
+        "evidence-inspection",
+        "wrong-theory",
+        "proof-gap",
+        "organize-proof",
+        "correct-submission",
+        "proof-replay",
+        "refresh-recovery"
+      ],
+      "procedure": [
+        "Capture the zero-question scene and theory workspace. Do not inspect the solution fields in this guide until opening exposure is checked.",
+        "Fill and submit at least three natural questions through the labeled input. Read both system-understanding and fact-answer text.",
+        "Exercise ambiguity confirmation and compare the visible transcript before and after page reload.",
+        "Inspect reachable evidence, add supporting material through its action button, and record actual modal close/focus behavior.",
+        "Submit an author-provided incorrect theory through UI and observe rejection, then select your causal explanation.",
+        "Submit an incomplete proof and capture the visible gap. Only then organize the correct event chain and every board using event/slot labels.",
+        "Select the visible motive and attach proof evidence. Submit, observe solved text, open the replay and step through it.",
+        "Reload and compare the solved archive. Offline recovery, challenge re-completion, touch, keyboard and visual/a11y audits are separate evidence gates, not implied by this recipe."
+      ]
+    },
+    {
+      "caseId": "c84-handoff-after-stop",
+      "route": "/case/c84-handoff-after-stop/",
+      "title": "停止以后仍完成的交接",
+      "purpose": "Known-answer UI execution guide, not a blind discovery test. Contains solution spoilers after investigation.",
+      "startup": "Use a fresh test origin or UI restart. Never clear unrelated user storage. AI remains off.",
+      "naturalQuestions": [
+        "停止命令是否成立？",
+        "在途交接是否成立？",
+        "审计提交是否成立？",
+        "控制层接收是否成立？",
+        "完成时间是否成立？",
+        "消息顺序是否成立？",
+        "两个章节是否成立？",
+        "最后交接是否成立？",
+        "系统停止是否成立？",
+        "执行回执是否成立？"
+      ],
+      "ambiguity": {
+        "rawText": "关键记录是否相关，按第1种理解？",
+        "action": "Read the actually visible candidate labels; confirm a candidate, observe the answer count/text, reload and compare."
+      },
+      "discover": "Visit each visible location and inspect newly reachable evidence through the UI; re-check after questions or evidence reveal a new location. Do not use global state, DOM hidden fields, IndexedDB injection or postMessage.",
+      "locationLabels": [
+        "综合因果"
+      ],
+      "evidenceTitles": [
+        "停止命令记录",
+        "在途交接记录",
+        "审计提交记录",
+        "控制层接收记录",
+        "完成时间记录",
+        "消息顺序记录",
+        "两个章节记录",
+        "最后交接记录",
+        "系统停止记录",
+        "执行回执记录",
+        "停止命令记录",
+        "在途交接记录",
+        "审计提交记录",
+        "控制层接收记录"
+      ],
+      "proofEvidenceTitles": [
+        "停止命令记录",
+        "在途交接记录",
+        "审计提交记录",
+        "控制层接收记录",
+        "完成时间记录",
+        "消息顺序记录",
+        "两个章节记录",
+        "最后交接记录",
+        "系统停止记录",
+        "执行回执记录",
+        "停止命令记录",
+        "在途交接记录",
+        "审计提交记录"
+      ],
+      "incorrectTheoryLabels": [
+        "停止命令根本没有生效",
+        "审计记录是事后伪造的"
+      ],
+      "theoryLabelAfterDiscovery": "停止命令先被控制层接收，在途交接随后完成，审计提交最后写入；三个事件跨两个章节按不同顺序发生。",
+      "motiveLabel": "综合验证控制、时间区间和替代路径排除",
+      "eventChain": [
+        {
+          "timeLabel": "20:00",
+          "label": "阶段 1：停止命令进入记录链"
+        },
+        {
+          "timeLabel": "20:04",
+          "label": "阶段 2：在途交接进入记录链"
+        },
+        {
+          "timeLabel": "20:08",
+          "label": "阶段 3：审计提交进入记录链"
+        },
+        {
+          "timeLabel": "20:12",
+          "label": "阶段 4：控制层接收进入记录链"
+        },
+        {
+          "timeLabel": "20:16",
+          "label": "阶段 5：完成时间进入记录链"
+        },
+        {
+          "timeLabel": "20:20",
+          "label": "阶段 6：消息顺序进入记录链"
+        },
+        {
+          "timeLabel": "20:24",
+          "label": "阶段 7：两个章节进入记录链"
+        },
+        {
+          "timeLabel": "21:28",
+          "label": "阶段 8：最后交接进入记录链"
+        },
+        {
+          "timeLabel": "21:32",
+          "label": "阶段 9：系统停止进入记录链"
+        },
+        {
+          "timeLabel": "21:36",
+          "label": "阶段 10：执行回执进入记录链"
+        },
+        {
+          "timeLabel": "21:40",
+          "label": "阶段 11：停止命令进入记录链"
+        },
+        {
+          "timeLabel": "21:44",
+          "label": "阶段 12：在途交接进入记录链"
+        },
+        {
+          "timeLabel": "21:48",
+          "label": "阶段 13：审计提交进入记录链"
+        }
+      ],
+      "boards": [
+        {
+          "label": "因果图推理板",
+          "title": "停止以后仍完成的交接 · causal-graph",
+          "mode": "causal-graph",
+          "placements": [
+            {
+              "slotLabel": "原因",
+              "eventLabel": "阶段 1：停止命令进入记录链"
+            },
+            {
+              "slotLabel": "中介",
+              "eventLabel": "阶段 3：审计提交进入记录链"
+            },
+            {
+              "slotLabel": "结果",
+              "eventLabel": "阶段 5：完成时间进入记录链"
+            },
+            {
+              "slotLabel": "排除替代",
+              "eventLabel": "阶段 13：审计提交进入记录链"
+            }
+          ],
+          "connections": [
+            {
+              "fromLabel": "阶段 1：停止命令进入记录链",
+              "toLabel": "阶段 3：审计提交进入记录链",
+              "relationLabel": "触发"
+            },
+            {
+              "fromLabel": "阶段 3：审计提交进入记录链",
+              "toLabel": "阶段 5：完成时间进入记录链",
+              "relationLabel": "触发"
+            },
+            {
+              "fromLabel": "阶段 5：完成时间进入记录链",
+              "toLabel": "阶段 13：审计提交进入记录链",
+              "relationLabel": "触发"
+            }
+          ]
+        },
+        {
+          "label": "区间逻辑推理板",
+          "title": "停止以后仍完成的交接 · interval-logic",
+          "mode": "interval-logic",
+          "placements": [
+            {
+              "slotLabel": "开始",
+              "eventLabel": "阶段 2：在途交接进入记录链"
+            },
+            {
+              "slotLabel": "重叠",
+              "eventLabel": "阶段 4：控制层接收进入记录链"
+            },
+            {
+              "slotLabel": "结束",
+              "eventLabel": "阶段 6：消息顺序进入记录链"
+            },
+            {
+              "slotLabel": "排除替代",
+              "eventLabel": "阶段 13：审计提交进入记录链"
+            }
+          ],
+          "connections": [
+            {
+              "fromLabel": "阶段 2：在途交接进入记录链",
+              "toLabel": "阶段 4：控制层接收进入记录链",
+              "relationLabel": "先于"
+            },
+            {
+              "fromLabel": "阶段 4：控制层接收进入记录链",
+              "toLabel": "阶段 6：消息顺序进入记录链",
+              "relationLabel": "先于"
+            },
+            {
+              "fromLabel": "阶段 6：消息顺序进入记录链",
+              "toLabel": "阶段 13：审计提交进入记录链",
+              "relationLabel": "先于"
+            }
+          ]
+        },
+        {
+          "label": "反事实树推理板",
+          "title": "停止以后仍完成的交接 · counterfactual-tree",
+          "mode": "counterfactual-tree",
+          "placements": [
+            {
+              "slotLabel": "假设",
+              "eventLabel": "阶段 3：审计提交进入记录链"
+            },
+            {
+              "slotLabel": "反事实",
+              "eventLabel": "阶段 5：完成时间进入记录链"
+            },
+            {
+              "slotLabel": "排除",
+              "eventLabel": "阶段 7：两个章节进入记录链"
+            },
+            {
+              "slotLabel": "排除替代",
+              "eventLabel": "阶段 13：审计提交进入记录链"
+            }
+          ],
+          "connections": [
+            {
+              "fromLabel": "阶段 3：审计提交进入记录链",
+              "toLabel": "阶段 5：完成时间进入记录链",
+              "relationLabel": "如果"
+            },
+            {
+              "fromLabel": "阶段 5：完成时间进入记录链",
+              "toLabel": "阶段 7：两个章节进入记录链",
+              "relationLabel": "如果"
+            },
+            {
+              "fromLabel": "阶段 7：两个章节进入记录链",
+              "toLabel": "阶段 13：审计提交进入记录链",
+              "relationLabel": "如果"
+            }
+          ]
+        }
+      ],
+      "requiredObservationStages": [
+        "clean-start",
+        "opening-observation",
+        "natural-questions",
+        "ambiguity-confirmation",
+        "ambiguity-refresh",
+        "evidence-inspection",
+        "wrong-theory",
+        "proof-gap",
+        "organize-proof",
+        "correct-submission",
+        "proof-replay",
+        "refresh-recovery"
+      ],
+      "procedure": [
+        "Capture the zero-question scene and theory workspace. Do not inspect the solution fields in this guide until opening exposure is checked.",
+        "Fill and submit at least three natural questions through the labeled input. Read both system-understanding and fact-answer text.",
+        "Exercise ambiguity confirmation and compare the visible transcript before and after page reload.",
+        "Inspect reachable evidence, add supporting material through its action button, and record actual modal close/focus behavior.",
+        "Submit an author-provided incorrect theory through UI and observe rejection, then select your causal explanation.",
+        "Submit an incomplete proof and capture the visible gap. Only then organize the correct event chain and every board using event/slot labels.",
+        "Select the visible motive and attach proof evidence. Submit, observe solved text, open the replay and step through it.",
+        "Reload and compare the solved archive. Offline recovery, challenge re-completion, touch, keyboard and visual/a11y audits are separate evidence gates, not implied by this recipe."
+      ]
+    }
+  ]
+}

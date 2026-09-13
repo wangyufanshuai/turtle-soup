@@ -1,0 +1,19 @@
+✔ both independent studies support their complete material-based explanation (0.8533ms)
+✔ blank, unknown and wrong-version submissions never reveal a resolution (0.1645ms)
+✔ required citations and reading cannot be bypassed with correct answer values (0.763ms)
+✔ C61 can omit the old card; citing every material is not a collection gate (0.1161ms)
+✔ C61 rejects the wrong basis and interval violations, accepts stated measurement tolerance (0.239ms)
+✔ C61 authored public measurements close arithmetically and match accepted inputs (0.206ms)
+✔ only the evidence-supported C84 timeline passes among all 24 permutations (0.648ms)
+✔ C84 separates stopping new starts, aborting in-flight work, and audit causality (0.1061ms)
+✔ prototype saves round-trip separately and reject old-case/wrong-version envelopes (0.3111ms)
+✔ malformed drafts are bounded and cannot import unknown citations or duplicate events (0.1672ms)
+✔ all public question and timeline references resolve to unique, concrete materials (0.1558ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 99.932

@@ -54,9 +54,12 @@ self.addEventListener("fetch", (event) => {
     caches.open(CACHE_NAME).then(async (cache) => {
       const url = new URL(event.request.url);
       const navigationKey = url.pathname === "/" ? "/" : `${url.pathname.replace(/\/$/, "")}/`;
+      // Static-export RSC files carry a router cache-busting parameter. Their
+      // bytes are already versioned by this service worker's precache manifest.
+      const staticQuery = [...url.searchParams.keys()].every((key) => key === "_rsc");
       const cached = event.request.mode === "navigate"
         ? await cache.match(navigationKey, { ignoreSearch: true })
-        : url.search ? undefined : await cache.match(event.request) ?? await cache.match(decodeURIComponent(url.pathname));
+        : !staticQuery ? undefined : await cache.match(event.request) ?? await cache.match(decodeURIComponent(url.pathname));
       if (cached) return cached;
       try {
         const response = await fetch(event.request);

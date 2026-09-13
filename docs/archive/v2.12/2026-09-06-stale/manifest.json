@@ -1,0 +1,67 @@
+{
+  "archiveVersion": 1,
+  "archivedAt": "2026-09-08T14:14:00Z",
+  "sourceContext": "Superseded v2.12 evidence and handoff documents retained before current-run refresh.",
+  "files": [
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-browser-matrix.json",
+      "bytes": 6255,
+      "sha256": "a9cd2a2a69dd362a297711a4b9bf0cf4584d273953e23f3b54254e26721472a5"
+    },
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-check-core.json",
+      "bytes": 2706,
+      "sha256": "eb2da66f795ed4430a5bdf9676116717226465a8d2bc12e81e49ad6e4f2b369a"
+    },
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-check-frozen.json",
+      "bytes": 1171,
+      "sha256": "d8e9835919281eef0fc6223c2a8257a31fec7553b4ff43aebd865495e72a94f3"
+    },
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-check-historical-save-oracle.json",
+      "bytes": 71490,
+      "sha256": "7fd962a81ee5a6493adc1cb182ea614558d1a4bc07fb10abb723754c775434eb"
+    },
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-check-integrity.json",
+      "bytes": 1303,
+      "sha256": "d0da52ebbb5608b7a3c0a2cfcb608dc9b828f096c46c57e0d66ebeca316b80fb"
+    },
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-check-offline-all-cases.json",
+      "bytes": 61493,
+      "sha256": "c27e406546e3f06b8638c82ff8d88f77a435957ecbc9c30b800c6d02fd08555a"
+    },
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-check-typecheck-core.json",
+      "bytes": 1080,
+      "sha256": "8d0fb2461de88d5cddc7c52e76b1be59d8d7d29fde97f13e5dbea4024d2e6287"
+    },
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-check-typecheck-web.json",
+      "bytes": 1115,
+      "sha256": "aa8c399326c5edb5c0b27fefec2b35a3aab8c1a65a92a1ff09891b154cabe104"
+    },
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-internal-rc.md",
+      "bytes": 8601,
+      "sha256": "943e051f656ca626937c16a0232aab96415dfbcaab88fd996a1127b6e3a93bd8"
+    },
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-next-step.md",
+      "bytes": 12124,
+      "sha256": "2abd7cd63e7d18d5cde34e651855014332f6ac430aa79ac8fe1e8f80e4e0f00c"
+    },
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-release-verification.json",
+      "bytes": 10490,
+      "sha256": "9c967adf70b69ada47bc3fcf8ec1d93861ae6af501c082723cfcf9b3c75ab5c1"
+    },
+    {
+      "path": "docs/archive/v2.12/2026-09-06-stale/v2.12-static-performance.json",
+      "bytes": 12222,
+      "sha256": "9b3690b829e5f84a04ca1d61536793e6f103cfa54c5077f52d5568a2c08ab610"
+    }
+  ]
+}

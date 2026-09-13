@@ -1,0 +1,109 @@
+Browser tab: 1, Title: "The Black Soup — 深汤案件档案", URL: "http://127.0.0.1:8139/".
+0 AXWebArea The Black Soup — 深汤案件档案, URL: 127.0.0.1:8139/
+	1 link Description: 跳到主要内容, Value: 127.0.0.1:8139/#main-content
+	2 container main-content
+		3 container 冷藏室的 敲门声
+			4 container
+				5 link Description: 深汤首页, Value: 127.0.0.1:8139/#main-content
+				6 container 首页导航
+					7 link Description: 全部案件, Value: 127.0.0.1:8139/#case-library
+					8 link Description: 本地存档, Value: 127.0.0.1:8139/#local-archive
+			9 text 今夜的谜案 CASE  01
+			10 heading 冷藏室的 敲门声, Value: 1, ID: hero-title
+				11 text 冷藏室的
+				12 text 敲门声
+			13 container
+				14 text 凌晨两点，封闭的冷藏室里传出三下敲击。
+				15 text 监控里，研究员一小时前已经离开。
+			16 text 入门 · 5 – 15  分钟
+			17 link Description: 开始调查, Value: 127.0.0.1:8139/case/c01-cold-room-knock/
+			18 link Description: 浏览全部案件, Value: 127.0.0.1:8139/#case-library
+		19 container 五季悬案，等你入局
+			20 heading 五季悬案，等你入局, Value: 2, ID: seasons-heading
+				21 text 五季悬案，等你入局
+			22 container
+				23 text 84  份谜案 · 单人调查 · 离线可玩
+			24 tab group 案件季节
+				25 tab (selectable, settable, boolean) SEASON 01 第一季 0 / 12 已结案 黑汤档案, ID: tab-season-1, Value: 0
+SEASON
+01
+第一季
+0
+/
+12
+已结案
+黑汤档案
+				26 tab (selected, settable, boolean) SEASON 02 第二季 0 / 12 已结案 观测的边界, Value: 1, ID: tab-season-2
+					66 text SEASON 
+					67 text 02
+					68 text 第二季
+					69 text 0
+					70 text  / 
+					71 text 12
+					72 text 已结案
+					73 text 观测的边界
+				27 tab (selectable, settable, boolean) SEASON 03 第三季 0 / 12 已结案 系统留下的错觉, ID: tab-season-3, Value: 0
+SEASON
+03
+第三季
+0
+/
+12
+已结案
+系统留下的错觉
+				28 tab (selectable, settable, boolean) SEASON 04 第四季 0 / 24 已结案 测量之外, ID: tab-season-4, Value: 0
+SEASON
+04
+第四季
+0
+/
+24
+已结案
+测量之外
+				29 tab (selectable, settable, boolean) SEASON 05 第五季 0 / 24 已结案 被误读的现实, ID: tab-season-5, Value: 0
+SEASON
+05
+第五季
+0
+/
+24
+已结案
+被误读的现实
+			30 text 看见的，未必是发生的。 全部案件均可直接进入
+		31 container 第二季：观测的边界, ID: case-library
+			32 text THE CASE FILES
+			33 heading 第二季：观测的边界, Value: 2, ID: library-heading
+				34 text 第二季：观测的边界
+			35 text 0  /  12  已结案
+			36 link Description: 推荐下一案：十二点的第二个影子, Value: 127.0.0.1:8139/case/c03-second-shadow/
+			37 container
+				38 text 搜索当前季
+				39 search text field (settable) 搜索当前季
+			40 button (collapsed) 筛选, Secondary Actions: Expand
+			41 container
+				42 text 找到  12  份案件
+			74 container Description: SEASON 02 第二季 0 / 12 已结案 观测的边界, ID: active-season-cases
+				75 link Description: 13 进阶8–18 分钟 未开启 空杯里的第二条水线 量杯整夜没有开封，总质量也没有增加；清晨的液面却越过了第二条刻度。若没有人加液体，究竟是什么改变了水线？ 打开档案, Value: 127.0.0.1:8139/case/c13-second-waterline/
+				76 link Description: 14 进阶8–18 分钟 未开启 越过但未跨越的红箱 红色行李箱整夜没有移动，也没有通过闸门；清晨它却出现在禁区线的另一侧。 打开档案, Value: 127.0.0.1:8139/case/c14-moving-red-box/
+				77 link Description: 15 进阶8–18 分钟 未开启 同一张合影里的第六个人 天台始终只有五个人，门禁也没有第六次进入；全景合影里却清楚站着六个人。 打开档案, Value: 127.0.0.1:8139/case/c15-sixth-panorama/
+				78 link Description: 16 进阶8–18 分钟 未开启 没有开门的交接 证物从甲室转移到了乙室；两扇房门、两套门磁和走廊监控都证明没有开门。 打开档案, Value: 127.0.0.1:8139/case/c16-closed-door-handoff/
+				79 link Description: 17 高难10–20 分钟 未开启 十一点的十二声钟 钟楼表盘停在十一点整，维修记录也承认它没有走动；午夜却准确敲了十二声。 打开档案, Value: 127.0.0.1:8139/case/c17-twelve-strikes/
+				80 link Description: 18 高难10–20 分钟 未开启 少了一公斤的密封箱 密封箱没有开封、没有移位，内容物清单也完整；同一台秤却显示它在十分钟内轻了一公斤。 打开档案, Value: 127.0.0.1:8139/case/c18-lighter-sealed-crate/
+				81 link Description: 19 高难10–20 分钟 未开启 关窗后才出现的雾 窗户敞开时房间清澈，关闭并密封后反而出现白雾；没有漏水，也没有人启动加湿器。 打开档案, Value: 127.0.0.1:8139/case/c19-fog-after-window/
+				82 link Description: 20 高难10–20 分钟 未开启 六个岗位的第五个人 六个岗位都完成了本人签到，所有凭证也合法；监控从头到尾却只出现五个人。 打开档案, Value: 127.0.0.1:8139/case/c20-fifth-worker/
+				83 link Description: 21 专家12–20 分钟 未开启 完整录像里消失的七分钟 录像索引从00:00连续到00:20，没有删除、断网或坏帧；关键的七分钟却没有任何连续画面。 打开档案, Value: 127.0.0.1:8139/case/c21-missing-seven-minutes/
+				84 link Description: 22 专家12–20 分钟 未开启 没有超标的超载桥 每个车轴读数都低于法定上限，也没有额外车辆；桥梁系统却正确触发了超载封闭。 打开档案, Value: 127.0.0.1:8139/case/c22-overloaded-bridge/
+				85 link Description: 23 专家12–20 分钟 未开启 泄漏时仍然清洁的空气样本 泄漏警报已经触发，取样仪却连续显示空气清洁；仪器没有坏，样本也没有被替换。 打开档案, Value: 127.0.0.1:8139/case/c23-clean-air-sample/
+				86 link Description: 24 专家15–25 分钟 未开启 闭馆后转向的画 展厅门整夜未开，画框封条完好，连续全景监控也没有拍到搬运；清晨画却朝向了相反方向。 打开档案, Value: 127.0.0.1:8139/case/c24-turned-painting/
+		56 container Description: 存档管理, ID: local-archive
+			57 button (collapsed) 本地存档与备份 可导出全部案件进度, Secondary Actions: Expand
+				58 text 本地存档与备份
+				59 text 可导出全部案件进度
+		60 container
+			61 text 深汤 THE BLACK SOUP
+			62 button (collapsed) 版本说明 · V2.12-INTERNAL-RC, Secondary Actions: Expand
+				63 text 版本说明 · 
+				64 text V2.12-INTERNAL-RC
+			65 link Description: 回到开场, Value: 127.0.0.1:8139/#main-content
+
+The focused UI element is 26 tab (selected, settable, boolean) SEASON 02 第二季 0 / 12 已结案 观测的边界, Value: 1, ID: tab-season-2

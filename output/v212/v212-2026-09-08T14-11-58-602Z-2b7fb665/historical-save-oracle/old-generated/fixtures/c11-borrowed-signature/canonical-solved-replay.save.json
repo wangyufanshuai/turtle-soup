@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c11-borrowed-signature",
+  "caseVersion": 1,
+  "contentHash": "sha256:c11-borrowed-signature-v1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "魏宁是在09:20才到档案室吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "签名是印章盖出来的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "复写纸的压力能证明是盖章吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合同是在09:25封存的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "这一定是魏宁亲手签的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "签名出现时魏宁已经在场吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "印章后来归还了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "咖啡污渍是签名异常的原因吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "魏宁是在09:20才到档案室吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "签名是印章盖出来的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "复写纸的压力能证明是盖章吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合同是在09:25封存的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "这一定是魏宁亲手签的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "签名出现时魏宁已经在场吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "印章后来归还了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "咖啡污渍是签名异常的原因吗？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-archive-desk"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-blank-form",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-stamp",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-impression",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-carbon",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-entry-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-seal-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-audit",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-coffee",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "魏宁是在09:20才到档案室吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "签名是印章盖出来的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "复写纸的压力能证明是盖章吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合同是在09:25封存的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "这一定是魏宁亲手签的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "签名出现时魏宁已经在场吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "印章后来归还了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "咖啡污渍是签名异常的原因吗？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-archive-desk"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-blank-form",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-stamp",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-impression",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-carbon",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-entry-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-seal-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-audit",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-coffee",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "魏宁是在09:20才到档案室吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "签名是印章盖出来的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "复写纸的压力能证明是盖章吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合同是在09:25封存的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "这一定是魏宁亲手签的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "签名出现时魏宁已经在场吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "印章后来归还了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "咖啡污渍是签名异常的原因吗？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-archive-desk"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-blank-form",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-stamp",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-impression",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-carbon",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-entry-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-seal-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-audit",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-coffee",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-blank-form",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-stamp",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-impression",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-carbon",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-entry-log",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-seal-log",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-audit",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "motive-expedite-archive"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

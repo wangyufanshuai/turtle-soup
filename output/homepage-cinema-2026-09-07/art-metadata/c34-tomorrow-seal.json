@@ -1,0 +1,32 @@
+{
+  "id": "c34-tomorrow-seal",
+  "title": "封条上的明天",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-1f8070e5-2787-4f11-8dd9-36549eb6d23f.png",
+  "sourceSha256": "03875a458b12f79b65fb3dfa815d720976cfbc0f0775005491273a17566fdc4a",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 封条上的明天 — 箱子在周一晚上完成封存，完整封条却印着周二日期；物流链没有中断，封条也没有更换。\nArt direction: A sealed logistics carton, intact white tamper strip and date stamp equipment nearby; no readable date.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c34-tomorrow-seal.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 68584,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "bd1343ddf1e357b892fa91a858635acc088aed1ce0b1fff03b5193d9b2c9be28"
+    },
+    {
+      "path": "/assets/home-cinema/c34-tomorrow-seal-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 25052,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "6fbe1e2d31b3e3d4fe451c9b53a278ab446e5e95789d0032967377771c1656b0"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.592329+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

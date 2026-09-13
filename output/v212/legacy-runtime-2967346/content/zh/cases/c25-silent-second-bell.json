@@ -1,0 +1,1861 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c25-silent-second-bell",
+  "metadata": {
+    "titleKey": "case.c25.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "状态机",
+      "防抖窗口",
+      "记录语义"
+    ],
+    "targetMinutes": {
+      "min": 8,
+      "max": 18
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:f0b2ed2069fc10b0ce79f86ac9174a4b27b7bef1ce9ad322ad407755162ece6d",
+    "status": "internal-rc",
+    "seasonId": "season-3"
+  },
+  "presentation": {
+    "layoutId": "season3-state-trace",
+    "sceneAsset": "/assets/cases/c25/scene-desktop.webp",
+    "sceneAssetMobile": "/assets/cases/c25/scene-mobile.webp",
+    "palette": "doorbell-amber",
+    "accent": "#d8a85f",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "state-trace-dossier",
+    "mobileNavigation": [
+      "门廊",
+      "控制器",
+      "状态链"
+    ],
+    "boardMode": "state-trace"
+  },
+  "surface": {
+    "titleKey": "case.c25.title",
+    "textKey": "case.c25.surface",
+    "publicFactIds": [
+      "fact-c25-01",
+      "fact-c25-02",
+      "fact-c25-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c25-01",
+      "query-c25-02",
+      "query-c25-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c25-one",
+      "titleKey": "chapter.c25.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c25-1",
+      "titleKey": "board.c25.1.title",
+      "mode": "state-trace",
+      "slots": [
+        {
+          "id": "slot-c25-1-1",
+          "labelKey": "board.c25.1.slot.1",
+          "acceptsEventIds": [
+            "event-c25-01"
+          ]
+        },
+        {
+          "id": "slot-c25-1-2",
+          "labelKey": "board.c25.1.slot.2",
+          "acceptsEventIds": [
+            "event-c25-03"
+          ]
+        },
+        {
+          "id": "slot-c25-1-3",
+          "labelKey": "board.c25.1.slot.3",
+          "acceptsEventIds": [
+            "event-c25-05"
+          ]
+        },
+        {
+          "id": "slot-c25-1-4",
+          "labelKey": "board.c25.1.slot.4",
+          "acceptsEventIds": [
+            "event-c25-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "transitions-to",
+        "causes",
+        "explains"
+      ]
+    },
+    {
+      "id": "board-c25-2",
+      "titleKey": "board.c25.2.title",
+      "mode": "measurement-model",
+      "slots": [
+        {
+          "id": "slot-c25-2-1",
+          "labelKey": "board.c25.2.slot.1",
+          "acceptsEventIds": [
+            "event-c25-03"
+          ]
+        },
+        {
+          "id": "slot-c25-2-2",
+          "labelKey": "board.c25.2.slot.2",
+          "acceptsEventIds": [
+            "event-c25-05"
+          ]
+        },
+        {
+          "id": "slot-c25-2-3",
+          "labelKey": "board.c25.2.slot.3",
+          "acceptsEventIds": [
+            "event-c25-07"
+          ]
+        },
+        {
+          "id": "slot-c25-2-4",
+          "labelKey": "board.c25.2.slot.4",
+          "acceptsEventIds": [
+            "event-c25-09"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "measured-against",
+        "corrects",
+        "explains"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 12
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c25-subject",
+      "kind": "object",
+      "labelKey": "entity.c25.subject",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c25",
+      "kind": "location",
+      "labelKey": "location.c25",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c25-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "23:00"
+      },
+      "participants": [
+        "entity-c25-subject"
+      ],
+      "locationId": "location-c25",
+      "action": "step-c25-1",
+      "labelKey": "event.c25.1",
+      "effectFactIds": [
+        "fact-c25-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c25-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "23:03"
+      },
+      "participants": [
+        "entity-c25-subject"
+      ],
+      "locationId": "location-c25",
+      "action": "step-c25-2",
+      "labelKey": "event.c25.2",
+      "effectFactIds": [
+        "fact-c25-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c25-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "23:06"
+      },
+      "participants": [
+        "entity-c25-subject"
+      ],
+      "locationId": "location-c25",
+      "action": "step-c25-3",
+      "labelKey": "event.c25.3",
+      "effectFactIds": [
+        "fact-c25-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c25-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "23:09"
+      },
+      "participants": [
+        "entity-c25-subject"
+      ],
+      "locationId": "location-c25",
+      "action": "step-c25-4",
+      "labelKey": "event.c25.4",
+      "effectFactIds": [
+        "fact-c25-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c25-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "23:12"
+      },
+      "participants": [
+        "entity-c25-subject"
+      ],
+      "locationId": "location-c25",
+      "action": "step-c25-5",
+      "labelKey": "event.c25.5",
+      "effectFactIds": [
+        "fact-c25-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c25-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "00:15"
+      },
+      "participants": [
+        "entity-c25-subject"
+      ],
+      "locationId": "location-c25",
+      "action": "step-c25-6",
+      "labelKey": "event.c25.6",
+      "effectFactIds": [
+        "fact-c25-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c25-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "00:18"
+      },
+      "participants": [
+        "entity-c25-subject"
+      ],
+      "locationId": "location-c25",
+      "action": "step-c25-7",
+      "labelKey": "event.c25.7",
+      "effectFactIds": [
+        "fact-c25-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c25-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "00:21"
+      },
+      "participants": [
+        "entity-c25-subject"
+      ],
+      "locationId": "location-c25",
+      "action": "step-c25-8",
+      "labelKey": "event.c25.8",
+      "effectFactIds": [
+        "fact-c25-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c25-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "00:24"
+      },
+      "participants": [
+        "entity-c25-subject"
+      ],
+      "locationId": "location-c25",
+      "action": "step-c25-9",
+      "labelKey": "event.c25.9",
+      "effectFactIds": [
+        "fact-c25-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c25-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "00:27"
+      },
+      "participants": [
+        "entity-c25-subject"
+      ],
+      "locationId": "location-c25",
+      "action": "step-c25-10",
+      "labelKey": "event.c25.10",
+      "effectFactIds": [
+        "fact-c25-10"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c25-1-1",
+      "type": "precedes",
+      "fromId": "entity-c25-subject",
+      "toId": "location-c25",
+      "eventId": "event-c25-01",
+      "factId": "fact-c25-01"
+    },
+    {
+      "id": "relation-c25-1-2",
+      "type": "causes",
+      "fromId": "entity-c25-subject",
+      "toId": "location-c25",
+      "eventId": "event-c25-03",
+      "factId": "fact-c25-02"
+    },
+    {
+      "id": "relation-c25-1-3",
+      "type": "causes",
+      "fromId": "entity-c25-subject",
+      "toId": "location-c25",
+      "eventId": "event-c25-05",
+      "factId": "fact-c25-03"
+    },
+    {
+      "id": "relation-c25-2-1",
+      "type": "precedes",
+      "fromId": "entity-c25-subject",
+      "toId": "location-c25",
+      "eventId": "event-c25-03",
+      "factId": "fact-c25-02"
+    },
+    {
+      "id": "relation-c25-2-2",
+      "type": "causes",
+      "fromId": "entity-c25-subject",
+      "toId": "location-c25",
+      "eventId": "event-c25-05",
+      "factId": "fact-c25-03"
+    },
+    {
+      "id": "relation-c25-2-3",
+      "type": "causes",
+      "fromId": "entity-c25-subject",
+      "toId": "location-c25",
+      "eventId": "event-c25-07",
+      "factId": "fact-c25-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c25-01",
+      "predicate": "verified_c25_1",
+      "args": {
+        "step": 1
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c25.1"
+    },
+    {
+      "id": "fact-c25-02",
+      "predicate": "verified_c25_2",
+      "args": {
+        "step": 2
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c25.2"
+    },
+    {
+      "id": "fact-c25-03",
+      "predicate": "verified_c25_3",
+      "args": {
+        "step": 3
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c25.3"
+    },
+    {
+      "id": "fact-c25-04",
+      "predicate": "verified_c25_4",
+      "args": {
+        "step": 4
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c25.4"
+    },
+    {
+      "id": "fact-c25-05",
+      "predicate": "verified_c25_5",
+      "args": {
+        "step": 5
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c25.5"
+    },
+    {
+      "id": "fact-c25-06",
+      "predicate": "verified_c25_6",
+      "args": {
+        "step": 6
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c25.6"
+    },
+    {
+      "id": "fact-c25-07",
+      "predicate": "verified_c25_7",
+      "args": {
+        "step": 7
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c25.7"
+    },
+    {
+      "id": "fact-c25-08",
+      "predicate": "verified_c25_8",
+      "args": {
+        "step": 8
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c25.8"
+    },
+    {
+      "id": "fact-c25-09",
+      "predicate": "verified_c25_9",
+      "args": {
+        "step": 9
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c25.9"
+    },
+    {
+      "id": "fact-c25-10",
+      "predicate": "verified_c25_10",
+      "args": {
+        "step": 10
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-10"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c25.10"
+    },
+    {
+      "id": "fact-c25-11",
+      "predicate": "verified_c25_11",
+      "args": {
+        "step": 11
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-03"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c25.11"
+    },
+    {
+      "id": "fact-c25-12",
+      "predicate": "verified_c25_12",
+      "args": {
+        "step": 12
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-04"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c25.12"
+    },
+    {
+      "id": "fact-c25-13",
+      "predicate": "verified_c25_13",
+      "args": {
+        "step": 13
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-05"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c25.13"
+    },
+    {
+      "id": "fact-c25-14",
+      "predicate": "verified_c25_14",
+      "args": {
+        "step": 14
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-06"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c25.14"
+    },
+    {
+      "id": "fact-c25-15",
+      "predicate": "verified_c25_15",
+      "args": {
+        "step": 15
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-07"
+      ],
+      "importance": "supporting",
+      "localizationKey": "fact.c25.15"
+    },
+    {
+      "id": "fact-c25-16",
+      "predicate": "verified_c25_16",
+      "args": {
+        "step": 16
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c25-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c25-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c25.16"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c25-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c25-01",
+        "fact-c25-02",
+        "fact-c25-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c25-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c25-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c25-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c25-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c25-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c25-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c25-11"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c25-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c25-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c25-04",
+        "fact-c25-12"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c25-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c25-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c25-05",
+        "fact-c25-13"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c25-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c25-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c25-06",
+        "fact-c25-14"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c25-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c25-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c25-07",
+        "fact-c25-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c25-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c25-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c25-08",
+        "fact-c25-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c25-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c25-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c25-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c25-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c25-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c25-10"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c25-01",
+      "labelKey": "query.c25.1",
+      "intent": "verify",
+      "predicate": "verified_c25_1",
+      "slots": {
+        "subjectId": "entity-c25-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c25-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-opening"
+      ],
+      "examplePhrases": [
+        "按钮波形是否成立？",
+        "能确认按钮波形吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "按钮波形"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c25-02",
+      "labelKey": "query.c25.2",
+      "intent": "verify",
+      "predicate": "verified_c25_2",
+      "slots": {
+        "subjectId": "entity-c25-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c25-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-opening"
+      ],
+      "examplePhrases": [
+        "触发计数是否成立？",
+        "能确认触发计数吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "触发计数"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c25-03",
+      "labelKey": "query.c25.3",
+      "intent": "verify",
+      "predicate": "verified_c25_3",
+      "slots": {
+        "subjectId": "entity-c25-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c25-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-opening"
+      ],
+      "examplePhrases": [
+        "响铃包络是否成立？",
+        "能确认响铃包络吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "响铃包络"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c25-04",
+      "labelKey": "query.c25.4",
+      "intent": "verify",
+      "predicate": "verified_c25_4",
+      "slots": {
+        "subjectId": "entity-c25-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c25-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-04"
+      ],
+      "examplePhrases": [
+        "防抖参数是否成立？",
+        "能确认防抖参数吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "防抖参数"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c25-05",
+      "labelKey": "query.c25.5",
+      "intent": "verify",
+      "predicate": "verified_c25_5",
+      "slots": {
+        "subjectId": "entity-c25-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c25-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-05"
+      ],
+      "examplePhrases": [
+        "按压间隔是否成立？",
+        "能确认按压间隔吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "按压间隔"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c25-06",
+      "labelKey": "query.c25.6",
+      "intent": "verify",
+      "predicate": "verified_c25_6",
+      "slots": {
+        "subjectId": "entity-c25-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c25-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-06"
+      ],
+      "examplePhrases": [
+        "状态日志是否成立？",
+        "能确认状态日志吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "状态日志"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c25-07",
+      "labelKey": "query.c25.7",
+      "intent": "verify",
+      "predicate": "verified_c25_7",
+      "slots": {
+        "subjectId": "entity-c25-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c25-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-07"
+      ],
+      "examplePhrases": [
+        "扬声器自检是否成立？",
+        "能确认扬声器自检吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "扬声器自检"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c25-08",
+      "labelKey": "query.c25.8",
+      "intent": "verify",
+      "predicate": "verified_c25_8",
+      "slots": {
+        "subjectId": "entity-c25-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c25-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-08"
+      ],
+      "examplePhrases": [
+        "供电曲线是否成立？",
+        "能确认供电曲线吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "供电曲线"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c25-09",
+      "labelKey": "query.c25.9",
+      "intent": "verify",
+      "predicate": "verified_c25_9",
+      "slots": {
+        "subjectId": "entity-c25-subject"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c25-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-09"
+      ],
+      "examplePhrases": [
+        "住户证词是否成立？",
+        "能确认住户证词吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "住户证词"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c25-10",
+      "labelKey": "query.c25.10",
+      "intent": "eliminate",
+      "predicate": "verified_c25_10",
+      "slots": {
+        "subjectId": "entity-c25-subject"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c25-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c25-10"
+      ],
+      "examplePhrases": [
+        "旧电池警告是否成立？",
+        "能确认旧电池警告吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "旧电池警告"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c25-01",
+      "kind": "scene",
+      "titleKey": "evidence.c25.1.title",
+      "observationKey": "evidence.c25.1.observation",
+      "sourceFactIds": [
+        "fact-c25-01"
+      ],
+      "sourceEventIds": [
+        "event-c25-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c25-subject",
+        "location-c25"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c25-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c25/evidence-01.webp",
+      "assetAlt": "按钮接点波形"
+    },
+    {
+      "id": "evidence-c25-02",
+      "kind": "record",
+      "titleKey": "evidence.c25.2.title",
+      "observationKey": "evidence.c25.2.observation",
+      "sourceFactIds": [
+        "fact-c25-02"
+      ],
+      "sourceEventIds": [
+        "event-c25-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c25-subject",
+        "location-c25"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c25-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c25/evidence-02.webp",
+      "assetAlt": "触发计数器"
+    },
+    {
+      "id": "evidence-c25-03",
+      "kind": "object",
+      "titleKey": "evidence.c25.3.title",
+      "observationKey": "evidence.c25.3.observation",
+      "sourceFactIds": [
+        "fact-c25-03",
+        "fact-c25-11"
+      ],
+      "sourceEventIds": [
+        "event-c25-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c25-subject",
+        "location-c25"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c25/evidence-03.webp",
+      "assetAlt": "响铃包络"
+    },
+    {
+      "id": "evidence-c25-04",
+      "kind": "scene",
+      "titleKey": "evidence.c25.4.title",
+      "observationKey": "evidence.c25.4.observation",
+      "sourceFactIds": [
+        "fact-c25-04",
+        "fact-c25-12"
+      ],
+      "sourceEventIds": [
+        "event-c25-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c25-subject",
+        "location-c25"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c25/evidence-04.webp",
+      "assetAlt": "防抖参数"
+    },
+    {
+      "id": "evidence-c25-05",
+      "kind": "record",
+      "titleKey": "evidence.c25.5.title",
+      "observationKey": "evidence.c25.5.observation",
+      "sourceFactIds": [
+        "fact-c25-05",
+        "fact-c25-13"
+      ],
+      "sourceEventIds": [
+        "event-c25-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c25-subject",
+        "location-c25"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c25/evidence-05.webp",
+      "assetAlt": "两次按压间隔"
+    },
+    {
+      "id": "evidence-c25-06",
+      "kind": "object",
+      "titleKey": "evidence.c25.6.title",
+      "observationKey": "evidence.c25.6.observation",
+      "sourceFactIds": [
+        "fact-c25-06",
+        "fact-c25-14"
+      ],
+      "sourceEventIds": [
+        "event-c25-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c25-subject",
+        "location-c25"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c25/evidence-01.webp",
+      "assetAlt": "状态迁移日志"
+    },
+    {
+      "id": "evidence-c25-07",
+      "kind": "scene",
+      "titleKey": "evidence.c25.7.title",
+      "observationKey": "evidence.c25.7.observation",
+      "sourceFactIds": [
+        "fact-c25-07",
+        "fact-c25-15"
+      ],
+      "sourceEventIds": [
+        "event-c25-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c25-subject",
+        "location-c25"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c25/evidence-02.webp",
+      "assetAlt": "扬声器自检"
+    },
+    {
+      "id": "evidence-c25-08",
+      "kind": "record",
+      "titleKey": "evidence.c25.8.title",
+      "observationKey": "evidence.c25.8.observation",
+      "sourceFactIds": [
+        "fact-c25-08",
+        "fact-c25-16"
+      ],
+      "sourceEventIds": [
+        "event-c25-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c25-subject",
+        "location-c25"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c25/evidence-03.webp",
+      "assetAlt": "供电曲线"
+    },
+    {
+      "id": "evidence-c25-09",
+      "kind": "object",
+      "titleKey": "evidence.c25.9.title",
+      "observationKey": "evidence.c25.9.observation",
+      "sourceFactIds": [
+        "fact-c25-09"
+      ],
+      "sourceEventIds": [
+        "event-c25-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c25-subject",
+        "location-c25"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c25/evidence-04.webp",
+      "assetAlt": "室内证词"
+    },
+    {
+      "id": "evidence-c25-10",
+      "kind": "scene",
+      "titleKey": "evidence.c25.10.title",
+      "observationKey": "evidence.c25.10.observation",
+      "sourceFactIds": [
+        "fact-c25-10"
+      ],
+      "sourceEventIds": [
+        "event-c25-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c25-subject",
+        "location-c25"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c25/evidence-05.webp",
+      "assetAlt": "旧电池警告"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c25.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c25-01",
+          "event-c25-02",
+          "event-c25-03",
+          "event-c25-04",
+          "event-c25-05",
+          "event-c25-06",
+          "event-c25-07",
+          "event-c25-08",
+          "event-c25-09"
+        ],
+        "motiveKey": "避免机械抖动造成连续重复响铃"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c25-01",
+        "evidence-c25-02",
+        "evidence-c25-03",
+        "evidence-c25-04",
+        "evidence-c25-05",
+        "evidence-c25-06",
+        "evidence-c25-07",
+        "evidence-c25-08",
+        "evidence-c25-09"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c25-1",
+        "contradiction-c25-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c25-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c25.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "访客谎称按了第二次"
+        ],
+        "motiveKey": "motive-c25-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c25-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c25-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c25-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c25.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "扬声器在第二次按压时临时故障"
+        ],
+        "motiveKey": "motive-c25-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c25-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c25-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c25-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c25-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c25-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c25-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c25-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c25-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c25-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c25-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c25-01",
+      "fact-c25-02",
+      "fact-c25-03",
+      "fact-c25-04",
+      "fact-c25-05",
+      "fact-c25-06",
+      "fact-c25-07",
+      "fact-c25-08",
+      "fact-c25-09"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c25-01",
+      "evidence-c25-02",
+      "evidence-c25-03",
+      "evidence-c25-04",
+      "evidence-c25-05",
+      "evidence-c25-06",
+      "evidence-c25-07",
+      "evidence-c25-08",
+      "evidence-c25-09"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c25-01",
+        "event-c25-02"
+      ],
+      [
+        "event-c25-02",
+        "event-c25-03"
+      ],
+      [
+        "event-c25-03",
+        "event-c25-04"
+      ],
+      [
+        "event-c25-04",
+        "event-c25-05"
+      ],
+      [
+        "event-c25-05",
+        "event-c25-06"
+      ],
+      [
+        "event-c25-06",
+        "event-c25-07"
+      ],
+      [
+        "event-c25-07",
+        "event-c25-08"
+      ],
+      [
+        "event-c25-08",
+        "event-c25-09"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c25-1",
+      "contradiction-c25-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c25-alternative-1",
+      "hypothesis-c25-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c25-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c25-a",
+        "evidenceIds": [
+          "evidence-c25-01",
+          "evidence-c25-02",
+          "evidence-c25-03",
+          "evidence-c25-04",
+          "evidence-c25-05",
+          "evidence-c25-06"
+        ]
+      },
+      {
+        "id": "proof-c25-b",
+        "evidenceIds": [
+          "evidence-c25-01",
+          "evidence-c25-02",
+          "evidence-c25-07",
+          "evidence-c25-08",
+          "evidence-c25-09"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "避免机械抖动造成连续重复响铃"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c25-1",
+        "kind": "state-transition",
+        "boardId": "board-c25-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c25-1-1",
+            "eventId": "event-c25-01"
+          },
+          {
+            "slotId": "slot-c25-1-2",
+            "eventId": "event-c25-03"
+          },
+          {
+            "slotId": "slot-c25-1-3",
+            "eventId": "event-c25-05"
+          },
+          {
+            "slotId": "slot-c25-1-4",
+            "eventId": "event-c25-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c25-01",
+            "toEventId": "event-c25-03",
+            "relation": "transitions-to"
+          },
+          {
+            "fromEventId": "event-c25-03",
+            "toEventId": "event-c25-05",
+            "relation": "transitions-to"
+          },
+          {
+            "fromEventId": "event-c25-05",
+            "toEventId": "event-c25-09",
+            "relation": "transitions-to"
+          }
+        ],
+        "failureCategory": "state-transition"
+      },
+      {
+        "id": "obligation-c25-2",
+        "kind": "measurement",
+        "boardId": "board-c25-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c25-2-1",
+            "eventId": "event-c25-03"
+          },
+          {
+            "slotId": "slot-c25-2-2",
+            "eventId": "event-c25-05"
+          },
+          {
+            "slotId": "slot-c25-2-3",
+            "eventId": "event-c25-07"
+          },
+          {
+            "slotId": "slot-c25-2-4",
+            "eventId": "event-c25-09"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c25-03",
+            "toEventId": "event-c25-05",
+            "relation": "measured-against"
+          },
+          {
+            "fromEventId": "event-c25-05",
+            "toEventId": "event-c25-07",
+            "relation": "measured-against"
+          },
+          {
+            "fromEventId": "event-c25-07",
+            "toEventId": "event-c25-09",
+            "relation": "measured-against"
+          }
+        ],
+        "failureCategory": "measurement"
+      }
+    ],
+    "uniquenessClaim": "两次按压都真实发生，但控制器的十秒防抖窗口把第二次触发合并进第一次响铃周期，触发记录不等于声音次数。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c25-1",
+      "eventId": "event-c25-02",
+      "factIds": [
+        "fact-c25-01"
+      ],
+      "captionKey": "event.c25.2"
+    },
+    {
+      "id": "replay-c25-2",
+      "eventId": "event-c25-03",
+      "factIds": [
+        "fact-c25-02"
+      ],
+      "captionKey": "event.c25.3"
+    },
+    {
+      "id": "replay-c25-3",
+      "eventId": "event-c25-04",
+      "factIds": [
+        "fact-c25-03"
+      ],
+      "captionKey": "event.c25.4"
+    },
+    {
+      "id": "replay-c25-4",
+      "eventId": "event-c25-05",
+      "factIds": [
+        "fact-c25-04"
+      ],
+      "captionKey": "event.c25.5"
+    },
+    {
+      "id": "replay-c25-5",
+      "eventId": "event-c25-06",
+      "factIds": [
+        "fact-c25-05"
+      ],
+      "captionKey": "event.c25.6"
+    },
+    {
+      "id": "replay-c25-6",
+      "eventId": "event-c25-07",
+      "factIds": [
+        "fact-c25-06",
+        "fact-c25-07",
+        "fact-c25-08",
+        "fact-c25-09"
+      ],
+      "captionKey": "event.c25.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c25.title": "没有响起的第二次门铃",
+      "case.c25.surface": "访客在十秒内按了两次门铃，控制器也记录了两次触发；屋内的人却只听见一次。",
+      "case.c25.truth": "两次按压都真实发生，但控制器的十秒防抖窗口把第二次触发合并进第一次响铃周期，触发记录不等于声音次数。",
+      "entity.c25.subject": "关键人物、装置与记录",
+      "location.c25": "门廊",
+      "hypothesis.c25.canonical": "两次按压都真实发生，但控制器的十秒防抖窗口把第二次触发合并进第一次响铃周期，触发记录不等于声音次数。",
+      "hypothesis.c25.alternative.1": "访客谎称按了第二次",
+      "hypothesis.c25.alternative.2": "扬声器在第二次按压时临时故障",
+      "motive.避免机械抖动造成连续重复响铃": "避免机械抖动造成连续重复响铃",
+      "chapter.c25.one": "固定异常",
+      "chapter.c25.two": "统一来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "event.c25.1": "访客第一次按下按钮",
+      "event.c25.2": "控制器登记第一次电平变化",
+      "event.c25.3": "室内铃开始一次完整响铃",
+      "event.c25.4": "防抖窗口保持开启",
+      "event.c25.5": "访客第二次按下按钮",
+      "event.c25.6": "控制器登记第二次电平变化",
+      "event.c25.7": "第二次触发被合并到当前周期",
+      "event.c25.8": "防抖窗口关闭",
+      "event.c25.9": "声学记录只留下一个响铃包络",
+      "event.c25.10": "旧电池警告仍在日志中但没有造成静音",
+      "evidence.c25.1.title": "按钮接点波形",
+      "evidence.c25.1.observation": "波形有两次彼此分离的接点闭合。",
+      "evidence.c25.2.title": "触发计数器",
+      "evidence.c25.2.observation": "控制器累计计数增加了两次。",
+      "evidence.c25.3.title": "响铃包络",
+      "evidence.c25.3.observation": "室内麦克风只记录到一个完整的声音包络。",
+      "evidence.c25.4.title": "防抖参数",
+      "evidence.c25.4.observation": "固件把十秒内的重复触发归入同一响铃周期。",
+      "evidence.c25.5.title": "两次按压间隔",
+      "evidence.c25.5.observation": "两次接点闭合只相隔六点八秒。",
+      "evidence.c25.6.title": "状态迁移日志",
+      "evidence.c25.6.observation": "第二次触发发生时系统仍处于 RINGING 状态。",
+      "evidence.c25.7.title": "扬声器自检",
+      "evidence.c25.7.observation": "扬声器在事后自检中正常发声。",
+      "evidence.c25.8.title": "供电曲线",
+      "evidence.c25.8.observation": "门铃全程电压高于最低工作阈值。",
+      "evidence.c25.9.title": "室内证词",
+      "evidence.c25.9.observation": "住户明确只听到一次连续响铃。",
+      "evidence.c25.10.title": "旧电池警告",
+      "evidence.c25.10.observation": "警告来自一个月前，当前电池已经更换。",
+      "query.c25.1": "按钮波形是否成立？",
+      "query.c25.2": "触发计数是否成立？",
+      "query.c25.3": "响铃包络是否成立？",
+      "query.c25.4": "防抖参数是否成立？",
+      "query.c25.5": "按压间隔是否成立？",
+      "query.c25.6": "状态日志是否成立？",
+      "query.c25.7": "扬声器自检是否成立？",
+      "query.c25.8": "供电曲线是否成立？",
+      "query.c25.9": "住户证词是否成立？",
+      "query.c25.10": "旧电池警告是否成立？",
+      "board.c25.1.title": "状态链 · state-trace",
+      "board.c25.1.slot.1": "起始来源",
+      "board.c25.1.slot.2": "关键变化",
+      "board.c25.1.slot.3": "观测结果",
+      "board.c25.1.slot.4": "排除替代",
+      "board.c25.2.title": "状态链 · measurement-model",
+      "board.c25.2.slot.1": "起始来源",
+      "board.c25.2.slot.2": "关键变化",
+      "board.c25.2.slot.3": "观测结果",
+      "board.c25.2.slot.4": "排除替代"
+    }
+  }
+}

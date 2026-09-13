@@ -24,7 +24,7 @@ export function ArchiveTools({ onImported }: { onImported: () => void }) {
     if (!file) return;
     const validation = await readSaveArchive(file, CASE_SAVE_IDENTITIES);
     if (!validation.ok) {
-      setStatus(`未导入：${validation.reason}。请选择由当前 v0.9 版本导出的存档包。`);
+      setStatus(`未导入：${validation.reason}。请选择与当前案件身份兼容的存档包；原有存档未修改。`);
       event.target.value = "";
       return;
     }
@@ -40,7 +40,7 @@ export function ArchiveTools({ onImported }: { onImported: () => void }) {
 
   return (
     <details className="archiveTools">
-      <summary>存档与版本 <span translate="no">v0.9 SENSORY GOLD</span></summary>
+      <summary>本地存档与备份 <span>可导出全部案件进度</span></summary>
       <div className="archiveToolsBody">
         <p id="archive-status" role="status" aria-live="polite">{status}</p>
         <div>

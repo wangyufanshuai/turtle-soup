@@ -1,0 +1,68 @@
+[
+  {
+    "case": "C01",
+    "viewports": [
+      "390x844",
+      "1440x900"
+    ],
+    "checks": [
+      "reader top layer",
+      "keyboard trap and Escape",
+      "adjacent material refresh",
+      "question draft preserved",
+      "journal persisted across viewport/refresh",
+      "chain deletion and undo"
+    ],
+    "passed": true
+  },
+  {
+    "case": "C03",
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "checks": [
+      "negative clarification and new unsent draft preserved",
+      "continuous reading with keyboard",
+      "cross-page selected material and page survive refresh",
+      "event chain semantics and layout"
+    ],
+    "passed": true
+  },
+  {
+    "case": "C61",
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "checks": [
+      "continuous evidence reading",
+      "public event search",
+      "two boards",
+      "wrong relation submission",
+      "atomic replacement and undo",
+      "mobile solve/replay",
+      "desktop replay",
+      "draft isolation and archive refresh"
+    ],
+    "method": "Visible UI, authoring reference for correct proof; not blind solving",
+    "passed": true
+  },
+  {
+    "case": "C84",
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "checks": [
+      "14-material continuous reader",
+      "causal, interval and counterfactual boards",
+      "complete proof with temporal cycle rejected",
+      "feedback persisted after refresh",
+      "undo cycle, submit, solve and full replay",
+      "verified archive retained after reopening"
+    ],
+    "method": "Visible UI, authoring reference for correct proof; not blind solving",
+    "passed": true
+  }
+]

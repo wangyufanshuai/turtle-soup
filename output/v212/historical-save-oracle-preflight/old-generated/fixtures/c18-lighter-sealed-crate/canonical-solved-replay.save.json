@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c18-lighter-sealed-crate",
+  "caseVersion": 1,
+  "contentHash": "sha256:c18-lighter-sealed-crate-v1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "摆放照片这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准块这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "自动归零这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "零点寄存这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "工具柜这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "变化曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "封条这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "独立吊秤这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "备用电池这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "摆放照片这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准块这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "自动归零这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "零点寄存这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "工具柜这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "变化曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "封条这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "独立吊秤这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "备用电池这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c18"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "摆放照片这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准块这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "自动归零这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "零点寄存这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "工具柜这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "变化曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "封条这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "独立吊秤这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "备用电池这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c18"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "摆放照片这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校准块这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "自动归零这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "零点寄存这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "工具柜这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "变化曲线这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "封条这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "独立吊秤这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "备用电池这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c18"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c18-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c18-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c18-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c18-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c18-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c18-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c18-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c18-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c18-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c18-09",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "完成夜班计量台的自动归零校准"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-07"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-09"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-04",
+      "toItemId": "event-07",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-07",
+      "toItemId": "event-09",
+      "relation": "causes"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

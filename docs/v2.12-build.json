@@ -1,0 +1,21 @@
+{
+  "runId": "v212-2026-09-08T14-33-06-521Z-8fd675da",
+  "releaseProfile": "v2.12-internal-rc",
+  "sourceHead": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "sourceTreeDigest": "be51f064c7694a08a3ab7fd033297ecc54753e3d9efbb906a9281513fecb4163",
+  "profileSha256": "0c58dc769f45bb9d29232b9774bc6d01a06ff1e97229446a224131ce12bf658c",
+  "buildHash": "d56504a241aed110565cbeb6ed239a68603ab4e4bad8c9ba37088f4570e56955",
+  "startedAt": "2026-09-08T14:32:44.784Z",
+  "endedAt": "2026-09-08T14:33:06.932Z",
+  "coverage": "measured",
+  "scope": "Actual Next.js webpack static build and v2.12 Service Worker preparation; no browser behavior inferred",
+  "passed": true,
+  "exitCode": 0,
+  "unchangedDuringBuild": true,
+  "evidence": [
+    {
+      "path": "output/v212/v212-2026-09-08T14-33-06-521Z-8fd675da/build.log",
+      "sha256": "14af4ed75bb7e816a723be0c47dc62d8da24d2123e6d3ee55aabf172f6b8d345"
+    }
+  ]
+}

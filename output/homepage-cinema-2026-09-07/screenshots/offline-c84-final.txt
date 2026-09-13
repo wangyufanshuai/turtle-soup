@@ -1,0 +1,56 @@
+Browser tab: 1, Title: "The Black Soup — 深汤案件档案", URL: "http://127.0.0.1:8139/case/c84-handoff-after-stop/#scene".
+1 AXWebArea The Black Soup — 深汤案件档案, URL: 127.0.0.1:8139/case/c84-handoff-after-stop/#scene
+	2 container
+		3 link Description: 跳到主要内容, Value: 127.0.0.1:8139/case/c84-handoff-after-stop/#main-content
+		4 container main-content
+			5 container
+				6 link Description: 返回全部案件, Value: 127.0.0.1:8139/
+				7 text THE BLACK SOUP ·  C84
+				8 heading 停止以后仍完成的交接, Value: 1
+					9 text 停止以后仍完成的交接
+				10 text 离线可玩  ·  已保存
+				11 pop up button 札记
+				12 button 设置
+			13 container 调查工作区
+				14 checkbox 现场 1 查看异常与位置, Value: 1
+					15 text 现场
+					16 text 1
+					17 text 查看异常与位置
+				18 checkbox 提问 2 验证具体事实, Value: 0
+					19 text 提问
+					20 text 2
+					21 text 验证具体事实
+				22 checkbox 证据 3 检查与取舍, Value: 0
+					23 text 证据
+					24 text 3
+					25 text 检查与取舍
+				26 checkbox 推断 4 组织并证明, Value: 0
+					27 text 推断
+					28 text 4
+					29 text 组织并证明
+			30 container
+				31 text 案件异常 · 先读这一句
+				32 text 系统收到停止命令后，审计记录仍显示最后一次交接已经完成。
+				33 text 先检查现场，再问一个可证实或否定的问题。不必现在猜中真相。
+				34 image 停止以后仍完成的交接的公开现场；必要线索同时以文字给出
+				35 text 全部必要线索均有文字说明
+				36 heading 可以检查, Value: 2
+					37 text 可以检查
+				38 button 综合因果 检查这里
+					39 text 综合因果
+					40 text 检查这里
+				41 button 问一个事实 →
+				42 button 查看公开证据
+			43 container 调查本
+				44 container
+					45 text 调查本
+					46 heading 最近回答, Value: 2
+						47 text 最近回答
+					48 text 0
+				49 text 这里会保留最近的事实回答，调查时可以随时对照。
+				50 container
+					51 text 我的真相
+					52 text entry area (settable) 我的真相 只保存在本机，不参与胜负，也不会发送给 AI。
+					53 text 只保存在本机，不参与胜负，也不会发送给 AI。
+
+The focused UI element is 1 AXWebArea The Black Soup — 深汤案件档案, URL: 127.0.0.1:8139/case/c84-handoff-after-stop/#scene

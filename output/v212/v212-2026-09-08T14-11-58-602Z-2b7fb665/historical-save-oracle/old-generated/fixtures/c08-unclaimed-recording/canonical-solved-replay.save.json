@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c08-unclaimed-recording",
+  "caseVersion": 1,
+  "contentHash": "sha256:c08-unclaimed-recording-v1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "录音是在江舟离开前录的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音被听到时房间里没人吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音是缓存后才写入的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音机后来没电了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音是在20点后才听到的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "是有人回来录的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "文件头能区分创建和修改时间吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧采访是谁的声音？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音是在江舟离开前录的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音被听到时房间里没人吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音是缓存后才写入的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音机后来没电了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音是在20点后才听到的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "是有人回来录的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "文件头能区分创建和修改时间吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧采访是谁的声音？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-sound-room"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-waveform",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-session-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-door-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-memory-card",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-device",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-old-interview",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-console",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-room-seal",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音是在江舟离开前录的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音被听到时房间里没人吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音是缓存后才写入的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音机后来没电了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音是在20点后才听到的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "是有人回来录的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "文件头能区分创建和修改时间吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧采访是谁的声音？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-sound-room"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-waveform",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-session-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-door-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-memory-card",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-device",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-old-interview",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-console",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-room-seal",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音是在江舟离开前录的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音被听到时房间里没人吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音是缓存后才写入的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音机后来没电了吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "录音是在20点后才听到的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "是有人回来录的吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "文件头能区分创建和修改时间吗？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧采访是谁的声音？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-sound-room"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-waveform",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-session-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-door-log",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-memory-card",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-device",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-old-interview",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-console",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-room-seal",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-waveform",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-session-log",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-door-log",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-memory-card",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-device",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-console",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-room-seal",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "motive-buffer-recovery"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

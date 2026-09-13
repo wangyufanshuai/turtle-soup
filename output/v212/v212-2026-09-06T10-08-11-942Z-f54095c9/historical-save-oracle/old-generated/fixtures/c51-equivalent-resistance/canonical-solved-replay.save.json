@@ -1,0 +1,564 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c51-equivalent-resistance",
+  "caseVersion": 1,
+  "contentHash": "sha256:af63236b453adf13b08bf6f74ab6e91ae54dc9d3f90dc0624d8d319e6d4a80a1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "并联网络是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "等效电阻是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "单个元件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "拆下测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "测量端点是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电流路径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "欧姆表是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电阻差异是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络拓扑是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报告口径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "并联网络是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "等效电阻是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "单个元件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "拆下测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "测量端点是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电流路径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "欧姆表是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电阻差异是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络拓扑是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报告口径是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c51"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "并联网络是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "等效电阻是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "单个元件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "拆下测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "测量端点是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电流路径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "欧姆表是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电阻差异是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络拓扑是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报告口径是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c51"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "并联网络是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "等效电阻是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "单个元件是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "拆下测量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "测量端点是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电流路径是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "欧姆表是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "电阻差异是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络拓扑是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "报告口径是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c51"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c51-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c51-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c51-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c51-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c51-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c51-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c51-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c51-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c51-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c51-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c51-10",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "避免把网络等效参数当成元件属性"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "routes-through"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "routes-through"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-10",
+      "relation": "routes-through"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "measured-against"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "measured-against"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-10",
+      "relation": "measured-against"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

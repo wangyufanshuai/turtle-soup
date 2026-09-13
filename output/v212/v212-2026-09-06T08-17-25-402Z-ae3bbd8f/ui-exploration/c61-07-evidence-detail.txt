@@ -1,0 +1,107 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- alert
+- main:
+  - link "← 全部案件":
+    - /url: /
+  - generic: THE BLACK SOUP · C61
+  - heading "少了一圈的胶带" [level=1]
+  - navigation:
+    - generic: 离线可玩 · 已保存
+    - button "设置"
+  - status:
+    - generic: ◇
+    - text: 证据状态已更新；可以继续检查，或把它接入当前证明。
+  - navigation "调查工作区":
+    - button "现场 1 查看异常与位置":
+      - text: 现场
+      - generic: "1"
+      - generic: 查看异常与位置
+    - button "提问 2 验证具体事实":
+      - text: 提问
+      - generic: "2"
+      - generic: 验证具体事实
+    - button "证据 3 检查与取舍" [pressed]:
+      - text: 证据
+      - generic: "3"
+      - generic: 检查与取舍
+    - button "推断 4 组织并证明":
+      - text: 推断
+      - generic: "4"
+      - generic: 组织并证明
+  - text: 检查材料
+  - heading "只保留能支持或反驳当前解释的证据" [level=2]
+  - generic: 0 件加入证明
+  - region "证据架":
+    - generic: 证据材料 / 逐件检查
+    - generic: 检查观察，再决定是否加入我的证明
+    - generic: 1–5 / 11
+    - generic "证据取舍状态":
+      - generic: "0"
+      - text: 接入证明
+      - generic: "1"
+      - text: 保留候选
+      - generic: "0"
+      - text: 暂时搁置
+      - paragraph: 不要求收集全部证据。保留能支持或反驳当前理论的材料即可。
+    - button "01 现场来源 卷盘芯径记录 已检查 · 决定保留或搁置":
+      - generic: "01"
+      - generic: 现场来源
+      - generic: 卷盘芯径记录
+      - emphasis: 已检查 · 决定保留或搁置
+      - generic: ↗
+    - button "02 记录来源 胶带圈数记录 下一步：打开检查":
+      - generic: "02"
+      - generic: 记录来源
+      - generic: 胶带圈数记录
+      - emphasis: 下一步：打开检查
+      - generic: ↗
+    - button "03 物证来源 剩余长度记录 下一步：打开检查":
+      - generic: "03"
+      - generic: 物证来源
+      - generic: 剩余长度记录
+      - emphasis: 下一步：打开检查
+      - generic: ↗
+    - button "04 现场来源 计数器记录 下一步：打开检查":
+      - generic: "04"
+      - generic: 现场来源
+      - generic: 计数器记录
+      - emphasis: 下一步：打开检查
+      - generic: ↗
+    - button "05 记录来源 校准曲线记录 下一步：打开检查":
+      - generic: "05"
+      - generic: 记录来源
+      - generic: 校准曲线记录
+      - emphasis: 下一步：打开检查
+      - generic: ↗
+    - navigation "证据分页":
+      - button "上一组" [disabled]
+      - generic: 1 / 3
+      - button "下一组"
+    - dialog "卷盘芯径记录":
+      - generic: 现场来源 / 已检查
+      - heading "卷盘芯径记录" [level=2]
+      - button "关闭证据详情" [active]: ×
+      - img "卷盘芯径记录的证据局部图；关键观察同时在下方以文字给出"
+      - text: 可以确认的观察
+      - paragraph: 来源材料显示“卷盘芯径”在该阶段可复核。
+      - button "暂时搁置"
+      - button "标记已核实"
+      - button "接入当前证明"
+  - complementary "调查本":
+    - text: 调查本
+    - heading "最近确认的事实" [level=2]
+    - generic: "4"
+    - list:
+      - generic: 是
+      - generic: 卷盘芯径是否成立？
+      - generic: 是
+      - generic: 剩余长度是否成立？
+      - generic: 是
+      - generic: 胶带圈数是否成立？
+      - generic: 是
+      - generic: 卷盘芯径是否成立？
+    - text: 我的真相
+    - textbox "我的真相 只保存在本机，不参与胜负，也不会发送给 AI。":
+      - /placeholder: 我认为发生了什么，以及为什么…
+    - generic: 只保存在本机，不参与胜负，也不会发送给 AI。

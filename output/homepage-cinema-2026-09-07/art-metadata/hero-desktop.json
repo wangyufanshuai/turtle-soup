@@ -1,0 +1,23 @@
+{
+  "id": "hero-desktop",
+  "title": "电影首页主视觉",
+  "kind": "hero",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-ad105c2d-065b-4039-a6e6-6441f0da30a7.png",
+  "sourceSha256": "0e26602a667a336fbb7ef550758afaecdd73e07bcecaace27d1ae679bdc0cec4",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Faithfully recreate ONLY the full-bleed upper cinematic corridor artwork from the selected homepage design. Remove every UI text, button, navigation element, lower five cover cards and all typography completely. Preserve the corridor's architecture and dramatic one-point depth, brushed-steel refrigerated door at right two-thirds, softly lit laboratory shelves at far right, subtle red status indicator, damp concrete floor reflections, deep cool steel-blue palette and lit-but-textured shadows. Closed door, empty corridor, no people, gore, readable signage or evidence values. The leftmost 42% should stay naturally dark, quiet and low detail for DOM title overlay, but the right door and corridor must be clear and detailed. It is a polished cinematic still, not a webpage or poster.\nOutput a landscape 2304 x 1152 image, exactly 2:1. The image must be edge-to-edge scene art.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/hero-desktop.webp",
+      "width": 2304,
+      "height": 1152,
+      "bytes": 111602,
+      "quality": 84,
+      "budget": 500000,
+      "sha256": "74e203db334d32b524fb573b44dab6e05e44b09b63c69b88e1e86c8c4cb9aa40"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.625077+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

@@ -1,0 +1,67 @@
+{
+  "source": "pinned-old-runtime generated oracle",
+  "pinnedRef": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "expected": {
+    "game": {
+      "caseId": "c61-missing-tape-turn",
+      "discoveredEvidenceIds": [
+        "evidence-c61-01"
+      ],
+      "visitedLocationIds": [],
+      "answeredQueryIds": [],
+      "activeRuleIds": [
+        "rule-c61-opening"
+      ],
+      "visibleFactIds": [
+        "fact-c61-01",
+        "fact-c61-02",
+        "fact-c61-03"
+      ]
+    },
+    "transcript": [],
+    "evidenceStates": {
+      "evidence-c61-01": "discovered"
+    },
+    "theoryDrafts": [
+      {
+        "id": "theory-a",
+        "hypothesisId": "hypothesis-canonical",
+        "eventIds": [],
+        "evidenceIds": [],
+        "motiveKey": null
+      },
+      {
+        "id": "theory-b",
+        "hypothesisId": "hypothesis-c61-alternative-1",
+        "eventIds": [],
+        "evidenceIds": [],
+        "motiveKey": null
+      }
+    ],
+    "activeTheoryId": "theory-a",
+    "pendingInterpretation": null,
+    "lastQuestionSnapshot": null,
+    "solved": false,
+    "replayBeatIds": [],
+    "acceptedCommandCount": 0,
+    "unlockedChapterIds": [
+      "chapter-c61-one"
+    ],
+    "reasoningBoards": {
+      "board-c61-1": {
+        "placements": {},
+        "connections": []
+      },
+      "board-c61-2": {
+        "placements": {},
+        "connections": []
+      }
+    },
+    "replayMode": "standard"
+  },
+  "oldLiveEqualsOldReplay": true,
+  "expectations": {
+    "solved": false
+  },
+  "steps": []
+}

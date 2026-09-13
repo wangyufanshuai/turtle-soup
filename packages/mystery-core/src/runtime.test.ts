@@ -97,7 +97,8 @@ test("opening theory workspace does not reveal the delayed phone mechanism", () 
   assert.equal(serialized.includes("手机震动"), false);
   assert.equal(serialized.includes("延时声响"), false);
   assert.equal(serialized.includes("path-delayed-sound"), false);
-  assert.match(serialized, /锁门后进入/);
+  assert.equal(projectPlayerState(caseFile, createRuntimeState(caseFile)).theoryOptions.length, caseFile.hypotheses.length);
+  assert.match(serialized, /待验证解释/);
 });
 
 test("unrecognized and ambiguous questions fail closed without changing game facts", () => {
@@ -175,7 +176,9 @@ test("moving a theory event keeps internal and public event identities consisten
   const draft = moved.projection.theoryDrafts.find((item) => item.id === "theory-a");
   assert.ok(draft);
   assert.equal(draft.eventIds.includes("event-unknown"), false);
-  assert.deepEqual(draft.eventIds, ["event-01", "event-02", "event-03", "event-05", "event-04", "event-07"]);
+  const original = projectPlayerState(caseFile, solved.state).theoryDrafts.find((item) => item.id === "theory-a")!.eventIds;
+  assert.deepEqual(draft.eventIds, [original[0], original[1], original[2], original[4], original[3], original[5]]);
+  assert.ok(draft.eventIds.every((id) => /^event-[a-f\d]{8}$/.test(id)), "old ordinal commands must produce opaque new ids");
 });
 
 test("C01 authoring report catches no dangling references", () => {

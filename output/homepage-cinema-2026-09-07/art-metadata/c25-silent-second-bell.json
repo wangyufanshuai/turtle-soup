@@ -1,0 +1,32 @@
+{
+  "id": "c25-silent-second-bell",
+  "title": "没有响起的第二次门铃",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-de99801b-c101-44ef-9a86-a86cc4187fbc.png",
+  "sourceSha256": "4d4c29165ef591fc9627528187178c972dc84eab01843bb5e169eb4172d6fbcc",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 没有响起的第二次门铃 — 十秒内，访客确实按了两次门铃，控制器也收到两次触发；屋内录音却只有一段完整铃声。第二次触发为何没有变成第二次响铃？\nArt direction: A brass doorbell button on the wall outside a dark doorway, cool porch light, close-up tactile metal.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c25-silent-second-bell.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 107158,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "7f697e424834da58b7358ec5d5dafff99c42a94e1a83c82a1ad8292e70aae200"
+    },
+    {
+      "path": "/assets/home-cinema/c25-silent-second-bell-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 35142,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "daff7ba8e6fea4a7ea3e3bbfc4ea9e4ac9eeb40e4ac202d624dce7ba63532e53"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.588295+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

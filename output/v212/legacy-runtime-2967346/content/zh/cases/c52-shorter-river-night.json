@@ -1,0 +1,2043 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c52-shorter-river-night",
+  "metadata": {
+    "titleKey": "case.c52.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "科学测量",
+      "复杂系统",
+      "来源边界"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:d81f1576ab9dcc8328da8a19a9e7df46e3cde2bdb5eef8e65757937f6e1c9c04",
+    "status": "public-preview",
+    "seasonId": "season-4"
+  },
+  "presentation": {
+    "layoutId": "season4-reference-frame",
+    "sceneAsset": "/assets/cases/c52/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c52/scene-mobile.svg",
+    "palette": "season4-c52",
+    "accent": "#b7d6a4",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "reference-frame-lab",
+    "mobileNavigation": [
+      "现场",
+      "记录",
+      "推理板"
+    ],
+    "boardMode": "reference-frame"
+  },
+  "surface": {
+    "titleKey": "case.c52.title",
+    "textKey": "case.c52.surface",
+    "publicFactIds": [
+      "fact-c52-01",
+      "fact-c52-02",
+      "fact-c52-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c52-01",
+      "query-c52-02",
+      "query-c52-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c52-one",
+      "titleKey": "chapter.c52.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c52-1",
+      "titleKey": "board.c52.1.title",
+      "mode": "reference-frame",
+      "slots": [
+        {
+          "id": "slot-c52-1-1",
+          "labelKey": "board.c52.1.slot.1",
+          "acceptsEventIds": [
+            "event-c52-01"
+          ]
+        },
+        {
+          "id": "slot-c52-1-2",
+          "labelKey": "board.c52.1.slot.2",
+          "acceptsEventIds": [
+            "event-c52-03"
+          ]
+        },
+        {
+          "id": "slot-c52-1-3",
+          "labelKey": "board.c52.1.slot.3",
+          "acceptsEventIds": [
+            "event-c52-05"
+          ]
+        },
+        {
+          "id": "slot-c52-1-4",
+          "labelKey": "board.c52.1.slot.4",
+          "acceptsEventIds": [
+            "event-c52-11"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "reframes",
+        "projects",
+        "aligns"
+      ]
+    },
+    {
+      "id": "board-c52-2",
+      "titleKey": "board.c52.2.title",
+      "mode": "uncertainty-band",
+      "slots": [
+        {
+          "id": "slot-c52-2-1",
+          "labelKey": "board.c52.2.slot.1",
+          "acceptsEventIds": [
+            "event-c52-02"
+          ]
+        },
+        {
+          "id": "slot-c52-2-2",
+          "labelKey": "board.c52.2.slot.2",
+          "acceptsEventIds": [
+            "event-c52-04"
+          ]
+        },
+        {
+          "id": "slot-c52-2-3",
+          "labelKey": "board.c52.2.slot.3",
+          "acceptsEventIds": [
+            "event-c52-06"
+          ]
+        },
+        {
+          "id": "slot-c52-2-4",
+          "labelKey": "board.c52.2.slot.4",
+          "acceptsEventIds": [
+            "event-c52-11"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "bounds",
+        "overlaps",
+        "excludes"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c52-system",
+      "kind": "object",
+      "labelKey": "entity.c52.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c52",
+      "kind": "location",
+      "labelKey": "location.c52",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c52-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "14:00"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-1",
+      "labelKey": "event.c52.1",
+      "effectFactIds": [
+        "fact-c52-01"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c52-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "14:04"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-2",
+      "labelKey": "event.c52.2",
+      "effectFactIds": [
+        "fact-c52-02"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c52-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "14:08"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-3",
+      "labelKey": "event.c52.3",
+      "effectFactIds": [
+        "fact-c52-03"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c52-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "14:12"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-4",
+      "labelKey": "event.c52.4",
+      "effectFactIds": [
+        "fact-c52-04"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c52-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "14:16"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-5",
+      "labelKey": "event.c52.5",
+      "effectFactIds": [
+        "fact-c52-05"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c52-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "14:20"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-6",
+      "labelKey": "event.c52.6",
+      "effectFactIds": [
+        "fact-c52-06"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c52-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "15:24"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-7",
+      "labelKey": "event.c52.7",
+      "effectFactIds": [
+        "fact-c52-07"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c52-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "15:28"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-8",
+      "labelKey": "event.c52.8",
+      "effectFactIds": [
+        "fact-c52-08"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c52-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "15:32"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-9",
+      "labelKey": "event.c52.9",
+      "effectFactIds": [
+        "fact-c52-09"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c52-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "15:36"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-10",
+      "labelKey": "event.c52.10",
+      "effectFactIds": [
+        "fact-c52-10"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c52-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "15:40"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-11",
+      "labelKey": "event.c52.11",
+      "effectFactIds": [
+        "fact-c52-11"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c52-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "15:44"
+      },
+      "participants": [
+        "entity-c52-system"
+      ],
+      "locationId": "location-c52",
+      "action": "step-c52-12",
+      "labelKey": "event.c52.12",
+      "effectFactIds": [
+        "fact-c52-12"
+      ],
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c52-1-1",
+      "type": "precedes",
+      "fromId": "entity-c52-system",
+      "toId": "location-c52",
+      "eventId": "event-c52-01",
+      "factId": "fact-c52-01"
+    },
+    {
+      "id": "relation-c52-1-2",
+      "type": "causes",
+      "fromId": "entity-c52-system",
+      "toId": "location-c52",
+      "eventId": "event-c52-03",
+      "factId": "fact-c52-02"
+    },
+    {
+      "id": "relation-c52-1-3",
+      "type": "causes",
+      "fromId": "entity-c52-system",
+      "toId": "location-c52",
+      "eventId": "event-c52-05",
+      "factId": "fact-c52-03"
+    },
+    {
+      "id": "relation-c52-2-1",
+      "type": "precedes",
+      "fromId": "entity-c52-system",
+      "toId": "location-c52",
+      "eventId": "event-c52-02",
+      "factId": "fact-c52-02"
+    },
+    {
+      "id": "relation-c52-2-2",
+      "type": "causes",
+      "fromId": "entity-c52-system",
+      "toId": "location-c52",
+      "eventId": "event-c52-04",
+      "factId": "fact-c52-03"
+    },
+    {
+      "id": "relation-c52-2-3",
+      "type": "causes",
+      "fromId": "entity-c52-system",
+      "toId": "location-c52",
+      "eventId": "event-c52-06",
+      "factId": "fact-c52-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c52-01",
+      "predicate": "verified_c52_1",
+      "args": {
+        "term": "水位基准"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c52.1"
+    },
+    {
+      "id": "fact-c52-02",
+      "predicate": "verified_c52_2",
+      "args": {
+        "term": "河道长度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c52.2"
+    },
+    {
+      "id": "fact-c52-03",
+      "predicate": "verified_c52_3",
+      "args": {
+        "term": "测绘阈值"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c52.3"
+    },
+    {
+      "id": "fact-c52-04",
+      "predicate": "verified_c52_4",
+      "args": {
+        "term": "河岸位置"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c52.4"
+    },
+    {
+      "id": "fact-c52-05",
+      "predicate": "verified_c52_5",
+      "args": {
+        "term": "夜间读数"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c52.5"
+    },
+    {
+      "id": "fact-c52-06",
+      "predicate": "verified_c52_6",
+      "args": {
+        "term": "基准桩"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c52.6"
+    },
+    {
+      "id": "fact-c52-07",
+      "predicate": "verified_c52_7",
+      "args": {
+        "term": "截面边界"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c52.7"
+    },
+    {
+      "id": "fact-c52-08",
+      "predicate": "verified_c52_8",
+      "args": {
+        "term": "水流速度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c52.8"
+    },
+    {
+      "id": "fact-c52-09",
+      "predicate": "verified_c52_9",
+      "args": {
+        "term": "地图坐标"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c52.9"
+    },
+    {
+      "id": "fact-c52-10",
+      "predicate": "verified_c52_10",
+      "args": {
+        "term": "长度统计"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c52.10"
+    },
+    {
+      "id": "fact-c52-11",
+      "predicate": "verified_c52_11",
+      "args": {
+        "term": "水位基准"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c52.11"
+    },
+    {
+      "id": "fact-c52-12",
+      "predicate": "verified_c52_12",
+      "args": {
+        "term": "河道长度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-12"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c52.12"
+    },
+    {
+      "id": "fact-c52-13",
+      "predicate": "verified_c52_13",
+      "args": {
+        "term": "测绘阈值"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c52.13"
+    },
+    {
+      "id": "fact-c52-14",
+      "predicate": "verified_c52_14",
+      "args": {
+        "term": "河岸位置"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c52.14"
+    },
+    {
+      "id": "fact-c52-15",
+      "predicate": "verified_c52_15",
+      "args": {
+        "term": "夜间读数"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c52.15"
+    },
+    {
+      "id": "fact-c52-16",
+      "predicate": "verified_c52_16",
+      "args": {
+        "term": "基准桩"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c52.16"
+    },
+    {
+      "id": "fact-c52-17",
+      "predicate": "verified_c52_17",
+      "args": {
+        "term": "截面边界"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c52.17"
+    },
+    {
+      "id": "fact-c52-18",
+      "predicate": "verified_c52_18",
+      "args": {
+        "term": "水流速度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c52-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c52-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c52.18"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c52-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-01",
+        "fact-c52-02",
+        "fact-c52-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c52-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-01",
+        "fact-c52-02",
+        "fact-c52-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c52-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-02",
+        "fact-c52-14"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c52-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-03",
+        "fact-c52-15"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c52-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-04",
+        "fact-c52-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c52-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-05",
+        "fact-c52-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c52-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-06",
+        "fact-c52-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c52-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-07"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c52-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-08"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c52-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c52-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c52-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c52-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c52-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c52-12"
+      ],
+      "spoilerLevel": "sensitive"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c52-01",
+      "labelKey": "query.c52.1",
+      "intent": "verify",
+      "predicate": "verified_c52_1",
+      "slots": {
+        "subjectId": "entity-c52-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c52-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-opening"
+      ],
+      "examplePhrases": [
+        "水位基准是否成立？",
+        "能确认水位基准吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "水位基准"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c52-02",
+      "labelKey": "query.c52.2",
+      "intent": "verify",
+      "predicate": "verified_c52_2",
+      "slots": {
+        "subjectId": "entity-c52-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c52-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-opening"
+      ],
+      "examplePhrases": [
+        "河道长度是否成立？",
+        "能确认河道长度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "河道长度"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c52-03",
+      "labelKey": "query.c52.3",
+      "intent": "verify",
+      "predicate": "verified_c52_3",
+      "slots": {
+        "subjectId": "entity-c52-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c52-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-opening"
+      ],
+      "examplePhrases": [
+        "测绘阈值是否成立？",
+        "能确认测绘阈值吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "测绘阈值"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c52-04",
+      "labelKey": "query.c52.4",
+      "intent": "verify",
+      "predicate": "verified_c52_4",
+      "slots": {
+        "subjectId": "entity-c52-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c52-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-04"
+      ],
+      "examplePhrases": [
+        "河岸位置是否成立？",
+        "能确认河岸位置吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "河岸位置"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c52-05",
+      "labelKey": "query.c52.5",
+      "intent": "verify",
+      "predicate": "verified_c52_5",
+      "slots": {
+        "subjectId": "entity-c52-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c52-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-05"
+      ],
+      "examplePhrases": [
+        "夜间读数是否成立？",
+        "能确认夜间读数吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "夜间读数"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c52-06",
+      "labelKey": "query.c52.6",
+      "intent": "verify",
+      "predicate": "verified_c52_6",
+      "slots": {
+        "subjectId": "entity-c52-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c52-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-06"
+      ],
+      "examplePhrases": [
+        "基准桩是否成立？",
+        "能确认基准桩吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "基准桩"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c52-07",
+      "labelKey": "query.c52.7",
+      "intent": "verify",
+      "predicate": "verified_c52_7",
+      "slots": {
+        "subjectId": "entity-c52-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c52-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-07"
+      ],
+      "examplePhrases": [
+        "截面边界是否成立？",
+        "能确认截面边界吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "截面边界"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c52-08",
+      "labelKey": "query.c52.8",
+      "intent": "verify",
+      "predicate": "verified_c52_8",
+      "slots": {
+        "subjectId": "entity-c52-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c52-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-08"
+      ],
+      "examplePhrases": [
+        "水流速度是否成立？",
+        "能确认水流速度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "水流速度"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c52-09",
+      "labelKey": "query.c52.9",
+      "intent": "verify",
+      "predicate": "verified_c52_9",
+      "slots": {
+        "subjectId": "entity-c52-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c52-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-09"
+      ],
+      "examplePhrases": [
+        "地图坐标是否成立？",
+        "能确认地图坐标吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "地图坐标"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c52-10",
+      "labelKey": "query.c52.10",
+      "intent": "verify",
+      "predicate": "verified_c52_10",
+      "slots": {
+        "subjectId": "entity-c52-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c52-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c52-10"
+      ],
+      "examplePhrases": [
+        "长度统计是否成立？",
+        "能确认长度统计吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "长度统计"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c52-01",
+      "kind": "scene",
+      "titleKey": "evidence.c52.1.title",
+      "observationKey": "evidence.c52.1.observation",
+      "sourceFactIds": [
+        "fact-c52-01",
+        "fact-c52-02",
+        "fact-c52-03"
+      ],
+      "sourceEventIds": [
+        "event-c52-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c52-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c52/evidence-01.svg",
+      "assetAlt": "水位基准"
+    },
+    {
+      "id": "evidence-c52-02",
+      "kind": "record",
+      "titleKey": "evidence.c52.2.title",
+      "observationKey": "evidence.c52.2.observation",
+      "sourceFactIds": [
+        "fact-c52-02",
+        "fact-c52-14"
+      ],
+      "sourceEventIds": [
+        "event-c52-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c52-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c52/evidence-02.svg",
+      "assetAlt": "河道长度"
+    },
+    {
+      "id": "evidence-c52-03",
+      "kind": "object",
+      "titleKey": "evidence.c52.3.title",
+      "observationKey": "evidence.c52.3.observation",
+      "sourceFactIds": [
+        "fact-c52-03",
+        "fact-c52-15"
+      ],
+      "sourceEventIds": [
+        "event-c52-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c52/evidence-03.svg",
+      "assetAlt": "测绘阈值"
+    },
+    {
+      "id": "evidence-c52-04",
+      "kind": "scene",
+      "titleKey": "evidence.c52.4.title",
+      "observationKey": "evidence.c52.4.observation",
+      "sourceFactIds": [
+        "fact-c52-04",
+        "fact-c52-16"
+      ],
+      "sourceEventIds": [
+        "event-c52-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c52/evidence-04.svg",
+      "assetAlt": "河岸位置"
+    },
+    {
+      "id": "evidence-c52-05",
+      "kind": "record",
+      "titleKey": "evidence.c52.5.title",
+      "observationKey": "evidence.c52.5.observation",
+      "sourceFactIds": [
+        "fact-c52-05",
+        "fact-c52-17"
+      ],
+      "sourceEventIds": [
+        "event-c52-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c52/evidence-05.svg",
+      "assetAlt": "夜间读数"
+    },
+    {
+      "id": "evidence-c52-06",
+      "kind": "object",
+      "titleKey": "evidence.c52.6.title",
+      "observationKey": "evidence.c52.6.observation",
+      "sourceFactIds": [
+        "fact-c52-06",
+        "fact-c52-18"
+      ],
+      "sourceEventIds": [
+        "event-c52-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c52/evidence-01.svg",
+      "assetAlt": "基准桩"
+    },
+    {
+      "id": "evidence-c52-07",
+      "kind": "scene",
+      "titleKey": "evidence.c52.7.title",
+      "observationKey": "evidence.c52.7.observation",
+      "sourceFactIds": [
+        "fact-c52-07"
+      ],
+      "sourceEventIds": [
+        "event-c52-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c52/evidence-02.svg",
+      "assetAlt": "截面边界"
+    },
+    {
+      "id": "evidence-c52-08",
+      "kind": "record",
+      "titleKey": "evidence.c52.8.title",
+      "observationKey": "evidence.c52.8.observation",
+      "sourceFactIds": [
+        "fact-c52-08"
+      ],
+      "sourceEventIds": [
+        "event-c52-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c52/evidence-03.svg",
+      "assetAlt": "水流速度"
+    },
+    {
+      "id": "evidence-c52-09",
+      "kind": "object",
+      "titleKey": "evidence.c52.9.title",
+      "observationKey": "evidence.c52.9.observation",
+      "sourceFactIds": [
+        "fact-c52-09"
+      ],
+      "sourceEventIds": [
+        "event-c52-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c52/evidence-04.svg",
+      "assetAlt": "地图坐标"
+    },
+    {
+      "id": "evidence-c52-10",
+      "kind": "scene",
+      "titleKey": "evidence.c52.10.title",
+      "observationKey": "evidence.c52.10.observation",
+      "sourceFactIds": [
+        "fact-c52-10"
+      ],
+      "sourceEventIds": [
+        "event-c52-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c52/evidence-05.svg",
+      "assetAlt": "长度统计"
+    },
+    {
+      "id": "evidence-c52-11",
+      "kind": "record",
+      "titleKey": "evidence.c52.11.title",
+      "observationKey": "evidence.c52.11.observation",
+      "sourceFactIds": [
+        "fact-c52-11"
+      ],
+      "sourceEventIds": [
+        "event-c52-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c52/evidence-01.svg",
+      "assetAlt": "水位基准"
+    },
+    {
+      "id": "evidence-c52-12",
+      "kind": "object",
+      "titleKey": "evidence.c52.12.title",
+      "observationKey": "evidence.c52.12.observation",
+      "sourceFactIds": [
+        "fact-c52-12"
+      ],
+      "sourceEventIds": [
+        "event-c52-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c52-system",
+        "location-c52"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c52/evidence-02.svg",
+      "assetAlt": "河道长度"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c52.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c52-01",
+          "event-c52-02",
+          "event-c52-03",
+          "event-c52-04",
+          "event-c52-05",
+          "event-c52-06",
+          "event-c52-07",
+          "event-c52-08",
+          "event-c52-09",
+          "event-c52-10",
+          "event-c52-11"
+        ],
+        "motiveKey": "在基准变化时保持地理长度可比"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c52-01",
+        "evidence-c52-02",
+        "evidence-c52-03",
+        "evidence-c52-04",
+        "evidence-c52-05",
+        "evidence-c52-06",
+        "evidence-c52-07",
+        "evidence-c52-08",
+        "evidence-c52-09",
+        "evidence-c52-10",
+        "evidence-c52-11"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c52-1",
+        "contradiction-c52-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c52-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c52.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "河道夜间真的收缩了"
+        ],
+        "motiveKey": "motive-c52-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c52-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c52-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c52-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c52.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "测绘仪在夜间失准"
+        ],
+        "motiveKey": "motive-c52-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c52-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c52-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c52-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c52-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c52-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c52-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c52-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c52-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c52-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c52-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c52-01",
+      "fact-c52-02",
+      "fact-c52-03",
+      "fact-c52-04",
+      "fact-c52-05",
+      "fact-c52-06",
+      "fact-c52-07",
+      "fact-c52-08",
+      "fact-c52-09",
+      "fact-c52-10",
+      "fact-c52-11"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c52-01",
+      "evidence-c52-02",
+      "evidence-c52-03",
+      "evidence-c52-04",
+      "evidence-c52-05",
+      "evidence-c52-06",
+      "evidence-c52-07",
+      "evidence-c52-08",
+      "evidence-c52-09",
+      "evidence-c52-10",
+      "evidence-c52-11"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c52-01",
+        "event-c52-02"
+      ],
+      [
+        "event-c52-02",
+        "event-c52-03"
+      ],
+      [
+        "event-c52-03",
+        "event-c52-04"
+      ],
+      [
+        "event-c52-04",
+        "event-c52-05"
+      ],
+      [
+        "event-c52-05",
+        "event-c52-06"
+      ],
+      [
+        "event-c52-06",
+        "event-c52-07"
+      ],
+      [
+        "event-c52-07",
+        "event-c52-08"
+      ],
+      [
+        "event-c52-08",
+        "event-c52-09"
+      ],
+      [
+        "event-c52-09",
+        "event-c52-10"
+      ],
+      [
+        "event-c52-10",
+        "event-c52-11"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c52-1",
+      "contradiction-c52-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c52-alternative-1",
+      "hypothesis-c52-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c52-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c52-a",
+        "evidenceIds": [
+          "evidence-c52-01",
+          "evidence-c52-02",
+          "evidence-c52-03",
+          "evidence-c52-04",
+          "evidence-c52-05",
+          "evidence-c52-06",
+          "evidence-c52-07",
+          "evidence-c52-08"
+        ]
+      },
+      {
+        "id": "proof-c52-b",
+        "evidenceIds": [
+          "evidence-c52-01",
+          "evidence-c52-02",
+          "evidence-c52-09",
+          "evidence-c52-10",
+          "evidence-c52-11"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "在基准变化时保持地理长度可比"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c52-1",
+        "kind": "space",
+        "boardId": "board-c52-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c52-1-1",
+            "eventId": "event-c52-01"
+          },
+          {
+            "slotId": "slot-c52-1-2",
+            "eventId": "event-c52-03"
+          },
+          {
+            "slotId": "slot-c52-1-3",
+            "eventId": "event-c52-05"
+          },
+          {
+            "slotId": "slot-c52-1-4",
+            "eventId": "event-c52-11"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c52-01",
+            "toEventId": "event-c52-03",
+            "relation": "reframes"
+          },
+          {
+            "fromEventId": "event-c52-03",
+            "toEventId": "event-c52-05",
+            "relation": "reframes"
+          },
+          {
+            "fromEventId": "event-c52-05",
+            "toEventId": "event-c52-11",
+            "relation": "reframes"
+          }
+        ],
+        "failureCategory": "space"
+      },
+      {
+        "id": "obligation-c52-2",
+        "kind": "measurement",
+        "boardId": "board-c52-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c52-2-1",
+            "eventId": "event-c52-02"
+          },
+          {
+            "slotId": "slot-c52-2-2",
+            "eventId": "event-c52-04"
+          },
+          {
+            "slotId": "slot-c52-2-3",
+            "eventId": "event-c52-06"
+          },
+          {
+            "slotId": "slot-c52-2-4",
+            "eventId": "event-c52-11"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c52-02",
+            "toEventId": "event-c52-04",
+            "relation": "bounds"
+          },
+          {
+            "fromEventId": "event-c52-04",
+            "toEventId": "event-c52-06",
+            "relation": "bounds"
+          },
+          {
+            "fromEventId": "event-c52-06",
+            "toEventId": "event-c52-11",
+            "relation": "bounds"
+          }
+        ],
+        "failureCategory": "measurement"
+      }
+    ],
+    "uniquenessClaim": "测量使用的水位基准点被临时抬高，截面阈值变化让可见河段变短，河道本身没有改变。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c52-1",
+      "eventId": "event-c52-02",
+      "factIds": [
+        "fact-c52-01"
+      ],
+      "captionKey": "event.c52.2"
+    },
+    {
+      "id": "replay-c52-2",
+      "eventId": "event-c52-03",
+      "factIds": [
+        "fact-c52-02"
+      ],
+      "captionKey": "event.c52.3"
+    },
+    {
+      "id": "replay-c52-3",
+      "eventId": "event-c52-04",
+      "factIds": [
+        "fact-c52-03"
+      ],
+      "captionKey": "event.c52.4"
+    },
+    {
+      "id": "replay-c52-4",
+      "eventId": "event-c52-05",
+      "factIds": [
+        "fact-c52-04"
+      ],
+      "captionKey": "event.c52.5"
+    },
+    {
+      "id": "replay-c52-5",
+      "eventId": "event-c52-06",
+      "factIds": [
+        "fact-c52-05"
+      ],
+      "captionKey": "event.c52.6"
+    },
+    {
+      "id": "replay-c52-6",
+      "eventId": "event-c52-07",
+      "factIds": [
+        "fact-c52-01",
+        "fact-c52-02",
+        "fact-c52-03",
+        "fact-c52-04",
+        "fact-c52-05",
+        "fact-c52-06",
+        "fact-c52-07",
+        "fact-c52-08",
+        "fact-c52-09",
+        "fact-c52-10",
+        "fact-c52-11"
+      ],
+      "captionKey": "event.c52.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c52.title": "夜里变短的河",
+      "case.c52.surface": "夜间测绘显示河道长度变短，河岸和水流都没有移动。",
+      "case.c52.truth": "测量使用的水位基准点被临时抬高，截面阈值变化让可见河段变短，河道本身没有改变。",
+      "entity.c52.system": "测量系统与记录链",
+      "location.c52": "科学系统现场",
+      "hypothesis.c52.canonical": "测量使用的水位基准点被临时抬高，截面阈值变化让可见河段变短，河道本身没有改变。",
+      "hypothesis.c52.alternative.1": "河道夜间真的收缩了",
+      "hypothesis.c52.alternative.2": "测绘仪在夜间失准",
+      "motive.在基准变化时保持地理长度可比": "在基准变化时保持地理长度可比",
+      "chapter.c52.one": "固定异常",
+      "chapter.c52.two": "统一测量边界",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c52.1": "水位基准是否成立？",
+      "query.c52.2": "河道长度是否成立？",
+      "query.c52.3": "测绘阈值是否成立？",
+      "query.c52.4": "河岸位置是否成立？",
+      "query.c52.5": "夜间读数是否成立？",
+      "query.c52.6": "基准桩是否成立？",
+      "query.c52.7": "截面边界是否成立？",
+      "query.c52.8": "水流速度是否成立？",
+      "query.c52.9": "地图坐标是否成立？",
+      "query.c52.10": "长度统计是否成立？",
+      "event.c52.1": "阶段 1：水位基准进入记录链",
+      "event.c52.2": "阶段 2：河道长度进入记录链",
+      "event.c52.3": "阶段 3：测绘阈值进入记录链",
+      "event.c52.4": "阶段 4：河岸位置进入记录链",
+      "event.c52.5": "阶段 5：夜间读数进入记录链",
+      "event.c52.6": "阶段 6：基准桩进入记录链",
+      "event.c52.7": "阶段 7：截面边界进入记录链",
+      "event.c52.8": "阶段 8：水流速度进入记录链",
+      "event.c52.9": "阶段 9：地图坐标进入记录链",
+      "event.c52.10": "阶段 10：长度统计进入记录链",
+      "event.c52.11": "阶段 11：水位基准进入记录链",
+      "event.c52.12": "阶段 12：河道长度进入记录链",
+      "evidence.c52.1.title": "水位基准记录",
+      "evidence.c52.1.observation": "来源记录显示“水位基准”在该阶段保持可复核。",
+      "evidence.c52.2.title": "河道长度记录",
+      "evidence.c52.2.observation": "来源记录显示“河道长度”在该阶段保持可复核。",
+      "evidence.c52.3.title": "测绘阈值记录",
+      "evidence.c52.3.observation": "来源记录显示“测绘阈值”在该阶段保持可复核。",
+      "evidence.c52.4.title": "河岸位置记录",
+      "evidence.c52.4.observation": "来源记录显示“河岸位置”在该阶段保持可复核。",
+      "evidence.c52.5.title": "夜间读数记录",
+      "evidence.c52.5.observation": "来源记录显示“夜间读数”在该阶段保持可复核。",
+      "evidence.c52.6.title": "基准桩记录",
+      "evidence.c52.6.observation": "来源记录显示“基准桩”在该阶段保持可复核。",
+      "evidence.c52.7.title": "截面边界记录",
+      "evidence.c52.7.observation": "来源记录显示“截面边界”在该阶段保持可复核。",
+      "evidence.c52.8.title": "水流速度记录",
+      "evidence.c52.8.observation": "来源记录显示“水流速度”在该阶段保持可复核。",
+      "evidence.c52.9.title": "地图坐标记录",
+      "evidence.c52.9.observation": "来源记录显示“地图坐标”在该阶段保持可复核。",
+      "evidence.c52.10.title": "长度统计记录",
+      "evidence.c52.10.observation": "来源记录显示“长度统计”在该阶段保持可复核。",
+      "evidence.c52.11.title": "水位基准记录",
+      "evidence.c52.11.observation": "来源记录显示“水位基准”在该阶段保持可复核。",
+      "evidence.c52.12.title": "河道长度记录",
+      "evidence.c52.12.observation": "来源记录显示“河道长度”在该阶段保持可复核。",
+      "board.c52.1.title": "夜里变短的河 · reference-frame",
+      "board.c52.1.slot.1": "起始来源",
+      "board.c52.1.slot.2": "关键变化",
+      "board.c52.1.slot.3": "观测结果",
+      "board.c52.1.slot.4": "排除替代",
+      "board.c52.2.title": "夜里变短的河 · uncertainty-band",
+      "board.c52.2.slot.1": "起始来源",
+      "board.c52.2.slot.2": "关键变化",
+      "board.c52.2.slot.3": "观测结果",
+      "board.c52.2.slot.4": "排除替代"
+    }
+  }
+}

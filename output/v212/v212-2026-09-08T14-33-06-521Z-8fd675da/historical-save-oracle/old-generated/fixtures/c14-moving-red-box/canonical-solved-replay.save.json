@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c14-moving-red-box",
+  "caseVersion": 1,
+  "contentHash": "sha256:c14-moving-red-box-v1",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "粉尘圈这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "闸门这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "地轨许可这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "栏杆解锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "轨道磨痕这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "新卡位这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位钉这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "闸机画面这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "边界位置这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧货签这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "粉尘圈这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "闸门这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "地轨许可这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "栏杆解锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "轨道磨痕这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "新卡位这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位钉这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "闸机画面这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "边界位置这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧货签这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c14"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "粉尘圈这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "闸门这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "地轨许可这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "栏杆解锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "轨道磨痕这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "新卡位这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位钉这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "闸机画面这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "边界位置这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧货签这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c14"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-10",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "粉尘圈这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "闸门这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "地轨许可这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "栏杆解锁这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "轨道磨痕这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "新卡位这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "定位钉这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "闸机画面这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "边界位置这条信息是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧货签这条信息是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c14"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c14-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c14-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c14-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c14-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c14-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c14-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c14-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c14-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c14-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c14-09",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "为清晨大型设备进场扩大维护区"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-07"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-09"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-04",
+      "toItemId": "event-07",
+      "relation": "causes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-07",
+      "toItemId": "event-09",
+      "relation": "causes"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

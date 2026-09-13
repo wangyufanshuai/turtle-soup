@@ -1,0 +1,32 @@
+{
+  "id": "c37-zeroed-pressure-gauge",
+  "title": "回到零点的压力表",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-3652fbc3-fde7-4f8b-ae3b-1a8bfd3a5485.png",
+  "sourceSha256": "11a11d5f2c6a3f26ba29e775f59840ad0f61c1ff7b64a1d450720427ea858cb1",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 回到零点的压力表 — 管线泄压后，机械压力表的指针回到零线。环境温度改变，再用独立传感器复测时，两套读数却不一致。指针回零究竟证明了什么？\nArt direction: A close-up old mechanical pressure gauge mounted on an industrial pipeline, needle and markings visually indistinct.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c37-zeroed-pressure-gauge.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 63978,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "42d09739f1be08c921191dbdd9a9759b0df3de5bedfeee0cf5a269d9d901023f"
+    },
+    {
+      "path": "/assets/home-cinema/c37-zeroed-pressure-gauge-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 21170,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "ed2116e235f2272ad284f80c880e3b0b98596d15382de8e272c645acfc5e2445"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.594148+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

@@ -1,0 +1,3 @@
+{"pinnedRef":"29673463024b036d9ad7eeb1aeba6973113f635a","caseCount":84,"compatibleFixtures":128,"corruptionRegressions":1,"humanParticipants":0}
+(node:1320) ExperimentalWarning: Transform Types is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

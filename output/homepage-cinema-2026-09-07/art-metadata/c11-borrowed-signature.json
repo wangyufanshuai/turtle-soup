@@ -1,0 +1,32 @@
+{
+  "id": "c11-borrowed-signature",
+  "title": "借来的签名",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-531466c0-ec09-480c-a1e0-eee6298d87cb.png",
+  "sourceSha256": "b5659dd4914f8370b10a01bb34b62cb3881321404522c1e6c8dd0e20db85efa9",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 借来的签名 — 合同上的签名在魏宁到场前就已经出现，封存时间却没有错。是谁签的？\nArt direction: An unsigned-looking contract folder and fountain pen on an empty office desk, unmarked paper and archival string.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c11-borrowed-signature.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 60610,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "d04ffd147a10af311a37544d126188f75fb2e2021ec9b337bcb512970c371f30"
+    },
+    {
+      "path": "/assets/home-cinema/c11-borrowed-signature-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 23488,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "1233f4e6b76ccbf601516bc3ef9634a9d77676e4d3fb3c1ad45a12ded8f3b627"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.581377+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

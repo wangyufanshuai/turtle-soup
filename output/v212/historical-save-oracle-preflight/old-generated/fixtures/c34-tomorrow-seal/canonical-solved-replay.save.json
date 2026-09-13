@@ -1,0 +1,622 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c34-tomorrow-seal",
+  "caseVersion": 1,
+  "contentHash": "sha256:4a681813f17e5b044e331d4258d4c14ff88c09c58d9643ed9aad11c54e53ef88",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "出库批次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "打印策略是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "唯一序列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "保管袋是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "领用签收是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "封存记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "货位录像是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "出库扫描是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "收货核验是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "打印同步是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "作废封条是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "出库批次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "打印策略是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "唯一序列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "保管袋是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "领用签收是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "封存记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "货位录像是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "出库扫描是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "收货核验是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "打印同步是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "作废封条是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c34"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-12",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "出库批次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "打印策略是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "唯一序列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "保管袋是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "领用签收是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "封存记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "货位录像是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "出库扫描是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "收货核验是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "打印同步是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "作废封条是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c34"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-12",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "出库批次是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "打印策略是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "唯一序列是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "保管袋是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "领用签收是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "现场帧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "封存记录是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "货位录像是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "出库扫描是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "收货核验是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "打印同步是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "作废封条是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c34"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c34-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c34-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c34-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c34-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c34-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c34-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c34-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c34-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c34-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c34-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c34-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c34-11",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "提前准备次日高峰出库批次"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-11"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-11",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-07"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-11"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "precedes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-05",
+      "toItemId": "event-07",
+      "relation": "precedes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-07",
+      "toItemId": "event-11",
+      "relation": "precedes"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

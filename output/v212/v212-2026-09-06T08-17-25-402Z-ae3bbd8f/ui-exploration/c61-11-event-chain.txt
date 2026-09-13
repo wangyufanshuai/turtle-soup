@@ -1,0 +1,189 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- alert
+- main:
+  - link "← 全部案件":
+    - /url: /
+  - generic: THE BLACK SOUP · C61
+  - heading "少了一圈的胶带" [level=1]
+  - navigation:
+    - generic: 离线可玩 · 已保存
+    - button "设置"
+  - status:
+    - generic: ◇
+    - text: 调查记录已更新。
+  - navigation "调查工作区":
+    - button "现场 1 查看异常与位置":
+      - text: 现场
+      - generic: "1"
+      - generic: 查看异常与位置
+    - button "提问 2 验证具体事实":
+      - text: 提问
+      - generic: "2"
+      - generic: 验证具体事实
+    - button "证据 3 检查与取舍":
+      - text: 证据
+      - generic: "3"
+      - generic: 检查与取舍
+    - button "推断 4 组织并证明" [pressed]:
+      - text: 推断
+      - generic: "4"
+      - generic: 组织并证明
+  - text: 我的推断
+  - heading "让证据支持你的解释" [level=2]
+  - navigation "推断步骤":
+    - button "暂定解释 已选解释":
+      - generic: 暂定解释
+      - generic: 已选解释
+    - button "推理板 0/8 槽":
+      - generic: 推理板
+      - generic: 0/8 槽
+    - button "事件链 10 个事件" [pressed]:
+      - generic: 事件链
+      - generic: 10 个事件
+    - button "证明篮 10 件证据":
+      - generic: 证明篮
+      - generic: 10 件证据
+  - region "我的事件链":
+    - generic: 直接推理 / 时间链
+    - heading "我的事件链" [level=3]
+    - generic: 10 / 10
+    - paragraph: 从已经公开的事件中选择与你的解释有关的片段，按发生顺序排列；再用证据说明它们为什么相连。
+    - generic "公开事件片":
+      - button "20:16 阶段 5：校准曲线进入记录链 已放置" [disabled]:
+        - time: 20:16
+        - generic: 阶段 5：校准曲线进入记录链
+        - generic: 已放置
+      - button "20:04 阶段 2：胶带圈数进入记录链 已放置" [disabled]:
+        - time: 20:04
+        - generic: 阶段 2：胶带圈数进入记录链
+        - generic: 已放置
+      - button "20:20 阶段 6：卷盘更换进入记录链 已放置" [disabled]:
+        - time: 20:20
+        - generic: 阶段 6：卷盘更换进入记录链
+        - generic: 已放置
+      - button "21:24 阶段 7：带材厚度进入记录链 已放置" [disabled]:
+        - time: 21:24
+        - generic: 阶段 7：带材厚度进入记录链
+        - generic: 已放置
+      - button "20:08 阶段 3：剩余长度进入记录链 已放置" [disabled]:
+        - time: 20:08
+        - generic: 阶段 3：剩余长度进入记录链
+        - generic: 已放置
+      - button "21:28 阶段 8：长度测量进入记录链 已放置" [disabled]:
+        - time: 21:28
+        - generic: 阶段 8：长度测量进入记录链
+        - generic: 已放置
+      - button "20:00 阶段 1：卷盘芯径进入记录链 已放置" [disabled]:
+        - time: 20:00
+        - generic: 阶段 1：卷盘芯径进入记录链
+        - generic: 已放置
+      - button "21:36 阶段 10：剩余材料进入记录链 已放置" [disabled]:
+        - time: 21:36
+        - generic: 阶段 10：剩余材料进入记录链
+        - generic: 已放置
+      - button "21:32 阶段 9：标尺读数进入记录链 已放置" [disabled]:
+        - time: 21:32
+        - generic: 阶段 9：标尺读数进入记录链
+        - generic: 已放置
+      - button "20:12 阶段 4：计数器进入记录链 已放置" [disabled]:
+        - time: 20:12
+        - generic: 阶段 4：计数器进入记录链
+        - generic: 已放置
+    - article:
+      - generic: 01 / 事件
+      - time: 20:00
+      - generic: 阶段 1：卷盘芯径进入记录链
+      - navigation:
+        - button "阶段 1：卷盘芯径进入记录链向前移动" [disabled]: ←
+        - button "阶段 1：卷盘芯径进入记录链向后移动": →
+        - button "移除阶段 1：卷盘芯径进入记录链": ×
+    - article:
+      - generic: 02 / 事件
+      - time: 20:04
+      - generic: 阶段 2：胶带圈数进入记录链
+      - navigation:
+        - button "阶段 2：胶带圈数进入记录链向前移动": ←
+        - button "阶段 2：胶带圈数进入记录链向后移动": →
+        - button "移除阶段 2：胶带圈数进入记录链": ×
+    - article:
+      - generic: 03 / 事件
+      - time: 20:08
+      - generic: 阶段 3：剩余长度进入记录链
+      - navigation:
+        - button "阶段 3：剩余长度进入记录链向前移动": ←
+        - button "阶段 3：剩余长度进入记录链向后移动": →
+        - button "移除阶段 3：剩余长度进入记录链": ×
+    - article:
+      - generic: 04 / 事件
+      - time: 20:12
+      - generic: 阶段 4：计数器进入记录链
+      - navigation:
+        - button "阶段 4：计数器进入记录链向前移动": ←
+        - button "阶段 4：计数器进入记录链向后移动": →
+        - button "移除阶段 4：计数器进入记录链": ×
+    - article:
+      - generic: 05 / 事件
+      - time: 20:16
+      - generic: 阶段 5：校准曲线进入记录链
+      - navigation:
+        - button "阶段 5：校准曲线进入记录链向前移动": ←
+        - button "阶段 5：校准曲线进入记录链向后移动": →
+        - button "移除阶段 5：校准曲线进入记录链": ×
+    - article:
+      - generic: 06 / 事件
+      - time: 20:20
+      - generic: 阶段 6：卷盘更换进入记录链
+      - navigation:
+        - button "阶段 6：卷盘更换进入记录链向前移动": ←
+        - button "阶段 6：卷盘更换进入记录链向后移动": →
+        - button "移除阶段 6：卷盘更换进入记录链": ×
+    - article:
+      - generic: 07 / 事件
+      - time: 21:24
+      - generic: 阶段 7：带材厚度进入记录链
+      - navigation:
+        - button "阶段 7：带材厚度进入记录链向前移动": ←
+        - button "阶段 7：带材厚度进入记录链向后移动": →
+        - button "移除阶段 7：带材厚度进入记录链": ×
+    - article:
+      - generic: 08 / 事件
+      - time: 21:28
+      - generic: 阶段 8：长度测量进入记录链
+      - navigation:
+        - button "阶段 8：长度测量进入记录链向前移动": ←
+        - button "阶段 8：长度测量进入记录链向后移动": →
+        - button "移除阶段 8：长度测量进入记录链": ×
+    - article:
+      - generic: 09 / 事件
+      - time: 21:32
+      - generic: 阶段 9：标尺读数进入记录链
+      - navigation:
+        - button "阶段 9：标尺读数进入记录链向前移动": ←
+        - button "阶段 9：标尺读数进入记录链向后移动": →
+        - button "移除阶段 9：标尺读数进入记录链": ×
+    - article:
+      - generic: 10 / 事件
+      - time: 21:36
+      - generic: 阶段 10：剩余材料进入记录链
+      - navigation:
+        - button "阶段 10：剩余材料进入记录链向前移动": ←
+        - button "阶段 10：剩余材料进入记录链向后移动" [disabled]: →
+        - button "移除阶段 10：剩余材料进入记录链": ×
+  - complementary "调查本":
+    - text: 调查本
+    - heading "最近确认的事实" [level=2]
+    - generic: "4"
+    - list:
+      - generic: 是
+      - generic: 卷盘芯径是否成立？
+      - generic: 是
+      - generic: 剩余长度是否成立？
+      - generic: 是
+      - generic: 胶带圈数是否成立？
+      - generic: 是
+      - generic: 卷盘芯径是否成立？
+    - text: 我的真相
+    - textbox "我的真相 只保存在本机，不参与胜负，也不会发送给 AI。":
+      - /placeholder: 我认为发生了什么，以及为什么…
+    - generic: 只保存在本机，不参与胜负，也不会发送给 AI。

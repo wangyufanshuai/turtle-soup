@@ -1,0 +1,564 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c46-pilot-pressure-valve",
+  "caseVersion": 1,
+  "contentHash": "sha256:174454209084af21392f0f6d3261a2884cecf1023fc53ead75511174eef39e2b",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "先导压力是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "阀芯位置是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制面板是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "机械开度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "流量变化是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "反馈传感器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "气路是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "指令日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "阀门弹簧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "先导压力是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "阀芯位置是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制面板是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "机械开度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "流量变化是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "反馈传感器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "气路是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "指令日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "阀门弹簧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行器是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c46"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "先导压力是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "阀芯位置是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制面板是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "机械开度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "流量变化是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "反馈传感器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "气路是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "指令日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "阀门弹簧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行器是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c46"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-11",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "先导压力是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "阀芯位置是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "控制面板是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "机械开度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "流量变化是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "反馈传感器是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "气路是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "指令日志是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "阀门弹簧是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "执行器是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c46"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c46-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c46-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c46-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c46-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c46-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c46-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c46-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c46-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c46-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c46-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c46-10",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "在远程控制回路中区分命令与执行结果"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "commands"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "commands"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-10",
+      "relation": "commands"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-10"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-10",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

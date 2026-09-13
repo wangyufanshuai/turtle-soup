@@ -1,0 +1,109 @@
+{
+  "source": "pinned-old-runtime generated oracle",
+  "pinnedRef": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "expected": {
+    "game": {
+      "caseId": "c84-handoff-after-stop",
+      "discoveredEvidenceIds": [
+        "evidence-c84-01"
+      ],
+      "visitedLocationIds": [],
+      "answeredQueryIds": [
+        "query-c84-01"
+      ],
+      "activeRuleIds": [
+        "rule-c84-opening"
+      ],
+      "visibleFactIds": [
+        "fact-c84-01",
+        "fact-c84-02",
+        "fact-c84-03"
+      ]
+    },
+    "transcript": [
+      {
+        "id": "q-1",
+        "rawQuestion": "停止命令是否成立？",
+        "answerCode": "yes",
+        "repeated": false
+      }
+    ],
+    "evidenceStates": {
+      "evidence-c84-01": "discovered"
+    },
+    "theoryDrafts": [
+      {
+        "id": "theory-a",
+        "hypothesisId": "hypothesis-canonical",
+        "eventIds": [],
+        "evidenceIds": [],
+        "motiveKey": null
+      },
+      {
+        "id": "theory-b",
+        "hypothesisId": "hypothesis-c84-alternative-1",
+        "eventIds": [],
+        "evidenceIds": [],
+        "motiveKey": null
+      }
+    ],
+    "activeTheoryId": "theory-a",
+    "pendingInterpretation": null,
+    "lastQuestionSnapshot": {
+      "game": {
+        "caseId": "c84-handoff-after-stop",
+        "discoveredEvidenceIds": [
+          "evidence-c84-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": [],
+        "activeRuleIds": [
+          "rule-c84-opening"
+        ],
+        "visibleFactIds": [
+          "fact-c84-01",
+          "fact-c84-02",
+          "fact-c84-03"
+        ]
+      },
+      "transcriptLength": 0
+    },
+    "solved": false,
+    "replayBeatIds": [],
+    "acceptedCommandCount": 1,
+    "unlockedChapterIds": [
+      "chapter-c84-one"
+    ],
+    "reasoningBoards": {
+      "board-c84-1": {
+        "placements": {},
+        "connections": []
+      },
+      "board-c84-2": {
+        "placements": {},
+        "connections": []
+      },
+      "board-c84-3": {
+        "placements": {},
+        "connections": []
+      }
+    },
+    "replayMode": "standard"
+  },
+  "oldLiveEqualsOldReplay": true,
+  "expectations": {
+    "solved": false
+  },
+  "steps": [
+    {
+      "index": 0,
+      "type": "ask_text",
+      "accepted": true,
+      "events": [
+        {
+          "type": "question_answered"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,667 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c33-early-late-arrival",
+  "caseVersion": 1,
+  "contentHash": "sha256:a9e41dfe82f25351e28ff909da35dd24816f28768d1330db397b1b5fcdc4bde9",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "主时钟是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁快差是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "刷卡序号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采集码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "缓冲配置是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "显示码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "迟到判定是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同步脉冲是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校正时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络心跳是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧排班是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "主时钟是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁快差是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "刷卡序号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采集码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "缓冲配置是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "显示码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "迟到判定是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同步脉冲是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校正时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络心跳是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧排班是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c33"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-12",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "主时钟是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁快差是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "刷卡序号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采集码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "缓冲配置是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "显示码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "迟到判定是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同步脉冲是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校正时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络心跳是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧排班是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c33"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-12",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "主时钟是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁快差是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "刷卡序号是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "门禁时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "采集码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "缓冲配置是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "显示码是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "迟到判定是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "同步脉冲是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "校正时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "网络心跳是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "旧排班是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c33"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c33-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c33-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c33-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c33-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c33-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c33-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c33-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c33-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c33-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c33-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c33-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c33-11",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "让安全直播经过固定审查缓冲"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-11"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "precedes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "precedes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-11",
+      "relation": "precedes"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-07"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-11"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "sampled-before"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-05",
+      "toItemId": "event-07",
+      "relation": "sampled-before"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-07",
+      "toItemId": "event-11",
+      "relation": "sampled-before"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-03",
+      "slotId": "slot-01",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-03",
+      "slotId": "slot-02",
+      "itemId": "event-07"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-03",
+      "slotId": "slot-03",
+      "itemId": "event-09"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-03",
+      "slotId": "slot-04",
+      "itemId": "event-11"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-03",
+      "fromItemId": "event-05",
+      "toItemId": "event-07",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-03",
+      "fromItemId": "event-07",
+      "toItemId": "event-09",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-03",
+      "fromItemId": "event-09",
+      "toItemId": "event-11",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

@@ -1,0 +1,616 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c58-same-volume-two-levels",
+  "caseVersion": 1,
+  "contentHash": "sha256:5c71bee224cd091017281133f536192a9480a65569c94182041921b921d45bb3",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "液体体积是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "截面积是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "液面高度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "容器曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "刻度线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入口流量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "几何剖面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "体积守恒是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "高度读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "容器形状是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "液体体积是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "截面积是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "液面高度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "容器曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "刻度线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入口流量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "几何剖面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "体积守恒是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "高度读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "容器形状是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c58"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-13",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "液体体积是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "截面积是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "液面高度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "容器曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "刻度线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入口流量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "几何剖面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "体积守恒是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "高度读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "容器形状是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c58"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-13",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "液体体积是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "截面积是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "液面高度是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "容器曲线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "刻度线是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "入口流量是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "几何剖面是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "体积守恒是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "高度读数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "容器形状是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c58"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c58-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-11",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c58-12",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-12"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "把几何形状纳入体积—高度换算"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-12"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "calibrates"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "calibrates"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-12",
+      "relation": "calibrates"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-12"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "moves-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "moves-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-12",
+      "relation": "moves-to"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

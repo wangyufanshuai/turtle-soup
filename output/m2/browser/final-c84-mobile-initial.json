@@ -1,0 +1,16 @@
+{
+  "clientWidth": 375,
+  "dialogs": [],
+  "focus": "",
+  "height": 844,
+  "inputs": [
+    {
+      "name": "tentative-explanation",
+      "value": ""
+    }
+  ],
+  "scrollWidth": 375,
+  "text": "跳到主要内容\nTHE BLACK SOUP · C84\n停止以后仍完成的交接\n设置\n现场\n提问\n证据\n推断\n我的推断\n让证据支持你的解释\n暂定解释\n你的想法\n推理板\n0/12 槽\n事件链\n0 个事件\n证明篮\n0 件证据\n主假设\n0 个事件 · 尚未选择\n备选假设\n0 个事件 · 尚未选择\n我的暂定解释 · 主假设\n随调查存档保存。可以先写自己的想法，再比较下面的解释；文字本身不参与判定。\n先写下你的想法\n\n检查相关材料后，再比较可能的解释。当前没有替你选中的答案。\n\n继续检查公开材料\n停止命令记录\n审计提交记录\n控制层接收记录\n完成时间记录\n去核对材料 →",
+  "url": "http://127.0.0.1:8112/case/c84-handoff-after-stop/#theory",
+  "width": 390
+}

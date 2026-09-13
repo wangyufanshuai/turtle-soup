@@ -1,0 +1,22 @@
+import { spawnSync } from "node:child_process";
+import { mkdirSync, writeFileSync } from "node:fs";
+import { resolve } from "node:path";
+import { currentSource, evidenceIdentity, hashBytes, V212_PROFILE, writeReport } from "./lib/v212-evidence.ts";
+
+const root = resolve(".");
+const npmCli = process.env.npm_execpath;
+if (!npmCli) throw new Error("Invoke with npm run build:v212 so the active npm CLI is explicit");
+const before = currentSource(root);
+const startedAt = new Date().toISOString();
+const result = spawnSync(process.execPath, [npmCli, "run", "build"], { cwd: root, env: { ...process.env, TURTLE_SOUP_RELEASE_PROFILE: V212_PROFILE }, encoding: "utf8", maxBuffer: 32 * 1024 * 1024 });
+const output = `${result.stdout ?? ""}${result.stderr ?? ""}`;
+const identity = evidenceIdentity(root);
+const passed = result.status === 0 && before.digest === identity.sourceTreeDigest && identity.buildHash !== null;
+const log = `output/v212/${identity.runId}/build.log`;
+mkdirSync(resolve(root, "output/v212", identity.runId), { recursive: true });
+writeFileSync(resolve(root, log), output, "utf8");
+writeReport(root, "docs/v2.12-build.json", { ...identity, startedAt, endedAt: new Date().toISOString(), coverage: passed ? "measured" : "failed", scope: "Actual Next.js webpack static build and v2.12 Service Worker preparation; no browser behavior inferred", passed, exitCode: result.status, unchangedDuringBuild: before.digest === identity.sourceTreeDigest, evidence: [{ path: log, sha256: hashBytes(output) }] });
+if (passed) writeReport(root, "docs/v2.12-run.json", { ...identity, initializedAt: new Date().toISOString(), sourceFiles: currentSource(root).files });
+console.log(output);
+console.log(JSON.stringify({ passed, ...identity }, null, 2));
+if (!passed) process.exitCode = 1;

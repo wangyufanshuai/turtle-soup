@@ -1,0 +1,2390 @@
+[
+  {
+    "caseId": "c01-cold-room-knock",
+    "baseCanonicalHash": "sha256:c01-cold-room-knock-v1",
+    "presentationRevision": 3,
+    "title": "冷藏室的敲门声",
+    "surface": "凌晨两点，封闭的冷藏室里传出三下敲击。监控显示研究员一小时前已经离开，门禁也没有第二次进入记录。声音、门锁和失踪的样本之间，哪一条因果链能同时成立？",
+    "answerTemplates": {
+      "yes": "是。现有来源支持这个前提；它只固定一层事实，不自动补全整条因果链。",
+      "no": "不是。现有记录足以排除这个前提。",
+      "partial": "部分成立，但这个问法把两个仍需分别证明的环节并在了一起。",
+      "invalid_premise": "前提不成立。请先拆开对象、时间或记录来源，再逐项验证。",
+      "unknown": "目前公开的来源不足以确认或否定。",
+      "irrelevant": "这件事可能为真，但不会改变当前异常的必要因果链。",
+      "unanswerable": "案件中没有可核对的来源回答这个问题。",
+      "unrecognized": "没有识别到明确的对象与关系；请换成一次只验证一个事实的问法。"
+    },
+    "questionLabels": {
+      "query-person-inside": "敲击发生时，冷藏室里是否有人？",
+      "query-knock-source": "三下敲击是否真的来自门内？",
+      "query-door-mechanism": "这扇门关闭后会自动锁住吗？",
+      "query-phone-inside": "敲击前，室内是否留有会震动的设备？",
+      "query-lin-ownership": "留下的设备属于林澈吗？",
+      "query-sample-location": "样本最后在哪里被找到？",
+      "query-lin-motive": "延迟检查会让林澈获利吗？",
+      "query-fang-entered": "锁门以后，有人再次进入过吗？",
+      "query-irrelevant-color": "托盘的颜色会影响敲击机制吗？"
+    },
+    "feedbackCopy": {
+      "missing-time": "离开、自动上锁、定时震动和延迟检查还没有排成一条时间链。",
+      "missing-space": "手机、托盘、门内与外部储物柜的位置关系仍未闭合。",
+      "missing-source": "还缺一条能把敲击、设备和独立录音互相印证的来源链。",
+      "missing-identity": "设备归属与执行安排还没有落到同一个人身上。",
+      "missing-measurement": "三次等间隔震痕与录音中的三下敲击还没有相互校验。",
+      "missing-state": "门关闭后的锁止状态与室内无人状态仍需同时成立。",
+      "missing-alternative": "仍需用门禁或录音证据排除有人返场、值班员伪造这两条路径。"
+    },
+    "evidenceCopy": {
+      "evidence-cctv-exit": {
+        "title": "01:00 · 最后一次离开",
+        "observation": "楼层监控连续拍到林澈离开，之后没有拍到他返回冷藏室走廊。"
+      },
+      "evidence-door-latch": {
+        "title": "门框内侧的自动门闩",
+        "observation": "门一旦合拢就会自行卡住；所谓“从里面锁上”并不要求室内有人操作。"
+      },
+      "evidence-metal-tray-mark": {
+        "title": "托盘边缘的三处震痕",
+        "observation": "三处细小撞痕间距接近，方向都指向托盘下方同一位置。"
+      },
+      "evidence-phone-in-room": {
+        "title": "托盘下的定时手机",
+        "observation": "手机仍留在冷藏室，系统记录显示它在敲击时段触发过一次定时震动。"
+      },
+      "evidence-phone-pairing": {
+        "title": "设备绑定页",
+        "observation": "这部手机与林澈的研究终端使用同一账户完成配对。"
+      },
+      "evidence-knock-recording": {
+        "title": "走廊独立录音",
+        "observation": "固定录音器保存了三下短促敲击；它证明声音真实发生，不证明当时门内有人。"
+      },
+      "evidence-access-log": {
+        "title": "门禁与储物柜的交叉记录",
+        "observation": "门锁后没有再次开门，但外部储物柜在更早时段留下过样本盒的存取痕迹。"
+      },
+      "evidence-sample-locker": {
+        "title": "外部储物柜中的样本盒",
+        "observation": "失踪样本并不在冷藏室里，而是在门外的独立储物柜中被找到。"
+      },
+      "evidence-security-log": {
+        "title": "被推迟的开门检查",
+        "observation": "值班员相信门内有人，因而把强制开门检查推迟了二十五分钟。"
+      },
+      "evidence-intent-chain": {
+        "title": "敲击与延迟的闭合记录",
+        "observation": "设备布置、三下敲击、值班员误判与样本检查延迟在同一时间顺序上连续成立。"
+      }
+    },
+    "hypothesisLabels": {
+      "hypothesis-canonical": "定时震动撞击托盘，敲击声让值班员延迟检查",
+      "hypothesis-fang-entered": "方砚在锁门后重新进入并亲自敲击",
+      "hypothesis-guard-faked": "值班员伪造了敲击录音与房间占用状态"
+    },
+    "chapterTitles": {},
+    "replayCaptions": {
+      "replay-sample": "敲击发生以前，样本盒已经被转移到门外储物柜。",
+      "replay-phone": "一部与林澈绑定的手机被留在金属托盘下，并设定了延时震动。",
+      "replay-exit": "林澈离开后，门自动闭锁；门内不再需要有人。",
+      "replay-knock": "定时震动推动手机撞击托盘，走廊录音留下三下敲击。",
+      "replay-delay": "值班员把声音误判为有人求助，样本检查因此被推迟。"
+    },
+    "evidenceVisualMode": "cold-room-forensics",
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  },
+  {
+    "caseId": "c13-second-waterline",
+    "baseCanonicalHash": "sha256:c13-second-waterline-v1",
+    "presentationRevision": 3,
+    "title": "空杯里的第二条水线",
+    "surface": "量杯整夜没有开封，总质量也没有增加；清晨的液面却越过了第二条刻度。若没有人加液体，究竟是什么改变了水线？",
+    "answerTemplates": {
+      "yes": "是。现有来源支持这个前提；它只固定一层事实，不自动补全整条因果链。",
+      "no": "不是。现有记录足以排除这个前提。",
+      "partial": "部分成立，但这个问法把两个仍需分别证明的环节并在了一起。",
+      "invalid_premise": "前提不成立。请先拆开对象、时间或记录来源，再逐项验证。",
+      "unknown": "目前公开的来源不足以确认或否定。",
+      "irrelevant": "这件事可能为真，但不会改变当前异常的必要因果链。",
+      "unanswerable": "案件中没有可核对的来源回答这个问题。",
+      "unrecognized": "没有识别到明确的对象与关系；请换成一次只验证一个事实的问法。"
+    },
+    "questionLabels": {
+      "query-c13-01": "量杯的封膜被打开过吗？",
+      "query-c13-02": "封存时的初始水线在哪里？",
+      "query-c13-03": "夜里量杯周围升温了吗？",
+      "query-c13-04": "固定配重的蜡扣会在这个温度软化吗？",
+      "query-c13-05": "杯中的配重向下移动过吗？",
+      "query-c13-06": "清晨配重是否完全浸入液体？",
+      "query-c13-07": "新增排水体积能解释水线升高吗？",
+      "query-c13-08": "封存前后整套装置的总质量变了吗？",
+      "query-c13-09": "夜间记录里有人加过液体吗？",
+      "query-c13-10": "蓝色标带会吸水或改变体积吗？"
+    },
+    "feedbackCopy": {
+      "missing-time": "升温、蜡扣软化、配重下沉和水线上升的先后仍未闭合。",
+      "missing-space": "配重从液面上方到完全浸没的位置变化还没有落到量杯内部。",
+      "missing-source": "封口、温度曲线和清晨照片尚未组成可追溯的来源链。",
+      "missing-identity": "还没有确认移动的是配重，而不是液体本身或外来物。",
+      "missing-measurement": "总质量、浸没体积和水线增量还没有放进同一个守恒关系。",
+      "missing-state": "蜡扣从支撑到失效、配重从悬挂到浸没的状态变化仍缺触发条件。",
+      "missing-alternative": "仍需用封口与总质量排除加液，并用排水复算排除单纯热膨胀。"
+    },
+    "evidenceCopy": {
+      "evidence-c13-01": {
+        "title": "未破损的封口边缘",
+        "observation": "显微照片中封膜连续，没有针孔、撕裂或重新热封留下的接缝。"
+      },
+      "evidence-c13-02": {
+        "title": "封存时的第一条水线",
+        "observation": "刻度相机在封存瞬间固定了液面位置，第二条水线当时尚未出现。"
+      },
+      "evidence-c13-03": {
+        "title": "恒温台夜间曲线",
+        "observation": "量杯所在台面整夜缓慢升温，并越过了固定蜡开始失去支撑力的区间。"
+      },
+      "evidence-c13-04": {
+        "title": "蜡扣材料说明",
+        "observation": "材料单说明这种固定蜡受热后会软化，但不会向杯中增加液体。"
+      },
+      "evidence-c13-05": {
+        "title": "导杆上的连续擦痕",
+        "observation": "擦痕从原固定点一直延伸到杯底，记录了配重沿导杆下沉的路径。"
+      },
+      "evidence-c13-06": {
+        "title": "清晨的浸没配重",
+        "observation": "清晨照片显示配重已完全位于液面以下，与封存时的悬挂状态不同。"
+      },
+      "evidence-c13-07": {
+        "title": "排水体积复算表",
+        "observation": "配重新增的浸没体积与液面升高所需体积相符。"
+      },
+      "evidence-c13-08": {
+        "title": "封存前后的总质量",
+        "observation": "两次称量的差值小于仪器误差，没有出现相当于新增液体的质量。"
+      },
+      "evidence-c13-09": {
+        "title": "夜班操作空白页",
+        "observation": "从封存到清晨，没有开盖、加液或更换量杯的操作记录。"
+      },
+      "evidence-c13-10": {
+        "title": "蓝色批次标带",
+        "observation": "标带只用于区分批次，不吸水，也不参与配重的固定和排水。"
+      }
+    },
+    "hypothesisLabels": {
+      "hypothesis-canonical": "升温使蜡扣失去支撑，配重下沉并增加浸没排水体积",
+      "hypothesis-c13-alternative-1": "有人从封口缝隙向量杯加入了液体",
+      "hypothesis-c13-alternative-2": "液体受热膨胀独自造成了全部水线变化"
+    },
+    "chapterTitles": {
+      "chapter-c13-one": "封口未动，杯内状态却改变"
+    },
+    "replayCaptions": {
+      "replay-c13-1": "量杯以第一条水线封存，封膜连续完整。",
+      "replay-c13-2": "恒温台缓慢升温，杯中总质量没有增加。",
+      "replay-c13-3": "温度越过材料区间，固定配重的蜡扣逐渐软化。",
+      "replay-c13-4": "配重沿导杆下沉，从悬挂状态变为完全浸没。",
+      "replay-c13-5": "新增浸没体积排开液体，水线越过第二条刻度。",
+      "replay-c13-6": "封口和总质量复核排除了外部加液，排水复算闭合了异常。"
+    },
+    "evidenceVisualMode": "displacement-vessel-notes"
+  },
+  {
+    "caseId": "c25-silent-second-bell",
+    "baseCanonicalHash": "sha256:f0b2ed2069fc10b0ce79f86ac9174a4b27b7bef1ce9ad322ad407755162ece6d",
+    "presentationRevision": 3,
+    "title": "没有响起的第二次门铃",
+    "surface": "访客在十秒内按了两次门铃，按钮与控制器都留下两次触发；屋内录音却只有一次完整铃声。第二次按压去了哪里？",
+    "answerTemplates": {
+      "yes": "是。现有来源支持这个前提；它只固定一层事实，不自动补全整条因果链。",
+      "no": "不是。现有记录足以排除这个前提。",
+      "partial": "部分成立，但这个问法把两个仍需分别证明的环节并在了一起。",
+      "invalid_premise": "前提不成立。请先拆开对象、时间或记录来源，再逐项验证。",
+      "unknown": "目前公开的来源不足以确认或否定。",
+      "irrelevant": "这件事可能为真，但不会改变当前异常的必要因果链。",
+      "unanswerable": "案件中没有可核对的来源回答这个问题。",
+      "unrecognized": "没有识别到明确的对象与关系；请换成一次只验证一个事实的问法。"
+    },
+    "questionLabels": {
+      "query-c25-01": "按钮真的闭合了两次吗？",
+      "query-c25-02": "控制器也累计了两次触发吗？",
+      "query-c25-03": "屋内录音里到底有几次完整铃声？",
+      "query-c25-04": "控制器会合并短时间内的重复触发吗？",
+      "query-c25-05": "两次按压相隔多久？",
+      "query-c25-06": "第二次按压时门铃处于什么状态？",
+      "query-c25-07": "扬声器本身发生过故障吗？",
+      "query-c25-08": "两次按压期间供电正常吗？",
+      "query-c25-09": "住户听到的是两声，还是一段连续铃声？",
+      "query-c25-10": "旧电池警告与这次少响一声有关吗？"
+    },
+    "feedbackCopy": {
+      "missing-time": "两次按压的间隔与防抖窗口还没有放在同一时间轴上。",
+      "missing-space": "按钮、控制器和室内扬声器属于三个不同观测位置，仍需逐段连接。",
+      "missing-source": "接点波形、控制器计数与室内录音尚未构成完整信号来源链。",
+      "missing-identity": "触发记录与声学输出仍被当成了同一种事件。",
+      "missing-measurement": "两次电平变化与一次声音包络的计数口径还没有分开。",
+      "missing-state": "第二次触发发生时的 RINGING 状态与防抖保持条件尚未闭合。",
+      "missing-alternative": "还需用按钮波形排除访客说谎，并用自检和供电排除扬声器故障。"
+    },
+    "evidenceCopy": {
+      "evidence-c25-01": {
+        "title": "按钮接点的双脉冲",
+        "observation": "示波波形保留了两次分离的接点闭合；访客确实按了第二次。"
+      },
+      "evidence-c25-02": {
+        "title": "控制器触发计数器",
+        "observation": "累计计数增加了两次，说明两次输入都到达了控制器。"
+      },
+      "evidence-c25-03": {
+        "title": "室内铃声包络",
+        "observation": "麦克风只记录到一段连续的完整铃声，没有第二个独立起音。"
+      },
+      "evidence-c25-04": {
+        "title": "十秒防抖参数",
+        "observation": "固件会把窗口内的重复触发归入当前响铃周期，而不是启动第二次输出。"
+      },
+      "evidence-c25-05": {
+        "title": "六点八秒的按压间隔",
+        "observation": "第二次接点闭合仍落在第一次响铃开启的防抖窗口内。"
+      },
+      "evidence-c25-06": {
+        "title": "RINGING 状态迁移",
+        "observation": "第二次触发到达时，状态机尚未从 RINGING 返回待机。"
+      },
+      "evidence-c25-07": {
+        "title": "扬声器事后自检",
+        "observation": "扬声器能够正常完成全频自检，没有支持“临时坏掉”的故障码。"
+      },
+      "evidence-c25-08": {
+        "title": "门铃供电曲线",
+        "observation": "整个窗口内电压高于最低工作阈值，声音没有因掉电中断。"
+      },
+      "evidence-c25-09": {
+        "title": "住户的连续铃声证词",
+        "observation": "住户描述的是一段从起音到结束都连续的铃声，而不是听漏了第二段。"
+      },
+      "evidence-c25-10": {
+        "title": "一个月前的旧电池警告",
+        "observation": "警告发生在电池更换以前，与本次两次触发合并没有时间关系。"
+      }
+    },
+    "hypothesisLabels": {
+      "hypothesis-canonical": "两次触发都真实，但防抖窗口把第二次合并进当前响铃周期",
+      "hypothesis-c25-alternative-1": "访客谎称自己按下了第二次按钮",
+      "hypothesis-c25-alternative-2": "扬声器恰好在第二次按压时临时故障"
+    },
+    "chapterTitles": {
+      "chapter-c25-one": "两次输入，为什么只有一次输出"
+    },
+    "replayCaptions": {
+      "replay-c25-1": "第一次按压闭合接点，控制器开始一个完整响铃周期。",
+      "replay-c25-2": "声音输出启动，十秒防抖窗口同时保持开启。",
+      "replay-c25-3": "六点八秒后，第二次按压产生了另一条真实输入。",
+      "replay-c25-4": "控制器登记触发，却因仍在 RINGING 状态而把它合并。",
+      "replay-c25-5": "室内只形成一个连续声音包络，触发数与响铃数由此分离。",
+      "replay-c25-6": "扬声器自检与供电曲线排除故障，旧电池警告只是无关记录。"
+    },
+    "evidenceVisualMode": "debounce-signal-plates"
+  },
+  {
+    "caseId": "c37-zeroed-pressure-gauge",
+    "baseCanonicalHash": "sha256:43d42046a74b38395edb1ae867d3bbb7c1e7e9f67e4651a4967c2498733d8423",
+    "presentationRevision": 3,
+    "title": "回到零点的压力表",
+    "surface": "泄压已经完成，表针也回到了零位；同一管线随后用参考传感器复测，结果却与这只表不一致。表、压力和测量条件中，究竟哪一个变了？",
+    "answerTemplates": {
+      "yes": "是。现有来源支持这个前提；它只固定一层事实，不自动补全整条因果链。",
+      "no": "不是。现有记录足以排除这个前提。",
+      "partial": "部分成立，但这个问法把两个仍需分别证明的环节并在了一起。",
+      "invalid_premise": "前提不成立。请先拆开对象、时间或记录来源，再逐项验证。",
+      "unknown": "目前公开的来源不足以确认或否定。",
+      "irrelevant": "这件事可能为真，但不会改变当前异常的必要因果链。",
+      "unanswerable": "案件中没有可核对的来源回答这个问题。",
+      "unrecognized": "没有识别到明确的对象与关系；请换成一次只验证一个事实的问法。"
+    },
+    "questionLabels": {
+      "query-c37-01": "表针回零时，仪表零位仍可能偏移吗？",
+      "query-c37-02": "这只表的零位需要随温度修正吗？",
+      "query-c37-03": "管线当时确实完成泄压了吗？",
+      "query-c37-04": "完整校准曲线是否带有偏置？",
+      "query-c37-05": "独立参考传感器测到了非零压力吗？",
+      "query-c37-06": "录像能确认表针确实指在零线上吗？",
+      "query-c37-07": "常温校准卡给出的零点基准是什么？",
+      "query-c37-08": "两次测量的环境温度相同吗？",
+      "query-c37-09": "按温度修正后，两套读数能互相对应吗？",
+      "query-c37-10": "传感器响应滞后能解释稳定后的固定偏差吗？"
+    },
+    "feedbackCopy": {
+      "missing-time": "泄压、回零、温度变化和复测还没有按发生顺序闭合。",
+      "missing-space": "表针位置、管线压力与独立参考传感器的测量位置仍被混为一处。",
+      "missing-source": "机械表录像、环境日志与参考传感器还缺一条交叉来源链。",
+      "missing-identity": "仪表显示值、零位基准和真实压力仍被当成同一个量。",
+      "missing-measurement": "零点修正、校准曲线和参考读数还没有进入同一个测量模型。",
+      "missing-state": "从泄压状态到复测状态之间，温度改变零位的条件尚未闭合。",
+      "missing-alternative": "还需用泄压回执排除残余压力，并用回零录像排除人为拨针。"
+    },
+    "evidenceCopy": {
+      "evidence-c37-01": {
+        "title": "冷态零位复核",
+        "observation": "机械表回到刻度零线时，零位与常温参考基准并未重合。"
+      },
+      "evidence-c37-02": {
+        "title": "温度补偿表",
+        "observation": "同一只表在不同环境温度下需要使用不同的零位修正。"
+      },
+      "evidence-c37-03": {
+        "title": "独立泄压回执",
+        "observation": "旁路压力源确认管线已经完成泄压，残余压力不能解释之后的读数差。"
+      },
+      "evidence-c37-04": {
+        "title": "全量程校准曲线",
+        "observation": "显示值相对参考压力呈带偏置的曲线；零点只是曲线上的一个位置。"
+      },
+      "evidence-c37-05": {
+        "title": "参考传感器复测",
+        "observation": "独立传感器在复测阶段记录到非零压力，与机械表的直读值不同。"
+      },
+      "evidence-c37-06": {
+        "title": "表针回零录像",
+        "observation": "录像确认指针确实落在零线上；它只证明指针位置，不证明真实压力为零。"
+      },
+      "evidence-c37-07": {
+        "title": "常温零压基准卡",
+        "observation": "常温校准时，机械零位与零压参考对齐，提供了可比较的起点。"
+      },
+      "evidence-c37-08": {
+        "title": "两次测量的环境日志",
+        "observation": "泄压检查与复测处在不同温度条件，不能共用未经修正的零位。"
+      },
+      "evidence-c37-09": {
+        "title": "修正后的复测对照",
+        "observation": "应用对应温度的零位修正后，机械表换算值重新接近参考传感器。"
+      },
+      "evidence-c37-10": {
+        "title": "响应时间试验",
+        "observation": "响应滞后只改变读数稳定所需时间，不能解释稳定后的固定偏差。"
+      },
+      "evidence-c37-11": {
+        "title": "回温后的第二次零检",
+        "observation": "环境恢复后零位偏差随之缩小，复现了偏移与温度的联系。"
+      },
+      "evidence-c37-12": {
+        "title": "外壳运输温度贴",
+        "observation": "变色贴只说明运输途中曾遇到低温，不参与本次复测的零位修正。"
+      }
+    },
+    "hypothesisLabels": {
+      "hypothesis-canonical": "温度改变仪表零位，回零指针与真实压力因此不再等价",
+      "hypothesis-c37-alternative-1": "压力仍被困在管线里，泄压其实没有完成",
+      "hypothesis-c37-alternative-2": "有人把表针人为拨回了零线"
+    },
+    "chapterTitles": {
+      "chapter-c37-one": "先分开零位、显示值与真实压力"
+    },
+    "replayCaptions": {
+      "replay-c37-1": "管线完成泄压，机械表指针回到刻度零线。",
+      "replay-c37-2": "环境温度改变了仪表自身的零位基准。",
+      "replay-c37-3": "同一个指针位置因此对应了不同的修正后读数。",
+      "replay-c37-4": "完整校准曲线把零位偏移与量程读数分开。",
+      "replay-c37-5": "独立参考传感器证明复测阶段仍有非零真实压力。",
+      "replay-c37-6": "应用温度修正后两套读数重新一致，残余压力和人为拨针均被排除。"
+    },
+    "sceneAsset": "/assets/v14/c37-pressure-lab.svg",
+    "sceneAssetMobile": "/assets/v14/c37-pressure-lab-mobile.svg",
+    "evidenceVisualMode": "pressure-calibration-plates"
+  },
+  {
+    "caseId": "c48-two-point-calibration",
+    "baseCanonicalHash": "sha256:f1f3562c7c69d00aa27ea3eb763ef33ead69bc6e39a57891d37be6fdbaef1948",
+    "presentationRevision": 3,
+    "title": "两个相同的校准点",
+    "surface": "仪器在量程两端都通过了校准，中间点却持续偏离参考值。两端都对，为什么中间仍然错？",
+    "answerTemplates": {
+      "yes": "是。现有来源支持这个前提；它只固定一层事实，不自动补全整条因果链。",
+      "no": "不是。现有记录足以排除这个前提。",
+      "partial": "部分成立，但这个问法把两个仍需分别证明的环节并在了一起。",
+      "invalid_premise": "前提不成立。请先拆开对象、时间或记录来源，再逐项验证。",
+      "unknown": "目前公开的来源不足以确认或否定。",
+      "irrelevant": "这件事可能为真，但不会改变当前异常的必要因果链。",
+      "unanswerable": "案件中没有可核对的来源回答这个问题。",
+      "unrecognized": "没有识别到明确的对象与关系；请换成一次只验证一个事实的问法。"
+    },
+    "questionLabels": {
+      "query-c48-01": "两个端点的校准记录都可靠吗？",
+      "query-c48-02": "传感器响应可能是一条非线性曲线吗？",
+      "query-c48-03": "中段偏差能够重复出现吗？",
+      "query-c48-04": "中段参考值来自独立标准吗？",
+      "query-c48-05": "加入第三个校准点后会暴露曲率吗？",
+      "query-c48-06": "中段误差落在原先的不确定性带之外吗？",
+      "query-c48-07": "线性模型和曲线模型都能穿过两个端点吗？",
+      "query-c48-08": "中段读数仍在传感器量程以内吗？",
+      "query-c48-09": "重复校准时两个端点仍然准确吗？",
+      "query-c48-10": "残差表里的设备编号会改变曲线吗？"
+    },
+    "feedbackCopy": {
+      "missing-time": "首次两点校准、发现中段偏差和第三点复核的顺序仍未闭合。",
+      "missing-space": "端点与中段在同一量程中的相对位置还没有落到曲线上。",
+      "missing-source": "校准记录、独立参考值和重复测量还缺交叉验证。",
+      "missing-identity": "端点准确与整条传递曲线准确仍被当成同一个命题。",
+      "missing-measurement": "两个端点、第三点、残差和不确定性带尚未组成可辨识的测量模型。",
+      "missing-state": "从两点线性假设切换到曲线模型的证据条件还没有满足。",
+      "missing-alternative": "仍需用端点重复性排除记录错误，并用稳定残差排除中段偶发故障。"
+    },
+    "evidenceCopy": {
+      "evidence-c48-01": {
+        "title": "量程两端的原始校准单",
+        "observation": "低端与高端读数都与各自参考值一致，两个端点本身没有抄录错误。"
+      },
+      "evidence-c48-02": {
+        "title": "制造商的非线性响应页",
+        "observation": "传感器允许存在平滑曲率；仅凭两个端点无法确定端点之间的形状。"
+      },
+      "evidence-c48-03": {
+        "title": "可重复的中段偏差",
+        "observation": "中段读数在多次复测中向同一方向偏离，不像一次偶发跳变。"
+      },
+      "evidence-c48-04": {
+        "title": "独立中段参考值",
+        "observation": "参考值来自另一套可追溯标准，不依赖被测仪器自己的校准结果。"
+      },
+      "evidence-c48-05": {
+        "title": "新增的第三校准点",
+        "observation": "第三点落在线性连线之外，却落在允许的曲线响应上。"
+      },
+      "evidence-c48-06": {
+        "title": "原两点模型的不确定性带",
+        "observation": "观测到的中段偏差超过两点线性模型给出的允许范围。"
+      },
+      "evidence-c48-07": {
+        "title": "两种拟合模型对照",
+        "observation": "直线与曲线都能穿过两个端点，但只有曲线同时解释第三点。"
+      },
+      "evidence-c48-08": {
+        "title": "传感器有效量程表",
+        "observation": "异常中段仍位于额定量程内，不能用超量程饱和解释。"
+      },
+      "evidence-c48-09": {
+        "title": "端点重复性复核",
+        "observation": "重新校准后两个端点依旧准确，排除了端点记录偶然写错。"
+      },
+      "evidence-c48-10": {
+        "title": "按输入位置排列的残差",
+        "observation": "残差随输入位置平滑变化，支持模型形状错误而非中段突然损坏。"
+      },
+      "evidence-c48-11": {
+        "title": "反向量程端点检查",
+        "observation": "从高端向低端复测时，两个端点仍然重合，误差没有随操作方向消失。"
+      },
+      "evidence-c48-12": {
+        "title": "三点重建的传递曲线",
+        "observation": "加入第三点后重建出的曲线同时覆盖端点与中段参考值。"
+      },
+      "evidence-c48-13": {
+        "title": "校准单右下角的蓝色批号",
+        "observation": "批号颜色只用于区分纸本版本，不改变参考值、输入位置或拟合结果。"
+      }
+    },
+    "hypothesisLabels": {
+      "hypothesis-canonical": "两点只能固定曲线两端，无法排除端点之间的非线性偏差",
+      "hypothesis-c48-alternative-1": "其中一个端点被抄错，所谓校准通过并不真实",
+      "hypothesis-c48-alternative-2": "仪器只在中段发生了偶发故障"
+    },
+    "chapterTitles": {
+      "chapter-c48-one": "两个正确端点不能决定整条曲线"
+    },
+    "replayCaptions": {
+      "replay-c48-1": "低端与高端分别校准，两处读数都准确。",
+      "replay-c48-2": "系统默认用一条直线连接两个端点。",
+      "replay-c48-3": "独立参考在中段复测，稳定偏差再次出现。",
+      "replay-c48-4": "第三个校准点落在线性模型之外，暴露出响应曲率。",
+      "replay-c48-5": "残差与不确定性带排除了偶发跳变和超量程。",
+      "replay-c48-6": "三点曲线同时解释两端和中段：端点真实，模型不完整。"
+    },
+    "sceneAsset": "/assets/v14/c48-curve-lab.svg",
+    "sceneAssetMobile": "/assets/v14/c48-curve-lab-mobile.svg",
+    "evidenceVisualMode": "curve-reference-plates"
+  },
+  {
+    "caseId": "c60-last-sample-before-stop",
+    "baseCanonicalHash": "sha256:21b820f1b4c91def40e4ec5464965d88b2621d196d2e7bccb202aca9cf7c3a09",
+    "presentationRevision": 3,
+    "title": "终点前的最后一次采样",
+    "surface": "停止命令已经被系统确认；终端却在确认之后显示一条编号连续的新采样。命令、采集和显示，哪一个才真正发生在最后？",
+    "answerTemplates": {
+      "yes": "是。现有来源支持这个前提；它只固定一层事实，不自动补全整条因果链。",
+      "no": "不是。现有记录足以排除这个前提。",
+      "partial": "部分成立，但这个问法把两个仍需分别证明的环节并在了一起。",
+      "invalid_premise": "前提不成立。请先拆开对象、时间或记录来源，再逐项验证。",
+      "unknown": "目前公开的来源不足以确认或否定。",
+      "irrelevant": "这件事可能为真，但不会改变当前异常的必要因果链。",
+      "unanswerable": "案件中没有可核对的来源回答这个问题。",
+      "unrecognized": "没有识别到明确的对象与关系；请换成一次只验证一个事实的问法。"
+    },
+    "questionLabels": {
+      "query-c60-01": "停止命令确实被控制器接收了吗？",
+      "query-c60-02": "命令到达前，缓存里已经有待发送样本吗？",
+      "query-c60-03": "最后一条样本是在停止前采集的吗？",
+      "query-c60-04": "采样器随后真的进入停止状态了吗？",
+      "query-c60-05": "最后样本的序号与前一条连续吗？",
+      "query-c60-06": "停止后发送队列仍会排空旧样本吗？",
+      "query-c60-07": "停止回执后还有新的采集动作吗？",
+      "query-c60-08": "采集时刻、发送时刻和显示时刻是否来自同一时钟？",
+      "query-c60-09": "控制回路把命令确认和物理停止分开记录吗？",
+      "query-c60-10": "终端主题或导出格式会改变样本顺序吗？"
+    },
+    "feedbackCopy": {
+      "missing-time": "采集、入缓存、停止命令、执行回执、发送和显示的顺序仍未闭合。",
+      "missing-space": "采样器、环形缓存、发送队列与终端是四个不同位置，数据路径还缺连接。",
+      "missing-source": "控制日志、样本头和终端接收记录尚未建立同一条来源链。",
+      "missing-identity": "最后显示的记录与停止后新采集的样本仍被误认为同一个对象。",
+      "missing-measurement": "采集时标、队列时标和终端时标还没有换算到同一时间基准。",
+      "missing-state": "命令已接收、采样器已停止、缓存仍待发送三个状态尚未同时成立。",
+      "missing-alternative": "仍需用执行回执排除命令失效，并用连续序号与来源链排除伪造。"
+    },
+    "evidenceCopy": {
+      "evidence-c60-01": {
+        "title": "停止命令接收回执",
+        "observation": "控制器确认收到停止命令；这证明命令进入系统，不代表所有缓存已清空。"
+      },
+      "evidence-c60-02": {
+        "title": "命令到达前的环形缓存",
+        "observation": "缓存快照中已经存在一条尚未发送的完整样本。"
+      },
+      "evidence-c60-03": {
+        "title": "最后样本的采集时标",
+        "observation": "样本头记录的采集时刻早于停止命令，终端显示发生在之后。"
+      },
+      "evidence-c60-04": {
+        "title": "采样器停止执行回执",
+        "observation": "控制回路随后确认采样器进入停止状态，命令并未失效。"
+      },
+      "evidence-c60-05": {
+        "title": "连续的样本序号",
+        "observation": "最后样本紧接前一条序号，没有插入、重写或伪造留下的断点。"
+      },
+      "evidence-c60-06": {
+        "title": "发送队列排空记录",
+        "observation": "停止采集后，发送器仍按规则送出了缓存中已经完成的样本。"
+      },
+      "evidence-c60-07": {
+        "title": "停止后的状态轨迹",
+        "observation": "停止回执以后没有新的采集边沿，只有队列和终端继续处理旧数据。"
+      },
+      "evidence-c60-08": {
+        "title": "三套时标对照",
+        "observation": "采集、发送与终端显示使用不同记录点；接收顺序不能替代采集顺序。"
+      },
+      "evidence-c60-09": {
+        "title": "命令—执行控制回路",
+        "observation": "系统把命令接收、物理停止和状态反馈分别记录，三者不是同一瞬间。"
+      },
+      "evidence-c60-10": {
+        "title": "终端最后一条显示记录",
+        "observation": "终端在停止确认后才收到并显示缓存样本，因此制造了“停止后采集”的表象。"
+      },
+      "evidence-c60-11": {
+        "title": "重复停止命令轨迹",
+        "observation": "重复发送停止命令没有产生新的采样，只返回已经停止的状态。"
+      },
+      "evidence-c60-12": {
+        "title": "缓存窗口配置",
+        "observation": "配置允许停止采集后继续排空已经封装的样本，不会生成新的测量。"
+      },
+      "evidence-c60-13": {
+        "title": "终端导出的绿色主题",
+        "observation": "界面主题只改变显示颜色，不参与采集、缓存、发送或时间排序。"
+      }
+    },
+    "hypothesisLabels": {
+      "hypothesis-canonical": "停止前采集的样本留在缓存中，并在停止确认后才发送到终端",
+      "hypothesis-c60-alternative-1": "停止命令没有生效，采样器继续工作",
+      "hypothesis-c60-alternative-2": "终端最后一条样本是事后伪造的"
+    },
+    "chapterTitles": {
+      "chapter-c60-one": "第一阶段：先证明命令与采集边界",
+      "chapter-c60-two": "第二阶段：沿缓存和发送队列追踪最后样本"
+    },
+    "replayCaptions": {
+      "replay-c60-1": "最后一条样本在停止命令到达以前已经完成采集。",
+      "replay-c60-2": "样本被封装进环形缓存，却尚未发送到终端。",
+      "replay-c60-3": "停止命令进入控制器，采样器随后完成状态切换。",
+      "replay-c60-4": "执行回执确认停止生效，之后没有新的采集边沿。",
+      "replay-c60-5": "最后样本保持连续序号，排除了插入或事后伪造。",
+      "replay-c60-6": "发送器在停止后继续排空已有缓存。",
+      "replay-c60-7": "终端较晚收到样本，于是在停止确认之后才显示它。",
+      "replay-c60-8": "对齐采集、发送和显示时标后，每份记录都真实，异常来自把三个时刻当成一个。"
+    },
+    "sceneAsset": "/assets/v14/c60-terminal-lab.svg",
+    "sceneAssetMobile": "/assets/v14/c60-terminal-lab-mobile.svg",
+    "evidenceVisualMode": "terminal-signal-plates"
+  },
+  {
+    "caseId": "c38-no-missing-seventh-packet",
+    "baseCanonicalHash": "sha256:ee008cea7b16b59bec15e1035eaf83a51c457903e3085aa937f15c4e03bf0216",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c38-01": {
+        "title": "控制室记录 · 第七码",
+        "observation": "复核控制室记录可见“第七码”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c38-02": {
+        "title": "维护单 · 去重键",
+        "observation": "在维护单中，“去重键”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c38-03": {
+        "title": "采样日志 · 重传包",
+        "observation": "采样日志将“重传包”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c38-04": {
+        "title": "复核照片 · 接收队列",
+        "observation": "复核照片把“接收队列”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c38-05": {
+        "title": "实验台记录 · 序列号",
+        "observation": "实验台记录保留了“序列号”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c38-06": {
+        "title": "校准台记录 · 路由跳点",
+        "observation": "校准台记录确认了“路由跳点”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c38-07": {
+        "title": "控制室记录 · 校验和",
+        "observation": "控制室记录标出了“校验和”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c38-08": {
+        "title": "维护单 · 发送日志",
+        "observation": "“发送日志”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c38-09": {
+        "title": "采样日志 · 接收确认",
+        "observation": "复核采样日志可见“接收确认”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c38-10": {
+        "title": "复核照片 · 数据包内容",
+        "observation": "在复核照片中，“数据包内容”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c38-11": {
+        "title": "实验台记录 · 第七码",
+        "observation": "实验台记录将“第七码”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c38-12": {
+        "title": "校准台记录 · 去重键",
+        "observation": "校准台记录把“去重键”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c38-13": {
+        "title": "控制室记录 · 重传包",
+        "observation": "控制室记录保留了“重传包”的局部读数；读数成立，但基准条件仍要另行证明。"
+      }
+    },
+    "questionLabels": {
+      "query-c38-01": "序列号跳过，能证明数据包真的丢失吗？"
+    },
+    "replayCaptions": {
+      "replay-c38-1": "沿去重键向前追溯，第一条直觉解释失去必要前提。",
+      "replay-c38-2": "重传包与重传包交叉印证，记录时间和事件时间被分开。",
+      "replay-c38-3": "把接收队列放回对应位置后，来源链出现了唯一连续方向。",
+      "replay-c38-4": "序列号完成最后一次约束，没有丢失的第七码的异常由此闭合。",
+      "replay-c38-5": "复核路由跳点时保留路由跳点作为边界条件，替代路径不再自洽。",
+      "replay-c38-6": "校验和只证明这一层状态；下一拍继续追踪它如何传递。"
+    }
+  },
+  {
+    "caseId": "c39-duplicated-heartbeat",
+    "baseCanonicalHash": "sha256:bdbcc142d223db6433acb2c66d1f60c19e6d320158608a12bcffd34732f49431",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c39-01": {
+        "title": "维护单 · 心跳包",
+        "observation": "维护单把“心跳包”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c39-02": {
+        "title": "采样日志 · 回放缓存",
+        "observation": "采样日志保留了“回放缓存”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c39-03": {
+        "title": "复核照片 · 发送序号",
+        "observation": "复核照片确认了“发送序号”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c39-04": {
+        "title": "实验台记录 · 采集时间",
+        "observation": "实验台记录标出了“采集时间”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c39-05": {
+        "title": "校准台记录 · 显示时间",
+        "observation": "“显示时间”出现在校准台记录的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c39-06": {
+        "title": "控制室记录 · 缓存指针",
+        "observation": "复核控制室记录可见“缓存指针”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c39-07": {
+        "title": "维护单 · 信号源",
+        "observation": "在维护单中，“信号源”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c39-08": {
+        "title": "采样日志 · 重复帧",
+        "observation": "采样日志将“重复帧”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c39-09": {
+        "title": "复核照片 · 原始日志",
+        "observation": "复核照片把“原始日志”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c39-10": {
+        "title": "实验台记录 · 回放索引",
+        "observation": "实验台记录保留了“回放索引”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c39-11": {
+        "title": "校准台记录 · 心跳包",
+        "observation": "校准台记录确认了“心跳包”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c39-12": {
+        "title": "控制室记录 · 回放缓存",
+        "observation": "控制室记录标出了“回放缓存”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c39-13": {
+        "title": "维护单 · 发送序号",
+        "observation": "“发送序号”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c39-14": {
+        "title": "采样日志 · 采集时间",
+        "observation": "复核采样日志可见“采集时间”确实存在；它是边界条件，而不是结案答案。"
+      }
+    },
+    "questionLabels": {
+      "query-c39-01": "两条心跳记录来自两次发送，还是一次回放？"
+    },
+    "replayCaptions": {
+      "replay-c39-1": "回放缓存与回放缓存交叉印证，记录时间和事件时间被分开。",
+      "replay-c39-2": "把发送序号放回对应位置后，来源链出现了唯一连续方向。",
+      "replay-c39-3": "采集时间完成最后一次约束，两次相同的心跳的异常由此闭合。",
+      "replay-c39-4": "复核显示时间时保留显示时间作为边界条件，替代路径不再自洽。",
+      "replay-c39-5": "缓存指针只证明这一层状态；下一拍继续追踪它如何传递。",
+      "replay-c39-6": "从信号源到信号源的顺序成立，显示结果不再替代真实过程。"
+    }
+  },
+  {
+    "caseId": "c40-early-liquid-front",
+    "baseCanonicalHash": "sha256:67a7a43acd64a43f2b272a524038cd6971b6feed30ef9f78cddd658f709ffa63",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c40-01": {
+        "title": "采样日志 · 采样口",
+        "observation": "采样日志标出了“采样口”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c40-02": {
+        "title": "复核照片 · 液体前沿",
+        "observation": "“液体前沿”出现在复核照片的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c40-03": {
+        "title": "实验台记录 · 储罐液面",
+        "observation": "复核实验台记录可见“储罐液面”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c40-04": {
+        "title": "校准台记录 · 输送管路",
+        "observation": "在校准台记录中，“输送管路”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c40-05": {
+        "title": "控制室记录 · 高度刻度",
+        "observation": "控制室记录将“高度刻度”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c40-06": {
+        "title": "维护单 · 取样阀",
+        "observation": "维护单把“取样阀”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c40-07": {
+        "title": "采样日志 · 到达时间",
+        "observation": "采样日志保留了“到达时间”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c40-08": {
+        "title": "复核照片 · 来源路线",
+        "observation": "复核照片确认了“来源路线”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c40-09": {
+        "title": "实验台记录 · 液体体积",
+        "observation": "实验台记录标出了“液体体积”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c40-10": {
+        "title": "校准台记录 · 压力波",
+        "observation": "“压力波”出现在校准台记录的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      }
+    },
+    "questionLabels": {
+      "query-c40-01": "采样口先检测到液体，能证明储罐液面已经到达同一高度吗？"
+    },
+    "replayCaptions": {
+      "replay-c40-1": "把液体前沿放回对应位置后，来源链出现了唯一连续方向。",
+      "replay-c40-2": "储罐液面完成最后一次约束，提前到达的液面的异常由此闭合。",
+      "replay-c40-3": "复核输送管路时保留输送管路作为边界条件，替代路径不再自洽。",
+      "replay-c40-4": "高度刻度只证明这一层状态；下一拍继续追踪它如何传递。",
+      "replay-c40-5": "从取样阀到取样阀的顺序成立，显示结果不再替代真实过程。",
+      "replay-c40-6": "提前到达的液面在到达时间处留下独立来源，可与前后记录复算。"
+    }
+  },
+  {
+    "caseId": "c41-hysteresis-overheat",
+    "baseCanonicalHash": "sha256:0f03c68ae5836371d340feb191874e5ba4416e81d1fef80189c23e8360b1ba1d",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c41-01": {
+        "title": "复核照片 · 过热阈值",
+        "observation": "在复核照片中，“过热阈值”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c41-02": {
+        "title": "实验台记录 · 滞回区间",
+        "observation": "实验台记录将“滞回区间”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c41-03": {
+        "title": "校准台记录 · 报警状态",
+        "observation": "校准台记录把“报警状态”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c41-04": {
+        "title": "控制室记录 · 复位条件",
+        "observation": "控制室记录保留了“复位条件”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c41-05": {
+        "title": "维护单 · 温度曲线",
+        "observation": "维护单确认了“温度曲线”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c41-06": {
+        "title": "采样日志 · 继电器",
+        "observation": "采样日志标出了“继电器”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c41-07": {
+        "title": "复核照片 · 报警日志",
+        "observation": "“报警日志”出现在复核照片的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c41-08": {
+        "title": "实验台记录 · 采样间隔",
+        "observation": "复核实验台记录可见“采样间隔”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c41-09": {
+        "title": "校准台记录 · 冷却斜率",
+        "observation": "在校准台记录中，“冷却斜率”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c41-10": {
+        "title": "控制室记录 · 状态迁移",
+        "observation": "控制室记录将“状态迁移”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c41-11": {
+        "title": "维护单 · 过热阈值",
+        "observation": "维护单把“过热阈值”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      }
+    },
+    "questionLabels": {
+      "query-c41-01": "第二次看到报警时，温度真的再次越过阈值了吗？"
+    },
+    "replayCaptions": {
+      "replay-c41-1": "滞回区间完成最后一次约束，没有发生的过热报警的异常由此闭合。",
+      "replay-c41-2": "复核报警状态时保留报警状态作为边界条件，替代路径不再自洽。",
+      "replay-c41-3": "复位条件只证明这一层状态；下一拍继续追踪它如何传递。",
+      "replay-c41-4": "从温度曲线到温度曲线的顺序成立，显示结果不再替代真实过程。",
+      "replay-c41-5": "没有发生的过热报警在继电器处留下独立来源，可与前后记录复算。",
+      "replay-c41-6": "排除无关记录后，报警日志仍是证明链中的必要环节。"
+    }
+  },
+  {
+    "caseId": "c42-same-weight-different-load",
+    "baseCanonicalHash": "sha256:d345e58c5bfd1802425900bbba394ae26bad160989c72bd19af4a0195662f19f",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c42-01": {
+        "title": "实验台记录 · 总重量",
+        "observation": "实验台记录保留了“总重量”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c42-02": {
+        "title": "校准台记录 · 重心位置",
+        "observation": "校准台记录确认了“重心位置”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c42-03": {
+        "title": "控制室记录 · 轴距",
+        "observation": "控制室记录标出了“轴距”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c42-04": {
+        "title": "维护单 · 桥面分区",
+        "observation": "“桥面分区”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c42-05": {
+        "title": "采样日志 · 局部载荷",
+        "observation": "复核采样日志可见“局部载荷”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c42-06": {
+        "title": "复核照片 · 称重台",
+        "observation": "在复核照片中，“称重台”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c42-07": {
+        "title": "实验台记录 · 轮轴压力",
+        "observation": "实验台记录将“轮轴压力”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c42-08": {
+        "title": "校准台记录 · 结构阈值",
+        "observation": "校准台记录把“结构阈值”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c42-09": {
+        "title": "控制室记录 · 车辆布局",
+        "observation": "控制室记录保留了“车辆布局”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c42-10": {
+        "title": "维护单 · 载荷分布",
+        "observation": "维护单确认了“载荷分布”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c42-11": {
+        "title": "采样日志 · 总重量",
+        "observation": "采样日志标出了“总重量”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c42-12": {
+        "title": "复核照片 · 重心位置",
+        "observation": "“重心位置”出现在复核照片的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      }
+    },
+    "questionLabels": {
+      "query-c42-01": "总重量相同，重心位置也一定相同吗？"
+    },
+    "replayCaptions": {
+      "replay-c42-1": "复核重心位置时保留重心位置作为边界条件，替代路径不再自洽。",
+      "replay-c42-2": "轴距只证明这一层状态；下一拍继续追踪它如何传递。",
+      "replay-c42-3": "从桥面分区到桥面分区的顺序成立，显示结果不再替代真实过程。",
+      "replay-c42-4": "同样重量的不同负载在局部载荷处留下独立来源，可与前后记录复算。",
+      "replay-c42-5": "排除无关记录后，称重台仍是证明链中的必要环节。",
+      "replay-c42-6": "轮轴压力解释当前观察，轮轴压力负责排除剩余备选路径。"
+    }
+  },
+  {
+    "caseId": "c43-train-stop-reference",
+    "baseCanonicalHash": "sha256:b62f3d79892166786eed51ef8d2bfa1c9490965aede7bad348461226f67b928b",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c43-01": {
+        "title": "校准台记录 · 制动控制点",
+        "observation": "“制动控制点”出现在校准台记录的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c43-02": {
+        "title": "控制室记录 · 红线",
+        "observation": "复核控制室记录可见“红线”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c43-03": {
+        "title": "维护单 · 车轮停止点",
+        "observation": "在维护单中，“车轮停止点”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c43-04": {
+        "title": "采样日志 · 车头标记",
+        "observation": "采样日志将“车头标记”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c43-05": {
+        "title": "复核照片 · 制动反馈",
+        "observation": "复核照片把“制动反馈”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c43-06": {
+        "title": "实验台记录 · 轨旁信标",
+        "observation": "实验台记录保留了“轨旁信标”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c43-07": {
+        "title": "校准台记录 · 停车状态",
+        "observation": "校准台记录确认了“停车状态”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c43-08": {
+        "title": "控制室记录 · 车厢长度",
+        "observation": "控制室记录标出了“车厢长度”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c43-09": {
+        "title": "维护单 · 司机界面",
+        "observation": "“司机界面”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c43-10": {
+        "title": "采样日志 · 位置参照",
+        "observation": "复核采样日志可见“位置参照”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c43-11": {
+        "title": "复核照片 · 制动控制点",
+        "observation": "在复核照片中，“制动控制点”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c43-12": {
+        "title": "实验台记录 · 红线",
+        "observation": "实验台记录将“红线”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c43-13": {
+        "title": "校准台记录 · 车轮停止点",
+        "observation": "校准台记录把“车轮停止点”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      }
+    },
+    "questionLabels": {
+      "query-c43-01": "红线对应的是制动控制点，还是车轮停止点？"
+    },
+    "replayCaptions": {
+      "replay-c43-1": "红线只证明这一层状态；下一拍继续追踪它如何传递。",
+      "replay-c43-2": "从车轮停止点到车轮停止点的顺序成立，显示结果不再替代真实过程。",
+      "replay-c43-3": "停在红线外的列车在车头标记处留下独立来源，可与前后记录复算。",
+      "replay-c43-4": "排除无关记录后，制动反馈仍是证明链中的必要环节。",
+      "replay-c43-5": "轨旁信标解释当前观察，轨旁信标负责排除剩余备选路径。",
+      "replay-c43-6": "停在红线外的列车先由停车状态固定一个可复核的观察边界。"
+    }
+  },
+  {
+    "caseId": "c44-hidden-overload-spike",
+    "baseCanonicalHash": "sha256:c443d50b1a230272f45c92eafbd403a2776e053dea7cdd6a54a26e6c6fbb20be",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c44-01": {
+        "title": "控制室记录 · 瞬时过载",
+        "observation": "控制室记录将“瞬时过载”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c44-02": {
+        "title": "维护单 · 滑动平均",
+        "observation": "维护单把“滑动平均”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c44-03": {
+        "title": "采样日志 · 原始采样",
+        "observation": "采样日志保留了“原始采样”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c44-04": {
+        "title": "复核照片 · 日报曲线",
+        "observation": "复核照片确认了“日报曲线”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c44-05": {
+        "title": "实验台记录 · 安全线",
+        "observation": "实验台记录标出了“安全线”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c44-06": {
+        "title": "校准台记录 · 窗口长度",
+        "observation": "“窗口长度”出现在校准台记录的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c44-07": {
+        "title": "控制室记录 · 峰值",
+        "observation": "复核控制室记录可见“峰值”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c44-08": {
+        "title": "维护单 · 采样频率",
+        "observation": "在维护单中，“采样频率”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c44-09": {
+        "title": "采样日志 · 聚合值",
+        "observation": "采样日志将“聚合值”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c44-10": {
+        "title": "复核照片 · 报警策略",
+        "observation": "复核照片把“报警策略”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c44-11": {
+        "title": "实验台记录 · 瞬时过载",
+        "observation": "实验台记录保留了“瞬时过载”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c44-12": {
+        "title": "校准台记录 · 滑动平均",
+        "observation": "校准台记录确认了“滑动平均”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c44-13": {
+        "title": "控制室记录 · 原始采样",
+        "observation": "控制室记录标出了“原始采样”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c44-14": {
+        "title": "维护单 · 日报曲线",
+        "observation": "“日报曲线”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      }
+    },
+    "questionLabels": {
+      "query-c44-01": "平均值里没有尖峰，原始采样里也没有吗？"
+    },
+    "replayCaptions": {
+      "replay-c44-1": "从滑动平均到滑动平均的顺序成立，显示结果不再替代真实过程。",
+      "replay-c44-2": "消失在平均值里的尖峰在原始采样处留下独立来源，可与前后记录复算。",
+      "replay-c44-3": "排除无关记录后，日报曲线仍是证明链中的必要环节。",
+      "replay-c44-4": "安全线解释当前观察，安全线负责排除剩余备选路径。",
+      "replay-c44-5": "消失在平均值里的尖峰先由窗口长度固定一个可复核的观察边界。",
+      "replay-c44-6": "随后核对峰值；它与峰值不再被当成同一事件。"
+    }
+  },
+  {
+    "caseId": "c45-double-location-second",
+    "baseCanonicalHash": "sha256:1496b0ac0f39d7024dd52e148178738f923fd3db4ff885be2fc7ad217ecd3c79",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c45-01": {
+        "title": "维护单 · 校时事件",
+        "observation": "维护单确认了“校时事件”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c45-02": {
+        "title": "采样日志 · 定位时间戳",
+        "observation": "采样日志标出了“定位时间戳”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c45-03": {
+        "title": "复核照片 · 设备时钟",
+        "observation": "“设备时钟”出现在复核照片的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c45-04": {
+        "title": "实验台记录 · 基准时钟",
+        "observation": "复核实验台记录可见“基准时钟”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c45-05": {
+        "title": "校准台记录 · 同一位置",
+        "observation": "在校准台记录中，“同一位置”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c45-06": {
+        "title": "控制室记录 · 时间跳变",
+        "observation": "控制室记录将“时间跳变”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c45-07": {
+        "title": "维护单 · 轨迹连续",
+        "observation": "维护单把“轨迹连续”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c45-08": {
+        "title": "采样日志 · 同步报文",
+        "observation": "采样日志保留了“同步报文”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c45-09": {
+        "title": "复核照片 · 一秒窗口",
+        "observation": "复核照片确认了“一秒窗口”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c45-10": {
+        "title": "实验台记录 · 日志顺序",
+        "observation": "实验台记录标出了“日志顺序”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      }
+    },
+    "questionLabels": {
+      "query-c45-01": "两套定位记录使用同一个时间基准吗？"
+    },
+    "replayCaptions": {
+      "replay-c45-1": "一秒钟的双重定位在定位时间戳处留下独立来源，可与前后记录复算。",
+      "replay-c45-2": "排除无关记录后，设备时钟仍是证明链中的必要环节。",
+      "replay-c45-3": "基准时钟解释当前观察，基准时钟负责排除剩余备选路径。",
+      "replay-c45-4": "一秒钟的双重定位先由同一位置固定一个可复核的观察边界。",
+      "replay-c45-5": "随后核对时间跳变；它与时间跳变不再被当成同一事件。",
+      "replay-c45-6": "沿轨迹连续向前追溯，第一条直觉解释失去必要前提。"
+    }
+  },
+  {
+    "caseId": "c46-pilot-pressure-valve",
+    "baseCanonicalHash": "sha256:174454209084af21392f0f6d3261a2884cecf1023fc53ead75511174eef39e2b",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c46-01": {
+        "title": "采样日志 · 先导压力",
+        "observation": "复核采样日志可见“先导压力”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c46-02": {
+        "title": "复核照片 · 阀芯位置",
+        "observation": "在复核照片中，“阀芯位置”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c46-03": {
+        "title": "实验台记录 · 控制面板",
+        "observation": "实验台记录将“控制面板”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c46-04": {
+        "title": "校准台记录 · 机械开度",
+        "observation": "校准台记录把“机械开度”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c46-05": {
+        "title": "控制室记录 · 流量变化",
+        "observation": "控制室记录保留了“流量变化”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c46-06": {
+        "title": "维护单 · 反馈传感器",
+        "observation": "维护单确认了“反馈传感器”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c46-07": {
+        "title": "采样日志 · 气路",
+        "observation": "采样日志标出了“气路”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c46-08": {
+        "title": "复核照片 · 指令日志",
+        "observation": "“指令日志”出现在复核照片的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c46-09": {
+        "title": "实验台记录 · 阀门弹簧",
+        "observation": "复核实验台记录可见“阀门弹簧”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c46-10": {
+        "title": "校准台记录 · 执行器",
+        "observation": "在校准台记录中，“执行器”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c46-11": {
+        "title": "控制室记录 · 先导压力",
+        "observation": "控制室记录将“先导压力”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      }
+    },
+    "questionLabels": {
+      "query-c46-01": "面板显示关闭时，阀芯的机械位置也一定关闭吗？"
+    },
+    "replayCaptions": {
+      "replay-c46-1": "排除无关记录后，阀芯位置仍是证明链中的必要环节。",
+      "replay-c46-2": "控制面板解释当前观察，控制面板负责排除剩余备选路径。",
+      "replay-c46-3": "没有打开的阀门先由机械开度固定一个可复核的观察边界。",
+      "replay-c46-4": "随后核对流量变化；它与流量变化不再被当成同一事件。",
+      "replay-c46-5": "沿反馈传感器向前追溯，第一条直觉解释失去必要前提。",
+      "replay-c46-6": "气路与气路交叉印证，记录时间和事件时间被分开。"
+    }
+  },
+  {
+    "caseId": "c47-offline-buffered-device",
+    "baseCanonicalHash": "sha256:c8b3ac1cb6751d63822ff72013e3af5bd02d9cb2cbce77048210478a4a903e52",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c47-01": {
+        "title": "复核照片 · 离线缓存",
+        "observation": "复核照片把“离线缓存”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c47-02": {
+        "title": "实验台记录 · 批量补传",
+        "observation": "实验台记录保留了“批量补传”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c47-03": {
+        "title": "校准台记录 · 采集时间",
+        "observation": "校准台记录确认了“采集时间”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c47-04": {
+        "title": "控制室记录 · 接收时间",
+        "observation": "控制室记录标出了“接收时间”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c47-05": {
+        "title": "维护单 · 连接心跳",
+        "observation": "“连接心跳”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c47-06": {
+        "title": "采样日志 · 缓冲区",
+        "observation": "复核采样日志可见“缓冲区”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c47-07": {
+        "title": "复核照片 · 网络断线",
+        "observation": "在复核照片中，“网络断线”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c47-08": {
+        "title": "实验台记录 · 补传顺序",
+        "observation": "实验台记录将“补传顺序”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c47-09": {
+        "title": "校准台记录 · 设备时钟",
+        "observation": "校准台记录把“设备时钟”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c47-10": {
+        "title": "控制室记录 · 平台在线",
+        "observation": "控制室记录保留了“平台在线”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c47-11": {
+        "title": "维护单 · 离线缓存",
+        "observation": "维护单确认了“离线缓存”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c47-12": {
+        "title": "采样日志 · 批量补传",
+        "observation": "采样日志标出了“批量补传”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      }
+    },
+    "questionLabels": {
+      "query-c47-01": "设备上线时间对应采集时间，还是补传到达时间？"
+    },
+    "replayCaptions": {
+      "replay-c47-1": "批量补传解释当前观察，批量补传负责排除剩余备选路径。",
+      "replay-c47-2": "断线后继续在线的设备先由采集时间固定一个可复核的观察边界。",
+      "replay-c47-3": "随后核对接收时间；它与接收时间不再被当成同一事件。",
+      "replay-c47-4": "沿连接心跳向前追溯，第一条直觉解释失去必要前提。",
+      "replay-c47-5": "缓冲区与缓冲区交叉印证，记录时间和事件时间被分开。",
+      "replay-c47-6": "把网络断线放回对应位置后，来源链出现了唯一连续方向。"
+    }
+  },
+  {
+    "caseId": "c49-gimbal-turn-drone",
+    "baseCanonicalHash": "sha256:7c0ae01409e8f54ff61d04d21236154a94fdfe414f07f320bdb2bfb0f7705334",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c49-01": {
+        "title": "校准台记录 · 云台角度",
+        "observation": "在校准台记录中，“云台角度”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c49-02": {
+        "title": "控制室记录 · 飞行航向",
+        "observation": "控制室记录将“飞行航向”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c49-03": {
+        "title": "维护单 · 画面方向",
+        "observation": "维护单把“画面方向”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c49-04": {
+        "title": "采样日志 · 机体坐标",
+        "observation": "采样日志保留了“机体坐标”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c49-05": {
+        "title": "复核照片 · 地理北",
+        "observation": "复核照片确认了“地理北”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c49-06": {
+        "title": "实验台记录 · 姿态日志",
+        "observation": "实验台记录标出了“姿态日志”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c49-07": {
+        "title": "校准台记录 · 镜头视场",
+        "observation": "“镜头视场”出现在校准台记录的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c49-08": {
+        "title": "控制室记录 · 航迹",
+        "observation": "复核控制室记录可见“航迹”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c49-09": {
+        "title": "维护单 · 转向命令",
+        "observation": "在维护单中，“转向命令”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c49-10": {
+        "title": "采样日志 · 空间参照",
+        "observation": "采样日志将“空间参照”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c49-11": {
+        "title": "复核照片 · 云台角度",
+        "observation": "复核照片把“云台角度”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c49-12": {
+        "title": "实验台记录 · 飞行航向",
+        "observation": "实验台记录保留了“飞行航向”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c49-13": {
+        "title": "校准台记录 · 画面方向",
+        "observation": "校准台记录确认了“画面方向”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c49-14": {
+        "title": "控制室记录 · 机体坐标",
+        "observation": "控制室记录标出了“机体坐标”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      }
+    },
+    "questionLabels": {
+      "query-c49-01": "画面转向来自无人机机身，还是云台？"
+    },
+    "replayCaptions": {
+      "replay-c49-1": "随后核对飞行航向；它与飞行航向不再被当成同一事件。",
+      "replay-c49-2": "沿画面方向向前追溯，第一条直觉解释失去必要前提。",
+      "replay-c49-3": "机体坐标与机体坐标交叉印证，记录时间和事件时间被分开。",
+      "replay-c49-4": "把地理北放回对应位置后，来源链出现了唯一连续方向。",
+      "replay-c49-5": "姿态日志完成最后一次约束，无人机没有转弯的异常由此闭合。",
+      "replay-c49-6": "复核镜头视场时保留镜头视场作为边界条件，替代路径不再自洽。"
+    }
+  },
+  {
+    "caseId": "c50-extra-warehouse-pallet",
+    "baseCanonicalHash": "sha256:d0da1e95d1504cf1a5a4160623cbe3c5ad0cff06fbdd476c62524e3d0da104b1",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c50-01": {
+        "title": "控制室记录 · 托盘数量",
+        "observation": "控制室记录保留了“托盘数量”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c50-02": {
+        "title": "维护单 · 批次总量",
+        "observation": "维护单确认了“批次总量”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c50-03": {
+        "title": "采样日志 · 拆分记录",
+        "observation": "采样日志标出了“拆分记录”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c50-04": {
+        "title": "复核照片 · 托盘标签",
+        "observation": "“托盘标签”出现在复核照片的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c50-05": {
+        "title": "实验台记录 · 库存口径",
+        "observation": "复核实验台记录可见“库存口径”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c50-06": {
+        "title": "校准台记录 · 入库队列",
+        "observation": "在校准台记录中，“入库队列”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c50-07": {
+        "title": "控制室记录 · 货物件数",
+        "observation": "控制室记录将“货物件数”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c50-08": {
+        "title": "维护单 · 盘点时间",
+        "observation": "维护单把“盘点时间”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c50-09": {
+        "title": "采样日志 · 合并批次",
+        "observation": "采样日志保留了“合并批次”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c50-10": {
+        "title": "复核照片 · 出库单",
+        "observation": "复核照片确认了“出库单”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      }
+    },
+    "questionLabels": {
+      "query-c50-01": "库存里的“一个”指托盘、批次，还是唯一货物？"
+    },
+    "replayCaptions": {
+      "replay-c50-1": "沿批次总量向前追溯，第一条直觉解释失去必要前提。",
+      "replay-c50-2": "拆分记录与拆分记录交叉印证，记录时间和事件时间被分开。",
+      "replay-c50-3": "把托盘标签放回对应位置后，来源链出现了唯一连续方向。",
+      "replay-c50-4": "库存口径完成最后一次约束，仓库里多出的托盘的异常由此闭合。",
+      "replay-c50-5": "复核入库队列时保留入库队列作为边界条件，替代路径不再自洽。",
+      "replay-c50-6": "货物件数只证明这一层状态；下一拍继续追踪它如何传递。"
+    }
+  },
+  {
+    "caseId": "c51-equivalent-resistance",
+    "baseCanonicalHash": "sha256:af63236b453adf13b08bf6f74ab6e91ae54dc9d3f90dc0624d8d319e6d4a80a1",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c51-01": {
+        "title": "维护单 · 并联网络",
+        "observation": "“并联网络”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c51-02": {
+        "title": "采样日志 · 等效电阻",
+        "observation": "复核采样日志可见“等效电阻”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c51-03": {
+        "title": "复核照片 · 单个元件",
+        "observation": "在复核照片中，“单个元件”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c51-04": {
+        "title": "实验台记录 · 拆下测量",
+        "observation": "实验台记录将“拆下测量”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c51-05": {
+        "title": "校准台记录 · 测量端点",
+        "observation": "校准台记录把“测量端点”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c51-06": {
+        "title": "控制室记录 · 电流路径",
+        "observation": "控制室记录保留了“电流路径”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c51-07": {
+        "title": "维护单 · 欧姆表",
+        "observation": "维护单确认了“欧姆表”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c51-08": {
+        "title": "采样日志 · 电阻差异",
+        "observation": "采样日志标出了“电阻差异”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c51-09": {
+        "title": "复核照片 · 网络拓扑",
+        "observation": "“网络拓扑”出现在复核照片的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c51-10": {
+        "title": "实验台记录 · 报告口径",
+        "observation": "复核实验台记录可见“报告口径”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c51-11": {
+        "title": "校准台记录 · 并联网络",
+        "observation": "在校准台记录中，“并联网络”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      }
+    },
+    "questionLabels": {
+      "query-c51-01": "测得的是单个电阻，还是并联后的等效阻值？"
+    },
+    "replayCaptions": {
+      "replay-c51-1": "等效电阻与等效电阻交叉印证，记录时间和事件时间被分开。",
+      "replay-c51-2": "把单个元件放回对应位置后，来源链出现了唯一连续方向。",
+      "replay-c51-3": "拆下测量完成最后一次约束，不相等的相等电阻的异常由此闭合。",
+      "replay-c51-4": "复核测量端点时保留测量端点作为边界条件，替代路径不再自洽。",
+      "replay-c51-5": "电流路径只证明这一层状态；下一拍继续追踪它如何传递。",
+      "replay-c51-6": "从欧姆表到欧姆表的顺序成立，显示结果不再替代真实过程。"
+    }
+  },
+  {
+    "caseId": "c52-shorter-river-night",
+    "baseCanonicalHash": "sha256:d81f1576ab9dcc8328da8a19a9e7df46e3cde2bdb5eef8e65757937f6e1c9c04",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c52-01": {
+        "title": "采样日志 · 水位基准",
+        "observation": "采样日志将“水位基准”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c52-02": {
+        "title": "复核照片 · 河道长度",
+        "observation": "复核照片把“河道长度”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c52-03": {
+        "title": "实验台记录 · 测绘阈值",
+        "observation": "实验台记录保留了“测绘阈值”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c52-04": {
+        "title": "校准台记录 · 河岸位置",
+        "observation": "校准台记录确认了“河岸位置”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c52-05": {
+        "title": "控制室记录 · 夜间读数",
+        "observation": "控制室记录标出了“夜间读数”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c52-06": {
+        "title": "维护单 · 基准桩",
+        "observation": "“基准桩”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c52-07": {
+        "title": "采样日志 · 截面边界",
+        "observation": "复核采样日志可见“截面边界”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c52-08": {
+        "title": "复核照片 · 水流速度",
+        "observation": "在复核照片中，“水流速度”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c52-09": {
+        "title": "实验台记录 · 地图坐标",
+        "observation": "实验台记录将“地图坐标”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c52-10": {
+        "title": "校准台记录 · 长度统计",
+        "observation": "校准台记录把“长度统计”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c52-11": {
+        "title": "控制室记录 · 水位基准",
+        "observation": "控制室记录保留了“水位基准”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c52-12": {
+        "title": "维护单 · 河道长度",
+        "observation": "维护单确认了“河道长度”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      }
+    },
+    "questionLabels": {
+      "query-c52-01": "夜间变化的是河道，还是测量水位的基准点？"
+    },
+    "replayCaptions": {
+      "replay-c52-1": "把河道长度放回对应位置后，来源链出现了唯一连续方向。",
+      "replay-c52-2": "测绘阈值完成最后一次约束，夜里变短的河的异常由此闭合。",
+      "replay-c52-3": "复核河岸位置时保留河岸位置作为边界条件，替代路径不再自洽。",
+      "replay-c52-4": "夜间读数只证明这一层状态；下一拍继续追踪它如何传递。",
+      "replay-c52-5": "从基准桩到基准桩的顺序成立，显示结果不再替代真实过程。",
+      "replay-c52-6": "夜里变短的河在截面边界处留下独立来源，可与前后记录复算。"
+    }
+  },
+  {
+    "caseId": "c53-late-fiber-echo",
+    "baseCanonicalHash": "sha256:604913403f946cf92891763202c8d26c8ec47410d2ba39b51f807bd6ceea6566",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c53-01": {
+        "title": "复核照片 · 光纤传播",
+        "observation": "复核照片确认了“光纤传播”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c53-02": {
+        "title": "实验台记录 · 回波",
+        "observation": "实验台记录标出了“回波”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c53-03": {
+        "title": "校准台记录 · 设备缓冲",
+        "observation": "“设备缓冲”出现在校准台记录的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c53-04": {
+        "title": "控制室记录 · 显示时间",
+        "observation": "复核控制室记录可见“显示时间”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c53-05": {
+        "title": "维护单 · 发射时间",
+        "observation": "在维护单中，“发射时间”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c53-06": {
+        "title": "采样日志 · 接收时间",
+        "observation": "采样日志将“接收时间”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c53-07": {
+        "title": "复核照片 · 链路长度",
+        "observation": "复核照片把“链路长度”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c53-08": {
+        "title": "实验台记录 · 缓存深度",
+        "observation": "实验台记录保留了“缓存深度”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c53-09": {
+        "title": "校准台记录 · 回波峰值",
+        "observation": "校准台记录确认了“回波峰值”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c53-10": {
+        "title": "控制室记录 · 时间偏移",
+        "observation": "控制室记录标出了“时间偏移”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c53-11": {
+        "title": "维护单 · 光纤传播",
+        "observation": "“光纤传播”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c53-12": {
+        "title": "采样日志 · 回波",
+        "observation": "复核采样日志可见“回波”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c53-13": {
+        "title": "复核照片 · 设备缓冲",
+        "observation": "在复核照片中，“设备缓冲”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      }
+    },
+    "questionLabels": {
+      "query-c53-01": "回声时间同时包含光纤传播和设备缓冲吗？"
+    },
+    "replayCaptions": {
+      "replay-c53-1": "回波完成最后一次约束，迟到的光纤回声的异常由此闭合。",
+      "replay-c53-2": "复核设备缓冲时保留设备缓冲作为边界条件，替代路径不再自洽。",
+      "replay-c53-3": "显示时间只证明这一层状态；下一拍继续追踪它如何传递。",
+      "replay-c53-4": "从发射时间到发射时间的顺序成立，显示结果不再替代真实过程。",
+      "replay-c53-5": "迟到的光纤回声在接收时间处留下独立来源，可与前后记录复算。",
+      "replay-c53-6": "排除无关记录后，链路长度仍是证明链中的必要环节。"
+    }
+  },
+  {
+    "caseId": "c54-elevator-counterweight",
+    "baseCanonicalHash": "sha256:fc7e56efc45e243877af5bf6756733401475446d087c1082a72a690c95fd8e6d",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c54-01": {
+        "title": "实验台记录 · 轿厢位置",
+        "observation": "复核实验台记录可见“轿厢位置”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c54-02": {
+        "title": "校准台记录 · 配重",
+        "observation": "在校准台记录中，“配重”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c54-03": {
+        "title": "控制室记录 · 检修模式",
+        "observation": "控制室记录将“检修模式”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c54-04": {
+        "title": "维护单 · 楼层传感器",
+        "observation": "维护单把“楼层传感器”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c54-05": {
+        "title": "采样日志 · 下降状态",
+        "observation": "采样日志保留了“下降状态”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c54-06": {
+        "title": "复核照片 · 钢缆位移",
+        "observation": "复核照片确认了“钢缆位移”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c54-07": {
+        "title": "实验台记录 · 控制器",
+        "observation": "实验台记录标出了“控制器”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c54-08": {
+        "title": "校准台记录 · 井道标记",
+        "observation": "“井道标记”出现在校准台记录的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c54-09": {
+        "title": "控制室记录 · 门区信号",
+        "observation": "复核控制室记录可见“门区信号”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c54-10": {
+        "title": "维护单 · 位置反馈",
+        "observation": "在维护单中，“位置反馈”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c54-11": {
+        "title": "采样日志 · 轿厢位置",
+        "observation": "采样日志将“轿厢位置”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c54-12": {
+        "title": "复核照片 · 配重",
+        "observation": "复核照片把“配重”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c54-13": {
+        "title": "实验台记录 · 检修模式",
+        "observation": "实验台记录保留了“检修模式”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c54-14": {
+        "title": "校准台记录 · 楼层传感器",
+        "observation": "校准台记录确认了“楼层传感器”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      }
+    },
+    "questionLabels": {
+      "query-c54-01": "轿厢没下降时，配重或检修模式改变了吗？"
+    },
+    "replayCaptions": {
+      "replay-c54-1": "复核配重时保留配重作为边界条件，替代路径不再自洽。",
+      "replay-c54-2": "检修模式只证明这一层状态；下一拍继续追踪它如何传递。",
+      "replay-c54-3": "从楼层传感器到楼层传感器的顺序成立，显示结果不再替代真实过程。",
+      "replay-c54-4": "没有下降的电梯在下降状态处留下独立来源，可与前后记录复算。",
+      "replay-c54-5": "排除无关记录后，钢缆位移仍是证明链中的必要环节。",
+      "replay-c54-6": "控制器解释当前观察，控制器负责排除剩余备选路径。"
+    }
+  },
+  {
+    "caseId": "c55-merged-multi-alarm",
+    "baseCanonicalHash": "sha256:31a406e477a68828079e2727a41198d217448a67dd76a82b0883dd2e28e441fa",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c55-01": {
+        "title": "校准台记录 · 告警源",
+        "observation": "校准台记录把“告警源”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c55-02": {
+        "title": "控制室记录 · 队列合并",
+        "observation": "控制室记录保留了“队列合并”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c55-03": {
+        "title": "维护单 · 提示音",
+        "observation": "维护单确认了“提示音”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c55-04": {
+        "title": "采样日志 · 优先级",
+        "observation": "采样日志标出了“优先级”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c55-05": {
+        "title": "复核照片 · 源事件",
+        "observation": "“源事件”出现在复核照片的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c55-06": {
+        "title": "实验台记录 · 声学输出",
+        "observation": "复核实验台记录可见“声学输出”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c55-07": {
+        "title": "校准台记录 · 确认按钮",
+        "observation": "在校准台记录中，“确认按钮”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c55-08": {
+        "title": "控制室记录 · 队列窗口",
+        "observation": "控制室记录将“队列窗口”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c55-09": {
+        "title": "维护单 · 状态迁移",
+        "observation": "维护单把“状态迁移”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c55-10": {
+        "title": "采样日志 · 告警编号",
+        "observation": "采样日志保留了“告警编号”的局部读数；读数成立，但基准条件仍要另行证明。"
+      }
+    },
+    "questionLabels": {
+      "query-c55-01": "多个告警源会被系统合并成一次声音吗？"
+    },
+    "replayCaptions": {
+      "replay-c55-1": "队列合并只证明这一层状态；下一拍继续追踪它如何传递。",
+      "replay-c55-2": "从提示音到提示音的顺序成立，显示结果不再替代真实过程。",
+      "replay-c55-3": "只响一次的多重告警在优先级处留下独立来源，可与前后记录复算。",
+      "replay-c55-4": "排除无关记录后，源事件仍是证明链中的必要环节。",
+      "replay-c55-5": "声学输出解释当前观察，声学输出负责排除剩余备选路径。",
+      "replay-c55-6": "只响一次的多重告警先由确认按钮固定一个可复核的观察边界。"
+    }
+  },
+  {
+    "caseId": "c56-interpolated-temperature-map",
+    "baseCanonicalHash": "sha256:764c7910a24003dedb61ae4d48fd01c3a5f992d6c027ac33fceeafdacffcefb8",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c56-01": {
+        "title": "控制室记录 · 温度图",
+        "observation": "控制室记录标出了“温度图”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c56-02": {
+        "title": "维护单 · 插值区间",
+        "observation": "“插值区间”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c56-03": {
+        "title": "采样日志 · 缺失采样",
+        "observation": "复核采样日志可见“缺失采样”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c56-04": {
+        "title": "复核照片 · 原始点",
+        "observation": "在复核照片中，“原始点”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c56-05": {
+        "title": "实验台记录 · 绘图连续",
+        "observation": "实验台记录将“绘图连续”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c56-06": {
+        "title": "校准台记录 · 不确定性带",
+        "observation": "校准台记录把“不确定性带”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c56-07": {
+        "title": "控制室记录 · 断线时间",
+        "observation": "控制室记录保留了“断线时间”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c56-08": {
+        "title": "维护单 · 采样频率",
+        "observation": "维护单确认了“采样频率”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c56-09": {
+        "title": "采样日志 · 估计值",
+        "observation": "采样日志标出了“估计值”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c56-10": {
+        "title": "复核照片 · 真实测量",
+        "observation": "“真实测量”出现在复核照片的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c56-11": {
+        "title": "实验台记录 · 温度图",
+        "observation": "复核实验台记录可见“温度图”确实存在；它是边界条件，而不是结案答案。"
+      }
+    },
+    "questionLabels": {
+      "query-c56-01": "温度图连续的区间都有真实采样点吗？"
+    },
+    "replayCaptions": {
+      "replay-c56-1": "从插值区间到插值区间的顺序成立，显示结果不再替代真实过程。",
+      "replay-c56-2": "完整却不连续的温度图在缺失采样处留下独立来源，可与前后记录复算。",
+      "replay-c56-3": "排除无关记录后，原始点仍是证明链中的必要环节。",
+      "replay-c56-4": "绘图连续解释当前观察，绘图连续负责排除剩余备选路径。",
+      "replay-c56-5": "完整却不连续的温度图先由不确定性带固定一个可复核的观察边界。",
+      "replay-c56-6": "随后核对断线时间；它与断线时间不再被当成同一事件。"
+    }
+  },
+  {
+    "caseId": "c57-lagging-wind-vane",
+    "baseCanonicalHash": "sha256:aafe901d958dd2217f63184dbacfcad93047159812d289373c58503ae9cd1c34",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c57-01": {
+        "title": "维护单 · 风向变化",
+        "observation": "在维护单中，“风向变化”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c57-02": {
+        "title": "采样日志 · 机械滞后",
+        "observation": "采样日志将“机械滞后”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c57-03": {
+        "title": "复核照片 · 指针位置",
+        "observation": "复核照片把“指针位置”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c57-04": {
+        "title": "实验台记录 · 轴承阻尼",
+        "observation": "实验台记录保留了“轴承阻尼”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c57-05": {
+        "title": "校准台记录 · 阵风",
+        "observation": "校准台记录确认了“阵风”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c57-06": {
+        "title": "控制室记录 · 响应时间",
+        "observation": "控制室记录标出了“响应时间”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c57-07": {
+        "title": "维护单 · 风向记录",
+        "observation": "“风向记录”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c57-08": {
+        "title": "采样日志 · 罗盘基准",
+        "observation": "复核采样日志可见“罗盘基准”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c57-09": {
+        "title": "复核照片 · 短时变化",
+        "observation": "在复核照片中，“短时变化”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c57-10": {
+        "title": "实验台记录 · 指针校验",
+        "observation": "实验台记录将“指针校验”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c57-11": {
+        "title": "校准台记录 · 风向变化",
+        "observation": "校准台记录把“风向变化”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c57-12": {
+        "title": "控制室记录 · 机械滞后",
+        "observation": "控制室记录保留了“机械滞后”的局部读数；读数成立，但基准条件仍要另行证明。"
+      }
+    },
+    "questionLabels": {
+      "query-c57-01": "风向标没动，能证明短时风向没有改变吗？"
+    },
+    "replayCaptions": {
+      "replay-c57-1": "不动的风向标在机械滞后处留下独立来源，可与前后记录复算。",
+      "replay-c57-2": "排除无关记录后，指针位置仍是证明链中的必要环节。",
+      "replay-c57-3": "轴承阻尼解释当前观察，轴承阻尼负责排除剩余备选路径。",
+      "replay-c57-4": "不动的风向标先由阵风固定一个可复核的观察边界。",
+      "replay-c57-5": "随后核对响应时间；它与响应时间不再被当成同一事件。",
+      "replay-c57-6": "沿风向记录向前追溯，第一条直觉解释失去必要前提。"
+    }
+  },
+  {
+    "caseId": "c58-same-volume-two-levels",
+    "baseCanonicalHash": "sha256:5c71bee224cd091017281133f536192a9480a65569c94182041921b921d45bb3",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c58-01": {
+        "title": "采样日志 · 液体体积",
+        "observation": "采样日志保留了“液体体积”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c58-02": {
+        "title": "复核照片 · 截面积",
+        "observation": "复核照片确认了“截面积”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c58-03": {
+        "title": "实验台记录 · 液面高度",
+        "observation": "实验台记录标出了“液面高度”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c58-04": {
+        "title": "校准台记录 · 容器曲线",
+        "observation": "“容器曲线”出现在校准台记录的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c58-05": {
+        "title": "控制室记录 · 刻度线",
+        "observation": "复核控制室记录可见“刻度线”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c58-06": {
+        "title": "维护单 · 入口流量",
+        "observation": "在维护单中，“入口流量”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c58-07": {
+        "title": "采样日志 · 几何剖面",
+        "observation": "采样日志将“几何剖面”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c58-08": {
+        "title": "复核照片 · 体积守恒",
+        "observation": "复核照片把“体积守恒”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c58-09": {
+        "title": "实验台记录 · 高度读数",
+        "observation": "实验台记录保留了“高度读数”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c58-10": {
+        "title": "校准台记录 · 容器形状",
+        "observation": "校准台记录确认了“容器形状”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c58-11": {
+        "title": "控制室记录 · 液体体积",
+        "observation": "控制室记录标出了“液体体积”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c58-12": {
+        "title": "维护单 · 截面积",
+        "observation": "“截面积”出现在维护单的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c58-13": {
+        "title": "采样日志 · 液面高度",
+        "observation": "复核采样日志可见“液面高度”确实存在；它是边界条件，而不是结案答案。"
+      }
+    },
+    "questionLabels": {
+      "query-c58-01": "两个容器的截面积沿高度相同吗？"
+    },
+    "replayCaptions": {
+      "replay-c58-1": "排除无关记录后，截面积仍是证明链中的必要环节。",
+      "replay-c58-2": "液面高度解释当前观察，液面高度负责排除剩余备选路径。",
+      "replay-c58-3": "同一容积的两种水位先由容器曲线固定一个可复核的观察边界。",
+      "replay-c58-4": "随后核对刻度线；它与刻度线不再被当成同一事件。",
+      "replay-c58-5": "沿入口流量向前追溯，第一条直觉解释失去必要前提。",
+      "replay-c58-6": "几何剖面与几何剖面交叉印证，记录时间和事件时间被分开。"
+    }
+  },
+  {
+    "caseId": "c59-extra-ninth-floor",
+    "baseCanonicalHash": "sha256:6eeeb71c008a1d841c0292f86974615852c6fc6013dfd0da3e046a280aed430a",
+    "presentationRevision": 2,
+    "evidenceCopy": {
+      "evidence-c59-01": {
+        "title": "复核照片 · 气压楼层",
+        "observation": "“气压楼层”出现在复核照片的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c59-02": {
+        "title": "实验台记录 · 夹层",
+        "observation": "复核实验台记录可见“夹层”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c59-03": {
+        "title": "校准台记录 · 设备层",
+        "observation": "在校准台记录中，“设备层”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c59-04": {
+        "title": "控制室记录 · 建筑层数",
+        "observation": "控制室记录将“建筑层数”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c59-05": {
+        "title": "维护单 · 气压模型",
+        "observation": "维护单把“气压模型”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c59-06": {
+        "title": "采样日志 · 电梯楼层",
+        "observation": "采样日志保留了“电梯楼层”的局部读数；读数成立，但基准条件仍要另行证明。"
+      },
+      "evidence-c59-07": {
+        "title": "复核照片 · 消防图",
+        "observation": "复核照片确认了“消防图”这一状态转换；触发条件和后续输出尚未因此自动成立。"
+      },
+      "evidence-c59-08": {
+        "title": "实验台记录 · 高度基准",
+        "observation": "实验台记录标出了“高度基准”的原始状态；它只能证明这一层观察，不能替代上下游来源。"
+      },
+      "evidence-c59-09": {
+        "title": "校准台记录 · 重复计入",
+        "observation": "“重复计入”出现在校准台记录的来源链上；它说明信息经过这里，不说明整条链没有缓存或变换。"
+      },
+      "evidence-c59-10": {
+        "title": "控制室记录 · 楼层估计",
+        "observation": "复核控制室记录可见“楼层估计”确实存在；它是边界条件，而不是结案答案。"
+      },
+      "evidence-c59-11": {
+        "title": "维护单 · 气压楼层",
+        "observation": "在维护单中，“气压楼层”带有可复核时间戳；还需确认记录时间和事件时间是否相同。"
+      },
+      "evidence-c59-12": {
+        "title": "采样日志 · 夹层",
+        "observation": "采样日志将“夹层”固定在一个空间位置；位置真实，采用的参照系仍需核对。"
+      },
+      "evidence-c59-13": {
+        "title": "复核照片 · 设备层",
+        "observation": "复核照片把“设备层”与相邻记录分开保存；是否连续、重复或合并仍要由其他来源验证。"
+      },
+      "evidence-c59-14": {
+        "title": "实验台记录 · 建筑层数",
+        "observation": "实验台记录保留了“建筑层数”的局部读数；读数成立，但基准条件仍要另行证明。"
+      }
+    },
+    "questionLabels": {
+      "query-c59-01": "楼层估计是否把夹层或设备层重复计入？"
+    },
+    "replayCaptions": {
+      "replay-c59-1": "夹层解释当前观察，夹层负责排除剩余备选路径。",
+      "replay-c59-2": "多出来的第九层先由设备层固定一个可复核的观察边界。",
+      "replay-c59-3": "随后核对建筑层数；它与建筑层数不再被当成同一事件。",
+      "replay-c59-4": "沿气压模型向前追溯，第一条直觉解释失去必要前提。",
+      "replay-c59-5": "电梯楼层与电梯楼层交叉印证，记录时间和事件时间被分开。",
+      "replay-c59-6": "把消防图放回对应位置后，来源链出现了唯一连续方向。"
+    }
+  },
+  {
+    "caseId": "c14-moving-red-box",
+    "baseCanonicalHash": "sha256:c14-moving-red-box-v1",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c14-01": "箱子周围的粉尘圈有移动痕迹吗？"
+    }
+  },
+  {
+    "caseId": "c15-sixth-panorama",
+    "baseCanonicalHash": "sha256:c15-sixth-panorama-v1",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c15-01": "合影里出现的是六个不同的人吗？"
+    }
+  },
+  {
+    "caseId": "c16-closed-door-handoff",
+    "baseCanonicalHash": "sha256:c16-closed-door-handoff-v1",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c16-01": "交接前后的密封袋编号是同一个吗？"
+    }
+  },
+  {
+    "caseId": "c17-twelve-strikes",
+    "baseCanonicalHash": "sha256:c17-twelve-strikes-v1",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c17-01": "钟面指向十一点时，报时轮系也处于十一点吗？"
+    }
+  },
+  {
+    "caseId": "c18-lighter-sealed-crate",
+    "baseCanonicalHash": "sha256:c18-lighter-sealed-crate-v1",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c18-01": "箱子称重前，秤台已经完成归零吗？"
+    }
+  },
+  {
+    "caseId": "c19-fog-after-window",
+    "baseCanonicalHash": "sha256:c19-fog-after-window-v1",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c19-01": "关窗前，室内湿度已经接近露点了吗？"
+    }
+  },
+  {
+    "caseId": "c20-fifth-worker",
+    "baseCanonicalHash": "sha256:c20-fifth-worker-v1",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c20-01": "签到表记录的是独立人物，还是岗位？"
+    }
+  },
+  {
+    "caseId": "c21-missing-seven-minutes",
+    "baseCanonicalHash": "sha256:c21-missing-seven-minutes-v1",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c21-01": "那七分钟里，录像系统仍按正常帧率采样吗？"
+    }
+  },
+  {
+    "caseId": "c22-overloaded-bridge",
+    "baseCanonicalHash": "sha256:c22-overloaded-bridge-v1",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c22-01": "每个轴都合规时，桥上同时存在的总载荷是多少？"
+    }
+  },
+  {
+    "caseId": "c23-clean-air-sample",
+    "baseCanonicalHash": "sha256:c23-clean-air-sample-v1",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c23-01": "这份空气样本实际是从哪里采集的？"
+    }
+  },
+  {
+    "caseId": "c24-turned-painting",
+    "baseCanonicalHash": "sha256:c24-turned-painting-v1",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c24-01": "画框封条完整，能证明展示面没有转向吗？"
+    }
+  },
+  {
+    "caseId": "c26-short-map-pipeline",
+    "baseCanonicalHash": "sha256:b71b41828d37dc0054e2237164cbc6b70957dd9159384bb26bf2cee4b3465f13",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c26-01": "地图上的线长包含竖井里的折返段吗？"
+    }
+  },
+  {
+    "caseId": "c27-stationary-moving-platform",
+    "baseCanonicalHash": "sha256:1f74deafc0608c61427571c5293c1f142c20f1f2cb4cd25cabd16cb86d4899c0",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c27-01": "平台回到原位时，货物还固定在上面吗？"
+    }
+  },
+  {
+    "caseId": "c28-ninth-minute-temperature",
+    "baseCanonicalHash": "sha256:499377ccf98237c07017a09549c1db1b2468ff13dfc1cfec14a649bc5404b065",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c28-01": "探头读数会滞后于真实温度变化吗？"
+    }
+  },
+  {
+    "caseId": "c29-role-stamp-signature",
+    "baseCanonicalHash": "sha256:de08e447e9b3c0d5c6df0d072c973cce7b3ec41e4374be210c215daa04bf2eb7",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c29-01": "文件上的印记属于具体人物，还是岗位印章？"
+    }
+  },
+  {
+    "caseId": "c30-shared-shift-id",
+    "baseCanonicalHash": "sha256:1c429ccca850dcbdc207745d3b5f51aa7776417d1cb29b47a11b11c00f4fc9a5",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c30-01": "同一个工号在两个时段属于同一个人吗？"
+    }
+  },
+  {
+    "caseId": "c31-eighth-unchecked-guest",
+    "baseCanonicalHash": "sha256:1cd50d86090f06e67551aad5eb250a2bdc039f0f8e73d6d8d4e3f500d760eed2",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c31-01": "登记表统计的是独立住客，还是床位与合同？"
+    }
+  },
+  {
+    "caseId": "c32-approved-unauthorized-door",
+    "baseCanonicalHash": "sha256:fb909b46d284d9d1bdba066eb9c325c88edcdf26f7c4127d9bbfae15dd7871d0",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c32-01": "这次开门权限来自个人授权，还是岗位组继承？"
+    }
+  },
+  {
+    "caseId": "c33-early-late-arrival",
+    "baseCanonicalHash": "sha256:a9e41dfe82f25351e28ff909da35dd24816f28768d1330db397b1b5fcdc4bde9",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c33-01": "门禁、录像和签到记录使用同一个时钟吗？"
+    }
+  },
+  {
+    "caseId": "c34-tomorrow-seal",
+    "baseCanonicalHash": "sha256:4a681813f17e5b044e331d4258d4c14ff88c09c58d9643ed9aad11c54e53ef88",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c34-01": "封条上的日期是印制日，还是封箱日？"
+    }
+  },
+  {
+    "caseId": "c35-extra-glass-attendant",
+    "baseCanonicalHash": "sha256:8978a4ad427d2faa1677029ee390067ea40b55299165449296bbba144950c145",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c35-01": "玻璃里多出的人影是直视人物，还是反射？"
+    }
+  },
+  {
+    "caseId": "c36-no-one-left-terminal",
+    "baseCanonicalHash": "sha256:785d1d2927e980a88d50ea82ecd92896ce6862fa5424c51f5c31a67296a592e5",
+    "presentationRevision": 2,
+    "questionLabels": {
+      "query-c36-01": "计数、刷卡和调度记录描述的是同一个下车事件吗？"
+    }
+  },
+  {
+    "caseId": "c02-snow-route",
+    "baseCanonicalHash": "sha256:c02-snow-route-v1",
+    "presentationRevision": 2,
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  },
+  {
+    "caseId": "c03-second-shadow",
+    "baseCanonicalHash": "sha256:c03-second-shadow-v1",
+    "presentationRevision": 2,
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  },
+  {
+    "caseId": "c04-unpostable-reply",
+    "baseCanonicalHash": "sha256:c04-unpostable-reply-v1",
+    "presentationRevision": 2,
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  },
+  {
+    "caseId": "c05-third-lamp",
+    "baseCanonicalHash": "sha256:c05-third-lamp-v1",
+    "presentationRevision": 2,
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  },
+  {
+    "caseId": "c06-nonexistent-ticket",
+    "baseCanonicalHash": "sha256:c06-nonexistent-ticket-v1",
+    "presentationRevision": 2,
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  },
+  {
+    "caseId": "c07-key-returns",
+    "baseCanonicalHash": "sha256:c07-key-returns-v1",
+    "presentationRevision": 2,
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  },
+  {
+    "caseId": "c08-unclaimed-recording",
+    "baseCanonicalHash": "sha256:c08-unclaimed-recording-v1",
+    "presentationRevision": 2,
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  },
+  {
+    "caseId": "c09-rain-room",
+    "baseCanonicalHash": "sha256:c09-rain-room-v1",
+    "presentationRevision": 2,
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  },
+  {
+    "caseId": "c10-single-ring",
+    "baseCanonicalHash": "sha256:c10-single-ring-v1",
+    "presentationRevision": 2,
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  },
+  {
+    "caseId": "c11-borrowed-signature",
+    "baseCanonicalHash": "sha256:c11-borrowed-signature-v1",
+    "presentationRevision": 2,
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  },
+  {
+    "caseId": "c12-zero-floor-elevator",
+    "baseCanonicalHash": "sha256:c12-zero-floor-elevator-v1",
+    "presentationRevision": 2,
+    "replayChallenges": [
+      {
+        "mode": "limited-questions",
+        "questionLimit": 12
+      },
+      {
+        "mode": "minimal-proof"
+      },
+      {
+        "mode": "no-scaffolds"
+      }
+    ]
+  }
+]

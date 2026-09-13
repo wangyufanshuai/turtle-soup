@@ -1,0 +1,31 @@
+✔ M2 fresh drafts have no chosen explanation and no anonymous numbered alternatives (17.22ms)
+✔ c01-cold-room-knock: all alternatives appear together after reading, explicit choices and notes survive save/undo/restart (14.0817ms)
+✔ c03-second-shadow: all alternatives appear together after reading, explicit choices and notes survive save/undo/restart (9.0887ms)
+✔ c61-missing-tape-turn: all alternatives appear together after reading, explicit choices and notes survive save/undo/restart (33.5435ms)
+✔ c84-handoff-after-stop: all alternatives appear together after reading, explicit choices and notes survive save/undo/restart (39.2461ms)
+✔ stale confirmations fail after a newer question; cancel, notes and two drafts remain separate (6.7235ms)
+✔ M2 command validation preserves note whitespace and rejects malformed revisions and overlong notes (0.1484ms)
+✔ unrelated answers have no invented sources, while unknown facts never reveal hidden evidence identities (2.1113ms)
+✔ M2 answer links contain only currently public evidence supporting the interpreted proposition (1.7401ms)
+✔ M2 old default is not a player choice, while explicit historical selection remains intact (2.348ms)
+✔ M3 board references share event membership while draft boards and temporal order remain independent (56.1245ms)
+✔ M3 failed composite writes neither partial structure nor a log entry (18.8166ms)
+✔ M3 swap is one saved edit and preserves connections; removing from chain removes board dependencies (34.9622ms)
+✔ M3 envelope rejects nested transactions, mixed drafts and unsupported revisions (0.1884ms)
+✔ live F01 preserves occupancy rather than substituting the agent causing a sound (17.8374ms)
+✔ clarification, cancel, rewrite, undo, limited counting and forged resolution survive the actual Worker boundary (15.1145ms)
+✔ the place name 后台 is not classified as a changed time in a negative C03 question (2.7468ms)
+✔ c01-cold-room-knock: starters are safe, canonical identities unchanged, old AI context replays but is not live authority (2.6507ms)
+✔ c03-second-shadow: starters are safe, canonical identities unchanged, old AI context replays but is not live authority (1.8707ms)
+✔ c61-missing-tape-turn: starters are safe, canonical identities unchanged, old AI context replays but is not live authority (8.1882ms)
+✔ c84-handoff-after-stop: starters are safe, canonical identities unchanged, old AI context replays but is not live authority (5.6516ms)
+✔ relation neighbours, unsupported time and negation never silently choose the wrong proposition (3.5411ms)
+✔ new live routing has an explicit replay identity; old raw-text commands preserve their historical meaning (3.5191ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 306.1146

@@ -1,0 +1,2133 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c53-late-fiber-echo",
+  "metadata": {
+    "titleKey": "case.c53.title",
+    "difficulty": "advanced",
+    "ageRating": "16+",
+    "contentTags": [
+      "科学测量",
+      "复杂系统",
+      "来源边界"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:604913403f946cf92891763202c8d26c8ec47410d2ba39b51f807bd6ceea6566",
+    "status": "public-preview",
+    "seasonId": "season-4"
+  },
+  "presentation": {
+    "layoutId": "season4-signal-chain",
+    "sceneAsset": "/assets/cases/c53/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c53/scene-mobile.svg",
+    "palette": "season4-c53",
+    "accent": "#9bc7d8",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "signal-chain-lab",
+    "mobileNavigation": [
+      "现场",
+      "记录",
+      "推理板"
+    ],
+    "boardMode": "signal-chain"
+  },
+  "surface": {
+    "titleKey": "case.c53.title",
+    "textKey": "case.c53.surface",
+    "publicFactIds": [
+      "fact-c53-01",
+      "fact-c53-02",
+      "fact-c53-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c53-01",
+      "query-c53-02",
+      "query-c53-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c53-one",
+      "titleKey": "chapter.c53.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c53-1",
+      "titleKey": "board.c53.1.title",
+      "mode": "signal-chain",
+      "slots": [
+        {
+          "id": "slot-c53-1-1",
+          "labelKey": "board.c53.1.slot.1",
+          "acceptsEventIds": [
+            "event-c53-01"
+          ]
+        },
+        {
+          "id": "slot-c53-1-2",
+          "labelKey": "board.c53.1.slot.2",
+          "acceptsEventIds": [
+            "event-c53-03"
+          ]
+        },
+        {
+          "id": "slot-c53-1-3",
+          "labelKey": "board.c53.1.slot.3",
+          "acceptsEventIds": [
+            "event-c53-05"
+          ]
+        },
+        {
+          "id": "slot-c53-1-4",
+          "labelKey": "board.c53.1.slot.4",
+          "acceptsEventIds": [
+            "event-c53-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "propagates",
+        "buffers",
+        "reconstructs"
+      ]
+    },
+    {
+      "id": "board-c53-2",
+      "titleKey": "board.c53.2.title",
+      "mode": "network-topology",
+      "slots": [
+        {
+          "id": "slot-c53-2-1",
+          "labelKey": "board.c53.2.slot.1",
+          "acceptsEventIds": [
+            "event-c53-02"
+          ]
+        },
+        {
+          "id": "slot-c53-2-2",
+          "labelKey": "board.c53.2.slot.2",
+          "acceptsEventIds": [
+            "event-c53-04"
+          ]
+        },
+        {
+          "id": "slot-c53-2-3",
+          "labelKey": "board.c53.2.slot.3",
+          "acceptsEventIds": [
+            "event-c53-06"
+          ]
+        },
+        {
+          "id": "slot-c53-2-4",
+          "labelKey": "board.c53.2.slot.4",
+          "acceptsEventIds": [
+            "event-c53-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "routes-through",
+        "deduplicates",
+        "acknowledges"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c53-system",
+      "kind": "object",
+      "labelKey": "entity.c53.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c53",
+      "kind": "location",
+      "labelKey": "location.c53",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c53-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "14:00"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-1",
+      "labelKey": "event.c53.1",
+      "effectFactIds": [
+        "fact-c53-01"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "14:04"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-2",
+      "labelKey": "event.c53.2",
+      "effectFactIds": [
+        "fact-c53-02"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "14:08"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-3",
+      "labelKey": "event.c53.3",
+      "effectFactIds": [
+        "fact-c53-03"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "14:12"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-4",
+      "labelKey": "event.c53.4",
+      "effectFactIds": [
+        "fact-c53-04"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "14:16"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-5",
+      "labelKey": "event.c53.5",
+      "effectFactIds": [
+        "fact-c53-05"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "14:20"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-6",
+      "labelKey": "event.c53.6",
+      "effectFactIds": [
+        "fact-c53-06"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "14:24"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-7",
+      "labelKey": "event.c53.7",
+      "effectFactIds": [
+        "fact-c53-07"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "15:28"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-8",
+      "labelKey": "event.c53.8",
+      "effectFactIds": [
+        "fact-c53-08"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "15:32"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-9",
+      "labelKey": "event.c53.9",
+      "effectFactIds": [
+        "fact-c53-09"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "15:36"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-10",
+      "labelKey": "event.c53.10",
+      "effectFactIds": [
+        "fact-c53-10"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "15:40"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-11",
+      "labelKey": "event.c53.11",
+      "effectFactIds": [
+        "fact-c53-11"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "15:44"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-12",
+      "labelKey": "event.c53.12",
+      "effectFactIds": [
+        "fact-c53-12"
+      ],
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c53-13",
+      "order": 130,
+      "time": {
+        "kind": "instant",
+        "value": "15:48"
+      },
+      "participants": [
+        "entity-c53-system"
+      ],
+      "locationId": "location-c53",
+      "action": "step-c53-13",
+      "labelKey": "event.c53.13",
+      "effectFactIds": [
+        "fact-c53-13"
+      ],
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c53-1-1",
+      "type": "precedes",
+      "fromId": "entity-c53-system",
+      "toId": "location-c53",
+      "eventId": "event-c53-01",
+      "factId": "fact-c53-01"
+    },
+    {
+      "id": "relation-c53-1-2",
+      "type": "causes",
+      "fromId": "entity-c53-system",
+      "toId": "location-c53",
+      "eventId": "event-c53-03",
+      "factId": "fact-c53-02"
+    },
+    {
+      "id": "relation-c53-1-3",
+      "type": "causes",
+      "fromId": "entity-c53-system",
+      "toId": "location-c53",
+      "eventId": "event-c53-05",
+      "factId": "fact-c53-03"
+    },
+    {
+      "id": "relation-c53-2-1",
+      "type": "precedes",
+      "fromId": "entity-c53-system",
+      "toId": "location-c53",
+      "eventId": "event-c53-02",
+      "factId": "fact-c53-02"
+    },
+    {
+      "id": "relation-c53-2-2",
+      "type": "causes",
+      "fromId": "entity-c53-system",
+      "toId": "location-c53",
+      "eventId": "event-c53-04",
+      "factId": "fact-c53-03"
+    },
+    {
+      "id": "relation-c53-2-3",
+      "type": "causes",
+      "fromId": "entity-c53-system",
+      "toId": "location-c53",
+      "eventId": "event-c53-06",
+      "factId": "fact-c53-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c53-01",
+      "predicate": "verified_c53_1",
+      "args": {
+        "term": "光纤传播"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.1"
+    },
+    {
+      "id": "fact-c53-02",
+      "predicate": "verified_c53_2",
+      "args": {
+        "term": "回波"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.2"
+    },
+    {
+      "id": "fact-c53-03",
+      "predicate": "verified_c53_3",
+      "args": {
+        "term": "设备缓冲"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.3"
+    },
+    {
+      "id": "fact-c53-04",
+      "predicate": "verified_c53_4",
+      "args": {
+        "term": "显示时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.4"
+    },
+    {
+      "id": "fact-c53-05",
+      "predicate": "verified_c53_5",
+      "args": {
+        "term": "发射时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.5"
+    },
+    {
+      "id": "fact-c53-06",
+      "predicate": "verified_c53_6",
+      "args": {
+        "term": "接收时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.6"
+    },
+    {
+      "id": "fact-c53-07",
+      "predicate": "verified_c53_7",
+      "args": {
+        "term": "链路长度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.7"
+    },
+    {
+      "id": "fact-c53-08",
+      "predicate": "verified_c53_8",
+      "args": {
+        "term": "缓存深度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.8"
+    },
+    {
+      "id": "fact-c53-09",
+      "predicate": "verified_c53_9",
+      "args": {
+        "term": "回波峰值"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.9"
+    },
+    {
+      "id": "fact-c53-10",
+      "predicate": "verified_c53_10",
+      "args": {
+        "term": "时间偏移"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.10"
+    },
+    {
+      "id": "fact-c53-11",
+      "predicate": "verified_c53_11",
+      "args": {
+        "term": "光纤传播"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.11"
+    },
+    {
+      "id": "fact-c53-12",
+      "predicate": "verified_c53_12",
+      "args": {
+        "term": "回波"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-12"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c53.12"
+    },
+    {
+      "id": "fact-c53-13",
+      "predicate": "verified_c53_13",
+      "args": {
+        "term": "设备缓冲"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-13"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-13"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-13"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c53.13"
+    },
+    {
+      "id": "fact-c53-14",
+      "predicate": "verified_c53_14",
+      "args": {
+        "term": "显示时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c53.14"
+    },
+    {
+      "id": "fact-c53-15",
+      "predicate": "verified_c53_15",
+      "args": {
+        "term": "发射时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c53.15"
+    },
+    {
+      "id": "fact-c53-16",
+      "predicate": "verified_c53_16",
+      "args": {
+        "term": "接收时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c53.16"
+    },
+    {
+      "id": "fact-c53-17",
+      "predicate": "verified_c53_17",
+      "args": {
+        "term": "链路长度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c53.17"
+    },
+    {
+      "id": "fact-c53-18",
+      "predicate": "verified_c53_18",
+      "args": {
+        "term": "缓存深度"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c53.18"
+    },
+    {
+      "id": "fact-c53-19",
+      "predicate": "verified_c53_19",
+      "args": {
+        "term": "回波峰值"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c53-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c53-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c53.19"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c53-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-01",
+        "fact-c53-02",
+        "fact-c53-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c53-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-01",
+        "fact-c53-02",
+        "fact-c53-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c53-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-02",
+        "fact-c53-15"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c53-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-03",
+        "fact-c53-16"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c53-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-04",
+        "fact-c53-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c53-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-05",
+        "fact-c53-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c53-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-06",
+        "fact-c53-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c53-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-07"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c53-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-08"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c53-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c53-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c53-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c53-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-12"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c53-13",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c53-13"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c53-13"
+      ],
+      "spoilerLevel": "sensitive"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c53-01",
+      "labelKey": "query.c53.1",
+      "intent": "verify",
+      "predicate": "verified_c53_1",
+      "slots": {
+        "subjectId": "entity-c53-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c53-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-opening"
+      ],
+      "examplePhrases": [
+        "光纤传播是否成立？",
+        "能确认光纤传播吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "光纤传播"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c53-02",
+      "labelKey": "query.c53.2",
+      "intent": "verify",
+      "predicate": "verified_c53_2",
+      "slots": {
+        "subjectId": "entity-c53-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c53-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-opening"
+      ],
+      "examplePhrases": [
+        "回波是否成立？",
+        "能确认回波吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "回波"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c53-03",
+      "labelKey": "query.c53.3",
+      "intent": "verify",
+      "predicate": "verified_c53_3",
+      "slots": {
+        "subjectId": "entity-c53-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c53-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-opening"
+      ],
+      "examplePhrases": [
+        "设备缓冲是否成立？",
+        "能确认设备缓冲吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "设备缓冲"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c53-04",
+      "labelKey": "query.c53.4",
+      "intent": "verify",
+      "predicate": "verified_c53_4",
+      "slots": {
+        "subjectId": "entity-c53-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c53-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-04"
+      ],
+      "examplePhrases": [
+        "显示时间是否成立？",
+        "能确认显示时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "显示时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c53-05",
+      "labelKey": "query.c53.5",
+      "intent": "verify",
+      "predicate": "verified_c53_5",
+      "slots": {
+        "subjectId": "entity-c53-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c53-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-05"
+      ],
+      "examplePhrases": [
+        "发射时间是否成立？",
+        "能确认发射时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "发射时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c53-06",
+      "labelKey": "query.c53.6",
+      "intent": "verify",
+      "predicate": "verified_c53_6",
+      "slots": {
+        "subjectId": "entity-c53-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c53-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-06"
+      ],
+      "examplePhrases": [
+        "接收时间是否成立？",
+        "能确认接收时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "接收时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c53-07",
+      "labelKey": "query.c53.7",
+      "intent": "verify",
+      "predicate": "verified_c53_7",
+      "slots": {
+        "subjectId": "entity-c53-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c53-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-07"
+      ],
+      "examplePhrases": [
+        "链路长度是否成立？",
+        "能确认链路长度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "链路长度"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c53-08",
+      "labelKey": "query.c53.8",
+      "intent": "verify",
+      "predicate": "verified_c53_8",
+      "slots": {
+        "subjectId": "entity-c53-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c53-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-08"
+      ],
+      "examplePhrases": [
+        "缓存深度是否成立？",
+        "能确认缓存深度吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "缓存深度"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c53-09",
+      "labelKey": "query.c53.9",
+      "intent": "verify",
+      "predicate": "verified_c53_9",
+      "slots": {
+        "subjectId": "entity-c53-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c53-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-09"
+      ],
+      "examplePhrases": [
+        "回波峰值是否成立？",
+        "能确认回波峰值吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "回波峰值"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c53-10",
+      "labelKey": "query.c53.10",
+      "intent": "verify",
+      "predicate": "verified_c53_10",
+      "slots": {
+        "subjectId": "entity-c53-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c53-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c53-10"
+      ],
+      "examplePhrases": [
+        "时间偏移是否成立？",
+        "能确认时间偏移吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "时间偏移"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c53-01",
+      "kind": "scene",
+      "titleKey": "evidence.c53.1.title",
+      "observationKey": "evidence.c53.1.observation",
+      "sourceFactIds": [
+        "fact-c53-01",
+        "fact-c53-02",
+        "fact-c53-03"
+      ],
+      "sourceEventIds": [
+        "event-c53-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c53-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-01.svg",
+      "assetAlt": "光纤传播"
+    },
+    {
+      "id": "evidence-c53-02",
+      "kind": "record",
+      "titleKey": "evidence.c53.2.title",
+      "observationKey": "evidence.c53.2.observation",
+      "sourceFactIds": [
+        "fact-c53-02",
+        "fact-c53-15"
+      ],
+      "sourceEventIds": [
+        "event-c53-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c53-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-02.svg",
+      "assetAlt": "回波"
+    },
+    {
+      "id": "evidence-c53-03",
+      "kind": "object",
+      "titleKey": "evidence.c53.3.title",
+      "observationKey": "evidence.c53.3.observation",
+      "sourceFactIds": [
+        "fact-c53-03",
+        "fact-c53-16"
+      ],
+      "sourceEventIds": [
+        "event-c53-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-03.svg",
+      "assetAlt": "设备缓冲"
+    },
+    {
+      "id": "evidence-c53-04",
+      "kind": "scene",
+      "titleKey": "evidence.c53.4.title",
+      "observationKey": "evidence.c53.4.observation",
+      "sourceFactIds": [
+        "fact-c53-04",
+        "fact-c53-17"
+      ],
+      "sourceEventIds": [
+        "event-c53-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-04.svg",
+      "assetAlt": "显示时间"
+    },
+    {
+      "id": "evidence-c53-05",
+      "kind": "record",
+      "titleKey": "evidence.c53.5.title",
+      "observationKey": "evidence.c53.5.observation",
+      "sourceFactIds": [
+        "fact-c53-05",
+        "fact-c53-18"
+      ],
+      "sourceEventIds": [
+        "event-c53-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-05.svg",
+      "assetAlt": "发射时间"
+    },
+    {
+      "id": "evidence-c53-06",
+      "kind": "object",
+      "titleKey": "evidence.c53.6.title",
+      "observationKey": "evidence.c53.6.observation",
+      "sourceFactIds": [
+        "fact-c53-06",
+        "fact-c53-19"
+      ],
+      "sourceEventIds": [
+        "event-c53-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-01.svg",
+      "assetAlt": "接收时间"
+    },
+    {
+      "id": "evidence-c53-07",
+      "kind": "scene",
+      "titleKey": "evidence.c53.7.title",
+      "observationKey": "evidence.c53.7.observation",
+      "sourceFactIds": [
+        "fact-c53-07"
+      ],
+      "sourceEventIds": [
+        "event-c53-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-02.svg",
+      "assetAlt": "链路长度"
+    },
+    {
+      "id": "evidence-c53-08",
+      "kind": "record",
+      "titleKey": "evidence.c53.8.title",
+      "observationKey": "evidence.c53.8.observation",
+      "sourceFactIds": [
+        "fact-c53-08"
+      ],
+      "sourceEventIds": [
+        "event-c53-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-03.svg",
+      "assetAlt": "缓存深度"
+    },
+    {
+      "id": "evidence-c53-09",
+      "kind": "object",
+      "titleKey": "evidence.c53.9.title",
+      "observationKey": "evidence.c53.9.observation",
+      "sourceFactIds": [
+        "fact-c53-09"
+      ],
+      "sourceEventIds": [
+        "event-c53-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-04.svg",
+      "assetAlt": "回波峰值"
+    },
+    {
+      "id": "evidence-c53-10",
+      "kind": "scene",
+      "titleKey": "evidence.c53.10.title",
+      "observationKey": "evidence.c53.10.observation",
+      "sourceFactIds": [
+        "fact-c53-10"
+      ],
+      "sourceEventIds": [
+        "event-c53-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-05.svg",
+      "assetAlt": "时间偏移"
+    },
+    {
+      "id": "evidence-c53-11",
+      "kind": "record",
+      "titleKey": "evidence.c53.11.title",
+      "observationKey": "evidence.c53.11.observation",
+      "sourceFactIds": [
+        "fact-c53-11"
+      ],
+      "sourceEventIds": [
+        "event-c53-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-01.svg",
+      "assetAlt": "光纤传播"
+    },
+    {
+      "id": "evidence-c53-12",
+      "kind": "object",
+      "titleKey": "evidence.c53.12.title",
+      "observationKey": "evidence.c53.12.observation",
+      "sourceFactIds": [
+        "fact-c53-12"
+      ],
+      "sourceEventIds": [
+        "event-c53-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c53/evidence-02.svg",
+      "assetAlt": "回波"
+    },
+    {
+      "id": "evidence-c53-13",
+      "kind": "scene",
+      "titleKey": "evidence.c53.13.title",
+      "observationKey": "evidence.c53.13.observation",
+      "sourceFactIds": [
+        "fact-c53-13"
+      ],
+      "sourceEventIds": [
+        "event-c53-13"
+      ],
+      "relatedEntityIds": [
+        "entity-c53-system",
+        "location-c53"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c53/evidence-03.svg",
+      "assetAlt": "设备缓冲"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c53.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c53-01",
+          "event-c53-02",
+          "event-c53-03",
+          "event-c53-04",
+          "event-c53-05",
+          "event-c53-06",
+          "event-c53-07",
+          "event-c53-08",
+          "event-c53-09",
+          "event-c53-10",
+          "event-c53-11",
+          "event-c53-12"
+        ],
+        "motiveKey": "解释长链路测量中的可重复延迟"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c53-01",
+        "evidence-c53-02",
+        "evidence-c53-03",
+        "evidence-c53-04",
+        "evidence-c53-05",
+        "evidence-c53-06",
+        "evidence-c53-07",
+        "evidence-c53-08",
+        "evidence-c53-09",
+        "evidence-c53-10",
+        "evidence-c53-11",
+        "evidence-c53-12"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c53-1",
+        "contradiction-c53-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c53-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c53.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "光纤中断后又恢复了"
+        ],
+        "motiveKey": "motive-c53-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c53-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c53-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c53-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c53.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "回波来自另一条线路"
+        ],
+        "motiveKey": "motive-c53-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c53-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c53-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c53-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c53-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c53-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c53-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c53-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c53-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c53-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c53-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c53-01",
+      "fact-c53-02",
+      "fact-c53-03",
+      "fact-c53-04",
+      "fact-c53-05",
+      "fact-c53-06",
+      "fact-c53-07",
+      "fact-c53-08",
+      "fact-c53-09",
+      "fact-c53-10",
+      "fact-c53-11",
+      "fact-c53-12"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c53-01",
+      "evidence-c53-02",
+      "evidence-c53-03",
+      "evidence-c53-04",
+      "evidence-c53-05",
+      "evidence-c53-06",
+      "evidence-c53-07",
+      "evidence-c53-08",
+      "evidence-c53-09",
+      "evidence-c53-10",
+      "evidence-c53-11",
+      "evidence-c53-12"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c53-01",
+        "event-c53-02"
+      ],
+      [
+        "event-c53-02",
+        "event-c53-03"
+      ],
+      [
+        "event-c53-03",
+        "event-c53-04"
+      ],
+      [
+        "event-c53-04",
+        "event-c53-05"
+      ],
+      [
+        "event-c53-05",
+        "event-c53-06"
+      ],
+      [
+        "event-c53-06",
+        "event-c53-07"
+      ],
+      [
+        "event-c53-07",
+        "event-c53-08"
+      ],
+      [
+        "event-c53-08",
+        "event-c53-09"
+      ],
+      [
+        "event-c53-09",
+        "event-c53-10"
+      ],
+      [
+        "event-c53-10",
+        "event-c53-11"
+      ],
+      [
+        "event-c53-11",
+        "event-c53-12"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c53-1",
+      "contradiction-c53-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c53-alternative-1",
+      "hypothesis-c53-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c53-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c53-a",
+        "evidenceIds": [
+          "evidence-c53-01",
+          "evidence-c53-02",
+          "evidence-c53-03",
+          "evidence-c53-04",
+          "evidence-c53-05",
+          "evidence-c53-06",
+          "evidence-c53-07",
+          "evidence-c53-08"
+        ]
+      },
+      {
+        "id": "proof-c53-b",
+        "evidenceIds": [
+          "evidence-c53-01",
+          "evidence-c53-02",
+          "evidence-c53-09",
+          "evidence-c53-10",
+          "evidence-c53-11",
+          "evidence-c53-12"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "解释长链路测量中的可重复延迟"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c53-1",
+        "kind": "time",
+        "boardId": "board-c53-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c53-1-1",
+            "eventId": "event-c53-01"
+          },
+          {
+            "slotId": "slot-c53-1-2",
+            "eventId": "event-c53-03"
+          },
+          {
+            "slotId": "slot-c53-1-3",
+            "eventId": "event-c53-05"
+          },
+          {
+            "slotId": "slot-c53-1-4",
+            "eventId": "event-c53-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c53-01",
+            "toEventId": "event-c53-03",
+            "relation": "propagates"
+          },
+          {
+            "fromEventId": "event-c53-03",
+            "toEventId": "event-c53-05",
+            "relation": "propagates"
+          },
+          {
+            "fromEventId": "event-c53-05",
+            "toEventId": "event-c53-12",
+            "relation": "propagates"
+          }
+        ],
+        "failureCategory": "time"
+      },
+      {
+        "id": "obligation-c53-2",
+        "kind": "source",
+        "boardId": "board-c53-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c53-2-1",
+            "eventId": "event-c53-02"
+          },
+          {
+            "slotId": "slot-c53-2-2",
+            "eventId": "event-c53-04"
+          },
+          {
+            "slotId": "slot-c53-2-3",
+            "eventId": "event-c53-06"
+          },
+          {
+            "slotId": "slot-c53-2-4",
+            "eventId": "event-c53-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c53-02",
+            "toEventId": "event-c53-04",
+            "relation": "routes-through"
+          },
+          {
+            "fromEventId": "event-c53-04",
+            "toEventId": "event-c53-06",
+            "relation": "routes-through"
+          },
+          {
+            "fromEventId": "event-c53-06",
+            "toEventId": "event-c53-12",
+            "relation": "routes-through"
+          }
+        ],
+        "failureCategory": "source"
+      }
+    ],
+    "uniquenessClaim": "传播延迟与设备缓冲叠加，回波到达、进入缓存和被显示的时间不同。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c53-1",
+      "eventId": "event-c53-02",
+      "factIds": [
+        "fact-c53-01"
+      ],
+      "captionKey": "event.c53.2"
+    },
+    {
+      "id": "replay-c53-2",
+      "eventId": "event-c53-03",
+      "factIds": [
+        "fact-c53-02"
+      ],
+      "captionKey": "event.c53.3"
+    },
+    {
+      "id": "replay-c53-3",
+      "eventId": "event-c53-04",
+      "factIds": [
+        "fact-c53-03"
+      ],
+      "captionKey": "event.c53.4"
+    },
+    {
+      "id": "replay-c53-4",
+      "eventId": "event-c53-05",
+      "factIds": [
+        "fact-c53-04"
+      ],
+      "captionKey": "event.c53.5"
+    },
+    {
+      "id": "replay-c53-5",
+      "eventId": "event-c53-06",
+      "factIds": [
+        "fact-c53-05"
+      ],
+      "captionKey": "event.c53.6"
+    },
+    {
+      "id": "replay-c53-6",
+      "eventId": "event-c53-07",
+      "factIds": [
+        "fact-c53-01",
+        "fact-c53-02",
+        "fact-c53-03",
+        "fact-c53-04",
+        "fact-c53-05",
+        "fact-c53-06",
+        "fact-c53-07",
+        "fact-c53-08",
+        "fact-c53-09",
+        "fact-c53-10",
+        "fact-c53-11",
+        "fact-c53-12"
+      ],
+      "captionKey": "event.c53.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c53.title": "迟到的光纤回声",
+      "case.c53.surface": "光纤回波比预期晚到，但设备和线路没有故障。",
+      "case.c53.truth": "传播延迟与设备缓冲叠加，回波到达、进入缓存和被显示的时间不同。",
+      "entity.c53.system": "测量系统与记录链",
+      "location.c53": "科学系统现场",
+      "hypothesis.c53.canonical": "传播延迟与设备缓冲叠加，回波到达、进入缓存和被显示的时间不同。",
+      "hypothesis.c53.alternative.1": "光纤中断后又恢复了",
+      "hypothesis.c53.alternative.2": "回波来自另一条线路",
+      "motive.解释长链路测量中的可重复延迟": "解释长链路测量中的可重复延迟",
+      "chapter.c53.one": "固定异常",
+      "chapter.c53.two": "统一测量边界",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c53.1": "光纤传播是否成立？",
+      "query.c53.2": "回波是否成立？",
+      "query.c53.3": "设备缓冲是否成立？",
+      "query.c53.4": "显示时间是否成立？",
+      "query.c53.5": "发射时间是否成立？",
+      "query.c53.6": "接收时间是否成立？",
+      "query.c53.7": "链路长度是否成立？",
+      "query.c53.8": "缓存深度是否成立？",
+      "query.c53.9": "回波峰值是否成立？",
+      "query.c53.10": "时间偏移是否成立？",
+      "event.c53.1": "阶段 1：光纤传播进入记录链",
+      "event.c53.2": "阶段 2：回波进入记录链",
+      "event.c53.3": "阶段 3：设备缓冲进入记录链",
+      "event.c53.4": "阶段 4：显示时间进入记录链",
+      "event.c53.5": "阶段 5：发射时间进入记录链",
+      "event.c53.6": "阶段 6：接收时间进入记录链",
+      "event.c53.7": "阶段 7：链路长度进入记录链",
+      "event.c53.8": "阶段 8：缓存深度进入记录链",
+      "event.c53.9": "阶段 9：回波峰值进入记录链",
+      "event.c53.10": "阶段 10：时间偏移进入记录链",
+      "event.c53.11": "阶段 11：光纤传播进入记录链",
+      "event.c53.12": "阶段 12：回波进入记录链",
+      "event.c53.13": "阶段 13：设备缓冲进入记录链",
+      "evidence.c53.1.title": "光纤传播记录",
+      "evidence.c53.1.observation": "来源记录显示“光纤传播”在该阶段保持可复核。",
+      "evidence.c53.2.title": "回波记录",
+      "evidence.c53.2.observation": "来源记录显示“回波”在该阶段保持可复核。",
+      "evidence.c53.3.title": "设备缓冲记录",
+      "evidence.c53.3.observation": "来源记录显示“设备缓冲”在该阶段保持可复核。",
+      "evidence.c53.4.title": "显示时间记录",
+      "evidence.c53.4.observation": "来源记录显示“显示时间”在该阶段保持可复核。",
+      "evidence.c53.5.title": "发射时间记录",
+      "evidence.c53.5.observation": "来源记录显示“发射时间”在该阶段保持可复核。",
+      "evidence.c53.6.title": "接收时间记录",
+      "evidence.c53.6.observation": "来源记录显示“接收时间”在该阶段保持可复核。",
+      "evidence.c53.7.title": "链路长度记录",
+      "evidence.c53.7.observation": "来源记录显示“链路长度”在该阶段保持可复核。",
+      "evidence.c53.8.title": "缓存深度记录",
+      "evidence.c53.8.observation": "来源记录显示“缓存深度”在该阶段保持可复核。",
+      "evidence.c53.9.title": "回波峰值记录",
+      "evidence.c53.9.observation": "来源记录显示“回波峰值”在该阶段保持可复核。",
+      "evidence.c53.10.title": "时间偏移记录",
+      "evidence.c53.10.observation": "来源记录显示“时间偏移”在该阶段保持可复核。",
+      "evidence.c53.11.title": "光纤传播记录",
+      "evidence.c53.11.observation": "来源记录显示“光纤传播”在该阶段保持可复核。",
+      "evidence.c53.12.title": "回波记录",
+      "evidence.c53.12.observation": "来源记录显示“回波”在该阶段保持可复核。",
+      "evidence.c53.13.title": "设备缓冲记录",
+      "evidence.c53.13.observation": "来源记录显示“设备缓冲”在该阶段保持可复核。",
+      "board.c53.1.title": "迟到的光纤回声 · signal-chain",
+      "board.c53.1.slot.1": "起始来源",
+      "board.c53.1.slot.2": "关键变化",
+      "board.c53.1.slot.3": "观测结果",
+      "board.c53.1.slot.4": "排除替代",
+      "board.c53.2.title": "迟到的光纤回声 · network-topology",
+      "board.c53.2.slot.1": "起始来源",
+      "board.c53.2.slot.2": "关键变化",
+      "board.c53.2.slot.3": "观测结果",
+      "board.c53.2.slot.4": "排除替代"
+    }
+  }
+}

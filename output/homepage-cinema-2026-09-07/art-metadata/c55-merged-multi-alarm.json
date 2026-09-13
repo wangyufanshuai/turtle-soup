@@ -1,0 +1,32 @@
+{
+  "id": "c55-merged-multi-alarm",
+  "title": "只响一次的多重告警",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-7c402c88-03ee-4144-820e-3e4304787324.png",
+  "sourceSha256": "ad153fa0651d6b6ec52741f1c5daefc2d6feec023bb670146927c648de4c7fc5",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 只响一次的多重告警 — 三个告警源在同一秒触发，值班员却只听到一次提示音。\nArt direction: A night control-room warning speaker and several muted indicator lamps, no charts or counted alert explanation.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c55-merged-multi-alarm.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 78410,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "b28ef211c724b57c684f3e903f78884197f0444e6bdc69f63a7883ff5fb47873"
+    },
+    {
+      "path": "/assets/home-cinema/c55-merged-multi-alarm-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 26378,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "2fdaec27f91cf1f5d31fb4fe47f8e0349ee1c4889df7a55b58e58a2d0f1a4dcb"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.604181+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}

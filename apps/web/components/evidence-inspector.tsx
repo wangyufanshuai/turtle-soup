@@ -3,6 +3,7 @@
 import type { EvidencePlayerState, EvidenceProjection, GameCommand, TheoryDraft } from "@turtle-soup/mystery-core";
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import styles from "./evidence-inspector.module.css";
+import m2Styles from "./investigation-m2.module.css";
 
 const STATUS: Record<EvidencePlayerState, string> = {
   available: "待检查",
@@ -12,6 +13,8 @@ const STATUS: Record<EvidencePlayerState, string> = {
   verified: "已核实",
   dismissed: "已搁置",
 };
+
+export interface EvidenceReading { selectedId?: string; page: number; scrollTop: number }
 
 const MATERIAL_LABELS: Record<string, string> = {
   "freeze-frame": "COLD STORAGE FRAME",
@@ -63,6 +66,10 @@ export function EvidenceInspector({
   interactionMode,
   interactionLabel,
   onContinueToProof,
+  reading,
+  onReadingChange,
+  questionContext,
+  allEvidence,
 }: {
   evidence: EvidenceProjection[];
   activeTheoryId: TheoryDraft["id"];
@@ -73,20 +80,39 @@ export function EvidenceInspector({
   interactionMode?: string;
   interactionLabel?: string;
   onContinueToProof?: () => void;
+  reading?: EvidenceReading;
+  onReadingChange?: (value: EvidenceReading) => void;
+  questionContext?: string;
+  allEvidence?: EvidenceProjection[];
 }) {
-  const [selectedId, setSelectedId] = useState<string>();
-  const [page, setPage] = useState(0);
+  const [localReading, setLocalReading] = useState<EvidenceReading>({page:0,scrollTop:0});
+  const currentReading = reading ?? localReading;
+  const updateReading = (value: EvidenceReading) => (onReadingChange ?? setLocalReading)(value);
+  const {selectedId,page} = currentReading;
+  const setPage = (update: number | ((previous: number) => number)) => updateReading({...currentReading,page:typeof update === 'function' ? update(page) : update});
   const [imageFailed, setImageFailed] = useState(false);
   const inspectorRef = useRef<HTMLElement>(null);
-  const dialogRef = useRef<HTMLDivElement>(null);
+  const dialogRef = useRef<HTMLDialogElement>(null);
   const returnFocusRef = useRef<HTMLElement | null>(null);
+  const readingDirectionRef = useRef<-1 | 1 | undefined>(undefined);
   const pageSize = compact ? 4 : 5;
   const pageCount = Math.max(1, Math.ceil(evidence.length / pageSize));
   const visible = evidence.slice(page * pageSize, page * pageSize + pageSize);
   const selected = useMemo(() => evidence.find((item) => item.id === selectedId), [evidence, selectedId]);
+  const materialIndex = (id:string) => (allEvidence ?? evidence).findIndex(item=>item.id===id);
   const dismissedCount = evidence.filter((item) => item.state === "dismissed").length;
   const inspectedCount = evidence.filter((item) => !["available", "discovered", "dismissed"].includes(item.state)).length;
-  const candidateCount = Math.max(0, inspectedCount - linkedEvidenceIds.length);
+  const visibleLinkedCount = evidence.filter(item => linkedEvidenceIds.includes(item.id)).length;
+  const candidateCount = Math.max(0, inspectedCount - visibleLinkedCount);
+  const selectedIndex = evidence.findIndex(item => item.id === selectedId);
+  const selectedNeedsInspection = selected?.state === "available" || selected?.state === "discovered";
+
+  useEffect(() => {
+    if (!selected) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = previousOverflow; };
+  }, [Boolean(selected)]);
 
   useEffect(() => {
     if (page >= pageCount) setPage(pageCount - 1);
@@ -109,7 +135,13 @@ export function EvidenceInspector({
       return () => { window.cancelAnimationFrame(frame); window.clearTimeout(retry); };
     }
     setImageFailed(false);
-    requestAnimationFrame(() => dialogRef.current?.querySelector<HTMLElement>("button")?.focus());
+    if (dialogRef.current && !dialogRef.current.open) dialogRef.current.showModal();
+    requestAnimationFrame(() => {
+      const navigation = readingDirectionRef.current && dialogRef.current?.querySelector<HTMLButtonElement>(`button[data-reading-direction="${readingDirectionRef.current}"]:not(:disabled)`);
+      (navigation || dialogRef.current?.querySelector<HTMLElement>("button"))?.focus({preventScroll:true});
+      readingDirectionRef.current=undefined;
+      if (dialogRef.current) dialogRef.current.scrollTop = currentReading.scrollTop;
+    });
   }, [selected?.id]);
 
   const open = (item: EvidenceProjection, trigger: HTMLElement) => {
@@ -117,12 +149,19 @@ export function EvidenceInspector({
     if (item.state === "available" || item.state === "discovered") {
       dispatch({ type: "set_evidence_state", evidenceId: item.id, state: "examined" });
     }
-    setSelectedId(item.id);
+    updateReading({...currentReading,selectedId:item.id,scrollTop:0});
   };
   const close = () => {
-    setSelectedId(undefined);
+    updateReading({...currentReading,selectedId:undefined,scrollTop:0});
   };
-  const onDialogKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+  const readAdjacent = (direction: -1 | 1) => {
+    const nextIndex = selectedIndex + direction, item = evidence[nextIndex];
+    if (!item) return;
+    readingDirectionRef.current=direction;
+    if (item.state === 'available' || item.state === 'discovered') dispatch({type:'set_evidence_state',evidenceId:item.id,state:'examined'});
+    updateReading({selectedId:item.id,page:Math.floor(nextIndex/pageSize),scrollTop:0});
+  };
+  const onDialogKeyDown = (event: KeyboardEvent<HTMLDialogElement>) => {
     if (event.key === "Escape") {
       event.preventDefault();
       close();
@@ -143,11 +182,11 @@ export function EvidenceInspector({
 
   return <section ref={inspectorRef} tabIndex={-1} className={styles.inspector} data-compact={compact || undefined} data-interaction={interactionMode} aria-label="证据架">
     <div className={styles.shelfHeader}>
-      <div><small>证据材料 / {interactionMode?.toUpperCase() ?? "逐件检查"}</small><b>{interactionLabel ?? "逐件检查，不让档案淹没现场"}</b></div>
+      <div><small>公开材料 · 逐件检查</small><b>{interactionLabel ?? "寻找支持，也留意反证"}</b></div>
       <span>{Math.min(page * pageSize + 1, evidence.length)}–{Math.min((page + 1) * pageSize, evidence.length)} / {evidence.length}</span>
     </div>
     <div className={styles.triage} aria-label="证据取舍状态">
-      <span><b>{linkedEvidenceIds.length}</b>接入证明</span><span><b>{candidateCount}</b>保留候选</span><span><b>{dismissedCount}</b>暂时搁置</span>
+      <span><b>{visibleLinkedCount}</b>接入证明</span><span><b>{candidateCount}</b>保留候选</span><span><b>{dismissedCount}</b>暂时搁置</span>
       <p>{inspectedCount >= 3 && linkedEvidenceIds.length === 0 ? "已检查多份材料；现在更值得选一件接入暂定解释。" : "不要求收集全部证据。保留能支持或反驳当前理论的材料即可。"}</p>
     </div>
     <div className={styles.shelf}>
@@ -167,26 +206,27 @@ export function EvidenceInspector({
       <button type="button" disabled={page === pageCount - 1} onClick={() => setPage((value) => Math.min(pageCount - 1, value + 1))}>下一组</button>
     </nav>}
 
-    {selected && <div className={styles.backdrop} onMouseDown={(event) => event.target === event.currentTarget && close()}>
-      <div ref={dialogRef} className={styles.dialog} data-interaction={interactionMode} role="dialog" aria-modal="true" aria-labelledby="evidence-dialog-title" onKeyDown={onDialogKeyDown}>
+    {selected && <dialog ref={dialogRef} className={styles.dialog} data-interaction={interactionMode} aria-modal="true" aria-labelledby="evidence-dialog-title" onCancel={event=>{event.preventDefault();close();}} onKeyDown={onDialogKeyDown} onScroll={event=>updateReading({...currentReading,scrollTop:event.currentTarget.scrollTop})}>
         <header><div><small>{selected.sourceLabel} / {STATUS[selected.state]}</small><h2 id="evidence-dialog-title">{selected.title}</h2></div><button type="button" onClick={close} aria-label="关闭证据详情">×</button></header>
+        <div className={styles.observation}>{questionContext && <p className={m2Styles.questionContext}>正在核对：{questionContext}</p>}<small>可以确认的观察</small><p>{selected.observation}</p></div>
+        <details className={styles.attachment} key={selected.id}><summary>查看材料附图 <span>{interactionMode ? '视觉示意，不作为推理依据' : '关键观察已在上方列出'}</span></summary>
         <div className={styles.media} data-failed={imageFailed || undefined}>
-          {interactionMode ? <EvidencePlate caseCode={caseCode} index={evidence.findIndex((item) => item.id === selected.id)} title={selected.title} mode={interactionMode} /> : !imageFailed ? <img
-            src={selected.visualAsset ?? `/assets/cases/${caseCode}/evidence-${String((evidence.findIndex((item) => item.id === selected.id) % 5) + 1).padStart(2, "0")}.webp`}
+          {interactionMode ? <EvidencePlate caseCode={caseCode} index={materialIndex(selected.id)} title={selected.title} mode={interactionMode} /> : !imageFailed ? <img
+            src={selected.visualAsset ?? `/assets/cases/${caseCode}/evidence-${String((materialIndex(selected.id) % 5) + 1).padStart(2, "0")}.webp`}
             alt={`${selected.title}的证据局部图；关键观察同时在下方以文字给出`}
             width={640}
             height={400}
             onError={() => setImageFailed(true)}
           /> : <div role="img" aria-label="证据图像无法加载"><span>IMAGE UNAVAILABLE</span><b>图像不是必要线索</b><p>请使用下方文字观察继续调查。</p></div>}
         </div>
-        <div className={styles.observation}><small>可以确认的观察</small><p>{selected.observation}</p></div>
+        </details>
+        <nav className={styles.readingNav} aria-label="连续阅读材料"><button type="button" data-reading-direction="-1" disabled={selectedIndex<=0} onClick={()=>readAdjacent(-1)}>← 上一份材料</button><span>{selectedIndex+1} / {evidence.length}</span><button type="button" data-reading-direction="1" disabled={selectedIndex>=evidence.length-1} onClick={()=>readAdjacent(1)}>下一份材料 →</button></nav>
         <footer>
           {selected.state === "dismissed" ? <button type="button" onClick={() => dispatch({ type: "set_evidence_state", evidenceId: selected.id, state: "examined" })}>恢复证据</button> : <button type="button" disabled={linkedEvidenceIds.includes(selected.id)} title={linkedEvidenceIds.includes(selected.id) ? "先移出当前证明，再搁置" : undefined} onClick={() => dispatch({ type: "set_evidence_state", evidenceId: selected.id, state: "dismissed" })}>暂时搁置</button>}
           {selected.state !== "dismissed" && <button type="button" data-active={selected.state === "verified" || undefined} onClick={() => dispatch({ type: "set_evidence_state", evidenceId: selected.id, state: selected.state === "verified" ? (linkedEvidenceIds.includes(selected.id) ? "connected" : "examined") : "verified" })}>{selected.state === "verified" ? "取消核实" : "标记已核实"}</button>}
-          <button type="button" data-primary disabled={selected.state === "dismissed"} data-active={linkedEvidenceIds.includes(selected.id) || undefined} onClick={() => dispatch({ type: "link_theory_evidence", theoryId: activeTheoryId, evidenceId: selected.id, linked: !linkedEvidenceIds.includes(selected.id) })}>{linkedEvidenceIds.includes(selected.id) ? "移出当前证明" : "接入当前证明"}</button>
+          <button type="button" data-primary disabled={selected.state === "dismissed" || selectedNeedsInspection} title={selectedNeedsInspection ? "先完成这件材料的检查" : undefined} data-active={linkedEvidenceIds.includes(selected.id) || undefined} onClick={() => dispatch({ type: "link_theory_evidence", theoryId: activeTheoryId, evidenceId: selected.id, linked: !linkedEvidenceIds.includes(selected.id) })}>{linkedEvidenceIds.includes(selected.id) ? "移出当前证明" : selectedNeedsInspection ? "先完成检查" : "接入当前证明"}</button>
           {linkedEvidenceIds.includes(selected.id) && onContinueToProof && <button type="button" onClick={() => { close(); onContinueToProof(); }}>接入完成，去组织证明</button>}
         </footer>
-      </div>
-    </div>}
+    </dialog>}
   </section>;
 }

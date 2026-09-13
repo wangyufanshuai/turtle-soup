@@ -1,0 +1,2189 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c78-sound-from-other-side",
+  "metadata": {
+    "titleKey": "case.c78.title",
+    "difficulty": "expert",
+    "ageRating": "16+",
+    "contentTags": [
+      "结构传声",
+      "定位误读",
+      "空间路径"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:6231f8cbc3a1ee480b41030c4df733c205aaa379f6e969fee211a44bad89a7a4",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-acoustic-lab",
+    "sceneAsset": "/assets/cases/c78-sound-from-other-side/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c78-sound-from-other-side/scene-mobile.svg",
+    "palette": "season5-acoustic-lab",
+    "accent": "#a9c6df",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "acoustic-path-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "acoustic-path"
+  },
+  "surface": {
+    "titleKey": "case.c78.title",
+    "textKey": "case.c78.surface",
+    "publicFactIds": [
+      "fact-c78-01",
+      "fact-c78-02",
+      "fact-c78-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c78-01",
+      "query-c78-02",
+      "query-c78-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c78-one",
+      "titleKey": "chapter.c78.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c78-1",
+      "titleKey": "board.c78.1.title",
+      "mode": "acoustic-path",
+      "slots": [
+        {
+          "id": "slot-c78-1-1",
+          "labelKey": "board.c78.1.slot.1",
+          "acceptsEventIds": [
+            "event-c78-01"
+          ]
+        },
+        {
+          "id": "slot-c78-1-2",
+          "labelKey": "board.c78.1.slot.2",
+          "acceptsEventIds": [
+            "event-c78-03"
+          ]
+        },
+        {
+          "id": "slot-c78-1-3",
+          "labelKey": "board.c78.1.slot.3",
+          "acceptsEventIds": [
+            "event-c78-05"
+          ]
+        },
+        {
+          "id": "slot-c78-1-4",
+          "labelKey": "board.c78.1.slot.4",
+          "acceptsEventIds": [
+            "event-c78-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "propagates-to",
+        "reflects-at",
+        "arrives-at"
+      ]
+    },
+    {
+      "id": "board-c78-2",
+      "titleKey": "board.c78.2.title",
+      "mode": "spatial-map",
+      "slots": [
+        {
+          "id": "slot-c78-2-1",
+          "labelKey": "board.c78.2.slot.1",
+          "acceptsEventIds": [
+            "event-c78-02"
+          ]
+        },
+        {
+          "id": "slot-c78-2-2",
+          "labelKey": "board.c78.2.slot.2",
+          "acceptsEventIds": [
+            "event-c78-04"
+          ]
+        },
+        {
+          "id": "slot-c78-2-3",
+          "labelKey": "board.c78.2.slot.3",
+          "acceptsEventIds": [
+            "event-c78-06"
+          ]
+        },
+        {
+          "id": "slot-c78-2-4",
+          "labelKey": "board.c78.2.slot.4",
+          "acceptsEventIds": [
+            "event-c78-12"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "moves-to",
+        "overlaps",
+        "precedes"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c78-system",
+      "kind": "object",
+      "labelKey": "entity.c78.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c78",
+      "kind": "location",
+      "labelKey": "location.c78",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c78-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-1",
+      "labelKey": "event.c78.1",
+      "effectFactIds": [
+        "fact-c78-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-2",
+      "labelKey": "event.c78.2",
+      "effectFactIds": [
+        "fact-c78-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-3",
+      "labelKey": "event.c78.3",
+      "effectFactIds": [
+        "fact-c78-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-4",
+      "labelKey": "event.c78.4",
+      "effectFactIds": [
+        "fact-c78-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-5",
+      "labelKey": "event.c78.5",
+      "effectFactIds": [
+        "fact-c78-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-6",
+      "labelKey": "event.c78.6",
+      "effectFactIds": [
+        "fact-c78-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "20:24"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-7",
+      "labelKey": "event.c78.7",
+      "effectFactIds": [
+        "fact-c78-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-8",
+      "labelKey": "event.c78.8",
+      "effectFactIds": [
+        "fact-c78-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-9",
+      "labelKey": "event.c78.9",
+      "effectFactIds": [
+        "fact-c78-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-10",
+      "labelKey": "event.c78.10",
+      "effectFactIds": [
+        "fact-c78-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-11",
+      "labelKey": "event.c78.11",
+      "effectFactIds": [
+        "fact-c78-11"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-12",
+      "order": 120,
+      "time": {
+        "kind": "instant",
+        "value": "21:44"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-12",
+      "labelKey": "event.c78.12",
+      "effectFactIds": [
+        "fact-c78-12"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c78-13",
+      "order": 130,
+      "time": {
+        "kind": "instant",
+        "value": "21:48"
+      },
+      "participants": [
+        "entity-c78-system"
+      ],
+      "locationId": "location-c78",
+      "action": "step-c78-13",
+      "labelKey": "event.c78.13",
+      "effectFactIds": [
+        "fact-c78-13"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c78-1-1",
+      "type": "precedes",
+      "fromId": "entity-c78-system",
+      "toId": "location-c78",
+      "eventId": "event-c78-01",
+      "factId": "fact-c78-01"
+    },
+    {
+      "id": "relation-c78-1-2",
+      "type": "causes",
+      "fromId": "entity-c78-system",
+      "toId": "location-c78",
+      "eventId": "event-c78-03",
+      "factId": "fact-c78-02"
+    },
+    {
+      "id": "relation-c78-1-3",
+      "type": "causes",
+      "fromId": "entity-c78-system",
+      "toId": "location-c78",
+      "eventId": "event-c78-05",
+      "factId": "fact-c78-03"
+    },
+    {
+      "id": "relation-c78-2-1",
+      "type": "precedes",
+      "fromId": "entity-c78-system",
+      "toId": "location-c78",
+      "eventId": "event-c78-02",
+      "factId": "fact-c78-02"
+    },
+    {
+      "id": "relation-c78-2-2",
+      "type": "causes",
+      "fromId": "entity-c78-system",
+      "toId": "location-c78",
+      "eventId": "event-c78-04",
+      "factId": "fact-c78-03"
+    },
+    {
+      "id": "relation-c78-2-3",
+      "type": "causes",
+      "fromId": "entity-c78-system",
+      "toId": "location-c78",
+      "eventId": "event-c78-06",
+      "factId": "fact-c78-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c78-01",
+      "predicate": "verified_c78_1",
+      "args": {
+        "term": "结构传声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.1"
+    },
+    {
+      "id": "fact-c78-02",
+      "predicate": "verified_c78_2",
+      "args": {
+        "term": "空气传声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.2"
+    },
+    {
+      "id": "fact-c78-03",
+      "predicate": "verified_c78_3",
+      "args": {
+        "term": "东墙定位"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.3"
+    },
+    {
+      "id": "fact-c78-04",
+      "predicate": "verified_c78_4",
+      "args": {
+        "term": "西侧设备"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.4"
+    },
+    {
+      "id": "fact-c78-05",
+      "predicate": "verified_c78_5",
+      "args": {
+        "term": "到达时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.5"
+    },
+    {
+      "id": "fact-c78-06",
+      "predicate": "verified_c78_6",
+      "args": {
+        "term": "墙体路径"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.6"
+    },
+    {
+      "id": "fact-c78-07",
+      "predicate": "verified_c78_7",
+      "args": {
+        "term": "定位算法"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.7"
+    },
+    {
+      "id": "fact-c78-08",
+      "predicate": "verified_c78_8",
+      "args": {
+        "term": "声源方向"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.8"
+    },
+    {
+      "id": "fact-c78-09",
+      "predicate": "verified_c78_9",
+      "args": {
+        "term": "振动传感器"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.9"
+    },
+    {
+      "id": "fact-c78-10",
+      "predicate": "verified_c78_10",
+      "args": {
+        "term": "声音传播"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.10"
+    },
+    {
+      "id": "fact-c78-11",
+      "predicate": "verified_c78_11",
+      "args": {
+        "term": "结构传声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-11"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.11"
+    },
+    {
+      "id": "fact-c78-12",
+      "predicate": "verified_c78_12",
+      "args": {
+        "term": "空气传声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-12"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-12"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-12"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c78.12"
+    },
+    {
+      "id": "fact-c78-13",
+      "predicate": "verified_c78_13",
+      "args": {
+        "term": "东墙定位"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-13"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-13"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-13"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c78.13"
+    },
+    {
+      "id": "fact-c78-14",
+      "predicate": "verified_c78_14",
+      "args": {
+        "term": "西侧设备"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c78.14"
+    },
+    {
+      "id": "fact-c78-15",
+      "predicate": "verified_c78_15",
+      "args": {
+        "term": "到达时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c78.15"
+    },
+    {
+      "id": "fact-c78-16",
+      "predicate": "verified_c78_16",
+      "args": {
+        "term": "墙体路径"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c78.16"
+    },
+    {
+      "id": "fact-c78-17",
+      "predicate": "verified_c78_17",
+      "args": {
+        "term": "定位算法"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c78.17"
+    },
+    {
+      "id": "fact-c78-18",
+      "predicate": "verified_c78_18",
+      "args": {
+        "term": "声源方向"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c78.18"
+    },
+    {
+      "id": "fact-c78-19",
+      "predicate": "verified_c78_19",
+      "args": {
+        "term": "振动传感器"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c78.19"
+    },
+    {
+      "id": "fact-c78-20",
+      "predicate": "verified_c78_20",
+      "args": {
+        "term": "声音传播"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c78.20"
+    },
+    {
+      "id": "fact-c78-21",
+      "predicate": "verified_c78_21",
+      "args": {
+        "term": "结构传声"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c78-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c78-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c78.21"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c78-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-01",
+        "fact-c78-02",
+        "fact-c78-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c78-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-01",
+        "fact-c78-02",
+        "fact-c78-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c78-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-02",
+        "fact-c78-15"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c78-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-03",
+        "fact-c78-16"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c78-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-04",
+        "fact-c78-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c78-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-05",
+        "fact-c78-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c78-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-06",
+        "fact-c78-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c78-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-07",
+        "fact-c78-20"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c78-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-08",
+        "fact-c78-21"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c78-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c78-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-10"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c78-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-11"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c78-12",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-12"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-12"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c78-13",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c78-13"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c78-13"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c78-01",
+      "labelKey": "query.c78.1",
+      "intent": "verify",
+      "predicate": "verified_c78_1",
+      "slots": {
+        "subjectId": "entity-c78-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c78-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-opening"
+      ],
+      "examplePhrases": [
+        "结构传声是否成立？",
+        "能确认结构传声吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "结构传声"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c78-02",
+      "labelKey": "query.c78.2",
+      "intent": "verify",
+      "predicate": "verified_c78_2",
+      "slots": {
+        "subjectId": "entity-c78-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c78-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-opening"
+      ],
+      "examplePhrases": [
+        "空气传声是否成立？",
+        "能确认空气传声吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "空气传声"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c78-03",
+      "labelKey": "query.c78.3",
+      "intent": "verify",
+      "predicate": "verified_c78_3",
+      "slots": {
+        "subjectId": "entity-c78-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c78-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-opening"
+      ],
+      "examplePhrases": [
+        "东墙定位是否成立？",
+        "能确认东墙定位吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "东墙定位"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c78-04",
+      "labelKey": "query.c78.4",
+      "intent": "verify",
+      "predicate": "verified_c78_4",
+      "slots": {
+        "subjectId": "entity-c78-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c78-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-04"
+      ],
+      "examplePhrases": [
+        "西侧设备是否成立？",
+        "能确认西侧设备吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "西侧设备"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c78-05",
+      "labelKey": "query.c78.5",
+      "intent": "verify",
+      "predicate": "verified_c78_5",
+      "slots": {
+        "subjectId": "entity-c78-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c78-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-05"
+      ],
+      "examplePhrases": [
+        "到达时间是否成立？",
+        "能确认到达时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "到达时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c78-06",
+      "labelKey": "query.c78.6",
+      "intent": "verify",
+      "predicate": "verified_c78_6",
+      "slots": {
+        "subjectId": "entity-c78-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c78-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-06"
+      ],
+      "examplePhrases": [
+        "墙体路径是否成立？",
+        "能确认墙体路径吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "墙体路径"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c78-07",
+      "labelKey": "query.c78.7",
+      "intent": "verify",
+      "predicate": "verified_c78_7",
+      "slots": {
+        "subjectId": "entity-c78-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c78-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-07"
+      ],
+      "examplePhrases": [
+        "定位算法是否成立？",
+        "能确认定位算法吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "定位算法"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c78-08",
+      "labelKey": "query.c78.8",
+      "intent": "verify",
+      "predicate": "verified_c78_8",
+      "slots": {
+        "subjectId": "entity-c78-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c78-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-08"
+      ],
+      "examplePhrases": [
+        "声源方向是否成立？",
+        "能确认声源方向吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "声源方向"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c78-09",
+      "labelKey": "query.c78.9",
+      "intent": "verify",
+      "predicate": "verified_c78_9",
+      "slots": {
+        "subjectId": "entity-c78-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c78-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-09"
+      ],
+      "examplePhrases": [
+        "振动传感器是否成立？",
+        "能确认振动传感器吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "振动传感器"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c78-10",
+      "labelKey": "query.c78.10",
+      "intent": "verify",
+      "predicate": "verified_c78_10",
+      "slots": {
+        "subjectId": "entity-c78-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c78-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c78-10"
+      ],
+      "examplePhrases": [
+        "声音传播是否成立？",
+        "能确认声音传播吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "声音传播"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c78-01",
+      "kind": "scene",
+      "titleKey": "evidence.c78.1.title",
+      "observationKey": "evidence.c78.1.observation",
+      "sourceFactIds": [
+        "fact-c78-01",
+        "fact-c78-02",
+        "fact-c78-03"
+      ],
+      "sourceEventIds": [
+        "event-c78-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c78-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-01.svg",
+      "assetAlt": "结构传声"
+    },
+    {
+      "id": "evidence-c78-02",
+      "kind": "record",
+      "titleKey": "evidence.c78.2.title",
+      "observationKey": "evidence.c78.2.observation",
+      "sourceFactIds": [
+        "fact-c78-02",
+        "fact-c78-15"
+      ],
+      "sourceEventIds": [
+        "event-c78-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c78-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-02.svg",
+      "assetAlt": "空气传声"
+    },
+    {
+      "id": "evidence-c78-03",
+      "kind": "object",
+      "titleKey": "evidence.c78.3.title",
+      "observationKey": "evidence.c78.3.observation",
+      "sourceFactIds": [
+        "fact-c78-03",
+        "fact-c78-16"
+      ],
+      "sourceEventIds": [
+        "event-c78-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-03.svg",
+      "assetAlt": "东墙定位"
+    },
+    {
+      "id": "evidence-c78-04",
+      "kind": "scene",
+      "titleKey": "evidence.c78.4.title",
+      "observationKey": "evidence.c78.4.observation",
+      "sourceFactIds": [
+        "fact-c78-04",
+        "fact-c78-17"
+      ],
+      "sourceEventIds": [
+        "event-c78-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-04.svg",
+      "assetAlt": "西侧设备"
+    },
+    {
+      "id": "evidence-c78-05",
+      "kind": "record",
+      "titleKey": "evidence.c78.5.title",
+      "observationKey": "evidence.c78.5.observation",
+      "sourceFactIds": [
+        "fact-c78-05",
+        "fact-c78-18"
+      ],
+      "sourceEventIds": [
+        "event-c78-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-05.svg",
+      "assetAlt": "到达时间"
+    },
+    {
+      "id": "evidence-c78-06",
+      "kind": "object",
+      "titleKey": "evidence.c78.6.title",
+      "observationKey": "evidence.c78.6.observation",
+      "sourceFactIds": [
+        "fact-c78-06",
+        "fact-c78-19"
+      ],
+      "sourceEventIds": [
+        "event-c78-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-01.svg",
+      "assetAlt": "墙体路径"
+    },
+    {
+      "id": "evidence-c78-07",
+      "kind": "scene",
+      "titleKey": "evidence.c78.7.title",
+      "observationKey": "evidence.c78.7.observation",
+      "sourceFactIds": [
+        "fact-c78-07",
+        "fact-c78-20"
+      ],
+      "sourceEventIds": [
+        "event-c78-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-02.svg",
+      "assetAlt": "定位算法"
+    },
+    {
+      "id": "evidence-c78-08",
+      "kind": "record",
+      "titleKey": "evidence.c78.8.title",
+      "observationKey": "evidence.c78.8.observation",
+      "sourceFactIds": [
+        "fact-c78-08",
+        "fact-c78-21"
+      ],
+      "sourceEventIds": [
+        "event-c78-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-03.svg",
+      "assetAlt": "声源方向"
+    },
+    {
+      "id": "evidence-c78-09",
+      "kind": "object",
+      "titleKey": "evidence.c78.9.title",
+      "observationKey": "evidence.c78.9.observation",
+      "sourceFactIds": [
+        "fact-c78-09"
+      ],
+      "sourceEventIds": [
+        "event-c78-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-04.svg",
+      "assetAlt": "振动传感器"
+    },
+    {
+      "id": "evidence-c78-10",
+      "kind": "scene",
+      "titleKey": "evidence.c78.10.title",
+      "observationKey": "evidence.c78.10.observation",
+      "sourceFactIds": [
+        "fact-c78-10"
+      ],
+      "sourceEventIds": [
+        "event-c78-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-05.svg",
+      "assetAlt": "声音传播"
+    },
+    {
+      "id": "evidence-c78-11",
+      "kind": "record",
+      "titleKey": "evidence.c78.11.title",
+      "observationKey": "evidence.c78.11.observation",
+      "sourceFactIds": [
+        "fact-c78-11"
+      ],
+      "sourceEventIds": [
+        "event-c78-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-01.svg",
+      "assetAlt": "结构传声"
+    },
+    {
+      "id": "evidence-c78-12",
+      "kind": "object",
+      "titleKey": "evidence.c78.12.title",
+      "observationKey": "evidence.c78.12.observation",
+      "sourceFactIds": [
+        "fact-c78-12"
+      ],
+      "sourceEventIds": [
+        "event-c78-12"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-02.svg",
+      "assetAlt": "空气传声"
+    },
+    {
+      "id": "evidence-c78-13",
+      "kind": "scene",
+      "titleKey": "evidence.c78.13.title",
+      "observationKey": "evidence.c78.13.observation",
+      "sourceFactIds": [
+        "fact-c78-13"
+      ],
+      "sourceEventIds": [
+        "event-c78-13"
+      ],
+      "relatedEntityIds": [
+        "entity-c78-system",
+        "location-c78"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c78-sound-from-other-side/evidence-03.svg",
+      "assetAlt": "东墙定位"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c78.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c78-01",
+          "event-c78-02",
+          "event-c78-03",
+          "event-c78-04",
+          "event-c78-05",
+          "event-c78-06",
+          "event-c78-07",
+          "event-c78-08",
+          "event-c78-09",
+          "event-c78-10",
+          "event-c78-11",
+          "event-c78-12"
+        ],
+        "motiveKey": "对比不同介质的传播路径和到达顺序"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c78-01",
+        "evidence-c78-02",
+        "evidence-c78-03",
+        "evidence-c78-04",
+        "evidence-c78-05",
+        "evidence-c78-06",
+        "evidence-c78-07",
+        "evidence-c78-08",
+        "evidence-c78-09",
+        "evidence-c78-10",
+        "evidence-c78-11",
+        "evidence-c78-12"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c78-1",
+        "contradiction-c78-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c78-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c78.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "东墙后藏着一台设备"
+        ],
+        "motiveKey": "motive-c78-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c78-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c78-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c78-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c78.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "定位系统的麦克风接反了"
+        ],
+        "motiveKey": "motive-c78-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c78-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c78-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c78-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c78-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c78-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c78-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c78-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c78-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c78-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c78-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c78-01",
+      "fact-c78-02",
+      "fact-c78-03",
+      "fact-c78-04",
+      "fact-c78-05",
+      "fact-c78-06",
+      "fact-c78-07",
+      "fact-c78-08",
+      "fact-c78-09",
+      "fact-c78-10",
+      "fact-c78-11",
+      "fact-c78-12"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c78-01",
+      "evidence-c78-02",
+      "evidence-c78-03",
+      "evidence-c78-04",
+      "evidence-c78-05",
+      "evidence-c78-06",
+      "evidence-c78-07",
+      "evidence-c78-08",
+      "evidence-c78-09",
+      "evidence-c78-10",
+      "evidence-c78-11",
+      "evidence-c78-12"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c78-01",
+        "event-c78-02"
+      ],
+      [
+        "event-c78-02",
+        "event-c78-03"
+      ],
+      [
+        "event-c78-03",
+        "event-c78-04"
+      ],
+      [
+        "event-c78-04",
+        "event-c78-05"
+      ],
+      [
+        "event-c78-05",
+        "event-c78-06"
+      ],
+      [
+        "event-c78-06",
+        "event-c78-07"
+      ],
+      [
+        "event-c78-07",
+        "event-c78-08"
+      ],
+      [
+        "event-c78-08",
+        "event-c78-09"
+      ],
+      [
+        "event-c78-09",
+        "event-c78-10"
+      ],
+      [
+        "event-c78-10",
+        "event-c78-11"
+      ],
+      [
+        "event-c78-11",
+        "event-c78-12"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c78-1",
+      "contradiction-c78-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c78-alternative-1",
+      "hypothesis-c78-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c78-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c78-a",
+        "evidenceIds": [
+          "evidence-c78-01",
+          "evidence-c78-02",
+          "evidence-c78-03",
+          "evidence-c78-04",
+          "evidence-c78-05",
+          "evidence-c78-06",
+          "evidence-c78-07",
+          "evidence-c78-08"
+        ]
+      },
+      {
+        "id": "proof-c78-b",
+        "evidenceIds": [
+          "evidence-c78-01",
+          "evidence-c78-02",
+          "evidence-c78-09",
+          "evidence-c78-10",
+          "evidence-c78-11",
+          "evidence-c78-12"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "对比不同介质的传播路径和到达顺序"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c78-1",
+        "kind": "space",
+        "boardId": "board-c78-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c78-1-1",
+            "eventId": "event-c78-01"
+          },
+          {
+            "slotId": "slot-c78-1-2",
+            "eventId": "event-c78-03"
+          },
+          {
+            "slotId": "slot-c78-1-3",
+            "eventId": "event-c78-05"
+          },
+          {
+            "slotId": "slot-c78-1-4",
+            "eventId": "event-c78-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c78-01",
+            "toEventId": "event-c78-03",
+            "relation": "propagates-to"
+          },
+          {
+            "fromEventId": "event-c78-03",
+            "toEventId": "event-c78-05",
+            "relation": "propagates-to"
+          },
+          {
+            "fromEventId": "event-c78-05",
+            "toEventId": "event-c78-12",
+            "relation": "propagates-to"
+          }
+        ],
+        "failureCategory": "space"
+      },
+      {
+        "id": "obligation-c78-2",
+        "kind": "space",
+        "boardId": "board-c78-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c78-2-1",
+            "eventId": "event-c78-02"
+          },
+          {
+            "slotId": "slot-c78-2-2",
+            "eventId": "event-c78-04"
+          },
+          {
+            "slotId": "slot-c78-2-3",
+            "eventId": "event-c78-06"
+          },
+          {
+            "slotId": "slot-c78-2-4",
+            "eventId": "event-c78-12"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c78-02",
+            "toEventId": "event-c78-04",
+            "relation": "moves-to"
+          },
+          {
+            "fromEventId": "event-c78-04",
+            "toEventId": "event-c78-06",
+            "relation": "moves-to"
+          },
+          {
+            "fromEventId": "event-c78-06",
+            "toEventId": "event-c78-12",
+            "relation": "moves-to"
+          }
+        ],
+        "failureCategory": "space"
+      }
+    ],
+    "uniquenessClaim": "结构传声沿墙体先于空气传声抵达，定位算法把较早到达路径误当成声源方向。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c78-1",
+      "eventId": "event-c78-02",
+      "factIds": [
+        "fact-c78-01"
+      ],
+      "captionKey": "event.c78.2"
+    },
+    {
+      "id": "replay-c78-2",
+      "eventId": "event-c78-03",
+      "factIds": [
+        "fact-c78-02"
+      ],
+      "captionKey": "event.c78.3"
+    },
+    {
+      "id": "replay-c78-3",
+      "eventId": "event-c78-04",
+      "factIds": [
+        "fact-c78-03"
+      ],
+      "captionKey": "event.c78.4"
+    },
+    {
+      "id": "replay-c78-4",
+      "eventId": "event-c78-05",
+      "factIds": [
+        "fact-c78-04"
+      ],
+      "captionKey": "event.c78.5"
+    },
+    {
+      "id": "replay-c78-5",
+      "eventId": "event-c78-06",
+      "factIds": [
+        "fact-c78-05"
+      ],
+      "captionKey": "event.c78.6"
+    },
+    {
+      "id": "replay-c78-6",
+      "eventId": "event-c78-07",
+      "factIds": [
+        "fact-c78-01",
+        "fact-c78-02",
+        "fact-c78-03",
+        "fact-c78-04",
+        "fact-c78-05",
+        "fact-c78-06",
+        "fact-c78-07",
+        "fact-c78-08",
+        "fact-c78-09",
+        "fact-c78-10",
+        "fact-c78-11",
+        "fact-c78-12"
+      ],
+      "captionKey": "event.c78.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c78.title": "从另一面传来的声音",
+      "case.c78.surface": "定位系统把声音指向东墙，现场却只有西侧设备在运行。",
+      "case.c78.truth": "结构传声沿墙体先于空气传声抵达，定位算法把较早到达路径误当成声源方向。",
+      "entity.c78.system": "现场对象与记录链",
+      "location.c78": "结构传声",
+      "hypothesis.c78.canonical": "结构传声沿墙体先于空气传声抵达，定位算法把较早到达路径误当成声源方向。",
+      "hypothesis.c78.alternative.1": "东墙后藏着一台设备",
+      "hypothesis.c78.alternative.2": "定位系统的麦克风接反了",
+      "motive.对比不同介质的传播路径和到达顺序": "对比不同介质的传播路径和到达顺序",
+      "chapter.c78.one": "固定异常",
+      "chapter.c78.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c78.1": "结构传声是否成立？",
+      "query.c78.2": "空气传声是否成立？",
+      "query.c78.3": "东墙定位是否成立？",
+      "query.c78.4": "西侧设备是否成立？",
+      "query.c78.5": "到达时间是否成立？",
+      "query.c78.6": "墙体路径是否成立？",
+      "query.c78.7": "定位算法是否成立？",
+      "query.c78.8": "声源方向是否成立？",
+      "query.c78.9": "振动传感器是否成立？",
+      "query.c78.10": "声音传播是否成立？",
+      "event.c78.1": "阶段 1：结构传声进入记录链",
+      "event.c78.2": "阶段 2：空气传声进入记录链",
+      "event.c78.3": "阶段 3：东墙定位进入记录链",
+      "event.c78.4": "阶段 4：西侧设备进入记录链",
+      "event.c78.5": "阶段 5：到达时间进入记录链",
+      "event.c78.6": "阶段 6：墙体路径进入记录链",
+      "event.c78.7": "阶段 7：定位算法进入记录链",
+      "event.c78.8": "阶段 8：声源方向进入记录链",
+      "event.c78.9": "阶段 9：振动传感器进入记录链",
+      "event.c78.10": "阶段 10：声音传播进入记录链",
+      "event.c78.11": "阶段 11：结构传声进入记录链",
+      "event.c78.12": "阶段 12：空气传声进入记录链",
+      "event.c78.13": "阶段 13：东墙定位进入记录链",
+      "evidence.c78.1.title": "结构传声记录",
+      "evidence.c78.1.observation": "来源材料显示“结构传声”在该阶段可复核。",
+      "evidence.c78.2.title": "空气传声记录",
+      "evidence.c78.2.observation": "来源材料显示“空气传声”在该阶段可复核。",
+      "evidence.c78.3.title": "东墙定位记录",
+      "evidence.c78.3.observation": "来源材料显示“东墙定位”在该阶段可复核。",
+      "evidence.c78.4.title": "西侧设备记录",
+      "evidence.c78.4.observation": "来源材料显示“西侧设备”在该阶段可复核。",
+      "evidence.c78.5.title": "到达时间记录",
+      "evidence.c78.5.observation": "来源材料显示“到达时间”在该阶段可复核。",
+      "evidence.c78.6.title": "墙体路径记录",
+      "evidence.c78.6.observation": "来源材料显示“墙体路径”在该阶段可复核。",
+      "evidence.c78.7.title": "定位算法记录",
+      "evidence.c78.7.observation": "来源材料显示“定位算法”在该阶段可复核。",
+      "evidence.c78.8.title": "声源方向记录",
+      "evidence.c78.8.observation": "来源材料显示“声源方向”在该阶段可复核。",
+      "evidence.c78.9.title": "振动传感器记录",
+      "evidence.c78.9.observation": "来源材料显示“振动传感器”在该阶段可复核。",
+      "evidence.c78.10.title": "声音传播记录",
+      "evidence.c78.10.observation": "来源材料显示“声音传播”在该阶段可复核。",
+      "evidence.c78.11.title": "结构传声记录",
+      "evidence.c78.11.observation": "来源材料显示“结构传声”在该阶段可复核。",
+      "evidence.c78.12.title": "空气传声记录",
+      "evidence.c78.12.observation": "来源材料显示“空气传声”在该阶段可复核。",
+      "evidence.c78.13.title": "东墙定位记录",
+      "evidence.c78.13.observation": "来源材料显示“东墙定位”在该阶段可复核。",
+      "board.c78.1.title": "从另一面传来的声音 · acoustic-path",
+      "board.c78.1.slot.1": "起始来源",
+      "board.c78.1.slot.2": "关键变化",
+      "board.c78.1.slot.3": "观测结果",
+      "board.c78.1.slot.4": "排除替代",
+      "board.c78.2.title": "从另一面传来的声音 · spatial-map",
+      "board.c78.2.slot.1": "起始来源",
+      "board.c78.2.slot.2": "关键变化",
+      "board.c78.2.slot.3": "观测结果",
+      "board.c78.2.slot.4": "排除替代"
+    }
+  }
+}

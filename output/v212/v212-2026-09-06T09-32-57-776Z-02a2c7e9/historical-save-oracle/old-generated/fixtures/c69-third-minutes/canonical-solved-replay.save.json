@@ -1,0 +1,642 @@
+{
+  "schemaVersion": 1,
+  "caseId": "c69-third-minutes",
+  "caseVersion": 1,
+  "contentHash": "sha256:6c8472f337d0c556e25b2eed16068a2643e596d4adbbbea48bd28adb60e96935",
+  "commands": [
+    {
+      "type": "ask_text",
+      "rawText": "会议纪要是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "并行草稿是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "自动合并是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "参会者是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "文件份数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "会议时段是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "模板服务是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "版本来源是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合并时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "会议次数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "会议纪要是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "并行草稿是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "自动合并是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "参会者是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "文件份数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "会议时段是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "模板服务是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "版本来源是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合并时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "会议次数是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c69"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-14",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "会议纪要是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "并行草稿是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "自动合并是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "参会者是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "文件份数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "会议时段是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "模板服务是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "版本来源是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合并时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "会议次数是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c69"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-14",
+      "state": "examined"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "会议纪要是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "并行草稿是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "自动合并是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "参会者是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "文件份数是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "会议时段是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "模板服务是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "版本来源是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "合并时间是否成立？"
+    },
+    {
+      "type": "ask_text",
+      "rawText": "会议次数是否成立？"
+    },
+    {
+      "type": "visit_location",
+      "locationId": "location-c69"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-01",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-02",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-03",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-04",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-05",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-06",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-07",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-08",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-09",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-10",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-11",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-12",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-13",
+      "state": "examined"
+    },
+    {
+      "type": "set_evidence_state",
+      "evidenceId": "evidence-c69-14",
+      "state": "examined"
+    },
+    {
+      "type": "set_theory_hypothesis",
+      "theoryId": "theory-a",
+      "hypothesisId": "path-canonical"
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-01",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-02",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-03",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-04",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-05",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-06",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-07",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-08",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-09",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-10",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-11",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-12",
+      "linked": true
+    },
+    {
+      "type": "link_theory_evidence",
+      "theoryId": "theory-a",
+      "evidenceId": "evidence-c69-13",
+      "linked": true
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-01"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-02"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-03"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-04"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-05"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-06"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-07"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-08"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-09"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-10"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-11"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-12"
+    },
+    {
+      "type": "upsert_theory_event",
+      "theoryId": "theory-a",
+      "eventId": "event-13"
+    },
+    {
+      "type": "set_theory_motive",
+      "theoryId": "theory-a",
+      "motiveKey": "沿来源链和时间区间还原一次会议的多份产物"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-01",
+      "itemId": "event-01"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-02",
+      "itemId": "event-03"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-03",
+      "itemId": "event-05"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-01",
+      "slotId": "slot-04",
+      "itemId": "event-13"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-01",
+      "toItemId": "event-03",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-03",
+      "toItemId": "event-05",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-01",
+      "fromItemId": "event-05",
+      "toItemId": "event-13",
+      "relation": "transfers-to"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-01",
+      "itemId": "event-02"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-02",
+      "itemId": "event-04"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-03",
+      "itemId": "event-06"
+    },
+    {
+      "type": "place_reasoning_item",
+      "boardId": "board-02",
+      "slotId": "slot-04",
+      "itemId": "event-13"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-02",
+      "toItemId": "event-04",
+      "relation": "precedes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-04",
+      "toItemId": "event-06",
+      "relation": "precedes"
+    },
+    {
+      "type": "connect_reasoning_items",
+      "boardId": "board-02",
+      "fromItemId": "event-06",
+      "toItemId": "event-13",
+      "relation": "precedes"
+    },
+    {
+      "type": "submit_theory",
+      "theoryId": "theory-a"
+    },
+    {
+      "type": "request_proof_replay"
+    }
+  ],
+  "updatedAt": "2026-09-06T15:03:14+08:00",
+  "completed": true
+}

@@ -1,0 +1,20 @@
+{
+  "clientWidth": 390,
+  "dialogs": [],
+  "focus": "",
+  "height": 844,
+  "inputs": [
+    {
+      "name": "investigation-question",
+      "value": "c61：下一问草稿，检查后再继续。"
+    },
+    {
+      "name": "player-summary-desktop",
+      "value": ""
+    }
+  ],
+  "scrollWidth": 390,
+  "text": "跳到主要内容\nTHE BLACK SOUP · C61\n少了一圈的胶带\n设置\n\n◇\n上一轮问题已撤销，不会把你锁进错误路线。\n\n现场\n提问\n证据\n推断\n问一个事实\n你想先确认什么？\n0 次有效提问\n你的问题\n验证\n\nEnter 验证 · 无法识别或歧义不计次 · 按 / 回到输入框\n\n不知道从哪问？\n先验证一个公开前提\n现场对象与记录链\n有记录可以核对胶带圈数吗？\n现场对象与记录链\n有记录可以核对剩余长度吗？\n\n按钮只会把问题放入输入框，你仍可修改后再验证。\n\n按对象、关系或时间改写问题",
+  "url": "http://127.0.0.1:8112/case/c61-missing-tape-turn/#questions",
+  "width": 390
+}

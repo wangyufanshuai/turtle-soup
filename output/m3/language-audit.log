@@ -1,0 +1,46 @@
+[
+  {
+    "code": "c01",
+    "total": 40,
+    "supported": 20,
+    "correctDirect": 20,
+    "wrongDirect": 0,
+    "ambiguous": 5,
+    "unrecognized": 15,
+    "directPrecision": 1,
+    "supportedCoverage": 1
+  },
+  {
+    "code": "c03",
+    "total": 40,
+    "supported": 20,
+    "correctDirect": 20,
+    "wrongDirect": 0,
+    "ambiguous": 4,
+    "unrecognized": 16,
+    "directPrecision": 1,
+    "supportedCoverage": 1
+  },
+  {
+    "code": "c61",
+    "total": 40,
+    "supported": 12,
+    "correctDirect": 11,
+    "wrongDirect": 0,
+    "ambiguous": 5,
+    "unrecognized": 24,
+    "directPrecision": 1,
+    "supportedCoverage": 0.9166666666666666
+  },
+  {
+    "code": "c84",
+    "total": 40,
+    "supported": 12,
+    "correctDirect": 11,
+    "wrongDirect": 0,
+    "ambiguous": 5,
+    "unrecognized": 24,
+    "directPrecision": 1,
+    "supportedCoverage": 0.9166666666666666
+  }
+]

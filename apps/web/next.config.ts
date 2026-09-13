@@ -19,6 +19,7 @@ const BUILD_IDS: Record<string, string> = {
   "v2.9-internal-rc": "black-soup-v29-language-recovery-rc",
   "v2.10-internal-rc": "black-soup-v210-completed-archive-rc",
   "v2.11-internal-rc": "black-soup-v211-action-loop-rc",
+  "v2.12-internal-rc": "black-soup-v212-integrity-investigation-rc",
 };
 
 const nextConfig: NextConfig = {
@@ -27,7 +28,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: ["@turtle-soup/mystery-core"],
   images: { unoptimized: true },
-  generateBuildId: async () => BUILD_IDS[process.env.TURTLE_SOUP_RELEASE_PROFILE ?? "v1.4-internal-rc"] ?? "black-soup-local-build",
+  generateBuildId: async () => BUILD_IDS[process.env.TURTLE_SOUP_RELEASE_PROFILE ?? "v2.12-internal-rc"] ?? "black-soup-local-build",
 };
 
 export default nextConfig;

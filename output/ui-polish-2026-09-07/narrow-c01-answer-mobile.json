@@ -1,0 +1,18 @@
+{
+  "fields": [
+    {
+      "name": "investigation-question",
+      "value": ""
+    }
+  ],
+  "focus": "跳到主要内容(self.__next_f=self.__next_f||[]).push([0])self.__next",
+  "height": 844,
+  "scrollWidth": 390,
+  "text": "跳到主要内容\n←\nTHE BLACK SOUP · C01\n冷藏室的敲门声\n札记\n设置\n现场\n提问\n证据\n推断\n问一个事实\n你想先确认什么？\n1 次有效提问\n你的问题\n验证\n\nEnter 验证 · 无法识别或歧义不计次 · 按 / 回到输入框\n\n事实回答 · 第 1 问\n是\n\n是。现有来源支持这个前提；它只固定一层事实，不自动补全整条因果链。\n\n你的原问\n\n门会自动锁住吗？\n\n系统理解\n\n这扇门关闭后会自动锁住吗？\n\n核对相关材料 · 2 份 →\n撤销这问\n按对象、关系或时间改写问题",
+  "width": 390,
+  "layout": {
+    "bodyWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390
+  }
+}

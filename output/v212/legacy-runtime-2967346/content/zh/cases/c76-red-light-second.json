@@ -1,0 +1,2007 @@
+{
+  "schemaVersion": "1.1",
+  "id": "c76-red-light-second",
+  "metadata": {
+    "titleKey": "case.c76.title",
+    "difficulty": "expert",
+    "ageRating": "16+",
+    "contentTags": [
+      "滚动快门",
+      "时间区间",
+      "视觉参照"
+    ],
+    "targetMinutes": {
+      "min": 10,
+      "max": 20
+    },
+    "contentVersion": 1,
+    "canonicalHash": "sha256:504bba955ac12ec130de6361e832e47aa6fd7767294e2f15ac43ec86322b737e",
+    "status": "internal-rc",
+    "seasonId": "season-5"
+  },
+  "presentation": {
+    "layoutId": "season5-acoustic-lab",
+    "sceneAsset": "/assets/cases/c76-red-light-second/scene.svg",
+    "sceneAssetMobile": "/assets/cases/c76-red-light-second/scene-mobile.svg",
+    "palette": "season5-acoustic-lab",
+    "accent": "#b5d8c1",
+    "questionPromptMode": "forensic-host",
+    "evidenceVisualMode": "interval-logic-dossier",
+    "mobileNavigation": [
+      "现场",
+      "提问",
+      "证据",
+      "推断"
+    ],
+    "boardMode": "interval-logic"
+  },
+  "surface": {
+    "titleKey": "case.c76.title",
+    "textKey": "case.c76.surface",
+    "publicFactIds": [
+      "fact-c76-01",
+      "fact-c76-02",
+      "fact-c76-03"
+    ],
+    "initialQuestionPrompts": [
+      "query-c76-01",
+      "query-c76-02",
+      "query-c76-03"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-c76-one",
+      "titleKey": "chapter.c76.one",
+      "unlock": {}
+    }
+  ],
+  "reasoningBoards": [
+    {
+      "id": "board-c76-1",
+      "titleKey": "board.c76.1.title",
+      "mode": "interval-logic",
+      "slots": [
+        {
+          "id": "slot-c76-1-1",
+          "labelKey": "board.c76.1.slot.1",
+          "acceptsEventIds": [
+            "event-c76-01"
+          ]
+        },
+        {
+          "id": "slot-c76-1-2",
+          "labelKey": "board.c76.1.slot.2",
+          "acceptsEventIds": [
+            "event-c76-03"
+          ]
+        },
+        {
+          "id": "slot-c76-1-3",
+          "labelKey": "board.c76.1.slot.3",
+          "acceptsEventIds": [
+            "event-c76-05"
+          ]
+        },
+        {
+          "id": "slot-c76-1-4",
+          "labelKey": "board.c76.1.slot.4",
+          "acceptsEventIds": [
+            "event-c76-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "precedes",
+        "overlaps",
+        "ends-at"
+      ]
+    },
+    {
+      "id": "board-c76-2",
+      "titleKey": "board.c76.2.title",
+      "mode": "reference-frame",
+      "slots": [
+        {
+          "id": "slot-c76-2-1",
+          "labelKey": "board.c76.2.slot.1",
+          "acceptsEventIds": [
+            "event-c76-02"
+          ]
+        },
+        {
+          "id": "slot-c76-2-2",
+          "labelKey": "board.c76.2.slot.2",
+          "acceptsEventIds": [
+            "event-c76-04"
+          ]
+        },
+        {
+          "id": "slot-c76-2-3",
+          "labelKey": "board.c76.2.slot.3",
+          "acceptsEventIds": [
+            "event-c76-06"
+          ]
+        },
+        {
+          "id": "slot-c76-2-4",
+          "labelKey": "board.c76.2.slot.4",
+          "acceptsEventIds": [
+            "event-c76-10"
+          ]
+        }
+      ],
+      "allowedRelations": [
+        "reframes",
+        "projects",
+        "aligns"
+      ]
+    }
+  ],
+  "replayChallenges": [
+    {
+      "mode": "limited-questions",
+      "questionLimit": 14
+    },
+    {
+      "mode": "minimal-proof"
+    },
+    {
+      "mode": "no-scaffolds"
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-c76-system",
+      "kind": "object",
+      "labelKey": "entity.c76.system",
+      "publicAtStart": true
+    },
+    {
+      "id": "location-c76",
+      "kind": "location",
+      "labelKey": "location.c76",
+      "publicAtStart": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event-c76-01",
+      "order": 10,
+      "time": {
+        "kind": "instant",
+        "value": "20:00"
+      },
+      "participants": [
+        "entity-c76-system"
+      ],
+      "locationId": "location-c76",
+      "action": "step-c76-1",
+      "labelKey": "event.c76.1",
+      "effectFactIds": [
+        "fact-c76-01"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c76-02",
+      "order": 20,
+      "time": {
+        "kind": "instant",
+        "value": "20:04"
+      },
+      "participants": [
+        "entity-c76-system"
+      ],
+      "locationId": "location-c76",
+      "action": "step-c76-2",
+      "labelKey": "event.c76.2",
+      "effectFactIds": [
+        "fact-c76-02"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c76-03",
+      "order": 30,
+      "time": {
+        "kind": "instant",
+        "value": "20:08"
+      },
+      "participants": [
+        "entity-c76-system"
+      ],
+      "locationId": "location-c76",
+      "action": "step-c76-3",
+      "labelKey": "event.c76.3",
+      "effectFactIds": [
+        "fact-c76-03"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c76-04",
+      "order": 40,
+      "time": {
+        "kind": "instant",
+        "value": "20:12"
+      },
+      "participants": [
+        "entity-c76-system"
+      ],
+      "locationId": "location-c76",
+      "action": "step-c76-4",
+      "labelKey": "event.c76.4",
+      "effectFactIds": [
+        "fact-c76-04"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c76-05",
+      "order": 50,
+      "time": {
+        "kind": "instant",
+        "value": "20:16"
+      },
+      "participants": [
+        "entity-c76-system"
+      ],
+      "locationId": "location-c76",
+      "action": "step-c76-5",
+      "labelKey": "event.c76.5",
+      "effectFactIds": [
+        "fact-c76-05"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c76-06",
+      "order": 60,
+      "time": {
+        "kind": "instant",
+        "value": "20:20"
+      },
+      "participants": [
+        "entity-c76-system"
+      ],
+      "locationId": "location-c76",
+      "action": "step-c76-6",
+      "labelKey": "event.c76.6",
+      "effectFactIds": [
+        "fact-c76-06"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c76-07",
+      "order": 70,
+      "time": {
+        "kind": "instant",
+        "value": "21:24"
+      },
+      "participants": [
+        "entity-c76-system"
+      ],
+      "locationId": "location-c76",
+      "action": "step-c76-7",
+      "labelKey": "event.c76.7",
+      "effectFactIds": [
+        "fact-c76-07"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c76-08",
+      "order": 80,
+      "time": {
+        "kind": "instant",
+        "value": "21:28"
+      },
+      "participants": [
+        "entity-c76-system"
+      ],
+      "locationId": "location-c76",
+      "action": "step-c76-8",
+      "labelKey": "event.c76.8",
+      "effectFactIds": [
+        "fact-c76-08"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c76-09",
+      "order": 90,
+      "time": {
+        "kind": "instant",
+        "value": "21:32"
+      },
+      "participants": [
+        "entity-c76-system"
+      ],
+      "locationId": "location-c76",
+      "action": "step-c76-9",
+      "labelKey": "event.c76.9",
+      "effectFactIds": [
+        "fact-c76-09"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c76-10",
+      "order": 100,
+      "time": {
+        "kind": "instant",
+        "value": "21:36"
+      },
+      "participants": [
+        "entity-c76-system"
+      ],
+      "locationId": "location-c76",
+      "action": "step-c76-10",
+      "labelKey": "event.c76.10",
+      "effectFactIds": [
+        "fact-c76-10"
+      ],
+      "sourceType": "canonical-event",
+      "solutionRole": "required"
+    },
+    {
+      "id": "event-c76-11",
+      "order": 110,
+      "time": {
+        "kind": "instant",
+        "value": "21:40"
+      },
+      "participants": [
+        "entity-c76-system"
+      ],
+      "locationId": "location-c76",
+      "action": "step-c76-11",
+      "labelKey": "event.c76.11",
+      "effectFactIds": [
+        "fact-c76-11"
+      ],
+      "sourceType": "red-herring",
+      "solutionRole": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-c76-1-1",
+      "type": "precedes",
+      "fromId": "entity-c76-system",
+      "toId": "location-c76",
+      "eventId": "event-c76-01",
+      "factId": "fact-c76-01"
+    },
+    {
+      "id": "relation-c76-1-2",
+      "type": "causes",
+      "fromId": "entity-c76-system",
+      "toId": "location-c76",
+      "eventId": "event-c76-03",
+      "factId": "fact-c76-02"
+    },
+    {
+      "id": "relation-c76-1-3",
+      "type": "causes",
+      "fromId": "entity-c76-system",
+      "toId": "location-c76",
+      "eventId": "event-c76-05",
+      "factId": "fact-c76-03"
+    },
+    {
+      "id": "relation-c76-2-1",
+      "type": "precedes",
+      "fromId": "entity-c76-system",
+      "toId": "location-c76",
+      "eventId": "event-c76-02",
+      "factId": "fact-c76-02"
+    },
+    {
+      "id": "relation-c76-2-2",
+      "type": "causes",
+      "fromId": "entity-c76-system",
+      "toId": "location-c76",
+      "eventId": "event-c76-04",
+      "factId": "fact-c76-03"
+    },
+    {
+      "id": "relation-c76-2-3",
+      "type": "causes",
+      "fromId": "entity-c76-system",
+      "toId": "location-c76",
+      "eventId": "event-c76-06",
+      "factId": "fact-c76-04"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-c76-01",
+      "predicate": "verified_c76_1",
+      "args": {
+        "term": "红灯先亮"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-01"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c76.1"
+    },
+    {
+      "id": "fact-c76-02",
+      "predicate": "verified_c76_2",
+      "args": {
+        "term": "绿灯切换"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-02"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c76.2"
+    },
+    {
+      "id": "fact-c76-03",
+      "predicate": "verified_c76_3",
+      "args": {
+        "term": "滚动快门"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-opening"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-03"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c76.3"
+    },
+    {
+      "id": "fact-c76-04",
+      "predicate": "verified_c76_4",
+      "args": {
+        "term": "逐行采样"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-04"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c76.4"
+    },
+    {
+      "id": "fact-c76-05",
+      "predicate": "verified_c76_5",
+      "args": {
+        "term": "监控画面"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-05"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c76.5"
+    },
+    {
+      "id": "fact-c76-06",
+      "predicate": "verified_c76_6",
+      "args": {
+        "term": "同一帧"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-06"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c76.6"
+    },
+    {
+      "id": "fact-c76-07",
+      "predicate": "verified_c76_7",
+      "args": {
+        "term": "灯光时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-07"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c76.7"
+    },
+    {
+      "id": "fact-c76-08",
+      "predicate": "verified_c76_8",
+      "args": {
+        "term": "曝光顺序"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-08"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c76.8"
+    },
+    {
+      "id": "fact-c76-09",
+      "predicate": "verified_c76_9",
+      "args": {
+        "term": "现场记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-09"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-09"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c76.9"
+    },
+    {
+      "id": "fact-c76-10",
+      "predicate": "verified_c76_10",
+      "args": {
+        "term": "帧内时刻"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-10"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-10"
+      ],
+      "importance": "required",
+      "localizationKey": "fact.c76.10"
+    },
+    {
+      "id": "fact-c76-11",
+      "predicate": "verified_c76_11",
+      "args": {
+        "term": "红灯先亮"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-11"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-11"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-11"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c76.11"
+    },
+    {
+      "id": "fact-c76-12",
+      "predicate": "verified_c76_12",
+      "args": {
+        "term": "绿灯切换"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-01"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-01"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c76.12"
+    },
+    {
+      "id": "fact-c76-13",
+      "predicate": "verified_c76_13",
+      "args": {
+        "term": "滚动快门"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-02"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-02"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c76.13"
+    },
+    {
+      "id": "fact-c76-14",
+      "predicate": "verified_c76_14",
+      "args": {
+        "term": "逐行采样"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-03"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-03"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c76.14"
+    },
+    {
+      "id": "fact-c76-15",
+      "predicate": "verified_c76_15",
+      "args": {
+        "term": "监控画面"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-04"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-04"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c76.15"
+    },
+    {
+      "id": "fact-c76-16",
+      "predicate": "verified_c76_16",
+      "args": {
+        "term": "同一帧"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-05"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-05"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c76.16"
+    },
+    {
+      "id": "fact-c76-17",
+      "predicate": "verified_c76_17",
+      "args": {
+        "term": "灯光时间"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-06"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-06"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c76.17"
+    },
+    {
+      "id": "fact-c76-18",
+      "predicate": "verified_c76_18",
+      "args": {
+        "term": "曝光顺序"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-07"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-07"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c76.18"
+    },
+    {
+      "id": "fact-c76-19",
+      "predicate": "verified_c76_19",
+      "args": {
+        "term": "现场记录"
+      },
+      "truth": true,
+      "sourceEventIds": [
+        "event-c76-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-08"
+      ],
+      "evidenceItemIds": [
+        "evidence-c76-08"
+      ],
+      "importance": "background",
+      "localizationKey": "fact.c76.19"
+    }
+  ],
+  "visibilityRules": [
+    {
+      "id": "rule-c76-opening",
+      "mode": "scene",
+      "requires": {
+        "discoveredEvidenceIds": [],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-01",
+        "fact-c76-02",
+        "fact-c76-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c76-01",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c76-01"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-01",
+        "fact-c76-02",
+        "fact-c76-03"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c76-02",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c76-02"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-02",
+        "fact-c76-13"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c76-03",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c76-03"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-03",
+        "fact-c76-14"
+      ],
+      "spoilerLevel": "safe"
+    },
+    {
+      "id": "rule-c76-04",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c76-04"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-04",
+        "fact-c76-15"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c76-05",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c76-05"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-05",
+        "fact-c76-16"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c76-06",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c76-06"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-06",
+        "fact-c76-17"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c76-07",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c76-07"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-07",
+        "fact-c76-18"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c76-08",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c76-08"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-08",
+        "fact-c76-19"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c76-09",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c76-09"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-09"
+      ],
+      "spoilerLevel": "sensitive"
+    },
+    {
+      "id": "rule-c76-10",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c76-10"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-10"
+      ],
+      "spoilerLevel": "final"
+    },
+    {
+      "id": "rule-c76-11",
+      "mode": "evidence",
+      "requires": {
+        "discoveredEvidenceIds": [
+          "evidence-c76-11"
+        ],
+        "visitedLocationIds": [],
+        "answeredQueryIds": []
+      },
+      "revealsFactIds": [
+        "fact-c76-11"
+      ],
+      "spoilerLevel": "final"
+    }
+  ],
+  "questionSemantics": [
+    {
+      "id": "query-c76-01",
+      "labelKey": "query.c76.1",
+      "intent": "verify",
+      "predicate": "verified_c76_1",
+      "slots": {
+        "subjectId": "entity-c76-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c76-01"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-opening"
+      ],
+      "examplePhrases": [
+        "红灯先亮是否成立？",
+        "能确认红灯先亮吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "红灯先亮"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c76-02",
+      "labelKey": "query.c76.2",
+      "intent": "verify",
+      "predicate": "verified_c76_2",
+      "slots": {
+        "subjectId": "entity-c76-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c76-02"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-opening"
+      ],
+      "examplePhrases": [
+        "绿灯切换是否成立？",
+        "能确认绿灯切换吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "绿灯切换"
+          ],
+          "priority": 10
+        },
+        {
+          "any": [
+            "关键记录"
+          ],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "query-c76-03",
+      "labelKey": "query.c76.3",
+      "intent": "verify",
+      "predicate": "verified_c76_3",
+      "slots": {
+        "subjectId": "entity-c76-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c76-03"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-opening"
+      ],
+      "examplePhrases": [
+        "滚动快门是否成立？",
+        "能确认滚动快门吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "滚动快门"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c76-04",
+      "labelKey": "query.c76.4",
+      "intent": "verify",
+      "predicate": "verified_c76_4",
+      "slots": {
+        "subjectId": "entity-c76-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c76-04"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-04"
+      ],
+      "examplePhrases": [
+        "逐行采样是否成立？",
+        "能确认逐行采样吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "逐行采样"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c76-05",
+      "labelKey": "query.c76.5",
+      "intent": "verify",
+      "predicate": "verified_c76_5",
+      "slots": {
+        "subjectId": "entity-c76-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c76-05"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-05"
+      ],
+      "examplePhrases": [
+        "监控画面是否成立？",
+        "能确认监控画面吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "监控画面"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c76-06",
+      "labelKey": "query.c76.6",
+      "intent": "verify",
+      "predicate": "verified_c76_6",
+      "slots": {
+        "subjectId": "entity-c76-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c76-06"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-06"
+      ],
+      "examplePhrases": [
+        "同一帧是否成立？",
+        "能确认同一帧吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "同一帧"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c76-07",
+      "labelKey": "query.c76.7",
+      "intent": "verify",
+      "predicate": "verified_c76_7",
+      "slots": {
+        "subjectId": "entity-c76-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c76-07"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-07"
+      ],
+      "examplePhrases": [
+        "灯光时间是否成立？",
+        "能确认灯光时间吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "灯光时间"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c76-08",
+      "labelKey": "query.c76.8",
+      "intent": "verify",
+      "predicate": "verified_c76_8",
+      "slots": {
+        "subjectId": "entity-c76-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c76-08"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-08"
+      ],
+      "examplePhrases": [
+        "曝光顺序是否成立？",
+        "能确认曝光顺序吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "曝光顺序"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c76-09",
+      "labelKey": "query.c76.9",
+      "intent": "verify",
+      "predicate": "verified_c76_9",
+      "slots": {
+        "subjectId": "entity-c76-system"
+      },
+      "answerCodeWhenVisible": "yes",
+      "supportingFactIds": [
+        "fact-c76-09"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-09"
+      ],
+      "examplePhrases": [
+        "现场记录是否成立？",
+        "能确认现场记录吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "现场记录"
+          ],
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "id": "query-c76-10",
+      "labelKey": "query.c76.10",
+      "intent": "verify",
+      "predicate": "verified_c76_10",
+      "slots": {
+        "subjectId": "entity-c76-system"
+      },
+      "answerCodeWhenVisible": "irrelevant",
+      "supportingFactIds": [
+        "fact-c76-10"
+      ],
+      "visibilityRuleIds": [
+        "rule-c76-10"
+      ],
+      "examplePhrases": [
+        "帧内时刻是否成立？",
+        "能确认帧内时刻吗？"
+      ],
+      "matchRules": [
+        {
+          "all": [
+            "帧内时刻"
+          ],
+          "priority": 10
+        }
+      ]
+    }
+  ],
+  "answerPolicy": {
+    "codes": [
+      "yes",
+      "no",
+      "partial",
+      "invalid_premise",
+      "unknown",
+      "irrelevant",
+      "unanswerable",
+      "unrecognized"
+    ],
+    "templates": {
+      "yes": "是。当前公开来源支持这个判断。",
+      "no": "不是。这个判断与已验证约束冲突。",
+      "partial": "部分相关，但因果链还没有闭合。",
+      "invalid_premise": "这个问题的前提不成立。",
+      "unknown": "目前还没有足够证据判断。",
+      "irrelevant": "这条信息真实，但不会改变核心因果链。",
+      "unanswerable": "案件没有定义这个属性。",
+      "unrecognized": "我还不能把问题对应到明确的调查事实。"
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "evidence-c76-01",
+      "kind": "scene",
+      "titleKey": "evidence.c76.1.title",
+      "observationKey": "evidence.c76.1.observation",
+      "sourceFactIds": [
+        "fact-c76-01",
+        "fact-c76-02",
+        "fact-c76-03"
+      ],
+      "sourceEventIds": [
+        "event-c76-01"
+      ],
+      "relatedEntityIds": [
+        "entity-c76-system",
+        "location-c76"
+      ],
+      "defaultState": "discovered",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c76-alternative-1"
+      ],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c76-red-light-second/evidence-01.svg",
+      "assetAlt": "红灯先亮"
+    },
+    {
+      "id": "evidence-c76-02",
+      "kind": "record",
+      "titleKey": "evidence.c76.2.title",
+      "observationKey": "evidence.c76.2.observation",
+      "sourceFactIds": [
+        "fact-c76-02",
+        "fact-c76-13"
+      ],
+      "sourceEventIds": [
+        "event-c76-02"
+      ],
+      "relatedEntityIds": [
+        "entity-c76-system",
+        "location-c76"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [
+        "hypothesis-c76-alternative-2"
+      ],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c76-red-light-second/evidence-02.svg",
+      "assetAlt": "绿灯切换"
+    },
+    {
+      "id": "evidence-c76-03",
+      "kind": "object",
+      "titleKey": "evidence.c76.3.title",
+      "observationKey": "evidence.c76.3.observation",
+      "sourceFactIds": [
+        "fact-c76-03",
+        "fact-c76-14"
+      ],
+      "sourceEventIds": [
+        "event-c76-03"
+      ],
+      "relatedEntityIds": [
+        "entity-c76-system",
+        "location-c76"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c76-red-light-second/evidence-03.svg",
+      "assetAlt": "滚动快门"
+    },
+    {
+      "id": "evidence-c76-04",
+      "kind": "scene",
+      "titleKey": "evidence.c76.4.title",
+      "observationKey": "evidence.c76.4.observation",
+      "sourceFactIds": [
+        "fact-c76-04",
+        "fact-c76-15"
+      ],
+      "sourceEventIds": [
+        "event-c76-04"
+      ],
+      "relatedEntityIds": [
+        "entity-c76-system",
+        "location-c76"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c76-red-light-second/evidence-04.svg",
+      "assetAlt": "逐行采样"
+    },
+    {
+      "id": "evidence-c76-05",
+      "kind": "record",
+      "titleKey": "evidence.c76.5.title",
+      "observationKey": "evidence.c76.5.observation",
+      "sourceFactIds": [
+        "fact-c76-05",
+        "fact-c76-16"
+      ],
+      "sourceEventIds": [
+        "event-c76-05"
+      ],
+      "relatedEntityIds": [
+        "entity-c76-system",
+        "location-c76"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c76-red-light-second/evidence-05.svg",
+      "assetAlt": "监控画面"
+    },
+    {
+      "id": "evidence-c76-06",
+      "kind": "object",
+      "titleKey": "evidence.c76.6.title",
+      "observationKey": "evidence.c76.6.observation",
+      "sourceFactIds": [
+        "fact-c76-06",
+        "fact-c76-17"
+      ],
+      "sourceEventIds": [
+        "event-c76-06"
+      ],
+      "relatedEntityIds": [
+        "entity-c76-system",
+        "location-c76"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c76-red-light-second/evidence-01.svg",
+      "assetAlt": "同一帧"
+    },
+    {
+      "id": "evidence-c76-07",
+      "kind": "scene",
+      "titleKey": "evidence.c76.7.title",
+      "observationKey": "evidence.c76.7.observation",
+      "sourceFactIds": [
+        "fact-c76-07",
+        "fact-c76-18"
+      ],
+      "sourceEventIds": [
+        "event-c76-07"
+      ],
+      "relatedEntityIds": [
+        "entity-c76-system",
+        "location-c76"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c76-red-light-second/evidence-02.svg",
+      "assetAlt": "灯光时间"
+    },
+    {
+      "id": "evidence-c76-08",
+      "kind": "record",
+      "titleKey": "evidence.c76.8.title",
+      "observationKey": "evidence.c76.8.observation",
+      "sourceFactIds": [
+        "fact-c76-08",
+        "fact-c76-19"
+      ],
+      "sourceEventIds": [
+        "event-c76-08"
+      ],
+      "relatedEntityIds": [
+        "entity-c76-system",
+        "location-c76"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c76-red-light-second/evidence-03.svg",
+      "assetAlt": "曝光顺序"
+    },
+    {
+      "id": "evidence-c76-09",
+      "kind": "object",
+      "titleKey": "evidence.c76.9.title",
+      "observationKey": "evidence.c76.9.observation",
+      "sourceFactIds": [
+        "fact-c76-09"
+      ],
+      "sourceEventIds": [
+        "event-c76-09"
+      ],
+      "relatedEntityIds": [
+        "entity-c76-system",
+        "location-c76"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.object",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c76-red-light-second/evidence-04.svg",
+      "assetAlt": "现场记录"
+    },
+    {
+      "id": "evidence-c76-10",
+      "kind": "scene",
+      "titleKey": "evidence.c76.10.title",
+      "observationKey": "evidence.c76.10.observation",
+      "sourceFactIds": [
+        "fact-c76-10"
+      ],
+      "sourceEventIds": [
+        "event-c76-10"
+      ],
+      "relatedEntityIds": [
+        "entity-c76-system",
+        "location-c76"
+      ],
+      "defaultState": "available",
+      "supports": [
+        "hypothesis-canonical"
+      ],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.scene",
+      "importance": "required",
+      "visualAsset": "/assets/cases/c76-red-light-second/evidence-05.svg",
+      "assetAlt": "帧内时刻"
+    },
+    {
+      "id": "evidence-c76-11",
+      "kind": "record",
+      "titleKey": "evidence.c76.11.title",
+      "observationKey": "evidence.c76.11.observation",
+      "sourceFactIds": [
+        "fact-c76-11"
+      ],
+      "sourceEventIds": [
+        "event-c76-11"
+      ],
+      "relatedEntityIds": [
+        "entity-c76-system",
+        "location-c76"
+      ],
+      "defaultState": "available",
+      "supports": [],
+      "conflicts": [],
+      "sourceLabelKey": "evidence.source.record",
+      "importance": "irrelevant",
+      "visualAsset": "/assets/cases/c76-red-light-second/evidence-01.svg",
+      "assetAlt": "红灯先亮"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hypothesis-canonical",
+      "kind": "canonical",
+      "labelKey": "hypothesis.c76.canonical",
+      "claim": {
+        "eventIds": [
+          "event-c76-01",
+          "event-c76-02",
+          "event-c76-03",
+          "event-c76-04",
+          "event-c76-05",
+          "event-c76-06",
+          "event-c76-07",
+          "event-c76-08",
+          "event-c76-09",
+          "event-c76-10"
+        ],
+        "motiveKey": "将单帧画面拆成逐行时间区间"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c76-01",
+        "evidence-c76-02",
+        "evidence-c76-03",
+        "evidence-c76-04",
+        "evidence-c76-05",
+        "evidence-c76-06",
+        "evidence-c76-07",
+        "evidence-c76-08",
+        "evidence-c76-09",
+        "evidence-c76-10"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c76-1",
+        "contradiction-c76-2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c76-alternative-1",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c76.alternative.1",
+      "claim": {
+        "assertedPropositions": [
+          "信号灯控制器延迟了一秒"
+        ],
+        "motiveKey": "motive-c76-alternative-1"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c76-01"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c76-1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "hypothesis-c76-alternative-2",
+      "kind": "alternative",
+      "labelKey": "hypothesis.c76.alternative.2",
+      "claim": {
+        "assertedPropositions": [
+          "监控视频被剪掉了一段"
+        ],
+        "motiveKey": "motive-c76-alternative-2"
+      },
+      "requiredEvidenceIds": [
+        "evidence-c76-02"
+      ],
+      "requiredContradictionResolutionIds": [
+        "contradiction-c76-2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-c76-1",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c76-01"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c76-alternative-1"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c76-01"
+      ],
+      "severity": "hard"
+    },
+    {
+      "id": "contradiction-c76-2",
+      "kind": "alternative-exclusion",
+      "requiresFactIds": [
+        "fact-c76-02"
+      ],
+      "invalidatesHypothesisIds": [
+        "hypothesis-c76-alternative-2"
+      ],
+      "resolutionEvidenceIds": [
+        "evidence-c76-02"
+      ],
+      "severity": "hard"
+    }
+  ],
+  "solutionCertificate": {
+    "canonicalHypothesisId": "hypothesis-canonical",
+    "requiredFactIds": [
+      "fact-c76-01",
+      "fact-c76-02",
+      "fact-c76-03",
+      "fact-c76-04",
+      "fact-c76-05",
+      "fact-c76-06",
+      "fact-c76-07",
+      "fact-c76-08",
+      "fact-c76-09",
+      "fact-c76-10"
+    ],
+    "requiredEvidenceIds": [
+      "evidence-c76-01",
+      "evidence-c76-02",
+      "evidence-c76-03",
+      "evidence-c76-04",
+      "evidence-c76-05",
+      "evidence-c76-06",
+      "evidence-c76-07",
+      "evidence-c76-08",
+      "evidence-c76-09",
+      "evidence-c76-10"
+    ],
+    "requiredEventOrder": [
+      [
+        "event-c76-01",
+        "event-c76-02"
+      ],
+      [
+        "event-c76-02",
+        "event-c76-03"
+      ],
+      [
+        "event-c76-03",
+        "event-c76-04"
+      ],
+      [
+        "event-c76-04",
+        "event-c76-05"
+      ],
+      [
+        "event-c76-05",
+        "event-c76-06"
+      ],
+      [
+        "event-c76-06",
+        "event-c76-07"
+      ],
+      [
+        "event-c76-07",
+        "event-c76-08"
+      ],
+      [
+        "event-c76-08",
+        "event-c76-09"
+      ],
+      [
+        "event-c76-09",
+        "event-c76-10"
+      ]
+    ],
+    "requiredContradictionResolutionIds": [
+      "contradiction-c76-1",
+      "contradiction-c76-2"
+    ],
+    "alternativeHypothesisIds": [
+      "hypothesis-c76-alternative-1",
+      "hypothesis-c76-alternative-2"
+    ],
+    "minimumProofSetId": "proof-c76-a",
+    "minimumProofSets": [
+      {
+        "id": "proof-c76-a",
+        "evidenceIds": [
+          "evidence-c76-01",
+          "evidence-c76-02",
+          "evidence-c76-03",
+          "evidence-c76-04",
+          "evidence-c76-05",
+          "evidence-c76-06",
+          "evidence-c76-07",
+          "evidence-c76-08"
+        ]
+      },
+      {
+        "id": "proof-c76-b",
+        "evidenceIds": [
+          "evidence-c76-01",
+          "evidence-c76-02",
+          "evidence-c76-09",
+          "evidence-c76-10"
+        ]
+      }
+    ],
+    "acceptedMotiveKeys": [
+      "将单帧画面拆成逐行时间区间"
+    ],
+    "proofObligations": [
+      {
+        "id": "obligation-c76-1",
+        "kind": "time",
+        "boardId": "board-c76-1",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c76-1-1",
+            "eventId": "event-c76-01"
+          },
+          {
+            "slotId": "slot-c76-1-2",
+            "eventId": "event-c76-03"
+          },
+          {
+            "slotId": "slot-c76-1-3",
+            "eventId": "event-c76-05"
+          },
+          {
+            "slotId": "slot-c76-1-4",
+            "eventId": "event-c76-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c76-01",
+            "toEventId": "event-c76-03",
+            "relation": "precedes"
+          },
+          {
+            "fromEventId": "event-c76-03",
+            "toEventId": "event-c76-05",
+            "relation": "precedes"
+          },
+          {
+            "fromEventId": "event-c76-05",
+            "toEventId": "event-c76-10",
+            "relation": "precedes"
+          }
+        ],
+        "failureCategory": "time"
+      },
+      {
+        "id": "obligation-c76-2",
+        "kind": "space",
+        "boardId": "board-c76-2",
+        "requiredPlacements": [
+          {
+            "slotId": "slot-c76-2-1",
+            "eventId": "event-c76-02"
+          },
+          {
+            "slotId": "slot-c76-2-2",
+            "eventId": "event-c76-04"
+          },
+          {
+            "slotId": "slot-c76-2-3",
+            "eventId": "event-c76-06"
+          },
+          {
+            "slotId": "slot-c76-2-4",
+            "eventId": "event-c76-10"
+          }
+        ],
+        "requiredConnections": [
+          {
+            "fromEventId": "event-c76-02",
+            "toEventId": "event-c76-04",
+            "relation": "reframes"
+          },
+          {
+            "fromEventId": "event-c76-04",
+            "toEventId": "event-c76-06",
+            "relation": "reframes"
+          },
+          {
+            "fromEventId": "event-c76-06",
+            "toEventId": "event-c76-10",
+            "relation": "reframes"
+          }
+        ],
+        "failureCategory": "space"
+      }
+    ],
+    "uniquenessClaim": "滚动快门逐行采样，画面上下部分来自不同瞬间；帧内位置不代表同一时刻。"
+  },
+  "proofReplay": [
+    {
+      "id": "replay-c76-1",
+      "eventId": "event-c76-02",
+      "factIds": [
+        "fact-c76-01"
+      ],
+      "captionKey": "event.c76.2"
+    },
+    {
+      "id": "replay-c76-2",
+      "eventId": "event-c76-03",
+      "factIds": [
+        "fact-c76-02"
+      ],
+      "captionKey": "event.c76.3"
+    },
+    {
+      "id": "replay-c76-3",
+      "eventId": "event-c76-04",
+      "factIds": [
+        "fact-c76-03"
+      ],
+      "captionKey": "event.c76.4"
+    },
+    {
+      "id": "replay-c76-4",
+      "eventId": "event-c76-05",
+      "factIds": [
+        "fact-c76-04"
+      ],
+      "captionKey": "event.c76.5"
+    },
+    {
+      "id": "replay-c76-5",
+      "eventId": "event-c76-06",
+      "factIds": [
+        "fact-c76-05"
+      ],
+      "captionKey": "event.c76.6"
+    },
+    {
+      "id": "replay-c76-6",
+      "eventId": "event-c76-07",
+      "factIds": [
+        "fact-c76-01",
+        "fact-c76-02",
+        "fact-c76-03",
+        "fact-c76-04",
+        "fact-c76-05",
+        "fact-c76-06",
+        "fact-c76-07",
+        "fact-c76-08",
+        "fact-c76-09",
+        "fact-c76-10"
+      ],
+      "captionKey": "event.c76.7"
+    }
+  ],
+  "localization": {
+    "zh-CN": {
+      "case.c76.title": "红灯先亮的那一秒",
+      "case.c76.surface": "监控画面显示红灯比绿灯早亮一秒，现场记录却说两灯同时切换。",
+      "case.c76.truth": "滚动快门逐行采样，画面上下部分来自不同瞬间；帧内位置不代表同一时刻。",
+      "entity.c76.system": "现场对象与记录链",
+      "location.c76": "滚动快门",
+      "hypothesis.c76.canonical": "滚动快门逐行采样，画面上下部分来自不同瞬间；帧内位置不代表同一时刻。",
+      "hypothesis.c76.alternative.1": "信号灯控制器延迟了一秒",
+      "hypothesis.c76.alternative.2": "监控视频被剪掉了一段",
+      "motive.将单帧画面拆成逐行时间区间": "将单帧画面拆成逐行时间区间",
+      "chapter.c76.one": "固定异常",
+      "chapter.c76.two": "核对来源",
+      "evidence.source.scene": "现场来源",
+      "evidence.source.record": "记录来源",
+      "evidence.source.object": "物证来源",
+      "query.c76.1": "红灯先亮是否成立？",
+      "query.c76.2": "绿灯切换是否成立？",
+      "query.c76.3": "滚动快门是否成立？",
+      "query.c76.4": "逐行采样是否成立？",
+      "query.c76.5": "监控画面是否成立？",
+      "query.c76.6": "同一帧是否成立？",
+      "query.c76.7": "灯光时间是否成立？",
+      "query.c76.8": "曝光顺序是否成立？",
+      "query.c76.9": "现场记录是否成立？",
+      "query.c76.10": "帧内时刻是否成立？",
+      "event.c76.1": "阶段 1：红灯先亮进入记录链",
+      "event.c76.2": "阶段 2：绿灯切换进入记录链",
+      "event.c76.3": "阶段 3：滚动快门进入记录链",
+      "event.c76.4": "阶段 4：逐行采样进入记录链",
+      "event.c76.5": "阶段 5：监控画面进入记录链",
+      "event.c76.6": "阶段 6：同一帧进入记录链",
+      "event.c76.7": "阶段 7：灯光时间进入记录链",
+      "event.c76.8": "阶段 8：曝光顺序进入记录链",
+      "event.c76.9": "阶段 9：现场记录进入记录链",
+      "event.c76.10": "阶段 10：帧内时刻进入记录链",
+      "event.c76.11": "阶段 11：红灯先亮进入记录链",
+      "evidence.c76.1.title": "红灯先亮记录",
+      "evidence.c76.1.observation": "来源材料显示“红灯先亮”在该阶段可复核。",
+      "evidence.c76.2.title": "绿灯切换记录",
+      "evidence.c76.2.observation": "来源材料显示“绿灯切换”在该阶段可复核。",
+      "evidence.c76.3.title": "滚动快门记录",
+      "evidence.c76.3.observation": "来源材料显示“滚动快门”在该阶段可复核。",
+      "evidence.c76.4.title": "逐行采样记录",
+      "evidence.c76.4.observation": "来源材料显示“逐行采样”在该阶段可复核。",
+      "evidence.c76.5.title": "监控画面记录",
+      "evidence.c76.5.observation": "来源材料显示“监控画面”在该阶段可复核。",
+      "evidence.c76.6.title": "同一帧记录",
+      "evidence.c76.6.observation": "来源材料显示“同一帧”在该阶段可复核。",
+      "evidence.c76.7.title": "灯光时间记录",
+      "evidence.c76.7.observation": "来源材料显示“灯光时间”在该阶段可复核。",
+      "evidence.c76.8.title": "曝光顺序记录",
+      "evidence.c76.8.observation": "来源材料显示“曝光顺序”在该阶段可复核。",
+      "evidence.c76.9.title": "现场记录记录",
+      "evidence.c76.9.observation": "来源材料显示“现场记录”在该阶段可复核。",
+      "evidence.c76.10.title": "帧内时刻记录",
+      "evidence.c76.10.observation": "来源材料显示“帧内时刻”在该阶段可复核。",
+      "evidence.c76.11.title": "红灯先亮记录",
+      "evidence.c76.11.observation": "来源材料显示“红灯先亮”在该阶段可复核。",
+      "board.c76.1.title": "红灯先亮的那一秒 · interval-logic",
+      "board.c76.1.slot.1": "起始来源",
+      "board.c76.1.slot.2": "关键变化",
+      "board.c76.1.slot.3": "观测结果",
+      "board.c76.1.slot.4": "排除替代",
+      "board.c76.2.title": "红灯先亮的那一秒 · reference-frame",
+      "board.c76.2.slot.1": "起始来源",
+      "board.c76.2.slot.2": "关键变化",
+      "board.c76.2.slot.3": "观测结果",
+      "board.c76.2.slot.4": "排除替代"
+    }
+  }
+}

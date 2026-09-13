@@ -1,0 +1,53 @@
+[
+  {
+    "case": "C61",
+    "passed": true,
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "checks": [
+      "read/cite independently",
+      "negative question with source",
+      "note and question expansion restore",
+      "wrong basis and length rejected",
+      "correct proof with 5 of 6 citations",
+      "citation removal invalidates prior result",
+      "missing citation rejected",
+      "input refresh",
+      "supported explanation and source replay"
+    ]
+  },
+  {
+    "case": "C84",
+    "passed": true,
+    "viewports": [
+      "1440x900",
+      "390x844",
+      "320x740",
+      "844x390"
+    ],
+    "checks": [
+      "6 concrete source records",
+      "event order rejected",
+      "keyboard event movement and live status",
+      "wrong stop scope rejected",
+      "wrong counterfactual rejected",
+      "order and selections restored",
+      "supported explanation and source replay",
+      "material focus and responsive layout"
+    ]
+  },
+  {
+    "case": "original-C61/C84",
+    "passed": true,
+    "viewports": [
+      "1440x900"
+    ],
+    "checks": [
+      "season 5 remains 0/24",
+      "both original cases remain uncompleted after prototype completion",
+      "original C61 starts at 0 effective questions"
+    ]
+  }
+]

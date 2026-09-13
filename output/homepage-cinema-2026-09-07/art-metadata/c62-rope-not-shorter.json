@@ -1,0 +1,32 @@
+{
+  "id": "c62-rope-not-shorter",
+  "title": "绳子没有变短",
+  "kind": "case",
+  "source": "C:\\Users\\86137\\.codex\\generated_images\\01a076b2-7b63-70c1-8a6c-8765811ff257\\exec-7e289bc9-7f6f-4e56-8477-73ab9af9fc72.png",
+  "sourceSha256": "ee22482c04b144a87a09a346ed20155c090ee5c6ff43659f5bb618fa6109ad79",
+  "generatedWith": "built-in ImageGen",
+  "prompt": "Create a production-ready PHOTOREALISTIC CINEMATIC ENVIRONMENT ART asset for the Chinese mystery game 深汤 / THE BLACK SOUP. Reimagine the scene in the selected reference with the new subject below. The reference is the approved visual language: cold steel-blue practical lighting, near-black shadows WITH legible detail, warm ivory highlights, restrained muted amber/red accents, convincing physical materials, cinematic depth, fine natural film grain, psychologically tense and quiet. Create the scene ONLY: remove ALL UI, typography, navigation, text, numbers, logos, watermarks, borders, badges and poster captions. No illustration, no infographic, no schematic, no CSS-like graphic, no montage. No people, ghosts, monster, gore, or overt supernatural event. The art is an atmospheric invitation, NOT evidence: do not infer or reveal the puzzle's solution, hidden mechanism, secret passage, timing, role, electrical topology, causal chain, diagram or annotated comparison. Do not add legible measurements, clock times or interface records. Make each subject physically plausible, visually distinct and composed with a clear focal object visible at thumbnail size. Use scene-appropriate material and lens framing instead of making every case a generic cold hallway.\n\nOutput: one standalone landscape 1536 x 960 image (8:5). Fill the full canvas with the scene. Central subject in the middle 70%, safe for responsive crops; no large empty text zone. Lens and camera height chosen to suit this subject. This case's public opening, the ONLY story information allowed: 绳子没有变短 — 绳子两端距离没有变化，卷扬机却报告已经收回了三米。\nArt direction: A winch drum and taut rope in an empty workshop, warm edge light on rough fibers; no cross-section or annotated route.",
+  "reviewed": true,
+  "results": [
+    {
+      "path": "/assets/home-cinema/c62-rope-not-shorter.webp",
+      "width": 1280,
+      "height": 800,
+      "bytes": 94544,
+      "quality": 84,
+      "budget": 180000,
+      "sha256": "8e42470183a85b0ce85adbdae79612c22aade2e972a1ff90f0ed0da1b5b9c595"
+    },
+    {
+      "path": "/assets/home-cinema/c62-rope-not-shorter-thumb.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 30352,
+      "quality": 84,
+      "budget": 75000,
+      "sha256": "f8c0f16e7d8cd35ce13f1cb7baa1cec567feb5f14f0ccbffbf2c7d7458f282bb"
+    }
+  ],
+  "reviewedAt": "2026-09-08T05:41:12.607180+00:00",
+  "reviewMethod": "Main-agent visual review of generated image and full-cover contact sheets; subject checked against public title/surface. No solution text or solution diagram depicted."
+}
