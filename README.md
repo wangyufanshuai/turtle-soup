@@ -15,7 +15,7 @@
 > [!IMPORTANT]
 > 当前版本是 `v2.12-internal-rc`，状态为 `human-evaluation-pending`。工程自动化已覆盖核心、完整性、类型、冻结和静态构建；浏览器矩阵、当前版本离线恢复、视觉/无障碍、发行 ZIP 和真人 Fun Gate 仍未完成。84 个案件保持冻结，本版本没有新增案件。
 
-![深汤案件选择页：五个赛季与案件档案](./output/homepage-cinema-2026-09-07/screenshots/home-1487x1058-final.png)
+![深汤案件选择页：五个赛季与案件档案](./docs/images/home.png)
 
 ## 先玩起来
 

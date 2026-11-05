@@ -1,9 +1,0 @@
-{
-  "round": 1,
-  "status": "implemented-and-verified",
-  "identity": "round1-identity.json",
-  "automated": {"workerTestsPassed": 23, "newM3Tests": 4, "m01M2Regression": 19, "typecheck": "passed", "build": "passed"},
-  "browser": {"case": "C61", "viewport": "1440x900", "path": "Home > Season 5 > C61 > Proof board > place public 20:00 event > event chain has same item > alternate draft blank > reload > main draft retains original board", "screenshots": ["browser/round1/shared-event.png","browser/round1/separate-draft-reload.png","browser/round1/main-restored.png"]},
-  "found": ["Draft selector is hidden on board/chain steps; expose current draft and switch controls in round 2.", "Singleton slot acceptance prevents exploring wrong placements; revise only versioned draft editing and keep certificate checks in round 3.", "Full dependency undo and solved-result invalidation are next round, not yet claimed."],
-  "notRun": ["full solve", "mobile", "all-family browser checks", "human playtest"]
-}

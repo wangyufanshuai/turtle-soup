@@ -1,1 +1,0 @@
-{"createdAt":"2026-09-06T15:48:46.169Z","oldRef":"29673463024b036d9ad7eeb1aeba6973113f635a","schemaVersion":1,"currentAccepted":true,"oldRejected":true,"originalUnchanged":true,"oldResult":{"ok":false,"code":"invalid","reason":"命令日志第 1 项无效"},"scope":"Independent old validator rejects M3 commands without mutating the new save. Core-only check, not browser import."}

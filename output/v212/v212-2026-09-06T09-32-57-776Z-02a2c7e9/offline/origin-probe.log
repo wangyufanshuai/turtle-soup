@@ -1,7 +1,0 @@
-Read-only origin availability probe after the 84 cached navigations.
-Method: Get-NetTCPConnection -LocalPort 8093 -State Listen; curl --noproxy '*' --max-time 3 http://127.0.0.1:8093/.
-The local static server had previously been stopped by checking its exact http.server 8093 turtle-soup/apps/web/out process command line.
-probeTime=2026-09-06T09:44:09.1971353Z
-listenersOn8093=0
-chttpStatus=000url: (7) Failed to connect to 127.0.0.1 port 8093 after 2038 ms: Could not connect to server
-curlExit=7
