@@ -1,0 +1,15 @@
+{
+  "runId": "v212-2026-09-08T14-11-58-602Z-2b7fb665",
+  "releaseProfile": "v2.12-internal-rc",
+  "sourceHead": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "sourceTreeDigest": "4d8ef2631d85a36c8d7ca8c8961d6f7dfcf526f3acaad65cd203a167b676b4a7",
+  "profileSha256": "0c58dc769f45bb9d29232b9774bc6d01a06ff1e97229446a224131ce12bf658c",
+  "buildHash": "174a7a1858f6dcf5a96c32ac81a4bd1e4bbc91e4a8ff7bfae118bd3cf21aa63b",
+  "id": "offline-all-cases",
+  "coverage": "not-run",
+  "passed": null,
+  "scope": "Complete offline package with actual Service Worker and case startup/recovery",
+  "reason": "Previous evidence was bound to archived run v212-2026-09-06T10-08-11-942Z-f54095c9; rerun this gate for current run",
+  "evidence": [],
+  "archivedEvidence": "docs/archive/v2.12/2026-09-06-stale/v2.12-check-offline-all-cases.json"
+}

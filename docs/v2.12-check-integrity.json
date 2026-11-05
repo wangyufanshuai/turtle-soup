@@ -1,0 +1,37 @@
+{
+  "runId": "v212-2026-09-08T14-33-06-521Z-8fd675da",
+  "releaseProfile": "v2.12-internal-rc",
+  "sourceHead": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "sourceTreeDigest": "be51f064c7694a08a3ab7fd033297ecc54753e3d9efbb906a9281513fecb4163",
+  "profileSha256": "0c58dc769f45bb9d29232b9774bc6d01a06ff1e97229446a224131ce12bf658c",
+  "buildHash": "d56504a241aed110565cbeb6ed239a68603ab4e4bad8c9ba37088f4570e56955",
+  "startedAt": "2026-09-08T14:33:21.499Z",
+  "endedAt": "2026-09-08T14:33:24.849Z",
+  "id": "integrity",
+  "coverage": "measured",
+  "passed": true,
+  "scope": "Integrity regression and the production Worker message handler under Node; browser Worker startup requires separate evidence",
+  "command": {
+    "executable": "node",
+    "args": [
+      "--test",
+      "--test-reporter=tap",
+      "--experimental-strip-types",
+      "--experimental-transform-types",
+      "packages/mystery-core/src/integrity.test.ts",
+      "apps/web/workers/runtime-handler.test.ts"
+    ],
+    "cwd": "."
+  },
+  "exitCode": 0,
+  "unchangedDuringCheck": true,
+  "tests": 15,
+  "failures": 0,
+  "skips": 0,
+  "evidence": [
+    {
+      "path": "output/v212/v212-2026-09-08T14-33-06-521Z-8fd675da/integrity.log",
+      "sha256": "f34b35522d419979ddc18e4538c2b7cbbe4a825b8ffd6444964f12892ed7cad3"
+    }
+  ]
+}

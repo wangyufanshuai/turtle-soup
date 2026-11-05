@@ -18,6 +18,19 @@ export function useQuestionRouter(projection: PlayerProjection | undefined, prep
   const [latency, setLatency] = useState(0);
   const cacheRef = useRef(new Map<string, QuestionRouteResult>());
   const abortRef = useRef<AbortController | undefined>(undefined);
+  const generationRef = useRef(0);
+
+  const dismiss = useCallback(() => {
+    generationRef.current += 1;
+    abortRef.current?.abort();
+    setOffer(undefined); setRoute(undefined); setErrorCode(undefined); setLatency(0);
+    setStatus("idle");
+  }, []);
+
+  useEffect(() => {
+    dismiss();
+    return () => { generationRef.current += 1; abortRef.current?.abort(); };
+  }, [projection?.case.id, projection?.case.contentHash, projection?.replayMode, dismiss]);
 
   useEffect(() => {
     try {
@@ -45,8 +58,16 @@ export function useQuestionRouter(projection: PlayerProjection | undefined, prep
   }, []);
 
   const request = useCallback(async (rawText: string) => {
+    const generation = ++generationRef.current;
+    abortRef.current?.abort();
     setOffer(undefined); setRoute(undefined); setErrorCode(undefined);
-    const nextOffer = await prepareQuestionRouting(rawText);
+    let nextOffer: QuestionRoutingOffer;
+    try { nextOffer = await prepareQuestionRouting(rawText); }
+    catch {
+      if (generation === generationRef.current) { setStatus("fallback"); setErrorCode("network"); setMessage("暂时无法准备候选；请手动改写问题继续。"); }
+      return;
+    }
+    if (generation !== generationRef.current) return;
     setOffer(nextOffer);
     if (!settings.enabled || projection?.replayMode === "no-scaffolds") {
       setStatus("off"); setMessage("没有启用 AI，下面的公开候选仍可手动选择"); return nextOffer;
@@ -60,15 +81,16 @@ export function useQuestionRouter(projection: PlayerProjection | undefined, prep
     const started = performance.now();
     try {
       const result = await import("./question-routing-ai").then(({ routeQuestion: route }) => route(settings, nextOffer.context, apiKey, controller.signal));
+      if (controller.signal.aborted || generation !== generationRef.current) return;
       cacheRef.current.set(key, result); setLatency(Math.round(performance.now() - started)); setRoute(result); setStatus("ready"); setMessage("请选择系统理解的事实，再确认");
     } catch (error) {
-      if (!controller.signal.aborted) { const code = (error as { code?: AiAssistErrorCode }).code ?? "network"; setErrorCode(code); setStatus("fallback"); setMessage("AI 不可用；你仍可从公开候选或问题构建器继续"); }
+      if (!controller.signal.aborted && generation === generationRef.current) { const code = (error as { code?: AiAssistErrorCode }).code ?? "network"; setErrorCode(code); setStatus("fallback"); setMessage("AI 不可用；你仍可从公开候选或问题构建器继续"); }
     }
     return nextOffer;
   }, [apiKey, prepareQuestionRouting, projection?.replayMode, settings]);
 
-  const cancel = useCallback(() => { abortRef.current?.abort(); setStatus("fallback"); setMessage("已取消 AI 解释；可以手动选择"); }, []);
-  const clearSession = useCallback(() => { cacheRef.current.clear(); setApiKeyState(""); try { sessionStorage.removeItem("black-soup:ai-router-key:v1"); } catch { /* optional */ } }, []);
+  const cancel = useCallback(() => { generationRef.current += 1; abortRef.current?.abort(); setRoute(undefined); setStatus("fallback"); setMessage("已取消 AI 解释；可以手动选择"); }, []);
+  const clearSession = useCallback(() => { dismiss(); cacheRef.current.clear(); setApiKeyState(""); try { sessionStorage.removeItem("black-soup:ai-router-key:v1"); } catch { /* optional */ } }, [dismiss]);
   const test = useCallback(async () => { setStatus("working"); setMessage("正在测试结构化输出"); try { await import("./question-routing-ai").then(({ testQuestionRouter: run }) => run(settings, apiKey)); setStatus("ready"); setMessage("AI 连接和结构化输出测试通过"); } catch { setStatus("fallback"); setMessage("连接测试失败；离线确定性提问仍可用"); } }, [apiKey, settings]);
-  return { settings, setSettings, apiKey, setApiKey, status, errorCode, message, offer, route, latency, request, cancel, clearSession, test };
+  return { settings, setSettings, apiKey, setApiKey, status, errorCode, message, offer, route, latency, request, cancel, dismiss, clearSession, test };
 }

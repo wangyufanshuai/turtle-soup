@@ -366,6 +366,10 @@ export interface ProofReplayBeat {
 }
 
 export interface CaseFile {
+  proofRevision?: "m3";
+  /** Worker build policy; absent in canonical content and historical profiles. */
+  questionLanguageRevision?: "m01";
+  investigationRevision?: "m2";
   schemaVersion: string;
   id: string;
   metadata?: {
@@ -465,6 +469,7 @@ export type EvidencePlayerState =
   | "dismissed";
 
 export interface TranscriptEntry {
+  relatedEvidenceIds?: string[];
   id: string;
   rawQuestion: string;
   interpretedAs: string;
@@ -474,6 +479,7 @@ export interface TranscriptEntry {
 }
 
 export interface TheoryDraft {
+  note?: string;
   id: "theory-a" | "theory-b";
   title: string;
   hypothesisId: string;
@@ -482,7 +488,32 @@ export interface TheoryDraft {
   motiveKey?: string;
 }
 
+export interface ProofEditSnapshot {
+  draft: TheoryDraft;
+  boards: Record<string, ReasoningBoardDraft>;
+  explicitChoice?: true;
+}
+export interface VerifiedProofArchive {
+  theory: TheoryDraft;
+  replay: ReplayBeatProjection[];
+  debrief?: DebriefReport;
+}
+export interface ProofFeedback {
+  message: string;
+  nextStep: 'claim' | 'board' | 'chain' | 'proof' | 'evidence';
+  boardId?: string;
+  stale: boolean;
+}
 export interface RuntimeState {
+  proofWorkspace?: { revision: "m3"; boards: Record<TheoryDraft["id"], Record<string, ReasoningBoardDraft>>;
+    history?: Partial<Record<TheoryDraft['id'], ProofEditSnapshot[]>>;
+    archive?: VerifiedProofArchive;
+    feedback?: Partial<Record<TheoryDraft['id'], ProofFeedback>>;
+  };
+  investigationRevision?: "m2";
+  explicitExplanationChoices?: Partial<Record<TheoryDraft["id"], true>>;
+  transcriptQueryIds?: string[];
+  initialDraftOrder?: "opaque";
   game: GameState;
   transcript: TranscriptEntry[];
   evidenceStates: Record<string, EvidencePlayerState>;
@@ -491,6 +522,8 @@ export interface RuntimeState {
   pendingInterpretation?: {
     rawText: string;
     candidateQueryIds: string[];
+    resolverRevision?: "m01";
+    explanation?: string;
   };
   lastQuestionSnapshot?: {
     game: GameState;
@@ -521,6 +554,7 @@ export interface QuestionCandidateProjection {
   target: string;
   predicate: string;
   qualifier?: string;
+  starterEligible?: boolean;
 }
 
 export interface QuestionInterpretation {
@@ -529,6 +563,7 @@ export interface QuestionInterpretation {
   interpretedAs?: string;
   candidates: QuestionCandidateProjection[];
   requiresConfirmation: boolean;
+  explanation?: string;
 }
 
 export interface EvidenceProjection {
@@ -700,6 +735,12 @@ export interface DebriefReport {
 }
 
 export interface PlayerProjection {
+  proofRevision?: "m3";
+  canUndoProofEdit?: boolean;
+  previousVerifiedProof?: VerifiedProofArchive;
+  proofFeedback?: ProofFeedback;
+  investigationRevision?: "m2";
+  explanationPreparation?: { ready: boolean; evidenceIds: string[] };
   case: {
     id: CaseId;
     version: number;
@@ -732,11 +773,19 @@ export interface PlayerProjection {
   replayChallenges: ReplayChallengeSpec[];
 }
 
-export type GameCommand =
-  | { type: "start_case" }
+export type LegacyGameCommand =
+  | { type: "begin_investigation"; revision: "m2" }
+  | { type: "choose_explanation"; revision: "m2"; theoryId: TheoryDraft["id"]; hypothesisId: string }
+  | { type: "clear_explanation"; revision: "m2"; theoryId: TheoryDraft["id"] }
+  | { type: "submit_investigation"; revision: "m2"; theoryId: TheoryDraft["id"] }
+  | { type: "set_theory_note"; revision: "m2"; theoryId: TheoryDraft["id"]; text: string }
+  | { type: "start_case"; initialDraftOrder?: "opaque" }
   | { type: "ask_text"; rawText: string }
+  | { type: "ask_proposition"; rawText: string; resolverRevision: "m01"; queryId: string | null; candidateQueryIds: string[] }
+  | { type: "confirm_proposition"; rawText: string; queryId: string; resolverRevision: "m01" }
+  | { type: "dismiss_interpretation"; rawText: string }
   | { type: "ask_resolved_text"; rawText: string; queryId: string; resolutionSource: "ai-confirmed"; contextHash: string }
-  | { type: "confirm_interpretation"; queryId: string }
+  | { type: "confirm_interpretation"; queryId: string; rawText?: string }
   | { type: "undo_last_question" }
   | { type: "visit_location"; locationId: string }
   | { type: "set_evidence_state"; evidenceId: string; state: EvidencePlayerState }
@@ -756,7 +805,18 @@ export type GameCommand =
   | { type: "set_replay_mode"; mode: ReplayMode }
   | { type: "restart_case" };
 
+export type ProofOperation = Extract<LegacyGameCommand, { type:
+  | "choose_explanation" | "clear_explanation" | "upsert_theory_event" | "remove_theory_event" | "move_theory_event"
+  | "link_theory_evidence" | "set_theory_motive" | "place_reasoning_item" | "remove_reasoning_item"
+  | "connect_reasoning_items" | "disconnect_reasoning_items" }>;
+export type ProofCommand =
+  | { type: "proof_action"; revision: "m3"; action: LegacyGameCommand }
+  | { type: "undo_proof_edit"; revision: "m3"; theoryId: TheoryDraft['id'] }
+  | { type: "edit_proof"; revision: "m3"; theoryId: TheoryDraft["id"]; operations: ProofOperation[] };
+export type GameCommand = LegacyGameCommand | ProofCommand;
+
 export type GameEvent =
+  | { type: "interpretation_dismissed" }
   | { type: "case_started" }
   | { type: "question_answered"; entry: TranscriptEntry }
   | { type: "interpretation_required"; interpretation: QuestionInterpretation }

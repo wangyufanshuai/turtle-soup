@@ -1,0 +1,250 @@
+{
+  "runId": "v212-2026-09-08T14-33-06-521Z-8fd675da",
+  "releaseProfile": "v2.12-internal-rc",
+  "sourceHead": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "sourceTreeDigest": "be51f064c7694a08a3ab7fd033297ecc54753e3d9efbb906a9281513fecb4163",
+  "profileSha256": "0c58dc769f45bb9d29232b9774bc6d01a06ff1e97229446a224131ce12bf658c",
+  "buildHash": "d56504a241aed110565cbeb6ed239a68603ab4e4bad8c9ba37088f4570e56955",
+  "measuredAt": "2026-09-08T14:34:23.634Z",
+  "status": "internal-rc / human-evaluation-pending",
+  "humanParticipants": 0,
+  "founderExploratorySessions": 1,
+  "caseCount": 84,
+  "gates": [
+    {
+      "id": "core",
+      "coverage": "measured",
+      "passed": true,
+      "scope": "Registered Node core/runtime/UI-helper tests; NOT browser gameplay, visual review or historical-log fixtures",
+      "evidence": [
+        "docs/v2.12-check-core.json"
+      ]
+    },
+    {
+      "id": "integrity",
+      "coverage": "measured",
+      "passed": true,
+      "scope": "Integrity regression and the production Worker message handler under Node; browser Worker startup requires separate evidence",
+      "evidence": [
+        "docs/v2.12-check-integrity.json"
+      ]
+    },
+    {
+      "id": "typecheck-core",
+      "coverage": "static",
+      "passed": true,
+      "scope": "TypeScript static diagnostics for packages/**/*.ts",
+      "evidence": [
+        "docs/v2.12-check-typecheck-core.json"
+      ]
+    },
+    {
+      "id": "typecheck-web",
+      "coverage": "static",
+      "passed": true,
+      "scope": "TypeScript static diagnostics for the web application",
+      "evidence": [
+        "docs/v2.12-check-typecheck-web.json"
+      ]
+    },
+    {
+      "id": "frozen",
+      "coverage": "measured",
+      "passed": true,
+      "scope": "Fixed HEAD-to-disk bytes for all frozen cases, historical manifests/profiles/reports/ZIPs",
+      "evidence": [
+        "docs/v2.12-check-frozen.json"
+      ]
+    },
+    {
+      "id": "c01-cold-room-knock/chromium/1440x900",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c01-cold-room-knock/chromium/390x844",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c01-cold-room-knock/firefox/1440x900",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c01-cold-room-knock/firefox/390x844",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c01-cold-room-knock/webkit/1440x900",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c01-cold-room-knock/webkit/390x844",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c61-missing-tape-turn/chromium/1440x900",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c61-missing-tape-turn/chromium/390x844",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c61-missing-tape-turn/firefox/1440x900",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c61-missing-tape-turn/firefox/390x844",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c61-missing-tape-turn/webkit/1440x900",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c61-missing-tape-turn/webkit/390x844",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c84-handoff-after-stop/chromium/1440x900",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c84-handoff-after-stop/chromium/390x844",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c84-handoff-after-stop/firefox/1440x900",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c84-handoff-after-stop/firefox/390x844",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c84-handoff-after-stop/webkit/1440x900",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "c84-handoff-after-stop/webkit/390x844",
+      "scope": "Fresh UI-only investigation including ambiguity/refresh, incorrect proof, correct proof and replay",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "historical-save-oracle",
+      "scope": "Pinned v2.11 Node runtime generates schema-one raw bytes and independent semantic expectations; v2.12 consumes identical commands. NOT historical human saves, browser gameplay, or the real Worker.",
+      "coverage": "measured",
+      "passed": true,
+      "evidence": [
+        "docs/v2.12-check-historical-save-oracle.json"
+      ],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "offline-all-cases",
+      "scope": "Complete offline package with actual Service Worker and case startup/recovery",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [
+        "docs/v2.12-check-offline-all-cases.json"
+      ],
+      "reason": "Previous evidence was bound to archived run v212-2026-09-06T10-08-11-942Z-f54095c9; rerun this gate for current run"
+    },
+    {
+      "id": "ai-fail-closed-ui",
+      "scope": "AI disabled/unavailable/malicious UI flow completion without changing deterministic answers",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "visual-and-accessibility",
+      "scope": "Desktop/mobile keyboard and touch, text scale, focus return, focus visibility, reduced motion, high contrast, axe results for executed engines",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    },
+    {
+      "id": "release-zip",
+      "scope": "Independent v2.12 ZIP with exact artifact fingerprint and all older ZIP hashes unchanged",
+      "coverage": "not-run",
+      "passed": null,
+      "evidence": [],
+      "reason": "Not executed for this source and build"
+    }
+  ],
+  "passed": false,
+  "qualification": "No prior release report is imported as current evidence. Static contracts, observed execution, skipped/not-run and failed gates remain distinct. Automation does not measure enjoyment or human comprehension."
+}

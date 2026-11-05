@@ -3,7 +3,7 @@ import { mkdirSync, readFileSync, readdirSync, statSync, unlinkSync, writeFileSy
 import { dirname, relative, resolve, sep } from "node:path";
 
 const root = resolve(process.argv[2] ?? ".");
-const profileId = process.env.TURTLE_SOUP_RELEASE_PROFILE ?? "v1.4-internal-rc";
+const profileId = process.env.TURTLE_SOUP_RELEASE_PROFILE ?? "v2.12-internal-rc";
 const reportOnly = process.argv.includes("--report-only");
 const outDir = resolve(root, process.argv[3] ?? "apps/web/out");
 const templatePath = resolve(root, "apps/web/public/sw.js");
@@ -18,6 +18,7 @@ const CACHE_IDENTITIES: Readonly<Record<string, string>> = {
   "v2.4-internal-rc": "black-soup-v24-investigation-rhythm-rc-1", "v2.5-internal-rc": "black-soup-v25-season5-content-rc", "v2.6-internal-rc": "black-soup-v26-investigation-workbench-rc",
   "v2.7-internal-rc": "black-soup-v27-player-first-rc", "v2.8-internal-rc": "black-soup-v28-guided-investigation-rc", "v2.9-internal-rc": "black-soup-v29-language-recovery-rc", "v2.10-internal-rc": "black-soup-v210-completed-archive-rc",
   "v2.11-internal-rc": "black-soup-v211-action-loop-rc",
+  "v2.12-internal-rc": "black-soup-v212-integrity-investigation-rc",
 };
 
 function files(dir: string): string[] {
@@ -38,14 +39,18 @@ for (const path of files(outDir)) if (path.endsWith(".map")) unlinkSync(path);
 
 const entries = files(outDir)
   .filter((path) => !path.endsWith("sw.js") && !path.endsWith(".map"))
-  .map((path) => ({ path: requestPath(path), bytes: statSync(path).size }))
+  .map((path) => ({ path: requestPath(path), bytes: statSync(path).size, sha256: createHash("sha256").update(readFileSync(path)).digest("hex") }))
   .sort((a, b) => a.path.localeCompare(b.path));
 const precache = entries.map((entry) => entry.path);
 const template = readFileSync(templatePath, "utf8");
-const cacheName = CACHE_IDENTITIES[profileId] ?? `black-soup-${profileId.replace(/[^a-z0-9]+/giu, "-")}`;
+const cacheIdentity = CACHE_IDENTITIES[profileId] ?? `black-soup-${profileId.replace(/[^a-z0-9]+/giu, "-")}`;
+// A homepage or image revision within the same release must install into a
+// fresh cache; otherwise cache-first navigation keeps serving the old UI.
+const manifestHash = createHash("sha256").update(JSON.stringify(entries)).digest("hex");
+const cacheName = `${cacheIdentity}-${manifestHash.slice(0, 12)}`;
 const serviceWorker = template
   .replace(/const CACHE_NAME = "[^"]+";/, `const CACHE_NAME = "${cacheName}";`)
-  .replace(/const CACHE_PREFIX = "[^"]+";/, `const CACHE_PREFIX = "${cacheName.slice(0, cacheName.lastIndexOf("-") + 1)}";`)
+  .replace(/const CACHE_PREFIX = "[^"]+";/, `const CACHE_PREFIX = "${cacheIdentity.slice(0, cacheIdentity.lastIndexOf("-") + 1)}";`)
   .replace(/const PRECACHE = \[[\s\S]*?\];/, `const PRECACHE = ${JSON.stringify(precache, null, 2)};`);
 if (serviceWorker === template) throw new Error("Service Worker PRECACHE marker was not found");
 if (!reportOnly) writeFileSync(resolve(outDir, "sw.js"), serviceWorker, "utf8");
@@ -57,7 +62,7 @@ const report = {
   cacheName,
   entryCount: entries.length,
   totalBytes: entries.reduce((sum, entry) => sum + entry.bytes, 0),
-  manifestHash: createHash("sha256").update(JSON.stringify(entries)).digest("hex"),
+  manifestHash,
   entries,
   passed: precache.includes("/") && precache.includes("/case/c01-cold-room-knock/") && precache.some((path) => path.startsWith("/_next/static/")),
 };

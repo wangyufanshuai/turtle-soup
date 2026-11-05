@@ -11,3 +11,9 @@ test-data/fun-gate-v1.8/*.json
 test-data/fun-gate-v1.8/observations.csv
 test-data/fun-gate-v1.8/interviews/
 test-data/fun-gate-v1.8/recordings/
+
+# Build artifacts and generated reports (publish ZIPs via GitHub Releases instead)
+dist/
+output/
+/--v*/
+*.zip

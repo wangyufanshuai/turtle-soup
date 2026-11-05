@@ -1,0 +1,15 @@
+[
+  {
+    "caseId": "c01-cold-room-knock",
+    "baseCanonicalHash": "sha256:c01-cold-room-knock-v1",
+    "presentationRevision": 4,
+    "questionLabels": {
+      "query-knock-source": "敲门声是人敲的吗？",
+      "query-phone-inside": "手机在冷藏室里吗？",
+      "query-sample-location": "样本在外面的储物柜里吗？",
+      "query-lin-motive": "林澈这么做是为了拖延检查吗？",
+      "query-fang-entered": "方砚后来进过冷藏室吗？",
+      "query-irrelevant-color": "金属托盘是什么颜色？"
+    }
+  }
+]

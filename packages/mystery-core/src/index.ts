@@ -2,6 +2,8 @@ export * from "./types.ts";
 export * from "./board-behavior.ts";
 export * from "./engine.ts";
 export * from "./runtime.ts";
+export { isProofOperation } from './proof-workspace-m3.ts';
+export * from "./question-language-m01.ts";
 export * from "./authoring.ts";
 export * from "./test-session.ts";
 export * from "./save-envelope.ts";

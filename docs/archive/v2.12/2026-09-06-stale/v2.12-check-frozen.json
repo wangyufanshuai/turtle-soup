@@ -1,0 +1,35 @@
+{
+  "runId": "v212-2026-09-06T10-08-11-942Z-f54095c9",
+  "releaseProfile": "v2.12-internal-rc",
+  "sourceHead": "29673463024b036d9ad7eeb1aeba6973113f635a",
+  "sourceTreeDigest": "0ce774e89eed48aaabf625fe3c36f64ce8460fd852951f8834803cd3157f3eb8",
+  "profileSha256": "0c58dc769f45bb9d29232b9774bc6d01a06ff1e97229446a224131ce12bf658c",
+  "buildHash": "a88f90d18c47fd26bdeceb3cbc90d190a5acd02925dc7c6f0dc02a2db5fbc823",
+  "startedAt": "2026-09-06T10:16:47.646Z",
+  "endedAt": "2026-09-06T10:17:12.242Z",
+  "id": "frozen",
+  "coverage": "measured",
+  "passed": true,
+  "scope": "Fixed HEAD-to-disk bytes for all frozen cases, historical manifests/profiles/reports/ZIPs",
+  "command": {
+    "executable": "node",
+    "args": [
+      "--experimental-strip-types",
+      "--experimental-transform-types",
+      "tools/v212-baseline.ts",
+      "--check"
+    ],
+    "cwd": "."
+  },
+  "exitCode": 0,
+  "unchangedDuringCheck": true,
+  "tests": null,
+  "failures": null,
+  "skips": null,
+  "evidence": [
+    {
+      "path": "output/v212/v212-2026-09-06T10-08-11-942Z-f54095c9/frozen.log",
+      "sha256": "d001d0720901d2496eb7c9e78158a22f6f13a5f64cb1b0f20632642a58d74e5d"
+    }
+  ]
+}
