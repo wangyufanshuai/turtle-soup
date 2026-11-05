@@ -1,6 +1,13 @@
 "use client";
 
-import type { CaseId, GameCommand, GameEvent, PlayerProjection, QuestionRoutingOffer, SaveEnvelope } from "@turtle-soup/mystery-core";
+import type {
+  CaseId,
+  GameCommand,
+  GameEvent,
+  PlayerProjection,
+  QuestionRoutingOffer,
+  SaveEnvelope,
+} from "@turtle-soup/mystery-core";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { loadCaseSave, saveCase } from "./save-store";
 import type { RuntimeWorkerRequest, RuntimeWorkerResponse } from "./worker-protocol";
@@ -12,28 +19,53 @@ export function useMysteryRuntime(caseId: CaseId) {
   const [events, setEvents] = useState<GameEvent[]>([]);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
   const [saveState, setSaveState] = useState<"idle" | "saving" | "saved" | "error">("idle");
-  const [restoreStatus, setRestoreStatus] = useState<"new" | "restored" | "incompatible" | "corrupt" | undefined>(undefined);
+  const [restoreStatus, setRestoreStatus] = useState<
+    "new" | "restored" | "incompatible" | "corrupt" | undefined
+  >(undefined);
   const [latestSave, setLatestSave] = useState<SaveEnvelope>();
   const [storageIssue, setStorageIssue] = useState<string>();
   const persistenceBlockedRef = useRef(false);
   const saveQueueRef = useRef(Promise.resolve());
   const latestSaveRef = useRef<SaveEnvelope | undefined>(undefined);
   const saveRevisionRef = useRef(0);
-  const routingRequestsRef = useRef(new Map<number, { resolve: (offer: QuestionRoutingOffer) => void; reject: (error: Error) => void }>());
+  const routingRequestsRef = useRef(
+    new Map<
+      number,
+      { resolve: (offer: QuestionRoutingOffer) => void; reject: (error: Error) => void }
+    >(),
+  );
 
   const enqueueSave = useCallback((save: SaveEnvelope) => {
     const owner = workerRef.current;
     const revision = ++saveRevisionRef.current;
     setSaveState("saving");
-    const isCurrent = () => workerRef.current === owner && saveRevisionRef.current === revision && !persistenceBlockedRef.current;
-    saveQueueRef.current = saveQueueRef.current.catch(() => undefined)
-      .then(() => workerRef.current === owner && !persistenceBlockedRef.current ? saveCase(save) : undefined)
-      .then(() => { if (isCurrent()) { setSaveState("saved"); setStorageIssue(undefined); } })
-      .catch((error: unknown) => { if (isCurrent()) { setSaveState("error"); setStorageIssue(error instanceof Error ? error.message : "本地存档写入失败"); } });
+    const isCurrent = () =>
+      workerRef.current === owner &&
+      saveRevisionRef.current === revision &&
+      !persistenceBlockedRef.current;
+    saveQueueRef.current = saveQueueRef.current
+      .catch(() => undefined)
+      .then(() =>
+        workerRef.current === owner && !persistenceBlockedRef.current ? saveCase(save) : undefined,
+      )
+      .then(() => {
+        if (isCurrent()) {
+          setSaveState("saved");
+          setStorageIssue(undefined);
+        }
+      })
+      .catch((error: unknown) => {
+        if (isCurrent()) {
+          setSaveState("error");
+          setStorageIssue(error instanceof Error ? error.message : "本地存档写入失败");
+        }
+      });
   }, []);
 
   useEffect(() => {
-    const worker = new Worker(new URL("../workers/mystery-runtime.worker.ts", import.meta.url), { type: "module" });
+    const worker = new Worker(new URL("../workers/mystery-runtime.worker.ts", import.meta.url), {
+      type: "module",
+    });
     workerRef.current = worker;
     let active = true;
 
@@ -62,7 +94,9 @@ export function useMysteryRuntime(caseId: CaseId) {
       setEvents(message.data.events);
       if (message.data.restoreStatus) setRestoreStatus(message.data.restoreStatus);
       persistenceBlockedRef.current = Boolean(message.data.persistenceBlocked);
-      latestSaveRef.current = message.data.persistenceBlocked ? message.data.recoverySave : message.data.save;
+      latestSaveRef.current = message.data.persistenceBlocked
+        ? message.data.recoverySave
+        : message.data.save;
       setLatestSave(latestSaveRef.current);
       setStatus("ready");
       if (message.data.persistenceBlocked) {
@@ -77,19 +111,30 @@ export function useMysteryRuntime(caseId: CaseId) {
     void loadCaseSave(caseId)
       .then((save) => {
         if (!active) return;
-        const request: RuntimeWorkerRequest = { id: ++requestIdRef.current, type: "initialize", caseId, save };
+        const request: RuntimeWorkerRequest = {
+          id: ++requestIdRef.current,
+          type: "initialize",
+          caseId,
+          save,
+        };
         worker.postMessage(request);
       })
       .catch(() => {
         if (!active) return;
         setStorageIssue("浏览器无法读取本地存档；当前调查仍可运行，请在关闭前导出进度。");
-        const request: RuntimeWorkerRequest = { id: ++requestIdRef.current, type: "initialize", caseId, saveReadFailed: true };
+        const request: RuntimeWorkerRequest = {
+          id: ++requestIdRef.current,
+          type: "initialize",
+          caseId,
+          saveReadFailed: true,
+        };
         worker.postMessage(request);
       });
 
     return () => {
       active = false;
-      for (const pending of routingRequestsRef.current.values()) pending.reject(new Error("推理 Worker 已关闭"));
+      for (const pending of routingRequestsRef.current.values())
+        pending.reject(new Error("推理 Worker 已关闭"));
       routingRequestsRef.current.clear();
       worker.terminate();
       workerRef.current = null;
@@ -103,19 +148,37 @@ export function useMysteryRuntime(caseId: CaseId) {
     worker.postMessage(request);
   }, []);
 
-  const prepareQuestionRouting = useCallback((rawText: string) => new Promise<QuestionRoutingOffer>((resolve, reject) => {
-    const worker = workerRef.current;
-    if (!worker) { reject(new Error("推理 Worker 尚未就绪")); return; }
-    const id = ++requestIdRef.current;
-    routingRequestsRef.current.set(id, { resolve, reject });
-    const request: RuntimeWorkerRequest = { id, type: "prepare_question_routing", rawText };
-    worker.postMessage(request);
-  }), []);
+  const prepareQuestionRouting = useCallback(
+    (rawText: string) =>
+      new Promise<QuestionRoutingOffer>((resolve, reject) => {
+        const worker = workerRef.current;
+        if (!worker) {
+          reject(new Error("推理 Worker 尚未就绪"));
+          return;
+        }
+        const id = ++requestIdRef.current;
+        routingRequestsRef.current.set(id, { resolve, reject });
+        const request: RuntimeWorkerRequest = { id, type: "prepare_question_routing", rawText };
+        worker.postMessage(request);
+      }),
+    [],
+  );
 
   const retrySave = useCallback(() => {
     if (!latestSaveRef.current || persistenceBlockedRef.current) return;
     enqueueSave(latestSaveRef.current);
   }, [enqueueSave]);
 
-  return { projection, events, status, saveState, restoreStatus, latestSave, storageIssue, retrySave, dispatch, prepareQuestionRouting };
+  return {
+    projection,
+    events,
+    status,
+    saveState,
+    restoreStatus,
+    latestSave,
+    storageIssue,
+    retrySave,
+    dispatch,
+    prepareQuestionRouting,
+  };
 }

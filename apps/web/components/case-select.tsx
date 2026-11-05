@@ -12,11 +12,7 @@ import { homeCaseArt } from "@/lib/home-cinema-assets";
 import { ArchiveTools } from "./archive-tools";
 import { CinemaHero } from "./home/cinema-hero";
 import { SeasonSelector } from "./home/season-selector";
-import {
-  CaseFilters,
-  difficultyLabel,
-  type CompletionFilter,
-} from "./home/case-filters";
+import { CaseFilters, difficultyLabel, type CompletionFilter } from "./home/case-filters";
 import { CaseDirectory } from "./home/case-directory";
 import styles from "./case-select.module.css";
 
@@ -52,13 +48,9 @@ const TAG_LABELS: Record<string, string> = {
 };
 const tagLabel = (value: string) => TAG_LABELS[value] ?? value;
 const SKILLS = [
-  ...new Set(
-    CASE_CATALOG.flatMap((entry) => entry.mechanicTags ?? entry.contentTags),
-  ),
+  ...new Set(CASE_CATALOG.flatMap((entry) => entry.mechanicTags ?? entry.contentTags)),
 ].map((value) => ({ value, label: tagLabel(value) }));
-const DIFFICULTIES = [
-  ...new Set(CASE_CATALOG.map((entry) => entry.difficulty)),
-];
+const DIFFICULTIES = [...new Set(CASE_CATALOG.map((entry) => entry.difficulty))];
 const CATALOG_IDS = new Set<string>(CASE_CATALOG.map((entry) => entry.id));
 
 export function CaseSelect() {
@@ -77,10 +69,7 @@ export function CaseSelect() {
   useEffect(() => {
     try {
       const stored = localStorage.getItem(SEASON_KEY);
-      if (
-        stored &&
-        CASE_CATALOG.some((entry) => (entry.seasonId ?? "season-1") === stored)
-      )
+      if (stored && CASE_CATALOG.some((entry) => (entry.seasonId ?? "season-1") === stored))
         setActiveSeason(stored);
     } catch {
       /* A season preference is optional. */
@@ -102,11 +91,7 @@ export function CaseSelect() {
       void listMastery()
         .then((records) => {
           if (active)
-            setMastery(
-              Object.fromEntries(
-                records.map((record) => [record.caseId, record]),
-              ),
-            );
+            setMastery(Object.fromEntries(records.map((record) => [record.caseId, record])));
         })
         .catch(() => undefined);
     };
@@ -124,29 +109,18 @@ export function CaseSelect() {
   }, [revision]);
 
   const completed = useMemo(
-    () =>
-      new Set(
-        saves.filter((save) => save.completed).map((save) => save.caseId),
-      ),
+    () => new Set(saves.filter((save) => save.completed).map((save) => save.caseId)),
     [saves],
   );
-  const started = useMemo(
-    () => new Set(saves.map((save) => save.caseId)),
-    [saves],
-  );
+  const started = useMemo(() => new Set(saves.map((save) => save.caseId)), [saves]);
   const orderedSaves = useMemo(
-    () =>
-      [...saves].sort(
-        (a, b) => Date.parse(b.updatedAt) - Date.parse(a.updatedAt),
-      ),
+    () => [...saves].sort((a, b) => Date.parse(b.updatedAt) - Date.parse(a.updatedAt)),
     [saves],
   );
-  const latest =
-    orderedSaves.find((save) => !save.completed) ?? orderedSaves[0];
+  const latest = orderedSaves.find((save) => !save.completed) ?? orderedSaves[0];
   const featured =
-    CASE_CATALOG.find(
-      (entry) => entry.id === (latest?.caseId ?? "c01-cold-room-knock"),
-    ) ?? CASE_CATALOG[0];
+    CASE_CATALOG.find((entry) => entry.id === (latest?.caseId ?? "c01-cold-room-knock")) ??
+    CASE_CATALOG[0];
   const recent = orderedSaves.slice(0, 3).flatMap((save) => {
     const entry = CASE_CATALOG.find((entry) => entry.id === save.caseId);
     return entry ? [{ save, entry }] : [];
@@ -163,13 +137,10 @@ export function CaseSelect() {
   const recommendedStep =
     firstUnfinished.caseId === featured.id
       ? (GOLDEN_PATH.find(
-          (step) =>
-            step.caseId !== featured.id && !solvedOrMastered.has(step.caseId),
+          (step) => step.caseId !== featured.id && !solvedOrMastered.has(step.caseId),
         ) ?? firstUnfinished)
       : firstUnfinished;
-  const recommended = CASE_CATALOG.find(
-    (entry) => entry.id === recommendedStep.caseId,
-  )!;
+  const recommended = CASE_CATALOG.find((entry) => entry.id === recommendedStep.caseId)!;
   const seasonEntries = CASE_CATALOG.filter(
     (entry) => (entry.seasonId ?? "season-1") === activeSeason,
   );
@@ -181,10 +152,7 @@ export function CaseSelect() {
         entry.id,
         entry.title,
         entry.surface,
-        ...(entry.mechanicTags ?? entry.contentTags).flatMap((tag) => [
-          tag,
-          tagLabel(tag),
-        ]),
+        ...(entry.mechanicTags ?? entry.contentTags).flatMap((tag) => [tag, tagLabel(tag)]),
         ...entry.contentTags,
       ]
         .join(" ")
@@ -193,17 +161,10 @@ export function CaseSelect() {
     )
       return false;
     if (difficulty !== "all" && entry.difficulty !== difficulty) return false;
-    if (
-      skill !== "all" &&
-      !(entry.mechanicTags ?? entry.contentTags).includes(skill)
-    )
-      return false;
+    if (skill !== "all" && !(entry.mechanicTags ?? entry.contentTags).includes(skill)) return false;
     if (completion === "closed" && !completed.has(entry.id)) return false;
     if (completion === "open" && completed.has(entry.id)) return false;
-    if (
-      completion === "progress" &&
-      (!started.has(entry.id) || completed.has(entry.id))
-    )
+    if (completion === "progress" && (!started.has(entry.id) || completed.has(entry.id)))
       return false;
     return true;
   });
@@ -222,10 +183,7 @@ export function CaseSelect() {
     }
   };
   const challenges = Object.fromEntries(
-    Object.entries(mastery).map(([id, record]) => [
-      id,
-      masterySummary(record).completedCount,
-    ]),
+    Object.entries(mastery).map(([id, record]) => [id, masterySummary(record).completedCount]),
   );
 
   return (
@@ -238,32 +196,19 @@ export function CaseSelect() {
       <div className={styles.content}>
         {storageError && (
           <div className={styles.storageNotice} role="status">
-            <p>
-              暂时无法读取本地存档。你仍可以打开案件，进度能否保存取决于浏览器的存储权限。
-            </p>
-            <button
-              type="button"
-              onClick={() => setRevision((value) => value + 1)}
-            >
+            <p>暂时无法读取本地存档。你仍可以打开案件，进度能否保存取决于浏览器的存储权限。</p>
+            <button type="button" onClick={() => setRevision((value) => value + 1)}>
               重新读取
             </button>
           </div>
         )}
-        <SeasonSelector
-          selected={activeSeason}
-          completed={completed}
-          onSelect={selectSeason}
-        />
+        <SeasonSelector selected={activeSeason} completed={completed} onSelect={selectSeason} />
         {recent.length > 0 && (
           <section className={styles.recent} aria-label="最近调查">
             <h2>最近调查</h2>
             <div>
               {recent.map(({ entry, save }) => (
-                <Link
-                  href={`/case/${entry.id}`}
-                  key={entry.id}
-                  prefetch={false}
-                >
+                <Link href={`/case/${entry.id}`} key={entry.id} prefetch={false}>
                   <span>{save.completed ? "已结案" : "调查中"}</span>
                   <b>{entry.title}</b>
                   <ArrowRightIcon size={17} aria-hidden="true" />
@@ -272,11 +217,7 @@ export function CaseSelect() {
             </div>
           </section>
         )}
-        <section
-          id="case-library"
-          className={styles.library}
-          aria-labelledby="library-heading"
-        >
+        <section id="case-library" className={styles.library} aria-labelledby="library-heading">
           <div className={styles.libraryHeading}>
             <div>
               <p className={styles.eyebrow}>THE CASE FILES</p>
@@ -304,8 +245,7 @@ export function CaseSelect() {
               <span className={styles.eyebrow}>下一份值得打开的档案</span>
               <h3>{recommended.title}</h3>
               <p>
-                {recommendedStep.estimatedMinutes.min}–
-                {recommendedStep.estimatedMinutes.max} 分钟
+                {recommendedStep.estimatedMinutes.min}–{recommendedStep.estimatedMinutes.max} 分钟
                 <span>练习{recommendedStep.nextSkill}</span>
               </p>
             </div>
@@ -345,11 +285,7 @@ export function CaseSelect() {
             />
           </div>
         </section>
-        <section
-          id="local-archive"
-          className={styles.localArchive}
-          aria-label="存档管理"
-        >
+        <section id="local-archive" className={styles.localArchive} aria-label="存档管理">
           <ArchiveTools onImported={() => setRevision((value) => value + 1)} />
         </section>
         <footer className={styles.footer}>

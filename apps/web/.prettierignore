@@ -1,0 +1,5 @@
+.next/
+out/
+.generated/
+next-env.d.ts
+public/

@@ -9,7 +9,8 @@ import {
 
 /** Shared serialized UTF-8 budget: an exported package must be importable unchanged. */
 export const MAX_SAVE_ARCHIVE_BYTES = 16 * 1024 * 1024;
-const SIZE_ERROR = "存档包超过 16 MiB 字节限制。未创建备份文件；可尝试按案导出。若单案仍超限，请保留本机原档并反馈，不要删除进度。";
+const SIZE_ERROR =
+  "存档包超过 16 MiB 字节限制。未创建备份文件；可尝试按案导出。若单案仍超限，请保留本机原档并反馈，不要删除进度。";
 const encoder = new TextEncoder();
 
 export function serializeSaveArchive(saves: SaveEnvelope[], exportedAt?: string): string {
@@ -54,11 +55,20 @@ export function downloadSaveArchive(saves: SaveEnvelope[], filename = "turtle-so
   setTimeout(() => URL.revokeObjectURL(url), 1_000);
 }
 
-export async function readSaveArchive(file: File, identities: Readonly<Record<string, SaveIdentity>>): Promise<SaveValidationResult<SaveArchive>> {
-  if (file.size > MAX_SAVE_ARCHIVE_BYTES) return { ok: false, code: "invalid", reason: "存档包超过 16 MiB 字节限制；请选择按案拆分的备份文件" };
+export async function readSaveArchive(
+  file: File,
+  identities: Readonly<Record<string, SaveIdentity>>,
+): Promise<SaveValidationResult<SaveArchive>> {
+  if (file.size > MAX_SAVE_ARCHIVE_BYTES)
+    return {
+      ok: false,
+      code: "invalid",
+      reason: "存档包超过 16 MiB 字节限制；请选择按案拆分的备份文件",
+    };
   try {
     const serialized = await file.text();
-    if (encoder.encode(serialized).byteLength > MAX_SAVE_ARCHIVE_BYTES) return { ok: false, code: "invalid", reason: "存档包超过 16 MiB 字节限制" };
+    if (encoder.encode(serialized).byteLength > MAX_SAVE_ARCHIVE_BYTES)
+      return { ok: false, code: "invalid", reason: "存档包超过 16 MiB 字节限制" };
     return validateSaveArchive(JSON.parse(serialized) as unknown, identities);
   } catch {
     return { ok: false, code: "invalid", reason: "文件不是有效的 JSON 存档包" };

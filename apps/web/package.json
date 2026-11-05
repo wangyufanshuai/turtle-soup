@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build --webpack",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:css": "stylelint \"**/*.css\""
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
@@ -17,6 +20,8 @@
   },
   "devDependencies": {
     "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0"
+    "@types/react-dom": "^19.0.0",
+    "prettier": "^3.9.10",
+    "stylelint": "^18.0.0"
   }
 }

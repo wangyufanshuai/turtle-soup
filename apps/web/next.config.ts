@@ -28,7 +28,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: ["@turtle-soup/mystery-core"],
   images: { unoptimized: true },
-  generateBuildId: async () => BUILD_IDS[process.env.TURTLE_SOUP_RELEASE_PROFILE ?? "v2.12-internal-rc"] ?? "black-soup-local-build",
+  generateBuildId: async () =>
+    BUILD_IDS[process.env.TURTLE_SOUP_RELEASE_PROFILE ?? "v2.12-internal-rc"] ??
+    "black-soup-local-build",
 };
 
 export default nextConfig;

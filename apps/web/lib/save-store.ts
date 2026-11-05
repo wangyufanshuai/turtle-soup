@@ -17,7 +17,10 @@ function openDatabase(): Promise<IDBDatabase> {
 }
 
 export class SaveStoreError extends Error {
-  constructor(public readonly code: "read" | "write" | "quota" | "invalid", message: string) {
+  constructor(
+    public readonly code: "read" | "write" | "quota" | "invalid",
+    message: string,
+  ) {
     super(message);
     this.name = "SaveStoreError";
   }
@@ -66,10 +69,13 @@ export async function listCaseSaves(): Promise<SaveEnvelope[]> {
   return new Promise((resolve, reject) => {
     const transaction = database.transaction(STORE_NAME, "readonly");
     const request = transaction.objectStore(STORE_NAME).getAll();
-    request.onsuccess = () => resolve(((request.result as unknown[]) ?? []).flatMap((value) => {
-      const validation = validateSaveEnvelope(value);
-      return validation.ok ? [validation.value] : [];
-    }));
+    request.onsuccess = () =>
+      resolve(
+        ((request.result as unknown[]) ?? []).flatMap((value) => {
+          const validation = validateSaveEnvelope(value);
+          return validation.ok ? [validation.value] : [];
+        }),
+      );
     request.onerror = () => reject(new SaveStoreError("read", "无法读取案件存档"));
     transaction.oncomplete = () => database.close();
   });
@@ -83,13 +89,17 @@ export async function importCaseSaves(saves: SaveEnvelope[]): Promise<void> {
   return new Promise((resolve, reject) => {
     const transaction = database.transaction(STORE_NAME, "readwrite");
     try {
-      for (const result of validated) if (result.ok) transaction.objectStore(STORE_NAME).put(result.value, result.value.caseId);
+      for (const result of validated)
+        if (result.ok) transaction.objectStore(STORE_NAME).put(result.value, result.value.caseId);
     } catch (error) {
       database.close();
       reject(writeError(error instanceof DOMException ? error : null));
       return;
     }
-    transaction.oncomplete = () => { database.close(); resolve(); };
+    transaction.oncomplete = () => {
+      database.close();
+      resolve();
+    };
     transaction.onerror = () => reject(writeError(transaction.error));
   });
 }

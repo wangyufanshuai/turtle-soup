@@ -43,13 +43,15 @@ export class AudioEngine {
         return undefined;
       }
     }
-    if (this.context.state === "suspended" && !this.pageHidden) void this.context.resume().catch(() => undefined);
+    if (this.context.state === "suspended" && !this.pageHidden)
+      void this.context.resume().catch(() => undefined);
     return this.context;
   }
 
   setMuted(muted: boolean) {
     this.muted = muted;
-    if (this.master) this.master.gain.setTargetAtTime(muted ? 0 : 1, this.master.context.currentTime, 0.025);
+    if (this.master)
+      this.master.gain.setTargetAtTime(muted ? 0 : 1, this.master.context.currentTime, 0.025);
     this.syncAmbient();
   }
 
@@ -59,7 +61,12 @@ export class AudioEngine {
 
   setAmbientVolume(volume: number) {
     this.ambientVolume = Math.max(0, Math.min(0.5, volume));
-    if (this.ambientGain) this.ambientGain.gain.setTargetAtTime(this.ambientVolume, this.ambientGain.context.currentTime, 0.12);
+    if (this.ambientGain)
+      this.ambientGain.gain.setTargetAtTime(
+        this.ambientVolume,
+        this.ambientGain.context.currentTime,
+        0.12,
+      );
   }
 
   setPageHidden(hidden: boolean) {
@@ -125,7 +132,10 @@ export class AudioEngine {
 
     const noiseBuffer = context.createBuffer(1, context.sampleRate, context.sampleRate);
     const samples = noiseBuffer.getChannelData(0);
-    let seed = [...this.profile.signature].reduce((value, character) => ((value * 31) + character.charCodeAt(0)) >>> 0, 2166136261);
+    let seed = [...this.profile.signature].reduce(
+      (value, character) => (value * 31 + character.charCodeAt(0)) >>> 0,
+      2166136261,
+    );
     for (let index = 0; index < samples.length; index += 1) {
       seed = (1664525 * seed + 1013904223) >>> 0;
       samples[index] = ((seed / 0xffffffff) * 2 - 1) * 0.7;
@@ -144,7 +154,10 @@ export class AudioEngine {
     const now = context.currentTime;
     for (const source of [base, harmonic, modulation, noise]) source.start(now);
     this.ambientSources = [base, harmonic, modulation, noise];
-    this.ambientTimer = setInterval(() => this.playAmbientPulse(), this.profile.pulseSeconds * 1000);
+    this.ambientTimer = setInterval(
+      () => this.playAmbientPulse(),
+      this.profile.pulseSeconds * 1000,
+    );
   }
 
   private playAmbientPulse() {
@@ -153,7 +166,14 @@ export class AudioEngine {
     if (!context || !this.ambientGain) return;
     const now = context.currentTime;
     this.profile.pulseFrequencies.forEach((frequency, index) => {
-      this.createTone(frequency, now + index * 0.09, 0.11 + index * 0.025, 0.014, this.profile.pulseWave, this.ambientGain!);
+      this.createTone(
+        frequency,
+        now + index * 0.09,
+        0.11 + index * 0.025,
+        0.014,
+        this.profile.pulseWave,
+        this.ambientGain!,
+      );
     });
   }
 
@@ -161,7 +181,11 @@ export class AudioEngine {
     if (this.ambientTimer) clearInterval(this.ambientTimer);
     this.ambientTimer = undefined;
     for (const source of this.ambientSources) {
-      try { source.stop(); } catch { /* The source may already be stopped during teardown. */ }
+      try {
+        source.stop();
+      } catch {
+        /* The source may already be stopped during teardown. */
+      }
       source.disconnect();
     }
     this.ambientSources = [];
@@ -169,7 +193,14 @@ export class AudioEngine {
     this.ambientGain = undefined;
   }
 
-  private createTone(frequency: number, start: number, duration: number, level: number, wave: OscillatorType, destination: AudioNode) {
+  private createTone(
+    frequency: number,
+    start: number,
+    duration: number,
+    level: number,
+    wave: OscillatorType,
+    destination: AudioNode,
+  ) {
     const context = this.context;
     if (!context) return;
     const oscillator = context.createOscillator();
@@ -190,16 +221,45 @@ export class AudioEngine {
     if (!context || !this.master) return;
     const ratio = this.profile.effectRatio;
     const tones: Record<GameSound, Array<[number, number, number]>> = {
-      inspect: [[380, 0, 0.08], [570, 0.07, 0.1]],
+      inspect: [
+        [380, 0, 0.08],
+        [570, 0.07, 0.1],
+      ],
       question: [[240, 0, 0.07]],
-      contradiction: [[150, 0, 0.16], [118, 0.12, 0.2]],
-      solved: [[220, 0, 0.16], [330, 0.12, 0.18], [495, 0.26, 0.42]],
-      replay: [[294, 0, 0.09], [392, 0.08, 0.16]],
-      knock: [[78, 0, 0.08], [78, 0.18, 0.08], [78, 0.36, 0.08]],
+      contradiction: [
+        [150, 0, 0.16],
+        [118, 0.12, 0.2],
+      ],
+      solved: [
+        [220, 0, 0.16],
+        [330, 0.12, 0.18],
+        [495, 0.26, 0.42],
+      ],
+      replay: [
+        [294, 0, 0.09],
+        [392, 0.08, 0.16],
+      ],
+      knock: [
+        [78, 0, 0.08],
+        [78, 0.18, 0.08],
+        [78, 0.36, 0.08],
+      ],
     };
-    const wave: OscillatorType = sound === "knock" || sound === "contradiction" ? "triangle" : sound === "inspect" ? this.profile.pulseWave : "sine";
+    const wave: OscillatorType =
+      sound === "knock" || sound === "contradiction"
+        ? "triangle"
+        : sound === "inspect"
+          ? this.profile.pulseWave
+          : "sine";
     for (const [frequency, delay, duration] of tones[sound]) {
-      this.createTone(frequency * ratio, context.currentTime + delay, duration, this.effectsVolume * 0.18, wave, this.master);
+      this.createTone(
+        frequency * ratio,
+        context.currentTime + delay,
+        duration,
+        this.effectsVolume * 0.18,
+        wave,
+        this.master,
+      );
     }
   }
 

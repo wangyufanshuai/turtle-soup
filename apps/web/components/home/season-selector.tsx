@@ -53,9 +53,7 @@ export function SeasonSelector({
           const entries = CASE_CATALOG.filter(
             (entry) => (entry.seasonId ?? "season-1") === season.id,
           );
-          const count = entries.filter((entry) =>
-            completed.has(entry.id),
-          ).length;
+          const count = entries.filter((entry) => completed.has(entry.id)).length;
           return (
             <button
               type="button"

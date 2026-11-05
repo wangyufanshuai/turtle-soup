@@ -1068,13 +1068,7 @@
     object-position: center top !important;
   }
   .hero::after {
-    background: linear-gradient(
-      0deg,
-      #060b0e 0%,
-      #060b0eb8 27%,
-      #060b0e1a 65%,
-      #060b0e33 100%
-    );
+    background: linear-gradient(0deg, #060b0e 0%, #060b0eb8 27%, #060b0e1a 65%, #060b0e33 100%);
   }
   .heroContent {
     width: auto;
