@@ -3,6 +3,7 @@ import { ArrowRightIcon } from "@phosphor-icons/react/dist/csr/ArrowRight";
 import type { CaseCatalogEntry } from "@turtle-soup/mystery-core";
 import { HOME_CINEMA, homeCaseArt } from "@/lib/home-cinema-assets";
 import styles from "../case-select.module.css";
+import { HeroFlashlight } from "./hero-flashlight";
 
 export function CinemaHero({
   entry,
@@ -33,6 +34,7 @@ export function CinemaHero({
           }}
         />
       </picture>
+      <HeroFlashlight />
       <header className={styles.header}>
         <a className={styles.brand} href="#main-content" aria-label="深汤首页">
           <span>深汤</span>

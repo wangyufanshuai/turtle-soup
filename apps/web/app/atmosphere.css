@@ -1,0 +1,129 @@
+/*
+ * Atmosphere: film grain, lens vignette and shared motion keyframes.
+ * Purely decorative layers — pointer-events: none, never carry information.
+ */
+
+/* Film grain: SVG turbulence tile, jittered in steps so it reads as celluloid, not static. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  z-index: var(--z-atmosphere);
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.055;
+  mix-blend-mode: overlay;
+  animation: grain-jitter 0.9s steps(6) infinite;
+}
+
+/* Lens vignette: darkens the frame edges like an old projector. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-atmosphere);
+  pointer-events: none;
+  background: radial-gradient(ellipse 120% 90% at 50% 45%, transparent 55%, rgb(0 0 0 / 0.42) 100%);
+}
+
+@keyframes grain-jitter {
+  0% {
+    transform: translate(0, 0);
+  }
+  17% {
+    transform: translate(-6%, 4%);
+  }
+  33% {
+    transform: translate(5%, -7%);
+  }
+  50% {
+    transform: translate(-3%, 9%);
+  }
+  67% {
+    transform: translate(8%, 2%);
+  }
+  83% {
+    transform: translate(-9%, -4%);
+  }
+  100% {
+    transform: translate(3%, 6%);
+  }
+}
+
+/* Shared keyframes for entrances, stamps and sweeps. */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+@keyframes ink-in {
+  from {
+    opacity: 0;
+    letter-spacing: 0.08em;
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    letter-spacing: inherit;
+    filter: none;
+  }
+}
+@keyframes slow-push {
+  from {
+    transform: scale(1.08) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.16) translate3d(-1.5%, -1%, 0);
+  }
+}
+@keyframes stamp-in {
+  0% {
+    opacity: 0;
+    transform: rotate(var(--stamp-rot, -8deg)) scale(2.4);
+    filter: blur(3px);
+  }
+  55% {
+    opacity: 1;
+    transform: rotate(var(--stamp-rot, -8deg)) scale(0.92);
+    filter: none;
+  }
+  75% {
+    transform: rotate(var(--stamp-rot, -8deg)) scale(1.04);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(var(--stamp-rot, -8deg)) scale(1);
+  }
+}
+@keyframes light-sweep {
+  from {
+    transform: translateX(-120%) skewX(-18deg);
+  }
+  to {
+    transform: translateX(220%) skewX(-18deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::after {
+    animation: none;
+  }
+}
+html:has([data-reduced-motion="true"]) body::after {
+  animation: none;
+}
+
+/* Printing / forced colours: drop decorative layers entirely. */
+@media print, (forced-colors: active) {
+  body::before,
+  body::after {
+    display: none;
+  }
+}

@@ -26,7 +26,7 @@
   min-height: 44px;
 }
 .header > span {
-  font: 0.6875rem var(--mono);
+  font: var(--text-xs) var(--mono);
   letter-spacing: 0.12em;
   color: var(--study-muted);
 }
@@ -36,7 +36,7 @@
 .landing > small,
 .hero small,
 .emptyPaper > small {
-  font: 0.6875rem var(--mono);
+  font: var(--text-xs) var(--mono);
   letter-spacing: 0.15em;
   color: var(--study-accent);
 }
@@ -167,7 +167,7 @@
   font-weight: 400;
 }
 .reel b small {
-  font: 0.6875rem var(--body);
+  font: var(--text-xs) var(--body);
   margin-left: 4px;
 }
 .signal {
@@ -216,7 +216,7 @@
   color: var(--study-ink);
 }
 .workspaceNav button span {
-  font: 0.6875rem var(--mono);
+  font: var(--text-xs) var(--mono);
   margin-left: 24px;
 }
 .workspaceNav > small {
@@ -237,7 +237,7 @@
   top: 18px;
 }
 .materialList > small {
-  font: 0.6875rem var(--mono);
+  font: var(--text-xs) var(--mono);
   letter-spacing: 0.16em;
   color: var(--study-muted);
   padding: 12px 10px;
@@ -263,7 +263,7 @@
   border-color: var(--study-line);
 }
 .materialList > button > b {
-  font: 0.6875rem var(--mono);
+  font: var(--text-xs) var(--mono);
   color: var(--study-muted);
 }
 .materialList > button > span {
@@ -273,7 +273,7 @@
 .materialList > button small {
   display: block;
   color: var(--study-muted);
-  font-size: 0.6875rem;
+  font-size: var(--text-xs);
   margin-top: 4px;
 }
 .materialList > button > i {
@@ -447,7 +447,7 @@
   cursor: default;
 }
 .readingNav > span {
-  font: 0.6875rem var(--mono);
+  font: var(--text-xs) var(--mono);
   color: #58624f;
 }
 .emptyPaper {
@@ -543,7 +543,7 @@
 }
 .proofPanel > header > small,
 .result > small {
-  font: 0.6875rem var(--mono);
+  font: var(--text-xs) var(--mono);
   color: var(--study-accent);
   letter-spacing: 0.13em;
 }
@@ -645,7 +645,7 @@
 }
 .citations small {
   color: var(--study-muted);
-  font-size: 0.6875rem;
+  font-size: var(--text-xs);
   margin-left: auto;
 }
 .citations label:has(input:disabled) {
@@ -703,7 +703,7 @@
 }
 .orderField li small {
   display: block;
-  font: 0.6875rem/1.8 var(--mono);
+  font: var(--text-xs)/1.8 var(--mono);
   color: var(--study-muted);
 }
 .orderField li > div {
@@ -861,7 +861,7 @@
     font-size: 0.75rem;
   }
   .header > span {
-    font-size: 0.5625rem;
+    font-size: var(--text-xs);
     letter-spacing: 0;
   }
   .hero {
@@ -880,7 +880,7 @@
     font-size: 0.9375rem;
   }
   .hero > div > span {
-    font-size: 0.6875rem;
+    font-size: var(--text-xs);
   }
   .workspaceNav {
     margin-bottom: 16px;
@@ -918,13 +918,13 @@
     border-color: var(--study-line);
   }
   .materialList > button > b {
-    font-size: 0.625rem;
+    font-size: var(--text-xs);
   }
   .materialList > button > span {
     font-size: 0.75rem;
   }
   .materialList > button small {
-    font-size: 0.625rem;
+    font-size: var(--text-xs);
   }
   .materialList > button > i {
     display: none;
@@ -1008,7 +1008,7 @@
     font-size: 0.8125rem;
   }
   .orderField li > b {
-    font-size: 0.625rem;
+    font-size: var(--text-xs);
   }
   .orderField li > div {
     gap: 4px;
@@ -1027,7 +1027,7 @@
     gap: 8px;
   }
   .citations small {
-    font-size: 0.625rem;
+    font-size: var(--text-xs);
     white-space: nowrap;
   }
   .result .explanation {

@@ -2,7 +2,7 @@
   "defaultSeverity": "warning",
   "rules": {
     "color-no-hex": true,
-    "function-disallowed-list": ["rgb", "rgba", "hsl", "hsla"],
+    "function-disallowed-list": ["hsl", "hsla"],
     "declaration-property-value-disallowed-list": {
       "font-size": ["/^([0-9]|1[01])(\\.\\d+)?px$/", "/^0?\\.([0-6]\\d*|7[0-4]\\d*)rem$/"]
     }
@@ -10,7 +10,10 @@
   "overrides": [
     {
       "files": ["app/globals.css", "app/tokens.css"],
-      "rules": { "color-no-hex": null, "function-disallowed-list": null }
+      "rules": {
+        "color-no-hex": null,
+        "function-disallowed-list": null
+      }
     }
   ]
 }

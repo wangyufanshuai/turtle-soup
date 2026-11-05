@@ -25,6 +25,7 @@ import { loadPlayerSummary, savePlayerSummary } from "@/lib/player-summary-store
 import { downloadExperienceIssues, type ExperienceIssueRecord } from "@/lib/experience-issue-log";
 import { deriveProofReadiness } from "@/lib/proof-readiness";
 import { reasoningBoardUi } from "@/lib/reasoning-board-ui";
+import { homeCaseArt } from "@/lib/home-cinema-assets";
 import {
   questionPlaceholder,
   questionRecoverySurface,
@@ -722,6 +723,14 @@ export function InvestigationShell(props: {
         } as CSSProperties
       }
     >
+      <div className={styles.backdrop} aria-hidden="true">
+        <img
+          src={homeCaseArt(projection.case.id).image}
+          alt=""
+          decoding="async"
+          style={{ objectPosition: homeCaseArt(projection.case.id).focus }}
+        />
+      </div>
       <header className={styles.topbar} inert={settingsOpen || undefined}>
         <Link href="/" prefetch={false} aria-label="返回全部案件">
           ← <span>全部案件</span>
