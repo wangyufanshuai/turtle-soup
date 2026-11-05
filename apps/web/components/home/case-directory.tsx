@@ -13,13 +13,7 @@ type Props = {
   challenges: Record<string, number>;
   onClear: () => void;
 };
-export function CaseDirectory({
-  entries,
-  completed,
-  started,
-  challenges,
-  onClear,
-}: Props) {
+export function CaseDirectory({ entries, completed, started, challenges, onClear }: Props) {
   return (
     <div className={styles.caseGrid}>
       {entries.map((entry) => {
@@ -40,9 +34,7 @@ export function CaseDirectory({
                 loading="lazy"
                 style={{ objectPosition: art.focus }}
               />
-              <span className={styles.caseNumber}>
-                {entry.id.match(/^c(\d+)/)?.[1]}
-              </span>
+              <span className={styles.caseNumber}>{entry.id.match(/^c(\d+)/)?.[1]}</span>
             </div>
             <div className={styles.cardBody}>
               <div className={styles.caseMeta}>
@@ -52,16 +44,8 @@ export function CaseDirectory({
                     {entry.targetMinutes.min}–{entry.targetMinutes.max} 分钟
                   </span>
                 </span>
-                <span
-                  className={
-                    completed.has(entry.id) ? styles.closed : undefined
-                  }
-                >
-                  {completed.has(entry.id)
-                    ? "已结案"
-                    : started.has(entry.id)
-                      ? "调查中"
-                      : "未开启"}
+                <span className={completed.has(entry.id) ? styles.closed : undefined}>
+                  {completed.has(entry.id) ? "已结案" : started.has(entry.id) ? "调查中" : "未开启"}
                 </span>
               </div>
               <h3>{entry.title}</h3>
@@ -77,9 +61,7 @@ export function CaseDirectory({
                     ? "重返现场"
                     : "继续调查"
                   : "打开档案"}
-                {challenges[entry.id] !== undefined && (
-                  <small>挑战 {challenges[entry.id]}/3</small>
-                )}
+                {challenges[entry.id] !== undefined && <small>挑战 {challenges[entry.id]}/3</small>}
                 <ArrowUpRightIcon size={20} aria-hidden="true" />
               </span>
             </div>

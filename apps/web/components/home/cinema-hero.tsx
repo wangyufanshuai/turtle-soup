@@ -45,17 +45,10 @@ export function CinemaHero({
       </header>
       <div className={styles.heroContent}>
         <p className={styles.heroKicker}>
-          {state === "continue"
-            ? "未完的调查"
-            : state === "closed"
-              ? "重返案发现场"
-              : "今夜的谜案"}
+          {state === "continue" ? "未完的调查" : state === "closed" ? "重返案发现场" : "今夜的谜案"}
           <span>CASE {entry.id.match(/^c(\d+)/)?.[1]}</span>
         </p>
-        <h1
-          id="hero-title"
-          className={coldRoom ? styles.coldRoomTitle : styles.otherTitle}
-        >
+        <h1 id="hero-title" className={coldRoom ? styles.coldRoomTitle : styles.otherTitle}>
           {coldRoom ? (
             <>
               冷藏室的
@@ -89,17 +82,9 @@ export function CinemaHero({
           {state === "closed" && <span>已结案</span>}
         </p>
         <div className={styles.heroActions}>
-          <Link
-            prefetch={false}
-            className={styles.primaryButton}
-            href={`/case/${entry.id}`}
-          >
+          <Link prefetch={false} className={styles.primaryButton} href={`/case/${entry.id}`}>
             <span>
-              {state === "continue"
-                ? "继续调查"
-                : state === "closed"
-                  ? "回看案件"
-                  : "开始调查"}
+              {state === "continue" ? "继续调查" : state === "closed" ? "回看案件" : "开始调查"}
             </span>
             <ArrowRightIcon size={23} weight="light" aria-hidden="true" />
           </Link>

@@ -40,13 +40,28 @@ export function ArchiveTools({ onImported }: { onImported: () => void }) {
 
   return (
     <details className="archiveTools">
-      <summary>本地存档与备份 <span>可导出全部案件进度</span></summary>
+      <summary>
+        本地存档与备份 <span>可导出全部案件进度</span>
+      </summary>
       <div className="archiveToolsBody">
-        <p id="archive-status" role="status" aria-live="polite">{status}</p>
+        <p id="archive-status" role="status" aria-live="polite">
+          {status}
+        </p>
         <div>
-          <button type="button" onClick={() => void exportAll()}>导出全部存档</button>
-          <button type="button" onClick={() => inputRef.current?.click()}>导入存档包</button>
-          <input ref={inputRef} type="file" name="save-archive" accept="application/json,.json" onChange={(event) => void importFile(event)} aria-describedby="archive-status" />
+          <button type="button" onClick={() => void exportAll()}>
+            导出全部存档
+          </button>
+          <button type="button" onClick={() => inputRef.current?.click()}>
+            导入存档包
+          </button>
+          <input
+            ref={inputRef}
+            type="file"
+            name="save-archive"
+            accept="application/json,.json"
+            onChange={(event) => void importFile(event)}
+            aria-describedby="archive-status"
+          />
         </div>
       </div>
     </details>

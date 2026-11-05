@@ -1,5 +1,17 @@
-import type { AiAssistErrorCode, AiProviderSettings, QuestionRouteResult, QuestionRoutingContext } from "@turtle-soup/mystery-core";
-import { AI_INPUT_LIMITS, isAllowedAiEndpoint, isLocalHostEndpoint, readBoundedResponse, safeModel, safeSessionKey } from "./ai-provider-defaults.ts";
+import type {
+  AiAssistErrorCode,
+  AiProviderSettings,
+  QuestionRouteResult,
+  QuestionRoutingContext,
+} from "@turtle-soup/mystery-core";
+import {
+  AI_INPUT_LIMITS,
+  isAllowedAiEndpoint,
+  isLocalHostEndpoint,
+  readBoundedResponse,
+  safeModel,
+  safeSessionKey,
+} from "./ai-provider-defaults.ts";
 
 export { isAllowedAiEndpoint } from "./ai-provider-defaults.ts";
 
@@ -24,29 +36,55 @@ function jsonSchema(tokens: string[]) {
 }
 
 function parseJson(value: string): unknown {
-  const clean = value.trim().replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "");
+  const clean = value
+    .trim()
+    .replace(/^```(?:json)?\s*/i, "")
+    .replace(/\s*```$/, "");
   return JSON.parse(clean);
 }
 
-export function validateQuestionRoute(value: unknown, context: QuestionRoutingContext): QuestionRouteResult {
-  if (!value || typeof value !== "object" || Array.isArray(value)) throw failure("invalid-schema", "AI 返回值不是对象");
+export function validateQuestionRoute(
+  value: unknown,
+  context: QuestionRoutingContext,
+): QuestionRouteResult {
+  if (!value || typeof value !== "object" || Array.isArray(value))
+    throw failure("invalid-schema", "AI 返回值不是对象");
   const raw = value as Record<string, unknown>;
-  if (Object.keys(raw).some((key) => key !== "status" && key !== "candidateTokens")) throw failure("unsafe-output", "AI 返回了协议之外的断言");
+  if (Object.keys(raw).some((key) => key !== "status" && key !== "candidateTokens"))
+    throw failure("unsafe-output", "AI 返回了协议之外的断言");
   const status = raw.status;
   const tokens = raw.candidateTokens;
   const allowed = new Set(context.candidates.map((candidate) => candidate.token));
-  if (!(status === "matched" || status === "ambiguous" || status === "unknown") || !Array.isArray(tokens) || tokens.some((token) => typeof token !== "string" || !allowed.has(token))) {
+  if (
+    !(status === "matched" || status === "ambiguous" || status === "unknown") ||
+    !Array.isArray(tokens) ||
+    tokens.some((token) => typeof token !== "string" || !allowed.has(token))
+  ) {
     throw failure("invalid-candidate", "AI 返回了不属于公开候选的问题");
   }
   const unique = [...new Set(tokens as string[])];
-  if (status === "matched" && unique.length !== 1) throw failure("invalid-schema", "matched 必须只有一个候选");
-  if (status === "ambiguous" && (unique.length < 2 || unique.length > 3)) throw failure("invalid-schema", "ambiguous 必须有两个或三个候选");
-  if (status === "unknown" && unique.length !== 0) throw failure("invalid-schema", "unknown 不应包含候选");
-  return status === "matched" ? { status, candidateToken: unique[0] } : status === "ambiguous" ? { status, candidateTokens: unique } : { status };
+  if (status === "matched" && unique.length !== 1)
+    throw failure("invalid-schema", "matched 必须只有一个候选");
+  if (status === "ambiguous" && (unique.length < 2 || unique.length > 3))
+    throw failure("invalid-schema", "ambiguous 必须有两个或三个候选");
+  if (status === "unknown" && unique.length !== 0)
+    throw failure("invalid-schema", "unknown 不应包含候选");
+  return status === "matched"
+    ? { status, candidateToken: unique[0] }
+    : status === "ambiguous"
+      ? { status, candidateTokens: unique }
+      : { status };
 }
 
-export function buildQuestionRoutingRequestBody(settings: AiProviderSettings, context: QuestionRoutingContext) {
-  if (context.rawQuestion.length > AI_INPUT_LIMITS.rawQuestion || context.publicSurface.length > AI_INPUT_LIMITS.publicSurface) throw failure("unsafe-output", "问题或公开谜面超出安全长度上限");
+export function buildQuestionRoutingRequestBody(
+  settings: AiProviderSettings,
+  context: QuestionRoutingContext,
+) {
+  if (
+    context.rawQuestion.length > AI_INPUT_LIMITS.rawQuestion ||
+    context.publicSurface.length > AI_INPUT_LIMITS.publicSurface
+  )
+    throw failure("unsafe-output", "问题或公开谜面超出安全长度上限");
   const tokens = context.candidates.map((candidate) => candidate.token);
   const prompt = [
     "你是推理游戏的问题理解器。你不能回答事实，不能推断真相，不能创造候选。",
@@ -60,20 +98,33 @@ export function buildQuestionRoutingRequestBody(settings: AiProviderSettings, co
     model: settings.model,
     stream: false,
     temperature: 0,
-    messages: [{ role: "system", content: "严格遵守候选枚举，不要回答是或否。" }, { role: "user", content: prompt }],
+    messages: [
+      { role: "system", content: "严格遵守候选枚举，不要回答是或否。" },
+      { role: "user", content: prompt },
+    ],
   };
   if (settings.protocolMode === "strict-schema") {
-    body.response_format = { type: "json_schema", json_schema: { name: "question_route", strict: true, schema: jsonSchema(tokens) } };
+    body.response_format = {
+      type: "json_schema",
+      json_schema: { name: "question_route", strict: true, schema: jsonSchema(tokens) },
+    };
   } else {
     body.response_format = { type: "json_object" };
   }
   return body;
 }
 
-export async function routeQuestion(settings: AiProviderSettings, context: QuestionRoutingContext, apiKey: string, signal?: AbortSignal): Promise<QuestionRouteResult> {
-  if (!isAllowedAiEndpoint(settings.endpoint)) throw failure("network", "API 必须使用 HTTPS，或指向 localhost");
+export async function routeQuestion(
+  settings: AiProviderSettings,
+  context: QuestionRoutingContext,
+  apiKey: string,
+  signal?: AbortSignal,
+): Promise<QuestionRouteResult> {
+  if (!isAllowedAiEndpoint(settings.endpoint))
+    throw failure("network", "API 必须使用 HTTPS，或指向 localhost");
   const safeKey = safeSessionKey(apiKey);
-  if (!safeKey.trim() && !isLocalHostEndpoint(settings.endpoint)) throw failure("network", "远程 API 尚未提供有效 Key");
+  if (!safeKey.trim() && !isLocalHostEndpoint(settings.endpoint))
+    throw failure("network", "远程 API 尚未提供有效 Key");
   const model = safeModel(settings.model, "");
   if (!model) throw failure("invalid-schema", "模型名无效");
   const controller = new AbortController();
@@ -94,18 +145,23 @@ export async function routeQuestion(settings: AiProviderSettings, context: Quest
       signal: controller.signal,
     });
     if (!response.ok) throw failure("network", `AI 端点返回 HTTP ${response.status}`);
-    const payload = JSON.parse(await readBoundedResponse(response)) as { choices?: Array<{ message?: { content?: string; refusal?: string }; finish_reason?: string }> };
+    const payload = JSON.parse(await readBoundedResponse(response)) as {
+      choices?: Array<{ message?: { content?: string; refusal?: string }; finish_reason?: string }>;
+    };
     const choice = payload.choices?.[0];
-    if (choice?.message?.refusal || choice?.finish_reason === "content_filter") throw failure("refusal", "AI 拒绝了本次问题理解请求");
+    if (choice?.message?.refusal || choice?.finish_reason === "content_filter")
+      throw failure("refusal", "AI 拒绝了本次问题理解请求");
     const content = choice?.message?.content;
     if (!content) throw failure("invalid-schema", "AI 没有返回结构化结果");
     if (content.length > 4_000) throw failure("unsafe-output", "AI 返回内容超出问题理解上限");
     return validateQuestionRoute(parseJson(content), context);
   } catch (error) {
-    if ((error as Error & { name?: string }).name === "AbortError") throw failure("timeout", "AI 请求超时或已取消");
+    if ((error as Error & { name?: string }).name === "AbortError")
+      throw failure("timeout", "AI 请求超时或已取消");
     if ((error as QuestionRouteFailure).code) throw error;
     if (error instanceof SyntaxError) throw failure("invalid-schema", "AI 返回的内容不是有效 JSON");
-    if (error instanceof Error && error.message.includes("体积上限")) throw failure("unsafe-output", "AI 响应超过安全体积上限");
+    if (error instanceof Error && error.message.includes("体积上限"))
+      throw failure("unsafe-output", "AI 响应超过安全体积上限");
     throw failure("network", error instanceof Error ? error.message : "AI 网络请求失败");
   } finally {
     clearTimeout(timeout);
@@ -113,6 +169,21 @@ export async function routeQuestion(settings: AiProviderSettings, context: Quest
   }
 }
 
-export async function testQuestionRouter(settings: AiProviderSettings, apiKey: string, signal?: AbortSignal): Promise<void> {
-  await routeQuestion(settings, { contextHash: "test", language: "zh-CN", publicSurface: "连接测试", rawQuestion: "测试", candidates: [{ token: "test-ok", label: "测试候选", target: "测试", predicate: "测试" }] }, apiKey, signal);
+export async function testQuestionRouter(
+  settings: AiProviderSettings,
+  apiKey: string,
+  signal?: AbortSignal,
+): Promise<void> {
+  await routeQuestion(
+    settings,
+    {
+      contextHash: "test",
+      language: "zh-CN",
+      publicSurface: "连接测试",
+      rawQuestion: "测试",
+      candidates: [{ token: "test-ok", label: "测试候选", target: "测试", predicate: "测试" }],
+    },
+    apiKey,
+    signal,
+  );
 }

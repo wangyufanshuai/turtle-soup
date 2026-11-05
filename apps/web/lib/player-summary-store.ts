@@ -5,9 +5,17 @@ export function playerSummaryKey(caseId: string, canonicalHash: string) {
 }
 
 export function loadPlayerSummary(caseId: string, canonicalHash: string): string {
-  try { return localStorage.getItem(playerSummaryKey(caseId, canonicalHash)) ?? ""; } catch { return ""; }
+  try {
+    return localStorage.getItem(playerSummaryKey(caseId, canonicalHash)) ?? "";
+  } catch {
+    return "";
+  }
 }
 
 export function savePlayerSummary(caseId: string, canonicalHash: string, text: string) {
-  try { localStorage.setItem(playerSummaryKey(caseId, canonicalHash), text.slice(0, 4_000)); } catch { /* optional player note */ }
+  try {
+    localStorage.setItem(playerSummaryKey(caseId, canonicalHash), text.slice(0, 4_000));
+  } catch {
+    /* optional player note */
+  }
 }

@@ -17,8 +17,7 @@ export const COMPLETION_LABELS: Record<CompletionFilter, string> = {
   closed: "已结案",
   progress: "调查中",
 };
-export const difficultyLabel = (value: string) =>
-  DIFFICULTY_LABELS[value] ?? value;
+export const difficultyLabel = (value: string) => DIFFICULTY_LABELS[value] ?? value;
 type Option = { value: string; label: string };
 type Props = {
   search: string;
@@ -106,10 +105,7 @@ export function CaseFilters(props: Props) {
           </label>
           <label>
             推理技能
-            <select
-              value={props.skill}
-              onChange={(event) => props.onSkill(event.target.value)}
-            >
+            <select value={props.skill} onChange={(event) => props.onSkill(event.target.value)}>
               <option value="all">全部技能</option>
               {props.skills.map((option) => (
                 <option key={option.value} value={option.value}>
@@ -122,9 +118,7 @@ export function CaseFilters(props: Props) {
             档案状态
             <select
               value={props.completion}
-              onChange={(event) =>
-                props.onCompletion(event.target.value as CompletionFilter)
-              }
+              onChange={(event) => props.onCompletion(event.target.value as CompletionFilter)}
             >
               {Object.entries(COMPLETION_LABELS).map(([value, label]) => (
                 <option key={value} value={value}>
@@ -153,15 +147,8 @@ export function CaseFilters(props: Props) {
               </button>
             )}
             {props.skill !== "all" && (
-              <button
-                type="button"
-                onClick={() => props.onSkill("all")}
-                aria-label="移除技能筛选"
-              >
-                {
-                  props.skills.find((option) => option.value === props.skill)
-                    ?.label
-                }
+              <button type="button" onClick={() => props.onSkill("all")} aria-label="移除技能筛选">
+                {props.skills.find((option) => option.value === props.skill)?.label}
                 <XIcon size={13} aria-hidden="true" />
               </button>
             )}
@@ -175,11 +162,7 @@ export function CaseFilters(props: Props) {
                 <XIcon size={13} aria-hidden="true" />
               </button>
             )}
-            <button
-              type="button"
-              className={styles.clearFilters}
-              onClick={props.onClear}
-            >
+            <button type="button" className={styles.clearFilters} onClick={props.onClear}>
               清除全部
             </button>
           </div>
