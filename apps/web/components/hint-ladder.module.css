@@ -5,7 +5,7 @@
   background: linear-gradient(
     110deg,
     color-mix(in srgb, var(--accent, #b8cf79) 6%, transparent),
-    #0d1013
+    #0c1114
   );
 }
 .ladder > header {

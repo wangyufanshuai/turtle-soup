@@ -16,7 +16,7 @@
   --display: "Cinema Song", "Songti SC", "STSong", serif;
   --red: #ba402c;
   --red-light: #e27861;
-  background: #060b0e;
+  background: #090c0e;
   color: var(--ink);
   min-height: 100svh;
   overflow: clip;
@@ -56,7 +56,7 @@
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(0deg, #060b0e 0%, transparent 25%),
+    linear-gradient(0deg, #090c0e 0%, transparent 25%),
     linear-gradient(90deg, #03080b80, transparent 58%);
 }
 .header {
@@ -125,7 +125,7 @@
   margin: 0 0 26px;
   font: 400 clamp(62px, 5.6vw, 91px) / 1.16 var(--display);
   letter-spacing: 0.025em;
-  color: #e8dfcb;
+  color: #e9e0cd;
 }
 .otherTitle {
   max-width: 7.2em;
@@ -268,7 +268,7 @@
   border: 1px solid #4a4e4b;
   border-radius: 3px;
   padding: 0;
-  background: #0e161b;
+  background: #11171a;
   overflow: hidden;
   isolation: isolate;
   color: var(--ink);
@@ -433,7 +433,7 @@
   min-height: 138px;
   padding: 0 25px 0 0;
   margin-bottom: 32px;
-  background: #10191e;
+  background: #101a20;
   border-left: 2px solid #874737;
   transition: background 0.2s;
 }
@@ -462,7 +462,7 @@
   color: #d9c5a6;
 }
 .recommendation:hover {
-  background: #152229;
+  background: #152226;
 }
 .filterArea {
   margin-bottom: 3px;
@@ -485,7 +485,7 @@
   flex: none;
 }
 .search:focus-within {
-  border-bottom-color: #dbc4a5;
+  border-bottom-color: #d9c5a6;
 }
 .search input {
   min-width: 0;
@@ -499,7 +499,7 @@
   font-size: 14px;
 }
 .search input::placeholder {
-  color: #909a9f;
+  color: #939b9e;
 }
 .filterToggle {
   display: flex;
@@ -516,7 +516,7 @@
 .filterToggle[aria-expanded="true"],
 .filterToggle:hover {
   background: #1b262c;
-  border-color: #ac9b84;
+  border-color: #a99883;
 }
 .filterToggle b {
   font: var(--text-xs) var(--mono);
@@ -525,7 +525,7 @@
 .filterPanel {
   padding: 8px 22px 24px;
   margin-top: 14px;
-  border: 1px solid #33414a;
+  border: 1px solid #354447;
   background: #101a20;
 }
 .filterPanel[hidden] {
@@ -553,7 +553,7 @@
 }
 .filters label {
   min-width: 0;
-  color: #a7b0b5;
+  color: #a5b1b3;
   font-size: 12px;
 }
 .filters select {
@@ -561,9 +561,9 @@
   width: 100%;
   min-height: 46px;
   margin-top: 7px;
-  background: #091116;
+  background: #0c1114;
   color: #e0d7c5;
-  border: 1px solid #45535b;
+  border: 1px solid #48535a;
   border-radius: 2px;
   padding: 8px 12px;
   font-size: 14px;
@@ -579,13 +579,13 @@
 }
 .filterSummary > p {
   margin: 0;
-  color: #939da2;
+  color: #969f9f;
   font-size: 12px;
   overflow-wrap: anywhere;
 }
 .filterSummary b {
   font-weight: 400;
-  color: #d9c5a7;
+  color: #dac8aa;
 }
 .activeFilters {
   display: flex;
@@ -674,12 +674,12 @@
   margin: 9px 0 10px;
   font: 400 22px/1.45 var(--display);
   overflow-wrap: anywhere;
-  color: #e2d9c7;
+  color: #e0d7c5;
 }
 .cardBody p {
   margin: 0 0 17px;
   font: 12px/1.9 var(--body);
-  color: #a0a9ae;
+  color: #9da7ac;
   text-wrap: pretty;
 }
 .caseAction {
@@ -788,7 +788,7 @@
   align-items: start;
   gap: 24px;
   margin-top: 28px;
-  color: #71818a;
+  color: #718088;
   font-size: var(--text-xs);
 }
 .footer > div {
@@ -932,7 +932,7 @@
   }
   .hero::after {
     background:
-      linear-gradient(0deg, #060b0e, transparent 35%),
+      linear-gradient(0deg, #090c0e, transparent 35%),
       linear-gradient(90deg, #03080bba, transparent 100%);
   }
   .sectionHeading {
@@ -1068,7 +1068,7 @@
     object-position: center top !important;
   }
   .hero::after {
-    background: linear-gradient(0deg, #060b0e 0%, #060b0eb8 27%, #060b0e1a 65%, #060b0e33 100%);
+    background: linear-gradient(0deg, #090c0e 0%, #03080bba 27%, #060b0e1a 65%, #060b0e33 100%);
   }
   .heroContent {
     width: auto;
@@ -1705,6 +1705,69 @@
   }
   .heroContent > *,
   .caseGrid > .caseCard {
+    animation: none;
+  }
+}
+
+/* Season posters: unselected seasons sit in shadow, the chosen one is lit. */
+.seasonPoster > img {
+  filter: saturate(0.5) brightness(0.62);
+  transition:
+    transform 1.2s var(--ease-out),
+    filter var(--dur-slow) var(--ease-out);
+}
+.seasonPoster:hover > img,
+.seasonPoster:focus-visible > img {
+  transform: scale(1.06);
+  filter: saturate(0.85) brightness(0.85);
+}
+.seasonPoster[aria-selected="true"] > img {
+  filter: saturate(1) brightness(1);
+}
+.seasonPoster[aria-selected="true"] {
+  box-shadow:
+    0 0 0 1px rgb(207 188 161 / 0.35),
+    0 18px 50px rgb(0 0 0 / 0.5),
+    0 0 40px rgb(201 81 59 / 0.18);
+}
+.seasonPoster {
+  transition:
+    border-color var(--dur-base),
+    box-shadow var(--dur-slow) var(--ease-out),
+    transform var(--dur-slow) var(--ease-out);
+}
+.seasonPoster:hover {
+  transform: translateY(-3px);
+}
+.seasonProgress {
+  box-shadow: 0 0 10px var(--color-parchment);
+  transition: width var(--dur-cinematic) var(--ease-out);
+}
+.seasonSelected {
+  transition: opacity var(--dur-base);
+}
+.seasonTabs > .seasonPoster {
+  animation: rise-in 0.8s var(--ease-out) both;
+}
+.seasonTabs > .seasonPoster:nth-child(2) {
+  animation-delay: 0.06s;
+}
+.seasonTabs > .seasonPoster:nth-child(3) {
+  animation-delay: 0.12s;
+}
+.seasonTabs > .seasonPoster:nth-child(4) {
+  animation-delay: 0.18s;
+}
+.seasonTabs > .seasonPoster:nth-child(5) {
+  animation-delay: 0.24s;
+}
+@media (hover: none) {
+  .seasonPoster > img {
+    filter: saturate(0.75) brightness(0.8);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .seasonTabs > .seasonPoster {
     animation: none;
   }
 }

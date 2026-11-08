@@ -1,7 +1,7 @@
 .board {
   margin: 14px 0;
   border: 1px solid color-mix(in srgb, var(--accent) 58%, var(--line));
-  background: linear-gradient(145deg, color-mix(in srgb, var(--accent) 7%, #0a0c0f), #0a0c0f);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent) 7%, #090c0e), #090c0e);
 }
 .board > header {
   display: flex;
@@ -58,7 +58,7 @@
   padding: 7px;
   text-align: left;
   color: var(--paper);
-  background: #11161a;
+  background: #11171a;
   border: 1px solid var(--line);
   cursor: pointer;
 }
@@ -66,7 +66,7 @@
 .itemBank button:focus-visible,
 .itemBank button[data-selected] {
   border-color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 10%, #0d1114);
+  background: color-mix(in srgb, var(--accent) 10%, #0c1114);
 }
 .itemBank button[data-placed] {
   opacity: 0.52;
@@ -534,7 +534,7 @@
   align-items: center;
   gap: 8px;
   padding: 8px;
-  background: #0d1013;
+  background: #0c1114;
 }
 .slots span {
   color: var(--paper);
@@ -557,7 +557,7 @@
   min-width: 0;
   min-height: 34px;
   border: 1px solid var(--line-strong);
-  background: #080a0c;
+  background: #090c0e;
   color: var(--paper);
   padding: 0 6px;
   font-size: var(--text-xs);
@@ -729,7 +729,7 @@
 }
 .board[data-mode="calibration-curve"] .slots,
 .board[data-mode="uncertainty-band"] .slots {
-  background: repeating-linear-gradient(0deg, #0d1013 0 34px, #182229 35px 36px);
+  background: repeating-linear-gradient(0deg, #0c1114 0 34px, #152226 35px 36px);
 }
 .board[data-mode="control-loop"] .slots label + label::before {
   content: "↺";
@@ -1077,7 +1077,7 @@
   border-color: var(--line-strong);
   border-radius: 6px;
   overflow: clip;
-  background: #10181b;
+  background: #11171a;
 }
 .board > header {
   padding: 20px 24px;
@@ -1099,7 +1099,7 @@
 }
 .eventDrawer {
   min-width: 0;
-  background: #141e21;
+  background: #131f22;
   border-right: 1px solid var(--line);
 }
 .eventDrawer > summary {
@@ -1143,7 +1143,7 @@
   min-height: 68px;
   padding: 10px 12px;
   border-radius: 4px;
-  background: #0f171a;
+  background: #11171a;
 }
 .itemBank span {
   font-size: 0.8125rem;
@@ -1165,7 +1165,7 @@
   padding: 10px;
   border: 1px solid var(--line-strong);
   border-radius: 4px;
-  background: #0b1215;
+  background: #0c1114;
   color: var(--ink);
   font-size: 0.875rem;
 }
@@ -1220,7 +1220,7 @@
   flex-wrap: wrap;
   gap: 8px;
   padding: 12px;
-  background: #1a2629;
+  background: #1b262c;
   border-radius: 4px;
   color: var(--paper);
   font-size: 0.8125rem;
@@ -1312,4 +1312,25 @@
   margin: 0;
   padding: 0 20px 16px;
   font-size: 0.8125rem;
+}
+
+/* ───────────────────── v3 polish · reasoning board ───────────────────── */
+.board {
+  animation: rise-in 0.6s var(--ease-out) both;
+}
+.board select,
+.board button {
+  transition:
+    border-color var(--dur-base),
+    box-shadow var(--dur-base),
+    background var(--dur-base);
+}
+.board select:focus-visible,
+.board button:focus-visible {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--case-accent, var(--acid)) 14%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .board {
+    animation: none;
+  }
 }

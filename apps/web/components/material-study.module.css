@@ -1,11 +1,11 @@
 .page {
-  --study-ink: #e8e1ce;
+  --study-ink: #e9e0cd;
   --study-muted: #a9b2aa;
   --study-accent: #c7d4aa;
   --study-line: #354447;
-  --study-paper: #eee5cf;
+  --study-paper: #eee5d0;
   min-height: 100vh;
-  background: radial-gradient(ellipse at 90% 0, #22352c66, transparent 38rem), #0b1215;
+  background: radial-gradient(ellipse at 90% 0, #22352c66, transparent 38rem), #0c1114;
   color: var(--study-ink);
   padding: 0 max(24px, calc((100vw - 1260px) / 2)) 80px;
   font-family: var(--body);
@@ -60,7 +60,7 @@
   position: relative;
   overflow: hidden;
   padding: 32px;
-  background: #152124;
+  background: #131f22;
   border: 1px solid var(--study-line);
   border-radius: 6px;
   color: var(--study-ink);
@@ -141,7 +141,7 @@
   place-items: center;
   box-shadow:
     0 0 0 8px #c7d4aa09,
-    0 0 0 16px #c7d4aa05;
+    0 0 0 16px #c7d4aa09;
 }
 .reel::before,
 .reel::after {
@@ -212,7 +212,7 @@
 }
 .workspaceNav button[aria-pressed="true"] {
   border-bottom-color: var(--study-accent);
-  background: #1b292b;
+  background: #1b262c;
   color: var(--study-ink);
 }
 .workspaceNav button span {
@@ -259,7 +259,7 @@
   background: #152226;
 }
 .materialList > button[aria-pressed="true"] {
-  background: #1b2a2c;
+  background: #1b2c2c;
   border-color: var(--study-line);
 }
 .materialList > button > b {
@@ -303,7 +303,7 @@
   width: 100%;
   resize: vertical;
   border: 1px solid var(--study-line);
-  background: #162224;
+  background: #131f22;
   color: var(--study-ink);
   border-radius: 4px;
   padding: 12px;
@@ -618,7 +618,7 @@
   width: 100%;
   max-width: 170px;
   background: var(--study-paper);
-  color: #23342c;
+  color: #22322f;
   border: 1px solid #9aa386;
   border-radius: 4px;
   padding: 10px 14px;

@@ -81,7 +81,7 @@
 .feedback {
   margin-top: 0.6rem;
   padding: 1rem 1.1rem;
-  background: #14191b;
+  background: #11171a;
   border-left: 3px solid var(--case-accent);
   line-height: 1.7;
 }
@@ -151,7 +151,7 @@
 /* Compact draft switch: editing remains the dominant surface. */
 .toolbar {
   padding: 12px 28px;
-  background: #111b1e;
+  background: #101a20;
 }
 .drafts {
   display: flex;
@@ -184,7 +184,7 @@
 }
 .feedback {
   border-radius: 0 4px 4px 0;
-  background: #1a292c;
+  background: #1b262c;
 }
 .motive button {
   border-radius: 4px;

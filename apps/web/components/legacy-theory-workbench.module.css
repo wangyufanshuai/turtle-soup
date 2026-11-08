@@ -50,8 +50,8 @@
   min-width: 155px;
   padding: 7px;
   text-align: left;
-  color: var(--paper, #e9e5d8);
-  background: #11161a;
+  color: var(--paper, #e8e5d9);
+  background: #11171a;
   border: 1px solid var(--line, #3c4247);
   cursor: pointer;
 }

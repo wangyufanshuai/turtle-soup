@@ -10,7 +10,7 @@
   min-height: 150px;
   padding: 1rem;
   resize: vertical;
-  background: #090d10;
+  background: #090c0e;
   color: var(--paper);
   border: 1px solid var(--line-strong);
   border-left: 3px solid var(--case-accent);
@@ -48,7 +48,7 @@
   padding: 1rem;
   text-align: left;
   border: 1px solid var(--line-strong);
-  background: #0a0f12;
+  background: #0c1114;
   color: var(--paper);
   cursor: pointer;
 }
@@ -64,7 +64,7 @@
 }
 .choices > button[aria-pressed="true"] {
   border-color: var(--case-accent);
-  background: color-mix(in srgb, var(--case-accent) 9%, #090d10);
+  background: color-mix(in srgb, var(--case-accent) 9%, #090c0e);
 }
 .choices > button[aria-pressed="true"] span {
   color: var(--case-accent);
@@ -101,7 +101,7 @@
   padding: 1rem 1.25rem;
   border: 1px solid var(--line-strong);
   border-left: 3px solid var(--case-accent);
-  background: #11181b;
+  background: #11171a;
 }
 .sourceContext small {
   color: var(--case-accent);
