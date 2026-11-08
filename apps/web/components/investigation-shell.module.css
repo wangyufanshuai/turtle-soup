@@ -176,7 +176,7 @@
   border-color: var(--line);
   background: var(--panel-deep);
 }
-.tabs button[aria-pressed="true"] {
+.tabs button[data-active] {
   border-color: var(--case-accent);
   background: color-mix(in srgb, var(--case-accent) 10%, var(--panel-deep));
 }
@@ -2494,7 +2494,7 @@
   padding: 12px 20px;
   background: transparent;
 }
-.tabs button[aria-pressed="true"] {
+.tabs button[data-active] {
   border-bottom-color: var(--case-accent);
   background: color-mix(in srgb, var(--case-accent) 7%, transparent);
 }
@@ -2854,7 +2854,7 @@
     border-bottom: 0;
     border-top: 2px solid transparent;
   }
-  .tabs button[aria-pressed="true"] {
+  .tabs button[data-active] {
     border-top-color: var(--case-accent);
   }
   .layout {
@@ -3067,13 +3067,13 @@
   transform: scaleX(0);
   transition: transform var(--dur-slow) var(--ease-out);
 }
-.tabs button[aria-pressed="true"] {
+.tabs button[data-active] {
   border-bottom-color: transparent;
 }
-.tabs button[aria-pressed="true"]::after {
+.tabs button[data-active]::after {
   transform: scaleX(1);
 }
-.tabs button:not([aria-pressed="true"]):hover {
+.tabs button:not([data-active]):hover {
   background: rgb(255 255 255 / 0.03);
 }
 
@@ -3280,5 +3280,209 @@
   }
   .solvedHero::before {
     display: none;
+  }
+}
+
+/* ── Question composer: one focused input, lit when you are typing. ── */
+.ask {
+  background: rgb(12 19 22 / 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.ask > div {
+  position: relative;
+  padding: var(--space-1);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: rgb(6 11 14 / 0.7);
+  transition:
+    border-color var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-slow) var(--ease-out);
+}
+.ask > div:focus-within {
+  border-color: color-mix(in srgb, var(--case-accent) 60%, transparent);
+  /* Glow ring only: a dark drop shadow here would dim the newest answer below. */
+  box-shadow:
+    0 0 0 4px color-mix(in srgb, var(--case-accent) 12%, transparent),
+    0 0 24px color-mix(in srgb, var(--case-accent) 10%, transparent);
+}
+.ask input {
+  min-height: 52px;
+  border: 0;
+  background: transparent;
+  font-size: var(--text-lg);
+  padding-inline: var(--space-3);
+}
+.ask input:focus-visible {
+  outline: none;
+}
+.ask button {
+  min-width: 5.5rem;
+  border-radius: 7px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  transition:
+    transform var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out),
+    opacity var(--dur-base);
+}
+.ask button:not(:disabled) {
+  box-shadow: var(--glow-accent);
+}
+.ask button:not(:disabled):active {
+  transform: scale(0.97);
+}
+.questionSafety {
+  opacity: 0.7;
+}
+
+/* First-question suggestions as lit index cards. */
+.quickStarts button {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    border-color var(--dur-base),
+    box-shadow var(--dur-base);
+}
+.quickStarts button::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 35%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--case-accent) 14%, transparent),
+    transparent
+  );
+  transform: translateX(-120%) skewX(-18deg);
+  pointer-events: none;
+}
+.quickStarts button:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--case-accent) 55%, transparent);
+  box-shadow: var(--shadow-1);
+}
+.quickStarts button:hover::after {
+  animation: light-sweep 0.9s var(--ease-out);
+}
+.quickStarts > div > button {
+  animation: rise-in 0.6s var(--ease-out) both;
+}
+.quickStarts > div > button:nth-child(2) {
+  animation-delay: 0.08s;
+}
+.quickStarts > div > button:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+/* ── Answer history as an investigation timeline. ── */
+.transcript {
+  position: relative;
+  padding-left: 1.75rem;
+}
+.transcript::before {
+  content: "";
+  position: absolute;
+  left: 0.55rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--case-accent) 70%, transparent),
+    rgb(255 255 255 / 0.06) 40%,
+    transparent
+  );
+}
+.transcript:has(> div) {
+  padding-left: 0;
+}
+.transcript:has(> div)::before {
+  display: none;
+}
+.transcript article {
+  position: relative;
+  overflow: visible;
+  /* content-visibility:auto implies paint containment, which would clip the timeline node. */
+  content-visibility: visible;
+}
+.transcript article > * {
+  overflow: clip;
+}
+.transcript article > :first-child {
+  border-radius: 6px 6px 0 0;
+}
+.transcript article > :last-child {
+  border-radius: 0 0 6px 6px;
+}
+.transcript article::before {
+  --node: var(--ink-neutral);
+  content: "";
+  position: absolute;
+  left: calc(-1.75rem + 0.55rem - 5px);
+  top: 1.4rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--node);
+  box-shadow:
+    0 0 0 3px var(--color-abyss),
+    0 0 14px var(--node);
+}
+.transcript article:has([data-code="yes"])::before {
+  --node: var(--color-yes);
+}
+.transcript article:has(:is([data-code="no"], [data-code="invalid_premise"]))::before {
+  --node: var(--color-no);
+}
+.transcript article:has([data-code="partial"])::before {
+  --node: var(--color-ember);
+}
+.transcript article[data-latest]::before {
+  animation: node-pulse 2.4s var(--ease-in-out) 0.8s 2;
+}
+@keyframes node-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+.transcript article:not([data-latest]) {
+  opacity: 0.86;
+  transition: opacity var(--dur-base);
+}
+.transcript article:not([data-latest]):hover,
+.transcript article:not([data-latest]):focus-within {
+  opacity: 1;
+}
+
+/* Recovery messages read as an inline notice, not an error wall. */
+.recoveryFeedback {
+  border-left: 3px solid var(--color-ember);
+  background: color-mix(in srgb, var(--color-ember) 8%, transparent);
+  animation: rise-in var(--dur-slow) var(--ease-out) both;
+}
+
+@media (max-width: 600px) {
+  .transcript {
+    padding-left: 1.25rem;
+  }
+  .transcript::before {
+    left: 0.35rem;
+  }
+  .transcript article::before {
+    left: calc(-1.25rem + 0.35rem - 5px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .quickStarts > div > button,
+  .transcript article[data-latest]::before,
+  .recoveryFeedback {
+    animation: none;
   }
 }

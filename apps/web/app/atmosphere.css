@@ -7,7 +7,7 @@
 body::after {
   content: "";
   position: fixed;
-  inset: -50%;
+  inset: 0;
   z-index: var(--z-atmosphere);
   pointer-events: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
@@ -28,25 +28,25 @@ body::before {
 
 @keyframes grain-jitter {
   0% {
-    transform: translate(0, 0);
+    background-position: 0 0;
   }
   17% {
-    transform: translate(-6%, 4%);
+    background-position: -37px 23px;
   }
   33% {
-    transform: translate(5%, -7%);
+    background-position: 41px -59px;
   }
   50% {
-    transform: translate(-3%, 9%);
+    background-position: -19px 71px;
   }
   67% {
-    transform: translate(8%, 2%);
+    background-position: 83px 11px;
   }
   83% {
-    transform: translate(-9%, -4%);
+    background-position: -67px -29px;
   }
   100% {
-    transform: translate(3%, 6%);
+    background-position: 29px 47px;
   }
 }
 

@@ -41,7 +41,18 @@ const entries = files(outDir)
   .filter((path) => !path.endsWith("sw.js") && !path.endsWith(".map"))
   .map((path) => ({ path: requestPath(path), bytes: statSync(path).size, sha256: createHash("sha256").update(readFileSync(path)).digest("hex") }))
   .sort((a, b) => a.path.localeCompare(b.path));
-const precache = entries.map((entry) => entry.path);
+// Install only what the shell and the first case need; the rest of the
+// 84-case library is cached on first use or via an explicit full download.
+const FIRST_CASE = "c01-cold-room-knock";
+const isLazy = (path: string) =>
+  (/^\/case\//u.test(path) && !path.startsWith(`/case/${FIRST_CASE}/`)) ||
+  (/^\/assets\/cases\//u.test(path) && !path.startsWith("/assets/cases/c01/")) ||
+  (/^\/assets\/home-cinema\/c\d{2}-/u.test(path) && !path.startsWith(`/assets/home-cinema/${FIRST_CASE}`)) ||
+  (/^\/scene-[^/]+\.svg$/u.test(path) && path !== "/scene-cold-room.svg") ||
+  /^\/assets\/v14\//u.test(path) ||
+  /^\/workshop\//u.test(path);
+const precache = entries.filter((entry) => !isLazy(entry.path)).map((entry) => entry.path);
+const lazy = entries.filter((entry) => isLazy(entry.path)).map((entry) => entry.path);
 const template = readFileSync(templatePath, "utf8");
 const cacheIdentity = CACHE_IDENTITIES[profileId] ?? `black-soup-${profileId.replace(/[^a-z0-9]+/giu, "-")}`;
 // A homepage or image revision within the same release must install into a
@@ -51,7 +62,8 @@ const cacheName = `${cacheIdentity}-${manifestHash.slice(0, 12)}`;
 const serviceWorker = template
   .replace(/const CACHE_NAME = "[^"]+";/, `const CACHE_NAME = "${cacheName}";`)
   .replace(/const CACHE_PREFIX = "[^"]+";/, `const CACHE_PREFIX = "${cacheIdentity.slice(0, cacheIdentity.lastIndexOf("-") + 1)}";`)
-  .replace(/const PRECACHE = \[[\s\S]*?\];/, `const PRECACHE = ${JSON.stringify(precache, null, 2)};`);
+  .replace(/const PRECACHE = \[[\s\S]*?\];/, `const PRECACHE = ${JSON.stringify(precache, null, 2)};`)
+  .replace(/const LAZY = \[\];/, `const LAZY = ${JSON.stringify(lazy)};`);
 if (serviceWorker === template) throw new Error("Service Worker PRECACHE marker was not found");
 if (!reportOnly) writeFileSync(resolve(outDir, "sw.js"), serviceWorker, "utf8");
 
@@ -62,11 +74,14 @@ const report = {
   cacheName,
   entryCount: entries.length,
   totalBytes: entries.reduce((sum, entry) => sum + entry.bytes, 0),
+  installEntryCount: precache.length,
+  installBytes: entries.filter((entry) => !isLazy(entry.path)).reduce((sum, entry) => sum + entry.bytes, 0),
+  lazyEntryCount: lazy.length,
   manifestHash,
   entries,
   passed: precache.includes("/") && precache.includes("/case/c01-cold-room-knock/") && precache.some((path) => path.startsWith("/_next/static/")),
 };
 mkdirSync(dirname(reportPath), { recursive: true });
 writeFileSync(reportPath, JSON.stringify(report, null, 2), "utf8");
-console.log(JSON.stringify({ reportPath, cacheName: report.cacheName, entryCount: report.entryCount, totalBytes: report.totalBytes, passed: report.passed }, null, 2));
+console.log(JSON.stringify({ reportPath, cacheName: report.cacheName, entryCount: report.entryCount, totalBytes: report.totalBytes, installEntryCount: report.installEntryCount, installBytes: report.installBytes, lazyEntryCount: report.lazyEntryCount, passed: report.passed }, null, 2));
 if (!report.passed) process.exitCode = 1;
