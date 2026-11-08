@@ -5,7 +5,7 @@
   background: linear-gradient(
     110deg,
     color-mix(in srgb, var(--accent, #b8cf79) 6%, transparent),
-    #0d1013
+    #0c1114
   );
 }
 .ladder > header {
@@ -21,7 +21,7 @@
 }
 .ladder header small {
   color: var(--accent, #b8cf79);
-  font: 7px var(--mono);
+  font: var(--text-xs) var(--mono);
   letter-spacing: 0.13em;
 }
 .ladder header b {
@@ -34,7 +34,7 @@
   color: var(--accent, #b8cf79);
   padding: 6px 9px;
   cursor: pointer;
-  font: 8px var(--mono);
+  font: var(--text-xs) var(--mono);
 }
 .ladder header button:hover,
 .ladder header button:focus-visible {
@@ -54,7 +54,7 @@
 }
 .ladder li > span {
   color: var(--accent, #b8cf79);
-  font: 8px var(--mono);
+  font: var(--text-xs) var(--mono);
 }
 .ladder li div {
   display: grid;
@@ -62,20 +62,20 @@
 }
 .ladder li small {
   color: var(--muted);
-  font: 7px var(--mono);
+  font: var(--text-xs) var(--mono);
   letter-spacing: 0.08em;
 }
 .ladder li p {
   margin: 0;
   color: var(--paper);
-  font: 11px/1.55 var(--display);
+  font: var(--text-xs)/1.55 var(--display);
 }
 .end {
   margin: 0;
   padding: 8px 12px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font: 7px/1.5 var(--mono);
+  font: var(--text-xs)/1.5 var(--mono);
 }
 @media (max-width: 850px) {
   .ladder {

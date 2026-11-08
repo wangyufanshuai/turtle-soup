@@ -1,0 +1,83 @@
+/*
+ * Design tokens — single source for type, space, radius, layers and motion.
+ * Colour primitives live in globals.css (:root) and are aliased here
+ * into semantic names; new CSS should use the semantic names.
+ */
+:root {
+  /* Semantic colour */
+  --color-bg: var(--black);
+  --color-surface-1: var(--panel-deep);
+  --color-surface-2: var(--panel);
+  --color-text: var(--ink);
+  --color-text-soft: var(--paper);
+  --color-text-muted: var(--muted);
+  --color-border: var(--line);
+  --color-border-strong: var(--line-strong);
+  --color-accent: var(--case-accent, var(--acid));
+  --color-blood: #9e2a35;
+  --color-ember: var(--amber);
+  --color-danger: var(--danger);
+  --color-yes: #b8cf79;
+  --color-no: #d56f69;
+  --color-neutral: #a7a294;
+  --color-wax: #c9513b;
+  --color-parchment: #d4b9a0;
+  --color-highlight: #fff6e6;
+  --color-abyss: #070c0f;
+  --color-slip: #ece2cb;
+
+  /* Rubber-stamp inks (on paper slips) */
+  --ink-yes: #35641a;
+  --ink-no: #b0261d;
+  --ink-neutral: #5b5a52;
+  --ink-partial: #9a6a22;
+  --ink-seal: #c23a2c;
+
+  /* Type scale (minimum 12px) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.5rem;
+  --tracking-caps: 0.18em;
+
+  /* Space (4px grid) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-full: 999px;
+
+  /* Layers */
+  --z-raised: 10;
+  --z-sticky: 20;
+  --z-overlay: 40;
+  --z-modal: 60;
+  --z-toast: 80;
+  --z-atmosphere: 90;
+
+  /* Motion */
+  --dur-fast: 140ms;
+  --dur-base: 240ms;
+  --dur-slow: 520ms;
+  --dur-cinematic: 1100ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-stamp: cubic-bezier(0.2, 1.6, 0.4, 1);
+
+  /* Elevation */
+  --shadow-1: 0 1px 0 rgb(255 255 255 / 0.03) inset, 0 8px 24px rgb(0 0 0 / 0.35);
+  --shadow-2: 0 1px 0 rgb(255 255 255 / 0.05) inset, 0 24px 60px rgb(0 0 0 / 0.55);
+  --glow-accent:
+    0 0 0 1px color-mix(in srgb, var(--color-accent) 40%, transparent),
+    0 0 28px color-mix(in srgb, var(--color-accent) 22%, transparent);
+}

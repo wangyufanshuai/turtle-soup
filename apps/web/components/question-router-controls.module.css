@@ -15,7 +15,7 @@
 .panel label > span {
   display: block;
   color: var(--muted);
-  font: 0.68rem var(--mono);
+  font: var(--text-xs) var(--mono);
   letter-spacing: 0.08em;
 }
 .panel h3 {
@@ -44,7 +44,7 @@
 .presets legend {
   padding: 0 0.35rem;
   color: var(--muted);
-  font: 0.66rem var(--mono);
+  font: var(--text-xs) var(--mono);
   letter-spacing: 0.08em;
 }
 .presets button {
@@ -68,7 +68,7 @@
 .presets small,
 .fieldHint {
   color: var(--muted);
-  font-size: 0.65rem;
+  font-size: var(--text-xs);
   line-height: 1.35;
 }
 .panel label:not(.toggle) {
@@ -101,7 +101,7 @@
 .toggle small {
   margin-top: 0.2rem;
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: var(--text-xs);
 }
 .toggle input {
   width: 1.1rem;

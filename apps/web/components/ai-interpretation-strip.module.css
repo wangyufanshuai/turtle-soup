@@ -13,7 +13,7 @@
 }
 .strip small {
   color: var(--acid);
-  font: 0.68rem var(--mono);
+  font: var(--text-xs) var(--mono);
   letter-spacing: 0.08em;
 }
 .strip b {
@@ -22,7 +22,7 @@
 }
 .strip span {
   color: var(--muted);
-  font-size: 0.7rem;
+  font-size: var(--text-xs);
 }
 .candidates {
   display: grid;

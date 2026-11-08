@@ -13,7 +13,7 @@
 .heading span {
   color: var(--accent, #b8cf79);
   font:
-    600 0.65rem/1.2 ui-monospace,
+    600 var(--text-xs)/1.2 ui-monospace,
     monospace;
   letter-spacing: 0.12em;
 }
@@ -46,7 +46,7 @@
   min-width: 0;
   width: 100%;
   border: 1px solid rgba(225, 216, 196, 0.2);
-  background: #0c0e11;
+  background: #090c0e;
   color: #eee8da;
   padding: 0.48rem 0.55rem;
   font: inherit;
@@ -63,7 +63,7 @@
 }
 .notice {
   color: #aaa392;
-  font-size: 0.68rem;
+  font-size: var(--text-xs);
   line-height: 1.5;
   border-left: 2px solid var(--accent, #b8cf79);
   padding-left: 0.55rem;

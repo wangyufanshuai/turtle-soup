@@ -25,6 +25,7 @@ import { loadPlayerSummary, savePlayerSummary } from "@/lib/player-summary-store
 import { downloadExperienceIssues, type ExperienceIssueRecord } from "@/lib/experience-issue-log";
 import { deriveProofReadiness } from "@/lib/proof-readiness";
 import { reasoningBoardUi } from "@/lib/reasoning-board-ui";
+import { homeCaseArt } from "@/lib/home-cinema-assets";
 import {
   questionPlaceholder,
   questionRecoverySurface,
@@ -722,6 +723,14 @@ export function InvestigationShell(props: {
         } as CSSProperties
       }
     >
+      <div className={styles.backdrop} aria-hidden="true">
+        <img
+          src={homeCaseArt(projection.case.id).image}
+          alt=""
+          decoding="async"
+          style={{ objectPosition: homeCaseArt(projection.case.id).focus }}
+        />
+      </div>
       <header className={styles.topbar} inert={settingsOpen || undefined}>
         <Link href="/" prefetch={false} aria-label="返回全部案件">
           ← <span>全部案件</span>
@@ -764,12 +773,35 @@ export function InvestigationShell(props: {
           <InvestigationFeedback events={events} restoreStatus={props.restoreStatus} />
         </div>
       )}
-      <nav className={styles.tabs} aria-label="调查工作区" inert={settingsOpen || undefined}>
+      <nav
+        className={styles.tabs}
+        aria-label="调查工作区"
+        role="tablist"
+        inert={settingsOpen || undefined}
+        onKeyDown={(event) => {
+          // Arrow keys move between workspaces (WAI-ARIA tabs pattern).
+          const step = event.key === "ArrowRight" ? 1 : event.key === "ArrowLeft" ? -1 : 0;
+          const edge = event.key === "Home" ? 0 : event.key === "End" ? TABS.length - 1 : -1;
+          if (!step && edge < 0) return;
+          event.preventDefault();
+          const current = TABS.findIndex((tab) => tab.id === workspace);
+          const next = edge >= 0 ? edge : (current + step + TABS.length) % TABS.length;
+          open(TABS[next].id);
+          requestAnimationFrame(() =>
+            document.getElementById(`workspace-tab-${TABS[next].id}`)?.focus(),
+          );
+        }}
+      >
         {TABS.map((tab) => (
           <button
             key={tab.id}
+            id={`workspace-tab-${tab.id}`}
+            role="tab"
+            aria-selected={workspace === tab.id}
+            aria-controls="workspace-panel"
+            tabIndex={workspace === tab.id ? 0 : -1}
+            data-active={workspace === tab.id || undefined}
             aria-keyshortcuts={tab.shortcut}
-            aria-pressed={workspace === tab.id}
             onClick={() => open(tab.id)}
           >
             <b>
@@ -786,7 +818,12 @@ export function InvestigationShell(props: {
         data-solved={projection.solved || undefined}
         inert={settingsOpen || undefined}
       >
-        <section className={styles.workarea}>
+        <section
+          className={styles.workarea}
+          id="workspace-panel"
+          role="tabpanel"
+          aria-labelledby={`workspace-tab-${workspace}`}
+        >
           {workspace === "scene" && (
             <SceneWorkspace
               projection={projection}

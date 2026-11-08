@@ -8,6 +8,33 @@ import { importCaseSaves, listCaseSaves } from "@/lib/save-store";
 export function ArchiveTools({ onImported }: { onImported: () => void }) {
   const [status, setStatus] = useState("存档仅保存在这台设备。导出包不含真相图或证明证书。");
   const inputRef = useRef<HTMLInputElement>(null);
+  const [offline, setOffline] = useState<{ done: number; total: number; failed: number }>();
+  const [offlineBusy, setOfflineBusy] = useState(false);
+
+  // Ask the service worker to fetch every case into the offline cache.
+  const downloadAllCases = () => {
+    const controller = navigator.serviceWorker?.controller;
+    if (!controller) {
+      setStatus("离线缓存尚未就绪：请刷新页面一次后再试（本地开发模式不支持离线）。");
+      return;
+    }
+    const channel = new MessageChannel();
+    setOfflineBusy(true);
+    channel.port1.onmessage = (event: MessageEvent) => {
+      const data = event.data as { type: string; done: number; total: number; failed: number };
+      setOffline({ done: data.done, total: data.total, failed: data.failed });
+      if (data.type === "complete") {
+        setOfflineBusy(false);
+        setStatus(
+          data.failed
+            ? `离线下载完成，但有 ${data.failed} 个文件失败；联网后可再试一次。`
+            : "全部 84 案已可离线游玩。",
+        );
+        channel.port1.close();
+      }
+    };
+    controller.postMessage({ type: "CACHE_ALL" }, [channel.port2]);
+  };
 
   const exportAll = async () => {
     try {
@@ -53,6 +80,16 @@ export function ArchiveTools({ onImported }: { onImported: () => void }) {
           </button>
           <button type="button" onClick={() => inputRef.current?.click()}>
             导入存档包
+          </button>
+          <button
+            type="button"
+            onClick={downloadAllCases}
+            disabled={offlineBusy}
+            aria-describedby="archive-status"
+          >
+            {offlineBusy && offline
+              ? `离线下载中 ${Math.round((offline.done / Math.max(offline.total, 1)) * 100)}%`
+              : "下载全部案件以离线游玩"}
           </button>
           <input
             ref={inputRef}

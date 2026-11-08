@@ -79,7 +79,7 @@ body {
   border-radius: 999px;
   padding: 0.38rem 0.7rem;
   font: inherit;
-  font-size: 0.72rem;
+  font-size: var(--text-xs);
   cursor: pointer;
 }
 .funGateMenu {
@@ -244,7 +244,7 @@ a:focus-visible {
   padding: 0.8rem 1rem;
   cursor: pointer;
   color: var(--paper);
-  font: 0.72rem var(--mono);
+  font: var(--text-xs) var(--mono);
 }
 .archiveTools summary span {
   color: var(--acid);

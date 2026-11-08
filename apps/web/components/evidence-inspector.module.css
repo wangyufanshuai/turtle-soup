@@ -17,9 +17,9 @@
 }
 .shelfHeader small,
 .shelfHeader span {
-  font: 10px/1.2 var(--font-mono, monospace);
+  font: var(--text-xs)/1.2 var(--font-mono, monospace);
   letter-spacing: 0.12em;
-  color: var(--muted, #88949a);
+  color: var(--muted, #879399);
 }
 .shelfHeader b {
   font: 500 13px/1.35 var(--font-serif, serif);
@@ -59,7 +59,7 @@
   border-left: 2px solid var(--accent, #b8cf79);
 }
 .index {
-  font: 11px/1 var(--font-mono, monospace);
+  font: var(--text-xs)/1 var(--font-mono, monospace);
   color: var(--accent, #b8cf79);
 }
 .cardCopy {
@@ -69,7 +69,7 @@
 }
 .cardCopy small,
 .cardCopy em {
-  font: 9px/1.3 var(--font-mono, monospace);
+  font: var(--text-xs)/1.3 var(--font-mono, monospace);
   font-style: normal;
   letter-spacing: 0.08em;
   color: var(--muted, #879399);
@@ -99,7 +99,7 @@
   opacity: 0.3;
 }
 .pagination span {
-  font: 10px var(--font-mono, monospace);
+  font: var(--text-xs) var(--font-mono, monospace);
   color: var(--muted, #879399);
 }
 .backdrop {
@@ -119,7 +119,7 @@
   max-height: min(840px, calc(100dvh - 48px));
   overflow: auto;
   color: var(--paper, #e8e5d9);
-  background: #080c0e;
+  background: #090c0e;
   border: 1px solid var(--accent, #b8cf79);
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.65);
 }
@@ -132,7 +132,7 @@
   border-bottom: 1px solid var(--line, #384047);
 }
 .dialog header small {
-  font: 10px var(--font-mono, monospace);
+  font: var(--text-xs) var(--font-mono, monospace);
   letter-spacing: 0.12em;
   color: var(--accent, #b8cf79);
 }
@@ -169,7 +169,7 @@
   text-align: center;
 }
 .media > div span {
-  font: 10px var(--font-mono, monospace);
+  font: var(--text-xs) var(--font-mono, monospace);
   letter-spacing: 0.16em;
   color: var(--accent, #b8cf79);
 }
@@ -184,7 +184,7 @@
   padding: 20px;
 }
 .observation small {
-  font: 10px var(--font-mono, monospace);
+  font: var(--text-xs) var(--font-mono, monospace);
   letter-spacing: 0.13em;
   color: var(--accent, #b8cf79);
 }
@@ -278,7 +278,7 @@
   justify-content: space-between;
   padding: 10px 14px;
   color: color-mix(in srgb, var(--accent, #b8cf79) 75%, #dce5df);
-  font: 9px var(--font-mono, monospace);
+  font: var(--text-xs) var(--font-mono, monospace);
   letter-spacing: 0.11em;
 }
 .evidencePlate header {
@@ -360,7 +360,7 @@
     position: sticky;
     z-index: 2;
     top: 0;
-    background: #080c0e;
+    background: #090c0e;
   }
   .observation p {
     font-size: 16px;
@@ -370,7 +370,7 @@
     bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #080c0e;
+    background: #090c0e;
   }
   .dialog footer button {
     padding: 0 8px;
@@ -404,17 +404,17 @@
   padding-right: 7px;
   border-right: 1px solid var(--line, #384047);
   color: var(--muted, #879399);
-  font: 8px/1.3 var(--font-mono, monospace);
+  font: var(--text-xs)/1.3 var(--font-mono, monospace);
   white-space: nowrap;
 }
 .triage b {
   color: var(--accent, #b8cf79);
-  font-size: 11px;
+  font-size: var(--text-xs);
 }
 .triage p {
   margin: 0 0 0 5px;
   color: var(--muted, #879399);
-  font: 9px/1.35 var(--font-sans, system-ui);
+  font: var(--text-xs)/1.35 var(--font-sans, system-ui);
 }
 .card[data-state="dismissed"] {
   opacity: 0.54;
@@ -680,10 +680,10 @@
 }
 .card {
   border-radius: 4px;
-  background: #121b1d;
+  background: #101a20;
 }
 .card[data-linked] {
-  background: color-mix(in srgb, var(--accent) 7%, #121b1d);
+  background: color-mix(in srgb, var(--accent) 7%, #101a20);
 }
 .cardCopy b {
   font-family: var(--body);
@@ -765,5 +765,128 @@
   .attachment summary span {
     grid-column: 2;
     margin: 0;
+  }
+}
+
+/* ───────────────────── v3 polish · evidence shelf ───────────────────── */
+
+/* Cards read like archive folders: a tab number, a lift on hover, a sweep. */
+.card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    border-color var(--dur-base),
+    box-shadow var(--dur-base),
+    background var(--dur-base);
+  animation: rise-in 0.55s var(--ease-out) both;
+}
+.card:nth-child(2) {
+  animation-delay: 0.05s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.1s;
+}
+.card:nth-child(4) {
+  animation-delay: 0.15s;
+}
+.card:nth-child(5) {
+  animation-delay: 0.2s;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 30%;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--case-accent, var(--acid)) 12%, transparent),
+    transparent
+  );
+  transform: translateX(-120%) skewX(-18deg);
+  pointer-events: none;
+}
+.card:hover,
+.card:focus-visible {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-1);
+}
+.card:hover::after {
+  animation: light-sweep 1s var(--ease-out);
+}
+.index {
+  font-variant-numeric: tabular-nums;
+  transition: color var(--dur-base);
+}
+.card:hover .index {
+  color: var(--case-accent, var(--acid));
+}
+.openGlyph {
+  transition: transform var(--dur-base) var(--ease-out);
+}
+.card:hover .openGlyph {
+  transform: translate(3px, -3px);
+}
+
+/* Linked evidence: a small inked check stamp in the corner. */
+.card[data-linked]::before {
+  content: "证";
+  --stamp-rot: 8deg;
+  position: absolute;
+  right: 3.2rem;
+  top: 50%;
+  margin-top: -0.85rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  display: grid;
+  place-items: center;
+  border: 2px solid color-mix(in srgb, var(--case-accent, var(--acid)) 70%, transparent);
+  border-radius: 50%;
+  color: color-mix(in srgb, var(--case-accent, var(--acid)) 85%, transparent);
+  font: 700 var(--text-sm) / 1 var(--display);
+  transform: rotate(var(--stamp-rot));
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* Inspector dialog: material sheet slides up from the desk. */
+.dialog {
+  animation: sheet-up 0.45s var(--ease-out) both;
+}
+@keyframes sheet-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.media img {
+  animation: develop-photo 1.2s var(--ease-out) both;
+}
+@keyframes develop-photo {
+  from {
+    filter: brightness(0.15) contrast(1.5) sepia(0.6) blur(3px);
+  }
+  to {
+    filter: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .card[data-linked]::before {
+    right: 2.6rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .dialog,
+  .media img {
+    animation: none;
   }
 }

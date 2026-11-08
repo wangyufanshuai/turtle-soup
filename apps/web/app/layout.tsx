@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { PwaRegistrar } from "@/components/pwa-registrar";
 import "./globals.css";
+import "./tokens.css";
+import "./atmosphere.css";
 
 export const metadata: Metadata = {
   title: "The Black Soup — 深汤案件档案",
